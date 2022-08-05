@@ -1,0 +1,11 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "occult_cataclysm_magic",
+    "name": "Occult Cataclysm - Magic",
+    "authors": [ "mythosmod" ],
+    "description": "Mod to add occult magic, daemonic summoning and possession to Cataclysm BN - part of a series of mods to build to a total conversion.",
+    "category": "magical",
+    "dependencies": [ "dda" ]
+  }
+]
