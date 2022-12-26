@@ -1,14 +1,14 @@
 var classcata_1_1string__formatter =
 [
-    [ "string_formatter", "classcata_1_1string__formatter.html#ae3c44ca90584d2290a21b1e9d7e5fdd0", null ],
+    [ "string_formatter", "classcata_1_1string__formatter.html#a02a2081780065a9dca35523147628997", null ],
     [ "add_long_long_length_modifier", "classcata_1_1string__formatter.html#af56c4edc7dc206cdc651cc49f17c652b", null ],
     [ "consume_next_input", "classcata_1_1string__formatter.html#a5ab8b365fc012a40fe814f2bf3969c58", null ],
     [ "consume_next_input_if", "classcata_1_1string__formatter.html#a7ca7e5aa6fbcb3b048e27669d69af212", null ],
     [ "discard_oct_hex_sign_flag", "classcata_1_1string__formatter.html#a71179ce3011f4e9312d532566ca578ae", null ],
-    [ "do_formating", "classcata_1_1string__formatter.html#a95a84a895fb00da9ac241998aa39c571", null ],
     [ "do_formating", "classcata_1_1string__formatter.html#aab85e6bf979676c85d8c744f4161bb28", null ],
     [ "do_formating", "classcata_1_1string__formatter.html#a1931157c73efd6ec93588cb66018a7e4", null ],
     [ "do_formating", "classcata_1_1string__formatter.html#a010f18de6218af3eb5e3fc177ddbb954", null ],
+    [ "do_formating", "classcata_1_1string__formatter.html#ad564850b1b13a25db16e0cb3642d1425", null ],
     [ "do_formating", "classcata_1_1string__formatter.html#aca505277ffdcd6a1b27c807901033117", null ],
     [ "do_formating", "classcata_1_1string__formatter.html#a59f56e327b63617f377e9c3bcc51ddb9", null ],
     [ "get_current_input", "classcata_1_1string__formatter.html#adce7fc7ecc751b234cc3d301e44fa0bd", null ],
@@ -25,12 +25,12 @@ var classcata_1_1string__formatter =
     [ "read_precision", "classcata_1_1string__formatter.html#a13dfc0b1f0ca2ad92eff52d6b12c4cf9", null ],
     [ "read_width", "classcata_1_1string__formatter.html#a34844268af8554ac366a4245aef818f9", null ],
     [ "throw_error", "classcata_1_1string__formatter.html#a5762293330b783ea9469eff0e9ff37ac", null ],
-    [ "string_formatter_set_temp_buffer", "classcata_1_1string__formatter.html#ad1ed7b827bc202447a7f58de0bf6f6a3", null ],
+    [ "string_formatter_set_temp_buffer", "classcata_1_1string__formatter.html#a56c7ddb6aaf53ac83433011ed450daf5", null ],
     [ "throw_error", "classcata_1_1string__formatter.html#a6b8bc5e67fe6abe15c73fb9334f4772c", null ],
     [ "current_argument_index", "classcata_1_1string__formatter.html#ad1e838e0cbe57d2cf182643c0a4264c7", null ],
     [ "current_format", "classcata_1_1string__formatter.html#a037f337a88103a56f362396c745aa3e2", null ],
     [ "current_index_in_format", "classcata_1_1string__formatter.html#afa6dcba821137490d0147b0a432dd9dc", null ],
-    [ "format", "classcata_1_1string__formatter.html#a1b026c5d1be893937155bc4f5854fab5", null ],
+    [ "format", "classcata_1_1string__formatter.html#abcbbf467868a5f54421d65a5d59cca6e", null ],
     [ "output", "classcata_1_1string__formatter.html#a1ad445e8124a07b26056499bcfb9d011", null ],
     [ "temp_buffer", "classcata_1_1string__formatter.html#ad7d6971a75e6e014e7f813f22a3b7584", null ]
 ];

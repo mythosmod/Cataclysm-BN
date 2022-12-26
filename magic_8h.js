@@ -60,7 +60,7 @@ var magic_8h =
     [ "bash", "magic_8h.html#a5190e06459a4d2190d8d029a4fba6d09", null ],
     [ "charm_monster", "magic_8h.html#a23cac54dff54c06895ee6a486bdd91e8", null ],
     [ "cone_attack", "magic_8h.html#a1046d781ac5cfb3381c95ce1d965f06b", null ],
-    [ "explosion", "magic_8h.html#a7c2f005c1d34aeb869b6d6ffc5dacc5a", null ],
+    [ "explosion", "magic_8h.html#a9f1b39574600d0523b1c049f7d7d69bd", null ],
     [ "flashbang", "magic_8h.html#a025c386d19f6366b440c998b9d35a6af", null ],
     [ "line_attack", "magic_8h.html#a60706ce2352423a49ebd4d43dacbd12f", null ],
     [ "map_area", "magic_8h.html#a572acfb9ae05c3cdd9f2827512a7a2d4", null ],

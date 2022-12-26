@@ -180,16 +180,16 @@ Private Attributes</h2></td></tr>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_classquery__popup"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classquery__popup')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classquery__popup.html">query_popup</a></td></tr>
 <tr class="memitem:a7924a3fb9a0327435b257230dac1f8ad inherit pro_methods_classquery__popup"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classui__adaptor.html">ui_adaptor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquery__popup.html#a7924a3fb9a0327435b257230dac1f8ad">create_or_get_adaptor</a> (bool disable_below=false)</td></tr>
-<tr class="memdesc:a7924a3fb9a0327435b257230dac1f8ad inherit pro_methods_classquery__popup"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create or get a <a class="el" href="classui__adaptor.html">ui_adaptor</a> on the UI stack to handle redrawing and resizing of the popup.  <a href="classquery__popup.html#a7924a3fb9a0327435b257230dac1f8ad">More...</a><br /></td></tr>
+<tr class="memdesc:a7924a3fb9a0327435b257230dac1f8ad inherit pro_methods_classquery__popup"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create or get a <a class="el" href="classui__adaptor.html" title="Adaptor between UI code and the UI management system.">ui_adaptor</a> on the UI stack to handle redrawing and resizing of the popup.  <a href="classquery__popup.html#a7924a3fb9a0327435b257230dac1f8ad">More...</a><br /></td></tr>
 <tr class="separator:a7924a3fb9a0327435b257230dac1f8ad inherit pro_methods_classquery__popup"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Create a popup on the UI stack that gets displayed but receives no input itself. </p>
-<p >Call <a class="el" href="namespaceui__manager.html#ae38f3a918052ef286ee60daac47f52d4">ui_manager::redraw()</a> to redraw the popup along with other UIs on the stack, and <a class="el" href="ncurses__def_8cpp.html#a6fd55a287e038568d2304927ec8b2449" title="Make changes made to the display visible to the user immediately.">refresh_display()</a> to force refresh the display if not receiving input after redraw. The popup stays on the UI stack until its lifetime ends.</p>
+<p >Call <a class="el" href="namespaceui__manager.html#ae38f3a918052ef286ee60daac47f52d4" title="Invalidate the top window and redraw all invalidated windows.">ui_manager::redraw()</a> to redraw the popup along with other UIs on the stack, and <a class="el" href="ncurses__def_8cpp.html#a6fd55a287e038568d2304927ec8b2449" title="Make changes made to the display visible to the user immediately.">refresh_display()</a> plus inp_mngr.pump_events() to force refresh the display and handle window events if not receiving input after redraw. The popup stays on the UI stack until its lifetime ends.</p>
 <p >Example:</p>
-<p >if( not_loaded ) { <a class="el" href="classstatic__popup.html" title="Create a popup on the UI stack that gets displayed but receives no input itself.">static_popup</a> popup; popup.message( "Please wait…" ); while( loading ) { <a class="el" href="namespaceui__manager.html#ae38f3a918052ef286ee60daac47f52d4">ui_manager::redraw()</a>; <a class="el" href="ncurses__def_8cpp.html#a6fd55a287e038568d2304927ec8b2449" title="Make changes made to the display visible to the user immediately.">refresh_display()</a>; // force redraw since we're not receiving input here load_part(); } } // Popup removed from UI stack when going out of scope. // Note that the removal is not visible until the next time <code><a class="el" href="namespaceui__manager.html#ae38f3a918052ef286ee60daac47f52d4">ui_manager::redraw</a></code> // is called. </p>
+<p >if( not_loaded ) { <a class="el" href="classstatic__popup.html" title="Create a popup on the UI stack that gets displayed but receives no input itself.">static_popup</a> popup; while( loading ) { popup.message( _( "Please wait…  %d%% complete" ), percentage ); <a class="el" href="namespaceui__manager.html#ae38f3a918052ef286ee60daac47f52d4" title="Invalidate the top window and redraw all invalidated windows.">ui_manager::redraw()</a>; <a class="el" href="ncurses__def_8cpp.html#a6fd55a287e038568d2304927ec8b2449" title="Make changes made to the display visible to the user immediately.">refresh_display()</a>; // force redraw since we're not receiving input here inp_mngr.pump_events(); // handle window events such as resize load_part(); } } // Popup removed from UI stack when going out of scope. // Note that the removal is not visible until the next time <code><a class="el" href="namespaceui__manager.html#ae38f3a918052ef286ee60daac47f52d4" title="Invalidate the top window and redraw all invalidated windows.">ui_manager::redraw</a></code> // is called. </p>
 
-<p class="definition">Definition at line <a class="el" href="popup_8h_source.html#l00275">275</a> of file <a class="el" href="popup_8h_source.html">popup.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="popup_8h_source.html#l00277">277</a> of file <a class="el" href="popup_8h_source.html">popup.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aab8478a54ce071c7dc369592db3bbacf" name="aab8478a54ce071c7dc369592db3bbacf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aab8478a54ce071c7dc369592db3bbacf">&#9670;&nbsp;</a></span>static_popup()</h2>
@@ -238,7 +238,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="popup_8h_source.html#l00281">281</a> of file <a class="el" href="popup_8h_source.html">popup.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="popup_8h_source.html#l00283">283</a> of file <a class="el" href="popup_8h_source.html">popup.h</a>.</p>
 
 </div>
 </div>
@@ -252,7 +252,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classstatic__popup.html">static_popup</a></li>
-    <li class="footer">Generated on Wed Oct 19 2022 14:19:47 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Mon Dec 26 2022 21:42:14 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

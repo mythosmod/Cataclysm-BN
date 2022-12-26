@@ -30,7 +30,7 @@ var ranged_8cpp =
     [ "get_colored_bar", "ranged_8cpp.html#ae485e14f2f0d97810da8125353dfa101", null ],
     [ "get_default_aim_type", "ranged_8cpp.html#a588329b70c53194be20a6c9b7798923d", null ],
     [ "get_str_draw_penalty", "ranged_8cpp.html#a4c8c85e0249f67213d9994612315aa3e", null ],
-    [ "is_driving", "ranged_8cpp.html#a170041722ca59caad52f34270eb5f183", null ],
+    [ "is_driving", "ranged_8cpp.html#a4f63cd5153d42291194a203f8928a74b", null ],
     [ "make_gun_projectile", "ranged_8cpp.html#ab0db3d2d826960249b5a1d47fa7881ff", null ],
     [ "make_gun_sound_effect", "ranged_8cpp.html#a9d14a0cc5b70610323cf40b51929fae5", null ],
     [ "occupied_tile_fraction", "ranged_8cpp.html#a463802d3c2fe3f6d4ba8cc36a77912c7", null ],

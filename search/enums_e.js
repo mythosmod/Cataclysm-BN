@@ -12,6 +12,5 @@ var searchData=
   ['plfop_9',['PlfOp',['../namespacecata__libintl.html#a878543575fc327e486d98e3ae2d3d674',1,'cata_libintl']]],
   ['point_5flimit_10',['point_limit',['../structpoints__left.html#ab75600e756b02407392cd8b6c3406423',1,'points_left']]],
   ['popupflags_11',['PopupFlags',['../output_8h.html#ab214b85345aeab978acdcea0250f27f5',1,'output.h']]],
-  ['power_5fmut_5fui_5fcmd_12',['power_mut_ui_cmd',['../classplayer.html#ace29da9579ab4126cf7f83ba4ace8859',1,'player']]],
-  ['precip_5fclass_13',['precip_class',['../weather__type_8h.html#a0b78777ab367c0db919aacd8bba938f0',1,'weather_type.h']]]
+  ['precip_5fclass_12',['precip_class',['../weather__type_8h.html#a0b78777ab367c0db919aacd8bba938f0',1,'weather_type.h']]]
 ];

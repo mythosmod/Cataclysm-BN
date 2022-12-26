@@ -140,7 +140,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><p >Place a gas pump with fuel in it. </p>
 <p >"amount": number of fuel charges to place. </p>
 
-<p class="definition">Definition at line <a class="el" href="mapgen_8cpp_source.html#l01064">1064</a> of file <a class="el" href="mapgen_8cpp_source.html">mapgen.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mapgen_8cpp_source.html#l01081">1081</a> of file <a class="el" href="mapgen_8cpp_source.html">mapgen.cpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a21a6f7d91b6d49bcefb7d9bac2879e3f" name="a21a6f7d91b6d49bcefb7d9bac2879e3f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a21a6f7d91b6d49bcefb7d9bac2879e3f">&#9670;&nbsp;</a></span>jmapgen_gaspump()</h2>
@@ -166,26 +166,26 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mapgen_8cpp_source.html#l01069">1069</a> of file <a class="el" href="mapgen_8cpp_source.html">mapgen.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01069" name="l01069"></a><span class="lineno"> 1069</span>                                                 :</div>
-<div class="line"><a id="l01070" name="l01070"></a><span class="lineno"> 1070</span>            <a class="code hl_variable" href="classjmapgen__gaspump.html#a3638ea5c921796d739e72c119bc8fe5c">amount</a>( <a class="code hl_variable" href="namespacemapgen__defer.html#ac7abbde97374a05af2e7077ba9955ed1">jsi</a>, <span class="stringliteral">&quot;amount&quot;</span>, 0, 0 ) {</div>
-<div class="line"><a id="l01071" name="l01071"></a><span class="lineno"> 1071</span>            <span class="keywordflow">if</span>( <a class="code hl_variable" href="namespacemapgen__defer.html#ac7abbde97374a05af2e7077ba9955ed1">jsi</a>.<a class="code hl_function" href="classJsonObject.html#a19d83d03e3d5cc6905bcb850d80a1f05">has_string</a>( <span class="stringliteral">&quot;fuel&quot;</span> ) ) {</div>
-<div class="line"><a id="l01072" name="l01072"></a><span class="lineno"> 1072</span>                <a class="code hl_variable" href="classjmapgen__gaspump.html#a3f585a0cf782a529a768dc9fed5a314a">fuel</a> = <a class="code hl_variable" href="namespacemapgen__defer.html#ac7abbde97374a05af2e7077ba9955ed1">jsi</a>.<a class="code hl_function" href="classJsonObject.html#a96b6d1b9cf7bda4fc9cd177a99e0631c">get_string</a>( <span class="stringliteral">&quot;fuel&quot;</span> );</div>
-<div class="line"><a id="l01073" name="l01073"></a><span class="lineno"> 1073</span> </div>
-<div class="line"><a id="l01074" name="l01074"></a><span class="lineno"> 1074</span>                <span class="comment">// may want to not force this, if we want to support other fuels for some reason</span></div>
-<div class="line"><a id="l01075" name="l01075"></a><span class="lineno"> 1075</span>                <span class="keywordflow">if</span>( <a class="code hl_variable" href="classjmapgen__gaspump.html#a3f585a0cf782a529a768dc9fed5a314a">fuel</a> != <span class="stringliteral">&quot;gasoline&quot;</span> &amp;&amp; <a class="code hl_variable" href="classjmapgen__gaspump.html#a3f585a0cf782a529a768dc9fed5a314a">fuel</a> != <span class="stringliteral">&quot;diesel&quot;</span> ) {</div>
-<div class="line"><a id="l01076" name="l01076"></a><span class="lineno"> 1076</span>                    <a class="code hl_variable" href="namespacemapgen__defer.html#ac7abbde97374a05af2e7077ba9955ed1">jsi</a>.<a class="code hl_function" href="classJsonObject.html#ae7bcdb4ec8ab2c64e607b411cb98d00c">throw_error</a>( <span class="stringliteral">&quot;invalid fuel&quot;</span>, <span class="stringliteral">&quot;fuel&quot;</span> );</div>
-<div class="line"><a id="l01077" name="l01077"></a><span class="lineno"> 1077</span>                }</div>
-<div class="line"><a id="l01078" name="l01078"></a><span class="lineno"> 1078</span>            }</div>
-<div class="line"><a id="l01079" name="l01079"></a><span class="lineno"> 1079</span>        }</div>
+<p class="definition">Definition at line <a class="el" href="mapgen_8cpp_source.html#l01086">1086</a> of file <a class="el" href="mapgen_8cpp_source.html">mapgen.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01086" name="l01086"></a><span class="lineno"> 1086</span>                                                 :</div>
+<div class="line"><a id="l01087" name="l01087"></a><span class="lineno"> 1087</span>            <a class="code hl_variable" href="classjmapgen__gaspump.html#a3638ea5c921796d739e72c119bc8fe5c">amount</a>( <a class="code hl_variable" href="namespacemapgen__defer.html#ac7abbde97374a05af2e7077ba9955ed1">jsi</a>, <span class="stringliteral">&quot;amount&quot;</span>, 0, 0 ) {</div>
+<div class="line"><a id="l01088" name="l01088"></a><span class="lineno"> 1088</span>            <span class="keywordflow">if</span>( <a class="code hl_variable" href="namespacemapgen__defer.html#ac7abbde97374a05af2e7077ba9955ed1">jsi</a>.<a class="code hl_function" href="classJsonObject.html#a19d83d03e3d5cc6905bcb850d80a1f05">has_string</a>( <span class="stringliteral">&quot;fuel&quot;</span> ) ) {</div>
+<div class="line"><a id="l01089" name="l01089"></a><span class="lineno"> 1089</span>                <a class="code hl_variable" href="classjmapgen__gaspump.html#a3f585a0cf782a529a768dc9fed5a314a">fuel</a> = <a class="code hl_variable" href="namespacemapgen__defer.html#ac7abbde97374a05af2e7077ba9955ed1">jsi</a>.<a class="code hl_function" href="classJsonObject.html#a96b6d1b9cf7bda4fc9cd177a99e0631c">get_string</a>( <span class="stringliteral">&quot;fuel&quot;</span> );</div>
+<div class="line"><a id="l01090" name="l01090"></a><span class="lineno"> 1090</span> </div>
+<div class="line"><a id="l01091" name="l01091"></a><span class="lineno"> 1091</span>                <span class="comment">// may want to not force this, if we want to support other fuels for some reason</span></div>
+<div class="line"><a id="l01092" name="l01092"></a><span class="lineno"> 1092</span>                <span class="keywordflow">if</span>( <a class="code hl_variable" href="classjmapgen__gaspump.html#a3f585a0cf782a529a768dc9fed5a314a">fuel</a> != <span class="stringliteral">&quot;gasoline&quot;</span> &amp;&amp; <a class="code hl_variable" href="classjmapgen__gaspump.html#a3f585a0cf782a529a768dc9fed5a314a">fuel</a> != <span class="stringliteral">&quot;diesel&quot;</span> ) {</div>
+<div class="line"><a id="l01093" name="l01093"></a><span class="lineno"> 1093</span>                    <a class="code hl_variable" href="namespacemapgen__defer.html#ac7abbde97374a05af2e7077ba9955ed1">jsi</a>.<a class="code hl_function" href="classJsonObject.html#ae7bcdb4ec8ab2c64e607b411cb98d00c">throw_error</a>( <span class="stringliteral">&quot;invalid fuel&quot;</span>, <span class="stringliteral">&quot;fuel&quot;</span> );</div>
+<div class="line"><a id="l01094" name="l01094"></a><span class="lineno"> 1094</span>                }</div>
+<div class="line"><a id="l01095" name="l01095"></a><span class="lineno"> 1095</span>            }</div>
+<div class="line"><a id="l01096" name="l01096"></a><span class="lineno"> 1096</span>        }</div>
 <div class="ttc" id="aclassJsonObject_html_a19d83d03e3d5cc6905bcb850d80a1f05"><div class="ttname"><a href="classJsonObject.html#a19d83d03e3d5cc6905bcb850d80a1f05">JsonObject::has_string</a></div><div class="ttdeci">bool has_string(const std::string &amp;name) const</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l00405">json.cpp:405</a></div></div>
 <div class="ttc" id="aclassJsonObject_html_a96b6d1b9cf7bda4fc9cd177a99e0631c"><div class="ttname"><a href="classJsonObject.html#a96b6d1b9cf7bda4fc9cd177a99e0631c">JsonObject::get_string</a></div><div class="ttdeci">std::string get_string(const std::string &amp;name) const</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l00314">json.cpp:314</a></div></div>
 <div class="ttc" id="aclassJsonObject_html_ae7bcdb4ec8ab2c64e607b411cb98d00c"><div class="ttname"><a href="classJsonObject.html#ae7bcdb4ec8ab2c64e607b411cb98d00c">JsonObject::throw_error</a></div><div class="ttdeci">void throw_error(std::string err) const</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l00233">json.cpp:233</a></div></div>
-<div class="ttc" id="aclassjmapgen__gaspump_html_a3638ea5c921796d739e72c119bc8fe5c"><div class="ttname"><a href="classjmapgen__gaspump.html#a3638ea5c921796d739e72c119bc8fe5c">jmapgen_gaspump::amount</a></div><div class="ttdeci">jmapgen_int amount</div><div class="ttdef"><b>Definition:</b> <a href="mapgen_8cpp_source.html#l01067">mapgen.cpp:1067</a></div></div>
-<div class="ttc" id="aclassjmapgen__gaspump_html_a3f585a0cf782a529a768dc9fed5a314a"><div class="ttname"><a href="classjmapgen__gaspump.html#a3f585a0cf782a529a768dc9fed5a314a">jmapgen_gaspump::fuel</a></div><div class="ttdeci">std::string fuel</div><div class="ttdef"><b>Definition:</b> <a href="mapgen_8cpp_source.html#l01068">mapgen.cpp:1068</a></div></div>
-<div class="ttc" id="anamespacemapgen__defer_html_ac7abbde97374a05af2e7077ba9955ed1"><div class="ttname"><a href="namespacemapgen__defer.html#ac7abbde97374a05af2e7077ba9955ed1">mapgen_defer::jsi</a></div><div class="ttdeci">JsonObject jsi</div><div class="ttdef"><b>Definition:</b> <a href="mapgen_8cpp_source.html#l00405">mapgen.cpp:405</a></div></div>
+<div class="ttc" id="aclassjmapgen__gaspump_html_a3638ea5c921796d739e72c119bc8fe5c"><div class="ttname"><a href="classjmapgen__gaspump.html#a3638ea5c921796d739e72c119bc8fe5c">jmapgen_gaspump::amount</a></div><div class="ttdeci">jmapgen_int amount</div><div class="ttdef"><b>Definition:</b> <a href="mapgen_8cpp_source.html#l01084">mapgen.cpp:1084</a></div></div>
+<div class="ttc" id="aclassjmapgen__gaspump_html_a3f585a0cf782a529a768dc9fed5a314a"><div class="ttname"><a href="classjmapgen__gaspump.html#a3f585a0cf782a529a768dc9fed5a314a">jmapgen_gaspump::fuel</a></div><div class="ttdeci">std::string fuel</div><div class="ttdef"><b>Definition:</b> <a href="mapgen_8cpp_source.html#l01085">mapgen.cpp:1085</a></div></div>
+<div class="ttc" id="anamespacemapgen__defer_html_ac7abbde97374a05af2e7077ba9955ed1"><div class="ttname"><a href="namespacemapgen__defer.html#ac7abbde97374a05af2e7077ba9955ed1">mapgen_defer::jsi</a></div><div class="ttdeci">JsonObject jsi</div><div class="ttdef"><b>Definition:</b> <a href="mapgen_8cpp_source.html#l00413">mapgen.cpp:413</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="mapgen_8cpp_source.html#l01068">fuel</a>, <a class="el" href="json_8cpp_source.html#l00314">JsonObject::get_string()</a>, <a class="el" href="json_8cpp_source.html#l00405">JsonObject::has_string()</a>, <a class="el" href="mapgen_8cpp_source.html#l00405">mapgen_defer::jsi</a>, and <a class="el" href="json_8cpp_source.html#l00233">JsonObject::throw_error()</a>.</p>
+<p class="reference">References <a class="el" href="mapgen_8cpp_source.html#l01085">fuel</a>, <a class="el" href="json_8cpp_source.html#l00314">JsonObject::get_string()</a>, <a class="el" href="json_8cpp_source.html#l00405">JsonObject::has_string()</a>, <a class="el" href="mapgen_8cpp_source.html#l00413">mapgen_defer::jsi</a>, and <a class="el" href="json_8cpp_source.html#l00233">JsonObject::throw_error()</a>.</p>
 
 </div>
 </div>
@@ -234,29 +234,29 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classjmapgen__piece.html#a82c99884542de41c80a197f389afe18a">jmapgen_piece</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="mapgen_8cpp_source.html#l01080">1080</a> of file <a class="el" href="mapgen_8cpp_source.html">mapgen.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01080" name="l01080"></a><span class="lineno"> 1080</span>                                                                                                 {</div>
-<div class="line"><a id="l01081" name="l01081"></a><span class="lineno"> 1081</span>            <span class="keyword">const</span> <a class="code hl_struct" href="structpoint.html">point</a> r{ x.<a class="code hl_function" href="structjmapgen__int.html#af91db998b4c873453177d97ad575d138">get</a>(), y.<a class="code hl_function" href="structjmapgen__int.html#af91db998b4c873453177d97ad575d138">get</a>() };</div>
-<div class="line"><a id="l01082" name="l01082"></a><span class="lineno"> 1082</span>            <span class="keywordtype">int</span> charges = <a class="code hl_variable" href="classjmapgen__gaspump.html#a3638ea5c921796d739e72c119bc8fe5c">amount</a>.<a class="code hl_function" href="structjmapgen__int.html#af91db998b4c873453177d97ad575d138">get</a>();</div>
-<div class="line"><a id="l01083" name="l01083"></a><span class="lineno"> 1083</span>            dat.<a class="code hl_variable" href="classmapgendata.html#a7d9e28b073b22b2391e6d3972fd6aa12">m</a>.<a class="code hl_function" href="classmap.html#abf6455d82007aa379f4de85aea2f923f">furn_set</a>( r, <a class="code hl_variable" href="mapdata_8cpp.html#a98423a935af4b918d68f206e63f6cf7f">f_null</a> );</div>
-<div class="line"><a id="l01084" name="l01084"></a><span class="lineno"> 1084</span>            <span class="keywordflow">if</span>( charges == 0 ) {</div>
-<div class="line"><a id="l01085" name="l01085"></a><span class="lineno"> 1085</span>                charges = <a class="code hl_function" href="artifact_8cpp.html#a70800e95389f34dd34186fafaea2a840">rng</a>( 10000, 50000 );</div>
-<div class="line"><a id="l01086" name="l01086"></a><span class="lineno"> 1086</span>            }</div>
-<div class="line"><a id="l01087" name="l01087"></a><span class="lineno"> 1087</span>            <span class="keywordflow">if</span>( !<a class="code hl_variable" href="classjmapgen__gaspump.html#a3f585a0cf782a529a768dc9fed5a314a">fuel</a>.empty() ) {</div>
-<div class="line"><a id="l01088" name="l01088"></a><span class="lineno"> 1088</span>                dat.<a class="code hl_variable" href="classmapgendata.html#a7d9e28b073b22b2391e6d3972fd6aa12">m</a>.<a class="code hl_function" href="classmap.html#a43cc89934fb2011b212dc6dcbdb378d0">place_gas_pump</a>( r, charges, <a class="code hl_variable" href="classjmapgen__gaspump.html#a3f585a0cf782a529a768dc9fed5a314a">fuel</a> );</div>
-<div class="line"><a id="l01089" name="l01089"></a><span class="lineno"> 1089</span>            } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l01090" name="l01090"></a><span class="lineno"> 1090</span>                dat.<a class="code hl_variable" href="classmapgendata.html#a7d9e28b073b22b2391e6d3972fd6aa12">m</a>.<a class="code hl_function" href="classmap.html#a43cc89934fb2011b212dc6dcbdb378d0">place_gas_pump</a>( r, charges );</div>
-<div class="line"><a id="l01091" name="l01091"></a><span class="lineno"> 1091</span>            }</div>
-<div class="line"><a id="l01092" name="l01092"></a><span class="lineno"> 1092</span>        }</div>
+<p class="definition">Definition at line <a class="el" href="mapgen_8cpp_source.html#l01097">1097</a> of file <a class="el" href="mapgen_8cpp_source.html">mapgen.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01097" name="l01097"></a><span class="lineno"> 1097</span>                                                                                                 {</div>
+<div class="line"><a id="l01098" name="l01098"></a><span class="lineno"> 1098</span>            <span class="keyword">const</span> <a class="code hl_struct" href="structpoint.html">point</a> r{ x.<a class="code hl_function" href="structjmapgen__int.html#af91db998b4c873453177d97ad575d138">get</a>(), y.<a class="code hl_function" href="structjmapgen__int.html#af91db998b4c873453177d97ad575d138">get</a>() };</div>
+<div class="line"><a id="l01099" name="l01099"></a><span class="lineno"> 1099</span>            <span class="keywordtype">int</span> charges = <a class="code hl_variable" href="classjmapgen__gaspump.html#a3638ea5c921796d739e72c119bc8fe5c">amount</a>.<a class="code hl_function" href="structjmapgen__int.html#af91db998b4c873453177d97ad575d138">get</a>();</div>
+<div class="line"><a id="l01100" name="l01100"></a><span class="lineno"> 1100</span>            dat.<a class="code hl_variable" href="classmapgendata.html#a7d9e28b073b22b2391e6d3972fd6aa12">m</a>.<a class="code hl_function" href="classmap.html#abf6455d82007aa379f4de85aea2f923f">furn_set</a>( r, <a class="code hl_variable" href="mapdata_8cpp.html#a98423a935af4b918d68f206e63f6cf7f">f_null</a> );</div>
+<div class="line"><a id="l01101" name="l01101"></a><span class="lineno"> 1101</span>            <span class="keywordflow">if</span>( charges == 0 ) {</div>
+<div class="line"><a id="l01102" name="l01102"></a><span class="lineno"> 1102</span>                charges = <a class="code hl_function" href="artifact_8cpp.html#a70800e95389f34dd34186fafaea2a840">rng</a>( 10000, 50000 );</div>
+<div class="line"><a id="l01103" name="l01103"></a><span class="lineno"> 1103</span>            }</div>
+<div class="line"><a id="l01104" name="l01104"></a><span class="lineno"> 1104</span>            <span class="keywordflow">if</span>( !<a class="code hl_variable" href="classjmapgen__gaspump.html#a3f585a0cf782a529a768dc9fed5a314a">fuel</a>.empty() ) {</div>
+<div class="line"><a id="l01105" name="l01105"></a><span class="lineno"> 1105</span>                dat.<a class="code hl_variable" href="classmapgendata.html#a7d9e28b073b22b2391e6d3972fd6aa12">m</a>.<a class="code hl_function" href="classmap.html#a43cc89934fb2011b212dc6dcbdb378d0">place_gas_pump</a>( r, charges, <a class="code hl_variable" href="classjmapgen__gaspump.html#a3f585a0cf782a529a768dc9fed5a314a">fuel</a> );</div>
+<div class="line"><a id="l01106" name="l01106"></a><span class="lineno"> 1106</span>            } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l01107" name="l01107"></a><span class="lineno"> 1107</span>                dat.<a class="code hl_variable" href="classmapgendata.html#a7d9e28b073b22b2391e6d3972fd6aa12">m</a>.<a class="code hl_function" href="classmap.html#a43cc89934fb2011b212dc6dcbdb378d0">place_gas_pump</a>( r, charges );</div>
+<div class="line"><a id="l01108" name="l01108"></a><span class="lineno"> 1108</span>            }</div>
+<div class="line"><a id="l01109" name="l01109"></a><span class="lineno"> 1109</span>        }</div>
 <div class="ttc" id="aartifact_8cpp_html_a70800e95389f34dd34186fafaea2a840"><div class="ttname"><a href="artifact_8cpp.html#a70800e95389f34dd34186fafaea2a840">rng</a></div><div class="ttdeci">units::quantity&lt; V, B &gt; rng(const units::quantity&lt; V, B &gt; &amp;min, const units::quantity&lt; V, B &gt; &amp;max)</div><div class="ttdef"><b>Definition:</b> <a href="artifact_8cpp_source.html#l00032">artifact.cpp:32</a></div></div>
-<div class="ttc" id="aclassmap_html_a43cc89934fb2011b212dc6dcbdb378d0"><div class="ttname"><a href="classmap.html#a43cc89934fb2011b212dc6dcbdb378d0">map::place_gas_pump</a></div><div class="ttdeci">void place_gas_pump(const point &amp;p, int charges, const std::string &amp;fuel_type)</div><div class="ttdef"><b>Definition:</b> <a href="mapgen_8cpp_source.html#l05439">mapgen.cpp:5439</a></div></div>
-<div class="ttc" id="aclassmap_html_abf6455d82007aa379f4de85aea2f923f"><div class="ttname"><a href="classmap.html#abf6455d82007aa379f4de85aea2f923f">map::furn_set</a></div><div class="ttdeci">void furn_set(const tripoint &amp;p, const furn_id &amp;new_furniture, cata::poly_serialized&lt; active_tile_data &gt; new_active=nullptr)</div><div class="ttdoc">Sets the furniture at given position.</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l01358">map.cpp:1358</a></div></div>
+<div class="ttc" id="aclassmap_html_a43cc89934fb2011b212dc6dcbdb378d0"><div class="ttname"><a href="classmap.html#a43cc89934fb2011b212dc6dcbdb378d0">map::place_gas_pump</a></div><div class="ttdeci">void place_gas_pump(const point &amp;p, int charges, const std::string &amp;fuel_type)</div><div class="ttdef"><b>Definition:</b> <a href="mapgen_8cpp_source.html#l05470">mapgen.cpp:5470</a></div></div>
+<div class="ttc" id="aclassmap_html_abf6455d82007aa379f4de85aea2f923f"><div class="ttname"><a href="classmap.html#abf6455d82007aa379f4de85aea2f923f">map::furn_set</a></div><div class="ttdeci">void furn_set(const tripoint &amp;p, const furn_id &amp;new_furniture, cata::poly_serialized&lt; active_tile_data &gt; new_active=nullptr)</div><div class="ttdoc">Sets the furniture at given position.</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l01360">map.cpp:1360</a></div></div>
 <div class="ttc" id="aclassmapgendata_html_a7d9e28b073b22b2391e6d3972fd6aa12"><div class="ttname"><a href="classmapgendata.html#a7d9e28b073b22b2391e6d3972fd6aa12">mapgendata::m</a></div><div class="ttdeci">map &amp; m</div><div class="ttdef"><b>Definition:</b> <a href="mapgendata_8h_source.html#l00061">mapgendata.h:61</a></div></div>
-<div class="ttc" id="amapdata_8cpp_html_a98423a935af4b918d68f206e63f6cf7f"><div class="ttname"><a href="mapdata_8cpp.html#a98423a935af4b918d68f206e63f6cf7f">f_null</a></div><div class="ttdeci">furn_id f_null</div><div class="ttdef"><b>Definition:</b> <a href="mapdata_8cpp_source.html#l01095">mapdata.cpp:1095</a></div></div>
-<div class="ttc" id="astructjmapgen__int_html_af91db998b4c873453177d97ad575d138"><div class="ttname"><a href="structjmapgen__int.html#af91db998b4c873453177d97ad575d138">jmapgen_int::get</a></div><div class="ttdeci">int get() const</div><div class="ttdef"><b>Definition:</b> <a href="mapgen_8cpp_source.html#l00654">mapgen.cpp:654</a></div></div>
+<div class="ttc" id="amapdata_8cpp_html_a98423a935af4b918d68f206e63f6cf7f"><div class="ttname"><a href="mapdata_8cpp.html#a98423a935af4b918d68f206e63f6cf7f">f_null</a></div><div class="ttdeci">furn_id f_null</div><div class="ttdef"><b>Definition:</b> <a href="mapdata_8cpp_source.html#l01097">mapdata.cpp:1097</a></div></div>
+<div class="ttc" id="astructjmapgen__int_html_af91db998b4c873453177d97ad575d138"><div class="ttname"><a href="structjmapgen__int.html#af91db998b4c873453177d97ad575d138">jmapgen_int::get</a></div><div class="ttdeci">int get() const</div><div class="ttdef"><b>Definition:</b> <a href="mapgen_8cpp_source.html#l00671">mapgen.cpp:671</a></div></div>
 <div class="ttc" id="astructpoint_html"><div class="ttname"><a href="structpoint.html">point</a></div><div class="ttdef"><b>Definition:</b> <a href="point_8h_source.html#l00035">point.h:35</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="mapgen_8cpp_source.html#l01067">amount</a>, <a class="el" href="mapdata_8cpp_source.html#l01095">f_null</a>, <a class="el" href="mapgen_8cpp_source.html#l01068">fuel</a>, <a class="el" href="map_8cpp_source.html#l01358">map::furn_set()</a>, <a class="el" href="mapgen_8cpp_source.html#l00654">jmapgen_int::get()</a>, <a class="el" href="mapgendata_8h_source.html#l00061">mapgendata::m</a>, <a class="el" href="mapgen_8cpp_source.html#l05439">map::place_gas_pump()</a>, and <a class="el" href="artifact_8cpp_source.html#l00032">rng()</a>.</p>
+<p class="reference">References <a class="el" href="mapgen_8cpp_source.html#l01084">amount</a>, <a class="el" href="mapdata_8cpp_source.html#l01097">f_null</a>, <a class="el" href="mapgen_8cpp_source.html#l01085">fuel</a>, <a class="el" href="map_8cpp_source.html#l01360">map::furn_set()</a>, <a class="el" href="mapgen_8cpp_source.html#l00671">jmapgen_int::get()</a>, <a class="el" href="mapgendata_8h_source.html#l00061">mapgendata::m</a>, <a class="el" href="mapgen_8cpp_source.html#l05470">map::place_gas_pump()</a>, and <a class="el" href="artifact_8cpp_source.html#l00032">rng()</a>.</p>
 
 </div>
 </div>
@@ -296,16 +296,16 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classjmapgen__piece.html#a74765ff59286d23cda1aa6ca250f1358">jmapgen_piece</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="mapgen_8cpp_source.html#l01093">1093</a> of file <a class="el" href="mapgen_8cpp_source.html">mapgen.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01093" name="l01093"></a><span class="lineno"> 1093</span>                                                                                     {</div>
-<div class="line"><a id="l01094" name="l01094"></a><span class="lineno"> 1094</span>            <span class="keywordflow">return</span> dat.<a class="code hl_variable" href="classmapgendata.html#a7d9e28b073b22b2391e6d3972fd6aa12">m</a>.<a class="code hl_function" href="classmap.html#aa487d96256c3d35db7a1bf273156b64a">veh_at</a>( <a class="code hl_struct" href="structtripoint.html">tripoint</a>( p, dat.<a class="code hl_function" href="classmapgendata.html#a8b23644fccfcc73e7f06a6fc3cb61d3f">zlevel</a>() ) ).<a class="code hl_function" href="classcata_1_1optional.html#ad5b847e0e2f1db1387a10bac3751ccf4">has_value</a>();</div>
-<div class="line"><a id="l01095" name="l01095"></a><span class="lineno"> 1095</span>        }</div>
+<p class="definition">Definition at line <a class="el" href="mapgen_8cpp_source.html#l01110">1110</a> of file <a class="el" href="mapgen_8cpp_source.html">mapgen.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01110" name="l01110"></a><span class="lineno"> 1110</span>                                                                                     {</div>
+<div class="line"><a id="l01111" name="l01111"></a><span class="lineno"> 1111</span>            <span class="keywordflow">return</span> dat.<a class="code hl_variable" href="classmapgendata.html#a7d9e28b073b22b2391e6d3972fd6aa12">m</a>.<a class="code hl_function" href="classmap.html#aa487d96256c3d35db7a1bf273156b64a">veh_at</a>( <a class="code hl_struct" href="structtripoint.html">tripoint</a>( p, dat.<a class="code hl_function" href="classmapgendata.html#a8b23644fccfcc73e7f06a6fc3cb61d3f">zlevel</a>() ) ).<a class="code hl_function" href="classcata_1_1optional.html#ad5b847e0e2f1db1387a10bac3751ccf4">has_value</a>();</div>
+<div class="line"><a id="l01112" name="l01112"></a><span class="lineno"> 1112</span>        }</div>
 <div class="ttc" id="aclasscata_1_1optional_html_ad5b847e0e2f1db1387a10bac3751ccf4"><div class="ttname"><a href="classcata_1_1optional.html#ad5b847e0e2f1db1387a10bac3751ccf4">cata::optional::has_value</a></div><div class="ttdeci">constexpr bool has_value() const noexcept</div><div class="ttdef"><b>Definition:</b> <a href="optional_8h_source.html#l00123">optional.h:123</a></div></div>
-<div class="ttc" id="aclassmap_html_aa487d96256c3d35db7a1bf273156b64a"><div class="ttname"><a href="classmap.html#aa487d96256c3d35db7a1bf273156b64a">map::veh_at</a></div><div class="ttdeci">optional_vpart_position veh_at(const tripoint &amp;p) const</div><div class="ttdoc">Checks if tile is occupied by vehicle and by which part.</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l01007">map.cpp:1007</a></div></div>
+<div class="ttc" id="aclassmap_html_aa487d96256c3d35db7a1bf273156b64a"><div class="ttname"><a href="classmap.html#aa487d96256c3d35db7a1bf273156b64a">map::veh_at</a></div><div class="ttdeci">optional_vpart_position veh_at(const tripoint &amp;p) const</div><div class="ttdoc">Checks if tile is occupied by vehicle and by which part.</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l01009">map.cpp:1009</a></div></div>
 <div class="ttc" id="aclassmapgendata_html_a8b23644fccfcc73e7f06a6fc3cb61d3f"><div class="ttname"><a href="classmapgendata.html#a8b23644fccfcc73e7f06a6fc3cb61d3f">mapgendata::zlevel</a></div><div class="ttdeci">int zlevel() const</div><div class="ttdef"><b>Definition:</b> <a href="mapgendata_8h_source.html#l00099">mapgendata.h:99</a></div></div>
 <div class="ttc" id="astructtripoint_html"><div class="ttname"><a href="structtripoint.html">tripoint</a></div><div class="ttdef"><b>Definition:</b> <a href="point_8h_source.html#l00147">point.h:147</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="optional_8h_source.html#l00123">cata::optional&lt; T &gt;::has_value()</a>, <a class="el" href="mapgendata_8h_source.html#l00061">mapgendata::m</a>, <a class="el" href="map_8cpp_source.html#l01007">map::veh_at()</a>, and <a class="el" href="mapgendata_8h_source.html#l00099">mapgendata::zlevel()</a>.</p>
+<p class="reference">References <a class="el" href="optional_8h_source.html#l00123">cata::optional&lt; T &gt;::has_value()</a>, <a class="el" href="mapgendata_8h_source.html#l00061">mapgendata::m</a>, <a class="el" href="map_8cpp_source.html#l01009">map::veh_at()</a>, and <a class="el" href="mapgendata_8h_source.html#l00099">mapgendata::zlevel()</a>.</p>
 
 </div>
 </div>
@@ -322,9 +322,9 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mapgen_8cpp_source.html#l01067">1067</a> of file <a class="el" href="mapgen_8cpp_source.html">mapgen.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mapgen_8cpp_source.html#l01084">1084</a> of file <a class="el" href="mapgen_8cpp_source.html">mapgen.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mapgen_8cpp_source.html#l01080">apply()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mapgen_8cpp_source.html#l01097">apply()</a>.</p>
 
 </div>
 </div>
@@ -340,9 +340,9 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mapgen_8cpp_source.html#l01068">1068</a> of file <a class="el" href="mapgen_8cpp_source.html">mapgen.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mapgen_8cpp_source.html#l01085">1085</a> of file <a class="el" href="mapgen_8cpp_source.html">mapgen.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mapgen_8cpp_source.html#l01080">apply()</a>, and <a class="el" href="mapgen_8cpp_source.html#l01069">jmapgen_gaspump()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mapgen_8cpp_source.html#l01097">apply()</a>, and <a class="el" href="mapgen_8cpp_source.html#l01086">jmapgen_gaspump()</a>.</p>
 
 </div>
 </div>
@@ -355,7 +355,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classjmapgen__gaspump.html">jmapgen_gaspump</a></li>
-    <li class="footer">Generated on Wed Oct 19 2022 14:19:36 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Mon Dec 26 2022 21:42:06 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -106,5 +106,6 @@ var searchData=
   ['mutation_5fdata_2ecpp_103',['mutation_data.cpp',['../mutation__data_8cpp.html',1,'']]],
   ['mutation_5fdata_2eh_104',['mutation_data.h',['../mutation__data_8h.html',1,'']]],
   ['mutation_5ftype_2ecpp_105',['mutation_type.cpp',['../mutation__type_8cpp.html',1,'']]],
-  ['mutation_5fui_2ecpp_106',['mutation_ui.cpp',['../mutation__ui_8cpp.html',1,'']]]
+  ['mutation_5fui_2ecpp_106',['mutation_ui.cpp',['../mutation__ui_8cpp.html',1,'']]],
+  ['mutation_5fui_2eh_107',['mutation_ui.h',['../mutation__ui_8h.html',1,'']]]
 ];

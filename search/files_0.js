@@ -48,5 +48,7 @@ var searchData=
   ['avatar_2ecpp_45',['avatar.cpp',['../avatar_8cpp.html',1,'']]],
   ['avatar_2eh_46',['avatar.h',['../avatar_8h.html',1,'']]],
   ['avatar_5faction_2ecpp_47',['avatar_action.cpp',['../avatar__action_8cpp.html',1,'']]],
-  ['avatar_5faction_2eh_48',['avatar_action.h',['../avatar__action_8h.html',1,'']]]
+  ['avatar_5faction_2eh_48',['avatar_action.h',['../avatar__action_8h.html',1,'']]],
+  ['avatar_5ffunctions_2ecpp_49',['avatar_functions.cpp',['../avatar__functions_8cpp.html',1,'']]],
+  ['avatar_5ffunctions_2eh_50',['avatar_functions.h',['../avatar__functions_8h.html',1,'']]]
 ];

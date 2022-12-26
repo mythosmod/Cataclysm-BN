@@ -131,7 +131,7 @@ var activity__handlers_8h =
     [ "operation_finish", "activity__handlers_8h.html#a144100c4d4617c0cc59a6207a23ceda4", null ],
     [ "oxytorch_do_turn", "activity__handlers_8h.html#af155c1ad98c3754a60f43b7bdf13466b", null ],
     [ "oxytorch_finish", "activity__handlers_8h.html#a70d14baa1cccd72c12f075ad421b8d32", null ],
-    [ "patch_activity_for_furniture", "activity__handlers_8h.html#a3797595d4215a8977cd3c5a39f063b4e", null ],
+    [ "patch_activity_for_furniture", "activity__handlers_8h.html#a3e3ae9542f50ef9949b9840ef4fce32c", null ],
     [ "patch_activity_for_vehicle_welder", "activity__handlers_8h.html#a5a06628fc3bbbfafb38b9b5b44e819d3", null ],
     [ "pickaxe_do_turn", "activity__handlers_8h.html#aa303269614d2e4cb8096e57fedbd56a8", null ],
     [ "pickaxe_finish", "activity__handlers_8h.html#a1ea4d8b07e809d4aaa1757b0f716d722", null ],

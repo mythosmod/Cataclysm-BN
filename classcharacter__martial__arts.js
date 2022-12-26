@@ -10,6 +10,7 @@ var classcharacter__martial__arts =
     [ "enumerate_known_styles", "classcharacter__martial__arts.html#a8527f1835dbf7fdbf991d13b89a695e3", null ],
     [ "get_all_techniques", "classcharacter__martial__arts.html#a9ccd8b60006158633ee0bf61997910ab", null ],
     [ "get_grab_break_tec", "classcharacter__martial__arts.html#ad1fa612678fdd9a8c92250fc07214ebb", null ],
+    [ "get_known_styles", "classcharacter__martial__arts.html#aced47825635685fb43fa0aa08eed3185", null ],
     [ "get_miss_recovery_tec", "classcharacter__martial__arts.html#ac4e113b83c1a61ad4d76b9b727ed7249", null ],
     [ "get_unknown_styles", "classcharacter__martial__arts.html#ab35159d1b4ce6f63d61288b86d512f00", null ],
     [ "has_grab_break_tec", "classcharacter__martial__arts.html#ab4bec3c382fbf3c010cf614502fdd325", null ],

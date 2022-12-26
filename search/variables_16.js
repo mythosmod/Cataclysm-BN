@@ -60,7 +60,7 @@ var searchData=
   ['vision_5fmode_5fcache_57',['vision_mode_cache',['../classCharacter.html#a325be099ee9d39deb2137435735e7eec',1,'Character']]],
   ['vision_5fnight_58',['vision_night',['../structmtype.html#af37c4d88f49584515720ebd0d9542114',1,'mtype']]],
   ['vision_5fthreshold_59',['vision_threshold',['../structvisibility__variables.html#a29009b81b8bdd36630c42f3b8773934d',1,'visibility_variables']]],
-  ['vision_5ftransparency_5fcache_60',['vision_transparency_cache',['../structlevel__cache.html#ae679f104e906364a8b4bfce502d99b67',1,'level_cache']]],
+  ['vision_5ftransparency_5fcache_60',['vision_transparency_cache',['../classmap.html#aad0b3dbde31b460398d0b9c92ba08c38',1,'map']]],
   ['visitable_3c_20inventory_20_3e_61',['visitable&lt; inventory &gt;',['../classinventory.html#aba3440bcc3065df3ae1f7f0db0210af5',1,'inventory']]],
   ['visitable_3c_20map_5fselector_20_3e_62',['visitable&lt; map_selector &gt;',['../classmap__selector.html#ac2655585bbde725a04ce48c5138c4aa9',1,'map_selector']]],
   ['visitable_3c_20vehicle_5fcursor_20_3e_63',['visitable&lt; vehicle_cursor &gt;',['../structvehicle__part.html#af5f5b7e3acb3297dcfc30bf949193907',1,'vehicle_part']]],

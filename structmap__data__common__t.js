@@ -37,6 +37,7 @@ var structmap__data__common__t =
     [ "message", "structmap__data__common__t.html#a46c6e061419038bcf93d0c0701370b63", null ],
     [ "movecost", "structmap__data__common__t.html#aa6eb23c1a5d8e89d877880f9aaf32eb6", null ],
     [ "name_", "structmap__data__common__t.html#a9946b19ec7262af1585f883f0b146290", null ],
+    [ "prompt", "structmap__data__common__t.html#a3832a97e92f7122b8739eab3b8e2a85c", null ],
     [ "pry", "structmap__data__common__t.html#a58b7afc95aa242623d88234d67c10e44", null ],
     [ "symbol_", "structmap__data__common__t.html#ab1bb1d5a66346b4b0541d42827c91b8a", null ],
     [ "transparent", "structmap__data__common__t.html#aaa7f70d692cb6d2c65af2168f50a2371", null ],

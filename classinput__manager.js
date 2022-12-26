@@ -21,6 +21,7 @@ var classinput__manager =
     [ "init", "classinput__manager.html#ab24c38af70d1715e73caa8fb54ffd88e", null ],
     [ "init_keycode_mapping", "classinput__manager.html#a3a65df46bf37043db29ac4c5ba2ac594", null ],
     [ "load", "classinput__manager.html#a719089e88c00c4b7888bf164094d733b", null ],
+    [ "pump_events", "classinput__manager.html#a56fd029f8ad1ca3dcd864a6bb5537045", null ],
     [ "remove_input_for_action", "classinput__manager.html#aadc9531489aa2b4c34afb1ee575cf2e3", null ],
     [ "reset_timeout", "classinput__manager.html#a50b6cecac4efcad8792187f159c953f9", null ],
     [ "save", "classinput__manager.html#a3b3a44f990f977f3a8d24c4d148b294d", null ],

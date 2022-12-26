@@ -187,7 +187,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memdesc:aa26700877b0cf2a70bb3af9926c9588b inherit pub_methods_classquery__popup"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query until a valid action or an error happens and return the result.  <a href="classquery__popup.html#aa26700877b0cf2a70bb3af9926c9588b">More...</a><br /></td></tr>
 <tr class="separator:aa26700877b0cf2a70bb3af9926c9588b inherit pub_methods_classquery__popup"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7924a3fb9a0327435b257230dac1f8ad inherit pub_methods_classquery__popup"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classui__adaptor.html">ui_adaptor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classquery__popup.html#a7924a3fb9a0327435b257230dac1f8ad">create_or_get_adaptor</a> (bool disable_below=false)</td></tr>
-<tr class="memdesc:a7924a3fb9a0327435b257230dac1f8ad inherit pub_methods_classquery__popup"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create or get a <a class="el" href="classui__adaptor.html">ui_adaptor</a> on the UI stack to handle redrawing and resizing of the popup.  <a href="classquery__popup.html#a7924a3fb9a0327435b257230dac1f8ad">More...</a><br /></td></tr>
+<tr class="memdesc:a7924a3fb9a0327435b257230dac1f8ad inherit pub_methods_classquery__popup"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create or get a <a class="el" href="classui__adaptor.html" title="Adaptor between UI code and the UI management system.">ui_adaptor</a> on the UI stack to handle redrawing and resizing of the popup.  <a href="classquery__popup.html#a7924a3fb9a0327435b257230dac1f8ad">More...</a><br /></td></tr>
 <tr class="separator:a7924a3fb9a0327435b257230dac1f8ad inherit pub_methods_classquery__popup"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -205,11 +205,11 @@ Additional Inherited Members</h2></td></tr>
 <div class="line">    <span class="comment">// The popup is removed from UI stack when it goes out of scope.</span></div>
 <div class="line">    <span class="comment">// Note that the removal is not visible until the next time `ui_manager::redraw` is called.</span></div>
 <div class="line">}</div>
-<div class="ttc" id="aclassthrobber__popup_html"><div class="ttname"><a href="classthrobber__popup.html">throbber_popup</a></div><div class="ttdoc">Popup optimized to work as a throbber (indicate some calculation running in background).</div><div class="ttdef"><b>Definition:</b> <a href="popup_8h_source.html#l00310">popup.h:311</a></div></div>
+<div class="ttc" id="aclassthrobber__popup_html"><div class="ttname"><a href="classthrobber__popup.html">throbber_popup</a></div><div class="ttdoc">Popup optimized to work as a throbber (indicate some calculation running in background).</div><div class="ttdef"><b>Definition:</b> <a href="popup_8h_source.html#l00312">popup.h:313</a></div></div>
 <div class="ttc" id="aoutput_8cpp_html_a1e645471d321d71b235fb285da5c08ff"><div class="ttname"><a href="output_8cpp.html#a1e645471d321d71b235fb285da5c08ff">popup</a></div><div class="ttdeci">int popup(const std::string &amp;text, PopupFlags flags)</div><div class="ttdef"><b>Definition:</b> <a href="output_8cpp_source.html#l00764">output.cpp:764</a></div></div>
 <div class="ttc" id="atranslations_8h_html_aa829053017e23ef22d44dccecba63a34"><div class="ttname"><a href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a></div><div class="ttdeci">#define _(msg)</div><div class="ttdef"><b>Definition:</b> <a href="translations_8h_source.html#l00116">translations.h:116</a></div></div>
 </div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="popup_8h_source.html#l00310">310</a> of file <a class="el" href="popup_8h_source.html">popup.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="popup_8h_source.html#l00312">312</a> of file <a class="el" href="popup_8h_source.html">popup.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a794e8bf7b5eddd145d20b809d5a5f621" name="a794e8bf7b5eddd145d20b809d5a5f621"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a794e8bf7b5eddd145d20b809d5a5f621">&#9670;&nbsp;</a></span>throbber_popup()</h2>
@@ -243,7 +243,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>}</div>
 <div class="ttc" id="aclassquery__popup_html_a4b9b36bd30d9aa3e98d5b56ed450c42c"><div class="ttname"><a href="classquery__popup.html#a4b9b36bd30d9aa3e98d5b56ed450c42c">query_popup::on_top</a></div><div class="ttdeci">query_popup &amp; on_top(bool top)</div><div class="ttdoc">Whether to show the popup on the top of the screen.</div><div class="ttdef"><b>Definition:</b> <a href="popup_8cpp_source.html#l00059">popup.cpp:59</a></div></div>
 <div class="ttc" id="aclassquery__popup_html_a7924a3fb9a0327435b257230dac1f8ad"><div class="ttname"><a href="classquery__popup.html#a7924a3fb9a0327435b257230dac1f8ad">query_popup::create_or_get_adaptor</a></div><div class="ttdeci">std::shared_ptr&lt; ui_adaptor &gt; create_or_get_adaptor(bool disable_below=false)</div><div class="ttdoc">Create or get a ui_adaptor on the UI stack to handle redrawing and resizing of the popup.</div><div class="ttdef"><b>Definition:</b> <a href="popup_8cpp_source.html#l00242">popup.cpp:242</a></div></div>
-<div class="ttc" id="aclassthrobber__popup_html_a365f852c62d127e79344128f4ce60c49"><div class="ttname"><a href="classthrobber__popup.html#a365f852c62d127e79344128f4ce60c49">throbber_popup::msg</a></div><div class="ttdeci">std::string msg</div><div class="ttdef"><b>Definition:</b> <a href="popup_8h_source.html#l00329">popup.h:329</a></div></div>
+<div class="ttc" id="aclassthrobber__popup_html_a365f852c62d127e79344128f4ce60c49"><div class="ttname"><a href="classthrobber__popup.html#a365f852c62d127e79344128f4ce60c49">throbber_popup::msg</a></div><div class="ttdeci">std::string msg</div><div class="ttdef"><b>Definition:</b> <a href="popup_8h_source.html#l00331">popup.h:331</a></div></div>
 <div class="ttc" id="anamespaceui_html"><div class="ttname"><a href="namespaceui.html">ui</a></div><div class="ttdef"><b>Definition:</b> <a href="overmap__ui_8h_source.html#l00016">overmap_ui.h:17</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="popup_8cpp_source.html#l00242">query_popup::create_or_get_adaptor()</a>, and <a class="el" href="popup_8cpp_source.html#l00059">query_popup::on_top()</a>.</p>
@@ -284,11 +284,11 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>    }</div>
 <div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>}</div>
 <div class="ttc" id="aclassquery__popup_html_adf6d28bcaa4e84bcd1950da1c8e40233"><div class="ttname"><a href="classquery__popup.html#adf6d28bcaa4e84bcd1950da1c8e40233">query_popup::wait_message</a></div><div class="ttdeci">query_popup &amp; wait_message(const nc_color &amp;bar_color, const std::string &amp;fmt, Args &amp;&amp;... args)</div><div class="ttdoc">Like query_popup::message, but with waiting symbol prepended to the text.</div><div class="ttdef"><b>Definition:</b> <a href="popup_8h_source.html#l00108">popup.h:108</a></div></div>
-<div class="ttc" id="aclassthrobber__popup_html_aaad041be75a7913496779001dc200aa4"><div class="ttname"><a href="classthrobber__popup.html#aaad041be75a7913496779001dc200aa4">throbber_popup::last_update</a></div><div class="ttdeci">std::chrono::steady_clock::time_point last_update</div><div class="ttdef"><b>Definition:</b> <a href="popup_8h_source.html#l00330">popup.h:330</a></div></div>
-<div class="ttc" id="anamespaceui__manager_html_ae38f3a918052ef286ee60daac47f52d4"><div class="ttname"><a href="namespaceui__manager.html#ae38f3a918052ef286ee60daac47f52d4">ui_manager::redraw</a></div><div class="ttdeci">void redraw()</div><div class="ttdef"><b>Definition:</b> <a href="ui__manager_8cpp_source.html#l00285">ui_manager.cpp:285</a></div></div>
+<div class="ttc" id="aclassthrobber__popup_html_aaad041be75a7913496779001dc200aa4"><div class="ttname"><a href="classthrobber__popup.html#aaad041be75a7913496779001dc200aa4">throbber_popup::last_update</a></div><div class="ttdeci">std::chrono::steady_clock::time_point last_update</div><div class="ttdef"><b>Definition:</b> <a href="popup_8h_source.html#l00332">popup.h:332</a></div></div>
+<div class="ttc" id="anamespaceui__manager_html_ae38f3a918052ef286ee60daac47f52d4"><div class="ttname"><a href="namespaceui__manager.html#ae38f3a918052ef286ee60daac47f52d4">ui_manager::redraw</a></div><div class="ttdeci">void redraw()</div><div class="ttdoc">Invalidate the top window and redraw all invalidated windows.</div><div class="ttdef"><b>Definition:</b> <a href="ui__manager_8cpp_source.html#l00389">ui_manager.cpp:389</a></div></div>
 <div class="ttc" id="ancurses__def_8cpp_html_a6fd55a287e038568d2304927ec8b2449"><div class="ttname"><a href="ncurses__def_8cpp.html#a6fd55a287e038568d2304927ec8b2449">refresh_display</a></div><div class="ttdeci">void refresh_display()</div><div class="ttdoc">Make changes made to the display visible to the user immediately.</div><div class="ttdef"><b>Definition:</b> <a href="ncurses__def_8cpp_source.html#l00120">ncurses_def.cpp:120</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="popup_8h_source.html#l00330">last_update</a>, <a class="el" href="popup_8h_source.html#l00329">msg</a>, <a class="el" href="ui__manager_8cpp_source.html#l00285">ui_manager::redraw()</a>, <a class="el" href="ncurses__def_8cpp_source.html#l00120">refresh_display()</a>, and <a class="el" href="popup_8h_source.html#l00108">query_popup::wait_message()</a>.</p>
+<p class="reference">References <a class="el" href="popup_8h_source.html#l00332">last_update</a>, <a class="el" href="popup_8h_source.html#l00331">msg</a>, <a class="el" href="ui__manager_8cpp_source.html#l00389">ui_manager::redraw()</a>, <a class="el" href="ncurses__def_8cpp_source.html#l00120">refresh_display()</a>, and <a class="el" href="popup_8h_source.html#l00108">query_popup::wait_message()</a>.</p>
 
 </div>
 </div>
@@ -313,7 +313,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="popup_8h_source.html#l00330">330</a> of file <a class="el" href="popup_8h_source.html">popup.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="popup_8h_source.html#l00332">332</a> of file <a class="el" href="popup_8h_source.html">popup.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="popup_8cpp_source.html#l00407">refresh()</a>.</p>
 
@@ -339,7 +339,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="popup_8h_source.html#l00329">329</a> of file <a class="el" href="popup_8h_source.html">popup.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="popup_8h_source.html#l00331">331</a> of file <a class="el" href="popup_8h_source.html">popup.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="popup_8cpp_source.html#l00407">refresh()</a>.</p>
 
@@ -365,7 +365,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="popup_8h_source.html#l00328">328</a> of file <a class="el" href="popup_8h_source.html">popup.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="popup_8h_source.html#l00330">330</a> of file <a class="el" href="popup_8h_source.html">popup.h</a>.</p>
 
 </div>
 </div>
@@ -379,7 +379,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classthrobber__popup.html">throbber_popup</a></li>
-    <li class="footer">Generated on Wed Oct 19 2022 14:19:48 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Mon Dec 26 2022 21:42:15 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -1,6 +1,7 @@
 var namespacevehicle__movement =
 [
     [ "rail_processing_result", "structvehicle__movement_1_1rail__processing__result.html", "structvehicle__movement_1_1rail__processing__result" ],
+    [ "get_num_cw_rots_of_ray_delta", "namespacevehicle__movement.html#ae8bd53e4bc2ad092da91884aec6d373d", null ],
     [ "is_on_rails", "namespacevehicle__movement.html#ad2c532fb5522d745b0006f7a3b36cab3", null ],
     [ "make_none", "namespacevehicle__movement.html#a90726346ef0084026393895b4e7bcb20", null ],
     [ "make_shift", "namespacevehicle__movement.html#ac828727a3d0872b1535bf031b77d0590", null ],

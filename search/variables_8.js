@@ -125,6 +125,6 @@ var searchData=
   ['humidity_5fmax_122',['humidity_max',['../structweather__requirements.html#a18c98f11a7701165cb4f6fa8f73d3b34',1,'weather_requirements']]],
   ['humidity_5fmin_123',['humidity_min',['../structweather__requirements.html#a28a41921ae70be2c5f69e23ced3f7857',1,'weather_requirements']]],
   ['humidity_5fmod_124',['humidity_mod',['../structseason__modifier.html#a431f81e8a4e90b613532d42318dfe447',1,'season_modifier']]],
-  ['hunger_125',['hunger',['../structdefense__game.html#aa1b843d4e67d660e6eb76013a31a0342',1,'defense_game::hunger()'],['../structmutation__branch.html#a8941954c7a99dfa4f8d61f0d0e569af2',1,'mutation_branch::hunger()'],['../structneeds__rates.html#a537fb128d773bdfedddacda084367e3a',1,'needs_rates::hunger()']]],
+  ['hunger_125',['hunger',['../structneeds__rates.html#a537fb128d773bdfedddacda084367e3a',1,'needs_rates::hunger()'],['../structdefense__game.html#aa1b843d4e67d660e6eb76013a31a0342',1,'defense_game::hunger()'],['../structmutation__branch.html#a8941954c7a99dfa4f8d61f0d0e569af2',1,'mutation_branch::hunger()']]],
   ['hurt_5fsizing_126',['hurt_sizing',['../classeffect__type.html#a0f0a21ce4345e5ad6555664d2af94b39',1,'effect_type']]]
 ];

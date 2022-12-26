@@ -224,15 +224,15 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="inventory__ui_8cpp_source.html#l01444">1444</a> of file <a class="el" href="inventory__ui_8cpp_source.html">inventory_ui.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01446" name="l01446"></a><span class="lineno"> 1446</span>{</div>
-<div class="line"><a id="l01447" name="l01447"></a><span class="lineno"> 1447</span>    <span class="keyword">const</span> <a class="code hl_class" href="classnc__color.html">nc_color</a> <a class="code hl_function" href="editmap_8cpp.html#a025a5c063205294df20818edc4cfe355">color</a> = cur_value &gt; <a class="code hl_function" href="namespacedetail.html#a32ecbd320068f0f120c060b49c3c4f79">max_value</a> ? <a class="code hl_define" href="color_8h.html#af0a87eaef36305269f4506dfa34d94c0">c_red</a> : <a class="code hl_define" href="color_8h.html#a1b1e3c0bef566a83c3535e38a93ad733">c_light_gray</a>;</div>
-<div class="line"><a id="l01448" name="l01448"></a><span class="lineno"> 1448</span>    <span class="keywordflow">return</span> {{</div>
-<div class="line"><a id="l01449" name="l01449"></a><span class="lineno"> 1449</span>            caption,</div>
-<div class="line"><a id="l01450" name="l01450"></a><span class="lineno"> 1450</span>            <a class="code hl_function" href="color_8cpp.html#a0f25678be1fc95cb81381a004493a4cc">colorize</a>( disp_func( cur_value ), <a class="code hl_function" href="editmap_8cpp.html#a025a5c063205294df20818edc4cfe355">color</a> ), <span class="stringliteral">&quot;/&quot;</span>,</div>
-<div class="line"><a id="l01451" name="l01451"></a><span class="lineno"> 1451</span>            <a class="code hl_function" href="color_8cpp.html#a0f25678be1fc95cb81381a004493a4cc">colorize</a>( disp_func( <a class="code hl_function" href="namespacedetail.html#a32ecbd320068f0f120c060b49c3c4f79">max_value</a> ), <a class="code hl_define" href="color_8h.html#a1b1e3c0bef566a83c3535e38a93ad733">c_light_gray</a> )</div>
-<div class="line"><a id="l01452" name="l01452"></a><span class="lineno"> 1452</span>        }};</div>
-<div class="line"><a id="l01453" name="l01453"></a><span class="lineno"> 1453</span>}</div>
+<p class="definition">Definition at line <a class="el" href="inventory__ui_8cpp_source.html#l01446">1446</a> of file <a class="el" href="inventory__ui_8cpp_source.html">inventory_ui.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01448" name="l01448"></a><span class="lineno"> 1448</span>{</div>
+<div class="line"><a id="l01449" name="l01449"></a><span class="lineno"> 1449</span>    <span class="keyword">const</span> <a class="code hl_class" href="classnc__color.html">nc_color</a> <a class="code hl_function" href="editmap_8cpp.html#a025a5c063205294df20818edc4cfe355">color</a> = cur_value &gt; <a class="code hl_function" href="namespacedetail.html#a32ecbd320068f0f120c060b49c3c4f79">max_value</a> ? <a class="code hl_define" href="color_8h.html#af0a87eaef36305269f4506dfa34d94c0">c_red</a> : <a class="code hl_define" href="color_8h.html#a1b1e3c0bef566a83c3535e38a93ad733">c_light_gray</a>;</div>
+<div class="line"><a id="l01450" name="l01450"></a><span class="lineno"> 1450</span>    <span class="keywordflow">return</span> {{</div>
+<div class="line"><a id="l01451" name="l01451"></a><span class="lineno"> 1451</span>            caption,</div>
+<div class="line"><a id="l01452" name="l01452"></a><span class="lineno"> 1452</span>            <a class="code hl_function" href="color_8cpp.html#a0f25678be1fc95cb81381a004493a4cc">colorize</a>( disp_func( cur_value ), <a class="code hl_function" href="editmap_8cpp.html#a025a5c063205294df20818edc4cfe355">color</a> ), <span class="stringliteral">&quot;/&quot;</span>,</div>
+<div class="line"><a id="l01453" name="l01453"></a><span class="lineno"> 1453</span>            <a class="code hl_function" href="color_8cpp.html#a0f25678be1fc95cb81381a004493a4cc">colorize</a>( disp_func( <a class="code hl_function" href="namespacedetail.html#a32ecbd320068f0f120c060b49c3c4f79">max_value</a> ), <a class="code hl_define" href="color_8h.html#a1b1e3c0bef566a83c3535e38a93ad733">c_light_gray</a> )</div>
+<div class="line"><a id="l01454" name="l01454"></a><span class="lineno"> 1454</span>        }};</div>
+<div class="line"><a id="l01455" name="l01455"></a><span class="lineno"> 1455</span>}</div>
 <div class="ttc" id="aclassnc__color_html"><div class="ttname"><a href="classnc__color.html">nc_color</a></div><div class="ttdef"><b>Definition:</b> <a href="color_8h_source.html#l00348">color.h:349</a></div></div>
 <div class="ttc" id="acolor_8cpp_html_a0f25678be1fc95cb81381a004493a4cc"><div class="ttname"><a href="color_8cpp.html#a0f25678be1fc95cb81381a004493a4cc">colorize</a></div><div class="ttdeci">std::string colorize(const std::string &amp;text, const nc_color &amp;color)</div><div class="ttdef"><b>Definition:</b> <a href="color_8cpp_source.html#l00669">color.cpp:669</a></div></div>
 <div class="ttc" id="acolor_8h_html_a1b1e3c0bef566a83c3535e38a93ad733"><div class="ttname"><a href="color_8h.html#a1b1e3c0bef566a83c3535e38a93ad733">c_light_gray</a></div><div class="ttdeci">#define c_light_gray</div><div class="ttdef"><b>Definition:</b> <a href="color_8h_source.html#l00019">color.h:19</a></div></div>
@@ -242,7 +242,7 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="color_8h_source.html#l00019">c_light_gray</a>, <a class="el" href="color_8h_source.html#l00021">c_red</a>, <a class="el" href="editmap_8cpp.html#a025a5c063205294df20818edc4cfe355">color()</a>, <a class="el" href="color_8cpp_source.html#l00669">colorize()</a>, and <a class="el" href="fmtlib__format_8h_source.html#l00344">detail::max_value()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="character__display_8cpp_source.html#l00318">draw_stats_tab()</a>, <a class="el" href="inventory__ui_8cpp_source.html#l01455">inventory_selector::get_weight_and_volume_stats()</a>, and <a class="el" href="game__inventory_8cpp_source.html#l01509">game_menus::inv::multiwash()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="character__display_8cpp_source.html#l00318">draw_stats_tab()</a>, <a class="el" href="inventory__ui_8cpp_source.html#l01457">inventory_selector::get_weight_and_volume_stats()</a>, and <a class="el" href="game__inventory_8cpp_source.html#l01521">game_menus::inv::multiwash()</a>.</p>
 
 </div>
 </div>
@@ -286,26 +286,26 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="inventory__ui_8cpp_source.html#l01076">1076</a> of file <a class="el" href="inventory__ui_8cpp_source.html">inventory_ui.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01078" name="l01078"></a><span class="lineno"> 1078</span>{</div>
-<div class="line"><a id="l01079" name="l01079"></a><span class="lineno"> 1079</span>    std::vector&lt;std::list&lt;item *&gt;&gt; res;</div>
-<div class="line"><a id="l01080" name="l01080"></a><span class="lineno"> 1080</span> </div>
-<div class="line"><a id="l01081" name="l01081"></a><span class="lineno"> 1081</span>    <span class="keywordflow">for</span>( <span class="keyword">auto</span> it = from; it != to; ++it ) {</div>
-<div class="line"><a id="l01082" name="l01082"></a><span class="lineno"> 1082</span>        <span class="keyword">auto</span> match = std::find_if( res.begin(), res.end(),</div>
-<div class="line"><a id="l01083" name="l01083"></a><span class="lineno"> 1083</span>        [ &amp;it, check_components ]( <span class="keyword">const</span> std::list&lt;item *&gt; &amp;e ) {</div>
-<div class="line"><a id="l01084" name="l01084"></a><span class="lineno"> 1084</span>            return it-&gt;display_stacked_with( *const_cast&lt;item *&gt;( e.back() ), check_components );</div>
-<div class="line"><a id="l01085" name="l01085"></a><span class="lineno"> 1085</span>        } );</div>
-<div class="line"><a id="l01086" name="l01086"></a><span class="lineno"> 1086</span> </div>
-<div class="line"><a id="l01087" name="l01087"></a><span class="lineno"> 1087</span>        <span class="keywordflow">if</span>( match != res.end() ) {</div>
-<div class="line"><a id="l01088" name="l01088"></a><span class="lineno"> 1088</span>            match-&gt;push_back( <span class="keyword">const_cast&lt;</span><a class="code hl_class" href="classitem.html">item</a> *<span class="keyword">&gt;</span>( &amp;*it ) );</div>
-<div class="line"><a id="l01089" name="l01089"></a><span class="lineno"> 1089</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l01090" name="l01090"></a><span class="lineno"> 1090</span>            res.emplace_back( 1, <span class="keyword">const_cast&lt;</span><a class="code hl_class" href="classitem.html">item</a> *<span class="keyword">&gt;</span>( &amp;*it ) );</div>
-<div class="line"><a id="l01091" name="l01091"></a><span class="lineno"> 1091</span>        }</div>
-<div class="line"><a id="l01092" name="l01092"></a><span class="lineno"> 1092</span>    }</div>
-<div class="line"><a id="l01093" name="l01093"></a><span class="lineno"> 1093</span> </div>
-<div class="line"><a id="l01094" name="l01094"></a><span class="lineno"> 1094</span>    <span class="keywordflow">return</span> res;</div>
-<div class="line"><a id="l01095" name="l01095"></a><span class="lineno"> 1095</span>}</div>
-<div class="ttc" id="aclassitem_html"><div class="ttname"><a href="classitem.html">item</a></div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l00175">item.h:176</a></div></div>
+<p class="definition">Definition at line <a class="el" href="inventory__ui_8cpp_source.html#l01078">1078</a> of file <a class="el" href="inventory__ui_8cpp_source.html">inventory_ui.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01080" name="l01080"></a><span class="lineno"> 1080</span>{</div>
+<div class="line"><a id="l01081" name="l01081"></a><span class="lineno"> 1081</span>    std::vector&lt;std::list&lt;item *&gt;&gt; res;</div>
+<div class="line"><a id="l01082" name="l01082"></a><span class="lineno"> 1082</span> </div>
+<div class="line"><a id="l01083" name="l01083"></a><span class="lineno"> 1083</span>    <span class="keywordflow">for</span>( <span class="keyword">auto</span> it = from; it != to; ++it ) {</div>
+<div class="line"><a id="l01084" name="l01084"></a><span class="lineno"> 1084</span>        <span class="keyword">auto</span> match = std::find_if( res.begin(), res.end(),</div>
+<div class="line"><a id="l01085" name="l01085"></a><span class="lineno"> 1085</span>        [ &amp;it, check_components ]( <span class="keyword">const</span> std::list&lt;item *&gt; &amp;e ) {</div>
+<div class="line"><a id="l01086" name="l01086"></a><span class="lineno"> 1086</span>            return it-&gt;display_stacked_with( *const_cast&lt;item *&gt;( e.back() ), check_components );</div>
+<div class="line"><a id="l01087" name="l01087"></a><span class="lineno"> 1087</span>        } );</div>
+<div class="line"><a id="l01088" name="l01088"></a><span class="lineno"> 1088</span> </div>
+<div class="line"><a id="l01089" name="l01089"></a><span class="lineno"> 1089</span>        <span class="keywordflow">if</span>( match != res.end() ) {</div>
+<div class="line"><a id="l01090" name="l01090"></a><span class="lineno"> 1090</span>            match-&gt;push_back( <span class="keyword">const_cast&lt;</span><a class="code hl_class" href="classitem.html">item</a> *<span class="keyword">&gt;</span>( &amp;*it ) );</div>
+<div class="line"><a id="l01091" name="l01091"></a><span class="lineno"> 1091</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l01092" name="l01092"></a><span class="lineno"> 1092</span>            res.emplace_back( 1, <span class="keyword">const_cast&lt;</span><a class="code hl_class" href="classitem.html">item</a> *<span class="keyword">&gt;</span>( &amp;*it ) );</div>
+<div class="line"><a id="l01093" name="l01093"></a><span class="lineno"> 1093</span>        }</div>
+<div class="line"><a id="l01094" name="l01094"></a><span class="lineno"> 1094</span>    }</div>
+<div class="line"><a id="l01095" name="l01095"></a><span class="lineno"> 1095</span> </div>
+<div class="line"><a id="l01096" name="l01096"></a><span class="lineno"> 1096</span>    <span class="keywordflow">return</span> res;</div>
+<div class="line"><a id="l01097" name="l01097"></a><span class="lineno"> 1097</span>}</div>
+<div class="ttc" id="aclassitem_html"><div class="ttname"><a href="classitem.html">item</a></div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l00176">item.h:177</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -349,27 +349,27 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="inventory__ui_8cpp_source.html#l01054">1054</a> of file <a class="el" href="inventory__ui_8cpp_source.html">inventory_ui.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01056" name="l01056"></a><span class="lineno"> 1056</span>{</div>
-<div class="line"><a id="l01057" name="l01057"></a><span class="lineno"> 1057</span>    std::vector&lt;std::list&lt;item *&gt;&gt; res;</div>
-<div class="line"><a id="l01058" name="l01058"></a><span class="lineno"> 1058</span> </div>
-<div class="line"><a id="l01059" name="l01059"></a><span class="lineno"> 1059</span>    <span class="keywordflow">for</span>( <span class="keyword">auto</span> it = from; it != to; ++it ) {</div>
-<div class="line"><a id="l01060" name="l01060"></a><span class="lineno"> 1060</span>        <span class="keyword">auto</span> match = std::find_if( res.begin(), res.end(),</div>
-<div class="line"><a id="l01061" name="l01061"></a><span class="lineno"> 1061</span>        [ &amp;it, check_components ]( <span class="keyword">const</span> std::list&lt;item *&gt; &amp;e ) {</div>
-<div class="line"><a id="l01062" name="l01062"></a><span class="lineno"> 1062</span>            return it-&gt;display_stacked_with( *const_cast&lt;item *&gt;( e.back() ), check_components );</div>
-<div class="line"><a id="l01063" name="l01063"></a><span class="lineno"> 1063</span>        } );</div>
-<div class="line"><a id="l01064" name="l01064"></a><span class="lineno"> 1064</span> </div>
-<div class="line"><a id="l01065" name="l01065"></a><span class="lineno"> 1065</span>        <span class="keywordflow">if</span>( match != res.end() ) {</div>
-<div class="line"><a id="l01066" name="l01066"></a><span class="lineno"> 1066</span>            match-&gt;push_back( <span class="keyword">const_cast&lt;</span><a class="code hl_class" href="classitem.html">item</a> *<span class="keyword">&gt;</span>( &amp;*it ) );</div>
-<div class="line"><a id="l01067" name="l01067"></a><span class="lineno"> 1067</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l01068" name="l01068"></a><span class="lineno"> 1068</span>            res.emplace_back( 1, <span class="keyword">const_cast&lt;</span><a class="code hl_class" href="classitem.html">item</a> *<span class="keyword">&gt;</span>( &amp;*it ) );</div>
-<div class="line"><a id="l01069" name="l01069"></a><span class="lineno"> 1069</span>        }</div>
-<div class="line"><a id="l01070" name="l01070"></a><span class="lineno"> 1070</span>    }</div>
-<div class="line"><a id="l01071" name="l01071"></a><span class="lineno"> 1071</span> </div>
-<div class="line"><a id="l01072" name="l01072"></a><span class="lineno"> 1072</span>    <span class="keywordflow">return</span> res;</div>
-<div class="line"><a id="l01073" name="l01073"></a><span class="lineno"> 1073</span>}</div>
+<p class="definition">Definition at line <a class="el" href="inventory__ui_8cpp_source.html#l01056">1056</a> of file <a class="el" href="inventory__ui_8cpp_source.html">inventory_ui.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01058" name="l01058"></a><span class="lineno"> 1058</span>{</div>
+<div class="line"><a id="l01059" name="l01059"></a><span class="lineno"> 1059</span>    std::vector&lt;std::list&lt;item *&gt;&gt; res;</div>
+<div class="line"><a id="l01060" name="l01060"></a><span class="lineno"> 1060</span> </div>
+<div class="line"><a id="l01061" name="l01061"></a><span class="lineno"> 1061</span>    <span class="keywordflow">for</span>( <span class="keyword">auto</span> it = from; it != to; ++it ) {</div>
+<div class="line"><a id="l01062" name="l01062"></a><span class="lineno"> 1062</span>        <span class="keyword">auto</span> match = std::find_if( res.begin(), res.end(),</div>
+<div class="line"><a id="l01063" name="l01063"></a><span class="lineno"> 1063</span>        [ &amp;it, check_components ]( <span class="keyword">const</span> std::list&lt;item *&gt; &amp;e ) {</div>
+<div class="line"><a id="l01064" name="l01064"></a><span class="lineno"> 1064</span>            return it-&gt;display_stacked_with( *const_cast&lt;item *&gt;( e.back() ), check_components );</div>
+<div class="line"><a id="l01065" name="l01065"></a><span class="lineno"> 1065</span>        } );</div>
+<div class="line"><a id="l01066" name="l01066"></a><span class="lineno"> 1066</span> </div>
+<div class="line"><a id="l01067" name="l01067"></a><span class="lineno"> 1067</span>        <span class="keywordflow">if</span>( match != res.end() ) {</div>
+<div class="line"><a id="l01068" name="l01068"></a><span class="lineno"> 1068</span>            match-&gt;push_back( <span class="keyword">const_cast&lt;</span><a class="code hl_class" href="classitem.html">item</a> *<span class="keyword">&gt;</span>( &amp;*it ) );</div>
+<div class="line"><a id="l01069" name="l01069"></a><span class="lineno"> 1069</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l01070" name="l01070"></a><span class="lineno"> 1070</span>            res.emplace_back( 1, <span class="keyword">const_cast&lt;</span><a class="code hl_class" href="classitem.html">item</a> *<span class="keyword">&gt;</span>( &amp;*it ) );</div>
+<div class="line"><a id="l01071" name="l01071"></a><span class="lineno"> 1071</span>        }</div>
+<div class="line"><a id="l01072" name="l01072"></a><span class="lineno"> 1072</span>    }</div>
+<div class="line"><a id="l01073" name="l01073"></a><span class="lineno"> 1073</span> </div>
+<div class="line"><a id="l01074" name="l01074"></a><span class="lineno"> 1074</span>    <span class="keywordflow">return</span> res;</div>
+<div class="line"><a id="l01075" name="l01075"></a><span class="lineno"> 1075</span>}</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="inventory__ui_8cpp_source.html#l01188">inventory_selector::add_character_items()</a>, <a class="el" href="inventory__ui_8cpp_source.html#l01208">inventory_selector::add_map_items()</a>, and <a class="el" href="inventory__ui_8cpp_source.html#l01221">inventory_selector::add_vehicle_items()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="inventory__ui_8cpp_source.html#l01190">inventory_selector::add_character_items()</a>, <a class="el" href="inventory__ui_8cpp_source.html#l01210">inventory_selector::add_map_items()</a>, and <a class="el" href="inventory__ui_8cpp_source.html#l01223">inventory_selector::add_vehicle_items()</a>.</p>
 
 </div>
 </div>
@@ -396,7 +396,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="inventory__ui_8cpp_source.html#l00071">71</a> of file <a class="el" href="inventory__ui_8cpp_source.html">inventory_ui.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="inventory__ui_8cpp_source.html#l02036">inventory_iuse_selector::execute()</a>, <a class="el" href="inventory__ui_8cpp_source.html#l02173">inventory_drop_selector::execute()</a>, <a class="el" href="inventory__ui_8cpp_source.html#l02153">inventory_drop_selector::process_selected()</a>, <a class="el" href="inventory__ui_8cpp_source.html#l02101">inventory_iuse_selector::set_chosen_count()</a>, and <a class="el" href="inventory__ui_8cpp_source.html#l02270">inventory_drop_selector::set_chosen_count()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="inventory__ui_8cpp_source.html#l02038">inventory_iuse_selector::execute()</a>, <a class="el" href="inventory__ui_8cpp_source.html#l02175">inventory_drop_selector::execute()</a>, <a class="el" href="inventory__ui_8cpp_source.html#l02155">inventory_drop_selector::process_selected()</a>, <a class="el" href="inventory__ui_8cpp_source.html#l02103">inventory_iuse_selector::set_chosen_count()</a>, and <a class="el" href="inventory__ui_8cpp_source.html#l02300">inventory_drop_selector::set_chosen_count()</a>.</p>
 
 </div>
 </div>
@@ -424,7 +424,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="inventory__ui_8cpp_source.html#l00051">51</a> of file <a class="el" href="inventory__ui_8cpp_source.html">inventory_ui.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="inventory__ui_8cpp_source.html#l01334">inventory_selector::prepare_layout()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="inventory__ui_8cpp_source.html#l01336">inventory_selector::prepare_layout()</a>.</p>
 
 </div>
 </div>
@@ -452,7 +452,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="inventory__ui_8cpp_source.html#l00053">53</a> of file <a class="el" href="inventory__ui_8cpp_source.html">inventory_ui.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="inventory__ui_8cpp_source.html#l00859">inventory_column::draw()</a>, and <a class="el" href="inventory__ui_8cpp_source.html#l00480">inventory_column::set_width()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="inventory__ui_8cpp_source.html#l00861">inventory_column::draw()</a>, and <a class="el" href="inventory__ui_8cpp_source.html#l00480">inventory_column::set_width()</a>.</p>
 
 </div>
 </div>
@@ -480,7 +480,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="inventory__ui_8cpp_source.html#l00059">59</a> of file <a class="el" href="inventory__ui_8cpp_source.html">inventory_ui.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="inventory__ui_8cpp_source.html#l01811">inventory_selector::get_columns_occupancy_ratio()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="inventory__ui_8cpp_source.html#l01813">inventory_selector::get_columns_occupancy_ratio()</a>.</p>
 
 </div>
 </div>
@@ -508,7 +508,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="inventory__ui_8cpp_source.html#l00057">57</a> of file <a class="el" href="inventory__ui_8cpp_source.html">inventory_ui.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="inventory__ui_8cpp_source.html#l00859">inventory_column::draw()</a>, and <a class="el" href="inventory__ui_8cpp_source.html#l00531">inventory_column::expand_to_fit()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="inventory__ui_8cpp_source.html#l00861">inventory_column::draw()</a>, and <a class="el" href="inventory__ui_8cpp_source.html#l00531">inventory_column::expand_to_fit()</a>.</p>
 
 </div>
 </div>
@@ -537,7 +537,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="inventory__ui_8cpp_source.html#l00066">66</a> of file <a class="el" href="inventory__ui_8cpp_source.html">inventory_ui.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="inventory__ui_8cpp_source.html#l01819">inventory_selector::are_columns_centered()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="inventory__ui_8cpp_source.html#l01821">inventory_selector::are_columns_centered()</a>.</p>
 
 </div>
 </div>
@@ -593,7 +593,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="inventory__ui_8cpp_source.html#l00061">61</a> of file <a class="el" href="inventory__ui_8cpp_source.html">inventory_ui.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="inventory__ui_8cpp_source.html#l01592">inventory_selector::draw_columns()</a>, and <a class="el" href="inventory__ui_8cpp_source.html#l01371">inventory_selector::get_layout_width()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="inventory__ui_8cpp_source.html#l01594">inventory_selector::draw_columns()</a>, and <a class="el" href="inventory__ui_8cpp_source.html#l01373">inventory_selector::get_layout_width()</a>.</p>
 
 </div>
 </div>
@@ -621,7 +621,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="inventory__ui_8cpp_source.html#l00069">69</a> of file <a class="el" href="inventory__ui_8cpp_source.html">inventory_ui.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="inventory__ui_8cpp_source.html#l00740">inventory_column::prepare_paging()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="inventory__ui_8cpp_source.html#l00742">inventory_column::prepare_paging()</a>.</p>
 
 </div>
 </div>
@@ -655,7 +655,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="inventory__ui_8cpp.html">inventory_ui.cpp</a></li>
-    <li class="footer">Generated on Wed Oct 19 2022 14:19:18 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Mon Dec 26 2022 21:41:51 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

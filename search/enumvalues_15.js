@@ -3,7 +3,7 @@ var searchData=
   ['uint128_5ftype_0',['uint128_type',['../namespacedetail.html#ad46d232fb6116de4dac0c43dbde8e7a9a3e36c658caeae0ad96bf06dc49216553',1,'detail']]],
   ['uint_5ftype_1',['uint_type',['../namespacedetail.html#ad46d232fb6116de4dac0c43dbde8e7a9a3c383a94c25cfa30af585e9cc4c1f395',1,'detail']]],
   ['ulong_5flong_5ftype_2',['ulong_long_type',['../namespacedetail.html#ad46d232fb6116de4dac0c43dbde8e7a9aa3f9d61ae41ea1110330fd2f5c4965dc',1,'detail']]],
-  ['uncomfortable_3',['uncomfortable',['../classCharacter.html#a764126d3e4c9f9450d6d9e40ec00d946ac19a5c3628d86633a40e23c78d4ff67d',1,'Character']]],
+  ['uncomfortable_3',['uncomfortable',['../namespacecharacter__funcs.html#a8614d6647ae110ba51944af26b80ecb7ac19a5c3628d86633a40e23c78d4ff67d',1,'character_funcs']]],
   ['unconnected_4',['unconnected',['../enums_8h.html#a00763863874f01b868849b27ceee73c9ab9f378b6c23a56efbb2f5c5014f78ea5',1,'enums.h']]],
   ['underground_5',['UNDERGROUND',['../classenchantment.html#a137b2a7be9c54ff0aa3dfaf1b1353d08a197997ce9a0708662b38d947f1629b79',1,'enchantment']]],
   ['underground_5fenv_6',['underground_env',['../namespacesfx.html#af20f2b1f5492d2f2d793da6d29740f18a0eccb42fe343ee6f375ff3bbfc4a1ab8',1,'sfx']]],

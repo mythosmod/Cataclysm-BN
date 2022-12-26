@@ -452,14 +452,14 @@ Public Attributes</h2></td></tr>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="structmongroup.html#a8324fcaf09bb4fb13cc2e527584dc151">avg_speed</a>;</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>}</div>
 <div class="ttc" id="aclassstring__id_html_a4796245d3cd6e0283670698a98d46ae9"><div class="ttname"><a href="classstring__id.html#a4796245d3cd6e0283670698a98d46ae9">string_id::obj</a></div><div class="ttdeci">const T &amp; obj() const</div><div class="ttdoc">Returns the actual object this id refers to.</div><div class="ttdef"><b>Definition:</b> <a href="achievement_8cpp_source.html#l00058">achievement.cpp:58</a></div></div>
-<div class="ttc" id="agame_8cpp_html_abeb98e93502d73818b4a73fabe191bc1"><div class="ttname"><a href="game_8cpp.html#abeb98e93502d73818b4a73fabe191bc1">g</a></div><div class="ttdeci">std::unique_ptr&lt; game &gt; g</div><div class="ttdef"><b>Definition:</b> <a href="game_8cpp_source.html#l00272">game.cpp:272</a></div></div>
+<div class="ttc" id="agame_8cpp_html_abeb98e93502d73818b4a73fabe191bc1"><div class="ttname"><a href="game_8cpp.html#abeb98e93502d73818b4a73fabe191bc1">g</a></div><div class="ttdeci">std::unique_ptr&lt; game &gt; g</div><div class="ttdef"><b>Definition:</b> <a href="game_8cpp_source.html#l00277">game.cpp:277</a></div></div>
 <div class="ttc" id="astructMonsterGroup_html"><div class="ttname"><a href="structMonsterGroup.html">MonsterGroup</a></div><div class="ttdef"><b>Definition:</b> <a href="mongroup_8h_source.html#l00064">mongroup.h:64</a></div></div>
 <div class="ttc" id="astructmongroup_html_a44f8e2edd8e069297037f5b4f35c9bef"><div class="ttname"><a href="structmongroup.html#a44f8e2edd8e069297037f5b4f35c9bef">mongroup::monsters</a></div><div class="ttdeci">std::vector&lt; monster &gt; monsters</div><div class="ttdoc">This property will be ignored if the vector is empty.</div><div class="ttdef"><b>Definition:</b> <a href="mongroup_8h_source.html#l00095">mongroup.h:95</a></div></div>
 <div class="ttc" id="astructmongroup_html_a8324fcaf09bb4fb13cc2e527584dc151"><div class="ttname"><a href="structmongroup.html#a8324fcaf09bb4fb13cc2e527584dc151">mongroup::avg_speed</a></div><div class="ttdeci">float avg_speed() const</div><div class="ttdef"><b>Definition:</b> <a href="mongroup_8cpp_source.html#l00060">mongroup.cpp:60</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="mongroup_8cpp_source.html#l00060">avg_speed()</a>, <a class="el" href="game_8cpp_source.html#l00272">g</a>, <a class="el" href="mongroup_8h_source.html#l00095">monsters</a>, <a class="el" href="achievement_8cpp_source.html#l00058">string_id&lt; T &gt;::obj()</a>, and <a class="el" href="mongroup_8h_source.html#l00080">type</a>.</p>
+<p class="reference">References <a class="el" href="mongroup_8cpp_source.html#l00060">avg_speed()</a>, <a class="el" href="game_8cpp_source.html#l00277">g</a>, <a class="el" href="mongroup_8h_source.html#l00095">monsters</a>, <a class="el" href="achievement_8cpp_source.html#l00058">string_id&lt; T &gt;::obj()</a>, and <a class="el" href="mongroup_8h_source.html#l00080">type</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mongroup_8cpp_source.html#l00060">avg_speed()</a>, and <a class="el" href="overmap_8cpp_source.html#l02202">overmap::move_hordes()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mongroup_8cpp_source.html#l00060">avg_speed()</a>, and <a class="el" href="overmap_8cpp_source.html#l02203">overmap::move_hordes()</a>.</p>
 
 </div>
 </div>
@@ -522,7 +522,7 @@ Public Attributes</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="mongroup_8h_source.html#l00087">interest</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="overmap_8cpp_source.html#l02202">overmap::move_hordes()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="overmap_8cpp_source.html#l02203">overmap::move_hordes()</a>.</p>
 
 </div>
 </div>
@@ -542,22 +542,22 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="savegame_8cpp_source.html#l01122">1122</a> of file <a class="el" href="savegame_8cpp_source.html">savegame.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01123" name="l01123"></a><span class="lineno"> 1123</span>{</div>
-<div class="line"><a id="l01124" name="l01124"></a><span class="lineno"> 1124</span>    <a class="code hl_class" href="classJsonObject.html">JsonObject</a> jo = data.<a class="code hl_function" href="classJsonIn.html#af988f122efed0696d9d05f649e57c9b2">get_object</a>();</div>
-<div class="line"><a id="l01125" name="l01125"></a><span class="lineno"> 1125</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae00f195360e3783cf50527cf07344202">allow_omitted_members</a>();</div>
-<div class="line"><a id="l01126" name="l01126"></a><span class="lineno"> 1126</span>    <a class="code hl_class" href="classio_1_1JsonObjectInputArchive.html">io::JsonObjectInputArchive</a> archive( jo );</div>
-<div class="line"><a id="l01127" name="l01127"></a><span class="lineno"> 1127</span>    <a class="code hl_function" href="structmongroup.html#aca018c450031e92a5925e87267d758ef">io</a>( archive );</div>
-<div class="line"><a id="l01128" name="l01128"></a><span class="lineno"> 1128</span>}</div>
+<p class="definition">Definition at line <a class="el" href="savegame_8cpp_source.html#l01127">1127</a> of file <a class="el" href="savegame_8cpp_source.html">savegame.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01128" name="l01128"></a><span class="lineno"> 1128</span>{</div>
+<div class="line"><a id="l01129" name="l01129"></a><span class="lineno"> 1129</span>    <a class="code hl_class" href="classJsonObject.html">JsonObject</a> jo = data.<a class="code hl_function" href="classJsonIn.html#af988f122efed0696d9d05f649e57c9b2">get_object</a>();</div>
+<div class="line"><a id="l01130" name="l01130"></a><span class="lineno"> 1130</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae00f195360e3783cf50527cf07344202">allow_omitted_members</a>();</div>
+<div class="line"><a id="l01131" name="l01131"></a><span class="lineno"> 1131</span>    <a class="code hl_class" href="classio_1_1JsonObjectInputArchive.html">io::JsonObjectInputArchive</a> archive( jo );</div>
+<div class="line"><a id="l01132" name="l01132"></a><span class="lineno"> 1132</span>    <a class="code hl_function" href="structmongroup.html#aca018c450031e92a5925e87267d758ef">io</a>( archive );</div>
+<div class="line"><a id="l01133" name="l01133"></a><span class="lineno"> 1133</span>}</div>
 <div class="ttc" id="aclassJsonIn_html_af988f122efed0696d9d05f649e57c9b2"><div class="ttname"><a href="classJsonIn.html#af988f122efed0696d9d05f649e57c9b2">JsonIn::get_object</a></div><div class="ttdeci">JsonObject get_object()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01364">json.cpp:1364</a></div></div>
 <div class="ttc" id="aclassJsonObject_html"><div class="ttname"><a href="classJsonObject.html">JsonObject</a></div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00831">json.h:832</a></div></div>
 <div class="ttc" id="aclassJsonObject_html_ae00f195360e3783cf50527cf07344202"><div class="ttname"><a href="classJsonObject.html#ae00f195360e3783cf50527cf07344202">JsonObject::allow_omitted_members</a></div><div class="ttdeci">void allow_omitted_members() const</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l00150">json.cpp:150</a></div></div>
 <div class="ttc" id="aclassio_1_1JsonObjectInputArchive_html"><div class="ttname"><a href="classio_1_1JsonObjectInputArchive.html">io::JsonObjectInputArchive</a></div><div class="ttdoc">Input archive reading data from a Json object.</div><div class="ttdef"><b>Definition:</b> <a href="cata__io_8h_source.html#l00184">cata_io.h:185</a></div></div>
-<div class="ttc" id="astructmongroup_html_aca018c450031e92a5925e87267d758ef"><div class="ttname"><a href="structmongroup.html#aca018c450031e92a5925e87267d758ef">mongroup::io</a></div><div class="ttdeci">void io(Archive &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="savegame_8cpp_source.html#l01107">savegame.cpp:1107</a></div></div>
+<div class="ttc" id="astructmongroup_html_aca018c450031e92a5925e87267d758ef"><div class="ttname"><a href="structmongroup.html#aca018c450031e92a5925e87267d758ef">mongroup::io</a></div><div class="ttdeci">void io(Archive &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="savegame_8cpp_source.html#l01112">savegame.cpp:1112</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="json_8cpp_source.html#l00150">JsonObject::allow_omitted_members()</a>, <a class="el" href="json_8cpp_source.html#l01364">JsonIn::get_object()</a>, and <a class="el" href="savegame_8cpp_source.html#l01107">io()</a>.</p>
+<p class="reference">References <a class="el" href="json_8cpp_source.html#l00150">JsonObject::allow_omitted_members()</a>, <a class="el" href="json_8cpp_source.html#l01364">JsonIn::get_object()</a>, and <a class="el" href="savegame_8cpp_source.html#l01112">io()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="savegame_8cpp_source.html#l00395">overmap::load_monster_groups()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="savegame_8cpp_source.html#l00400">overmap::load_monster_groups()</a>.</p>
 
 </div>
 </div>
@@ -577,41 +577,41 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="savegame_8cpp_source.html#l01136">1136</a> of file <a class="el" href="savegame_8cpp_source.html">savegame.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01137" name="l01137"></a><span class="lineno"> 1137</span>{</div>
-<div class="line"><a id="l01138" name="l01138"></a><span class="lineno"> 1138</span>    json.<a class="code hl_function" href="classJsonIn.html#afb107941614a64343cc1e69550f7b24b">start_object</a>();</div>
-<div class="line"><a id="l01139" name="l01139"></a><span class="lineno"> 1139</span>    <span class="keywordflow">while</span>( !json.<a class="code hl_function" href="classJsonIn.html#ad7e26ee4c8931e4a7bd7375a0a77595a">end_object</a>() ) {</div>
-<div class="line"><a id="l01140" name="l01140"></a><span class="lineno"> 1140</span>        std::string <a class="code hl_function" href="namespaceom__direction.html#a8ba958ccfad28c0a5572a04dd1428f32">name</a> = json.<a class="code hl_function" href="classJsonIn.html#a6794f25357d307de007a31ba4f1a09a0">get_member_name</a>();</div>
-<div class="line"><a id="l01141" name="l01141"></a><span class="lineno"> 1141</span>        <span class="keywordflow">if</span>( <a class="code hl_function" href="namespaceom__direction.html#a8ba958ccfad28c0a5572a04dd1428f32">name</a> == <span class="stringliteral">&quot;type&quot;</span> ) {</div>
-<div class="line"><a id="l01142" name="l01142"></a><span class="lineno"> 1142</span>            <a class="code hl_variable" href="structmongroup.html#adbf63066421abfd7b8b34d1e88180a2e">type</a> = <a class="code hl_typedef" href="type__id_8h.html#ae4abc6ea4de371540f13f8466e463264">mongroup_id</a>( json.<a class="code hl_function" href="classJsonIn.html#a7af38e6fc060866be2322268b5d3bcb9">get_string</a>() );</div>
-<div class="line"><a id="l01143" name="l01143"></a><span class="lineno"> 1143</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( <a class="code hl_function" href="namespaceom__direction.html#a8ba958ccfad28c0a5572a04dd1428f32">name</a> == <span class="stringliteral">&quot;pos&quot;</span> ) {</div>
-<div class="line"><a id="l01144" name="l01144"></a><span class="lineno"> 1144</span>            <a class="code hl_variable" href="structmongroup.html#a129f3403d8e77daa6c9494f03999a34e">pos</a>.<a class="code hl_function" href="classcoords_1_1coord__point.html#a57c56264de191a63f4fc726ff21da7a4">deserialize</a>( json );</div>
-<div class="line"><a id="l01145" name="l01145"></a><span class="lineno"> 1145</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( <a class="code hl_function" href="namespaceom__direction.html#a8ba958ccfad28c0a5572a04dd1428f32">name</a> == <span class="stringliteral">&quot;radius&quot;</span> ) {</div>
-<div class="line"><a id="l01146" name="l01146"></a><span class="lineno"> 1146</span>            <a class="code hl_variable" href="structmongroup.html#a61921bfa609f4420adb59d7dc394a43b">radius</a> = json.<a class="code hl_function" href="classJsonIn.html#a4ad2af6b619e40578784928e9a3fd134">get_int</a>();</div>
-<div class="line"><a id="l01147" name="l01147"></a><span class="lineno"> 1147</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( <a class="code hl_function" href="namespaceom__direction.html#a8ba958ccfad28c0a5572a04dd1428f32">name</a> == <span class="stringliteral">&quot;population&quot;</span> ) {</div>
-<div class="line"><a id="l01148" name="l01148"></a><span class="lineno"> 1148</span>            <a class="code hl_variable" href="structmongroup.html#abcb866f070bebd60542594d3d97e55f8">population</a> = json.<a class="code hl_function" href="classJsonIn.html#a4ad2af6b619e40578784928e9a3fd134">get_int</a>();</div>
-<div class="line"><a id="l01149" name="l01149"></a><span class="lineno"> 1149</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( <a class="code hl_function" href="namespaceom__direction.html#a8ba958ccfad28c0a5572a04dd1428f32">name</a> == <span class="stringliteral">&quot;diffuse&quot;</span> ) {</div>
-<div class="line"><a id="l01150" name="l01150"></a><span class="lineno"> 1150</span>            <a class="code hl_variable" href="structmongroup.html#a40bbfecf436a67f8e5aeb61b485040b7">diffuse</a> = json.<a class="code hl_function" href="classJsonIn.html#a1d776b66d738a1657104cfdafc4fab34">get_bool</a>();</div>
-<div class="line"><a id="l01151" name="l01151"></a><span class="lineno"> 1151</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( <a class="code hl_function" href="namespaceom__direction.html#a8ba958ccfad28c0a5572a04dd1428f32">name</a> == <span class="stringliteral">&quot;dying&quot;</span> ) {</div>
-<div class="line"><a id="l01152" name="l01152"></a><span class="lineno"> 1152</span>            <a class="code hl_variable" href="structmongroup.html#a5eaad3f585d6e92f1e7164e50fc206e5">dying</a> = json.<a class="code hl_function" href="classJsonIn.html#a1d776b66d738a1657104cfdafc4fab34">get_bool</a>();</div>
-<div class="line"><a id="l01153" name="l01153"></a><span class="lineno"> 1153</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( <a class="code hl_function" href="namespaceom__direction.html#a8ba958ccfad28c0a5572a04dd1428f32">name</a> == <span class="stringliteral">&quot;horde&quot;</span> ) {</div>
-<div class="line"><a id="l01154" name="l01154"></a><span class="lineno"> 1154</span>            <a class="code hl_variable" href="structmongroup.html#ad1ba3e75ac2f63c116b156bd17606709">horde</a> = json.<a class="code hl_function" href="classJsonIn.html#a1d776b66d738a1657104cfdafc4fab34">get_bool</a>();</div>
-<div class="line"><a id="l01155" name="l01155"></a><span class="lineno"> 1155</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( <a class="code hl_function" href="namespaceom__direction.html#a8ba958ccfad28c0a5572a04dd1428f32">name</a> == <span class="stringliteral">&quot;target&quot;</span> ) {</div>
-<div class="line"><a id="l01156" name="l01156"></a><span class="lineno"> 1156</span>            <a class="code hl_variable" href="structmongroup.html#a73a776cff09bb5c33ba76f17250216bc">target</a>.<a class="code hl_function" href="classcoords_1_1coord__point.html#a57c56264de191a63f4fc726ff21da7a4">deserialize</a>( json );</div>
-<div class="line"><a id="l01157" name="l01157"></a><span class="lineno"> 1157</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( <a class="code hl_function" href="namespaceom__direction.html#a8ba958ccfad28c0a5572a04dd1428f32">name</a> == <span class="stringliteral">&quot;interest&quot;</span> ) {</div>
-<div class="line"><a id="l01158" name="l01158"></a><span class="lineno"> 1158</span>            <a class="code hl_variable" href="structmongroup.html#ad3987da25132a603688d803e87873fa2">interest</a> = json.<a class="code hl_function" href="classJsonIn.html#a4ad2af6b619e40578784928e9a3fd134">get_int</a>();</div>
-<div class="line"><a id="l01159" name="l01159"></a><span class="lineno"> 1159</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( <a class="code hl_function" href="namespaceom__direction.html#a8ba958ccfad28c0a5572a04dd1428f32">name</a> == <span class="stringliteral">&quot;horde_behaviour&quot;</span> ) {</div>
-<div class="line"><a id="l01160" name="l01160"></a><span class="lineno"> 1160</span>            <a class="code hl_variable" href="structmongroup.html#ab6a6b28d74efd6ddf631c868747535f3">horde_behaviour</a> = json.<a class="code hl_function" href="classJsonIn.html#a7af38e6fc060866be2322268b5d3bcb9">get_string</a>();</div>
-<div class="line"><a id="l01161" name="l01161"></a><span class="lineno"> 1161</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( <a class="code hl_function" href="namespaceom__direction.html#a8ba958ccfad28c0a5572a04dd1428f32">name</a> == <span class="stringliteral">&quot;monsters&quot;</span> ) {</div>
-<div class="line"><a id="l01162" name="l01162"></a><span class="lineno"> 1162</span>            json.<a class="code hl_function" href="classJsonIn.html#a70443f07b40c2a0ab1aee1e0418a1faf">start_array</a>();</div>
-<div class="line"><a id="l01163" name="l01163"></a><span class="lineno"> 1163</span>            <span class="keywordflow">while</span>( !json.<a class="code hl_function" href="classJsonIn.html#adb53515d72e6e0457ae3266ace12d5e5">end_array</a>() ) {</div>
-<div class="line"><a id="l01164" name="l01164"></a><span class="lineno"> 1164</span>                <a class="code hl_class" href="classmonster.html">monster</a> new_monster;</div>
-<div class="line"><a id="l01165" name="l01165"></a><span class="lineno"> 1165</span>                new_monster.<a class="code hl_function" href="classmonster.html#a56d6d6d397115042b2d52d044ca922ea">deserialize</a>( json );</div>
-<div class="line"><a id="l01166" name="l01166"></a><span class="lineno"> 1166</span>                <a class="code hl_variable" href="structmongroup.html#a44f8e2edd8e069297037f5b4f35c9bef">monsters</a>.push_back( new_monster );</div>
-<div class="line"><a id="l01167" name="l01167"></a><span class="lineno"> 1167</span>            }</div>
-<div class="line"><a id="l01168" name="l01168"></a><span class="lineno"> 1168</span>        }</div>
-<div class="line"><a id="l01169" name="l01169"></a><span class="lineno"> 1169</span>    }</div>
-<div class="line"><a id="l01170" name="l01170"></a><span class="lineno"> 1170</span>}</div>
+<p class="definition">Definition at line <a class="el" href="savegame_8cpp_source.html#l01141">1141</a> of file <a class="el" href="savegame_8cpp_source.html">savegame.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01142" name="l01142"></a><span class="lineno"> 1142</span>{</div>
+<div class="line"><a id="l01143" name="l01143"></a><span class="lineno"> 1143</span>    json.<a class="code hl_function" href="classJsonIn.html#afb107941614a64343cc1e69550f7b24b">start_object</a>();</div>
+<div class="line"><a id="l01144" name="l01144"></a><span class="lineno"> 1144</span>    <span class="keywordflow">while</span>( !json.<a class="code hl_function" href="classJsonIn.html#ad7e26ee4c8931e4a7bd7375a0a77595a">end_object</a>() ) {</div>
+<div class="line"><a id="l01145" name="l01145"></a><span class="lineno"> 1145</span>        std::string <a class="code hl_function" href="namespaceom__direction.html#a8ba958ccfad28c0a5572a04dd1428f32">name</a> = json.<a class="code hl_function" href="classJsonIn.html#a6794f25357d307de007a31ba4f1a09a0">get_member_name</a>();</div>
+<div class="line"><a id="l01146" name="l01146"></a><span class="lineno"> 1146</span>        <span class="keywordflow">if</span>( <a class="code hl_function" href="namespaceom__direction.html#a8ba958ccfad28c0a5572a04dd1428f32">name</a> == <span class="stringliteral">&quot;type&quot;</span> ) {</div>
+<div class="line"><a id="l01147" name="l01147"></a><span class="lineno"> 1147</span>            <a class="code hl_variable" href="structmongroup.html#adbf63066421abfd7b8b34d1e88180a2e">type</a> = <a class="code hl_typedef" href="type__id_8h.html#ae4abc6ea4de371540f13f8466e463264">mongroup_id</a>( json.<a class="code hl_function" href="classJsonIn.html#a7af38e6fc060866be2322268b5d3bcb9">get_string</a>() );</div>
+<div class="line"><a id="l01148" name="l01148"></a><span class="lineno"> 1148</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( <a class="code hl_function" href="namespaceom__direction.html#a8ba958ccfad28c0a5572a04dd1428f32">name</a> == <span class="stringliteral">&quot;pos&quot;</span> ) {</div>
+<div class="line"><a id="l01149" name="l01149"></a><span class="lineno"> 1149</span>            <a class="code hl_variable" href="structmongroup.html#a129f3403d8e77daa6c9494f03999a34e">pos</a>.<a class="code hl_function" href="classcoords_1_1coord__point.html#a57c56264de191a63f4fc726ff21da7a4">deserialize</a>( json );</div>
+<div class="line"><a id="l01150" name="l01150"></a><span class="lineno"> 1150</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( <a class="code hl_function" href="namespaceom__direction.html#a8ba958ccfad28c0a5572a04dd1428f32">name</a> == <span class="stringliteral">&quot;radius&quot;</span> ) {</div>
+<div class="line"><a id="l01151" name="l01151"></a><span class="lineno"> 1151</span>            <a class="code hl_variable" href="structmongroup.html#a61921bfa609f4420adb59d7dc394a43b">radius</a> = json.<a class="code hl_function" href="classJsonIn.html#a4ad2af6b619e40578784928e9a3fd134">get_int</a>();</div>
+<div class="line"><a id="l01152" name="l01152"></a><span class="lineno"> 1152</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( <a class="code hl_function" href="namespaceom__direction.html#a8ba958ccfad28c0a5572a04dd1428f32">name</a> == <span class="stringliteral">&quot;population&quot;</span> ) {</div>
+<div class="line"><a id="l01153" name="l01153"></a><span class="lineno"> 1153</span>            <a class="code hl_variable" href="structmongroup.html#abcb866f070bebd60542594d3d97e55f8">population</a> = json.<a class="code hl_function" href="classJsonIn.html#a4ad2af6b619e40578784928e9a3fd134">get_int</a>();</div>
+<div class="line"><a id="l01154" name="l01154"></a><span class="lineno"> 1154</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( <a class="code hl_function" href="namespaceom__direction.html#a8ba958ccfad28c0a5572a04dd1428f32">name</a> == <span class="stringliteral">&quot;diffuse&quot;</span> ) {</div>
+<div class="line"><a id="l01155" name="l01155"></a><span class="lineno"> 1155</span>            <a class="code hl_variable" href="structmongroup.html#a40bbfecf436a67f8e5aeb61b485040b7">diffuse</a> = json.<a class="code hl_function" href="classJsonIn.html#a1d776b66d738a1657104cfdafc4fab34">get_bool</a>();</div>
+<div class="line"><a id="l01156" name="l01156"></a><span class="lineno"> 1156</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( <a class="code hl_function" href="namespaceom__direction.html#a8ba958ccfad28c0a5572a04dd1428f32">name</a> == <span class="stringliteral">&quot;dying&quot;</span> ) {</div>
+<div class="line"><a id="l01157" name="l01157"></a><span class="lineno"> 1157</span>            <a class="code hl_variable" href="structmongroup.html#a5eaad3f585d6e92f1e7164e50fc206e5">dying</a> = json.<a class="code hl_function" href="classJsonIn.html#a1d776b66d738a1657104cfdafc4fab34">get_bool</a>();</div>
+<div class="line"><a id="l01158" name="l01158"></a><span class="lineno"> 1158</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( <a class="code hl_function" href="namespaceom__direction.html#a8ba958ccfad28c0a5572a04dd1428f32">name</a> == <span class="stringliteral">&quot;horde&quot;</span> ) {</div>
+<div class="line"><a id="l01159" name="l01159"></a><span class="lineno"> 1159</span>            <a class="code hl_variable" href="structmongroup.html#ad1ba3e75ac2f63c116b156bd17606709">horde</a> = json.<a class="code hl_function" href="classJsonIn.html#a1d776b66d738a1657104cfdafc4fab34">get_bool</a>();</div>
+<div class="line"><a id="l01160" name="l01160"></a><span class="lineno"> 1160</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( <a class="code hl_function" href="namespaceom__direction.html#a8ba958ccfad28c0a5572a04dd1428f32">name</a> == <span class="stringliteral">&quot;target&quot;</span> ) {</div>
+<div class="line"><a id="l01161" name="l01161"></a><span class="lineno"> 1161</span>            <a class="code hl_variable" href="structmongroup.html#a73a776cff09bb5c33ba76f17250216bc">target</a>.<a class="code hl_function" href="classcoords_1_1coord__point.html#a57c56264de191a63f4fc726ff21da7a4">deserialize</a>( json );</div>
+<div class="line"><a id="l01162" name="l01162"></a><span class="lineno"> 1162</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( <a class="code hl_function" href="namespaceom__direction.html#a8ba958ccfad28c0a5572a04dd1428f32">name</a> == <span class="stringliteral">&quot;interest&quot;</span> ) {</div>
+<div class="line"><a id="l01163" name="l01163"></a><span class="lineno"> 1163</span>            <a class="code hl_variable" href="structmongroup.html#ad3987da25132a603688d803e87873fa2">interest</a> = json.<a class="code hl_function" href="classJsonIn.html#a4ad2af6b619e40578784928e9a3fd134">get_int</a>();</div>
+<div class="line"><a id="l01164" name="l01164"></a><span class="lineno"> 1164</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( <a class="code hl_function" href="namespaceom__direction.html#a8ba958ccfad28c0a5572a04dd1428f32">name</a> == <span class="stringliteral">&quot;horde_behaviour&quot;</span> ) {</div>
+<div class="line"><a id="l01165" name="l01165"></a><span class="lineno"> 1165</span>            <a class="code hl_variable" href="structmongroup.html#ab6a6b28d74efd6ddf631c868747535f3">horde_behaviour</a> = json.<a class="code hl_function" href="classJsonIn.html#a7af38e6fc060866be2322268b5d3bcb9">get_string</a>();</div>
+<div class="line"><a id="l01166" name="l01166"></a><span class="lineno"> 1166</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( <a class="code hl_function" href="namespaceom__direction.html#a8ba958ccfad28c0a5572a04dd1428f32">name</a> == <span class="stringliteral">&quot;monsters&quot;</span> ) {</div>
+<div class="line"><a id="l01167" name="l01167"></a><span class="lineno"> 1167</span>            json.<a class="code hl_function" href="classJsonIn.html#a70443f07b40c2a0ab1aee1e0418a1faf">start_array</a>();</div>
+<div class="line"><a id="l01168" name="l01168"></a><span class="lineno"> 1168</span>            <span class="keywordflow">while</span>( !json.<a class="code hl_function" href="classJsonIn.html#adb53515d72e6e0457ae3266ace12d5e5">end_array</a>() ) {</div>
+<div class="line"><a id="l01169" name="l01169"></a><span class="lineno"> 1169</span>                <a class="code hl_class" href="classmonster.html">monster</a> new_monster;</div>
+<div class="line"><a id="l01170" name="l01170"></a><span class="lineno"> 1170</span>                new_monster.<a class="code hl_function" href="classmonster.html#a56d6d6d397115042b2d52d044ca922ea">deserialize</a>( json );</div>
+<div class="line"><a id="l01171" name="l01171"></a><span class="lineno"> 1171</span>                <a class="code hl_variable" href="structmongroup.html#a44f8e2edd8e069297037f5b4f35c9bef">monsters</a>.push_back( new_monster );</div>
+<div class="line"><a id="l01172" name="l01172"></a><span class="lineno"> 1172</span>            }</div>
+<div class="line"><a id="l01173" name="l01173"></a><span class="lineno"> 1173</span>        }</div>
+<div class="line"><a id="l01174" name="l01174"></a><span class="lineno"> 1174</span>    }</div>
+<div class="line"><a id="l01175" name="l01175"></a><span class="lineno"> 1175</span>}</div>
 <div class="ttc" id="aclassJsonIn_html_a1d776b66d738a1657104cfdafc4fab34"><div class="ttname"><a href="classJsonIn.html#a1d776b66d738a1657104cfdafc4fab34">JsonIn::get_bool</a></div><div class="ttdeci">bool get_bool()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01331">json.cpp:1331</a></div></div>
 <div class="ttc" id="aclassJsonIn_html_a4ad2af6b619e40578784928e9a3fd134"><div class="ttname"><a href="classJsonIn.html#a4ad2af6b619e40578784928e9a3fd134">JsonIn::get_int</a></div><div class="ttdeci">int get_int()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01187">json.cpp:1187</a></div></div>
 <div class="ttc" id="aclassJsonIn_html_a6794f25357d307de007a31ba4f1a09a0"><div class="ttname"><a href="classJsonIn.html#a6794f25357d307de007a31ba4f1a09a0">JsonIn::get_member_name</a></div><div class="ttdeci">std::string get_member_name()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l00955">json.cpp:955</a></div></div>
@@ -622,14 +622,14 @@ Public Attributes</h2></td></tr>
 <div class="ttc" id="aclassJsonIn_html_afb107941614a64343cc1e69550f7b24b"><div class="ttname"><a href="classJsonIn.html#afb107941614a64343cc1e69550f7b24b">JsonIn::start_object</a></div><div class="ttdeci">void start_object()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01406">json.cpp:1406</a></div></div>
 <div class="ttc" id="aclasscoords_1_1coord__point_html_a57c56264de191a63f4fc726ff21da7a4"><div class="ttname"><a href="classcoords_1_1coord__point.html#a57c56264de191a63f4fc726ff21da7a4">coords::coord_point::deserialize</a></div><div class="ttdeci">void deserialize(JsonIn &amp;jsin)</div><div class="ttdef"><b>Definition:</b> <a href="coordinates_8h_source.html#l00147">coordinates.h:147</a></div></div>
 <div class="ttc" id="aclassmonster_html"><div class="ttname"><a href="classmonster.html">monster</a></div><div class="ttdef"><b>Definition:</b> <a href="monster_8h_source.html#l00084">monster.h:85</a></div></div>
-<div class="ttc" id="aclassmonster_html_a56d6d6d397115042b2d52d044ca922ea"><div class="ttname"><a href="classmonster.html#a56d6d6d397115042b2d52d044ca922ea">monster::deserialize</a></div><div class="ttdeci">void deserialize(JsonIn &amp;jsin)</div><div class="ttdef"><b>Definition:</b> <a href="savegame__json_8cpp_source.html#l01773">savegame_json.cpp:1773</a></div></div>
-<div class="ttc" id="anamespaceom__direction_html_a8ba958ccfad28c0a5572a04dd1428f32"><div class="ttname"><a href="namespaceom__direction.html#a8ba958ccfad28c0a5572a04dd1428f32">om_direction::name</a></div><div class="ttdeci">std::string name(type dir)</div><div class="ttdoc">Get Human readable name of a direction.</div><div class="ttdef"><b>Definition:</b> <a href="overmap_8cpp_source.html#l04126">overmap.cpp:4126</a></div></div>
+<div class="ttc" id="aclassmonster_html_a56d6d6d397115042b2d52d044ca922ea"><div class="ttname"><a href="classmonster.html#a56d6d6d397115042b2d52d044ca922ea">monster::deserialize</a></div><div class="ttdeci">void deserialize(JsonIn &amp;jsin)</div><div class="ttdef"><b>Definition:</b> <a href="savegame__json_8cpp_source.html#l01770">savegame_json.cpp:1770</a></div></div>
+<div class="ttc" id="anamespaceom__direction_html_a8ba958ccfad28c0a5572a04dd1428f32"><div class="ttname"><a href="namespaceom__direction.html#a8ba958ccfad28c0a5572a04dd1428f32">om_direction::name</a></div><div class="ttdeci">std::string name(type dir)</div><div class="ttdoc">Get Human readable name of a direction.</div><div class="ttdef"><b>Definition:</b> <a href="overmap_8cpp_source.html#l04127">overmap.cpp:4127</a></div></div>
 <div class="ttc" id="astructmongroup_html_ab6a6b28d74efd6ddf631c868747535f3"><div class="ttname"><a href="structmongroup.html#ab6a6b28d74efd6ddf631c868747535f3">mongroup::horde_behaviour</a></div><div class="ttdeci">std::string horde_behaviour</div><div class="ttdoc">There are two types of hordes: &quot;city&quot;, who try to stick around cities and return to them whenever pos...</div><div class="ttdef"><b>Definition:</b> <a href="mongroup_8h_source.html#l00102">mongroup.h:102</a></div></div>
 <div class="ttc" id="atype__id_8h_html_ae4abc6ea4de371540f13f8466e463264"><div class="ttname"><a href="type__id_8h.html#ae4abc6ea4de371540f13f8466e463264">mongroup_id</a></div><div class="ttdeci">string_id&lt; MonsterGroup &gt; mongroup_id</div><div class="ttdef"><b>Definition:</b> <a href="type__id_8h_source.html#l00105">type_id.h:105</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="coordinates_8h_source.html#l00147">coords::coord_point&lt; Point, Origin, Scale &gt;::deserialize()</a>, <a class="el" href="savegame__json_8cpp_source.html#l01773">monster::deserialize()</a>, <a class="el" href="mongroup_8h_source.html#l00103">diffuse</a>, <a class="el" href="mongroup_8h_source.html#l00088">dying</a>, <a class="el" href="json_8cpp_source.html#l01389">JsonIn::end_array()</a>, <a class="el" href="json_8cpp_source.html#l01422">JsonIn::end_object()</a>, <a class="el" href="json_8cpp_source.html#l01331">JsonIn::get_bool()</a>, <a class="el" href="json_8cpp_source.html#l01187">JsonIn::get_int()</a>, <a class="el" href="json_8cpp_source.html#l00955">JsonIn::get_member_name()</a>, <a class="el" href="json_8cpp_source.html#l01096">JsonIn::get_string()</a>, <a class="el" href="mongroup_8h_source.html#l00089">horde</a>, <a class="el" href="mongroup_8h_source.html#l00102">horde_behaviour</a>, <a class="el" href="mongroup_8h_source.html#l00087">interest</a>, <a class="el" href="mongroup_8h_source.html#l00095">monsters</a>, <a class="el" href="overmap_8cpp_source.html#l04126">om_direction::name()</a>, <a class="el" href="mongroup_8h_source.html#l00085">population</a>, <a class="el" href="mongroup_8h_source.html#l00083">pos</a>, <a class="el" href="mongroup_8h_source.html#l00084">radius</a>, <a class="el" href="json_8cpp_source.html#l01373">JsonIn::start_array()</a>, <a class="el" href="json_8cpp_source.html#l01406">JsonIn::start_object()</a>, <a class="el" href="mongroup_8h_source.html#l00086">target</a>, and <a class="el" href="mongroup_8h_source.html#l00080">type</a>.</p>
+<p class="reference">References <a class="el" href="coordinates_8h_source.html#l00147">coords::coord_point&lt; Point, Origin, Scale &gt;::deserialize()</a>, <a class="el" href="savegame__json_8cpp_source.html#l01770">monster::deserialize()</a>, <a class="el" href="mongroup_8h_source.html#l00103">diffuse</a>, <a class="el" href="mongroup_8h_source.html#l00088">dying</a>, <a class="el" href="json_8cpp_source.html#l01389">JsonIn::end_array()</a>, <a class="el" href="json_8cpp_source.html#l01422">JsonIn::end_object()</a>, <a class="el" href="json_8cpp_source.html#l01331">JsonIn::get_bool()</a>, <a class="el" href="json_8cpp_source.html#l01187">JsonIn::get_int()</a>, <a class="el" href="json_8cpp_source.html#l00955">JsonIn::get_member_name()</a>, <a class="el" href="json_8cpp_source.html#l01096">JsonIn::get_string()</a>, <a class="el" href="mongroup_8h_source.html#l00089">horde</a>, <a class="el" href="mongroup_8h_source.html#l00102">horde_behaviour</a>, <a class="el" href="mongroup_8h_source.html#l00087">interest</a>, <a class="el" href="mongroup_8h_source.html#l00095">monsters</a>, <a class="el" href="overmap_8cpp_source.html#l04127">om_direction::name()</a>, <a class="el" href="mongroup_8h_source.html#l00085">population</a>, <a class="el" href="mongroup_8h_source.html#l00083">pos</a>, <a class="el" href="mongroup_8h_source.html#l00084">radius</a>, <a class="el" href="json_8cpp_source.html#l01373">JsonIn::start_array()</a>, <a class="el" href="json_8cpp_source.html#l01406">JsonIn::start_object()</a>, <a class="el" href="mongroup_8h_source.html#l00086">target</a>, and <a class="el" href="mongroup_8h_source.html#l00080">type</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="savegame_8cpp_source.html#l00416">overmap::load_legacy_monstergroups()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="savegame_8cpp_source.html#l00421">overmap::load_legacy_monstergroups()</a>.</p>
 
 </div>
 </div>
@@ -655,7 +655,7 @@ Public Attributes</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="mongroup_8h_source.html#l00095">monsters</a>, and <a class="el" href="mongroup_8h_source.html#l00085">population</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="overmapbuffer_8cpp_source.html#l00520">overmapbuffer::groups_at()</a>, and <a class="el" href="overmap_8cpp_source.html#l02125">overmap::process_mongroups()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="overmapbuffer_8cpp_source.html#l00520">overmapbuffer::groups_at()</a>, and <a class="el" href="overmap_8cpp_source.html#l02126">overmap::process_mongroups()</a>.</p>
 
 </div>
 </div>
@@ -693,7 +693,7 @@ Public Attributes</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="mongroup_8h_source.html#l00087">interest</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="overmap_8cpp_source.html#l02343">overmap::signal_hordes()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="overmap_8cpp_source.html#l02344">overmap::signal_hordes()</a>.</p>
 
 </div>
 </div>
@@ -715,26 +715,26 @@ template&lt;typename Archive &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="savegame_8cpp_source.html#l01107">1107</a> of file <a class="el" href="savegame_8cpp_source.html">savegame.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01108" name="l01108"></a><span class="lineno"> 1108</span>{</div>
-<div class="line"><a id="l01109" name="l01109"></a><span class="lineno"> 1109</span>    archive.io( <span class="stringliteral">&quot;type&quot;</span>, <a class="code hl_variable" href="structmongroup.html#adbf63066421abfd7b8b34d1e88180a2e">type</a> );</div>
-<div class="line"><a id="l01110" name="l01110"></a><span class="lineno"> 1110</span>    archive.io( <span class="stringliteral">&quot;pos&quot;</span>, <a class="code hl_variable" href="structmongroup.html#a129f3403d8e77daa6c9494f03999a34e">pos</a>, <a class="code hl_typedef" href="coordinates_8h.html#a5612af0d0d6abac8477597ff3e7aa22e">tripoint_om_sm</a>() );</div>
-<div class="line"><a id="l01111" name="l01111"></a><span class="lineno"> 1111</span>    archive.io( <span class="stringliteral">&quot;radius&quot;</span>, <a class="code hl_variable" href="structmongroup.html#a61921bfa609f4420adb59d7dc394a43b">radius</a>, 1u );</div>
-<div class="line"><a id="l01112" name="l01112"></a><span class="lineno"> 1112</span>    archive.io( <span class="stringliteral">&quot;population&quot;</span>, <a class="code hl_variable" href="structmongroup.html#abcb866f070bebd60542594d3d97e55f8">population</a>, 1u );</div>
-<div class="line"><a id="l01113" name="l01113"></a><span class="lineno"> 1113</span>    archive.io( <span class="stringliteral">&quot;diffuse&quot;</span>, <a class="code hl_variable" href="structmongroup.html#a40bbfecf436a67f8e5aeb61b485040b7">diffuse</a>, <span class="keyword">false</span> );</div>
-<div class="line"><a id="l01114" name="l01114"></a><span class="lineno"> 1114</span>    archive.io( <span class="stringliteral">&quot;dying&quot;</span>, <a class="code hl_variable" href="structmongroup.html#a5eaad3f585d6e92f1e7164e50fc206e5">dying</a>, <span class="keyword">false</span> );</div>
-<div class="line"><a id="l01115" name="l01115"></a><span class="lineno"> 1115</span>    archive.io( <span class="stringliteral">&quot;horde&quot;</span>, <a class="code hl_variable" href="structmongroup.html#ad1ba3e75ac2f63c116b156bd17606709">horde</a>, <span class="keyword">false</span> );</div>
-<div class="line"><a id="l01116" name="l01116"></a><span class="lineno"> 1116</span>    archive.io( <span class="stringliteral">&quot;target&quot;</span>, <a class="code hl_variable" href="structmongroup.html#a73a776cff09bb5c33ba76f17250216bc">target</a>, <a class="code hl_typedef" href="coordinates_8h.html#a5612af0d0d6abac8477597ff3e7aa22e">tripoint_om_sm</a>() );</div>
-<div class="line"><a id="l01117" name="l01117"></a><span class="lineno"> 1117</span>    archive.io( <span class="stringliteral">&quot;interest&quot;</span>, <a class="code hl_variable" href="structmongroup.html#ad3987da25132a603688d803e87873fa2">interest</a>, 0 );</div>
-<div class="line"><a id="l01118" name="l01118"></a><span class="lineno"> 1118</span>    archive.io( <span class="stringliteral">&quot;horde_behaviour&quot;</span>, <a class="code hl_variable" href="structmongroup.html#ab6a6b28d74efd6ddf631c868747535f3">horde_behaviour</a>, <a class="code hl_struct" href="structio_1_1empty__default__tag.html">io::empty_default_tag</a>() );</div>
-<div class="line"><a id="l01119" name="l01119"></a><span class="lineno"> 1119</span>    archive.io( <span class="stringliteral">&quot;monsters&quot;</span>, <a class="code hl_variable" href="structmongroup.html#a44f8e2edd8e069297037f5b4f35c9bef">monsters</a>, <a class="code hl_struct" href="structio_1_1empty__default__tag.html">io::empty_default_tag</a>() );</div>
-<div class="line"><a id="l01120" name="l01120"></a><span class="lineno"> 1120</span>}</div>
+<p class="definition">Definition at line <a class="el" href="savegame_8cpp_source.html#l01112">1112</a> of file <a class="el" href="savegame_8cpp_source.html">savegame.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01113" name="l01113"></a><span class="lineno"> 1113</span>{</div>
+<div class="line"><a id="l01114" name="l01114"></a><span class="lineno"> 1114</span>    archive.io( <span class="stringliteral">&quot;type&quot;</span>, <a class="code hl_variable" href="structmongroup.html#adbf63066421abfd7b8b34d1e88180a2e">type</a> );</div>
+<div class="line"><a id="l01115" name="l01115"></a><span class="lineno"> 1115</span>    archive.io( <span class="stringliteral">&quot;pos&quot;</span>, <a class="code hl_variable" href="structmongroup.html#a129f3403d8e77daa6c9494f03999a34e">pos</a>, <a class="code hl_typedef" href="coordinates_8h.html#a5612af0d0d6abac8477597ff3e7aa22e">tripoint_om_sm</a>() );</div>
+<div class="line"><a id="l01116" name="l01116"></a><span class="lineno"> 1116</span>    archive.io( <span class="stringliteral">&quot;radius&quot;</span>, <a class="code hl_variable" href="structmongroup.html#a61921bfa609f4420adb59d7dc394a43b">radius</a>, 1u );</div>
+<div class="line"><a id="l01117" name="l01117"></a><span class="lineno"> 1117</span>    archive.io( <span class="stringliteral">&quot;population&quot;</span>, <a class="code hl_variable" href="structmongroup.html#abcb866f070bebd60542594d3d97e55f8">population</a>, 1u );</div>
+<div class="line"><a id="l01118" name="l01118"></a><span class="lineno"> 1118</span>    archive.io( <span class="stringliteral">&quot;diffuse&quot;</span>, <a class="code hl_variable" href="structmongroup.html#a40bbfecf436a67f8e5aeb61b485040b7">diffuse</a>, <span class="keyword">false</span> );</div>
+<div class="line"><a id="l01119" name="l01119"></a><span class="lineno"> 1119</span>    archive.io( <span class="stringliteral">&quot;dying&quot;</span>, <a class="code hl_variable" href="structmongroup.html#a5eaad3f585d6e92f1e7164e50fc206e5">dying</a>, <span class="keyword">false</span> );</div>
+<div class="line"><a id="l01120" name="l01120"></a><span class="lineno"> 1120</span>    archive.io( <span class="stringliteral">&quot;horde&quot;</span>, <a class="code hl_variable" href="structmongroup.html#ad1ba3e75ac2f63c116b156bd17606709">horde</a>, <span class="keyword">false</span> );</div>
+<div class="line"><a id="l01121" name="l01121"></a><span class="lineno"> 1121</span>    archive.io( <span class="stringliteral">&quot;target&quot;</span>, <a class="code hl_variable" href="structmongroup.html#a73a776cff09bb5c33ba76f17250216bc">target</a>, <a class="code hl_typedef" href="coordinates_8h.html#a5612af0d0d6abac8477597ff3e7aa22e">tripoint_om_sm</a>() );</div>
+<div class="line"><a id="l01122" name="l01122"></a><span class="lineno"> 1122</span>    archive.io( <span class="stringliteral">&quot;interest&quot;</span>, <a class="code hl_variable" href="structmongroup.html#ad3987da25132a603688d803e87873fa2">interest</a>, 0 );</div>
+<div class="line"><a id="l01123" name="l01123"></a><span class="lineno"> 1123</span>    archive.io( <span class="stringliteral">&quot;horde_behaviour&quot;</span>, <a class="code hl_variable" href="structmongroup.html#ab6a6b28d74efd6ddf631c868747535f3">horde_behaviour</a>, <a class="code hl_struct" href="structio_1_1empty__default__tag.html">io::empty_default_tag</a>() );</div>
+<div class="line"><a id="l01124" name="l01124"></a><span class="lineno"> 1124</span>    archive.io( <span class="stringliteral">&quot;monsters&quot;</span>, <a class="code hl_variable" href="structmongroup.html#a44f8e2edd8e069297037f5b4f35c9bef">monsters</a>, <a class="code hl_struct" href="structio_1_1empty__default__tag.html">io::empty_default_tag</a>() );</div>
+<div class="line"><a id="l01125" name="l01125"></a><span class="lineno"> 1125</span>}</div>
 <div class="ttc" id="acoordinates_8h_html_a5612af0d0d6abac8477597ff3e7aa22e"><div class="ttname"><a href="coordinates_8h.html#a5612af0d0d6abac8477597ff3e7aa22e">tripoint_om_sm</a></div><div class="ttdeci">coords::coord_point&lt; tripoint, coords::origin::overmap, coords::sm &gt; tripoint_om_sm</div><div class="ttdef"><b>Definition:</b> <a href="coordinates_8h_source.html#l00491">coordinates.h:491</a></div></div>
 <div class="ttc" id="astructio_1_1empty__default__tag_html"><div class="ttname"><a href="structio_1_1empty__default__tag.html">io::empty_default_tag</a></div><div class="ttdoc">Tag that indicates the value of the io is some kind of container and its default value is to be empty...</div><div class="ttdef"><b>Definition:</b> <a href="cata__io_8h_source.html#l00105">cata_io.h:105</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="mongroup_8h_source.html#l00103">diffuse</a>, <a class="el" href="mongroup_8h_source.html#l00088">dying</a>, <a class="el" href="mongroup_8h_source.html#l00089">horde</a>, <a class="el" href="mongroup_8h_source.html#l00102">horde_behaviour</a>, <a class="el" href="mongroup_8h_source.html#l00087">interest</a>, <a class="el" href="mongroup_8h_source.html#l00095">monsters</a>, <a class="el" href="mongroup_8h_source.html#l00085">population</a>, <a class="el" href="mongroup_8h_source.html#l00083">pos</a>, <a class="el" href="mongroup_8h_source.html#l00084">radius</a>, <a class="el" href="mongroup_8h_source.html#l00086">target</a>, and <a class="el" href="mongroup_8h_source.html#l00080">type</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="savegame_8cpp_source.html#l01122">deserialize()</a>, and <a class="el" href="savegame_8cpp_source.html#l01130">serialize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="savegame_8cpp_source.html#l01127">deserialize()</a>, and <a class="el" href="savegame_8cpp_source.html#l01135">serialize()</a>.</p>
 
 </div>
 </div>
@@ -779,15 +779,15 @@ template&lt;typename Archive &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="savegame_8cpp_source.html#l01130">1130</a> of file <a class="el" href="savegame_8cpp_source.html">savegame.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01131" name="l01131"></a><span class="lineno"> 1131</span>{</div>
-<div class="line"><a id="l01132" name="l01132"></a><span class="lineno"> 1132</span>    <a class="code hl_class" href="classio_1_1JsonObjectOutputArchive.html">io::JsonObjectOutputArchive</a> archive( json );</div>
-<div class="line"><a id="l01133" name="l01133"></a><span class="lineno"> 1133</span>    <span class="keyword">const_cast&lt;</span><a class="code hl_struct" href="structmongroup.html">mongroup</a> *<span class="keyword">&gt;</span>( this )-&gt;<a class="code hl_function" href="structmongroup.html#aca018c450031e92a5925e87267d758ef">io</a>( archive );</div>
-<div class="line"><a id="l01134" name="l01134"></a><span class="lineno"> 1134</span>}</div>
+<p class="definition">Definition at line <a class="el" href="savegame_8cpp_source.html#l01135">1135</a> of file <a class="el" href="savegame_8cpp_source.html">savegame.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01136" name="l01136"></a><span class="lineno"> 1136</span>{</div>
+<div class="line"><a id="l01137" name="l01137"></a><span class="lineno"> 1137</span>    <a class="code hl_class" href="classio_1_1JsonObjectOutputArchive.html">io::JsonObjectOutputArchive</a> archive( json );</div>
+<div class="line"><a id="l01138" name="l01138"></a><span class="lineno"> 1138</span>    <span class="keyword">const_cast&lt;</span><a class="code hl_struct" href="structmongroup.html">mongroup</a> *<span class="keyword">&gt;</span>( this )-&gt;<a class="code hl_function" href="structmongroup.html#aca018c450031e92a5925e87267d758ef">io</a>( archive );</div>
+<div class="line"><a id="l01139" name="l01139"></a><span class="lineno"> 1139</span>}</div>
 <div class="ttc" id="aclassio_1_1JsonObjectOutputArchive_html"><div class="ttname"><a href="classio_1_1JsonObjectOutputArchive.html">io::JsonObjectOutputArchive</a></div><div class="ttdoc">Output archive matching the input archive JsonObjectInputArchive.</div><div class="ttdef"><b>Definition:</b> <a href="cata__io_8h_source.html#l00350">cata_io.h:351</a></div></div>
 <div class="ttc" id="astructmongroup_html"><div class="ttname"><a href="structmongroup.html">mongroup</a></div><div class="ttdef"><b>Definition:</b> <a href="mongroup_8h_source.html#l00079">mongroup.h:79</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="savegame_8cpp_source.html#l01107">io()</a>.</p>
+<p class="reference">References <a class="el" href="savegame_8cpp_source.html#l01112">io()</a>.</p>
 
 </div>
 </div>
@@ -828,7 +828,7 @@ template&lt;typename Archive &gt; </div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="mongroup_8h_source.html#l00087">interest</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="overmap_8cpp_source.html#l02343">overmap::signal_hordes()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="overmap_8cpp_source.html#l02344">overmap::signal_hordes()</a>.</p>
 
 </div>
 </div>
@@ -866,7 +866,7 @@ template&lt;typename Archive &gt; </div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="mongroup_8h_source.html#l00086">target</a>, <a class="el" href="coordinates_8h_source.html#l00118">coords::coord_point&lt; Point, Origin, Scale &gt;::x()</a>, and <a class="el" href="coordinates_8h_source.html#l00124">coords::coord_point&lt; Point, Origin, Scale &gt;::y()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="overmap_8cpp_source.html#l02343">overmap::signal_hordes()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="overmap_8cpp_source.html#l02344">overmap::signal_hordes()</a>.</p>
 
 </div>
 </div>
@@ -886,37 +886,37 @@ template&lt;typename Archive &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="overmap_8cpp_source.html#l02170">2170</a> of file <a class="el" href="overmap_8cpp_source.html">overmap.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l02171" name="l02171"></a><span class="lineno"> 2171</span>{</div>
-<div class="line"><a id="l02172" name="l02172"></a><span class="lineno"> 2172</span>    <span class="keyword">const</span> <a class="code hl_struct" href="structcity.html">city</a> *target_city = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l02173" name="l02173"></a><span class="lineno"> 2173</span>    <span class="keywordtype">int</span> target_distance = 0;</div>
-<div class="line"><a id="l02174" name="l02174"></a><span class="lineno"> 2174</span> </div>
-<div class="line"><a id="l02175" name="l02175"></a><span class="lineno"> 2175</span>    <span class="keywordflow">if</span>( <a class="code hl_variable" href="structmongroup.html#ab6a6b28d74efd6ddf631c868747535f3">horde_behaviour</a> == <span class="stringliteral">&quot;city&quot;</span> ) {</div>
-<div class="line"><a id="l02176" name="l02176"></a><span class="lineno"> 2176</span>        <span class="comment">// Find a nearby city to return to..</span></div>
-<div class="line"><a id="l02177" name="l02177"></a><span class="lineno"> 2177</span>        <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_struct" href="structcity.html">city</a> &amp;check_city : <a class="code hl_variable" href="namespacecoords.html#ab3261fe84f776b15113e1cec5fe3a560">om</a>.cities ) {</div>
-<div class="line"><a id="l02178" name="l02178"></a><span class="lineno"> 2178</span>            <span class="comment">// Check if this is the nearest city so far.</span></div>
-<div class="line"><a id="l02179" name="l02179"></a><span class="lineno"> 2179</span>            <span class="keywordtype">int</span> <a class="code hl_enumvalue" href="namespaceovermap__ui.html#a5cd0d32854b59999d3a728288bc7daaaaa74ec9c5b6882f79e32a8fbd8da90c1b">distance</a> = <a class="code hl_function" href="coordinates_8h.html#a47953b33a873caa0861b12222842a5ec">rl_dist</a>( project_to&lt;coords::sm&gt;( check_city.<a class="code hl_variable" href="structcity.html#a431de6762e8e0d96b6e0e95341ee608e">pos</a> ),</div>
-<div class="line"><a id="l02180" name="l02180"></a><span class="lineno"> 2180</span>                                    <a class="code hl_variable" href="structmongroup.html#a129f3403d8e77daa6c9494f03999a34e">pos</a>.<a class="code hl_function" href="classcoords_1_1coord__point.html#acb7438b5f344b6841e64b56100761783">xy</a>() );</div>
-<div class="line"><a id="l02181" name="l02181"></a><span class="lineno"> 2181</span>            <span class="keywordflow">if</span>( !target_city || distance &lt; target_distance ) {</div>
-<div class="line"><a id="l02182" name="l02182"></a><span class="lineno"> 2182</span>                target_distance = <a class="code hl_enumvalue" href="namespaceovermap__ui.html#a5cd0d32854b59999d3a728288bc7daaaaa74ec9c5b6882f79e32a8fbd8da90c1b">distance</a>;</div>
-<div class="line"><a id="l02183" name="l02183"></a><span class="lineno"> 2183</span>                target_city = &amp;check_city;</div>
-<div class="line"><a id="l02184" name="l02184"></a><span class="lineno"> 2184</span>            }</div>
-<div class="line"><a id="l02185" name="l02185"></a><span class="lineno"> 2185</span>        }</div>
-<div class="line"><a id="l02186" name="l02186"></a><span class="lineno"> 2186</span>    }</div>
-<div class="line"><a id="l02187" name="l02187"></a><span class="lineno"> 2187</span> </div>
-<div class="line"><a id="l02188" name="l02188"></a><span class="lineno"> 2188</span>    <span class="keywordflow">if</span>( target_city ) {</div>
-<div class="line"><a id="l02189" name="l02189"></a><span class="lineno"> 2189</span>        <span class="comment">// TODO: somehow use the same algorithm that distributes zombie</span></div>
-<div class="line"><a id="l02190" name="l02190"></a><span class="lineno"> 2190</span>        <span class="comment">// density at world gen to spread the hordes over the actual</span></div>
-<div class="line"><a id="l02191" name="l02191"></a><span class="lineno"> 2191</span>        <span class="comment">// city, rather than the center city tile</span></div>
-<div class="line"><a id="l02192" name="l02192"></a><span class="lineno"> 2192</span>        <a class="code hl_variable" href="structmongroup.html#a73a776cff09bb5c33ba76f17250216bc">target</a>.<a class="code hl_function" href="classcoords_1_1coord__point.html#a28e9c9998255a3447efbf3d9570b14cb">x</a>() = target_city-&gt;<a class="code hl_variable" href="structcity.html#a431de6762e8e0d96b6e0e95341ee608e">pos</a>.<a class="code hl_function" href="classcoords_1_1coord__point.html#a28e9c9998255a3447efbf3d9570b14cb">x</a>() * 2 + <a class="code hl_function" href="artifact_8cpp.html#a70800e95389f34dd34186fafaea2a840">rng</a>( -target_city-&gt;<a class="code hl_variable" href="structcity.html#ac1fd78a411cf6f43667077b7c907d8ef">size</a> * 2, target_city-&gt;<a class="code hl_variable" href="structcity.html#ac1fd78a411cf6f43667077b7c907d8ef">size</a> * 2 );</div>
-<div class="line"><a id="l02193" name="l02193"></a><span class="lineno"> 2193</span>        <a class="code hl_variable" href="structmongroup.html#a73a776cff09bb5c33ba76f17250216bc">target</a>.<a class="code hl_function" href="classcoords_1_1coord__point.html#a64e7596e9093a989630ec0f245ff2fe6">y</a>() = target_city-&gt;<a class="code hl_variable" href="structcity.html#a431de6762e8e0d96b6e0e95341ee608e">pos</a>.<a class="code hl_function" href="classcoords_1_1coord__point.html#a64e7596e9093a989630ec0f245ff2fe6">y</a>() * 2 + <a class="code hl_function" href="artifact_8cpp.html#a70800e95389f34dd34186fafaea2a840">rng</a>( -target_city-&gt;<a class="code hl_variable" href="structcity.html#ac1fd78a411cf6f43667077b7c907d8ef">size</a> * 2, target_city-&gt;<a class="code hl_variable" href="structcity.html#ac1fd78a411cf6f43667077b7c907d8ef">size</a> * 2 );</div>
-<div class="line"><a id="l02194" name="l02194"></a><span class="lineno"> 2194</span>        <a class="code hl_variable" href="structmongroup.html#ad3987da25132a603688d803e87873fa2">interest</a> = 100;</div>
-<div class="line"><a id="l02195" name="l02195"></a><span class="lineno"> 2195</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l02196" name="l02196"></a><span class="lineno"> 2196</span>        <a class="code hl_variable" href="structmongroup.html#a73a776cff09bb5c33ba76f17250216bc">target</a>.<a class="code hl_function" href="classcoords_1_1coord__point.html#a28e9c9998255a3447efbf3d9570b14cb">x</a>() = <a class="code hl_variable" href="structmongroup.html#a129f3403d8e77daa6c9494f03999a34e">pos</a>.<a class="code hl_function" href="classcoords_1_1coord__point.html#a28e9c9998255a3447efbf3d9570b14cb">x</a>() + <a class="code hl_function" href="artifact_8cpp.html#a70800e95389f34dd34186fafaea2a840">rng</a>( -10, 10 );</div>
-<div class="line"><a id="l02197" name="l02197"></a><span class="lineno"> 2197</span>        <a class="code hl_variable" href="structmongroup.html#a73a776cff09bb5c33ba76f17250216bc">target</a>.<a class="code hl_function" href="classcoords_1_1coord__point.html#a64e7596e9093a989630ec0f245ff2fe6">y</a>() = <a class="code hl_variable" href="structmongroup.html#a129f3403d8e77daa6c9494f03999a34e">pos</a>.<a class="code hl_function" href="classcoords_1_1coord__point.html#a64e7596e9093a989630ec0f245ff2fe6">y</a>() + <a class="code hl_function" href="artifact_8cpp.html#a70800e95389f34dd34186fafaea2a840">rng</a>( -10, 10 );</div>
-<div class="line"><a id="l02198" name="l02198"></a><span class="lineno"> 2198</span>        <a class="code hl_variable" href="structmongroup.html#ad3987da25132a603688d803e87873fa2">interest</a> = 30;</div>
-<div class="line"><a id="l02199" name="l02199"></a><span class="lineno"> 2199</span>    }</div>
-<div class="line"><a id="l02200" name="l02200"></a><span class="lineno"> 2200</span>}</div>
+<p class="definition">Definition at line <a class="el" href="overmap_8cpp_source.html#l02171">2171</a> of file <a class="el" href="overmap_8cpp_source.html">overmap.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l02172" name="l02172"></a><span class="lineno"> 2172</span>{</div>
+<div class="line"><a id="l02173" name="l02173"></a><span class="lineno"> 2173</span>    <span class="keyword">const</span> <a class="code hl_struct" href="structcity.html">city</a> *target_city = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l02174" name="l02174"></a><span class="lineno"> 2174</span>    <span class="keywordtype">int</span> target_distance = 0;</div>
+<div class="line"><a id="l02175" name="l02175"></a><span class="lineno"> 2175</span> </div>
+<div class="line"><a id="l02176" name="l02176"></a><span class="lineno"> 2176</span>    <span class="keywordflow">if</span>( <a class="code hl_variable" href="structmongroup.html#ab6a6b28d74efd6ddf631c868747535f3">horde_behaviour</a> == <span class="stringliteral">&quot;city&quot;</span> ) {</div>
+<div class="line"><a id="l02177" name="l02177"></a><span class="lineno"> 2177</span>        <span class="comment">// Find a nearby city to return to..</span></div>
+<div class="line"><a id="l02178" name="l02178"></a><span class="lineno"> 2178</span>        <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_struct" href="structcity.html">city</a> &amp;check_city : <a class="code hl_variable" href="namespacecoords.html#ab3261fe84f776b15113e1cec5fe3a560">om</a>.cities ) {</div>
+<div class="line"><a id="l02179" name="l02179"></a><span class="lineno"> 2179</span>            <span class="comment">// Check if this is the nearest city so far.</span></div>
+<div class="line"><a id="l02180" name="l02180"></a><span class="lineno"> 2180</span>            <span class="keywordtype">int</span> <a class="code hl_enumvalue" href="namespaceovermap__ui.html#a5cd0d32854b59999d3a728288bc7daaaaa74ec9c5b6882f79e32a8fbd8da90c1b">distance</a> = <a class="code hl_function" href="coordinates_8h.html#a47953b33a873caa0861b12222842a5ec">rl_dist</a>( project_to&lt;coords::sm&gt;( check_city.<a class="code hl_variable" href="structcity.html#a431de6762e8e0d96b6e0e95341ee608e">pos</a> ),</div>
+<div class="line"><a id="l02181" name="l02181"></a><span class="lineno"> 2181</span>                                    <a class="code hl_variable" href="structmongroup.html#a129f3403d8e77daa6c9494f03999a34e">pos</a>.<a class="code hl_function" href="classcoords_1_1coord__point.html#acb7438b5f344b6841e64b56100761783">xy</a>() );</div>
+<div class="line"><a id="l02182" name="l02182"></a><span class="lineno"> 2182</span>            <span class="keywordflow">if</span>( !target_city || distance &lt; target_distance ) {</div>
+<div class="line"><a id="l02183" name="l02183"></a><span class="lineno"> 2183</span>                target_distance = <a class="code hl_enumvalue" href="namespaceovermap__ui.html#a5cd0d32854b59999d3a728288bc7daaaaa74ec9c5b6882f79e32a8fbd8da90c1b">distance</a>;</div>
+<div class="line"><a id="l02184" name="l02184"></a><span class="lineno"> 2184</span>                target_city = &amp;check_city;</div>
+<div class="line"><a id="l02185" name="l02185"></a><span class="lineno"> 2185</span>            }</div>
+<div class="line"><a id="l02186" name="l02186"></a><span class="lineno"> 2186</span>        }</div>
+<div class="line"><a id="l02187" name="l02187"></a><span class="lineno"> 2187</span>    }</div>
+<div class="line"><a id="l02188" name="l02188"></a><span class="lineno"> 2188</span> </div>
+<div class="line"><a id="l02189" name="l02189"></a><span class="lineno"> 2189</span>    <span class="keywordflow">if</span>( target_city ) {</div>
+<div class="line"><a id="l02190" name="l02190"></a><span class="lineno"> 2190</span>        <span class="comment">// TODO: somehow use the same algorithm that distributes zombie</span></div>
+<div class="line"><a id="l02191" name="l02191"></a><span class="lineno"> 2191</span>        <span class="comment">// density at world gen to spread the hordes over the actual</span></div>
+<div class="line"><a id="l02192" name="l02192"></a><span class="lineno"> 2192</span>        <span class="comment">// city, rather than the center city tile</span></div>
+<div class="line"><a id="l02193" name="l02193"></a><span class="lineno"> 2193</span>        <a class="code hl_variable" href="structmongroup.html#a73a776cff09bb5c33ba76f17250216bc">target</a>.<a class="code hl_function" href="classcoords_1_1coord__point.html#a28e9c9998255a3447efbf3d9570b14cb">x</a>() = target_city-&gt;<a class="code hl_variable" href="structcity.html#a431de6762e8e0d96b6e0e95341ee608e">pos</a>.<a class="code hl_function" href="classcoords_1_1coord__point.html#a28e9c9998255a3447efbf3d9570b14cb">x</a>() * 2 + <a class="code hl_function" href="artifact_8cpp.html#a70800e95389f34dd34186fafaea2a840">rng</a>( -target_city-&gt;<a class="code hl_variable" href="structcity.html#ac1fd78a411cf6f43667077b7c907d8ef">size</a> * 2, target_city-&gt;<a class="code hl_variable" href="structcity.html#ac1fd78a411cf6f43667077b7c907d8ef">size</a> * 2 );</div>
+<div class="line"><a id="l02194" name="l02194"></a><span class="lineno"> 2194</span>        <a class="code hl_variable" href="structmongroup.html#a73a776cff09bb5c33ba76f17250216bc">target</a>.<a class="code hl_function" href="classcoords_1_1coord__point.html#a64e7596e9093a989630ec0f245ff2fe6">y</a>() = target_city-&gt;<a class="code hl_variable" href="structcity.html#a431de6762e8e0d96b6e0e95341ee608e">pos</a>.<a class="code hl_function" href="classcoords_1_1coord__point.html#a64e7596e9093a989630ec0f245ff2fe6">y</a>() * 2 + <a class="code hl_function" href="artifact_8cpp.html#a70800e95389f34dd34186fafaea2a840">rng</a>( -target_city-&gt;<a class="code hl_variable" href="structcity.html#ac1fd78a411cf6f43667077b7c907d8ef">size</a> * 2, target_city-&gt;<a class="code hl_variable" href="structcity.html#ac1fd78a411cf6f43667077b7c907d8ef">size</a> * 2 );</div>
+<div class="line"><a id="l02195" name="l02195"></a><span class="lineno"> 2195</span>        <a class="code hl_variable" href="structmongroup.html#ad3987da25132a603688d803e87873fa2">interest</a> = 100;</div>
+<div class="line"><a id="l02196" name="l02196"></a><span class="lineno"> 2196</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l02197" name="l02197"></a><span class="lineno"> 2197</span>        <a class="code hl_variable" href="structmongroup.html#a73a776cff09bb5c33ba76f17250216bc">target</a>.<a class="code hl_function" href="classcoords_1_1coord__point.html#a28e9c9998255a3447efbf3d9570b14cb">x</a>() = <a class="code hl_variable" href="structmongroup.html#a129f3403d8e77daa6c9494f03999a34e">pos</a>.<a class="code hl_function" href="classcoords_1_1coord__point.html#a28e9c9998255a3447efbf3d9570b14cb">x</a>() + <a class="code hl_function" href="artifact_8cpp.html#a70800e95389f34dd34186fafaea2a840">rng</a>( -10, 10 );</div>
+<div class="line"><a id="l02198" name="l02198"></a><span class="lineno"> 2198</span>        <a class="code hl_variable" href="structmongroup.html#a73a776cff09bb5c33ba76f17250216bc">target</a>.<a class="code hl_function" href="classcoords_1_1coord__point.html#a64e7596e9093a989630ec0f245ff2fe6">y</a>() = <a class="code hl_variable" href="structmongroup.html#a129f3403d8e77daa6c9494f03999a34e">pos</a>.<a class="code hl_function" href="classcoords_1_1coord__point.html#a64e7596e9093a989630ec0f245ff2fe6">y</a>() + <a class="code hl_function" href="artifact_8cpp.html#a70800e95389f34dd34186fafaea2a840">rng</a>( -10, 10 );</div>
+<div class="line"><a id="l02199" name="l02199"></a><span class="lineno"> 2199</span>        <a class="code hl_variable" href="structmongroup.html#ad3987da25132a603688d803e87873fa2">interest</a> = 30;</div>
+<div class="line"><a id="l02200" name="l02200"></a><span class="lineno"> 2200</span>    }</div>
+<div class="line"><a id="l02201" name="l02201"></a><span class="lineno"> 2201</span>}</div>
 <div class="ttc" id="aartifact_8cpp_html_a70800e95389f34dd34186fafaea2a840"><div class="ttname"><a href="artifact_8cpp.html#a70800e95389f34dd34186fafaea2a840">rng</a></div><div class="ttdeci">units::quantity&lt; V, B &gt; rng(const units::quantity&lt; V, B &gt; &amp;min, const units::quantity&lt; V, B &gt; &amp;max)</div><div class="ttdef"><b>Definition:</b> <a href="artifact_8cpp_source.html#l00032">artifact.cpp:32</a></div></div>
 <div class="ttc" id="aclasscoords_1_1coord__point_html_acb7438b5f344b6841e64b56100761783"><div class="ttname"><a href="classcoords_1_1coord__point.html#acb7438b5f344b6841e64b56100761783">coords::coord_point::xy</a></div><div class="ttdeci">constexpr auto xy() const</div><div class="ttdef"><b>Definition:</b> <a href="coordinates_8h_source.html#l00130">coordinates.h:130</a></div></div>
 <div class="ttc" id="acoordinates_8h_html_a47953b33a873caa0861b12222842a5ec"><div class="ttname"><a href="coordinates_8h.html#a47953b33a873caa0861b12222842a5ec">rl_dist</a></div><div class="ttdeci">int rl_dist(const coords::coord_point&lt; Point, Origin, Scale &gt; &amp;loc1, const coords::coord_point&lt; Point, Origin, Scale &gt; &amp;loc2)</div><div class="ttdef"><b>Definition:</b> <a href="coordinates_8h_source.html#l00519">coordinates.h:519</a></div></div>
@@ -928,7 +928,7 @@ template&lt;typename Archive &gt; </div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="mongroup_8h_source.html#l00102">horde_behaviour</a>, <a class="el" href="mongroup_8h_source.html#l00087">interest</a>, <a class="el" href="coordinates_8h_source.html#l00034">coords::om</a>, <a class="el" href="mongroup_8h_source.html#l00083">pos</a>, <a class="el" href="overmap_8h_source.html#l00057">city::pos</a>, <a class="el" href="coordinates_8h_source.html#l00519">rl_dist()</a>, <a class="el" href="artifact_8cpp_source.html#l00032">rng()</a>, <a class="el" href="overmap_8h_source.html#l00058">city::size</a>, <a class="el" href="mongroup_8h_source.html#l00086">target</a>, <a class="el" href="coordinates_8h_source.html#l00118">coords::coord_point&lt; Point, Origin, Scale &gt;::x()</a>, <a class="el" href="coordinates_8h_source.html#l00130">coords::coord_point&lt; Point, Origin, Scale &gt;::xy()</a>, and <a class="el" href="coordinates_8h_source.html#l00124">coords::coord_point&lt; Point, Origin, Scale &gt;::y()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="overmap_8cpp_source.html#l02202">overmap::move_hordes()</a>, and <a class="el" href="overmap_8cpp_source.html#l04669">overmap::place_mongroups()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="overmap_8cpp_source.html#l02203">overmap::move_hordes()</a>, and <a class="el" href="overmap_8cpp_source.html#l04670">overmap::place_mongroups()</a>.</p>
 
 </div>
 </div>
@@ -947,7 +947,7 @@ template&lt;typename Archive &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="mongroup_8h_source.html#l00103">103</a> of file <a class="el" href="mongroup_8h_source.html">mongroup.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="savegame_8cpp_source.html#l01136">deserialize_legacy()</a>, <a class="el" href="savegame_8cpp_source.html#l01107">io()</a>, and <a class="el" href="savegame_8cpp_source.html#l00866">mongroup_hash::operator()()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="savegame_8cpp_source.html#l01141">deserialize_legacy()</a>, <a class="el" href="savegame_8cpp_source.html#l01112">io()</a>, and <a class="el" href="savegame_8cpp_source.html#l00871">mongroup_hash::operator()()</a>.</p>
 
 </div>
 </div>
@@ -965,7 +965,7 @@ template&lt;typename Archive &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="mongroup_8h_source.html#l00088">88</a> of file <a class="el" href="mongroup_8h_source.html">mongroup.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="savegame_8cpp_source.html#l01136">deserialize_legacy()</a>, <a class="el" href="savegame_8cpp_source.html#l01107">io()</a>, <a class="el" href="savegame_8cpp_source.html#l00866">mongroup_hash::operator()()</a>, and <a class="el" href="overmap_8cpp_source.html#l02125">overmap::process_mongroups()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="savegame_8cpp_source.html#l01141">deserialize_legacy()</a>, <a class="el" href="savegame_8cpp_source.html#l01112">io()</a>, <a class="el" href="savegame_8cpp_source.html#l00871">mongroup_hash::operator()()</a>, and <a class="el" href="overmap_8cpp_source.html#l02126">overmap::process_mongroups()</a>.</p>
 
 </div>
 </div>
@@ -983,7 +983,7 @@ template&lt;typename Archive &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="mongroup_8h_source.html#l00089">89</a> of file <a class="el" href="mongroup_8h_source.html">mongroup.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="savegame_8cpp_source.html#l01136">deserialize_legacy()</a>, <a class="el" href="savegame_8cpp_source.html#l01107">io()</a>, <a class="el" href="overmap_8cpp_source.html#l02202">overmap::move_hordes()</a>, <a class="el" href="savegame_8cpp_source.html#l00866">mongroup_hash::operator()()</a>, <a class="el" href="overmap_8cpp_source.html#l04669">overmap::place_mongroups()</a>, and <a class="el" href="overmap_8cpp_source.html#l02343">overmap::signal_hordes()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="savegame_8cpp_source.html#l01141">deserialize_legacy()</a>, <a class="el" href="savegame_8cpp_source.html#l01112">io()</a>, <a class="el" href="overmap_8cpp_source.html#l02203">overmap::move_hordes()</a>, <a class="el" href="savegame_8cpp_source.html#l00871">mongroup_hash::operator()()</a>, <a class="el" href="overmap_8cpp_source.html#l04670">overmap::place_mongroups()</a>, and <a class="el" href="overmap_8cpp_source.html#l02344">overmap::signal_hordes()</a>.</p>
 
 </div>
 </div>
@@ -1004,7 +1004,7 @@ template&lt;typename Archive &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="mongroup_8h_source.html#l00102">102</a> of file <a class="el" href="mongroup_8h_source.html">mongroup.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="savegame_8cpp_source.html#l01136">deserialize_legacy()</a>, <a class="el" href="savegame_8cpp_source.html#l01107">io()</a>, <a class="el" href="overmap_8cpp_source.html#l02202">overmap::move_hordes()</a>, <a class="el" href="savegame_8cpp_source.html#l00866">mongroup_hash::operator()()</a>, and <a class="el" href="overmap_8cpp_source.html#l02170">wander()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="savegame_8cpp_source.html#l01141">deserialize_legacy()</a>, <a class="el" href="savegame_8cpp_source.html#l01112">io()</a>, <a class="el" href="overmap_8cpp_source.html#l02203">overmap::move_hordes()</a>, <a class="el" href="savegame_8cpp_source.html#l00871">mongroup_hash::operator()()</a>, and <a class="el" href="overmap_8cpp_source.html#l02171">wander()</a>.</p>
 
 </div>
 </div>
@@ -1022,7 +1022,7 @@ template&lt;typename Archive &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="mongroup_8h_source.html#l00087">87</a> of file <a class="el" href="mongroup_8h_source.html">mongroup.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mongroup_8h_source.html#l00134">dec_interest()</a>, <a class="el" href="savegame_8cpp_source.html#l01136">deserialize_legacy()</a>, <a class="el" href="mongroup_8h_source.html#l00128">inc_interest()</a>, <a class="el" href="savegame_8cpp_source.html#l01107">io()</a>, <a class="el" href="overmap_8cpp_source.html#l02202">overmap::move_hordes()</a>, <a class="el" href="savegame_8cpp_source.html#l00866">mongroup_hash::operator()()</a>, <a class="el" href="mongroup_8h_source.html#l00140">set_interest()</a>, <a class="el" href="overmap_8cpp_source.html#l02343">overmap::signal_hordes()</a>, and <a class="el" href="overmap_8cpp_source.html#l02170">wander()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mongroup_8h_source.html#l00134">dec_interest()</a>, <a class="el" href="savegame_8cpp_source.html#l01141">deserialize_legacy()</a>, <a class="el" href="mongroup_8h_source.html#l00128">inc_interest()</a>, <a class="el" href="savegame_8cpp_source.html#l01112">io()</a>, <a class="el" href="overmap_8cpp_source.html#l02203">overmap::move_hordes()</a>, <a class="el" href="savegame_8cpp_source.html#l00871">mongroup_hash::operator()()</a>, <a class="el" href="mongroup_8h_source.html#l00140">set_interest()</a>, <a class="el" href="overmap_8cpp_source.html#l02344">overmap::signal_hordes()</a>, and <a class="el" href="overmap_8cpp_source.html#l02171">wander()</a>.</p>
 
 </div>
 </div>
@@ -1043,7 +1043,7 @@ template&lt;typename Archive &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="mongroup_8h_source.html#l00095">95</a> of file <a class="el" href="mongroup_8h_source.html">mongroup.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mongroup_8cpp_source.html#l00060">avg_speed()</a>, <a class="el" href="mongroup_8cpp_source.html#l00054">clear()</a>, <a class="el" href="savegame_8cpp_source.html#l01136">deserialize_legacy()</a>, <a class="el" href="mongroup_8cpp_source.html#l00049">empty()</a>, <a class="el" href="savegame_8cpp_source.html#l01107">io()</a>, and <a class="el" href="overmap_8cpp_source.html#l02202">overmap::move_hordes()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mongroup_8cpp_source.html#l00060">avg_speed()</a>, <a class="el" href="mongroup_8cpp_source.html#l00054">clear()</a>, <a class="el" href="savegame_8cpp_source.html#l01141">deserialize_legacy()</a>, <a class="el" href="mongroup_8cpp_source.html#l00049">empty()</a>, <a class="el" href="savegame_8cpp_source.html#l01112">io()</a>, and <a class="el" href="overmap_8cpp_source.html#l02203">overmap::move_hordes()</a>.</p>
 
 </div>
 </div>
@@ -1061,7 +1061,7 @@ template&lt;typename Archive &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="mongroup_8h_source.html#l00085">85</a> of file <a class="el" href="mongroup_8h_source.html">mongroup.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="overmap_8cpp_source.html#l04834">overmap::add_mon_group()</a>, <a class="el" href="mongroup_8cpp_source.html#l00054">clear()</a>, <a class="el" href="savegame_8cpp_source.html#l01136">deserialize_legacy()</a>, <a class="el" href="mongroup_8cpp_source.html#l00049">empty()</a>, <a class="el" href="savegame_8cpp_source.html#l01107">io()</a>, <a class="el" href="savegame_8cpp_source.html#l00866">mongroup_hash::operator()()</a>, and <a class="el" href="overmap_8cpp_source.html#l02125">overmap::process_mongroups()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="overmap_8cpp_source.html#l04835">overmap::add_mon_group()</a>, <a class="el" href="mongroup_8cpp_source.html#l00054">clear()</a>, <a class="el" href="savegame_8cpp_source.html#l01141">deserialize_legacy()</a>, <a class="el" href="mongroup_8cpp_source.html#l00049">empty()</a>, <a class="el" href="savegame_8cpp_source.html#l01112">io()</a>, <a class="el" href="savegame_8cpp_source.html#l00871">mongroup_hash::operator()()</a>, and <a class="el" href="overmap_8cpp_source.html#l02126">overmap::process_mongroups()</a>.</p>
 
 </div>
 </div>
@@ -1079,7 +1079,7 @@ template&lt;typename Archive &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="mongroup_8h_source.html#l00083">83</a> of file <a class="el" href="mongroup_8h_source.html">mongroup.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="overmap_8cpp_source.html#l04834">overmap::add_mon_group()</a>, <a class="el" href="savegame_8cpp_source.html#l01136">deserialize_legacy()</a>, <a class="el" href="savegame_8cpp_source.html#l01107">io()</a>, <a class="el" href="savegame_8cpp_source.html#l00395">overmap::load_monster_groups()</a>, <a class="el" href="overmap_8cpp_source.html#l01297">overmap::mongroup_check()</a>, <a class="el" href="overmap_8cpp_source.html#l02202">overmap::move_hordes()</a>, <a class="el" href="savegame_8cpp_source.html#l00881">overmap::save_monster_groups()</a>, <a class="el" href="overmap_8cpp_source.html#l02343">overmap::signal_hordes()</a>, and <a class="el" href="overmap_8cpp_source.html#l02170">wander()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="overmap_8cpp_source.html#l04835">overmap::add_mon_group()</a>, <a class="el" href="savegame_8cpp_source.html#l01141">deserialize_legacy()</a>, <a class="el" href="savegame_8cpp_source.html#l01112">io()</a>, <a class="el" href="savegame_8cpp_source.html#l00400">overmap::load_monster_groups()</a>, <a class="el" href="overmap_8cpp_source.html#l01298">overmap::mongroup_check()</a>, <a class="el" href="overmap_8cpp_source.html#l02203">overmap::move_hordes()</a>, <a class="el" href="savegame_8cpp_source.html#l00886">overmap::save_monster_groups()</a>, <a class="el" href="overmap_8cpp_source.html#l02344">overmap::signal_hordes()</a>, and <a class="el" href="overmap_8cpp_source.html#l02171">wander()</a>.</p>
 
 </div>
 </div>
@@ -1097,7 +1097,7 @@ template&lt;typename Archive &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="mongroup_8h_source.html#l00084">84</a> of file <a class="el" href="mongroup_8h_source.html">mongroup.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="overmap_8cpp_source.html#l04834">overmap::add_mon_group()</a>, <a class="el" href="savegame_8cpp_source.html#l01136">deserialize_legacy()</a>, <a class="el" href="savegame_8cpp_source.html#l01107">io()</a>, <a class="el" href="savegame_8cpp_source.html#l00866">mongroup_hash::operator()()</a>, and <a class="el" href="overmap_8cpp_source.html#l02125">overmap::process_mongroups()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="overmap_8cpp_source.html#l04835">overmap::add_mon_group()</a>, <a class="el" href="savegame_8cpp_source.html#l01141">deserialize_legacy()</a>, <a class="el" href="savegame_8cpp_source.html#l01112">io()</a>, <a class="el" href="savegame_8cpp_source.html#l00871">mongroup_hash::operator()()</a>, and <a class="el" href="overmap_8cpp_source.html#l02126">overmap::process_mongroups()</a>.</p>
 
 </div>
 </div>
@@ -1115,7 +1115,7 @@ template&lt;typename Archive &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="mongroup_8h_source.html#l00086">86</a> of file <a class="el" href="mongroup_8h_source.html">mongroup.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="savegame_8cpp_source.html#l01136">deserialize_legacy()</a>, <a class="el" href="overmap__ui_8cpp_source.html#l00778">overmap_ui::draw_ascii()</a>, <a class="el" href="savegame_8cpp_source.html#l01107">io()</a>, <a class="el" href="overmap_8cpp_source.html#l02202">overmap::move_hordes()</a>, <a class="el" href="savegame_8cpp_source.html#l00866">mongroup_hash::operator()()</a>, <a class="el" href="mongroup_8h_source.html#l00123">set_target()</a>, <a class="el" href="overmap_8cpp_source.html#l02343">overmap::signal_hordes()</a>, and <a class="el" href="overmap_8cpp_source.html#l02170">wander()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="savegame_8cpp_source.html#l01141">deserialize_legacy()</a>, <a class="el" href="overmap__ui_8cpp_source.html#l00778">overmap_ui::draw_ascii()</a>, <a class="el" href="savegame_8cpp_source.html#l01112">io()</a>, <a class="el" href="overmap_8cpp_source.html#l02203">overmap::move_hordes()</a>, <a class="el" href="savegame_8cpp_source.html#l00871">mongroup_hash::operator()()</a>, <a class="el" href="mongroup_8h_source.html#l00123">set_target()</a>, <a class="el" href="overmap_8cpp_source.html#l02344">overmap::signal_hordes()</a>, and <a class="el" href="overmap_8cpp_source.html#l02171">wander()</a>.</p>
 
 </div>
 </div>
@@ -1133,7 +1133,7 @@ template&lt;typename Archive &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="mongroup_8h_source.html#l00080">80</a> of file <a class="el" href="mongroup_8h_source.html">mongroup.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mongroup_8cpp_source.html#l00060">avg_speed()</a>, <a class="el" href="savegame_8cpp_source.html#l01136">deserialize_legacy()</a>, <a class="el" href="savegame_8cpp_source.html#l01107">io()</a>, <a class="el" href="mongroup_8cpp_source.html#l00044">is_safe()</a>, and <a class="el" href="savegame_8cpp_source.html#l00866">mongroup_hash::operator()()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mongroup_8cpp_source.html#l00060">avg_speed()</a>, <a class="el" href="savegame_8cpp_source.html#l01141">deserialize_legacy()</a>, <a class="el" href="savegame_8cpp_source.html#l01112">io()</a>, <a class="el" href="mongroup_8cpp_source.html#l00044">is_safe()</a>, and <a class="el" href="savegame_8cpp_source.html#l00871">mongroup_hash::operator()()</a>.</p>
 
 </div>
 </div>
@@ -1149,7 +1149,7 @@ template&lt;typename Archive &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structmongroup.html">mongroup</a></li>
-    <li class="footer">Generated on Wed Oct 19 2022 14:19:40 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Mon Dec 26 2022 21:42:09 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

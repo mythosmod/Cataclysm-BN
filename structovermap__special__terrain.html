@@ -162,13 +162,13 @@ Public Attributes</h2></td></tr>
 <p>Returns whether this terrain of the special can be placed on the specified terrain. </p>
 <p >It's true if oter meets any of locations. </p>
 
-<p class="definition">Definition at line <a class="el" href="overmap_8cpp_source.html#l00955">955</a> of file <a class="el" href="overmap_8cpp_source.html">overmap.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00956" name="l00956"></a><span class="lineno">  956</span>{</div>
-<div class="line"><a id="l00957" name="l00957"></a><span class="lineno">  957</span>    <span class="keywordflow">return</span> std::any_of( <a class="code hl_variable" href="structovermap__special__terrain.html#a8c047fb10bba197032cb3cc2aca2a0e2">locations</a>.begin(), <a class="code hl_variable" href="structovermap__special__terrain.html#a8c047fb10bba197032cb3cc2aca2a0e2">locations</a>.end(),</div>
-<div class="line"><a id="l00958" name="l00958"></a><span class="lineno">  958</span>    [&amp;oter]( <span class="keyword">const</span> <a class="code hl_class" href="classstring__id.html">overmap_location_id</a> &amp; loc ) {</div>
-<div class="line"><a id="l00959" name="l00959"></a><span class="lineno">  959</span>        return loc-&gt;test( oter );</div>
-<div class="line"><a id="l00960" name="l00960"></a><span class="lineno">  960</span>    } );</div>
-<div class="line"><a id="l00961" name="l00961"></a><span class="lineno">  961</span>}</div>
+<p class="definition">Definition at line <a class="el" href="overmap_8cpp_source.html#l00956">956</a> of file <a class="el" href="overmap_8cpp_source.html">overmap.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00957" name="l00957"></a><span class="lineno">  957</span>{</div>
+<div class="line"><a id="l00958" name="l00958"></a><span class="lineno">  958</span>    <span class="keywordflow">return</span> std::any_of( <a class="code hl_variable" href="structovermap__special__terrain.html#a8c047fb10bba197032cb3cc2aca2a0e2">locations</a>.begin(), <a class="code hl_variable" href="structovermap__special__terrain.html#a8c047fb10bba197032cb3cc2aca2a0e2">locations</a>.end(),</div>
+<div class="line"><a id="l00959" name="l00959"></a><span class="lineno">  959</span>    [&amp;oter]( <span class="keyword">const</span> <a class="code hl_class" href="classstring__id.html">overmap_location_id</a> &amp; loc ) {</div>
+<div class="line"><a id="l00960" name="l00960"></a><span class="lineno">  960</span>        return loc-&gt;test( oter );</div>
+<div class="line"><a id="l00961" name="l00961"></a><span class="lineno">  961</span>    } );</div>
+<div class="line"><a id="l00962" name="l00962"></a><span class="lineno">  962</span>}</div>
 <div class="ttc" id="aclassstring__id_html"><div class="ttname"><a href="classstring__id.html">string_id&lt; overmap_location &gt;</a></div></div>
 <div class="ttc" id="astructovermap__special__terrain_html_a8c047fb10bba197032cb3cc2aca2a0e2"><div class="ttname"><a href="structovermap__special__terrain.html#a8c047fb10bba197032cb3cc2aca2a0e2">overmap_special_terrain::locations</a></div><div class="ttdeci">std::set&lt; overmap_location_id &gt; locations</div><div class="ttdef"><b>Definition:</b> <a href="overmap__special_8h_source.html#l00052">overmap_special.h:52</a></div></div>
 </div><!-- fragment -->
@@ -222,7 +222,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="overmap__special_8h_source.html#l00052">52</a> of file <a class="el" href="overmap__special_8h_source.html">overmap_special.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="overmap_8cpp_source.html#l00955">can_be_placed_on()</a>, <a class="el" href="overmap_8cpp_source.html#l04966">overmap_specials::create_building_from()</a>, and <a class="el" href="overmap_8cpp_source.html#l00429">deserialize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="overmap_8cpp_source.html#l00956">can_be_placed_on()</a>, <a class="el" href="overmap_8cpp_source.html#l04967">overmap_specials::create_building_from()</a>, and <a class="el" href="overmap_8cpp_source.html#l00429">deserialize()</a>.</p>
 
 </div>
 </div>
@@ -258,7 +258,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="overmap__special_8h_source.html#l00051">51</a> of file <a class="el" href="overmap__special_8h_source.html">overmap_special.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="overmap_8cpp_source.html#l01067">overmap_special::check()</a>, <a class="el" href="overmap_8cpp_source.html#l04966">overmap_specials::create_building_from()</a>, and <a class="el" href="overmap_8cpp_source.html#l00429">deserialize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="overmap_8cpp_source.html#l01068">overmap_special::check()</a>, <a class="el" href="overmap_8cpp_source.html#l04967">overmap_specials::create_building_from()</a>, and <a class="el" href="overmap_8cpp_source.html#l00429">deserialize()</a>.</p>
 
 </div>
 </div>
@@ -272,7 +272,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structovermap__special__terrain.html">overmap_special_terrain</a></li>
-    <li class="footer">Generated on Wed Oct 19 2022 14:19:43 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Mon Dec 26 2022 21:42:12 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

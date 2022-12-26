@@ -4,6 +4,7 @@ var vehicle__move_8cpp =
     [ "angle_to_vec", "vehicle__move_8cpp.html#a0039ad830efb94637bdc1dd04d0fa60c", null ],
     [ "cmps_to_vmiph", "vehicle__move_8cpp.html#a8001239e356cfe527444f6019ee90205", null ],
     [ "get_collision_factor", "vehicle__move_8cpp.html#a773926a54d526c780fa7b340eaaaa6a4", null ],
+    [ "get_num_cw_rots_of_ray_delta", "vehicle__move_8cpp.html#ae8bd53e4bc2ad092da91884aec6d373d", null ],
     [ "is_on_rails", "vehicle__move_8cpp.html#ad2c532fb5522d745b0006f7a3b36cab3", null ],
     [ "make_none", "vehicle__move_8cpp.html#a90726346ef0084026393895b4e7bcb20", null ],
     [ "make_shift", "vehicle__move_8cpp.html#ac828727a3d0872b1535bf031b77d0590", null ],

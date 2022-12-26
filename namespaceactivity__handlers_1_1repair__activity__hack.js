@@ -10,6 +10,6 @@ var namespaceactivity__handlers_1_1repair__activity__hack =
       [ "get_hack_type", "namespaceactivity__handlers_1_1repair__activity__hack_1_1anonymous__namespace_02activity__handlers_8cpp_03.html#a10e3cb6ed82908ba872da0b52968ef42", null ],
       [ "get_position", "namespaceactivity__handlers_1_1repair__activity__hack_1_1anonymous__namespace_02activity__handlers_8cpp_03.html#ad991118ba95531cae09dff23e30c5ef6", null ]
     ] ],
-    [ "patch_activity_for_furniture", "namespaceactivity__handlers_1_1repair__activity__hack.html#a3797595d4215a8977cd3c5a39f063b4e", null ],
+    [ "patch_activity_for_furniture", "namespaceactivity__handlers_1_1repair__activity__hack.html#a3e3ae9542f50ef9949b9840ef4fce32c", null ],
     [ "patch_activity_for_vehicle_welder", "namespaceactivity__handlers_1_1repair__activity__hack.html#a5a06628fc3bbbfafb38b9b5b44e819d3", null ]
 ];

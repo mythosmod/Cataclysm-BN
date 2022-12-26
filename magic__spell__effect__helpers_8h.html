@@ -167,26 +167,26 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="magic__spell__effect_8cpp_source.html#l00379">379</a> of file <a class="el" href="magic__spell__effect_8cpp_source.html">magic_spell_effect.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>{</div>
-<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>    std::set&lt;tripoint&gt; targets = { target }; <span class="comment">// initialize with epicenter</span></div>
-<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>    <span class="keywordflow">if</span>( sp.<a class="code hl_function" href="classspell.html#a004decbbde4de635b4e652acff65eb8e">aoe</a>() &lt;= 1 &amp;&amp; sp.<a class="code hl_function" href="classspell.html#aa34fc8ebf8b820ac055f4b4dd9d78c35">effect</a>() != <span class="stringliteral">&quot;line_attack&quot;</span> ) {</div>
-<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>        <span class="keywordflow">return</span> targets;</div>
-<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>    }</div>
-<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span> </div>
-<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> aoe_radius = sp.<a class="code hl_function" href="classspell.html#a004decbbde4de635b4e652acff65eb8e">aoe</a>();</div>
-<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>    targets = aoe_func( sp, caster.<a class="code hl_function" href="classCreature.html#a45926a7ba63ccc9be744f87a4d540b7d">pos</a>(), target, aoe_radius, ignore_walls );</div>
+<p class="definition">Definition at line <a class="el" href="magic__spell__effect_8cpp_source.html#l00382">382</a> of file <a class="el" href="magic__spell__effect_8cpp_source.html">magic_spell_effect.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>{</div>
+<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>    std::set&lt;tripoint&gt; targets = { target }; <span class="comment">// initialize with epicenter</span></div>
+<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>    <span class="keywordflow">if</span>( sp.<a class="code hl_function" href="classspell.html#a004decbbde4de635b4e652acff65eb8e">aoe</a>() &lt;= 1 &amp;&amp; sp.<a class="code hl_function" href="classspell.html#aa34fc8ebf8b820ac055f4b4dd9d78c35">effect</a>() != <span class="stringliteral">&quot;line_attack&quot;</span> ) {</div>
+<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>        <span class="keywordflow">return</span> targets;</div>
+<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>    }</div>
 <div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span> </div>
-<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>    <span class="keywordflow">for</span>( std::set&lt;tripoint&gt;::iterator it = targets.begin(); it != targets.end(); ) {</div>
-<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>        <span class="keywordflow">if</span>( !sp.<a class="code hl_function" href="classspell.html#adc1aee8fd855fce28ebb1dcc39e37a12">is_valid_target</a>( caster, *it ) ) {</div>
-<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>            it = targets.erase( it );</div>
-<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>            ++it;</div>
-<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>        }</div>
-<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>    }</div>
-<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span> </div>
-<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>    <span class="keywordflow">return</span> targets;</div>
-<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>}</div>
+<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> aoe_radius = sp.<a class="code hl_function" href="classspell.html#a004decbbde4de635b4e652acff65eb8e">aoe</a>();</div>
+<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>    targets = aoe_func( sp, caster.<a class="code hl_function" href="classCreature.html#a45926a7ba63ccc9be744f87a4d540b7d">pos</a>(), target, aoe_radius, ignore_walls );</div>
+<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span> </div>
+<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>    <span class="keywordflow">for</span>( std::set&lt;tripoint&gt;::iterator it = targets.begin(); it != targets.end(); ) {</div>
+<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>        <span class="keywordflow">if</span>( !sp.<a class="code hl_function" href="classspell.html#adc1aee8fd855fce28ebb1dcc39e37a12">is_valid_target</a>( caster, *it ) ) {</div>
+<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>            it = targets.erase( it );</div>
+<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>            ++it;</div>
+<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>        }</div>
+<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>    }</div>
+<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span> </div>
+<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span>    <span class="keywordflow">return</span> targets;</div>
+<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span>}</div>
 <div class="ttc" id="aclassCreature_html_a45926a7ba63ccc9be744f87a4d540b7d"><div class="ttname"><a href="classCreature.html#a45926a7ba63ccc9be744f87a4d540b7d">Creature::pos</a></div><div class="ttdeci">virtual const tripoint &amp; pos() const =0</div></div>
 <div class="ttc" id="aclassspell_html_a004decbbde4de635b4e652acff65eb8e"><div class="ttname"><a href="classspell.html#a004decbbde4de635b4e652acff65eb8e">spell::aoe</a></div><div class="ttdeci">int aoe() const</div><div class="ttdef"><b>Definition:</b> <a href="magic_8cpp_source.html#l00518">magic.cpp:518</a></div></div>
 <div class="ttc" id="aclassspell_html_aa34fc8ebf8b820ac055f4b4dd9d78c35"><div class="ttname"><a href="classspell.html#aa34fc8ebf8b820ac055f4b4dd9d78c35">spell::effect</a></div><div class="ttdeci">std::string effect() const</div><div class="ttdef"><b>Definition:</b> <a href="magic_8cpp_source.html#l00935">magic.cpp:935</a></div></div>
@@ -194,7 +194,7 @@ Functions</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="magic_8cpp_source.html#l00518">spell::aoe()</a>, <a class="el" href="magic_8cpp_source.html#l00935">spell::effect()</a>, <a class="el" href="magic_8cpp_source.html#l00955">spell::is_valid_target()</a>, and <a class="el" href="classCreature.html#a45926a7ba63ccc9be744f87a4d540b7d">Creature::pos()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="magic__spell__effect_8cpp_source.html#l00402">spell_effect_area()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="magic__spell__effect_8cpp_source.html#l00405">spell_effect_area()</a>.</p>
 
 </div>
 </div>
@@ -204,7 +204,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="magic__spell__effect__helpers_8h.html">magic_spell_effect_helpers.h</a></li>
-    <li class="footer">Generated on Wed Oct 19 2022 14:19:19 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Mon Dec 26 2022 21:41:52 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

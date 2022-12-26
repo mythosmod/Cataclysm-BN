@@ -5,5 +5,5 @@ var sdlsound_8h =
     [ "load_soundset", "sdlsound_8h.html#a5a4ee15f0d695efca140adc6aa26204f", null ],
     [ "play_music", "sdlsound_8h.html#a283388f57294fc9cc61dae8b158e4e2c", null ],
     [ "shutdown_sound", "sdlsound_8h.html#abb18c69ad5ecf06e94403acf86e74cdc", null ],
-    [ "update_music_volume", "sdlsound_8h.html#ab8ff984ea9a3835e83ebb4b5b7a43a00", null ]
+    [ "update_volumes", "sdlsound_8h.html#a89989cc14595586cd9cc3bdb8658ee02", null ]
 ];

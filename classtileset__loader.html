@@ -99,8 +99,8 @@ $(document).ready(function(){initNavTree('classtileset__loader.html',''); initRe
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a7e659e2616197b4eb18731d551a46cfb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtileset__loader.html#a7e659e2616197b4eb18731d551a46cfb">tileset_loader</a> (<a class="el" href="classtileset.html">tileset</a> &amp;<a class="el" href="classtileset__loader.html#ad5657f41c22816c672501c64521cd496">ts</a>, const SDL_Renderer_Ptr &amp;r)</td></tr>
 <tr class="separator:a7e659e2616197b4eb18731d551a46cfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb930b7ae7091838f8ec28be3ee2e88b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtileset__loader.html#afb930b7ae7091838f8ec28be3ee2e88b">load</a> (const std::string &amp;tileset_id, bool precheck)</td></tr>
-<tr class="separator:afb930b7ae7091838f8ec28be3ee2e88b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf095fd647daa4621ba1fafb2f80ebb0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtileset__loader.html#acf095fd647daa4621ba1fafb2f80ebb0">load</a> (const std::string &amp;tileset_id, bool precheck, bool pump_events=false)</td></tr>
+<tr class="separator:acf095fd647daa4621ba1fafb2f80ebb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -124,15 +124,15 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:a0272176e3a128bdbcf91b2d42b65f500"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9599839fdd9ef4711fdde0422e231daa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtileset__loader.html#a9599839fdd9ef4711fdde0422e231daa">load_ascii</a> (const <a class="el" href="classJsonObject.html">JsonObject</a> &amp;config)</td></tr>
 <tr class="separator:a9599839fdd9ef4711fdde0422e231daa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad43522d298514c8cf3167693e703f580"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtileset__loader.html#ad43522d298514c8cf3167693e703f580">load_tileset</a> (const std::string &amp;path)</td></tr>
-<tr class="memdesc:ad43522d298514c8cf3167693e703f580"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load tileset, R,G,B, are the color components of the transparent color Returns the number of tiles that have been loaded from this tileset image.  <a href="classtileset__loader.html#ad43522d298514c8cf3167693e703f580">More...</a><br /></td></tr>
-<tr class="separator:ad43522d298514c8cf3167693e703f580"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2033ed98ed497657ce3d38a2c9763f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtileset__loader.html#af2033ed98ed497657ce3d38a2c9763f0">load_tileset</a> (const std::string &amp;path, bool pump_events)</td></tr>
+<tr class="memdesc:af2033ed98ed497657ce3d38a2c9763f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load tileset, R,G,B, are the color components of the transparent color Returns the number of tiles that have been loaded from this tileset image.  <a href="classtileset__loader.html#af2033ed98ed497657ce3d38a2c9763f0">More...</a><br /></td></tr>
+<tr class="separator:af2033ed98ed497657ce3d38a2c9763f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e4616d6aa048353b759fb6b622c1906"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtileset__loader.html#a2e4616d6aa048353b759fb6b622c1906">load_tilejson_from_file</a> (const <a class="el" href="classJsonObject.html">JsonObject</a> &amp;config)</td></tr>
 <tr class="memdesc:a2e4616d6aa048353b759fb6b622c1906"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load tiles from json data.This expects a "tiles" array in <b>config</b>.  <a href="classtileset__loader.html#a2e4616d6aa048353b759fb6b622c1906">More...</a><br /></td></tr>
 <tr class="separator:a2e4616d6aa048353b759fb6b622c1906"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa1c2362ac1f7f545a067a132f9011f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtileset__loader.html#afa1c2362ac1f7f545a067a132f9011f8">load_internal</a> (const <a class="el" href="classJsonObject.html">JsonObject</a> &amp;config, const std::string &amp;tileset_root, const std::string &amp;img_path)</td></tr>
-<tr class="memdesc:afa1c2362ac1f7f545a067a132f9011f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function called by load.  <a href="classtileset__loader.html#afa1c2362ac1f7f545a067a132f9011f8">More...</a><br /></td></tr>
-<tr class="separator:afa1c2362ac1f7f545a067a132f9011f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27b8d745a650072b54f181c461890c1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtileset__loader.html#a27b8d745a650072b54f181c461890c1d">load_internal</a> (const <a class="el" href="classJsonObject.html">JsonObject</a> &amp;config, const std::string &amp;tileset_root, const std::string &amp;img_path, bool pump_events)</td></tr>
+<tr class="memdesc:a27b8d745a650072b54f181c461890c1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function called by load.  <a href="classtileset__loader.html#a27b8d745a650072b54f181c461890c1d">More...</a><br /></td></tr>
+<tr class="separator:a27b8d745a650072b54f181c461890c1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -199,9 +199,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cata__tiles_8h_source.html#l00266">266</a> of file <a class="el" href="cata__tiles_8h_source.html">cata_tiles.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>                                                                 : <a class="code hl_variable" href="classtileset__loader.html#ad5657f41c22816c672501c64521cd496">ts</a>( <a class="code hl_variable" href="classtileset__loader.html#ad5657f41c22816c672501c64521cd496">ts</a> ), <a class="code hl_variable" href="classtileset__loader.html#aa9dc09ba9d7ac8a301c009ac17cb5b09">renderer</a>( r ) {</div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>        }</div>
+<p class="definition">Definition at line <a class="el" href="cata__tiles_8h_source.html#l00272">272</a> of file <a class="el" href="cata__tiles_8h_source.html">cata_tiles.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>                                                                 : <a class="code hl_variable" href="classtileset__loader.html#ad5657f41c22816c672501c64521cd496">ts</a>( <a class="code hl_variable" href="classtileset__loader.html#ad5657f41c22816c672501c64521cd496">ts</a> ), <a class="code hl_variable" href="classtileset__loader.html#aa9dc09ba9d7ac8a301c009ac17cb5b09">renderer</a>( r ) {</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>        }</div>
 <div class="ttc" id="aclasstileset__loader_html_aa9dc09ba9d7ac8a301c009ac17cb5b09"><div class="ttname"><a href="classtileset__loader.html#aa9dc09ba9d7ac8a301c009ac17cb5b09">tileset_loader::renderer</a></div><div class="ttdeci">const SDL_Renderer_Ptr &amp; renderer</div><div class="ttdef"><b>Definition:</b> <a href="cata__tiles_8h_source.html#l00204">cata_tiles.h:204</a></div></div>
 <div class="ttc" id="aclasstileset__loader_html_ad5657f41c22816c672501c64521cd496"><div class="ttname"><a href="classtileset__loader.html#ad5657f41c22816c672501c64521cd496">tileset_loader::ts</a></div><div class="ttdeci">tileset &amp; ts</div><div class="ttdef"><b>Definition:</b> <a href="cata__tiles_8h_source.html#l00203">cata_tiles.h:203</a></div></div>
 </div><!-- fragment -->
@@ -363,8 +363,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="afb930b7ae7091838f8ec28be3ee2e88b" name="afb930b7ae7091838f8ec28be3ee2e88b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afb930b7ae7091838f8ec28be3ee2e88b">&#9670;&nbsp;</a></span>load()</h2>
+<a id="acf095fd647daa4621ba1fafb2f80ebb0" name="acf095fd647daa4621ba1fafb2f80ebb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf095fd647daa4621ba1fafb2f80ebb0">&#9670;&nbsp;</a></span>load()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -379,7 +379,13 @@ Private Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>precheck</em>&#160;</td>
+          <td class="paramname"><em>precheck</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>pump_events</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -398,6 +404,7 @@ Private Attributes</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">tileset_id</td><td>Ident of the tileset, as it appears in the options. </td></tr>
     <tr><td class="paramname">precheck</td><td>If tue, only loads the meta data of the tileset (tile dimensions). </td></tr>
+    <tr><td class="paramname">pump_events</td><td>Handle window events and refresh the screen when necessary. Please ensure that the tileset is not accessed when this method is executing if you set it to true. </td></tr>
   </table>
   </dd>
 </dl>
@@ -456,8 +463,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="afa1c2362ac1f7f545a067a132f9011f8" name="afa1c2362ac1f7f545a067a132f9011f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa1c2362ac1f7f545a067a132f9011f8">&#9670;&nbsp;</a></span>load_internal()</h2>
+<a id="a27b8d745a650072b54f181c461890c1d" name="a27b8d745a650072b54f181c461890c1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27b8d745a650072b54f181c461890c1d">&#9670;&nbsp;</a></span>load_internal()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -481,7 +488,13 @@ Private Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>img_path</em>&#160;</td>
+          <td class="paramname"><em>img_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>pump_events</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -497,6 +510,12 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Helper function called by load. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pump_events</td><td>Handle window events and refresh the screen when necessary. Please ensure that the tileset is not accessed when this method is executing if you set it to true. </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">std::exception</td><td>On any error. </td></tr>
@@ -618,8 +637,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ad43522d298514c8cf3167693e703f580" name="ad43522d298514c8cf3167693e703f580"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad43522d298514c8cf3167693e703f580">&#9670;&nbsp;</a></span>load_tileset()</h2>
+<a id="af2033ed98ed497657ce3d38a2c9763f0" name="af2033ed98ed497657ce3d38a2c9763f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2033ed98ed497657ce3d38a2c9763f0">&#9670;&nbsp;</a></span>load_tileset()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -631,8 +650,18 @@ Private Attributes</h2></td></tr>
           <td class="memname">void tileset_loader::load_tileset </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>path</em></td><td>)</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>pump_events</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -643,6 +672,12 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Load tileset, R,G,B, are the color components of the transparent color Returns the number of tiles that have been loaded from this tileset image. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pump_events</td><td>Handle window events and refresh the screen when necessary. Please ensure that the tileset is not accessed when this method is executing if you set it to true. </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">std::exception</td><td>If the image can not be loaded. </td></tr>
@@ -976,7 +1011,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classtileset__loader.html">tileset_loader</a></li>
-    <li class="footer">Generated on Wed Oct 19 2022 14:19:48 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Mon Dec 26 2022 21:42:15 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

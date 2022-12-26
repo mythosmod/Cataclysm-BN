@@ -489,9 +489,9 @@ Variables</h2></td></tr>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>}</div>
 <div class="ttc" id="amutation__data_8cpp_html_aecfb7f8f921fb77eeb7d2e070ff75717"><div class="ttname"><a href="mutation__data_8cpp.html#aecfb7f8f921fb77eeb7d2e070ff75717">extract_mod</a></div><div class="ttdeci">static void extract_mod(const JsonObject &amp;j, std::unordered_map&lt; std::pair&lt; bool, std::string &gt;, int, cata::tuple_hash &gt; &amp;data, const std::string &amp;mod_type, bool active, const std::string &amp;type_key)</div><div class="ttdef"><b>Definition:</b> <a href="mutation__data_8cpp_source.html#l00085">mutation_data.cpp:85</a></div></div>
 <div class="ttc" id="amutation__ui_8cpp_html_a402f65070aa900e68cd18960d2685a76ac76a5e84e4bdee527e274ea30c680d79"><div class="ttname"><a href="mutation__ui_8cpp.html#a402f65070aa900e68cd18960d2685a76ac76a5e84e4bdee527e274ea30c680d79">mutation_tab_mode::active</a></div><div class="ttdeci">@ active</div></div>
-<div class="ttc" id="anamespacemapgen__defer_html_a640e58e4d234e3f1e2ddbfff8fd665ce"><div class="ttname"><a href="namespacemapgen__defer.html#a640e58e4d234e3f1e2ddbfff8fd665ce">mapgen_defer::member</a></div><div class="ttdeci">std::string member</div><div class="ttdef"><b>Definition:</b> <a href="mapgen_8cpp_source.html#l00402">mapgen.cpp:402</a></div></div>
+<div class="ttc" id="anamespacemapgen__defer_html_a640e58e4d234e3f1e2ddbfff8fd665ce"><div class="ttname"><a href="namespacemapgen__defer.html#a640e58e4d234e3f1e2ddbfff8fd665ce">mapgen_defer::member</a></div><div class="ttdeci">std::string member</div><div class="ttdef"><b>Definition:</b> <a href="mapgen_8cpp_source.html#l00410">mapgen.cpp:410</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="mutation__ui_8cpp.html#a402f65070aa900e68cd18960d2685a76ac76a5e84e4bdee527e274ea30c680d79">active</a>, <a class="el" href="mutation__data_8cpp_source.html#l00085">extract_mod()</a>, <a class="el" href="json_8cpp_source.html#l00361">JsonObject::get_object()</a>, <a class="el" href="json_8cpp_source.html#l00425">JsonObject::has_object()</a>, and <a class="el" href="mapgen_8cpp_source.html#l00402">mapgen_defer::member</a>.</p>
+<p class="reference">References <a class="el" href="mutation__ui_8cpp.html#a402f65070aa900e68cd18960d2685a76ac76a5e84e4bdee527e274ea30c680d79">active</a>, <a class="el" href="mutation__data_8cpp_source.html#l00085">extract_mod()</a>, <a class="el" href="json_8cpp_source.html#l00361">JsonObject::get_object()</a>, <a class="el" href="json_8cpp_source.html#l00425">JsonObject::has_object()</a>, and <a class="el" href="mapgen_8cpp_source.html#l00410">mapgen_defer::member</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mutation__data_8cpp_source.html#l00307">mutation_branch::load()</a>.</p>
 
@@ -580,12 +580,12 @@ Variables</h2></td></tr>
 <div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span>    <span class="comment">// Evidently, making the collection/distribution separation better has made the code for this check worse.</span></div>
 <div class="line"><a id="l00752" name="l00752"></a><span class="lineno">  752</span>    <span class="keywordflow">if</span>( is_collection ) {</div>
 <div class="line"><a id="l00753" name="l00753"></a><span class="lineno">  753</span>        <span class="keywordflow">if</span>( <span class="keyword">dynamic_cast&lt;</span><a class="code hl_class" href="classTrait__group__distribution.html">Trait_group_distribution</a> *<span class="keyword">&gt;</span>( found-&gt;second.get() ) ) {</div>
-<div class="line"><a id="l00754" name="l00754"></a><span class="lineno">  754</span>            <span class="keywordflow">throw</span> std::runtime_error( <a class="code hl_function" href="string__formatter_8h.html#a9b089d0b697443b096063219dab08ef5">string_format</a>(</div>
+<div class="line"><a id="l00754" name="l00754"></a><span class="lineno">  754</span>            <span class="keywordflow">throw</span> std::runtime_error( <a class="code hl_function" href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a>(</div>
 <div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span>                                          R<span class="stringliteral">&quot;(&quot;mutation group &quot;%s&quot; already defined with type &quot;distribution&quot;)&quot;, gid.<a class="code hl_function" href="classstring__id.html#aa7dabc565f0c067e1a237ea224b18f93">str</a>() ) );</span></div>
 <div class="line"><a id="l00756" name="l00756"></a><span class="lineno">  756</span><span class="stringliteral">        }</span></div>
 <div class="line"><a id="l00757" name="l00757"></a><span class="lineno">  757</span><span class="stringliteral">    } </span><span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span>        <span class="keywordflow">if</span>( <span class="keyword">dynamic_cast&lt;</span><a class="code hl_class" href="classTrait__group__collection.html">Trait_group_collection</a> *<span class="keyword">&gt;</span>( found-&gt;second.get() ) ) {</div>
-<div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span>            <span class="keywordflow">throw</span> std::runtime_error( <a class="code hl_function" href="string__formatter_8h.html#a9b089d0b697443b096063219dab08ef5">string_format</a>(</div>
+<div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span>            <span class="keywordflow">throw</span> std::runtime_error( <a class="code hl_function" href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a>(</div>
 <div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span>                                          R<span class="stringliteral">&quot;(&quot;mutation group &quot;%s&quot; already defined with type &quot;collection&quot;)&quot;, gid.<a class="code hl_function" href="classstring__id.html#aa7dabc565f0c067e1a237ea224b18f93">str</a>() ) );</span></div>
 <div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span><span class="stringliteral">        }</span></div>
 <div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span><span class="stringliteral">    }</span></div>
@@ -595,9 +595,9 @@ Variables</h2></td></tr>
 <div class="ttc" id="aclassTrait__group__distribution_html"><div class="ttname"><a href="classTrait__group__distribution.html">Trait_group_distribution</a></div><div class="ttdoc">A distribution of traits to generate.</div><div class="ttdef"><b>Definition:</b> <a href="trait__group_8h_source.html#l00193">trait_group.h:194</a></div></div>
 <div class="ttc" id="aclassstring__id_html_aa7dabc565f0c067e1a237ea224b18f93"><div class="ttname"><a href="classstring__id.html#aa7dabc565f0c067e1a237ea224b18f93">string_id::str</a></div><div class="ttdeci">const std::string &amp; str() const</div><div class="ttdoc">Returns the identifier as plain std::string.</div><div class="ttdef"><b>Definition:</b> <a href="string__id_8h_source.html#l00255">string_id.h:255</a></div></div>
 <div class="ttc" id="amutation__data_8cpp_html_ac5fde3e1bbba131ff48d8fe36f4d6dc9"><div class="ttname"><a href="mutation__data_8cpp.html#ac5fde3e1bbba131ff48d8fe36f4d6dc9">trait_groups</a></div><div class="ttdeci">TraitGroupMap trait_groups</div><div class="ttdef"><b>Definition:</b> <a href="mutation__data_8cpp_source.html#l00031">mutation_data.cpp:31</a></div></div>
-<div class="ttc" id="astring__formatter_8h_html_a9b089d0b697443b096063219dab08ef5"><div class="ttname"><a href="string__formatter_8h.html#a9b089d0b697443b096063219dab08ef5">string_format</a></div><div class="ttdeci">std::string string_format(std::string format, Args &amp;&amp;...args)</div><div class="ttdoc">Simple wrapper over string_formatter::parse.</div><div class="ttdef"><b>Definition:</b> <a href="string__formatter_8h_source.html#l00418">string_formatter.h:418</a></div></div>
+<div class="ttc" id="astring__formatter_8h_html_a8964099387da2f95396c67566bafce3d"><div class="ttname"><a href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a></div><div class="ttdeci">std::string string_format(std::string_view format, Args &amp;&amp;...args)</div><div class="ttdoc">Simple wrapper over string_formatter::parse.</div><div class="ttdef"><b>Definition:</b> <a href="string__formatter_8h_source.html#l00431">string_formatter.h:431</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="string__id_8h_source.html#l00255">string_id&lt; T &gt;::str()</a>, <a class="el" href="string__formatter_8h_source.html#l00418">string_format()</a>, and <a class="el" href="mutation__data_8cpp_source.html#l00031">trait_groups</a>.</p>
+<p class="reference">References <a class="el" href="string__id_8h_source.html#l00255">string_id&lt; T &gt;::str()</a>, <a class="el" href="string__formatter_8h_source.html#l00431">string_format()</a>, and <a class="el" href="mutation__data_8cpp_source.html#l00031">trait_groups</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mutation__data_8cpp_source.html#l00766">mutation_branch::load_trait_group()</a>.</p>
 
@@ -786,7 +786,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="mutation__data_8cpp_source.html#l00064">64</a> of file <a class="el" href="mutation__data_8cpp_source.html">mutation_data.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mutation__data_8cpp_source.html#l00718">mutation_branch::finalize()</a>, <a class="el" href="mutation_8cpp_source.html#l01044">Character::mutate_category()</a>, <a class="el" href="mutation_8cpp_source.html#l00887">Character::old_mutate()</a>, <a class="el" href="mutation__data_8cpp_source.html#l00648">mutation_branch::reset_all()</a>, and <a class="el" href="init_8cpp_source.html#l00528">DynamicDataLoader::unload_data()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mutation__data_8cpp_source.html#l00718">mutation_branch::finalize()</a>, <a class="el" href="mutation_8cpp_source.html#l01034">Character::mutate_category()</a>, <a class="el" href="mutation_8cpp_source.html#l00877">Character::old_mutate()</a>, <a class="el" href="mutation__data_8cpp_source.html#l00648">mutation_branch::reset_all()</a>, and <a class="el" href="init_8cpp_source.html#l00536">DynamicDataLoader::unload_data()</a>.</p>
 
 </div>
 </div>
@@ -832,7 +832,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="mutation__data_8cpp.html">mutation_data.cpp</a></li>
-    <li class="footer">Generated on Wed Oct 19 2022 14:19:21 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Mon Dec 26 2022 21:41:53 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

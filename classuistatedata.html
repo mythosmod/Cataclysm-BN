@@ -188,6 +188,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a774d42bebc3686bbc8a086b3a3001fc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac544e07259ab22d18610fd4609f7ef92"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="type__id_8h.html#a7d1934ae1f3ab6bea8bd75f88070482d">recipe_id</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classuistatedata.html#ac544e07259ab22d18610fd4609f7ef92">recent_recipes</a></td></tr>
 <tr class="separator:ac544e07259ab22d18610fd4609f7ef92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80dccd6a60e6e3d6eba9199b8f6f281a"><td class="memItemLeft" align="right" valign="top">std::set&lt; <a class="el" href="type__id_8h.html#af10d8c581da16a8b62d3f0543e14a56d">construction_group_str_id</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classuistatedata.html#a80dccd6a60e6e3d6eba9199b8f6f281a">favorite_construct_recipes</a></td></tr>
+<tr class="separator:a80dccd6a60e6e3d6eba9199b8f6f281a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25843c745eb4d8bf305a060f8b1804b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enums_8h.html#aa5453fbee63cb8d917b85be32ec4cb8c">bionic_ui_sort_mode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classuistatedata.html#a25843c745eb4d8bf305a060f8b1804b1">bionic_sort_mode</a> = <a class="el" href="enums_8h.html#aa5453fbee63cb8d917b85be32ec4cb8cac9c9c146c630ca5ef9197c73c032f4a6">bionic_ui_sort_mode::POWER</a></td></tr>
 <tr class="separator:a25843c745eb4d8bf305a060f8b1804b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f76afe9d13de210eb9265748cc5a32b"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::vector&lt; std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classuistatedata.html#a2f76afe9d13de210eb9265748cc5a32b">input_history</a></td></tr>
@@ -261,28 +263,29 @@ Private Types</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="savegame__json_8cpp_source.html#l04316">4316</a> of file <a class="el" href="savegame__json_8cpp_source.html">savegame_json.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l04317" name="l04317"></a><span class="lineno"> 4317</span>{</div>
-<div class="line"><a id="l04318" name="l04318"></a><span class="lineno"> 4318</span>    <a class="code hl_variable" href="classuistatedata.html#aaa8e0be61e584b02f8c79957ea6db267">transfer_save</a>.<a class="code hl_function" href="structadvanced__inv__save__state.html#a5c5ab3c2ea7df5df956dd02755dd5b82">deserialize</a>( jo, <span class="stringliteral">&quot;transfer_save_&quot;</span> );</div>
-<div class="line"><a id="l04319" name="l04319"></a><span class="lineno"> 4319</span> </div>
-<div class="line"><a id="l04320" name="l04320"></a><span class="lineno"> 4320</span>    <span class="comment">// the rest</span></div>
-<div class="line"><a id="l04321" name="l04321"></a><span class="lineno"> 4321</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;adv_inv_container_location&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#ae03c273143ed03b47610a7a202e244e9">adv_inv_container_location</a> );</div>
-<div class="line"><a id="l04322" name="l04322"></a><span class="lineno"> 4322</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;adv_inv_container_index&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#a7ca08226d5987e8873456b25f018fdd9">adv_inv_container_index</a> );</div>
-<div class="line"><a id="l04323" name="l04323"></a><span class="lineno"> 4323</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;adv_inv_container_in_vehicle&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#a829a95626b828e79c6f36ac8eb78593c">adv_inv_container_in_vehicle</a> );</div>
-<div class="line"><a id="l04324" name="l04324"></a><span class="lineno"> 4324</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;adv_inv_container_type&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#a3bf63bdff38d8cc1766c51e76c811785">adv_inv_container_type</a> );</div>
-<div class="line"><a id="l04325" name="l04325"></a><span class="lineno"> 4325</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;adv_inv_container_content_type&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#a9a47d5cf0efecea53d34dfd6ff0f113f">adv_inv_container_content_type</a> );</div>
-<div class="line"><a id="l04326" name="l04326"></a><span class="lineno"> 4326</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;debug_menu&quot;</span>, <a class="code hl_namespace" href="namespacedebug__menu.html">debug_menu</a> );</div>
-<div class="line"><a id="l04327" name="l04327"></a><span class="lineno"> 4327</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;editmap_nsa_viewmode&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#acb56c3485c850dc0289c66ff6e299ed9">editmap_nsa_viewmode</a> );</div>
-<div class="line"><a id="l04328" name="l04328"></a><span class="lineno"> 4328</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;overmap_blinking&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#a8f4352b686cf6a32a279a41ed70f0d5a">overmap_blinking</a> );</div>
-<div class="line"><a id="l04329" name="l04329"></a><span class="lineno"> 4329</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;overmap_show_overlays&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#a2e59236e70385fa48ae1f6a2fcfd00b8">overmap_show_overlays</a> );</div>
-<div class="line"><a id="l04330" name="l04330"></a><span class="lineno"> 4330</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;overmap_show_map_notes&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#a02d98ac2e93fab7c76964d670eccfa01">overmap_show_map_notes</a> );</div>
-<div class="line"><a id="l04331" name="l04331"></a><span class="lineno"> 4331</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;overmap_show_land_use_codes&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#a5682c56c267d08f4ebdeeb8fd06b3037">overmap_show_land_use_codes</a> );</div>
-<div class="line"><a id="l04332" name="l04332"></a><span class="lineno"> 4332</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;overmap_show_city_labels&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#aa3ec3473ece2af731c64b5674792e352">overmap_show_city_labels</a> );</div>
-<div class="line"><a id="l04333" name="l04333"></a><span class="lineno"> 4333</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;overmap_show_hordes&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#ac36e8b4e7bc4fa56ffdf75405e4cef43">overmap_show_hordes</a> );</div>
-<div class="line"><a id="l04334" name="l04334"></a><span class="lineno"> 4334</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;overmap_show_forest_trails&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#a8a309551318f3f163541f1bb493897d3">overmap_show_forest_trails</a> );</div>
-<div class="line"><a id="l04335" name="l04335"></a><span class="lineno"> 4335</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;hidden_recipes&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#a8beabc9b7efada6b41c81464c2935dd9">hidden_recipes</a> );</div>
-<div class="line"><a id="l04336" name="l04336"></a><span class="lineno"> 4336</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;favorite_recipes&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#a774d42bebc3686bbc8a086b3a3001fc2">favorite_recipes</a> );</div>
-<div class="line"><a id="l04337" name="l04337"></a><span class="lineno"> 4337</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;recent_recipes&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#ac544e07259ab22d18610fd4609f7ef92">recent_recipes</a> );</div>
+<p class="definition">Definition at line <a class="el" href="savegame__json_8cpp_source.html#l04315">4315</a> of file <a class="el" href="savegame__json_8cpp_source.html">savegame_json.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l04316" name="l04316"></a><span class="lineno"> 4316</span>{</div>
+<div class="line"><a id="l04317" name="l04317"></a><span class="lineno"> 4317</span>    <a class="code hl_variable" href="classuistatedata.html#aaa8e0be61e584b02f8c79957ea6db267">transfer_save</a>.<a class="code hl_function" href="structadvanced__inv__save__state.html#a5c5ab3c2ea7df5df956dd02755dd5b82">deserialize</a>( jo, <span class="stringliteral">&quot;transfer_save_&quot;</span> );</div>
+<div class="line"><a id="l04318" name="l04318"></a><span class="lineno"> 4318</span> </div>
+<div class="line"><a id="l04319" name="l04319"></a><span class="lineno"> 4319</span>    <span class="comment">// the rest</span></div>
+<div class="line"><a id="l04320" name="l04320"></a><span class="lineno"> 4320</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;adv_inv_container_location&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#ae03c273143ed03b47610a7a202e244e9">adv_inv_container_location</a> );</div>
+<div class="line"><a id="l04321" name="l04321"></a><span class="lineno"> 4321</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;adv_inv_container_index&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#a7ca08226d5987e8873456b25f018fdd9">adv_inv_container_index</a> );</div>
+<div class="line"><a id="l04322" name="l04322"></a><span class="lineno"> 4322</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;adv_inv_container_in_vehicle&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#a829a95626b828e79c6f36ac8eb78593c">adv_inv_container_in_vehicle</a> );</div>
+<div class="line"><a id="l04323" name="l04323"></a><span class="lineno"> 4323</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;adv_inv_container_type&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#a3bf63bdff38d8cc1766c51e76c811785">adv_inv_container_type</a> );</div>
+<div class="line"><a id="l04324" name="l04324"></a><span class="lineno"> 4324</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;adv_inv_container_content_type&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#a9a47d5cf0efecea53d34dfd6ff0f113f">adv_inv_container_content_type</a> );</div>
+<div class="line"><a id="l04325" name="l04325"></a><span class="lineno"> 4325</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;debug_menu&quot;</span>, <a class="code hl_namespace" href="namespacedebug__menu.html">debug_menu</a> );</div>
+<div class="line"><a id="l04326" name="l04326"></a><span class="lineno"> 4326</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;editmap_nsa_viewmode&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#acb56c3485c850dc0289c66ff6e299ed9">editmap_nsa_viewmode</a> );</div>
+<div class="line"><a id="l04327" name="l04327"></a><span class="lineno"> 4327</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;overmap_blinking&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#a8f4352b686cf6a32a279a41ed70f0d5a">overmap_blinking</a> );</div>
+<div class="line"><a id="l04328" name="l04328"></a><span class="lineno"> 4328</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;overmap_show_overlays&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#a2e59236e70385fa48ae1f6a2fcfd00b8">overmap_show_overlays</a> );</div>
+<div class="line"><a id="l04329" name="l04329"></a><span class="lineno"> 4329</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;overmap_show_map_notes&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#a02d98ac2e93fab7c76964d670eccfa01">overmap_show_map_notes</a> );</div>
+<div class="line"><a id="l04330" name="l04330"></a><span class="lineno"> 4330</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;overmap_show_land_use_codes&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#a5682c56c267d08f4ebdeeb8fd06b3037">overmap_show_land_use_codes</a> );</div>
+<div class="line"><a id="l04331" name="l04331"></a><span class="lineno"> 4331</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;overmap_show_city_labels&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#aa3ec3473ece2af731c64b5674792e352">overmap_show_city_labels</a> );</div>
+<div class="line"><a id="l04332" name="l04332"></a><span class="lineno"> 4332</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;overmap_show_hordes&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#ac36e8b4e7bc4fa56ffdf75405e4cef43">overmap_show_hordes</a> );</div>
+<div class="line"><a id="l04333" name="l04333"></a><span class="lineno"> 4333</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;overmap_show_forest_trails&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#a8a309551318f3f163541f1bb493897d3">overmap_show_forest_trails</a> );</div>
+<div class="line"><a id="l04334" name="l04334"></a><span class="lineno"> 4334</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;hidden_recipes&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#a8beabc9b7efada6b41c81464c2935dd9">hidden_recipes</a> );</div>
+<div class="line"><a id="l04335" name="l04335"></a><span class="lineno"> 4335</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;favorite_recipes&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#a774d42bebc3686bbc8a086b3a3001fc2">favorite_recipes</a> );</div>
+<div class="line"><a id="l04336" name="l04336"></a><span class="lineno"> 4336</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;recent_recipes&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#ac544e07259ab22d18610fd4609f7ef92">recent_recipes</a> );</div>
+<div class="line"><a id="l04337" name="l04337"></a><span class="lineno"> 4337</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;favorite_construct_recipes&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#a80dccd6a60e6e3d6eba9199b8f6f281a">favorite_construct_recipes</a> );</div>
 <div class="line"><a id="l04338" name="l04338"></a><span class="lineno"> 4338</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;bionic_ui_sort_mode&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#a25843c745eb4d8bf305a060f8b1804b1">bionic_sort_mode</a> );</div>
 <div class="line"><a id="l04339" name="l04339"></a><span class="lineno"> 4339</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;overmap_debug_weather&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#ac38c9c089d2623d41325fea93ad9a348">overmap_debug_weather</a> );</div>
 <div class="line"><a id="l04340" name="l04340"></a><span class="lineno"> 4340</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;overmap_visible_weather&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#adb7c5f73d4e26f9e12e75161b3570d8a">overmap_visible_weather</a> );</div>
@@ -321,7 +324,7 @@ Private Types</h2></td></tr>
 <div class="ttc" id="aclassJsonObject_html_a99e64f59bc5e72e7572125064b68da29"><div class="ttname"><a href="classJsonObject.html#a99e64f59bc5e72e7572125064b68da29">JsonObject::get_int</a></div><div class="ttdeci">int get_int(const std::string &amp;name) const</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l00282">json.cpp:282</a></div></div>
 <div class="ttc" id="aclassJsonObject_html_ae66d47f9cb4993dfaf79819ec2aff2f8"><div class="ttname"><a href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">JsonObject::read</a></div><div class="ttdeci">bool read(const std::string &amp;name, T &amp;t, bool throw_on_error=true) const</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00944">json.h:944</a></div></div>
 <div class="ttc" id="aclassuistatedata_html_a02d98ac2e93fab7c76964d670eccfa01"><div class="ttname"><a href="classuistatedata.html#a02d98ac2e93fab7c76964d670eccfa01">uistatedata::overmap_show_map_notes</a></div><div class="ttdeci">bool overmap_show_map_notes</div><div class="ttdef"><b>Definition:</b> <a href="uistate_8h_source.html#l00106">uistate.h:106</a></div></div>
-<div class="ttc" id="aclassuistatedata_html_a25843c745eb4d8bf305a060f8b1804b1"><div class="ttname"><a href="classuistatedata.html#a25843c745eb4d8bf305a060f8b1804b1">uistatedata::bionic_sort_mode</a></div><div class="ttdeci">bionic_ui_sort_mode bionic_sort_mode</div><div class="ttdef"><b>Definition:</b> <a href="uistate_8h_source.html#l00141">uistate.h:141</a></div></div>
+<div class="ttc" id="aclassuistatedata_html_a25843c745eb4d8bf305a060f8b1804b1"><div class="ttname"><a href="classuistatedata.html#a25843c745eb4d8bf305a060f8b1804b1">uistatedata::bionic_sort_mode</a></div><div class="ttdeci">bionic_ui_sort_mode bionic_sort_mode</div><div class="ttdef"><b>Definition:</b> <a href="uistate_8h_source.html#l00143">uistate.h:143</a></div></div>
 <div class="ttc" id="aclassuistatedata_html_a2e59236e70385fa48ae1f6a2fcfd00b8"><div class="ttname"><a href="classuistatedata.html#a2e59236e70385fa48ae1f6a2fcfd00b8">uistatedata::overmap_show_overlays</a></div><div class="ttdeci">bool overmap_show_overlays</div><div class="ttdef"><b>Definition:</b> <a href="uistate_8h_source.html#l00105">uistate.h:105</a></div></div>
 <div class="ttc" id="aclassuistatedata_html_a33307860a5819648bbe1e4276ee8b246"><div class="ttname"><a href="classuistatedata.html#a33307860a5819648bbe1e4276ee8b246">uistatedata::list_item_priority</a></div><div class="ttdeci">std::string list_item_priority</div><div class="ttdef"><b>Definition:</b> <a href="uistate_8h_source.html#l00120">uistate.h:120</a></div></div>
 <div class="ttc" id="aclassuistatedata_html_a3bf63bdff38d8cc1766c51e76c811785"><div class="ttname"><a href="classuistatedata.html#a3bf63bdff38d8cc1766c51e76c811785">uistatedata::adv_inv_container_type</a></div><div class="ttdeci">itype_id adv_inv_container_type</div><div class="ttdef"><b>Definition:</b> <a href="uistate_8h_source.html#l00097">uistate.h:97</a></div></div>
@@ -329,6 +332,7 @@ Private Types</h2></td></tr>
 <div class="ttc" id="aclassuistatedata_html_a6abc0882dccb499eaad30a5910f9577b"><div class="ttname"><a href="classuistatedata.html#a6abc0882dccb499eaad30a5910f9577b">uistatedata::list_item_sort</a></div><div class="ttdeci">int list_item_sort</div><div class="ttdef"><b>Definition:</b> <a href="uistate_8h_source.html#l00117">uistate.h:117</a></div></div>
 <div class="ttc" id="aclassuistatedata_html_a774d42bebc3686bbc8a086b3a3001fc2"><div class="ttname"><a href="classuistatedata.html#a774d42bebc3686bbc8a086b3a3001fc2">uistatedata::favorite_recipes</a></div><div class="ttdeci">std::set&lt; recipe_id &gt; favorite_recipes</div><div class="ttdef"><b>Definition:</b> <a href="uistate_8h_source.html#l00138">uistate.h:138</a></div></div>
 <div class="ttc" id="aclassuistatedata_html_a7ca08226d5987e8873456b25f018fdd9"><div class="ttname"><a href="classuistatedata.html#a7ca08226d5987e8873456b25f018fdd9">uistatedata::adv_inv_container_index</a></div><div class="ttdeci">int adv_inv_container_index</div><div class="ttdef"><b>Definition:</b> <a href="uistate_8h_source.html#l00096">uistate.h:96</a></div></div>
+<div class="ttc" id="aclassuistatedata_html_a80dccd6a60e6e3d6eba9199b8f6f281a"><div class="ttname"><a href="classuistatedata.html#a80dccd6a60e6e3d6eba9199b8f6f281a">uistatedata::favorite_construct_recipes</a></div><div class="ttdeci">std::set&lt; construction_group_str_id &gt; favorite_construct_recipes</div><div class="ttdef"><b>Definition:</b> <a href="uistate_8h_source.html#l00141">uistate.h:141</a></div></div>
 <div class="ttc" id="aclassuistatedata_html_a829a95626b828e79c6f36ac8eb78593c"><div class="ttname"><a href="classuistatedata.html#a829a95626b828e79c6f36ac8eb78593c">uistatedata::adv_inv_container_in_vehicle</a></div><div class="ttdeci">bool adv_inv_container_in_vehicle</div><div class="ttdef"><b>Definition:</b> <a href="uistate_8h_source.html#l00099">uistate.h:99</a></div></div>
 <div class="ttc" id="aclassuistatedata_html_a893ad540bb3b8a5b94d82bf86af26679"><div class="ttname"><a href="classuistatedata.html#a893ad540bb3b8a5b94d82bf86af26679">uistatedata::list_item_downvote_active</a></div><div class="ttdeci">bool list_item_downvote_active</div><div class="ttdef"><b>Definition:</b> <a href="uistate_8h_source.html#l00123">uistate.h:123</a></div></div>
 <div class="ttc" id="aclassuistatedata_html_a8a309551318f3f163541f1bb493897d3"><div class="ttname"><a href="classuistatedata.html#a8a309551318f3f163541f1bb493897d3">uistatedata::overmap_show_forest_trails</a></div><div class="ttdeci">bool overmap_show_forest_trails</div><div class="ttdef"><b>Definition:</b> <a href="uistate_8h_source.html#l00110">uistate.h:110</a></div></div>
@@ -348,15 +352,15 @@ Private Types</h2></td></tr>
 <div class="ttc" id="aclassuistatedata_html_adba8c770127b93c3559b7a9e8af82947"><div class="ttname"><a href="classuistatedata.html#adba8c770127b93c3559b7a9e8af82947">uistatedata::list_item_priority_active</a></div><div class="ttdeci">bool list_item_priority_active</div><div class="ttdef"><b>Definition:</b> <a href="uistate_8h_source.html#l00124">uistate.h:124</a></div></div>
 <div class="ttc" id="aclassuistatedata_html_ae03c273143ed03b47610a7a202e244e9"><div class="ttname"><a href="classuistatedata.html#ae03c273143ed03b47610a7a202e244e9">uistatedata::adv_inv_container_location</a></div><div class="ttdeci">int adv_inv_container_location</div><div class="ttdef"><b>Definition:</b> <a href="uistate_8h_source.html#l00095">uistate.h:95</a></div></div>
 <div class="ttc" id="aclassuistatedata_html_aebca1a70dbc4100098b56ec55213940e"><div class="ttname"><a href="classuistatedata.html#aebca1a70dbc4100098b56ec55213940e">uistatedata::list_item_downvote</a></div><div class="ttdeci">std::string list_item_downvote</div><div class="ttdef"><b>Definition:</b> <a href="uistate_8h_source.html#l00119">uistate.h:119</a></div></div>
-<div class="ttc" id="aclassuistatedata_html_af8a3fc3e501c6dd5fdffb3062f842570"><div class="ttname"><a href="classuistatedata.html#af8a3fc3e501c6dd5fdffb3062f842570">uistatedata::gethistory</a></div><div class="ttdeci">std::vector&lt; std::string &gt; &amp; gethistory(const std::string &amp;id)</div><div class="ttdef"><b>Definition:</b> <a href="uistate_8h_source.html#l00155">uistate.h:155</a></div></div>
-<div class="ttc" id="amapgen_8cpp_html_a90f1f53dc044e93e7f7f9314cef1bd45"><div class="ttname"><a href="mapgen_8cpp.html#a90f1f53dc044e93e7f7f9314cef1bd45">line</a></div><div class="ttdeci">void line(map *m, const ter_id &amp;type, const point &amp;p1, const point &amp;p2)</div><div class="ttdef"><b>Definition:</b> <a href="mapgen_8cpp_source.html#l06455">mapgen.cpp:6455</a></div></div>
-<div class="ttc" id="anamespacedebug__menu_html"><div class="ttname"><a href="namespacedebug__menu.html">debug_menu</a></div><div class="ttdef"><b>Definition:</b> <a href="avatar_8h_source.html#l00029">avatar.h:30</a></div></div>
-<div class="ttc" id="anamespacemapgen__defer_html_a640e58e4d234e3f1e2ddbfff8fd665ce"><div class="ttname"><a href="namespacemapgen__defer.html#a640e58e4d234e3f1e2ddbfff8fd665ce">mapgen_defer::member</a></div><div class="ttdeci">std::string member</div><div class="ttdef"><b>Definition:</b> <a href="mapgen_8cpp_source.html#l00402">mapgen.cpp:402</a></div></div>
-<div class="ttc" id="astructadvanced__inv__save__state_html_a5c5ab3c2ea7df5df956dd02755dd5b82"><div class="ttname"><a href="structadvanced__inv__save__state.html#a5c5ab3c2ea7df5df956dd02755dd5b82">advanced_inv_save_state::deserialize</a></div><div class="ttdeci">void deserialize(const JsonObject &amp;jo, const std::string &amp;prefix)</div><div class="ttdef"><b>Definition:</b> <a href="savegame__json_8cpp_source.html#l04222">savegame_json.cpp:4222</a></div></div>
+<div class="ttc" id="aclassuistatedata_html_af8a3fc3e501c6dd5fdffb3062f842570"><div class="ttname"><a href="classuistatedata.html#af8a3fc3e501c6dd5fdffb3062f842570">uistatedata::gethistory</a></div><div class="ttdeci">std::vector&lt; std::string &gt; &amp; gethistory(const std::string &amp;id)</div><div class="ttdef"><b>Definition:</b> <a href="uistate_8h_source.html#l00157">uistate.h:157</a></div></div>
+<div class="ttc" id="amapgen_8cpp_html_a90f1f53dc044e93e7f7f9314cef1bd45"><div class="ttname"><a href="mapgen_8cpp.html#a90f1f53dc044e93e7f7f9314cef1bd45">line</a></div><div class="ttdeci">void line(map *m, const ter_id &amp;type, const point &amp;p1, const point &amp;p2)</div><div class="ttdef"><b>Definition:</b> <a href="mapgen_8cpp_source.html#l06486">mapgen.cpp:6486</a></div></div>
+<div class="ttc" id="anamespacedebug__menu_html"><div class="ttname"><a href="namespacedebug__menu.html">debug_menu</a></div><div class="ttdef"><b>Definition:</b> <a href="avatar_8h_source.html#l00030">avatar.h:31</a></div></div>
+<div class="ttc" id="anamespacemapgen__defer_html_a640e58e4d234e3f1e2ddbfff8fd665ce"><div class="ttname"><a href="namespacemapgen__defer.html#a640e58e4d234e3f1e2ddbfff8fd665ce">mapgen_defer::member</a></div><div class="ttdeci">std::string member</div><div class="ttdef"><b>Definition:</b> <a href="mapgen_8cpp_source.html#l00410">mapgen.cpp:410</a></div></div>
+<div class="ttc" id="astructadvanced__inv__save__state_html_a5c5ab3c2ea7df5df956dd02755dd5b82"><div class="ttname"><a href="structadvanced__inv__save__state.html#a5c5ab3c2ea7df5df956dd02755dd5b82">advanced_inv_save_state::deserialize</a></div><div class="ttdeci">void deserialize(const JsonObject &amp;jo, const std::string &amp;prefix)</div><div class="ttdef"><b>Definition:</b> <a href="savegame__json_8cpp_source.html#l04220">savegame_json.cpp:4220</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="json_8cpp_source.html#l00282">JsonObject::get_int()</a>, <a class="el" href="json_8cpp_source.html#l00361">JsonObject::get_object()</a>, <a class="el" href="mapgen_8cpp_source.html#l06455">line()</a>, <a class="el" href="mapgen_8cpp_source.html#l00402">mapgen_defer::member</a>, and <a class="el" href="json_8h_source.html#l00944">JsonObject::read()</a>.</p>
+<p class="reference">References <a class="el" href="json_8cpp_source.html#l00282">JsonObject::get_int()</a>, <a class="el" href="json_8cpp_source.html#l00361">JsonObject::get_object()</a>, <a class="el" href="mapgen_8cpp_source.html#l06486">line()</a>, <a class="el" href="mapgen_8cpp_source.html#l00410">mapgen_defer::member</a>, and <a class="el" href="json_8h_source.html#l00944">JsonObject::read()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l02623">game::load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l02529">game::load()</a>.</p>
 
 </div>
 </div>
@@ -384,14 +388,14 @@ Private Types</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="uistate_8h_source.html#l00155">155</a> of file <a class="el" href="uistate_8h_source.html">uistate.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>                                                                {</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="classuistatedata.html#a2f76afe9d13de210eb9265748cc5a32b">input_history</a>[<a class="code hl_variable" href="namespacebase__camps.html#a04fa69b1c0952a34dc4a7d26b3f9f786">id</a>];</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        }</div>
-<div class="ttc" id="aclassuistatedata_html_a2f76afe9d13de210eb9265748cc5a32b"><div class="ttname"><a href="classuistatedata.html#a2f76afe9d13de210eb9265748cc5a32b">uistatedata::input_history</a></div><div class="ttdeci">std::map&lt; std::string, std::vector&lt; std::string &gt; &gt; input_history</div><div class="ttdef"><b>Definition:</b> <a href="uistate_8h_source.html#l00147">uistate.h:147</a></div></div>
+<p class="definition">Definition at line <a class="el" href="uistate_8h_source.html#l00157">157</a> of file <a class="el" href="uistate_8h_source.html">uistate.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>                                                                {</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="classuistatedata.html#a2f76afe9d13de210eb9265748cc5a32b">input_history</a>[<a class="code hl_variable" href="namespacebase__camps.html#a04fa69b1c0952a34dc4a7d26b3f9f786">id</a>];</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>        }</div>
+<div class="ttc" id="aclassuistatedata_html_a2f76afe9d13de210eb9265748cc5a32b"><div class="ttname"><a href="classuistatedata.html#a2f76afe9d13de210eb9265748cc5a32b">uistatedata::input_history</a></div><div class="ttdeci">std::map&lt; std::string, std::vector&lt; std::string &gt; &gt; input_history</div><div class="ttdef"><b>Definition:</b> <a href="uistate_8h_source.html#l00149">uistate.h:149</a></div></div>
 <div class="ttc" id="anamespacebase__camps_html_a04fa69b1c0952a34dc4a7d26b3f9f786"><div class="ttname"><a href="namespacebase__camps.html#a04fa69b1c0952a34dc4a7d26b3f9f786">base_camps::id</a></div><div class="ttdeci">const std::string id</div><div class="ttdef"><b>Definition:</b> <a href="basecamp_8h_source.html#l00087">basecamp.h:87</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="basecamp_8h_source.html#l00087">base_camps::id</a>, and <a class="el" href="uistate_8h_source.html#l00147">input_history</a>.</p>
+<p class="reference">References <a class="el" href="basecamp_8h_source.html#l00087">base_camps::id</a>, and <a class="el" href="uistate_8h_source.html#l00149">input_history</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="string__input__popup_8cpp_source.html#l00151">string_input_popup::add_to_history()</a>, <a class="el" href="string__input__popup_8cpp_source.html#l00094">string_input_popup::show_history()</a>, and <a class="el" href="string__input__popup_8cpp_source.html#l00161">string_input_popup::update_input_history()</a>.</p>
 
@@ -413,72 +417,73 @@ Private Types</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="savegame__json_8cpp_source.html#l04260">4260</a> of file <a class="el" href="savegame__json_8cpp_source.html">savegame_json.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l04261" name="l04261"></a><span class="lineno"> 4261</span>{</div>
-<div class="line"><a id="l04262" name="l04262"></a><span class="lineno"> 4262</span>    <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> input_history_save_max = 25;</div>
-<div class="line"><a id="l04263" name="l04263"></a><span class="lineno"> 4263</span>    json.<a class="code hl_function" href="classJsonOut.html#a4756f9a569adbfc60de127f7c335d82f">start_object</a>();</div>
+<p class="definition">Definition at line <a class="el" href="savegame__json_8cpp_source.html#l04258">4258</a> of file <a class="el" href="savegame__json_8cpp_source.html">savegame_json.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l04259" name="l04259"></a><span class="lineno"> 4259</span>{</div>
+<div class="line"><a id="l04260" name="l04260"></a><span class="lineno"> 4260</span>    <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> input_history_save_max = 25;</div>
+<div class="line"><a id="l04261" name="l04261"></a><span class="lineno"> 4261</span>    json.<a class="code hl_function" href="classJsonOut.html#a4756f9a569adbfc60de127f7c335d82f">start_object</a>();</div>
+<div class="line"><a id="l04262" name="l04262"></a><span class="lineno"> 4262</span> </div>
+<div class="line"><a id="l04263" name="l04263"></a><span class="lineno"> 4263</span>    <a class="code hl_variable" href="classuistatedata.html#aaa8e0be61e584b02f8c79957ea6db267">transfer_save</a>.<a class="code hl_function" href="structadvanced__inv__save__state.html#a70ff1ecf490f6de6a0a28162ac2e5abc">serialize</a>( json, <span class="stringliteral">&quot;transfer_save_&quot;</span> );</div>
 <div class="line"><a id="l04264" name="l04264"></a><span class="lineno"> 4264</span> </div>
-<div class="line"><a id="l04265" name="l04265"></a><span class="lineno"> 4265</span>    <a class="code hl_variable" href="classuistatedata.html#aaa8e0be61e584b02f8c79957ea6db267">transfer_save</a>.<a class="code hl_function" href="structadvanced__inv__save__state.html#a70ff1ecf490f6de6a0a28162ac2e5abc">serialize</a>( json, <span class="stringliteral">&quot;transfer_save_&quot;</span> );</div>
-<div class="line"><a id="l04266" name="l04266"></a><span class="lineno"> 4266</span> </div>
-<div class="line"><a id="l04267" name="l04267"></a><span class="lineno"> 4267</span><span class="comment">    /**** if you want to save whatever so it&#39;s whatever when the game is started next, declare here and.... ****/</span></div>
-<div class="line"><a id="l04268" name="l04268"></a><span class="lineno"> 4268</span>    <span class="comment">// non array stuffs</span></div>
-<div class="line"><a id="l04269" name="l04269"></a><span class="lineno"> 4269</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;adv_inv_container_location&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#ae03c273143ed03b47610a7a202e244e9">adv_inv_container_location</a> );</div>
-<div class="line"><a id="l04270" name="l04270"></a><span class="lineno"> 4270</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;adv_inv_container_index&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#a7ca08226d5987e8873456b25f018fdd9">adv_inv_container_index</a> );</div>
-<div class="line"><a id="l04271" name="l04271"></a><span class="lineno"> 4271</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;adv_inv_container_in_vehicle&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#a829a95626b828e79c6f36ac8eb78593c">adv_inv_container_in_vehicle</a> );</div>
-<div class="line"><a id="l04272" name="l04272"></a><span class="lineno"> 4272</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;adv_inv_container_type&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#a3bf63bdff38d8cc1766c51e76c811785">adv_inv_container_type</a> );</div>
-<div class="line"><a id="l04273" name="l04273"></a><span class="lineno"> 4273</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;adv_inv_container_content_type&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#a9a47d5cf0efecea53d34dfd6ff0f113f">adv_inv_container_content_type</a> );</div>
-<div class="line"><a id="l04274" name="l04274"></a><span class="lineno"> 4274</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;debug_menu&quot;</span>, <a class="code hl_namespace" href="namespacedebug__menu.html">debug_menu</a> );</div>
-<div class="line"><a id="l04275" name="l04275"></a><span class="lineno"> 4275</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;editmap_nsa_viewmode&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#acb56c3485c850dc0289c66ff6e299ed9">editmap_nsa_viewmode</a> );</div>
-<div class="line"><a id="l04276" name="l04276"></a><span class="lineno"> 4276</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;overmap_blinking&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#a8f4352b686cf6a32a279a41ed70f0d5a">overmap_blinking</a> );</div>
-<div class="line"><a id="l04277" name="l04277"></a><span class="lineno"> 4277</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;overmap_show_overlays&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#a2e59236e70385fa48ae1f6a2fcfd00b8">overmap_show_overlays</a> );</div>
-<div class="line"><a id="l04278" name="l04278"></a><span class="lineno"> 4278</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;overmap_show_map_notes&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#a02d98ac2e93fab7c76964d670eccfa01">overmap_show_map_notes</a> );</div>
-<div class="line"><a id="l04279" name="l04279"></a><span class="lineno"> 4279</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;overmap_show_land_use_codes&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#a5682c56c267d08f4ebdeeb8fd06b3037">overmap_show_land_use_codes</a> );</div>
-<div class="line"><a id="l04280" name="l04280"></a><span class="lineno"> 4280</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;overmap_show_city_labels&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#aa3ec3473ece2af731c64b5674792e352">overmap_show_city_labels</a> );</div>
-<div class="line"><a id="l04281" name="l04281"></a><span class="lineno"> 4281</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;overmap_show_hordes&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#ac36e8b4e7bc4fa56ffdf75405e4cef43">overmap_show_hordes</a> );</div>
-<div class="line"><a id="l04282" name="l04282"></a><span class="lineno"> 4282</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;overmap_show_forest_trails&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#a8a309551318f3f163541f1bb493897d3">overmap_show_forest_trails</a> );</div>
-<div class="line"><a id="l04283" name="l04283"></a><span class="lineno"> 4283</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;vmenu_show_items&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#ad0fc935ed2e5655fc99779c36e3e2442">vmenu_show_items</a> );</div>
-<div class="line"><a id="l04284" name="l04284"></a><span class="lineno"> 4284</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;list_item_sort&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#a6abc0882dccb499eaad30a5910f9577b">list_item_sort</a> );</div>
-<div class="line"><a id="l04285" name="l04285"></a><span class="lineno"> 4285</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;list_item_filter_active&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#aae25c720ad042bbe81771c2ad72ed06e">list_item_filter_active</a> );</div>
-<div class="line"><a id="l04286" name="l04286"></a><span class="lineno"> 4286</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;list_item_downvote_active&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#a893ad540bb3b8a5b94d82bf86af26679">list_item_downvote_active</a> );</div>
-<div class="line"><a id="l04287" name="l04287"></a><span class="lineno"> 4287</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;list_item_priority_active&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#adba8c770127b93c3559b7a9e8af82947">list_item_priority_active</a> );</div>
-<div class="line"><a id="l04288" name="l04288"></a><span class="lineno"> 4288</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;hidden_recipes&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#a8beabc9b7efada6b41c81464c2935dd9">hidden_recipes</a> );</div>
-<div class="line"><a id="l04289" name="l04289"></a><span class="lineno"> 4289</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;favorite_recipes&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#a774d42bebc3686bbc8a086b3a3001fc2">favorite_recipes</a> );</div>
-<div class="line"><a id="l04290" name="l04290"></a><span class="lineno"> 4290</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;recent_recipes&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#ac544e07259ab22d18610fd4609f7ef92">recent_recipes</a> );</div>
-<div class="line"><a id="l04291" name="l04291"></a><span class="lineno"> 4291</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;bionic_ui_sort_mode&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#a25843c745eb4d8bf305a060f8b1804b1">bionic_sort_mode</a> );</div>
-<div class="line"><a id="l04292" name="l04292"></a><span class="lineno"> 4292</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;overmap_debug_weather&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#ac38c9c089d2623d41325fea93ad9a348">overmap_debug_weather</a> );</div>
-<div class="line"><a id="l04293" name="l04293"></a><span class="lineno"> 4293</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;overmap_visible_weather&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#adb7c5f73d4e26f9e12e75161b3570d8a">overmap_visible_weather</a> );</div>
-<div class="line"><a id="l04294" name="l04294"></a><span class="lineno"> 4294</span> </div>
-<div class="line"><a id="l04295" name="l04295"></a><span class="lineno"> 4295</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;input_history&quot;</span> );</div>
-<div class="line"><a id="l04296" name="l04296"></a><span class="lineno"> 4296</span>    json.<a class="code hl_function" href="classJsonOut.html#a4756f9a569adbfc60de127f7c335d82f">start_object</a>();</div>
-<div class="line"><a id="l04297" name="l04297"></a><span class="lineno"> 4297</span>    <span class="keywordflow">for</span>( <span class="keyword">auto</span> &amp;e : <a class="code hl_variable" href="classuistatedata.html#a2f76afe9d13de210eb9265748cc5a32b">input_history</a> ) {</div>
-<div class="line"><a id="l04298" name="l04298"></a><span class="lineno"> 4298</span>        json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( e.first );</div>
-<div class="line"><a id="l04299" name="l04299"></a><span class="lineno"> 4299</span>        <span class="keyword">const</span> std::vector&lt;std::string&gt; &amp;history = e.second;</div>
-<div class="line"><a id="l04300" name="l04300"></a><span class="lineno"> 4300</span>        json.<a class="code hl_function" href="classJsonOut.html#a4550e2036b904c4d4a90e440dd41c684">start_array</a>();</div>
-<div class="line"><a id="l04301" name="l04301"></a><span class="lineno"> 4301</span>        <span class="keywordtype">int</span> save_start = 0;</div>
-<div class="line"><a id="l04302" name="l04302"></a><span class="lineno"> 4302</span>        <span class="keywordflow">if</span>( history.size() &gt; input_history_save_max ) {</div>
-<div class="line"><a id="l04303" name="l04303"></a><span class="lineno"> 4303</span>            save_start = history.size() - input_history_save_max;</div>
-<div class="line"><a id="l04304" name="l04304"></a><span class="lineno"> 4304</span>        }</div>
-<div class="line"><a id="l04305" name="l04305"></a><span class="lineno"> 4305</span>        <span class="keywordflow">for</span>( std::vector&lt;std::string&gt;::const_iterator hit = history.begin() + save_start;</div>
-<div class="line"><a id="l04306" name="l04306"></a><span class="lineno"> 4306</span>             hit != history.end(); ++hit ) {</div>
-<div class="line"><a id="l04307" name="l04307"></a><span class="lineno"> 4307</span>            json.<a class="code hl_function" href="classJsonOut.html#a4b8c8e50e3be57e737ae971ecf2c3fd5">write</a>( *hit );</div>
-<div class="line"><a id="l04308" name="l04308"></a><span class="lineno"> 4308</span>        }</div>
-<div class="line"><a id="l04309" name="l04309"></a><span class="lineno"> 4309</span>        json.<a class="code hl_function" href="classJsonOut.html#a44cdd853d4c6913b37caa9f0131eeff2">end_array</a>();</div>
-<div class="line"><a id="l04310" name="l04310"></a><span class="lineno"> 4310</span>    }</div>
-<div class="line"><a id="l04311" name="l04311"></a><span class="lineno"> 4311</span>    json.<a class="code hl_function" href="classJsonOut.html#aa38d37840ed6ba168b78a43570e98681">end_object</a>(); <span class="comment">// input_history</span></div>
-<div class="line"><a id="l04312" name="l04312"></a><span class="lineno"> 4312</span> </div>
-<div class="line"><a id="l04313" name="l04313"></a><span class="lineno"> 4313</span>    json.<a class="code hl_function" href="classJsonOut.html#aa38d37840ed6ba168b78a43570e98681">end_object</a>();</div>
-<div class="line"><a id="l04314" name="l04314"></a><span class="lineno"> 4314</span>}</div>
+<div class="line"><a id="l04265" name="l04265"></a><span class="lineno"> 4265</span><span class="comment">    /**** if you want to save whatever so it&#39;s whatever when the game is started next, declare here and.... ****/</span></div>
+<div class="line"><a id="l04266" name="l04266"></a><span class="lineno"> 4266</span>    <span class="comment">// non array stuffs</span></div>
+<div class="line"><a id="l04267" name="l04267"></a><span class="lineno"> 4267</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;adv_inv_container_location&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#ae03c273143ed03b47610a7a202e244e9">adv_inv_container_location</a> );</div>
+<div class="line"><a id="l04268" name="l04268"></a><span class="lineno"> 4268</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;adv_inv_container_index&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#a7ca08226d5987e8873456b25f018fdd9">adv_inv_container_index</a> );</div>
+<div class="line"><a id="l04269" name="l04269"></a><span class="lineno"> 4269</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;adv_inv_container_in_vehicle&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#a829a95626b828e79c6f36ac8eb78593c">adv_inv_container_in_vehicle</a> );</div>
+<div class="line"><a id="l04270" name="l04270"></a><span class="lineno"> 4270</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;adv_inv_container_type&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#a3bf63bdff38d8cc1766c51e76c811785">adv_inv_container_type</a> );</div>
+<div class="line"><a id="l04271" name="l04271"></a><span class="lineno"> 4271</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;adv_inv_container_content_type&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#a9a47d5cf0efecea53d34dfd6ff0f113f">adv_inv_container_content_type</a> );</div>
+<div class="line"><a id="l04272" name="l04272"></a><span class="lineno"> 4272</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;debug_menu&quot;</span>, <a class="code hl_namespace" href="namespacedebug__menu.html">debug_menu</a> );</div>
+<div class="line"><a id="l04273" name="l04273"></a><span class="lineno"> 4273</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;editmap_nsa_viewmode&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#acb56c3485c850dc0289c66ff6e299ed9">editmap_nsa_viewmode</a> );</div>
+<div class="line"><a id="l04274" name="l04274"></a><span class="lineno"> 4274</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;overmap_blinking&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#a8f4352b686cf6a32a279a41ed70f0d5a">overmap_blinking</a> );</div>
+<div class="line"><a id="l04275" name="l04275"></a><span class="lineno"> 4275</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;overmap_show_overlays&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#a2e59236e70385fa48ae1f6a2fcfd00b8">overmap_show_overlays</a> );</div>
+<div class="line"><a id="l04276" name="l04276"></a><span class="lineno"> 4276</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;overmap_show_map_notes&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#a02d98ac2e93fab7c76964d670eccfa01">overmap_show_map_notes</a> );</div>
+<div class="line"><a id="l04277" name="l04277"></a><span class="lineno"> 4277</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;overmap_show_land_use_codes&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#a5682c56c267d08f4ebdeeb8fd06b3037">overmap_show_land_use_codes</a> );</div>
+<div class="line"><a id="l04278" name="l04278"></a><span class="lineno"> 4278</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;overmap_show_city_labels&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#aa3ec3473ece2af731c64b5674792e352">overmap_show_city_labels</a> );</div>
+<div class="line"><a id="l04279" name="l04279"></a><span class="lineno"> 4279</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;overmap_show_hordes&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#ac36e8b4e7bc4fa56ffdf75405e4cef43">overmap_show_hordes</a> );</div>
+<div class="line"><a id="l04280" name="l04280"></a><span class="lineno"> 4280</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;overmap_show_forest_trails&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#a8a309551318f3f163541f1bb493897d3">overmap_show_forest_trails</a> );</div>
+<div class="line"><a id="l04281" name="l04281"></a><span class="lineno"> 4281</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;vmenu_show_items&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#ad0fc935ed2e5655fc99779c36e3e2442">vmenu_show_items</a> );</div>
+<div class="line"><a id="l04282" name="l04282"></a><span class="lineno"> 4282</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;list_item_sort&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#a6abc0882dccb499eaad30a5910f9577b">list_item_sort</a> );</div>
+<div class="line"><a id="l04283" name="l04283"></a><span class="lineno"> 4283</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;list_item_filter_active&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#aae25c720ad042bbe81771c2ad72ed06e">list_item_filter_active</a> );</div>
+<div class="line"><a id="l04284" name="l04284"></a><span class="lineno"> 4284</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;list_item_downvote_active&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#a893ad540bb3b8a5b94d82bf86af26679">list_item_downvote_active</a> );</div>
+<div class="line"><a id="l04285" name="l04285"></a><span class="lineno"> 4285</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;list_item_priority_active&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#adba8c770127b93c3559b7a9e8af82947">list_item_priority_active</a> );</div>
+<div class="line"><a id="l04286" name="l04286"></a><span class="lineno"> 4286</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;hidden_recipes&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#a8beabc9b7efada6b41c81464c2935dd9">hidden_recipes</a> );</div>
+<div class="line"><a id="l04287" name="l04287"></a><span class="lineno"> 4287</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;favorite_recipes&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#a774d42bebc3686bbc8a086b3a3001fc2">favorite_recipes</a> );</div>
+<div class="line"><a id="l04288" name="l04288"></a><span class="lineno"> 4288</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;recent_recipes&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#ac544e07259ab22d18610fd4609f7ef92">recent_recipes</a> );</div>
+<div class="line"><a id="l04289" name="l04289"></a><span class="lineno"> 4289</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;favorite_construct_recipes&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#a80dccd6a60e6e3d6eba9199b8f6f281a">favorite_construct_recipes</a> );</div>
+<div class="line"><a id="l04290" name="l04290"></a><span class="lineno"> 4290</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;bionic_ui_sort_mode&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#a25843c745eb4d8bf305a060f8b1804b1">bionic_sort_mode</a> );</div>
+<div class="line"><a id="l04291" name="l04291"></a><span class="lineno"> 4291</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;overmap_debug_weather&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#ac38c9c089d2623d41325fea93ad9a348">overmap_debug_weather</a> );</div>
+<div class="line"><a id="l04292" name="l04292"></a><span class="lineno"> 4292</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;overmap_visible_weather&quot;</span>, <a class="code hl_variable" href="classuistatedata.html#adb7c5f73d4e26f9e12e75161b3570d8a">overmap_visible_weather</a> );</div>
+<div class="line"><a id="l04293" name="l04293"></a><span class="lineno"> 4293</span> </div>
+<div class="line"><a id="l04294" name="l04294"></a><span class="lineno"> 4294</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;input_history&quot;</span> );</div>
+<div class="line"><a id="l04295" name="l04295"></a><span class="lineno"> 4295</span>    json.<a class="code hl_function" href="classJsonOut.html#a4756f9a569adbfc60de127f7c335d82f">start_object</a>();</div>
+<div class="line"><a id="l04296" name="l04296"></a><span class="lineno"> 4296</span>    <span class="keywordflow">for</span>( <span class="keyword">auto</span> &amp;e : <a class="code hl_variable" href="classuistatedata.html#a2f76afe9d13de210eb9265748cc5a32b">input_history</a> ) {</div>
+<div class="line"><a id="l04297" name="l04297"></a><span class="lineno"> 4297</span>        json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( e.first );</div>
+<div class="line"><a id="l04298" name="l04298"></a><span class="lineno"> 4298</span>        <span class="keyword">const</span> std::vector&lt;std::string&gt; &amp;history = e.second;</div>
+<div class="line"><a id="l04299" name="l04299"></a><span class="lineno"> 4299</span>        json.<a class="code hl_function" href="classJsonOut.html#a4550e2036b904c4d4a90e440dd41c684">start_array</a>();</div>
+<div class="line"><a id="l04300" name="l04300"></a><span class="lineno"> 4300</span>        <span class="keywordtype">int</span> save_start = 0;</div>
+<div class="line"><a id="l04301" name="l04301"></a><span class="lineno"> 4301</span>        <span class="keywordflow">if</span>( history.size() &gt; input_history_save_max ) {</div>
+<div class="line"><a id="l04302" name="l04302"></a><span class="lineno"> 4302</span>            save_start = history.size() - input_history_save_max;</div>
+<div class="line"><a id="l04303" name="l04303"></a><span class="lineno"> 4303</span>        }</div>
+<div class="line"><a id="l04304" name="l04304"></a><span class="lineno"> 4304</span>        <span class="keywordflow">for</span>( std::vector&lt;std::string&gt;::const_iterator hit = history.begin() + save_start;</div>
+<div class="line"><a id="l04305" name="l04305"></a><span class="lineno"> 4305</span>             hit != history.end(); ++hit ) {</div>
+<div class="line"><a id="l04306" name="l04306"></a><span class="lineno"> 4306</span>            json.<a class="code hl_function" href="classJsonOut.html#a4b8c8e50e3be57e737ae971ecf2c3fd5">write</a>( *hit );</div>
+<div class="line"><a id="l04307" name="l04307"></a><span class="lineno"> 4307</span>        }</div>
+<div class="line"><a id="l04308" name="l04308"></a><span class="lineno"> 4308</span>        json.<a class="code hl_function" href="classJsonOut.html#a44cdd853d4c6913b37caa9f0131eeff2">end_array</a>();</div>
+<div class="line"><a id="l04309" name="l04309"></a><span class="lineno"> 4309</span>    }</div>
+<div class="line"><a id="l04310" name="l04310"></a><span class="lineno"> 4310</span>    json.<a class="code hl_function" href="classJsonOut.html#aa38d37840ed6ba168b78a43570e98681">end_object</a>(); <span class="comment">// input_history</span></div>
+<div class="line"><a id="l04311" name="l04311"></a><span class="lineno"> 4311</span> </div>
+<div class="line"><a id="l04312" name="l04312"></a><span class="lineno"> 4312</span>    json.<a class="code hl_function" href="classJsonOut.html#aa38d37840ed6ba168b78a43570e98681">end_object</a>();</div>
+<div class="line"><a id="l04313" name="l04313"></a><span class="lineno"> 4313</span>}</div>
 <div class="ttc" id="aclassJsonOut_html_a44cdd853d4c6913b37caa9f0131eeff2"><div class="ttname"><a href="classJsonOut.html#a44cdd853d4c6913b37caa9f0131eeff2">JsonOut::end_array</a></div><div class="ttdeci">void end_array()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01961">json.cpp:1961</a></div></div>
 <div class="ttc" id="aclassJsonOut_html_a4550e2036b904c4d4a90e440dd41c684"><div class="ttname"><a href="classJsonOut.html#a4550e2036b904c4d4a90e440dd41c684">JsonOut::start_array</a></div><div class="ttdeci">void start_array(bool wrap=false)</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01950">json.cpp:1950</a></div></div>
 <div class="ttc" id="aclassJsonOut_html_a4756f9a569adbfc60de127f7c335d82f"><div class="ttname"><a href="classJsonOut.html#a4756f9a569adbfc60de127f7c335d82f">JsonOut::start_object</a></div><div class="ttdeci">void start_object(bool wrap=false)</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01931">json.cpp:1931</a></div></div>
 <div class="ttc" id="aclassJsonOut_html_a4b8c8e50e3be57e737ae971ecf2c3fd5"><div class="ttname"><a href="classJsonOut.html#a4b8c8e50e3be57e737ae971ecf2c3fd5">JsonOut::write</a></div><div class="ttdeci">void write(T val)</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00620">json.h:620</a></div></div>
 <div class="ttc" id="aclassJsonOut_html_aa38d37840ed6ba168b78a43570e98681"><div class="ttname"><a href="classJsonOut.html#aa38d37840ed6ba168b78a43570e98681">JsonOut::end_object</a></div><div class="ttdeci">void end_object()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01942">json.cpp:1942</a></div></div>
 <div class="ttc" id="aclassJsonOut_html_adb3c899f0ad7fc4f25cd3357c51a2c42"><div class="ttname"><a href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">JsonOut::member</a></div><div class="ttdeci">void member(const std::string &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l02046">json.cpp:2046</a></div></div>
-<div class="ttc" id="astructadvanced__inv__save__state_html_a70ff1ecf490f6de6a0a28162ac2e5abc"><div class="ttname"><a href="structadvanced__inv__save__state.html#a70ff1ecf490f6de6a0a28162ac2e5abc">advanced_inv_save_state::serialize</a></div><div class="ttdeci">void serialize(JsonOut &amp;json, const std::string &amp;prefix) const</div><div class="ttdef"><b>Definition:</b> <a href="savegame__json_8cpp_source.html#l04211">savegame_json.cpp:4211</a></div></div>
+<div class="ttc" id="astructadvanced__inv__save__state_html_a70ff1ecf490f6de6a0a28162ac2e5abc"><div class="ttname"><a href="structadvanced__inv__save__state.html#a70ff1ecf490f6de6a0a28162ac2e5abc">advanced_inv_save_state::serialize</a></div><div class="ttdeci">void serialize(JsonOut &amp;json, const std::string &amp;prefix) const</div><div class="ttdef"><b>Definition:</b> <a href="savegame__json_8cpp_source.html#l04209">savegame_json.cpp:4209</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="json_8cpp_source.html#l01961">JsonOut::end_array()</a>, <a class="el" href="json_8cpp_source.html#l01942">JsonOut::end_object()</a>, <a class="el" href="json_8cpp_source.html#l02046">JsonOut::member()</a>, <a class="el" href="json_8cpp_source.html#l01950">JsonOut::start_array()</a>, <a class="el" href="json_8cpp_source.html#l01931">JsonOut::start_object()</a>, and <a class="el" href="json_8h_source.html#l00620">JsonOut::write()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l02877">game::save()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l02719">game::save()</a>.</p>
 
 </div>
 </div>
@@ -495,7 +500,7 @@ Private Types</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="uistate_8h_source.html#l00153">153</a> of file <a class="el" href="uistate_8h_source.html">uistate.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="uistate_8h_source.html#l00155">155</a> of file <a class="el" href="uistate_8h_source.html">uistate.h</a>.</p>
 
 </div>
 </div>
@@ -511,7 +516,7 @@ Private Types</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="uistate_8h_source.html#l00152">152</a> of file <a class="el" href="uistate_8h_source.html">uistate.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="uistate_8h_source.html#l00154">154</a> of file <a class="el" href="uistate_8h_source.html">uistate.h</a>.</p>
 
 </div>
 </div>
@@ -619,7 +624,7 @@ Private Types</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="uistate_8h_source.html#l00086">86</a> of file <a class="el" href="uistate_8h_source.html">uistate.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="activity__actor_8cpp_source.html#l00824">hacking_activity_actor::finish()</a>, and <a class="el" href="iexamine_8cpp_source.html#l04353">iexamine::pay_gas()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="activity__actor_8cpp_source.html#l00824">hacking_activity_actor::finish()</a>, and <a class="el" href="iexamine_8cpp_source.html#l04436">iexamine::pay_gas()</a>.</p>
 
 </div>
 </div>
@@ -635,9 +640,9 @@ Private Types</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="uistate_8h_source.html#l00141">141</a> of file <a class="el" href="uistate_8h_source.html">uistate.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="uistate_8h_source.html#l00143">143</a> of file <a class="el" href="uistate_8h_source.html">uistate.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="bionics__ui_8cpp_source.html#l00186">draw_bionics_titlebar()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00074">anonymous_namespace{bionics_ui.cpp}::bionic_sort_less::operator()()</a>, and <a class="el" href="bionics__ui_8cpp_source.html#l00528">player::power_bionics()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics__ui_8cpp_source.html#l00187">draw_bionics_titlebar()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00075">anonymous_namespace{bionics_ui.cpp}::bionic_sort_less::operator()()</a>, and <a class="el" href="bionics__ui_8cpp_source.html#l00529">show_bionics_ui()</a>.</p>
 
 </div>
 </div>
@@ -705,7 +710,25 @@ Private Types</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="uistate_8h_source.html#l00103">103</a> of file <a class="el" href="uistate_8h_source.html">uistate.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="editmap_8cpp_source.html#l00339">editmap::edit()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="editmap_8cpp_source.html#l00340">editmap::edit()</a>.</p>
+
+</div>
+</div>
+<a id="a80dccd6a60e6e3d6eba9199b8f6f281a" name="a80dccd6a60e6e3d6eba9199b8f6f281a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80dccd6a60e6e3d6eba9199b8f6f281a">&#9670;&nbsp;</a></span>favorite_construct_recipes</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::set&lt;<a class="el" href="type__id_8h.html#af10d8c581da16a8b62d3f0543e14a56d">construction_group_str_id</a>&gt; uistatedata::favorite_construct_recipes</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="uistate_8h_source.html#l00141">141</a> of file <a class="el" href="uistate_8h_source.html">uistate.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="construction_8cpp_source.html#l00380">favorite_add()</a>, <a class="el" href="construction_8cpp_source.html#l00385">favorite_remove()</a>, and <a class="el" href="construction_8cpp_source.html#l00375">is_favorite()</a>.</p>
 
 </div>
 </div>
@@ -723,7 +746,7 @@ Private Types</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="uistate_8h_source.html#l00138">138</a> of file <a class="el" href="uistate_8h_source.html">uistate.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="recipe__dictionary_8cpp_source.html#l00247">recipe_subset::empty_category()</a>, <a class="el" href="recipe__dictionary_8cpp_source.html#l00116">recipe_subset::favorite()</a>, <a class="el" href="recipe_8cpp_source.html#l00609">recipe::result_name()</a>, and <a class="el" href="crafting__gui_8cpp_source.html#l00161">select_crafting_recipe()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="recipe__dictionary_8cpp_source.html#l00248">recipe_subset::empty_category()</a>, <a class="el" href="recipe__dictionary_8cpp_source.html#l00117">recipe_subset::favorite()</a>, <a class="el" href="recipe_8cpp_source.html#l00609">recipe::result_name()</a>, and <a class="el" href="crafting__gui_8cpp_source.html#l00161">select_crafting_recipe()</a>.</p>
 
 </div>
 </div>
@@ -741,7 +764,7 @@ Private Types</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="uistate_8h_source.html#l00137">137</a> of file <a class="el" href="uistate_8h_source.html">uistate.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="recipe__dictionary_8cpp_source.html#l00247">recipe_subset::empty_category()</a>, <a class="el" href="recipe__dictionary_8cpp_source.html#l00130">recipe_subset::hidden()</a>, and <a class="el" href="crafting__gui_8cpp_source.html#l00161">select_crafting_recipe()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="recipe__dictionary_8cpp_source.html#l00248">recipe_subset::empty_category()</a>, <a class="el" href="recipe__dictionary_8cpp_source.html#l00131">recipe_subset::hidden()</a>, and <a class="el" href="crafting__gui_8cpp_source.html#l00161">select_crafting_recipe()</a>.</p>
 
 </div>
 </div>
@@ -759,7 +782,7 @@ Private Types</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="uistate_8h_source.html#l00091">91</a> of file <a class="el" href="uistate_8h_source.html">uistate.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="iexamine_8cpp_source.html#l00456">anonymous_namespace{iexamine.cpp}::atm_menu::choose_option()</a>, and <a class="el" href="iexamine_8cpp_source.html#l00466">anonymous_namespace{iexamine.cpp}::atm_menu::reset()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iexamine_8cpp_source.html#l00460">anonymous_namespace{iexamine.cpp}::atm_menu::choose_option()</a>, and <a class="el" href="iexamine_8cpp_source.html#l00470">anonymous_namespace{iexamine.cpp}::atm_menu::reset()</a>.</p>
 
 </div>
 </div>
@@ -775,9 +798,9 @@ Private Types</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="uistate_8h_source.html#l00147">147</a> of file <a class="el" href="uistate_8h_source.html">uistate.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="uistate_8h_source.html#l00149">149</a> of file <a class="el" href="uistate_8h_source.html">uistate.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="uistate_8h_source.html#l00155">gethistory()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="uistate_8h_source.html#l00157">gethistory()</a>.</p>
 
 </div>
 </div>
@@ -809,7 +832,7 @@ Private Types</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="uistate_8h_source.html#l00149">149</a> of file <a class="el" href="uistate_8h_source.html">uistate.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="uistate_8h_source.html#l00151">151</a> of file <a class="el" href="uistate_8h_source.html">uistate.h</a>.</p>
 
 </div>
 </div>
@@ -827,7 +850,7 @@ Private Types</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="uistate_8h_source.html#l00119">119</a> of file <a class="el" href="uistate_8h_source.html">uistate.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l07358">game::list_items()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l07231">game::list_items()</a>.</p>
 
 </div>
 </div>
@@ -845,7 +868,7 @@ Private Types</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="uistate_8h_source.html#l00123">123</a> of file <a class="el" href="uistate_8h_source.html">uistate.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l07358">game::list_items()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l07231">game::list_items()</a>.</p>
 
 </div>
 </div>
@@ -863,7 +886,7 @@ Private Types</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="uistate_8h_source.html#l00118">118</a> of file <a class="el" href="uistate_8h_source.html">uistate.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l07358">game::list_items()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l07231">game::list_items()</a>.</p>
 
 </div>
 </div>
@@ -881,7 +904,7 @@ Private Types</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="uistate_8h_source.html#l00122">122</a> of file <a class="el" href="uistate_8h_source.html">uistate.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l07358">game::list_items()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l07231">game::list_items()</a>.</p>
 
 </div>
 </div>
@@ -899,7 +922,7 @@ Private Types</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="uistate_8h_source.html#l00125">125</a> of file <a class="el" href="uistate_8h_source.html">uistate.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l07358">game::list_items()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l07231">game::list_items()</a>.</p>
 
 </div>
 </div>
@@ -917,7 +940,7 @@ Private Types</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="uistate_8h_source.html#l00120">120</a> of file <a class="el" href="uistate_8h_source.html">uistate.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l07358">game::list_items()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l07231">game::list_items()</a>.</p>
 
 </div>
 </div>
@@ -935,7 +958,7 @@ Private Types</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="uistate_8h_source.html#l00124">124</a> of file <a class="el" href="uistate_8h_source.html">uistate.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l07358">game::list_items()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l07231">game::list_items()</a>.</p>
 
 </div>
 </div>
@@ -953,7 +976,7 @@ Private Types</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="uistate_8h_source.html#l00117">117</a> of file <a class="el" href="uistate_8h_source.html">uistate.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l07358">game::list_items()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l07231">game::list_items()</a>.</p>
 
 </div>
 </div>
@@ -1205,7 +1228,7 @@ Private Types</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="uistate_8h_source.html#l00139">139</a> of file <a class="el" href="uistate_8h_source.html">uistate.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="recipe__dictionary_8cpp_source.html#l00247">recipe_subset::empty_category()</a>, <a class="el" href="craft__command_8cpp_source.html#l00097">craft_command::execute()</a>, and <a class="el" href="recipe__dictionary_8cpp_source.html#l00144">recipe_subset::recent()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="recipe__dictionary_8cpp_source.html#l00248">recipe_subset::empty_category()</a>, <a class="el" href="craft__command_8cpp_source.html#l00097">craft_command::execute()</a>, and <a class="el" href="recipe__dictionary_8cpp_source.html#l00145">recipe_subset::recent()</a>.</p>
 
 </div>
 </div>
@@ -1241,7 +1264,7 @@ Private Types</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="uistate_8h_source.html#l00121">121</a> of file <a class="el" href="uistate_8h_source.html">uistate.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l07313">game::list_items_monsters()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l07186">game::list_items_monsters()</a>.</p>
 
 </div>
 </div>
@@ -1309,7 +1332,7 @@ Private Types</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classuistatedata.html">uistatedata</a></li>
-    <li class="footer">Generated on Wed Oct 19 2022 14:19:48 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Mon Dec 26 2022 21:42:15 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

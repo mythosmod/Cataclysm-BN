@@ -107,6 +107,7 @@ $(document).ready(function(){initNavTree('main__menu_8cpp.html',''); initResizab
 <code>#include &quot;<a class="el" href="character__id_8h_source.html">character_id.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="color_8h_source.html">color.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="debug_8h_source.html">debug.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="distraction__manager_8h_source.html">distraction_manager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="enums_8h_source.html">enums.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="filesystem_8h_source.html">filesystem.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="fstream__utils_8h_source.html">fstream_utils.h</a>&quot;</code><br />
@@ -168,30 +169,30 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="main__menu_8cpp_source.html#l00070">70</a> of file <a class="el" href="main__menu_8cpp_source.html">main_menu.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>{</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keywordtype">int</span> len = strlen( s );</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_function" href="fmtlib__format_8h.html#a36b7e236fa4242d8655b508bbebb697f">ptr</a> = s;</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keywordtype">int</span> w = 0;</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keywordtype">bool</span> inside_tag = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keywordflow">while</span>( len &gt; 0 ) {</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        uint32_t ch = <a class="code hl_function" href="catacharset_8cpp.html#a2227e8c0afd74ed174cbb4daf8e46ab2">UTF8_getch</a>( &amp;<a class="code hl_function" href="fmtlib__format_8h.html#a36b7e236fa4242d8655b508bbebb697f">ptr</a>, &amp;len );</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        <span class="keywordflow">if</span>( ch == <a class="code hl_define" href="catacharset_8h.html#a87e4d06df10657ae54780a7b95378480">UNKNOWN_UNICODE</a> ) {</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        }</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <span class="keywordflow">if</span>( ch == <span class="charliteral">&#39;&lt;&#39;</span> ) {</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            inside_tag = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( ch == <span class="charliteral">&#39;&gt;&#39;</span> ) {</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            inside_tag = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        }</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        <span class="keywordflow">if</span>( inside_tag ) {</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        }</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        w += <a class="code hl_function" href="wcwidth_8cpp.html#aead942898baf7a1b82cd23e582f62a16">mk_wcwidth</a>( ch );</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    }</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keywordflow">return</span> w;</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>}</div>
+<p class="definition">Definition at line <a class="el" href="main__menu_8cpp_source.html#l00071">71</a> of file <a class="el" href="main__menu_8cpp_source.html">main_menu.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>{</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordtype">int</span> len = strlen( s );</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_function" href="fmtlib__format_8h.html#a36b7e236fa4242d8655b508bbebb697f">ptr</a> = s;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keywordtype">int</span> w = 0;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keywordtype">bool</span> inside_tag = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keywordflow">while</span>( len &gt; 0 ) {</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        uint32_t ch = <a class="code hl_function" href="catacharset_8cpp.html#a2227e8c0afd74ed174cbb4daf8e46ab2">UTF8_getch</a>( &amp;<a class="code hl_function" href="fmtlib__format_8h.html#a36b7e236fa4242d8655b508bbebb697f">ptr</a>, &amp;len );</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <span class="keywordflow">if</span>( ch == <a class="code hl_define" href="catacharset_8h.html#a87e4d06df10657ae54780a7b95378480">UNKNOWN_UNICODE</a> ) {</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        }</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <span class="keywordflow">if</span>( ch == <span class="charliteral">&#39;&lt;&#39;</span> ) {</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            inside_tag = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( ch == <span class="charliteral">&#39;&gt;&#39;</span> ) {</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            inside_tag = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        }</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        <span class="keywordflow">if</span>( inside_tag ) {</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        }</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        w += <a class="code hl_function" href="wcwidth_8cpp.html#aead942898baf7a1b82cd23e582f62a16">mk_wcwidth</a>( ch );</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    }</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keywordflow">return</span> w;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>}</div>
 <div class="ttc" id="acatacharset_8cpp_html_a2227e8c0afd74ed174cbb4daf8e46ab2"><div class="ttname"><a href="catacharset_8cpp.html#a2227e8c0afd74ed174cbb4daf8e46ab2">UTF8_getch</a></div><div class="ttdeci">uint32_t UTF8_getch(const char **src, int *srclen)</div><div class="ttdef"><b>Definition:</b> <a href="catacharset_8cpp_source.html#l00018">catacharset.cpp:18</a></div></div>
 <div class="ttc" id="acatacharset_8h_html_a87e4d06df10657ae54780a7b95378480"><div class="ttname"><a href="catacharset_8h.html#a87e4d06df10657ae54780a7b95378480">UNKNOWN_UNICODE</a></div><div class="ttdeci">#define UNKNOWN_UNICODE</div><div class="ttdef"><b>Definition:</b> <a href="catacharset_8h_source.html#l00013">catacharset.h:13</a></div></div>
 <div class="ttc" id="afmtlib__format_8h_html_a36b7e236fa4242d8655b508bbebb697f"><div class="ttname"><a href="fmtlib__format_8h.html#a36b7e236fa4242d8655b508bbebb697f">ptr</a></div><div class="ttdeci">const void * ptr(const T *p)</div><div class="ttdoc">\rst Converts p to const void* for pointer formatting.</div><div class="ttdef"><b>Definition:</b> <a href="fmtlib__format_8h_source.html#l04100">fmtlib_format.h:4100</a></div></div>
@@ -199,7 +200,7 @@ Functions</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="wcwidth_8cpp_source.html#l00094">mk_wcwidth()</a>, <a class="el" href="fmtlib__format_8h_source.html#l04100">ptr()</a>, <a class="el" href="catacharset_8h_source.html#l00013">UNKNOWN_UNICODE</a>, and <a class="el" href="catacharset_8cpp_source.html#l00018">UTF8_getch()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="main__menu_8cpp_source.html#l00121">main_menu::print_menu()</a>, and <a class="el" href="main__menu_8cpp_source.html#l00095">main_menu::print_menu_items()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="main__menu_8cpp_source.html#l00122">main_menu::print_menu()</a>, and <a class="el" href="main__menu_8cpp_source.html#l00096">main_menu::print_menu_items()</a>.</p>
 
 </div>
 </div>
@@ -209,7 +210,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="main__menu_8cpp.html">main_menu.cpp</a></li>
-    <li class="footer">Generated on Wed Oct 19 2022 14:19:19 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Mon Dec 26 2022 21:41:52 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

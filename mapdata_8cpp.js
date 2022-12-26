@@ -67,6 +67,7 @@ var mapdata_8cpp =
     [ "f_floor_canvas", "mapdata_8cpp.html#a1673b3e033ee444849c7e47d57c855ae", null ],
     [ "f_flower_fungal", "mapdata_8cpp.html#af40460921c42b6a0ee06e43badd3845b", null ],
     [ "f_flower_marloss", "mapdata_8cpp.html#aed4e9b5d39114b077bf7be3cebe9bff9", null ],
+    [ "f_freezer", "mapdata_8cpp.html#aecb96f519c1fdb389ea1117b92298c17", null ],
     [ "f_fridge", "mapdata_8cpp.html#a0f3bfa1e3280401b03d70d1a7b56db1a", null ],
     [ "f_fridge_on", "mapdata_8cpp.html#ab4fb1da6c9b6237ebe8c0704c6b5cc7e", null ],
     [ "f_fungal_clump", "mapdata_8cpp.html#a452bddc43ea78ef23ab27a5911c10294", null ],

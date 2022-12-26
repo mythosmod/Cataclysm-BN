@@ -112,7 +112,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ab24c38af70d1715e73caa8fb54ffd88e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the input manager, aka loads the input mapping configuration JSON.  <a href="classinput__manager.html#ab24c38af70d1715e73caa8fb54ffd88e">More...</a><br /></td></tr>
 <tr class="separator:ab24c38af70d1715e73caa8fb54ffd88e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b3a44f990f977f3a8d24c4d148b294d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinput__manager.html#a3b3a44f990f977f3a8d24c4d148b294d">save</a> ()</td></tr>
-<tr class="memdesc:a3b3a44f990f977f3a8d24c4d148b294d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opposite of <a class="el" href="classinput__manager.html#ab24c38af70d1715e73caa8fb54ffd88e">init</a>, save the data that has been loaded by <a class="el" href="classinput__manager.html#ab24c38af70d1715e73caa8fb54ffd88e">init</a>, and possibly been modified.  <a href="classinput__manager.html#a3b3a44f990f977f3a8d24c4d148b294d">More...</a><br /></td></tr>
+<tr class="memdesc:a3b3a44f990f977f3a8d24c4d148b294d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opposite of <a class="el" href="namespaceinit.html">init</a>, save the data that has been loaded by <a class="el" href="namespaceinit.html">init</a>, and possibly been modified.  <a href="classinput__manager.html#a3b3a44f990f977f3a8d24c4d148b294d">More...</a><br /></td></tr>
 <tr class="separator:a3b3a44f990f977f3a8d24c4d148b294d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adac068207a89179b89e95d31422c9991"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinput__manager.html#adac068207a89179b89e95d31422c9991">get_previously_pressed_key</a> () const</td></tr>
 <tr class="memdesc:adac068207a89179b89e95d31422c9991"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the previously pressed key, or 0 if there is no previous input or the previous input wasn't a key.  <a href="classinput__manager.html#adac068207a89179b89e95d31422c9991">More...</a><br /></td></tr>
@@ -126,6 +126,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad550fec9aad772e44f497bf29f845739"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structinput__event.html">input_event</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinput__manager.html#ad550fec9aad772e44f497bf29f845739">get_input_event</a> ()</td></tr>
 <tr class="memdesc:ad550fec9aad772e44f497bf29f845739"><td class="mdescLeft">&#160;</td><td class="mdescRight">curses getch() replacement.  <a href="classinput__manager.html#ad550fec9aad772e44f497bf29f845739">More...</a><br /></td></tr>
 <tr class="separator:ad550fec9aad772e44f497bf29f845739"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56fd029f8ad1ca3dcd864a6bb5537045"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinput__manager.html#a56fd029f8ad1ca3dcd864a6bb5537045">pump_events</a> ()</td></tr>
+<tr class="memdesc:a56fd029f8ad1ca3dcd864a6bb5537045"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resize &amp; refresh if necessary, process all pending window events, and ignore keypresses.  <a href="classinput__manager.html#a56fd029f8ad1ca3dcd864a6bb5537045">More...</a><br /></td></tr>
+<tr class="separator:a56fd029f8ad1ca3dcd864a6bb5537045"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af67f44919ce10e30e3197d45a341dbc9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinput__manager.html#af67f44919ce10e30e3197d45a341dbc9">wait_for_any_key</a> ()</td></tr>
 <tr class="memdesc:af67f44919ce10e30e3197d45a341dbc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait until the user presses a key.  <a href="classinput__manager.html#af67f44919ce10e30e3197d45a341dbc9">More...</a><br /></td></tr>
 <tr class="separator:af67f44919ce10e30e3197d45a341dbc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -224,7 +227,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="input_8h_source.html#l00303">303</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="input_8h_source.html#l00307">307</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
 
 </div>
 </div>
@@ -248,7 +251,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="input_8h_source.html#l00302">302</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="input_8h_source.html#l00306">306</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
 
 </div>
 </div>
@@ -272,7 +275,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="input_8h_source.html#l00301">301</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="input_8h_source.html#l00305">305</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
 
 </div>
 </div>
@@ -296,7 +299,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="input_8h_source.html#l00306">306</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="input_8h_source.html#l00310">310</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
 
 </div>
 </div>
@@ -320,7 +323,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="input_8h_source.html#l00309">309</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="input_8h_source.html#l00313">313</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
 
 </div>
 </div>
@@ -364,11 +367,11 @@ Friends</h2></td></tr>
 <div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>    <a class="code hl_variable" href="classinput__manager.html#af7ccd6ec63983d4ee8e87012d587fdda">gamepad_keycode_to_keyname</a>[ch] = <a class="code hl_function" href="namespaceom__direction.html#a8ba958ccfad28c0a5572a04dd1428f32">name</a>;</div>
 <div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>    <a class="code hl_variable" href="classinput__manager.html#ae775b7ea3cee0f2db7edec895342f398">keyname_to_keycode</a>[<a class="code hl_function" href="namespaceom__direction.html#a8ba958ccfad28c0a5572a04dd1428f32">name</a>] = ch;</div>
 <div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>}</div>
-<div class="ttc" id="aclassinput__manager_html_ae775b7ea3cee0f2db7edec895342f398"><div class="ttname"><a href="classinput__manager.html#ae775b7ea3cee0f2db7edec895342f398">input_manager::keyname_to_keycode</a></div><div class="ttdeci">t_name_to_key_map keyname_to_keycode</div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00310">input.h:310</a></div></div>
-<div class="ttc" id="aclassinput__manager_html_af7ccd6ec63983d4ee8e87012d587fdda"><div class="ttname"><a href="classinput__manager.html#af7ccd6ec63983d4ee8e87012d587fdda">input_manager::gamepad_keycode_to_keyname</a></div><div class="ttdeci">t_key_to_name_map gamepad_keycode_to_keyname</div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00308">input.h:308</a></div></div>
-<div class="ttc" id="anamespaceom__direction_html_a8ba958ccfad28c0a5572a04dd1428f32"><div class="ttname"><a href="namespaceom__direction.html#a8ba958ccfad28c0a5572a04dd1428f32">om_direction::name</a></div><div class="ttdeci">std::string name(type dir)</div><div class="ttdoc">Get Human readable name of a direction.</div><div class="ttdef"><b>Definition:</b> <a href="overmap_8cpp_source.html#l04126">overmap.cpp:4126</a></div></div>
+<div class="ttc" id="aclassinput__manager_html_ae775b7ea3cee0f2db7edec895342f398"><div class="ttname"><a href="classinput__manager.html#ae775b7ea3cee0f2db7edec895342f398">input_manager::keyname_to_keycode</a></div><div class="ttdeci">t_name_to_key_map keyname_to_keycode</div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00314">input.h:314</a></div></div>
+<div class="ttc" id="aclassinput__manager_html_af7ccd6ec63983d4ee8e87012d587fdda"><div class="ttname"><a href="classinput__manager.html#af7ccd6ec63983d4ee8e87012d587fdda">input_manager::gamepad_keycode_to_keyname</a></div><div class="ttdeci">t_key_to_name_map gamepad_keycode_to_keyname</div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00312">input.h:312</a></div></div>
+<div class="ttc" id="anamespaceom__direction_html_a8ba958ccfad28c0a5572a04dd1428f32"><div class="ttname"><a href="namespaceom__direction.html#a8ba958ccfad28c0a5572a04dd1428f32">om_direction::name</a></div><div class="ttdeci">std::string name(type dir)</div><div class="ttdoc">Get Human readable name of a direction.</div><div class="ttdef"><b>Definition:</b> <a href="overmap_8cpp_source.html#l04127">overmap.cpp:4127</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="input_8h_source.html#l00308">gamepad_keycode_to_keyname</a>, <a class="el" href="input_8h_source.html#l00310">keyname_to_keycode</a>, and <a class="el" href="overmap_8cpp_source.html#l04126">om_direction::name()</a>.</p>
+<p class="reference">References <a class="el" href="input_8h_source.html#l00312">gamepad_keycode_to_keyname</a>, <a class="el" href="input_8h_source.html#l00314">keyname_to_keycode</a>, and <a class="el" href="overmap_8cpp_source.html#l04127">om_direction::name()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="input_8cpp_source.html#l00345">init_keycode_mapping()</a>.</p>
 
@@ -424,7 +427,7 @@ Friends</h2></td></tr>
 <div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>    }</div>
 <div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span>    events.push_back( event );</div>
 <div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span>}</div>
-<div class="ttc" id="aclassinput__manager_html_a2ec51fbcbab6a7ee498387ec4e7d83e2"><div class="ttname"><a href="classinput__manager.html#a2ec51fbcbab6a7ee498387ec4e7d83e2">input_manager::t_input_event_list</a></div><div class="ttdeci">std::vector&lt; input_event &gt; t_input_event_list</div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00301">input.h:301</a></div></div>
+<div class="ttc" id="aclassinput__manager_html_a2ec51fbcbab6a7ee498387ec4e7d83e2"><div class="ttname"><a href="classinput__manager.html#a2ec51fbcbab6a7ee498387ec4e7d83e2">input_manager::t_input_event_list</a></div><div class="ttdeci">std::vector&lt; input_event &gt; t_input_event_list</div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00305">input.h:305</a></div></div>
 <div class="ttc" id="aclassinput__manager_html_ad38aeb1745f0ed694fbef9d8ef3a492c"><div class="ttname"><a href="classinput__manager.html#ad38aeb1745f0ed694fbef9d8ef3a492c">input_manager::get_or_create_event_list</a></div><div class="ttdeci">t_input_event_list &amp; get_or_create_event_list(const std::string &amp;action_descriptor, const std::string &amp;context)</div><div class="ttdef"><b>Definition:</b> <a href="input_8cpp_source.html#l00532">input.cpp:532</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="input_8cpp_source.html#l00532">get_or_create_event_list()</a>.</p>
@@ -472,9 +475,9 @@ Friends</h2></td></tr>
 <div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>    <a class="code hl_variable" href="classinput__manager.html#a38afff8de7bed849176a99a3b50b16f7">keycode_to_keyname</a>[ch] = <a class="code hl_function" href="namespaceom__direction.html#a8ba958ccfad28c0a5572a04dd1428f32">name</a>;</div>
 <div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>    <a class="code hl_variable" href="classinput__manager.html#ae775b7ea3cee0f2db7edec895342f398">keyname_to_keycode</a>[<a class="code hl_function" href="namespaceom__direction.html#a8ba958ccfad28c0a5572a04dd1428f32">name</a>] = ch;</div>
 <div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>}</div>
-<div class="ttc" id="aclassinput__manager_html_a38afff8de7bed849176a99a3b50b16f7"><div class="ttname"><a href="classinput__manager.html#a38afff8de7bed849176a99a3b50b16f7">input_manager::keycode_to_keyname</a></div><div class="ttdeci">t_key_to_name_map keycode_to_keyname</div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00307">input.h:307</a></div></div>
+<div class="ttc" id="aclassinput__manager_html_a38afff8de7bed849176a99a3b50b16f7"><div class="ttname"><a href="classinput__manager.html#a38afff8de7bed849176a99a3b50b16f7">input_manager::keycode_to_keyname</a></div><div class="ttdeci">t_key_to_name_map keycode_to_keyname</div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00311">input.h:311</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="input_8h_source.html#l00307">keycode_to_keyname</a>, <a class="el" href="input_8h_source.html#l00310">keyname_to_keycode</a>, and <a class="el" href="overmap_8cpp_source.html#l04126">om_direction::name()</a>.</p>
+<p class="reference">References <a class="el" href="input_8h_source.html#l00311">keycode_to_keyname</a>, <a class="el" href="input_8h_source.html#l00314">keyname_to_keycode</a>, and <a class="el" href="overmap_8cpp_source.html#l04127">om_direction::name()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="input_8cpp_source.html#l00345">init_keycode_mapping()</a>.</p>
 
@@ -565,12 +568,12 @@ Friends</h2></td></tr>
 <div class="line"><a id="l00514" name="l00514"></a><span class="lineno">  514</span>}</div>
 <div class="ttc" id="aaction_8h_html_a14769f0512c139a614db195c6477c667"><div class="ttname"><a href="action_8h.html#a14769f0512c139a614db195c6477c667">action_id</a></div><div class="ttdeci">action_id</div><div class="ttdoc">Enumerates all discrete actions that can be performed by player.</div><div class="ttdef"><b>Definition:</b> <a href="action_8h_source.html#l00022">action.h:22</a></div></div>
 <div class="ttc" id="aclassinput__manager_html_a1f7ac0aef51420c50259be0396c697fe"><div class="ttname"><a href="classinput__manager.html#a1f7ac0aef51420c50259be0396c697fe">input_manager::get_default_action_name</a></div><div class="ttdeci">translation get_default_action_name(const std::string &amp;action_id) const</div><div class="ttdoc">Get a value to be used as the default name for a newly created action.</div><div class="ttdef"><b>Definition:</b> <a href="input_8cpp_source.html#l00516">input.cpp:516</a></div></div>
-<div class="ttc" id="aclassinput__manager_html_acb45709d299609fa432efc60cf57830a"><div class="ttname"><a href="classinput__manager.html#acb45709d299609fa432efc60cf57830a">input_manager::action_contexts</a></div><div class="ttdeci">t_action_contexts action_contexts</div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00304">input.h:304</a></div></div>
-<div class="ttc" id="aclassinput__manager_html_ae4b064e334ba0e8137f99c9cff5cdfe3"><div class="ttname"><a href="classinput__manager.html#ae4b064e334ba0e8137f99c9cff5cdfe3">input_manager::t_actions</a></div><div class="ttdeci">std::map&lt; std::string, action_attributes &gt; t_actions</div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00302">input.h:302</a></div></div>
+<div class="ttc" id="aclassinput__manager_html_acb45709d299609fa432efc60cf57830a"><div class="ttname"><a href="classinput__manager.html#acb45709d299609fa432efc60cf57830a">input_manager::action_contexts</a></div><div class="ttdeci">t_action_contexts action_contexts</div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00308">input.h:308</a></div></div>
+<div class="ttc" id="aclassinput__manager_html_ae4b064e334ba0e8137f99c9cff5cdfe3"><div class="ttname"><a href="classinput__manager.html#ae4b064e334ba0e8137f99c9cff5cdfe3">input_manager::t_actions</a></div><div class="ttdeci">std::map&lt; std::string, action_attributes &gt; t_actions</div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00306">input.h:306</a></div></div>
 <div class="ttc" id="adialogue_8h_html_abfef6960b077f40e23bc00055370cc71a0639a24a99be1d60fe688dd938b7eca8"><div class="ttname"><a href="dialogue_8h.html#abfef6960b077f40e23bc00055370cc71a0639a24a99be1d60fe688dd938b7eca8">action</a></div><div class="ttdeci">@ action</div><div class="ttdef"><b>Definition:</b> <a href="dialogue_8h_source.html#l00037">dialogue.h:36</a></div></div>
 <div class="ttc" id="ainput_8cpp_html_af6b5281f3d5857bf3194c06000ebad6b"><div class="ttname"><a href="input_8cpp.html#af6b5281f3d5857bf3194c06000ebad6b">default_context_id</a></div><div class="ttdeci">static const std::string default_context_id(&quot;default&quot;)</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="dialogue_8h_source.html#l00036">action</a>, <a class="el" href="input_8h_source.html#l00304">action_contexts</a>, <a class="el" href="input_8cpp.html#af6b5281f3d5857bf3194c06000ebad6b">default_context_id()</a>, and <a class="el" href="input_8cpp_source.html#l00516">get_default_action_name()</a>.</p>
+<p class="reference">References <a class="el" href="dialogue_8h_source.html#l00036">action</a>, <a class="el" href="input_8h_source.html#l00308">action_contexts</a>, <a class="el" href="input_8cpp.html#af6b5281f3d5857bf3194c06000ebad6b">default_context_id()</a>, and <a class="el" href="input_8cpp_source.html#l00516">get_default_action_name()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="input_8cpp_source.html#l00589">input_context::action_uses_input()</a>, <a class="el" href="input_8cpp_source.html#l00999">input_context::display_menu()</a>, <a class="el" href="input_8cpp_source.html#l01361">input_context::get_action_name()</a>, and <a class="el" href="input_8cpp_source.html#l00464">get_input_for_action()</a>.</p>
 
@@ -627,7 +630,7 @@ Friends</h2></td></tr>
 <div class="line"><a id="l00530" name="l00530"></a><span class="lineno">  530</span>}</div>
 <div class="ttc" id="atranslations_8cpp_html_a7afa19f8e1a45d955fc6fbaa420a6760"><div class="ttname"><a href="translations_8cpp.html#a7afa19f8e1a45d955fc6fbaa420a6760">no_translation</a></div><div class="ttdeci">translation no_translation(const std::string &amp;str)</div><div class="ttdoc">Shorthand for translation::no_translation.</div><div class="ttdef"><b>Definition:</b> <a href="translations_8cpp_source.html#l00405">translations.cpp:405</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="input_8h_source.html#l00304">action_contexts</a>, <a class="el" href="input_8cpp.html#af6b5281f3d5857bf3194c06000ebad6b">default_context_id()</a>, and <a class="el" href="translations_8cpp_source.html#l00405">no_translation()</a>.</p>
+<p class="reference">References <a class="el" href="input_8h_source.html#l00308">action_contexts</a>, <a class="el" href="input_8cpp.html#af6b5281f3d5857bf3194c06000ebad6b">default_context_id()</a>, and <a class="el" href="translations_8cpp_source.html#l00405">no_translation()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="input_8cpp_source.html#l00479">get_action_attributes()</a>, and <a class="el" href="input_8cpp_source.html#l00532">get_or_create_event_list()</a>.</p>
 
@@ -690,108 +693,108 @@ Friends</h2></td></tr>
 <p>curses getch() replacement. </p>
 <p >Defined in the respective platform wrapper, e.g. sdlcurse.cpp </p>
 
-<p class="definition">Definition at line <a class="el" href="ncurses__def_8cpp_source.html#l00251">251</a> of file <a class="el" href="ncurses__def_8cpp_source.html">ncurses_def.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>{</div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>    <span class="keywordtype">int</span> key = ERR;</div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>    <a class="code hl_struct" href="structinput__event.html">input_event</a> rval;</div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>    <span class="keywordflow">do</span> {</div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>        <a class="code hl_variable" href="classinput__manager.html#ab6eb20ccdeab03473f47365cd836fb65">previously_pressed_key</a> = 0;</div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>        <span class="comment">// flush any output</span></div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>        <a class="code hl_function" href="namespacecatacurses.html#a27081969be8988bf3f1679ebf24c151e">catacurses::doupdate</a>();</div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>        key = getch();</div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>        <span class="keywordflow">if</span>( key != ERR ) {</div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>            <span class="keywordtype">int</span> newch;</div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>            <span class="comment">// Clear the buffer of characters that match the one we&#39;re going to act on.</span></div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>            <span class="keyword">const</span> <span class="keywordtype">int</span> prev_timeout = <a class="code hl_variable" href="classinput__manager.html#a95c5db86b27184868198ccc6d285de17">input_timeout</a>;</div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>            <a class="code hl_function" href="classinput__manager.html#a71fe921eef2db73b8a665a187eb7e526">set_timeout</a>( 0 );</div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>            <span class="keywordflow">do</span> {</div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>                newch = getch();</div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>            } <span class="keywordflow">while</span>( newch != ERR &amp;&amp; newch == key );</div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>            <a class="code hl_function" href="classinput__manager.html#a71fe921eef2db73b8a665a187eb7e526">set_timeout</a>( prev_timeout );</div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>            <span class="comment">// If we read a different character than the one we&#39;re going to act on, re-queue it.</span></div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>            <span class="keywordflow">if</span>( newch != ERR &amp;&amp; newch != key ) {</div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>                ungetch( newch );</div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>            }</div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>        }</div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>        rval = <a class="code hl_struct" href="structinput__event.html">input_event</a>();</div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>        <span class="keywordflow">if</span>( key == ERR ) {</div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>            <span class="keywordflow">if</span>( <a class="code hl_variable" href="classinput__manager.html#a95c5db86b27184868198ccc6d285de17">input_timeout</a> &gt; 0 ) {</div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>                rval.<a class="code hl_variable" href="structinput__event.html#afa9e110af2c2ac3eefd1ffa4e8c8d469">type</a> = <a class="code hl_enumvalue" href="input_8h.html#a7714eed017e41648533818b7ed636974a8d089f5ce2c65b85e9c5855ed96ff95f">CATA_INPUT_TIMEOUT</a>;</div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>            } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>                rval.<a class="code hl_variable" href="structinput__event.html#afa9e110af2c2ac3eefd1ffa4e8c8d469">type</a> = <a class="code hl_enumvalue" href="input_8h.html#a7714eed017e41648533818b7ed636974a9493b2f19022b0a377f839377423d0de">CATA_INPUT_ERROR</a>;</div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>            }</div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>            <span class="comment">// ncurses mouse handling</span></div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( key == KEY_RESIZE ) {</div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>            <a class="code hl_function" href="namespacecatacurses.html#a5e3d87563c99055c3a89fae235b305a4">catacurses::resizeterm</a>();</div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( key == KEY_MOUSE ) {</div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>            MEVENT event;</div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>            <span class="keywordflow">if</span>( getmouse( &amp;event ) == OK ) {</div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>                rval.<a class="code hl_variable" href="structinput__event.html#afa9e110af2c2ac3eefd1ffa4e8c8d469">type</a> = <a class="code hl_enumvalue" href="input_8h.html#a7714eed017e41648533818b7ed636974addb21d0c61e43f974b49dfe0fd793c9b">CATA_INPUT_MOUSE</a>;</div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>                rval.<a class="code hl_variable" href="structinput__event.html#ad5400de6c4795c4d1b0d8d09fe938273">mouse_pos</a> = <a class="code hl_struct" href="structpoint.html">point</a>( event.x, event.y );</div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>                <span class="keywordflow">if</span>( event.bstate &amp; BUTTON1_CLICKED ) {</div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>                    rval.<a class="code hl_function" href="structinput__event.html#a1d3cc705ca3603447a5d24f3c52339d5">add_input</a>( <a class="code hl_enumvalue" href="input_8h.html#a7e5f61c59f658d9196d15f3b98f1e56ea3c2e62b97b30d850c5539d0f3a6d0958">MOUSE_BUTTON_LEFT</a> );</div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>                } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( event.bstate &amp; BUTTON3_CLICKED ) {</div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>                    rval.<a class="code hl_function" href="structinput__event.html#a1d3cc705ca3603447a5d24f3c52339d5">add_input</a>( <a class="code hl_enumvalue" href="input_8h.html#a7e5f61c59f658d9196d15f3b98f1e56ea5b61e63e73f15ed6af97d5cd3124bc6f">MOUSE_BUTTON_RIGHT</a> );</div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>                } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( event.bstate &amp; REPORT_MOUSE_POSITION ) {</div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>                    rval.<a class="code hl_function" href="structinput__event.html#a1d3cc705ca3603447a5d24f3c52339d5">add_input</a>( <a class="code hl_enumvalue" href="input_8h.html#a7e5f61c59f658d9196d15f3b98f1e56ea7513d383f97428a41f8b44594874d469">MOUSE_MOVE</a> );</div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>                    <span class="keywordflow">if</span>( <a class="code hl_variable" href="classinput__manager.html#a95c5db86b27184868198ccc6d285de17">input_timeout</a> &gt; 0 ) {</div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>                        <span class="comment">// Mouse movement seems to clear ncurses timeout</span></div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>                        <a class="code hl_function" href="classinput__manager.html#a71fe921eef2db73b8a665a187eb7e526">set_timeout</a>( <a class="code hl_variable" href="classinput__manager.html#a95c5db86b27184868198ccc6d285de17">input_timeout</a> );</div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>                    }</div>
-<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>                } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>                    rval.<a class="code hl_variable" href="structinput__event.html#afa9e110af2c2ac3eefd1ffa4e8c8d469">type</a> = <a class="code hl_enumvalue" href="input_8h.html#a7714eed017e41648533818b7ed636974a9493b2f19022b0a377f839377423d0de">CATA_INPUT_ERROR</a>;</div>
-<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>                }</div>
-<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>            } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>                rval.<a class="code hl_variable" href="structinput__event.html#afa9e110af2c2ac3eefd1ffa4e8c8d469">type</a> = <a class="code hl_enumvalue" href="input_8h.html#a7714eed017e41648533818b7ed636974a9493b2f19022b0a377f839377423d0de">CATA_INPUT_ERROR</a>;</div>
-<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>            }</div>
-<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>            <span class="keywordflow">if</span>( key == 127 ) { <span class="comment">// == Unicode DELETE</span></div>
-<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>                <a class="code hl_variable" href="classinput__manager.html#ab6eb20ccdeab03473f47365cd836fb65">previously_pressed_key</a> = <a class="code hl_variable" href="input_8h.html#a68a8c5541dd85e1870ddd2450a896cb3">KEY_BACKSPACE</a>;</div>
-<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>                <span class="keywordflow">return</span> <a class="code hl_struct" href="structinput__event.html">input_event</a>( <a class="code hl_variable" href="input_8h.html#a68a8c5541dd85e1870ddd2450a896cb3">KEY_BACKSPACE</a>, <a class="code hl_enumvalue" href="input_8h.html#a7714eed017e41648533818b7ed636974a6e602eaf115b09c2e4380ce6fc123839">CATA_INPUT_KEYBOARD</a> );</div>
-<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>            }</div>
-<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>            rval.<a class="code hl_variable" href="structinput__event.html#afa9e110af2c2ac3eefd1ffa4e8c8d469">type</a> = <a class="code hl_enumvalue" href="input_8h.html#a7714eed017e41648533818b7ed636974a6e602eaf115b09c2e4380ce6fc123839">CATA_INPUT_KEYBOARD</a>;</div>
-<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>            rval.<a class="code hl_variable" href="structinput__event.html#a2be5acd6dbd31ce820785df739a6c27b">text</a>.append( 1, <span class="keyword">static_cast&lt;</span><span class="keywordtype">char</span><span class="keyword">&gt;</span>( key ) );</div>
-<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>            <span class="comment">// Read the UTF-8 sequence (if any)</span></div>
-<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>            <span class="keywordflow">if</span>( key &lt; 127 ) {</div>
-<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>                <span class="comment">// Single byte sequence</span></div>
-<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( 194 &lt;= key &amp;&amp; key &lt;= 223 ) {</div>
-<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>                rval.<a class="code hl_variable" href="structinput__event.html#a2be5acd6dbd31ce820785df739a6c27b">text</a>.append( 1, <span class="keyword">static_cast&lt;</span><span class="keywordtype">char</span><span class="keyword">&gt;</span>( getch() ) );</div>
-<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( 224 &lt;= key &amp;&amp; key &lt;= 239 ) {</div>
-<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>                rval.<a class="code hl_variable" href="structinput__event.html#a2be5acd6dbd31ce820785df739a6c27b">text</a>.append( 1, <span class="keyword">static_cast&lt;</span><span class="keywordtype">char</span><span class="keyword">&gt;</span>( getch() ) );</div>
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>                rval.<a class="code hl_variable" href="structinput__event.html#a2be5acd6dbd31ce820785df739a6c27b">text</a>.append( 1, <span class="keyword">static_cast&lt;</span><span class="keywordtype">char</span><span class="keyword">&gt;</span>( getch() ) );</div>
-<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( 240 &lt;= key &amp;&amp; key &lt;= 244 ) {</div>
-<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>                rval.<a class="code hl_variable" href="structinput__event.html#a2be5acd6dbd31ce820785df739a6c27b">text</a>.append( 1, <span class="keyword">static_cast&lt;</span><span class="keywordtype">char</span><span class="keyword">&gt;</span>( getch() ) );</div>
-<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>                rval.<a class="code hl_variable" href="structinput__event.html#a2be5acd6dbd31ce820785df739a6c27b">text</a>.append( 1, <span class="keyword">static_cast&lt;</span><span class="keywordtype">char</span><span class="keyword">&gt;</span>( getch() ) );</div>
-<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>                rval.<a class="code hl_variable" href="structinput__event.html#a2be5acd6dbd31ce820785df739a6c27b">text</a>.append( 1, <span class="keyword">static_cast&lt;</span><span class="keywordtype">char</span><span class="keyword">&gt;</span>( getch() ) );</div>
-<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>            } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>                <span class="comment">// Other control character, etc. - no text at all, return an event</span></div>
-<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>                <span class="comment">// without the text property</span></div>
-<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>                <a class="code hl_variable" href="classinput__manager.html#ab6eb20ccdeab03473f47365cd836fb65">previously_pressed_key</a> = key;</div>
-<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>                <span class="keywordflow">return</span> <a class="code hl_struct" href="structinput__event.html">input_event</a>( key, <a class="code hl_enumvalue" href="input_8h.html#a7714eed017e41648533818b7ed636974a6e602eaf115b09c2e4380ce6fc123839">CATA_INPUT_KEYBOARD</a> );</div>
-<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>            }</div>
-<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>            <span class="comment">// Now we have loaded an UTF-8 sequence (possibly several bytes)</span></div>
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>            <span class="comment">// but we should only return *one* key, so return the code point of it.</span></div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>            <span class="keyword">const</span> uint32_t cp = <a class="code hl_function" href="catacharset_8cpp.html#a2227e8c0afd74ed174cbb4daf8e46ab2">UTF8_getch</a>( rval.<a class="code hl_variable" href="structinput__event.html#a2be5acd6dbd31ce820785df739a6c27b">text</a> );</div>
-<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>            <span class="keywordflow">if</span>( cp == <a class="code hl_define" href="catacharset_8h.html#a87e4d06df10657ae54780a7b95378480">UNKNOWN_UNICODE</a> ) {</div>
-<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>                <span class="comment">// Invalid UTF-8 sequence, this should never happen, what now?</span></div>
-<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>                <span class="comment">// Maybe return any error instead?</span></div>
-<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>                <a class="code hl_variable" href="classinput__manager.html#ab6eb20ccdeab03473f47365cd836fb65">previously_pressed_key</a> = key;</div>
-<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>                <span class="keywordflow">return</span> <a class="code hl_struct" href="structinput__event.html">input_event</a>( key, <a class="code hl_enumvalue" href="input_8h.html#a7714eed017e41648533818b7ed636974a6e602eaf115b09c2e4380ce6fc123839">CATA_INPUT_KEYBOARD</a> );</div>
-<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>            }</div>
-<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>            <a class="code hl_variable" href="classinput__manager.html#ab6eb20ccdeab03473f47365cd836fb65">previously_pressed_key</a> = cp;</div>
-<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>            <span class="comment">// for compatibility only add the first byte, not the code point</span></div>
-<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>            <span class="comment">// as it would  conflict with the special keys defined by ncurses</span></div>
-<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>            rval.<a class="code hl_function" href="structinput__event.html#a1d3cc705ca3603447a5d24f3c52339d5">add_input</a>( key );</div>
-<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>        }</div>
-<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>    } <span class="keywordflow">while</span>( key == KEY_RESIZE );</div>
-<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span> </div>
-<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>    <span class="keywordflow">return</span> rval;</div>
-<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>}</div>
+<p class="definition">Definition at line <a class="el" href="ncurses__def_8cpp_source.html#l00277">277</a> of file <a class="el" href="ncurses__def_8cpp_source.html">ncurses_def.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>{</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>    <span class="keywordtype">int</span> key = ERR;</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>    <a class="code hl_struct" href="structinput__event.html">input_event</a> rval;</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>    <span class="keywordflow">do</span> {</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>        <a class="code hl_variable" href="classinput__manager.html#ab6eb20ccdeab03473f47365cd836fb65">previously_pressed_key</a> = 0;</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>        <span class="comment">// flush any output</span></div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>        <a class="code hl_function" href="namespacecatacurses.html#a27081969be8988bf3f1679ebf24c151e">catacurses::doupdate</a>();</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>        key = getch();</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>        <span class="keywordflow">if</span>( key != ERR ) {</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>            <span class="keywordtype">int</span> newch;</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>            <span class="comment">// Clear the buffer of characters that match the one we&#39;re going to act on.</span></div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>            <span class="keyword">const</span> <span class="keywordtype">int</span> prev_timeout = <a class="code hl_variable" href="classinput__manager.html#a95c5db86b27184868198ccc6d285de17">input_timeout</a>;</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>            <a class="code hl_function" href="classinput__manager.html#a71fe921eef2db73b8a665a187eb7e526">set_timeout</a>( 0 );</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>            <span class="keywordflow">do</span> {</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>                newch = getch();</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>            } <span class="keywordflow">while</span>( newch != ERR &amp;&amp; newch == key );</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>            <a class="code hl_function" href="classinput__manager.html#a71fe921eef2db73b8a665a187eb7e526">set_timeout</a>( prev_timeout );</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>            <span class="comment">// If we read a different character than the one we&#39;re going to act on, re-queue it.</span></div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>            <span class="keywordflow">if</span>( newch != ERR &amp;&amp; newch != key ) {</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>                ungetch( newch );</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>            }</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>        }</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>        rval = <a class="code hl_struct" href="structinput__event.html">input_event</a>();</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>        <span class="keywordflow">if</span>( key == ERR ) {</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>            <span class="keywordflow">if</span>( <a class="code hl_variable" href="classinput__manager.html#a95c5db86b27184868198ccc6d285de17">input_timeout</a> &gt; 0 ) {</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>                rval.<a class="code hl_variable" href="structinput__event.html#afa9e110af2c2ac3eefd1ffa4e8c8d469">type</a> = <a class="code hl_enumvalue" href="input_8h.html#a7714eed017e41648533818b7ed636974a8d089f5ce2c65b85e9c5855ed96ff95f">CATA_INPUT_TIMEOUT</a>;</div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>            } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>                rval.<a class="code hl_variable" href="structinput__event.html#afa9e110af2c2ac3eefd1ffa4e8c8d469">type</a> = <a class="code hl_enumvalue" href="input_8h.html#a7714eed017e41648533818b7ed636974a9493b2f19022b0a377f839377423d0de">CATA_INPUT_ERROR</a>;</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>            }</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>            <span class="comment">// ncurses mouse handling</span></div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( key == KEY_RESIZE ) {</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>            <a class="code hl_function" href="namespacecatacurses.html#a5e3d87563c99055c3a89fae235b305a4">catacurses::resizeterm</a>();</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( key == KEY_MOUSE ) {</div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>            MEVENT event;</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>            <span class="keywordflow">if</span>( getmouse( &amp;event ) == OK ) {</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>                rval.<a class="code hl_variable" href="structinput__event.html#afa9e110af2c2ac3eefd1ffa4e8c8d469">type</a> = <a class="code hl_enumvalue" href="input_8h.html#a7714eed017e41648533818b7ed636974addb21d0c61e43f974b49dfe0fd793c9b">CATA_INPUT_MOUSE</a>;</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>                rval.<a class="code hl_variable" href="structinput__event.html#ad5400de6c4795c4d1b0d8d09fe938273">mouse_pos</a> = <a class="code hl_struct" href="structpoint.html">point</a>( event.x, event.y );</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>                <span class="keywordflow">if</span>( event.bstate &amp; BUTTON1_CLICKED ) {</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>                    rval.<a class="code hl_function" href="structinput__event.html#a1d3cc705ca3603447a5d24f3c52339d5">add_input</a>( <a class="code hl_enumvalue" href="input_8h.html#a7e5f61c59f658d9196d15f3b98f1e56ea3c2e62b97b30d850c5539d0f3a6d0958">MOUSE_BUTTON_LEFT</a> );</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>                } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( event.bstate &amp; BUTTON3_CLICKED ) {</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>                    rval.<a class="code hl_function" href="structinput__event.html#a1d3cc705ca3603447a5d24f3c52339d5">add_input</a>( <a class="code hl_enumvalue" href="input_8h.html#a7e5f61c59f658d9196d15f3b98f1e56ea5b61e63e73f15ed6af97d5cd3124bc6f">MOUSE_BUTTON_RIGHT</a> );</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>                } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( event.bstate &amp; REPORT_MOUSE_POSITION ) {</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>                    rval.<a class="code hl_function" href="structinput__event.html#a1d3cc705ca3603447a5d24f3c52339d5">add_input</a>( <a class="code hl_enumvalue" href="input_8h.html#a7e5f61c59f658d9196d15f3b98f1e56ea7513d383f97428a41f8b44594874d469">MOUSE_MOVE</a> );</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>                    <span class="keywordflow">if</span>( <a class="code hl_variable" href="classinput__manager.html#a95c5db86b27184868198ccc6d285de17">input_timeout</a> &gt; 0 ) {</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>                        <span class="comment">// Mouse movement seems to clear ncurses timeout</span></div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>                        <a class="code hl_function" href="classinput__manager.html#a71fe921eef2db73b8a665a187eb7e526">set_timeout</a>( <a class="code hl_variable" href="classinput__manager.html#a95c5db86b27184868198ccc6d285de17">input_timeout</a> );</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>                    }</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>                } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>                    rval.<a class="code hl_variable" href="structinput__event.html#afa9e110af2c2ac3eefd1ffa4e8c8d469">type</a> = <a class="code hl_enumvalue" href="input_8h.html#a7714eed017e41648533818b7ed636974a9493b2f19022b0a377f839377423d0de">CATA_INPUT_ERROR</a>;</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>                }</div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>            } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>                rval.<a class="code hl_variable" href="structinput__event.html#afa9e110af2c2ac3eefd1ffa4e8c8d469">type</a> = <a class="code hl_enumvalue" href="input_8h.html#a7714eed017e41648533818b7ed636974a9493b2f19022b0a377f839377423d0de">CATA_INPUT_ERROR</a>;</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>            }</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>            <span class="keywordflow">if</span>( key == 127 ) { <span class="comment">// == Unicode DELETE</span></div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>                <a class="code hl_variable" href="classinput__manager.html#ab6eb20ccdeab03473f47365cd836fb65">previously_pressed_key</a> = <a class="code hl_variable" href="input_8h.html#a68a8c5541dd85e1870ddd2450a896cb3">KEY_BACKSPACE</a>;</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>                <span class="keywordflow">return</span> <a class="code hl_struct" href="structinput__event.html">input_event</a>( <a class="code hl_variable" href="input_8h.html#a68a8c5541dd85e1870ddd2450a896cb3">KEY_BACKSPACE</a>, <a class="code hl_enumvalue" href="input_8h.html#a7714eed017e41648533818b7ed636974a6e602eaf115b09c2e4380ce6fc123839">CATA_INPUT_KEYBOARD</a> );</div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>            }</div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>            rval.<a class="code hl_variable" href="structinput__event.html#afa9e110af2c2ac3eefd1ffa4e8c8d469">type</a> = <a class="code hl_enumvalue" href="input_8h.html#a7714eed017e41648533818b7ed636974a6e602eaf115b09c2e4380ce6fc123839">CATA_INPUT_KEYBOARD</a>;</div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>            rval.<a class="code hl_variable" href="structinput__event.html#a2be5acd6dbd31ce820785df739a6c27b">text</a>.append( 1, <span class="keyword">static_cast&lt;</span><span class="keywordtype">char</span><span class="keyword">&gt;</span>( key ) );</div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>            <span class="comment">// Read the UTF-8 sequence (if any)</span></div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>            <span class="keywordflow">if</span>( key &lt; 127 ) {</div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>                <span class="comment">// Single byte sequence</span></div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( 194 &lt;= key &amp;&amp; key &lt;= 223 ) {</div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>                rval.<a class="code hl_variable" href="structinput__event.html#a2be5acd6dbd31ce820785df739a6c27b">text</a>.append( 1, <span class="keyword">static_cast&lt;</span><span class="keywordtype">char</span><span class="keyword">&gt;</span>( getch() ) );</div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( 224 &lt;= key &amp;&amp; key &lt;= 239 ) {</div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>                rval.<a class="code hl_variable" href="structinput__event.html#a2be5acd6dbd31ce820785df739a6c27b">text</a>.append( 1, <span class="keyword">static_cast&lt;</span><span class="keywordtype">char</span><span class="keyword">&gt;</span>( getch() ) );</div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>                rval.<a class="code hl_variable" href="structinput__event.html#a2be5acd6dbd31ce820785df739a6c27b">text</a>.append( 1, <span class="keyword">static_cast&lt;</span><span class="keywordtype">char</span><span class="keyword">&gt;</span>( getch() ) );</div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( 240 &lt;= key &amp;&amp; key &lt;= 244 ) {</div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>                rval.<a class="code hl_variable" href="structinput__event.html#a2be5acd6dbd31ce820785df739a6c27b">text</a>.append( 1, <span class="keyword">static_cast&lt;</span><span class="keywordtype">char</span><span class="keyword">&gt;</span>( getch() ) );</div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>                rval.<a class="code hl_variable" href="structinput__event.html#a2be5acd6dbd31ce820785df739a6c27b">text</a>.append( 1, <span class="keyword">static_cast&lt;</span><span class="keywordtype">char</span><span class="keyword">&gt;</span>( getch() ) );</div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>                rval.<a class="code hl_variable" href="structinput__event.html#a2be5acd6dbd31ce820785df739a6c27b">text</a>.append( 1, <span class="keyword">static_cast&lt;</span><span class="keywordtype">char</span><span class="keyword">&gt;</span>( getch() ) );</div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>            } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>                <span class="comment">// Other control character, etc. - no text at all, return an event</span></div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>                <span class="comment">// without the text property</span></div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>                <a class="code hl_variable" href="classinput__manager.html#ab6eb20ccdeab03473f47365cd836fb65">previously_pressed_key</a> = key;</div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>                <span class="keywordflow">return</span> <a class="code hl_struct" href="structinput__event.html">input_event</a>( key, <a class="code hl_enumvalue" href="input_8h.html#a7714eed017e41648533818b7ed636974a6e602eaf115b09c2e4380ce6fc123839">CATA_INPUT_KEYBOARD</a> );</div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>            }</div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>            <span class="comment">// Now we have loaded an UTF-8 sequence (possibly several bytes)</span></div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>            <span class="comment">// but we should only return *one* key, so return the code point of it.</span></div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>            <span class="keyword">const</span> uint32_t cp = <a class="code hl_function" href="catacharset_8cpp.html#a2227e8c0afd74ed174cbb4daf8e46ab2">UTF8_getch</a>( rval.<a class="code hl_variable" href="structinput__event.html#a2be5acd6dbd31ce820785df739a6c27b">text</a> );</div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>            <span class="keywordflow">if</span>( cp == <a class="code hl_define" href="catacharset_8h.html#a87e4d06df10657ae54780a7b95378480">UNKNOWN_UNICODE</a> ) {</div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>                <span class="comment">// Invalid UTF-8 sequence, this should never happen, what now?</span></div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>                <span class="comment">// Maybe return any error instead?</span></div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>                <a class="code hl_variable" href="classinput__manager.html#ab6eb20ccdeab03473f47365cd836fb65">previously_pressed_key</a> = key;</div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>                <span class="keywordflow">return</span> <a class="code hl_struct" href="structinput__event.html">input_event</a>( key, <a class="code hl_enumvalue" href="input_8h.html#a7714eed017e41648533818b7ed636974a6e602eaf115b09c2e4380ce6fc123839">CATA_INPUT_KEYBOARD</a> );</div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>            }</div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>            <a class="code hl_variable" href="classinput__manager.html#ab6eb20ccdeab03473f47365cd836fb65">previously_pressed_key</a> = cp;</div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>            <span class="comment">// for compatibility only add the first byte, not the code point</span></div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>            <span class="comment">// as it would  conflict with the special keys defined by ncurses</span></div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>            rval.<a class="code hl_function" href="structinput__event.html#a1d3cc705ca3603447a5d24f3c52339d5">add_input</a>( key );</div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>        }</div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>    } <span class="keywordflow">while</span>( key == KEY_RESIZE );</div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span> </div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>    <span class="keywordflow">return</span> rval;</div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>}</div>
 <div class="ttc" id="acatacharset_8cpp_html_a2227e8c0afd74ed174cbb4daf8e46ab2"><div class="ttname"><a href="catacharset_8cpp.html#a2227e8c0afd74ed174cbb4daf8e46ab2">UTF8_getch</a></div><div class="ttdeci">uint32_t UTF8_getch(const char **src, int *srclen)</div><div class="ttdef"><b>Definition:</b> <a href="catacharset_8cpp_source.html#l00018">catacharset.cpp:18</a></div></div>
 <div class="ttc" id="acatacharset_8h_html_a87e4d06df10657ae54780a7b95378480"><div class="ttname"><a href="catacharset_8h.html#a87e4d06df10657ae54780a7b95378480">UNKNOWN_UNICODE</a></div><div class="ttdeci">#define UNKNOWN_UNICODE</div><div class="ttdef"><b>Definition:</b> <a href="catacharset_8h_source.html#l00013">catacharset.h:13</a></div></div>
-<div class="ttc" id="aclassinput__manager_html_a71fe921eef2db73b8a665a187eb7e526"><div class="ttname"><a href="classinput__manager.html#a71fe921eef2db73b8a665a187eb7e526">input_manager::set_timeout</a></div><div class="ttdeci">void set_timeout(int t)</div><div class="ttdoc">Sets global input polling timeout as appropriate for the current interface system.</div><div class="ttdef"><b>Definition:</b> <a href="ncurses__def_8cpp_source.html#l00349">ncurses_def.cpp:349</a></div></div>
-<div class="ttc" id="aclassinput__manager_html_a95c5db86b27184868198ccc6d285de17"><div class="ttname"><a href="classinput__manager.html#a95c5db86b27184868198ccc6d285de17">input_manager::input_timeout</a></div><div class="ttdeci">int input_timeout</div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00327">input.h:327</a></div></div>
-<div class="ttc" id="aclassinput__manager_html_ab6eb20ccdeab03473f47365cd836fb65"><div class="ttname"><a href="classinput__manager.html#ab6eb20ccdeab03473f47365cd836fb65">input_manager::previously_pressed_key</a></div><div class="ttdeci">int previously_pressed_key</div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00313">input.h:313</a></div></div>
+<div class="ttc" id="aclassinput__manager_html_a71fe921eef2db73b8a665a187eb7e526"><div class="ttname"><a href="classinput__manager.html#a71fe921eef2db73b8a665a187eb7e526">input_manager::set_timeout</a></div><div class="ttdeci">void set_timeout(int t)</div><div class="ttdoc">Sets global input polling timeout as appropriate for the current interface system.</div><div class="ttdef"><b>Definition:</b> <a href="ncurses__def_8cpp_source.html#l00375">ncurses_def.cpp:375</a></div></div>
+<div class="ttc" id="aclassinput__manager_html_a95c5db86b27184868198ccc6d285de17"><div class="ttname"><a href="classinput__manager.html#a95c5db86b27184868198ccc6d285de17">input_manager::input_timeout</a></div><div class="ttdeci">int input_timeout</div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00331">input.h:331</a></div></div>
+<div class="ttc" id="aclassinput__manager_html_ab6eb20ccdeab03473f47365cd836fb65"><div class="ttname"><a href="classinput__manager.html#ab6eb20ccdeab03473f47365cd836fb65">input_manager::previously_pressed_key</a></div><div class="ttdeci">int previously_pressed_key</div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00317">input.h:317</a></div></div>
 <div class="ttc" id="ainput_8h_html_a68a8c5541dd85e1870ddd2450a896cb3"><div class="ttname"><a href="input_8h.html#a68a8c5541dd85e1870ddd2450a896cb3">KEY_BACKSPACE</a></div><div class="ttdeci">static constexpr int KEY_BACKSPACE</div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00043">input.h:43</a></div></div>
 <div class="ttc" id="ainput_8h_html_a7714eed017e41648533818b7ed636974a6e602eaf115b09c2e4380ce6fc123839"><div class="ttname"><a href="input_8h.html#a7714eed017e41648533818b7ed636974a6e602eaf115b09c2e4380ce6fc123839">CATA_INPUT_KEYBOARD</a></div><div class="ttdeci">@ CATA_INPUT_KEYBOARD</div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00082">input.h:82</a></div></div>
 <div class="ttc" id="ainput_8h_html_a7714eed017e41648533818b7ed636974a8d089f5ce2c65b85e9c5855ed96ff95f"><div class="ttname"><a href="input_8h.html#a7714eed017e41648533818b7ed636974a8d089f5ce2c65b85e9c5855ed96ff95f">CATA_INPUT_TIMEOUT</a></div><div class="ttdeci">@ CATA_INPUT_TIMEOUT</div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00081">input.h:81</a></div></div>
@@ -809,9 +812,9 @@ Friends</h2></td></tr>
 <div class="ttc" id="astructinput__event_html_afa9e110af2c2ac3eefd1ffa4e8c8d469"><div class="ttname"><a href="structinput__event.html#afa9e110af2c2ac3eefd1ffa4e8c8d469">input_event::type</a></div><div class="ttdeci">input_event_t type</div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00096">input.h:96</a></div></div>
 <div class="ttc" id="astructpoint_html"><div class="ttname"><a href="structpoint.html">point</a></div><div class="ttdef"><b>Definition:</b> <a href="point_8h_source.html#l00035">point.h:35</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="input_8h_source.html#l00134">input_event::add_input()</a>, <a class="el" href="input_8h_source.html#l00080">CATA_INPUT_ERROR</a>, <a class="el" href="input_8h_source.html#l00082">CATA_INPUT_KEYBOARD</a>, <a class="el" href="input_8h_source.html#l00084">CATA_INPUT_MOUSE</a>, <a class="el" href="input_8h_source.html#l00081">CATA_INPUT_TIMEOUT</a>, <a class="el" href="ncurses__def_8cpp_source.html#l00125">catacurses::doupdate()</a>, <a class="el" href="input_8h_source.html#l00327">input_timeout</a>, <a class="el" href="input_8h_source.html#l00043">KEY_BACKSPACE</a>, <a class="el" href="input_8h_source.html#l00077">MOUSE_BUTTON_LEFT</a>, <a class="el" href="input_8h_source.html#l00077">MOUSE_BUTTON_RIGHT</a>, <a class="el" href="input_8h_source.html#l00077">MOUSE_MOVE</a>, <a class="el" href="input_8h_source.html#l00105">input_event::mouse_pos</a>, <a class="el" href="input_8h_source.html#l00313">previously_pressed_key</a>, <a class="el" href="ncurses__def_8cpp_source.html#l00217">catacurses::resizeterm()</a>, <a class="el" href="ncurses__def_8cpp_source.html#l00349">set_timeout()</a>, <a class="el" href="input_8h_source.html#l00109">input_event::text</a>, <a class="el" href="input_8h_source.html#l00096">input_event::type</a>, <a class="el" href="catacharset_8h_source.html#l00013">UNKNOWN_UNICODE</a>, and <a class="el" href="catacharset_8cpp_source.html#l00018">UTF8_getch()</a>.</p>
+<p class="reference">References <a class="el" href="input_8h_source.html#l00134">input_event::add_input()</a>, <a class="el" href="input_8h_source.html#l00080">CATA_INPUT_ERROR</a>, <a class="el" href="input_8h_source.html#l00082">CATA_INPUT_KEYBOARD</a>, <a class="el" href="input_8h_source.html#l00084">CATA_INPUT_MOUSE</a>, <a class="el" href="input_8h_source.html#l00081">CATA_INPUT_TIMEOUT</a>, <a class="el" href="ncurses__def_8cpp_source.html#l00125">catacurses::doupdate()</a>, <a class="el" href="input_8h_source.html#l00331">input_timeout</a>, <a class="el" href="input_8h_source.html#l00043">KEY_BACKSPACE</a>, <a class="el" href="input_8h_source.html#l00077">MOUSE_BUTTON_LEFT</a>, <a class="el" href="input_8h_source.html#l00077">MOUSE_BUTTON_RIGHT</a>, <a class="el" href="input_8h_source.html#l00077">MOUSE_MOVE</a>, <a class="el" href="input_8h_source.html#l00105">input_event::mouse_pos</a>, <a class="el" href="input_8h_source.html#l00317">previously_pressed_key</a>, <a class="el" href="ncurses__def_8cpp_source.html#l00217">catacurses::resizeterm()</a>, <a class="el" href="ncurses__def_8cpp_source.html#l00375">set_timeout()</a>, <a class="el" href="input_8h_source.html#l00109">input_event::text</a>, <a class="el" href="input_8h_source.html#l00096">input_event::type</a>, <a class="el" href="catacharset_8h_source.html#l00013">UNKNOWN_UNICODE</a>, and <a class="el" href="catacharset_8cpp_source.html#l00018">UTF8_getch()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="debug_8cpp_source.html#l00163">debug_error_prompt()</a>, <a class="el" href="input_8cpp_source.html#l00859">input_context::handle_input()</a>, <a class="el" href="animation_8cpp_source.html#l00521">anonymous_namespace{animation.cpp}::hit_animation()</a>, <a class="el" href="npctalk_8cpp_source.html#l01731">dialogue::opt()</a>, and <a class="el" href="input_8cpp_source.html#l01309">wait_for_any_key()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="debug_8cpp_source.html#l00163">debug_error_prompt()</a>, <a class="el" href="input_8cpp_source.html#l00859">input_context::handle_input()</a>, <a class="el" href="animation_8cpp_source.html#l00529">anonymous_namespace{animation.cpp}::hit_animation()</a>, <a class="el" href="npctalk_8cpp_source.html#l01739">dialogue::opt()</a>, and <a class="el" href="input_8cpp_source.html#l01309">wait_for_any_key()</a>.</p>
 
 </div>
 </div>
@@ -906,7 +909,7 @@ Friends</h2></td></tr>
 <div class="ttc" id="ainput_8cpp_html_aa47dbdb8d482981954b9f18b9da7e5ce"><div class="ttname"><a href="input_8cpp.html#aa47dbdb8d482981954b9f18b9da7e5ce">str_to_int</a></div><div class="ttdeci">static int str_to_int(const std::string &amp;number)</div><div class="ttdef"><b>Definition:</b> <a href="input_8cpp_source.html#l00055">input.cpp:55</a></div></div>
 <div class="ttc" id="amagic_8cpp_html_a188caae18b60b66f9f44214c7e28ac1f"><div class="ttname"><a href="magic_8cpp.html#a188caae18b60b66f9f44214c7e28ac1f">a</a></div><div class="ttdeci">constexpr double a</div><div class="ttdef"><b>Definition:</b> <a href="magic_8cpp_source.html#l01030">magic.cpp:1030</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="magic_8cpp_source.html#l01030">a</a>, <a class="el" href="input_8h_source.html#l00310">keyname_to_keycode</a>, <a class="el" href="overmap_8cpp_source.html#l04126">om_direction::name()</a>, and <a class="el" href="input_8cpp_source.html#l00055">str_to_int()</a>.</p>
+<p class="reference">References <a class="el" href="magic_8cpp_source.html#l01030">a</a>, <a class="el" href="input_8h_source.html#l00314">keyname_to_keycode</a>, <a class="el" href="overmap_8cpp_source.html#l04127">om_direction::name()</a>, and <a class="el" href="input_8cpp_source.html#l00055">str_to_int()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="input_8cpp_source.html#l00187">load()</a>.</p>
 
@@ -966,7 +969,7 @@ Friends</h2></td></tr>
 <div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span>                <span class="keywordflow">if</span>( portable ) {</div>
 <div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span>                    <span class="keywordflow">return</span> <a class="code hl_variable" href="magic_8cpp.html#a188caae18b60b66f9f44214c7e28ac1f">a</a>-&gt;second;</div>
 <div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span>                } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span>                    <span class="keywordflow">return</span> <a class="code hl_function" href="string__formatter_8h.html#a9b089d0b697443b096063219dab08ef5">string_format</a>( <a class="code hl_function" href="translations_8cpp.html#af0c79b5c75a7cf2df78663485b03ed9a">pgettext</a>( <span class="stringliteral">&quot;function key name&quot;</span>, <span class="stringliteral">&quot;F%d&quot;</span> ), <a class="code hl_function" href="input_8h.html#ab5803744123ece1273fab04a54004261">F_KEY_NUM</a>( ch ) );</div>
+<div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span>                    <span class="keywordflow">return</span> <a class="code hl_function" href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a>( <a class="code hl_function" href="translations_8cpp.html#af0c79b5c75a7cf2df78663485b03ed9a">pgettext</a>( <span class="stringliteral">&quot;function key name&quot;</span>, <span class="stringliteral">&quot;F%d&quot;</span> ), <a class="code hl_function" href="input_8h.html#ab5803744123ece1273fab04a54004261">F_KEY_NUM</a>( ch ) );</div>
 <div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span>                }</div>
 <div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( ch &gt;= <a class="code hl_variable" href="input_8cpp.html#af4a9083bd11952439066056c428b279b">char_key_beg</a> &amp;&amp; ch &lt;= <a class="code hl_variable" href="input_8cpp.html#afd959afe365e740ba951a78745ad5f96">char_key_end</a> &amp;&amp; ch != <span class="charliteral">&#39; &#39;</span> ) {</div>
 <div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span>                <span class="comment">// character keys except space need no translation</span></div>
@@ -998,7 +1001,7 @@ Friends</h2></td></tr>
 <div class="line"><a id="l00456" name="l00456"></a><span class="lineno">  456</span>        <span class="keywordflow">if</span>( portable ) {</div>
 <div class="line"><a id="l00457" name="l00457"></a><span class="lineno">  457</span>            <span class="keywordflow">return</span> std::string( <span class="stringliteral">&quot;UNKNOWN_&quot;</span> ) + <a class="code hl_function" href="input_8cpp.html#a7fdd00efdb53a25b55ce576024a696a7">int_to_str</a>( ch );</div>
 <div class="line"><a id="l00458" name="l00458"></a><span class="lineno">  458</span>        }</div>
-<div class="line"><a id="l00459" name="l00459"></a><span class="lineno">  459</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="string__formatter_8h.html#a9b089d0b697443b096063219dab08ef5">string_format</a>( <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;unknown key %ld&quot;</span> ), ch );</div>
+<div class="line"><a id="l00459" name="l00459"></a><span class="lineno">  459</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a>( <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;unknown key %ld&quot;</span> ), ch );</div>
 <div class="line"><a id="l00460" name="l00460"></a><span class="lineno">  460</span>    }</div>
 <div class="line"><a id="l00461" name="l00461"></a><span class="lineno">  461</span>    <span class="keywordflow">return</span> portable ? *raw : <a class="code hl_function" href="translations_8cpp.html#af0c79b5c75a7cf2df78663485b03ed9a">pgettext</a>( <span class="stringliteral">&quot;key name&quot;</span>, raw-&gt;c_str() );</div>
 <div class="line"><a id="l00462" name="l00462"></a><span class="lineno">  462</span>}</div>
@@ -1011,14 +1014,14 @@ Friends</h2></td></tr>
 <div class="ttc" id="ainput_8h_html_a7e5f61c59f658d9196d15f3b98f1e56eab7cc3b20f8cee2daec44e89f74c9fc10"><div class="ttname"><a href="input_8h.html#a7e5f61c59f658d9196d15f3b98f1e56eab7cc3b20f8cee2daec44e89f74c9fc10">SCROLLWHEEL_UP</a></div><div class="ttdeci">@ SCROLLWHEEL_UP</div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00077">input.h:77</a></div></div>
 <div class="ttc" id="ainput_8h_html_a7e5f61c59f658d9196d15f3b98f1e56eaf84e5fcea13cbf7de4ed3cc99b086996"><div class="ttname"><a href="input_8h.html#a7e5f61c59f658d9196d15f3b98f1e56eaf84e5fcea13cbf7de4ed3cc99b086996">SCROLLWHEEL_DOWN</a></div><div class="ttdeci">@ SCROLLWHEEL_DOWN</div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00077">input.h:77</a></div></div>
 <div class="ttc" id="ainput_8h_html_ab5803744123ece1273fab04a54004261"><div class="ttname"><a href="input_8h.html#ab5803744123ece1273fab04a54004261">F_KEY_NUM</a></div><div class="ttdeci">constexpr int F_KEY_NUM(const int key)</div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00053">input.h:53</a></div></div>
-<div class="ttc" id="astring__formatter_8h_html_a9b089d0b697443b096063219dab08ef5"><div class="ttname"><a href="string__formatter_8h.html#a9b089d0b697443b096063219dab08ef5">string_format</a></div><div class="ttdeci">std::string string_format(std::string format, Args &amp;&amp;...args)</div><div class="ttdoc">Simple wrapper over string_formatter::parse.</div><div class="ttdef"><b>Definition:</b> <a href="string__formatter_8h_source.html#l00418">string_formatter.h:418</a></div></div>
+<div class="ttc" id="astring__formatter_8h_html_a8964099387da2f95396c67566bafce3d"><div class="ttname"><a href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a></div><div class="ttdeci">std::string string_format(std::string_view format, Args &amp;&amp;...args)</div><div class="ttdoc">Simple wrapper over string_formatter::parse.</div><div class="ttdef"><b>Definition:</b> <a href="string__formatter_8h_source.html#l00431">string_formatter.h:431</a></div></div>
 <div class="ttc" id="atranslations_8cpp_html_af0c79b5c75a7cf2df78663485b03ed9a"><div class="ttname"><a href="translations_8cpp.html#af0c79b5c75a7cf2df78663485b03ed9a">pgettext</a></div><div class="ttdeci">const char * pgettext(const char *context, const char *msgid)</div><div class="ttdef"><b>Definition:</b> <a href="translations_8cpp_source.html#l00041">translations.cpp:41</a></div></div>
 <div class="ttc" id="atranslations_8h_html_a9e39a96618079002323c6e554271d3e2"><div class="ttname"><a href="translations_8h.html#a9e39a96618079002323c6e554271d3e2">translate_marker_context</a></div><div class="ttdeci">#define translate_marker_context(c, x)</div><div class="ttdoc">Same as translate_marker, but also provides a context (string literal).</div><div class="ttdef"><b>Definition:</b> <a href="translations_8h_source.html#l00038">translations.h:38</a></div></div>
 <div class="ttc" id="atranslations_8h_html_aa829053017e23ef22d44dccecba63a34"><div class="ttname"><a href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a></div><div class="ttdeci">#define _(msg)</div><div class="ttdef"><b>Definition:</b> <a href="translations_8h_source.html#l00116">translations.h:116</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="magic_8cpp_source.html#l01030">a</a>, <a class="el" href="input_8h_source.html#l00083">CATA_INPUT_GAMEPAD</a>, <a class="el" href="input_8h_source.html#l00082">CATA_INPUT_KEYBOARD</a>, <a class="el" href="input_8h_source.html#l00084">CATA_INPUT_MOUSE</a>, <a class="el" href="input_8cpp_source.html#l00342">char_key_beg</a>, <a class="el" href="input_8cpp_source.html#l00343">char_key_end</a>, <a class="el" href="input_8h_source.html#l00053">F_KEY_NUM()</a>, <a class="el" href="input_8h_source.html#l00308">gamepad_keycode_to_keyname</a>, <a class="el" href="input_8cpp_source.html#l00065">int_to_str()</a>, <a class="el" href="input_8h_source.html#l00057">IS_F_KEY()</a>, <a class="el" href="input_8h_source.html#l00307">keycode_to_keyname</a>, <a class="el" href="input_8h_source.html#l00077">MOUSE_BUTTON_LEFT</a>, <a class="el" href="input_8h_source.html#l00077">MOUSE_BUTTON_RIGHT</a>, <a class="el" href="input_8h_source.html#l00077">MOUSE_MOVE</a>, <a class="el" href="translations_8cpp_source.html#l00041">pgettext()</a>, <a class="el" href="input_8h_source.html#l00077">SCROLLWHEEL_DOWN</a>, <a class="el" href="input_8h_source.html#l00077">SCROLLWHEEL_UP</a>, <a class="el" href="string__formatter_8h_source.html#l00418">string_format()</a>, and <a class="el" href="translations_8h_source.html#l00038">translate_marker_context</a>.</p>
+<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="magic_8cpp_source.html#l01030">a</a>, <a class="el" href="input_8h_source.html#l00083">CATA_INPUT_GAMEPAD</a>, <a class="el" href="input_8h_source.html#l00082">CATA_INPUT_KEYBOARD</a>, <a class="el" href="input_8h_source.html#l00084">CATA_INPUT_MOUSE</a>, <a class="el" href="input_8cpp_source.html#l00342">char_key_beg</a>, <a class="el" href="input_8cpp_source.html#l00343">char_key_end</a>, <a class="el" href="input_8h_source.html#l00053">F_KEY_NUM()</a>, <a class="el" href="input_8h_source.html#l00312">gamepad_keycode_to_keyname</a>, <a class="el" href="input_8cpp_source.html#l00065">int_to_str()</a>, <a class="el" href="input_8h_source.html#l00057">IS_F_KEY()</a>, <a class="el" href="input_8h_source.html#l00311">keycode_to_keyname</a>, <a class="el" href="input_8h_source.html#l00077">MOUSE_BUTTON_LEFT</a>, <a class="el" href="input_8h_source.html#l00077">MOUSE_BUTTON_RIGHT</a>, <a class="el" href="input_8h_source.html#l00077">MOUSE_MOVE</a>, <a class="el" href="translations_8cpp_source.html#l00041">pgettext()</a>, <a class="el" href="input_8h_source.html#l00077">SCROLLWHEEL_DOWN</a>, <a class="el" href="input_8h_source.html#l00077">SCROLLWHEEL_UP</a>, <a class="el" href="string__formatter_8h_source.html#l00431">string_format()</a>, and <a class="el" href="translations_8h_source.html#l00038">translate_marker_context</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="input_8cpp_source.html#l00756">input_context::get_desc()</a>, <a class="el" href="handle__action_8cpp_source.html#l01514">game::handle_action()</a>, <a class="el" href="input_8cpp_source.html#l01402">input_context::press_x()</a>, and <a class="el" href="input_8cpp_source.html#l00276">save()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="input_8cpp_source.html#l00756">input_context::get_desc()</a>, <a class="el" href="handle__action_8cpp_source.html#l01519">game::handle_action()</a>, <a class="el" href="input_8cpp_source.html#l01402">input_context::press_x()</a>, and <a class="el" href="input_8cpp_source.html#l00276">save()</a>.</p>
 
 </div>
 </div>
@@ -1076,7 +1079,7 @@ Friends</h2></td></tr>
 <div class="ttc" id="astructaction__attributes_html_a808ec1f87b35cb88302d8e8cce4aa503"><div class="ttname"><a href="structaction__attributes.html#a808ec1f87b35cb88302d8e8cce4aa503">action_attributes::is_user_created</a></div><div class="ttdeci">bool is_user_created</div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00182">input.h:182</a></div></div>
 <div class="ttc" id="astructaction__attributes_html_adf97b670376a1f7066e20fdb1105f4ca"><div class="ttname"><a href="structaction__attributes.html#adf97b670376a1f7066e20fdb1105f4ca">action_attributes::name</a></div><div class="ttdeci">translation name</div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00183">input.h:183</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="input_8h_source.html#l00304">action_contexts</a>, <a class="el" href="input_8cpp_source.html#l00516">get_default_action_name()</a>, <a class="el" href="input_8h_source.html#l00182">action_attributes::is_user_created</a>, and <a class="el" href="input_8h_source.html#l00183">action_attributes::name</a>.</p>
+<p class="reference">References <a class="el" href="input_8h_source.html#l00308">action_contexts</a>, <a class="el" href="input_8cpp_source.html#l00516">get_default_action_name()</a>, <a class="el" href="input_8h_source.html#l00182">action_attributes::is_user_created</a>, and <a class="el" href="input_8h_source.html#l00183">action_attributes::name</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="input_8cpp_source.html#l00577">add_input_for_action()</a>.</p>
 
@@ -1104,7 +1107,7 @@ Friends</h2></td></tr>
 <div class="line"><a id="l01306" name="l01306"></a><span class="lineno"> 1306</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classinput__manager.html#ab6eb20ccdeab03473f47365cd836fb65">previously_pressed_key</a>;</div>
 <div class="line"><a id="l01307" name="l01307"></a><span class="lineno"> 1307</span>}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="input_8h_source.html#l00313">previously_pressed_key</a>.</p>
+<p class="reference">References <a class="el" href="input_8h_source.html#l00317">previously_pressed_key</a>.</p>
 
 </div>
 </div>
@@ -1131,14 +1134,14 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="input_8h_source.html#l00294">294</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>                                {</div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="classinput__manager.html#a95c5db86b27184868198ccc6d285de17">input_timeout</a>;</div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>        }</div>
+<p class="definition">Definition at line <a class="el" href="input_8h_source.html#l00298">298</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>                                {</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="classinput__manager.html#a95c5db86b27184868198ccc6d285de17">input_timeout</a>;</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>        }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="input_8h_source.html#l00327">input_timeout</a>.</p>
+<p class="reference">References <a class="el" href="input_8h_source.html#l00331">input_timeout</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="input_8cpp_source.html#l00859">input_context::handle_input()</a>, and <a class="el" href="main_8cpp_source.html#l00117">signal_handler()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="input_8cpp_source.html#l00859">input_context::handle_input()</a>, and <a class="el" href="main_8cpp_source.html#l00119">signal_handler()</a>.</p>
 
 </div>
 </div>
@@ -1238,20 +1241,20 @@ Friends</h2></td></tr>
 <div class="ttc" id="aclassJsonError_html"><div class="ttname"><a href="classJsonError.html">JsonError</a></div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00050">json.h:51</a></div></div>
 <div class="ttc" id="aclassinput__manager_html_a3a65df46bf37043db29ac4c5ba2ac594"><div class="ttname"><a href="classinput__manager.html#a3a65df46bf37043db29ac4c5ba2ac594">input_manager::init_keycode_mapping</a></div><div class="ttdeci">void init_keycode_mapping()</div><div class="ttdef"><b>Definition:</b> <a href="input_8cpp_source.html#l00345">input.cpp:345</a></div></div>
 <div class="ttc" id="aclassinput__manager_html_a3b3a44f990f977f3a8d24c4d148b294d"><div class="ttname"><a href="classinput__manager.html#a3b3a44f990f977f3a8d24c4d148b294d">input_manager::save</a></div><div class="ttdeci">void save()</div><div class="ttdoc">Opposite of init, save the data that has been loaded by init, and possibly been modified.</div><div class="ttdef"><b>Definition:</b> <a href="input_8cpp_source.html#l00276">input.cpp:276</a></div></div>
-<div class="ttc" id="aclassinput__manager_html_a50b6cecac4efcad8792187f159c953f9"><div class="ttname"><a href="classinput__manager.html#a50b6cecac4efcad8792187f159c953f9">input_manager::reset_timeout</a></div><div class="ttdeci">void reset_timeout()</div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00291">input.h:291</a></div></div>
+<div class="ttc" id="aclassinput__manager_html_a50b6cecac4efcad8792187f159c953f9"><div class="ttname"><a href="classinput__manager.html#a50b6cecac4efcad8792187f159c953f9">input_manager::reset_timeout</a></div><div class="ttdeci">void reset_timeout()</div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00295">input.h:295</a></div></div>
 <div class="ttc" id="aclassinput__manager_html_a719089e88c00c4b7888bf164094d733b"><div class="ttname"><a href="classinput__manager.html#a719089e88c00c4b7888bf164094d733b">input_manager::load</a></div><div class="ttdeci">void load(const std::string &amp;file_name, bool is_user_preferences)</div><div class="ttdoc">Load keybindings from a json file, override existing bindings.</div><div class="ttdef"><b>Definition:</b> <a href="input_8cpp_source.html#l00187">input.cpp:187</a></div></div>
 <div class="ttc" id="aclassinput__manager_html_aacde27ff6af00f3b0f12d66a77bf7c6c"><div class="ttname"><a href="classinput__manager.html#aacde27ff6af00f3b0f12d66a77bf7c6c">input_manager::add_input_for_action</a></div><div class="ttdeci">void add_input_for_action(const std::string &amp;action_descriptor, const std::string &amp;context, const input_event &amp;event)</div><div class="ttdef"><b>Definition:</b> <a href="input_8cpp_source.html#l00577">input.cpp:577</a></div></div>
 <div class="ttc" id="adebug_8h_html_a87e509562277a7ada3a75330d00cb445"><div class="ttname"><a href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a></div><div class="ttdeci">#define debugmsg(...)</div><div class="ttdoc">Debug message of level DL::Error and class DC::DebugMsg, also includes the source file name and line,...</div><div class="ttdef"><b>Definition:</b> <a href="debug_8h_source.html#l00074">debug.h:74</a></div></div>
 <div class="ttc" id="afilesystem_8cpp_html_a14b29d9634a8f68f8e5dff308becebd4"><div class="ttname"><a href="filesystem_8cpp.html#a14b29d9634a8f68f8e5dff308becebd4">remove_file</a></div><div class="ttdeci">bool remove_file(const std::string &amp;path)</div><div class="ttdoc">Remove a file.</div><div class="ttdef"><b>Definition:</b> <a href="filesystem_8cpp_source.html#l00089">filesystem.cpp:89</a></div></div>
 <div class="ttc" id="anamespacePATH__INFO_html_a260f287e95e936a3370680ac46c7571d"><div class="ttname"><a href="namespacePATH__INFO.html#a260f287e95e936a3370680ac46c7571d">PATH_INFO::keybindings</a></div><div class="ttdeci">std::string keybindings()</div><div class="ttdef"><b>Definition:</b> <a href="path__info_8cpp_source.html#l00210">path_info.cpp:210</a></div></div>
 <div class="ttc" id="anamespacePATH__INFO_html_a62b393a7371282a42628555ca7153af3"><div class="ttname"><a href="namespacePATH__INFO.html#a62b393a7371282a42628555ca7153af3">PATH_INFO::keybindings_vehicle</a></div><div class="ttdeci">std::string keybindings_vehicle()</div><div class="ttdef"><b>Definition:</b> <a href="path__info_8cpp_source.html#l00214">path_info.cpp:214</a></div></div>
-<div class="ttc" id="anamespacePATH__INFO_html_a665749e046b646313e602eeb14be5336"><div class="ttname"><a href="namespacePATH__INFO.html#a665749e046b646313e602eeb14be5336">PATH_INFO::user_keybindings</a></div><div class="ttdeci">std::string user_keybindings()</div><div class="ttdef"><b>Definition:</b> <a href="path__info_8cpp_source.html#l00270">path_info.cpp:270</a></div></div>
+<div class="ttc" id="anamespacePATH__INFO_html_a665749e046b646313e602eeb14be5336"><div class="ttname"><a href="namespacePATH__INFO.html#a665749e046b646313e602eeb14be5336">PATH_INFO::user_keybindings</a></div><div class="ttdeci">std::string user_keybindings()</div><div class="ttdef"><b>Definition:</b> <a href="path__info_8cpp_source.html#l00274">path_info.cpp:274</a></div></div>
 <div class="ttc" id="anamespacePATH__INFO_html_ab3d95df4eec0fef93da1209a72218d92"><div class="ttname"><a href="namespacePATH__INFO.html#ab3d95df4eec0fef93da1209a72218d92">PATH_INFO::keybindings_edit_creature</a></div><div class="ttdeci">std::string keybindings_edit_creature()</div><div class="ttdef"><b>Definition:</b> <a href="path__info_8cpp_source.html#l00218">path_info.cpp:218</a></div></div>
 <div class="ttc" id="anamespacedetail_html_ab2f84fb3de26acdac3fc63a2dce5ea5e"><div class="ttname"><a href="namespacedetail.html#ab2f84fb3de26acdac3fc63a2dce5ea5e">detail::count</a></div><div class="ttdeci">constexpr size_t count()</div><div class="ttdef"><b>Definition:</b> <a href="fmtlib__core_8h_source.html#l01073">fmtlib_core.h:1073</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="magic_8cpp_source.html#l01030">a</a>, <a class="el" href="input_8h_source.html#l00304">action_contexts</a>, <a class="el" href="action_8cpp_source.html#l00068">action_ident()</a>, <a class="el" href="input_8cpp_source.html#l00577">add_input_for_action()</a>, <a class="el" href="input_8h_source.html#l00082">CATA_INPUT_KEYBOARD</a>, <a class="el" href="fmtlib__core_8h_source.html#l01073">detail::count()</a>, <a class="el" href="debug_8h_source.html#l00074">debugmsg</a>, <a class="el" href="input_8cpp.html#af6b5281f3d5857bf3194c06000ebad6b">default_context_id()</a>, <a class="el" href="input_8cpp_source.html#l00345">init_keycode_mapping()</a>, <a class="el" href="path__info_8cpp_source.html#l00210">PATH_INFO::keybindings()</a>, <a class="el" href="path__info_8cpp_source.html#l00218">PATH_INFO::keybindings_edit_creature()</a>, <a class="el" href="path__info_8cpp_source.html#l00214">PATH_INFO::keybindings_vehicle()</a>, <a class="el" href="input_8cpp_source.html#l00187">load()</a>, <a class="el" href="filesystem_8cpp_source.html#l00089">remove_file()</a>, <a class="el" href="input_8h_source.html#l00291">reset_timeout()</a>, <a class="el" href="input_8cpp_source.html#l00276">save()</a>, and <a class="el" href="path__info_8cpp_source.html#l00270">PATH_INFO::user_keybindings()</a>.</p>
+<p class="reference">References <a class="el" href="magic_8cpp_source.html#l01030">a</a>, <a class="el" href="input_8h_source.html#l00308">action_contexts</a>, <a class="el" href="action_8cpp_source.html#l00068">action_ident()</a>, <a class="el" href="input_8cpp_source.html#l00577">add_input_for_action()</a>, <a class="el" href="input_8h_source.html#l00082">CATA_INPUT_KEYBOARD</a>, <a class="el" href="fmtlib__core_8h_source.html#l01073">detail::count()</a>, <a class="el" href="debug_8h_source.html#l00074">debugmsg</a>, <a class="el" href="input_8cpp.html#af6b5281f3d5857bf3194c06000ebad6b">default_context_id()</a>, <a class="el" href="input_8cpp_source.html#l00345">init_keycode_mapping()</a>, <a class="el" href="path__info_8cpp_source.html#l00210">PATH_INFO::keybindings()</a>, <a class="el" href="path__info_8cpp_source.html#l00218">PATH_INFO::keybindings_edit_creature()</a>, <a class="el" href="path__info_8cpp_source.html#l00214">PATH_INFO::keybindings_vehicle()</a>, <a class="el" href="input_8cpp_source.html#l00187">load()</a>, <a class="el" href="filesystem_8cpp_source.html#l00089">remove_file()</a>, <a class="el" href="input_8h_source.html#l00295">reset_timeout()</a>, <a class="el" href="input_8cpp_source.html#l00276">save()</a>, and <a class="el" href="path__info_8cpp_source.html#l00274">PATH_INFO::user_keybindings()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l00327">game::load_static_data()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l00332">game::load_static_data()</a>.</p>
 
 </div>
 </div>
@@ -1307,7 +1310,7 @@ Friends</h2></td></tr>
 <div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>    <span class="keywordflow">for</span>( <span class="keywordtype">int</span> i = <a class="code hl_variable" href="input_8h.html#aaba1550eba291a6dc20d5d224a7e5c1b">F_KEY_NUM_BEG</a>; i &lt;= <a class="code hl_variable" href="input_8h.html#af3c8b2cf5025982326b298c2853a9f31">F_KEY_NUM_END</a>; i++ ) {</div>
 <div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>        <span class="comment">// not marked for translation here, but specially handled in get_keyname so</span></div>
 <div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>        <span class="comment">// it gets properly translated.</span></div>
-<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>        <a class="code hl_function" href="classinput__manager.html#a87f83698ed3723a101530f5f4d253712">add_keycode_pair</a>( <a class="code hl_function" href="input_8h.html#a69101dce789c9f46ff6f5ba023a6ac17">KEY_F</a>( i ), <a class="code hl_function" href="string__formatter_8h.html#a9b089d0b697443b096063219dab08ef5">string_format</a>( <span class="stringliteral">&quot;F%d&quot;</span>, i ) );</div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>        <a class="code hl_function" href="classinput__manager.html#a87f83698ed3723a101530f5f4d253712">add_keycode_pair</a>( <a class="code hl_function" href="input_8h.html#a69101dce789c9f46ff6f5ba023a6ac17">KEY_F</a>( i ), <a class="code hl_function" href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a>( <span class="stringliteral">&quot;F%d&quot;</span>, i ) );</div>
 <div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>    }</div>
 <div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span> </div>
 <div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>    <a class="code hl_function" href="classinput__manager.html#a4f89478f6ee0295fa4b887f2322cd3f8">add_gamepad_keycode_pair</a>( <a class="code hl_define" href="input_8h.html#a5b41c548ba97989b473f6393b9c2c7f1">JOY_LEFT</a>,      <a class="code hl_define" href="translations_8h.html#a9e39a96618079002323c6e554271d3e2">translate_marker_context</a>( <span class="stringliteral">&quot;key name&quot;</span>, <span class="stringliteral">&quot;JOY_LEFT&quot;</span> ) );</div>
@@ -1368,7 +1371,7 @@ Friends</h2></td></tr>
 <div class="ttc" id="ainput_8h_html_af724869611fc9ce05f32571d3e0eadde"><div class="ttname"><a href="input_8h.html#af724869611fc9ce05f32571d3e0eadde">JOY_1</a></div><div class="ttdeci">#define JOY_1</div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00193">input.h:193</a></div></div>
 <div class="ttc" id="amagic_8cpp_html_a6753ecfe87da659675b18c2f81d6ec12"><div class="ttname"><a href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a></div><div class="ttdeci">constexpr double c</div><div class="ttdef"><b>Definition:</b> <a href="magic_8cpp_source.html#l01032">magic.cpp:1032</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="input_8cpp_source.html#l00336">add_gamepad_keycode_pair()</a>, <a class="el" href="input_8cpp_source.html#l00330">add_keycode_pair()</a>, <a class="el" href="magic_8cpp_source.html#l01032">c</a>, <a class="el" href="input_8cpp_source.html#l00342">char_key_beg</a>, <a class="el" href="input_8cpp_source.html#l00343">char_key_end</a>, <a class="el" href="input_8h_source.html#l00051">F_KEY_NUM_BEG</a>, <a class="el" href="input_8h_source.html#l00052">F_KEY_NUM_END</a>, <a class="el" href="input_8h_source.html#l00192">JOY_0</a>, <a class="el" href="input_8h_source.html#l00193">JOY_1</a>, <a class="el" href="input_8h_source.html#l00194">JOY_2</a>, <a class="el" href="input_8h_source.html#l00195">JOY_3</a>, <a class="el" href="input_8h_source.html#l00196">JOY_4</a>, <a class="el" href="input_8h_source.html#l00197">JOY_5</a>, <a class="el" href="input_8h_source.html#l00198">JOY_6</a>, <a class="el" href="input_8h_source.html#l00199">JOY_7</a>, <a class="el" href="input_8h_source.html#l00204">JOY_DOWN</a>, <a class="el" href="input_8h_source.html#l00201">JOY_LEFT</a>, <a class="el" href="input_8h_source.html#l00208">JOY_LEFTDOWN</a>, <a class="el" href="input_8h_source.html#l00207">JOY_LEFTUP</a>, <a class="el" href="input_8h_source.html#l00202">JOY_RIGHT</a>, <a class="el" href="input_8h_source.html#l00206">JOY_RIGHTDOWN</a>, <a class="el" href="input_8h_source.html#l00205">JOY_RIGHTUP</a>, <a class="el" href="input_8h_source.html#l00203">JOY_UP</a>, <a class="el" href="input_8h_source.html#l00043">KEY_BACKSPACE</a>, <a class="el" href="input_8h_source.html#l00035">KEY_BREAK</a>, <a class="el" href="input_8h_source.html#l00068">KEY_BTAB</a>, <a class="el" href="input_8h_source.html#l00037">KEY_DOWN</a>, <a class="el" href="input_8h_source.html#l00069">KEY_END</a>, <a class="el" href="input_8h_source.html#l00032">KEY_ESCAPE</a>, <a class="el" href="input_8h_source.html#l00047">KEY_F()</a>, <a class="el" href="input_8h_source.html#l00041">KEY_HOME</a>, <a class="el" href="input_8h_source.html#l00039">KEY_LEFT</a>, <a class="el" href="input_8h_source.html#l00065">KEY_NPAGE</a>, <a class="el" href="input_8h_source.html#l00066">KEY_PPAGE</a>, <a class="el" href="input_8h_source.html#l00040">KEY_RIGHT</a>, <a class="el" href="input_8h_source.html#l00038">KEY_UP</a>, <a class="el" href="input_8h_source.html#l00310">keyname_to_keycode</a>, <a class="el" href="input_8h_source.html#l00077">MOUSE_BUTTON_LEFT</a>, <a class="el" href="input_8h_source.html#l00077">MOUSE_BUTTON_RIGHT</a>, <a class="el" href="input_8h_source.html#l00077">MOUSE_MOVE</a>, <a class="el" href="overmap_8cpp_source.html#l04126">om_direction::name()</a>, <a class="el" href="input_8h_source.html#l00077">SCROLLWHEEL_DOWN</a>, <a class="el" href="input_8h_source.html#l00077">SCROLLWHEEL_UP</a>, <a class="el" href="string__formatter_8h_source.html#l00418">string_format()</a>, and <a class="el" href="translations_8h_source.html#l00038">translate_marker_context</a>.</p>
+<p class="reference">References <a class="el" href="input_8cpp_source.html#l00336">add_gamepad_keycode_pair()</a>, <a class="el" href="input_8cpp_source.html#l00330">add_keycode_pair()</a>, <a class="el" href="magic_8cpp_source.html#l01032">c</a>, <a class="el" href="input_8cpp_source.html#l00342">char_key_beg</a>, <a class="el" href="input_8cpp_source.html#l00343">char_key_end</a>, <a class="el" href="input_8h_source.html#l00051">F_KEY_NUM_BEG</a>, <a class="el" href="input_8h_source.html#l00052">F_KEY_NUM_END</a>, <a class="el" href="input_8h_source.html#l00192">JOY_0</a>, <a class="el" href="input_8h_source.html#l00193">JOY_1</a>, <a class="el" href="input_8h_source.html#l00194">JOY_2</a>, <a class="el" href="input_8h_source.html#l00195">JOY_3</a>, <a class="el" href="input_8h_source.html#l00196">JOY_4</a>, <a class="el" href="input_8h_source.html#l00197">JOY_5</a>, <a class="el" href="input_8h_source.html#l00198">JOY_6</a>, <a class="el" href="input_8h_source.html#l00199">JOY_7</a>, <a class="el" href="input_8h_source.html#l00204">JOY_DOWN</a>, <a class="el" href="input_8h_source.html#l00201">JOY_LEFT</a>, <a class="el" href="input_8h_source.html#l00208">JOY_LEFTDOWN</a>, <a class="el" href="input_8h_source.html#l00207">JOY_LEFTUP</a>, <a class="el" href="input_8h_source.html#l00202">JOY_RIGHT</a>, <a class="el" href="input_8h_source.html#l00206">JOY_RIGHTDOWN</a>, <a class="el" href="input_8h_source.html#l00205">JOY_RIGHTUP</a>, <a class="el" href="input_8h_source.html#l00203">JOY_UP</a>, <a class="el" href="input_8h_source.html#l00043">KEY_BACKSPACE</a>, <a class="el" href="input_8h_source.html#l00035">KEY_BREAK</a>, <a class="el" href="input_8h_source.html#l00068">KEY_BTAB</a>, <a class="el" href="input_8h_source.html#l00037">KEY_DOWN</a>, <a class="el" href="input_8h_source.html#l00069">KEY_END</a>, <a class="el" href="input_8h_source.html#l00032">KEY_ESCAPE</a>, <a class="el" href="input_8h_source.html#l00047">KEY_F()</a>, <a class="el" href="input_8h_source.html#l00041">KEY_HOME</a>, <a class="el" href="input_8h_source.html#l00039">KEY_LEFT</a>, <a class="el" href="input_8h_source.html#l00065">KEY_NPAGE</a>, <a class="el" href="input_8h_source.html#l00066">KEY_PPAGE</a>, <a class="el" href="input_8h_source.html#l00040">KEY_RIGHT</a>, <a class="el" href="input_8h_source.html#l00038">KEY_UP</a>, <a class="el" href="input_8h_source.html#l00314">keyname_to_keycode</a>, <a class="el" href="input_8h_source.html#l00077">MOUSE_BUTTON_LEFT</a>, <a class="el" href="input_8h_source.html#l00077">MOUSE_BUTTON_RIGHT</a>, <a class="el" href="input_8h_source.html#l00077">MOUSE_MOVE</a>, <a class="el" href="overmap_8cpp_source.html#l04127">om_direction::name()</a>, <a class="el" href="input_8h_source.html#l00077">SCROLLWHEEL_DOWN</a>, <a class="el" href="input_8h_source.html#l00077">SCROLLWHEEL_UP</a>, <a class="el" href="string__formatter_8h_source.html#l00431">string_format()</a>, and <a class="el" href="translations_8h_source.html#l00038">translate_marker_context</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="input_8cpp_source.html#l00111">init()</a>.</p>
 
@@ -1503,12 +1506,61 @@ Friends</h2></td></tr>
 <div class="ttc" id="aclassJsonObject_html"><div class="ttname"><a href="classJsonObject.html">JsonObject</a></div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00831">json.h:832</a></div></div>
 <div class="ttc" id="aclassinput__manager_html_a3f8e4b354bdbb12bf279231154ae9936"><div class="ttname"><a href="classinput__manager.html#a3f8e4b354bdbb12bf279231154ae9936">input_manager::get_keycode</a></div><div class="ttdeci">int get_keycode(const std::string &amp;name) const</div><div class="ttdoc">Get the keycode associated with the given key name.</div><div class="ttdef"><b>Definition:</b> <a href="input_8cpp_source.html#l00402">input.cpp:402</a></div></div>
 <div class="ttc" id="aenums_8h_html_ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab"><div class="ttname"><a href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a></div><div class="ttdeci">@ type</div><div class="ttdef"><b>Definition:</b> <a href="enums_8h_source.html#l00075">enums.h:75</a></div></div>
-<div class="ttc" id="amapgen_8cpp_html_a90f1f53dc044e93e7f7f9314cef1bd45"><div class="ttname"><a href="mapgen_8cpp.html#a90f1f53dc044e93e7f7f9314cef1bd45">line</a></div><div class="ttdeci">void line(map *m, const ter_id &amp;type, const point &amp;p1, const point &amp;p2)</div><div class="ttdef"><b>Definition:</b> <a href="mapgen_8cpp_source.html#l06455">mapgen.cpp:6455</a></div></div>
+<div class="ttc" id="amapgen_8cpp_html_a90f1f53dc044e93e7f7f9314cef1bd45"><div class="ttname"><a href="mapgen_8cpp.html#a90f1f53dc044e93e7f7f9314cef1bd45">line</a></div><div class="ttdeci">void line(map *m, const ter_id &amp;type, const point &amp;p1, const point &amp;p2)</div><div class="ttdef"><b>Definition:</b> <a href="mapgen_8cpp_source.html#l06486">mapgen.cpp:6486</a></div></div>
 <div class="ttc" id="astructinput__event_html_a343e2146133dfc743895676f122f7ae1"><div class="ttname"><a href="structinput__event.html#a343e2146133dfc743895676f122f7ae1">input_event::sequence</a></div><div class="ttdeci">std::vector&lt; int &gt; sequence</div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00101">input.h:101</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="dialogue_8h_source.html#l00036">action</a>, <a class="el" href="input_8h_source.html#l00304">action_contexts</a>, <a class="el" href="input_8h_source.html#l00083">CATA_INPUT_GAMEPAD</a>, <a class="el" href="input_8h_source.html#l00082">CATA_INPUT_KEYBOARD</a>, <a class="el" href="input_8h_source.html#l00084">CATA_INPUT_MOUSE</a>, <a class="el" href="debug_8h_source.html#l00074">debugmsg</a>, <a class="el" href="input_8cpp.html#af6b5281f3d5857bf3194c06000ebad6b">default_context_id()</a>, <a class="el" href="json_8cpp_source.html#l01389">JsonIn::end_array()</a>, <a class="el" href="input_8cpp_source.html#l00402">get_keycode()</a>, <a class="el" href="json_8cpp_source.html#l01364">JsonIn::get_object()</a>, <a class="el" href="input_8h_source.html#l00184">action_attributes::input_events</a>, <a class="el" href="input_8h_source.html#l00182">action_attributes::is_user_created</a>, <a class="el" href="mapgen_8cpp_source.html#l06455">line()</a>, <a class="el" href="overmap_8cpp_source.html#l04126">om_direction::name()</a>, <a class="el" href="input_8h_source.html#l00101">input_event::sequence</a>, <a class="el" href="json_8cpp_source.html#l01373">JsonIn::start_array()</a>, <a class="el" href="enums_8h_source.html#l00075">type</a>, and <a class="el" href="input_8h_source.html#l00096">input_event::type</a>.</p>
+<p class="reference">References <a class="el" href="dialogue_8h_source.html#l00036">action</a>, <a class="el" href="input_8h_source.html#l00308">action_contexts</a>, <a class="el" href="input_8h_source.html#l00083">CATA_INPUT_GAMEPAD</a>, <a class="el" href="input_8h_source.html#l00082">CATA_INPUT_KEYBOARD</a>, <a class="el" href="input_8h_source.html#l00084">CATA_INPUT_MOUSE</a>, <a class="el" href="debug_8h_source.html#l00074">debugmsg</a>, <a class="el" href="input_8cpp.html#af6b5281f3d5857bf3194c06000ebad6b">default_context_id()</a>, <a class="el" href="json_8cpp_source.html#l01389">JsonIn::end_array()</a>, <a class="el" href="input_8cpp_source.html#l00402">get_keycode()</a>, <a class="el" href="json_8cpp_source.html#l01364">JsonIn::get_object()</a>, <a class="el" href="input_8h_source.html#l00184">action_attributes::input_events</a>, <a class="el" href="input_8h_source.html#l00182">action_attributes::is_user_created</a>, <a class="el" href="mapgen_8cpp_source.html#l06486">line()</a>, <a class="el" href="overmap_8cpp_source.html#l04127">om_direction::name()</a>, <a class="el" href="input_8h_source.html#l00101">input_event::sequence</a>, <a class="el" href="json_8cpp_source.html#l01373">JsonIn::start_array()</a>, <a class="el" href="enums_8h_source.html#l00075">type</a>, and <a class="el" href="input_8h_source.html#l00096">input_event::type</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="input_8cpp_source.html#l00111">init()</a>.</p>
+
+</div>
+</div>
+<a id="a56fd029f8ad1ca3dcd864a6bb5537045" name="a56fd029f8ad1ca3dcd864a6bb5537045"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56fd029f8ad1ca3dcd864a6bb5537045">&#9670;&nbsp;</a></span>pump_events()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void input_manager::pump_events </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Resize &amp; refresh if necessary, process all pending window events, and ignore keypresses. </p>
+
+<p class="definition">Definition at line <a class="el" href="ncurses__def_8cpp_source.html#l00252">252</a> of file <a class="el" href="ncurses__def_8cpp_source.html">ncurses_def.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>{</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>    <span class="keywordflow">if</span>( <a class="code hl_variable" href="cached__options_8cpp.html#a07c66893ce868671f9998dad80094cb1">test_mode</a> ) {</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>    }</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span> </div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>    <span class="comment">// Handle all events, but ignore any keypress</span></div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>    <span class="keywordtype">int</span> key = ERR;</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>    <span class="keywordtype">bool</span> resize = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> prev_timeout = <a class="code hl_variable" href="classinput__manager.html#a95c5db86b27184868198ccc6d285de17">input_timeout</a>;</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>    <a class="code hl_function" href="classinput__manager.html#a71fe921eef2db73b8a665a187eb7e526">set_timeout</a>( 0 );</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>    <span class="keywordflow">do</span> {</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>        key = getch();</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>        <span class="keywordflow">if</span>( key == KEY_RESIZE ) {</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>            resize = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>        }</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>    } <span class="keywordflow">while</span>( key != ERR );</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>    <a class="code hl_function" href="classinput__manager.html#a71fe921eef2db73b8a665a187eb7e526">set_timeout</a>( prev_timeout );</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>    <span class="keywordflow">if</span>( resize ) {</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>        <a class="code hl_function" href="namespacecatacurses.html#a5e3d87563c99055c3a89fae235b305a4">catacurses::resizeterm</a>();</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>    }</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span> </div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>    <a class="code hl_variable" href="classinput__manager.html#ab6eb20ccdeab03473f47365cd836fb65">previously_pressed_key</a> = 0;</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>}</div>
+<div class="ttc" id="acached__options_8cpp_html_a07c66893ce868671f9998dad80094cb1"><div class="ttname"><a href="cached__options_8cpp.html#a07c66893ce868671f9998dad80094cb1">test_mode</a></div><div class="ttdeci">bool test_mode</div><div class="ttdoc">Set to true when running in test mode (e.g.</div><div class="ttdef"><b>Definition:</b> <a href="cached__options_8cpp_source.html#l00003">cached_options.cpp:3</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="input_8h_source.html#l00331">input_timeout</a>, <a class="el" href="input_8h_source.html#l00317">previously_pressed_key</a>, <a class="el" href="ncurses__def_8cpp_source.html#l00217">catacurses::resizeterm()</a>, <a class="el" href="ncurses__def_8cpp_source.html#l00375">set_timeout()</a>, and <a class="el" href="cached__options_8cpp_source.html#l00003">test_mode</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="debug__menu_8cpp_source.html#l01273">debug_menu::benchmark()</a>, <a class="el" href="mapgen_8cpp_source.html#l00367">calculate_mapgen_weights()</a>, <a class="el" href="item__factory_8cpp_source.html#l01115">Item_factory::check_definitions()</a>, <a class="el" href="construction_8cpp_source.html#l00223">constructions::finalize()</a>, <a class="el" href="recipe__dictionary_8cpp_source.html#l00354">recipe_dictionary::finalize_internal()</a>, <a class="el" href="game_8cpp_source.html#l09713">game::fling_creature()</a>, <a class="el" href="player__hardcoded__effects_8cpp_source.html#l00472">Character::hardcoded_effects()</a>, <a class="el" href="gamemode__defense_8cpp_source.html#l00223">defense_game::init_map()</a>, <a class="el" href="map_8cpp_source.html#l06624">map::load()</a>, <a class="el" href="init_8cpp_source.html#l00507">DynamicDataLoader::load_all_from_json()</a>, <a class="el" href="init_8cpp_source.html#l00158">DynamicDataLoader::load_deferred()</a>, <a class="el" href="map_8cpp_source.html#l00520">map::move_vehicle()</a>, <a class="el" href="iuse__software__kitten_8cpp_source.html#l00418">robot_finds_kitten::process_input()</a>, <a class="el" href="animation_8cpp_source.html#l00060">anonymous_namespace{animation.cpp}::basic_animation::progress()</a>, <a class="el" href="monattack_8cpp_source.html#l02590">mattack::ranged_pull()</a>, <a class="el" href="mapbuffer_8cpp_source.html#l00103">mapbuffer::save()</a>, <a class="el" href="mapgen_8cpp_source.html#l00314">mapgen_factory::setup()</a>, <a class="el" href="loading__ui_8cpp_source.html#l00076">loading_ui::show()</a>, and <a class="el" href="savegame_8cpp_source.html#l00167">game::unserialize()</a>.</p>
 
 </div>
 </div>
@@ -1571,7 +1623,7 @@ Friends</h2></td></tr>
 <div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span>    }</div>
 <div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span>}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="dialogue_8h_source.html#l00036">action</a>, and <a class="el" href="input_8h_source.html#l00304">action_contexts</a>.</p>
+<p class="reference">References <a class="el" href="dialogue_8h_source.html#l00036">action</a>, and <a class="el" href="input_8h_source.html#l00308">action_contexts</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="input_8cpp_source.html#l00999">input_context::display_menu()</a>.</p>
 
@@ -1600,14 +1652,14 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="input_8h_source.html#l00291">291</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>                             {</div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>            <a class="code hl_function" href="classinput__manager.html#a71fe921eef2db73b8a665a187eb7e526">set_timeout</a>( -1 );</div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>        }</div>
+<p class="definition">Definition at line <a class="el" href="input_8h_source.html#l00295">295</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>                             {</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>            <a class="code hl_function" href="classinput__manager.html#a71fe921eef2db73b8a665a187eb7e526">set_timeout</a>( -1 );</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>        }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="ncurses__def_8cpp_source.html#l00349">set_timeout()</a>.</p>
+<p class="reference">References <a class="el" href="ncurses__def_8cpp_source.html#l00375">set_timeout()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="input_8cpp_source.html#l00859">input_context::handle_input()</a>, <a class="el" href="animation_8cpp_source.html#l00521">anonymous_namespace{animation.cpp}::hit_animation()</a>, <a class="el" href="input_8cpp_source.html#l00111">init()</a>, and <a class="el" href="main_8cpp_source.html#l00117">signal_handler()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="input_8cpp_source.html#l00859">input_context::handle_input()</a>, <a class="el" href="animation_8cpp_source.html#l00529">anonymous_namespace{animation.cpp}::hit_animation()</a>, <a class="el" href="input_8cpp_source.html#l00111">init()</a>, and <a class="el" href="main_8cpp_source.html#l00119">signal_handler()</a>.</p>
 
 </div>
 </div>
@@ -1626,7 +1678,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Opposite of <a class="el" href="classinput__manager.html#ab24c38af70d1715e73caa8fb54ffd88e">init</a>, save the data that has been loaded by <a class="el" href="classinput__manager.html#ab24c38af70d1715e73caa8fb54ffd88e">init</a>, and possibly been modified. </p>
+<p>Opposite of <a class="el" href="namespaceinit.html">init</a>, save the data that has been loaded by <a class="el" href="namespaceinit.html">init</a>, and possibly been modified. </p>
 
 <p class="definition">Definition at line <a class="el" href="input_8cpp_source.html#l00276">276</a> of file <a class="el" href="input_8cpp_source.html">input.cpp</a>.</p>
 <div class="fragment"><div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>{</div>
@@ -1685,7 +1737,7 @@ Friends</h2></td></tr>
 <div class="ttc" id="aclassJsonOut_html"><div class="ttname"><a href="classJsonOut.html">JsonOut</a></div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00579">json.h:580</a></div></div>
 <div class="ttc" id="aclassinput__manager_html_a1f6f368db01d071f88db23a13a4ffd2e"><div class="ttname"><a href="classinput__manager.html#a1f6f368db01d071f88db23a13a4ffd2e">input_manager::get_keyname</a></div><div class="ttdeci">std::string get_keyname(int ch, input_event_t inp_type, bool portable=false) const</div><div class="ttdoc">Get the key name associated with the given keyboard keycode.</div><div class="ttdef"><b>Definition:</b> <a href="input_8cpp_source.html#l00415">input.cpp:415</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="magic_8cpp_source.html#l01030">a</a>, <a class="el" href="dialogue_8h_source.html#l00036">action</a>, <a class="el" href="input_8h_source.html#l00304">action_contexts</a>, <a class="el" href="input_8h_source.html#l00083">CATA_INPUT_GAMEPAD</a>, <a class="el" href="input_8h_source.html#l00082">CATA_INPUT_KEYBOARD</a>, <a class="el" href="input_8h_source.html#l00084">CATA_INPUT_MOUSE</a>, <a class="el" href="json_8cpp_source.html#l01961">JsonOut::end_array()</a>, <a class="el" href="json_8cpp_source.html#l01942">JsonOut::end_object()</a>, <a class="el" href="input_8cpp_source.html#l00415">get_keyname()</a>, <a class="el" href="json_8cpp_source.html#l02046">JsonOut::member()</a>, <a class="el" href="json_8cpp_source.html#l01950">JsonOut::start_array()</a>, <a class="el" href="json_8cpp_source.html#l01931">JsonOut::start_object()</a>, <a class="el" href="path__info_8cpp_source.html#l00270">PATH_INFO::user_keybindings()</a>, <a class="el" href="json_8h_source.html#l00620">JsonOut::write()</a>, and <a class="el" href="cata__utility_8cpp_source.html#l00453">write_to_file()</a>.</p>
+<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="magic_8cpp_source.html#l01030">a</a>, <a class="el" href="dialogue_8h_source.html#l00036">action</a>, <a class="el" href="input_8h_source.html#l00308">action_contexts</a>, <a class="el" href="input_8h_source.html#l00083">CATA_INPUT_GAMEPAD</a>, <a class="el" href="input_8h_source.html#l00082">CATA_INPUT_KEYBOARD</a>, <a class="el" href="input_8h_source.html#l00084">CATA_INPUT_MOUSE</a>, <a class="el" href="json_8cpp_source.html#l01961">JsonOut::end_array()</a>, <a class="el" href="json_8cpp_source.html#l01942">JsonOut::end_object()</a>, <a class="el" href="input_8cpp_source.html#l00415">get_keyname()</a>, <a class="el" href="json_8cpp_source.html#l02046">JsonOut::member()</a>, <a class="el" href="json_8cpp_source.html#l01950">JsonOut::start_array()</a>, <a class="el" href="json_8cpp_source.html#l01931">JsonOut::start_object()</a>, <a class="el" href="path__info_8cpp_source.html#l00274">PATH_INFO::user_keybindings()</a>, <a class="el" href="json_8h_source.html#l00620">JsonOut::write()</a>, and <a class="el" href="cata__utility_8cpp_source.html#l00453">write_to_file()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="input_8cpp_source.html#l00999">input_context::display_menu()</a>, and <a class="el" href="input_8cpp_source.html#l00111">init()</a>.</p>
 
@@ -1710,16 +1762,16 @@ Friends</h2></td></tr>
 <p>Sets global input polling timeout as appropriate for the current interface system. </p>
 <p >Use <code><a class="el" href="classinput__context.html" title="Represents a context in which a set of actions can be performed.">input_context</a>::(re)<a class="el" href="classinput__manager.html#a71fe921eef2db73b8a665a187eb7e526" title="Sets global input polling timeout as appropriate for the current interface system.">set_timeout()</a></code> when possible so timeout will be properly reset when entering a new input context. </p>
 
-<p class="definition">Definition at line <a class="el" href="ncurses__def_8cpp_source.html#l00349">349</a> of file <a class="el" href="ncurses__def_8cpp_source.html">ncurses_def.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>{</div>
-<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>    timeout( delay );</div>
-<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>    <span class="comment">// Use this to determine when curses should return a CATA_INPUT_TIMEOUT event.</span></div>
-<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>    <a class="code hl_variable" href="classinput__manager.html#a95c5db86b27184868198ccc6d285de17">input_timeout</a> = delay;</div>
-<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>}</div>
+<p class="definition">Definition at line <a class="el" href="ncurses__def_8cpp_source.html#l00375">375</a> of file <a class="el" href="ncurses__def_8cpp_source.html">ncurses_def.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>{</div>
+<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>    timeout( delay );</div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>    <span class="comment">// Use this to determine when curses should return a CATA_INPUT_TIMEOUT event.</span></div>
+<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>    <a class="code hl_variable" href="classinput__manager.html#a95c5db86b27184868198ccc6d285de17">input_timeout</a> = delay;</div>
+<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="input_8h_source.html#l00327">input_timeout</a>.</p>
+<p class="reference">References <a class="el" href="input_8h_source.html#l00331">input_timeout</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ncurses__def_8cpp_source.html#l00251">get_input_event()</a>, <a class="el" href="input_8cpp_source.html#l00859">input_context::handle_input()</a>, <a class="el" href="animation_8cpp_source.html#l00521">anonymous_namespace{animation.cpp}::hit_animation()</a>, <a class="el" href="input_8h_source.html#l00291">reset_timeout()</a>, and <a class="el" href="main_8cpp_source.html#l00117">signal_handler()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ncurses__def_8cpp_source.html#l00277">get_input_event()</a>, <a class="el" href="input_8cpp_source.html#l00859">input_context::handle_input()</a>, <a class="el" href="animation_8cpp_source.html#l00529">anonymous_namespace{animation.cpp}::hit_animation()</a>, <a class="el" href="ncurses__def_8cpp_source.html#l00252">pump_events()</a>, <a class="el" href="input_8h_source.html#l00295">reset_timeout()</a>, and <a class="el" href="main_8cpp_source.html#l00119">signal_handler()</a>.</p>
 
 </div>
 </div>
@@ -1762,13 +1814,13 @@ Friends</h2></td></tr>
 <div class="line"><a id="l01327" name="l01327"></a><span class="lineno"> 1327</span>        }</div>
 <div class="line"><a id="l01328" name="l01328"></a><span class="lineno"> 1328</span>    }</div>
 <div class="line"><a id="l01329" name="l01329"></a><span class="lineno"> 1329</span>}</div>
-<div class="ttc" id="aclassinput__context_html"><div class="ttname"><a href="classinput__context.html">input_context</a></div><div class="ttdoc">Represents a context in which a set of actions can be performed.</div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00381">input.h:382</a></div></div>
-<div class="ttc" id="aclassinput__manager_html_ad550fec9aad772e44f497bf29f845739"><div class="ttname"><a href="classinput__manager.html#ad550fec9aad772e44f497bf29f845739">input_manager::get_input_event</a></div><div class="ttdeci">input_event get_input_event()</div><div class="ttdoc">curses getch() replacement.</div><div class="ttdef"><b>Definition:</b> <a href="ncurses__def_8cpp_source.html#l00251">ncurses_def.cpp:251</a></div></div>
+<div class="ttc" id="aclassinput__context_html"><div class="ttname"><a href="classinput__context.html">input_context</a></div><div class="ttdoc">Represents a context in which a set of actions can be performed.</div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00385">input.h:386</a></div></div>
+<div class="ttc" id="aclassinput__manager_html_ad550fec9aad772e44f497bf29f845739"><div class="ttname"><a href="classinput__manager.html#ad550fec9aad772e44f497bf29f845739">input_manager::get_input_event</a></div><div class="ttdeci">input_event get_input_event()</div><div class="ttdoc">curses getch() replacement.</div><div class="ttdef"><b>Definition:</b> <a href="ncurses__def_8cpp_source.html#l00277">ncurses_def.cpp:277</a></div></div>
 <div class="ttc" id="ainput_8cpp_html_af16c50890fa8503efa899fc3b6de56d7"><div class="ttname"><a href="input_8cpp.html#af16c50890fa8503efa899fc3b6de56d7">inp_mngr</a></div><div class="ttdeci">input_manager inp_mngr</div><div class="ttdef"><b>Definition:</b> <a href="input_8cpp_source.html#l00109">input.cpp:109</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="input_8h_source.html#l00080">CATA_INPUT_ERROR</a>, <a class="el" href="input_8h_source.html#l00082">CATA_INPUT_KEYBOARD</a>, <a class="el" href="ncurses__def_8cpp_source.html#l00251">get_input_event()</a>, <a class="el" href="input_8cpp_source.html#l00109">inp_mngr</a>, <a class="el" href="input_8h_source.html#l00101">input_event::sequence</a>, and <a class="el" href="input_8h_source.html#l00096">input_event::type</a>.</p>
+<p class="reference">References <a class="el" href="input_8h_source.html#l00080">CATA_INPUT_ERROR</a>, <a class="el" href="input_8h_source.html#l00082">CATA_INPUT_KEYBOARD</a>, <a class="el" href="ncurses__def_8cpp_source.html#l00277">get_input_event()</a>, <a class="el" href="input_8cpp_source.html#l00109">inp_mngr</a>, <a class="el" href="input_8h_source.html#l00101">input_event::sequence</a>, and <a class="el" href="input_8h_source.html#l00096">input_event::type</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="debug__menu_8cpp_source.html#l01329">debug_menu::debug()</a>, <a class="el" href="game_8cpp_source.html#l11207">game::display_scent()</a>, and <a class="el" href="computer__session_8cpp_source.html#l01530">computer_session::query_any()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="debug__menu_8cpp_source.html#l01343">debug_menu::debug()</a>, <a class="el" href="game_8cpp_source.html#l11081">game::display_scent()</a>, and <a class="el" href="computer__session_8cpp_source.html#l01532">computer_session::query_any()</a>.</p>
 
 </div>
 </div>
@@ -1793,7 +1845,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="input_8h_source.html#l00299">299</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="input_8h_source.html#l00303">303</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
 
 </div>
 </div>
@@ -1818,7 +1870,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="input_8h_source.html#l00304">304</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="input_8h_source.html#l00308">308</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="input_8cpp_source.html#l00604">input_context::clear_conflicting_keybindings()</a>, <a class="el" href="input_8cpp_source.html#l00999">input_context::display_menu()</a>, <a class="el" href="input_8cpp_source.html#l00479">get_action_attributes()</a>, <a class="el" href="input_8cpp_source.html#l00516">get_default_action_name()</a>, <a class="el" href="input_8cpp_source.html#l00532">get_or_create_event_list()</a>, <a class="el" href="input_8cpp_source.html#l00111">init()</a>, <a class="el" href="input_8cpp_source.html#l00187">load()</a>, <a class="el" href="input_8cpp_source.html#l00551">remove_input_for_action()</a>, and <a class="el" href="input_8cpp_source.html#l00276">save()</a>.</p>
 
@@ -1844,7 +1896,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="input_8h_source.html#l00308">308</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="input_8h_source.html#l00312">312</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="input_8cpp_source.html#l00336">add_gamepad_keycode_pair()</a>, and <a class="el" href="input_8cpp_source.html#l00415">get_keyname()</a>.</p>
 
@@ -1870,9 +1922,9 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="input_8h_source.html#l00327">327</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="input_8h_source.html#l00331">331</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ncurses__def_8cpp_source.html#l00251">get_input_event()</a>, <a class="el" href="input_8h_source.html#l00294">get_timeout()</a>, and <a class="el" href="ncurses__def_8cpp_source.html#l00349">set_timeout()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ncurses__def_8cpp_source.html#l00277">get_input_event()</a>, <a class="el" href="input_8h_source.html#l00298">get_timeout()</a>, <a class="el" href="ncurses__def_8cpp_source.html#l00252">pump_events()</a>, and <a class="el" href="ncurses__def_8cpp_source.html#l00375">set_timeout()</a>.</p>
 
 </div>
 </div>
@@ -1896,7 +1948,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="input_8h_source.html#l00307">307</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="input_8h_source.html#l00311">311</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="input_8cpp_source.html#l00330">add_keycode_pair()</a>, and <a class="el" href="input_8cpp_source.html#l00415">get_keyname()</a>.</p>
 
@@ -1922,7 +1974,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="input_8h_source.html#l00310">310</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="input_8h_source.html#l00314">314</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="input_8cpp_source.html#l00336">add_gamepad_keycode_pair()</a>, <a class="el" href="input_8cpp_source.html#l00330">add_keycode_pair()</a>, <a class="el" href="input_8cpp_source.html#l00402">get_keycode()</a>, and <a class="el" href="input_8cpp_source.html#l00345">init_keycode_mapping()</a>.</p>
 
@@ -1948,9 +2000,9 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="input_8h_source.html#l00313">313</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="input_8h_source.html#l00317">317</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ncurses__def_8cpp_source.html#l00251">get_input_event()</a>, and <a class="el" href="input_8cpp_source.html#l01304">get_previously_pressed_key()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ncurses__def_8cpp_source.html#l00277">get_input_event()</a>, <a class="el" href="input_8cpp_source.html#l01304">get_previously_pressed_key()</a>, and <a class="el" href="ncurses__def_8cpp_source.html#l00252">pump_events()</a>.</p>
 
 </div>
 </div>
@@ -1965,7 +2017,7 @@ Friends</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classinput__manager.html">input_manager</a></li>
-    <li class="footer">Generated on Wed Oct 19 2022 14:19:33 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Mon Dec 26 2022 21:42:03 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

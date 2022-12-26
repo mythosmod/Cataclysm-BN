@@ -118,8 +118,8 @@ Functions</h2></td></tr>
 <tr class="separator:a72c747083a3a751d71d27908b3584b3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a885a58ba9d6efecc1b4a06d377ccddc1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="game__ui_8h.html#a885a58ba9d6efecc1b4a06d377ccddc1">to_overmap_font_dimension</a> (int &amp;w, int &amp;h)</td></tr>
 <tr class="separator:a885a58ba9d6efecc1b4a06d377ccddc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0c220926b8f3464e41147ba64f1a5b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="game__ui_8h.html#ac0c220926b8f3464e41147ba64f1a5b9">reinitialize_framebuffer</a> ()</td></tr>
-<tr class="separator:ac0c220926b8f3464e41147ba64f1a5b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab449457ca29d4eb5ecf965ebee34e078"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="game__ui_8h.html#ab449457ca29d4eb5ecf965ebee34e078">reinitialize_framebuffer</a> (bool force_invalidate=false)</td></tr>
+<tr class="separator:ab449457ca29d4eb5ecf965ebee34e078"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a36938bb1ab9e5e6e8f79618221a3e7bd" name="a36938bb1ab9e5e6e8f79618221a3e7bd"></a>
@@ -172,8 +172,8 @@ Functions</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="ac0c220926b8f3464e41147ba64f1a5b9" name="ac0c220926b8f3464e41147ba64f1a5b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac0c220926b8f3464e41147ba64f1a5b9">&#9670;&nbsp;</a></span>reinitialize_framebuffer()</h2>
+<a id="ab449457ca29d4eb5ecf965ebee34e078" name="ab449457ca29d4eb5ecf965ebee34e078"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab449457ca29d4eb5ecf965ebee34e078">&#9670;&nbsp;</a></span>reinitialize_framebuffer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -181,7 +181,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void reinitialize_framebuffer </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>force_invalidate</em> = <code>false</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -192,7 +193,7 @@ Functions</h2></td></tr>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>}</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="ui__manager_8cpp_source.html#l00211">ui_adaptor::redraw_invalidated()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ui__manager_8cpp_source.html#l00262">ui_adaptor::redraw_invalidated()</a>, and <a class="el" href="ui__manager_8cpp_source.html#l00037">ui_adaptor::ui_adaptor()</a>.</p>
 
 </div>
 </div>
@@ -240,7 +241,7 @@ Functions</h2></td></tr>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>}</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l07090">centerlistview()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l06962">centerlistview()</a>.</p>
 
 </div>
 </div>
@@ -275,7 +276,7 @@ Functions</h2></td></tr>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>}</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l03054">game::create_or_get_main_ui_adaptor()</a>, and <a class="el" href="panels_8cpp_source.html#l02406">panel_manager::show_adm()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l02896">game::create_or_get_main_ui_adaptor()</a>, and <a class="el" href="panels_8cpp_source.html#l02287">panel_manager::show_adm()</a>.</p>
 
 </div>
 </div>
@@ -320,7 +321,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="game__ui_8h.html">game_ui.h</a></li>
-    <li class="footer">Generated on Wed Oct 19 2022 14:19:18 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Mon Dec 26 2022 21:41:51 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

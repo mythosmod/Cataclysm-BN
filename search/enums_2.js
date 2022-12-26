@@ -18,7 +18,7 @@ var searchData=
   ['collision_5fcheck_5fresult_15',['collision_check_result',['../vehicle__autodrive_8cpp.html#a2aaa9378c358066aabd13008fbfe1e3a',1,'vehicle_autodrive.cpp']]],
   ['color_5fid_16',['color_id',['../color_8h.html#a92219025bff743ee69ea01efc094ca44',1,'color.h']]],
   ['combat_5fengagement_17',['combat_engagement',['../npc_8h.html#a864e0cd11c91a60d35e050bbf1bdf1ca',1,'npc.h']]],
-  ['comfort_5flevel_18',['comfort_level',['../classCharacter.html#a764126d3e4c9f9450d6d9e40ec00d946',1,'Character']]],
+  ['comfort_5flevel_18',['comfort_level',['../namespacecharacter__funcs.html#a8614d6647ae110ba51944af26b80ecb7',1,'character_funcs']]],
   ['component_5ftype_19',['component_type',['../requirements_8h.html#aae43d16076b2b66d533c3ca174c20383',1,'requirements.h']]],
   ['computer_5faction_20',['computer_action',['../computer_8h.html#a15e56cfb989e3db6887a8d1e0e94137d',1,'computer.h']]],
   ['computer_5ffailure_5ftype_21',['computer_failure_type',['../computer_8h.html#a3509dba5a05e2d4dcf56fee3abd392d5',1,'computer.h']]],

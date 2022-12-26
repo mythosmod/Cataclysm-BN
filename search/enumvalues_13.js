@@ -39,7 +39,7 @@ var searchData=
   ['skip_5flocation_36',['SKIP_LOCATION',['../activity__handlers_8h.html#a2cf8ad8704e57889e58223fb5609d7b2a882a3852685e8a07c2c845af5bc94815',1,'activity_handlers.h']]],
   ['slaked_37',['slaked',['../character_8h.html#a2e6af65e94e820564fb484840378cf4aa471a11f43e136d5e6058d2a4ba9c1442',1,'character.h']]],
   ['sleep_38',['SLEEP',['../pldata_8h.html#abffc2f52fa6cfeac2e388c6de0ac295bab32bd403b93dc6deffdab7af55e82596',1,'pldata.h']]],
-  ['slightly_5fcomfortable_39',['slightly_comfortable',['../classCharacter.html#a764126d3e4c9f9450d6d9e40ec00d946a1493fbda00a5e67f5f6d8d619489a6af',1,'Character']]],
+  ['slightly_5fcomfortable_39',['slightly_comfortable',['../namespacecharacter__funcs.html#a8614d6647ae110ba51944af26b80ecb7a1493fbda00a5e67f5f6d8d619489a6af',1,'character_funcs']]],
   ['slow_5fdown_40',['slow_down',['../vehicle__autodrive_8cpp.html#a2aaa9378c358066aabd13008fbfe1e3aa5a439578513520e7a5c859a7bef3daf6',1,'vehicle_autodrive.cpp']]],
   ['small_5fsized_5fbig_5fchar_41',['small_sized_big_char',['../classitem.html#a952452b603e34038ff8dff7ed9422a9ca2e09daf3a4a2a25acca1a1d22e7a44fc',1,'item']]],
   ['small_5fsized_5fhuman_5fchar_42',['small_sized_human_char',['../classitem.html#a952452b603e34038ff8dff7ed9422a9cab070cdbbb5e27e5e07128ce369d16729',1,'item']]],

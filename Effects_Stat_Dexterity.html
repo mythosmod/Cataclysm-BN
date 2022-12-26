@@ -95,13 +95,15 @@ $(document).ready(function(){initNavTree('Effects_Stat_Dexterity.html',''); init
 <dt>Member <a class="el" href="namespaceactivity__handlers.html#aeca7f48b6473c6b257d697695e89fea1">activity_handlers::lockpicking_finish</a>  (<a class="el" href="classplayer__activity.html">player_activity</a> *act, player *p)</dt>
 <dd><a class="anchor" id="_Effects_Stat_Dexterity000002"></a> Dexterity improves chances of successfully picking door lock, reduces chances of bad outcomes  </dd>
 <dt>Member <a class="el" href="classavatar.html#aaa9bb94f7b6931ddf5b0c64c051e4362">avatar::steal</a>  (npc &amp;target)</dt>
-<dd><a class="anchor" id="_Effects_Stat_Dexterity000040"></a> Dexterity defines the chance to steal  </dd>
+<dd><a class="anchor" id="_Effects_Stat_Dexterity000042"></a> Dexterity defines the chance to steal  </dd>
 <dt>Member <a class="el" href="classCharacter.html#a851daac85a019452f34ba82a377773b0">Character::aim_per_move</a>  (const item &amp;gun, double recoil) const</dt>
 <dd><a class="anchor" id="_Effects_Stat_Dexterity000003"></a> Dexterity increases aiming speed  </dd>
 <dt>Member <a class="el" href="classCharacter.html#a0f40bb355d62047f8140901ee35995ec">Character::attack_cost</a>  (const item &amp;weap) const</dt>
-<dd><a class="anchor" id="_Effects_Stat_Dexterity000038"></a> Dexterity increases attack speed  </dd>
+<dd><a class="anchor" id="_Effects_Stat_Dexterity000040"></a> Dexterity increases attack speed  </dd>
+<dt>Member <a class="el" href="classCharacter.html#a38def883f6266112b55022b3fc77b079">Character::avoid_trap</a>  (const tripoint &amp;pos, const trap &amp;tr) const override</dt>
+<dd><a class="anchor" id="_Effects_Stat_Dexterity000014"></a> Dexterity increases chance to avoid traps  </dd>
 <dt>Member <a class="el" href="classCharacter.html#a938cbb0dad93f07152c6e81fd270b153">Character::crit_chance</a>  (float roll_hit, float target_dodge, const item &amp;weap) const</dt>
-<dd><a class="anchor" id="_Effects_Stat_Dexterity000035"></a> Dexterity increases chance for critical hits  </dd>
+<dd><a class="anchor" id="_Effects_Stat_Dexterity000037"></a> Dexterity increases chance for critical hits  </dd>
 <dt>Member <a class="el" href="classCharacter.html#a2c05090cba2078f9ebefd80e61564be3">Character::deal_damage</a>  (<a class="el" href="classCreature.html">Creature</a> *source, bodypart_id bp, const <a class="el" href="structdamage__instance.html">damage_instance</a> &amp;d) override</dt>
 <dd><a class="anchor" id="_Effects_Stat_Dexterity000013"></a> Dexterity increases chance to avoid being grabbed  </dd>
 <dt>Member <a class="el" href="classCharacter.html#aaf52125fca0a9d7a161c487877e17fdd">Character::get_dodge_base</a>  () const override</dt>
@@ -109,71 +111,69 @@ $(document).ready(function(){initNavTree('Effects_Stat_Dexterity.html',''); init
 <dt>Member <a class="el" href="classCharacter.html#a7a656bafd59dccac1266974c53f127e5">Character::get_hit_base</a>  () const override</dt>
 <dd><a class="anchor" id="_Effects_Stat_Dexterity000012"></a> Dexterity increases hit base, slightly  </dd>
 <dt>Member <a class="el" href="classCharacter.html#aa427d558b5e0e0d8d5d10c58994c6849">Character::handle_melee_wear</a>  (item &amp;shield, float wear_multiplier=1.0f)</dt>
-<dd><a class="anchor" id="_Effects_Stat_Dexterity000034"></a> Dexterity reduces chance of damaging your melee weapon  </dd>
+<dd><a class="anchor" id="_Effects_Stat_Dexterity000036"></a> Dexterity reduces chance of damaging your melee weapon  </dd>
 <dt>Member <a class="el" href="classCharacter.html#a37772343c5d5a20510bafe1890a5a839">Character::move_effects</a>  (bool attacking) override</dt>
 <dd><a class="anchor" id="_Effects_Stat_Dexterity000009"></a> Dexterity increases chance to escape pit, slightly  </dd>
 <dt>Member <a class="el" href="classCharacter.html#aff3eb258ff2a3e9868db426b88bd01fb">Character::mutation_attacks</a>  (<a class="el" href="classCreature.html">Creature</a> &amp;t) const</dt>
-<dd><a class="anchor" id="_Effects_Stat_Dexterity000037"></a> Dexterity increases chance of attacking with mutated body parts  </dd>
+<dd><a class="anchor" id="_Effects_Stat_Dexterity000039"></a> Dexterity increases chance of attacking with mutated body parts  </dd>
 <dt>Member <a class="el" href="classCharacter.html#aaef1f2b773b9e659b6b69f813ea4dafb">Character::ranged_dex_mod</a>  () const</dt>
 <dd><a class="anchor" id="_Effects_Stat_Dexterity000010"></a> Dexterity &lt;20 increases ranged penalty  </dd>
+<dt>Member <a class="el" href="classCharacter.html#a828093dcb1aa309266e2e98ab69b7dd5">Character::stability_roll</a>  () const override</dt>
+<dd><a class="anchor" id="_Effects_Stat_Dexterity000015"></a> Dexterity slightly improves player stability roll  </dd>
 <dt>Member <a class="el" href="classCharacter.html#a48531fb6d06678b20e3b7a2c8164c206">Character::swim_speed</a>  () const</dt>
 <dd><a class="anchor" id="_Effects_Stat_Dexterity000004"></a> Dexterity increases swim speed  </dd>
 <dt>Member <a class="el" href="classenzlave__actor.html#a4bb99e6bffd3e2f52e5387d24bdebc70">enzlave_actor::use</a>  (player &amp;, item &amp;, bool, const tripoint &amp;) const override</dt>
-<dd><a class="anchor" id="_Effects_Stat_Dexterity000030"></a> Dexterity increases chance of success for enzlavement  </dd>
+<dd><a class="anchor" id="_Effects_Stat_Dexterity000032"></a> Dexterity increases chance of success for enzlavement  </dd>
 <dt>Member <a class="el" href="classfungal__effects.html#aa5ea9e56f2b97bc6c30c989c652b695f">fungal_effects::fungalize</a>  (const tripoint &amp;p, <a class="el" href="classCreature.html">Creature</a> *origin=nullptr, double spore_chance=0.0)</dt>
-<dd><a class="anchor" id="_Effects_Stat_Dexterity000014"></a> Dexterity increases chance of knocking fungal spores away with your TAIL_CATTLE \EFFECT_MELEE increases chance of knocking fungal sports away with your TAIL_CATTLE  </dd>
+<dd><a class="anchor" id="_Effects_Stat_Dexterity000016"></a> Dexterity increases chance of knocking fungal spores away with your TAIL_CATTLE \EFFECT_MELEE increases chance of knocking fungal sports away with your TAIL_CATTLE  </dd>
 <dt>Member <a class="el" href="classgame.html#a00f95f8a5de3dd5799bd3969f27ca06c">game::place_player</a>  (const tripoint &amp;dest)</dt>
-<dd><a class="anchor" id="_Effects_Stat_Dexterity000016"></a> Dexterity increases chance of avoiding cuts on sharp terrain  </dd>
+<dd><a class="anchor" id="_Effects_Stat_Dexterity000018"></a> Dexterity increases chance of avoiding cuts on sharp terrain  </dd>
 <dt>Member <a class="el" href="classgame.html#a83d7c7045891e11e151efdc2d426bd6a">game::slip_down</a>  ()</dt>
-<dd><a class="anchor" id="_Effects_Stat_Dexterity000018"></a> Dexterity decreases chances of slipping while climbing  </dd>
+<dd><a class="anchor" id="_Effects_Stat_Dexterity000020"></a> Dexterity decreases chances of slipping while climbing  </dd>
 <dt>Member <a class="el" href="classgame.html#a90773c9dd13fb8a5316b4f75bfaff914">game::vertical_move</a>  (int z, bool force, bool peeking=false)</dt>
-<dd><a class="anchor" id="_Effects_Stat_Dexterity000017"></a> Dexterity increases chance of moving past monsters on stairs  </dd>
+<dd><a class="anchor" id="_Effects_Stat_Dexterity000019"></a> Dexterity increases chance of moving past monsters on stairs  </dd>
 <dt>Member <a class="el" href="classgame.html#a80cb940b3c9d5b8166eb9abc8c238069">game::walk_move</a>  (const tripoint &amp;dest, bool via_ramp=false)</dt>
-<dd><a class="anchor" id="_Effects_Stat_Dexterity000015"></a> Dexterity decreases chance of tentacles getting stuck to the ground  </dd>
+<dd><a class="anchor" id="_Effects_Stat_Dexterity000017"></a> Dexterity decreases chance of tentacles getting stuck to the ground  </dd>
 <dt>Member <a class="el" href="melee_8cpp.html#a5ddd312ed5e2eaf279815c3895170d04">hardcoded_mutation_attack</a>  (const <a class="el" href="classCharacter.html">Character</a> &amp;u, const trait_id &amp;id)</dt>
-<dd><a class="anchor" id="_Effects_Stat_Dexterity000036"></a> Dexterity increases number of hits with BEAK_PECK  </dd>
+<dd><a class="anchor" id="_Effects_Stat_Dexterity000038"></a> Dexterity increases number of hits with BEAK_PECK  </dd>
 <dt>Member <a class="el" href="namespaceiexamine.html#aef1e066e643dd0dc1eb2f2b603c213f9">iexamine::chainfence</a>  (player &amp;p, const tripoint &amp;examp)</dt>
-<dd><a class="anchor" id="_Effects_Stat_Dexterity000021"></a> Dexterity decreases chances of slipping while climbing  </dd>
+<dd><a class="anchor" id="_Effects_Stat_Dexterity000023"></a> Dexterity decreases chances of slipping while climbing  </dd>
 <dt>Member <a class="el" href="namespaceiexamine.html#ac5ce69b72dee988c76accafb9e881709">iexamine::gaspump</a>  (player &amp;p, const tripoint &amp;examp)</dt>
-<dd><p class="startdd"><a class="anchor" id="_Effects_Stat_Dexterity000019"></a> Dexterity decreases chance of spilling gas from a pump </p>
-<p class="enddd"><a class="anchor" id="_Effects_Stat_Dexterity000020"></a> Dexterity decreases amount of gas spilled from a pump  </p>
+<dd><p class="startdd"><a class="anchor" id="_Effects_Stat_Dexterity000021"></a> Dexterity decreases chance of spilling gas from a pump </p>
+<p class="enddd"><a class="anchor" id="_Effects_Stat_Dexterity000022"></a> Dexterity decreases amount of gas spilled from a pump  </p>
 </dd>
 <dt>Member <a class="el" href="namespaceiuse.html#a4945736059f06b41ffce6c4070f8f5e1">iuse::granade_act</a>  (player *, item *, bool, const tripoint &amp;)</dt>
-<dd><p class="startdd"><a class="anchor" id="_Effects_Stat_Dexterity000024"></a> Maximum Dexterity increases possible granade dex debuff for NPCs (NEGATIVE) </p>
-<p class="interdd"><a class="anchor" id="_Effects_Stat_Dexterity000025"></a> Maximum Dexterity increases possible granade dex debuff (NEGATIVE) </p>
-<p class="interdd"><a class="anchor" id="_Effects_Stat_Dexterity000023"></a> Maximum Dexterity increases possible granade dex buff </p>
-<p class="enddd"><a class="anchor" id="_Effects_Stat_Dexterity000022"></a> Maximum Dexterity increases possible granade dex buff for NPCs  </p>
+<dd><p class="startdd"><a class="anchor" id="_Effects_Stat_Dexterity000024"></a> Maximum Dexterity increases possible granade dex buff for NPCs </p>
+<p class="interdd"><a class="anchor" id="_Effects_Stat_Dexterity000025"></a> Maximum Dexterity increases possible granade dex buff </p>
+<p class="interdd"><a class="anchor" id="_Effects_Stat_Dexterity000026"></a> Maximum Dexterity increases possible granade dex debuff for NPCs (NEGATIVE) </p>
+<p class="enddd"><a class="anchor" id="_Effects_Stat_Dexterity000027"></a> Maximum Dexterity increases possible granade dex debuff (NEGATIVE)  </p>
 </dd>
 <dt>Member <a class="el" href="namespaceiuse.html#a18ded3f37f4b03f690f1d23e5b4f0a50">iuse::mind_splicer</a>  (player *, item *, bool, const tripoint &amp;)</dt>
-<dd><a class="anchor" id="_Effects_Stat_Dexterity000027"></a> Dexterity makes using the mind splicer faster \EFFECT_FIRSTAID makes using the mind splicer faster  </dd>
+<dd><a class="anchor" id="_Effects_Stat_Dexterity000029"></a> Dexterity makes using the mind splicer faster \EFFECT_FIRSTAID makes using the mind splicer faster  </dd>
 <dt>Member <a class="el" href="namespaceiuse.html#a3bdece1a07a33641fa483176a9bd0175">iuse::tazer</a>  (player *, item *, bool, const tripoint &amp;)</dt>
-<dd><a class="anchor" id="_Effects_Stat_Dexterity000026"></a> Dexterity slightly increases chance of successfully using tazer  </dd>
+<dd><a class="anchor" id="_Effects_Stat_Dexterity000028"></a> Dexterity slightly increases chance of successfully using tazer  </dd>
 <dt>Member <a class="el" href="classmap.html#af36e4659abd2e9886fbfcb72153b36ce">map::disarm_trap</a>  (const tripoint &amp;p)</dt>
-<dd><a class="anchor" id="_Effects_Stat_Dexterity000033"></a> Dexterity increases chance of disarming trap  </dd>
+<dd><a class="anchor" id="_Effects_Stat_Dexterity000035"></a> Dexterity increases chance of disarming trap  </dd>
 <dt>Member <a class="el" href="classmap.html#ac7023d5bb12f333f7237a08bd471b112">map::shake_vehicle</a>  (vehicle &amp;veh, int velocity_before, <a class="el" href="namespaceunits.html#a2c7fe916bf04655f9fb4f2abdc5d28ed">units::angle</a> direction)</dt>
 <dd><a class="anchor" id="_Effects_Stat_Dexterity000058"></a> Dexterity reduces chance of losing control of vehicle when shaken  </dd>
 <dt>Member <a class="el" href="namespacemattack.html#a535178d1fac613ca6f87515de0b30d51">mattack::bio_op_disarm</a>  (monster *z)</dt>
-<dd><a class="anchor" id="_Effects_Stat_Dexterity000045"></a> Dexterity increases chance to avoid disarm, secondary stat  </dd>
+<dd><a class="anchor" id="_Effects_Stat_Dexterity000047"></a> Dexterity increases chance to avoid disarm, secondary stat  </dd>
 <dt>Member <a class="el" href="namespacemattack.html#aa52474914c65788e415d43c94d7fd471">mattack::dermatik</a>  (monster *z)</dt>
-<dd><a class="anchor" id="_Effects_Stat_Dexterity000041"></a> Dexterity increases chance of deflecting dermatik attack with TAIL_CATTLE  </dd>
+<dd><a class="anchor" id="_Effects_Stat_Dexterity000043"></a> Dexterity increases chance of deflecting dermatik attack with TAIL_CATTLE  </dd>
 <dt>Member <a class="el" href="namespacemattack.html#af6d98508623397f01a9d5ffeebfd460b">mattack::grab</a>  (monster *z)</dt>
-<dd><a class="anchor" id="_Effects_Stat_Dexterity000042"></a> Dexterity increases chance to avoid being grabbed  </dd>
+<dd><a class="anchor" id="_Effects_Stat_Dexterity000044"></a> Dexterity increases chance to avoid being grabbed  </dd>
 <dt>Member <a class="el" href="namespacemattack.html#a774768a261f323c61f26af3c063939a3">mattack::riotbot</a>  (monster *z)</dt>
-<dd><a class="anchor" id="_Effects_Stat_Dexterity000044"></a> Dexterity &gt;13 allows and increases chance to slip out of riot bot handcuffs  </dd>
+<dd><a class="anchor" id="_Effects_Stat_Dexterity000046"></a> Dexterity &gt;13 allows and increases chance to slip out of riot bot handcuffs  </dd>
 <dt>Member <a class="el" href="namespacemattack.html#a417df1f7014426b1736ddcfc68bed69f">mattack::thrown_by_judo</a>  (monster *z)</dt>
-<dd><a class="anchor" id="_Effects_Stat_Dexterity000043"></a> Dexterity increases chance judo-throwing a monster  </dd>
+<dd><a class="anchor" id="_Effects_Stat_Dexterity000045"></a> Dexterity increases chance judo-throwing a monster  </dd>
 <dt>Member <a class="el" href="classnpc.html#ac17b98393632654d6724c71251bbdadf">npc::move_to</a>  (const tripoint &amp;p, bool no_bashing=false, std::set&lt; tripoint &gt; *nomove=nullptr)</dt>
-<dd><a class="anchor" id="_Effects_Stat_Dexterity000046"></a> NPC Dexterity increases chance to climb CLIMBABLE furniture or terrain  </dd>
+<dd><a class="anchor" id="_Effects_Stat_Dexterity000048"></a> NPC Dexterity increases chance to climb CLIMBABLE furniture or terrain  </dd>
 <dt>Member <a class="el" href="classpick__lock__actor.html#a987cec055598c306600b3f6475e9a7cf">pick_lock_actor::use</a>  (player &amp;, item &amp;, bool, const tripoint &amp;) const override</dt>
-<dd><a class="anchor" id="_Effects_Stat_Dexterity000028"></a> Dexterity speeds up door lock picking  </dd>
-<dt>Member <a class="el" href="classplayer.html#ad96e0c895f6ffe7dd924ede585b23d4c">player::avoid_trap</a>  (const tripoint &amp;pos, const trap &amp;tr) const override</dt>
-<dd><a class="anchor" id="_Effects_Stat_Dexterity000048"></a> Dexterity increases chance to avoid traps  </dd>
+<dd><a class="anchor" id="_Effects_Stat_Dexterity000030"></a> Dexterity speeds up door lock picking  </dd>
 <dt>Member <a class="el" href="classplayer.html#a1d834bb8130bbe9689b8cc19190d3ea7">player::disarm</a>  (npc &amp;target)</dt>
-<dd><a class="anchor" id="_Effects_Stat_Dexterity000039"></a> Dexterity increases chance to disarm, secondary stat  </dd>
+<dd><a class="anchor" id="_Effects_Stat_Dexterity000041"></a> Dexterity increases chance to disarm, secondary stat  </dd>
 <dt>Member <a class="el" href="classplayer.html#a8f4f5995d32e0a3a0fe585abbafbf76d">player::fall_damage_mod</a>  () const override</dt>
 <dd><a class="anchor" id="_Effects_Stat_Dexterity000049"></a> Dexterity decreases damage from falling  </dd>
-<dt>Member <a class="el" href="classplayer.html#ade9f2154bc9711f924fc216a46162a74">player::stability_roll</a>  () const override</dt>
-<dd><a class="anchor" id="_Effects_Stat_Dexterity000047"></a> Dexterity slightly improves player stability roll  </dd>
 <dt>Member <a class="el" href="namespaceranged.html#a5332ed56c9f0b3702e72aecdcaa1e7be">ranged::burst_penalty</a>  (const <a class="el" href="classCharacter.html">Character</a> &amp;p, const item &amp;gun, int gun_recoil)</dt>
 <dd><a class="anchor" id="_Effects_Stat_Dexterity000052"></a> Dexterity reduces burst penalty by flat amount  </dd>
 <dt>Member <a class="el" href="namespaceranged.html#a581c5c797384eeec8c7e3ffe10a82d26">ranged::throw_cost</a>  (const player &amp;c, const item &amp;to_throw)</dt>
@@ -181,11 +181,11 @@ $(document).ready(function(){initNavTree('Effects_Stat_Dexterity.html',''); init
 <dt>Member <a class="el" href="namespaceranged.html#afd6b1338d47e5ecd34de75b921c11113">ranged::throw_dispersion_per_dodge</a>  (const <a class="el" href="classCharacter.html">Character</a> &amp;c, bool add_encumbrance)</dt>
 <dd><a class="anchor" id="_Effects_Stat_Dexterity000051"></a> Dexterity increases throwing accuracy against targets with good dodge stat  </dd>
 <dt>Member <a class="el" href="classrepair__item__actor.html#acec2db08135523eaf9e738c590dfa151">repair_item_actor::repair_chance</a>  (const player &amp;pl, const item &amp;fix, repair_type action_type) const</dt>
-<dd><a class="anchor" id="_Effects_Stat_Dexterity000031"></a> Dexterity reduces the chances of damaging an item when repairing  </dd>
+<dd><a class="anchor" id="_Effects_Stat_Dexterity000033"></a> Dexterity reduces the chances of damaging an item when repairing  </dd>
 <dt>Member <a class="el" href="classsalvage__actor.html#ac23af305524b36576890df86e9b64d17">salvage_actor::cut_up</a>  (player &amp;p, item &amp;it, <a class="el" href="classitem__location.html" title="A lightweight handle to an item independent of it&#39;s location Unlike a raw pointer can be (de-)seriali...">item_location</a> &amp;cut) const</dt>
-<dd><a class="anchor" id="_Effects_Stat_Dexterity000029"></a> Dexterity randomly reduces component loss when cutting items up  </dd>
+<dd><a class="anchor" id="_Effects_Stat_Dexterity000031"></a> Dexterity randomly reduces component loss when cutting items up  </dd>
 <dt>Member <a class="el" href="classsew__advanced__actor.html#a1440a9eb17b38331033c51bdd626b6db">sew_advanced_actor::use</a>  (player &amp;, item &amp;, bool, const tripoint &amp;) const override</dt>
-<dd><a class="anchor" id="_Effects_Stat_Dexterity000032"></a> Dexterity randomly improves clothing modification efforts  </dd>
+<dd><a class="anchor" id="_Effects_Stat_Dexterity000034"></a> Dexterity randomly improves clothing modification efforts  </dd>
 <dt>Member <a class="el" href="trapfunc_8cpp.html#a68794eeecb995507569d9e9c1609c7fa">sinkhole_safety_roll</a>  (player *p, const itype_id &amp;itemname, const int diff)</dt>
 <dd><a class="anchor" id="_Effects_Stat_Dexterity000054"></a> Dexterity increases chance to attach grapnel, bullwhip, or rope when falling into a sinkhole  </dd>
 <dt>Member <a class="el" href="namespacetrapfunc.html#a89d68e88f215345a102b4ace7e41b7e2">trapfunc::tripwire</a>  (const tripoint &amp;p, <a class="el" href="classCreature.html">Creature</a> *c, item *i)</dt>
@@ -211,7 +211,7 @@ $(document).ready(function(){initNavTree('Effects_Stat_Dexterity.html',''); init
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Oct 19 2022 14:19:23 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Mon Dec 26 2022 21:41:55 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

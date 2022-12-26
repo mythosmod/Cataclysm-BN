@@ -108,7 +108,7 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="editmap_8cpp_source.html#l00289">289</a> of file <a class="el" href="editmap_8cpp_source.html">editmap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="editmap_8cpp_source.html#l00290">290</a> of file <a class="el" href="editmap_8cpp_source.html">editmap.cpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="abda9d420278bcf880167fb4961911411" name="abda9d420278bcf880167fb4961911411"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abda9d420278bcf880167fb4961911411">&#9670;&nbsp;</a></span>game_draw_callback_t_container()</h2>
@@ -134,9 +134,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="editmap_8cpp_source.html#l00292">292</a> of file <a class="el" href="editmap_8cpp_source.html">editmap.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>: <a class="code hl_variable" href="classeditmap_1_1game__draw__callback__t__container.html#a021c2e54a90156fc065379decae08e77">em</a>( <a class="code hl_variable" href="classeditmap_1_1game__draw__callback__t__container.html#a021c2e54a90156fc065379decae08e77">em</a> ) {}</div>
-<div class="ttc" id="aclasseditmap_1_1game__draw__callback__t__container_html_a021c2e54a90156fc065379decae08e77"><div class="ttname"><a href="classeditmap_1_1game__draw__callback__t__container.html#a021c2e54a90156fc065379decae08e77">editmap::game_draw_callback_t_container::em</a></div><div class="ttdeci">editmap * em</div><div class="ttdef"><b>Definition:</b> <a href="editmap_8cpp_source.html#l00295">editmap.cpp:295</a></div></div>
+<p class="definition">Definition at line <a class="el" href="editmap_8cpp_source.html#l00293">293</a> of file <a class="el" href="editmap_8cpp_source.html">editmap.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>: <a class="code hl_variable" href="classeditmap_1_1game__draw__callback__t__container.html#a021c2e54a90156fc065379decae08e77">em</a>( <a class="code hl_variable" href="classeditmap_1_1game__draw__callback__t__container.html#a021c2e54a90156fc065379decae08e77">em</a> ) {}</div>
+<div class="ttc" id="aclasseditmap_1_1game__draw__callback__t__container_html_a021c2e54a90156fc065379decae08e77"><div class="ttname"><a href="classeditmap_1_1game__draw__callback__t__container.html#a021c2e54a90156fc065379decae08e77">editmap::game_draw_callback_t_container::em</a></div><div class="ttdeci">editmap * em</div><div class="ttdef"><b>Definition:</b> <a href="editmap_8cpp_source.html#l00296">editmap.cpp:296</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -156,26 +156,26 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="editmap_8cpp_source.html#l00299">299</a> of file <a class="el" href="editmap_8cpp_source.html">editmap.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>{</div>
-<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>    <a class="code hl_typedef" href="memory__fast_8h.html#ada897699f31fc8b37c5af09d95d45840">shared_ptr_fast&lt;game::draw_callback_t&gt;</a> cb = <a class="code hl_variable" href="classeditmap_1_1game__draw__callback__t__container.html#a08b08da48a7c6f4a90fca8eb0e932b75">cbw</a>.lock();</div>
-<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>    <span class="keywordflow">if</span>( !cb ) {</div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>        <a class="code hl_variable" href="classeditmap_1_1game__draw__callback__t__container.html#a08b08da48a7c6f4a90fca8eb0e932b75">cbw</a> = cb = make_shared_fast&lt;game::draw_callback_t&gt;(</div>
-<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>        [<span class="keyword">this</span>]() {</div>
-<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>            <a class="code hl_variable" href="classeditmap_1_1game__draw__callback__t__container.html#a021c2e54a90156fc065379decae08e77">em</a>-&gt;<a class="code hl_function" href="classeditmap.html#a24004b5514f96186cfc53185affe734f">draw_main_ui_overlay</a>();</div>
-<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>        } );</div>
-<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>        <a class="code hl_variable" href="game_8cpp.html#abeb98e93502d73818b4a73fabe191bc1">g</a>-&gt;add_draw_callback( cb );</div>
-<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>    }</div>
-<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>    <span class="keywordflow">return</span> cb;</div>
-<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>}</div>
-<div class="ttc" id="aclasseditmap_1_1game__draw__callback__t__container_html_a08b08da48a7c6f4a90fca8eb0e932b75"><div class="ttname"><a href="classeditmap_1_1game__draw__callback__t__container.html#a08b08da48a7c6f4a90fca8eb0e932b75">editmap::game_draw_callback_t_container::cbw</a></div><div class="ttdeci">weak_ptr_fast&lt; game::draw_callback_t &gt; cbw</div><div class="ttdef"><b>Definition:</b> <a href="editmap_8cpp_source.html#l00296">editmap.cpp:296</a></div></div>
-<div class="ttc" id="aclasseditmap_html_a24004b5514f96186cfc53185affe734f"><div class="ttname"><a href="classeditmap.html#a24004b5514f96186cfc53185affe734f">editmap::draw_main_ui_overlay</a></div><div class="ttdeci">void draw_main_ui_overlay()</div><div class="ttdef"><b>Definition:</b> <a href="editmap_8cpp_source.html#l00504">editmap.cpp:504</a></div></div>
-<div class="ttc" id="agame_8cpp_html_abeb98e93502d73818b4a73fabe191bc1"><div class="ttname"><a href="game_8cpp.html#abeb98e93502d73818b4a73fabe191bc1">g</a></div><div class="ttdeci">std::unique_ptr&lt; game &gt; g</div><div class="ttdef"><b>Definition:</b> <a href="game_8cpp_source.html#l00272">game.cpp:272</a></div></div>
+<p class="definition">Definition at line <a class="el" href="editmap_8cpp_source.html#l00300">300</a> of file <a class="el" href="editmap_8cpp_source.html">editmap.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>{</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>    <a class="code hl_typedef" href="memory__fast_8h.html#ada897699f31fc8b37c5af09d95d45840">shared_ptr_fast&lt;game::draw_callback_t&gt;</a> cb = <a class="code hl_variable" href="classeditmap_1_1game__draw__callback__t__container.html#a08b08da48a7c6f4a90fca8eb0e932b75">cbw</a>.lock();</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>    <span class="keywordflow">if</span>( !cb ) {</div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>        <a class="code hl_variable" href="classeditmap_1_1game__draw__callback__t__container.html#a08b08da48a7c6f4a90fca8eb0e932b75">cbw</a> = cb = make_shared_fast&lt;game::draw_callback_t&gt;(</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>        [<span class="keyword">this</span>]() {</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>            <a class="code hl_variable" href="classeditmap_1_1game__draw__callback__t__container.html#a021c2e54a90156fc065379decae08e77">em</a>-&gt;<a class="code hl_function" href="classeditmap.html#a24004b5514f96186cfc53185affe734f">draw_main_ui_overlay</a>();</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>        } );</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>        <a class="code hl_variable" href="game_8cpp.html#abeb98e93502d73818b4a73fabe191bc1">g</a>-&gt;add_draw_callback( cb );</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>    }</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>    <span class="keywordflow">return</span> cb;</div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>}</div>
+<div class="ttc" id="aclasseditmap_1_1game__draw__callback__t__container_html_a08b08da48a7c6f4a90fca8eb0e932b75"><div class="ttname"><a href="classeditmap_1_1game__draw__callback__t__container.html#a08b08da48a7c6f4a90fca8eb0e932b75">editmap::game_draw_callback_t_container::cbw</a></div><div class="ttdeci">weak_ptr_fast&lt; game::draw_callback_t &gt; cbw</div><div class="ttdef"><b>Definition:</b> <a href="editmap_8cpp_source.html#l00297">editmap.cpp:297</a></div></div>
+<div class="ttc" id="aclasseditmap_html_a24004b5514f96186cfc53185affe734f"><div class="ttname"><a href="classeditmap.html#a24004b5514f96186cfc53185affe734f">editmap::draw_main_ui_overlay</a></div><div class="ttdeci">void draw_main_ui_overlay()</div><div class="ttdef"><b>Definition:</b> <a href="editmap_8cpp_source.html#l00505">editmap.cpp:505</a></div></div>
+<div class="ttc" id="agame_8cpp_html_abeb98e93502d73818b4a73fabe191bc1"><div class="ttname"><a href="game_8cpp.html#abeb98e93502d73818b4a73fabe191bc1">g</a></div><div class="ttdeci">std::unique_ptr&lt; game &gt; g</div><div class="ttdef"><b>Definition:</b> <a href="game_8cpp_source.html#l00277">game.cpp:277</a></div></div>
 <div class="ttc" id="amemory__fast_8h_html_ada897699f31fc8b37c5af09d95d45840"><div class="ttname"><a href="memory__fast_8h.html#ada897699f31fc8b37c5af09d95d45840">shared_ptr_fast</a></div><div class="ttdeci">std::shared_ptr&lt; T &gt; shared_ptr_fast</div><div class="ttdef"><b>Definition:</b> <a href="memory__fast_8h_source.html#l00016">memory_fast.h:16</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="editmap_8cpp_source.html#l00296">cbw</a>, <a class="el" href="editmap_8cpp_source.html#l00504">editmap::draw_main_ui_overlay()</a>, <a class="el" href="editmap_8cpp_source.html#l00295">em</a>, and <a class="el" href="game_8cpp_source.html#l00272">g</a>.</p>
+<p class="reference">References <a class="el" href="editmap_8cpp_source.html#l00297">cbw</a>, <a class="el" href="editmap_8cpp_source.html#l00505">editmap::draw_main_ui_overlay()</a>, <a class="el" href="editmap_8cpp_source.html#l00296">em</a>, and <a class="el" href="game_8cpp_source.html#l00277">g</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="editmap_8cpp_source.html#l00339">editmap::edit()</a>, <a class="el" href="editmap_8cpp_source.html#l01074">editmap::edit_feature()</a>, <a class="el" href="editmap_8cpp_source.html#l01219">editmap::edit_fld()</a>, <a class="el" href="editmap_8cpp_source.html#l01391">editmap::edit_itm()</a>, <a class="el" href="editmap_8cpp_source.html#l02067">editmap::edit_mapgen()</a>, <a class="el" href="editmap_8cpp_source.html#l01781">editmap::mapgen_preview()</a>, <a class="el" href="editmap_8cpp_source.html#l02007">editmap::mapgen_retarget()</a>, and <a class="el" href="editmap_8cpp_source.html#l01627">editmap::select_shape()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="editmap_8cpp_source.html#l00340">editmap::edit()</a>, <a class="el" href="editmap_8cpp_source.html#l01075">editmap::edit_feature()</a>, <a class="el" href="editmap_8cpp_source.html#l01220">editmap::edit_fld()</a>, <a class="el" href="editmap_8cpp_source.html#l01392">editmap::edit_itm()</a>, <a class="el" href="editmap_8cpp_source.html#l02068">editmap::edit_mapgen()</a>, <a class="el" href="editmap_8cpp_source.html#l01782">editmap::mapgen_preview()</a>, <a class="el" href="editmap_8cpp_source.html#l02008">editmap::mapgen_retarget()</a>, and <a class="el" href="editmap_8cpp_source.html#l01628">editmap::select_shape()</a>.</p>
 
 </div>
 </div>
@@ -200,9 +200,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="editmap_8cpp_source.html#l00296">296</a> of file <a class="el" href="editmap_8cpp_source.html">editmap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="editmap_8cpp_source.html#l00297">297</a> of file <a class="el" href="editmap_8cpp_source.html">editmap.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="editmap_8cpp_source.html#l00299">create_or_get()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="editmap_8cpp_source.html#l00300">create_or_get()</a>.</p>
 
 </div>
 </div>
@@ -226,9 +226,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="editmap_8cpp_source.html#l00295">295</a> of file <a class="el" href="editmap_8cpp_source.html">editmap.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="editmap_8cpp_source.html#l00296">296</a> of file <a class="el" href="editmap_8cpp_source.html">editmap.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="editmap_8cpp_source.html#l00299">create_or_get()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="editmap_8cpp_source.html#l00300">create_or_get()</a>.</p>
 
 </div>
 </div>
@@ -241,7 +241,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classeditmap.html">editmap</a></li><li class="navelem"><a class="el" href="classeditmap_1_1game__draw__callback__t__container.html">game_draw_callback_t_container</a></li>
-    <li class="footer">Generated on Wed Oct 19 2022 14:19:30 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Mon Dec 26 2022 21:42:01 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -139,7 +139,7 @@ Additional Inherited Members</h2></td></tr>
 class jmapgen_alternativly&lt; PieceType &gt;</div><p >This is a generic mapgen piece, the template parameter PieceType should be another specific type of <a class="el" href="classjmapgen__piece.html" title="Basic mapgen object.">jmapgen_piece</a>. </p>
 <p >This class contains a vector of those objects and will chose one of it at random. </p>
 
-<p class="definition">Definition at line <a class="el" href="mapgen_8cpp_source.html#l00813">813</a> of file <a class="el" href="mapgen_8cpp_source.html">mapgen.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mapgen_8cpp_source.html#l00830">830</a> of file <a class="el" href="mapgen_8cpp_source.html">mapgen.cpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a902fa1bf9780f851691780636869dbb6" name="a902fa1bf9780f851691780636869dbb6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a902fa1bf9780f851691780636869dbb6">&#9670;&nbsp;</a></span>jmapgen_alternativly()</h2>
@@ -215,16 +215,16 @@ template&lt;typename PieceType &gt; </div>
 
 <p>Implements <a class="el" href="classjmapgen__piece.html#a82c99884542de41c80a197f389afe18a">jmapgen_piece</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="mapgen_8cpp_source.html#l00820">820</a> of file <a class="el" href="mapgen_8cpp_source.html">mapgen.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00820" name="l00820"></a><span class="lineno">  820</span>                                                                                                 {</div>
-<div class="line"><a id="l00821" name="l00821"></a><span class="lineno">  821</span>            <span class="keywordflow">if</span>( <span class="keyword">const</span> <span class="keyword">auto</span> chosen = <a class="code hl_function" href="rng_8h.html#a997d799053ccd3118c7da64ce1df43d9">random_entry_opt</a>( <a class="code hl_variable" href="classjmapgen__alternativly.html#a0ccf0881f4e33284f2b38cd36327f955">alternatives</a> ) ) {</div>
-<div class="line"><a id="l00822" name="l00822"></a><span class="lineno">  822</span>                chosen-&gt;get().apply( dat, x, y );</div>
-<div class="line"><a id="l00823" name="l00823"></a><span class="lineno">  823</span>            }</div>
-<div class="line"><a id="l00824" name="l00824"></a><span class="lineno">  824</span>        }</div>
-<div class="ttc" id="aclassjmapgen__alternativly_html_a0ccf0881f4e33284f2b38cd36327f955"><div class="ttname"><a href="classjmapgen__alternativly.html#a0ccf0881f4e33284f2b38cd36327f955">jmapgen_alternativly::alternatives</a></div><div class="ttdeci">std::vector&lt; PieceType &gt; alternatives</div><div class="ttdef"><b>Definition:</b> <a href="mapgen_8cpp_source.html#l00818">mapgen.cpp:818</a></div></div>
+<p class="definition">Definition at line <a class="el" href="mapgen_8cpp_source.html#l00837">837</a> of file <a class="el" href="mapgen_8cpp_source.html">mapgen.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00837" name="l00837"></a><span class="lineno">  837</span>                                                                                                 {</div>
+<div class="line"><a id="l00838" name="l00838"></a><span class="lineno">  838</span>            <span class="keywordflow">if</span>( <span class="keyword">const</span> <span class="keyword">auto</span> chosen = <a class="code hl_function" href="rng_8h.html#a997d799053ccd3118c7da64ce1df43d9">random_entry_opt</a>( <a class="code hl_variable" href="classjmapgen__alternativly.html#a0ccf0881f4e33284f2b38cd36327f955">alternatives</a> ) ) {</div>
+<div class="line"><a id="l00839" name="l00839"></a><span class="lineno">  839</span>                chosen-&gt;get().apply( dat, x, y );</div>
+<div class="line"><a id="l00840" name="l00840"></a><span class="lineno">  840</span>            }</div>
+<div class="line"><a id="l00841" name="l00841"></a><span class="lineno">  841</span>        }</div>
+<div class="ttc" id="aclassjmapgen__alternativly_html_a0ccf0881f4e33284f2b38cd36327f955"><div class="ttname"><a href="classjmapgen__alternativly.html#a0ccf0881f4e33284f2b38cd36327f955">jmapgen_alternativly::alternatives</a></div><div class="ttdeci">std::vector&lt; PieceType &gt; alternatives</div><div class="ttdef"><b>Definition:</b> <a href="mapgen_8cpp_source.html#l00835">mapgen.cpp:835</a></div></div>
 <div class="ttc" id="arng_8h_html_a997d799053ccd3118c7da64ce1df43d9"><div class="ttname"><a href="rng_8h.html#a997d799053ccd3118c7da64ce1df43d9">random_entry_opt</a></div><div class="ttdeci">auto random_entry_opt(C &amp;container) -&gt; cata::optional&lt; decltype(std::ref(*container.begin()))&gt;</div><div class="ttdoc">Same as above but returns a reference to the chosen entry (if the container is not empty) or an empty...</div><div class="ttdef"><b>Definition:</b> <a href="rng_8h_source.html#l00104">rng.h:104</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="mapgen_8cpp_source.html#l00818">jmapgen_alternativly&lt; PieceType &gt;::alternatives</a>, and <a class="el" href="rng_8h_source.html#l00104">random_entry_opt()</a>.</p>
+<p class="reference">References <a class="el" href="mapgen_8cpp_source.html#l00835">jmapgen_alternativly&lt; PieceType &gt;::alternatives</a>, and <a class="el" href="rng_8h_source.html#l00104">random_entry_opt()</a>.</p>
 
 </div>
 </div>
@@ -266,17 +266,17 @@ template&lt;typename PieceType &gt; </div>
 
 <p>Reimplemented from <a class="el" href="classjmapgen__piece.html#a74765ff59286d23cda1aa6ca250f1358">jmapgen_piece</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="mapgen_8cpp_source.html#l00825">825</a> of file <a class="el" href="mapgen_8cpp_source.html">mapgen.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00825" name="l00825"></a><span class="lineno">  825</span>                                                                                     {</div>
-<div class="line"><a id="l00826" name="l00826"></a><span class="lineno">  826</span>            <span class="keywordflow">return</span> dat.<a class="code hl_variable" href="classmapgendata.html#a7d9e28b073b22b2391e6d3972fd6aa12">m</a>.<a class="code hl_function" href="classmap.html#aa487d96256c3d35db7a1bf273156b64a">veh_at</a>( <a class="code hl_struct" href="structtripoint.html">tripoint</a>( p, dat.<a class="code hl_function" href="classmapgendata.html#a8b23644fccfcc73e7f06a6fc3cb61d3f">zlevel</a>() ) ).<a class="code hl_function" href="classcata_1_1optional.html#ad5b847e0e2f1db1387a10bac3751ccf4">has_value</a>();</div>
-<div class="line"><a id="l00827" name="l00827"></a><span class="lineno">  827</span>        }</div>
+<p class="definition">Definition at line <a class="el" href="mapgen_8cpp_source.html#l00842">842</a> of file <a class="el" href="mapgen_8cpp_source.html">mapgen.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00842" name="l00842"></a><span class="lineno">  842</span>                                                                                     {</div>
+<div class="line"><a id="l00843" name="l00843"></a><span class="lineno">  843</span>            <span class="keywordflow">return</span> dat.<a class="code hl_variable" href="classmapgendata.html#a7d9e28b073b22b2391e6d3972fd6aa12">m</a>.<a class="code hl_function" href="classmap.html#aa487d96256c3d35db7a1bf273156b64a">veh_at</a>( <a class="code hl_struct" href="structtripoint.html">tripoint</a>( p, dat.<a class="code hl_function" href="classmapgendata.html#a8b23644fccfcc73e7f06a6fc3cb61d3f">zlevel</a>() ) ).<a class="code hl_function" href="classcata_1_1optional.html#ad5b847e0e2f1db1387a10bac3751ccf4">has_value</a>();</div>
+<div class="line"><a id="l00844" name="l00844"></a><span class="lineno">  844</span>        }</div>
 <div class="ttc" id="aclasscata_1_1optional_html_ad5b847e0e2f1db1387a10bac3751ccf4"><div class="ttname"><a href="classcata_1_1optional.html#ad5b847e0e2f1db1387a10bac3751ccf4">cata::optional::has_value</a></div><div class="ttdeci">constexpr bool has_value() const noexcept</div><div class="ttdef"><b>Definition:</b> <a href="optional_8h_source.html#l00123">optional.h:123</a></div></div>
-<div class="ttc" id="aclassmap_html_aa487d96256c3d35db7a1bf273156b64a"><div class="ttname"><a href="classmap.html#aa487d96256c3d35db7a1bf273156b64a">map::veh_at</a></div><div class="ttdeci">optional_vpart_position veh_at(const tripoint &amp;p) const</div><div class="ttdoc">Checks if tile is occupied by vehicle and by which part.</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l01007">map.cpp:1007</a></div></div>
+<div class="ttc" id="aclassmap_html_aa487d96256c3d35db7a1bf273156b64a"><div class="ttname"><a href="classmap.html#aa487d96256c3d35db7a1bf273156b64a">map::veh_at</a></div><div class="ttdeci">optional_vpart_position veh_at(const tripoint &amp;p) const</div><div class="ttdoc">Checks if tile is occupied by vehicle and by which part.</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l01009">map.cpp:1009</a></div></div>
 <div class="ttc" id="aclassmapgendata_html_a7d9e28b073b22b2391e6d3972fd6aa12"><div class="ttname"><a href="classmapgendata.html#a7d9e28b073b22b2391e6d3972fd6aa12">mapgendata::m</a></div><div class="ttdeci">map &amp; m</div><div class="ttdef"><b>Definition:</b> <a href="mapgendata_8h_source.html#l00061">mapgendata.h:61</a></div></div>
 <div class="ttc" id="aclassmapgendata_html_a8b23644fccfcc73e7f06a6fc3cb61d3f"><div class="ttname"><a href="classmapgendata.html#a8b23644fccfcc73e7f06a6fc3cb61d3f">mapgendata::zlevel</a></div><div class="ttdeci">int zlevel() const</div><div class="ttdef"><b>Definition:</b> <a href="mapgendata_8h_source.html#l00099">mapgendata.h:99</a></div></div>
 <div class="ttc" id="astructtripoint_html"><div class="ttname"><a href="structtripoint.html">tripoint</a></div><div class="ttdef"><b>Definition:</b> <a href="point_8h_source.html#l00147">point.h:147</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="optional_8h_source.html#l00123">cata::optional&lt; T &gt;::has_value()</a>, <a class="el" href="mapgendata_8h_source.html#l00061">mapgendata::m</a>, <a class="el" href="map_8cpp_source.html#l01007">map::veh_at()</a>, and <a class="el" href="mapgendata_8h_source.html#l00099">mapgendata::zlevel()</a>.</p>
+<p class="reference">References <a class="el" href="optional_8h_source.html#l00123">cata::optional&lt; T &gt;::has_value()</a>, <a class="el" href="mapgendata_8h_source.html#l00061">mapgendata::m</a>, <a class="el" href="map_8cpp_source.html#l01009">map::veh_at()</a>, and <a class="el" href="mapgendata_8h_source.html#l00099">mapgendata::zlevel()</a>.</p>
 
 </div>
 </div>
@@ -295,9 +295,9 @@ template&lt;typename PieceType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mapgen_8cpp_source.html#l00818">818</a> of file <a class="el" href="mapgen_8cpp_source.html">mapgen.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mapgen_8cpp_source.html#l00835">835</a> of file <a class="el" href="mapgen_8cpp_source.html">mapgen.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mapgen_8cpp_source.html#l00820">jmapgen_alternativly&lt; PieceType &gt;::apply()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mapgen_8cpp_source.html#l00837">jmapgen_alternativly&lt; PieceType &gt;::apply()</a>.</p>
 
 </div>
 </div>
@@ -310,7 +310,7 @@ template&lt;typename PieceType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classjmapgen__alternativly.html">jmapgen_alternativly</a></li>
-    <li class="footer">Generated on Wed Oct 19 2022 14:19:36 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Mon Dec 26 2022 21:42:06 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

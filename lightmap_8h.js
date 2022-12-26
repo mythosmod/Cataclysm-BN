@@ -11,6 +11,11 @@ var lightmap_8h =
       [ "MEMORIZED", "lightmap_8h.html#aeb9bbbd65db85e3561729666fb6c7b38a719f57e329878958d6b4111357b7412c", null ],
       [ "BLANK", "lightmap_8h.html#aeb9bbbd65db85e3561729666fb6c7b38a56f031dd03707d695f76c63ddbf40bd7", null ]
     ] ],
+    [ "vision_adjustment", "lightmap_8h.html#ac24f33e26aff0f85bae38faaf1f73c16", [
+      [ "VISION_ADJUST_NONE", "lightmap_8h.html#ac24f33e26aff0f85bae38faaf1f73c16a936a1c54bbce9bd240137bf9c3bbfba0", null ],
+      [ "VISION_ADJUST_SOLID", "lightmap_8h.html#ac24f33e26aff0f85bae38faaf1f73c16acf7276875854e657e8e6a212f983dfc6", null ],
+      [ "VISION_ADJUST_HIDDEN", "lightmap_8h.html#ac24f33e26aff0f85bae38faaf1f73c16abe1070b4cfea51957eee6a7c0808787f", null ]
+    ] ],
     [ "operator!=", "lightmap_8h.html#a8c627b6b7b91ca0805fc4196c3c06433", null ],
     [ "operator<<", "lightmap_8h.html#ae3e64e3330da8c8562ac8434d8182a80", null ],
     [ "operator<=", "lightmap_8h.html#a5492d1f4c3d72a8faedf3a7672c9971c", null ],

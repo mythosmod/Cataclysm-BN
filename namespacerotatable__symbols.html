@@ -142,9 +142,9 @@ Functions</h2></td></tr>
 <div class="ttc" id="aeditmap_8cpp_html_aad8315087dc1d0ef9212680412a20601"><div class="ttname"><a href="editmap_8cpp.html#aad8315087dc1d0ef9212680412a20601">symbol</a></div><div class="ttdeci">static int symbol(const T_t &amp;t)</div></div>
 <div class="ttc" id="anamespaceanonymous__namespace_02rotatable__symbols_8cpp_03_html_a0828f572b03c625d4b291dd36d0d0a4c"><div class="ttname"><a href="namespaceanonymous__namespace_02rotatable__symbols_8cpp_03.html#a0828f572b03c625d4b291dd36d0d0a4c">anonymous_namespace{rotatable_symbols.cpp}::symbols</a></div><div class="ttdeci">std::vector&lt; rotatable_symbol &gt; symbols</div><div class="ttdef"><b>Definition:</b> <a href="rotatable__symbols_8cpp_source.html#l00030">rotatable_symbols.cpp:30</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="editmap_8cpp_source.html#l00911">symbol()</a>, and <a class="el" href="rotatable__symbols_8cpp_source.html#l00030">anonymous_namespace{rotatable_symbols.cpp}::symbols</a>.</p>
+<p class="reference">References <a class="el" href="editmap_8cpp_source.html#l00912">symbol()</a>, and <a class="el" href="rotatable__symbols_8cpp_source.html#l00030">anonymous_namespace{rotatable_symbols.cpp}::symbols</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="overmap_8cpp_source.html#l04172">om_direction::rotate_symbol()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="overmap_8cpp_source.html#l04173">om_direction::rotate_symbol()</a>.</p>
 
 </div>
 </div>
@@ -177,7 +177,7 @@ Functions</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="rotatable__symbols_8cpp_source.html#l00037">37</a> of file <a class="el" href="rotatable__symbols_8cpp_source.html">rotatable_symbols.cpp</a>.</p>
 <div class="fragment"><div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>{</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">const</span> std::string tuple_key = <span class="stringliteral">&quot;tuple&quot;</span>;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">const</span> <span class="keywordtype">bool</span> strict = src == <span class="stringliteral">&quot;dda&quot;</span>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">const</span> <span class="keywordtype">bool</span> strict = <a class="code hl_function" href="assign_8h.html#abefce6b21ce60d9d6dc6037cf5ed5973">is_strict_enabled</a>( src );</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    std::vector&lt;std::string&gt; tuple_temp;</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
@@ -199,7 +199,7 @@ Functions</h2></td></tr>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="keyword">const</span> <span class="keywordtype">bool</span> found = entry_iter != <a class="code hl_variable" href="namespaceanonymous__namespace_02rotatable__symbols_8cpp_03.html#a0828f572b03c625d4b291dd36d0d0a4c">symbols</a>.end() &amp;&amp; entry_iter-&gt;symbol == *iter;</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="keywordflow">if</span>( strict &amp;&amp; found ) {</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            jo.<a class="code hl_function" href="classJsonObject.html#ae7bcdb4ec8ab2c64e607b411cb98d00c">throw_error</a>( <a class="code hl_function" href="string__formatter_8h.html#a9b089d0b697443b096063219dab08ef5">string_format</a>( <span class="stringliteral">&quot;Symbol %ld was already defined.&quot;</span>, *iter ), tuple_key );</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            jo.<a class="code hl_function" href="classJsonObject.html#ae7bcdb4ec8ab2c64e607b411cb98d00c">throw_error</a>( <a class="code hl_function" href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a>( <span class="stringliteral">&quot;Symbol %ld was already defined.&quot;</span>, *iter ), tuple_key );</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        }</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        rotatable_symbol &amp;entry = found ? *entry_iter : temp_entry;</div>
@@ -220,14 +220,15 @@ Functions</h2></td></tr>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        }</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    }</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>}</div>
+<div class="ttc" id="aassign_8h_html_abefce6b21ce60d9d6dc6037cf5ed5973"><div class="ttname"><a href="assign_8h.html#abefce6b21ce60d9d6dc6037cf5ed5973">is_strict_enabled</a></div><div class="ttdeci">bool is_strict_enabled(const std::string &amp;src)</div><div class="ttdoc">Check whether strict checks are enabled for given mod.</div><div class="ttdef"><b>Definition:</b> <a href="mod__manager_8cpp_source.html#l00368">mod_manager.cpp:368</a></div></div>
 <div class="ttc" id="acatacharset_8cpp_html_a2227e8c0afd74ed174cbb4daf8e46ab2"><div class="ttname"><a href="catacharset_8cpp.html#a2227e8c0afd74ed174cbb4daf8e46ab2">UTF8_getch</a></div><div class="ttdeci">uint32_t UTF8_getch(const char **src, int *srclen)</div><div class="ttdef"><b>Definition:</b> <a href="catacharset_8cpp_source.html#l00018">catacharset.cpp:18</a></div></div>
 <div class="ttc" id="aclassJsonObject_html_ae7bcdb4ec8ab2c64e607b411cb98d00c"><div class="ttname"><a href="classJsonObject.html#ae7bcdb4ec8ab2c64e607b411cb98d00c">JsonObject::throw_error</a></div><div class="ttdeci">void throw_error(std::string err) const</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l00233">json.cpp:233</a></div></div>
 <div class="ttc" id="ageneric__factory_8h_html_a0a177c754c5ba89ac6c543656b0652cc"><div class="ttname"><a href="generic__factory_8h.html#a0a177c754c5ba89ac6c543656b0652cc">mandatory</a></div><div class="ttdeci">void mandatory(const JsonObject &amp;jo, const bool was_loaded, const std::string &amp;name, MemberType &amp;member)</div><div class="ttdef"><b>Definition:</b> <a href="generic__factory_8h_source.html#l00611">generic_factory.h:611</a></div></div>
-<div class="ttc" id="astring__formatter_8h_html_a9b089d0b697443b096063219dab08ef5"><div class="ttname"><a href="string__formatter_8h.html#a9b089d0b697443b096063219dab08ef5">string_format</a></div><div class="ttdeci">std::string string_format(std::string format, Args &amp;&amp;...args)</div><div class="ttdoc">Simple wrapper over string_formatter::parse.</div><div class="ttdef"><b>Definition:</b> <a href="string__formatter_8h_source.html#l00418">string_formatter.h:418</a></div></div>
+<div class="ttc" id="astring__formatter_8h_html_a8964099387da2f95396c67566bafce3d"><div class="ttname"><a href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a></div><div class="ttdeci">std::string string_format(std::string_view format, Args &amp;&amp;...args)</div><div class="ttdoc">Simple wrapper over string_formatter::parse.</div><div class="ttdef"><b>Definition:</b> <a href="string__formatter_8h_source.html#l00431">string_formatter.h:431</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="generic__factory_8h_source.html#l00611">mandatory()</a>, <a class="el" href="string__formatter_8h_source.html#l00418">string_format()</a>, <a class="el" href="rotatable__symbols_8cpp_source.html#l00030">anonymous_namespace{rotatable_symbols.cpp}::symbols</a>, <a class="el" href="json_8cpp_source.html#l00233">JsonObject::throw_error()</a>, and <a class="el" href="catacharset_8cpp_source.html#l00018">UTF8_getch()</a>.</p>
+<p class="reference">References <a class="el" href="mod__manager_8cpp_source.html#l00368">is_strict_enabled()</a>, <a class="el" href="generic__factory_8h_source.html#l00611">mandatory()</a>, <a class="el" href="string__formatter_8h_source.html#l00431">string_format()</a>, <a class="el" href="rotatable__symbols_8cpp_source.html#l00030">anonymous_namespace{rotatable_symbols.cpp}::symbols</a>, <a class="el" href="json_8cpp_source.html#l00233">JsonObject::throw_error()</a>, and <a class="el" href="catacharset_8cpp_source.html#l00018">UTF8_getch()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8cpp_source.html#l00236">DynamicDataLoader::initialize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8cpp_source.html#l00243">DynamicDataLoader::initialize()</a>.</p>
 
 </div>
 </div>
@@ -253,7 +254,7 @@ Functions</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="rotatable__symbols_8cpp_source.html#l00030">anonymous_namespace{rotatable_symbols.cpp}::symbols</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8cpp_source.html#l00528">DynamicDataLoader::unload_data()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8cpp_source.html#l00536">DynamicDataLoader::unload_data()</a>.</p>
 
 </div>
 </div>
@@ -263,7 +264,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacerotatable__symbols.html">rotatable_symbols</a></li>
-    <li class="footer">Generated on Wed Oct 19 2022 14:19:58 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Mon Dec 26 2022 21:42:24 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

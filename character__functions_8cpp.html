@@ -92,14 +92,24 @@ $(document).ready(function(){initNavTree('character__functions_8cpp.html',''); i
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="character__functions_8h_source.html">character_functions.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="character__effects_8h_source.html">character_effects.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="bionics_8h_source.html">bionics.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="calendar_8h_source.html">calendar.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="character__martial__arts_8h_source.html">character_martial_arts.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="character_8h_source.html">character.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="creature_8h_source.html">creature.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="handle__liquid_8h_source.html">handle_liquid.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="itype_8h_source.html">itype.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="make__static_8h_source.html">make_static.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="map__iterator_8h_source.html">map_iterator.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="player_8h_source.html">player.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="rng_8h_source.html">rng.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="submap_8h_source.html">submap.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="trap_8h_source.html">trap.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="veh__type_8h_source.html">veh_type.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="vehicle_8h_source.html">vehicle.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="vpart__position_8h_source.html">vpart_position.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="weather__gen_8h_source.html">weather_gen.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="weather_8h_source.html">weather.h</a>&quot;</code><br />
 </div>
 <p><a href="character__functions_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -107,11 +117,13 @@ $(document).ready(function(){initNavTree('character__functions_8cpp.html',''); i
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacecharacter__funcs"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecharacter__funcs.html">character_funcs</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacecharacter__effects"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecharacter__effects.html">character_effects</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ae002e878ae18d5606ca01aeaa659a44c"><td class="memItemLeft" align="right" valign="top">static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="character__functions_8cpp.html#ae002e878ae18d5606ca01aeaa659a44c">flag_FUNGUS</a> (&quot;FUNGUS&quot;)</td></tr>
+<tr class="separator:ae002e878ae18d5606ca01aeaa659a44c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe2fc5a03319b12f5fec303eb13687bb"><td class="memItemLeft" align="right" valign="top">static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="character__functions_8cpp.html#abe2fc5a03319b12f5fec303eb13687bb">flag_SWIMMABLE</a> (&quot;SWIMMABLE&quot;)</td></tr>
+<tr class="separator:abe2fc5a03319b12f5fec303eb13687bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a470b862a6936cbfbd1e80a46b78f1914"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtime__duration.html">time_duration</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecharacter__funcs.html#a470b862a6936cbfbd1e80a46b78f1914">character_funcs::estimate_effect_dur</a> (int skill_lvl, const <a class="el" href="type__id_8h.html#acc8305d21e9a186d196c8ff88ba2cf19">efftype_id</a> &amp;<a class="el" href="classeffect.html">effect</a>, const <a class="el" href="classtime__duration.html">time_duration</a> &amp;error_magnitude, int threshold, const <a class="el" href="classCreature.html">Creature</a> &amp;target)</td></tr>
 <tr class="memdesc:a470b862a6936cbfbd1e80a46b78f1914"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estimate effect duration based on relevant skill.  <a href="namespacecharacter__funcs.html#a470b862a6936cbfbd1e80a46b78f1914">More...</a><br /></td></tr>
 <tr class="separator:a470b862a6936cbfbd1e80a46b78f1914"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -124,15 +136,24 @@ Functions</h2></td></tr>
 <tr class="memitem:aaa9f2cc376f03128e0a486a90c7376fa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecharacter__funcs.html#aaa9f2cc376f03128e0a486a90c7376fa">character_funcs::get_book_fun_for</a> (const <a class="el" href="classCharacter.html">Character</a> &amp;ch, const <a class="el" href="classitem.html">item</a> &amp;book)</td></tr>
 <tr class="memdesc:aaa9f2cc376f03128e0a486a90c7376fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns enjoyability value of a book for given character.  <a href="namespacecharacter__funcs.html#aaa9f2cc376f03128e0a486a90c7376fa">More...</a><br /></td></tr>
 <tr class="separator:aaa9f2cc376f03128e0a486a90c7376fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f18c1c2508870515d5c36a3ea255498"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structstat__mod.html">stat_mod</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecharacter__effects.html#a8f18c1c2508870515d5c36a3ea255498">character_effects::get_pain_penalty</a> (const <a class="el" href="classCharacter.html">Character</a> &amp;ch)</td></tr>
-<tr class="memdesc:a8f18c1c2508870515d5c36a3ea255498"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the effect of pain on stats.  <a href="namespacecharacter__effects.html#a8f18c1c2508870515d5c36a3ea255498">More...</a><br /></td></tr>
-<tr class="separator:a8f18c1c2508870515d5c36a3ea255498"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d9d51c28a272ae26ed493d1471cf072"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecharacter__effects.html#a6d9d51c28a272ae26ed493d1471cf072">character_effects::get_kcal_speed_penalty</a> (float kcal_percent)</td></tr>
-<tr class="memdesc:a6d9d51c28a272ae26ed493d1471cf072"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the penalty to speed from starvation.  <a href="namespacecharacter__effects.html#a6d9d51c28a272ae26ed493d1471cf072">More...</a><br /></td></tr>
-<tr class="separator:a6d9d51c28a272ae26ed493d1471cf072"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69e2f87b5391a5aec01672c98cdfb57c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecharacter__effects.html#a69e2f87b5391a5aec01672c98cdfb57c">character_effects::get_thirst_speed_penalty</a> (int thirst)</td></tr>
-<tr class="memdesc:a69e2f87b5391a5aec01672c98cdfb57c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the penalty to speed from thirst.  <a href="namespacecharacter__effects.html#a69e2f87b5391a5aec01672c98cdfb57c">More...</a><br /></td></tr>
-<tr class="separator:a69e2f87b5391a5aec01672c98cdfb57c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1686a89929a324a03d1396cac6ab1a24"><td class="memItemLeft" align="right" valign="top">comfort_response_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecharacter__funcs.html#a1686a89929a324a03d1396cac6ab1a24">character_funcs::base_comfort_value</a> (const <a class="el" href="classCharacter.html">Character</a> &amp;who, const <a class="el" href="structtripoint.html">tripoint</a> &amp;p)</td></tr>
+<tr class="memdesc:a1686a89929a324a03d1396cac6ab1a24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rate point's ability to serve as a bed.  <a href="namespacecharacter__funcs.html#a1686a89929a324a03d1396cac6ab1a24">More...</a><br /></td></tr>
+<tr class="separator:a1686a89929a324a03d1396cac6ab1a24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a392d1b99006a4f1f16c773e38762043d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecharacter__funcs.html#a392d1b99006a4f1f16c773e38762043d">character_funcs::rate_sleep_spot</a> (const <a class="el" href="classCharacter.html">Character</a> &amp;who, const <a class="el" href="structtripoint.html">tripoint</a> &amp;p)</td></tr>
+<tr class="memdesc:a392d1b99006a4f1f16c773e38762043d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rate point's ability to serve as a bed.  <a href="namespacecharacter__funcs.html#a392d1b99006a4f1f16c773e38762043d">More...</a><br /></td></tr>
+<tr class="separator:a392d1b99006a4f1f16c773e38762043d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16d62ac71c344a9b0482777456bb7b74"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecharacter__funcs.html#a16d62ac71c344a9b0482777456bb7b74">character_funcs::roll_can_sleep</a> (<a class="el" href="classCharacter.html">Character</a> &amp;who)</td></tr>
+<tr class="memdesc:a16d62ac71c344a9b0482777456bb7b74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checked each turn during "lying_down", returns true if the avatar falls asleep.  <a href="namespacecharacter__funcs.html#a16d62ac71c344a9b0482777456bb7b74">More...</a><br /></td></tr>
+<tr class="separator:a16d62ac71c344a9b0482777456bb7b74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dce7cdd9fb67e45d224f22aea0ff920"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecharacter__funcs.html#a0dce7cdd9fb67e45d224f22aea0ff920">character_funcs::can_interface_armor</a> (const <a class="el" href="classCharacter.html">Character</a> &amp;who)</td></tr>
+<tr class="memdesc:a0dce7cdd9fb67e45d224f22aea0ff920"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether character has an active bionic capable of interfacing with power armor.  <a href="namespacecharacter__funcs.html#a0dce7cdd9fb67e45d224f22aea0ff920">More...</a><br /></td></tr>
+<tr class="separator:a0dce7cdd9fb67e45d224f22aea0ff920"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c63f47142d40af0092a1be132a53efa"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecharacter__funcs.html#a6c63f47142d40af0092a1be132a53efa">character_funcs::fmt_wielded_weapon</a> (const <a class="el" href="classCharacter.html">Character</a> &amp;who)</td></tr>
+<tr class="memdesc:a6c63f47142d40af0092a1be132a53efa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the formatted name of the currently wielded item (if any) with current gun mode (if gun)  <a href="namespacecharacter__funcs.html#a6c63f47142d40af0092a1be132a53efa">More...</a><br /></td></tr>
+<tr class="separator:a6c63f47142d40af0092a1be132a53efa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95d2e2c3c197301f7e9c3e4608e912eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecharacter__funcs.html#a95d2e2c3c197301f7e9c3e4608e912eb">character_funcs::add_pain_msg</a> (const <a class="el" href="classCharacter.html">Character</a> &amp;who, int val, <a class="el" href="bodypart_8h.html#af618290c4c2de42aab87977ac7311980">body_part</a> bp)</td></tr>
+<tr class="memdesc:a95d2e2c3c197301f7e9c3e4608e912eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add message describing how character feels pain.  <a href="namespacecharacter__funcs.html#a95d2e2c3c197301f7e9c3e4608e912eb">More...</a><br /></td></tr>
+<tr class="separator:a95d2e2c3c197301f7e9c3e4608e912eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:adda4d5fd10b7216c49a0f9b6010de579"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecharacter__funcs.html#adda4d5fd10b7216c49a0f9b6010de579">character_funcs::fine_detail_vision_mod</a> (const <a class="el" href="classCharacter.html">Character</a> &amp;who)</td></tr>
 <tr class="memdesc:adda4d5fd10b7216c49a0f9b6010de579"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates multiplier for the time taken to perform tasks that require detail vision (reading, crafting, etc.).  <a href="namespacecharacter__funcs.html#adda4d5fd10b7216c49a0f9b6010de579">More...</a><br /></td></tr>
@@ -150,28 +171,137 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:af1a3e5c07ef96be118895afd086ba143"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="type__id_8h.html#a44aa01c09faf1c1723400eb9075a1f4d">trait_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="character__functions_8cpp.html#af1a3e5c07ef96be118895afd086ba143">trait_CANNIBAL</a> (&quot;CANNIBAL&quot;)</td></tr>
 <tr class="separator:af1a3e5c07ef96be118895afd086ba143"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c5c38ebc99fa84cc6fa6cea24213099"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="type__id_8h.html#a44aa01c09faf1c1723400eb9075a1f4d">trait_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="character__functions_8cpp.html#a9c5c38ebc99fa84cc6fa6cea24213099">trait_CENOBITE</a> (&quot;CENOBITE&quot;)</td></tr>
-<tr class="separator:a9c5c38ebc99fa84cc6fa6cea24213099"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab77fb716179d60333566b360ac517b95"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="type__id_8h.html#a44aa01c09faf1c1723400eb9075a1f4d">trait_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="character__functions_8cpp.html#ab77fb716179d60333566b360ac517b95">trait_INT_SLIME</a> (&quot;INT_SLIME&quot;)</td></tr>
-<tr class="separator:ab77fb716179d60333566b360ac517b95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba25188f1c6479109ff8fb4004f03ebb"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="type__id_8h.html#a44aa01c09faf1c1723400eb9075a1f4d">trait_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="character__functions_8cpp.html#aba25188f1c6479109ff8fb4004f03ebb">trait_CHLOROMORPH</a> (&quot;CHLOROMORPH&quot;)</td></tr>
+<tr class="separator:aba25188f1c6479109ff8fb4004f03ebb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e899e783cee2462a5571083c6abe22f"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="type__id_8h.html#a44aa01c09faf1c1723400eb9075a1f4d">trait_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="character__functions_8cpp.html#a5e899e783cee2462a5571083c6abe22f">trait_EASYSLEEPER</a> (&quot;EASYSLEEPER&quot;)</td></tr>
+<tr class="separator:a5e899e783cee2462a5571083c6abe22f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21395d70727e0cc20a2417b6aaea56e3"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="type__id_8h.html#a44aa01c09faf1c1723400eb9075a1f4d">trait_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="character__functions_8cpp.html#a21395d70727e0cc20a2417b6aaea56e3">trait_EASYSLEEPER2</a> (&quot;EASYSLEEPER2&quot;)</td></tr>
+<tr class="separator:a21395d70727e0cc20a2417b6aaea56e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01725f3a1c7d4a3c718b4a395b5ae41d"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="type__id_8h.html#a44aa01c09faf1c1723400eb9075a1f4d">trait_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="character__functions_8cpp.html#a01725f3a1c7d4a3c718b4a395b5ae41d">trait_INSOMNIA</a> (&quot;INSOMNIA&quot;)</td></tr>
+<tr class="separator:a01725f3a1c7d4a3c718b4a395b5ae41d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8af31c1a565772726aba73e25a4b6df6"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="type__id_8h.html#a44aa01c09faf1c1723400eb9075a1f4d">trait_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="character__functions_8cpp.html#a8af31c1a565772726aba73e25a4b6df6">trait_LOVES_BOOKS</a> (&quot;LOVES_BOOKS&quot;)</td></tr>
 <tr class="separator:a8af31c1a565772726aba73e25a4b6df6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a039c3379527621f928cbc2e62686108c"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="type__id_8h.html#a44aa01c09faf1c1723400eb9075a1f4d">trait_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="character__functions_8cpp.html#a039c3379527621f928cbc2e62686108c">trait_M_SKIN3</a> (&quot;M_SKIN3&quot;)</td></tr>
+<tr class="separator:a039c3379527621f928cbc2e62686108c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af20cb84a6e8ccc0ed66c352edf29143b"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="type__id_8h.html#a44aa01c09faf1c1723400eb9075a1f4d">trait_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="character__functions_8cpp.html#af20cb84a6e8ccc0ed66c352edf29143b">trait_NOPAIN</a> (&quot;NOPAIN&quot;)</td></tr>
+<tr class="separator:af20cb84a6e8ccc0ed66c352edf29143b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac54117dbd505336cc0e980684cf77774"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="type__id_8h.html#a44aa01c09faf1c1723400eb9075a1f4d">trait_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="character__functions_8cpp.html#ac54117dbd505336cc0e980684cf77774">trait_PER_SLIME_OK</a> (&quot;PER_SLIME_OK&quot;)</td></tr>
 <tr class="separator:ac54117dbd505336cc0e980684cf77774"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bbf692360c0fe96f9fccf41db5756be"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="type__id_8h.html#a44aa01c09faf1c1723400eb9075a1f4d">trait_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="character__functions_8cpp.html#a9bbf692360c0fe96f9fccf41db5756be">trait_PSYCHOPATH</a> (&quot;PSYCHOPATH&quot;)</td></tr>
 <tr class="separator:a9bbf692360c0fe96f9fccf41db5756be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93f31d20e997d966be8b81d64c31582b"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="type__id_8h.html#a44aa01c09faf1c1723400eb9075a1f4d">trait_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="character__functions_8cpp.html#a93f31d20e997d966be8b81d64c31582b">trait_SAPIOVORE</a> (&quot;SAPIOVORE&quot;)</td></tr>
 <tr class="separator:a93f31d20e997d966be8b81d64c31582b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a930a7d3aa631d14eb81c3f2fa9a6863e"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="type__id_8h.html#a44aa01c09faf1c1723400eb9075a1f4d">trait_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="character__functions_8cpp.html#a930a7d3aa631d14eb81c3f2fa9a6863e">trait_SHELL2</a> (&quot;SHELL2&quot;)</td></tr>
+<tr class="separator:a930a7d3aa631d14eb81c3f2fa9a6863e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf47c050c3a01d3496c3eb251fa9c517"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="type__id_8h.html#a44aa01c09faf1c1723400eb9075a1f4d">trait_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="character__functions_8cpp.html#abf47c050c3a01d3496c3eb251fa9c517">trait_SPIRITUAL</a> (&quot;SPIRITUAL&quot;)</td></tr>
 <tr class="separator:abf47c050c3a01d3496c3eb251fa9c517"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9f531764978ce897647a8b151bebfef"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="type__id_8h.html#a44aa01c09faf1c1723400eb9075a1f4d">trait_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="character__functions_8cpp.html#af9f531764978ce897647a8b151bebfef">trait_THRESH_SPIDER</a> (&quot;THRESH_SPIDER&quot;)</td></tr>
+<tr class="separator:af9f531764978ce897647a8b151bebfef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf29a0f9f2b03dbf9baa8dd6af688d41"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="type__id_8h.html#a44aa01c09faf1c1723400eb9075a1f4d">trait_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="character__functions_8cpp.html#abf29a0f9f2b03dbf9baa8dd6af688d41">trait_WATERSLEEP</a> (&quot;WATERSLEEP&quot;)</td></tr>
+<tr class="separator:abf29a0f9f2b03dbf9baa8dd6af688d41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81b633e679725d3a23cfed0548dd0a17"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="type__id_8h.html#a44aa01c09faf1c1723400eb9075a1f4d">trait_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="character__functions_8cpp.html#a81b633e679725d3a23cfed0548dd0a17">trait_WEB_SPINNER</a> (&quot;WEB_SPINNER&quot;)</td></tr>
+<tr class="separator:a81b633e679725d3a23cfed0548dd0a17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e02f772574a897b72bd8fc3c48e7f3d"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="type__id_8h.html#a44aa01c09faf1c1723400eb9075a1f4d">trait_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="character__functions_8cpp.html#a0e02f772574a897b72bd8fc3c48e7f3d">trait_WEB_WALKER</a> (&quot;WEB_WALKER&quot;)</td></tr>
+<tr class="separator:a0e02f772574a897b72bd8fc3c48e7f3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d71b37c506e3143c525c4021a580366"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="type__id_8h.html#a44aa01c09faf1c1723400eb9075a1f4d">trait_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="character__functions_8cpp.html#a6d71b37c506e3143c525c4021a580366">trait_WEB_WEAVER</a> (&quot;WEB_WEAVER&quot;)</td></tr>
+<tr class="separator:a6d71b37c506e3143c525c4021a580366"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a468a4ea99d05230e46c7e014a68270a7"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="type__id_8h.html#acc8305d21e9a186d196c8ff88ba2cf19">efftype_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="character__functions_8cpp.html#a468a4ea99d05230e46c7e014a68270a7">effect_boomered</a> (&quot;boomered&quot;)</td></tr>
 <tr class="separator:a468a4ea99d05230e46c7e014a68270a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84bed2f340b7b3bf9a0ae0c95eabc6dc"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="type__id_8h.html#acc8305d21e9a186d196c8ff88ba2cf19">efftype_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="character__functions_8cpp.html#a84bed2f340b7b3bf9a0ae0c95eabc6dc">effect_darkness</a> (&quot;darkness&quot;)</td></tr>
 <tr class="separator:a84bed2f340b7b3bf9a0ae0c95eabc6dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ba3e18250fa524fe8548fa0a1e98535"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="type__id_8h.html#acc8305d21e9a186d196c8ff88ba2cf19">efftype_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="character__functions_8cpp.html#a5ba3e18250fa524fe8548fa0a1e98535">effect_meth</a> (&quot;meth&quot;)</td></tr>
+<tr class="separator:a5ba3e18250fa524fe8548fa0a1e98535"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a978adf30232e0bcf1b9d38a73b8dd30e"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="npc_8h.html#a136007e1e0b77eaf7dc4be58f6f42f87">bionic_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="character__functions_8cpp.html#a978adf30232e0bcf1b9d38a73b8dd30e">bio_soporific</a> (&quot;bio_soporific&quot;)</td></tr>
+<tr class="separator:a978adf30232e0bcf1b9d38a73b8dd30e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba728ba1b648f6ef568b96fbe1cd74fb"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="type__id_8h.html#ac2f82f863d4e9e8f267a77a73910ebbf">itype_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="character__functions_8cpp.html#aba728ba1b648f6ef568b96fbe1cd74fb">itype_cookbook_human</a> (&quot;cookbook_human&quot;)</td></tr>
 <tr class="separator:aba728ba1b648f6ef568b96fbe1cd74fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ae002e878ae18d5606ca01aeaa659a44c" name="ae002e878ae18d5606ca01aeaa659a44c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae002e878ae18d5606ca01aeaa659a44c">&#9670;&nbsp;</a></span>flag_FUNGUS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const std::string flag_FUNGUS </td>
+          <td>(</td>
+          <td class="paramtype">&quot;FUNGUS&quot;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="character__functions_8cpp_source.html#l00165">character_funcs::base_comfort_value()</a>.</p>
+
+</div>
+</div>
+<a id="abe2fc5a03319b12f5fec303eb13687bb" name="abe2fc5a03319b12f5fec303eb13687bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe2fc5a03319b12f5fec303eb13687bb">&#9670;&nbsp;</a></span>flag_SWIMMABLE()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const std::string flag_SWIMMABLE </td>
+          <td>(</td>
+          <td class="paramtype">&quot;SWIMMABLE&quot;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="character__functions_8cpp_source.html#l00165">character_funcs::base_comfort_value()</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a id="a978adf30232e0bcf1b9d38a73b8dd30e" name="a978adf30232e0bcf1b9d38a73b8dd30e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a978adf30232e0bcf1b9d38a73b8dd30e">&#9670;&nbsp;</a></span>bio_soporific</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="npc_8h.html#a136007e1e0b77eaf7dc4be58f6f42f87">bionic_id</a> bio_soporific(&quot;bio_soporific&quot;) </td>
+          <td>(</td>
+          <td class="paramtype">&quot;bio_soporific&quot;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="character__functions_8cpp_source.html#l00296">character_funcs::rate_sleep_spot()</a>, and <a class="el" href="character__functions_8cpp_source.html#l00346">character_funcs::roll_can_sleep()</a>.</p>
+
+</div>
+</div>
 <a id="a468a4ea99d05230e46c7e014a68270a7" name="a468a4ea99d05230e46c7e014a68270a7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a468a4ea99d05230e46c7e014a68270a7">&#9670;&nbsp;</a></span>effect_boomered</h2>
 
@@ -196,7 +326,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="character__functions_8cpp_source.html#l00108">character_funcs::fine_detail_vision_mod()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="character__functions_8cpp_source.html#l00134">character_funcs::fine_detail_vision_mod()</a>.</p>
 
 </div>
 </div>
@@ -224,7 +354,35 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="character__functions_8cpp_source.html#l00108">character_funcs::fine_detail_vision_mod()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="character__functions_8cpp_source.html#l00134">character_funcs::fine_detail_vision_mod()</a>.</p>
+
+</div>
+</div>
+<a id="a5ba3e18250fa524fe8548fa0a1e98535" name="a5ba3e18250fa524fe8548fa0a1e98535"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ba3e18250fa524fe8548fa0a1e98535">&#9670;&nbsp;</a></span>effect_meth</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="type__id_8h.html#acc8305d21e9a186d196c8ff88ba2cf19">efftype_id</a> effect_meth(&quot;meth&quot;) </td>
+          <td>(</td>
+          <td class="paramtype">&quot;meth&quot;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="character__functions_8cpp_source.html#l00346">character_funcs::roll_can_sleep()</a>.</p>
 
 </div>
 </div>
@@ -252,7 +410,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="character__functions_8cpp_source.html#l00074">character_funcs::get_book_fun_for()</a>, and <a class="el" href="character__functions_8cpp_source.html#l00060">character_funcs::is_fun_to_read()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="character__functions_8cpp_source.html#l00100">character_funcs::get_book_fun_for()</a>, and <a class="el" href="character__functions_8cpp_source.html#l00086">character_funcs::is_fun_to_read()</a>.</p>
 
 </div>
 </div>
@@ -280,12 +438,12 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="character__functions_8cpp_source.html#l00074">character_funcs::get_book_fun_for()</a>, and <a class="el" href="character__functions_8cpp_source.html#l00060">character_funcs::is_fun_to_read()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="character__functions_8cpp_source.html#l00100">character_funcs::get_book_fun_for()</a>, and <a class="el" href="character__functions_8cpp_source.html#l00086">character_funcs::is_fun_to_read()</a>.</p>
 
 </div>
 </div>
-<a id="a9c5c38ebc99fa84cc6fa6cea24213099" name="a9c5c38ebc99fa84cc6fa6cea24213099"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9c5c38ebc99fa84cc6fa6cea24213099">&#9670;&nbsp;</a></span>trait_CENOBITE</h2>
+<a id="aba25188f1c6479109ff8fb4004f03ebb" name="aba25188f1c6479109ff8fb4004f03ebb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba25188f1c6479109ff8fb4004f03ebb">&#9670;&nbsp;</a></span>trait_CHLOROMORPH</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -294,9 +452,9 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="type__id_8h.html#a44aa01c09faf1c1723400eb9075a1f4d">trait_id</a> trait_CENOBITE(&quot;CENOBITE&quot;) </td>
+          <td class="memname">const <a class="el" href="type__id_8h.html#a44aa01c09faf1c1723400eb9075a1f4d">trait_id</a> trait_CHLOROMORPH(&quot;CHLOROMORPH&quot;) </td>
           <td>(</td>
-          <td class="paramtype">&quot;CENOBITE&quot;&#160;</td>
+          <td class="paramtype">&quot;CHLOROMORPH&quot;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -308,12 +466,12 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="character__functions_8cpp_source.html#l00144">character_effects::get_pain_penalty()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="character__functions_8cpp_source.html#l00165">character_funcs::base_comfort_value()</a>.</p>
 
 </div>
 </div>
-<a id="ab77fb716179d60333566b360ac517b95" name="ab77fb716179d60333566b360ac517b95"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab77fb716179d60333566b360ac517b95">&#9670;&nbsp;</a></span>trait_INT_SLIME</h2>
+<a id="a5e899e783cee2462a5571083c6abe22f" name="a5e899e783cee2462a5571083c6abe22f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e899e783cee2462a5571083c6abe22f">&#9670;&nbsp;</a></span>trait_EASYSLEEPER</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -322,9 +480,9 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="type__id_8h.html#a44aa01c09faf1c1723400eb9075a1f4d">trait_id</a> trait_INT_SLIME(&quot;INT_SLIME&quot;) </td>
+          <td class="memname">const <a class="el" href="type__id_8h.html#a44aa01c09faf1c1723400eb9075a1f4d">trait_id</a> trait_EASYSLEEPER(&quot;EASYSLEEPER&quot;) </td>
           <td>(</td>
-          <td class="paramtype">&quot;INT_SLIME&quot;&#160;</td>
+          <td class="paramtype">&quot;EASYSLEEPER&quot;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -336,7 +494,63 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="character__functions_8cpp_source.html#l00144">character_effects::get_pain_penalty()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="character__functions_8cpp_source.html#l00296">character_funcs::rate_sleep_spot()</a>.</p>
+
+</div>
+</div>
+<a id="a21395d70727e0cc20a2417b6aaea56e3" name="a21395d70727e0cc20a2417b6aaea56e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21395d70727e0cc20a2417b6aaea56e3">&#9670;&nbsp;</a></span>trait_EASYSLEEPER2</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="type__id_8h.html#a44aa01c09faf1c1723400eb9075a1f4d">trait_id</a> trait_EASYSLEEPER2(&quot;EASYSLEEPER2&quot;) </td>
+          <td>(</td>
+          <td class="paramtype">&quot;EASYSLEEPER2&quot;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="character__functions_8cpp_source.html#l00296">character_funcs::rate_sleep_spot()</a>.</p>
+
+</div>
+</div>
+<a id="a01725f3a1c7d4a3c718b4a395b5ae41d" name="a01725f3a1c7d4a3c718b4a395b5ae41d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01725f3a1c7d4a3c718b4a395b5ae41d">&#9670;&nbsp;</a></span>trait_INSOMNIA</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="type__id_8h.html#a44aa01c09faf1c1723400eb9075a1f4d">trait_id</a> trait_INSOMNIA(&quot;INSOMNIA&quot;) </td>
+          <td>(</td>
+          <td class="paramtype">&quot;INSOMNIA&quot;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="character__functions_8cpp_source.html#l00296">character_funcs::rate_sleep_spot()</a>.</p>
 
 </div>
 </div>
@@ -364,7 +578,63 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="character__functions_8cpp_source.html#l00074">character_funcs::get_book_fun_for()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="character__functions_8cpp_source.html#l00100">character_funcs::get_book_fun_for()</a>.</p>
+
+</div>
+</div>
+<a id="a039c3379527621f928cbc2e62686108c" name="a039c3379527621f928cbc2e62686108c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a039c3379527621f928cbc2e62686108c">&#9670;&nbsp;</a></span>trait_M_SKIN3</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="type__id_8h.html#a44aa01c09faf1c1723400eb9075a1f4d">trait_id</a> trait_M_SKIN3(&quot;M_SKIN3&quot;) </td>
+          <td>(</td>
+          <td class="paramtype">&quot;M_SKIN3&quot;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="character__functions_8cpp_source.html#l00165">character_funcs::base_comfort_value()</a>.</p>
+
+</div>
+</div>
+<a id="af20cb84a6e8ccc0ed66c352edf29143b" name="af20cb84a6e8ccc0ed66c352edf29143b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af20cb84a6e8ccc0ed66c352edf29143b">&#9670;&nbsp;</a></span>trait_NOPAIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="type__id_8h.html#a44aa01c09faf1c1723400eb9075a1f4d">trait_id</a> trait_NOPAIN(&quot;NOPAIN&quot;) </td>
+          <td>(</td>
+          <td class="paramtype">&quot;NOPAIN&quot;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="character__functions_8cpp_source.html#l00432">character_funcs::add_pain_msg()</a>.</p>
 
 </div>
 </div>
@@ -392,7 +662,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="character__functions_8cpp_source.html#l00108">character_funcs::fine_detail_vision_mod()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="character__functions_8cpp_source.html#l00134">character_funcs::fine_detail_vision_mod()</a>.</p>
 
 </div>
 </div>
@@ -420,7 +690,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="character__functions_8cpp_source.html#l00074">character_funcs::get_book_fun_for()</a>, and <a class="el" href="character__functions_8cpp_source.html#l00060">character_funcs::is_fun_to_read()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="character__functions_8cpp_source.html#l00100">character_funcs::get_book_fun_for()</a>, and <a class="el" href="character__functions_8cpp_source.html#l00086">character_funcs::is_fun_to_read()</a>.</p>
 
 </div>
 </div>
@@ -448,7 +718,35 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="character__functions_8cpp_source.html#l00074">character_funcs::get_book_fun_for()</a>, and <a class="el" href="character__functions_8cpp_source.html#l00060">character_funcs::is_fun_to_read()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="character__functions_8cpp_source.html#l00100">character_funcs::get_book_fun_for()</a>, and <a class="el" href="character__functions_8cpp_source.html#l00086">character_funcs::is_fun_to_read()</a>.</p>
+
+</div>
+</div>
+<a id="a930a7d3aa631d14eb81c3f2fa9a6863e" name="a930a7d3aa631d14eb81c3f2fa9a6863e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a930a7d3aa631d14eb81c3f2fa9a6863e">&#9670;&nbsp;</a></span>trait_SHELL2</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="type__id_8h.html#a44aa01c09faf1c1723400eb9075a1f4d">trait_id</a> trait_SHELL2(&quot;SHELL2&quot;) </td>
+          <td>(</td>
+          <td class="paramtype">&quot;SHELL2&quot;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="character__functions_8cpp_source.html#l00165">character_funcs::base_comfort_value()</a>.</p>
 
 </div>
 </div>
@@ -476,7 +774,147 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="character__functions_8cpp_source.html#l00074">character_funcs::get_book_fun_for()</a>, and <a class="el" href="character__functions_8cpp_source.html#l00060">character_funcs::is_fun_to_read()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="character__functions_8cpp_source.html#l00100">character_funcs::get_book_fun_for()</a>, and <a class="el" href="character__functions_8cpp_source.html#l00086">character_funcs::is_fun_to_read()</a>.</p>
+
+</div>
+</div>
+<a id="af9f531764978ce897647a8b151bebfef" name="af9f531764978ce897647a8b151bebfef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9f531764978ce897647a8b151bebfef">&#9670;&nbsp;</a></span>trait_THRESH_SPIDER</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="type__id_8h.html#a44aa01c09faf1c1723400eb9075a1f4d">trait_id</a> trait_THRESH_SPIDER(&quot;THRESH_SPIDER&quot;) </td>
+          <td>(</td>
+          <td class="paramtype">&quot;THRESH_SPIDER&quot;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="character__functions_8cpp_source.html#l00165">character_funcs::base_comfort_value()</a>.</p>
+
+</div>
+</div>
+<a id="abf29a0f9f2b03dbf9baa8dd6af688d41" name="abf29a0f9f2b03dbf9baa8dd6af688d41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf29a0f9f2b03dbf9baa8dd6af688d41">&#9670;&nbsp;</a></span>trait_WATERSLEEP</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="type__id_8h.html#a44aa01c09faf1c1723400eb9075a1f4d">trait_id</a> trait_WATERSLEEP(&quot;WATERSLEEP&quot;) </td>
+          <td>(</td>
+          <td class="paramtype">&quot;WATERSLEEP&quot;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="character__functions_8cpp_source.html#l00165">character_funcs::base_comfort_value()</a>, and <a class="el" href="character__functions_8cpp_source.html#l00296">character_funcs::rate_sleep_spot()</a>.</p>
+
+</div>
+</div>
+<a id="a81b633e679725d3a23cfed0548dd0a17" name="a81b633e679725d3a23cfed0548dd0a17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81b633e679725d3a23cfed0548dd0a17">&#9670;&nbsp;</a></span>trait_WEB_SPINNER</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="type__id_8h.html#a44aa01c09faf1c1723400eb9075a1f4d">trait_id</a> trait_WEB_SPINNER(&quot;WEB_SPINNER&quot;) </td>
+          <td>(</td>
+          <td class="paramtype">&quot;WEB_SPINNER&quot;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="character__functions_8cpp_source.html#l00165">character_funcs::base_comfort_value()</a>.</p>
+
+</div>
+</div>
+<a id="a0e02f772574a897b72bd8fc3c48e7f3d" name="a0e02f772574a897b72bd8fc3c48e7f3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e02f772574a897b72bd8fc3c48e7f3d">&#9670;&nbsp;</a></span>trait_WEB_WALKER</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="type__id_8h.html#a44aa01c09faf1c1723400eb9075a1f4d">trait_id</a> trait_WEB_WALKER(&quot;WEB_WALKER&quot;) </td>
+          <td>(</td>
+          <td class="paramtype">&quot;WEB_WALKER&quot;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="character__functions_8cpp_source.html#l00165">character_funcs::base_comfort_value()</a>.</p>
+
+</div>
+</div>
+<a id="a6d71b37c506e3143c525c4021a580366" name="a6d71b37c506e3143c525c4021a580366"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d71b37c506e3143c525c4021a580366">&#9670;&nbsp;</a></span>trait_WEB_WEAVER</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="type__id_8h.html#a44aa01c09faf1c1723400eb9075a1f4d">trait_id</a> trait_WEB_WEAVER(&quot;WEB_WEAVER&quot;) </td>
+          <td>(</td>
+          <td class="paramtype">&quot;WEB_WEAVER&quot;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="character__functions_8cpp_source.html#l00165">character_funcs::base_comfort_value()</a>.</p>
 
 </div>
 </div>
@@ -486,7 +924,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="character__functions_8cpp.html">character_functions.cpp</a></li>
-    <li class="footer">Generated on Wed Oct 19 2022 14:19:16 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Mon Dec 26 2022 21:41:49 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

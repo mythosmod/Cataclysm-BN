@@ -37,6 +37,7 @@ var debug_8h =
     [ "bitness", "debug_8h.html#a89e70b6c3190e6d2d5cd25d30388fd84", null ],
     [ "capture_debugmsg_during", "debug_8h.html#a169b6ef1ad10061b6e22ea8b27daaead", null ],
     [ "debug_has_error_been_observed", "debug_8h.html#ab931617c912a2f051703995421195d1b", null ],
+    [ "debug_reset_ignored_messages", "debug_8h.html#ac671a8a860711fc2844c16ad7eb0e15a", null ],
     [ "deinitDebug", "debug_8h.html#a33caf87f1ca91cc325a7f39c3f47c383", null ],
     [ "game_report", "debug_8h.html#a6e2841c65be4bf7f92290991465a9edb", null ],
     [ "game_version", "debug_8h.html#aee3ac3ce7ea3341cfcb88e84261ba800", null ],

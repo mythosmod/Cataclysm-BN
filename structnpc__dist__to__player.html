@@ -106,7 +106,7 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="game_8cpp_source.html#l02979">2979</a> of file <a class="el" href="game_8cpp_source.html">game.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="game_8cpp_source.html#l02821">2821</a> of file <a class="el" href="game_8cpp_source.html">game.cpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a5f5662531571cef17a6f81162f88154e" name="a5f5662531571cef17a6f81162f88154e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5f5662531571cef17a6f81162f88154e">&#9670;&nbsp;</a></span>npc_dist_to_player()</h2>
@@ -131,10 +131,10 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="game_8cpp_source.html#l02981">2981</a> of file <a class="el" href="game_8cpp_source.html">game.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l02981" name="l02981"></a><span class="lineno"> 2981</span>: <a class="code hl_variable" href="structnpc__dist__to__player.html#aa1bb8b790c19ea555874777b7b4c03e6">ppos</a>( <a class="code hl_function" href="character_8cpp.html#a2fcb25d686f4a35fca374c6f71280311">get_player_character</a>().global_omt_location() ) { }</div>
-<div class="ttc" id="acharacter_8cpp_html_a2fcb25d686f4a35fca374c6f71280311"><div class="ttname"><a href="character_8cpp.html#a2fcb25d686f4a35fca374c6f71280311">get_player_character</a></div><div class="ttdeci">Character &amp; get_player_character()</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l00387">character.cpp:387</a></div></div>
-<div class="ttc" id="astructnpc__dist__to__player_html_aa1bb8b790c19ea555874777b7b4c03e6"><div class="ttname"><a href="structnpc__dist__to__player.html#aa1bb8b790c19ea555874777b7b4c03e6">npc_dist_to_player::ppos</a></div><div class="ttdeci">const tripoint_abs_omt ppos</div><div class="ttdef"><b>Definition:</b> <a href="game_8cpp_source.html#l02980">game.cpp:2980</a></div></div>
+<p class="definition">Definition at line <a class="el" href="game_8cpp_source.html#l02823">2823</a> of file <a class="el" href="game_8cpp_source.html">game.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l02823" name="l02823"></a><span class="lineno"> 2823</span>: <a class="code hl_variable" href="structnpc__dist__to__player.html#aa1bb8b790c19ea555874777b7b4c03e6">ppos</a>( <a class="code hl_function" href="character_8cpp.html#a2fcb25d686f4a35fca374c6f71280311">get_player_character</a>().global_omt_location() ) { }</div>
+<div class="ttc" id="acharacter_8cpp_html_a2fcb25d686f4a35fca374c6f71280311"><div class="ttname"><a href="character_8cpp.html#a2fcb25d686f4a35fca374c6f71280311">get_player_character</a></div><div class="ttdeci">Character &amp; get_player_character()</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l00388">character.cpp:388</a></div></div>
+<div class="ttc" id="astructnpc__dist__to__player_html_aa1bb8b790c19ea555874777b7b4c03e6"><div class="ttname"><a href="structnpc__dist__to__player.html#aa1bb8b790c19ea555874777b7b4c03e6">npc_dist_to_player::ppos</a></div><div class="ttdeci">const tripoint_abs_omt ppos</div><div class="ttdef"><b>Definition:</b> <a href="game_8cpp_source.html#l02822">game.cpp:2822</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -173,20 +173,20 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="game_8cpp_source.html#l02983">2983</a> of file <a class="el" href="game_8cpp_source.html">game.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l02984" name="l02984"></a><span class="lineno"> 2984</span>                                                           {</div>
-<div class="line"><a id="l02985" name="l02985"></a><span class="lineno"> 2985</span>        <span class="keyword">const</span> <a class="code hl_class" href="classcoords_1_1coord__point.html">tripoint_abs_omt</a> apos = <a class="code hl_variable" href="magic_8cpp.html#a188caae18b60b66f9f44214c7e28ac1f">a</a>-&gt;global_omt_location();</div>
-<div class="line"><a id="l02986" name="l02986"></a><span class="lineno"> 2986</span>        <span class="keyword">const</span> <a class="code hl_class" href="classcoords_1_1coord__point.html">tripoint_abs_omt</a> bpos = <a class="code hl_variable" href="magic_8cpp.html#aa93a189fb7bbbf87be54bcc7bd11bb6f">b</a>-&gt;global_omt_location();</div>
-<div class="line"><a id="l02987" name="l02987"></a><span class="lineno"> 2987</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="coordinates_8h.html#a5ca1722555a6d5ab9ab7ae8e35c35eaa">square_dist</a>( <a class="code hl_variable" href="structnpc__dist__to__player.html#aa1bb8b790c19ea555874777b7b4c03e6">ppos</a>.<a class="code hl_function" href="classcoords_1_1coord__point.html#acb7438b5f344b6841e64b56100761783">xy</a>(), apos.<a class="code hl_function" href="classcoords_1_1coord__point.html#acb7438b5f344b6841e64b56100761783">xy</a>() ) &lt;</div>
-<div class="line"><a id="l02988" name="l02988"></a><span class="lineno"> 2988</span>               <a class="code hl_function" href="coordinates_8h.html#a5ca1722555a6d5ab9ab7ae8e35c35eaa">square_dist</a>( <a class="code hl_variable" href="structnpc__dist__to__player.html#aa1bb8b790c19ea555874777b7b4c03e6">ppos</a>.<a class="code hl_function" href="classcoords_1_1coord__point.html#acb7438b5f344b6841e64b56100761783">xy</a>(), bpos.<a class="code hl_function" href="classcoords_1_1coord__point.html#acb7438b5f344b6841e64b56100761783">xy</a>() );</div>
-<div class="line"><a id="l02989" name="l02989"></a><span class="lineno"> 2989</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="game_8cpp_source.html#l02825">2825</a> of file <a class="el" href="game_8cpp_source.html">game.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l02826" name="l02826"></a><span class="lineno"> 2826</span>                                                           {</div>
+<div class="line"><a id="l02827" name="l02827"></a><span class="lineno"> 2827</span>        <span class="keyword">const</span> <a class="code hl_class" href="classcoords_1_1coord__point.html">tripoint_abs_omt</a> apos = <a class="code hl_variable" href="magic_8cpp.html#a188caae18b60b66f9f44214c7e28ac1f">a</a>-&gt;global_omt_location();</div>
+<div class="line"><a id="l02828" name="l02828"></a><span class="lineno"> 2828</span>        <span class="keyword">const</span> <a class="code hl_class" href="classcoords_1_1coord__point.html">tripoint_abs_omt</a> bpos = <a class="code hl_variable" href="magic_8cpp.html#aa93a189fb7bbbf87be54bcc7bd11bb6f">b</a>-&gt;global_omt_location();</div>
+<div class="line"><a id="l02829" name="l02829"></a><span class="lineno"> 2829</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="coordinates_8h.html#a5ca1722555a6d5ab9ab7ae8e35c35eaa">square_dist</a>( <a class="code hl_variable" href="structnpc__dist__to__player.html#aa1bb8b790c19ea555874777b7b4c03e6">ppos</a>.<a class="code hl_function" href="classcoords_1_1coord__point.html#acb7438b5f344b6841e64b56100761783">xy</a>(), apos.<a class="code hl_function" href="classcoords_1_1coord__point.html#acb7438b5f344b6841e64b56100761783">xy</a>() ) &lt;</div>
+<div class="line"><a id="l02830" name="l02830"></a><span class="lineno"> 2830</span>               <a class="code hl_function" href="coordinates_8h.html#a5ca1722555a6d5ab9ab7ae8e35c35eaa">square_dist</a>( <a class="code hl_variable" href="structnpc__dist__to__player.html#aa1bb8b790c19ea555874777b7b4c03e6">ppos</a>.<a class="code hl_function" href="classcoords_1_1coord__point.html#acb7438b5f344b6841e64b56100761783">xy</a>(), bpos.<a class="code hl_function" href="classcoords_1_1coord__point.html#acb7438b5f344b6841e64b56100761783">xy</a>() );</div>
+<div class="line"><a id="l02831" name="l02831"></a><span class="lineno"> 2831</span>    }</div>
 <div class="ttc" id="aclasscoords_1_1coord__point_html"><div class="ttname"><a href="classcoords_1_1coord__point.html">coords::coord_point&lt; tripoint, coords::origin::abs, coords::omt &gt;</a></div></div>
 <div class="ttc" id="aclasscoords_1_1coord__point_html_acb7438b5f344b6841e64b56100761783"><div class="ttname"><a href="classcoords_1_1coord__point.html#acb7438b5f344b6841e64b56100761783">coords::coord_point::xy</a></div><div class="ttdeci">constexpr auto xy() const</div><div class="ttdef"><b>Definition:</b> <a href="coordinates_8h_source.html#l00130">coordinates.h:130</a></div></div>
 <div class="ttc" id="acoordinates_8h_html_a5ca1722555a6d5ab9ab7ae8e35c35eaa"><div class="ttname"><a href="coordinates_8h.html#a5ca1722555a6d5ab9ab7ae8e35c35eaa">square_dist</a></div><div class="ttdeci">int square_dist(const coords::coord_point&lt; Point, Origin, Scale &gt; &amp;loc1, const coords::coord_point&lt; Point, Origin, Scale &gt; &amp;loc2)</div><div class="ttdef"><b>Definition:</b> <a href="coordinates_8h_source.html#l00505">coordinates.h:505</a></div></div>
 <div class="ttc" id="amagic_8cpp_html_a188caae18b60b66f9f44214c7e28ac1f"><div class="ttname"><a href="magic_8cpp.html#a188caae18b60b66f9f44214c7e28ac1f">a</a></div><div class="ttdeci">constexpr double a</div><div class="ttdef"><b>Definition:</b> <a href="magic_8cpp_source.html#l01030">magic.cpp:1030</a></div></div>
 <div class="ttc" id="amagic_8cpp_html_aa93a189fb7bbbf87be54bcc7bd11bb6f"><div class="ttname"><a href="magic_8cpp.html#aa93a189fb7bbbf87be54bcc7bd11bb6f">b</a></div><div class="ttdeci">constexpr double b</div><div class="ttdef"><b>Definition:</b> <a href="magic_8cpp_source.html#l01031">magic.cpp:1031</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="magic_8cpp_source.html#l01030">a</a>, <a class="el" href="magic_8cpp_source.html#l01031">b</a>, <a class="el" href="game_8cpp_source.html#l02980">ppos</a>, <a class="el" href="coordinates_8h_source.html#l00505">square_dist()</a>, and <a class="el" href="coordinates_8h_source.html#l00130">coords::coord_point&lt; Point, Origin, Scale &gt;::xy()</a>.</p>
+<p class="reference">References <a class="el" href="magic_8cpp_source.html#l01030">a</a>, <a class="el" href="magic_8cpp_source.html#l01031">b</a>, <a class="el" href="game_8cpp_source.html#l02822">ppos</a>, <a class="el" href="coordinates_8h_source.html#l00505">square_dist()</a>, and <a class="el" href="coordinates_8h_source.html#l00130">coords::coord_point&lt; Point, Origin, Scale &gt;::xy()</a>.</p>
 
 </div>
 </div>
@@ -203,9 +203,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="game_8cpp_source.html#l02980">2980</a> of file <a class="el" href="game_8cpp_source.html">game.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="game_8cpp_source.html#l02822">2822</a> of file <a class="el" href="game_8cpp_source.html">game.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l02983">operator()()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l02825">operator()()</a>.</p>
 
 </div>
 </div>
@@ -218,7 +218,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structnpc__dist__to__player.html">npc_dist_to_player</a></li>
-    <li class="footer">Generated on Wed Oct 19 2022 14:19:42 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Mon Dec 26 2022 21:42:11 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

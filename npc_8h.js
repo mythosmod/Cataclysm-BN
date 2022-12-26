@@ -264,6 +264,8 @@ var npc_8h =
       [ "NUM_TALK_TOPICS", "npc_8h.html#ac8243858aef483b83981202d916ec68aa14ac8194274ca3d454f82fa1738d8051", null ]
     ] ],
     [ "convert_talk_topic", "npc_8h.html#a44edcea0eb4426e7592722cfd516b384", null ],
+    [ "gun_value", "npc_8h.html#a9019036bc8d7314e1bb9fb1624afb429", null ],
+    [ "melee_value", "npc_8h.html#a15c5ded877137a648d04762228055b66", null ],
     [ "npc_attitude_id", "npc_8h.html#a060fa8a790809c403b736b1ce22f09b4", null ],
     [ "npc_attitude_name", "npc_8h.html#a5b64ac0e18156afc428b5e5890fc6846", null ],
     [ "npc_class_name", "npc_8h.html#a29381add781a78f9e7cc04d1ec27207c", null ],
@@ -271,6 +273,8 @@ var npc_8h =
     [ "operator<<", "npc_8h.html#ac5eadabb56ab217914a8c640805b3f89", null ],
     [ "parse_tags", "npc_8h.html#aee50a2d29c2194e6df726113b025e55b", null ],
     [ "pick_follower", "npc_8h.html#ad977602826da7ddf9f680b18647ea6b9", null ],
+    [ "unarmed_value", "npc_8h.html#a64daf871b45496787e445f932f4381d3", null ],
+    [ "weapon_value", "npc_8h.html#a14d62aa6c1fc78bcfe3c3bb845d913cd", null ],
     [ "aim_rule_strs", "npc_8h.html#ae96069e86d39e19cbbac565be3419ea5", null ],
     [ "ally_rule_strs", "npc_8h.html#aa27862ea88c73b61be0521ec94a4a3ac", null ],
     [ "cbm_recharge_strs", "npc_8h.html#ae92dafc799ce898955aa8993b77e51b1", null ],

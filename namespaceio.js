@@ -32,6 +32,7 @@ var namespaceio =
     [ "enum_to_string< condition_type >", "namespaceio.html#af319b1be9c74aefa34910a0d3584d88e", null ],
     [ "enum_to_string< DC >", "namespaceio.html#a0410b1157c801e81d38669dccd59aab2", null ],
     [ "enum_to_string< description_affix >", "namespaceio.html#afe706e6fffb7102a5aca05fd0ff68cfc", null ],
+    [ "enum_to_string< distraction_type >", "namespaceio.html#a9dfad98da32dec102cbfa3dd95fd2023", null ],
     [ "enum_to_string< DL >", "namespaceio.html#a8b3048f54a8bdcedc4260653b3fe6dbe", null ],
     [ "enum_to_string< enchant_vals::mod >", "namespaceio.html#af6a8080dc3ddde5c2600a5d8a5552b9a", null ],
     [ "enum_to_string< enchantment::condition >", "namespaceio.html#a352cc7e2ab7207e2763adf6a414c40c3", null ],

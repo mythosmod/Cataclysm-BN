@@ -5,7 +5,7 @@ var classexplosion__iuse =
     [ "clone", "classexplosion__iuse.html#a1f9c278176ab36ec4c97beb4d85476df", null ],
     [ "info", "classexplosion__iuse.html#af96212729d80b3c0f2b17e87bd91e5ca", null ],
     [ "load", "classexplosion__iuse.html#a697a61f9fef36a57b96464cbbc55c0c0", null ],
-    [ "trigger_explosion", "classexplosion__iuse.html#af2757dd5c05b018d9c024d691f6d33e6", null ],
+    [ "trigger_explosion", "classexplosion__iuse.html#ae614bca193022b981f75803d3cb834b1", null ],
     [ "use", "classexplosion__iuse.html#a6ae292d48b142c60cafcbbf608a1ce7a", null ],
     [ "do_flashbang", "classexplosion__iuse.html#af3f56d26e534151ed9964ea7c574e06c", null ],
     [ "draw_explosion_color", "classexplosion__iuse.html#ae7ecfd5ea189b9e42cc767e3845098db", null ],

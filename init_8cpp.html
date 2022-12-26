@@ -107,6 +107,7 @@ $(document).ready(function(){initNavTree('init_8cpp.html',''); initResizable(); 
 <code>#include &quot;<a class="el" href="ammo__effect_8h_source.html">ammo_effect.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="anatomy_8h_source.html">anatomy.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ascii__art_8h_source.html">ascii_art.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="artifact_8h_source.html">artifact.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="behavior_8h_source.html">behavior.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="bionics_8h_source.html">bionics.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="bodypart_8h_source.html">bodypart.h</a>&quot;</code><br />
@@ -121,6 +122,7 @@ $(document).ready(function(){initNavTree('init_8cpp.html',''); initResizable(); 
 <code>#include &quot;<a class="el" href="creature_8h_source.html">creature.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="cursesdef_8h_source.html">cursesdef.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="debug_8h_source.html">debug.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="dependency__tree_8h_source.html">dependency_tree.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dialogue_8h_source.html">dialogue.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="disease_8h_source.html">disease.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="effect_8h_source.html">effect.h</a>&quot;</code><br />
@@ -145,11 +147,13 @@ $(document).ready(function(){initNavTree('init_8cpp.html',''); initResizable(); 
 <code>#include &quot;<a class="el" href="magic__enchantment_8h_source.html">magic_enchantment.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="magic__ter__furn__transform_8h_source.html">magic_ter_furn_transform.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="map__extras_8h_source.html">map_extras.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mapbuffer_8h_source.html">mapbuffer.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mapdata_8h_source.html">mapdata.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mapgen_8h_source.html">mapgen.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="martialarts_8h_source.html">martialarts.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="material_8h_source.html">material.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mission_8h_source.html">mission.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mod__manager_8h_source.html">mod_manager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="monfaction_8h_source.html">monfaction.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mongroup_8h_source.html">mongroup.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="monstergenerator_8h_source.html">monstergenerator.h</a>&quot;</code><br />
@@ -161,6 +165,7 @@ $(document).ready(function(){initNavTree('init_8cpp.html',''); initResizable(); 
 <code>#include &quot;<a class="el" href="omdata_8h_source.html">omdata.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="overlay__ordering_8h_source.html">overlay_ordering.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="overmap_8h_source.html">overmap.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="overmapbuffer_8h_source.html">overmapbuffer.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="overmap__connection_8h_source.html">overmap_connection.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="overmap__location_8h_source.html">overmap_location.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="overmap__special_8h_source.html">overmap_special.h</a>&quot;</code><br />
@@ -201,8 +206,143 @@ Classes</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a616f556483d9d6ef9e940ed6c1cc8702"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8cpp.html#a616f556483d9d6ef9e940ed6c1cc8702">load_ignored_type</a> (const <a class="el" href="classJsonObject.html">JsonObject</a> &amp;jo)</td></tr>
 <tr class="separator:a616f556483d9d6ef9e940ed6c1cc8702"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8be710c5431521950b55e942656601fa"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8cpp.html#a8be710c5431521950b55e942656601fa">load_and_finalize_packs</a> (<a class="el" href="classloading__ui.html">loading_ui</a> &amp;ui, const std::string &amp;msg, const std::vector&lt; <a class="el" href="type__id_8h.html#aabcbcb9fb77661ba75c47b6287318e03">mod_id</a> &gt; &amp;packs)</td></tr>
+<tr class="memdesc:a8be710c5431521950b55e942656601fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load &amp; finalize specified content packs.  <a href="init_8cpp.html#a8be710c5431521950b55e942656601fa">More...</a><br /></td></tr>
+<tr class="separator:a8be710c5431521950b55e942656601fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ecac776bd0ccbb6aeec4184d71d031d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8cpp.html#a7ecac776bd0ccbb6aeec4184d71d031d">clear_loaded_data</a> ()</td></tr>
+<tr class="separator:a7ecac776bd0ccbb6aeec4184d71d031d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a7ecac776bd0ccbb6aeec4184d71d031d" name="a7ecac776bd0ccbb6aeec4184d71d031d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ecac776bd0ccbb6aeec4184d71d031d">&#9670;&nbsp;</a></span>clear_loaded_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void clear_loaded_data </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="init_8cpp_source.html#l00856">856</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00857" name="l00857"></a><span class="lineno">  857</span>{</div>
+<div class="line"><a id="l00858" name="l00858"></a><span class="lineno">  858</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classDynamicDataLoader.html#adca1972b6d79ffd55d6d7ca1a0c329b9">DynamicDataLoader::get_instance</a>().<a class="code hl_function" href="classDynamicDataLoader.html#ae04487ce53b25662607fac4b788a50c9">unload_data</a>();</div>
+<div class="line"><a id="l00859" name="l00859"></a><span class="lineno">  859</span>}</div>
+<div class="ttc" id="aclassDynamicDataLoader_html_adca1972b6d79ffd55d6d7ca1a0c329b9"><div class="ttname"><a href="classDynamicDataLoader.html#adca1972b6d79ffd55d6d7ca1a0c329b9">DynamicDataLoader::get_instance</a></div><div class="ttdeci">static DynamicDataLoader &amp; get_instance()</div><div class="ttdoc">Returns the single instance of this class.</div><div class="ttdef"><b>Definition:</b> <a href="init_8cpp_source.html#l00119">init.cpp:119</a></div></div>
+<div class="ttc" id="aclassDynamicDataLoader_html_ae04487ce53b25662607fac4b788a50c9"><div class="ttname"><a href="classDynamicDataLoader.html#ae04487ce53b25662607fac4b788a50c9">DynamicDataLoader::unload_data</a></div><div class="ttdeci">void unload_data()</div><div class="ttdoc">Deletes and unloads all the data previously loaded with load_data_from_path.</div><div class="ttdef"><b>Definition:</b> <a href="init_8cpp_source.html#l00536">init.cpp:536</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="init_8cpp_source.html#l00119">DynamicDataLoader::get_instance()</a>, and <a class="el" href="init_8cpp_source.html#l00536">DynamicDataLoader::unload_data()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="init_8cpp_source.html#l00907">init::check_mods_for_errors()</a>, <a class="el" href="init_8cpp_source.html#l00861">init::load_core_bn_modfiles()</a>, and <a class="el" href="init_8cpp_source.html#l00872">init::load_world_modfiles()</a>.</p>
+
+</div>
+</div>
+<a id="a8be710c5431521950b55e942656601fa" name="a8be710c5431521950b55e942656601fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8be710c5431521950b55e942656601fa">&#9670;&nbsp;</a></span>load_and_finalize_packs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void load_and_finalize_packs </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classloading__ui.html">loading_ui</a> &amp;&#160;</td>
+          <td class="paramname"><em>ui</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="type__id_8h.html#aabcbcb9fb77661ba75c47b6287318e03">mod_id</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>packs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Load &amp; finalize specified content packs. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ui</td><td>structure for load progress display </td></tr>
+    <tr><td class="paramname">msg</td><td>string to display whilst loading prompt </td></tr>
+    <tr><td class="paramname">packs</td><td>content packs to load in correct dependent order </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="init_8cpp_source.html#l00820">820</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00822" name="l00822"></a><span class="lineno">  822</span>{</div>
+<div class="line"><a id="l00823" name="l00823"></a><span class="lineno">  823</span>    <a class="code hl_namespace" href="namespaceui.html">ui</a>.new_context( msg );</div>
+<div class="line"><a id="l00824" name="l00824"></a><span class="lineno">  824</span>    std::vector&lt;mod_id&gt; missing;</div>
+<div class="line"><a id="l00825" name="l00825"></a><span class="lineno">  825</span>    std::vector&lt;mod_id&gt; <a class="code hl_enumvalue" href="vehicle_8h.html#ad9a221cee9ae7a69d6f09d4de701f02cae4894ca167b08880bfc35862f18575eb">available</a>;</div>
+<div class="line"><a id="l00826" name="l00826"></a><span class="lineno">  826</span> </div>
+<div class="line"><a id="l00827" name="l00827"></a><span class="lineno">  827</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_class" href="classstring__id.html">mod_id</a> &amp;e : packs ) {</div>
+<div class="line"><a id="l00828" name="l00828"></a><span class="lineno">  828</span>        <span class="keywordflow">if</span>( e.is_valid() ) {</div>
+<div class="line"><a id="l00829" name="l00829"></a><span class="lineno">  829</span>            <a class="code hl_enumvalue" href="vehicle_8h.html#ad9a221cee9ae7a69d6f09d4de701f02cae4894ca167b08880bfc35862f18575eb">available</a>.emplace_back( e );</div>
+<div class="line"><a id="l00830" name="l00830"></a><span class="lineno">  830</span>            <a class="code hl_namespace" href="namespaceui.html">ui</a>.add_entry( e-&gt;name() );</div>
+<div class="line"><a id="l00831" name="l00831"></a><span class="lineno">  831</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00832" name="l00832"></a><span class="lineno">  832</span>            missing.push_back( e );</div>
+<div class="line"><a id="l00833" name="l00833"></a><span class="lineno">  833</span>        }</div>
+<div class="line"><a id="l00834" name="l00834"></a><span class="lineno">  834</span>    }</div>
+<div class="line"><a id="l00835" name="l00835"></a><span class="lineno">  835</span> </div>
+<div class="line"><a id="l00836" name="l00836"></a><span class="lineno">  836</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_class" href="classstring__id.html">mod_id</a> &amp;e : missing ) {</div>
+<div class="line"><a id="l00837" name="l00837"></a><span class="lineno">  837</span>        <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;unknown content pack [%s]&quot;</span>, e );</div>
+<div class="line"><a id="l00838" name="l00838"></a><span class="lineno">  838</span>    }</div>
+<div class="line"><a id="l00839" name="l00839"></a><span class="lineno">  839</span> </div>
+<div class="line"><a id="l00840" name="l00840"></a><span class="lineno">  840</span>    <a class="code hl_class" href="classDynamicDataLoader.html">DynamicDataLoader</a> &amp;loader = <a class="code hl_function" href="classDynamicDataLoader.html#adca1972b6d79ffd55d6d7ca1a0c329b9">DynamicDataLoader::get_instance</a>();</div>
+<div class="line"><a id="l00841" name="l00841"></a><span class="lineno">  841</span> </div>
+<div class="line"><a id="l00842" name="l00842"></a><span class="lineno">  842</span>    <a class="code hl_namespace" href="namespaceui.html">ui</a>.show();</div>
+<div class="line"><a id="l00843" name="l00843"></a><span class="lineno">  843</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_class" href="classstring__id.html">mod_id</a> &amp;<a class="code hl_enumeration" href="namespaceenchant__vals.html#acd6a6ebb27f9ecb82b3bce1d3aef2998">mod</a> : available ) {</div>
+<div class="line"><a id="l00844" name="l00844"></a><span class="lineno">  844</span>        loader.<a class="code hl_function" href="classDynamicDataLoader.html#a7cb855f669757f1390a875317ef5fc74">load_data_from_path</a>( <a class="code hl_enumeration" href="namespaceenchant__vals.html#acd6a6ebb27f9ecb82b3bce1d3aef2998">mod</a>-&gt;path, <a class="code hl_enumeration" href="namespaceenchant__vals.html#acd6a6ebb27f9ecb82b3bce1d3aef2998">mod</a>.str(), <a class="code hl_namespace" href="namespaceui.html">ui</a> );</div>
+<div class="line"><a id="l00845" name="l00845"></a><span class="lineno">  845</span>        <a class="code hl_namespace" href="namespaceui.html">ui</a>.proceed();</div>
+<div class="line"><a id="l00846" name="l00846"></a><span class="lineno">  846</span>    }</div>
+<div class="line"><a id="l00847" name="l00847"></a><span class="lineno">  847</span> </div>
+<div class="line"><a id="l00848" name="l00848"></a><span class="lineno">  848</span>    loader.<a class="code hl_function" href="classDynamicDataLoader.html#a9e53234d7f6cdc147159660a0fdb0d05">finalize_loaded_data</a>( <a class="code hl_namespace" href="namespaceui.html">ui</a> );</div>
+<div class="line"><a id="l00849" name="l00849"></a><span class="lineno">  849</span>}</div>
+<div class="ttc" id="aclassDynamicDataLoader_html"><div class="ttname"><a href="classDynamicDataLoader.html">DynamicDataLoader</a></div><div class="ttdoc">This class is used to load (and unload) the dynamic (and moddable) data from json files.</div><div class="ttdef"><b>Definition:</b> <a href="init_8h_source.html#l00056">init.h:57</a></div></div>
+<div class="ttc" id="aclassDynamicDataLoader_html_a7cb855f669757f1390a875317ef5fc74"><div class="ttname"><a href="classDynamicDataLoader.html#a7cb855f669757f1390a875317ef5fc74">DynamicDataLoader::load_data_from_path</a></div><div class="ttdeci">void load_data_from_path(const std::string &amp;path, const std::string &amp;src, loading_ui &amp;ui)</div><div class="ttdoc">Load all data from json files located in the path (recursive).</div><div class="ttdef"><b>Definition:</b> <a href="init_8cpp_source.html#l00465">init.cpp:465</a></div></div>
+<div class="ttc" id="aclassDynamicDataLoader_html_a9e53234d7f6cdc147159660a0fdb0d05"><div class="ttname"><a href="classDynamicDataLoader.html#a9e53234d7f6cdc147159660a0fdb0d05">DynamicDataLoader::finalize_loaded_data</a></div><div class="ttdeci">void finalize_loaded_data(loading_ui &amp;ui)</div><div class="ttdoc">Called to finalize the loaded data.</div><div class="ttdef"><b>Definition:</b> <a href="init_8cpp_source.html#l00633">init.cpp:633</a></div></div>
+<div class="ttc" id="aclassstring__id_html"><div class="ttname"><a href="classstring__id.html">string_id&lt; MOD_INFORMATION &gt;</a></div></div>
+<div class="ttc" id="adebug_8h_html_a87e509562277a7ada3a75330d00cb445"><div class="ttname"><a href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a></div><div class="ttdeci">#define debugmsg(...)</div><div class="ttdoc">Debug message of level DL::Error and class DC::DebugMsg, also includes the source file name and line,...</div><div class="ttdef"><b>Definition:</b> <a href="debug_8h_source.html#l00074">debug.h:74</a></div></div>
+<div class="ttc" id="anamespaceenchant__vals_html_acd6a6ebb27f9ecb82b3bce1d3aef2998"><div class="ttname"><a href="namespaceenchant__vals.html#acd6a6ebb27f9ecb82b3bce1d3aef2998">enchant_vals::mod</a></div><div class="ttdeci">mod</div><div class="ttdef"><b>Definition:</b> <a href="magic__enchantment_8h_source.html#l00026">magic_enchantment.h:26</a></div></div>
+<div class="ttc" id="anamespaceui_html"><div class="ttname"><a href="namespaceui.html">ui</a></div><div class="ttdef"><b>Definition:</b> <a href="overmap__ui_8h_source.html#l00016">overmap_ui.h:17</a></div></div>
+<div class="ttc" id="avehicle_8h_html_ad9a221cee9ae7a69d6f09d4de701f02cae4894ca167b08880bfc35862f18575eb"><div class="ttname"><a href="vehicle_8h.html#ad9a221cee9ae7a69d6f09d4de701f02cae4894ca167b08880bfc35862f18575eb">part_status_flag::available</a></div><div class="ttdeci">@ available</div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="vehicle_8h.html#ad9a221cee9ae7a69d6f09d4de701f02cae4894ca167b08880bfc35862f18575eb">available</a>, <a class="el" href="debug_8h_source.html#l00074">debugmsg</a>, <a class="el" href="init_8cpp_source.html#l00633">DynamicDataLoader::finalize_loaded_data()</a>, <a class="el" href="init_8cpp_source.html#l00119">DynamicDataLoader::get_instance()</a>, and <a class="el" href="init_8cpp_source.html#l00465">DynamicDataLoader::load_data_from_path()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="init_8cpp_source.html#l00907">init::check_mods_for_errors()</a>, and <a class="el" href="init_8cpp_source.html#l00861">init::load_core_bn_modfiles()</a>.</p>
+
+</div>
+</div>
 <a id="a616f556483d9d6ef9e940ed6c1cc8702" name="a616f556483d9d6ef9e940ed6c1cc8702"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a616f556483d9d6ef9e940ed6c1cc8702">&#9670;&nbsp;</a></span>load_ignored_type()</h2>
 
@@ -227,18 +367,18 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="init_8cpp_source.html#l00194">194</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>{</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>    <span class="comment">// This does nothing!</span></div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>    <span class="comment">// This function is used for types that are to be ignored</span></div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    <span class="comment">// (for example for testing or for unimplemented types)</span></div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae00f195360e3783cf50527cf07344202">allow_omitted_members</a>();</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>}</div>
+<p class="definition">Definition at line <a class="el" href="init_8cpp_source.html#l00201">201</a> of file <a class="el" href="init_8cpp_source.html">init.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>{</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    <span class="comment">// This does nothing!</span></div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    <span class="comment">// This function is used for types that are to be ignored</span></div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    <span class="comment">// (for example for testing or for unimplemented types)</span></div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae00f195360e3783cf50527cf07344202">allow_omitted_members</a>();</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>}</div>
 <div class="ttc" id="aclassJsonObject_html_ae00f195360e3783cf50527cf07344202"><div class="ttname"><a href="classJsonObject.html#ae00f195360e3783cf50527cf07344202">JsonObject::allow_omitted_members</a></div><div class="ttdeci">void allow_omitted_members() const</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l00150">json.cpp:150</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="json_8cpp_source.html#l00150">JsonObject::allow_omitted_members()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8cpp_source.html#l00236">DynamicDataLoader::initialize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8cpp_source.html#l00243">DynamicDataLoader::initialize()</a>.</p>
 
 </div>
 </div>
@@ -248,7 +388,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="init_8cpp.html">init.cpp</a></li>
-    <li class="footer">Generated on Wed Oct 19 2022 14:19:18 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Mon Dec 26 2022 21:41:51 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -219,10 +219,10 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="overmap_8cpp_source.html#l00704">704</a> of file <a class="el" href="overmap_8cpp_source.html">overmap.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00705" name="l00705"></a><span class="lineno">  705</span>{</div>
-<div class="line"><a id="l00706" name="l00706"></a><span class="lineno">  706</span> </div>
-<div class="line"><a id="l00707" name="l00707"></a><span class="lineno">  707</span>}</div>
+<p class="definition">Definition at line <a class="el" href="overmap_8cpp_source.html#l00705">705</a> of file <a class="el" href="overmap_8cpp_source.html">overmap.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00706" name="l00706"></a><span class="lineno">  706</span>{</div>
+<div class="line"><a id="l00707" name="l00707"></a><span class="lineno">  707</span> </div>
+<div class="line"><a id="l00708" name="l00708"></a><span class="lineno">  708</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -277,22 +277,22 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="overmap_8cpp_source.html#l00709">709</a> of file <a class="el" href="overmap_8cpp_source.html">overmap.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00710" name="l00710"></a><span class="lineno">  710</span>{</div>
-<div class="line"><a id="l00711" name="l00711"></a><span class="lineno">  711</span>    <a class="code hl_variable" href="structoter__type__t.html#af0364908636c852c0be70611e9aace6b">directional_peers</a>.clear();  <span class="comment">// In case of a second finalization.</span></div>
-<div class="line"><a id="l00712" name="l00712"></a><span class="lineno">  712</span> </div>
-<div class="line"><a id="l00713" name="l00713"></a><span class="lineno">  713</span>    <span class="keywordflow">if</span>( <a class="code hl_function" href="structoter__type__t.html#ae7a02c8ef5da213375f324bfdff43f55">is_rotatable</a>() ) {</div>
-<div class="line"><a id="l00714" name="l00714"></a><span class="lineno">  714</span>        <span class="keywordflow">for</span>( <a class="code hl_enumeration" href="namespaceom__direction.html#a3f3a3bf2c5af33fc8036734d1ba70b7c">om_direction::type</a> dir : <a class="code hl_variable" href="namespaceom__direction.html#a27cad92b0d05637eb934f1a7f3424e41">om_direction::all</a> ) {</div>
-<div class="line"><a id="l00715" name="l00715"></a><span class="lineno">  715</span>            <a class="code hl_function" href="structoter__type__t.html#a7b19bd1edbdd9f4693133069c971662f">register_terrain</a>( <a class="code hl_struct" href="structoter__t.html">oter_t</a>( *<span class="keyword">this</span>, dir ), <span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>( dir ), <a class="code hl_variable" href="namespaceom__direction.html#af97f9dbddaa758278662da3478826c61">om_direction::size</a> );</div>
-<div class="line"><a id="l00716" name="l00716"></a><span class="lineno">  716</span>        }</div>
-<div class="line"><a id="l00717" name="l00717"></a><span class="lineno">  717</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( <a class="code hl_function" href="structoter__type__t.html#a68b2cc6fbcd3a2352d92e43818a1a585">has_flag</a>( <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba055af6e95c02cf9bd634846fd3943de6">line_drawing</a> ) ) {</div>
-<div class="line"><a id="l00718" name="l00718"></a><span class="lineno">  718</span>        <span class="keywordflow">for</span>( <span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="namespaceom__lines.html#a30a2de310b9de38ac29b1052310debbe">om_lines::size</a>; ++i ) {</div>
-<div class="line"><a id="l00719" name="l00719"></a><span class="lineno">  719</span>            <a class="code hl_function" href="structoter__type__t.html#a7b19bd1edbdd9f4693133069c971662f">register_terrain</a>( <a class="code hl_struct" href="structoter__t.html">oter_t</a>( *<span class="keyword">this</span>, i ), i, <a class="code hl_variable" href="namespaceom__lines.html#a30a2de310b9de38ac29b1052310debbe">om_lines::size</a> );</div>
-<div class="line"><a id="l00720" name="l00720"></a><span class="lineno">  720</span>        }</div>
-<div class="line"><a id="l00721" name="l00721"></a><span class="lineno">  721</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00722" name="l00722"></a><span class="lineno">  722</span>        <a class="code hl_function" href="structoter__type__t.html#a7b19bd1edbdd9f4693133069c971662f">register_terrain</a>( <a class="code hl_struct" href="structoter__t.html">oter_t</a>( *<span class="keyword">this</span> ), 0, 1 );</div>
-<div class="line"><a id="l00723" name="l00723"></a><span class="lineno">  723</span>    }</div>
-<div class="line"><a id="l00724" name="l00724"></a><span class="lineno">  724</span>}</div>
+<p class="definition">Definition at line <a class="el" href="overmap_8cpp_source.html#l00710">710</a> of file <a class="el" href="overmap_8cpp_source.html">overmap.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00711" name="l00711"></a><span class="lineno">  711</span>{</div>
+<div class="line"><a id="l00712" name="l00712"></a><span class="lineno">  712</span>    <a class="code hl_variable" href="structoter__type__t.html#af0364908636c852c0be70611e9aace6b">directional_peers</a>.clear();  <span class="comment">// In case of a second finalization.</span></div>
+<div class="line"><a id="l00713" name="l00713"></a><span class="lineno">  713</span> </div>
+<div class="line"><a id="l00714" name="l00714"></a><span class="lineno">  714</span>    <span class="keywordflow">if</span>( <a class="code hl_function" href="structoter__type__t.html#ae7a02c8ef5da213375f324bfdff43f55">is_rotatable</a>() ) {</div>
+<div class="line"><a id="l00715" name="l00715"></a><span class="lineno">  715</span>        <span class="keywordflow">for</span>( <a class="code hl_enumeration" href="namespaceom__direction.html#a3f3a3bf2c5af33fc8036734d1ba70b7c">om_direction::type</a> dir : <a class="code hl_variable" href="namespaceom__direction.html#a27cad92b0d05637eb934f1a7f3424e41">om_direction::all</a> ) {</div>
+<div class="line"><a id="l00716" name="l00716"></a><span class="lineno">  716</span>            <a class="code hl_function" href="structoter__type__t.html#a7b19bd1edbdd9f4693133069c971662f">register_terrain</a>( <a class="code hl_struct" href="structoter__t.html">oter_t</a>( *<span class="keyword">this</span>, dir ), <span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>( dir ), <a class="code hl_variable" href="namespaceom__direction.html#af97f9dbddaa758278662da3478826c61">om_direction::size</a> );</div>
+<div class="line"><a id="l00717" name="l00717"></a><span class="lineno">  717</span>        }</div>
+<div class="line"><a id="l00718" name="l00718"></a><span class="lineno">  718</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( <a class="code hl_function" href="structoter__type__t.html#a68b2cc6fbcd3a2352d92e43818a1a585">has_flag</a>( <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba055af6e95c02cf9bd634846fd3943de6">line_drawing</a> ) ) {</div>
+<div class="line"><a id="l00719" name="l00719"></a><span class="lineno">  719</span>        <span class="keywordflow">for</span>( <span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="namespaceom__lines.html#a30a2de310b9de38ac29b1052310debbe">om_lines::size</a>; ++i ) {</div>
+<div class="line"><a id="l00720" name="l00720"></a><span class="lineno">  720</span>            <a class="code hl_function" href="structoter__type__t.html#a7b19bd1edbdd9f4693133069c971662f">register_terrain</a>( <a class="code hl_struct" href="structoter__t.html">oter_t</a>( *<span class="keyword">this</span>, i ), i, <a class="code hl_variable" href="namespaceom__lines.html#a30a2de310b9de38ac29b1052310debbe">om_lines::size</a> );</div>
+<div class="line"><a id="l00721" name="l00721"></a><span class="lineno">  721</span>        }</div>
+<div class="line"><a id="l00722" name="l00722"></a><span class="lineno">  722</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00723" name="l00723"></a><span class="lineno">  723</span>        <a class="code hl_function" href="structoter__type__t.html#a7b19bd1edbdd9f4693133069c971662f">register_terrain</a>( <a class="code hl_struct" href="structoter__t.html">oter_t</a>( *<span class="keyword">this</span> ), 0, 1 );</div>
+<div class="line"><a id="l00724" name="l00724"></a><span class="lineno">  724</span>    }</div>
+<div class="line"><a id="l00725" name="l00725"></a><span class="lineno">  725</span>}</div>
 <div class="ttc" id="anamespaceom__direction_html_a27cad92b0d05637eb934f1a7f3424e41"><div class="ttname"><a href="namespaceom__direction.html#a27cad92b0d05637eb934f1a7f3424e41">om_direction::all</a></div><div class="ttdeci">const std::array&lt; type, 4 &gt; all</div><div class="ttdoc">For the purposes of iteration.</div><div class="ttdef"><b>Definition:</b> <a href="om__direction_8h_source.html#l00026">om_direction.h:26</a></div></div>
 <div class="ttc" id="anamespaceom__direction_html_a3f3a3bf2c5af33fc8036734d1ba70b7c"><div class="ttname"><a href="namespaceom__direction.html#a3f3a3bf2c5af33fc8036734d1ba70b7c">om_direction::type</a></div><div class="ttdeci">type</div><div class="ttdoc">Basic enum for directions.</div><div class="ttdef"><b>Definition:</b> <a href="om__direction_8h_source.html#l00016">om_direction.h:16</a></div></div>
 <div class="ttc" id="anamespaceom__direction_html_af97f9dbddaa758278662da3478826c61"><div class="ttname"><a href="namespaceom__direction.html#af97f9dbddaa758278662da3478826c61">om_direction::size</a></div><div class="ttdeci">const size_t size</div><div class="ttdef"><b>Definition:</b> <a href="om__direction_8h_source.html#l00027">om_direction.h:27</a></div></div>
@@ -300,11 +300,11 @@ Private Attributes</h2></td></tr>
 <div class="ttc" id="aomdata_8h_html_afaf721417ebfe396111f8f48b690ac4ba055af6e95c02cf9bd634846fd3943de6"><div class="ttname"><a href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba055af6e95c02cf9bd634846fd3943de6">line_drawing</a></div><div class="ttdeci">@ line_drawing</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00091">omdata.h:91</a></div></div>
 <div class="ttc" id="astructoter__t_html"><div class="ttname"><a href="structoter__t.html">oter_t</a></div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00186">omdata.h:186</a></div></div>
 <div class="ttc" id="astructoter__type__t_html_a68b2cc6fbcd3a2352d92e43818a1a585"><div class="ttname"><a href="structoter__type__t.html#a68b2cc6fbcd3a2352d92e43818a1a585">oter_type_t::has_flag</a></div><div class="ttdeci">bool has_flag(oter_flags flag) const</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00150">omdata.h:150</a></div></div>
-<div class="ttc" id="astructoter__type__t_html_a7b19bd1edbdd9f4693133069c971662f"><div class="ttname"><a href="structoter__type__t.html#a7b19bd1edbdd9f4693133069c971662f">oter_type_t::register_terrain</a></div><div class="ttdeci">void register_terrain(const oter_t &amp;peer, size_t n, size_t max_n)</div><div class="ttdef"><b>Definition:</b> <a href="overmap_8cpp_source.html#l00726">overmap.cpp:726</a></div></div>
+<div class="ttc" id="astructoter__type__t_html_a7b19bd1edbdd9f4693133069c971662f"><div class="ttname"><a href="structoter__type__t.html#a7b19bd1edbdd9f4693133069c971662f">oter_type_t::register_terrain</a></div><div class="ttdeci">void register_terrain(const oter_t &amp;peer, size_t n, size_t max_n)</div><div class="ttdef"><b>Definition:</b> <a href="overmap_8cpp_source.html#l00727">overmap.cpp:727</a></div></div>
 <div class="ttc" id="astructoter__type__t_html_ae7a02c8ef5da213375f324bfdff43f55"><div class="ttname"><a href="structoter__type__t.html#ae7a02c8ef5da213375f324bfdff43f55">oter_type_t::is_rotatable</a></div><div class="ttdeci">bool is_rotatable() const</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00162">omdata.h:162</a></div></div>
 <div class="ttc" id="astructoter__type__t_html_af0364908636c852c0be70611e9aace6b"><div class="ttname"><a href="structoter__type__t.html#af0364908636c852c0be70611e9aace6b">oter_type_t::directional_peers</a></div><div class="ttdeci">std::vector&lt; oter_id &gt; directional_peers</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00180">omdata.h:180</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="om__direction_8h_source.html#l00026">om_direction::all</a>, <a class="el" href="omdata_8h_source.html#l00180">directional_peers</a>, <a class="el" href="omdata_8h_source.html#l00150">has_flag()</a>, <a class="el" href="omdata_8h_source.html#l00162">is_rotatable()</a>, <a class="el" href="omdata_8h_source.html#l00091">line_drawing</a>, <a class="el" href="overmap_8cpp_source.html#l00726">register_terrain()</a>, <a class="el" href="om__direction_8h_source.html#l00027">om_direction::size</a>, and <a class="el" href="overmap_8cpp_source.html#l00128">om_lines::size</a>.</p>
+<p class="reference">References <a class="el" href="om__direction_8h_source.html#l00026">om_direction::all</a>, <a class="el" href="omdata_8h_source.html#l00180">directional_peers</a>, <a class="el" href="omdata_8h_source.html#l00150">has_flag()</a>, <a class="el" href="omdata_8h_source.html#l00162">is_rotatable()</a>, <a class="el" href="omdata_8h_source.html#l00091">line_drawing</a>, <a class="el" href="overmap_8cpp_source.html#l00727">register_terrain()</a>, <a class="el" href="om__direction_8h_source.html#l00027">om_direction::size</a>, and <a class="el" href="overmap_8cpp_source.html#l00128">om_lines::size</a>.</p>
 
 </div>
 </div>
@@ -323,15 +323,15 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="overmap_8cpp_source.html#l00741">741</a> of file <a class="el" href="overmap_8cpp_source.html">overmap.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00742" name="l00742"></a><span class="lineno">  742</span>{</div>
-<div class="line"><a id="l00743" name="l00743"></a><span class="lineno">  743</span>    assert( !<a class="code hl_variable" href="structoter__type__t.html#af0364908636c852c0be70611e9aace6b">directional_peers</a>.empty() );</div>
-<div class="line"><a id="l00744" name="l00744"></a><span class="lineno">  744</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="structoter__type__t.html#af0364908636c852c0be70611e9aace6b">directional_peers</a>.front();</div>
-<div class="line"><a id="l00745" name="l00745"></a><span class="lineno">  745</span>}</div>
+<p class="definition">Definition at line <a class="el" href="overmap_8cpp_source.html#l00742">742</a> of file <a class="el" href="overmap_8cpp_source.html">overmap.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00743" name="l00743"></a><span class="lineno">  743</span>{</div>
+<div class="line"><a id="l00744" name="l00744"></a><span class="lineno">  744</span>    assert( !<a class="code hl_variable" href="structoter__type__t.html#af0364908636c852c0be70611e9aace6b">directional_peers</a>.empty() );</div>
+<div class="line"><a id="l00745" name="l00745"></a><span class="lineno">  745</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="structoter__type__t.html#af0364908636c852c0be70611e9aace6b">directional_peers</a>.front();</div>
+<div class="line"><a id="l00746" name="l00746"></a><span class="lineno">  746</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="omdata_8h_source.html#l00180">directional_peers</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="overmap_8cpp_source.html#l04966">overmap_specials::create_building_from()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="overmap_8cpp_source.html#l04967">overmap_specials::create_building_from()</a>.</p>
 
 </div>
 </div>
@@ -351,25 +351,25 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="overmap_8cpp_source.html#l00759">759</a> of file <a class="el" href="overmap_8cpp_source.html">overmap.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span>{</div>
-<div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span>    <span class="keywordflow">if</span>( !<a class="code hl_function" href="structoter__type__t.html#a68b2cc6fbcd3a2352d92e43818a1a585">has_flag</a>( <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba055af6e95c02cf9bd634846fd3943de6">line_drawing</a> ) ) {</div>
-<div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span>        <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;Overmap terrain \&quot;%s \&quot; isn&#39;t drawn with lines.&quot;</span>, <span class="keywordtype">id</span>.c_str() );</div>
-<div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="overmap_8cpp.html#aeedf5fa4fcb83a848488015d5fa0fa48">ot_null</a>;</div>
-<div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span>    }</div>
-<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span>    <span class="keywordflow">if</span>( n &gt;= <a class="code hl_variable" href="namespaceom__lines.html#a30a2de310b9de38ac29b1052310debbe">om_lines::size</a> ) {</div>
-<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span>        <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;Invalid overmap line (%d) was asked from overmap terrain \&quot;%s\&quot;.&quot;</span>, n, <span class="keywordtype">id</span>.c_str() );</div>
-<div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="overmap_8cpp.html#aeedf5fa4fcb83a848488015d5fa0fa48">ot_null</a>;</div>
-<div class="line"><a id="l00768" name="l00768"></a><span class="lineno">  768</span>    }</div>
-<div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span>    assert( <a class="code hl_variable" href="structoter__type__t.html#af0364908636c852c0be70611e9aace6b">directional_peers</a>.size() == <a class="code hl_variable" href="namespaceom__lines.html#a30a2de310b9de38ac29b1052310debbe">om_lines::size</a> );</div>
-<div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="structoter__type__t.html#af0364908636c852c0be70611e9aace6b">directional_peers</a>[n];</div>
-<div class="line"><a id="l00771" name="l00771"></a><span class="lineno">  771</span>}</div>
+<p class="definition">Definition at line <a class="el" href="overmap_8cpp_source.html#l00760">760</a> of file <a class="el" href="overmap_8cpp_source.html">overmap.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span>{</div>
+<div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span>    <span class="keywordflow">if</span>( !<a class="code hl_function" href="structoter__type__t.html#a68b2cc6fbcd3a2352d92e43818a1a585">has_flag</a>( <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba055af6e95c02cf9bd634846fd3943de6">line_drawing</a> ) ) {</div>
+<div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span>        <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;Overmap terrain \&quot;%s \&quot; isn&#39;t drawn with lines.&quot;</span>, <span class="keywordtype">id</span>.c_str() );</div>
+<div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="overmap_8cpp.html#aeedf5fa4fcb83a848488015d5fa0fa48">ot_null</a>;</div>
+<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span>    }</div>
+<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span>    <span class="keywordflow">if</span>( n &gt;= <a class="code hl_variable" href="namespaceom__lines.html#a30a2de310b9de38ac29b1052310debbe">om_lines::size</a> ) {</div>
+<div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span>        <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;Invalid overmap line (%d) was asked from overmap terrain \&quot;%s\&quot;.&quot;</span>, n, <span class="keywordtype">id</span>.c_str() );</div>
+<div class="line"><a id="l00768" name="l00768"></a><span class="lineno">  768</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="overmap_8cpp.html#aeedf5fa4fcb83a848488015d5fa0fa48">ot_null</a>;</div>
+<div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span>    }</div>
+<div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span>    assert( <a class="code hl_variable" href="structoter__type__t.html#af0364908636c852c0be70611e9aace6b">directional_peers</a>.size() == <a class="code hl_variable" href="namespaceom__lines.html#a30a2de310b9de38ac29b1052310debbe">om_lines::size</a> );</div>
+<div class="line"><a id="l00771" name="l00771"></a><span class="lineno">  771</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="structoter__type__t.html#af0364908636c852c0be70611e9aace6b">directional_peers</a>[n];</div>
+<div class="line"><a id="l00772" name="l00772"></a><span class="lineno">  772</span>}</div>
 <div class="ttc" id="adebug_8h_html_a87e509562277a7ada3a75330d00cb445"><div class="ttname"><a href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a></div><div class="ttdeci">#define debugmsg(...)</div><div class="ttdoc">Debug message of level DL::Error and class DC::DebugMsg, also includes the source file name and line,...</div><div class="ttdef"><b>Definition:</b> <a href="debug_8h_source.html#l00074">debug.h:74</a></div></div>
 <div class="ttc" id="aovermap_8cpp_html_aeedf5fa4fcb83a848488015d5fa0fa48"><div class="ttname"><a href="overmap_8cpp.html#aeedf5fa4fcb83a848488015d5fa0fa48">ot_null</a></div><div class="ttdeci">oter_id ot_null</div><div class="ttdef"><b>Definition:</b> <a href="overmap_8cpp_source.html#l00082">overmap.cpp:82</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="debug_8h_source.html#l00074">debugmsg</a>, <a class="el" href="omdata_8h_source.html#l00180">directional_peers</a>, <a class="el" href="omdata_8h_source.html#l00150">has_flag()</a>, <a class="el" href="omdata_8h_source.html#l00091">line_drawing</a>, <a class="el" href="overmap_8cpp_source.html#l00082">ot_null</a>, and <a class="el" href="overmap_8cpp_source.html#l00128">om_lines::size</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="overmap_8cpp_source.html#l03554">overmap::build_anthill()</a>, <a class="el" href="overmap_8cpp_source.html#l03855">overmap::build_connection()</a>, and <a class="el" href="overmap_8cpp_source.html#l00804">oter_t::get_rotated()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="overmap_8cpp_source.html#l03555">overmap::build_anthill()</a>, <a class="el" href="overmap_8cpp_source.html#l03856">overmap::build_connection()</a>, and <a class="el" href="overmap_8cpp_source.html#l00805">oter_t::get_rotated()</a>.</p>
 
 </div>
 </div>
@@ -389,23 +389,23 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="overmap_8cpp_source.html#l00747">747</a> of file <a class="el" href="overmap_8cpp_source.html">overmap.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00748" name="l00748"></a><span class="lineno">  748</span>{</div>
-<div class="line"><a id="l00749" name="l00749"></a><span class="lineno">  749</span>    <span class="keywordflow">if</span>( dir == <a class="code hl_enumvalue" href="namespaceom__direction.html#a3f3a3bf2c5af33fc8036734d1ba70b7cafedb2d84cafe20862cb4399751a8a7e3">om_direction::type::invalid</a> ) {</div>
-<div class="line"><a id="l00750" name="l00750"></a><span class="lineno">  750</span>        <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;Invalid rotation was asked from overmap terrain \&quot;%s\&quot;.&quot;</span>, <span class="keywordtype">id</span>.c_str() );</div>
-<div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="overmap_8cpp.html#aeedf5fa4fcb83a848488015d5fa0fa48">ot_null</a>;</div>
-<div class="line"><a id="l00752" name="l00752"></a><span class="lineno">  752</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( dir == <a class="code hl_enumvalue" href="namespaceom__direction.html#a3f3a3bf2c5af33fc8036734d1ba70b7ca334c4a4c42fdb79d7ebc3e73b517e6f8">om_direction::type::none</a> || !<a class="code hl_function" href="structoter__type__t.html#ae7a02c8ef5da213375f324bfdff43f55">is_rotatable</a>() ) {</div>
-<div class="line"><a id="l00753" name="l00753"></a><span class="lineno">  753</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="structoter__type__t.html#af0364908636c852c0be70611e9aace6b">directional_peers</a>.front();</div>
-<div class="line"><a id="l00754" name="l00754"></a><span class="lineno">  754</span>    }</div>
-<div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span>    assert( <a class="code hl_variable" href="structoter__type__t.html#af0364908636c852c0be70611e9aace6b">directional_peers</a>.size() == <a class="code hl_variable" href="namespaceom__direction.html#af97f9dbddaa758278662da3478826c61">om_direction::size</a> );</div>
-<div class="line"><a id="l00756" name="l00756"></a><span class="lineno">  756</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="structoter__type__t.html#af0364908636c852c0be70611e9aace6b">directional_peers</a>[<span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>( dir )];</div>
-<div class="line"><a id="l00757" name="l00757"></a><span class="lineno">  757</span>}</div>
+<p class="definition">Definition at line <a class="el" href="overmap_8cpp_source.html#l00748">748</a> of file <a class="el" href="overmap_8cpp_source.html">overmap.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00749" name="l00749"></a><span class="lineno">  749</span>{</div>
+<div class="line"><a id="l00750" name="l00750"></a><span class="lineno">  750</span>    <span class="keywordflow">if</span>( dir == <a class="code hl_enumvalue" href="namespaceom__direction.html#a3f3a3bf2c5af33fc8036734d1ba70b7cafedb2d84cafe20862cb4399751a8a7e3">om_direction::type::invalid</a> ) {</div>
+<div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span>        <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;Invalid rotation was asked from overmap terrain \&quot;%s\&quot;.&quot;</span>, <span class="keywordtype">id</span>.c_str() );</div>
+<div class="line"><a id="l00752" name="l00752"></a><span class="lineno">  752</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="overmap_8cpp.html#aeedf5fa4fcb83a848488015d5fa0fa48">ot_null</a>;</div>
+<div class="line"><a id="l00753" name="l00753"></a><span class="lineno">  753</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( dir == <a class="code hl_enumvalue" href="namespaceom__direction.html#a3f3a3bf2c5af33fc8036734d1ba70b7ca334c4a4c42fdb79d7ebc3e73b517e6f8">om_direction::type::none</a> || !<a class="code hl_function" href="structoter__type__t.html#ae7a02c8ef5da213375f324bfdff43f55">is_rotatable</a>() ) {</div>
+<div class="line"><a id="l00754" name="l00754"></a><span class="lineno">  754</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="structoter__type__t.html#af0364908636c852c0be70611e9aace6b">directional_peers</a>.front();</div>
+<div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span>    }</div>
+<div class="line"><a id="l00756" name="l00756"></a><span class="lineno">  756</span>    assert( <a class="code hl_variable" href="structoter__type__t.html#af0364908636c852c0be70611e9aace6b">directional_peers</a>.size() == <a class="code hl_variable" href="namespaceom__direction.html#af97f9dbddaa758278662da3478826c61">om_direction::size</a> );</div>
+<div class="line"><a id="l00757" name="l00757"></a><span class="lineno">  757</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="structoter__type__t.html#af0364908636c852c0be70611e9aace6b">directional_peers</a>[<span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>( dir )];</div>
+<div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span>}</div>
 <div class="ttc" id="anamespaceom__direction_html_a3f3a3bf2c5af33fc8036734d1ba70b7ca334c4a4c42fdb79d7ebc3e73b517e6f8"><div class="ttname"><a href="namespaceom__direction.html#a3f3a3bf2c5af33fc8036734d1ba70b7ca334c4a4c42fdb79d7ebc3e73b517e6f8">om_direction::type::none</a></div><div class="ttdeci">@ none</div></div>
 <div class="ttc" id="anamespaceom__direction_html_a3f3a3bf2c5af33fc8036734d1ba70b7cafedb2d84cafe20862cb4399751a8a7e3"><div class="ttname"><a href="namespaceom__direction.html#a3f3a3bf2c5af33fc8036734d1ba70b7cafedb2d84cafe20862cb4399751a8a7e3">om_direction::type::invalid</a></div><div class="ttdeci">@ invalid</div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="debug_8h_source.html#l00074">debugmsg</a>, <a class="el" href="omdata_8h_source.html#l00180">directional_peers</a>, <a class="el" href="namespaceom__direction.html#a3f3a3bf2c5af33fc8036734d1ba70b7cafedb2d84cafe20862cb4399751a8a7e3">om_direction::invalid</a>, <a class="el" href="omdata_8h_source.html#l00162">is_rotatable()</a>, <a class="el" href="namespaceom__direction.html#a3f3a3bf2c5af33fc8036734d1ba70b7ca334c4a4c42fdb79d7ebc3e73b517e6f8">om_direction::none</a>, <a class="el" href="overmap_8cpp_source.html#l00082">ot_null</a>, and <a class="el" href="om__direction_8h_source.html#l00027">om_direction::size</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="overmap_8cpp_source.html#l03855">overmap::build_connection()</a>, and <a class="el" href="overmap_8cpp_source.html#l00804">oter_t::get_rotated()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="overmap_8cpp_source.html#l03856">overmap::build_connection()</a>, and <a class="el" href="overmap_8cpp_source.html#l00805">oter_t::get_rotated()</a>.</p>
 
 </div>
 </div>
@@ -424,10 +424,10 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="overmap_8cpp_source.html#l00638">638</a> of file <a class="el" href="overmap_8cpp_source.html">overmap.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span>{</div>
-<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="catacharset_8cpp.html#a5ded585a111b2b68c0a1732b3259fa03">utf32_to_utf8</a>( <a class="code hl_variable" href="structoter__type__t.html#a27e07d2930d3ea08c22a46787b06dab3">symbol</a> );</div>
-<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>}</div>
+<p class="definition">Definition at line <a class="el" href="overmap_8cpp_source.html#l00639">639</a> of file <a class="el" href="overmap_8cpp_source.html">overmap.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span>{</div>
+<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="catacharset_8cpp.html#a5ded585a111b2b68c0a1732b3259fa03">utf32_to_utf8</a>( <a class="code hl_variable" href="structoter__type__t.html#a27e07d2930d3ea08c22a46787b06dab3">symbol</a> );</div>
+<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span>}</div>
 <div class="ttc" id="acatacharset_8cpp_html_a5ded585a111b2b68c0a1732b3259fa03"><div class="ttname"><a href="catacharset_8cpp.html#a5ded585a111b2b68c0a1732b3259fa03">utf32_to_utf8</a></div><div class="ttdeci">std::string utf32_to_utf8(uint32_t ch)</div><div class="ttdef"><b>Definition:</b> <a href="catacharset_8cpp_source.html#l00099">catacharset.cpp:99</a></div></div>
 <div class="ttc" id="astructoter__type__t_html_a27e07d2930d3ea08c22a46787b06dab3"><div class="ttname"><a href="structoter__type__t.html#a27e07d2930d3ea08c22a46787b06dab3">oter_type_t::symbol</a></div><div class="ttdeci">uint32_t symbol</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00130">omdata.h:130</a></div></div>
 </div><!-- fragment -->
@@ -501,7 +501,7 @@ Private Attributes</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="omdata_8h_source.html#l00179">flags</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="overmap_8cpp_source.html#l00709">finalize()</a>, <a class="el" href="overmap_8cpp_source.html#l00759">get_linear()</a>, <a class="el" href="overmap_8cpp_source.html#l00797">oter_t::get_mapgen_id()</a>, <a class="el" href="overmap_8cpp_source.html#l00804">oter_t::get_rotated()</a>, <a class="el" href="omdata_8h_source.html#l00258">oter_t::has_flag()</a>, <a class="el" href="omdata_8h_source.html#l00283">oter_t::is_lake()</a>, <a class="el" href="omdata_8h_source.html#l00287">oter_t::is_lake_shore()</a>, <a class="el" href="omdata_8h_source.html#l00166">is_linear()</a>, <a class="el" href="omdata_8h_source.html#l00272">oter_t::is_river()</a>, <a class="el" href="omdata_8h_source.html#l00162">is_rotatable()</a>, and <a class="el" href="overmap_8cpp_source.html#l00643">load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="overmap_8cpp_source.html#l00710">finalize()</a>, <a class="el" href="overmap_8cpp_source.html#l00760">get_linear()</a>, <a class="el" href="overmap_8cpp_source.html#l00798">oter_t::get_mapgen_id()</a>, <a class="el" href="overmap_8cpp_source.html#l00805">oter_t::get_rotated()</a>, <a class="el" href="omdata_8h_source.html#l00258">oter_t::has_flag()</a>, <a class="el" href="omdata_8h_source.html#l00283">oter_t::is_lake()</a>, <a class="el" href="omdata_8h_source.html#l00287">oter_t::is_lake_shore()</a>, <a class="el" href="omdata_8h_source.html#l00166">is_linear()</a>, <a class="el" href="omdata_8h_source.html#l00272">oter_t::is_river()</a>, <a class="el" href="omdata_8h_source.html#l00162">is_rotatable()</a>, and <a class="el" href="overmap_8cpp_source.html#l00644">load()</a>.</p>
 
 </div>
 </div>
@@ -535,7 +535,7 @@ Private Attributes</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="omdata_8h_source.html#l00150">has_flag()</a>, and <a class="el" href="omdata_8h_source.html#l00091">line_drawing</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="overmap__connection_8h_source.html#l00033">overmap_connection::subtype::allows_turns()</a>, <a class="el" href="overmap_8cpp_source.html#l03855">overmap::build_connection()</a>, and <a class="el" href="omdata_8h_source.html#l00268">oter_t::is_linear()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="overmap__connection_8h_source.html#l00033">overmap_connection::subtype::allows_turns()</a>, <a class="el" href="overmap_8cpp_source.html#l03856">overmap::build_connection()</a>, and <a class="el" href="omdata_8h_source.html#l00268">oter_t::is_linear()</a>.</p>
 
 </div>
 </div>
@@ -570,7 +570,7 @@ Private Attributes</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="omdata_8h_source.html#l00150">has_flag()</a>, <a class="el" href="omdata_8h_source.html#l00091">line_drawing</a>, and <a class="el" href="omdata_8h_source.html#l00088">no_rotate</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="overmap_8cpp_source.html#l00709">finalize()</a>, <a class="el" href="overmap_8cpp_source.html#l00747">get_rotated()</a>, and <a class="el" href="omdata_8h_source.html#l00264">oter_t::is_rotatable()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="overmap_8cpp_source.html#l00710">finalize()</a>, <a class="el" href="overmap_8cpp_source.html#l00748">get_rotated()</a>, and <a class="el" href="omdata_8h_source.html#l00264">oter_t::is_rotatable()</a>.</p>
 
 </div>
 </div>
@@ -600,67 +600,68 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="overmap_8cpp_source.html#l00643">643</a> of file <a class="el" href="overmap_8cpp_source.html">overmap.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span>{</div>
-<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span>    <span class="keyword">const</span> <span class="keywordtype">bool</span> strict = src == <span class="stringliteral">&quot;dda&quot;</span>;</div>
-<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span> </div>
-<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span>    <a class="code hl_function" href="generic__factory_8h.html#a6bc35b9738f0a0a68ccc6b4cfc7918f1">optional</a>( jo, <a class="code hl_variable" href="structoter__type__t.html#a9e9d39c983965f4d1e13dc9266aa33b6">was_loaded</a>, <span class="stringliteral">&quot;sym&quot;</span>, <a class="code hl_variable" href="structoter__type__t.html#a27e07d2930d3ea08c22a46787b06dab3">symbol</a>, <a class="code hl_function" href="generic__factory_8h.html#a87f1cd034d9829b6ba4dc68f3203bf25">unicode_codepoint_from_symbol_reader</a>, <a class="code hl_define" href="catacharset_8h.html#adf2f9dc565f7cb248d7baf38c543376f">NULL_UNICODE</a> );</div>
-<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span> </div>
-<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span>    <a class="code hl_function" href="assign_8h.html#ac353926c625eb31f78ef7534277c5aaf">assign</a>( jo, <span class="stringliteral">&quot;name&quot;</span>, <a class="code hl_variable" href="structoter__type__t.html#a6abd45e448d7a6a61338e8ff2d42d15f">name</a>, strict );</div>
-<div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span>    <a class="code hl_function" href="assign_8h.html#ac353926c625eb31f78ef7534277c5aaf">assign</a>( jo, <span class="stringliteral">&quot;see_cost&quot;</span>, <a class="code hl_variable" href="structoter__type__t.html#abc5fec98845c85cde2bb19ac0e97dfaf">see_cost</a>, strict );</div>
-<div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span>    <a class="code hl_function" href="assign_8h.html#ac353926c625eb31f78ef7534277c5aaf">assign</a>( jo, <span class="stringliteral">&quot;travel_cost&quot;</span>, <a class="code hl_variable" href="structoter__type__t.html#a76ceb391c08d7170f2bfefe0b2494cd4">travel_cost</a>, strict );</div>
-<div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span>    <a class="code hl_function" href="assign_8h.html#ac353926c625eb31f78ef7534277c5aaf">assign</a>( jo, <span class="stringliteral">&quot;extras&quot;</span>, <a class="code hl_variable" href="structoter__type__t.html#a4d9cc5276d68cc0d3d6f1eb062f6ece7">extras</a>, strict );</div>
-<div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span>    <a class="code hl_function" href="assign_8h.html#ac353926c625eb31f78ef7534277c5aaf">assign</a>( jo, <span class="stringliteral">&quot;mondensity&quot;</span>, <a class="code hl_variable" href="structoter__type__t.html#a27aaa0de7a8628785d8f4cb94a66e902">mondensity</a>, strict );</div>
-<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span>    <a class="code hl_function" href="assign_8h.html#ac353926c625eb31f78ef7534277c5aaf">assign</a>( jo, <span class="stringliteral">&quot;spawns&quot;</span>, <a class="code hl_variable" href="structoter__type__t.html#accc7f42b4aa20605b1e2df93dc881dfa">static_spawns</a>, strict );</div>
-<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span>    <a class="code hl_function" href="assign_8h.html#ac353926c625eb31f78ef7534277c5aaf">assign</a>( jo, <span class="stringliteral">&quot;color&quot;</span>, <a class="code hl_variable" href="structoter__type__t.html#a45c20d18f0bb35ee173e9a0f6f81850b">color</a>, strict );</div>
-<div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span>    <a class="code hl_function" href="assign_8h.html#ac353926c625eb31f78ef7534277c5aaf">assign</a>( jo, <span class="stringliteral">&quot;land_use_code&quot;</span>, <a class="code hl_variable" href="structoter__type__t.html#ad64566e2bbcbae2d691556ced30d1cbe">land_use_code</a>, strict );</div>
-<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span> </div>
-<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span>    <span class="keywordflow">if</span>( jo.<a class="code hl_function" href="classJsonObject.html#a887d230c6a42ef2a6cf72c0e040cd4e3">has_member</a>( <span class="stringliteral">&quot;looks_like&quot;</span> ) ) {</div>
-<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span>        std::vector&lt;std::string&gt; ll;</div>
-<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span>        <span class="keywordflow">if</span>( jo.<a class="code hl_function" href="classJsonObject.html#aa92b5eb23f6b39645877d79fbef784a0">has_array</a>( <span class="stringliteral">&quot;looks_like&quot;</span> ) ) {</div>
-<div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span>            jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;looks_like&quot;</span>, ll );</div>
-<div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( jo.<a class="code hl_function" href="classJsonObject.html#a19d83d03e3d5cc6905bcb850d80a1f05">has_string</a>( <span class="stringliteral">&quot;looks_like&quot;</span> ) ) {</div>
-<div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span>            <span class="keyword">const</span> std::string one_look = jo.<a class="code hl_function" href="classJsonObject.html#a96b6d1b9cf7bda4fc9cd177a99e0631c">get_string</a>( <span class="stringliteral">&quot;looks_like&quot;</span> );</div>
-<div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span>            ll.push_back( one_look );</div>
-<div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span>        }</div>
-<div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span>        <a class="code hl_variable" href="structoter__type__t.html#a4466ac0ab7fde40326cb838a09d90c76">looks_like</a> = ll;</div>
-<div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( jo.<a class="code hl_function" href="classJsonObject.html#a887d230c6a42ef2a6cf72c0e040cd4e3">has_member</a>( <span class="stringliteral">&quot;copy-from&quot;</span> ) ) {</div>
-<div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span>        <a class="code hl_variable" href="structoter__type__t.html#a4466ac0ab7fde40326cb838a09d90c76">looks_like</a>.insert( <a class="code hl_variable" href="structoter__type__t.html#a4466ac0ab7fde40326cb838a09d90c76">looks_like</a>.begin(), jo.<a class="code hl_function" href="classJsonObject.html#a96b6d1b9cf7bda4fc9cd177a99e0631c">get_string</a>( <span class="stringliteral">&quot;copy-from&quot;</span> ) );</div>
-<div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span>    }</div>
-<div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span> </div>
-<div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span>    <span class="keyword">const</span> <span class="keyword">auto</span> flag_reader = <a class="code hl_function" href="generic__readers_8h.html#a8385f74f5687d1b7e43934bfad338d43">make_flag_reader</a>( <a class="code hl_variable" href="overmap_8h.html#a51ee2a0aeffbb8c4b827e82766ed4c04">oter_flags_map</a>, <span class="stringliteral">&quot;overmap terrain flag&quot;</span> );</div>
-<div class="line"><a id="l00672" name="l00672"></a><span class="lineno">  672</span>    <a class="code hl_function" href="generic__factory_8h.html#a6bc35b9738f0a0a68ccc6b4cfc7918f1">optional</a>( jo, <a class="code hl_variable" href="structoter__type__t.html#a9e9d39c983965f4d1e13dc9266aa33b6">was_loaded</a>, <span class="stringliteral">&quot;flags&quot;</span>, <a class="code hl_variable" href="structoter__type__t.html#a62b5fd20e7054ce0a84ceefe61045db4">flags</a>, flag_reader );</div>
-<div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span> </div>
-<div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span>    <a class="code hl_function" href="generic__factory_8h.html#a6bc35b9738f0a0a68ccc6b4cfc7918f1">optional</a>( jo, <a class="code hl_variable" href="structoter__type__t.html#a9e9d39c983965f4d1e13dc9266aa33b6">was_loaded</a>, <span class="stringliteral">&quot;connect_group&quot;</span>, <a class="code hl_variable" href="structoter__type__t.html#aad59cfe2e5504e702b2ed4814b281163">connect_group</a>, <a class="code hl_class" href="classauto__flags__reader.html">string_reader</a>{} );</div>
-<div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span> </div>
-<div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span>    <span class="keywordflow">if</span>( <a class="code hl_function" href="structoter__type__t.html#a68b2cc6fbcd3a2352d92e43818a1a585">has_flag</a>( <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba055af6e95c02cf9bd634846fd3943de6">line_drawing</a> ) ) {</div>
-<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span>        <span class="keywordflow">if</span>( <a class="code hl_function" href="structoter__type__t.html#a68b2cc6fbcd3a2352d92e43818a1a585">has_flag</a>( <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4bae1d191dd46b948ae16ee10473b9c0980">no_rotate</a> ) ) {</div>
-<div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span>            jo.<a class="code hl_function" href="classJsonObject.html#ae7bcdb4ec8ab2c64e607b411cb98d00c">throw_error</a>( R<span class="stringliteral">&quot;(Mutually exclusive flags: &quot;NO_ROTATE&quot; and &quot;LINEAR&quot;.)&quot; );</span></div>
-<div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span><span class="stringliteral">        }</span></div>
-<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span><span class="stringliteral"></span> </div>
-<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span><span class="stringliteral">        </span><span class="keywordflow">for</span>( <span class="keyword">const</span> <span class="keyword">auto</span> &amp;elem : <a class="code hl_variable" href="namespaceom__lines.html#a9f9ce6626fc845f01d1f5e0921f734fb">om_lines::mapgen_suffixes</a> ) {</div>
-<div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span>            <a class="code hl_function" href="overmap_8cpp.html#af1247a656ae694e70f90e0b6aa08b9ca">load_overmap_terrain_mapgens</a>( jo, <span class="keywordtype">id</span>.str(), elem );</div>
-<div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span>        }</div>
-<div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span> </div>
-<div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span>        <span class="keywordflow">if</span>( <a class="code hl_variable" href="structoter__type__t.html#a27e07d2930d3ea08c22a46787b06dab3">symbol</a> == <a class="code hl_define" href="catacharset_8h.html#adf2f9dc565f7cb248d7baf38c543376f">NULL_UNICODE</a> ) {</div>
-<div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span>            <span class="comment">// Default the sym for linear terrains to a specific value which</span></div>
-<div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span>            <span class="comment">// has special behaviour when using fallback ASCII tiles so as to</span></div>
-<div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span>            <span class="comment">// cause it to draw using the box drawing characters (see</span></div>
-<div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span>            <span class="comment">// load_ascii_set).</span></div>
-<div class="line"><a id="l00690" name="l00690"></a><span class="lineno">  690</span>            <a class="code hl_variable" href="structoter__type__t.html#a27e07d2930d3ea08c22a46787b06dab3">symbol</a> = <a class="code hl_define" href="output_8h.html#adecb5eb42e17650557a3b1f7d014cd97">LINE_XOXO_C</a>;</div>
-<div class="line"><a id="l00691" name="l00691"></a><span class="lineno">  691</span>        }</div>
-<div class="line"><a id="l00692" name="l00692"></a><span class="lineno">  692</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span>        <span class="keywordflow">if</span>( <a class="code hl_variable" href="structoter__type__t.html#a27e07d2930d3ea08c22a46787b06dab3">symbol</a> == <a class="code hl_define" href="catacharset_8h.html#adf2f9dc565f7cb248d7baf38c543376f">NULL_UNICODE</a> &amp;&amp; !jo.<a class="code hl_function" href="classJsonObject.html#a19d83d03e3d5cc6905bcb850d80a1f05">has_string</a>( <span class="stringliteral">&quot;abstract&quot;</span> ) ) {</div>
-<div class="line"><a id="l00694" name="l00694"></a><span class="lineno">  694</span>            <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;sym is not defined for overmap_terrain %s (%s)&quot;</span>, <span class="keywordtype">id</span>.c_str(), <a class="code hl_variable" href="structoter__type__t.html#a6abd45e448d7a6a61338e8ff2d42d15f">name</a> );</div>
-<div class="line"><a id="l00695" name="l00695"></a><span class="lineno">  695</span>        }</div>
-<div class="line"><a id="l00696" name="l00696"></a><span class="lineno">  696</span>        <span class="keywordflow">if</span>( !jo.<a class="code hl_function" href="classJsonObject.html#a19d83d03e3d5cc6905bcb850d80a1f05">has_string</a>( <span class="stringliteral">&quot;sym&quot;</span> ) &amp;&amp; jo.<a class="code hl_function" href="classJsonObject.html#afe9fbff0fd572f98fddd850e019d8d46">has_number</a>( <span class="stringliteral">&quot;sym&quot;</span> ) ) {</div>
-<div class="line"><a id="l00697" name="l00697"></a><span class="lineno">  697</span>            <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;sym is defined as number instead of string for overmap_terrain %s (%s)&quot;</span>, <span class="keywordtype">id</span>.c_str(),</div>
-<div class="line"><a id="l00698" name="l00698"></a><span class="lineno">  698</span>                      <a class="code hl_variable" href="structoter__type__t.html#a6abd45e448d7a6a61338e8ff2d42d15f">name</a> );</div>
-<div class="line"><a id="l00699" name="l00699"></a><span class="lineno">  699</span>        }</div>
-<div class="line"><a id="l00700" name="l00700"></a><span class="lineno">  700</span>        <a class="code hl_function" href="overmap_8cpp.html#af1247a656ae694e70f90e0b6aa08b9ca">load_overmap_terrain_mapgens</a>( jo, <span class="keywordtype">id</span>.str() );</div>
-<div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span>    }</div>
-<div class="line"><a id="l00702" name="l00702"></a><span class="lineno">  702</span>}</div>
-<div class="ttc" id="aassign_8h_html_ac353926c625eb31f78ef7534277c5aaf"><div class="ttname"><a href="assign_8h.html#ac353926c625eb31f78ef7534277c5aaf">assign</a></div><div class="ttdeci">bool assign(const JsonObject &amp;jo, const std::string &amp;name, T &amp;val, bool strict=false, T lo=std::numeric_limits&lt; T &gt;::lowest(), T hi=std::numeric_limits&lt; T &gt;::max())</div><div class="ttdef"><b>Definition:</b> <a href="assign_8h_source.html#l00054">assign.h:54</a></div></div>
+<p class="definition">Definition at line <a class="el" href="overmap_8cpp_source.html#l00644">644</a> of file <a class="el" href="overmap_8cpp_source.html">overmap.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span>{</div>
+<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span>    <span class="keyword">const</span> <span class="keywordtype">bool</span> strict = <a class="code hl_function" href="assign_8h.html#abefce6b21ce60d9d6dc6037cf5ed5973">is_strict_enabled</a>( src );</div>
+<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span> </div>
+<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span>    <a class="code hl_function" href="generic__factory_8h.html#a6bc35b9738f0a0a68ccc6b4cfc7918f1">optional</a>( jo, <a class="code hl_variable" href="structoter__type__t.html#a9e9d39c983965f4d1e13dc9266aa33b6">was_loaded</a>, <span class="stringliteral">&quot;sym&quot;</span>, <a class="code hl_variable" href="structoter__type__t.html#a27e07d2930d3ea08c22a46787b06dab3">symbol</a>, <a class="code hl_function" href="generic__factory_8h.html#a87f1cd034d9829b6ba4dc68f3203bf25">unicode_codepoint_from_symbol_reader</a>, <a class="code hl_define" href="catacharset_8h.html#adf2f9dc565f7cb248d7baf38c543376f">NULL_UNICODE</a> );</div>
+<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span> </div>
+<div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span>    <a class="code hl_function" href="assign_8h.html#ac353926c625eb31f78ef7534277c5aaf">assign</a>( jo, <span class="stringliteral">&quot;name&quot;</span>, <a class="code hl_variable" href="structoter__type__t.html#a6abd45e448d7a6a61338e8ff2d42d15f">name</a>, strict );</div>
+<div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span>    <a class="code hl_function" href="assign_8h.html#ac353926c625eb31f78ef7534277c5aaf">assign</a>( jo, <span class="stringliteral">&quot;see_cost&quot;</span>, <a class="code hl_variable" href="structoter__type__t.html#abc5fec98845c85cde2bb19ac0e97dfaf">see_cost</a>, strict );</div>
+<div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span>    <a class="code hl_function" href="assign_8h.html#ac353926c625eb31f78ef7534277c5aaf">assign</a>( jo, <span class="stringliteral">&quot;travel_cost&quot;</span>, <a class="code hl_variable" href="structoter__type__t.html#a76ceb391c08d7170f2bfefe0b2494cd4">travel_cost</a>, strict );</div>
+<div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span>    <a class="code hl_function" href="assign_8h.html#ac353926c625eb31f78ef7534277c5aaf">assign</a>( jo, <span class="stringliteral">&quot;extras&quot;</span>, <a class="code hl_variable" href="structoter__type__t.html#a4d9cc5276d68cc0d3d6f1eb062f6ece7">extras</a>, strict );</div>
+<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span>    <a class="code hl_function" href="assign_8h.html#ac353926c625eb31f78ef7534277c5aaf">assign</a>( jo, <span class="stringliteral">&quot;mondensity&quot;</span>, <a class="code hl_variable" href="structoter__type__t.html#a27aaa0de7a8628785d8f4cb94a66e902">mondensity</a>, strict );</div>
+<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span>    <a class="code hl_function" href="assign_8h.html#ac353926c625eb31f78ef7534277c5aaf">assign</a>( jo, <span class="stringliteral">&quot;spawns&quot;</span>, <a class="code hl_variable" href="structoter__type__t.html#accc7f42b4aa20605b1e2df93dc881dfa">static_spawns</a>, strict );</div>
+<div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span>    <a class="code hl_function" href="assign_8h.html#ac353926c625eb31f78ef7534277c5aaf">assign</a>( jo, <span class="stringliteral">&quot;color&quot;</span>, <a class="code hl_variable" href="structoter__type__t.html#a45c20d18f0bb35ee173e9a0f6f81850b">color</a>, strict );</div>
+<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span>    <a class="code hl_function" href="assign_8h.html#ac353926c625eb31f78ef7534277c5aaf">assign</a>( jo, <span class="stringliteral">&quot;land_use_code&quot;</span>, <a class="code hl_variable" href="structoter__type__t.html#ad64566e2bbcbae2d691556ced30d1cbe">land_use_code</a>, strict );</div>
+<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span> </div>
+<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span>    <span class="keywordflow">if</span>( jo.<a class="code hl_function" href="classJsonObject.html#a887d230c6a42ef2a6cf72c0e040cd4e3">has_member</a>( <span class="stringliteral">&quot;looks_like&quot;</span> ) ) {</div>
+<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span>        std::vector&lt;std::string&gt; ll;</div>
+<div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span>        <span class="keywordflow">if</span>( jo.<a class="code hl_function" href="classJsonObject.html#aa92b5eb23f6b39645877d79fbef784a0">has_array</a>( <span class="stringliteral">&quot;looks_like&quot;</span> ) ) {</div>
+<div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span>            jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;looks_like&quot;</span>, ll );</div>
+<div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( jo.<a class="code hl_function" href="classJsonObject.html#a19d83d03e3d5cc6905bcb850d80a1f05">has_string</a>( <span class="stringliteral">&quot;looks_like&quot;</span> ) ) {</div>
+<div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span>            <span class="keyword">const</span> std::string one_look = jo.<a class="code hl_function" href="classJsonObject.html#a96b6d1b9cf7bda4fc9cd177a99e0631c">get_string</a>( <span class="stringliteral">&quot;looks_like&quot;</span> );</div>
+<div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span>            ll.push_back( one_look );</div>
+<div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span>        }</div>
+<div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span>        <a class="code hl_variable" href="structoter__type__t.html#a4466ac0ab7fde40326cb838a09d90c76">looks_like</a> = ll;</div>
+<div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( jo.<a class="code hl_function" href="classJsonObject.html#a887d230c6a42ef2a6cf72c0e040cd4e3">has_member</a>( <span class="stringliteral">&quot;copy-from&quot;</span> ) ) {</div>
+<div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span>        <a class="code hl_variable" href="structoter__type__t.html#a4466ac0ab7fde40326cb838a09d90c76">looks_like</a>.insert( <a class="code hl_variable" href="structoter__type__t.html#a4466ac0ab7fde40326cb838a09d90c76">looks_like</a>.begin(), jo.<a class="code hl_function" href="classJsonObject.html#a96b6d1b9cf7bda4fc9cd177a99e0631c">get_string</a>( <span class="stringliteral">&quot;copy-from&quot;</span> ) );</div>
+<div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span>    }</div>
+<div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span> </div>
+<div class="line"><a id="l00672" name="l00672"></a><span class="lineno">  672</span>    <span class="keyword">const</span> <span class="keyword">auto</span> flag_reader = <a class="code hl_function" href="generic__readers_8h.html#a8385f74f5687d1b7e43934bfad338d43">make_flag_reader</a>( <a class="code hl_variable" href="overmap_8h.html#a51ee2a0aeffbb8c4b827e82766ed4c04">oter_flags_map</a>, <span class="stringliteral">&quot;overmap terrain flag&quot;</span> );</div>
+<div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span>    <a class="code hl_function" href="generic__factory_8h.html#a6bc35b9738f0a0a68ccc6b4cfc7918f1">optional</a>( jo, <a class="code hl_variable" href="structoter__type__t.html#a9e9d39c983965f4d1e13dc9266aa33b6">was_loaded</a>, <span class="stringliteral">&quot;flags&quot;</span>, <a class="code hl_variable" href="structoter__type__t.html#a62b5fd20e7054ce0a84ceefe61045db4">flags</a>, flag_reader );</div>
+<div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span> </div>
+<div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span>    <a class="code hl_function" href="generic__factory_8h.html#a6bc35b9738f0a0a68ccc6b4cfc7918f1">optional</a>( jo, <a class="code hl_variable" href="structoter__type__t.html#a9e9d39c983965f4d1e13dc9266aa33b6">was_loaded</a>, <span class="stringliteral">&quot;connect_group&quot;</span>, <a class="code hl_variable" href="structoter__type__t.html#aad59cfe2e5504e702b2ed4814b281163">connect_group</a>, <a class="code hl_class" href="classauto__flags__reader.html">string_reader</a>{} );</div>
+<div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span> </div>
+<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span>    <span class="keywordflow">if</span>( <a class="code hl_function" href="structoter__type__t.html#a68b2cc6fbcd3a2352d92e43818a1a585">has_flag</a>( <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4ba055af6e95c02cf9bd634846fd3943de6">line_drawing</a> ) ) {</div>
+<div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span>        <span class="keywordflow">if</span>( <a class="code hl_function" href="structoter__type__t.html#a68b2cc6fbcd3a2352d92e43818a1a585">has_flag</a>( <a class="code hl_enumvalue" href="omdata_8h.html#afaf721417ebfe396111f8f48b690ac4bae1d191dd46b948ae16ee10473b9c0980">no_rotate</a> ) ) {</div>
+<div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span>            jo.<a class="code hl_function" href="classJsonObject.html#ae7bcdb4ec8ab2c64e607b411cb98d00c">throw_error</a>( R<span class="stringliteral">&quot;(Mutually exclusive flags: &quot;NO_ROTATE&quot; and &quot;LINEAR&quot;.)&quot; );</span></div>
+<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span><span class="stringliteral">        }</span></div>
+<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span><span class="stringliteral"></span> </div>
+<div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span><span class="stringliteral">        </span><span class="keywordflow">for</span>( <span class="keyword">const</span> <span class="keyword">auto</span> &amp;elem : <a class="code hl_variable" href="namespaceom__lines.html#a9f9ce6626fc845f01d1f5e0921f734fb">om_lines::mapgen_suffixes</a> ) {</div>
+<div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span>            <a class="code hl_function" href="overmap_8cpp.html#af1247a656ae694e70f90e0b6aa08b9ca">load_overmap_terrain_mapgens</a>( jo, <span class="keywordtype">id</span>.str(), elem );</div>
+<div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span>        }</div>
+<div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span> </div>
+<div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span>        <span class="keywordflow">if</span>( <a class="code hl_variable" href="structoter__type__t.html#a27e07d2930d3ea08c22a46787b06dab3">symbol</a> == <a class="code hl_define" href="catacharset_8h.html#adf2f9dc565f7cb248d7baf38c543376f">NULL_UNICODE</a> ) {</div>
+<div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span>            <span class="comment">// Default the sym for linear terrains to a specific value which</span></div>
+<div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span>            <span class="comment">// has special behaviour when using fallback ASCII tiles so as to</span></div>
+<div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span>            <span class="comment">// cause it to draw using the box drawing characters (see</span></div>
+<div class="line"><a id="l00690" name="l00690"></a><span class="lineno">  690</span>            <span class="comment">// load_ascii_set).</span></div>
+<div class="line"><a id="l00691" name="l00691"></a><span class="lineno">  691</span>            <a class="code hl_variable" href="structoter__type__t.html#a27e07d2930d3ea08c22a46787b06dab3">symbol</a> = <a class="code hl_define" href="output_8h.html#adecb5eb42e17650557a3b1f7d014cd97">LINE_XOXO_C</a>;</div>
+<div class="line"><a id="l00692" name="l00692"></a><span class="lineno">  692</span>        }</div>
+<div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00694" name="l00694"></a><span class="lineno">  694</span>        <span class="keywordflow">if</span>( <a class="code hl_variable" href="structoter__type__t.html#a27e07d2930d3ea08c22a46787b06dab3">symbol</a> == <a class="code hl_define" href="catacharset_8h.html#adf2f9dc565f7cb248d7baf38c543376f">NULL_UNICODE</a> &amp;&amp; !jo.<a class="code hl_function" href="classJsonObject.html#a19d83d03e3d5cc6905bcb850d80a1f05">has_string</a>( <span class="stringliteral">&quot;abstract&quot;</span> ) ) {</div>
+<div class="line"><a id="l00695" name="l00695"></a><span class="lineno">  695</span>            <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;sym is not defined for overmap_terrain %s (%s)&quot;</span>, <span class="keywordtype">id</span>.c_str(), <a class="code hl_variable" href="structoter__type__t.html#a6abd45e448d7a6a61338e8ff2d42d15f">name</a> );</div>
+<div class="line"><a id="l00696" name="l00696"></a><span class="lineno">  696</span>        }</div>
+<div class="line"><a id="l00697" name="l00697"></a><span class="lineno">  697</span>        <span class="keywordflow">if</span>( !jo.<a class="code hl_function" href="classJsonObject.html#a19d83d03e3d5cc6905bcb850d80a1f05">has_string</a>( <span class="stringliteral">&quot;sym&quot;</span> ) &amp;&amp; jo.<a class="code hl_function" href="classJsonObject.html#afe9fbff0fd572f98fddd850e019d8d46">has_number</a>( <span class="stringliteral">&quot;sym&quot;</span> ) ) {</div>
+<div class="line"><a id="l00698" name="l00698"></a><span class="lineno">  698</span>            <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;sym is defined as number instead of string for overmap_terrain %s (%s)&quot;</span>, <span class="keywordtype">id</span>.c_str(),</div>
+<div class="line"><a id="l00699" name="l00699"></a><span class="lineno">  699</span>                      <a class="code hl_variable" href="structoter__type__t.html#a6abd45e448d7a6a61338e8ff2d42d15f">name</a> );</div>
+<div class="line"><a id="l00700" name="l00700"></a><span class="lineno">  700</span>        }</div>
+<div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span>        <a class="code hl_function" href="overmap_8cpp.html#af1247a656ae694e70f90e0b6aa08b9ca">load_overmap_terrain_mapgens</a>( jo, <span class="keywordtype">id</span>.str() );</div>
+<div class="line"><a id="l00702" name="l00702"></a><span class="lineno">  702</span>    }</div>
+<div class="line"><a id="l00703" name="l00703"></a><span class="lineno">  703</span>}</div>
+<div class="ttc" id="aassign_8h_html_abefce6b21ce60d9d6dc6037cf5ed5973"><div class="ttname"><a href="assign_8h.html#abefce6b21ce60d9d6dc6037cf5ed5973">is_strict_enabled</a></div><div class="ttdeci">bool is_strict_enabled(const std::string &amp;src)</div><div class="ttdoc">Check whether strict checks are enabled for given mod.</div><div class="ttdef"><b>Definition:</b> <a href="mod__manager_8cpp_source.html#l00368">mod_manager.cpp:368</a></div></div>
+<div class="ttc" id="aassign_8h_html_ac353926c625eb31f78ef7534277c5aaf"><div class="ttname"><a href="assign_8h.html#ac353926c625eb31f78ef7534277c5aaf">assign</a></div><div class="ttdeci">bool assign(const JsonObject &amp;jo, const std::string &amp;name, T &amp;val, bool strict=false, T lo=std::numeric_limits&lt; T &gt;::lowest(), T hi=std::numeric_limits&lt; T &gt;::max())</div><div class="ttdef"><b>Definition:</b> <a href="assign_8h_source.html#l00059">assign.h:59</a></div></div>
 <div class="ttc" id="acatacharset_8h_html_adf2f9dc565f7cb248d7baf38c543376f"><div class="ttname"><a href="catacharset_8h.html#adf2f9dc565f7cb248d7baf38c543376f">NULL_UNICODE</a></div><div class="ttdeci">#define NULL_UNICODE</div><div class="ttdef"><b>Definition:</b> <a href="catacharset_8h_source.html#l00011">catacharset.h:11</a></div></div>
 <div class="ttc" id="aclassJsonObject_html_a19d83d03e3d5cc6905bcb850d80a1f05"><div class="ttname"><a href="classJsonObject.html#a19d83d03e3d5cc6905bcb850d80a1f05">JsonObject::has_string</a></div><div class="ttdeci">bool has_string(const std::string &amp;name) const</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l00405">json.cpp:405</a></div></div>
 <div class="ttc" id="aclassJsonObject_html_a887d230c6a42ef2a6cf72c0e040cd4e3"><div class="ttname"><a href="classJsonObject.html#a887d230c6a42ef2a6cf72c0e040cd4e3">JsonObject::has_member</a></div><div class="ttdeci">bool has_member(const std::string &amp;name) const</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l00181">json.cpp:181</a></div></div>
@@ -688,7 +689,7 @@ Private Attributes</h2></td></tr>
 <div class="ttc" id="astructoter__type__t_html_accc7f42b4aa20605b1e2df93dc881dfa"><div class="ttname"><a href="structoter__type__t.html#accc7f42b4aa20605b1e2df93dc881dfa">oter_type_t::static_spawns</a></div><div class="ttdeci">overmap_static_spawns static_spawns</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00139">omdata.h:139</a></div></div>
 <div class="ttc" id="astructoter__type__t_html_ad64566e2bbcbae2d691556ced30d1cbe"><div class="ttname"><a href="structoter__type__t.html#ad64566e2bbcbae2d691556ced30d1cbe">oter_type_t::land_use_code</a></div><div class="ttdeci">overmap_land_use_code_id land_use_code</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00132">omdata.h:132</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="assign_8h_source.html#l00054">assign()</a>, <a class="el" href="omdata_8h_source.html#l00131">color</a>, <a class="el" href="omdata_8h_source.html#l00181">connect_group</a>, <a class="el" href="debug_8h_source.html#l00074">debugmsg</a>, <a class="el" href="omdata_8h_source.html#l00136">extras</a>, <a class="el" href="omdata_8h_source.html#l00179">flags</a>, <a class="el" href="json_8cpp_source.html#l00314">JsonObject::get_string()</a>, <a class="el" href="json_8cpp_source.html#l00415">JsonObject::has_array()</a>, <a class="el" href="omdata_8h_source.html#l00150">has_flag()</a>, <a class="el" href="json_8cpp_source.html#l00181">JsonObject::has_member()</a>, <a class="el" href="json_8cpp_source.html#l00395">JsonObject::has_number()</a>, <a class="el" href="json_8cpp_source.html#l00405">JsonObject::has_string()</a>, <a class="el" href="omdata_8h_source.html#l00132">land_use_code</a>, <a class="el" href="omdata_8h_source.html#l00091">line_drawing</a>, <a class="el" href="output_8h_source.html#l00051">LINE_XOXO_C</a>, <a class="el" href="overmap_8cpp_source.html#l00625">load_overmap_terrain_mapgens()</a>, <a class="el" href="omdata_8h_source.html#l00133">looks_like</a>, <a class="el" href="generic__readers_8h_source.html#l00414">make_flag_reader()</a>, <a class="el" href="overmap_8cpp_source.html#l00103">om_lines::mapgen_suffixes</a>, <a class="el" href="omdata_8h_source.html#l00137">mondensity</a>, <a class="el" href="omdata_8h_source.html#l00129">name</a>, <a class="el" href="omdata_8h_source.html#l00088">no_rotate</a>, <a class="el" href="catacharset_8h_source.html#l00011">NULL_UNICODE</a>, <a class="el" href="generic__factory_8h_source.html#l00791">optional()</a>, <a class="el" href="overmap_8h_source.html#l00141">oter_flags_map</a>, <a class="el" href="json_8h_source.html#l00944">JsonObject::read()</a>, <a class="el" href="omdata_8h_source.html#l00134">see_cost</a>, <a class="el" href="omdata_8h_source.html#l00139">static_spawns</a>, <a class="el" href="omdata_8h_source.html#l00130">symbol</a>, <a class="el" href="json_8cpp_source.html#l00233">JsonObject::throw_error()</a>, <a class="el" href="omdata_8h_source.html#l00135">travel_cost</a>, <a class="el" href="generic__factory_8h_source.html#l00869">unicode_codepoint_from_symbol_reader()</a>, and <a class="el" href="omdata_8h_source.html#l00140">was_loaded</a>.</p>
+<p class="reference">References <a class="el" href="assign_8h_source.html#l00059">assign()</a>, <a class="el" href="omdata_8h_source.html#l00131">color</a>, <a class="el" href="omdata_8h_source.html#l00181">connect_group</a>, <a class="el" href="debug_8h_source.html#l00074">debugmsg</a>, <a class="el" href="omdata_8h_source.html#l00136">extras</a>, <a class="el" href="omdata_8h_source.html#l00179">flags</a>, <a class="el" href="json_8cpp_source.html#l00314">JsonObject::get_string()</a>, <a class="el" href="json_8cpp_source.html#l00415">JsonObject::has_array()</a>, <a class="el" href="omdata_8h_source.html#l00150">has_flag()</a>, <a class="el" href="json_8cpp_source.html#l00181">JsonObject::has_member()</a>, <a class="el" href="json_8cpp_source.html#l00395">JsonObject::has_number()</a>, <a class="el" href="json_8cpp_source.html#l00405">JsonObject::has_string()</a>, <a class="el" href="mod__manager_8cpp_source.html#l00368">is_strict_enabled()</a>, <a class="el" href="omdata_8h_source.html#l00132">land_use_code</a>, <a class="el" href="omdata_8h_source.html#l00091">line_drawing</a>, <a class="el" href="output_8h_source.html#l00051">LINE_XOXO_C</a>, <a class="el" href="overmap_8cpp_source.html#l00625">load_overmap_terrain_mapgens()</a>, <a class="el" href="omdata_8h_source.html#l00133">looks_like</a>, <a class="el" href="generic__readers_8h_source.html#l00414">make_flag_reader()</a>, <a class="el" href="overmap_8cpp_source.html#l00103">om_lines::mapgen_suffixes</a>, <a class="el" href="omdata_8h_source.html#l00137">mondensity</a>, <a class="el" href="omdata_8h_source.html#l00129">name</a>, <a class="el" href="omdata_8h_source.html#l00088">no_rotate</a>, <a class="el" href="catacharset_8h_source.html#l00011">NULL_UNICODE</a>, <a class="el" href="generic__factory_8h_source.html#l00791">optional()</a>, <a class="el" href="overmap_8h_source.html#l00141">oter_flags_map</a>, <a class="el" href="json_8h_source.html#l00944">JsonObject::read()</a>, <a class="el" href="omdata_8h_source.html#l00134">see_cost</a>, <a class="el" href="omdata_8h_source.html#l00139">static_spawns</a>, <a class="el" href="omdata_8h_source.html#l00130">symbol</a>, <a class="el" href="json_8cpp_source.html#l00233">JsonObject::throw_error()</a>, <a class="el" href="omdata_8h_source.html#l00135">travel_cost</a>, <a class="el" href="generic__factory_8h_source.html#l00869">unicode_codepoint_from_symbol_reader()</a>, and <a class="el" href="omdata_8h_source.html#l00140">was_loaded</a>.</p>
 
 </div>
 </div>
@@ -732,30 +733,30 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="overmap_8cpp_source.html#l00726">726</a> of file <a class="el" href="overmap_8cpp_source.html">overmap.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00727" name="l00727"></a><span class="lineno">  727</span>{</div>
-<div class="line"><a id="l00728" name="l00728"></a><span class="lineno">  728</span>    assert( n &lt; max_n );</div>
-<div class="line"><a id="l00729" name="l00729"></a><span class="lineno">  729</span>    assert( peer.<a class="code hl_function" href="structoter__t.html#a1752c536ee34c905a3a2fa6e64c2f0ea">type_is</a>( *<span class="keyword">this</span> ) );</div>
-<div class="line"><a id="l00730" name="l00730"></a><span class="lineno">  730</span> </div>
-<div class="line"><a id="l00731" name="l00731"></a><span class="lineno">  731</span>    <a class="code hl_variable" href="structoter__type__t.html#af0364908636c852c0be70611e9aace6b">directional_peers</a>.resize( max_n );</div>
-<div class="line"><a id="l00732" name="l00732"></a><span class="lineno">  732</span> </div>
-<div class="line"><a id="l00733" name="l00733"></a><span class="lineno">  733</span>    <span class="keywordflow">if</span>( peer.<a class="code hl_variable" href="structoter__t.html#ac6eb612d8150546238274e14bfb58ca8">id</a>.<a class="code hl_function" href="classstring__id.html#a8ca0e76fa665125f1e50bd1ed8dbd213">is_valid</a>() ) {</div>
-<div class="line"><a id="l00734" name="l00734"></a><span class="lineno">  734</span>        <a class="code hl_variable" href="structoter__type__t.html#af0364908636c852c0be70611e9aace6b">directional_peers</a>[n] = peer.<a class="code hl_variable" href="structoter__t.html#ac6eb612d8150546238274e14bfb58ca8">id</a>.<a class="code hl_function" href="classstring__id.html#aa3cde2bfb58efa9621289c0a70d24c5a">id</a>();</div>
-<div class="line"><a id="l00735" name="l00735"></a><span class="lineno">  735</span>        <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;Can&#39;t register the new overmap terrain \&quot;%s\&quot;. It already exists.&quot;</span>, peer.<a class="code hl_variable" href="structoter__t.html#ac6eb612d8150546238274e14bfb58ca8">id</a>.<a class="code hl_function" href="classstring__id.html#a19aea01aa4a1f53aac09acc978f67cf8">c_str</a>() );</div>
-<div class="line"><a id="l00736" name="l00736"></a><span class="lineno">  736</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00737" name="l00737"></a><span class="lineno">  737</span>        <a class="code hl_variable" href="structoter__type__t.html#af0364908636c852c0be70611e9aace6b">directional_peers</a>[n] = <a class="code hl_variable" href="namespaceanonymous__namespace_02overmap_8cpp_03.html#a2c0833a86f670ee8b0a4e55a07166f62">terrains</a>.insert( peer ).id.id();</div>
-<div class="line"><a id="l00738" name="l00738"></a><span class="lineno">  738</span>    }</div>
-<div class="line"><a id="l00739" name="l00739"></a><span class="lineno">  739</span>}</div>
+<p class="definition">Definition at line <a class="el" href="overmap_8cpp_source.html#l00727">727</a> of file <a class="el" href="overmap_8cpp_source.html">overmap.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00728" name="l00728"></a><span class="lineno">  728</span>{</div>
+<div class="line"><a id="l00729" name="l00729"></a><span class="lineno">  729</span>    assert( n &lt; max_n );</div>
+<div class="line"><a id="l00730" name="l00730"></a><span class="lineno">  730</span>    assert( peer.<a class="code hl_function" href="structoter__t.html#a1752c536ee34c905a3a2fa6e64c2f0ea">type_is</a>( *<span class="keyword">this</span> ) );</div>
+<div class="line"><a id="l00731" name="l00731"></a><span class="lineno">  731</span> </div>
+<div class="line"><a id="l00732" name="l00732"></a><span class="lineno">  732</span>    <a class="code hl_variable" href="structoter__type__t.html#af0364908636c852c0be70611e9aace6b">directional_peers</a>.resize( max_n );</div>
+<div class="line"><a id="l00733" name="l00733"></a><span class="lineno">  733</span> </div>
+<div class="line"><a id="l00734" name="l00734"></a><span class="lineno">  734</span>    <span class="keywordflow">if</span>( peer.<a class="code hl_variable" href="structoter__t.html#ac6eb612d8150546238274e14bfb58ca8">id</a>.<a class="code hl_function" href="classstring__id.html#a8ca0e76fa665125f1e50bd1ed8dbd213">is_valid</a>() ) {</div>
+<div class="line"><a id="l00735" name="l00735"></a><span class="lineno">  735</span>        <a class="code hl_variable" href="structoter__type__t.html#af0364908636c852c0be70611e9aace6b">directional_peers</a>[n] = peer.<a class="code hl_variable" href="structoter__t.html#ac6eb612d8150546238274e14bfb58ca8">id</a>.<a class="code hl_function" href="classstring__id.html#aa3cde2bfb58efa9621289c0a70d24c5a">id</a>();</div>
+<div class="line"><a id="l00736" name="l00736"></a><span class="lineno">  736</span>        <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;Can&#39;t register the new overmap terrain \&quot;%s\&quot;. It already exists.&quot;</span>, peer.<a class="code hl_variable" href="structoter__t.html#ac6eb612d8150546238274e14bfb58ca8">id</a>.<a class="code hl_function" href="classstring__id.html#a19aea01aa4a1f53aac09acc978f67cf8">c_str</a>() );</div>
+<div class="line"><a id="l00737" name="l00737"></a><span class="lineno">  737</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00738" name="l00738"></a><span class="lineno">  738</span>        <a class="code hl_variable" href="structoter__type__t.html#af0364908636c852c0be70611e9aace6b">directional_peers</a>[n] = <a class="code hl_variable" href="namespaceanonymous__namespace_02overmap_8cpp_03.html#a2c0833a86f670ee8b0a4e55a07166f62">terrains</a>.insert( peer ).id.id();</div>
+<div class="line"><a id="l00739" name="l00739"></a><span class="lineno">  739</span>    }</div>
+<div class="line"><a id="l00740" name="l00740"></a><span class="lineno">  740</span>}</div>
 <div class="ttc" id="aclassstring__id_html_a19aea01aa4a1f53aac09acc978f67cf8"><div class="ttname"><a href="classstring__id.html#a19aea01aa4a1f53aac09acc978f67cf8">string_id::c_str</a></div><div class="ttdeci">const char * c_str() const</div><div class="ttdoc">Interface to the plain C-string of the id.</div><div class="ttdef"><b>Definition:</b> <a href="string__id_8h_source.html#l00247">string_id.h:247</a></div></div>
 <div class="ttc" id="aclassstring__id_html_a8ca0e76fa665125f1e50bd1ed8dbd213"><div class="ttname"><a href="classstring__id.html#a8ca0e76fa665125f1e50bd1ed8dbd213">string_id::is_valid</a></div><div class="ttdeci">bool is_valid() const</div><div class="ttdoc">Returns whether this id is valid, that means whether it refers to an existing object.</div><div class="ttdef"><b>Definition:</b> <a href="achievement_8cpp_source.html#l00065">achievement.cpp:65</a></div></div>
 <div class="ttc" id="aclassstring__id_html_aa3cde2bfb58efa9621289c0a70d24c5a"><div class="ttname"><a href="classstring__id.html#aa3cde2bfb58efa9621289c0a70d24c5a">string_id::id</a></div><div class="ttdeci">int_id&lt; T &gt; id() const</div><div class="ttdoc">Translate the string based it to the matching integer based id.</div><div class="ttdef"><b>Definition:</b> <a href="ammo__effect_8cpp_source.html#l00054">ammo_effect.cpp:54</a></div></div>
 <div class="ttc" id="anamespaceanonymous__namespace_02overmap_8cpp_03_html_a2c0833a86f670ee8b0a4e55a07166f62"><div class="ttname"><a href="namespaceanonymous__namespace_02overmap_8cpp_03.html#a2c0833a86f670ee8b0a4e55a07166f62">anonymous_namespace{overmap.cpp}::terrains</a></div><div class="ttdeci">generic_factory&lt; oter_t &gt; terrains(&quot;overmap terrain&quot;)</div></div>
-<div class="ttc" id="astructoter__t_html_a1752c536ee34c905a3a2fa6e64c2f0ea"><div class="ttname"><a href="structoter__t.html#a1752c536ee34c905a3a2fa6e64c2f0ea">oter_t::type_is</a></div><div class="ttdeci">bool type_is(const oter_type_id &amp;type_id) const</div><div class="ttdef"><b>Definition:</b> <a href="overmap_8cpp_source.html#l00826">overmap.cpp:826</a></div></div>
+<div class="ttc" id="astructoter__t_html_a1752c536ee34c905a3a2fa6e64c2f0ea"><div class="ttname"><a href="structoter__t.html#a1752c536ee34c905a3a2fa6e64c2f0ea">oter_t::type_is</a></div><div class="ttdeci">bool type_is(const oter_type_id &amp;type_id) const</div><div class="ttdef"><b>Definition:</b> <a href="overmap_8cpp_source.html#l00827">overmap.cpp:827</a></div></div>
 <div class="ttc" id="astructoter__t_html_ac6eb612d8150546238274e14bfb58ca8"><div class="ttname"><a href="structoter__t.html#ac6eb612d8150546238274e14bfb58ca8">oter_t::id</a></div><div class="ttdeci">oter_str_id id</div><div class="ttdef"><b>Definition:</b> <a href="omdata_8h_source.html#l00191">omdata.h:191</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="string__id_8h_source.html#l00247">string_id&lt; T &gt;::c_str()</a>, <a class="el" href="debug_8h_source.html#l00074">debugmsg</a>, <a class="el" href="omdata_8h_source.html#l00180">directional_peers</a>, <a class="el" href="omdata_8h_source.html#l00191">oter_t::id</a>, <a class="el" href="ammo__effect_8cpp_source.html#l00054">string_id&lt; T &gt;::id()</a>, <a class="el" href="achievement_8cpp_source.html#l00065">string_id&lt; T &gt;::is_valid()</a>, <a class="el" href="namespaceanonymous__namespace_02overmap_8cpp_03.html#a2c0833a86f670ee8b0a4e55a07166f62">anonymous_namespace{overmap.cpp}::terrains</a>, and <a class="el" href="overmap_8cpp_source.html#l00826">oter_t::type_is()</a>.</p>
+<p class="reference">References <a class="el" href="string__id_8h_source.html#l00247">string_id&lt; T &gt;::c_str()</a>, <a class="el" href="debug_8h_source.html#l00074">debugmsg</a>, <a class="el" href="omdata_8h_source.html#l00180">directional_peers</a>, <a class="el" href="omdata_8h_source.html#l00191">oter_t::id</a>, <a class="el" href="ammo__effect_8cpp_source.html#l00054">string_id&lt; T &gt;::id()</a>, <a class="el" href="achievement_8cpp_source.html#l00065">string_id&lt; T &gt;::is_valid()</a>, <a class="el" href="namespaceanonymous__namespace_02overmap_8cpp_03.html#a2c0833a86f670ee8b0a4e55a07166f62">anonymous_namespace{overmap.cpp}::terrains</a>, and <a class="el" href="overmap_8cpp_source.html#l00827">oter_t::type_is()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="overmap_8cpp_source.html#l00709">finalize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="overmap_8cpp_source.html#l00710">finalize()</a>.</p>
 
 </div>
 </div>
@@ -817,7 +818,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="omdata_8h_source.html#l00131">131</a> of file <a class="el" href="omdata_8h_source.html">omdata.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="omdata_8h_source.html#l00217">oter_t::get_color()</a>, and <a class="el" href="overmap_8cpp_source.html#l00643">load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="omdata_8h_source.html#l00217">oter_t::get_color()</a>, and <a class="el" href="overmap_8cpp_source.html#l00644">load()</a>.</p>
 
 </div>
 </div>
@@ -843,7 +844,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="omdata_8h_source.html#l00181">181</a> of file <a class="el" href="omdata_8h_source.html">omdata.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="omdata_8h_source.html#l00174">connects_to()</a>, <a class="el" href="omdata_8h_source.html#l00170">has_connections()</a>, and <a class="el" href="overmap_8cpp_source.html#l00643">load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="omdata_8h_source.html#l00174">connects_to()</a>, <a class="el" href="omdata_8h_source.html#l00170">has_connections()</a>, and <a class="el" href="overmap_8cpp_source.html#l00644">load()</a>.</p>
 
 </div>
 </div>
@@ -869,7 +870,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="omdata_8h_source.html#l00180">180</a> of file <a class="el" href="omdata_8h_source.html">omdata.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="overmap_8cpp_source.html#l00709">finalize()</a>, <a class="el" href="overmap_8cpp_source.html#l00741">get_first()</a>, <a class="el" href="overmap_8cpp_source.html#l00759">get_linear()</a>, <a class="el" href="overmap_8cpp_source.html#l00747">get_rotated()</a>, and <a class="el" href="overmap_8cpp_source.html#l00726">register_terrain()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="overmap_8cpp_source.html#l00710">finalize()</a>, <a class="el" href="overmap_8cpp_source.html#l00742">get_first()</a>, <a class="el" href="overmap_8cpp_source.html#l00760">get_linear()</a>, <a class="el" href="overmap_8cpp_source.html#l00748">get_rotated()</a>, and <a class="el" href="overmap_8cpp_source.html#l00727">register_terrain()</a>.</p>
 
 </div>
 </div>
@@ -887,7 +888,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="omdata_8h_source.html#l00136">136</a> of file <a class="el" href="omdata_8h_source.html">omdata.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="omdata_8h_source.html#l00237">oter_t::get_extras()</a>, and <a class="el" href="overmap_8cpp_source.html#l00643">load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="omdata_8h_source.html#l00237">oter_t::get_extras()</a>, and <a class="el" href="overmap_8cpp_source.html#l00644">load()</a>.</p>
 
 </div>
 </div>
@@ -913,7 +914,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="omdata_8h_source.html#l00179">179</a> of file <a class="el" href="omdata_8h_source.html">omdata.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="omdata_8h_source.html#l00150">has_flag()</a>, <a class="el" href="overmap_8cpp_source.html#l00643">load()</a>, and <a class="el" href="omdata_8h_source.html#l00154">set_flag()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="omdata_8h_source.html#l00150">has_flag()</a>, <a class="el" href="overmap_8cpp_source.html#l00644">load()</a>, and <a class="el" href="omdata_8h_source.html#l00154">set_flag()</a>.</p>
 
 </div>
 </div>
@@ -931,7 +932,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="omdata_8h_source.html#l00128">128</a> of file <a class="el" href="omdata_8h_source.html">omdata.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="overmap_8cpp_source.html#l00797">oter_t::get_mapgen_id()</a>, <a class="el" href="omdata_8h_source.html#l00198">oter_t::get_type_id()</a>, and <a class="el" href="overmap_8cpp_source.html#l00826">oter_t::type_is()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="overmap_8cpp_source.html#l00798">oter_t::get_mapgen_id()</a>, <a class="el" href="omdata_8h_source.html#l00198">oter_t::get_type_id()</a>, and <a class="el" href="overmap_8cpp_source.html#l00827">oter_t::type_is()</a>.</p>
 
 </div>
 </div>
@@ -949,7 +950,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="omdata_8h_source.html#l00132">132</a> of file <a class="el" href="omdata_8h_source.html">omdata.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="omdata_8h_source.html#l00217">oter_t::get_color()</a>, <a class="el" href="omdata_8h_source.html#l00249">oter_t::get_land_use_code()</a>, <a class="el" href="omdata_8h_source.html#l00276">oter_t::is_wooded()</a>, and <a class="el" href="overmap_8cpp_source.html#l00643">load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="omdata_8h_source.html#l00217">oter_t::get_color()</a>, <a class="el" href="omdata_8h_source.html#l00249">oter_t::get_land_use_code()</a>, <a class="el" href="omdata_8h_source.html#l00276">oter_t::is_wooded()</a>, and <a class="el" href="overmap_8cpp_source.html#l00644">load()</a>.</p>
 
 </div>
 </div>
@@ -967,7 +968,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="omdata_8h_source.html#l00133">133</a> of file <a class="el" href="omdata_8h_source.html">omdata.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="overmap_8cpp_source.html#l00643">load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="overmap_8cpp_source.html#l00644">load()</a>.</p>
 
 </div>
 </div>
@@ -985,7 +986,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="omdata_8h_source.html#l00137">137</a> of file <a class="el" href="omdata_8h_source.html">omdata.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="omdata_8h_source.html#l00241">oter_t::get_mondensity()</a>, and <a class="el" href="overmap_8cpp_source.html#l00643">load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="omdata_8h_source.html#l00241">oter_t::get_mondensity()</a>, and <a class="el" href="overmap_8cpp_source.html#l00644">load()</a>.</p>
 
 </div>
 </div>
@@ -1003,7 +1004,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="omdata_8h_source.html#l00129">129</a> of file <a class="el" href="omdata_8h_source.html">omdata.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="omdata_8h_source.html#l00205">oter_t::get_name()</a>, and <a class="el" href="overmap_8cpp_source.html#l00643">load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="omdata_8h_source.html#l00205">oter_t::get_name()</a>, and <a class="el" href="overmap_8cpp_source.html#l00644">load()</a>.</p>
 
 </div>
 </div>
@@ -1045,7 +1046,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="omdata_8h_source.html#l00134">134</a> of file <a class="el" href="omdata_8h_source.html">omdata.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="omdata_8h_source.html#l00230">oter_t::get_see_cost()</a>, and <a class="el" href="overmap_8cpp_source.html#l00643">load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="omdata_8h_source.html#l00230">oter_t::get_see_cost()</a>, and <a class="el" href="overmap_8cpp_source.html#l00644">load()</a>.</p>
 
 </div>
 </div>
@@ -1063,7 +1064,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="omdata_8h_source.html#l00139">139</a> of file <a class="el" href="omdata_8h_source.html">omdata.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="omdata_8h_source.html#l00245">oter_t::get_static_spawns()</a>, and <a class="el" href="overmap_8cpp_source.html#l00643">load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="omdata_8h_source.html#l00245">oter_t::get_static_spawns()</a>, and <a class="el" href="overmap_8cpp_source.html#l00644">load()</a>.</p>
 
 </div>
 </div>
@@ -1081,7 +1082,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="omdata_8h_source.html#l00130">130</a> of file <a class="el" href="omdata_8h_source.html">omdata.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="overmap_8cpp_source.html#l00638">get_symbol()</a>, and <a class="el" href="overmap_8cpp_source.html#l00643">load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="overmap_8cpp_source.html#l00639">get_symbol()</a>, and <a class="el" href="overmap_8cpp_source.html#l00644">load()</a>.</p>
 
 </div>
 </div>
@@ -1099,7 +1100,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="omdata_8h_source.html#l00135">135</a> of file <a class="el" href="omdata_8h_source.html">omdata.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="omdata_8h_source.html#l00233">oter_t::get_travel_cost()</a>, and <a class="el" href="overmap_8cpp_source.html#l00643">load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="omdata_8h_source.html#l00233">oter_t::get_travel_cost()</a>, and <a class="el" href="overmap_8cpp_source.html#l00644">load()</a>.</p>
 
 </div>
 </div>
@@ -1117,7 +1118,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="omdata_8h_source.html#l00140">140</a> of file <a class="el" href="omdata_8h_source.html">omdata.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="overmap_8cpp_source.html#l00643">load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="overmap_8cpp_source.html#l00644">load()</a>.</p>
 
 </div>
 </div>
@@ -1131,7 +1132,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structoter__type__t.html">oter_type_t</a></li>
-    <li class="footer">Generated on Wed Oct 19 2022 14:19:43 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Mon Dec 26 2022 21:42:11 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

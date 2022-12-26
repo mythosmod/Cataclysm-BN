@@ -251,6 +251,7 @@ var classCreature =
     [ "set_part_hp_max", "classCreature.html#a6ee8599df32920db133b4d40281fe61e", null ],
     [ "set_speed_base", "classCreature.html#afedb5874d4d3438d3c82cb2104ec49fa", null ],
     [ "set_speed_bonus", "classCreature.html#a81fd71e521e09908425fc63a64458f59", null ],
+    [ "set_underwater", "classCreature.html#ad683b690934921917a26a4107ff9ed12", null ],
     [ "set_value", "classCreature.html#a04c1983abeefbf67db1e3f2b2a9b58ab", null ],
     [ "setpos", "classCreature.html#a7f9ce537b830a5f0474c001d295c0a77", null ],
     [ "sight_range", "classCreature.html#aa7018efde7dddbb71b70fd93c32fe5a6", null ],

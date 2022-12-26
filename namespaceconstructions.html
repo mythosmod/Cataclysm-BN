@@ -121,32 +121,32 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="construction_8cpp_source.html#l00195">195</a> of file <a class="el" href="construction_8cpp_source.html">construction.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>{</div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>    <span class="comment">// Legacy migration from when single string was used for both terrain</span></div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    <span class="comment">// and furniture id.</span></div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>    <span class="comment">// TODO: remove this after reaching BN equivalent of 0.F (or 0.G)</span></div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_struct" href="structconstruction.html">construction</a> &amp;c_it : <a class="code hl_variable" href="namespaceanonymous__namespace_02construction_8cpp_03.html#a5da2e229b1546f7772edc48fa79116e6">all_constructions</a>.get_all() ) {</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>        <a class="code hl_struct" href="structconstruction.html">construction</a> &amp;<a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a> = <span class="keyword">const_cast&lt;</span><a class="code hl_struct" href="structconstruction.html">construction</a> &amp;<span class="keyword">&gt;</span>( c_it );</div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>        <span class="keywordtype">bool</span> did_migrate = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>        <span class="keywordflow">if</span>( <a class="code hl_function" href="string__utils_8cpp.html#a2a9cb822cf98b9560d7354cc9baef3ad">string_starts_with</a>( <a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a>.pre_terrain.str(), <span class="stringliteral">&quot;f_&quot;</span> ) ) {</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>            <a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a>.pre_furniture = <a class="code hl_typedef" href="type__id_8h.html#a13fd56b9ac506b2517d4889040e0ef66">furn_str_id</a>( <a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a>.pre_terrain.str() );</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>            <a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a>.pre_terrain = <a class="code hl_typedef" href="mapdata_8h.html#a35072a9fdd9a8d25da4e647a63d1c445">ter_str_id</a>();</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>            did_migrate = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>        }</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>        <span class="keywordflow">if</span>( <a class="code hl_function" href="string__utils_8cpp.html#a2a9cb822cf98b9560d7354cc9baef3ad">string_starts_with</a>( <a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a>.post_terrain.str(), <span class="stringliteral">&quot;f_&quot;</span> ) ) {</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>            <a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a>.post_furniture = <a class="code hl_typedef" href="type__id_8h.html#a13fd56b9ac506b2517d4889040e0ef66">furn_str_id</a>( <a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a>.post_terrain.str() );</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>            <a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a>.post_terrain = <a class="code hl_typedef" href="mapdata_8h.html#a35072a9fdd9a8d25da4e647a63d1c445">ter_str_id</a>();</div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>            did_migrate = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>        }</div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>        <span class="keywordflow">if</span>( did_migrate &amp;&amp; <a class="code hl_variable" href="cached__options_8cpp.html#a16e6bc0b3300c5fb311e7f3571fb67c7">json_report_strict</a> ) {</div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>            <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;Construction &#39;%s&#39; uses pre_/post_terrain to set furniture id.  Use pre_/post_furniture instead.&quot;</span>,</div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>                      <a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a>.id );</div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>        }</div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>    }</div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span> </div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>    <a class="code hl_variable" href="namespaceanonymous__namespace_02construction_8cpp_03.html#a5da2e229b1546f7772edc48fa79116e6">all_constructions</a>.check();</div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>}</div>
+<p class="definition">Definition at line <a class="el" href="construction_8cpp_source.html#l00196">196</a> of file <a class="el" href="construction_8cpp_source.html">construction.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>{</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    <span class="comment">// Legacy migration from when single string was used for both terrain</span></div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>    <span class="comment">// and furniture id.</span></div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    <span class="comment">// TODO: remove this after reaching BN equivalent of 0.F (or 0.G)</span></div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_struct" href="structconstruction.html">construction</a> &amp;c_it : <a class="code hl_variable" href="namespaceanonymous__namespace_02construction_8cpp_03.html#a5da2e229b1546f7772edc48fa79116e6">all_constructions</a>.get_all() ) {</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>        <a class="code hl_struct" href="structconstruction.html">construction</a> &amp;<a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a> = <span class="keyword">const_cast&lt;</span><a class="code hl_struct" href="structconstruction.html">construction</a> &amp;<span class="keyword">&gt;</span>( c_it );</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>        <span class="keywordtype">bool</span> did_migrate = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>        <span class="keywordflow">if</span>( <a class="code hl_function" href="string__utils_8cpp.html#a2a9cb822cf98b9560d7354cc9baef3ad">string_starts_with</a>( <a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a>.pre_terrain.str(), <span class="stringliteral">&quot;f_&quot;</span> ) ) {</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>            <a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a>.pre_furniture = <a class="code hl_typedef" href="type__id_8h.html#a13fd56b9ac506b2517d4889040e0ef66">furn_str_id</a>( <a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a>.pre_terrain.str() );</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>            <a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a>.pre_terrain = <a class="code hl_typedef" href="mapdata_8h.html#a35072a9fdd9a8d25da4e647a63d1c445">ter_str_id</a>();</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>            did_migrate = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>        }</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>        <span class="keywordflow">if</span>( <a class="code hl_function" href="string__utils_8cpp.html#a2a9cb822cf98b9560d7354cc9baef3ad">string_starts_with</a>( <a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a>.post_terrain.str(), <span class="stringliteral">&quot;f_&quot;</span> ) ) {</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>            <a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a>.post_furniture = <a class="code hl_typedef" href="type__id_8h.html#a13fd56b9ac506b2517d4889040e0ef66">furn_str_id</a>( <a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a>.post_terrain.str() );</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>            <a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a>.post_terrain = <a class="code hl_typedef" href="mapdata_8h.html#a35072a9fdd9a8d25da4e647a63d1c445">ter_str_id</a>();</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>            did_migrate = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>        }</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>        <span class="keywordflow">if</span>( did_migrate &amp;&amp; <a class="code hl_variable" href="cached__options_8cpp.html#a16e6bc0b3300c5fb311e7f3571fb67c7">json_report_strict</a> ) {</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>            <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;Construction &#39;%s&#39; uses pre_/post_terrain to set furniture id.  Use pre_/post_furniture instead.&quot;</span>,</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>                      <a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a>.id );</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>        }</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>    }</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span> </div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>    <a class="code hl_variable" href="namespaceanonymous__namespace_02construction_8cpp_03.html#a5da2e229b1546f7772edc48fa79116e6">all_constructions</a>.check();</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>}</div>
 <div class="ttc" id="acached__options_8cpp_html_a16e6bc0b3300c5fb311e7f3571fb67c7"><div class="ttname"><a href="cached__options_8cpp.html#a16e6bc0b3300c5fb311e7f3571fb67c7">json_report_strict</a></div><div class="ttdeci">bool json_report_strict</div><div class="ttdoc">Report extra problems in JSONs.</div><div class="ttdef"><b>Definition:</b> <a href="cached__options_8cpp_source.html#l00006">cached_options.cpp:6</a></div></div>
 <div class="ttc" id="adebug_8h_html_a87e509562277a7ada3a75330d00cb445"><div class="ttname"><a href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a></div><div class="ttdeci">#define debugmsg(...)</div><div class="ttdoc">Debug message of level DL::Error and class DC::DebugMsg, also includes the source file name and line,...</div><div class="ttdef"><b>Definition:</b> <a href="debug_8h_source.html#l00074">debug.h:74</a></div></div>
 <div class="ttc" id="amagic_8cpp_html_a6753ecfe87da659675b18c2f81d6ec12"><div class="ttname"><a href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a></div><div class="ttdeci">constexpr double c</div><div class="ttdef"><b>Definition:</b> <a href="magic_8cpp_source.html#l01032">magic.cpp:1032</a></div></div>
@@ -177,32 +177,35 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="construction_8cpp_source.html#l00222">222</a> of file <a class="el" href="construction_8cpp_source.html">construction.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>{</div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>    <a class="code hl_variable" href="namespaceanonymous__namespace_02construction_8cpp_03.html#a5da2e229b1546f7772edc48fa79116e6">all_constructions</a>.finalize();</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span> </div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_struct" href="structconstruction.html">construction</a> &amp;c_it : <a class="code hl_variable" href="namespaceanonymous__namespace_02construction_8cpp_03.html#a5da2e229b1546f7772edc48fa79116e6">all_constructions</a>.get_all() ) {</div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>        <a class="code hl_struct" href="structconstruction.html">construction</a> &amp;<a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a> = <span class="keyword">const_cast&lt;</span><a class="code hl_struct" href="structconstruction.html">construction</a> &amp;<span class="keyword">&gt;</span>( c_it );</div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>        <a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a>.finalize();</div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    }</div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span> </div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>    <a class="code hl_variable" href="namespaceanonymous__namespace_02construction_8cpp_03.html#ad6f88bc31464db11fe2f957ce8abfe3d">constructions_sorted</a>.resize( <a class="code hl_variable" href="namespaceanonymous__namespace_02construction_8cpp_03.html#a5da2e229b1546f7772edc48fa79116e6">all_constructions</a>.get_all().size() );</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_struct" href="structconstruction.html">construction</a> &amp;<a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a> : <a class="code hl_variable" href="namespaceanonymous__namespace_02construction_8cpp_03.html#a5da2e229b1546f7772edc48fa79116e6">all_constructions</a>.get_all() ) {</div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>        <span class="keywordflow">if</span>( <a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a>.is_blacklisted() ) {</div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>            <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>        }</div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>        <a class="code hl_variable" href="namespaceanonymous__namespace_02construction_8cpp_03.html#ad6f88bc31464db11fe2f957ce8abfe3d">constructions_sorted</a>.push_back( <a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a>.id.id() );</div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>    }</div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>    std::sort( <a class="code hl_variable" href="namespaceanonymous__namespace_02construction_8cpp_03.html#ad6f88bc31464db11fe2f957ce8abfe3d">constructions_sorted</a>.begin(), <a class="code hl_variable" href="namespaceanonymous__namespace_02construction_8cpp_03.html#ad6f88bc31464db11fe2f957ce8abfe3d">constructions_sorted</a>.end(),</div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>    [&amp;]( <span class="keyword">const</span> <a class="code hl_class" href="classint__id.html">construction_id</a> &amp; l, <span class="keyword">const</span> <a class="code hl_class" href="classint__id.html">construction_id</a> &amp; r ) -&gt; <span class="keywordtype">bool</span> {</div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>        lexicographic&lt;construction&gt; cmp;</div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>        return cmp( l-&gt;id, r-&gt;id );</div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>    } );</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>}</div>
+<p class="definition">Definition at line <a class="el" href="construction_8cpp_source.html#l00223">223</a> of file <a class="el" href="construction_8cpp_source.html">construction.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>{</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>    <a class="code hl_variable" href="namespaceanonymous__namespace_02construction_8cpp_03.html#a5da2e229b1546f7772edc48fa79116e6">all_constructions</a>.finalize();</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span> </div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_struct" href="structconstruction.html">construction</a> &amp;c_it : <a class="code hl_variable" href="namespaceanonymous__namespace_02construction_8cpp_03.html#a5da2e229b1546f7772edc48fa79116e6">all_constructions</a>.get_all() ) {</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>        <a class="code hl_struct" href="structconstruction.html">construction</a> &amp;<a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a> = <span class="keyword">const_cast&lt;</span><a class="code hl_struct" href="structconstruction.html">construction</a> &amp;<span class="keyword">&gt;</span>( c_it );</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>        <a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a>.finalize();</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>        <a class="code hl_variable" href="input_8cpp.html#af16c50890fa8503efa899fc3b6de56d7">inp_mngr</a>.<a class="code hl_function" href="classinput__manager.html#a56fd029f8ad1ca3dcd864a6bb5537045">pump_events</a>();</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>    }</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span> </div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>    <a class="code hl_variable" href="namespaceanonymous__namespace_02construction_8cpp_03.html#ad6f88bc31464db11fe2f957ce8abfe3d">constructions_sorted</a>.resize( <a class="code hl_variable" href="namespaceanonymous__namespace_02construction_8cpp_03.html#a5da2e229b1546f7772edc48fa79116e6">all_constructions</a>.get_all().size() );</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_struct" href="structconstruction.html">construction</a> &amp;<a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a> : <a class="code hl_variable" href="namespaceanonymous__namespace_02construction_8cpp_03.html#a5da2e229b1546f7772edc48fa79116e6">all_constructions</a>.get_all() ) {</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>        <span class="keywordflow">if</span>( <a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a>.is_blacklisted() ) {</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>        }</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>        <a class="code hl_variable" href="namespaceanonymous__namespace_02construction_8cpp_03.html#ad6f88bc31464db11fe2f957ce8abfe3d">constructions_sorted</a>.push_back( <a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a>.id.id() );</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>    }</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>    std::sort( <a class="code hl_variable" href="namespaceanonymous__namespace_02construction_8cpp_03.html#ad6f88bc31464db11fe2f957ce8abfe3d">constructions_sorted</a>.begin(), <a class="code hl_variable" href="namespaceanonymous__namespace_02construction_8cpp_03.html#ad6f88bc31464db11fe2f957ce8abfe3d">constructions_sorted</a>.end(),</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>    [&amp;]( <span class="keyword">const</span> <a class="code hl_class" href="classint__id.html">construction_id</a> &amp; l, <span class="keyword">const</span> <a class="code hl_class" href="classint__id.html">construction_id</a> &amp; r ) -&gt; <span class="keywordtype">bool</span> {</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>        lexicographic&lt;construction&gt; cmp;</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>        return cmp( l-&gt;id, r-&gt;id );</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>    } );</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>}</div>
+<div class="ttc" id="aclassinput__manager_html_a56fd029f8ad1ca3dcd864a6bb5537045"><div class="ttname"><a href="classinput__manager.html#a56fd029f8ad1ca3dcd864a6bb5537045">input_manager::pump_events</a></div><div class="ttdeci">void pump_events()</div><div class="ttdoc">Resize &amp; refresh if necessary, process all pending window events, and ignore keypresses.</div><div class="ttdef"><b>Definition:</b> <a href="ncurses__def_8cpp_source.html#l00252">ncurses_def.cpp:252</a></div></div>
 <div class="ttc" id="aclassint__id_html"><div class="ttname"><a href="classint__id.html">int_id&lt; construction &gt;</a></div></div>
-<div class="ttc" id="anamespaceanonymous__namespace_02construction_8cpp_03_html_ad6f88bc31464db11fe2f957ce8abfe3d"><div class="ttname"><a href="namespaceanonymous__namespace_02construction_8cpp_03.html#ad6f88bc31464db11fe2f957ce8abfe3d">anonymous_namespace{construction.cpp}::constructions_sorted</a></div><div class="ttdeci">std::vector&lt; construction_id &gt; constructions_sorted</div><div class="ttdef"><b>Definition:</b> <a href="construction_8cpp_source.html#l00138">construction.cpp:138</a></div></div>
+<div class="ttc" id="ainput_8cpp_html_af16c50890fa8503efa899fc3b6de56d7"><div class="ttname"><a href="input_8cpp.html#af16c50890fa8503efa899fc3b6de56d7">inp_mngr</a></div><div class="ttdeci">input_manager inp_mngr</div><div class="ttdef"><b>Definition:</b> <a href="input_8cpp_source.html#l00109">input.cpp:109</a></div></div>
+<div class="ttc" id="anamespaceanonymous__namespace_02construction_8cpp_03_html_ad6f88bc31464db11fe2f957ce8abfe3d"><div class="ttname"><a href="namespaceanonymous__namespace_02construction_8cpp_03.html#ad6f88bc31464db11fe2f957ce8abfe3d">anonymous_namespace{construction.cpp}::constructions_sorted</a></div><div class="ttdeci">std::vector&lt; construction_id &gt; constructions_sorted</div><div class="ttdef"><b>Definition:</b> <a href="construction_8cpp_source.html#l00139">construction.cpp:139</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="namespaceanonymous__namespace_02construction_8cpp_03.html#a5da2e229b1546f7772edc48fa79116e6">anonymous_namespace{construction.cpp}::all_constructions</a>, <a class="el" href="magic_8cpp_source.html#l01032">c</a>, and <a class="el" href="construction_8cpp_source.html#l00138">anonymous_namespace{construction.cpp}::constructions_sorted</a>.</p>
+<p class="reference">References <a class="el" href="namespaceanonymous__namespace_02construction_8cpp_03.html#a5da2e229b1546f7772edc48fa79116e6">anonymous_namespace{construction.cpp}::all_constructions</a>, <a class="el" href="magic_8cpp_source.html#l01032">c</a>, <a class="el" href="construction_8cpp_source.html#l00139">anonymous_namespace{construction.cpp}::constructions_sorted</a>, <a class="el" href="input_8cpp_source.html#l00109">inp_mngr</a>, and <a class="el" href="ncurses__def_8cpp_source.html#l00252">input_manager::pump_events()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="init_8cpp_source.html#l00633">DynamicDataLoader::finalize_loaded_data()</a>.</p>
 
@@ -223,17 +226,17 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="construction_8cpp_source.html#l00245">245</a> of file <a class="el" href="construction_8cpp_source.html">construction.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>{</div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>    <span class="keywordflow">if</span>( !<a class="code hl_variable" href="namespaceanonymous__namespace_02construction_8cpp_03.html#a5da2e229b1546f7772edc48fa79116e6">all_constructions</a>.is_finalized() ) {</div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>        <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;constructions_sorted called before finalization&quot;</span> );</div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>    }</div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="namespaceanonymous__namespace_02construction_8cpp_03.html#ad6f88bc31464db11fe2f957ce8abfe3d">constructions_sorted</a>;</div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>}</div>
+<p class="definition">Definition at line <a class="el" href="construction_8cpp_source.html#l00247">247</a> of file <a class="el" href="construction_8cpp_source.html">construction.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>{</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>    <span class="keywordflow">if</span>( !<a class="code hl_variable" href="namespaceanonymous__namespace_02construction_8cpp_03.html#a5da2e229b1546f7772edc48fa79116e6">all_constructions</a>.is_finalized() ) {</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>        <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;constructions_sorted called before finalization&quot;</span> );</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>    }</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="namespaceanonymous__namespace_02construction_8cpp_03.html#ad6f88bc31464db11fe2f957ce8abfe3d">constructions_sorted</a>;</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="namespaceanonymous__namespace_02construction_8cpp_03.html#a5da2e229b1546f7772edc48fa79116e6">anonymous_namespace{construction.cpp}::all_constructions</a>, <a class="el" href="construction_8cpp_source.html#l00138">anonymous_namespace{construction.cpp}::constructions_sorted</a>, and <a class="el" href="debug_8h_source.html#l00074">debugmsg</a>.</p>
+<p class="reference">References <a class="el" href="namespaceanonymous__namespace_02construction_8cpp_03.html#a5da2e229b1546f7772edc48fa79116e6">anonymous_namespace{construction.cpp}::all_constructions</a>, <a class="el" href="construction_8cpp_source.html#l00139">anonymous_namespace{construction.cpp}::constructions_sorted</a>, and <a class="el" href="debug_8h_source.html#l00074">debugmsg</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="activity__item__handling_8cpp_source.html#l01290">can_do_activity_there()</a>, <a class="el" href="construction_8cpp_source.html#l00264">constructions_by_group()</a>, <a class="el" href="construction__sequence_8cpp_source.html#l00082">construction_sequences::finalize()</a>, <a class="el" href="construction_8cpp_source.html#l00280">list_available_constructions()</a>, and <a class="el" href="clzones_8cpp_source.html#l00238">blueprint_options::query_con()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="activity__item__handling_8cpp_source.html#l01290">can_do_activity_there()</a>, <a class="el" href="construction_8cpp_source.html#l00266">constructions_by_group()</a>, <a class="el" href="construction__sequence_8cpp_source.html#l00082">construction_sequences::finalize()</a>, <a class="el" href="construction_8cpp_source.html#l00290">list_available_constructions()</a>, and <a class="el" href="clzones_8cpp_source.html#l00238">blueprint_options::query_con()</a>.</p>
 
 </div>
 </div>
@@ -263,14 +266,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="construction_8cpp_source.html#l00184">184</a> of file <a class="el" href="construction_8cpp_source.html">construction.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>{</div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    <a class="code hl_variable" href="namespaceanonymous__namespace_02construction_8cpp_03.html#a5da2e229b1546f7772edc48fa79116e6">all_constructions</a>.load( jo, src );</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>}</div>
+<p class="definition">Definition at line <a class="el" href="construction_8cpp_source.html#l00185">185</a> of file <a class="el" href="construction_8cpp_source.html">construction.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>{</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    <a class="code hl_variable" href="namespaceanonymous__namespace_02construction_8cpp_03.html#a5da2e229b1546f7772edc48fa79116e6">all_constructions</a>.load( jo, src );</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="namespaceanonymous__namespace_02construction_8cpp_03.html#a5da2e229b1546f7772edc48fa79116e6">anonymous_namespace{construction.cpp}::all_constructions</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8cpp_source.html#l00236">DynamicDataLoader::initialize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8cpp_source.html#l00243">DynamicDataLoader::initialize()</a>.</p>
 
 </div>
 </div>
@@ -290,14 +293,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="construction_8cpp_source.html#l00253">253</a> of file <a class="el" href="construction_8cpp_source.html">construction.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>{</div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_struct" href="structconstruction.html">construction</a> &amp;it : <a class="code hl_variable" href="namespaceanonymous__namespace_02construction_8cpp_03.html#a5da2e229b1546f7772edc48fa79116e6">all_constructions</a>.get_all() ) {</div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>        <span class="comment">// HACK: const cast is ugly, but allowed here</span></div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>        <a class="code hl_struct" href="structconstruction.html">construction</a> &amp;<a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a> = <span class="keyword">const_cast&lt;</span><a class="code hl_struct" href="structconstruction.html">construction</a> &amp;<span class="keyword">&gt;</span>( it );</div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>        <a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a>.time = time;</div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>    }</div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>}</div>
+<p class="definition">Definition at line <a class="el" href="construction_8cpp_source.html#l00255">255</a> of file <a class="el" href="construction_8cpp_source.html">construction.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>{</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_struct" href="structconstruction.html">construction</a> &amp;it : <a class="code hl_variable" href="namespaceanonymous__namespace_02construction_8cpp_03.html#a5da2e229b1546f7772edc48fa79116e6">all_constructions</a>.get_all() ) {</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>        <span class="comment">// HACK: const cast is ugly, but allowed here</span></div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>        <a class="code hl_struct" href="structconstruction.html">construction</a> &amp;<a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a> = <span class="keyword">const_cast&lt;</span><a class="code hl_struct" href="structconstruction.html">construction</a> &amp;<span class="keyword">&gt;</span>( it );</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>        <a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a>.time = time;</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>    }</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="namespaceanonymous__namespace_02construction_8cpp_03.html#a5da2e229b1546f7772edc48fa79116e6">anonymous_namespace{construction.cpp}::all_constructions</a>, and <a class="el" href="magic_8cpp_source.html#l01032">c</a>.</p>
 
@@ -320,15 +323,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="construction_8cpp_source.html#l00189">189</a> of file <a class="el" href="construction_8cpp_source.html">construction.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>{</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    <a class="code hl_variable" href="namespaceanonymous__namespace_02construction_8cpp_03.html#a5da2e229b1546f7772edc48fa79116e6">all_constructions</a>.reset();</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    <a class="code hl_variable" href="namespaceanonymous__namespace_02construction_8cpp_03.html#ad6f88bc31464db11fe2f957ce8abfe3d">constructions_sorted</a>.clear();</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>}</div>
+<p class="definition">Definition at line <a class="el" href="construction_8cpp_source.html#l00190">190</a> of file <a class="el" href="construction_8cpp_source.html">construction.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>{</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    <a class="code hl_variable" href="namespaceanonymous__namespace_02construction_8cpp_03.html#a5da2e229b1546f7772edc48fa79116e6">all_constructions</a>.reset();</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    <a class="code hl_variable" href="namespaceanonymous__namespace_02construction_8cpp_03.html#ad6f88bc31464db11fe2f957ce8abfe3d">constructions_sorted</a>.clear();</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="namespaceanonymous__namespace_02construction_8cpp_03.html#a5da2e229b1546f7772edc48fa79116e6">anonymous_namespace{construction.cpp}::all_constructions</a>, and <a class="el" href="construction_8cpp_source.html#l00138">anonymous_namespace{construction.cpp}::constructions_sorted</a>.</p>
+<p class="reference">References <a class="el" href="namespaceanonymous__namespace_02construction_8cpp_03.html#a5da2e229b1546f7772edc48fa79116e6">anonymous_namespace{construction.cpp}::all_constructions</a>, and <a class="el" href="construction_8cpp_source.html#l00139">anonymous_namespace{construction.cpp}::constructions_sorted</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8cpp_source.html#l00528">DynamicDataLoader::unload_data()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8cpp_source.html#l00536">DynamicDataLoader::unload_data()</a>.</p>
 
 </div>
 </div>
@@ -338,7 +341,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceconstructions.html">constructions</a></li>
-    <li class="footer">Generated on Wed Oct 19 2022 14:19:54 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Mon Dec 26 2022 21:42:20 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

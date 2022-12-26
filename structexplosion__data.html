@@ -140,10 +140,10 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="explosion_8cpp_source.html#l01229">1229</a> of file <a class="el" href="explosion_8cpp_source.html">explosion.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01230" name="l01230"></a><span class="lineno"> 1230</span>{</div>
-<div class="line"><a id="l01231" name="l01231"></a><span class="lineno"> 1231</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="structexplosion__data.html#a41e8db58a26672fb26266f9693bd8044">damage</a> &gt; 0 || <a class="code hl_variable" href="structexplosion__data.html#aab30acfa0f7f4574a640174cdc04ac6e">fragment</a>;</div>
-<div class="line"><a id="l01232" name="l01232"></a><span class="lineno"> 1232</span>}</div>
+<p class="definition">Definition at line <a class="el" href="explosion_8cpp_source.html#l01320">1320</a> of file <a class="el" href="explosion_8cpp_source.html">explosion.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01321" name="l01321"></a><span class="lineno"> 1321</span>{</div>
+<div class="line"><a id="l01322" name="l01322"></a><span class="lineno"> 1322</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="structexplosion__data.html#a41e8db58a26672fb26266f9693bd8044">damage</a> &gt; 0 || <a class="code hl_variable" href="structexplosion__data.html#aab30acfa0f7f4574a640174cdc04ac6e">fragment</a>;</div>
+<div class="line"><a id="l01323" name="l01323"></a><span class="lineno"> 1323</span>}</div>
 <div class="ttc" id="astructexplosion__data_html_a41e8db58a26672fb26266f9693bd8044"><div class="ttname"><a href="structexplosion__data.html#a41e8db58a26672fb26266f9693bd8044">explosion_data::damage</a></div><div class="ttdeci">int damage</div><div class="ttdef"><b>Definition:</b> <a href="explosion_8h_source.html#l00015">explosion.h:15</a></div></div>
 <div class="ttc" id="astructexplosion__data_html_aab30acfa0f7f4574a640174cdc04ac6e"><div class="ttname"><a href="structexplosion__data.html#aab30acfa0f7f4574a640174cdc04ac6e">explosion_data::fragment</a></div><div class="ttdeci">cata::optional&lt; projectile &gt; fragment</div><div class="ttdef"><b>Definition:</b> <a href="explosion_8h_source.html#l00018">explosion.h:18</a></div></div>
 </div><!-- fragment -->
@@ -166,15 +166,15 @@ Public Attributes</h2></td></tr>
 
 <p>Returns the range at which blast damage is 0 and shrapnel is out of range. </p>
 
-<p class="definition">Definition at line <a class="el" href="explosion_8cpp_source.html#l01224">1224</a> of file <a class="el" href="explosion_8cpp_source.html">explosion.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01225" name="l01225"></a><span class="lineno"> 1225</span>{</div>
-<div class="line"><a id="l01226" name="l01226"></a><span class="lineno"> 1226</span>    <span class="keywordflow">return</span> std::max&lt;int&gt;( <a class="code hl_variable" href="structexplosion__data.html#a01d1dc7609c885fff0930a5a7fc39a5a">radius</a>, <a class="code hl_variable" href="structexplosion__data.html#aab30acfa0f7f4574a640174cdc04ac6e">fragment</a> ? <a class="code hl_variable" href="structexplosion__data.html#aab30acfa0f7f4574a640174cdc04ac6e">fragment</a>-&gt;range : 0 ) + 1;</div>
-<div class="line"><a id="l01227" name="l01227"></a><span class="lineno"> 1227</span>}</div>
+<p class="definition">Definition at line <a class="el" href="explosion_8cpp_source.html#l01315">1315</a> of file <a class="el" href="explosion_8cpp_source.html">explosion.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01316" name="l01316"></a><span class="lineno"> 1316</span>{</div>
+<div class="line"><a id="l01317" name="l01317"></a><span class="lineno"> 1317</span>    <span class="keywordflow">return</span> std::max&lt;int&gt;( <a class="code hl_variable" href="structexplosion__data.html#a01d1dc7609c885fff0930a5a7fc39a5a">radius</a>, <a class="code hl_variable" href="structexplosion__data.html#aab30acfa0f7f4574a640174cdc04ac6e">fragment</a> ? <a class="code hl_variable" href="structexplosion__data.html#aab30acfa0f7f4574a640174cdc04ac6e">fragment</a>-&gt;range : 0 ) + 1;</div>
+<div class="line"><a id="l01318" name="l01318"></a><span class="lineno"> 1318</span>}</div>
 <div class="ttc" id="astructexplosion__data_html_a01d1dc7609c885fff0930a5a7fc39a5a"><div class="ttname"><a href="structexplosion__data.html#a01d1dc7609c885fff0930a5a7fc39a5a">explosion_data::radius</a></div><div class="ttdeci">float radius</div><div class="ttdef"><b>Definition:</b> <a href="explosion_8h_source.html#l00016">explosion.h:16</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="explosion_8h_source.html#l00018">fragment</a>, and <a class="el" href="explosion_8h_source.html#l00016">radius</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="npcmove_8cpp_source.html#l00315">npc::find_dangerous_explosives()</a>, and <a class="el" href="monattack_8cpp_source.html#l05449">mattack::kamikaze()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="npcmove_8cpp_source.html#l00317">npc::find_dangerous_explosives()</a>, and <a class="el" href="monattack_8cpp_source.html#l05447">mattack::kamikaze()</a>.</p>
 
 </div>
 </div>
@@ -193,7 +193,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="explosion_8h_source.html#l00015">15</a> of file <a class="el" href="explosion_8h_source.html">explosion.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="explosion_8cpp_source.html#l00697">explosion_handler::explosion()</a>, <a class="el" href="trapfunc_8cpp_source.html#l00599">get_basic_explosion_data()</a>, <a class="el" href="iuse__actor_8cpp_source.html#l00604">explosion_iuse::info()</a>, <a class="el" href="explosion_8cpp_source.html#l00720">explosion_handler::explosion_funcs::regular()</a>, and <a class="el" href="explosion_8cpp_source.html#l01054">explosion_handler::explosion_funcs::resonance_cascade()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="explosion_8cpp_source.html#l00785">explosion_handler::explosion()</a>, <a class="el" href="trapfunc_8cpp_source.html#l00599">get_basic_explosion_data()</a>, <a class="el" href="iuse__actor_8cpp_source.html#l00603">explosion_iuse::info()</a>, <a class="el" href="explosion_8cpp_source.html#l00809">explosion_handler::explosion_funcs::regular()</a>, and <a class="el" href="explosion_8cpp_source.html#l01145">explosion_handler::explosion_funcs::resonance_cascade()</a>.</p>
 
 </div>
 </div>
@@ -211,7 +211,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="explosion_8h_source.html#l00017">17</a> of file <a class="el" href="explosion_8h_source.html">explosion.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="explosion_8cpp_source.html#l00697">explosion_handler::explosion()</a>, <a class="el" href="explosion_8cpp_source.html#l00720">explosion_handler::explosion_funcs::regular()</a>, and <a class="el" href="explosion_8cpp_source.html#l01054">explosion_handler::explosion_funcs::resonance_cascade()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="explosion_8cpp_source.html#l00785">explosion_handler::explosion()</a>, <a class="el" href="explosion_8cpp_source.html#l00809">explosion_handler::explosion_funcs::regular()</a>, and <a class="el" href="explosion_8cpp_source.html#l01145">explosion_handler::explosion_funcs::resonance_cascade()</a>.</p>
 
 </div>
 </div>
@@ -229,7 +229,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="explosion_8h_source.html#l00018">18</a> of file <a class="el" href="explosion_8h_source.html">explosion.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="explosion_8cpp_source.html#l00697">explosion_handler::explosion()</a>, <a class="el" href="trapfunc_8cpp_source.html#l00599">get_basic_explosion_data()</a>, <a class="el" href="iuse__actor_8cpp_source.html#l00604">explosion_iuse::info()</a>, <a class="el" href="explosion_8cpp_source.html#l00720">explosion_handler::explosion_funcs::regular()</a>, and <a class="el" href="explosion_8cpp_source.html#l01224">safe_range()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="explosion_8cpp_source.html#l00785">explosion_handler::explosion()</a>, <a class="el" href="trapfunc_8cpp_source.html#l00599">get_basic_explosion_data()</a>, <a class="el" href="iuse__actor_8cpp_source.html#l00603">explosion_iuse::info()</a>, <a class="el" href="explosion_8cpp_source.html#l00809">explosion_handler::explosion_funcs::regular()</a>, and <a class="el" href="explosion_8cpp_source.html#l01315">safe_range()</a>.</p>
 
 </div>
 </div>
@@ -247,7 +247,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="explosion_8h_source.html#l00016">16</a> of file <a class="el" href="explosion_8h_source.html">explosion.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="explosion_8cpp_source.html#l00697">explosion_handler::explosion()</a>, <a class="el" href="trapfunc_8cpp_source.html#l00599">get_basic_explosion_data()</a>, <a class="el" href="iuse__actor_8cpp_source.html#l00604">explosion_iuse::info()</a>, <a class="el" href="explosion_8cpp_source.html#l00720">explosion_handler::explosion_funcs::regular()</a>, <a class="el" href="explosion_8cpp_source.html#l01054">explosion_handler::explosion_funcs::resonance_cascade()</a>, and <a class="el" href="explosion_8cpp_source.html#l01224">safe_range()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="explosion_8cpp_source.html#l00785">explosion_handler::explosion()</a>, <a class="el" href="trapfunc_8cpp_source.html#l00599">get_basic_explosion_data()</a>, <a class="el" href="iuse__actor_8cpp_source.html#l00603">explosion_iuse::info()</a>, <a class="el" href="explosion_8cpp_source.html#l00809">explosion_handler::explosion_funcs::regular()</a>, <a class="el" href="explosion_8cpp_source.html#l01145">explosion_handler::explosion_funcs::resonance_cascade()</a>, and <a class="el" href="explosion_8cpp_source.html#l01315">safe_range()</a>.</p>
 
 </div>
 </div>
@@ -261,7 +261,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structexplosion__data.html">explosion_data</a></li>
-    <li class="footer">Generated on Wed Oct 19 2022 14:19:30 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Mon Dec 26 2022 21:42:01 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

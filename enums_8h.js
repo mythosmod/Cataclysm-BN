@@ -5,6 +5,7 @@ var enums_8h =
     [ "enum_traits< ot_match_type >", "structenum__traits_3_01ot__match__type_01_4.html", "structenum__traits_3_01ot__match__type_01_4" ],
     [ "enum_traits< art_effect_passive >", "structenum__traits_3_01art__effect__passive_01_4.html", "structenum__traits_3_01art__effect__passive_01_4" ],
     [ "enum_traits< phase_id >", "structenum__traits_3_01phase__id_01_4.html", "structenum__traits_3_01phase__id_01_4" ],
+    [ "enum_traits< distraction_type >", "structenum__traits_3_01distraction__type_01_4.html", "structenum__traits_3_01distraction__type_01_4" ],
     [ "enum_traits< game_message_type >", "structenum__traits_3_01game__message__type_01_4.html", "structenum__traits_3_01game__message__type_01_4" ],
     [ "game_message_params", "structgame__message__params.html", "structgame__message__params" ],
     [ "CATA_SRC_ENUMS_H", "enums_8h.html#a0fc6a748089d24a1d0d6deeeda088ec3", null ],
@@ -80,6 +81,7 @@ var enums_8h =
       [ "nsort", "enums_8h.html#aa5453fbee63cb8d917b85be32ec4cb8ca15245656a5bd133c1b997bfbc2e55b65", null ]
     ] ],
     [ "distraction_type", "enums_8h.html#a18cc141c508bf4f277abaf39fc9c3d96", [
+      [ "alert", "enums_8h.html#a18cc141c508bf4f277abaf39fc9c3d96a7ed21143076d0cca420653d4345baa2f", null ],
       [ "noise", "enums_8h.html#a18cc141c508bf4f277abaf39fc9c3d96aaaddc3454ccbefbb2d8d8461f8f7f481", null ],
       [ "pain", "enums_8h.html#a18cc141c508bf4f277abaf39fc9c3d96a87a429872c7faee7e8bc9268d5bf548e", null ],
       [ "attacked", "enums_8h.html#a18cc141c508bf4f277abaf39fc9c3d96ac2b80119e7f79c0b0189e097e963f474", null ],
@@ -87,8 +89,8 @@ var enums_8h =
       [ "hostile_spotted_near", "enums_8h.html#a18cc141c508bf4f277abaf39fc9c3d96ac86c3ce5473369b368b6f0bc79ebde91", null ],
       [ "talked_to", "enums_8h.html#a18cc141c508bf4f277abaf39fc9c3d96a885eb549ad0e84f8c80a451d78118681", null ],
       [ "asthma", "enums_8h.html#a18cc141c508bf4f277abaf39fc9c3d96ac8a4ba34cfada217ea979ae9bab8360a", null ],
-      [ "motion_alarm", "enums_8h.html#a18cc141c508bf4f277abaf39fc9c3d96ab02f33d161acdc0aa67aa20b92d2eef8", null ],
-      [ "weather_change", "enums_8h.html#a18cc141c508bf4f277abaf39fc9c3d96a3c0c979d6d0861863ccf753d0d8bc545", null ]
+      [ "weather_change", "enums_8h.html#a18cc141c508bf4f277abaf39fc9c3d96a3c0c979d6d0861863ccf753d0d8bc545", null ],
+      [ "num_distraction_type", "enums_8h.html#a18cc141c508bf4f277abaf39fc9c3d96a5c1a0df68d9aeb32b98ee82317a23087", null ]
     ] ],
     [ "game_message_flags", "enums_8h.html#a3c6c2b91b92d3e5471a017b197da3d29", [
       [ "gmf_none", "enums_8h.html#a3c6c2b91b92d3e5471a017b197da3d29a9f86ef518c2ea2ea5b1d2017bd9381bb", null ],

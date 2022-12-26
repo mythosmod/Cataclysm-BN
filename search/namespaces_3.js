@@ -5,9 +5,10 @@ var searchData=
   ['detail_2',['detail',['../namespacedetail.html',1,'']]],
   ['dialogue_5fdata_3',['dialogue_data',['../namespacedialogue__data.html',1,'']]],
   ['digits_4',['digits',['../namespacedetail_1_1digits.html',1,'detail']]],
-  ['distribution_5fgraph_5',['distribution_graph',['../namespacedistribution__graph.html',1,'']]],
-  ['doors_6',['doors',['../namespacedoors.html',1,'']]],
-  ['dragonbox_7',['dragonbox',['../namespacedetail_1_1dragonbox.html',1,'detail']]],
-  ['dreams_8',['dreams',['../namespacedreams.html',1,'']]],
-  ['drop_5ftoken_9',['drop_token',['../namespacedrop__token.html',1,'']]]
+  ['distraction_5fmanager_5',['distraction_manager',['../namespacedistraction__manager.html',1,'']]],
+  ['distribution_5fgraph_6',['distribution_graph',['../namespacedistribution__graph.html',1,'']]],
+  ['doors_7',['doors',['../namespacedoors.html',1,'']]],
+  ['dragonbox_8',['dragonbox',['../namespacedetail_1_1dragonbox.html',1,'detail']]],
+  ['dreams_9',['dreams',['../namespacedreams.html',1,'']]],
+  ['drop_5ftoken_10',['drop_token',['../namespacedrop__token.html',1,'']]]
 ];

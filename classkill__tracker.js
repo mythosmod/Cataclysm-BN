@@ -12,6 +12,7 @@ var classkill__tracker =
     [ "npc_kill_count", "classkill__tracker.html#a8926a6c95a723250bd2870f429e6771f", null ],
     [ "reset", "classkill__tracker.html#afc68e310a8c0741f19da36df523e2d20", null ],
     [ "serialize", "classkill__tracker.html#add76e2a375a3bef147168c7517e09ce4", null ],
+    [ "diary", "classkill__tracker.html#af79582d815fa8b3e20a4c34a05c98bc2", null ],
     [ "kills", "classkill__tracker.html#a1fbcc4310449c768846a668f79fc90e7", null ],
     [ "npc_kills", "classkill__tracker.html#a5e24113dea091488c3dc08b65faf8322", null ]
 ];

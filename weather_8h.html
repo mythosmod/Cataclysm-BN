@@ -283,26 +283,26 @@ Variables</h2></td></tr>
 <dl class="section see"><dt>See also</dt><dd>rot_chart </dd></dl>
 <p >Precomputed rot lookup table.</p>
 
-<p class="definition">Definition at line <a class="el" href="item_8cpp_source.html#l05545">5545</a> of file <a class="el" href="item_8cpp_source.html">item.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l05546" name="l05546"></a><span class="lineno"> 5546</span>{<span class="comment"></span></div>
-<div class="line"><a id="l05547" name="l05547"></a><span class="lineno"> 5547</span><span class="comment">    /**</span></div>
-<div class="line"><a id="l05548" name="l05548"></a><span class="lineno"> 5548</span><span class="comment">     * Precomputed rot lookup table.</span></div>
-<div class="line"><a id="l05549" name="l05549"></a><span class="lineno"> 5549</span><span class="comment">     */</span></div>
-<div class="line"><a id="l05550" name="l05550"></a><span class="lineno"> 5550</span>    <span class="keyword">static</span> <span class="keyword">const</span> std::vector&lt;int&gt; rot_chart = <a class="code hl_function" href="item_8cpp.html#a13337d48cd976e76963f10a1e6c87c0b">calc_rot_array</a>( 200 );</div>
-<div class="line"><a id="l05551" name="l05551"></a><span class="lineno"> 5551</span> </div>
-<div class="line"><a id="l05552" name="l05552"></a><span class="lineno"> 5552</span>    <span class="keywordflow">if</span>( temp &lt; 0 ) {</div>
-<div class="line"><a id="l05553" name="l05553"></a><span class="lineno"> 5553</span>        <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a id="l05554" name="l05554"></a><span class="lineno"> 5554</span>    }</div>
-<div class="line"><a id="l05555" name="l05555"></a><span class="lineno"> 5555</span>    <span class="keywordflow">if</span>( temp &gt; 150 ) {</div>
-<div class="line"><a id="l05556" name="l05556"></a><span class="lineno"> 5556</span>        <span class="keywordflow">return</span> 21240;</div>
-<div class="line"><a id="l05557" name="l05557"></a><span class="lineno"> 5557</span>    }</div>
-<div class="line"><a id="l05558" name="l05558"></a><span class="lineno"> 5558</span>    <span class="keywordflow">return</span> rot_chart[temp];</div>
-<div class="line"><a id="l05559" name="l05559"></a><span class="lineno"> 5559</span>}</div>
-<div class="ttc" id="aitem_8cpp_html_a13337d48cd976e76963f10a1e6c87c0b"><div class="ttname"><a href="item_8cpp.html#a13337d48cd976e76963f10a1e6c87c0b">calc_rot_array</a></div><div class="ttdeci">static std::vector&lt; int &gt; calc_rot_array(const size_t cap)</div><div class="ttdoc">Initialize the rot table.</div><div class="ttdef"><b>Definition:</b> <a href="item_8cpp_source.html#l05531">item.cpp:5531</a></div></div>
+<p class="definition">Definition at line <a class="el" href="item_8cpp_source.html#l05559">5559</a> of file <a class="el" href="item_8cpp_source.html">item.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l05560" name="l05560"></a><span class="lineno"> 5560</span>{<span class="comment"></span></div>
+<div class="line"><a id="l05561" name="l05561"></a><span class="lineno"> 5561</span><span class="comment">    /**</span></div>
+<div class="line"><a id="l05562" name="l05562"></a><span class="lineno"> 5562</span><span class="comment">     * Precomputed rot lookup table.</span></div>
+<div class="line"><a id="l05563" name="l05563"></a><span class="lineno"> 5563</span><span class="comment">     */</span></div>
+<div class="line"><a id="l05564" name="l05564"></a><span class="lineno"> 5564</span>    <span class="keyword">static</span> <span class="keyword">const</span> std::vector&lt;int&gt; rot_chart = <a class="code hl_function" href="item_8cpp.html#a13337d48cd976e76963f10a1e6c87c0b">calc_rot_array</a>( 200 );</div>
+<div class="line"><a id="l05565" name="l05565"></a><span class="lineno"> 5565</span> </div>
+<div class="line"><a id="l05566" name="l05566"></a><span class="lineno"> 5566</span>    <span class="keywordflow">if</span>( temp &lt; 0 ) {</div>
+<div class="line"><a id="l05567" name="l05567"></a><span class="lineno"> 5567</span>        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l05568" name="l05568"></a><span class="lineno"> 5568</span>    }</div>
+<div class="line"><a id="l05569" name="l05569"></a><span class="lineno"> 5569</span>    <span class="keywordflow">if</span>( temp &gt; 150 ) {</div>
+<div class="line"><a id="l05570" name="l05570"></a><span class="lineno"> 5570</span>        <span class="keywordflow">return</span> 21240;</div>
+<div class="line"><a id="l05571" name="l05571"></a><span class="lineno"> 5571</span>    }</div>
+<div class="line"><a id="l05572" name="l05572"></a><span class="lineno"> 5572</span>    <span class="keywordflow">return</span> rot_chart[temp];</div>
+<div class="line"><a id="l05573" name="l05573"></a><span class="lineno"> 5573</span>}</div>
+<div class="ttc" id="aitem_8cpp_html_a13337d48cd976e76963f10a1e6c87c0b"><div class="ttname"><a href="item_8cpp.html#a13337d48cd976e76963f10a1e6c87c0b">calc_rot_array</a></div><div class="ttdeci">static std::vector&lt; int &gt; calc_rot_array(const size_t cap)</div><div class="ttdoc">Initialize the rot table.</div><div class="ttdef"><b>Definition:</b> <a href="item_8cpp_source.html#l05545">item.cpp:5545</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="item_8cpp_source.html#l05531">calc_rot_array()</a>.</p>
+<p class="reference">References <a class="el" href="item_8cpp_source.html#l05545">calc_rot_array()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="item_8cpp_source.html#l05561">item::calc_rot()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="item_8cpp_source.html#l05575">item::calc_rot()</a>.</p>
 
 </div>
 </div>
@@ -331,7 +331,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="weather_8h_source.html#l00034">34</a> of file <a class="el" href="weather_8h_source.html">weather.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="suffer_8cpp_source.html#l01802">Character::apply_wetness_morale()</a>, <a class="el" href="character_8cpp_source.html#l10439">Character::bodytemp_color()</a>, <a class="el" href="panels_8cpp_source.html#l00565">define_temp_level()</a>, <a class="el" href="suffer_8cpp_source.html#l00366">Character::suffer_from_chemimbalance()</a>, <a class="el" href="character_8cpp_source.html#l09559">Character::temp_corrected_by_climate_control()</a>, <a class="el" href="panels_8cpp_source.html#l00649">temp_stat()</a>, <a class="el" href="player_8cpp_source.html#l01564">player::update_body_wetness()</a>, and <a class="el" href="character_8cpp_source.html#l05183">Character::update_bodytemp()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="suffer_8cpp_source.html#l01807">Character::apply_wetness_morale()</a>, <a class="el" href="character_8cpp_source.html#l10365">Character::bodytemp_color()</a>, <a class="el" href="panels_8cpp_source.html#l00458">define_temp_level()</a>, <a class="el" href="suffer_8cpp_source.html#l00367">Character::suffer_from_chemimbalance()</a>, <a class="el" href="character_8cpp_source.html#l09469">Character::temp_corrected_by_climate_control()</a>, <a class="el" href="panels_8cpp_source.html#l00542">temp_stat()</a>, <a class="el" href="character__turn_8cpp_source.html#l00897">character_funcs::update_body_wetness()</a>, and <a class="el" href="character_8cpp_source.html#l05196">Character::update_bodytemp()</a>.</p>
 
 </div>
 </div>
@@ -360,7 +360,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="weather_8h_source.html#l00030">30</a> of file <a class="el" href="weather_8h_source.html">weather.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="character_8cpp_source.html#l10439">Character::bodytemp_color()</a>, <a class="el" href="panels_8cpp_source.html#l00565">define_temp_level()</a>, <a class="el" href="player__hardcoded__effects_8cpp_source.html#l00465">player::hardcoded_effects()</a>, <a class="el" href="character_8cpp_source.html#l09559">Character::temp_corrected_by_climate_control()</a>, <a class="el" href="panels_8cpp_source.html#l00649">temp_stat()</a>, and <a class="el" href="character_8cpp_source.html#l05183">Character::update_bodytemp()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="character_8cpp_source.html#l10365">Character::bodytemp_color()</a>, <a class="el" href="panels_8cpp_source.html#l00458">define_temp_level()</a>, <a class="el" href="player__hardcoded__effects_8cpp_source.html#l00472">Character::hardcoded_effects()</a>, <a class="el" href="character_8cpp_source.html#l09469">Character::temp_corrected_by_climate_control()</a>, <a class="el" href="panels_8cpp_source.html#l00542">temp_stat()</a>, and <a class="el" href="character_8cpp_source.html#l05196">Character::update_bodytemp()</a>.</p>
 
 </div>
 </div>
@@ -388,7 +388,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="weather_8h_source.html#l00038">38</a> of file <a class="el" href="weather_8h_source.html">weather.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="suffer_8cpp_source.html#l01802">Character::apply_wetness_morale()</a>, <a class="el" href="character_8cpp_source.html#l10439">Character::bodytemp_color()</a>, <a class="el" href="panels_8cpp_source.html#l00565">define_temp_level()</a>, <a class="el" href="suffer_8cpp_source.html#l00366">Character::suffer_from_chemimbalance()</a>, <a class="el" href="character_8cpp_source.html#l09559">Character::temp_corrected_by_climate_control()</a>, <a class="el" href="panels_8cpp_source.html#l00649">temp_stat()</a>, <a class="el" href="player_8cpp_source.html#l01564">player::update_body_wetness()</a>, and <a class="el" href="character_8cpp_source.html#l05183">Character::update_bodytemp()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="suffer_8cpp_source.html#l01807">Character::apply_wetness_morale()</a>, <a class="el" href="character_8cpp_source.html#l10365">Character::bodytemp_color()</a>, <a class="el" href="panels_8cpp_source.html#l00458">define_temp_level()</a>, <a class="el" href="suffer_8cpp_source.html#l00367">Character::suffer_from_chemimbalance()</a>, <a class="el" href="character_8cpp_source.html#l09469">Character::temp_corrected_by_climate_control()</a>, <a class="el" href="panels_8cpp_source.html#l00542">temp_stat()</a>, <a class="el" href="character__turn_8cpp_source.html#l00897">character_funcs::update_body_wetness()</a>, and <a class="el" href="character_8cpp_source.html#l05196">Character::update_bodytemp()</a>.</p>
 
 </div>
 </div>
@@ -416,7 +416,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="weather_8h_source.html#l00036">36</a> of file <a class="el" href="weather_8h_source.html">weather.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="player_8cpp_source.html#l00266">player::normalize()</a>, <a class="el" href="suffer_8cpp_source.html#l00366">Character::suffer_from_chemimbalance()</a>, <a class="el" href="character_8cpp_source.html#l09559">Character::temp_corrected_by_climate_control()</a>, <a class="el" href="panels_8cpp_source.html#l00548">temp_delta()</a>, and <a class="el" href="character_8cpp_source.html#l05183">Character::update_bodytemp()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="player_8cpp_source.html#l00178">player::normalize()</a>, <a class="el" href="suffer_8cpp_source.html#l00367">Character::suffer_from_chemimbalance()</a>, <a class="el" href="character_8cpp_source.html#l09469">Character::temp_corrected_by_climate_control()</a>, <a class="el" href="panels_8cpp_source.html#l00441">temp_delta()</a>, and <a class="el" href="character_8cpp_source.html#l05196">Character::update_bodytemp()</a>.</p>
 
 </div>
 </div>
@@ -442,7 +442,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="weather_8h_source.html#l00042">42</a> of file <a class="el" href="weather_8h_source.html">weather.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="character_8cpp_source.html#l10439">Character::bodytemp_color()</a>, <a class="el" href="panels_8cpp_source.html#l00565">define_temp_level()</a>, <a class="el" href="player__hardcoded__effects_8cpp_source.html#l00465">player::hardcoded_effects()</a>, <a class="el" href="character_8cpp_source.html#l09559">Character::temp_corrected_by_climate_control()</a>, <a class="el" href="panels_8cpp_source.html#l00649">temp_stat()</a>, <a class="el" href="player_8cpp_source.html#l01564">player::update_body_wetness()</a>, and <a class="el" href="character_8cpp_source.html#l05183">Character::update_bodytemp()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="character_8cpp_source.html#l10365">Character::bodytemp_color()</a>, <a class="el" href="panels_8cpp_source.html#l00458">define_temp_level()</a>, <a class="el" href="player__hardcoded__effects_8cpp_source.html#l00472">Character::hardcoded_effects()</a>, <a class="el" href="character_8cpp_source.html#l09469">Character::temp_corrected_by_climate_control()</a>, <a class="el" href="panels_8cpp_source.html#l00542">temp_stat()</a>, <a class="el" href="character__turn_8cpp_source.html#l00897">character_funcs::update_body_wetness()</a>, and <a class="el" href="character_8cpp_source.html#l05196">Character::update_bodytemp()</a>.</p>
 
 </div>
 </div>
@@ -470,7 +470,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="weather_8h_source.html#l00032">32</a> of file <a class="el" href="weather_8h_source.html">weather.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="character_8cpp_source.html#l10439">Character::bodytemp_color()</a>, <a class="el" href="panels_8cpp_source.html#l00565">define_temp_level()</a>, <a class="el" href="player__hardcoded__effects_8cpp_source.html#l00465">player::hardcoded_effects()</a>, <a class="el" href="character__oracle_8cpp_source.html#l00026">behavior::character_oracle_t::needs_warmth_badly()</a>, <a class="el" href="suffer_8cpp_source.html#l00366">Character::suffer_from_chemimbalance()</a>, <a class="el" href="character_8cpp_source.html#l09559">Character::temp_corrected_by_climate_control()</a>, <a class="el" href="panels_8cpp_source.html#l00649">temp_stat()</a>, and <a class="el" href="character_8cpp_source.html#l05183">Character::update_bodytemp()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="character_8cpp_source.html#l10365">Character::bodytemp_color()</a>, <a class="el" href="panels_8cpp_source.html#l00458">define_temp_level()</a>, <a class="el" href="player__hardcoded__effects_8cpp_source.html#l00472">Character::hardcoded_effects()</a>, <a class="el" href="character__oracle_8cpp_source.html#l00026">behavior::character_oracle_t::needs_warmth_badly()</a>, <a class="el" href="suffer_8cpp_source.html#l00367">Character::suffer_from_chemimbalance()</a>, <a class="el" href="character_8cpp_source.html#l09469">Character::temp_corrected_by_climate_control()</a>, <a class="el" href="panels_8cpp_source.html#l00542">temp_stat()</a>, and <a class="el" href="character_8cpp_source.html#l05196">Character::update_bodytemp()</a>.</p>
 
 </div>
 </div>
@@ -498,7 +498,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="weather_8h_source.html#l00040">40</a> of file <a class="el" href="weather_8h_source.html">weather.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="character_8cpp_source.html#l10439">Character::bodytemp_color()</a>, <a class="el" href="panels_8cpp_source.html#l00565">define_temp_level()</a>, <a class="el" href="player__hardcoded__effects_8cpp_source.html#l00465">player::hardcoded_effects()</a>, <a class="el" href="suffer_8cpp_source.html#l00366">Character::suffer_from_chemimbalance()</a>, <a class="el" href="character_8cpp_source.html#l09559">Character::temp_corrected_by_climate_control()</a>, <a class="el" href="panels_8cpp_source.html#l00649">temp_stat()</a>, <a class="el" href="player_8cpp_source.html#l01564">player::update_body_wetness()</a>, and <a class="el" href="character_8cpp_source.html#l05183">Character::update_bodytemp()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="character_8cpp_source.html#l10365">Character::bodytemp_color()</a>, <a class="el" href="panels_8cpp_source.html#l00458">define_temp_level()</a>, <a class="el" href="player__hardcoded__effects_8cpp_source.html#l00472">Character::hardcoded_effects()</a>, <a class="el" href="suffer_8cpp_source.html#l00367">Character::suffer_from_chemimbalance()</a>, <a class="el" href="character_8cpp_source.html#l09469">Character::temp_corrected_by_climate_control()</a>, <a class="el" href="panels_8cpp_source.html#l00542">temp_stat()</a>, <a class="el" href="character__turn_8cpp_source.html#l00897">character_funcs::update_body_wetness()</a>, and <a class="el" href="character_8cpp_source.html#l05196">Character::update_bodytemp()</a>.</p>
 
 </div>
 </div>
@@ -508,7 +508,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="weather_8h.html">weather.h</a></li>
-    <li class="footer">Generated on Wed Oct 19 2022 14:19:23 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Mon Dec 26 2022 21:41:55 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

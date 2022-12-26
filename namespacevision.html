@@ -117,12 +117,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="character_8cpp_source.html#l01802">1802</a> of file <a class="el" href="character_8cpp_source.html">character.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01803" name="l01803"></a><span class="lineno"> 1803</span>{</div>
-<div class="line"><a id="l01804" name="l01804"></a><span class="lineno"> 1804</span>    <span class="keywordflow">return</span> -( enc / 10.0f );</div>
-<div class="line"><a id="l01805" name="l01805"></a><span class="lineno"> 1805</span>}</div>
+<p class="definition">Definition at line <a class="el" href="character_8cpp_source.html#l01843">1843</a> of file <a class="el" href="character_8cpp_source.html">character.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01844" name="l01844"></a><span class="lineno"> 1844</span>{</div>
+<div class="line"><a id="l01845" name="l01845"></a><span class="lineno"> 1845</span>    <span class="keywordflow">return</span> -( enc / 10.0f );</div>
+<div class="line"><a id="l01846" name="l01846"></a><span class="lineno"> 1846</span>}</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="character__display_8cpp_source.html#l00208">get_encumbrance_description()</a>, and <a class="el" href="character_8cpp_source.html#l01703">Character::recalc_sight_limits()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="character__display_8cpp_source.html#l00208">get_encumbrance_description()</a>, and <a class="el" href="character_8cpp_source.html#l01744">Character::recalc_sight_limits()</a>.</p>
 
 </div>
 </div>
@@ -142,13 +142,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="character_8cpp_source.html#l01796">1796</a> of file <a class="el" href="character_8cpp_source.html">character.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01797" name="l01797"></a><span class="lineno"> 1797</span>{</div>
-<div class="line"><a id="l01798" name="l01798"></a><span class="lineno"> 1798</span>    <span class="comment">// The -1 is because the math is incorrect, but we want the UI to show correct numbers</span></div>
-<div class="line"><a id="l01799" name="l01799"></a><span class="lineno"> 1799</span>    <span class="keywordflow">return</span> per / 3.0f - 1.0f;</div>
-<div class="line"><a id="l01800" name="l01800"></a><span class="lineno"> 1800</span>}</div>
+<p class="definition">Definition at line <a class="el" href="character_8cpp_source.html#l01837">1837</a> of file <a class="el" href="character_8cpp_source.html">character.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01838" name="l01838"></a><span class="lineno"> 1838</span>{</div>
+<div class="line"><a id="l01839" name="l01839"></a><span class="lineno"> 1839</span>    <span class="comment">// The -1 is because the math is incorrect, but we want the UI to show correct numbers</span></div>
+<div class="line"><a id="l01840" name="l01840"></a><span class="lineno"> 1840</span>    <span class="keywordflow">return</span> per / 3.0f - 1.0f;</div>
+<div class="line"><a id="l01841" name="l01841"></a><span class="lineno"> 1841</span>}</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="character__display_8cpp_source.html#l00370">draw_stats_info()</a>, <a class="el" href="character_8cpp_source.html#l01703">Character::recalc_sight_limits()</a>, and <a class="el" href="newcharacter_8cpp_source.html#l00791">set_stats()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="character__display_8cpp_source.html#l00370">draw_stats_info()</a>, <a class="el" href="character_8cpp_source.html#l01744">Character::recalc_sight_limits()</a>, and <a class="el" href="newcharacter_8cpp_source.html#l00791">set_stats()</a>.</p>
 
 </div>
 </div>
@@ -171,18 +171,18 @@ Functions</h2></td></tr>
 <p>Returns the light level that darkness will have at this range from player. </p>
 <p >Assumes pure air transparency. </p>
 
-<p class="definition">Definition at line <a class="el" href="character_8cpp_source.html#l01789">1789</a> of file <a class="el" href="character_8cpp_source.html">character.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01790" name="l01790"></a><span class="lineno"> 1790</span>{</div>
-<div class="line"><a id="l01791" name="l01791"></a><span class="lineno"> 1791</span>    <span class="keyword">constexpr</span> <span class="keywordtype">float</span> epsilon = 0.0001f;</div>
-<div class="line"><a id="l01792" name="l01792"></a><span class="lineno"> 1792</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="lightmap_8h.html#a848d19d18b5cd12db8e2cb95a6020d27">LIGHT_AMBIENT_LOW</a> / std::exp( range * <a class="code hl_variable" href="lightmap_8h.html#ab007d848fe0f7de9118042fff85fef07">LIGHT_TRANSPARENCY_OPEN_AIR</a> )</div>
-<div class="line"><a id="l01793" name="l01793"></a><span class="lineno"> 1793</span>           - epsilon;</div>
-<div class="line"><a id="l01794" name="l01794"></a><span class="lineno"> 1794</span>}</div>
+<p class="definition">Definition at line <a class="el" href="character_8cpp_source.html#l01830">1830</a> of file <a class="el" href="character_8cpp_source.html">character.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01831" name="l01831"></a><span class="lineno"> 1831</span>{</div>
+<div class="line"><a id="l01832" name="l01832"></a><span class="lineno"> 1832</span>    <span class="keyword">constexpr</span> <span class="keywordtype">float</span> epsilon = 0.0001f;</div>
+<div class="line"><a id="l01833" name="l01833"></a><span class="lineno"> 1833</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="lightmap_8h.html#a848d19d18b5cd12db8e2cb95a6020d27">LIGHT_AMBIENT_LOW</a> / std::exp( range * <a class="code hl_variable" href="lightmap_8h.html#ab007d848fe0f7de9118042fff85fef07">LIGHT_TRANSPARENCY_OPEN_AIR</a> )</div>
+<div class="line"><a id="l01834" name="l01834"></a><span class="lineno"> 1834</span>           - epsilon;</div>
+<div class="line"><a id="l01835" name="l01835"></a><span class="lineno"> 1835</span>}</div>
 <div class="ttc" id="alightmap_8h_html_a848d19d18b5cd12db8e2cb95a6020d27"><div class="ttname"><a href="lightmap_8h.html#a848d19d18b5cd12db8e2cb95a6020d27">LIGHT_AMBIENT_LOW</a></div><div class="ttdeci">static constexpr float LIGHT_AMBIENT_LOW</div><div class="ttdef"><b>Definition:</b> <a href="lightmap_8h_source.html#l00014">lightmap.h:14</a></div></div>
 <div class="ttc" id="alightmap_8h_html_ab007d848fe0f7de9118042fff85fef07"><div class="ttname"><a href="lightmap_8h.html#ab007d848fe0f7de9118042fff85fef07">LIGHT_TRANSPARENCY_OPEN_AIR</a></div><div class="ttdeci">static constexpr float LIGHT_TRANSPARENCY_OPEN_AIR</div><div class="ttdef"><b>Definition:</b> <a href="lightmap_8h_source.html#l00036">lightmap.h:36</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="lightmap_8h_source.html#l00014">LIGHT_AMBIENT_LOW</a>, and <a class="el" href="lightmap_8h_source.html#l00036">LIGHT_TRANSPARENCY_OPEN_AIR</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="character_8cpp_source.html#l01809">Character::get_vision_threshold()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="character_8cpp_source.html#l01850">Character::get_vision_threshold()</a>.</p>
 
 </div>
 </div>
@@ -192,7 +192,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevision.html">vision</a></li>
-    <li class="footer">Generated on Wed Oct 19 2022 14:19:59 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Mon Dec 26 2022 21:42:24 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

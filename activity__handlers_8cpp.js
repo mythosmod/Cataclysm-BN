@@ -67,7 +67,7 @@ var activity__handlers_8cpp =
     [ "get_position", "activity__handlers_8cpp.html#ad991118ba95531cae09dff23e30c5ef6", null ],
     [ "get_sorted_tiles_by_distance", "activity__handlers_8cpp.html#ad56bc2a183ef33fafef613435a366c27", null ],
     [ "magic_train", "activity__handlers_8cpp.html#a5b4804c11bb4b74c781ae87301708de5", null ],
-    [ "patch_activity_for_furniture", "activity__handlers_8cpp.html#a3797595d4215a8977cd3c5a39f063b4e", null ],
+    [ "patch_activity_for_furniture", "activity__handlers_8cpp.html#a3e3ae9542f50ef9949b9840ef4fce32c", null ],
     [ "patch_activity_for_vehicle_welder", "activity__handlers_8cpp.html#a5a06628fc3bbbfafb38b9b5b44e819d3", null ],
     [ "perform_zone_activity_turn", "activity__handlers_8cpp.html#a4a5f09aefe40013204d7f79f130c1117", null ],
     [ "repeat_menu", "activity__handlers_8cpp.html#a018b6dd27a5d929fd7e92352e1bb8566", null ],

@@ -163,27 +163,27 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="inventory_8cpp_source.html#l00067">67</a> of file <a class="el" href="inventory_8cpp_source.html">inventory.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>{</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <span class="keyword">auto</span> &amp;p : <a class="code hl_class" href="classmap.html">map</a> ) {</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        <span class="keywordflow">if</span>( p.second.empty() ) {</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            <span class="comment">// The map gradually accumulates empty lists; remove those here</span></div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        }</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <a class="code hl_variable" href="classinvlet__favorites.html#aa92b9ed1b18e2e7677303bf573004f17">invlets_by_id</a>.insert( p );</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <span class="keywordflow">for</span>( <span class="keywordtype">char</span> invlet : p.second ) {</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            uint8_t invlet_u = invlet;</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            <span class="keywordflow">if</span>( !<a class="code hl_variable" href="classinvlet__favorites.html#a24f319508f753e9451618132e315d2b8">ids_by_invlet</a>[invlet_u].is_empty() ) {</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;Duplicate invlet: %s and %s both mapped to %c&quot;</span>,</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                          <a class="code hl_variable" href="classinvlet__favorites.html#a24f319508f753e9451618132e315d2b8">ids_by_invlet</a>[invlet_u].str(), p.first.str(), invlet );</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            }</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            <a class="code hl_variable" href="classinvlet__favorites.html#a24f319508f753e9451618132e315d2b8">ids_by_invlet</a>[invlet_u] = p.first;</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        }</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    }</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>}</div>
+<p class="definition">Definition at line <a class="el" href="inventory_8cpp_source.html#l00068">68</a> of file <a class="el" href="inventory_8cpp_source.html">inventory.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>{</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <span class="keyword">auto</span> &amp;p : <a class="code hl_class" href="classmap.html">map</a> ) {</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <span class="keywordflow">if</span>( p.second.empty() ) {</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            <span class="comment">// The map gradually accumulates empty lists; remove those here</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        }</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <a class="code hl_variable" href="classinvlet__favorites.html#aa92b9ed1b18e2e7677303bf573004f17">invlets_by_id</a>.insert( p );</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="keywordflow">for</span>( <span class="keywordtype">char</span> invlet : p.second ) {</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            uint8_t invlet_u = invlet;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            <span class="keywordflow">if</span>( !<a class="code hl_variable" href="classinvlet__favorites.html#a24f319508f753e9451618132e315d2b8">ids_by_invlet</a>[invlet_u].is_empty() ) {</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;Duplicate invlet: %s and %s both mapped to %c&quot;</span>,</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                          <a class="code hl_variable" href="classinvlet__favorites.html#a24f319508f753e9451618132e315d2b8">ids_by_invlet</a>[invlet_u].str(), p.first.str(), invlet );</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            }</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            <a class="code hl_variable" href="classinvlet__favorites.html#a24f319508f753e9451618132e315d2b8">ids_by_invlet</a>[invlet_u] = p.first;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        }</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    }</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>}</div>
 <div class="ttc" id="aclassinvlet__favorites_html_a24f319508f753e9451618132e315d2b8"><div class="ttname"><a href="classinvlet__favorites.html#a24f319508f753e9451618132e315d2b8">invlet_favorites::ids_by_invlet</a></div><div class="ttdeci">std::array&lt; itype_id, 256 &gt; ids_by_invlet</div><div class="ttdef"><b>Definition:</b> <a href="inventory_8h_source.html#l00086">inventory.h:86</a></div></div>
 <div class="ttc" id="aclassinvlet__favorites_html_aa92b9ed1b18e2e7677303bf573004f17"><div class="ttname"><a href="classinvlet__favorites.html#aa92b9ed1b18e2e7677303bf573004f17">invlet_favorites::invlets_by_id</a></div><div class="ttdeci">std::unordered_map&lt; itype_id, std::string &gt; invlets_by_id</div><div class="ttdef"><b>Definition:</b> <a href="inventory_8h_source.html#l00085">inventory.h:85</a></div></div>
-<div class="ttc" id="aclassmap_html"><div class="ttname"><a href="classmap.html">map</a></div><div class="ttdoc">Manage and cache data about a part of the map.</div><div class="ttdef"><b>Definition:</b> <a href="map_8h_source.html#l00388">map.h:389</a></div></div>
+<div class="ttc" id="aclassmap_html"><div class="ttname"><a href="classmap.html">map</a></div><div class="ttdoc">Manage and cache data about a part of the map.</div><div class="ttdef"><b>Definition:</b> <a href="map_8h_source.html#l00383">map.h:384</a></div></div>
 <div class="ttc" id="adebug_8h_html_a87e509562277a7ada3a75330d00cb445"><div class="ttname"><a href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a></div><div class="ttdeci">#define debugmsg(...)</div><div class="ttdoc">Debug message of level DL::Error and class DC::DebugMsg, also includes the source file name and line,...</div><div class="ttdef"><b>Definition:</b> <a href="debug_8h_source.html#l00074">debug.h:74</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="debug_8h_source.html#l00074">debugmsg</a>, <a class="el" href="inventory_8h_source.html#l00086">ids_by_invlet</a>, and <a class="el" href="inventory_8h_source.html#l00085">invlets_by_id</a>.</p>
@@ -217,16 +217,16 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="inventory_8cpp_source.html#l00110">110</a> of file <a class="el" href="inventory_8cpp_source.html">inventory.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>{</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    uint8_t invlet_u = invlet;</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classinvlet__favorites.html#a24f319508f753e9451618132e315d2b8">ids_by_invlet</a>[invlet_u] == <a class="code hl_variable" href="namespacebase__camps.html#a04fa69b1c0952a34dc4a7d26b3f9f786">id</a>;</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>}</div>
+<p class="definition">Definition at line <a class="el" href="inventory_8cpp_source.html#l00111">111</a> of file <a class="el" href="inventory_8cpp_source.html">inventory.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>{</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    uint8_t invlet_u = invlet;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classinvlet__favorites.html#a24f319508f753e9451618132e315d2b8">ids_by_invlet</a>[invlet_u] == <a class="code hl_variable" href="namespacebase__camps.html#a04fa69b1c0952a34dc4a7d26b3f9f786">id</a>;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>}</div>
 <div class="ttc" id="anamespacebase__camps_html_a04fa69b1c0952a34dc4a7d26b3f9f786"><div class="ttname"><a href="namespacebase__camps.html#a04fa69b1c0952a34dc4a7d26b3f9f786">base_camps::id</a></div><div class="ttdeci">const std::string id</div><div class="ttdef"><b>Definition:</b> <a href="basecamp_8h_source.html#l00087">basecamp.h:87</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="basecamp_8h_source.html#l00087">base_camps::id</a>, and <a class="el" href="inventory_8h_source.html#l00086">ids_by_invlet</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="inventory_8cpp_source.html#l00086">set()</a>, and <a class="el" href="inventory_8cpp_source.html#l01214">inventory::update_invlet()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="inventory_8cpp_source.html#l00087">set()</a>, and <a class="el" href="inventory_8cpp_source.html#l01217">inventory::update_invlet()</a>.</p>
 
 </div>
 </div>
@@ -246,25 +246,25 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="inventory_8cpp_source.html#l00097">97</a> of file <a class="el" href="inventory_8cpp_source.html">inventory.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>{</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    uint8_t invlet_u = invlet;</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="keyword">const</span> <a class="code hl_class" href="classstring__id.html">itype_id</a> &amp;<span class="keywordtype">id</span> = <a class="code hl_variable" href="classinvlet__favorites.html#a24f319508f753e9451618132e315d2b8">ids_by_invlet</a>[invlet_u];</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="keywordflow">if</span>( <span class="keywordtype">id</span>.is_empty() ) {</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    }</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    std::string &amp;invlets = <a class="code hl_variable" href="classinvlet__favorites.html#aa92b9ed1b18e2e7677303bf573004f17">invlets_by_id</a>[<a class="code hl_variable" href="namespacebase__camps.html#a04fa69b1c0952a34dc4a7d26b3f9f786">id</a>];</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    std::string::iterator it = <a class="code hl_function" href="namespacedetail.html#ad06b74f7502b63cbab323bba1ca3f72b">std::find</a>( invlets.begin(), invlets.end(), invlet );</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    invlets.erase( it );</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <a class="code hl_variable" href="classinvlet__favorites.html#a24f319508f753e9451618132e315d2b8">ids_by_invlet</a>[invlet_u] = <a class="code hl_enumvalue" href="cata__variant_8h.html#adfe42687fffdd05d233096b4e7dac2f4a5b71ce78dc7a00ad2177c6655231928c">itype_id</a>();</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>}</div>
+<p class="definition">Definition at line <a class="el" href="inventory_8cpp_source.html#l00098">98</a> of file <a class="el" href="inventory_8cpp_source.html">inventory.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>{</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    uint8_t invlet_u = invlet;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="keyword">const</span> <a class="code hl_class" href="classstring__id.html">itype_id</a> &amp;<span class="keywordtype">id</span> = <a class="code hl_variable" href="classinvlet__favorites.html#a24f319508f753e9451618132e315d2b8">ids_by_invlet</a>[invlet_u];</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="keywordflow">if</span>( <span class="keywordtype">id</span>.is_empty() ) {</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    }</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    std::string &amp;invlets = <a class="code hl_variable" href="classinvlet__favorites.html#aa92b9ed1b18e2e7677303bf573004f17">invlets_by_id</a>[<a class="code hl_variable" href="namespacebase__camps.html#a04fa69b1c0952a34dc4a7d26b3f9f786">id</a>];</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    std::string::iterator it = <a class="code hl_function" href="namespacedetail.html#ad06b74f7502b63cbab323bba1ca3f72b">std::find</a>( invlets.begin(), invlets.end(), invlet );</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    invlets.erase( it );</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <a class="code hl_variable" href="classinvlet__favorites.html#a24f319508f753e9451618132e315d2b8">ids_by_invlet</a>[invlet_u] = <a class="code hl_enumvalue" href="cata__variant_8h.html#adfe42687fffdd05d233096b4e7dac2f4a5b71ce78dc7a00ad2177c6655231928c">itype_id</a>();</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>}</div>
 <div class="ttc" id="acata__variant_8h_html_adfe42687fffdd05d233096b4e7dac2f4a5b71ce78dc7a00ad2177c6655231928c"><div class="ttname"><a href="cata__variant_8h.html#adfe42687fffdd05d233096b4e7dac2f4a5b71ce78dc7a00ad2177c6655231928c">cata_variant_type::itype_id</a></div><div class="ttdeci">@ itype_id</div></div>
 <div class="ttc" id="aclassstring__id_html"><div class="ttname"><a href="classstring__id.html">string_id&lt; itype &gt;</a></div></div>
 <div class="ttc" id="anamespacedetail_html_ad06b74f7502b63cbab323bba1ca3f72b"><div class="ttname"><a href="namespacedetail.html#ad06b74f7502b63cbab323bba1ca3f72b">detail::find</a></div><div class="ttdeci">FMT_CONSTEXPR bool find(Ptr first, Ptr last, T value, Ptr &amp;out)</div><div class="ttdef"><b>Definition:</b> <a href="fmtlib__format_8h_source.html#l03355">fmtlib_format.h:3355</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="fmtlib__format_8h_source.html#l03355">detail::find()</a>, <a class="el" href="basecamp_8h_source.html#l00087">base_camps::id</a>, <a class="el" href="inventory_8h_source.html#l00086">ids_by_invlet</a>, <a class="el" href="inventory_8h_source.html#l00085">invlets_by_id</a>, and <a class="el" href="cata__variant_8h.html#adfe42687fffdd05d233096b4e7dac2f4a5b71ce78dc7a00ad2177c6655231928c">itype_id</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="inventory_8cpp_source.html#l01202">inventory::reassign_item()</a>, and <a class="el" href="inventory_8cpp_source.html#l00086">set()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="inventory_8cpp_source.html#l01205">inventory::reassign_item()</a>, and <a class="el" href="inventory_8cpp_source.html#l00087">set()</a>.</p>
 
 </div>
 </div>
@@ -283,12 +283,14 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="inventory_8cpp_source.html#l00126">126</a> of file <a class="el" href="inventory_8cpp_source.html">inventory.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>{</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classinvlet__favorites.html#aa92b9ed1b18e2e7677303bf573004f17">invlets_by_id</a>;</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>}</div>
+<p class="definition">Definition at line <a class="el" href="inventory_8cpp_source.html#l00127">127</a> of file <a class="el" href="inventory_8cpp_source.html">inventory.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>{</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classinvlet__favorites.html#aa92b9ed1b18e2e7677303bf573004f17">invlets_by_id</a>;</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="inventory_8h_source.html#l00085">invlets_by_id</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="savegame__json_8cpp_source.html#l01704">inventory::json_save_invcache()</a>.</p>
 
 </div>
 </div>
@@ -308,18 +310,18 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="inventory_8cpp_source.html#l00116">116</a> of file <a class="el" href="inventory_8cpp_source.html">inventory.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>{</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    <span class="keyword">auto</span> map_iterator = <a class="code hl_variable" href="classinvlet__favorites.html#aa92b9ed1b18e2e7677303bf573004f17">invlets_by_id</a>.find( <span class="keywordtype">id</span> );</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <span class="keywordflow">if</span>( map_iterator == <a class="code hl_variable" href="classinvlet__favorites.html#aa92b9ed1b18e2e7677303bf573004f17">invlets_by_id</a>.end() ) {</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        <span class="keywordflow">return</span> {};</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    }</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <span class="keywordflow">return</span> map_iterator-&gt;second;</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>}</div>
+<p class="definition">Definition at line <a class="el" href="inventory_8cpp_source.html#l00117">117</a> of file <a class="el" href="inventory_8cpp_source.html">inventory.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>{</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <span class="keyword">auto</span> map_iterator = <a class="code hl_variable" href="classinvlet__favorites.html#aa92b9ed1b18e2e7677303bf573004f17">invlets_by_id</a>.find( <span class="keywordtype">id</span> );</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    <span class="keywordflow">if</span>( map_iterator == <a class="code hl_variable" href="classinvlet__favorites.html#aa92b9ed1b18e2e7677303bf573004f17">invlets_by_id</a>.end() ) {</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        <span class="keywordflow">return</span> {};</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    }</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <span class="keywordflow">return</span> map_iterator-&gt;second;</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="inventory_8h_source.html#l00085">invlets_by_id</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="inventory_8cpp_source.html#l00267">inventory::find_usable_cached_invlet()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="inventory_8cpp_source.html#l00268">inventory::find_usable_cached_invlet()</a>.</p>
 
 </div>
 </div>
@@ -349,22 +351,22 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="inventory_8cpp_source.html#l00086">86</a> of file <a class="el" href="inventory_8cpp_source.html">inventory.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>{</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="keywordflow">if</span>( <a class="code hl_function" href="classinvlet__favorites.html#a753803f21462fcbb5ec11fadb5d6ff3a">contains</a>( invlet, <span class="keywordtype">id</span> ) ) {</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    }</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <a class="code hl_function" href="classinvlet__favorites.html#a4bb4998afef3ac7fae0445b34a9c296e">erase</a>( invlet );</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    uint8_t invlet_u = invlet;</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <a class="code hl_variable" href="classinvlet__favorites.html#a24f319508f753e9451618132e315d2b8">ids_by_invlet</a>[invlet_u] = <a class="code hl_variable" href="namespacebase__camps.html#a04fa69b1c0952a34dc4a7d26b3f9f786">id</a>;</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <a class="code hl_variable" href="classinvlet__favorites.html#aa92b9ed1b18e2e7677303bf573004f17">invlets_by_id</a>[<a class="code hl_variable" href="namespacebase__camps.html#a04fa69b1c0952a34dc4a7d26b3f9f786">id</a>].push_back( invlet );</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>}</div>
-<div class="ttc" id="aclassinvlet__favorites_html_a4bb4998afef3ac7fae0445b34a9c296e"><div class="ttname"><a href="classinvlet__favorites.html#a4bb4998afef3ac7fae0445b34a9c296e">invlet_favorites::erase</a></div><div class="ttdeci">void erase(char invlet)</div><div class="ttdef"><b>Definition:</b> <a href="inventory_8cpp_source.html#l00097">inventory.cpp:97</a></div></div>
-<div class="ttc" id="aclassinvlet__favorites_html_a753803f21462fcbb5ec11fadb5d6ff3a"><div class="ttname"><a href="classinvlet__favorites.html#a753803f21462fcbb5ec11fadb5d6ff3a">invlet_favorites::contains</a></div><div class="ttdeci">bool contains(char invlet, const itype_id &amp;) const</div><div class="ttdef"><b>Definition:</b> <a href="inventory_8cpp_source.html#l00110">inventory.cpp:110</a></div></div>
+<p class="definition">Definition at line <a class="el" href="inventory_8cpp_source.html#l00087">87</a> of file <a class="el" href="inventory_8cpp_source.html">inventory.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>{</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keywordflow">if</span>( <a class="code hl_function" href="classinvlet__favorites.html#a753803f21462fcbb5ec11fadb5d6ff3a">contains</a>( invlet, <span class="keywordtype">id</span> ) ) {</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    }</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <a class="code hl_function" href="classinvlet__favorites.html#a4bb4998afef3ac7fae0445b34a9c296e">erase</a>( invlet );</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    uint8_t invlet_u = invlet;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <a class="code hl_variable" href="classinvlet__favorites.html#a24f319508f753e9451618132e315d2b8">ids_by_invlet</a>[invlet_u] = <a class="code hl_variable" href="namespacebase__camps.html#a04fa69b1c0952a34dc4a7d26b3f9f786">id</a>;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <a class="code hl_variable" href="classinvlet__favorites.html#aa92b9ed1b18e2e7677303bf573004f17">invlets_by_id</a>[<a class="code hl_variable" href="namespacebase__camps.html#a04fa69b1c0952a34dc4a7d26b3f9f786">id</a>].push_back( invlet );</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>}</div>
+<div class="ttc" id="aclassinvlet__favorites_html_a4bb4998afef3ac7fae0445b34a9c296e"><div class="ttname"><a href="classinvlet__favorites.html#a4bb4998afef3ac7fae0445b34a9c296e">invlet_favorites::erase</a></div><div class="ttdeci">void erase(char invlet)</div><div class="ttdef"><b>Definition:</b> <a href="inventory_8cpp_source.html#l00098">inventory.cpp:98</a></div></div>
+<div class="ttc" id="aclassinvlet__favorites_html_a753803f21462fcbb5ec11fadb5d6ff3a"><div class="ttname"><a href="classinvlet__favorites.html#a753803f21462fcbb5ec11fadb5d6ff3a">invlet_favorites::contains</a></div><div class="ttdeci">bool contains(char invlet, const itype_id &amp;) const</div><div class="ttdef"><b>Definition:</b> <a href="inventory_8cpp_source.html#l00111">inventory.cpp:111</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="inventory_8cpp_source.html#l00110">contains()</a>, <a class="el" href="inventory_8cpp_source.html#l00097">erase()</a>, <a class="el" href="basecamp_8h_source.html#l00087">base_camps::id</a>, <a class="el" href="inventory_8h_source.html#l00086">ids_by_invlet</a>, and <a class="el" href="inventory_8h_source.html#l00085">invlets_by_id</a>.</p>
+<p class="reference">References <a class="el" href="inventory_8cpp_source.html#l00111">contains()</a>, <a class="el" href="inventory_8cpp_source.html#l00098">erase()</a>, <a class="el" href="basecamp_8h_source.html#l00087">base_camps::id</a>, <a class="el" href="inventory_8h_source.html#l00086">ids_by_invlet</a>, and <a class="el" href="inventory_8h_source.html#l00085">invlets_by_id</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="inventory_8cpp_source.html#l00252">inventory::update_cache_with_item()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="inventory_8cpp_source.html#l00253">inventory::update_cache_with_item()</a>.</p>
 
 </div>
 </div>
@@ -391,7 +393,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="inventory_8h_source.html#l00086">86</a> of file <a class="el" href="inventory_8h_source.html">inventory.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="inventory_8cpp_source.html#l00110">contains()</a>, <a class="el" href="inventory_8cpp_source.html#l00097">erase()</a>, <a class="el" href="inventory_8cpp_source.html#l00067">invlet_favorites()</a>, and <a class="el" href="inventory_8cpp_source.html#l00086">set()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="inventory_8cpp_source.html#l00111">contains()</a>, <a class="el" href="inventory_8cpp_source.html#l00098">erase()</a>, <a class="el" href="inventory_8cpp_source.html#l00068">invlet_favorites()</a>, and <a class="el" href="inventory_8cpp_source.html#l00087">set()</a>.</p>
 
 </div>
 </div>
@@ -417,7 +419,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="inventory_8h_source.html#l00085">85</a> of file <a class="el" href="inventory_8h_source.html">inventory.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="inventory_8cpp_source.html#l00097">erase()</a>, <a class="el" href="inventory_8cpp_source.html#l00126">get_invlets_by_id()</a>, <a class="el" href="inventory_8cpp_source.html#l00067">invlet_favorites()</a>, <a class="el" href="inventory_8cpp_source.html#l00116">invlets_for()</a>, and <a class="el" href="inventory_8cpp_source.html#l00086">set()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="inventory_8cpp_source.html#l00098">erase()</a>, <a class="el" href="inventory_8cpp_source.html#l00127">get_invlets_by_id()</a>, <a class="el" href="inventory_8cpp_source.html#l00068">invlet_favorites()</a>, <a class="el" href="inventory_8cpp_source.html#l00117">invlets_for()</a>, and <a class="el" href="inventory_8cpp_source.html#l00087">set()</a>.</p>
 
 </div>
 </div>
@@ -431,7 +433,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classinvlet__favorites.html">invlet_favorites</a></li>
-    <li class="footer">Generated on Wed Oct 19 2022 14:19:33 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Mon Dec 26 2022 21:42:04 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

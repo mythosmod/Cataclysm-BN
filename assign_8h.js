@@ -24,6 +24,7 @@ var assign_8h =
     [ "assign_map_from_array", "assign_8h.html#a4b0b78d2c1c8b08201412bbd3d9950c2", null ],
     [ "assign_unit_common", "assign_8h.html#a75ee4e99258a046645fee26563dd8f61", null ],
     [ "check_assigned_dmg", "assign_8h.html#a65901be1662e8b7baa64ea33cefc984c", null ],
+    [ "is_strict_enabled", "assign_8h.html#abefce6b21ce60d9d6dc6037cf5ed5973", null ],
     [ "mult_unit", "assign_8h.html#a28681c8d4812c9606a586497d78317de", null ],
     [ "read_with_factor", "assign_8h.html#abc9204f2cca9230e8af419a5cd72d2b7", null ],
     [ "report_strict_violation", "assign_8h.html#a2a4327dc8c750ab25b1f568b9f50e556", null ],

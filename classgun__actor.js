@@ -27,6 +27,7 @@ var classgun__actor =
     [ "require_targeting_monster", "classgun__actor.html#aff79e0151e3f3a1d00e835b918fdbbaf", null ],
     [ "require_targeting_npc", "classgun__actor.html#a8d37856ff5aa0b3a02ea1590f6038643", null ],
     [ "require_targeting_player", "classgun__actor.html#a4d974bd7f92ce69799e53602af86270c", null ],
+    [ "target_moving_vehicles", "classgun__actor.html#afb97dd441db660dfcb09c4ff7c3b7bb2", null ],
     [ "targeting_cost", "classgun__actor.html#a2b995f0d20f99c404d920f3d23e6d758", null ],
     [ "targeting_sound", "classgun__actor.html#a3cc97a873fb87cd8d87bbfd4b51014d7", null ],
     [ "targeting_timeout", "classgun__actor.html#a34e90e6986439c089a7fc4606a96620e", null ],

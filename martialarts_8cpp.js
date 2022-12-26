@@ -8,6 +8,7 @@ var martialarts_8cpp =
     [ "add_if_exists", "martialarts_8cpp.html#a753a9aea9c41572680b66b8a8f7fc259", null ],
     [ "all_martialart_types", "martialarts_8cpp.html#a863b5e05d6e9a301dbcddd6bbb61ab28", null ],
     [ "autolearn_martialart_types", "martialarts_8cpp.html#a63233aaf936955f4df6542d8f786116f", null ],
+    [ "can_autolearn_martial_art", "martialarts_8cpp.html#ab0bd6bdef185fe017fcb2b8bfada66c0", null ],
     [ "check", "martialarts_8cpp.html#a614e20af50995a2d1c6e9710b61c0573", null ],
     [ "check_martialarts", "martialarts_8cpp.html#aedc1fd2b2bc202665ce6875092473b7f", null ],
     [ "clear_techniques_and_martial_arts", "martialarts_8cpp.html#af357fad859629471cc1c2008e1ae59f2", null ],

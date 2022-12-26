@@ -85,18 +85,25 @@ $(document).ready(function(){initNavTree('character__functions_8h.html',''); ini
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">character_functions.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="point_8h_source.html">point.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="type__id_8h_source.html">type_id.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="type__id_8h_source.html">type_id.h</a>&quot;</code><br />
+<code>#include &lt;string&gt;</code><br />
 </div>
 <p><a href="character__functions_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcharacter__funcs_1_1comfort__response__t.html">character_funcs::comfort_response_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacecharacter__funcs"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecharacter__funcs.html">character_funcs</a></td></tr>
@@ -106,6 +113,20 @@ Namespaces</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:aa997829d92fb38f931b090d882e8909f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="character__functions_8h.html#aa997829d92fb38f931b090d882e8909f">CATA_SRC_CHARACTER_FUNCTIONS_H</a></td></tr>
 <tr class="separator:aa997829d92fb38f931b090d882e8909f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a8614d6647ae110ba51944af26b80ecb7"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecharacter__funcs.html#a8614d6647ae110ba51944af26b80ecb7">character_funcs::comfort_level</a> { <br />
+&#160;&#160;<a class="el" href="namespacecharacter__funcs.html#a8614d6647ae110ba51944af26b80ecb7a79a2520f22b9e1526ff93176029603b8">character_funcs::impossible</a> = -999
+, <a class="el" href="namespacecharacter__funcs.html#a8614d6647ae110ba51944af26b80ecb7ac19a5c3628d86633a40e23c78d4ff67d">character_funcs::uncomfortable</a> = -7
+, <a class="el" href="namespacecharacter__funcs.html#a8614d6647ae110ba51944af26b80ecb7a5da248ea6840aca1ae2b417b17982a89">character_funcs::neutral</a> = 0
+, <a class="el" href="namespacecharacter__funcs.html#a8614d6647ae110ba51944af26b80ecb7a1493fbda00a5e67f5f6d8d619489a6af">character_funcs::slightly_comfortable</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="namespacecharacter__funcs.html#a8614d6647ae110ba51944af26b80ecb7aff52b9c1eee2349b5099deb92b8307ed">character_funcs::comfortable</a> = 5
+, <a class="el" href="namespacecharacter__funcs.html#a8614d6647ae110ba51944af26b80ecb7a2d02b60eaa3c25912ee2e3ba0b669068">character_funcs::very_comfortable</a> = 10
+<br />
+ }</td></tr>
+<tr class="separator:a8614d6647ae110ba51944af26b80ecb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -121,6 +142,24 @@ Functions</h2></td></tr>
 <tr class="memitem:a862df11441bba358b82fa47ce88ebe85"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecharacter__funcs.html#a862df11441bba358b82fa47ce88ebe85">character_funcs::is_fun_to_read</a> (const <a class="el" href="classCharacter.html">Character</a> &amp;ch, const <a class="el" href="classitem.html">item</a> &amp;book)</td></tr>
 <tr class="memdesc:a862df11441bba358b82fa47ce88ebe85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether character considers it fun to read the book.  <a href="namespacecharacter__funcs.html#a862df11441bba358b82fa47ce88ebe85">More...</a><br /></td></tr>
 <tr class="separator:a862df11441bba358b82fa47ce88ebe85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1686a89929a324a03d1396cac6ab1a24"><td class="memItemLeft" align="right" valign="top">comfort_response_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecharacter__funcs.html#a1686a89929a324a03d1396cac6ab1a24">character_funcs::base_comfort_value</a> (const <a class="el" href="classCharacter.html">Character</a> &amp;who, const <a class="el" href="structtripoint.html">tripoint</a> &amp;p)</td></tr>
+<tr class="memdesc:a1686a89929a324a03d1396cac6ab1a24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rate point's ability to serve as a bed.  <a href="namespacecharacter__funcs.html#a1686a89929a324a03d1396cac6ab1a24">More...</a><br /></td></tr>
+<tr class="separator:a1686a89929a324a03d1396cac6ab1a24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a392d1b99006a4f1f16c773e38762043d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecharacter__funcs.html#a392d1b99006a4f1f16c773e38762043d">character_funcs::rate_sleep_spot</a> (const <a class="el" href="classCharacter.html">Character</a> &amp;who, const <a class="el" href="structtripoint.html">tripoint</a> &amp;p)</td></tr>
+<tr class="memdesc:a392d1b99006a4f1f16c773e38762043d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rate point's ability to serve as a bed.  <a href="namespacecharacter__funcs.html#a392d1b99006a4f1f16c773e38762043d">More...</a><br /></td></tr>
+<tr class="separator:a392d1b99006a4f1f16c773e38762043d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16d62ac71c344a9b0482777456bb7b74"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecharacter__funcs.html#a16d62ac71c344a9b0482777456bb7b74">character_funcs::roll_can_sleep</a> (<a class="el" href="classCharacter.html">Character</a> &amp;who)</td></tr>
+<tr class="memdesc:a16d62ac71c344a9b0482777456bb7b74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checked each turn during "lying_down", returns true if the avatar falls asleep.  <a href="namespacecharacter__funcs.html#a16d62ac71c344a9b0482777456bb7b74">More...</a><br /></td></tr>
+<tr class="separator:a16d62ac71c344a9b0482777456bb7b74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dce7cdd9fb67e45d224f22aea0ff920"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecharacter__funcs.html#a0dce7cdd9fb67e45d224f22aea0ff920">character_funcs::can_interface_armor</a> (const <a class="el" href="classCharacter.html">Character</a> &amp;who)</td></tr>
+<tr class="memdesc:a0dce7cdd9fb67e45d224f22aea0ff920"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether character has an active bionic capable of interfacing with power armor.  <a href="namespacecharacter__funcs.html#a0dce7cdd9fb67e45d224f22aea0ff920">More...</a><br /></td></tr>
+<tr class="separator:a0dce7cdd9fb67e45d224f22aea0ff920"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c63f47142d40af0092a1be132a53efa"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecharacter__funcs.html#a6c63f47142d40af0092a1be132a53efa">character_funcs::fmt_wielded_weapon</a> (const <a class="el" href="classCharacter.html">Character</a> &amp;who)</td></tr>
+<tr class="memdesc:a6c63f47142d40af0092a1be132a53efa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the formatted name of the currently wielded item (if any) with current gun mode (if gun)  <a href="namespacecharacter__funcs.html#a6c63f47142d40af0092a1be132a53efa">More...</a><br /></td></tr>
+<tr class="separator:a6c63f47142d40af0092a1be132a53efa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95d2e2c3c197301f7e9c3e4608e912eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecharacter__funcs.html#a95d2e2c3c197301f7e9c3e4608e912eb">character_funcs::add_pain_msg</a> (const <a class="el" href="classCharacter.html">Character</a> &amp;who, int val, <a class="el" href="bodypart_8h.html#af618290c4c2de42aab87977ac7311980">body_part</a> bp)</td></tr>
+<tr class="memdesc:a95d2e2c3c197301f7e9c3e4608e912eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add message describing how character feels pain.  <a href="namespacecharacter__funcs.html#a95d2e2c3c197301f7e9c3e4608e912eb">More...</a><br /></td></tr>
+<tr class="separator:a95d2e2c3c197301f7e9c3e4608e912eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:adda4d5fd10b7216c49a0f9b6010de579"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecharacter__funcs.html#adda4d5fd10b7216c49a0f9b6010de579">character_funcs::fine_detail_vision_mod</a> (const <a class="el" href="classCharacter.html">Character</a> &amp;who)</td></tr>
 <tr class="memdesc:adda4d5fd10b7216c49a0f9b6010de579"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates multiplier for the time taken to perform tasks that require detail vision (reading, crafting, etc.).  <a href="namespacecharacter__funcs.html#adda4d5fd10b7216c49a0f9b6010de579">More...</a><br /></td></tr>
@@ -166,7 +205,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="character__functions_8h.html">character_functions.h</a></li>
-    <li class="footer">Generated on Wed Oct 19 2022 14:19:16 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Mon Dec 26 2022 21:41:49 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

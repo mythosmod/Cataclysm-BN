@@ -565,7 +565,7 @@ Public Attributes</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="bionics_8h_source.html#l00131">flags</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00530">Character::activate_bionic()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00285">build_bionic_poweronly_string()</a>, <a class="el" href="bionics_8cpp_source.html#l00333">check()</a>, <a class="el" href="bionics_8cpp_source.html#l00462">npc::check_or_use_weapon_cbm()</a>, <a class="el" href="bionics_8cpp_source.html#l01064">Character::deactivate_bionic()</a>, <a class="el" href="bionics_8cpp_source.html#l00326">finalize()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00484">get_bionic_text_color()</a>, <a class="el" href="game__inventory_8cpp_source.html#l01804">bionic_install_preset::get_denial()</a>, <a class="el" href="game__inventory_8cpp_source.html#l01908">bionic_install_surgeon_preset::get_denial()</a>, <a class="el" href="bionics_8cpp_source.html#l00282">load()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00528">player::power_bionics()</a>, <a class="el" href="bionics_8cpp_source.html#l01526">Character::process_bionic()</a>, <a class="el" href="handle__action_8cpp_source.html#l00999">sleep()</a>, and <a class="el" href="bionics_8cpp_source.html#l01977">Character::uninstall_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00531">Character::activate_bionic()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00286">build_bionic_poweronly_string()</a>, <a class="el" href="bionics_8cpp_source.html#l00333">check()</a>, <a class="el" href="bionics_8cpp_source.html#l00462">npc::check_or_use_weapon_cbm()</a>, <a class="el" href="bionics_8cpp_source.html#l01064">Character::deactivate_bionic()</a>, <a class="el" href="bionics_8cpp_source.html#l00326">finalize()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00485">get_bionic_text_color()</a>, <a class="el" href="game__inventory_8cpp_source.html#l01816">bionic_install_preset::get_denial()</a>, <a class="el" href="game__inventory_8cpp_source.html#l01920">bionic_install_surgeon_preset::get_denial()</a>, <a class="el" href="bionics_8cpp_source.html#l00282">load()</a>, <a class="el" href="bionics_8cpp_source.html#l01520">Character::process_bionic()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00529">show_bionics_ui()</a>, <a class="el" href="handle__action_8cpp_source.html#l01005">sleep()</a>, and <a class="el" href="bionics_8cpp_source.html#l01970">Character::uninstall_bionic()</a>.</p>
 
 </div>
 </div>
@@ -619,7 +619,7 @@ Public Attributes</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="cata__variant_8h.html#adfe42687fffdd05d233096b4e7dac2f4a5b71ce78dc7a00ad2177c6655231928c">itype_id</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01907">Character::can_uninstall_bionic()</a>, <a class="el" href="bionics_8cpp_source.html#l00333">check()</a>, <a class="el" href="bionics_8cpp_source.html#l02048">Character::perform_uninstall()</a>, and <a class="el" href="bionics_8cpp_source.html#l01977">Character::uninstall_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01900">Character::can_uninstall_bionic()</a>, <a class="el" href="bionics_8cpp_source.html#l00333">check()</a>, <a class="el" href="bionics_8cpp_source.html#l02040">Character::perform_uninstall()</a>, and <a class="el" href="bionics_8cpp_source.html#l01970">Character::uninstall_bionic()</a>.</p>
 
 </div>
 </div>
@@ -651,7 +651,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="bionics_8cpp_source.html#l00282">282</a> of file <a class="el" href="bionics_8cpp_source.html">bionics.cpp</a>.</p>
 <div class="fragment"><div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>{</div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>    <span class="keywordtype">bool</span> strict = src == <span class="stringliteral">&quot;dda&quot;</span>;</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>    <span class="keyword">const</span> <span class="keywordtype">bool</span> strict = <a class="code hl_function" href="assign_8h.html#abefce6b21ce60d9d6dc6037cf5ed5973">is_strict_enabled</a>( src );</div>
 <div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span> </div>
 <div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>    <a class="code hl_function" href="generic__factory_8h.html#a0a177c754c5ba89ac6c543656b0652cc">mandatory</a>( jsobj, <a class="code hl_variable" href="structbionic__data.html#a5c8172388d65d83d5422e5a9c171f0ad">was_loaded</a>, <span class="stringliteral">&quot;name&quot;</span>, <a class="code hl_variable" href="structbionic__data.html#a3cf96a3fc532f2c82b73924ab585451e">name</a> );</div>
 <div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>    <a class="code hl_function" href="generic__factory_8h.html#a0a177c754c5ba89ac6c543656b0652cc">mandatory</a>( jsobj, <a class="code hl_variable" href="structbionic__data.html#a5c8172388d65d83d5422e5a9c171f0ad">was_loaded</a>, <span class="stringliteral">&quot;description&quot;</span>, <a class="code hl_variable" href="structbionic__data.html#a20cd35d6f814b0e7ec9fd32e312664ce">description</a> );</div>
@@ -692,8 +692,9 @@ Public Attributes</h2></td></tr>
 <div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>                <a class="code hl_variable" href="structbionic__data.html#a91d04ff5e3de875e747fff05418f6253">power_activate</a> &gt; 0_kJ ||</div>
 <div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>                <a class="code hl_variable" href="structbionic__data.html#a92d5d99933b7daf27c6d312914fedd6a">charge_time</a> &gt; 0;</div>
 <div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>}</div>
-<div class="ttc" id="aassign_8h_html_a4b0b78d2c1c8b08201412bbd3d9950c2"><div class="ttname"><a href="assign_8h.html#a4b0b78d2c1c8b08201412bbd3d9950c2">assign_map_from_array</a></div><div class="ttdeci">bool assign_map_from_array(const JsonObject &amp;jo, const std::string &amp;name, T &amp;val, bool=false)</div><div class="ttdoc">Load map from JSON array of [key, value] pairs.</div><div class="ttdef"><b>Definition:</b> <a href="assign_8h_source.html#l00220">assign.h:220</a></div></div>
-<div class="ttc" id="aassign_8h_html_ac353926c625eb31f78ef7534277c5aaf"><div class="ttname"><a href="assign_8h.html#ac353926c625eb31f78ef7534277c5aaf">assign</a></div><div class="ttdeci">bool assign(const JsonObject &amp;jo, const std::string &amp;name, T &amp;val, bool strict=false, T lo=std::numeric_limits&lt; T &gt;::lowest(), T hi=std::numeric_limits&lt; T &gt;::max())</div><div class="ttdef"><b>Definition:</b> <a href="assign_8h_source.html#l00054">assign.h:54</a></div></div>
+<div class="ttc" id="aassign_8h_html_a4b0b78d2c1c8b08201412bbd3d9950c2"><div class="ttname"><a href="assign_8h.html#a4b0b78d2c1c8b08201412bbd3d9950c2">assign_map_from_array</a></div><div class="ttdeci">bool assign_map_from_array(const JsonObject &amp;jo, const std::string &amp;name, T &amp;val, bool=false)</div><div class="ttdoc">Load map from JSON array of [key, value] pairs.</div><div class="ttdef"><b>Definition:</b> <a href="assign_8h_source.html#l00225">assign.h:225</a></div></div>
+<div class="ttc" id="aassign_8h_html_abefce6b21ce60d9d6dc6037cf5ed5973"><div class="ttname"><a href="assign_8h.html#abefce6b21ce60d9d6dc6037cf5ed5973">is_strict_enabled</a></div><div class="ttdeci">bool is_strict_enabled(const std::string &amp;src)</div><div class="ttdoc">Check whether strict checks are enabled for given mod.</div><div class="ttdef"><b>Definition:</b> <a href="mod__manager_8cpp_source.html#l00368">mod_manager.cpp:368</a></div></div>
+<div class="ttc" id="aassign_8h_html_ac353926c625eb31f78ef7534277c5aaf"><div class="ttname"><a href="assign_8h.html#ac353926c625eb31f78ef7534277c5aaf">assign</a></div><div class="ttdeci">bool assign(const JsonObject &amp;jo, const std::string &amp;name, T &amp;val, bool strict=false, T lo=std::numeric_limits&lt; T &gt;::lowest(), T hi=std::numeric_limits&lt; T &gt;::max())</div><div class="ttdef"><b>Definition:</b> <a href="assign_8h_source.html#l00059">assign.h:59</a></div></div>
 <div class="ttc" id="abionics_8cpp_html_a9d0a087eadafeb7d0ad05d4a8620e0a8"><div class="ttname"><a href="bionics_8cpp.html#a9d0a087eadafeb7d0ad05d4a8620e0a8">flag_BIONIC_TOGGLED</a></div><div class="ttdeci">static const flag_str_id flag_BIONIC_TOGGLED(&quot;BIONIC_TOGGLED&quot;)</div></div>
 <div class="ttc" id="ageneric__factory_8h_html_a0a177c754c5ba89ac6c543656b0652cc"><div class="ttname"><a href="generic__factory_8h.html#a0a177c754c5ba89ac6c543656b0652cc">mandatory</a></div><div class="ttdeci">void mandatory(const JsonObject &amp;jo, const bool was_loaded, const std::string &amp;name, MemberType &amp;member)</div><div class="ttdef"><b>Definition:</b> <a href="generic__factory_8h_source.html#l00611">generic_factory.h:611</a></div></div>
 <div class="ttc" id="astructbionic__data_html_a11dceb5ca876efb5a865834788ea9bbb"><div class="ttname"><a href="structbionic__data.html#a11dceb5ca876efb5a865834788ea9bbb">bionic_data::passive_fuel_efficiency</a></div><div class="ttdeci">float passive_fuel_efficiency</div><div class="ttdoc">Fraction of fuel energy passively converted to bionic power.</div><div class="ttdef"><b>Definition:</b> <a href="bionics_8h_source.html#l00069">bionics.h:69</a></div></div>
@@ -712,7 +713,7 @@ Public Attributes</h2></td></tr>
 <div class="ttc" id="astructbionic__data_html_adc21bfb66fbff7f76ef8097457986075"><div class="ttname"><a href="structbionic__data.html#adc21bfb66fbff7f76ef8097457986075">bionic_data::fuel_efficiency</a></div><div class="ttdeci">float fuel_efficiency</div><div class="ttdoc">Fraction of fuel energy converted to bionic power.</div><div class="ttdef"><b>Definition:</b> <a href="bionics_8h_source.html#l00067">bionics.h:67</a></div></div>
 <div class="ttc" id="astructbionic__data_html_aec6fc87a32fdf93cad817d674875110c"><div class="ttname"><a href="structbionic__data.html#aec6fc87a32fdf93cad817d674875110c">bionic_data::power_deactivate</a></div><div class="ttdeci">units::energy power_deactivate</div><div class="ttdoc">Power cost on deactivation.</div><div class="ttdef"><b>Definition:</b> <a href="bionics_8h_source.html#l00039">bionics.h:39</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="bionics_8h_source.html#l00049">activated</a>, <a class="el" href="assign_8h_source.html#l00054">assign()</a>, <a class="el" href="assign_8h_source.html#l00220">assign_map_from_array()</a>, <a class="el" href="bionics_8h_source.html#l00129">available_upgrades</a>, <a class="el" href="bionics_8h_source.html#l00080">bash_protec</a>, <a class="el" href="bionics_8h_source.html#l00084">bullet_protec</a>, <a class="el" href="bionics_8h_source.html#l00104">canceled_mutations</a>, <a class="el" href="bionics_8h_source.html#l00045">capacity</a>, <a class="el" href="bionics_8h_source.html#l00043">charge_time</a>, <a class="el" href="bionics_8h_source.html#l00071">coverage_power_gen_penalty</a>, <a class="el" href="bionics_8h_source.html#l00082">cut_protec</a>, <a class="el" href="bionics_8h_source.html#l00035">description</a>, <a class="el" href="bionics_8h_source.html#l00107">enchantments</a>, <a class="el" href="bionics_8h_source.html#l00093">encumbrance</a>, <a class="el" href="bionics_8h_source.html#l00078">env_protec</a>, <a class="el" href="bionics_8h_source.html#l00073">exothermic_power_gen</a>, <a class="el" href="bionics_8h_source.html#l00099">fake_item</a>, <a class="el" href="bionics_8cpp.html#a9d0a087eadafeb7d0ad05d4a8620e0a8">flag_BIONIC_TOGGLED</a>, <a class="el" href="bionics_8h_source.html#l00131">flags</a>, <a class="el" href="bionics_8h_source.html#l00065">fuel_capacity</a>, <a class="el" href="bionics_8h_source.html#l00067">fuel_efficiency</a>, <a class="el" href="bionics_8h_source.html#l00063">fuel_opts</a>, <a class="el" href="bionics_8cpp_source.html#l00242">has_flag()</a>, <a class="el" href="bionics_8h_source.html#l00053">included</a>, <a class="el" href="bionics_8h_source.html#l00120">included_bionics</a>, <a class="el" href="bionics_8h_source.html#l00061">is_remote_fueled</a>, <a class="el" href="bionics_8h_source.html#l00112">learned_spells</a>, <a class="el" href="generic__factory_8h_source.html#l00611">mandatory()</a>, <a class="el" href="bionics_8h_source.html#l00034">name</a>, <a class="el" href="bionics_8h_source.html#l00089">occupied_bodyparts</a>, <a class="el" href="bionics_8h_source.html#l00069">passive_fuel_efficiency</a>, <a class="el" href="bionics_8h_source.html#l00037">power_activate</a>, <a class="el" href="bionics_8h_source.html#l00039">power_deactivate</a>, <a class="el" href="bionics_8h_source.html#l00075">power_gen_emission</a>, <a class="el" href="bionics_8h_source.html#l00041">power_over_time</a>, <a class="el" href="bionics_8h_source.html#l00059">stat_bonus</a>, <a class="el" href="bionics_8h_source.html#l00125">upgraded_bionic</a>, <a class="el" href="bionics_8h_source.html#l00143">was_loaded</a>, <a class="el" href="bionics_8h_source.html#l00057">weight_capacity_bonus</a>, and <a class="el" href="bionics_8h_source.html#l00055">weight_capacity_modifier</a>.</p>
+<p class="reference">References <a class="el" href="bionics_8h_source.html#l00049">activated</a>, <a class="el" href="assign_8h_source.html#l00059">assign()</a>, <a class="el" href="assign_8h_source.html#l00225">assign_map_from_array()</a>, <a class="el" href="bionics_8h_source.html#l00129">available_upgrades</a>, <a class="el" href="bionics_8h_source.html#l00080">bash_protec</a>, <a class="el" href="bionics_8h_source.html#l00084">bullet_protec</a>, <a class="el" href="bionics_8h_source.html#l00104">canceled_mutations</a>, <a class="el" href="bionics_8h_source.html#l00045">capacity</a>, <a class="el" href="bionics_8h_source.html#l00043">charge_time</a>, <a class="el" href="bionics_8h_source.html#l00071">coverage_power_gen_penalty</a>, <a class="el" href="bionics_8h_source.html#l00082">cut_protec</a>, <a class="el" href="bionics_8h_source.html#l00035">description</a>, <a class="el" href="bionics_8h_source.html#l00107">enchantments</a>, <a class="el" href="bionics_8h_source.html#l00093">encumbrance</a>, <a class="el" href="bionics_8h_source.html#l00078">env_protec</a>, <a class="el" href="bionics_8h_source.html#l00073">exothermic_power_gen</a>, <a class="el" href="bionics_8h_source.html#l00099">fake_item</a>, <a class="el" href="bionics_8cpp.html#a9d0a087eadafeb7d0ad05d4a8620e0a8">flag_BIONIC_TOGGLED</a>, <a class="el" href="bionics_8h_source.html#l00131">flags</a>, <a class="el" href="bionics_8h_source.html#l00065">fuel_capacity</a>, <a class="el" href="bionics_8h_source.html#l00067">fuel_efficiency</a>, <a class="el" href="bionics_8h_source.html#l00063">fuel_opts</a>, <a class="el" href="bionics_8cpp_source.html#l00242">has_flag()</a>, <a class="el" href="bionics_8h_source.html#l00053">included</a>, <a class="el" href="bionics_8h_source.html#l00120">included_bionics</a>, <a class="el" href="bionics_8h_source.html#l00061">is_remote_fueled</a>, <a class="el" href="mod__manager_8cpp_source.html#l00368">is_strict_enabled()</a>, <a class="el" href="bionics_8h_source.html#l00112">learned_spells</a>, <a class="el" href="generic__factory_8h_source.html#l00611">mandatory()</a>, <a class="el" href="bionics_8h_source.html#l00034">name</a>, <a class="el" href="bionics_8h_source.html#l00089">occupied_bodyparts</a>, <a class="el" href="bionics_8h_source.html#l00069">passive_fuel_efficiency</a>, <a class="el" href="bionics_8h_source.html#l00037">power_activate</a>, <a class="el" href="bionics_8h_source.html#l00039">power_deactivate</a>, <a class="el" href="bionics_8h_source.html#l00075">power_gen_emission</a>, <a class="el" href="bionics_8h_source.html#l00041">power_over_time</a>, <a class="el" href="bionics_8h_source.html#l00059">stat_bonus</a>, <a class="el" href="bionics_8h_source.html#l00125">upgraded_bionic</a>, <a class="el" href="bionics_8h_source.html#l00143">was_loaded</a>, <a class="el" href="bionics_8h_source.html#l00057">weight_capacity_bonus</a>, and <a class="el" href="bionics_8h_source.html#l00055">weight_capacity_modifier</a>.</p>
 
 </div>
 </div>
@@ -757,7 +758,7 @@ Public Attributes</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="namespaceanonymous__namespace_02bionics_8cpp_03.html#ab7d43fc5d5e3f322bc56510f718e8bbb">anonymous_namespace{bionics.cpp}::bionic_factory</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8cpp_source.html#l00236">DynamicDataLoader::initialize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8cpp_source.html#l00243">DynamicDataLoader::initialize()</a>.</p>
 
 </div>
 </div>
@@ -792,7 +793,7 @@ Public Attributes</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="namespaceanonymous__namespace_02bionics_8cpp_03.html#ab7d43fc5d5e3f322bc56510f718e8bbb">anonymous_namespace{bionics.cpp}::bionic_factory</a>, and <a class="el" href="bionics_8cpp_source.html#l00214">anonymous_namespace{bionics.cpp}::faulty_bionics</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8cpp_source.html#l00528">DynamicDataLoader::unload_data()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8cpp_source.html#l00536">DynamicDataLoader::unload_data()</a>.</p>
 
 </div>
 </div>
@@ -813,7 +814,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="bionics_8h_source.html#l00049">49</a> of file <a class="el" href="bionics_8h_source.html">bionics.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="item_8cpp_source.html#l03231">item::bionic_info()</a>, <a class="el" href="crafting_8cpp_source.html#l00558">Character::crafting_inventory()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00484">get_bionic_text_color()</a>, <a class="el" href="bionics_8cpp_source.html#l00282">load()</a>, and <a class="el" href="bionics__ui_8cpp_source.html#l00528">player::power_bionics()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="item_8cpp_source.html#l03240">item::bionic_info()</a>, <a class="el" href="crafting_8cpp_source.html#l00558">Character::crafting_inventory()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00485">get_bionic_text_color()</a>, <a class="el" href="bionics_8cpp_source.html#l00282">load()</a>, and <a class="el" href="bionics__ui_8cpp_source.html#l00529">show_bionics_ui()</a>.</p>
 
 </div>
 </div>
@@ -833,7 +834,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="bionics_8h_source.html#l00129">129</a> of file <a class="el" href="bionics_8h_source.html">bionics.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l04316">install_bionic_actor::can_use()</a>, <a class="el" href="bionics_8cpp_source.html#l00333">check()</a>, <a class="el" href="game__inventory_8cpp_source.html#l01804">bionic_install_preset::get_denial()</a>, <a class="el" href="game__inventory_8cpp_source.html#l01908">bionic_install_surgeon_preset::get_denial()</a>, and <a class="el" href="bionics_8cpp_source.html#l00282">load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l04318">install_bionic_actor::can_use()</a>, <a class="el" href="bionics_8cpp_source.html#l00333">check()</a>, <a class="el" href="game__inventory_8cpp_source.html#l01816">bionic_install_preset::get_denial()</a>, <a class="el" href="game__inventory_8cpp_source.html#l01920">bionic_install_surgeon_preset::get_denial()</a>, and <a class="el" href="bionics_8cpp_source.html#l00282">load()</a>.</p>
 
 </div>
 </div>
@@ -853,7 +854,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="bionics_8h_source.html#l00080">80</a> of file <a class="el" href="bionics_8h_source.html">bionics.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="character_8cpp_source.html#l08357">Character::bionic_armor_bonus()</a>, <a class="el" href="item_8cpp_source.html#l03231">item::bionic_info()</a>, <a class="el" href="bionics_8cpp_source.html#l00333">check()</a>, and <a class="el" href="bionics_8cpp_source.html#l00282">load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="character_8cpp_source.html#l08262">Character::bionic_armor_bonus()</a>, <a class="el" href="item_8cpp_source.html#l03240">item::bionic_info()</a>, <a class="el" href="bionics_8cpp_source.html#l00333">check()</a>, and <a class="el" href="bionics_8cpp_source.html#l00282">load()</a>.</p>
 
 </div>
 </div>
@@ -873,7 +874,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="bionics_8h_source.html#l00084">84</a> of file <a class="el" href="bionics_8h_source.html">bionics.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="character_8cpp_source.html#l08357">Character::bionic_armor_bonus()</a>, <a class="el" href="item_8cpp_source.html#l03231">item::bionic_info()</a>, <a class="el" href="bionics_8cpp_source.html#l00333">check()</a>, and <a class="el" href="bionics_8cpp_source.html#l00282">load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="character_8cpp_source.html#l08262">Character::bionic_armor_bonus()</a>, <a class="el" href="item_8cpp_source.html#l03240">item::bionic_info()</a>, <a class="el" href="bionics_8cpp_source.html#l00333">check()</a>, and <a class="el" href="bionics_8cpp_source.html#l00282">load()</a>.</p>
 
 </div>
 </div>
@@ -894,7 +895,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="bionics_8h_source.html#l00104">104</a> of file <a class="el" href="bionics_8h_source.html">bionics.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02149">Character::can_install_bionics()</a>, <a class="el" href="bionics_8cpp_source.html#l00333">check()</a>, <a class="el" href="bionics_8cpp_source.html#l02242">Character::install_bionics()</a>, <a class="el" href="bionics_8cpp_source.html#l00282">load()</a>, and <a class="el" href="activity__handlers_8cpp_source.html#l03520">activity_handlers::operation_do_turn()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02141">Character::can_install_bionics()</a>, <a class="el" href="bionics_8cpp_source.html#l00333">check()</a>, <a class="el" href="bionics_8cpp_source.html#l02234">Character::install_bionics()</a>, <a class="el" href="bionics_8cpp_source.html#l00282">load()</a>, and <a class="el" href="activity__handlers_8cpp_source.html#l03527">activity_handlers::operation_do_turn()</a>.</p>
 
 </div>
 </div>
@@ -914,7 +915,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="bionics_8h_source.html#l00045">45</a> of file <a class="el" href="bionics_8h_source.html">bionics.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02619">Character::amount_of_storage_bionics()</a>, <a class="el" href="item_8cpp_source.html#l03231">item::bionic_info()</a>, <a class="el" href="iuse__actor_8cpp_source.html#l04316">install_bionic_actor::can_use()</a>, <a class="el" href="game__inventory_8cpp_source.html#l01804">bionic_install_preset::get_denial()</a>, <a class="el" href="bionics_8cpp_source.html#l02242">Character::install_bionics()</a>, <a class="el" href="bionics_8cpp_source.html#l00282">load()</a>, and <a class="el" href="bionics_8cpp_source.html#l01977">Character::uninstall_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02611">Character::amount_of_storage_bionics()</a>, <a class="el" href="item_8cpp_source.html#l03240">item::bionic_info()</a>, <a class="el" href="iuse__actor_8cpp_source.html#l04318">install_bionic_actor::can_use()</a>, <a class="el" href="game__inventory_8cpp_source.html#l01816">bionic_install_preset::get_denial()</a>, <a class="el" href="bionics_8cpp_source.html#l02234">Character::install_bionics()</a>, <a class="el" href="bionics_8cpp_source.html#l00282">load()</a>, and <a class="el" href="bionics_8cpp_source.html#l01970">Character::uninstall_bionic()</a>.</p>
 
 </div>
 </div>
@@ -934,7 +935,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="bionics_8h_source.html#l00043">43</a> of file <a class="el" href="bionics_8h_source.html">bionics.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00530">Character::activate_bionic()</a>, <a class="el" href="bionics_8cpp_source.html#l01506">attempt_recharge()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00285">build_bionic_poweronly_string()</a>, <a class="el" href="bionics_8cpp_source.html#l00333">check()</a>, <a class="el" href="bionics_8cpp_source.html#l00282">load()</a>, and <a class="el" href="bionics_8cpp_source.html#l01526">Character::process_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00531">Character::activate_bionic()</a>, <a class="el" href="bionics_8cpp_source.html#l01500">attempt_recharge()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00286">build_bionic_poweronly_string()</a>, <a class="el" href="bionics_8cpp_source.html#l00333">check()</a>, <a class="el" href="bionics_8cpp_source.html#l00282">load()</a>, and <a class="el" href="bionics_8cpp_source.html#l01520">Character::process_bionic()</a>.</p>
 
 </div>
 </div>
@@ -954,7 +955,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="bionics_8h_source.html#l00071">71</a> of file <a class="el" href="bionics_8h_source.html">bionics.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01474">Character::get_effective_efficiency()</a>, and <a class="el" href="bionics_8cpp_source.html#l00282">load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01469">Character::get_effective_efficiency()</a>, and <a class="el" href="bionics_8cpp_source.html#l00282">load()</a>.</p>
 
 </div>
 </div>
@@ -974,7 +975,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="bionics_8h_source.html#l00082">82</a> of file <a class="el" href="bionics_8h_source.html">bionics.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="character_8cpp_source.html#l08357">Character::bionic_armor_bonus()</a>, <a class="el" href="item_8cpp_source.html#l03231">item::bionic_info()</a>, <a class="el" href="bionics_8cpp_source.html#l00333">check()</a>, and <a class="el" href="bionics_8cpp_source.html#l00282">load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="character_8cpp_source.html#l08262">Character::bionic_armor_bonus()</a>, <a class="el" href="item_8cpp_source.html#l03240">item::bionic_info()</a>, <a class="el" href="bionics_8cpp_source.html#l00333">check()</a>, and <a class="el" href="bionics_8cpp_source.html#l00282">load()</a>.</p>
 
 </div>
 </div>
@@ -992,7 +993,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="bionics_8h_source.html#l00035">35</a> of file <a class="el" href="bionics_8h_source.html">bionics.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="bionics__ui_8cpp_source.html#l00363">draw_description()</a>, and <a class="el" href="bionics_8cpp_source.html#l00282">load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics__ui_8cpp_source.html#l00364">draw_description()</a>, and <a class="el" href="bionics_8cpp_source.html#l00282">load()</a>.</p>
 
 </div>
 </div>
@@ -1012,7 +1013,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="bionics_8h_source.html#l00107">107</a> of file <a class="el" href="bionics_8h_source.html">bionics.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00530">Character::activate_bionic()</a>, <a class="el" href="bionics_8cpp_source.html#l00333">check()</a>, <a class="el" href="bionics_8cpp_source.html#l01064">Character::deactivate_bionic()</a>, and <a class="el" href="bionics_8cpp_source.html#l00282">load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00531">Character::activate_bionic()</a>, <a class="el" href="bionics_8cpp_source.html#l00333">check()</a>, <a class="el" href="bionics_8cpp_source.html#l01064">Character::deactivate_bionic()</a>, and <a class="el" href="bionics_8cpp_source.html#l00282">load()</a>.</p>
 
 </div>
 </div>
@@ -1032,7 +1033,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="bionics_8h_source.html#l00093">93</a> of file <a class="el" href="bionics_8h_source.html">bionics.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="item_8cpp_source.html#l03231">item::bionic_info()</a>, <a class="el" href="bionics_8cpp_source.html#l00333">check()</a>, and <a class="el" href="bionics_8cpp_source.html#l00282">load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="item_8cpp_source.html#l03240">item::bionic_info()</a>, <a class="el" href="bionics_8cpp_source.html#l00333">check()</a>, and <a class="el" href="bionics_8cpp_source.html#l00282">load()</a>.</p>
 
 </div>
 </div>
@@ -1052,7 +1053,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="bionics_8h_source.html#l00078">78</a> of file <a class="el" href="bionics_8h_source.html">bionics.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="item_8cpp_source.html#l03231">item::bionic_info()</a>, <a class="el" href="bionics_8cpp_source.html#l00333">check()</a>, and <a class="el" href="bionics_8cpp_source.html#l00282">load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="item_8cpp_source.html#l03240">item::bionic_info()</a>, <a class="el" href="bionics_8cpp_source.html#l00333">check()</a>, and <a class="el" href="bionics_8cpp_source.html#l00282">load()</a>.</p>
 
 </div>
 </div>
@@ -1072,7 +1073,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="bionics_8h_source.html#l00073">73</a> of file <a class="el" href="bionics_8h_source.html">bionics.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01453">Character::heat_emission()</a>, and <a class="el" href="bionics_8cpp_source.html#l00282">load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01449">Character::heat_emission()</a>, and <a class="el" href="bionics_8cpp_source.html#l00282">load()</a>.</p>
 
 </div>
 </div>
@@ -1093,7 +1094,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="bionics_8h_source.html#l00099">99</a> of file <a class="el" href="bionics_8h_source.html">bionics.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00530">Character::activate_bionic()</a>, <a class="el" href="bionics_8cpp_source.html#l00333">check()</a>, <a class="el" href="bionics_8cpp_source.html#l00462">npc::check_or_use_weapon_cbm()</a>, <a class="el" href="crafting_8cpp_source.html#l00558">Character::crafting_inventory()</a>, <a class="el" href="bionics_8cpp_source.html#l01064">Character::deactivate_bionic()</a>, and <a class="el" href="bionics_8cpp_source.html#l00282">load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00531">Character::activate_bionic()</a>, <a class="el" href="bionics_8cpp_source.html#l00333">check()</a>, <a class="el" href="bionics_8cpp_source.html#l00462">npc::check_or_use_weapon_cbm()</a>, <a class="el" href="crafting_8cpp_source.html#l00558">Character::crafting_inventory()</a>, <a class="el" href="bionics_8cpp_source.html#l01064">Character::deactivate_bionic()</a>, and <a class="el" href="bionics_8cpp_source.html#l00282">load()</a>.</p>
 
 </div>
 </div>
@@ -1151,7 +1152,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="bionics_8h_source.html#l00067">67</a> of file <a class="el" href="bionics_8h_source.html">bionics.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="bionics__ui_8cpp_source.html#l00067">anonymous_namespace{bionics_ui.cpp}::bionic_sort_power()</a>, <a class="el" href="bionics_8cpp_source.html#l01154">Character::burn_fuel()</a>, <a class="el" href="consumption_8cpp_source.html#l01426">Character::get_acquirable_energy()</a>, <a class="el" href="bionics_8cpp_source.html#l01453">Character::heat_emission()</a>, and <a class="el" href="bionics_8cpp_source.html#l00282">load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics__ui_8cpp_source.html#l00068">anonymous_namespace{bionics_ui.cpp}::bionic_sort_power()</a>, <a class="el" href="bionics_8cpp_source.html#l01152">Character::burn_fuel()</a>, <a class="el" href="consumption_8cpp_source.html#l01426">Character::get_acquirable_energy()</a>, <a class="el" href="bionics_8cpp_source.html#l01449">Character::heat_emission()</a>, and <a class="el" href="bionics_8cpp_source.html#l00282">load()</a>.</p>
 
 </div>
 </div>
@@ -1171,7 +1172,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="bionics_8h_source.html#l00063">63</a> of file <a class="el" href="bionics_8h_source.html">bionics.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="item_8cpp_source.html#l03231">item::bionic_info()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00285">build_bionic_poweronly_string()</a>, <a class="el" href="bionics_8cpp_source.html#l01154">Character::burn_fuel()</a>, <a class="el" href="bionics_8cpp_source.html#l00333">check()</a>, <a class="el" href="character_8cpp_source.html#l02076">Character::get_fuel_available()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00062">anonymous_namespace{bionics_ui.cpp}::is_power_cbm()</a>, <a class="el" href="bionics_8cpp_source.html#l02687">bionic::is_this_fuel_powered()</a>, <a class="el" href="bionics_8cpp_source.html#l00282">load()</a>, <a class="el" href="bionics_8cpp_source.html#l01311">Character::passive_power_gen()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00528">player::power_bionics()</a>, and <a class="el" href="bionics_8cpp_source.html#l01526">Character::process_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="item_8cpp_source.html#l03240">item::bionic_info()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00286">build_bionic_poweronly_string()</a>, <a class="el" href="bionics_8cpp_source.html#l01152">Character::burn_fuel()</a>, <a class="el" href="bionics_8cpp_source.html#l00333">check()</a>, <a class="el" href="character_8cpp_source.html#l02128">Character::get_fuel_available()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00063">anonymous_namespace{bionics_ui.cpp}::is_power_cbm()</a>, <a class="el" href="bionics_8cpp_source.html#l02674">bionic::is_this_fuel_powered()</a>, <a class="el" href="bionics_8cpp_source.html#l00282">load()</a>, <a class="el" href="bionics_8cpp_source.html#l01308">Character::passive_power_gen()</a>, <a class="el" href="bionics_8cpp_source.html#l01520">Character::process_bionic()</a>, and <a class="el" href="bionics__ui_8cpp_source.html#l00529">show_bionics_ui()</a>.</p>
 
 </div>
 </div>
@@ -1189,7 +1190,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="bionics_8h_source.html#l00032">32</a> of file <a class="el" href="bionics_8h_source.html">bionics.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00333">check()</a>, and <a class="el" href="bionics__ui_8cpp_source.html#l00528">player::power_bionics()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00333">check()</a>, and <a class="el" href="bionics__ui_8cpp_source.html#l00529">show_bionics_ui()</a>.</p>
 
 </div>
 </div>
@@ -1250,7 +1251,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="bionics_8h_source.html#l00061">61</a> of file <a class="el" href="bionics_8h_source.html">bionics.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00530">Character::activate_bionic()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00285">build_bionic_poweronly_string()</a>, <a class="el" href="bionics_8cpp_source.html#l01154">Character::burn_fuel()</a>, <a class="el" href="bionics_8cpp_source.html#l01064">Character::deactivate_bionic()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00186">draw_bionics_titlebar()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00062">anonymous_namespace{bionics_ui.cpp}::is_power_cbm()</a>, <a class="el" href="bionics_8cpp_source.html#l00282">load()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00528">player::power_bionics()</a>, and <a class="el" href="bionics_8cpp_source.html#l01526">Character::process_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00531">Character::activate_bionic()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00286">build_bionic_poweronly_string()</a>, <a class="el" href="bionics_8cpp_source.html#l01152">Character::burn_fuel()</a>, <a class="el" href="bionics_8cpp_source.html#l01064">Character::deactivate_bionic()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00187">draw_bionics_titlebar()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00063">anonymous_namespace{bionics_ui.cpp}::is_power_cbm()</a>, <a class="el" href="bionics_8cpp_source.html#l00282">load()</a>, <a class="el" href="bionics_8cpp_source.html#l01520">Character::process_bionic()</a>, and <a class="el" href="bionics__ui_8cpp_source.html#l00529">show_bionics_ui()</a>.</p>
 
 </div>
 </div>
@@ -1288,7 +1289,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="bionics_8h_source.html#l00034">34</a> of file <a class="el" href="bionics_8h_source.html">bionics.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="character_8cpp_source.html#l08151">Character::absorb_hit()</a>, <a class="el" href="bionics_8cpp_source.html#l00530">Character::activate_bionic()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00324">build_bionic_powerdesc_string()</a>, <a class="el" href="bionics_8cpp_source.html#l01154">Character::burn_fuel()</a>, <a class="el" href="bionics_8cpp_source.html#l01907">Character::can_uninstall_bionic()</a>, <a class="el" href="bionics_8cpp_source.html#l00462">npc::check_or_use_weapon_cbm()</a>, <a class="el" href="bionics_8cpp_source.html#l01064">Character::deactivate_bionic()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00363">draw_description()</a>, <a class="el" href="consumption_8cpp_source.html#l01377">Character::fuel_bionic_with()</a>, <a class="el" href="bionics_8cpp_source.html#l00282">load()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00074">anonymous_namespace{bionics_ui.cpp}::bionic_sort_less::operator()()</a>, <a class="el" href="bionics_8cpp_source.html#l02314">Character::perform_install()</a>, <a class="el" href="bionics_8cpp_source.html#l02048">Character::perform_uninstall()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00528">player::power_bionics()</a>, <a class="el" href="bionics_8cpp_source.html#l01526">Character::process_bionic()</a>, <a class="el" href="iexamine_8cpp_source.html#l00971">try_start_hacking()</a>, and <a class="el" href="bionics_8cpp_source.html#l02082">Character::uninstall_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="character_8cpp_source.html#l08064">Character::absorb_hit()</a>, <a class="el" href="bionics_8cpp_source.html#l00531">Character::activate_bionic()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00325">build_bionic_powerdesc_string()</a>, <a class="el" href="bionics_8cpp_source.html#l01152">Character::burn_fuel()</a>, <a class="el" href="bionics_8cpp_source.html#l01900">Character::can_uninstall_bionic()</a>, <a class="el" href="bionics_8cpp_source.html#l00462">npc::check_or_use_weapon_cbm()</a>, <a class="el" href="bionics_8cpp_source.html#l01064">Character::deactivate_bionic()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00364">draw_description()</a>, <a class="el" href="consumption_8cpp_source.html#l01377">Character::fuel_bionic_with()</a>, <a class="el" href="bionics_8cpp_source.html#l00282">load()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00075">anonymous_namespace{bionics_ui.cpp}::bionic_sort_less::operator()()</a>, <a class="el" href="bionics_8cpp_source.html#l02306">Character::perform_install()</a>, <a class="el" href="bionics_8cpp_source.html#l02040">Character::perform_uninstall()</a>, <a class="el" href="bionics_8cpp_source.html#l01520">Character::process_bionic()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00529">show_bionics_ui()</a>, <a class="el" href="iexamine_8cpp_source.html#l00975">try_start_hacking()</a>, and <a class="el" href="bionics_8cpp_source.html#l02074">Character::uninstall_bionic()</a>.</p>
 
 </div>
 </div>
@@ -1308,7 +1309,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="bionics_8h_source.html#l00089">89</a> of file <a class="el" href="bionics_8h_source.html">bionics.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02498">Character::bionic_installation_issues()</a>, <a class="el" href="bionics_8cpp_source.html#l00333">check()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00384">draw_connectors()</a>, <a class="el" href="bionics_8cpp_source.html#l01474">Character::get_effective_efficiency()</a>, <a class="el" href="bionics_8cpp_source.html#l00231">get_occupied_bodyparts()</a>, <a class="el" href="bionics_8cpp_source.html#l01453">Character::heat_emission()</a>, <a class="el" href="bionics_8cpp_source.html#l02242">Character::install_bionics()</a>, <a class="el" href="bionics_8cpp_source.html#l02468">list_occupied_bps()</a>, <a class="el" href="bionics_8cpp_source.html#l00282">load()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00528">player::power_bionics()</a>, and <a class="el" href="bionics_8cpp_source.html#l01977">Character::uninstall_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02490">Character::bionic_installation_issues()</a>, <a class="el" href="bionics_8cpp_source.html#l00333">check()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00385">draw_connectors()</a>, <a class="el" href="bionics_8cpp_source.html#l01469">Character::get_effective_efficiency()</a>, <a class="el" href="bionics_8cpp_source.html#l00231">get_occupied_bodyparts()</a>, <a class="el" href="bionics_8cpp_source.html#l01449">Character::heat_emission()</a>, <a class="el" href="bionics_8cpp_source.html#l02234">Character::install_bionics()</a>, <a class="el" href="bionics_8cpp_source.html#l02460">list_occupied_bps()</a>, <a class="el" href="bionics_8cpp_source.html#l00282">load()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00529">show_bionics_ui()</a>, and <a class="el" href="bionics_8cpp_source.html#l01970">Character::uninstall_bionic()</a>.</p>
 
 </div>
 </div>
@@ -1328,7 +1329,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="bionics_8h_source.html#l00069">69</a> of file <a class="el" href="bionics_8h_source.html">bionics.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00282">load()</a>, and <a class="el" href="bionics_8cpp_source.html#l01311">Character::passive_power_gen()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00282">load()</a>, and <a class="el" href="bionics_8cpp_source.html#l01308">Character::passive_power_gen()</a>.</p>
 
 </div>
 </div>
@@ -1348,7 +1349,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="bionics_8h_source.html#l00037">37</a> of file <a class="el" href="bionics_8h_source.html">bionics.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00530">Character::activate_bionic()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00067">anonymous_namespace{bionics_ui.cpp}::bionic_sort_power()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00285">build_bionic_poweronly_string()</a>, <a class="el" href="bionics_8cpp_source.html#l00462">npc::check_or_use_weapon_cbm()</a>, <a class="el" href="bionics_8cpp_source.html#l00451">npc::discharge_cbm_weapon()</a>, <a class="el" href="character_8cpp_source.html#l02019">Character::enough_power_for()</a>, <a class="el" href="iexamine_8cpp_source.html#l02893">iexamine::fireplace()</a>, and <a class="el" href="bionics_8cpp_source.html#l00282">load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00531">Character::activate_bionic()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00068">anonymous_namespace{bionics_ui.cpp}::bionic_sort_power()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00286">build_bionic_poweronly_string()</a>, <a class="el" href="bionics_8cpp_source.html#l00462">npc::check_or_use_weapon_cbm()</a>, <a class="el" href="bionics_8cpp_source.html#l00451">npc::discharge_cbm_weapon()</a>, <a class="el" href="character_8cpp_source.html#l02071">Character::enough_power_for()</a>, <a class="el" href="iexamine_8cpp_source.html#l02915">iexamine::fireplace()</a>, and <a class="el" href="bionics_8cpp_source.html#l00282">load()</a>.</p>
 
 </div>
 </div>
@@ -1368,7 +1369,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="bionics_8h_source.html#l00039">39</a> of file <a class="el" href="bionics_8h_source.html">bionics.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="bionics__ui_8cpp_source.html#l00285">build_bionic_poweronly_string()</a>, <a class="el" href="bionics_8cpp_source.html#l01064">Character::deactivate_bionic()</a>, and <a class="el" href="bionics_8cpp_source.html#l00282">load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics__ui_8cpp_source.html#l00286">build_bionic_poweronly_string()</a>, <a class="el" href="bionics_8cpp_source.html#l01064">Character::deactivate_bionic()</a>, and <a class="el" href="bionics_8cpp_source.html#l00282">load()</a>.</p>
 
 </div>
 </div>
@@ -1388,7 +1389,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="bionics_8h_source.html#l00075">75</a> of file <a class="el" href="bionics_8h_source.html">bionics.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01154">Character::burn_fuel()</a>, <a class="el" href="bionics_8cpp_source.html#l00333">check()</a>, <a class="el" href="bionics_8cpp_source.html#l00282">load()</a>, and <a class="el" href="bionics_8cpp_source.html#l01311">Character::passive_power_gen()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01152">Character::burn_fuel()</a>, <a class="el" href="bionics_8cpp_source.html#l00333">check()</a>, <a class="el" href="bionics_8cpp_source.html#l00282">load()</a>, and <a class="el" href="bionics_8cpp_source.html#l01308">Character::passive_power_gen()</a>.</p>
 
 </div>
 </div>
@@ -1408,7 +1409,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="bionics_8h_source.html#l00041">41</a> of file <a class="el" href="bionics_8h_source.html">bionics.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01506">attempt_recharge()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00067">anonymous_namespace{bionics_ui.cpp}::bionic_sort_power()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00285">build_bionic_poweronly_string()</a>, <a class="el" href="bionics_8cpp_source.html#l00282">load()</a>, and <a class="el" href="bionics_8cpp_source.html#l01526">Character::process_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01500">attempt_recharge()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00068">anonymous_namespace{bionics_ui.cpp}::bionic_sort_power()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00286">build_bionic_poweronly_string()</a>, <a class="el" href="bionics_8cpp_source.html#l00282">load()</a>, and <a class="el" href="bionics_8cpp_source.html#l01520">Character::process_bionic()</a>.</p>
 
 </div>
 </div>
@@ -1428,7 +1429,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="bionics_8h_source.html#l00059">59</a> of file <a class="el" href="bionics_8h_source.html">bionics.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="item_8cpp_source.html#l03231">item::bionic_info()</a>, and <a class="el" href="bionics_8cpp_source.html#l00282">load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="item_8cpp_source.html#l03240">item::bionic_info()</a>, and <a class="el" href="bionics_8cpp_source.html#l00282">load()</a>.</p>
 
 </div>
 </div>
@@ -1448,7 +1449,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="bionics_8h_source.html#l00125">125</a> of file <a class="el" href="bionics_8h_source.html">bionics.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l04316">install_bionic_actor::can_use()</a>, <a class="el" href="bionics_8cpp_source.html#l00333">check()</a>, <a class="el" href="game__inventory_8cpp_source.html#l01804">bionic_install_preset::get_denial()</a>, <a class="el" href="game__inventory_8cpp_source.html#l01908">bionic_install_surgeon_preset::get_denial()</a>, <a class="el" href="bionics_8cpp_source.html#l02242">Character::install_bionics()</a>, <a class="el" href="bionics_8cpp_source.html#l00282">load()</a>, and <a class="el" href="activity__handlers_8cpp_source.html#l03520">activity_handlers::operation_do_turn()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l04318">install_bionic_actor::can_use()</a>, <a class="el" href="bionics_8cpp_source.html#l00333">check()</a>, <a class="el" href="game__inventory_8cpp_source.html#l01816">bionic_install_preset::get_denial()</a>, <a class="el" href="game__inventory_8cpp_source.html#l01920">bionic_install_surgeon_preset::get_denial()</a>, <a class="el" href="bionics_8cpp_source.html#l02234">Character::install_bionics()</a>, <a class="el" href="bionics_8cpp_source.html#l00282">load()</a>, and <a class="el" href="activity__handlers_8cpp_source.html#l03527">activity_handlers::operation_do_turn()</a>.</p>
 
 </div>
 </div>
@@ -1486,7 +1487,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="bionics_8h_source.html#l00057">57</a> of file <a class="el" href="bionics_8h_source.html">bionics.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="item_8cpp_source.html#l03231">item::bionic_info()</a>, and <a class="el" href="bionics_8cpp_source.html#l00282">load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="item_8cpp_source.html#l03240">item::bionic_info()</a>, and <a class="el" href="bionics_8cpp_source.html#l00282">load()</a>.</p>
 
 </div>
 </div>
@@ -1506,7 +1507,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="bionics_8h_source.html#l00055">55</a> of file <a class="el" href="bionics_8h_source.html">bionics.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="item_8cpp_source.html#l03231">item::bionic_info()</a>, and <a class="el" href="bionics_8cpp_source.html#l00282">load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="item_8cpp_source.html#l03240">item::bionic_info()</a>, and <a class="el" href="bionics_8cpp_source.html#l00282">load()</a>.</p>
 
 </div>
 </div>
@@ -1520,7 +1521,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structbionic__data.html">bionic_data</a></li>
-    <li class="footer">Generated on Wed Oct 19 2022 14:19:25 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Mon Dec 26 2022 21:41:57 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

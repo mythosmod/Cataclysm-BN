@@ -101,10 +101,14 @@ $(document).ready(function(){initNavTree('ui__manager_8h.html',''); initResizabl
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classui__adaptor.html">ui_adaptor</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adaptor between UI code and the UI management system.  <a href="classui__adaptor.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structui__adaptor_1_1disable__uis__below.html">ui_adaptor::disable_uis_below</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structui__adaptor_1_1debug__message__ui.html">ui_adaptor::debug_message_ui</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbackground__pane.html">background_pane</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper class that fills the background and obscures all UIs below.  <a href="classbackground__pane.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -122,13 +126,17 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ad37246d94ab9b88c0730eb02ba60643b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceui__manager.html#ad37246d94ab9b88c0730eb02ba60643b">ui_manager::invalidate</a> (const <a class="el" href="structrectangle.html">rectangle</a>&lt; <a class="el" href="structpoint.html">point</a> &gt; &amp;rect, const bool reenable_uis_below)</td></tr>
-<tr class="separator:ad37246d94ab9b88c0730eb02ba60643b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93b4bb0f95c5d3a9be3b28ba09878fcc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceui__manager.html#a93b4bb0f95c5d3a9be3b28ba09878fcc">ui_manager::invalidate</a> (const <a class="el" href="structrectangle.html">rectangle</a>&lt; <a class="el" href="structpoint.html">point</a> &gt; &amp;rect, bool reenable_uis_below)</td></tr>
+<tr class="memdesc:a93b4bb0f95c5d3a9be3b28ba09878fcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invalidate a portion of the screen when a UI is resized, closed, etc.  <a href="namespaceui__manager.html#a93b4bb0f95c5d3a9be3b28ba09878fcc">More...</a><br /></td></tr>
+<tr class="separator:a93b4bb0f95c5d3a9be3b28ba09878fcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae38f3a918052ef286ee60daac47f52d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceui__manager.html#ae38f3a918052ef286ee60daac47f52d4">ui_manager::redraw</a> ()</td></tr>
+<tr class="memdesc:ae38f3a918052ef286ee60daac47f52d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invalidate the top window and redraw all invalidated windows.  <a href="namespaceui__manager.html#ae38f3a918052ef286ee60daac47f52d4">More...</a><br /></td></tr>
 <tr class="separator:ae38f3a918052ef286ee60daac47f52d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5496220e43b7d5f1b3cbbebe6cf1f83d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceui__manager.html#a5496220e43b7d5f1b3cbbebe6cf1f83d">ui_manager::redraw_invalidated</a> ()</td></tr>
+<tr class="memdesc:a5496220e43b7d5f1b3cbbebe6cf1f83d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Redraw all invalidated windows without invalidating the top window.  <a href="namespaceui__manager.html#a5496220e43b7d5f1b3cbbebe6cf1f83d">More...</a><br /></td></tr>
 <tr class="separator:a5496220e43b7d5f1b3cbbebe6cf1f83d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa801bfcb6ef4eb737e70c793df08da9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceui__manager.html#aaa801bfcb6ef4eb737e70c793df08da9">ui_manager::screen_resized</a> ()</td></tr>
+<tr class="memdesc:aaa801bfcb6ef4eb737e70c793df08da9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle resize of the game window.  <a href="namespaceui__manager.html#aaa801bfcb6ef4eb737e70c793df08da9">More...</a><br /></td></tr>
 <tr class="separator:aaa801bfcb6ef4eb737e70c793df08da9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -154,7 +162,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="ui__manager_8h.html">ui_manager.h</a></li>
-    <li class="footer">Generated on Wed Oct 19 2022 14:19:23 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Mon Dec 26 2022 21:41:55 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

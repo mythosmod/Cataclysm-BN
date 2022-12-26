@@ -175,7 +175,7 @@ $(document).ready(function(){initNavTree('wincurse_8cpp_source.html',''); initRe
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>{</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="comment">// Get current process handle</span></div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    WindowINST = GetModuleHandle( <span class="keyword">nullptr</span> );</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    std::string <a class="code hl_function" href="namespacePATH__INFO.html#af9a3ed879d4c10c8494ba4934c8ec678">title</a> = <a class="code hl_function" href="string__formatter_8h.html#a9b089d0b697443b096063219dab08ef5">string_format</a>( <span class="stringliteral">&quot;Cataclysm: Bright Nights - %s&quot;</span>, <a class="code hl_function" href="get__version_8h.html#a2ff8e2d8c8d901aee375b52bfea6cee6">getVersionString</a>() );</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    std::string <a class="code hl_function" href="namespacePATH__INFO.html#af9a3ed879d4c10c8494ba4934c8ec678">title</a> = <a class="code hl_function" href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a>( <span class="stringliteral">&quot;Cataclysm: Bright Nights - %s&quot;</span>, <a class="code hl_function" href="get__version_8h.html#a2ff8e2d8c8d901aee375b52bfea6cee6">getVersionString</a>() );</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="comment">// Register window class</span></div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    WNDCLASSEXW WindowClassType   = WNDCLASSEXW();</div>
@@ -752,124 +752,138 @@ $(document).ready(function(){initNavTree('wincurse_8cpp_source.html',''); initRe
 <div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span>    <span class="keywordflow">return</span> Count;</div>
 <div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span>}</div>
 <div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span> </div>
-<div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span><a class="code hl_struct" href="structinput__event.html">input_event</a> <a class="code hl_function" href="classinput__manager.html#ad550fec9aad772e44f497bf29f845739">input_manager::get_input_event</a>()</div>
+<div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span><span class="keywordtype">void</span> <a class="code hl_function" href="classinput__manager.html#a56fd029f8ad1ca3dcd864a6bb5537045">input_manager::pump_events</a>()</div>
 <div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span>{</div>
-<div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span>    <span class="comment">// standards note: getch is sometimes required to call refresh</span></div>
-<div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span>    <span class="comment">// see, e.g., http://linux.die.net/man/3/getch</span></div>
-<div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span>    <span class="comment">// so although it&#39;s non-obvious, that refresh() call (and maybe InvalidateRect?) IS supposed to be there</span></div>
-<div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span>    uint64_t Frequency;</div>
-<div class="line"><a id="l00672" name="l00672"></a><span class="lineno">  672</span>    QueryPerformanceFrequency( <span class="keyword">reinterpret_cast&lt;</span>PLARGE_INTEGER<span class="keyword">&gt;</span>( &amp;Frequency ) );</div>
-<div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span>    <a class="code hl_function" href="namespacecatacurses.html#a896759dbb967711125b3bd6677dcb578">wrefresh</a>( <a class="code hl_variable" href="namespacecatacurses.html#a51707e12b1a95f6c69b1e128c4ba2601">catacurses::stdscr</a> );</div>
-<div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span>    InvalidateRect( WindowHandle, <span class="keyword">nullptr</span>, <span class="keyword">true</span> );</div>
+<div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span>    <span class="keywordflow">if</span>( <a class="code hl_variable" href="cached__options_8cpp.html#a07c66893ce868671f9998dad80094cb1">test_mode</a> ) {</div>
+<div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span>    }</div>
+<div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span> </div>
+<div class="line"><a id="l00672" name="l00672"></a><span class="lineno">  672</span>    <span class="comment">// Handle all events, but ignore any keypress</span></div>
+<div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span>    CheckMessages();</div>
+<div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span> </div>
 <div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span>    lastchar = ERR;</div>
-<div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span>    <span class="keywordflow">if</span>( inputdelay &lt; 0 ) {</div>
-<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span>        <span class="keywordflow">for</span>( ; lastchar == ERR; Sleep( 1 ) ) {</div>
-<div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span>            CheckMessages();</div>
-<div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span>        }</div>
-<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( inputdelay &gt; 0 ) {</div>
-<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span>        <span class="keywordflow">for</span>( uint64_t t0 = GetPerfCount(), t1 = 0; t1 &lt; ( t0 + inputdelay * Frequency / 1000 );</div>
-<div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span>             t1 = GetPerfCount() ) {</div>
-<div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span>            CheckMessages();</div>
-<div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span>            <span class="keywordflow">if</span>( lastchar != ERR ) {</div>
-<div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span>            }</div>
-<div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span>            Sleep( 1 );</div>
-<div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span>        }</div>
-<div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00690" name="l00690"></a><span class="lineno">  690</span>        CheckMessages();</div>
-<div class="line"><a id="l00691" name="l00691"></a><span class="lineno">  691</span>    }</div>
-<div class="line"><a id="l00692" name="l00692"></a><span class="lineno">  692</span> </div>
-<div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span>    <span class="keywordflow">if</span>( lastchar != ERR &amp;&amp; get_option&lt;std::string&gt;( <span class="stringliteral">&quot;HIDE_CURSOR&quot;</span> ) == <span class="stringliteral">&quot;hidekb&quot;</span> &amp;&amp; CursorVisible ) {</div>
-<div class="line"><a id="l00694" name="l00694"></a><span class="lineno">  694</span>        CursorVisible = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00695" name="l00695"></a><span class="lineno">  695</span>        ShowCursor( <span class="keyword">false</span> );</div>
-<div class="line"><a id="l00696" name="l00696"></a><span class="lineno">  696</span>    }</div>
-<div class="line"><a id="l00697" name="l00697"></a><span class="lineno">  697</span> </div>
-<div class="line"><a id="l00698" name="l00698"></a><span class="lineno">  698</span>    <a class="code hl_variable" href="classinput__manager.html#ab6eb20ccdeab03473f47365cd836fb65">previously_pressed_key</a> = 0;</div>
-<div class="line"><a id="l00699" name="l00699"></a><span class="lineno">  699</span>    <a class="code hl_struct" href="structinput__event.html">input_event</a> rval;</div>
-<div class="line"><a id="l00700" name="l00700"></a><span class="lineno">  700</span>    <span class="keywordflow">if</span>( lastchar == ERR ) {</div>
-<div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span>        <span class="keywordflow">if</span>( <a class="code hl_variable" href="classinput__manager.html#a95c5db86b27184868198ccc6d285de17">input_timeout</a> &gt; 0 ) {</div>
-<div class="line"><a id="l00702" name="l00702"></a><span class="lineno">  702</span>            rval.<a class="code hl_variable" href="structinput__event.html#afa9e110af2c2ac3eefd1ffa4e8c8d469">type</a> = <a class="code hl_enumvalue" href="input_8h.html#a7714eed017e41648533818b7ed636974a8d089f5ce2c65b85e9c5855ed96ff95f">CATA_INPUT_TIMEOUT</a>;</div>
-<div class="line"><a id="l00703" name="l00703"></a><span class="lineno">  703</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00704" name="l00704"></a><span class="lineno">  704</span>            rval.<a class="code hl_variable" href="structinput__event.html#afa9e110af2c2ac3eefd1ffa4e8c8d469">type</a> = <a class="code hl_enumvalue" href="input_8h.html#a7714eed017e41648533818b7ed636974a9493b2f19022b0a377f839377423d0de">CATA_INPUT_ERROR</a>;</div>
-<div class="line"><a id="l00705" name="l00705"></a><span class="lineno">  705</span>        }</div>
-<div class="line"><a id="l00706" name="l00706"></a><span class="lineno">  706</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00707" name="l00707"></a><span class="lineno">  707</span>        <span class="comment">// == Unicode DELETE</span></div>
-<div class="line"><a id="l00708" name="l00708"></a><span class="lineno">  708</span>        <span class="keywordflow">if</span>( lastchar == 127 ) {</div>
-<div class="line"><a id="l00709" name="l00709"></a><span class="lineno">  709</span>            <a class="code hl_variable" href="classinput__manager.html#ab6eb20ccdeab03473f47365cd836fb65">previously_pressed_key</a> = <a class="code hl_variable" href="input_8h.html#a68a8c5541dd85e1870ddd2450a896cb3">KEY_BACKSPACE</a>;</div>
-<div class="line"><a id="l00710" name="l00710"></a><span class="lineno">  710</span>            <span class="keywordflow">return</span> <a class="code hl_struct" href="structinput__event.html">input_event</a>( <a class="code hl_variable" href="input_8h.html#a68a8c5541dd85e1870ddd2450a896cb3">KEY_BACKSPACE</a>, <a class="code hl_enumvalue" href="input_8h.html#a7714eed017e41648533818b7ed636974a6e602eaf115b09c2e4380ce6fc123839">CATA_INPUT_KEYBOARD</a> );</div>
-<div class="line"><a id="l00711" name="l00711"></a><span class="lineno">  711</span>        }</div>
-<div class="line"><a id="l00712" name="l00712"></a><span class="lineno">  712</span>        rval.<a class="code hl_variable" href="structinput__event.html#afa9e110af2c2ac3eefd1ffa4e8c8d469">type</a> = <a class="code hl_enumvalue" href="input_8h.html#a7714eed017e41648533818b7ed636974a6e602eaf115b09c2e4380ce6fc123839">CATA_INPUT_KEYBOARD</a>;</div>
-<div class="line"><a id="l00713" name="l00713"></a><span class="lineno">  713</span>        rval.<a class="code hl_variable" href="structinput__event.html#a2be5acd6dbd31ce820785df739a6c27b">text</a> = <a class="code hl_function" href="catacharset_8cpp.html#a5ded585a111b2b68c0a1732b3259fa03">utf32_to_utf8</a>( lastchar );</div>
-<div class="line"><a id="l00714" name="l00714"></a><span class="lineno">  714</span>        <a class="code hl_variable" href="classinput__manager.html#ab6eb20ccdeab03473f47365cd836fb65">previously_pressed_key</a> = lastchar;</div>
-<div class="line"><a id="l00715" name="l00715"></a><span class="lineno">  715</span>        <span class="comment">// for compatibility only add the first byte, not the code point</span></div>
-<div class="line"><a id="l00716" name="l00716"></a><span class="lineno">  716</span>        <span class="comment">// as it would  conflict with the special keys defined by ncurses</span></div>
-<div class="line"><a id="l00717" name="l00717"></a><span class="lineno">  717</span>        rval.<a class="code hl_function" href="structinput__event.html#a1d3cc705ca3603447a5d24f3c52339d5">add_input</a>( lastchar );</div>
-<div class="line"><a id="l00718" name="l00718"></a><span class="lineno">  718</span>    }</div>
-<div class="line"><a id="l00719" name="l00719"></a><span class="lineno">  719</span> </div>
-<div class="line"><a id="l00720" name="l00720"></a><span class="lineno">  720</span>    <span class="keywordflow">return</span> rval;</div>
-<div class="line"><a id="l00721" name="l00721"></a><span class="lineno">  721</span>}</div>
-<div class="line"><a id="l00722" name="l00722"></a><span class="lineno">  722</span> </div>
-<div class="line"><a id="l00723" name="l00723"></a><span class="lineno">  723</span><span class="keywordtype">bool</span> <a class="code hl_function" href="input_8cpp.html#a75eef35298d9b45d3ad78fa471fd850d">gamepad_available</a>()</div>
-<div class="line"><a id="l00724" name="l00724"></a><span class="lineno">  724</span>{</div>
-<div class="line"><a id="l00725" name="l00725"></a><span class="lineno">  725</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00726" name="l00726"></a><span class="lineno">  726</span>}</div>
-<div class="line"><a id="l00727" name="l00727"></a><span class="lineno">  727</span> </div>
-<div class="line"><a id="l00728" name="l00728"></a><span class="lineno">  728</span><a class="code hl_class" href="classcata_1_1optional.html">cata::optional&lt;tripoint&gt;</a> <a class="code hl_function" href="classinput__context.html#a0937bc6e559b46c12c78aa65bea21942">input_context::get_coordinates</a>( <span class="keyword">const</span> <a class="code hl_class" href="classcatacurses_1_1window.html">catacurses::window</a> &amp; )</div>
-<div class="line"><a id="l00729" name="l00729"></a><span class="lineno">  729</span>{</div>
-<div class="line"><a id="l00730" name="l00730"></a><span class="lineno">  730</span>    <span class="comment">// TODO: implement this properly</span></div>
-<div class="line"><a id="l00731" name="l00731"></a><span class="lineno">  731</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="namespacecata.html#ad05314667ac5d05f984aeeef26b9a87f">cata::nullopt</a>;</div>
-<div class="line"><a id="l00732" name="l00732"></a><span class="lineno">  732</span>}</div>
-<div class="line"><a id="l00733" name="l00733"></a><span class="lineno">  733</span> </div>
-<div class="line"><a id="l00734" name="l00734"></a><span class="lineno">  734</span><span class="comment">// Ends the terminal, destroy everything</span></div>
-<div class="line"><a id="l00735" name="l00735"></a><span class="lineno">  735</span><span class="keywordtype">void</span> <a class="code hl_function" href="namespacecatacurses.html#afa6ab6a4b5d9ec592a63954a98ae5d69">catacurses::endwin</a>()</div>
-<div class="line"><a id="l00736" name="l00736"></a><span class="lineno">  736</span>{</div>
-<div class="line"><a id="l00737" name="l00737"></a><span class="lineno">  737</span>    DeleteObject( font );</div>
-<div class="line"><a id="l00738" name="l00738"></a><span class="lineno">  738</span>    WinDestroy();</div>
-<div class="line"><a id="l00739" name="l00739"></a><span class="lineno">  739</span>    <span class="comment">// Unload it</span></div>
-<div class="line"><a id="l00740" name="l00740"></a><span class="lineno">  740</span>    RemoveFontResourceExA( <span class="stringliteral">&quot;data\\font&quot;</span>, FR_PRIVATE, <span class="keyword">nullptr</span> );</div>
-<div class="line"><a id="l00741" name="l00741"></a><span class="lineno">  741</span>}</div>
-<div class="line"><a id="l00742" name="l00742"></a><span class="lineno">  742</span> </div>
-<div class="line"><a id="l00743" name="l00743"></a><span class="lineno">  743</span><span class="keyword">template</span>&lt;&gt;</div>
-<div class="line"><a id="l00744" name="l00744"></a><span class="lineno">  744</span>RGBQUAD <a class="code hl_function" href="classcolor__loader.html#aec8cbe543d32561112027d077edc7d4c">color_loader&lt;RGBQUAD&gt;::from_rgb</a>( <span class="keyword">const</span> <span class="keywordtype">int</span> r, <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="game_8cpp.html#abeb98e93502d73818b4a73fabe191bc1">g</a>, <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="magic_8cpp.html#aa93a189fb7bbbf87be54bcc7bd11bb6f">b</a> )</div>
-<div class="line"><a id="l00745" name="l00745"></a><span class="lineno">  745</span>{</div>
-<div class="line"><a id="l00746" name="l00746"></a><span class="lineno">  746</span>    RGBQUAD <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>;</div>
-<div class="line"><a id="l00747" name="l00747"></a><span class="lineno">  747</span>    <span class="comment">// Blue</span></div>
-<div class="line"><a id="l00748" name="l00748"></a><span class="lineno">  748</span>    <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>.rgbBlue = <a class="code hl_variable" href="magic_8cpp.html#aa93a189fb7bbbf87be54bcc7bd11bb6f">b</a>;</div>
-<div class="line"><a id="l00749" name="l00749"></a><span class="lineno">  749</span>    <span class="comment">// Green</span></div>
-<div class="line"><a id="l00750" name="l00750"></a><span class="lineno">  750</span>    <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>.rgbGreen = <a class="code hl_variable" href="game_8cpp.html#abeb98e93502d73818b4a73fabe191bc1">g</a>;</div>
-<div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span>    <span class="comment">// Red</span></div>
-<div class="line"><a id="l00752" name="l00752"></a><span class="lineno">  752</span>    <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>.rgbRed = r;</div>
-<div class="line"><a id="l00753" name="l00753"></a><span class="lineno">  753</span>    <span class="comment">//The Alpha, is not used, so just set it to 0</span></div>
-<div class="line"><a id="l00754" name="l00754"></a><span class="lineno">  754</span>    <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>.rgbReserved = 0;</div>
-<div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span>    <span class="keywordflow">return</span> <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>;</div>
-<div class="line"><a id="l00756" name="l00756"></a><span class="lineno">  756</span>}</div>
-<div class="line"><a id="l00757" name="l00757"></a><span class="lineno">  757</span> </div>
-<div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span><span class="keywordtype">void</span> <a class="code hl_function" href="classinput__manager.html#a71fe921eef2db73b8a665a187eb7e526">input_manager::set_timeout</a>( <span class="keyword">const</span> <span class="keywordtype">int</span> t )</div>
-<div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span>{</div>
-<div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span>    <a class="code hl_variable" href="classinput__manager.html#a95c5db86b27184868198ccc6d285de17">input_timeout</a> = t;</div>
-<div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span>    inputdelay = t;</div>
-<div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span>}</div>
-<div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span> </div>
-<div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span><span class="keywordtype">void</span> cata_cursesport::handle_additional_window_clear( WINDOW * )</div>
-<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span>{</div>
-<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span>}</div>
-<div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span> </div>
-<div class="line"><a id="l00768" name="l00768"></a><span class="lineno">  768</span><span class="keywordtype">int</span> get_scaling_factor()</div>
-<div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span>{</div>
-<div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span>    <span class="keywordflow">return</span> 1;</div>
-<div class="line"><a id="l00771" name="l00771"></a><span class="lineno">  771</span>}</div>
-<div class="line"><a id="l00772" name="l00772"></a><span class="lineno">  772</span> </div>
-<div class="line"><a id="l00773" name="l00773"></a><span class="lineno">  773</span>HWND getWindowHandle()</div>
-<div class="line"><a id="l00774" name="l00774"></a><span class="lineno">  774</span>{</div>
-<div class="line"><a id="l00775" name="l00775"></a><span class="lineno">  775</span>    <span class="keywordflow">return</span> WindowHandle;</div>
-<div class="line"><a id="l00776" name="l00776"></a><span class="lineno">  776</span>}</div>
-<div class="line"><a id="l00777" name="l00777"></a><span class="lineno">  777</span> </div>
-<div class="line"><a id="l00778" name="l00778"></a><span class="lineno">  778</span><span class="keywordtype">void</span> <a class="code hl_function" href="ncurses__def_8cpp.html#a6fd55a287e038568d2304927ec8b2449">refresh_display</a>()</div>
-<div class="line"><a id="l00779" name="l00779"></a><span class="lineno">  779</span>{</div>
-<div class="line"><a id="l00780" name="l00780"></a><span class="lineno">  780</span>    RedrawWindow( WindowHandle, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>, RDW_INVALIDATE | RDW_UPDATENOW );</div>
-<div class="line"><a id="l00781" name="l00781"></a><span class="lineno">  781</span>}</div>
-<div class="line"><a id="l00782" name="l00782"></a><span class="lineno">  782</span> </div>
-<div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span>    <a class="code hl_variable" href="classinput__manager.html#ab6eb20ccdeab03473f47365cd836fb65">previously_pressed_key</a> = 0;</div>
+<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span>}</div>
+<div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span> </div>
+<div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span><a class="code hl_struct" href="structinput__event.html">input_event</a> <a class="code hl_function" href="classinput__manager.html#ad550fec9aad772e44f497bf29f845739">input_manager::get_input_event</a>()</div>
+<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span>{</div>
+<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span>    <span class="comment">// standards note: getch is sometimes required to call refresh</span></div>
+<div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span>    <span class="comment">// see, e.g., http://linux.die.net/man/3/getch</span></div>
+<div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span>    <span class="comment">// so although it&#39;s non-obvious, that refresh() call (and maybe InvalidateRect?) IS supposed to be there</span></div>
+<div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span>    uint64_t Frequency;</div>
+<div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span>    QueryPerformanceFrequency( <span class="keyword">reinterpret_cast&lt;</span>PLARGE_INTEGER<span class="keyword">&gt;</span>( &amp;Frequency ) );</div>
+<div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span>    <a class="code hl_function" href="namespacecatacurses.html#a896759dbb967711125b3bd6677dcb578">wrefresh</a>( <a class="code hl_variable" href="namespacecatacurses.html#a51707e12b1a95f6c69b1e128c4ba2601">catacurses::stdscr</a> );</div>
+<div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span>    InvalidateRect( WindowHandle, <span class="keyword">nullptr</span>, <span class="keyword">true</span> );</div>
+<div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span>    lastchar = ERR;</div>
+<div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span>    <span class="keywordflow">if</span>( inputdelay &lt; 0 ) {</div>
+<div class="line"><a id="l00690" name="l00690"></a><span class="lineno">  690</span>        <span class="keywordflow">for</span>( ; lastchar == ERR; Sleep( 1 ) ) {</div>
+<div class="line"><a id="l00691" name="l00691"></a><span class="lineno">  691</span>            CheckMessages();</div>
+<div class="line"><a id="l00692" name="l00692"></a><span class="lineno">  692</span>        }</div>
+<div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( inputdelay &gt; 0 ) {</div>
+<div class="line"><a id="l00694" name="l00694"></a><span class="lineno">  694</span>        <span class="keywordflow">for</span>( uint64_t t0 = GetPerfCount(), t1 = 0; t1 &lt; ( t0 + inputdelay * Frequency / 1000 );</div>
+<div class="line"><a id="l00695" name="l00695"></a><span class="lineno">  695</span>             t1 = GetPerfCount() ) {</div>
+<div class="line"><a id="l00696" name="l00696"></a><span class="lineno">  696</span>            CheckMessages();</div>
+<div class="line"><a id="l00697" name="l00697"></a><span class="lineno">  697</span>            <span class="keywordflow">if</span>( lastchar != ERR ) {</div>
+<div class="line"><a id="l00698" name="l00698"></a><span class="lineno">  698</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00699" name="l00699"></a><span class="lineno">  699</span>            }</div>
+<div class="line"><a id="l00700" name="l00700"></a><span class="lineno">  700</span>            Sleep( 1 );</div>
+<div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span>        }</div>
+<div class="line"><a id="l00702" name="l00702"></a><span class="lineno">  702</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00703" name="l00703"></a><span class="lineno">  703</span>        CheckMessages();</div>
+<div class="line"><a id="l00704" name="l00704"></a><span class="lineno">  704</span>    }</div>
+<div class="line"><a id="l00705" name="l00705"></a><span class="lineno">  705</span> </div>
+<div class="line"><a id="l00706" name="l00706"></a><span class="lineno">  706</span>    <span class="keywordflow">if</span>( lastchar != ERR &amp;&amp; get_option&lt;std::string&gt;( <span class="stringliteral">&quot;HIDE_CURSOR&quot;</span> ) == <span class="stringliteral">&quot;hidekb&quot;</span> &amp;&amp; CursorVisible ) {</div>
+<div class="line"><a id="l00707" name="l00707"></a><span class="lineno">  707</span>        CursorVisible = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00708" name="l00708"></a><span class="lineno">  708</span>        ShowCursor( <span class="keyword">false</span> );</div>
+<div class="line"><a id="l00709" name="l00709"></a><span class="lineno">  709</span>    }</div>
+<div class="line"><a id="l00710" name="l00710"></a><span class="lineno">  710</span> </div>
+<div class="line"><a id="l00711" name="l00711"></a><span class="lineno">  711</span>    <a class="code hl_variable" href="classinput__manager.html#ab6eb20ccdeab03473f47365cd836fb65">previously_pressed_key</a> = 0;</div>
+<div class="line"><a id="l00712" name="l00712"></a><span class="lineno">  712</span>    <a class="code hl_struct" href="structinput__event.html">input_event</a> rval;</div>
+<div class="line"><a id="l00713" name="l00713"></a><span class="lineno">  713</span>    <span class="keywordflow">if</span>( lastchar == ERR ) {</div>
+<div class="line"><a id="l00714" name="l00714"></a><span class="lineno">  714</span>        <span class="keywordflow">if</span>( <a class="code hl_variable" href="classinput__manager.html#a95c5db86b27184868198ccc6d285de17">input_timeout</a> &gt; 0 ) {</div>
+<div class="line"><a id="l00715" name="l00715"></a><span class="lineno">  715</span>            rval.<a class="code hl_variable" href="structinput__event.html#afa9e110af2c2ac3eefd1ffa4e8c8d469">type</a> = <a class="code hl_enumvalue" href="input_8h.html#a7714eed017e41648533818b7ed636974a8d089f5ce2c65b85e9c5855ed96ff95f">CATA_INPUT_TIMEOUT</a>;</div>
+<div class="line"><a id="l00716" name="l00716"></a><span class="lineno">  716</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00717" name="l00717"></a><span class="lineno">  717</span>            rval.<a class="code hl_variable" href="structinput__event.html#afa9e110af2c2ac3eefd1ffa4e8c8d469">type</a> = <a class="code hl_enumvalue" href="input_8h.html#a7714eed017e41648533818b7ed636974a9493b2f19022b0a377f839377423d0de">CATA_INPUT_ERROR</a>;</div>
+<div class="line"><a id="l00718" name="l00718"></a><span class="lineno">  718</span>        }</div>
+<div class="line"><a id="l00719" name="l00719"></a><span class="lineno">  719</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00720" name="l00720"></a><span class="lineno">  720</span>        <span class="comment">// == Unicode DELETE</span></div>
+<div class="line"><a id="l00721" name="l00721"></a><span class="lineno">  721</span>        <span class="keywordflow">if</span>( lastchar == 127 ) {</div>
+<div class="line"><a id="l00722" name="l00722"></a><span class="lineno">  722</span>            <a class="code hl_variable" href="classinput__manager.html#ab6eb20ccdeab03473f47365cd836fb65">previously_pressed_key</a> = <a class="code hl_variable" href="input_8h.html#a68a8c5541dd85e1870ddd2450a896cb3">KEY_BACKSPACE</a>;</div>
+<div class="line"><a id="l00723" name="l00723"></a><span class="lineno">  723</span>            <span class="keywordflow">return</span> <a class="code hl_struct" href="structinput__event.html">input_event</a>( <a class="code hl_variable" href="input_8h.html#a68a8c5541dd85e1870ddd2450a896cb3">KEY_BACKSPACE</a>, <a class="code hl_enumvalue" href="input_8h.html#a7714eed017e41648533818b7ed636974a6e602eaf115b09c2e4380ce6fc123839">CATA_INPUT_KEYBOARD</a> );</div>
+<div class="line"><a id="l00724" name="l00724"></a><span class="lineno">  724</span>        }</div>
+<div class="line"><a id="l00725" name="l00725"></a><span class="lineno">  725</span>        rval.<a class="code hl_variable" href="structinput__event.html#afa9e110af2c2ac3eefd1ffa4e8c8d469">type</a> = <a class="code hl_enumvalue" href="input_8h.html#a7714eed017e41648533818b7ed636974a6e602eaf115b09c2e4380ce6fc123839">CATA_INPUT_KEYBOARD</a>;</div>
+<div class="line"><a id="l00726" name="l00726"></a><span class="lineno">  726</span>        rval.<a class="code hl_variable" href="structinput__event.html#a2be5acd6dbd31ce820785df739a6c27b">text</a> = <a class="code hl_function" href="catacharset_8cpp.html#a5ded585a111b2b68c0a1732b3259fa03">utf32_to_utf8</a>( lastchar );</div>
+<div class="line"><a id="l00727" name="l00727"></a><span class="lineno">  727</span>        <a class="code hl_variable" href="classinput__manager.html#ab6eb20ccdeab03473f47365cd836fb65">previously_pressed_key</a> = lastchar;</div>
+<div class="line"><a id="l00728" name="l00728"></a><span class="lineno">  728</span>        <span class="comment">// for compatibility only add the first byte, not the code point</span></div>
+<div class="line"><a id="l00729" name="l00729"></a><span class="lineno">  729</span>        <span class="comment">// as it would  conflict with the special keys defined by ncurses</span></div>
+<div class="line"><a id="l00730" name="l00730"></a><span class="lineno">  730</span>        rval.<a class="code hl_function" href="structinput__event.html#a1d3cc705ca3603447a5d24f3c52339d5">add_input</a>( lastchar );</div>
+<div class="line"><a id="l00731" name="l00731"></a><span class="lineno">  731</span>    }</div>
+<div class="line"><a id="l00732" name="l00732"></a><span class="lineno">  732</span> </div>
+<div class="line"><a id="l00733" name="l00733"></a><span class="lineno">  733</span>    <span class="keywordflow">return</span> rval;</div>
+<div class="line"><a id="l00734" name="l00734"></a><span class="lineno">  734</span>}</div>
+<div class="line"><a id="l00735" name="l00735"></a><span class="lineno">  735</span> </div>
+<div class="line"><a id="l00736" name="l00736"></a><span class="lineno">  736</span><span class="keywordtype">bool</span> <a class="code hl_function" href="input_8cpp.html#a75eef35298d9b45d3ad78fa471fd850d">gamepad_available</a>()</div>
+<div class="line"><a id="l00737" name="l00737"></a><span class="lineno">  737</span>{</div>
+<div class="line"><a id="l00738" name="l00738"></a><span class="lineno">  738</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00739" name="l00739"></a><span class="lineno">  739</span>}</div>
+<div class="line"><a id="l00740" name="l00740"></a><span class="lineno">  740</span> </div>
+<div class="line"><a id="l00741" name="l00741"></a><span class="lineno">  741</span><a class="code hl_class" href="classcata_1_1optional.html">cata::optional&lt;tripoint&gt;</a> <a class="code hl_function" href="classinput__context.html#a0937bc6e559b46c12c78aa65bea21942">input_context::get_coordinates</a>( <span class="keyword">const</span> <a class="code hl_class" href="classcatacurses_1_1window.html">catacurses::window</a> &amp; )</div>
+<div class="line"><a id="l00742" name="l00742"></a><span class="lineno">  742</span>{</div>
+<div class="line"><a id="l00743" name="l00743"></a><span class="lineno">  743</span>    <span class="comment">// TODO: implement this properly</span></div>
+<div class="line"><a id="l00744" name="l00744"></a><span class="lineno">  744</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="namespacecata.html#ad05314667ac5d05f984aeeef26b9a87f">cata::nullopt</a>;</div>
+<div class="line"><a id="l00745" name="l00745"></a><span class="lineno">  745</span>}</div>
+<div class="line"><a id="l00746" name="l00746"></a><span class="lineno">  746</span> </div>
+<div class="line"><a id="l00747" name="l00747"></a><span class="lineno">  747</span><span class="comment">// Ends the terminal, destroy everything</span></div>
+<div class="line"><a id="l00748" name="l00748"></a><span class="lineno">  748</span><span class="keywordtype">void</span> <a class="code hl_function" href="namespacecatacurses.html#afa6ab6a4b5d9ec592a63954a98ae5d69">catacurses::endwin</a>()</div>
+<div class="line"><a id="l00749" name="l00749"></a><span class="lineno">  749</span>{</div>
+<div class="line"><a id="l00750" name="l00750"></a><span class="lineno">  750</span>    DeleteObject( font );</div>
+<div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span>    WinDestroy();</div>
+<div class="line"><a id="l00752" name="l00752"></a><span class="lineno">  752</span>    <span class="comment">// Unload it</span></div>
+<div class="line"><a id="l00753" name="l00753"></a><span class="lineno">  753</span>    RemoveFontResourceExA( <span class="stringliteral">&quot;data\\font&quot;</span>, FR_PRIVATE, <span class="keyword">nullptr</span> );</div>
+<div class="line"><a id="l00754" name="l00754"></a><span class="lineno">  754</span>}</div>
+<div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span> </div>
+<div class="line"><a id="l00756" name="l00756"></a><span class="lineno">  756</span><span class="keyword">template</span>&lt;&gt;</div>
+<div class="line"><a id="l00757" name="l00757"></a><span class="lineno">  757</span>RGBQUAD <a class="code hl_function" href="classcolor__loader.html#aec8cbe543d32561112027d077edc7d4c">color_loader&lt;RGBQUAD&gt;::from_rgb</a>( <span class="keyword">const</span> <span class="keywordtype">int</span> r, <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="game_8cpp.html#abeb98e93502d73818b4a73fabe191bc1">g</a>, <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="magic_8cpp.html#aa93a189fb7bbbf87be54bcc7bd11bb6f">b</a> )</div>
+<div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span>{</div>
+<div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span>    RGBQUAD <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>;</div>
+<div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span>    <span class="comment">// Blue</span></div>
+<div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span>    <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>.rgbBlue = <a class="code hl_variable" href="magic_8cpp.html#aa93a189fb7bbbf87be54bcc7bd11bb6f">b</a>;</div>
+<div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span>    <span class="comment">// Green</span></div>
+<div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span>    <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>.rgbGreen = <a class="code hl_variable" href="game_8cpp.html#abeb98e93502d73818b4a73fabe191bc1">g</a>;</div>
+<div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span>    <span class="comment">// Red</span></div>
+<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span>    <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>.rgbRed = r;</div>
+<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span>    <span class="comment">//The Alpha, is not used, so just set it to 0</span></div>
+<div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span>    <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>.rgbReserved = 0;</div>
+<div class="line"><a id="l00768" name="l00768"></a><span class="lineno">  768</span>    <span class="keywordflow">return</span> <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>;</div>
+<div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span>}</div>
+<div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span> </div>
+<div class="line"><a id="l00771" name="l00771"></a><span class="lineno">  771</span><span class="keywordtype">void</span> <a class="code hl_function" href="classinput__manager.html#a71fe921eef2db73b8a665a187eb7e526">input_manager::set_timeout</a>( <span class="keyword">const</span> <span class="keywordtype">int</span> t )</div>
+<div class="line"><a id="l00772" name="l00772"></a><span class="lineno">  772</span>{</div>
+<div class="line"><a id="l00773" name="l00773"></a><span class="lineno">  773</span>    <a class="code hl_variable" href="classinput__manager.html#a95c5db86b27184868198ccc6d285de17">input_timeout</a> = t;</div>
+<div class="line"><a id="l00774" name="l00774"></a><span class="lineno">  774</span>    inputdelay = t;</div>
+<div class="line"><a id="l00775" name="l00775"></a><span class="lineno">  775</span>}</div>
+<div class="line"><a id="l00776" name="l00776"></a><span class="lineno">  776</span> </div>
+<div class="line"><a id="l00777" name="l00777"></a><span class="lineno">  777</span><span class="keywordtype">void</span> cata_cursesport::handle_additional_window_clear( WINDOW * )</div>
+<div class="line"><a id="l00778" name="l00778"></a><span class="lineno">  778</span>{</div>
+<div class="line"><a id="l00779" name="l00779"></a><span class="lineno">  779</span>}</div>
+<div class="line"><a id="l00780" name="l00780"></a><span class="lineno">  780</span> </div>
+<div class="line"><a id="l00781" name="l00781"></a><span class="lineno">  781</span><span class="keywordtype">int</span> get_scaling_factor()</div>
+<div class="line"><a id="l00782" name="l00782"></a><span class="lineno">  782</span>{</div>
+<div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span>    <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span>}</div>
+<div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span> </div>
+<div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span>HWND getWindowHandle()</div>
+<div class="line"><a id="l00787" name="l00787"></a><span class="lineno">  787</span>{</div>
+<div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span>    <span class="keywordflow">return</span> WindowHandle;</div>
+<div class="line"><a id="l00789" name="l00789"></a><span class="lineno">  789</span>}</div>
+<div class="line"><a id="l00790" name="l00790"></a><span class="lineno">  790</span> </div>
+<div class="line"><a id="l00791" name="l00791"></a><span class="lineno">  791</span><span class="keywordtype">void</span> <a class="code hl_function" href="ncurses__def_8cpp.html#a6fd55a287e038568d2304927ec8b2449">refresh_display</a>()</div>
+<div class="line"><a id="l00792" name="l00792"></a><span class="lineno">  792</span>{</div>
+<div class="line"><a id="l00793" name="l00793"></a><span class="lineno">  793</span>    RedrawWindow( WindowHandle, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>, RDW_INVALIDATE | RDW_UPDATENOW );</div>
+<div class="line"><a id="l00794" name="l00794"></a><span class="lineno">  794</span>}</div>
+<div class="line"><a id="l00795" name="l00795"></a><span class="lineno">  795</span> </div>
+<div class="line"><a id="l00796" name="l00796"></a><span class="lineno">  796</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="acached__options_8cpp_html_a07c66893ce868671f9998dad80094cb1"><div class="ttname"><a href="cached__options_8cpp.html#a07c66893ce868671f9998dad80094cb1">test_mode</a></div><div class="ttdeci">bool test_mode</div><div class="ttdoc">Set to true when running in test mode (e.g.</div><div class="ttdef"><b>Definition:</b> <a href="cached__options_8cpp_source.html#l00003">cached_options.cpp:3</a></div></div>
 <div class="ttc" id="acata__utility_8h_html"><div class="ttname"><a href="cata__utility_8h.html">cata_utility.h</a></div></div>
 <div class="ttc" id="acatacharset_8cpp_html_a2227e8c0afd74ed174cbb4daf8e46ab2"><div class="ttname"><a href="catacharset_8cpp.html#a2227e8c0afd74ed174cbb4daf8e46ab2">UTF8_getch</a></div><div class="ttdeci">uint32_t UTF8_getch(const char **src, int *srclen)</div><div class="ttdef"><b>Definition:</b> <a href="catacharset_8cpp_source.html#l00018">catacharset.cpp:18</a></div></div>
 <div class="ttc" id="acatacharset_8cpp_html_a5ded585a111b2b68c0a1732b3259fa03"><div class="ttname"><a href="catacharset_8cpp.html#a5ded585a111b2b68c0a1732b3259fa03">utf32_to_utf8</a></div><div class="ttdeci">std::string utf32_to_utf8(uint32_t ch)</div><div class="ttdef"><b>Definition:</b> <a href="catacharset_8cpp_source.html#l00099">catacharset.cpp:99</a></div></div>
@@ -887,10 +901,11 @@ $(document).ready(function(){initNavTree('wincurse_8cpp_source.html',''); initRe
 <div class="ttc" id="aclassfont__loader_html_ab2507e0f4566eb8594e716ada2a2564b"><div class="ttname"><a href="classfont__loader.html#ab2507e0f4566eb8594e716ada2a2564b">font_loader::typeface</a></div><div class="ttdeci">std::vector&lt; std::string &gt; typeface</div><div class="ttdef"><b>Definition:</b> <a href="font__loader_8h_source.html#l00029">font_loader.h:29</a></div></div>
 <div class="ttc" id="aclassfont__loader_html_af6ed6a20b8ca3b5b9b0a051a87aa8e12"><div class="ttname"><a href="classfont__loader.html#af6ed6a20b8ca3b5b9b0a051a87aa8e12">font_loader::fontheight</a></div><div class="ttdeci">int fontheight</div><div class="ttdef"><b>Definition:</b> <a href="font__loader_8h_source.html#l00033">font_loader.h:33</a></div></div>
 <div class="ttc" id="aclassinput__context_html_a0937bc6e559b46c12c78aa65bea21942"><div class="ttname"><a href="classinput__context.html#a0937bc6e559b46c12c78aa65bea21942">input_context::get_coordinates</a></div><div class="ttdeci">cata::optional&lt; tripoint &gt; get_coordinates(const catacurses::window &amp;capture_win_)</div><div class="ttdoc">Get the coordinates associated with the last mouse click (if any).</div><div class="ttdef"><b>Definition:</b> <a href="input_8cpp_source.html#l01338">input.cpp:1338</a></div></div>
-<div class="ttc" id="aclassinput__manager_html_a71fe921eef2db73b8a665a187eb7e526"><div class="ttname"><a href="classinput__manager.html#a71fe921eef2db73b8a665a187eb7e526">input_manager::set_timeout</a></div><div class="ttdeci">void set_timeout(int t)</div><div class="ttdoc">Sets global input polling timeout as appropriate for the current interface system.</div><div class="ttdef"><b>Definition:</b> <a href="ncurses__def_8cpp_source.html#l00349">ncurses_def.cpp:349</a></div></div>
-<div class="ttc" id="aclassinput__manager_html_a95c5db86b27184868198ccc6d285de17"><div class="ttname"><a href="classinput__manager.html#a95c5db86b27184868198ccc6d285de17">input_manager::input_timeout</a></div><div class="ttdeci">int input_timeout</div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00327">input.h:327</a></div></div>
-<div class="ttc" id="aclassinput__manager_html_ab6eb20ccdeab03473f47365cd836fb65"><div class="ttname"><a href="classinput__manager.html#ab6eb20ccdeab03473f47365cd836fb65">input_manager::previously_pressed_key</a></div><div class="ttdeci">int previously_pressed_key</div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00313">input.h:313</a></div></div>
-<div class="ttc" id="aclassinput__manager_html_ad550fec9aad772e44f497bf29f845739"><div class="ttname"><a href="classinput__manager.html#ad550fec9aad772e44f497bf29f845739">input_manager::get_input_event</a></div><div class="ttdeci">input_event get_input_event()</div><div class="ttdoc">curses getch() replacement.</div><div class="ttdef"><b>Definition:</b> <a href="ncurses__def_8cpp_source.html#l00251">ncurses_def.cpp:251</a></div></div>
+<div class="ttc" id="aclassinput__manager_html_a56fd029f8ad1ca3dcd864a6bb5537045"><div class="ttname"><a href="classinput__manager.html#a56fd029f8ad1ca3dcd864a6bb5537045">input_manager::pump_events</a></div><div class="ttdeci">void pump_events()</div><div class="ttdoc">Resize &amp; refresh if necessary, process all pending window events, and ignore keypresses.</div><div class="ttdef"><b>Definition:</b> <a href="ncurses__def_8cpp_source.html#l00252">ncurses_def.cpp:252</a></div></div>
+<div class="ttc" id="aclassinput__manager_html_a71fe921eef2db73b8a665a187eb7e526"><div class="ttname"><a href="classinput__manager.html#a71fe921eef2db73b8a665a187eb7e526">input_manager::set_timeout</a></div><div class="ttdeci">void set_timeout(int t)</div><div class="ttdoc">Sets global input polling timeout as appropriate for the current interface system.</div><div class="ttdef"><b>Definition:</b> <a href="ncurses__def_8cpp_source.html#l00375">ncurses_def.cpp:375</a></div></div>
+<div class="ttc" id="aclassinput__manager_html_a95c5db86b27184868198ccc6d285de17"><div class="ttname"><a href="classinput__manager.html#a95c5db86b27184868198ccc6d285de17">input_manager::input_timeout</a></div><div class="ttdeci">int input_timeout</div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00331">input.h:331</a></div></div>
+<div class="ttc" id="aclassinput__manager_html_ab6eb20ccdeab03473f47365cd836fb65"><div class="ttname"><a href="classinput__manager.html#ab6eb20ccdeab03473f47365cd836fb65">input_manager::previously_pressed_key</a></div><div class="ttdeci">int previously_pressed_key</div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00317">input.h:317</a></div></div>
+<div class="ttc" id="aclassinput__manager_html_ad550fec9aad772e44f497bf29f845739"><div class="ttname"><a href="classinput__manager.html#ad550fec9aad772e44f497bf29f845739">input_manager::get_input_event</a></div><div class="ttdeci">input_event get_input_event()</div><div class="ttdoc">curses getch() replacement.</div><div class="ttdef"><b>Definition:</b> <a href="ncurses__def_8cpp_source.html#l00277">ncurses_def.cpp:277</a></div></div>
 <div class="ttc" id="aclassrestore__on__out__of__scope_html"><div class="ttname"><a href="classrestore__on__out__of__scope.html">restore_on_out_of_scope</a></div><div class="ttdef"><b>Definition:</b> <a href="cata__utility_8h_source.html#l00270">cata_utility.h:271</a></div></div>
 <div class="ttc" id="acolor_8cpp_html_a63790e021bbe6eb4ee0525657d2c8b3f"><div class="ttname"><a href="color_8cpp.html#a63790e021bbe6eb4ee0525657d2c8b3f">init_colors</a></div><div class="ttdeci">void init_colors()</div><div class="ttdef"><b>Definition:</b> <a href="color_8cpp_source.html#l00401">color.cpp:401</a></div></div>
 <div class="ttc" id="acolor_8h_html"><div class="ttname"><a href="color_8h.html">color.h</a></div></div>
@@ -901,7 +916,7 @@ $(document).ready(function(){initNavTree('wincurse_8cpp_source.html',''); initRe
 <div class="ttc" id="aeditmap_8cpp_html_a025a5c063205294df20818edc4cfe355"><div class="ttname"><a href="editmap_8cpp.html#a025a5c063205294df20818edc4cfe355">color</a></div><div class="ttdeci">static nc_color color(const T_t &amp;t)</div></div>
 <div class="ttc" id="afilesystem_8h_html"><div class="ttname"><a href="filesystem_8h.html">filesystem.h</a></div></div>
 <div class="ttc" id="afont__loader_8h_html"><div class="ttname"><a href="font__loader_8h.html">font_loader.h</a></div></div>
-<div class="ttc" id="agame_8cpp_html_abeb98e93502d73818b4a73fabe191bc1"><div class="ttname"><a href="game_8cpp.html#abeb98e93502d73818b4a73fabe191bc1">g</a></div><div class="ttdeci">std::unique_ptr&lt; game &gt; g</div><div class="ttdef"><b>Definition:</b> <a href="game_8cpp_source.html#l00272">game.cpp:272</a></div></div>
+<div class="ttc" id="agame_8cpp_html_abeb98e93502d73818b4a73fabe191bc1"><div class="ttname"><a href="game_8cpp.html#abeb98e93502d73818b4a73fabe191bc1">g</a></div><div class="ttdeci">std::unique_ptr&lt; game &gt; g</div><div class="ttdef"><b>Definition:</b> <a href="game_8cpp_source.html#l00277">game.cpp:277</a></div></div>
 <div class="ttc" id="aget__version_8h_html"><div class="ttname"><a href="get__version_8h.html">get_version.h</a></div></div>
 <div class="ttc" id="aget__version_8h_html_a2ff8e2d8c8d901aee375b52bfea6cee6"><div class="ttname"><a href="get__version_8h.html#a2ff8e2d8c8d901aee375b52bfea6cee6">getVersionString</a></div><div class="ttdeci">const char * getVersionString()</div><div class="ttdef"><b>Definition:</b> <a href="version_8cpp_source.html#l00015">version.cpp:15</a></div></div>
 <div class="ttc" id="ainit_8h_html"><div class="ttname"><a href="init_8h.html">init.h</a></div></div>
@@ -923,16 +938,16 @@ $(document).ready(function(){initNavTree('wincurse_8cpp_source.html',''); initRe
 <div class="ttc" id="ainput_8h_html_af4f9cc98a80e8e792d91d13ef7036005"><div class="ttname"><a href="input_8h.html#af4f9cc98a80e8e792d91d13ef7036005">KEY_UP</a></div><div class="ttdeci">static constexpr int KEY_UP</div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00038">input.h:38</a></div></div>
 <div class="ttc" id="amagic_8cpp_html_a6753ecfe87da659675b18c2f81d6ec12"><div class="ttname"><a href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a></div><div class="ttdeci">constexpr double c</div><div class="ttdef"><b>Definition:</b> <a href="magic_8cpp_source.html#l01032">magic.cpp:1032</a></div></div>
 <div class="ttc" id="amagic_8cpp_html_aa93a189fb7bbbf87be54bcc7bd11bb6f"><div class="ttname"><a href="magic_8cpp.html#aa93a189fb7bbbf87be54bcc7bd11bb6f">b</a></div><div class="ttdeci">constexpr double b</div><div class="ttdef"><b>Definition:</b> <a href="magic_8cpp_source.html#l01031">magic.cpp:1031</a></div></div>
-<div class="ttc" id="anamespacePATH__INFO_html_af9a3ed879d4c10c8494ba4934c8ec678"><div class="ttname"><a href="namespacePATH__INFO.html#af9a3ed879d4c10c8494ba4934c8ec678">PATH_INFO::title</a></div><div class="ttdeci">std::string title(holiday current_holiday)</div><div class="ttdef"><b>Definition:</b> <a href="path__info_8cpp_source.html#l00330">path_info.cpp:330</a></div></div>
+<div class="ttc" id="anamespacePATH__INFO_html_af9a3ed879d4c10c8494ba4934c8ec678"><div class="ttname"><a href="namespacePATH__INFO.html#af9a3ed879d4c10c8494ba4934c8ec678">PATH_INFO::title</a></div><div class="ttdeci">std::string title(holiday current_holiday)</div><div class="ttdef"><b>Definition:</b> <a href="path__info_8cpp_source.html#l00334">path_info.cpp:334</a></div></div>
 <div class="ttc" id="anamespacecata_html_ad05314667ac5d05f984aeeef26b9a87f"><div class="ttname"><a href="namespacecata.html#ad05314667ac5d05f984aeeef26b9a87f">cata::nullopt</a></div><div class="ttdeci">static constexpr nullopt_t nullopt</div><div class="ttdef"><b>Definition:</b> <a href="optional_8h_source.html#l00022">optional.h:22</a></div></div>
-<div class="ttc" id="anamespacecatacurses_html_a32aaa8d91a1c9743a545d4efb24f7c39"><div class="ttname"><a href="namespacecatacurses.html#a32aaa8d91a1c9743a545d4efb24f7c39">catacurses::init_interface</a></div><div class="ttdeci">void init_interface()</div><div class="ttdef"><b>Definition:</b> <a href="ncurses__def_8cpp_source.html#l00229">ncurses_def.cpp:229</a></div></div>
+<div class="ttc" id="anamespacecatacurses_html_a32aaa8d91a1c9743a545d4efb24f7c39"><div class="ttname"><a href="namespacecatacurses.html#a32aaa8d91a1c9743a545d4efb24f7c39">catacurses::init_interface</a></div><div class="ttdeci">void init_interface()</div><div class="ttdef"><b>Definition:</b> <a href="ncurses__def_8cpp_source.html#l00230">ncurses_def.cpp:230</a></div></div>
 <div class="ttc" id="anamespacecatacurses_html_a51707e12b1a95f6c69b1e128c4ba2601"><div class="ttname"><a href="namespacecatacurses.html#a51707e12b1a95f6c69b1e128c4ba2601">catacurses::stdscr</a></div><div class="ttdeci">window stdscr</div><div class="ttdef"><b>Definition:</b> <a href="ncurses__def_8cpp_source.html#l00215">ncurses_def.cpp:215</a></div></div>
 <div class="ttc" id="anamespacecatacurses_html_a576fd20080b8f49e27acf97af45b374b"><div class="ttname"><a href="namespacecatacurses.html#a576fd20080b8f49e27acf97af45b374b">catacurses::newwin</a></div><div class="ttdeci">window newwin(int nlines, int ncols, const point &amp;begin)</div><div class="ttdef"><b>Definition:</b> <a href="ncurses__def_8cpp_source.html#l00034">ncurses_def.cpp:34</a></div></div>
 <div class="ttc" id="anamespacecatacurses_html_a5e3d87563c99055c3a89fae235b305a4"><div class="ttname"><a href="namespacecatacurses.html#a5e3d87563c99055c3a89fae235b305a4">catacurses::resizeterm</a></div><div class="ttdeci">void resizeterm()</div><div class="ttdef"><b>Definition:</b> <a href="ncurses__def_8cpp_source.html#l00217">ncurses_def.cpp:217</a></div></div>
 <div class="ttc" id="anamespacecatacurses_html_a896759dbb967711125b3bd6677dcb578"><div class="ttname"><a href="namespacecatacurses.html#a896759dbb967711125b3bd6677dcb578">catacurses::wrefresh</a></div><div class="ttdeci">void wrefresh(const window &amp;win)</div><div class="ttdef"><b>Definition:</b> <a href="ncurses__def_8cpp_source.html#l00048">ncurses_def.cpp:48</a></div></div>
 <div class="ttc" id="anamespacecatacurses_html_afa6ab6a4b5d9ec592a63954a98ae5d69"><div class="ttname"><a href="namespacecatacurses.html#afa6ab6a4b5d9ec592a63954a98ae5d69">catacurses::endwin</a></div><div class="ttdeci">void endwin()</div><div class="ttdef"><b>Definition:</b> <a href="ncurses__def_8cpp_source.html#l00140">ncurses_def.cpp:140</a></div></div>
 <div class="ttc" id="anamespacedetail_1_1digits_html_aad69d2373aa047bdd9e81494bf3da5ae"><div class="ttname"><a href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">detail::digits::result</a></div><div class="ttdeci">result</div><div class="ttdef"><b>Definition:</b> <a href="fmtlib__format-inl_8h_source.html#l01626">fmtlib_format-inl.h:1626</a></div></div>
-<div class="ttc" id="anamespaceui__manager_html_aaa801bfcb6ef4eb737e70c793df08da9"><div class="ttname"><a href="namespaceui__manager.html#aaa801bfcb6ef4eb737e70c793df08da9">ui_manager::screen_resized</a></div><div class="ttdeci">void screen_resized()</div><div class="ttdef"><b>Definition:</b> <a href="ui__manager_8cpp_source.html#l00295">ui_manager.cpp:295</a></div></div>
+<div class="ttc" id="anamespaceui__manager_html_aaa801bfcb6ef4eb737e70c793df08da9"><div class="ttname"><a href="namespaceui__manager.html#aaa801bfcb6ef4eb737e70c793df08da9">ui_manager::screen_resized</a></div><div class="ttdeci">void screen_resized()</div><div class="ttdoc">Handle resize of the game window.</div><div class="ttdef"><b>Definition:</b> <a href="ui__manager_8cpp_source.html#l00399">ui_manager.cpp:399</a></div></div>
 <div class="ttc" id="ancurses__def_8cpp_html_a6fd55a287e038568d2304927ec8b2449"><div class="ttname"><a href="ncurses__def_8cpp.html#a6fd55a287e038568d2304927ec8b2449">refresh_display</a></div><div class="ttdeci">void refresh_display()</div><div class="ttdoc">Make changes made to the display visible to the user immediately.</div><div class="ttdef"><b>Definition:</b> <a href="ncurses__def_8cpp_source.html#l00120">ncurses_def.cpp:120</a></div></div>
 <div class="ttc" id="aoptions_8h_html"><div class="ttname"><a href="options_8h.html">options.h</a></div></div>
 <div class="ttc" id="aoutput_8cpp_html_a283d650887bbee9513700ab4c5c9097a"><div class="ttname"><a href="output_8cpp.html#a283d650887bbee9513700ab4c5c9097a">get_terminal_width</a></div><div class="ttdeci">int get_terminal_width()</div><div class="ttdoc">Get the width in font glyphs of the drawing screen.</div><div class="ttdef"><b>Definition:</b> <a href="output_8cpp_source.html#l02017">output.cpp:2017</a></div></div>
@@ -955,7 +970,7 @@ $(document).ready(function(){initNavTree('wincurse_8cpp_source.html',''); initRe
 <div class="ttc" id="aruntime__handlers_8cpp_html_ae5e0269ebcfa43933d51865756e43c6e"><div class="ttname"><a href="runtime__handlers_8cpp.html#ae5e0269ebcfa43933d51865756e43c6e">exit_handler</a></div><div class="ttdeci">void exit_handler(int status)</div><div class="ttdef"><b>Definition:</b> <a href="runtime__handlers_8cpp_source.html#l00007">runtime_handlers.cpp:7</a></div></div>
 <div class="ttc" id="aruntime__handlers_8h_html"><div class="ttname"><a href="runtime__handlers_8h.html">runtime_handlers.h</a></div></div>
 <div class="ttc" id="astring__formatter_8h_html"><div class="ttname"><a href="string__formatter_8h.html">string_formatter.h</a></div></div>
-<div class="ttc" id="astring__formatter_8h_html_a9b089d0b697443b096063219dab08ef5"><div class="ttname"><a href="string__formatter_8h.html#a9b089d0b697443b096063219dab08ef5">string_format</a></div><div class="ttdeci">std::string string_format(std::string format, Args &amp;&amp;...args)</div><div class="ttdoc">Simple wrapper over string_formatter::parse.</div><div class="ttdef"><b>Definition:</b> <a href="string__formatter_8h_source.html#l00418">string_formatter.h:418</a></div></div>
+<div class="ttc" id="astring__formatter_8h_html_a8964099387da2f95396c67566bafce3d"><div class="ttname"><a href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a></div><div class="ttdeci">std::string string_format(std::string_view format, Args &amp;&amp;...args)</div><div class="ttdoc">Simple wrapper over string_formatter::parse.</div><div class="ttdef"><b>Definition:</b> <a href="string__formatter_8h_source.html#l00431">string_formatter.h:431</a></div></div>
 <div class="ttc" id="astructinput__event_html"><div class="ttname"><a href="structinput__event.html">input_event</a></div><div class="ttdoc">An instance of an input, like a keypress etc.</div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00095">input.h:95</a></div></div>
 <div class="ttc" id="astructinput__event_html_a1d3cc705ca3603447a5d24f3c52339d5"><div class="ttname"><a href="structinput__event.html#a1d3cc705ca3603447a5d24f3c52339d5">input_event::add_input</a></div><div class="ttdeci">void add_input(const int input)</div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00134">input.h:134</a></div></div>
 <div class="ttc" id="astructinput__event_html_a2be5acd6dbd31ce820785df739a6c27b"><div class="ttname"><a href="structinput__event.html#a2be5acd6dbd31ce820785df739a6c27b">input_event::text</a></div><div class="ttdeci">std::string text</div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00109">input.h:109</a></div></div>
@@ -969,7 +984,7 @@ $(document).ready(function(){initNavTree('wincurse_8cpp_source.html',''); initRe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="wincurse_8cpp.html">wincurse.cpp</a></li>
-    <li class="footer">Generated on Wed Oct 19 2022 14:19:15 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Mon Dec 26 2022 21:41:48 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

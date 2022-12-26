@@ -21,6 +21,7 @@ var classuistatedata =
     [ "construction_tab", "classuistatedata.html#ae0522423387f5b87e2f937a263fdc5b2", null ],
     [ "debug_menu", "classuistatedata.html#a3188226afa4455aa08969725afd52ec8", null ],
     [ "editmap_nsa_viewmode", "classuistatedata.html#acb56c3485c850dc0289c66ff6e299ed9", null ],
+    [ "favorite_construct_recipes", "classuistatedata.html#a80dccd6a60e6e3d6eba9199b8f6f281a", null ],
     [ "favorite_recipes", "classuistatedata.html#a774d42bebc3686bbc8a086b3a3001fc2", null ],
     [ "hidden_recipes", "classuistatedata.html#a8beabc9b7efada6b41c81464c2935dd9", null ],
     [ "iexamine_atm_selected", "classuistatedata.html#aad2650c0c81c9c9526387a86bf586ecc", null ],

@@ -11,6 +11,7 @@ var debug_8cpp =
     [ "checkDebugLevelClass", "debug_8cpp.html#aac2a0ea8cfdde47e38976d76d9becc41", null ],
     [ "debug_error_prompt", "debug_8cpp.html#ae3103c1f1d210ae5226b6baca40dc2db", null ],
     [ "debug_has_error_been_observed", "debug_8cpp.html#ab931617c912a2f051703995421195d1b", null ],
+    [ "debug_reset_ignored_messages", "debug_8cpp.html#ac671a8a860711fc2844c16ad7eb0e15a", null ],
     [ "debugFile", "debug_8cpp.html#ae960e86d58bd6c32dca6006f4b665a4a", null ],
     [ "deinitDebug", "debug_8cpp.html#a33caf87f1ca91cc325a7f39c3f47c383", null ],
     [ "enum_to_string< DC >", "debug_8cpp.html#a0410b1157c801e81d38669dccd59aab2", null ],

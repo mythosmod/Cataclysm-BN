@@ -19,5 +19,6 @@ var classmapgen__function__json__base =
     [ "m_offset", "classmapgen__function__json__base.html#af80dded6eb1fc3d81f59f20b2d6ac882", null ],
     [ "mapgensize", "classmapgen__function__json__base.html#ac7486060d6cad69f6ea23821768a9409", null ],
     [ "objects", "classmapgen__function__json__base.html#ab80749928cd34b42b13bf3cae54c7e7a", null ],
-    [ "setmap_points", "classmapgen__function__json__base.html#a9f6ebc6274eae84b2d1038e77c87818b", null ]
+    [ "setmap_points", "classmapgen__function__json__base.html#a9f6ebc6274eae84b2d1038e77c87818b", null ],
+    [ "total_size", "classmapgen__function__json__base.html#abee7efa6672dfe39e612d3a59af459fc", null ]
 ];

@@ -20,6 +20,7 @@ var point_8h =
     [ "five_cardinal_directions", "point_8h.html#a3eb410b1378b6a8fbac4fc8d548bdb2b", null ],
     [ "four_adjacent_offsets", "point_8h.html#aad28d8d682bc8e5628fd2b04df87decd", null ],
     [ "four_cardinal_directions", "point_8h.html#a7e55b593cf990cd4c6afb92cf74373cd", null ],
+    [ "four_diagonal_offsets", "point_8h.html#ade4b604f6ca7ca14f96432e5f24d542d", null ],
     [ "neighborhood", "point_8h.html#a1c7e010679751133312202e360667f24", null ],
     [ "offsets", "point_8h.html#a79ee5f5cff90f63c494ed3877d40e691", null ],
     [ "point_east", "point_8h.html#aff73fd5bf470a3db5291c5dec855bb71", null ],

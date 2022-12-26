@@ -11,7 +11,6 @@ var game__constants_8h =
     [ "ACTIVE_EXERCISE", "game__constants_8h.html#af493e8618b57ed45c296eed8ab6e730a", null ],
     [ "AVERAGE_ANNUAL_TEMPERATURE", "game__constants_8h.html#a93be8e1dbd093081622d8b52a75869c6", null ],
     [ "BIO_CQB_LEVEL", "game__constants_8h.html#a140229290ef470b7aa1ff69de3b38734", null ],
-    [ "BLINK_SPEED", "game__constants_8h.html#a6c7a86d68de1c616357c0169dbf4a5e9", null ],
     [ "cold", "game__constants_8h.html#a226cec67fad4075fe2cf6c31c355fbed", null ],
     [ "emaciated", "game__constants_8h.html#ae41f48d3a0de12bbab86abc5d741f978", null ],
     [ "EXPLOSION_MULTIPLIER", "game__constants_8h.html#aa03835b04cd4fa56d0c4ff2a8c90b228", null ],

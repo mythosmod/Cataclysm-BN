@@ -369,15 +369,15 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="shape__impl_8h_source.html#l00318">318</a> of file <a class="el" href="shape__impl_8h_source.html">shape_impl.h</a>.</p>
 <div class="fragment"><div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>                                                   {</div>
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="string__formatter_8h.html#a9b089d0b697443b096063219dab08ef5">string_format</a>( <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;Cone of length &lt;info&gt;%d&lt;/info&gt;, apex angle &lt;info&gt;%d&lt;/info&gt;&quot;</span> ),</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a>( <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;Cone of length &lt;info&gt;%d&lt;/info&gt;, apex angle &lt;info&gt;%d&lt;/info&gt;&quot;</span> ),</div>
 <div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>                                  <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>( <a class="code hl_variable" href="classcone__factory.html#aa7a089e263e7e2571f67a315a72d9a5f">length</a> ),</div>
 <div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>                                  <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>( std::round( <a class="code hl_function" href="namespaceunits.html#a9ce2bc1618fa4acf9f9e98effd9f1ae0">units::to_degrees</a>( <a class="code hl_variable" href="classcone__factory.html#a5ba7d000a2f8a89a132004ba0cc357b2">half_angle</a> * 2 ) ) ) );</div>
 <div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>        }</div>
 <div class="ttc" id="anamespaceunits_html_a9ce2bc1618fa4acf9f9e98effd9f1ae0"><div class="ttname"><a href="namespaceunits.html#a9ce2bc1618fa4acf9f9e98effd9f1ae0">units::to_degrees</a></div><div class="ttdeci">constexpr double to_degrees(const units::angle v)</div><div class="ttdef"><b>Definition:</b> <a href="units__angle_8h_source.html#l00036">units_angle.h:36</a></div></div>
-<div class="ttc" id="astring__formatter_8h_html_a9b089d0b697443b096063219dab08ef5"><div class="ttname"><a href="string__formatter_8h.html#a9b089d0b697443b096063219dab08ef5">string_format</a></div><div class="ttdeci">std::string string_format(std::string format, Args &amp;&amp;...args)</div><div class="ttdoc">Simple wrapper over string_formatter::parse.</div><div class="ttdef"><b>Definition:</b> <a href="string__formatter_8h_source.html#l00418">string_formatter.h:418</a></div></div>
+<div class="ttc" id="astring__formatter_8h_html_a8964099387da2f95396c67566bafce3d"><div class="ttname"><a href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a></div><div class="ttdeci">std::string string_format(std::string_view format, Args &amp;&amp;...args)</div><div class="ttdoc">Simple wrapper over string_formatter::parse.</div><div class="ttdef"><b>Definition:</b> <a href="string__formatter_8h_source.html#l00431">string_formatter.h:431</a></div></div>
 <div class="ttc" id="atranslations_8h_html_aa829053017e23ef22d44dccecba63a34"><div class="ttname"><a href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a></div><div class="ttdeci">#define _(msg)</div><div class="ttdef"><b>Definition:</b> <a href="translations_8h_source.html#l00116">translations.h:116</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="shape__impl_8h_source.html#l00270">half_angle</a>, <a class="el" href="shape__impl_8h_source.html#l00271">length</a>, <a class="el" href="string__formatter_8h_source.html#l00418">string_format()</a>, and <a class="el" href="units__angle_8h_source.html#l00036">units::to_degrees()</a>.</p>
+<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="shape__impl_8h_source.html#l00270">half_angle</a>, <a class="el" href="shape__impl_8h_source.html#l00271">length</a>, <a class="el" href="string__formatter_8h_source.html#l00431">string_format()</a>, and <a class="el" href="units__angle_8h_source.html#l00036">units::to_degrees()</a>.</p>
 
 </div>
 </div>
@@ -553,7 +553,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classcone__factory.html">cone_factory</a></li>
-    <li class="footer">Generated on Wed Oct 19 2022 14:19:28 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Mon Dec 26 2022 21:41:59 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

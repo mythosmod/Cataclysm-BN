@@ -255,9 +255,9 @@ Private Attributes</h2></td></tr>
 <div class="line"><a id="l01035" name="l01035"></a><span class="lineno"> 1035</span>    }</div>
 <div class="line"><a id="l01036" name="l01036"></a><span class="lineno"> 1036</span>    <span class="keywordflow">if</span>( <a class="code hl_variable" href="classscore.html#a483bda0238dddf36515154d1ee03889c">description_</a>.<a class="code hl_function" href="classtranslation.html#a85e9c5ae8df7eb6df7bac2473b9716dd">empty</a>() ) {</div>
 <div class="line"><a id="l01037" name="l01037"></a><span class="lineno"> 1037</span>        <span class="comment">//~ Default format for scores.  %1$s is statistic description; %2$s is value.</span></div>
-<div class="line"><a id="l01038" name="l01038"></a><span class="lineno"> 1038</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="string__formatter_8h.html#a9b089d0b697443b096063219dab08ef5">string_format</a>( <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;%2$s %1$s&quot;</span> ), desc, value_string );</div>
+<div class="line"><a id="l01038" name="l01038"></a><span class="lineno"> 1038</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a>( <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;%2$s %1$s&quot;</span> ), desc, value_string );</div>
 <div class="line"><a id="l01039" name="l01039"></a><span class="lineno"> 1039</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l01040" name="l01040"></a><span class="lineno"> 1040</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="string__formatter_8h.html#a9b089d0b697443b096063219dab08ef5">string_format</a>( desc, value_string );</div>
+<div class="line"><a id="l01040" name="l01040"></a><span class="lineno"> 1040</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a>( desc, value_string );</div>
 <div class="line"><a id="l01041" name="l01041"></a><span class="lineno"> 1041</span>    }</div>
 <div class="line"><a id="l01042" name="l01042"></a><span class="lineno"> 1042</span>}</div>
 <div class="ttc" id="acata__variant_8h_html_adfe42687fffdd05d233096b4e7dac2f4ad7488204e92ed01986284bef5650eb53"><div class="ttname"><a href="cata__variant_8h.html#adfe42687fffdd05d233096b4e7dac2f4ad7488204e92ed01986284bef5650eb53">cata_variant_type::int_</a></div><div class="ttdeci">@ int_</div></div>
@@ -268,10 +268,10 @@ Private Attributes</h2></td></tr>
 <div class="ttc" id="aclassscore_html_a431f8ac41bccd09fd3e1ffb62b5e8ca3"><div class="ttname"><a href="classscore.html#a431f8ac41bccd09fd3e1ffb62b5e8ca3">score::value</a></div><div class="ttdeci">cata_variant value(stats_tracker &amp;) const</div><div class="ttdef"><b>Definition:</b> <a href="event__statistics_8cpp_source.html#l01044">event_statistics.cpp:1044</a></div></div>
 <div class="ttc" id="aclassscore_html_a483bda0238dddf36515154d1ee03889c"><div class="ttname"><a href="classscore.html#a483bda0238dddf36515154d1ee03889c">score::description_</a></div><div class="ttdeci">translation description_</div><div class="ttdef"><b>Definition:</b> <a href="event__statistics_8h_source.html#l00110">event_statistics.h:110</a></div></div>
 <div class="ttc" id="aclasstranslation_html_a85e9c5ae8df7eb6df7bac2473b9716dd"><div class="ttname"><a href="classtranslation.html#a85e9c5ae8df7eb6df7bac2473b9716dd">translation::empty</a></div><div class="ttdeci">bool empty() const</div><div class="ttdoc">Whether the underlying string is empty, not matter what the context is or whether translation is need...</div><div class="ttdef"><b>Definition:</b> <a href="translations_8cpp_source.html#l00342">translations.cpp:342</a></div></div>
-<div class="ttc" id="astring__formatter_8h_html_a9b089d0b697443b096063219dab08ef5"><div class="ttname"><a href="string__formatter_8h.html#a9b089d0b697443b096063219dab08ef5">string_format</a></div><div class="ttdeci">std::string string_format(std::string format, Args &amp;&amp;...args)</div><div class="ttdoc">Simple wrapper over string_formatter::parse.</div><div class="ttdef"><b>Definition:</b> <a href="string__formatter_8h_source.html#l00418">string_formatter.h:418</a></div></div>
+<div class="ttc" id="astring__formatter_8h_html_a8964099387da2f95396c67566bafce3d"><div class="ttname"><a href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a></div><div class="ttdeci">std::string string_format(std::string_view format, Args &amp;&amp;...args)</div><div class="ttdoc">Simple wrapper over string_formatter::parse.</div><div class="ttdef"><b>Definition:</b> <a href="string__formatter_8h_source.html#l00431">string_formatter.h:431</a></div></div>
 <div class="ttc" id="atranslations_8h_html_aa829053017e23ef22d44dccecba63a34"><div class="ttname"><a href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a></div><div class="ttdeci">#define _(msg)</div><div class="ttdef"><b>Definition:</b> <a href="translations_8h_source.html#l00116">translations.h:116</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="event__statistics_8h_source.html#l00110">description_</a>, <a class="el" href="translations_8cpp_source.html#l00342">translation::empty()</a>, <a class="el" href="cata__variant_8h_source.html#l00293">cata_variant::get()</a>, <a class="el" href="cata__variant_8h_source.html#l00308">cata_variant::get_string()</a>, <a class="el" href="cata__variant_8h.html#adfe42687fffdd05d233096b4e7dac2f4ad7488204e92ed01986284bef5650eb53">int_</a>, <a class="el" href="event__statistics_8h_source.html#l00111">stat_</a>, <a class="el" href="string__formatter_8h_source.html#l00418">string_format()</a>, <a class="el" href="cata__variant_8h_source.html#l00288">cata_variant::type()</a>, and <a class="el" href="event__statistics_8cpp_source.html#l01044">value()</a>.</p>
+<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="event__statistics_8h_source.html#l00110">description_</a>, <a class="el" href="translations_8cpp_source.html#l00342">translation::empty()</a>, <a class="el" href="cata__variant_8h_source.html#l00293">cata_variant::get()</a>, <a class="el" href="cata__variant_8h_source.html#l00308">cata_variant::get_string()</a>, <a class="el" href="cata__variant_8h.html#adfe42687fffdd05d233096b4e7dac2f4ad7488204e92ed01986284bef5650eb53">int_</a>, <a class="el" href="event__statistics_8h_source.html#l00111">stat_</a>, <a class="el" href="string__formatter_8h_source.html#l00431">string_format()</a>, <a class="el" href="cata__variant_8h_source.html#l00288">cata_variant::type()</a>, and <a class="el" href="event__statistics_8cpp_source.html#l01044">value()</a>.</p>
 
 </div>
 </div>
@@ -389,7 +389,7 @@ Private Attributes</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="namespaceanonymous__namespace_02event__statistics_8cpp_03.html#af36ce1a3325f503c1a2a6cb6c4444e12">anonymous_namespace{event_statistics.cpp}::score_factory</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8cpp_source.html#l00236">DynamicDataLoader::initialize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8cpp_source.html#l00243">DynamicDataLoader::initialize()</a>.</p>
 
 </div>
 </div>
@@ -423,7 +423,7 @@ Private Attributes</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="namespaceanonymous__namespace_02event__statistics_8cpp_03.html#af36ce1a3325f503c1a2a6cb6c4444e12">anonymous_namespace{event_statistics.cpp}::score_factory</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8cpp_source.html#l00528">DynamicDataLoader::unload_data()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8cpp_source.html#l00536">DynamicDataLoader::unload_data()</a>.</p>
 
 </div>
 </div>
@@ -552,7 +552,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classscore.html">score</a></li>
-    <li class="footer">Generated on Wed Oct 19 2022 14:19:46 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Mon Dec 26 2022 21:42:13 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

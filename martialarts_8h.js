@@ -8,6 +8,7 @@ var martialarts_8h =
     [ "CATA_SRC_MARTIALARTS_H", "martialarts_8h.html#a76477081ae99f3317f404bae97edf450", null ],
     [ "all_martialart_types", "martialarts_8h.html#a863b5e05d6e9a301dbcddd6bbb61ab28", null ],
     [ "autolearn_martialart_types", "martialarts_8h.html#a63233aaf936955f4df6542d8f786116f", null ],
+    [ "can_autolearn_martial_art", "martialarts_8h.html#ab0bd6bdef185fe017fcb2b8bfada66c0", null ],
     [ "check_martialarts", "martialarts_8h.html#aedc1fd2b2bc202665ce6875092473b7f", null ],
     [ "clear_techniques_and_martial_arts", "martialarts_8h.html#af357fad859629471cc1c2008e1ae59f2", null ],
     [ "finialize_martial_arts", "martialarts_8h.html#ab4af33e819e63d72755ab1a324fb09ed", null ],

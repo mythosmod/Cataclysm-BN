@@ -265,7 +265,7 @@ template&lt;typename Value , typename  = std::enable_if_t &lt;(                 
 <div class="fragment"><div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>            : <a class="code hl_variable" href="classcata__variant.html#a4c8cc76c2f8f6a1ffe967bf6bc7f2369">type_</a>( t )</div>
 <div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>            , <a class="code hl_variable" href="classcata__variant.html#a71e6df3dddf57438428965894d9132f1">value_</a>( <a class="code hl_function" href="namespaceavatar__action.html#a76ba74774376a08222b8cdcce08f7304">std::move</a>( v ) )</div>
 <div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>        {}</div>
-<div class="ttc" id="anamespaceavatar__action_html_a76ba74774376a08222b8cdcce08f7304"><div class="ttname"><a href="namespaceavatar__action.html#a76ba74774376a08222b8cdcce08f7304">avatar_action::move</a></div><div class="ttdeci">bool move(avatar &amp;you, map &amp;m, const tripoint &amp;d)</div><div class="ttdef"><b>Definition:</b> <a href="avatar__action_8cpp_source.html#l00093">avatar_action.cpp:93</a></div></div>
+<div class="ttc" id="anamespaceavatar__action_html_a76ba74774376a08222b8cdcce08f7304"><div class="ttname"><a href="namespaceavatar__action.html#a76ba74774376a08222b8cdcce08f7304">avatar_action::move</a></div><div class="ttdeci">bool move(avatar &amp;you, map &amp;m, const tripoint &amp;d)</div><div class="ttdef"><b>Definition:</b> <a href="avatar__action_8cpp_source.html#l00094">avatar_action.cpp:94</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -423,14 +423,14 @@ template&lt;typename Value , typename  = std::enable_if_t &lt;(                 
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="savegame__json_8cpp_source.html#l03677">3677</a> of file <a class="el" href="savegame__json_8cpp_source.html">savegame_json.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l03678" name="l03678"></a><span class="lineno"> 3678</span>{</div>
-<div class="line"><a id="l03679" name="l03679"></a><span class="lineno"> 3679</span>    jsin.<a class="code hl_function" href="classJsonIn.html#a70443f07b40c2a0ab1aee1e0418a1faf">start_array</a>();</div>
-<div class="line"><a id="l03680" name="l03680"></a><span class="lineno"> 3680</span>    <span class="keywordflow">if</span>( !( jsin.<a class="code hl_function" href="classJsonIn.html#aa8f42d396d9e62f0401b71ccf579c111">read</a>( <a class="code hl_variable" href="classcata__variant.html#a4c8cc76c2f8f6a1ffe967bf6bc7f2369">type_</a> ) &amp;&amp; jsin.<a class="code hl_function" href="classJsonIn.html#aa8f42d396d9e62f0401b71ccf579c111">read</a>( <a class="code hl_variable" href="classcata__variant.html#a71e6df3dddf57438428965894d9132f1">value_</a> ) ) ) {</div>
-<div class="line"><a id="l03681" name="l03681"></a><span class="lineno"> 3681</span>        jsin.<a class="code hl_function" href="classJsonIn.html#a7178372186175a21337660d591f2c858">error</a>( <span class="stringliteral">&quot;Failed to read cata_variant&quot;</span> );</div>
-<div class="line"><a id="l03682" name="l03682"></a><span class="lineno"> 3682</span>    }</div>
-<div class="line"><a id="l03683" name="l03683"></a><span class="lineno"> 3683</span>    jsin.<a class="code hl_function" href="classJsonIn.html#adb53515d72e6e0457ae3266ace12d5e5">end_array</a>();</div>
-<div class="line"><a id="l03684" name="l03684"></a><span class="lineno"> 3684</span>}</div>
+<p class="definition">Definition at line <a class="el" href="savegame__json_8cpp_source.html#l03675">3675</a> of file <a class="el" href="savegame__json_8cpp_source.html">savegame_json.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l03676" name="l03676"></a><span class="lineno"> 3676</span>{</div>
+<div class="line"><a id="l03677" name="l03677"></a><span class="lineno"> 3677</span>    jsin.<a class="code hl_function" href="classJsonIn.html#a70443f07b40c2a0ab1aee1e0418a1faf">start_array</a>();</div>
+<div class="line"><a id="l03678" name="l03678"></a><span class="lineno"> 3678</span>    <span class="keywordflow">if</span>( !( jsin.<a class="code hl_function" href="classJsonIn.html#aa8f42d396d9e62f0401b71ccf579c111">read</a>( <a class="code hl_variable" href="classcata__variant.html#a4c8cc76c2f8f6a1ffe967bf6bc7f2369">type_</a> ) &amp;&amp; jsin.<a class="code hl_function" href="classJsonIn.html#aa8f42d396d9e62f0401b71ccf579c111">read</a>( <a class="code hl_variable" href="classcata__variant.html#a71e6df3dddf57438428965894d9132f1">value_</a> ) ) ) {</div>
+<div class="line"><a id="l03679" name="l03679"></a><span class="lineno"> 3679</span>        jsin.<a class="code hl_function" href="classJsonIn.html#a7178372186175a21337660d591f2c858">error</a>( <span class="stringliteral">&quot;Failed to read cata_variant&quot;</span> );</div>
+<div class="line"><a id="l03680" name="l03680"></a><span class="lineno"> 3680</span>    }</div>
+<div class="line"><a id="l03681" name="l03681"></a><span class="lineno"> 3681</span>    jsin.<a class="code hl_function" href="classJsonIn.html#adb53515d72e6e0457ae3266ace12d5e5">end_array</a>();</div>
+<div class="line"><a id="l03682" name="l03682"></a><span class="lineno"> 3682</span>}</div>
 <div class="ttc" id="aclassJsonIn_html_a70443f07b40c2a0ab1aee1e0418a1faf"><div class="ttname"><a href="classJsonIn.html#a70443f07b40c2a0ab1aee1e0418a1faf">JsonIn::start_array</a></div><div class="ttdeci">void start_array()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01373">json.cpp:1373</a></div></div>
 <div class="ttc" id="aclassJsonIn_html_a7178372186175a21337660d591f2c858"><div class="ttname"><a href="classJsonIn.html#a7178372186175a21337660d591f2c858">JsonIn::error</a></div><div class="ttdeci">void error(const std::string &amp;message, int offset=0)</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01678">json.cpp:1678</a></div></div>
 <div class="ttc" id="aclassJsonIn_html_aa8f42d396d9e62f0401b71ccf579c111"><div class="ttname"><a href="classJsonIn.html#aa8f42d396d9e62f0401b71ccf579c111">JsonIn::read</a></div><div class="ttdeci">bool read(bool &amp;b, bool throw_on_error=false)</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01485">json.cpp:1485</a></div></div>
@@ -607,13 +607,13 @@ template&lt;<a class="el" href="cata__variant_8h.html#adfe42687fffdd05d233096b4e
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="savegame__json_8cpp_source.html#l03669">3669</a> of file <a class="el" href="savegame__json_8cpp_source.html">savegame_json.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l03670" name="l03670"></a><span class="lineno"> 3670</span>{</div>
-<div class="line"><a id="l03671" name="l03671"></a><span class="lineno"> 3671</span>    jsout.<a class="code hl_function" href="classJsonOut.html#a4550e2036b904c4d4a90e440dd41c684">start_array</a>();</div>
-<div class="line"><a id="l03672" name="l03672"></a><span class="lineno"> 3672</span>    jsout.<a class="code hl_function" href="classJsonOut.html#a57a841c30e82540a073e8fb90f082ce2">write_as_string</a>( <a class="code hl_variable" href="classcata__variant.html#a4c8cc76c2f8f6a1ffe967bf6bc7f2369">type_</a> );</div>
-<div class="line"><a id="l03673" name="l03673"></a><span class="lineno"> 3673</span>    jsout.<a class="code hl_function" href="classJsonOut.html#a4b8c8e50e3be57e737ae971ecf2c3fd5">write</a>( <a class="code hl_variable" href="classcata__variant.html#a71e6df3dddf57438428965894d9132f1">value_</a> );</div>
-<div class="line"><a id="l03674" name="l03674"></a><span class="lineno"> 3674</span>    jsout.<a class="code hl_function" href="classJsonOut.html#a44cdd853d4c6913b37caa9f0131eeff2">end_array</a>();</div>
-<div class="line"><a id="l03675" name="l03675"></a><span class="lineno"> 3675</span>}</div>
+<p class="definition">Definition at line <a class="el" href="savegame__json_8cpp_source.html#l03667">3667</a> of file <a class="el" href="savegame__json_8cpp_source.html">savegame_json.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l03668" name="l03668"></a><span class="lineno"> 3668</span>{</div>
+<div class="line"><a id="l03669" name="l03669"></a><span class="lineno"> 3669</span>    jsout.<a class="code hl_function" href="classJsonOut.html#a4550e2036b904c4d4a90e440dd41c684">start_array</a>();</div>
+<div class="line"><a id="l03670" name="l03670"></a><span class="lineno"> 3670</span>    jsout.<a class="code hl_function" href="classJsonOut.html#a57a841c30e82540a073e8fb90f082ce2">write_as_string</a>( <a class="code hl_variable" href="classcata__variant.html#a4c8cc76c2f8f6a1ffe967bf6bc7f2369">type_</a> );</div>
+<div class="line"><a id="l03671" name="l03671"></a><span class="lineno"> 3671</span>    jsout.<a class="code hl_function" href="classJsonOut.html#a4b8c8e50e3be57e737ae971ecf2c3fd5">write</a>( <a class="code hl_variable" href="classcata__variant.html#a71e6df3dddf57438428965894d9132f1">value_</a> );</div>
+<div class="line"><a id="l03672" name="l03672"></a><span class="lineno"> 3672</span>    jsout.<a class="code hl_function" href="classJsonOut.html#a44cdd853d4c6913b37caa9f0131eeff2">end_array</a>();</div>
+<div class="line"><a id="l03673" name="l03673"></a><span class="lineno"> 3673</span>}</div>
 <div class="ttc" id="aclassJsonOut_html_a44cdd853d4c6913b37caa9f0131eeff2"><div class="ttname"><a href="classJsonOut.html#a44cdd853d4c6913b37caa9f0131eeff2">JsonOut::end_array</a></div><div class="ttdeci">void end_array()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01961">json.cpp:1961</a></div></div>
 <div class="ttc" id="aclassJsonOut_html_a4550e2036b904c4d4a90e440dd41c684"><div class="ttname"><a href="classJsonOut.html#a4550e2036b904c4d4a90e440dd41c684">JsonOut::start_array</a></div><div class="ttdeci">void start_array(bool wrap=false)</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01950">json.cpp:1950</a></div></div>
 <div class="ttc" id="aclassJsonOut_html_a4b8c8e50e3be57e737ae971ecf2c3fd5"><div class="ttname"><a href="classJsonOut.html#a4b8c8e50e3be57e737ae971ecf2c3fd5">JsonOut::write</a></div><div class="ttdeci">void write(T val)</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00620">json.h:620</a></div></div>
@@ -720,7 +720,7 @@ template&lt;<a class="el" href="cata__variant_8h.html#adfe42687fffdd05d233096b4e
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classcata__variant.html">cata_variant</a></li>
-    <li class="footer">Generated on Wed Oct 19 2022 14:19:25 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Mon Dec 26 2022 21:41:57 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

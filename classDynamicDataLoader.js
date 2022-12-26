@@ -11,7 +11,6 @@ var classDynamicDataLoader =
     [ "add", "classDynamicDataLoader.html#a80ba0fed9b4e0b16bac4bff4bf3a8ca8", null ],
     [ "add", "classDynamicDataLoader.html#a275ba624b7b07300152d14dee1afacc3", null ],
     [ "check_consistency", "classDynamicDataLoader.html#a764583106f7e31f3e7de4eff1f220ddd", null ],
-    [ "finalize_loaded_data", "classDynamicDataLoader.html#a32473cb0f28ec0ba261a8f48d6a59ec2", null ],
     [ "finalize_loaded_data", "classDynamicDataLoader.html#a9e53234d7f6cdc147159660a0fdb0d05", null ],
     [ "get_cached_stream", "classDynamicDataLoader.html#a5f5f22a4cf5562a3a773380ce65a70fe", null ],
     [ "get_instance", "classDynamicDataLoader.html#adca1972b6d79ffd55d6d7ca1a0c329b9", null ],

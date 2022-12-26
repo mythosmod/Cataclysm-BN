@@ -94,8 +94,8 @@ $(document).ready(function(){initNavTree('classmapgen__basic__container.html',''
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a96663038d6cc91b9a3614861a41ca5b0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmapgen__basic__container.html#a96663038d6cc91b9a3614861a41ca5b0">add</a> (const std::shared_ptr&lt; <a class="el" href="classmapgen__function.html">mapgen_function</a> &gt; <a class="el" href="fmtlib__format_8h.html#a366080888d2d3535358d11f0b4781f66">ptr</a>)</td></tr>
-<tr class="separator:a96663038d6cc91b9a3614861a41ca5b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85eea3365c2561bd908165043a5cbfff"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmapgen__basic__container.html#a85eea3365c2561bd908165043a5cbfff">add</a> (const std::shared_ptr&lt; <a class="el" href="classmapgen__function.html">mapgen_function</a> &gt; &amp;<a class="el" href="fmtlib__format_8h.html#a366080888d2d3535358d11f0b4781f66">ptr</a>)</td></tr>
+<tr class="separator:a85eea3365c2561bd908165043a5cbfff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc3917d8494e9d9995b0a58933f14c74"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmapgen__basic__container.html#abc3917d8494e9d9995b0a58933f14c74">generate</a> (<a class="el" href="classmapgendata.html">mapgendata</a> &amp;dat, const int hardcoded_weight) const</td></tr>
 <tr class="memdesc:abc3917d8494e9d9995b0a58933f14c74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pick a mapgen function randomly and call its generate function.  <a href="classmapgen__basic__container.html#abc3917d8494e9d9995b0a58933f14c74">More...</a><br /></td></tr>
 <tr class="separator:abc3917d8494e9d9995b0a58933f14c74"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -114,10 +114,10 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="mapgen_8cpp_source.html#l00221">221</a> of file <a class="el" href="mapgen_8cpp_source.html">mapgen.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mapgen_8cpp_source.html#l00223">223</a> of file <a class="el" href="mapgen_8cpp_source.html">mapgen.cpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a96663038d6cc91b9a3614861a41ca5b0" name="a96663038d6cc91b9a3614861a41ca5b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a96663038d6cc91b9a3614861a41ca5b0">&#9670;&nbsp;</a></span>add()</h2>
+<a id="a85eea3365c2561bd908165043a5cbfff" name="a85eea3365c2561bd908165043a5cbfff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85eea3365c2561bd908165043a5cbfff">&#9670;&nbsp;</a></span>add()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -128,7 +128,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">int mapgen_basic_container::add </td>
           <td>(</td>
-          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="classmapgen__function.html">mapgen_function</a> &gt;&#160;</td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="classmapgen__function.html">mapgen_function</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>ptr</em></td><td>)</td>
           <td></td>
         </tr>
@@ -140,16 +140,21 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mapgen_8cpp_source.html#l00228">228</a> of file <a class="el" href="mapgen_8cpp_source.html">mapgen.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>                                                            {</div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>            assert( <a class="code hl_function" href="fmtlib__format_8h.html#a36b7e236fa4242d8655b508bbebb697f">ptr</a> );</div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>            <a class="code hl_variable" href="classmapgen__basic__container.html#a06ec01b4dd9194a2d18cf282e4719630">mapgens_</a>.push_back( <a class="code hl_function" href="fmtlib__format_8h.html#a36b7e236fa4242d8655b508bbebb697f">ptr</a> );</div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="classmapgen__basic__container.html#a06ec01b4dd9194a2d18cf282e4719630">mapgens_</a>.size() - 1;</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>        }</div>
-<div class="ttc" id="aclassmapgen__basic__container_html_a06ec01b4dd9194a2d18cf282e4719630"><div class="ttname"><a href="classmapgen__basic__container.html#a06ec01b4dd9194a2d18cf282e4719630">mapgen_basic_container::mapgens_</a></div><div class="ttdeci">std::vector&lt; std::shared_ptr&lt; mapgen_function &gt; &gt; mapgens_</div><div class="ttdef"><b>Definition:</b> <a href="mapgen_8cpp_source.html#l00224">mapgen.cpp:224</a></div></div>
+<p class="definition">Definition at line <a class="el" href="mapgen_8cpp_source.html#l00230">230</a> of file <a class="el" href="mapgen_8cpp_source.html">mapgen.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>                                                             {</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>            assert( <a class="code hl_function" href="fmtlib__format_8h.html#a36b7e236fa4242d8655b508bbebb697f">ptr</a> );</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>            <span class="keywordflow">if</span>( <a class="code hl_function" href="namespacedetail.html#ad06b74f7502b63cbab323bba1ca3f72b">std::find</a>( <a class="code hl_variable" href="classmapgen__basic__container.html#a06ec01b4dd9194a2d18cf282e4719630">mapgens_</a>.begin(), <a class="code hl_variable" href="classmapgen__basic__container.html#a06ec01b4dd9194a2d18cf282e4719630">mapgens_</a>.end(), <a class="code hl_function" href="fmtlib__format_8h.html#a36b7e236fa4242d8655b508bbebb697f">ptr</a> ) != <a class="code hl_variable" href="classmapgen__basic__container.html#a06ec01b4dd9194a2d18cf282e4719630">mapgens_</a>.end() ) {</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>                <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;Adding duplicate mapgen to container!&quot;</span> );</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>            }</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>            <a class="code hl_variable" href="classmapgen__basic__container.html#a06ec01b4dd9194a2d18cf282e4719630">mapgens_</a>.push_back( <a class="code hl_function" href="fmtlib__format_8h.html#a36b7e236fa4242d8655b508bbebb697f">ptr</a> );</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="classmapgen__basic__container.html#a06ec01b4dd9194a2d18cf282e4719630">mapgens_</a>.size() - 1;</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>        }</div>
+<div class="ttc" id="aclassmapgen__basic__container_html_a06ec01b4dd9194a2d18cf282e4719630"><div class="ttname"><a href="classmapgen__basic__container.html#a06ec01b4dd9194a2d18cf282e4719630">mapgen_basic_container::mapgens_</a></div><div class="ttdeci">std::vector&lt; std::shared_ptr&lt; mapgen_function &gt; &gt; mapgens_</div><div class="ttdef"><b>Definition:</b> <a href="mapgen_8cpp_source.html#l00226">mapgen.cpp:226</a></div></div>
+<div class="ttc" id="adebug_8h_html_a87e509562277a7ada3a75330d00cb445"><div class="ttname"><a href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a></div><div class="ttdeci">#define debugmsg(...)</div><div class="ttdoc">Debug message of level DL::Error and class DC::DebugMsg, also includes the source file name and line,...</div><div class="ttdef"><b>Definition:</b> <a href="debug_8h_source.html#l00074">debug.h:74</a></div></div>
 <div class="ttc" id="afmtlib__format_8h_html_a36b7e236fa4242d8655b508bbebb697f"><div class="ttname"><a href="fmtlib__format_8h.html#a36b7e236fa4242d8655b508bbebb697f">ptr</a></div><div class="ttdeci">const void * ptr(const T *p)</div><div class="ttdoc">\rst Converts p to const void* for pointer formatting.</div><div class="ttdef"><b>Definition:</b> <a href="fmtlib__format_8h_source.html#l04100">fmtlib_format.h:4100</a></div></div>
+<div class="ttc" id="anamespacedetail_html_ad06b74f7502b63cbab323bba1ca3f72b"><div class="ttname"><a href="namespacedetail.html#ad06b74f7502b63cbab323bba1ca3f72b">detail::find</a></div><div class="ttdeci">FMT_CONSTEXPR bool find(Ptr first, Ptr last, T value, Ptr &amp;out)</div><div class="ttdef"><b>Definition:</b> <a href="fmtlib__format_8h_source.html#l03355">fmtlib_format.h:3355</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="mapgen_8cpp_source.html#l00224">mapgens_</a>, and <a class="el" href="fmtlib__format_8h_source.html#l04100">ptr()</a>.</p>
+<p class="reference">References <a class="el" href="debug_8h_source.html#l00074">debugmsg</a>, <a class="el" href="fmtlib__format_8h_source.html#l03355">detail::find()</a>, <a class="el" href="mapgen_8cpp_source.html#l00226">mapgens_</a>, and <a class="el" href="fmtlib__format_8h_source.html#l04100">ptr()</a>.</p>
 
 </div>
 </div>
@@ -177,15 +182,15 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mapgen_8cpp_source.html#l00272">272</a> of file <a class="el" href="mapgen_8cpp_source.html">mapgen.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>                                                       {</div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>            <span class="keywordflow">for</span>( <span class="keyword">auto</span> &amp;mapgen_function_ptr : <a class="code hl_variable" href="classmapgen__basic__container.html#a14e8874d7e6e21ee24d31571d5e1af66">weights_</a> ) {</div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>                mapgen_function_ptr.obj-&gt;check( key );</div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>            }</div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>        }</div>
-<div class="ttc" id="aclassmapgen__basic__container_html_a14e8874d7e6e21ee24d31571d5e1af66"><div class="ttname"><a href="classmapgen__basic__container.html#a14e8874d7e6e21ee24d31571d5e1af66">mapgen_basic_container::weights_</a></div><div class="ttdeci">weighted_int_list&lt; std::shared_ptr&lt; mapgen_function &gt; &gt; weights_</div><div class="ttdef"><b>Definition:</b> <a href="mapgen_8cpp_source.html#l00225">mapgen.cpp:225</a></div></div>
+<p class="definition">Definition at line <a class="el" href="mapgen_8cpp_source.html#l00277">277</a> of file <a class="el" href="mapgen_8cpp_source.html">mapgen.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>                                                       {</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>            <span class="keywordflow">for</span>( <span class="keyword">auto</span> &amp;mapgen_function_ptr : <a class="code hl_variable" href="classmapgen__basic__container.html#a14e8874d7e6e21ee24d31571d5e1af66">weights_</a> ) {</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>                mapgen_function_ptr.obj-&gt;check( key );</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>            }</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>        }</div>
+<div class="ttc" id="aclassmapgen__basic__container_html_a14e8874d7e6e21ee24d31571d5e1af66"><div class="ttname"><a href="classmapgen__basic__container.html#a14e8874d7e6e21ee24d31571d5e1af66">mapgen_basic_container::weights_</a></div><div class="ttdeci">weighted_int_list&lt; std::shared_ptr&lt; mapgen_function &gt; &gt; weights_</div><div class="ttdef"><b>Definition:</b> <a href="mapgen_8cpp_source.html#l00227">mapgen.cpp:227</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="mapgen_8cpp_source.html#l00225">weights_</a>.</p>
+<p class="reference">References <a class="el" href="mapgen_8cpp_source.html#l00227">weights_</a>.</p>
 
 </div>
 </div>
@@ -226,23 +231,23 @@ Private Attributes</h2></td></tr>
 <p>Pick a mapgen function randomly and call its generate function. </p>
 <p >This basically runs the mapgen functions with the given <a class="el" href="classmapgendata.html">mapgendata</a> as argument. </p><dl class="section return"><dt>Returns</dt><dd>Whether the mapgen function has been run. It may not get run if the list of mapgen functions is effectively empty. <code>hardcoded_weight</code> Weight for an additional entry. If that entry is chosen, false is returned. If unsure, just use 0 for it. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="mapgen_8cpp_source.html#l00242">242</a> of file <a class="el" href="mapgen_8cpp_source.html">mapgen.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>                                                                           {</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>            <span class="keywordflow">if</span>( hardcoded_weight &gt; 0 &amp;&amp;</div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>                <a class="code hl_function" href="artifact_8cpp.html#a70800e95389f34dd34186fafaea2a840">rng</a>( 1, <a class="code hl_variable" href="classmapgen__basic__container.html#a14e8874d7e6e21ee24d31571d5e1af66">weights_</a>.get_weight() + hardcoded_weight ) &gt; <a class="code hl_variable" href="classmapgen__basic__container.html#a14e8874d7e6e21ee24d31571d5e1af66">weights_</a>.get_weight() ) {</div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>            }</div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>            <span class="keyword">const</span> std::shared_ptr&lt;mapgen_function&gt; *<span class="keyword">const</span> <a class="code hl_function" href="fmtlib__format_8h.html#a36b7e236fa4242d8655b508bbebb697f">ptr</a> = <a class="code hl_variable" href="classmapgen__basic__container.html#a14e8874d7e6e21ee24d31571d5e1af66">weights_</a>.pick();</div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>            <span class="keywordflow">if</span>( !<a class="code hl_function" href="fmtlib__format_8h.html#a36b7e236fa4242d8655b508bbebb697f">ptr</a> ) {</div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>            }</div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>            assert( *<a class="code hl_function" href="fmtlib__format_8h.html#a36b7e236fa4242d8655b508bbebb697f">ptr</a> );</div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>            ( *ptr )-&gt;generate( dat );</div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>        }</div>
+<p class="definition">Definition at line <a class="el" href="mapgen_8cpp_source.html#l00247">247</a> of file <a class="el" href="mapgen_8cpp_source.html">mapgen.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>                                                                           {</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>            <span class="keywordflow">if</span>( hardcoded_weight &gt; 0 &amp;&amp;</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>                <a class="code hl_function" href="artifact_8cpp.html#a70800e95389f34dd34186fafaea2a840">rng</a>( 1, <a class="code hl_variable" href="classmapgen__basic__container.html#a14e8874d7e6e21ee24d31571d5e1af66">weights_</a>.get_weight() + hardcoded_weight ) &gt; <a class="code hl_variable" href="classmapgen__basic__container.html#a14e8874d7e6e21ee24d31571d5e1af66">weights_</a>.get_weight() ) {</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>            }</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>            <span class="keyword">const</span> std::shared_ptr&lt;mapgen_function&gt; *<span class="keyword">const</span> <a class="code hl_function" href="fmtlib__format_8h.html#a36b7e236fa4242d8655b508bbebb697f">ptr</a> = <a class="code hl_variable" href="classmapgen__basic__container.html#a14e8874d7e6e21ee24d31571d5e1af66">weights_</a>.pick();</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>            <span class="keywordflow">if</span>( !<a class="code hl_function" href="fmtlib__format_8h.html#a36b7e236fa4242d8655b508bbebb697f">ptr</a> ) {</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>            }</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>            assert( *<a class="code hl_function" href="fmtlib__format_8h.html#a36b7e236fa4242d8655b508bbebb697f">ptr</a> );</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>            ( *ptr )-&gt;generate( dat );</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>        }</div>
 <div class="ttc" id="aartifact_8cpp_html_a70800e95389f34dd34186fafaea2a840"><div class="ttname"><a href="artifact_8cpp.html#a70800e95389f34dd34186fafaea2a840">rng</a></div><div class="ttdeci">units::quantity&lt; V, B &gt; rng(const units::quantity&lt; V, B &gt; &amp;min, const units::quantity&lt; V, B &gt; &amp;max)</div><div class="ttdef"><b>Definition:</b> <a href="artifact_8cpp_source.html#l00032">artifact.cpp:32</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="fmtlib__format_8h_source.html#l04100">ptr()</a>, <a class="el" href="artifact_8cpp_source.html#l00032">rng()</a>, and <a class="el" href="mapgen_8cpp_source.html#l00225">weights_</a>.</p>
+<p class="reference">References <a class="el" href="fmtlib__format_8h_source.html#l04100">ptr()</a>, <a class="el" href="artifact_8cpp_source.html#l00032">rng()</a>, and <a class="el" href="mapgen_8cpp_source.html#l00227">weights_</a>.</p>
 
 </div>
 </div>
@@ -272,21 +277,21 @@ Private Attributes</h2></td></tr>
 <p>Calls <a class="el" href="classmapgen__function.html#addbbd9ff5f862ecb6cd082bc619a1eac">mapgen_function::setup</a> and sets up the internal weighted list using the <b>current</b> value of <a class="el" href="classmapgen__function.html#aefca2116d1f2eab2651df5efef134134">mapgen_function::weight</a>. </p>
 <p >This value may have changed since it was first added, so this is needed to recalculate the weighted list. </p>
 
-<p class="definition">Definition at line <a class="el" href="mapgen_8cpp_source.html#l00260">260</a> of file <a class="el" href="mapgen_8cpp_source.html">mapgen.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>                     {</div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>            <span class="keywordflow">for</span>( <span class="keyword">const</span> std::shared_ptr&lt;mapgen_function&gt; &amp;<a class="code hl_function" href="fmtlib__format_8h.html#a36b7e236fa4242d8655b508bbebb697f">ptr</a> : <a class="code hl_variable" href="classmapgen__basic__container.html#a06ec01b4dd9194a2d18cf282e4719630">mapgens_</a> ) {</div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>                <span class="keyword">const</span> <span class="keywordtype">int</span> weight = <a class="code hl_function" href="fmtlib__format_8h.html#a36b7e236fa4242d8655b508bbebb697f">ptr</a>-&gt;weight;</div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>                <span class="keywordflow">if</span>( weight &lt; 1 ) {</div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>                    <span class="keywordflow">continue</span>; <span class="comment">// rejected!</span></div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>                }</div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>                <a class="code hl_variable" href="classmapgen__basic__container.html#a14e8874d7e6e21ee24d31571d5e1af66">weights_</a>.add( <a class="code hl_function" href="fmtlib__format_8h.html#a36b7e236fa4242d8655b508bbebb697f">ptr</a>, weight );</div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>                <a class="code hl_function" href="fmtlib__format_8h.html#a36b7e236fa4242d8655b508bbebb697f">ptr</a>-&gt;setup();</div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>            }</div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>            <span class="comment">// Not needed anymore, pointers are now stored in weights_ (or not used at all)</span></div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>            <a class="code hl_variable" href="classmapgen__basic__container.html#a06ec01b4dd9194a2d18cf282e4719630">mapgens_</a>.clear();</div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>        }</div>
+<p class="definition">Definition at line <a class="el" href="mapgen_8cpp_source.html#l00265">265</a> of file <a class="el" href="mapgen_8cpp_source.html">mapgen.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>                     {</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>            <span class="keywordflow">for</span>( <span class="keyword">const</span> std::shared_ptr&lt;mapgen_function&gt; &amp;<a class="code hl_function" href="fmtlib__format_8h.html#a36b7e236fa4242d8655b508bbebb697f">ptr</a> : <a class="code hl_variable" href="classmapgen__basic__container.html#a06ec01b4dd9194a2d18cf282e4719630">mapgens_</a> ) {</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>                <span class="keyword">const</span> <span class="keywordtype">int</span> weight = <a class="code hl_function" href="fmtlib__format_8h.html#a36b7e236fa4242d8655b508bbebb697f">ptr</a>-&gt;weight;</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>                <span class="keywordflow">if</span>( weight &lt; 1 ) {</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>                    <span class="keywordflow">continue</span>; <span class="comment">// rejected!</span></div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>                }</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>                <a class="code hl_variable" href="classmapgen__basic__container.html#a14e8874d7e6e21ee24d31571d5e1af66">weights_</a>.add( <a class="code hl_function" href="fmtlib__format_8h.html#a36b7e236fa4242d8655b508bbebb697f">ptr</a>, weight );</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>                <a class="code hl_function" href="fmtlib__format_8h.html#a36b7e236fa4242d8655b508bbebb697f">ptr</a>-&gt;setup();</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>            }</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>            <span class="comment">// Not needed anymore, pointers are now stored in weights_ (or not used at all)</span></div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>            <a class="code hl_variable" href="classmapgen__basic__container.html#a06ec01b4dd9194a2d18cf282e4719630">mapgens_</a>.clear();</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>        }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="mapgen_8cpp_source.html#l00224">mapgens_</a>, <a class="el" href="fmtlib__format_8h_source.html#l04100">ptr()</a>, and <a class="el" href="mapgen_8cpp_source.html#l00225">weights_</a>.</p>
+<p class="reference">References <a class="el" href="mapgen_8cpp_source.html#l00226">mapgens_</a>, <a class="el" href="fmtlib__format_8h_source.html#l04100">ptr()</a>, and <a class="el" href="mapgen_8cpp_source.html#l00227">weights_</a>.</p>
 
 </div>
 </div>
@@ -311,9 +316,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mapgen_8cpp_source.html#l00224">224</a> of file <a class="el" href="mapgen_8cpp_source.html">mapgen.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mapgen_8cpp_source.html#l00226">226</a> of file <a class="el" href="mapgen_8cpp_source.html">mapgen.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mapgen_8cpp_source.html#l00228">add()</a>, and <a class="el" href="mapgen_8cpp_source.html#l00260">setup()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mapgen_8cpp_source.html#l00230">add()</a>, and <a class="el" href="mapgen_8cpp_source.html#l00265">setup()</a>.</p>
 
 </div>
 </div>
@@ -337,9 +342,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mapgen_8cpp_source.html#l00225">225</a> of file <a class="el" href="mapgen_8cpp_source.html">mapgen.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mapgen_8cpp_source.html#l00227">227</a> of file <a class="el" href="mapgen_8cpp_source.html">mapgen.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mapgen_8cpp_source.html#l00272">check_consistency()</a>, <a class="el" href="mapgen_8cpp_source.html#l00242">generate()</a>, and <a class="el" href="mapgen_8cpp_source.html#l00260">setup()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mapgen_8cpp_source.html#l00277">check_consistency()</a>, <a class="el" href="mapgen_8cpp_source.html#l00247">generate()</a>, and <a class="el" href="mapgen_8cpp_source.html#l00265">setup()</a>.</p>
 
 </div>
 </div>
@@ -352,7 +357,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classmapgen__basic__container.html">mapgen_basic_container</a></li>
-    <li class="footer">Generated on Wed Oct 19 2022 14:19:39 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Mon Dec 26 2022 21:42:08 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

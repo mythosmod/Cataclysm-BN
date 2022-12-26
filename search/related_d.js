@@ -8,7 +8,7 @@ var searchData=
   ['species_5ftype_5',['species_type',['../classMonsterGenerator.html#ad489c1b628871dc6087eb59a5b4d4440',1,'MonsterGenerator']]],
   ['spell_5fevents_6',['spell_events',['../classspell.html#ac3848cd810ab2c4e7774f21886663f39',1,'spell']]],
   ['stats_5ftracker_7',['stats_tracker',['../classbase__watcher.html#ab8288bbb36c2fe9e838dc459dd8d2728',1,'base_watcher']]],
-  ['string_5fformatter_5fset_5ftemp_5fbuffer_8',['string_formatter_set_temp_buffer',['../classcata_1_1string__formatter.html#ad1ed7b827bc202447a7f58de0bf6f6a3',1,'cata::string_formatter']]],
+  ['string_5fformatter_5fset_5ftemp_5fbuffer_8',['string_formatter_set_temp_buffer',['../classcata_1_1string__formatter.html#a56c7ddb6aaf53ac83433011ed450daf5',1,'cata::string_formatter']]],
   ['string_5fid_9',['string_id',['../classstring__identity__static.html#ad13d9f22fdcf03988609c4bfa7ad9af4',1,'string_identity_static::string_id()'],['../classstring__identity__dynamic.html#ad13d9f22fdcf03988609c4bfa7ad9af4',1,'string_identity_dynamic::string_id()']]],
   ['string_5fid_3c_20mattack_5factor_20_3e_10',['string_id&lt; mattack_actor &gt;',['../classMonsterGenerator.html#a48153c2b30a3cb8b93fb5c96228cfd4a',1,'MonsterGenerator']]],
   ['string_5fid_3c_20mtype_20_3e_11',['string_id&lt; mtype &gt;',['../classMonsterGenerator.html#a48cf71cf8d3d2b8e17ce952b56f85fa5',1,'MonsterGenerator']]],

@@ -71,7 +71,9 @@ var namespacedebug__menu =
       [ "DEBUG_TEST_MAP_EXTRA_DISTRIBUTION", "namespacedebug__menu.html#a7457e58c3bc9fcf28b9c23cdab4df970a997eafac44d62e80ad301b8277d4aff2", null ],
       [ "DEBUG_VEHICLE_BATTERY_CHARGE", "namespacedebug__menu.html#a7457e58c3bc9fcf28b9c23cdab4df970a25fea886bbf405d086665076ef67aeab", null ],
       [ "DEBUG_HOUR_TIMER", "namespacedebug__menu.html#a7457e58c3bc9fcf28b9c23cdab4df970a8121aae5201157c65682232a41069f32", null ],
-      [ "DEBUG_NESTED_MAPGEN", "namespacedebug__menu.html#a7457e58c3bc9fcf28b9c23cdab4df970aa8a9ea29bed60dde8e5fb5a1b0bd0e71", null ]
+      [ "DEBUG_NESTED_MAPGEN", "namespacedebug__menu.html#a7457e58c3bc9fcf28b9c23cdab4df970aa8a9ea29bed60dde8e5fb5a1b0bd0e71", null ],
+      [ "DEBUG_RESET_IGNORED_MESSAGES", "namespacedebug__menu.html#a7457e58c3bc9fcf28b9c23cdab4df970aabf69be8eaccd0f2b2a65abb90c826cf", null ],
+      [ "DEBUG_RELOAD_TILES", "namespacedebug__menu.html#a7457e58c3bc9fcf28b9c23cdab4df970a3e935ab36e9171ab2f376e030ec4838e", null ]
     ] ],
     [ "add_header", "namespacedebug__menu.html#adaed30e5f02eb35cd72017cfdc36529d", null ],
     [ "benchmark", "namespacedebug__menu.html#a7ee08848af5ea09ea0bcfc849cc34f4d", null ],

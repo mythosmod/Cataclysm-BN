@@ -62,6 +62,8 @@ var mapdata_8h =
       [ "TFLAG_Z_TRANSPARENT", "mapdata_8h.html#aa04d037303ea30193f7cf0cd82304258ac879880e4d2fad138c54ef7629f12d6d", null ],
       [ "TFLAG_SUN_ROOF_ABOVE", "mapdata_8h.html#aa04d037303ea30193f7cf0cd82304258a6b3b1ac7b552feaa3c827d5705fade78", null ],
       [ "TFLAG_SUSPENDED", "mapdata_8h.html#aa04d037303ea30193f7cf0cd82304258a2a438fcf02f4d0e3cb4bff7196e22e0d", null ],
+      [ "TFLAG_FRIDGE", "mapdata_8h.html#aa04d037303ea30193f7cf0cd82304258a5de6eb8938be0be12457f3487fefc5fd", null ],
+      [ "TFLAG_FREEZER", "mapdata_8h.html#aa04d037303ea30193f7cf0cd82304258a04ca2fb5756f4bc14502c085742ef755", null ],
       [ "NUM_TERFLAGS", "mapdata_8h.html#aa04d037303ea30193f7cf0cd82304258ac71b834a9a68c80d712bd6cd400edb51", null ]
     ] ],
     [ "ter_connects", "mapdata_8h.html#ad5c8dd765ceb58f8e211d3158f4df4ce", [
@@ -122,6 +124,7 @@ var mapdata_8h =
     [ "f_firering", "mapdata_8h.html#acd1ca152796969e88eb41a555215b8fc", null ],
     [ "f_flower_fungal", "mapdata_8h.html#af40460921c42b6a0ee06e43badd3845b", null ],
     [ "f_flower_marloss", "mapdata_8h.html#aed4e9b5d39114b077bf7be3cebe9bff9", null ],
+    [ "f_freezer", "mapdata_8h.html#aecb96f519c1fdb389ea1117b92298c17", null ],
     [ "f_fridge", "mapdata_8h.html#a0f3bfa1e3280401b03d70d1a7b56db1a", null ],
     [ "f_fridge_on", "mapdata_8h.html#ab4fb1da6c9b6237ebe8c0704c6b5cc7e", null ],
     [ "f_fungal_clump", "mapdata_8h.html#a452bddc43ea78ef23ab27a5911c10294", null ],

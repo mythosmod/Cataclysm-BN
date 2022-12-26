@@ -91,6 +91,7 @@ var namespacedetail =
     [ "locale_ref", "classdetail_1_1locale__ref.html", "classdetail_1_1locale__ref" ],
     [ "make_unsigned_or_bool", "structdetail_1_1make__unsigned__or__bool.html", null ],
     [ "make_unsigned_or_bool< bool >", "structdetail_1_1make__unsigned__or__bool_3_01bool_01_4.html", "structdetail_1_1make__unsigned__or__bool_3_01bool_01_4" ],
+    [ "mutations_ui_result", "structdetail_1_1mutations__ui__result.html", "structdetail_1_1mutations__ui__result" ],
     [ "named_arg", "structdetail_1_1named__arg.html", "structdetail_1_1named__arg" ],
     [ "named_arg_info", "structdetail_1_1named__arg__info.html", "structdetail_1_1named__arg__info" ],
     [ "named_arg_value", "structdetail_1_1named__arg__value.html", "structdetail_1_1named__arg__value" ],
@@ -148,6 +149,11 @@ var namespacedetail =
       [ "exp", "namespacedetail.html#a6d3fb50aed591a58636fa8e2b39222f9ab0ab0254bd58eb87eaee3172ba49fefb", null ],
       [ "fixed", "namespacedetail.html#a6d3fb50aed591a58636fa8e2b39222f9acec315e3d0975e5cc2811d5d8725f149", null ],
       [ "hex", "namespacedetail.html#a6d3fb50aed591a58636fa8e2b39222f9ab8d1b43eae73587ba56baef574709ecb", null ]
+    ] ],
+    [ "mutations_ui_cmd", "namespacedetail.html#a89a6ead77427b27fdb713df77aa556e5", [
+      [ "exit", "namespacedetail.html#a89a6ead77427b27fdb713df77aa556e5af24f62eeb789199b9b2e467df3b1876b", null ],
+      [ "activate", "namespacedetail.html#a89a6ead77427b27fdb713df77aa556e5ad4ee0fbbeb7ffd4fd7a7d477a7ecd922", null ],
+      [ "deactivate", "namespacedetail.html#a89a6ead77427b27fdb713df77aa556e5a822509d77d8e4544ec4701e7474f262e", null ]
     ] ],
     [ "round_direction", "namespacedetail.html#a85c22d2ea092a6b8340cec5779f4f2e7", [
       [ "unknown", "namespacedetail.html#a85c22d2ea092a6b8340cec5779f4f2e7aad921d60486366258809553a3db49a4a", null ],
@@ -305,8 +311,8 @@ var namespacedetail =
     [ "num_bits< uint128_t >", "namespacedetail.html#a511b40f74044a6a882f5f1d0fbf1c8f2", null ],
     [ "operator*", "namespacedetail.html#a5f2429037339f44b8d88e7ccf7ae6347", null ],
     [ "operator<<", "namespacedetail.html#a7a0376e2fc294a1f6660704c9f5d8efb", null ],
-    [ "operator<<", "namespacedetail.html#a649f78c760a4b6c1934ab0bb59ad432b", null ],
     [ "operator<<", "namespacedetail.html#a1ce5844a002c0c15253b91f7ffae5729", null ],
+    [ "operator<<", "namespacedetail.html#a649f78c760a4b6c1934ab0bb59ad432b", null ],
     [ "operator<<", "namespacedetail.html#a8dc9dbf2ac6c18173148a35ea3e6f8c2", null ],
     [ "operator<<", "namespacedetail.html#a6717b2662168acee70dfbbdd3168adf4", null ],
     [ "operator==", "namespacedetail.html#aa603b042d25caa96cdd2e68d95948651", null ],
@@ -328,6 +334,7 @@ var namespacedetail =
     [ "reserve", "namespacedetail.html#a5c820774747b9d34fb7be1f4c93759b3", null ],
     [ "reserve", "namespacedetail.html#a12a728bda9b040be8f930a4bf5da1ff2", null ],
     [ "safe_strerror", "namespacedetail.html#aa71ecd972732f43e5f70513ddb1840da", null ],
+    [ "show_mutations_ui_internal", "namespacedetail.html#a2c77188a1a05233c03dca2b84f38856b", null ],
     [ "snprintf_float", "namespacedetail.html#ac48b151679acc0a670246a8b564d7d6a", null ],
     [ "snprintf_float", "namespacedetail.html#a0377922f56cb72597223fa7bc55545d0", null ],
     [ "snprintf_float< double >", "namespacedetail.html#a228d20c6f5177f877c9a3178a55c8732", null ],

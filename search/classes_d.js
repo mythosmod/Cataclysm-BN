@@ -117,7 +117,9 @@ var searchData=
   ['mutagen_5fiv_5factor_114',['mutagen_iv_actor',['../classmutagen__iv__actor.html',1,'']]],
   ['mutation_5fbranch_115',['mutation_branch',['../structmutation__branch.html',1,'']]],
   ['mutation_5fcategory_5ftrait_116',['mutation_category_trait',['../structmutation__category__trait.html',1,'']]],
-  ['mutation_5fdata_117',['mutation_data',['../structplayer__morale_1_1mutation__data.html',1,'player_morale']]],
-  ['mutation_5ftype_118',['mutation_type',['../structmutation__type.html',1,'']]],
-  ['mvwzstr_119',['mvwzstr',['../structmvwzstr.html',1,'']]]
+  ['mutation_5fcollection_117',['mutation_collection',['../structmutation__collection.html',1,'']]],
+  ['mutation_5fdata_118',['mutation_data',['../structplayer__morale_1_1mutation__data.html',1,'player_morale']]],
+  ['mutation_5ftype_119',['mutation_type',['../structmutation__type.html',1,'']]],
+  ['mutations_5fui_5fresult_120',['mutations_ui_result',['../structdetail_1_1mutations__ui__result.html',1,'detail']]],
+  ['mvwzstr_121',['mvwzstr',['../structmvwzstr.html',1,'']]]
 ];

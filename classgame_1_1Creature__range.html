@@ -124,7 +124,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="game_8h_source.html#l00422">422</a> of file <a class="el" href="game_8h_source.html">game.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="game_8h_source.html#l00396">396</a> of file <a class="el" href="game_8h_source.html">game.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aabf9a71793d5378b714b5dd518e36587" name="aabf9a71793d5378b714b5dd518e36587"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aabf9a71793d5378b714b5dd518e36587">&#9670;&nbsp;</a></span>Creature_range()</h2>
@@ -142,20 +142,20 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="game_8cpp_source.html#l12047">12047</a> of file <a class="el" href="game_8cpp_source.html">game.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l12047" name="l12047"></a><span class="lineno">12047</span>                                                   : <a class="code hl_variable" href="classgame_1_1Creature__range.html#a328dd713ce4af6488b12d420aac21f11">u</a>( &amp;game_ref.<a class="code hl_variable" href="classgame.html#ab9c32601ae80bf3d1c86a3fdf0236202">u</a>, []( <a class="code hl_class" href="classplayer.html">player</a> * ) { } )</div>
-<div class="line"><a id="l12048" name="l12048"></a><span class="lineno">12048</span>{</div>
-<div class="line"><a id="l12049" name="l12049"></a><span class="lineno">12049</span>    <span class="keyword">const</span> <span class="keyword">auto</span> &amp;monsters = game_ref.<a class="code hl_variable" href="classgame.html#a266f6462fecf0ab0b89617da5a07175e">critter_tracker</a>-&gt;get_monsters_list();</div>
-<div class="line"><a id="l12050" name="l12050"></a><span class="lineno">12050</span>    <a class="code hl_variable" href="classgame_1_1non__dead__range.html#ad66b379ac4ec84ced4e21b007a94dfdd">items</a>.insert( <a class="code hl_variable" href="classgame_1_1non__dead__range.html#ad66b379ac4ec84ced4e21b007a94dfdd">items</a>.end(), monsters.begin(), monsters.end() );</div>
-<div class="line"><a id="l12051" name="l12051"></a><span class="lineno">12051</span>    <a class="code hl_variable" href="classgame_1_1non__dead__range.html#ad66b379ac4ec84ced4e21b007a94dfdd">items</a>.insert( <a class="code hl_variable" href="classgame_1_1non__dead__range.html#ad66b379ac4ec84ced4e21b007a94dfdd">items</a>.end(), game_ref.<a class="code hl_variable" href="classgame.html#a6e39c5592716633472b8d1d781c85730">active_npc</a>.begin(), game_ref.<a class="code hl_variable" href="classgame.html#a6e39c5592716633472b8d1d781c85730">active_npc</a>.end() );</div>
-<div class="line"><a id="l12052" name="l12052"></a><span class="lineno">12052</span>    <a class="code hl_variable" href="classgame_1_1non__dead__range.html#ad66b379ac4ec84ced4e21b007a94dfdd">items</a>.push_back( <a class="code hl_variable" href="classgame_1_1Creature__range.html#a328dd713ce4af6488b12d420aac21f11">u</a> );</div>
-<div class="line"><a id="l12053" name="l12053"></a><span class="lineno">12053</span>}</div>
-<div class="ttc" id="aclassgame_1_1Creature__range_html_a328dd713ce4af6488b12d420aac21f11"><div class="ttname"><a href="classgame_1_1Creature__range.html#a328dd713ce4af6488b12d420aac21f11">game::Creature_range::u</a></div><div class="ttdeci">shared_ptr_fast&lt; player &gt; u</div><div class="ttdef"><b>Definition:</b> <a href="game_8h_source.html#l00425">game.h:425</a></div></div>
-<div class="ttc" id="aclassgame_1_1non__dead__range_html_ad66b379ac4ec84ced4e21b007a94dfdd"><div class="ttname"><a href="classgame_1_1non__dead__range.html#ad66b379ac4ec84ced4e21b007a94dfdd">game::non_dead_range&lt; Creature &gt;::items</a></div><div class="ttdeci">std::vector&lt; weak_ptr_fast&lt; Creature &gt; &gt; items</div><div class="ttdef"><b>Definition:</b> <a href="game_8h_source.html#l00366">game.h:366</a></div></div>
-<div class="ttc" id="aclassgame_html_a266f6462fecf0ab0b89617da5a07175e"><div class="ttname"><a href="classgame.html#a266f6462fecf0ab0b89617da5a07175e">game::critter_tracker</a></div><div class="ttdeci">pimpl&lt; Creature_tracker &gt; critter_tracker</div><div class="ttdef"><b>Definition:</b> <a href="game_8h_source.html#l00994">game.h:994</a></div></div>
-<div class="ttc" id="aclassgame_html_a6e39c5592716633472b8d1d781c85730"><div class="ttname"><a href="classgame.html#a6e39c5592716633472b8d1d781c85730">game::active_npc</a></div><div class="ttdeci">std::list&lt; shared_ptr_fast&lt; npc &gt; &gt; active_npc</div><div class="ttdef"><b>Definition:</b> <a href="game_8h_source.html#l01058">game.h:1058</a></div></div>
-<div class="ttc" id="aclassgame_html_ab9c32601ae80bf3d1c86a3fdf0236202"><div class="ttname"><a href="classgame.html#ab9c32601ae80bf3d1c86a3fdf0236202">game::u</a></div><div class="ttdeci">avatar &amp; u</div><div class="ttdef"><b>Definition:</b> <a href="game_8h_source.html#l00985">game.h:985</a></div></div>
-<div class="ttc" id="aclassplayer_html"><div class="ttname"><a href="classplayer.html">player</a></div><div class="ttdef"><b>Definition:</b> <a href="player_8h_source.html#l00089">player.h:90</a></div></div>
+<p class="definition">Definition at line <a class="el" href="game_8cpp_source.html#l11923">11923</a> of file <a class="el" href="game_8cpp_source.html">game.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l11923" name="l11923"></a><span class="lineno">11923</span>                                                   : <a class="code hl_variable" href="classgame_1_1Creature__range.html#a328dd713ce4af6488b12d420aac21f11">u</a>( &amp;game_ref.<a class="code hl_variable" href="classgame.html#ab9c32601ae80bf3d1c86a3fdf0236202">u</a>, []( <a class="code hl_class" href="classplayer.html">player</a> * ) { } )</div>
+<div class="line"><a id="l11924" name="l11924"></a><span class="lineno">11924</span>{</div>
+<div class="line"><a id="l11925" name="l11925"></a><span class="lineno">11925</span>    <span class="keyword">const</span> <span class="keyword">auto</span> &amp;monsters = game_ref.<a class="code hl_variable" href="classgame.html#a266f6462fecf0ab0b89617da5a07175e">critter_tracker</a>-&gt;get_monsters_list();</div>
+<div class="line"><a id="l11926" name="l11926"></a><span class="lineno">11926</span>    <a class="code hl_variable" href="classgame_1_1non__dead__range.html#ad66b379ac4ec84ced4e21b007a94dfdd">items</a>.insert( <a class="code hl_variable" href="classgame_1_1non__dead__range.html#ad66b379ac4ec84ced4e21b007a94dfdd">items</a>.end(), monsters.begin(), monsters.end() );</div>
+<div class="line"><a id="l11927" name="l11927"></a><span class="lineno">11927</span>    <a class="code hl_variable" href="classgame_1_1non__dead__range.html#ad66b379ac4ec84ced4e21b007a94dfdd">items</a>.insert( <a class="code hl_variable" href="classgame_1_1non__dead__range.html#ad66b379ac4ec84ced4e21b007a94dfdd">items</a>.end(), game_ref.<a class="code hl_variable" href="classgame.html#a6e39c5592716633472b8d1d781c85730">active_npc</a>.begin(), game_ref.<a class="code hl_variable" href="classgame.html#a6e39c5592716633472b8d1d781c85730">active_npc</a>.end() );</div>
+<div class="line"><a id="l11928" name="l11928"></a><span class="lineno">11928</span>    <a class="code hl_variable" href="classgame_1_1non__dead__range.html#ad66b379ac4ec84ced4e21b007a94dfdd">items</a>.push_back( <a class="code hl_variable" href="classgame_1_1Creature__range.html#a328dd713ce4af6488b12d420aac21f11">u</a> );</div>
+<div class="line"><a id="l11929" name="l11929"></a><span class="lineno">11929</span>}</div>
+<div class="ttc" id="aclassgame_1_1Creature__range_html_a328dd713ce4af6488b12d420aac21f11"><div class="ttname"><a href="classgame_1_1Creature__range.html#a328dd713ce4af6488b12d420aac21f11">game::Creature_range::u</a></div><div class="ttdeci">shared_ptr_fast&lt; player &gt; u</div><div class="ttdef"><b>Definition:</b> <a href="game_8h_source.html#l00399">game.h:399</a></div></div>
+<div class="ttc" id="aclassgame_1_1non__dead__range_html_ad66b379ac4ec84ced4e21b007a94dfdd"><div class="ttname"><a href="classgame_1_1non__dead__range.html#ad66b379ac4ec84ced4e21b007a94dfdd">game::non_dead_range&lt; Creature &gt;::items</a></div><div class="ttdeci">std::vector&lt; weak_ptr_fast&lt; Creature &gt; &gt; items</div><div class="ttdef"><b>Definition:</b> <a href="game_8h_source.html#l00340">game.h:340</a></div></div>
+<div class="ttc" id="aclassgame_html_a266f6462fecf0ab0b89617da5a07175e"><div class="ttname"><a href="classgame.html#a266f6462fecf0ab0b89617da5a07175e">game::critter_tracker</a></div><div class="ttdeci">pimpl&lt; Creature_tracker &gt; critter_tracker</div><div class="ttdef"><b>Definition:</b> <a href="game_8h_source.html#l00973">game.h:973</a></div></div>
+<div class="ttc" id="aclassgame_html_a6e39c5592716633472b8d1d781c85730"><div class="ttname"><a href="classgame.html#a6e39c5592716633472b8d1d781c85730">game::active_npc</a></div><div class="ttdeci">std::list&lt; shared_ptr_fast&lt; npc &gt; &gt; active_npc</div><div class="ttdef"><b>Definition:</b> <a href="game_8h_source.html#l01037">game.h:1037</a></div></div>
+<div class="ttc" id="aclassgame_html_ab9c32601ae80bf3d1c86a3fdf0236202"><div class="ttname"><a href="classgame.html#ab9c32601ae80bf3d1c86a3fdf0236202">game::u</a></div><div class="ttdeci">avatar &amp; u</div><div class="ttdef"><b>Definition:</b> <a href="game_8h_source.html#l00964">game.h:964</a></div></div>
+<div class="ttc" id="aclassplayer_html"><div class="ttname"><a href="classplayer.html">player</a></div><div class="ttdef"><b>Definition:</b> <a href="player_8h_source.html#l00083">player.h:84</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -180,7 +180,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="game_8h_source.html#l00425">425</a> of file <a class="el" href="game_8h_source.html">game.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="game_8h_source.html#l00399">399</a> of file <a class="el" href="game_8h_source.html">game.h</a>.</p>
 
 </div>
 </div>
@@ -194,7 +194,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classgame.html">game</a></li><li class="navelem"><a class="el" href="classgame_1_1Creature__range.html">Creature_range</a></li>
-    <li class="footer">Generated on Wed Oct 19 2022 14:19:32 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Mon Dec 26 2022 21:42:03 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

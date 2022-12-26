@@ -23,5 +23,6 @@ var searchData=
   ['mutagen_5frejection_20',['mutagen_rejection',['../mutation_8h.html#a034ae5e964e0a02c1de845df8b031755',1,'mutation.h']]],
   ['mutagen_5ftechnique_21',['mutagen_technique',['../mutation_8h.html#a2012fbeb10f692e9f86dfe9590e27849',1,'mutation.h']]],
   ['mutation_5fmenu_5fmode_22',['mutation_menu_mode',['../mutation__ui_8cpp.html#afaa5795d732cc701e687f01178799df1',1,'mutation_ui.cpp']]],
-  ['mutation_5ftab_5fmode_23',['mutation_tab_mode',['../mutation__ui_8cpp.html#a402f65070aa900e68cd18960d2685a76',1,'mutation_ui.cpp']]]
+  ['mutation_5ftab_5fmode_23',['mutation_tab_mode',['../mutation__ui_8cpp.html#a402f65070aa900e68cd18960d2685a76',1,'mutation_ui.cpp']]],
+  ['mutations_5fui_5fcmd_24',['mutations_ui_cmd',['../namespacedetail.html#a89a6ead77427b27fdb713df77aa556e5',1,'detail']]]
 ];

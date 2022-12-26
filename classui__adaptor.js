@@ -1,10 +1,12 @@
 var classui__adaptor =
 [
+    [ "debug_message_ui", "structui__adaptor_1_1debug__message__ui.html", null ],
     [ "disable_uis_below", "structui__adaptor_1_1disable__uis__below.html", null ],
     [ "redraw_callback_t", "classui__adaptor.html#a0b1cb5fdb03979bd672369acda9cdfb6", null ],
     [ "screen_resize_callback_t", "classui__adaptor.html#a7ef118f755b5a13bcb087b2fdfd76667", null ],
     [ "ui_adaptor", "classui__adaptor.html#ae84e02f9bb8f2f4b9773ccce12100301", null ],
     [ "ui_adaptor", "classui__adaptor.html#ae6e9a3218af06bcdb6e6f9a63e83ece7", null ],
+    [ "ui_adaptor", "classui__adaptor.html#a803f9bf3eafa0bc221eb96d3015c7837", null ],
     [ "ui_adaptor", "classui__adaptor.html#a3d5a0fa7c5fde4cf9098791b467710aa", null ],
     [ "ui_adaptor", "classui__adaptor.html#a0c81ceb5d8bd65b375ae4945970c9b0c", null ],
     [ "~ui_adaptor", "classui__adaptor.html#ac1ff6aab4edf19789f6365f95b9f5df2", null ],
@@ -26,6 +28,7 @@ var classui__adaptor =
     [ "dimensions", "classui__adaptor.html#ae983b5ab574c4215b081fbca9dc5a622", null ],
     [ "disabling_uis_below", "classui__adaptor.html#a3f7b701ff728ad1fe090bf94307ffb19", null ],
     [ "invalidated", "classui__adaptor.html#acca9f748919459f9540b84c1822131b7", null ],
+    [ "is_debug_message_ui", "classui__adaptor.html#a989ffd15abf5a44a5315db2aa30fd264", null ],
     [ "redraw_cb", "classui__adaptor.html#ac51c1f116f3c71096a42341740601e27", null ],
     [ "screen_resized_cb", "classui__adaptor.html#a6a36c79a26629029ae86572445b52b14", null ]
 ];

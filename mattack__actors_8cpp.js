@@ -1,5 +1,6 @@
 var mattack__actors_8cpp =
 [
+    [ "find_target_vehicle", "mattack__actors_8cpp.html#af9ec2b31a42b3bf3627529b4e6db4f97", null ],
     [ "is_adjacent", "mattack__actors_8cpp.html#ad267f9f78e1f711376af69afb1403db2", null ],
     [ "effect_badpoison", "mattack__actors_8cpp.html#a0f3a25eb2b398fd705348436a034da00", null ],
     [ "effect_bite", "mattack__actors_8cpp.html#a39b21fc30fecd7d4fb15047600d03522", null ],

@@ -86,7 +86,9 @@ $(document).ready(function(){initNavTree('init_8h.html',''); initResizable(); })
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">init.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -98,6 +100,7 @@ $(document).ready(function(){initNavTree('init_8h.html',''); initResizable(); })
 <code>#include &lt;utility&gt;</code><br />
 <code>#include &quot;<a class="el" href="json_8h_source.html">json.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="memory__fast_8h_source.html">memory_fast.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="type__id_8h_source.html">type_id.h</a>&quot;</code><br />
 </div>
 <p><a href="init_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -107,10 +110,33 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class is used to load (and unload) the dynamic (and moddable) data from json files.  <a href="classDynamicDataLoader.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespaceinit"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinit.html">init</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a0c35b9ac0fec8128b495684e634747b0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8h.html#a0c35b9ac0fec8128b495684e634747b0">CATA_SRC_INIT_H</a></td></tr>
 <tr class="separator:a0c35b9ac0fec8128b495684e634747b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:adfd08e6d89eb52f3404a9bb47f0f6fa7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinit.html#adfd08e6d89eb52f3404a9bb47f0f6fa7">init::is_data_loaded</a> ()</td></tr>
+<tr class="memdesc:adfd08e6d89eb52f3404a9bb47f0f6fa7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the game data is currently loaded.  <a href="namespaceinit.html#adfd08e6d89eb52f3404a9bb47f0f6fa7">More...</a><br /></td></tr>
+<tr class="separator:adfd08e6d89eb52f3404a9bb47f0f6fa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c0940fb41394700d2b04313098d8204"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinit.html#a4c0940fb41394700d2b04313098d8204">init::load_core_bn_modfiles</a> ()</td></tr>
+<tr class="memdesc:a4c0940fb41394700d2b04313098d8204"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load &amp; finalize modlist that consists of single vanilla BN core "mod".  <a href="namespaceinit.html#a4c0940fb41394700d2b04313098d8204">More...</a><br /></td></tr>
+<tr class="separator:a4c0940fb41394700d2b04313098d8204"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd5d92dc3d9cc02dd46330831b163372"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinit.html#abd5d92dc3d9cc02dd46330831b163372">init::load_world_modfiles</a> (<a class="el" href="classloading__ui.html">loading_ui</a> &amp;ui, const std::string &amp;artifacts_file)</td></tr>
+<tr class="memdesc:abd5d92dc3d9cc02dd46330831b163372"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load &amp; finalize modlist needed for the current world.  <a href="namespaceinit.html#abd5d92dc3d9cc02dd46330831b163372">More...</a><br /></td></tr>
+<tr class="separator:abd5d92dc3d9cc02dd46330831b163372"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ba37b679d394453119d20c691fd20d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinit.html#a8ba37b679d394453119d20c691fd20d9">init::load_soundpack_files</a> (const std::string &amp;soundpack_path)</td></tr>
+<tr class="memdesc:a8ba37b679d394453119d20c691fd20d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load soundpack.  <a href="namespaceinit.html#a8ba37b679d394453119d20c691fd20d9">More...</a><br /></td></tr>
+<tr class="separator:a8ba37b679d394453119d20c691fd20d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65d404eb71b025ce30265f7eb245a813"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinit.html#a65d404eb71b025ce30265f7eb245a813">init::check_mods_for_errors</a> (<a class="el" href="classloading__ui.html">loading_ui</a> &amp;ui, const std::vector&lt; <a class="el" href="type__id_8h.html#aabcbcb9fb77661ba75c47b6287318e03">mod_id</a> &gt; &amp;opts)</td></tr>
+<tr class="memdesc:a65d404eb71b025ce30265f7eb245a813"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check mods for errors.  <a href="namespaceinit.html#a65d404eb71b025ce30265f7eb245a813">More...</a><br /></td></tr>
+<tr class="separator:a65d404eb71b025ce30265f7eb245a813"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a0c35b9ac0fec8128b495684e634747b0" name="a0c35b9ac0fec8128b495684e634747b0"></a>
@@ -135,7 +161,7 @@ Macros</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="init_8h.html">init.h</a></li>
-    <li class="footer">Generated on Wed Oct 19 2022 14:19:18 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Mon Dec 26 2022 21:41:51 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

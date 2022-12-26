@@ -100,6 +100,7 @@ $(document).ready(function(){initNavTree('inventory_8cpp.html',''); initResizabl
 <code>#include &lt;memory&gt;</code><br />
 <code>#include &quot;<a class="el" href="avatar_8h_source.html">avatar.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="debug_8h_source.html">debug.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="diary_8h_source.html">diary.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="distribution__grid_8h_source.html">distribution_grid.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="game_8h_source.html">game.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="iexamine_8h_source.html">iexamine.h</a>&quot;</code><br />
@@ -203,20 +204,20 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="inventory_8cpp_source.html#l00462">462</a> of file <a class="el" href="inventory_8cpp_source.html">inventory.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00463" name="l00463"></a><span class="lineno">  463</span>{</div>
-<div class="line"><a id="l00464" name="l00464"></a><span class="lineno">  464</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <span class="keyword">auto</span> &amp;candidate : items ) {</div>
-<div class="line"><a id="l00465" name="l00465"></a><span class="lineno">  465</span>        <span class="keywordflow">if</span>( candidate.type == <a class="code hl_enumvalue" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a> ) {</div>
-<div class="line"><a id="l00466" name="l00466"></a><span class="lineno">  466</span>            <span class="keywordflow">return</span> candidate.charges;</div>
-<div class="line"><a id="l00467" name="l00467"></a><span class="lineno">  467</span>        }</div>
-<div class="line"><a id="l00468" name="l00468"></a><span class="lineno">  468</span>    }</div>
-<div class="line"><a id="l00469" name="l00469"></a><span class="lineno">  469</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a id="l00470" name="l00470"></a><span class="lineno">  470</span>}</div>
+<p class="definition">Definition at line <a class="el" href="inventory_8cpp_source.html#l00463">463</a> of file <a class="el" href="inventory_8cpp_source.html">inventory.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00464" name="l00464"></a><span class="lineno">  464</span>{</div>
+<div class="line"><a id="l00465" name="l00465"></a><span class="lineno">  465</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <span class="keyword">auto</span> &amp;candidate : items ) {</div>
+<div class="line"><a id="l00466" name="l00466"></a><span class="lineno">  466</span>        <span class="keywordflow">if</span>( candidate.type == <a class="code hl_enumvalue" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a> ) {</div>
+<div class="line"><a id="l00467" name="l00467"></a><span class="lineno">  467</span>            <span class="keywordflow">return</span> candidate.charges;</div>
+<div class="line"><a id="l00468" name="l00468"></a><span class="lineno">  468</span>        }</div>
+<div class="line"><a id="l00469" name="l00469"></a><span class="lineno">  469</span>    }</div>
+<div class="line"><a id="l00470" name="l00470"></a><span class="lineno">  470</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00471" name="l00471"></a><span class="lineno">  471</span>}</div>
 <div class="ttc" id="aenums_8h_html_ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab"><div class="ttname"><a href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a></div><div class="ttdeci">@ type</div><div class="ttdef"><b>Definition:</b> <a href="enums_8h_source.html#l00075">enums.h:75</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="enums_8h_source.html#l00075">type</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="inventory_8cpp_source.html#l00508">inventory::form_from_map()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="inventory_8cpp_source.html#l00509">inventory::form_from_map()</a>.</p>
 
 </div>
 </div>
@@ -244,7 +245,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="inventory_8cpp_source.html#l00896">inventory::leak_level()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="inventory_8cpp_source.html#l00899">inventory::leak_level()</a>.</p>
 
 </div>
 </div>
@@ -272,7 +273,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="inventory_8cpp_source.html#l00896">inventory::leak_level()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="inventory_8cpp_source.html#l00899">inventory::leak_level()</a>.</p>
 
 </div>
 </div>
@@ -300,7 +301,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="inventory_8cpp_source.html#l00967">inventory::rust_iron_items()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="inventory_8cpp_source.html#l00970">inventory::rust_iron_items()</a>.</p>
 
 </div>
 </div>
@@ -328,7 +329,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="inventory_8cpp_source.html#l00967">inventory::rust_iron_items()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="inventory_8cpp_source.html#l00970">inventory::rust_iron_items()</a>.</p>
 
 </div>
 </div>
@@ -366,43 +367,43 @@ template&lt;typename F &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="inventory_8cpp_source.html#l01008">1008</a> of file <a class="el" href="inventory_8cpp_source.html">inventory.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01010" name="l01010"></a><span class="lineno"> 1010</span>{</div>
-<div class="line"><a id="l01011" name="l01011"></a><span class="lineno"> 1011</span>    <span class="comment">// Shortcut the logic in the common case where other is empty</span></div>
-<div class="line"><a id="l01012" name="l01012"></a><span class="lineno"> 1012</span>    <span class="keywordflow">if</span>( <a class="code hl_enumvalue" href="character_8h.html#a70a4eaaf64bcd7658f91bfb500492f5aa795f3202b17cb6bc3d4b771d8c6c9eaf">other</a>.empty() ) {</div>
-<div class="line"><a id="l01013" name="l01013"></a><span class="lineno"> 1013</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l01014" name="l01014"></a><span class="lineno"> 1014</span>    }</div>
-<div class="line"><a id="l01015" name="l01015"></a><span class="lineno"> 1015</span> </div>
-<div class="line"><a id="l01016" name="l01016"></a><span class="lineno"> 1016</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <span class="keyword">auto</span> &amp;elem : items ) {</div>
-<div class="line"><a id="l01017" name="l01017"></a><span class="lineno"> 1017</span>        <span class="keyword">const</span> <a class="code hl_class" href="classitem.html">item</a> &amp;representative = elem.front();</div>
-<div class="line"><a id="l01018" name="l01018"></a><span class="lineno"> 1018</span>        <span class="keyword">auto</span> other_it = <a class="code hl_enumvalue" href="character_8h.html#a70a4eaaf64bcd7658f91bfb500492f5aa795f3202b17cb6bc3d4b771d8c6c9eaf">other</a>.find( &amp;representative );</div>
-<div class="line"><a id="l01019" name="l01019"></a><span class="lineno"> 1019</span>        <span class="keywordflow">if</span>( other_it == <a class="code hl_enumvalue" href="character_8h.html#a70a4eaaf64bcd7658f91bfb500492f5aa795f3202b17cb6bc3d4b771d8c6c9eaf">other</a>.end() ) {</div>
-<div class="line"><a id="l01020" name="l01020"></a><span class="lineno"> 1020</span>            <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l01021" name="l01021"></a><span class="lineno"> 1021</span>        }</div>
-<div class="line"><a id="l01022" name="l01022"></a><span class="lineno"> 1022</span> </div>
-<div class="line"><a id="l01023" name="l01023"></a><span class="lineno"> 1023</span>        <span class="keywordtype">int</span> num_to_count = other_it-&gt;second;</div>
-<div class="line"><a id="l01024" name="l01024"></a><span class="lineno"> 1024</span>        <span class="keywordflow">if</span>( representative.<a class="code hl_function" href="classitem.html#a40963a016376016eb408bdb9dbb94388">count_by_charges</a>() ) {</div>
-<div class="line"><a id="l01025" name="l01025"></a><span class="lineno"> 1025</span>            <a class="code hl_class" href="classitem.html">item</a> copy = representative;</div>
-<div class="line"><a id="l01026" name="l01026"></a><span class="lineno"> 1026</span>            copy.<a class="code hl_variable" href="classitem.html#a6bfb92ab5d41e0eb3a1da160fac71b0e">charges</a> = std::min( copy.<a class="code hl_variable" href="classitem.html#a6bfb92ab5d41e0eb3a1da160fac71b0e">charges</a>, num_to_count );</div>
-<div class="line"><a id="l01027" name="l01027"></a><span class="lineno"> 1027</span>            f( copy );</div>
-<div class="line"><a id="l01028" name="l01028"></a><span class="lineno"> 1028</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l01029" name="l01029"></a><span class="lineno"> 1029</span>            <span class="keywordflow">for</span>( <span class="keyword">const</span> <span class="keyword">auto</span> &amp;elem_stack_iter : elem ) {</div>
-<div class="line"><a id="l01030" name="l01030"></a><span class="lineno"> 1030</span>                f( elem_stack_iter );</div>
-<div class="line"><a id="l01031" name="l01031"></a><span class="lineno"> 1031</span>                <span class="keywordflow">if</span>( --num_to_count &lt;= 0 ) {</div>
-<div class="line"><a id="l01032" name="l01032"></a><span class="lineno"> 1032</span>                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l01033" name="l01033"></a><span class="lineno"> 1033</span>                }</div>
-<div class="line"><a id="l01034" name="l01034"></a><span class="lineno"> 1034</span>            }</div>
-<div class="line"><a id="l01035" name="l01035"></a><span class="lineno"> 1035</span>        }</div>
-<div class="line"><a id="l01036" name="l01036"></a><span class="lineno"> 1036</span>    }</div>
-<div class="line"><a id="l01037" name="l01037"></a><span class="lineno"> 1037</span>}</div>
+<p class="definition">Definition at line <a class="el" href="inventory_8cpp_source.html#l01011">1011</a> of file <a class="el" href="inventory_8cpp_source.html">inventory.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01013" name="l01013"></a><span class="lineno"> 1013</span>{</div>
+<div class="line"><a id="l01014" name="l01014"></a><span class="lineno"> 1014</span>    <span class="comment">// Shortcut the logic in the common case where other is empty</span></div>
+<div class="line"><a id="l01015" name="l01015"></a><span class="lineno"> 1015</span>    <span class="keywordflow">if</span>( <a class="code hl_enumvalue" href="character_8h.html#a70a4eaaf64bcd7658f91bfb500492f5aa795f3202b17cb6bc3d4b771d8c6c9eaf">other</a>.empty() ) {</div>
+<div class="line"><a id="l01016" name="l01016"></a><span class="lineno"> 1016</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l01017" name="l01017"></a><span class="lineno"> 1017</span>    }</div>
+<div class="line"><a id="l01018" name="l01018"></a><span class="lineno"> 1018</span> </div>
+<div class="line"><a id="l01019" name="l01019"></a><span class="lineno"> 1019</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <span class="keyword">auto</span> &amp;elem : items ) {</div>
+<div class="line"><a id="l01020" name="l01020"></a><span class="lineno"> 1020</span>        <span class="keyword">const</span> <a class="code hl_class" href="classitem.html">item</a> &amp;representative = elem.front();</div>
+<div class="line"><a id="l01021" name="l01021"></a><span class="lineno"> 1021</span>        <span class="keyword">auto</span> other_it = <a class="code hl_enumvalue" href="character_8h.html#a70a4eaaf64bcd7658f91bfb500492f5aa795f3202b17cb6bc3d4b771d8c6c9eaf">other</a>.find( &amp;representative );</div>
+<div class="line"><a id="l01022" name="l01022"></a><span class="lineno"> 1022</span>        <span class="keywordflow">if</span>( other_it == <a class="code hl_enumvalue" href="character_8h.html#a70a4eaaf64bcd7658f91bfb500492f5aa795f3202b17cb6bc3d4b771d8c6c9eaf">other</a>.end() ) {</div>
+<div class="line"><a id="l01023" name="l01023"></a><span class="lineno"> 1023</span>            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l01024" name="l01024"></a><span class="lineno"> 1024</span>        }</div>
+<div class="line"><a id="l01025" name="l01025"></a><span class="lineno"> 1025</span> </div>
+<div class="line"><a id="l01026" name="l01026"></a><span class="lineno"> 1026</span>        <span class="keywordtype">int</span> num_to_count = other_it-&gt;second;</div>
+<div class="line"><a id="l01027" name="l01027"></a><span class="lineno"> 1027</span>        <span class="keywordflow">if</span>( representative.<a class="code hl_function" href="classitem.html#a40963a016376016eb408bdb9dbb94388">count_by_charges</a>() ) {</div>
+<div class="line"><a id="l01028" name="l01028"></a><span class="lineno"> 1028</span>            <a class="code hl_class" href="classitem.html">item</a> copy = representative;</div>
+<div class="line"><a id="l01029" name="l01029"></a><span class="lineno"> 1029</span>            copy.<a class="code hl_variable" href="classitem.html#a6bfb92ab5d41e0eb3a1da160fac71b0e">charges</a> = std::min( copy.<a class="code hl_variable" href="classitem.html#a6bfb92ab5d41e0eb3a1da160fac71b0e">charges</a>, num_to_count );</div>
+<div class="line"><a id="l01030" name="l01030"></a><span class="lineno"> 1030</span>            f( copy );</div>
+<div class="line"><a id="l01031" name="l01031"></a><span class="lineno"> 1031</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l01032" name="l01032"></a><span class="lineno"> 1032</span>            <span class="keywordflow">for</span>( <span class="keyword">const</span> <span class="keyword">auto</span> &amp;elem_stack_iter : elem ) {</div>
+<div class="line"><a id="l01033" name="l01033"></a><span class="lineno"> 1033</span>                f( elem_stack_iter );</div>
+<div class="line"><a id="l01034" name="l01034"></a><span class="lineno"> 1034</span>                <span class="keywordflow">if</span>( --num_to_count &lt;= 0 ) {</div>
+<div class="line"><a id="l01035" name="l01035"></a><span class="lineno"> 1035</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l01036" name="l01036"></a><span class="lineno"> 1036</span>                }</div>
+<div class="line"><a id="l01037" name="l01037"></a><span class="lineno"> 1037</span>            }</div>
+<div class="line"><a id="l01038" name="l01038"></a><span class="lineno"> 1038</span>        }</div>
+<div class="line"><a id="l01039" name="l01039"></a><span class="lineno"> 1039</span>    }</div>
+<div class="line"><a id="l01040" name="l01040"></a><span class="lineno"> 1040</span>}</div>
 <div class="ttc" id="acharacter_8h_html_a70a4eaaf64bcd7658f91bfb500492f5aa795f3202b17cb6bc3d4b771d8c6c9eaf"><div class="ttname"><a href="character_8h.html#a70a4eaaf64bcd7658f91bfb500492f5aa795f3202b17cb6bc3d4b771d8c6c9eaf">rechargeable_cbm::other</a></div><div class="ttdeci">@ other</div></div>
-<div class="ttc" id="aclassitem_html"><div class="ttname"><a href="classitem.html">item</a></div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l00175">item.h:176</a></div></div>
-<div class="ttc" id="aclassitem_html_a40963a016376016eb408bdb9dbb94388"><div class="ttname"><a href="classitem.html#a40963a016376016eb408bdb9dbb94388">item::count_by_charges</a></div><div class="ttdeci">bool count_by_charges() const</div><div class="ttdef"><b>Definition:</b> <a href="item_8cpp_source.html#l05876">item.cpp:5876</a></div></div>
-<div class="ttc" id="aclassitem_html_a6bfb92ab5d41e0eb3a1da160fac71b0e"><div class="ttname"><a href="classitem.html#a6bfb92ab5d41e0eb3a1da160fac71b0e">item::charges</a></div><div class="ttdeci">int charges</div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l02195">item.h:2195</a></div></div>
+<div class="ttc" id="aclassitem_html"><div class="ttname"><a href="classitem.html">item</a></div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l00176">item.h:177</a></div></div>
+<div class="ttc" id="aclassitem_html_a40963a016376016eb408bdb9dbb94388"><div class="ttname"><a href="classitem.html#a40963a016376016eb408bdb9dbb94388">item::count_by_charges</a></div><div class="ttdeci">bool count_by_charges() const</div><div class="ttdef"><b>Definition:</b> <a href="item_8cpp_source.html#l05890">item.cpp:5890</a></div></div>
+<div class="ttc" id="aclassitem_html_a6bfb92ab5d41e0eb3a1da160fac71b0e"><div class="ttname"><a href="classitem.html#a6bfb92ab5d41e0eb3a1da160fac71b0e">item::charges</a></div><div class="ttdeci">int charges</div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l02196">item.h:2196</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="item_8h_source.html#l02195">item::charges</a>, <a class="el" href="item_8cpp_source.html#l05876">item::count_by_charges()</a>, and <a class="el" href="character_8h.html#a70a4eaaf64bcd7658f91bfb500492f5aa795f3202b17cb6bc3d4b771d8c6c9eaf">other</a>.</p>
+<p class="reference">References <a class="el" href="item_8h_source.html#l02196">item::charges</a>, <a class="el" href="item_8cpp_source.html#l05890">item::count_by_charges()</a>, and <a class="el" href="character_8h.html#a70a4eaaf64bcd7658f91bfb500492f5aa795f3202b17cb6bc3d4b771d8c6c9eaf">other</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="inventory_8cpp_source.html#l01068">inventory::volume_without()</a>, and <a class="el" href="inventory_8cpp_source.html#l01039">inventory::weight_without()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="inventory_8cpp_source.html#l01071">inventory::volume_without()</a>, and <a class="el" href="inventory_8cpp_source.html#l01042">inventory::weight_without()</a>.</p>
 
 </div>
 </div>
@@ -421,7 +422,7 @@ template&lt;typename F &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="inventory_8cpp_source.html#l01148">inventory::assign_empty_invlet()</a>, and <a class="el" href="inventory_8cpp_source.html#l00398">inventory::restack()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="inventory_8cpp_source.html#l01151">inventory::assign_empty_invlet()</a>, and <a class="el" href="inventory_8cpp_source.html#l00399">inventory::restack()</a>.</p>
 
 </div>
 </div>
@@ -459,12 +460,12 @@ template&lt;typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="inventory_8cpp_source.html#l00232">232</a> of file <a class="el" href="inventory_8cpp_source.html">inventory.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>{</div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    <span class="keywordflow">return</span> lhs.front() &lt; rhs.front();</div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>}</div>
+<p class="definition">Definition at line <a class="el" href="inventory_8cpp_source.html#l00233">233</a> of file <a class="el" href="inventory_8cpp_source.html">inventory.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>{</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>    <span class="keywordflow">return</span> lhs.front() &lt; rhs.front();</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>}</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="inventory_8cpp_source.html#l00398">inventory::restack()</a>, and <a class="el" href="inventory_8cpp_source.html#l00852">inventory::use_amount()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="inventory_8cpp_source.html#l00399">inventory::restack()</a>, and <a class="el" href="inventory_8cpp_source.html#l00855">inventory::use_amount()</a>.</p>
 
 </div>
 </div>
@@ -493,7 +494,7 @@ template&lt;typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="inventory_8cpp_source.html#l00927">inventory::has_enough_painkiller()</a>, and <a class="el" href="inventory_8cpp_source.html#l00940">inventory::most_appropriate_painkiller()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="inventory_8cpp_source.html#l00930">inventory::has_enough_painkiller()</a>, and <a class="el" href="inventory_8cpp_source.html#l00943">inventory::most_appropriate_painkiller()</a>.</p>
 
 </div>
 </div>
@@ -521,7 +522,7 @@ template&lt;typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="inventory_8cpp_source.html#l00508">inventory::form_from_map()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="inventory_8cpp_source.html#l00509">inventory::form_from_map()</a>.</p>
 
 </div>
 </div>
@@ -549,7 +550,7 @@ template&lt;typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="inventory_8cpp_source.html#l00927">inventory::has_enough_painkiller()</a>, and <a class="el" href="inventory_8cpp_source.html#l00940">inventory::most_appropriate_painkiller()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="inventory_8cpp_source.html#l00930">inventory::has_enough_painkiller()</a>, and <a class="el" href="inventory_8cpp_source.html#l00943">inventory::most_appropriate_painkiller()</a>.</p>
 
 </div>
 </div>
@@ -577,7 +578,7 @@ template&lt;typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="inventory_8cpp_source.html#l00940">inventory::most_appropriate_painkiller()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="inventory_8cpp_source.html#l00943">inventory::most_appropriate_painkiller()</a>.</p>
 
 </div>
 </div>
@@ -605,7 +606,7 @@ template&lt;typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="inventory_8cpp_source.html#l00927">inventory::has_enough_painkiller()</a>, and <a class="el" href="inventory_8cpp_source.html#l00940">inventory::most_appropriate_painkiller()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="inventory_8cpp_source.html#l00930">inventory::has_enough_painkiller()</a>, and <a class="el" href="inventory_8cpp_source.html#l00943">inventory::most_appropriate_painkiller()</a>.</p>
 
 </div>
 </div>
@@ -633,7 +634,7 @@ template&lt;typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="inventory_8cpp_source.html#l00967">inventory::rust_iron_items()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="inventory_8cpp_source.html#l00970">inventory::rust_iron_items()</a>.</p>
 
 </div>
 </div>
@@ -661,7 +662,7 @@ template&lt;typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="inventory_8cpp_source.html#l00927">inventory::has_enough_painkiller()</a>, and <a class="el" href="inventory_8cpp_source.html#l00940">inventory::most_appropriate_painkiller()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="inventory_8cpp_source.html#l00930">inventory::has_enough_painkiller()</a>, and <a class="el" href="inventory_8cpp_source.html#l00943">inventory::most_appropriate_painkiller()</a>.</p>
 
 </div>
 </div>
@@ -689,7 +690,7 @@ template&lt;typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="inventory_8cpp_source.html#l00508">inventory::form_from_map()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="inventory_8cpp_source.html#l00509">inventory::form_from_map()</a>.</p>
 
 </div>
 </div>
@@ -699,7 +700,7 @@ template&lt;typename F &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="inventory_8cpp.html">inventory.cpp</a></li>
-    <li class="footer">Generated on Wed Oct 19 2022 14:19:18 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Mon Dec 26 2022 21:41:51 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>
