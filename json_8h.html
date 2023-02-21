@@ -105,6 +105,7 @@ $(document).ready(function(){initNavTree('json_8h.html',''); initResizable(); })
 <code>#include &lt;utility&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &quot;<a class="el" href="enum__conversions_8h_source.html">enum_conversions.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="json__source__location_8h_source.html">json_source_location.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="memory__fast_8h_source.html">memory_fast.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="string__id_8h_source.html">string_id.h</a>&quot;</code><br />
 </div>
@@ -121,8 +122,6 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structkey__from__json__string_3_01Enum_00_01std_1_1enable__if__t_3_01std_1_1is__enum_3_01Enum_01_4_1_1value_01_4_01_4.html">key_from_json_string&lt; Enum, std::enable_if_t&lt; std::is_enum&lt; Enum &gt;::value &gt; &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnumber__sci__notation.html">number_sci_notation</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjson__source__location.html">json_source_location</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJsonIn.html">JsonIn</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -223,17 +222,17 @@ Functions</h2></td></tr>
 <p>Get an array member from json with name name. </p>
 <p >For each element of that array (which should be a string) add it to the given set. </p>
 
-<p class="definition">Definition at line <a class="el" href="json_8cpp_source.html#l00721">721</a> of file <a class="el" href="json_8cpp_source.html">json.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00722" name="l00722"></a><span class="lineno">  722</span>{</div>
-<div class="line"><a id="l00723" name="l00723"></a><span class="lineno">  723</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> std::string <a class="code hl_function" href="mapgen_8cpp.html#a90f1f53dc044e93e7f7f9314cef1bd45">line</a> : json.<a class="code hl_function" href="classJsonObject.html#a69f62f59b5e39da6059b7c3cf8b12421">get_array</a>( <a class="code hl_function" href="namespaceom__direction.html#a8ba958ccfad28c0a5572a04dd1428f32">name</a> ) ) {</div>
-<div class="line"><a id="l00724" name="l00724"></a><span class="lineno">  724</span>        s.insert( <a class="code hl_function" href="mapgen_8cpp.html#a90f1f53dc044e93e7f7f9314cef1bd45">line</a> );</div>
-<div class="line"><a id="l00725" name="l00725"></a><span class="lineno">  725</span>    }</div>
-<div class="line"><a id="l00726" name="l00726"></a><span class="lineno">  726</span>}</div>
-<div class="ttc" id="aclassJsonObject_html_a69f62f59b5e39da6059b7c3cf8b12421"><div class="ttname"><a href="classJsonObject.html#a69f62f59b5e39da6059b7c3cf8b12421">JsonObject::get_array</a></div><div class="ttdeci">JsonArray get_array(const std::string &amp;name) const</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l00332">json.cpp:332</a></div></div>
-<div class="ttc" id="amapgen_8cpp_html_a90f1f53dc044e93e7f7f9314cef1bd45"><div class="ttname"><a href="mapgen_8cpp.html#a90f1f53dc044e93e7f7f9314cef1bd45">line</a></div><div class="ttdeci">void line(map *m, const ter_id &amp;type, const point &amp;p1, const point &amp;p2)</div><div class="ttdef"><b>Definition:</b> <a href="mapgen_8cpp_source.html#l06486">mapgen.cpp:6486</a></div></div>
+<p class="definition">Definition at line <a class="el" href="json_8cpp_source.html#l00788">788</a> of file <a class="el" href="json_8cpp_source.html">json.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00789" name="l00789"></a><span class="lineno">  789</span>{</div>
+<div class="line"><a id="l00790" name="l00790"></a><span class="lineno">  790</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> std::string <a class="code hl_function" href="mapgen_8cpp.html#a90f1f53dc044e93e7f7f9314cef1bd45">line</a> : json.<a class="code hl_function" href="classJsonObject.html#a69f62f59b5e39da6059b7c3cf8b12421">get_array</a>( <a class="code hl_function" href="namespaceom__direction.html#a8ba958ccfad28c0a5572a04dd1428f32">name</a> ) ) {</div>
+<div class="line"><a id="l00791" name="l00791"></a><span class="lineno">  791</span>        s.insert( <a class="code hl_function" href="mapgen_8cpp.html#a90f1f53dc044e93e7f7f9314cef1bd45">line</a> );</div>
+<div class="line"><a id="l00792" name="l00792"></a><span class="lineno">  792</span>    }</div>
+<div class="line"><a id="l00793" name="l00793"></a><span class="lineno">  793</span>}</div>
+<div class="ttc" id="aclassJsonObject_html_a69f62f59b5e39da6059b7c3cf8b12421"><div class="ttname"><a href="classJsonObject.html#a69f62f59b5e39da6059b7c3cf8b12421">JsonObject::get_array</a></div><div class="ttdeci">JsonArray get_array(const std::string &amp;name) const</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l00399">json.cpp:399</a></div></div>
+<div class="ttc" id="amapgen_8cpp_html_a90f1f53dc044e93e7f7f9314cef1bd45"><div class="ttname"><a href="mapgen_8cpp.html#a90f1f53dc044e93e7f7f9314cef1bd45">line</a></div><div class="ttdeci">void line(map *m, const ter_id &amp;type, const point &amp;p1, const point &amp;p2)</div><div class="ttdef"><b>Definition:</b> <a href="mapgen_8cpp_source.html#l06485">mapgen.cpp:6485</a></div></div>
 <div class="ttc" id="anamespaceom__direction_html_a8ba958ccfad28c0a5572a04dd1428f32"><div class="ttname"><a href="namespaceom__direction.html#a8ba958ccfad28c0a5572a04dd1428f32">om_direction::name</a></div><div class="ttdeci">std::string name(type dir)</div><div class="ttdoc">Get Human readable name of a direction.</div><div class="ttdef"><b>Definition:</b> <a href="overmap_8cpp_source.html#l04127">overmap.cpp:4127</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="json_8cpp_source.html#l00332">JsonObject::get_array()</a>, <a class="el" href="mapgen_8cpp_source.html#l06486">line()</a>, and <a class="el" href="overmap_8cpp_source.html#l04127">om_direction::name()</a>.</p>
+<p class="reference">References <a class="el" href="json_8cpp_source.html#l00399">JsonObject::get_array()</a>, <a class="el" href="mapgen_8cpp_source.html#l06485">line()</a>, and <a class="el" href="overmap_8cpp_source.html#l04127">om_direction::name()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mongroup_8cpp_source.html#l00265">MonsterGroupManager::LoadMonsterBlacklist()</a>, and <a class="el" href="mongroup_8cpp_source.html#l00271">MonsterGroupManager::LoadMonsterWhitelist()</a>.</p>
 
@@ -267,22 +266,22 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="json_8h_source.html#l01438">1438</a> of file <a class="el" href="json_8h_source.html">json.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l01439" name="l01439"></a><span class="lineno"> 1439</span>{</div>
-<div class="line"><a id="l01440" name="l01440"></a><span class="lineno"> 1440</span>    <span class="keywordflow">if</span>( jsin.<a class="code hl_function" href="classJsonIn.html#a46bf0ee7160d098b0328679c6cb15875">test_null</a>() ) {</div>
-<div class="line"><a id="l01441" name="l01441"></a><span class="lineno"> 1441</span>        <a class="code hl_function" href="classint__id.html#a315169d32cce4267b7c8dceff4b0d1d7">obj</a>.reset();</div>
-<div class="line"><a id="l01442" name="l01442"></a><span class="lineno"> 1442</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l01443" name="l01443"></a><span class="lineno"> 1443</span>        <a class="code hl_function" href="classint__id.html#a315169d32cce4267b7c8dceff4b0d1d7">obj</a>.emplace();</div>
-<div class="line"><a id="l01444" name="l01444"></a><span class="lineno"> 1444</span>        jsin.<a class="code hl_function" href="classJsonIn.html#aa8f42d396d9e62f0401b71ccf579c111">read</a>( *<a class="code hl_function" href="classint__id.html#a315169d32cce4267b7c8dceff4b0d1d7">obj</a>, <span class="keyword">true</span> );</div>
-<div class="line"><a id="l01445" name="l01445"></a><span class="lineno"> 1445</span>    }</div>
-<div class="line"><a id="l01446" name="l01446"></a><span class="lineno"> 1446</span>}</div>
-<div class="ttc" id="aclassJsonIn_html_a46bf0ee7160d098b0328679c6cb15875"><div class="ttname"><a href="classJsonIn.html#a46bf0ee7160d098b0328679c6cb15875">JsonIn::test_null</a></div><div class="ttdeci">bool test_null()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01439">json.cpp:1439</a></div></div>
-<div class="ttc" id="aclassJsonIn_html_aa8f42d396d9e62f0401b71ccf579c111"><div class="ttname"><a href="classJsonIn.html#aa8f42d396d9e62f0401b71ccf579c111">JsonIn::read</a></div><div class="ttdeci">bool read(bool &amp;b, bool throw_on_error=false)</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01485">json.cpp:1485</a></div></div>
+<p class="definition">Definition at line <a class="el" href="json_8h_source.html#l01439">1439</a> of file <a class="el" href="json_8h_source.html">json.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l01440" name="l01440"></a><span class="lineno"> 1440</span>{</div>
+<div class="line"><a id="l01441" name="l01441"></a><span class="lineno"> 1441</span>    <span class="keywordflow">if</span>( jsin.<a class="code hl_function" href="classJsonIn.html#a46bf0ee7160d098b0328679c6cb15875">test_null</a>() ) {</div>
+<div class="line"><a id="l01442" name="l01442"></a><span class="lineno"> 1442</span>        <a class="code hl_function" href="classint__id.html#a315169d32cce4267b7c8dceff4b0d1d7">obj</a>.reset();</div>
+<div class="line"><a id="l01443" name="l01443"></a><span class="lineno"> 1443</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l01444" name="l01444"></a><span class="lineno"> 1444</span>        <a class="code hl_function" href="classint__id.html#a315169d32cce4267b7c8dceff4b0d1d7">obj</a>.emplace();</div>
+<div class="line"><a id="l01445" name="l01445"></a><span class="lineno"> 1445</span>        jsin.<a class="code hl_function" href="classJsonIn.html#aa8f42d396d9e62f0401b71ccf579c111">read</a>( *<a class="code hl_function" href="classint__id.html#a315169d32cce4267b7c8dceff4b0d1d7">obj</a>, <span class="keyword">true</span> );</div>
+<div class="line"><a id="l01446" name="l01446"></a><span class="lineno"> 1446</span>    }</div>
+<div class="line"><a id="l01447" name="l01447"></a><span class="lineno"> 1447</span>}</div>
+<div class="ttc" id="aclassJsonIn_html_a46bf0ee7160d098b0328679c6cb15875"><div class="ttname"><a href="classJsonIn.html#a46bf0ee7160d098b0328679c6cb15875">JsonIn::test_null</a></div><div class="ttdeci">bool test_null()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01506">json.cpp:1506</a></div></div>
+<div class="ttc" id="aclassJsonIn_html_aa8f42d396d9e62f0401b71ccf579c111"><div class="ttname"><a href="classJsonIn.html#aa8f42d396d9e62f0401b71ccf579c111">JsonIn::read</a></div><div class="ttdeci">bool read(bool &amp;b, bool throw_on_error=false)</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01552">json.cpp:1552</a></div></div>
 <div class="ttc" id="aclassint__id_html_a315169d32cce4267b7c8dceff4b0d1d7"><div class="ttname"><a href="classint__id.html#a315169d32cce4267b7c8dceff4b0d1d7">int_id::obj</a></div><div class="ttdeci">const ammo_effect &amp; obj() const</div><div class="ttdef"><b>Definition:</b> <a href="ammo__effect_8cpp_source.html#l00026">ammo_effect.cpp:26</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="ammo__effect_8cpp_source.html#l00026">int_id&lt; T &gt;::obj()</a>, <a class="el" href="json_8cpp_source.html#l01485">JsonIn::read()</a>, and <a class="el" href="json_8cpp_source.html#l01439">JsonIn::test_null()</a>.</p>
+<p class="reference">References <a class="el" href="ammo__effect_8cpp_source.html#l00026">int_id&lt; T &gt;::obj()</a>, <a class="el" href="json_8cpp_source.html#l01552">JsonIn::read()</a>, and <a class="el" href="json_8cpp_source.html#l01506">JsonIn::test_null()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="json_8h_source.html#l00306">JsonIn::read()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="json_8h_source.html#l00302">JsonIn::read()</a>.</p>
 
 </div>
 </div>
@@ -312,10 +311,10 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="json_8cpp_source.html#l02063">2063</a> of file <a class="el" href="json_8cpp_source.html">json.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l02064" name="l02064"></a><span class="lineno"> 2064</span>{</div>
-<div class="line"><a id="l02065" name="l02065"></a><span class="lineno"> 2065</span>    <span class="keywordflow">return</span> stream &lt;&lt; err.what();</div>
-<div class="line"><a id="l02066" name="l02066"></a><span class="lineno"> 2066</span>}</div>
+<p class="definition">Definition at line <a class="el" href="json_8cpp_source.html#l02130">2130</a> of file <a class="el" href="json_8cpp_source.html">json.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l02131" name="l02131"></a><span class="lineno"> 2131</span>{</div>
+<div class="line"><a id="l02132" name="l02132"></a><span class="lineno"> 2132</span>    <span class="keywordflow">return</span> stream &lt;&lt; err.what();</div>
+<div class="line"><a id="l02133" name="l02133"></a><span class="lineno"> 2133</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -347,20 +346,20 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="json_8h_source.html#l01428">1428</a> of file <a class="el" href="json_8h_source.html">json.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l01429" name="l01429"></a><span class="lineno"> 1429</span>{</div>
-<div class="line"><a id="l01430" name="l01430"></a><span class="lineno"> 1430</span>    <span class="keywordflow">if</span>( <a class="code hl_function" href="classint__id.html#a315169d32cce4267b7c8dceff4b0d1d7">obj</a> ) {</div>
-<div class="line"><a id="l01431" name="l01431"></a><span class="lineno"> 1431</span>        jsout.<a class="code hl_function" href="classJsonOut.html#a4b8c8e50e3be57e737ae971ecf2c3fd5">write</a>( *<a class="code hl_function" href="classint__id.html#a315169d32cce4267b7c8dceff4b0d1d7">obj</a> );</div>
-<div class="line"><a id="l01432" name="l01432"></a><span class="lineno"> 1432</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l01433" name="l01433"></a><span class="lineno"> 1433</span>        jsout.<a class="code hl_function" href="classJsonOut.html#a449a76cf061d1949ff144ebd7261102f">write_null</a>();</div>
-<div class="line"><a id="l01434" name="l01434"></a><span class="lineno"> 1434</span>    }</div>
-<div class="line"><a id="l01435" name="l01435"></a><span class="lineno"> 1435</span>}</div>
-<div class="ttc" id="aclassJsonOut_html_a449a76cf061d1949ff144ebd7261102f"><div class="ttname"><a href="classJsonOut.html#a449a76cf061d1949ff144ebd7261102f">JsonOut::write_null</a></div><div class="ttdeci">void write_null()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01969">json.cpp:1969</a></div></div>
-<div class="ttc" id="aclassJsonOut_html_a4b8c8e50e3be57e737ae971ecf2c3fd5"><div class="ttname"><a href="classJsonOut.html#a4b8c8e50e3be57e737ae971ecf2c3fd5">JsonOut::write</a></div><div class="ttdeci">void write(T val)</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00620">json.h:620</a></div></div>
+<p class="definition">Definition at line <a class="el" href="json_8h_source.html#l01429">1429</a> of file <a class="el" href="json_8h_source.html">json.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l01430" name="l01430"></a><span class="lineno"> 1430</span>{</div>
+<div class="line"><a id="l01431" name="l01431"></a><span class="lineno"> 1431</span>    <span class="keywordflow">if</span>( <a class="code hl_function" href="classint__id.html#a315169d32cce4267b7c8dceff4b0d1d7">obj</a> ) {</div>
+<div class="line"><a id="l01432" name="l01432"></a><span class="lineno"> 1432</span>        jsout.<a class="code hl_function" href="classJsonOut.html#a4b8c8e50e3be57e737ae971ecf2c3fd5">write</a>( *<a class="code hl_function" href="classint__id.html#a315169d32cce4267b7c8dceff4b0d1d7">obj</a> );</div>
+<div class="line"><a id="l01433" name="l01433"></a><span class="lineno"> 1433</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l01434" name="l01434"></a><span class="lineno"> 1434</span>        jsout.<a class="code hl_function" href="classJsonOut.html#a449a76cf061d1949ff144ebd7261102f">write_null</a>();</div>
+<div class="line"><a id="l01435" name="l01435"></a><span class="lineno"> 1435</span>    }</div>
+<div class="line"><a id="l01436" name="l01436"></a><span class="lineno"> 1436</span>}</div>
+<div class="ttc" id="aclassJsonOut_html_a449a76cf061d1949ff144ebd7261102f"><div class="ttname"><a href="classJsonOut.html#a449a76cf061d1949ff144ebd7261102f">JsonOut::write_null</a></div><div class="ttdeci">void write_null()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l02036">json.cpp:2036</a></div></div>
+<div class="ttc" id="aclassJsonOut_html_a4b8c8e50e3be57e737ae971ecf2c3fd5"><div class="ttname"><a href="classJsonOut.html#a4b8c8e50e3be57e737ae971ecf2c3fd5">JsonOut::write</a></div><div class="ttdeci">void write(T val)</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00616">json.h:616</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="ammo__effect_8cpp_source.html#l00026">int_id&lt; T &gt;::obj()</a>, <a class="el" href="json_8h_source.html#l00620">JsonOut::write()</a>, and <a class="el" href="json_8cpp_source.html#l01969">JsonOut::write_null()</a>.</p>
+<p class="reference">References <a class="el" href="ammo__effect_8cpp_source.html#l00026">int_id&lt; T &gt;::obj()</a>, <a class="el" href="json_8h_source.html#l00616">JsonOut::write()</a>, and <a class="el" href="json_8cpp_source.html#l02036">JsonOut::write_null()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="json_8h_source.html#l00630">JsonOut::write()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="json_8h_source.html#l00626">JsonOut::write()</a>.</p>
 
 </div>
 </div>
@@ -370,7 +369,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="json_8h.html">json.h</a></li>
-    <li class="footer">Generated on Mon Dec 26 2022 21:41:51 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Feb 21 2023 16:43:18 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

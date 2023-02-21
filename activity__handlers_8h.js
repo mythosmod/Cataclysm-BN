@@ -68,7 +68,7 @@ var activity__handlers_8h =
     [ "burrow_finish", "activity__handlers_8h.html#a77ab2d13617aa58b9f52a12891916d60", null ],
     [ "butcher_do_turn", "activity__handlers_8h.html#ab9ecace8d5b66302279916dc02054bb7", null ],
     [ "butcher_finish", "activity__handlers_8h.html#a37691f6506e5f3fec27f615821796b44", null ],
-    [ "butcher_time_to_cut", "activity__handlers_8h.html#ab197546d87c39b70720af14982cbbd14", null ],
+    [ "butcher_time_to_cut", "activity__handlers_8h.html#a07b44a02243a4fcbea4b2dcf6b55a8d3", null ],
     [ "chop_logs_finish", "activity__handlers_8h.html#ad6fa92f01b47bf34b16cd5cc6948c7ff", null ],
     [ "chop_planks_finish", "activity__handlers_8h.html#a126a09db8374b69f9996653161772e33", null ],
     [ "chop_tree_do_turn", "activity__handlers_8h.html#a5de34613ec1b1f48380d6bfa1eb59541", null ],

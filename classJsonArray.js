@@ -34,6 +34,8 @@ var classJsonArray =
     [ "operator=", "classJsonArray.html#adf391661e513ed9d12bec8c2b507049e", null ],
     [ "read", "classJsonArray.html#a4d81e21ed8858b0c9b52577661e1a54b", null ],
     [ "read_next", "classJsonArray.html#a513b7a4eb1438938d9806d9446d90803", null ],
+    [ "show_warning", "classJsonArray.html#a51facd97f0831346327c4c515c03d305", null ],
+    [ "show_warning", "classJsonArray.html#a37ec0e73e1153a7bdb8fbd76d60beaac", null ],
     [ "size", "classJsonArray.html#a9ee612fc471db675827c4220d15a6040", null ],
     [ "skip_value", "classJsonArray.html#ab41c94f65d38edfc6b7d025cd827d07d", null ],
     [ "str", "classJsonArray.html#a9d3ce976a87700492330aa75a44d7c5d", null ],

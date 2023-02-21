@@ -141,8 +141,8 @@ Functions</h2></td></tr>
 <tr class="memitem:af6a8080dc3ddde5c2600a5d8a5552b9a"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
 <tr class="memitem:af6a8080dc3ddde5c2600a5d8a5552b9a"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceio.html#af6a8080dc3ddde5c2600a5d8a5552b9a">io::enum_to_string&lt; enchant_vals::mod &gt;</a> (<a class="el" href="namespaceenchant__vals.html#acd6a6ebb27f9ecb82b3bce1d3aef2998">enchant_vals::mod</a> data)</td></tr>
 <tr class="separator:af6a8080dc3ddde5c2600a5d8a5552b9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a544b9bce2807b621fed1d5f4de43b8e2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="magic__enchantment_8cpp.html#a544b9bce2807b621fed1d5f4de43b8e2">migrate_ench_vals_enums</a> (std::string &amp;s)</td></tr>
-<tr class="separator:a544b9bce2807b621fed1d5f4de43b8e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0119747a323a0985ef2b9e163353e2a4"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="magic__enchantment_8cpp.html#a0119747a323a0985ef2b9e163353e2a4">migrate_ench_vals_enums</a> (const std::string &amp;s)</td></tr>
+<tr class="separator:a0119747a323a0985ef2b9e163353e2a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aabd90917ed74421ca18812b8922c41a8"><td class="memTemplParams" colspan="2">template&lt;float mutation_branch::* First&gt; </td></tr>
 <tr class="memitem:aabd90917ed74421ca18812b8922c41a8"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02magic__enchantment_8cpp_03.html#aabd90917ed74421ca18812b8922c41a8">anonymous_namespace{magic_enchantment.cpp}::is_set_value</a> (const <a class="el" href="type__id_8h.html#a44aa01c09faf1c1723400eb9075a1f4d">trait_id</a> &amp;mut, float val)</td></tr>
 <tr class="separator:aabd90917ed74421ca18812b8922c41a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -156,8 +156,8 @@ Variables</h2></td></tr>
 <tr class="separator:ad87b7bcda1e52a08d07509bcaa2274db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a544b9bce2807b621fed1d5f4de43b8e2" name="a544b9bce2807b621fed1d5f4de43b8e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a544b9bce2807b621fed1d5f4de43b8e2">&#9670;&nbsp;</a></span>migrate_ench_vals_enums()</h2>
+<a id="a0119747a323a0985ef2b9e163353e2a4" name="a0119747a323a0985ef2b9e163353e2a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0119747a323a0985ef2b9e163353e2a4">&#9670;&nbsp;</a></span>migrate_ench_vals_enums()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -166,9 +166,9 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void migrate_ench_vals_enums </td>
+          <td class="memname">static std::string migrate_ench_vals_enums </td>
           <td>(</td>
-          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>s</em></td><td>)</td>
           <td></td>
         </tr>
@@ -180,20 +180,25 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="magic__enchantment_8cpp_source.html#l00147">147</a> of file <a class="el" href="magic__enchantment_8cpp_source.html">magic_enchantment.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>{</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    <span class="keywordflow">if</span>( s == <span class="stringliteral">&quot;ITEM_ATTACK_SPEED&quot;</span> ) {</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>        s = <span class="stringliteral">&quot;ITEM_ATTACK_COST&quot;</span>;</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( s == <span class="stringliteral">&quot;ATTACK_SPEED&quot;</span> ) {</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        s = <span class="stringliteral">&quot;ATTACK_COST&quot;</span>;</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( s == <span class="stringliteral">&quot;MAX_MANA&quot;</span> ) {</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>        s = <span class="stringliteral">&quot;MANA_CAP&quot;</span>;</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( s == <span class="stringliteral">&quot;REGEN_MANA&quot;</span> ) {</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>        s = <span class="stringliteral">&quot;MANA_REGEN&quot;</span>;</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    }</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>}</div>
+<p class="definition">Definition at line <a class="el" href="magic__enchantment_8cpp_source.html#l00119">119</a> of file <a class="el" href="magic__enchantment_8cpp_source.html">magic_enchantment.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>{</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    <span class="keywordflow">if</span>( s == <span class="stringliteral">&quot;ITEM_ATTACK_SPEED&quot;</span> ) {</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        <span class="keywordflow">return</span> <span class="stringliteral">&quot;ITEM_ATTACK_COST&quot;</span>;</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( s == <span class="stringliteral">&quot;ATTACK_SPEED&quot;</span> ) {</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        <span class="keywordflow">return</span> <span class="stringliteral">&quot;ATTACK_COST&quot;</span>;</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( s == <span class="stringliteral">&quot;MAX_MANA&quot;</span> ) {</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        <span class="keywordflow">return</span> <span class="stringliteral">&quot;MANA_CAP&quot;</span>;</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( s == <span class="stringliteral">&quot;REGEN_MANA&quot;</span> ) {</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        <span class="keywordflow">return</span> <span class="stringliteral">&quot;MANA_REGEN&quot;</span>;</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( s == <span class="stringliteral">&quot;MAX_STAMINA&quot;</span> ) {</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        <span class="keywordflow">return</span> <span class="stringliteral">&quot;STAMINA_CAP&quot;</span>;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( s == <span class="stringliteral">&quot;REGEN_STAMINA&quot;</span> ) {</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        <span class="keywordflow">return</span> <span class="stringliteral">&quot;STAMINA_REGEN&quot;</span>;</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    }</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    <span class="keywordflow">return</span> s;</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>}</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="magic__enchantment_8cpp_source.html#l00229">enchantment::load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="magic__enchantment_8cpp_source.html#l00206">enchantment::load()</a>.</p>
 
 </div>
 </div>
@@ -203,7 +208,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="magic__enchantment_8cpp.html">magic_enchantment.cpp</a></li>
-    <li class="footer">Generated on Mon Dec 26 2022 21:41:52 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Feb 21 2023 16:43:18 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

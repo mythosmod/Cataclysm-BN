@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['qty_0',['qty',['../classitem_1_1reload__option.html#af99909229b18cb529592856884124187',1,'item::reload_option::qty() const'],['../classitem_1_1reload__option.html#ac5f59d2ca554c8428cc2d1345efecaef',1,'item::reload_option::qty(int val)'],['../classgun__modifier__data.html#afcb18a1d12ade9bef9c93e3bdfe3d739',1,'gun_modifier_data::qty()'],['../classemit.html#a5fb324b1cbd77d601d0728cafb8994c9',1,'emit::qty()']]],
+  ['qty_0',['qty',['../classitem__reload__option.html#ac2bf6049c6064afbd0f642342215c170',1,'item_reload_option::qty() const'],['../classitem__reload__option.html#a6353d239712a1f2c8cc619b9cbe68898',1,'item_reload_option::qty(int val)'],['../classgun__modifier__data.html#afcb18a1d12ade9bef9c93e3bdfe3d739',1,'gun_modifier_data::qty()'],['../classemit.html#a5fb324b1cbd77d601d0728cafb8994c9',1,'emit::qty()']]],
   ['quadrant_1',['quadrant',['../classtileray.html#affd8db4899b1965ab822659ded6d0386',1,'tileray']]],
   ['quadrant_5ffrom_5fx_5fy_2',['quadrant_from_x_y',['../lightmap_8cpp.html#a23445e2078ba8767b2aae74fe974d16d',1,'lightmap.cpp']]],
   ['qualities_5finfo_3',['qualities_info',['../classitem.html#a5f1bd1f37a27ac2a4c994b4123dba5e6',1,'item']]],
@@ -16,7 +16,7 @@ var searchData=
   ['query_5fcharges_13',['query_charges',['../classadvanced__inventory.html#a8fd8496fa06d19335a67bc1de3c7864a',1,'advanced_inventory']]],
   ['query_5fcon_14',['query_con',['../classblueprint__options.html#a4fe1c4f86658407f8076591e2cf11e9d',1,'blueprint_options']]],
   ['query_5fconfirm_5fdelete_15',['query_confirm_delete',['../namespaceovermap__ui.html#a3930b3b4ee4682bd4052b4fc6db205ce',1,'overmap_ui']]],
-  ['query_5fconsume_5fownership_16',['query_consume_ownership',['../player_8cpp.html#a71152d389acc9d0adfd4c1b32374515e',1,'player.cpp']]],
+  ['query_5fconsume_5fownership_16',['query_consume_ownership',['../consumption_8cpp.html#afe92f92e13fd7403ae41c156ff5e08be',1,'consumption.cpp']]],
   ['query_5fcontinue_17',['query_continue',['../classcraft__command.html#a1f496d2110c290d14faa9f3f11682ee4',1,'craft_command']]],
   ['query_5fdestination_18',['query_destination',['../classadvanced__inventory.html#a814330bc95db8c5962477d574f454ad3',1,'advanced_inventory']]],
   ['query_5fdestination_5fcallback_19',['query_destination_callback',['../classquery__destination__callback.html#a370e22680a80ec7841f47ca0e4a7826a',1,'query_destination_callback']]],

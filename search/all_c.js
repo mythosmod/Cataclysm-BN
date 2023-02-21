@@ -71,7 +71,7 @@ var searchData=
   ['kitten_68',['kitten',['../classrobot__finds__kitten.html#a2ec3cf2977508663b03e3da09a036175',1,'robot_finds_kitten']]],
   ['kitten_69',['KITTEN',['../iuse__software__kitten_8cpp.html#ab91264844d482eccf3df3c244542c887',1,'iuse_software_kitten.cpp']]],
   ['knock_5fback_5ffrom_70',['knock_back_from',['../classCreature.html#aa39af83d946765e7e652fd66d50e807c',1,'Creature']]],
-  ['knock_5fback_5fto_71',['knock_back_to',['../classCreature.html#af79c1e1ef891477157860a3e31db8492',1,'Creature::knock_back_to()'],['../classmonster.html#aa6c57b6cbf413727ea33c467f2bc886b',1,'monster::knock_back_to()'],['../classplayer.html#a9b07f11977446bd749238eb0dc424c61',1,'player::knock_back_to()']]],
+  ['knock_5fback_5fto_71',['knock_back_to',['../classCharacter.html#a9ff2dce9ec9feec5348cf93a37f3e736',1,'Character::knock_back_to()'],['../classCreature.html#af79c1e1ef891477157860a3e31db8492',1,'Creature::knock_back_to()'],['../classmonster.html#aa6c57b6cbf413727ea33c467f2bc886b',1,'monster::knock_back_to()']]],
   ['knockback_72',['knockback',['../classgame.html#ab3391889b601a9e397a39ff8481d7a9c',1,'game::knockback(const tripoint &amp;s, const tripoint &amp;t, int force, int stun, int dam_mult, Creature *source)'],['../classgame.html#a481f8a8bc6db3e04e272914add9e8d90',1,'game::knockback(std::vector&lt; tripoint &gt; &amp;traj, int stun, int dam_mult, Creature *source)']]],
   ['knockback_5fdist_73',['knockback_dist',['../classma__technique.html#a26cefe1707e20f3448e36f14a5d28c8c',1,'ma_technique']]],
   ['knockback_5ffollow_74',['knockback_follow',['../classma__technique.html#ac5b25106fb9228f7f95ed332c5b2ff2d',1,'ma_technique']]],

@@ -477,7 +477,7 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="omdata_8h_source.html#l00272">oter_t::is_river()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="faction__camp_8cpp_source.html#l02882">basecamp::combat_mission_return()</a>, <a class="el" href="faction__camp_8cpp_source.html#l03476">companion_travel_time_calc()</a>, <a class="el" href="overmap_8cpp_source.html#l02634">overmap::place_lakes()</a>, <a class="el" href="overmap_8cpp_source.html#l02771">overmap::place_rivers()</a>, <a class="el" href="overmap_8cpp_source.html#l02979">overmap::place_roads()</a>, and <a class="el" href="overmapbuffer_8cpp_source.html#l00844">overmapbuffer::reveal_route()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="faction__camp_8cpp_source.html#l02881">basecamp::combat_mission_return()</a>, <a class="el" href="faction__camp_8cpp_source.html#l03475">companion_travel_time_calc()</a>, <a class="el" href="overmap_8cpp_source.html#l02634">overmap::place_lakes()</a>, <a class="el" href="overmap_8cpp_source.html#l02771">overmap::place_rivers()</a>, <a class="el" href="overmap_8cpp_source.html#l02979">overmap::place_roads()</a>, and <a class="el" href="overmapbuffer_8cpp_source.html#l00844">overmapbuffer::reveal_route()</a>.</p>
 
 </div>
 </div>
@@ -506,7 +506,7 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="omdata_8h_source.html#l00283">oter_t::is_lake()</a>, <a class="el" href="omdata_8h_source.html#l00287">oter_t::is_lake_shore()</a>, and <a class="el" href="omdata_8h_source.html#l00272">oter_t::is_river()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="overmap__ui_8cpp_source.html#l01831">overmap_ui::get_overmap_path_to()</a>, <a class="el" href="overmap_8cpp_source.html#l04021">overmap::good_river()</a>, <a class="el" href="game_8cpp_source.html#l11002">game::perhaps_add_random_npc()</a>, and <a class="el" href="overmap_8cpp_source.html#l04670">overmap::place_mongroups()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="overmap__ui_8cpp_source.html#l01831">overmap_ui::get_overmap_path_to()</a>, <a class="el" href="overmap_8cpp_source.html#l04021">overmap::good_river()</a>, <a class="el" href="game_8cpp_source.html#l11008">game::perhaps_add_random_npc()</a>, and <a class="el" href="overmap_8cpp_source.html#l04670">overmap::place_mongroups()</a>.</p>
 
 </div>
 </div>
@@ -530,10 +530,10 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="overmap_8cpp_source.html#l05031">5031</a> of file <a class="el" href="overmap_8cpp_source.html">overmap.cpp</a>.</p>
 <div class="fragment"><div class="line"><a id="l05032" name="l05032"></a><span class="lineno"> 5032</span>{</div>
-<div class="line"><a id="l05033" name="l05033"></a><span class="lineno"> 5033</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_enumeration" href="namespaceom__direction.html#a3f3a3bf2c5af33fc8036734d1ba70b7c">om_direction::type</a> &amp;rot : <a class="code hl_variable" href="namespaceom__direction.html#a27cad92b0d05637eb934f1a7f3424e41">om_direction::all</a> ) {</div>
-<div class="line"><a id="l05034" name="l05034"></a><span class="lineno"> 5034</span>        <span class="keyword">const</span> std::string &amp;rot_s = <a class="code hl_function" href="namespaceom__direction.html#a6e9ee2299698dc65bb07a42a93a72280">om_direction::get_suffix</a>( rot );</div>
+<div class="line"><a id="l05033" name="l05033"></a><span class="lineno"> 5033</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_enumeration" href="namespaceom__direction.html#a3f3a3bf2c5af33fc8036734d1ba70b7c">om_direction::type</a> &amp;<a class="code hl_namespace" href="namespacerot.html">rot</a> : <a class="code hl_variable" href="namespaceom__direction.html#a27cad92b0d05637eb934f1a7f3424e41">om_direction::all</a> ) {</div>
+<div class="line"><a id="l05034" name="l05034"></a><span class="lineno"> 5034</span>        <span class="keyword">const</span> std::string &amp;rot_s = <a class="code hl_function" href="namespaceom__direction.html#a6e9ee2299698dc65bb07a42a93a72280">om_direction::get_suffix</a>( <a class="code hl_namespace" href="namespacerot.html">rot</a> );</div>
 <div class="line"><a id="l05035" name="l05035"></a><span class="lineno"> 5035</span>        <span class="keywordflow">if</span>( <a class="code hl_function" href="string__utils_8cpp.html#a836373abd77ef65988abf2bcbff6929a">string_ends_with</a>( oter.<a class="code hl_function" href="classint__id.html#a88b1e0c550f4d6f36cac7a73feca7f01">id</a>().<a class="code hl_function" href="classstring__id.html#aa7dabc565f0c067e1a237ea224b18f93">str</a>(), rot_s ) ) {</div>
-<div class="line"><a id="l05036" name="l05036"></a><span class="lineno"> 5036</span>            <span class="keywordflow">return</span> rot;</div>
+<div class="line"><a id="l05036" name="l05036"></a><span class="lineno"> 5036</span>            <span class="keywordflow">return</span> <a class="code hl_namespace" href="namespacerot.html">rot</a>;</div>
 <div class="line"><a id="l05037" name="l05037"></a><span class="lineno"> 5037</span>        }</div>
 <div class="line"><a id="l05038" name="l05038"></a><span class="lineno"> 5038</span>    }</div>
 <div class="line"><a id="l05039" name="l05039"></a><span class="lineno"> 5039</span>    <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="namespaceom__direction.html#a3f3a3bf2c5af33fc8036734d1ba70b7cafedb2d84cafe20862cb4399751a8a7e3">om_direction::type::invalid</a>;</div>
@@ -542,6 +542,7 @@ Variables</h2></td></tr>
 <div class="ttc" id="anamespaceom__direction_html_a3f3a3bf2c5af33fc8036734d1ba70b7c"><div class="ttname"><a href="namespaceom__direction.html#a3f3a3bf2c5af33fc8036734d1ba70b7c">om_direction::type</a></div><div class="ttdeci">type</div><div class="ttdoc">Basic enum for directions.</div><div class="ttdef"><b>Definition:</b> <a href="om__direction_8h_source.html#l00016">om_direction.h:16</a></div></div>
 <div class="ttc" id="anamespaceom__direction_html_a3f3a3bf2c5af33fc8036734d1ba70b7cafedb2d84cafe20862cb4399751a8a7e3"><div class="ttname"><a href="namespaceom__direction.html#a3f3a3bf2c5af33fc8036734d1ba70b7cafedb2d84cafe20862cb4399751a8a7e3">om_direction::type::invalid</a></div><div class="ttdeci">@ invalid</div></div>
 <div class="ttc" id="anamespaceom__direction_html_a6e9ee2299698dc65bb07a42a93a72280"><div class="ttname"><a href="namespaceom__direction.html#a6e9ee2299698dc65bb07a42a93a72280">om_direction::get_suffix</a></div><div class="ttdeci">constexpr const std::string &amp; get_suffix(type dir)</div><div class="ttdoc">Returns directional suffix associated with the value, e.g.</div><div class="ttdef"><b>Definition:</b> <a href="om__direction_8h_source.html#l00036">om_direction.h:36</a></div></div>
+<div class="ttc" id="anamespacerot_html"><div class="ttname"><a href="namespacerot.html">rot</a></div><div class="ttdef"><b>Definition:</b> <a href="rot_8cpp_source.html#l00010">rot.cpp:11</a></div></div>
 <div class="ttc" id="astring__utils_8cpp_html_a836373abd77ef65988abf2bcbff6929a"><div class="ttname"><a href="string__utils_8cpp.html#a836373abd77ef65988abf2bcbff6929a">string_ends_with</a></div><div class="ttdeci">bool string_ends_with(const std::string &amp;s1, const std::string &amp;s2)</div><div class="ttdoc">Returns true if s1 ends with s2.</div><div class="ttdef"><b>Definition:</b> <a href="string__utils_8cpp_source.html#l00084">string_utils.cpp:84</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="om__direction_8h_source.html#l00026">om_direction::all</a>, <a class="el" href="om__direction_8h_source.html#l00036">om_direction::get_suffix()</a>, <a class="el" href="ammo__effect_8cpp_source.html#l00033">int_id&lt; T &gt;::id()</a>, <a class="el" href="namespaceom__direction.html#a3f3a3bf2c5af33fc8036734d1ba70b7cafedb2d84cafe20862cb4399751a8a7e3">om_direction::invalid</a>, <a class="el" href="string__id_8h_source.html#l00255">string_id&lt; T &gt;::str()</a>, and <a class="el" href="string__utils_8cpp_source.html#l00084">string_ends_with()</a>.</p>
@@ -608,7 +609,7 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="om__direction_8h_source.html#l00046">om_direction::get_num_cw_rotations()</a>, and <a class="el" href="overmap_8cpp_source.html#l05031">oter_get_rotation_dir()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mapgen_8cpp_source.html#l06583">update_mapgen_function_json::update_map()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mapgen_8cpp_source.html#l06582">update_mapgen_function_json::update_map()</a>.</p>
 
 </div>
 </div>
@@ -768,7 +769,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="overmap_8h.html">overmap.h</a></li>
-    <li class="footer">Generated on Mon Dec 26 2022 21:41:54 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Feb 21 2023 16:43:20 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

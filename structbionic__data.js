@@ -43,6 +43,7 @@ var structbionic__data =
     [ "power_deactivate", "structbionic__data.html#aec6fc87a32fdf93cad817d674875110c", null ],
     [ "power_gen_emission", "structbionic__data.html#a3b473e2028dc8ab4bf37794cdac08ec8", null ],
     [ "power_over_time", "structbionic__data.html#a549c82c85814902632e177babf76104c", null ],
+    [ "power_trigger", "structbionic__data.html#a01bb3ba6e83ceeb4fed579177f084ae3", null ],
     [ "stat_bonus", "structbionic__data.html#a7fbd91c61e6ffee8d81d2001e4558398", null ],
     [ "upgraded_bionic", "structbionic__data.html#a545bdb2cd0288e6962cfbae76dd4e08c", null ],
     [ "was_loaded", "structbionic__data.html#a5c8172388d65d83d5422e5a9c171f0ad", null ],

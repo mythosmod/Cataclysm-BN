@@ -244,15 +244,15 @@ Additional Inherited Members</h2></td></tr>
 <div class="line">        <span class="keywordflow">return</span> std::make_unique&lt;my_iuse_actor&gt;( *<span class="keyword">this</span> );</div>
 <div class="line">    }</div>
 <div class="line">};</div>
-<div class="ttc" id="aclassemit__actor_html_a1a91c90714a27584ce3f86a9297cad74"><div class="ttname"><a href="classemit__actor.html#a1a91c90714a27584ce3f86a9297cad74">emit_actor::clone</a></div><div class="ttdeci">std::unique_ptr&lt; iuse_actor &gt; clone() const override</div><div class="ttdoc">Returns a deep copy of this object.</div><div class="ttdef"><b>Definition:</b> <a href="iuse__actor_8cpp_source.html#l04229">iuse_actor.cpp:4229</a></div></div>
+<div class="ttc" id="aclassemit__actor_html_a1a91c90714a27584ce3f86a9297cad74"><div class="ttname"><a href="classemit__actor.html#a1a91c90714a27584ce3f86a9297cad74">emit_actor::clone</a></div><div class="ttdeci">std::unique_ptr&lt; iuse_actor &gt; clone() const override</div><div class="ttdoc">Returns a deep copy of this object.</div><div class="ttdef"><b>Definition:</b> <a href="iuse__actor_8cpp_source.html#l04239">iuse_actor.cpp:4239</a></div></div>
 </div><!-- fragment --><p> The returned value should behave like the original item and must have the same type. </p>
 
 <p>Implements <a class="el" href="classiuse__actor.html#a79a3e229ab9a4f5433d061cc1faec42d">iuse_actor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l04229">4229</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l04230" name="l04230"></a><span class="lineno"> 4230</span>{</div>
-<div class="line"><a id="l04231" name="l04231"></a><span class="lineno"> 4231</span>    <span class="keywordflow">return</span> std::make_unique&lt;emit_actor&gt;( *<span class="keyword">this</span> );</div>
-<div class="line"><a id="l04232" name="l04232"></a><span class="lineno"> 4232</span>}</div>
+<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l04239">4239</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l04240" name="l04240"></a><span class="lineno"> 4240</span>{</div>
+<div class="line"><a id="l04241" name="l04241"></a><span class="lineno"> 4241</span>    <span class="keywordflow">return</span> std::make_unique&lt;emit_actor&gt;( *<span class="keyword">this</span> );</div>
+<div class="line"><a id="l04242" name="l04242"></a><span class="lineno"> 4242</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -285,28 +285,28 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classiuse__actor.html#ae7123b9e8ee6610ef1694f0451f05624">iuse_actor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l04234">4234</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l04235" name="l04235"></a><span class="lineno"> 4235</span>{</div>
-<div class="line"><a id="l04236" name="l04236"></a><span class="lineno"> 4236</span>    <span class="comment">/*</span></div>
-<div class="line"><a id="l04237" name="l04237"></a><span class="lineno"> 4237</span><span class="comment">    // TODO: This must be called after all finalization</span></div>
-<div class="line"><a id="l04238" name="l04238"></a><span class="lineno"> 4238</span><span class="comment">    for( const auto&amp; e : emits ) {</span></div>
-<div class="line"><a id="l04239" name="l04239"></a><span class="lineno"> 4239</span><span class="comment">        if( !e.is_valid() ) {</span></div>
-<div class="line"><a id="l04240" name="l04240"></a><span class="lineno"> 4240</span><span class="comment">            debugmsg( &quot;Item %s has unknown emit source %s&quot;, my_item_type.c_str(), e.c_str() );</span></div>
-<div class="line"><a id="l04241" name="l04241"></a><span class="lineno"> 4241</span><span class="comment">        }</span></div>
-<div class="line"><a id="l04242" name="l04242"></a><span class="lineno"> 4242</span><span class="comment">    }</span></div>
-<div class="line"><a id="l04243" name="l04243"></a><span class="lineno"> 4243</span><span class="comment">    */</span></div>
-<div class="line"><a id="l04244" name="l04244"></a><span class="lineno"> 4244</span> </div>
-<div class="line"><a id="l04245" name="l04245"></a><span class="lineno"> 4245</span>    <span class="keywordflow">if</span>( <a class="code hl_variable" href="classemit__actor.html#ade1079362e991a186bd32f5e0eccc6ab">scale_qty</a> &amp;&amp; !<a class="code hl_function" href="classitem.html#a40963a016376016eb408bdb9dbb94388">item::count_by_charges</a>( my_item_type ) ) {</div>
-<div class="line"><a id="l04246" name="l04246"></a><span class="lineno"> 4246</span>        <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;Item %s has emit_actor with scale_qty, but is not counted by charges&quot;</span>,</div>
-<div class="line"><a id="l04247" name="l04247"></a><span class="lineno"> 4247</span>                  my_item_type.c_str() );</div>
-<div class="line"><a id="l04248" name="l04248"></a><span class="lineno"> 4248</span>        <a class="code hl_variable" href="classemit__actor.html#ade1079362e991a186bd32f5e0eccc6ab">scale_qty</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l04249" name="l04249"></a><span class="lineno"> 4249</span>    }</div>
-<div class="line"><a id="l04250" name="l04250"></a><span class="lineno"> 4250</span>}</div>
+<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l04244">4244</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l04245" name="l04245"></a><span class="lineno"> 4245</span>{</div>
+<div class="line"><a id="l04246" name="l04246"></a><span class="lineno"> 4246</span>    <span class="comment">/*</span></div>
+<div class="line"><a id="l04247" name="l04247"></a><span class="lineno"> 4247</span><span class="comment">    // TODO: This must be called after all finalization</span></div>
+<div class="line"><a id="l04248" name="l04248"></a><span class="lineno"> 4248</span><span class="comment">    for( const auto&amp; e : emits ) {</span></div>
+<div class="line"><a id="l04249" name="l04249"></a><span class="lineno"> 4249</span><span class="comment">        if( !e.is_valid() ) {</span></div>
+<div class="line"><a id="l04250" name="l04250"></a><span class="lineno"> 4250</span><span class="comment">            debugmsg( &quot;Item %s has unknown emit source %s&quot;, my_item_type.c_str(), e.c_str() );</span></div>
+<div class="line"><a id="l04251" name="l04251"></a><span class="lineno"> 4251</span><span class="comment">        }</span></div>
+<div class="line"><a id="l04252" name="l04252"></a><span class="lineno"> 4252</span><span class="comment">    }</span></div>
+<div class="line"><a id="l04253" name="l04253"></a><span class="lineno"> 4253</span><span class="comment">    */</span></div>
+<div class="line"><a id="l04254" name="l04254"></a><span class="lineno"> 4254</span> </div>
+<div class="line"><a id="l04255" name="l04255"></a><span class="lineno"> 4255</span>    <span class="keywordflow">if</span>( <a class="code hl_variable" href="classemit__actor.html#ade1079362e991a186bd32f5e0eccc6ab">scale_qty</a> &amp;&amp; !<a class="code hl_function" href="classitem.html#a40963a016376016eb408bdb9dbb94388">item::count_by_charges</a>( my_item_type ) ) {</div>
+<div class="line"><a id="l04256" name="l04256"></a><span class="lineno"> 4256</span>        <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;Item %s has emit_actor with scale_qty, but is not counted by charges&quot;</span>,</div>
+<div class="line"><a id="l04257" name="l04257"></a><span class="lineno"> 4257</span>                  my_item_type.c_str() );</div>
+<div class="line"><a id="l04258" name="l04258"></a><span class="lineno"> 4258</span>        <a class="code hl_variable" href="classemit__actor.html#ade1079362e991a186bd32f5e0eccc6ab">scale_qty</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l04259" name="l04259"></a><span class="lineno"> 4259</span>    }</div>
+<div class="line"><a id="l04260" name="l04260"></a><span class="lineno"> 4260</span>}</div>
 <div class="ttc" id="aclassemit__actor_html_ade1079362e991a186bd32f5e0eccc6ab"><div class="ttname"><a href="classemit__actor.html#ade1079362e991a186bd32f5e0eccc6ab">emit_actor::scale_qty</a></div><div class="ttdeci">bool scale_qty</div><div class="ttdoc">If true multiplies the emits by number of charges on the item.</div><div class="ttdef"><b>Definition:</b> <a href="iuse__actor_8h_source.html#l01123">iuse_actor.h:1123</a></div></div>
-<div class="ttc" id="aclassitem_html_a40963a016376016eb408bdb9dbb94388"><div class="ttname"><a href="classitem.html#a40963a016376016eb408bdb9dbb94388">item::count_by_charges</a></div><div class="ttdeci">bool count_by_charges() const</div><div class="ttdef"><b>Definition:</b> <a href="item_8cpp_source.html#l05890">item.cpp:5890</a></div></div>
+<div class="ttc" id="aclassitem_html_a40963a016376016eb408bdb9dbb94388"><div class="ttname"><a href="classitem.html#a40963a016376016eb408bdb9dbb94388">item::count_by_charges</a></div><div class="ttdeci">bool count_by_charges() const</div><div class="ttdef"><b>Definition:</b> <a href="item_8cpp_source.html#l05997">item.cpp:5997</a></div></div>
 <div class="ttc" id="adebug_8h_html_a87e509562277a7ada3a75330d00cb445"><div class="ttname"><a href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a></div><div class="ttdeci">#define debugmsg(...)</div><div class="ttdoc">Debug message of level DL::Error and class DC::DebugMsg, also includes the source file name and line,...</div><div class="ttdef"><b>Definition:</b> <a href="debug_8h_source.html#l00074">debug.h:74</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="string__id_8h_source.html#l00247">string_id&lt; T &gt;::c_str()</a>, <a class="el" href="item_8cpp_source.html#l05890">item::count_by_charges()</a>, and <a class="el" href="debug_8h_source.html#l00074">debugmsg</a>.</p>
+<p class="reference">References <a class="el" href="string__id_8h_source.html#l00247">string_id&lt; T &gt;::c_str()</a>, <a class="el" href="item_8cpp_source.html#l05997">item::count_by_charges()</a>, and <a class="el" href="debug_8h_source.html#l00074">debugmsg</a>.</p>
 
 </div>
 </div>
@@ -336,11 +336,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classiuse__actor.html#aa93b616e6f6e450b098209ad19ae78c4">iuse_actor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l04212">4212</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l04213" name="l04213"></a><span class="lineno"> 4213</span>{</div>
-<div class="line"><a id="l04214" name="l04214"></a><span class="lineno"> 4214</span>    <a class="code hl_function" href="assign_8h.html#ac353926c625eb31f78ef7534277c5aaf">assign</a>( obj, <span class="stringliteral">&quot;emits&quot;</span>, <a class="code hl_variable" href="classemit__actor.html#a47db61017c617916f6c6ee41a7221a3a">emits</a> );</div>
-<div class="line"><a id="l04215" name="l04215"></a><span class="lineno"> 4215</span>    <a class="code hl_function" href="assign_8h.html#ac353926c625eb31f78ef7534277c5aaf">assign</a>( obj, <span class="stringliteral">&quot;scale_qty&quot;</span>, <a class="code hl_variable" href="classemit__actor.html#ade1079362e991a186bd32f5e0eccc6ab">scale_qty</a> );</div>
-<div class="line"><a id="l04216" name="l04216"></a><span class="lineno"> 4216</span>}</div>
+<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l04222">4222</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l04223" name="l04223"></a><span class="lineno"> 4223</span>{</div>
+<div class="line"><a id="l04224" name="l04224"></a><span class="lineno"> 4224</span>    <a class="code hl_function" href="assign_8h.html#ac353926c625eb31f78ef7534277c5aaf">assign</a>( obj, <span class="stringliteral">&quot;emits&quot;</span>, <a class="code hl_variable" href="classemit__actor.html#a47db61017c617916f6c6ee41a7221a3a">emits</a> );</div>
+<div class="line"><a id="l04225" name="l04225"></a><span class="lineno"> 4225</span>    <a class="code hl_function" href="assign_8h.html#ac353926c625eb31f78ef7534277c5aaf">assign</a>( obj, <span class="stringliteral">&quot;scale_qty&quot;</span>, <a class="code hl_variable" href="classemit__actor.html#ade1079362e991a186bd32f5e0eccc6ab">scale_qty</a> );</div>
+<div class="line"><a id="l04226" name="l04226"></a><span class="lineno"> 4226</span>}</div>
 <div class="ttc" id="aassign_8h_html_ac353926c625eb31f78ef7534277c5aaf"><div class="ttname"><a href="assign_8h.html#ac353926c625eb31f78ef7534277c5aaf">assign</a></div><div class="ttdeci">bool assign(const JsonObject &amp;jo, const std::string &amp;name, T &amp;val, bool strict=false, T lo=std::numeric_limits&lt; T &gt;::lowest(), T hi=std::numeric_limits&lt; T &gt;::max())</div><div class="ttdef"><b>Definition:</b> <a href="assign_8h_source.html#l00059">assign.h:59</a></div></div>
 <div class="ttc" id="aclassemit__actor_html_a47db61017c617916f6c6ee41a7221a3a"><div class="ttname"><a href="classemit__actor.html#a47db61017c617916f6c6ee41a7221a3a">emit_actor::emits</a></div><div class="ttdeci">std::set&lt; emit_id &gt; emits</div><div class="ttdef"><b>Definition:</b> <a href="iuse__actor_8h_source.html#l01121">iuse_actor.h:1121</a></div></div>
 </div><!-- fragment -->
@@ -396,22 +396,22 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classiuse__actor.html#aa7ab08413d05764e42ae4471799fd6b0">iuse_actor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l04218">4218</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l04219" name="l04219"></a><span class="lineno"> 4219</span>{</div>
-<div class="line"><a id="l04220" name="l04220"></a><span class="lineno"> 4220</span>    <a class="code hl_class" href="classmap.html">map</a> &amp;here = <a class="code hl_function" href="map_8cpp.html#acb0b34be6e497bdd2f9f40ae6929d562">get_map</a>();</div>
-<div class="line"><a id="l04221" name="l04221"></a><span class="lineno"> 4221</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> scaling = <a class="code hl_variable" href="classemit__actor.html#ade1079362e991a186bd32f5e0eccc6ab">scale_qty</a> ? it.<a class="code hl_variable" href="classitem.html#a6bfb92ab5d41e0eb3a1da160fac71b0e">charges</a> : 1;</div>
-<div class="line"><a id="l04222" name="l04222"></a><span class="lineno"> 4222</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <span class="keyword">auto</span> &amp;e : <a class="code hl_variable" href="classemit__actor.html#a47db61017c617916f6c6ee41a7221a3a">emits</a> ) {</div>
-<div class="line"><a id="l04223" name="l04223"></a><span class="lineno"> 4223</span>        here.<a class="code hl_function" href="classmap.html#a150f1b826e0e2722ccf76dbdac136ffd">emit_field</a>( pos, e, scaling );</div>
-<div class="line"><a id="l04224" name="l04224"></a><span class="lineno"> 4224</span>    }</div>
-<div class="line"><a id="l04225" name="l04225"></a><span class="lineno"> 4225</span> </div>
-<div class="line"><a id="l04226" name="l04226"></a><span class="lineno"> 4226</span>    <span class="keywordflow">return</span> 1;</div>
-<div class="line"><a id="l04227" name="l04227"></a><span class="lineno"> 4227</span>}</div>
+<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l04228">4228</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l04229" name="l04229"></a><span class="lineno"> 4229</span>{</div>
+<div class="line"><a id="l04230" name="l04230"></a><span class="lineno"> 4230</span>    <a class="code hl_class" href="classmap.html">map</a> &amp;here = <a class="code hl_function" href="map_8cpp.html#acb0b34be6e497bdd2f9f40ae6929d562">get_map</a>();</div>
+<div class="line"><a id="l04231" name="l04231"></a><span class="lineno"> 4231</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> scaling = <a class="code hl_variable" href="classemit__actor.html#ade1079362e991a186bd32f5e0eccc6ab">scale_qty</a> ? it.<a class="code hl_variable" href="classitem.html#a6bfb92ab5d41e0eb3a1da160fac71b0e">charges</a> : 1;</div>
+<div class="line"><a id="l04232" name="l04232"></a><span class="lineno"> 4232</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <span class="keyword">auto</span> &amp;e : <a class="code hl_variable" href="classemit__actor.html#a47db61017c617916f6c6ee41a7221a3a">emits</a> ) {</div>
+<div class="line"><a id="l04233" name="l04233"></a><span class="lineno"> 4233</span>        here.<a class="code hl_function" href="classmap.html#a150f1b826e0e2722ccf76dbdac136ffd">emit_field</a>( pos, e, scaling );</div>
+<div class="line"><a id="l04234" name="l04234"></a><span class="lineno"> 4234</span>    }</div>
+<div class="line"><a id="l04235" name="l04235"></a><span class="lineno"> 4235</span> </div>
+<div class="line"><a id="l04236" name="l04236"></a><span class="lineno"> 4236</span>    <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a id="l04237" name="l04237"></a><span class="lineno"> 4237</span>}</div>
 <div class="ttc" id="aclassitem_html_a6bfb92ab5d41e0eb3a1da160fac71b0e"><div class="ttname"><a href="classitem.html#a6bfb92ab5d41e0eb3a1da160fac71b0e">item::charges</a></div><div class="ttdeci">int charges</div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l02196">item.h:2196</a></div></div>
 <div class="ttc" id="aclassmap_html"><div class="ttname"><a href="classmap.html">map</a></div><div class="ttdoc">Manage and cache data about a part of the map.</div><div class="ttdef"><b>Definition:</b> <a href="map_8h_source.html#l00383">map.h:384</a></div></div>
 <div class="ttc" id="aclassmap_html_a150f1b826e0e2722ccf76dbdac136ffd"><div class="ttname"><a href="classmap.html#a150f1b826e0e2722ccf76dbdac136ffd">map::emit_field</a></div><div class="ttdeci">void emit_field(const tripoint &amp;pos, const emit_id &amp;src, float mul=1.0f)</div><div class="ttdoc">Runs one cycle of emission src which may result in propagation of fields.</div><div class="ttdef"><b>Definition:</b> <a href="map__field_8cpp_source.html#l01928">map_field.cpp:1928</a></div></div>
 <div class="ttc" id="amap_8cpp_html_acb0b34be6e497bdd2f9f40ae6929d562"><div class="ttname"><a href="map_8cpp.html#acb0b34be6e497bdd2f9f40ae6929d562">get_map</a></div><div class="ttdeci">map &amp; get_map()</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l00146">map.cpp:146</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="item_8h_source.html#l02196">item::charges</a>, <a class="el" href="map__field_8cpp_source.html#l01928">map::emit_field()</a>, <a class="el" href="map_8cpp_source.html#l00146">get_map()</a>, and <a class="el" href="character_8cpp_source.html#l00721">Character::pos()</a>.</p>
+<p class="reference">References <a class="el" href="item_8h_source.html#l02196">item::charges</a>, <a class="el" href="map__field_8cpp_source.html#l01928">map::emit_field()</a>, <a class="el" href="map_8cpp_source.html#l00146">get_map()</a>, and <a class="el" href="character_8cpp_source.html#l00587">Character::pos()</a>.</p>
 
 </div>
 </div>
@@ -460,7 +460,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classemit__actor.html">emit_actor</a></li>
-    <li class="footer">Generated on Mon Dec 26 2022 21:42:01 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Feb 21 2023 16:43:27 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

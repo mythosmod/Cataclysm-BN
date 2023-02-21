@@ -54,6 +54,8 @@ var namespaceio =
     [ "enum_to_string< ot_match_type >", "namespaceio.html#a43c03e982785cb8effb5ceae96fadc81", null ],
     [ "enum_to_string< phase_id >", "namespaceio.html#a57b37d327637c1542d4437e52152265f", null ],
     [ "enum_to_string< precip_class >", "namespaceio.html#aea3e9136e9f6ac190a57e64d44b8bcea", null ],
+    [ "enum_to_string< relic_recharge_req >", "namespaceio.html#a946b8973d560458dcb4396ef967e442e", null ],
+    [ "enum_to_string< relic_recharge_type >", "namespaceio.html#aa63c66e8dc2930a742f707f2ad7895de", null ],
     [ "enum_to_string< season_type >", "namespaceio.html#a1902c443c184bdce020db68dcc32c8d9", null ],
     [ "enum_to_string< side >", "namespaceio.html#a3c27a38dca6945be441e4a827e09e385", null ],
     [ "enum_to_string< sounds::sound_t >", "namespaceio.html#ac62d5323de6ac12218d2802af053f20a", null ],

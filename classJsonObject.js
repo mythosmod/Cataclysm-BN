@@ -44,6 +44,8 @@ var classJsonObject =
     [ "operator=", "classJsonObject.html#a1d8db4f95dc9d7213f2a2c2d934ccbd9", null ],
     [ "read", "classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8", null ],
     [ "report_unvisited", "classJsonObject.html#a3ff7c1225d579b97b3e3f3ac9239fa2b", null ],
+    [ "show_warning", "classJsonObject.html#a088b574272db05af801ed77184a16060", null ],
+    [ "show_warning", "classJsonObject.html#a94e09e812241f331d8791ad0c2569ee0", null ],
     [ "size", "classJsonObject.html#a86511dd3bbb34b4174be11363db14b6d", null ],
     [ "str", "classJsonObject.html#a4496f3e3f116028bb7631b3536c5ea56", null ],
     [ "throw_error", "classJsonObject.html#ae7bcdb4ec8ab2c64e607b411cb98d00c", null ],

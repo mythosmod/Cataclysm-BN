@@ -147,7 +147,7 @@ Functions</h2></td></tr>
 <div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span> </div>
 <div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>    <a class="code hl_variable" href="namespaceanonymous__namespace_02construction_8cpp_03.html#a5da2e229b1546f7772edc48fa79116e6">all_constructions</a>.check();</div>
 <div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>}</div>
-<div class="ttc" id="acached__options_8cpp_html_a16e6bc0b3300c5fb311e7f3571fb67c7"><div class="ttname"><a href="cached__options_8cpp.html#a16e6bc0b3300c5fb311e7f3571fb67c7">json_report_strict</a></div><div class="ttdeci">bool json_report_strict</div><div class="ttdoc">Report extra problems in JSONs.</div><div class="ttdef"><b>Definition:</b> <a href="cached__options_8cpp_source.html#l00006">cached_options.cpp:6</a></div></div>
+<div class="ttc" id="acached__options_8cpp_html_a16e6bc0b3300c5fb311e7f3571fb67c7"><div class="ttname"><a href="cached__options_8cpp.html#a16e6bc0b3300c5fb311e7f3571fb67c7">json_report_strict</a></div><div class="ttdeci">bool json_report_strict</div><div class="ttdoc">Report extra problems in JSONs.</div><div class="ttdef"><b>Definition:</b> <a href="cached__options_8cpp_source.html#l00005">cached_options.cpp:5</a></div></div>
 <div class="ttc" id="adebug_8h_html_a87e509562277a7ada3a75330d00cb445"><div class="ttname"><a href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a></div><div class="ttdeci">#define debugmsg(...)</div><div class="ttdoc">Debug message of level DL::Error and class DC::DebugMsg, also includes the source file name and line,...</div><div class="ttdef"><b>Definition:</b> <a href="debug_8h_source.html#l00074">debug.h:74</a></div></div>
 <div class="ttc" id="amagic_8cpp_html_a6753ecfe87da659675b18c2f81d6ec12"><div class="ttname"><a href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a></div><div class="ttdeci">constexpr double c</div><div class="ttdef"><b>Definition:</b> <a href="magic_8cpp_source.html#l01032">magic.cpp:1032</a></div></div>
 <div class="ttc" id="amapdata_8h_html_a35072a9fdd9a8d25da4e647a63d1c445"><div class="ttname"><a href="mapdata_8h.html#a35072a9fdd9a8d25da4e647a63d1c445">ter_str_id</a></div><div class="ttdeci">string_id&lt; ter_t &gt; ter_str_id</div><div class="ttdef"><b>Definition:</b> <a href="mapdata_8h_source.html#l00024">mapdata.h:24</a></div></div>
@@ -156,7 +156,7 @@ Functions</h2></td></tr>
 <div class="ttc" id="astructconstruction_html"><div class="ttname"><a href="structconstruction.html">construction</a></div><div class="ttdef"><b>Definition:</b> <a href="construction_8h_source.html#l00038">construction.h:38</a></div></div>
 <div class="ttc" id="atype__id_8h_html_a13fd56b9ac506b2517d4889040e0ef66"><div class="ttname"><a href="type__id_8h.html#a13fd56b9ac506b2517d4889040e0ef66">furn_str_id</a></div><div class="ttdeci">string_id&lt; furn_t &gt; furn_str_id</div><div class="ttdef"><b>Definition:</b> <a href="type__id_8h_source.html#l00065">type_id.h:65</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="namespaceanonymous__namespace_02construction_8cpp_03.html#a5da2e229b1546f7772edc48fa79116e6">anonymous_namespace{construction.cpp}::all_constructions</a>, <a class="el" href="magic_8cpp_source.html#l01032">c</a>, <a class="el" href="debug_8h_source.html#l00074">debugmsg</a>, <a class="el" href="cached__options_8cpp_source.html#l00006">json_report_strict</a>, and <a class="el" href="string__utils_8cpp_source.html#l00079">string_starts_with()</a>.</p>
+<p class="reference">References <a class="el" href="namespaceanonymous__namespace_02construction_8cpp_03.html#a5da2e229b1546f7772edc48fa79116e6">anonymous_namespace{construction.cpp}::all_constructions</a>, <a class="el" href="magic_8cpp_source.html#l01032">c</a>, <a class="el" href="debug_8h_source.html#l00074">debugmsg</a>, <a class="el" href="cached__options_8cpp_source.html#l00005">json_report_strict</a>, and <a class="el" href="string__utils_8cpp_source.html#l00079">string_starts_with()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="init_8cpp_source.html#l00721">DynamicDataLoader::check_consistency()</a>.</p>
 
@@ -298,13 +298,14 @@ Functions</h2></td></tr>
 <div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_struct" href="structconstruction.html">construction</a> &amp;it : <a class="code hl_variable" href="namespaceanonymous__namespace_02construction_8cpp_03.html#a5da2e229b1546f7772edc48fa79116e6">all_constructions</a>.get_all() ) {</div>
 <div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>        <span class="comment">// HACK: const cast is ugly, but allowed here</span></div>
 <div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>        <a class="code hl_struct" href="structconstruction.html">construction</a> &amp;<a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a> = <span class="keyword">const_cast&lt;</span><a class="code hl_struct" href="structconstruction.html">construction</a> &amp;<span class="keyword">&gt;</span>( it );</div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>        <a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a>.time = time;</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>        <a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a>.time = <a class="code hl_enumvalue" href="relic_8h.html#a37cd9dd49ee6b62891ec331828640ddca07cc694b9b3fc636710fa08b6922c42b">time</a>;</div>
 <div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>    }</div>
 <div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>}</div>
+<div class="ttc" id="arelic_8h_html_a37cd9dd49ee6b62891ec331828640ddca07cc694b9b3fc636710fa08b6922c42b"><div class="ttname"><a href="relic_8h.html#a37cd9dd49ee6b62891ec331828640ddca07cc694b9b3fc636710fa08b6922c42b">relic_recharge_type::time</a></div><div class="ttdeci">@ time</div><div class="ttdoc">Recharges slowly with time.</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="namespaceanonymous__namespace_02construction_8cpp_03.html#a5da2e229b1546f7772edc48fa79116e6">anonymous_namespace{construction.cpp}::all_constructions</a>, and <a class="el" href="magic_8cpp_source.html#l01032">c</a>.</p>
+<p class="reference">References <a class="el" href="namespaceanonymous__namespace_02construction_8cpp_03.html#a5da2e229b1546f7772edc48fa79116e6">anonymous_namespace{construction.cpp}::all_constructions</a>, <a class="el" href="magic_8cpp_source.html#l01032">c</a>, and <a class="el" href="relic_8h.html#a37cd9dd49ee6b62891ec331828640ddca07cc694b9b3fc636710fa08b6922c42b">time</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gamemode__defense_8cpp_source.html#l00217">defense_game::init_constructions()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="gamemode__defense_8cpp_source.html#l00218">defense_game::init_constructions()</a>.</p>
 
 </div>
 </div>
@@ -341,7 +342,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceconstructions.html">constructions</a></li>
-    <li class="footer">Generated on Mon Dec 26 2022 21:42:20 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Feb 21 2023 16:43:45 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

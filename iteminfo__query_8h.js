@@ -35,6 +35,7 @@ var iteminfo__query_8h =
       [ "FOOD_POISON", "iteminfo__query_8h.html#aa68a581556ddf9d10387ba6d9f760cdaaa76bf19daad9839801f098cd4db69d1c", null ],
       [ "FOOD_HALLUCINOGENIC", "iteminfo__query_8h.html#aa68a581556ddf9d10387ba6d9f760cdaa3f2572bc958e4490db06b7322b4675b6", null ],
       [ "FOOD_ROT", "iteminfo__query_8h.html#aa68a581556ddf9d10387ba6d9f760cdaa3f6f1966e9b2cbe97a4d33992f9fab84", null ],
+      [ "FOOD_ROT_STORAGE", "iteminfo__query_8h.html#aa68a581556ddf9d10387ba6d9f760cdaa4fb10b709d30e88abd5a28d28f3b44c6", null ],
       [ "MAGAZINE_CAPACITY", "iteminfo__query_8h.html#aa68a581556ddf9d10387ba6d9f760cdaaf0ec68231ba718dede64697046faa4d7", null ],
       [ "MAGAZINE_RELOAD", "iteminfo__query_8h.html#aa68a581556ddf9d10387ba6d9f760cdaaa8e7c238014ebc7462d62e5ac9ce0f8d", null ],
       [ "AMMO_REMAINING_OR_TYPES", "iteminfo__query_8h.html#aa68a581556ddf9d10387ba6d9f760cdaab4804ffed45bd62b1cf22c64689f5f73", null ],

@@ -137,6 +137,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a330b5aee6bbf5749eb972c833d8d7b2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25be96ccca16666748a7df6f52996544"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJsonValue.html#a25be96ccca16666748a7df6f52996544">throw_error</a> (const std::string &amp;err) const</td></tr>
 <tr class="separator:a25be96ccca16666748a7df6f52996544"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c679272dfb2b3258455878807488a02"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJsonValue.html#a2c679272dfb2b3258455878807488a02">show_warning</a> (std::string err) const</td></tr>
+<tr class="separator:a2c679272dfb2b3258455878807488a02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0af34c133b1b07979137f415b1508c69"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJsonValue.html#a0af34c133b1b07979137f415b1508c69">get_string</a> () const</td></tr>
 <tr class="separator:a0af34c133b1b07979137f415b1508c69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4de4b750aeb8f7256392866e04fff586"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJsonValue.html#a4de4b750aeb8f7256392866e04fff586">get_int</a> () const</td></tr>
@@ -231,14 +233,14 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="json_8h_source.html#l01198">1198</a> of file <a class="el" href="json_8h_source.html">json.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l01198" name="l01198"></a><span class="lineno"> 1198</span>                                    {</div>
-<div class="line"><a id="l01199" name="l01199"></a><span class="lineno"> 1199</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="classJsonValue.html#a2fa70e2f5bcf43771b8bdd9f36c71833">seek</a>().<a class="code hl_function" href="classJsonIn.html#ae14bc330c1eb42662a6b82b35c43a6ed">get_array</a>();</div>
-<div class="line"><a id="l01200" name="l01200"></a><span class="lineno"> 1200</span>        }</div>
-<div class="ttc" id="aclassJsonIn_html_ae14bc330c1eb42662a6b82b35c43a6ed"><div class="ttname"><a href="classJsonIn.html#ae14bc330c1eb42662a6b82b35c43a6ed">JsonIn::get_array</a></div><div class="ttdeci">JsonArray get_array()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01368">json.cpp:1368</a></div></div>
-<div class="ttc" id="aclassJsonValue_html_a2fa70e2f5bcf43771b8bdd9f36c71833"><div class="ttname"><a href="classJsonValue.html#a2fa70e2f5bcf43771b8bdd9f36c71833">JsonValue::seek</a></div><div class="ttdeci">JsonIn &amp; seek() const</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l02074">json.cpp:2074</a></div></div>
+<p class="definition">Definition at line <a class="el" href="json_8h_source.html#l01199">1199</a> of file <a class="el" href="json_8h_source.html">json.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l01199" name="l01199"></a><span class="lineno"> 1199</span>                                    {</div>
+<div class="line"><a id="l01200" name="l01200"></a><span class="lineno"> 1200</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="classJsonValue.html#a2fa70e2f5bcf43771b8bdd9f36c71833">seek</a>().<a class="code hl_function" href="classJsonIn.html#ae14bc330c1eb42662a6b82b35c43a6ed">get_array</a>();</div>
+<div class="line"><a id="l01201" name="l01201"></a><span class="lineno"> 1201</span>        }</div>
+<div class="ttc" id="aclassJsonIn_html_ae14bc330c1eb42662a6b82b35c43a6ed"><div class="ttname"><a href="classJsonIn.html#ae14bc330c1eb42662a6b82b35c43a6ed">JsonIn::get_array</a></div><div class="ttdeci">JsonArray get_array()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01435">json.cpp:1435</a></div></div>
+<div class="ttc" id="aclassJsonValue_html_a2fa70e2f5bcf43771b8bdd9f36c71833"><div class="ttname"><a href="classJsonValue.html#a2fa70e2f5bcf43771b8bdd9f36c71833">JsonValue::seek</a></div><div class="ttdeci">JsonIn &amp; seek() const</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l02141">json.cpp:2141</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="json_8cpp_source.html#l01368">JsonIn::get_array()</a>, and <a class="el" href="json_8cpp_source.html#l02074">seek()</a>.</p>
+<p class="reference">References <a class="el" href="json_8cpp_source.html#l01435">JsonIn::get_array()</a>, and <a class="el" href="json_8cpp_source.html#l02141">seek()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="profession_8cpp_source.html#l00554">json_item_substitution::load()</a>, <a class="el" href="clothing__mod_8cpp_source.html#l00067">clothing_mod::load()</a>, <a class="el" href="requirements_8cpp_source.html#l00209">tool_comp::load()</a>, <a class="el" href="requirements_8cpp_source.html#l00238">item_comp::load()</a>, <a class="el" href="item__group_8cpp_source.html#l00649">item_group::load_item_group()</a>, <a class="el" href="requirements_8cpp_source.html#l00272">requirement_data::load_obj_list()</a>, <a class="el" href="mapgen_8cpp_source.html#l01992">load_place_mapings()</a>, <a class="el" href="mapgen_8cpp_source.html#l02041">load_place_mapings_alternatively()</a>, <a class="el" href="mapgen_8cpp_source.html#l02008">load_place_mapings_string()</a>, and <a class="el" href="trait__group_8cpp_source.html#l00053">trait_group::load_trait_group()</a>.</p>
 
@@ -267,15 +269,15 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="json_8h_source.html#l01189">1189</a> of file <a class="el" href="json_8h_source.html">json.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l01189" name="l01189"></a><span class="lineno"> 1189</span>                              {</div>
-<div class="line"><a id="l01190" name="l01190"></a><span class="lineno"> 1190</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="classJsonValue.html#a2fa70e2f5bcf43771b8bdd9f36c71833">seek</a>().<a class="code hl_function" href="classJsonIn.html#a1d776b66d738a1657104cfdafc4fab34">get_bool</a>();</div>
-<div class="line"><a id="l01191" name="l01191"></a><span class="lineno"> 1191</span>        }</div>
-<div class="ttc" id="aclassJsonIn_html_a1d776b66d738a1657104cfdafc4fab34"><div class="ttname"><a href="classJsonIn.html#a1d776b66d738a1657104cfdafc4fab34">JsonIn::get_bool</a></div><div class="ttdeci">bool get_bool()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01331">json.cpp:1331</a></div></div>
+<p class="definition">Definition at line <a class="el" href="json_8h_source.html#l01190">1190</a> of file <a class="el" href="json_8h_source.html">json.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l01190" name="l01190"></a><span class="lineno"> 1190</span>                              {</div>
+<div class="line"><a id="l01191" name="l01191"></a><span class="lineno"> 1191</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="classJsonValue.html#a2fa70e2f5bcf43771b8bdd9f36c71833">seek</a>().<a class="code hl_function" href="classJsonIn.html#a1d776b66d738a1657104cfdafc4fab34">get_bool</a>();</div>
+<div class="line"><a id="l01192" name="l01192"></a><span class="lineno"> 1192</span>        }</div>
+<div class="ttc" id="aclassJsonIn_html_a1d776b66d738a1657104cfdafc4fab34"><div class="ttname"><a href="classJsonIn.html#a1d776b66d738a1657104cfdafc4fab34">JsonIn::get_bool</a></div><div class="ttdeci">bool get_bool()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01398">json.cpp:1398</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="json_8cpp_source.html#l01331">JsonIn::get_bool()</a>, and <a class="el" href="json_8cpp_source.html#l02074">seek()</a>.</p>
+<p class="reference">References <a class="el" href="json_8cpp_source.html#l01398">JsonIn::get_bool()</a>, and <a class="el" href="json_8cpp_source.html#l02141">seek()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="json_8cpp_source.html#l00266">JsonObject::get_bool()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="json_8cpp_source.html#l00333">JsonObject::get_bool()</a>.</p>
 
 </div>
 </div>
@@ -302,15 +304,15 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="json_8h_source.html#l01192">1192</a> of file <a class="el" href="json_8h_source.html">json.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l01192" name="l01192"></a><span class="lineno"> 1192</span>                                 {</div>
-<div class="line"><a id="l01193" name="l01193"></a><span class="lineno"> 1193</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="classJsonValue.html#a2fa70e2f5bcf43771b8bdd9f36c71833">seek</a>().<a class="code hl_function" href="classJsonIn.html#a560947f71ecd8e1dc191332aa7abaeed">get_float</a>();</div>
-<div class="line"><a id="l01194" name="l01194"></a><span class="lineno"> 1194</span>        }</div>
-<div class="ttc" id="aclassJsonIn_html_a560947f71ecd8e1dc191332aa7abaeed"><div class="ttname"><a href="classJsonIn.html#a560947f71ecd8e1dc191332aa7abaeed">JsonIn::get_float</a></div><div class="ttdeci">double get_float()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01264">json.cpp:1264</a></div></div>
+<p class="definition">Definition at line <a class="el" href="json_8h_source.html#l01193">1193</a> of file <a class="el" href="json_8h_source.html">json.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l01193" name="l01193"></a><span class="lineno"> 1193</span>                                 {</div>
+<div class="line"><a id="l01194" name="l01194"></a><span class="lineno"> 1194</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="classJsonValue.html#a2fa70e2f5bcf43771b8bdd9f36c71833">seek</a>().<a class="code hl_function" href="classJsonIn.html#a560947f71ecd8e1dc191332aa7abaeed">get_float</a>();</div>
+<div class="line"><a id="l01195" name="l01195"></a><span class="lineno"> 1195</span>        }</div>
+<div class="ttc" id="aclassJsonIn_html_a560947f71ecd8e1dc191332aa7abaeed"><div class="ttname"><a href="classJsonIn.html#a560947f71ecd8e1dc191332aa7abaeed">JsonIn::get_float</a></div><div class="ttdeci">double get_float()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01331">json.cpp:1331</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="json_8cpp_source.html#l01264">JsonIn::get_float()</a>, and <a class="el" href="json_8cpp_source.html#l02074">seek()</a>.</p>
+<p class="reference">References <a class="el" href="json_8cpp_source.html#l01331">JsonIn::get_float()</a>, and <a class="el" href="json_8cpp_source.html#l02141">seek()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="json_8cpp_source.html#l00298">JsonObject::get_float()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="json_8cpp_source.html#l00365">JsonObject::get_float()</a>.</p>
 
 </div>
 </div>
@@ -337,15 +339,15 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="json_8h_source.html#l01186">1186</a> of file <a class="el" href="json_8h_source.html">json.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l01186" name="l01186"></a><span class="lineno"> 1186</span>                            {</div>
-<div class="line"><a id="l01187" name="l01187"></a><span class="lineno"> 1187</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="classJsonValue.html#a2fa70e2f5bcf43771b8bdd9f36c71833">seek</a>().<a class="code hl_function" href="classJsonIn.html#a4ad2af6b619e40578784928e9a3fd134">get_int</a>();</div>
-<div class="line"><a id="l01188" name="l01188"></a><span class="lineno"> 1188</span>        }</div>
-<div class="ttc" id="aclassJsonIn_html_a4ad2af6b619e40578784928e9a3fd134"><div class="ttname"><a href="classJsonIn.html#a4ad2af6b619e40578784928e9a3fd134">JsonIn::get_int</a></div><div class="ttdeci">int get_int()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01187">json.cpp:1187</a></div></div>
+<p class="definition">Definition at line <a class="el" href="json_8h_source.html#l01187">1187</a> of file <a class="el" href="json_8h_source.html">json.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l01187" name="l01187"></a><span class="lineno"> 1187</span>                            {</div>
+<div class="line"><a id="l01188" name="l01188"></a><span class="lineno"> 1188</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="classJsonValue.html#a2fa70e2f5bcf43771b8bdd9f36c71833">seek</a>().<a class="code hl_function" href="classJsonIn.html#a4ad2af6b619e40578784928e9a3fd134">get_int</a>();</div>
+<div class="line"><a id="l01189" name="l01189"></a><span class="lineno"> 1189</span>        }</div>
+<div class="ttc" id="aclassJsonIn_html_a4ad2af6b619e40578784928e9a3fd134"><div class="ttname"><a href="classJsonIn.html#a4ad2af6b619e40578784928e9a3fd134">JsonIn::get_int</a></div><div class="ttdeci">int get_int()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01254">json.cpp:1254</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="json_8cpp_source.html#l01187">JsonIn::get_int()</a>, and <a class="el" href="json_8cpp_source.html#l02074">seek()</a>.</p>
+<p class="reference">References <a class="el" href="json_8cpp_source.html#l01254">JsonIn::get_int()</a>, and <a class="el" href="json_8cpp_source.html#l02141">seek()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="json_8cpp_source.html#l00282">JsonObject::get_int()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="json_8cpp_source.html#l00349">JsonObject::get_int()</a>.</p>
 
 </div>
 </div>
@@ -372,13 +374,13 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="json_8h_source.html#l01195">1195</a> of file <a class="el" href="json_8h_source.html">json.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l01195" name="l01195"></a><span class="lineno"> 1195</span>                                      {</div>
-<div class="line"><a id="l01196" name="l01196"></a><span class="lineno"> 1196</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="classJsonValue.html#a2fa70e2f5bcf43771b8bdd9f36c71833">seek</a>().<a class="code hl_function" href="classJsonIn.html#af988f122efed0696d9d05f649e57c9b2">get_object</a>();</div>
-<div class="line"><a id="l01197" name="l01197"></a><span class="lineno"> 1197</span>        }</div>
-<div class="ttc" id="aclassJsonIn_html_af988f122efed0696d9d05f649e57c9b2"><div class="ttname"><a href="classJsonIn.html#af988f122efed0696d9d05f649e57c9b2">JsonIn::get_object</a></div><div class="ttdeci">JsonObject get_object()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01364">json.cpp:1364</a></div></div>
+<p class="definition">Definition at line <a class="el" href="json_8h_source.html#l01196">1196</a> of file <a class="el" href="json_8h_source.html">json.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l01196" name="l01196"></a><span class="lineno"> 1196</span>                                      {</div>
+<div class="line"><a id="l01197" name="l01197"></a><span class="lineno"> 1197</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="classJsonValue.html#a2fa70e2f5bcf43771b8bdd9f36c71833">seek</a>().<a class="code hl_function" href="classJsonIn.html#af988f122efed0696d9d05f649e57c9b2">get_object</a>();</div>
+<div class="line"><a id="l01198" name="l01198"></a><span class="lineno"> 1198</span>        }</div>
+<div class="ttc" id="aclassJsonIn_html_af988f122efed0696d9d05f649e57c9b2"><div class="ttname"><a href="classJsonIn.html#af988f122efed0696d9d05f649e57c9b2">JsonIn::get_object</a></div><div class="ttdeci">JsonObject get_object()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01431">json.cpp:1431</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="json_8cpp_source.html#l01364">JsonIn::get_object()</a>, and <a class="el" href="json_8cpp_source.html#l02074">seek()</a>.</p>
+<p class="reference">References <a class="el" href="json_8cpp_source.html#l01431">JsonIn::get_object()</a>, and <a class="el" href="json_8cpp_source.html#l02141">seek()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="profession_8cpp_source.html#l00530">json_item_substitution::substitution::info::info()</a>, <a class="el" href="requirements_8cpp_source.html#l00184">quality_requirement::load()</a>, <a class="el" href="item__group_8cpp_source.html#l00649">item_group::load_item_group()</a>, <a class="el" href="mapgen_8cpp_source.html#l01992">load_place_mapings()</a>, <a class="el" href="mapgen_8cpp_source.html#l02008">load_place_mapings_string()</a>, and <a class="el" href="trait__group_8cpp_source.html#l00053">trait_group::load_trait_group()</a>.</p>
 
@@ -407,15 +409,15 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="json_8h_source.html#l01183">1183</a> of file <a class="el" href="json_8h_source.html">json.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l01183" name="l01183"></a><span class="lineno"> 1183</span>                                     {</div>
-<div class="line"><a id="l01184" name="l01184"></a><span class="lineno"> 1184</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="classJsonValue.html#a2fa70e2f5bcf43771b8bdd9f36c71833">seek</a>().<a class="code hl_function" href="classJsonIn.html#a7af38e6fc060866be2322268b5d3bcb9">get_string</a>();</div>
-<div class="line"><a id="l01185" name="l01185"></a><span class="lineno"> 1185</span>        }</div>
-<div class="ttc" id="aclassJsonIn_html_a7af38e6fc060866be2322268b5d3bcb9"><div class="ttname"><a href="classJsonIn.html#a7af38e6fc060866be2322268b5d3bcb9">JsonIn::get_string</a></div><div class="ttdeci">std::string get_string()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01096">json.cpp:1096</a></div></div>
+<p class="definition">Definition at line <a class="el" href="json_8h_source.html#l01184">1184</a> of file <a class="el" href="json_8h_source.html">json.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l01184" name="l01184"></a><span class="lineno"> 1184</span>                                     {</div>
+<div class="line"><a id="l01185" name="l01185"></a><span class="lineno"> 1185</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="classJsonValue.html#a2fa70e2f5bcf43771b8bdd9f36c71833">seek</a>().<a class="code hl_function" href="classJsonIn.html#a7af38e6fc060866be2322268b5d3bcb9">get_string</a>();</div>
+<div class="line"><a id="l01186" name="l01186"></a><span class="lineno"> 1186</span>        }</div>
+<div class="ttc" id="aclassJsonIn_html_a7af38e6fc060866be2322268b5d3bcb9"><div class="ttname"><a href="classJsonIn.html#a7af38e6fc060866be2322268b5d3bcb9">JsonIn::get_string</a></div><div class="ttdeci">std::string get_string()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01163">json.cpp:1163</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="json_8cpp_source.html#l01096">JsonIn::get_string()</a>, and <a class="el" href="json_8cpp_source.html#l02074">seek()</a>.</p>
+<p class="reference">References <a class="el" href="json_8cpp_source.html#l01163">JsonIn::get_string()</a>, and <a class="el" href="json_8cpp_source.html#l02141">seek()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="json_8cpp_source.html#l00314">JsonObject::get_string()</a>, <a class="el" href="item__group_8cpp_source.html#l00649">item_group::load_item_group()</a>, <a class="el" href="mapgen_8cpp_source.html#l02008">load_place_mapings_string()</a>, and <a class="el" href="trait__group_8cpp_source.html#l00053">trait_group::load_trait_group()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="json_8cpp_source.html#l00381">JsonObject::get_string()</a>, <a class="el" href="item__group_8cpp_source.html#l00649">item_group::load_item_group()</a>, <a class="el" href="mapgen_8cpp_source.html#l02008">load_place_mapings_string()</a>, and <a class="el" href="trait__group_8cpp_source.html#l00053">trait_group::load_trait_group()</a>.</p>
 
 </div>
 </div>
@@ -447,7 +449,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><a id="l01144" name="l01144"></a><span class="lineno"> 1144</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="classJsonValue.html#a2fa70e2f5bcf43771b8bdd9f36c71833">seek</a>().<a class="code hl_function" href="classJsonIn.html#a1d776b66d738a1657104cfdafc4fab34">get_bool</a>();</div>
 <div class="line"><a id="l01145" name="l01145"></a><span class="lineno"> 1145</span>        }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="json_8cpp_source.html#l01331">JsonIn::get_bool()</a>, and <a class="el" href="json_8cpp_source.html#l02074">seek()</a>.</p>
+<p class="reference">References <a class="el" href="json_8cpp_source.html#l01398">JsonIn::get_bool()</a>, and <a class="el" href="json_8cpp_source.html#l02141">seek()</a>.</p>
 
 </div>
 </div>
@@ -479,7 +481,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><a id="l01147" name="l01147"></a><span class="lineno"> 1147</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="classJsonValue.html#a2fa70e2f5bcf43771b8bdd9f36c71833">seek</a>().<a class="code hl_function" href="classJsonIn.html#a560947f71ecd8e1dc191332aa7abaeed">get_float</a>();</div>
 <div class="line"><a id="l01148" name="l01148"></a><span class="lineno"> 1148</span>        }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="json_8cpp_source.html#l01264">JsonIn::get_float()</a>, and <a class="el" href="json_8cpp_source.html#l02074">seek()</a>.</p>
+<p class="reference">References <a class="el" href="json_8cpp_source.html#l01331">JsonIn::get_float()</a>, and <a class="el" href="json_8cpp_source.html#l02141">seek()</a>.</p>
 
 </div>
 </div>
@@ -511,7 +513,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><a id="l01141" name="l01141"></a><span class="lineno"> 1141</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="classJsonValue.html#a2fa70e2f5bcf43771b8bdd9f36c71833">seek</a>().<a class="code hl_function" href="classJsonIn.html#a4ad2af6b619e40578784928e9a3fd134">get_int</a>();</div>
 <div class="line"><a id="l01142" name="l01142"></a><span class="lineno"> 1142</span>        }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="json_8cpp_source.html#l01187">JsonIn::get_int()</a>, and <a class="el" href="json_8cpp_source.html#l02074">seek()</a>.</p>
+<p class="reference">References <a class="el" href="json_8cpp_source.html#l01254">JsonIn::get_int()</a>, and <a class="el" href="json_8cpp_source.html#l02141">seek()</a>.</p>
 
 </div>
 </div>
@@ -543,7 +545,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><a id="l01153" name="l01153"></a><span class="lineno"> 1153</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="classJsonValue.html#a2fa70e2f5bcf43771b8bdd9f36c71833">seek</a>().<a class="code hl_function" href="classJsonIn.html#ae14bc330c1eb42662a6b82b35c43a6ed">get_array</a>();</div>
 <div class="line"><a id="l01154" name="l01154"></a><span class="lineno"> 1154</span>        }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="json_8cpp_source.html#l01368">JsonIn::get_array()</a>, and <a class="el" href="json_8cpp_source.html#l02074">seek()</a>.</p>
+<p class="reference">References <a class="el" href="json_8cpp_source.html#l01435">JsonIn::get_array()</a>, and <a class="el" href="json_8cpp_source.html#l02141">seek()</a>.</p>
 
 </div>
 </div>
@@ -575,7 +577,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><a id="l01150" name="l01150"></a><span class="lineno"> 1150</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="classJsonValue.html#a2fa70e2f5bcf43771b8bdd9f36c71833">seek</a>().<a class="code hl_function" href="classJsonIn.html#af988f122efed0696d9d05f649e57c9b2">get_object</a>();</div>
 <div class="line"><a id="l01151" name="l01151"></a><span class="lineno"> 1151</span>        }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="json_8cpp_source.html#l01364">JsonIn::get_object()</a>, and <a class="el" href="json_8cpp_source.html#l02074">seek()</a>.</p>
+<p class="reference">References <a class="el" href="json_8cpp_source.html#l01431">JsonIn::get_object()</a>, and <a class="el" href="json_8cpp_source.html#l02141">seek()</a>.</p>
 
 </div>
 </div>
@@ -607,7 +609,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><a id="l01138" name="l01138"></a><span class="lineno"> 1138</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="classJsonValue.html#a2fa70e2f5bcf43771b8bdd9f36c71833">seek</a>().<a class="code hl_function" href="classJsonIn.html#a7af38e6fc060866be2322268b5d3bcb9">get_string</a>();</div>
 <div class="line"><a id="l01139" name="l01139"></a><span class="lineno"> 1139</span>        }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="json_8cpp_source.html#l01096">JsonIn::get_string()</a>, and <a class="el" href="json_8cpp_source.html#l02074">seek()</a>.</p>
+<p class="reference">References <a class="el" href="json_8cpp_source.html#l01163">JsonIn::get_string()</a>, and <a class="el" href="json_8cpp_source.html#l02141">seek()</a>.</p>
 
 </div>
 </div>
@@ -651,9 +653,9 @@ template&lt;typename T &gt; </div>
 <div class="fragment"><div class="line"><a id="l01156" name="l01156"></a><span class="lineno"> 1156</span>                                                             {</div>
 <div class="line"><a id="l01157" name="l01157"></a><span class="lineno"> 1157</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="classJsonValue.html#a2fa70e2f5bcf43771b8bdd9f36c71833">seek</a>().<a class="code hl_function" href="classJsonIn.html#aa8f42d396d9e62f0401b71ccf579c111">read</a>( t, throw_on_error );</div>
 <div class="line"><a id="l01158" name="l01158"></a><span class="lineno"> 1158</span>        }</div>
-<div class="ttc" id="aclassJsonIn_html_aa8f42d396d9e62f0401b71ccf579c111"><div class="ttname"><a href="classJsonIn.html#aa8f42d396d9e62f0401b71ccf579c111">JsonIn::read</a></div><div class="ttdeci">bool read(bool &amp;b, bool throw_on_error=false)</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01485">json.cpp:1485</a></div></div>
+<div class="ttc" id="aclassJsonIn_html_aa8f42d396d9e62f0401b71ccf579c111"><div class="ttname"><a href="classJsonIn.html#aa8f42d396d9e62f0401b71ccf579c111">JsonIn::read</a></div><div class="ttdeci">bool read(bool &amp;b, bool throw_on_error=false)</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01552">json.cpp:1552</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="json_8cpp_source.html#l01485">JsonIn::read()</a>, and <a class="el" href="json_8cpp_source.html#l02074">seek()</a>.</p>
+<p class="reference">References <a class="el" href="json_8cpp_source.html#l01552">JsonIn::read()</a>, and <a class="el" href="json_8cpp_source.html#l02141">seek()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="profession_8cpp_source.html#l00530">json_item_substitution::substitution::info::info()</a>, and <a class="el" href="requirements_8cpp_source.html#l00209">tool_comp::load()</a>.</p>
 
@@ -682,16 +684,51 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="json_8cpp_source.html#l02074">2074</a> of file <a class="el" href="json_8cpp_source.html">json.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l02075" name="l02075"></a><span class="lineno"> 2075</span>{</div>
-<div class="line"><a id="l02076" name="l02076"></a><span class="lineno"> 2076</span>    <a class="code hl_variable" href="classJsonValue.html#abaeb986892e3e8bfece5287a7406908e">jsin_</a>.<a class="code hl_function" href="classJsonIn.html#a1e30e812d36d9f3ec4321173910ef58a">seek</a>( <a class="code hl_variable" href="classJsonValue.html#a21364ea676607f563f6ed3d5c83aa440">pos_</a> );</div>
-<div class="line"><a id="l02077" name="l02077"></a><span class="lineno"> 2077</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classJsonValue.html#abaeb986892e3e8bfece5287a7406908e">jsin_</a>;</div>
-<div class="line"><a id="l02078" name="l02078"></a><span class="lineno"> 2078</span>}</div>
-<div class="ttc" id="aclassJsonIn_html_a1e30e812d36d9f3ec4321173910ef58a"><div class="ttname"><a href="classJsonIn.html#a1e30e812d36d9f3ec4321173910ef58a">JsonIn::seek</a></div><div class="ttdeci">void seek(int pos)</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l00741">json.cpp:741</a></div></div>
+<p class="definition">Definition at line <a class="el" href="json_8cpp_source.html#l02141">2141</a> of file <a class="el" href="json_8cpp_source.html">json.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l02142" name="l02142"></a><span class="lineno"> 2142</span>{</div>
+<div class="line"><a id="l02143" name="l02143"></a><span class="lineno"> 2143</span>    <a class="code hl_variable" href="classJsonValue.html#abaeb986892e3e8bfece5287a7406908e">jsin_</a>.<a class="code hl_function" href="classJsonIn.html#a1e30e812d36d9f3ec4321173910ef58a">seek</a>( <a class="code hl_variable" href="classJsonValue.html#a21364ea676607f563f6ed3d5c83aa440">pos_</a> );</div>
+<div class="line"><a id="l02144" name="l02144"></a><span class="lineno"> 2144</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classJsonValue.html#abaeb986892e3e8bfece5287a7406908e">jsin_</a>;</div>
+<div class="line"><a id="l02145" name="l02145"></a><span class="lineno"> 2145</span>}</div>
+<div class="ttc" id="aclassJsonIn_html_a1e30e812d36d9f3ec4321173910ef58a"><div class="ttname"><a href="classJsonIn.html#a1e30e812d36d9f3ec4321173910ef58a">JsonIn::seek</a></div><div class="ttdeci">void seek(int pos)</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l00808">json.cpp:808</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="json_8h_source.html#l01129">jsin_</a>, <a class="el" href="json_8h_source.html#l01130">pos_</a>, and <a class="el" href="json_8cpp_source.html#l00741">JsonIn::seek()</a>.</p>
+<p class="reference">References <a class="el" href="json_8h_source.html#l01129">jsin_</a>, <a class="el" href="json_8h_source.html#l01130">pos_</a>, and <a class="el" href="json_8cpp_source.html#l00808">JsonIn::seek()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="json_8h_source.html#l01198">get_array()</a>, <a class="el" href="json_8h_source.html#l01189">get_bool()</a>, <a class="el" href="json_8h_source.html#l01192">get_float()</a>, <a class="el" href="json_8h_source.html#l01186">get_int()</a>, <a class="el" href="json_8h_source.html#l01195">get_object()</a>, <a class="el" href="json_8h_source.html#l01183">get_string()</a>, <a class="el" href="json_8h_source.html#l01143">operator bool()</a>, <a class="el" href="json_8h_source.html#l01146">operator double()</a>, <a class="el" href="json_8h_source.html#l01140">operator int()</a>, <a class="el" href="json_8h_source.html#l01152">operator JsonArray()</a>, <a class="el" href="json_8h_source.html#l01149">operator JsonObject()</a>, <a class="el" href="json_8h_source.html#l01137">operator std::string()</a>, <a class="el" href="json_8h_source.html#l01156">read()</a>, <a class="el" href="json_8h_source.html#l01175">test_array()</a>, <a class="el" href="json_8h_source.html#l01166">test_bool()</a>, <a class="el" href="json_8h_source.html#l01169">test_float()</a>, <a class="el" href="json_8h_source.html#l01163">test_int()</a>, <a class="el" href="json_8h_source.html#l01172">test_object()</a>, <a class="el" href="json_8h_source.html#l01160">test_string()</a>, and <a class="el" href="json_8h_source.html#l01179">throw_error()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="json_8h_source.html#l01199">get_array()</a>, <a class="el" href="json_8h_source.html#l01190">get_bool()</a>, <a class="el" href="json_8h_source.html#l01193">get_float()</a>, <a class="el" href="json_8h_source.html#l01187">get_int()</a>, <a class="el" href="json_8h_source.html#l01196">get_object()</a>, <a class="el" href="json_8h_source.html#l01184">get_string()</a>, <a class="el" href="json_8h_source.html#l01143">operator bool()</a>, <a class="el" href="json_8h_source.html#l01146">operator double()</a>, <a class="el" href="json_8h_source.html#l01140">operator int()</a>, <a class="el" href="json_8h_source.html#l01152">operator JsonArray()</a>, <a class="el" href="json_8h_source.html#l01149">operator JsonObject()</a>, <a class="el" href="json_8h_source.html#l01137">operator std::string()</a>, <a class="el" href="json_8h_source.html#l01156">read()</a>, <a class="el" href="json_8h_source.html#l01175">test_array()</a>, <a class="el" href="json_8h_source.html#l01166">test_bool()</a>, <a class="el" href="json_8h_source.html#l01169">test_float()</a>, <a class="el" href="json_8h_source.html#l01163">test_int()</a>, <a class="el" href="json_8h_source.html#l01172">test_object()</a>, <a class="el" href="json_8h_source.html#l01160">test_string()</a>, and <a class="el" href="json_8h_source.html#l01179">throw_error()</a>.</p>
+
+</div>
+</div>
+<a id="a2c679272dfb2b3258455878807488a02" name="a2c679272dfb2b3258455878807488a02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c679272dfb2b3258455878807488a02">&#9670;&nbsp;</a></span>show_warning()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void JsonValue::show_warning </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>err</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="json_8cpp_source.html#l00295">295</a> of file <a class="el" href="json_8cpp_source.html">json.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>{</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span><span class="preprocessor">#ifndef CATA_IN_TOOL</span></div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>    <span class="keywordflow">try</span> {</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>        <a class="code hl_function" href="classJsonValue.html#a25be96ccca16666748a7df6f52996544">throw_error</a>( err );</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>    } <span class="keywordflow">catch</span>( <span class="keyword">const</span> std::exception &amp;e ) {</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>        <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;%s&quot;</span>, e.what() );</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>    }</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>    ( void )err;</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span><span class="preprocessor">#endif </span><span class="comment">// CATA_IN_TOOL</span></div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>}</div>
+<div class="ttc" id="aclassJsonValue_html_a25be96ccca16666748a7df6f52996544"><div class="ttname"><a href="classJsonValue.html#a25be96ccca16666748a7df6f52996544">JsonValue::throw_error</a></div><div class="ttdeci">void throw_error(const std::string &amp;err) const</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l01179">json.h:1179</a></div></div>
+<div class="ttc" id="adebug_8h_html_a87e509562277a7ada3a75330d00cb445"><div class="ttname"><a href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a></div><div class="ttdeci">#define debugmsg(...)</div><div class="ttdoc">Debug message of level DL::Error and class DC::DebugMsg, also includes the source file name and line,...</div><div class="ttdef"><b>Definition:</b> <a href="debug_8h_source.html#l00074">debug.h:74</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="debug_8h_source.html#l00074">debugmsg</a>, and <a class="el" href="json_8h_source.html#l01179">throw_error()</a>.</p>
 
 </div>
 </div>
@@ -722,9 +759,9 @@ template&lt;typename T &gt; </div>
 <div class="fragment"><div class="line"><a id="l01175" name="l01175"></a><span class="lineno"> 1175</span>                                {</div>
 <div class="line"><a id="l01176" name="l01176"></a><span class="lineno"> 1176</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="classJsonValue.html#a2fa70e2f5bcf43771b8bdd9f36c71833">seek</a>().<a class="code hl_function" href="classJsonIn.html#a1893a4495869a8bbf150fecc20bc99d3">test_array</a>();</div>
 <div class="line"><a id="l01177" name="l01177"></a><span class="lineno"> 1177</span>        }</div>
-<div class="ttc" id="aclassJsonIn_html_a1893a4495869a8bbf150fecc20bc99d3"><div class="ttname"><a href="classJsonIn.html#a1893a4495869a8bbf150fecc20bc99d3">JsonIn::test_array</a></div><div class="ttdeci">bool test_array()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01471">json.cpp:1471</a></div></div>
+<div class="ttc" id="aclassJsonIn_html_a1893a4495869a8bbf150fecc20bc99d3"><div class="ttname"><a href="classJsonIn.html#a1893a4495869a8bbf150fecc20bc99d3">JsonIn::test_array</a></div><div class="ttdeci">bool test_array()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01538">json.cpp:1538</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="json_8cpp_source.html#l02074">seek()</a>, and <a class="el" href="json_8cpp_source.html#l01471">JsonIn::test_array()</a>.</p>
+<p class="reference">References <a class="el" href="json_8cpp_source.html#l02141">seek()</a>, and <a class="el" href="json_8cpp_source.html#l01538">JsonIn::test_array()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="item__group_8cpp_source.html#l00649">item_group::load_item_group()</a>, <a class="el" href="mapgen_8cpp_source.html#l02041">load_place_mapings_alternatively()</a>, and <a class="el" href="trait__group_8cpp_source.html#l00053">trait_group::load_trait_group()</a>.</p>
 
@@ -757,9 +794,9 @@ template&lt;typename T &gt; </div>
 <div class="fragment"><div class="line"><a id="l01166" name="l01166"></a><span class="lineno"> 1166</span>                               {</div>
 <div class="line"><a id="l01167" name="l01167"></a><span class="lineno"> 1167</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="classJsonValue.html#a2fa70e2f5bcf43771b8bdd9f36c71833">seek</a>().<a class="code hl_function" href="classJsonIn.html#a88264120e57144f01e72bfe27aa76cc3">test_bool</a>();</div>
 <div class="line"><a id="l01168" name="l01168"></a><span class="lineno"> 1168</span>        }</div>
-<div class="ttc" id="aclassJsonIn_html_a88264120e57144f01e72bfe27aa76cc3"><div class="ttname"><a href="classJsonIn.html#a88264120e57144f01e72bfe27aa76cc3">JsonIn::test_bool</a></div><div class="ttdeci">bool test_bool()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01445">json.cpp:1445</a></div></div>
+<div class="ttc" id="aclassJsonIn_html_a88264120e57144f01e72bfe27aa76cc3"><div class="ttname"><a href="classJsonIn.html#a88264120e57144f01e72bfe27aa76cc3">JsonIn::test_bool</a></div><div class="ttdeci">bool test_bool()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01512">json.cpp:1512</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="json_8cpp_source.html#l02074">seek()</a>, and <a class="el" href="json_8cpp_source.html#l01445">JsonIn::test_bool()</a>.</p>
+<p class="reference">References <a class="el" href="json_8cpp_source.html#l02141">seek()</a>, and <a class="el" href="json_8cpp_source.html#l01512">JsonIn::test_bool()</a>.</p>
 
 </div>
 </div>
@@ -790,9 +827,9 @@ template&lt;typename T &gt; </div>
 <div class="fragment"><div class="line"><a id="l01169" name="l01169"></a><span class="lineno"> 1169</span>                                {</div>
 <div class="line"><a id="l01170" name="l01170"></a><span class="lineno"> 1170</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="classJsonValue.html#a2fa70e2f5bcf43771b8bdd9f36c71833">seek</a>().<a class="code hl_function" href="classJsonIn.html#af1951b44eb837936c45075ffb5973d7d">test_float</a>();</div>
 <div class="line"><a id="l01171" name="l01171"></a><span class="lineno"> 1171</span>        }</div>
-<div class="ttc" id="aclassJsonIn_html_af1951b44eb837936c45075ffb5973d7d"><div class="ttname"><a href="classJsonIn.html#af1951b44eb837936c45075ffb5973d7d">JsonIn::test_float</a></div><div class="ttdeci">bool test_float()</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00266">json.h:266</a></div></div>
+<div class="ttc" id="aclassJsonIn_html_af1951b44eb837936c45075ffb5973d7d"><div class="ttname"><a href="classJsonIn.html#af1951b44eb837936c45075ffb5973d7d">JsonIn::test_float</a></div><div class="ttdeci">bool test_float()</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00262">json.h:262</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="json_8cpp_source.html#l02074">seek()</a>, and <a class="el" href="json_8h_source.html#l00266">JsonIn::test_float()</a>.</p>
+<p class="reference">References <a class="el" href="json_8cpp_source.html#l02141">seek()</a>, and <a class="el" href="json_8h_source.html#l00262">JsonIn::test_float()</a>.</p>
 
 </div>
 </div>
@@ -823,9 +860,9 @@ template&lt;typename T &gt; </div>
 <div class="fragment"><div class="line"><a id="l01163" name="l01163"></a><span class="lineno"> 1163</span>                              {</div>
 <div class="line"><a id="l01164" name="l01164"></a><span class="lineno"> 1164</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="classJsonValue.html#a2fa70e2f5bcf43771b8bdd9f36c71833">seek</a>().<a class="code hl_function" href="classJsonIn.html#a06bc35e467e8351821cfe3955479141f">test_int</a>();</div>
 <div class="line"><a id="l01165" name="l01165"></a><span class="lineno"> 1165</span>        }</div>
-<div class="ttc" id="aclassJsonIn_html_a06bc35e467e8351821cfe3955479141f"><div class="ttname"><a href="classJsonIn.html#a06bc35e467e8351821cfe3955479141f">JsonIn::test_int</a></div><div class="ttdeci">bool test_int()</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00263">json.h:263</a></div></div>
+<div class="ttc" id="aclassJsonIn_html_a06bc35e467e8351821cfe3955479141f"><div class="ttname"><a href="classJsonIn.html#a06bc35e467e8351821cfe3955479141f">JsonIn::test_int</a></div><div class="ttdeci">bool test_int()</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00259">json.h:259</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="json_8cpp_source.html#l02074">seek()</a>, and <a class="el" href="json_8h_source.html#l00263">JsonIn::test_int()</a>.</p>
+<p class="reference">References <a class="el" href="json_8cpp_source.html#l02141">seek()</a>, and <a class="el" href="json_8h_source.html#l00259">JsonIn::test_int()</a>.</p>
 
 </div>
 </div>
@@ -856,9 +893,9 @@ template&lt;typename T &gt; </div>
 <div class="fragment"><div class="line"><a id="l01172" name="l01172"></a><span class="lineno"> 1172</span>                                 {</div>
 <div class="line"><a id="l01173" name="l01173"></a><span class="lineno"> 1173</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="classJsonValue.html#a2fa70e2f5bcf43771b8bdd9f36c71833">seek</a>().<a class="code hl_function" href="classJsonIn.html#ae41dde30fea19bf2f707e9a297077d5f">test_object</a>();</div>
 <div class="line"><a id="l01174" name="l01174"></a><span class="lineno"> 1174</span>        }</div>
-<div class="ttc" id="aclassJsonIn_html_ae41dde30fea19bf2f707e9a297077d5f"><div class="ttname"><a href="classJsonIn.html#ae41dde30fea19bf2f707e9a297077d5f">JsonIn::test_object</a></div><div class="ttdeci">bool test_object()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01477">json.cpp:1477</a></div></div>
+<div class="ttc" id="aclassJsonIn_html_ae41dde30fea19bf2f707e9a297077d5f"><div class="ttname"><a href="classJsonIn.html#ae41dde30fea19bf2f707e9a297077d5f">JsonIn::test_object</a></div><div class="ttdeci">bool test_object()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01544">json.cpp:1544</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="json_8cpp_source.html#l02074">seek()</a>, and <a class="el" href="json_8cpp_source.html#l01477">JsonIn::test_object()</a>.</p>
+<p class="reference">References <a class="el" href="json_8cpp_source.html#l02141">seek()</a>, and <a class="el" href="json_8cpp_source.html#l01544">JsonIn::test_object()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="item__group_8cpp_source.html#l00649">item_group::load_item_group()</a>, <a class="el" href="mapgen_8cpp_source.html#l01992">load_place_mapings()</a>, <a class="el" href="mapgen_8cpp_source.html#l02008">load_place_mapings_string()</a>, and <a class="el" href="trait__group_8cpp_source.html#l00053">trait_group::load_trait_group()</a>.</p>
 
@@ -891,9 +928,9 @@ template&lt;typename T &gt; </div>
 <div class="fragment"><div class="line"><a id="l01160" name="l01160"></a><span class="lineno"> 1160</span>                                 {</div>
 <div class="line"><a id="l01161" name="l01161"></a><span class="lineno"> 1161</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="classJsonValue.html#a2fa70e2f5bcf43771b8bdd9f36c71833">seek</a>().<a class="code hl_function" href="classJsonIn.html#a616a508c44b4db45b23d7c3e4a3fa2ef">test_string</a>();</div>
 <div class="line"><a id="l01162" name="l01162"></a><span class="lineno"> 1162</span>        }</div>
-<div class="ttc" id="aclassJsonIn_html_a616a508c44b4db45b23d7c3e4a3fa2ef"><div class="ttname"><a href="classJsonIn.html#a616a508c44b4db45b23d7c3e4a3fa2ef">JsonIn::test_string</a></div><div class="ttdeci">bool test_string()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01459">json.cpp:1459</a></div></div>
+<div class="ttc" id="aclassJsonIn_html_a616a508c44b4db45b23d7c3e4a3fa2ef"><div class="ttname"><a href="classJsonIn.html#a616a508c44b4db45b23d7c3e4a3fa2ef">JsonIn::test_string</a></div><div class="ttdeci">bool test_string()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01526">json.cpp:1526</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="json_8cpp_source.html#l02074">seek()</a>, and <a class="el" href="json_8cpp_source.html#l01459">JsonIn::test_string()</a>.</p>
+<p class="reference">References <a class="el" href="json_8cpp_source.html#l02141">seek()</a>, and <a class="el" href="json_8cpp_source.html#l01526">JsonIn::test_string()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="profession_8cpp_source.html#l00530">json_item_substitution::substitution::info::info()</a>, <a class="el" href="requirements_8cpp_source.html#l00209">tool_comp::load()</a>, <a class="el" href="item__group_8cpp_source.html#l00649">item_group::load_item_group()</a>, <a class="el" href="mapgen_8cpp_source.html#l02008">load_place_mapings_string()</a>, and <a class="el" href="trait__group_8cpp_source.html#l00053">trait_group::load_trait_group()</a>.</p>
 
@@ -927,11 +964,11 @@ template&lt;typename T &gt; </div>
 <div class="fragment"><div class="line"><a id="l01179" name="l01179"></a><span class="lineno"> 1179</span>                                                                    {</div>
 <div class="line"><a id="l01180" name="l01180"></a><span class="lineno"> 1180</span>            <a class="code hl_function" href="classJsonValue.html#a2fa70e2f5bcf43771b8bdd9f36c71833">seek</a>().<a class="code hl_function" href="classJsonIn.html#a7178372186175a21337660d591f2c858">error</a>( err );</div>
 <div class="line"><a id="l01181" name="l01181"></a><span class="lineno"> 1181</span>        }</div>
-<div class="ttc" id="aclassJsonIn_html_a7178372186175a21337660d591f2c858"><div class="ttname"><a href="classJsonIn.html#a7178372186175a21337660d591f2c858">JsonIn::error</a></div><div class="ttdeci">void error(const std::string &amp;message, int offset=0)</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01678">json.cpp:1678</a></div></div>
+<div class="ttc" id="aclassJsonIn_html_a7178372186175a21337660d591f2c858"><div class="ttname"><a href="classJsonIn.html#a7178372186175a21337660d591f2c858">JsonIn::error</a></div><div class="ttdeci">void error(const std::string &amp;message, int offset=0)</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01745">json.cpp:1745</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="json_8cpp_source.html#l01678">JsonIn::error()</a>, and <a class="el" href="json_8cpp_source.html#l02074">seek()</a>.</p>
+<p class="reference">References <a class="el" href="json_8cpp_source.html#l01745">JsonIn::error()</a>, and <a class="el" href="json_8cpp_source.html#l02141">seek()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="requirements_8cpp_source.html#l00209">tool_comp::load()</a>, <a class="el" href="requirements_8cpp_source.html#l00238">item_comp::load()</a>, <a class="el" href="item__group_8cpp_source.html#l00649">item_group::load_item_group()</a>, <a class="el" href="mapgen_8cpp_source.html#l02008">load_place_mapings_string()</a>, and <a class="el" href="trait__group_8cpp_source.html#l00053">trait_group::load_trait_group()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="requirements_8cpp_source.html#l00209">tool_comp::load()</a>, <a class="el" href="requirements_8cpp_source.html#l00238">item_comp::load()</a>, <a class="el" href="item__group_8cpp_source.html#l00649">item_group::load_item_group()</a>, <a class="el" href="mapgen_8cpp_source.html#l02008">load_place_mapings_string()</a>, <a class="el" href="trait__group_8cpp_source.html#l00053">trait_group::load_trait_group()</a>, and <a class="el" href="json_8cpp_source.html#l00295">show_warning()</a>.</p>
 
 </div>
 </div>
@@ -958,7 +995,7 @@ template&lt;typename T &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="json_8h_source.html#l01129">1129</a> of file <a class="el" href="json_8h_source.html">json.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="json_8cpp_source.html#l02074">seek()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="json_8cpp_source.html#l02141">seek()</a>.</p>
 
 </div>
 </div>
@@ -984,7 +1021,7 @@ template&lt;typename T &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="json_8h_source.html#l01130">1130</a> of file <a class="el" href="json_8h_source.html">json.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="json_8cpp_source.html#l02074">seek()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="json_8cpp_source.html#l02141">seek()</a>.</p>
 
 </div>
 </div>
@@ -998,7 +1035,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classJsonValue.html">JsonValue</a></li>
-    <li class="footer">Generated on Mon Dec 26 2022 21:42:06 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Feb 21 2023 16:43:32 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

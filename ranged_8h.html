@@ -85,6 +85,7 @@ $(document).ready(function(){initNavTree('ranged_8h.html',''); initResizable(); 
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
@@ -94,10 +95,17 @@ $(document).ready(function(){initNavTree('ranged_8h.html',''); initResizable(); 
 <div class="contents">
 <div class="textblock"><code>#include &lt;map&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;<a class="el" href="game__constants_8h_source.html">game_constants.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="optional_8h_source.html">optional.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="type__id_8h_source.html">type_id.h</a>&quot;</code><br />
 </div>
 <p><a href="ranged_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structranged_1_1aim__type.html">ranged::aim_type</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacetarget__handler"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetarget__handler.html">target_handler</a></td></tr>
@@ -161,8 +169,8 @@ Functions</h2></td></tr>
 <tr class="memitem:a54895869f69a00b4a74df15057a9a780"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceranged.html#a54895869f69a00b4a74df15057a9a780">ranged::throwing_dispersion</a> (const <a class="el" href="classCharacter.html">Character</a> &amp;<a class="el" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a>, const <a class="el" href="classitem.html">item</a> &amp;to_throw, <a class="el" href="classCreature.html">Creature</a> *critter, bool is_blind_throw)</td></tr>
 <tr class="memdesc:a54895869f69a00b4a74df15057a9a780"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dispersion of a thrown item, against a given target, taking into account whether or not the throw was blind.  <a href="namespaceranged.html#a54895869f69a00b4a74df15057a9a780">More...</a><br /></td></tr>
 <tr class="separator:a54895869f69a00b4a74df15057a9a780"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a581c5c797384eeec8c7e3ffe10a82d26"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceranged.html#a581c5c797384eeec8c7e3ffe10a82d26">ranged::throw_cost</a> (const <a class="el" href="classplayer.html">player</a> &amp;<a class="el" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a>, const <a class="el" href="classitem.html">item</a> &amp;to_throw)</td></tr>
-<tr class="separator:a581c5c797384eeec8c7e3ffe10a82d26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeadf3905fda7ac9f7e6e13d78d6beadb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceranged.html#aeadf3905fda7ac9f7e6e13d78d6beadb">ranged::throw_cost</a> (const <a class="el" href="classCharacter.html">Character</a> &amp;<a class="el" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a>, const <a class="el" href="classitem.html">item</a> &amp;to_throw)</td></tr>
+<tr class="separator:aeadf3905fda7ac9f7e6e13d78d6beadb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c8c85e0249f67213d9994612315aa3e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceranged.html#a4c8c85e0249f67213d9994612315aa3e">ranged::get_str_draw_penalty</a> (const <a class="el" href="classitem.html">item</a> &amp;it, const <a class="el" href="classCharacter.html">Character</a> &amp;p)</td></tr>
 <tr class="memdesc:a4c8c85e0249f67213d9994612315aa3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Penalties potentially incurred by STR_DRAW weapons.  <a href="namespaceranged.html#a4c8c85e0249f67213d9994612315aa3e">More...</a><br /></td></tr>
 <tr class="separator:a4c8c85e0249f67213d9994612315aa3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -189,6 +197,48 @@ Functions</h2></td></tr>
 <tr class="memitem:abf8b46e1f1dae2e7a3d4ff75b9495026"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceranged.html#abf8b46e1f1dae2e7a3d4ff75b9495026">ranged::handle_gun_damage</a> (<a class="el" href="classCharacter.html">Character</a> &amp;shooter, <a class="el" href="classitem.html">item</a> &amp;it)</td></tr>
 <tr class="memdesc:abf8b46e1f1dae2e7a3d4ff75b9495026"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if a gun misfires, jams, or has other problems, else returns false.  <a href="namespaceranged.html#abf8b46e1f1dae2e7a3d4ff75b9495026">More...</a><br /></td></tr>
 <tr class="separator:abf8b46e1f1dae2e7a3d4ff75b9495026"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77dfe116a20cfa50c55a3c2073408e63"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceranged.html#a77dfe116a20cfa50c55a3c2073408e63">ranged::effective_dispersion</a> (const <a class="el" href="classCharacter.html">Character</a> &amp;who, int dispersion)</td></tr>
+<tr class="separator:a77dfe116a20cfa50c55a3c2073408e63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b31304e61913a0072ad6df6e16bc932"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdispersion__sources.html">dispersion_sources</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceranged.html#a8b31304e61913a0072ad6df6e16bc932">ranged::get_weapon_dispersion</a> (const <a class="el" href="classCharacter.html">Character</a> &amp;who, const <a class="el" href="classitem.html">item</a> &amp;<a class="el" href="classint__id.html#a315169d32cce4267b7c8dceff4b0d1d7">obj</a>)</td></tr>
+<tr class="memdesc:a8b31304e61913a0072ad6df6e16bc932"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get weapon's dispersion value modified accoring to character stats.  <a href="namespaceranged.html#a8b31304e61913a0072ad6df6e16bc932">More...</a><br /></td></tr>
+<tr class="separator:a8b31304e61913a0072ad6df6e16bc932"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a751a40c271349c3ea821c5badd49e42f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; aim_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceranged.html#a751a40c271349c3ea821c5badd49e42f">ranged::get_aim_types</a> (const <a class="el" href="classCharacter.html">Character</a> &amp;who, const <a class="el" href="classitem.html">item</a> &amp;gun)</td></tr>
+<tr class="separator:a751a40c271349c3ea821c5badd49e42f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dbef919e3efee8967ddbcba998a55f3"><td class="memItemLeft" align="right" valign="top">std::pair&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceranged.html#a3dbef919e3efee8967ddbcba998a55f3">ranged::get_fastest_sight</a> (const <a class="el" href="classCharacter.html">Character</a> &amp;who, const <a class="el" href="classitem.html">item</a> &amp;gun, double recoil)</td></tr>
+<tr class="separator:a3dbef919e3efee8967ddbcba998a55f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad70a4328dc4c6c69d45b40f23d90195d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceranged.html#ad70a4328dc4c6c69d45b40f23d90195d">ranged::get_most_accurate_sight</a> (const <a class="el" href="classCharacter.html">Character</a> &amp;who, const <a class="el" href="classitem.html">item</a> &amp;gun)</td></tr>
+<tr class="separator:ad70a4328dc4c6c69d45b40f23d90195d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21b558e37c054d606a8a13cd8f2a9fdd"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceranged.html#a21b558e37c054d606a8a13cd8f2a9fdd">ranged::aim_speed_skill_modifier</a> (const <a class="el" href="classCharacter.html">Character</a> &amp;who, const <a class="el" href="type__id_8h.html#a13f6e54f55e89d7c6cd86da6d0a7e785">skill_id</a> &amp;gun_skill)</td></tr>
+<tr class="separator:a21b558e37c054d606a8a13cd8f2a9fdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6e6221390082d1784933039cae98ce4"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceranged.html#ad6e6221390082d1784933039cae98ce4">ranged::aim_speed_dex_modifier</a> (const <a class="el" href="classCharacter.html">Character</a> &amp;who)</td></tr>
+<tr class="separator:ad6e6221390082d1784933039cae98ce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf1831c2fdf09dc3f8df6df1a51a2dd0"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceranged.html#acf1831c2fdf09dc3f8df6df1a51a2dd0">ranged::aim_speed_encumbrance_modifier</a> (const <a class="el" href="classCharacter.html">Character</a> &amp;who)</td></tr>
+<tr class="separator:acf1831c2fdf09dc3f8df6df1a51a2dd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25ff05a2a67dcbfc053c3bac0923f060"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceranged.html#a25ff05a2a67dcbfc053c3bac0923f060">ranged::aim_cap_from_volume</a> (const <a class="el" href="classitem.html">item</a> &amp;gun)</td></tr>
+<tr class="separator:a25ff05a2a67dcbfc053c3bac0923f060"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee24b0f617e2ee224a92d1c5422ae306"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceranged.html#aee24b0f617e2ee224a92d1c5422ae306">ranged::aim_per_move</a> (const <a class="el" href="classCharacter.html">Character</a> &amp;who, const <a class="el" href="classitem.html">item</a> &amp;gun, double recoil)</td></tr>
+<tr class="memdesc:aee24b0f617e2ee224a92d1c5422ae306"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates aim improvement per move spent aiming at a given.  <a href="namespaceranged.html#aee24b0f617e2ee224a92d1c5422ae306">More...</a><br /></td></tr>
+<tr class="separator:aee24b0f617e2ee224a92d1c5422ae306"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c1943d0fc446952875c5a5cb88cf3fc"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceranged.html#a6c1943d0fc446952875c5a5cb88cf3fc">ranged::recoil_vehicle</a> (const <a class="el" href="classCharacter.html">Character</a> &amp;who)</td></tr>
+<tr class="memdesc:a6c1943d0fc446952875c5a5cb88cf3fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get maximum recoil penalty due to vehicle motion.  <a href="namespaceranged.html#a6c1943d0fc446952875c5a5cb88cf3fc">More...</a><br /></td></tr>
+<tr class="separator:a6c1943d0fc446952875c5a5cb88cf3fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fab96fd0829b448bad76e542e320156"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceranged.html#a9fab96fd0829b448bad76e542e320156">ranged::recoil_total</a> (const <a class="el" href="classCharacter.html">Character</a> &amp;who)</td></tr>
+<tr class="memdesc:a9fab96fd0829b448bad76e542e320156"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current total maximum recoil penalty from all sources.  <a href="namespaceranged.html#a9fab96fd0829b448bad76e542e320156">More...</a><br /></td></tr>
+<tr class="separator:a9fab96fd0829b448bad76e542e320156"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1091f2ff573108fbf6d9f56f0c1d2187"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceranged.html#a1091f2ff573108fbf6d9f56f0c1d2187">ranged::gun_engagement_moves</a> (const <a class="el" href="classCharacter.html">Character</a> &amp;who, const <a class="el" href="classitem.html">item</a> &amp;gun, int target=0, int start=<a class="el" href="game__constants_8h.html#a8226e8a134603e5bc06df05efd13d8d1">MAX_RECOIL</a>)</td></tr>
+<tr class="memdesc:a1091f2ff573108fbf6d9f56f0c1d2187"><td class="mdescLeft">&#160;</td><td class="mdescRight">How many moves does it take to aim gun to the target accuracy.  <a href="namespaceranged.html#a1091f2ff573108fbf6d9f56f0c1d2187">More...</a><br /></td></tr>
+<tr class="separator:a1091f2ff573108fbf6d9f56f0c1d2187"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab65b29a98e9d9b297fe6d631afc0bf1c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceranged.html#ab65b29a98e9d9b297fe6d631afc0bf1c">ranged::make_gun_sound_effect</a> (const <a class="el" href="classCharacter.html">Character</a> &amp;who, bool burst, const <a class="el" href="classitem.html">item</a> &amp;gun)</td></tr>
+<tr class="separator:ab65b29a98e9d9b297fe6d631afc0bf1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bb67d4debaf06355d3b7c8234fda44e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceranged.html#a0bb67d4debaf06355d3b7c8234fda44e">ranged::fire_gun</a> (<a class="el" href="classCharacter.html">Character</a> &amp;who, const <a class="el" href="structtripoint.html">tripoint</a> &amp;target, int shots=1)</td></tr>
+<tr class="memdesc:a0bb67d4debaf06355d3b7c8234fda44e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fire wielded gun or auxiliary gunmod (ignoring any current mode)  <a href="namespaceranged.html#a0bb67d4debaf06355d3b7c8234fda44e">More...</a><br /></td></tr>
+<tr class="separator:a0bb67d4debaf06355d3b7c8234fda44e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad38c286e96d65ab218906f3120b01e8a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceranged.html#ad38c286e96d65ab218906f3120b01e8a">ranged::fire_gun</a> (<a class="el" href="classCharacter.html">Character</a> &amp;who, const <a class="el" href="structtripoint.html">tripoint</a> &amp;target, int shots, <a class="el" href="classitem.html">item</a> &amp;gun)</td></tr>
+<tr class="memdesc:ad38c286e96d65ab218906f3120b01e8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fire a gun or auxiliary gunmod (ignoring any current mode)  <a href="namespaceranged.html#ad38c286e96d65ab218906f3120b01e8a">More...</a><br /></td></tr>
+<tr class="separator:ad38c286e96d65ab218906f3120b01e8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a0f866a4bec031e85ccbb05148319b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdealt__projectile__attack.html">dealt_projectile_attack</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceranged.html#a3a0f866a4bec031e85ccbb05148319b5">ranged::throw_item</a> (<a class="el" href="classCharacter.html">Character</a> &amp;who, const <a class="el" href="structtripoint.html">tripoint</a> &amp;target, const <a class="el" href="classitem.html">item</a> &amp;to_throw, <a class="el" href="classcata_1_1optional.html">cata::optional</a>&lt; <a class="el" href="structtripoint.html">tripoint</a> &gt; blind_throw_from_pos)</td></tr>
+<tr class="memdesc:a3a0f866a4bec031e85ccbb05148319b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute a throw.  <a href="namespaceranged.html#a3a0f866a4bec031e85ccbb05148319b5">More...</a><br /></td></tr>
+<tr class="separator:a3a0f866a4bec031e85ccbb05148319b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a6b4c3a2a360b378de261413fbb7d84f0" name="a6b4c3a2a360b378de261413fbb7d84f0"></a>
@@ -207,22 +257,22 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ranged_8cpp_source.html#l00561">561</a> of file <a class="el" href="ranged_8cpp_source.html">ranged.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span>{</div>
-<div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span>    <span class="keywordtype">int</span> even_chance_range = 0;</div>
-<div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span>    <span class="keywordflow">while</span>( <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span><span class="keyword">&gt;</span>( even_chance_range ) &lt;</div>
-<div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span>           <a class="code hl_variable" href="classCreature.html#a73b9cb6320e4447addaec375887e7861">Creature::dispersion_for_even_chance_of_good_hit</a>.<a class="code hl_variable" href="namespaceom__direction.html#af97f9dbddaa758278662da3478826c61">size</a>() &amp;&amp;</div>
-<div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span>           dispersion &lt; <a class="code hl_variable" href="classCreature.html#a73b9cb6320e4447addaec375887e7861">Creature::dispersion_for_even_chance_of_good_hit</a>[ even_chance_range ] ) {</div>
-<div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span>        even_chance_range++;</div>
-<div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span>    }</div>
-<div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span>    <span class="keywordflow">return</span> even_chance_range;</div>
-<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span>}</div>
-<div class="ttc" id="aclassCreature_html_a73b9cb6320e4447addaec375887e7861"><div class="ttname"><a href="classCreature.html#a73b9cb6320e4447addaec375887e7861">Creature::dispersion_for_even_chance_of_good_hit</a></div><div class="ttdeci">static std::vector&lt; int &gt; dispersion_for_even_chance_of_good_hit</div><div class="ttdef"><b>Definition:</b> <a href="creature_8h_source.html#l00848">creature.h:848</a></div></div>
+<p class="definition">Definition at line <a class="el" href="ranged_8cpp_source.html#l00567">567</a> of file <a class="el" href="ranged_8cpp_source.html">ranged.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span>{</div>
+<div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span>    <span class="keywordtype">int</span> even_chance_range = 0;</div>
+<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span>    <span class="keywordflow">while</span>( <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span><span class="keyword">&gt;</span>( even_chance_range ) &lt;</div>
+<div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span>           <a class="code hl_variable" href="classCreature.html#a73b9cb6320e4447addaec375887e7861">Creature::dispersion_for_even_chance_of_good_hit</a>.<a class="code hl_variable" href="namespaceom__direction.html#af97f9dbddaa758278662da3478826c61">size</a>() &amp;&amp;</div>
+<div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span>           dispersion &lt; <a class="code hl_variable" href="classCreature.html#a73b9cb6320e4447addaec375887e7861">Creature::dispersion_for_even_chance_of_good_hit</a>[ even_chance_range ] ) {</div>
+<div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span>        even_chance_range++;</div>
+<div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span>    }</div>
+<div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span>    <span class="keywordflow">return</span> even_chance_range;</div>
+<div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span>}</div>
+<div class="ttc" id="aclassCreature_html_a73b9cb6320e4447addaec375887e7861"><div class="ttname"><a href="classCreature.html#a73b9cb6320e4447addaec375887e7861">Creature::dispersion_for_even_chance_of_good_hit</a></div><div class="ttdeci">static std::vector&lt; int &gt; dispersion_for_even_chance_of_good_hit</div><div class="ttdef"><b>Definition:</b> <a href="creature_8h_source.html#l00852">creature.h:852</a></div></div>
 <div class="ttc" id="anamespaceom__direction_html_af97f9dbddaa758278662da3478826c61"><div class="ttname"><a href="namespaceom__direction.html#af97f9dbddaa758278662da3478826c61">om_direction::size</a></div><div class="ttdeci">const size_t size</div><div class="ttdef"><b>Definition:</b> <a href="om__direction_8h_source.html#l00027">om_direction.h:27</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="creature_8h_source.html#l00848">Creature::dispersion_for_even_chance_of_good_hit</a>, and <a class="el" href="om__direction_8h_source.html#l00027">om_direction::size</a>.</p>
+<p class="reference">References <a class="el" href="creature_8h_source.html#l00852">Creature::dispersion_for_even_chance_of_good_hit</a>, and <a class="el" href="om__direction_8h_source.html#l00027">om_direction::size</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="npcmove_8cpp_source.html#l02041">npc::confident_gun_mode_range()</a>, and <a class="el" href="item_8cpp_source.html#l01982">item::gun_info()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="npcmove_8cpp_source.html#l02044">npc::confident_gun_mode_range()</a>, and <a class="el" href="item_8cpp_source.html#l02005">item::gun_info()</a>.</p>
 
 </div>
 </div>
@@ -232,7 +282,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="ranged_8h.html">ranged.h</a></li>
-    <li class="footer">Generated on Mon Dec 26 2022 21:41:54 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Feb 21 2023 16:43:20 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

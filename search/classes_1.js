@@ -28,7 +28,7 @@ var searchData=
   ['advanced_5finventory_5fpane_25',['advanced_inventory_pane',['../classadvanced__inventory__pane.html',1,'']]],
   ['affected_5ftype_26',['affected_type',['../structaffected__type.html',1,'']]],
   ['aim_5factivity_5factor_27',['aim_activity_actor',['../classaim__activity__actor.html',1,'']]],
-  ['aim_5ftype_28',['aim_type',['../structaim__type.html',1,'']]],
+  ['aim_5ftype_28',['aim_type',['../structranged_1_1aim__type.html',1,'ranged']]],
   ['ally_5frule_5fdata_29',['ally_rule_data',['../structally__rule__data.html',1,'']]],
   ['ammo_5feffect_30',['ammo_effect',['../structammo__effect.html',1,'']]],
   ['ammobelt_5factor_31',['ammobelt_actor',['../classammobelt__actor.html',1,'']]],

@@ -97,7 +97,7 @@ var output_8h =
     [ "fold_and_print_from", "output_8h.html#a95aa1e0548f8cb2c7c3d8ccc3f95ef8a", null ],
     [ "fold_and_print_from", "output_8h.html#a2f8515020638461e15374b3bf6555c75", null ],
     [ "foldstring", "output_8h.html#ab5fd5675d76749161dc3990a06b95dbb", null ],
-    [ "format_item_info", "output_8h.html#a001be4a8b824418455d413a555b6d025", null ],
+    [ "format_item_info", "output_8h.html#a5dc86ed897a00eeab76780a2e1a12819", null ],
     [ "format_money", "output_8h.html#afc5db1b09e0b37fa89eda5966c61b1f5", null ],
     [ "format_volume", "output_8h.html#a297635a05a44e1f896fb829a0474f586", null ],
     [ "format_volume", "output_8h.html#abdccfbcd0b2fc14537eaa5ca2e5ae3fe", null ],

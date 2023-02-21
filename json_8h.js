@@ -5,7 +5,6 @@ var json_8h =
     [ "key_from_json_string< string_id< T >, void >", "structkey__from__json__string_3_01string__id_3_01T_01_4_00_01void_01_4.html", "structkey__from__json__string_3_01string__id_3_01T_01_4_00_01void_01_4" ],
     [ "key_from_json_string< Enum, std::enable_if_t< std::is_enum< Enum >::value > >", "structkey__from__json__string_3_01Enum_00_01std_1_1enable__if__t_3_01std_1_1is__enum_3_01Enum_01_4_1_1value_01_4_01_4.html", "structkey__from__json__string_3_01Enum_00_01std_1_1enable__if__t_3_01std_1_1is__enum_3_01Enum_01_4_1_1value_01_4_01_4" ],
     [ "number_sci_notation", "structnumber__sci__notation.html", "structnumber__sci__notation" ],
-    [ "json_source_location", "structjson__source__location.html", "structjson__source__location" ],
     [ "JsonIn", "classJsonIn.html", "classJsonIn" ],
     [ "JsonOut", "classJsonOut.html", "classJsonOut" ],
     [ "JsonObject", "classJsonObject.html", "classJsonObject" ],

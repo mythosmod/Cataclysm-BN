@@ -1,7 +1,6 @@
 var character_8h =
 [
     [ "enum_traits< character_movemode >", "structenum__traits_3_01character__movemode_01_4.html", "structenum__traits_3_01character__movemode_01_4" ],
-    [ "aim_type", "structaim__type.html", "structaim__type" ],
     [ "special_attack", "structspecial__attack.html", "structspecial__attack" ],
     [ "needs_rates", "structneeds__rates.html", "structneeds__rates" ],
     [ "char_trait_data", "structchar__trait__data.html", "structchar__trait__data" ],

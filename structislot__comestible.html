@@ -154,7 +154,7 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a4656f297a3ea96ffb9e20a6511287ec9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structislot__comestible.html#a4656f297a3ea96ffb9e20a6511287ec9">radiation</a> = 0</td></tr>
 <tr class="memdesc:a4656f297a3ea96ffb9e20a6511287ec9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Amount of radiation you get from this comestible.  <a href="structislot__comestible.html#a4656f297a3ea96ffb9e20a6511287ec9">More...</a><br /></td></tr>
 <tr class="separator:a4656f297a3ea96ffb9e20a6511287ec9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62d9a7ef39da1a8b776d157409bcd6dd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structislot__comestible.html#a62d9a7ef39da1a8b776d157409bcd6dd">freeze_point</a> = <a class="el" href="namespacetemperatures.html#aa801a22d811cee8d2deaabd3fbf89c36">temperatures::freezing</a></td></tr>
+<tr class="memitem:a62d9a7ef39da1a8b776d157409bcd6dd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structislot__comestible.html#a62d9a7ef39da1a8b776d157409bcd6dd">freeze_point</a> = <a class="el" href="namespaceunits.html#a375816854bc926ebda4d9240e7d6cf64">units::to_fahrenheit</a>( <a class="el" href="namespacetemperatures.html#a6fe2961d424ef5406871b8ee32764330">temperatures::freezing</a> )</td></tr>
 <tr class="memdesc:a62d9a7ef39da1a8b776d157409bcd6dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">freezing point in degrees Fahrenheit, below this temperature item can freeze  <a href="structislot__comestible.html#a62d9a7ef39da1a8b776d157409bcd6dd">More...</a><br /></td></tr>
 <tr class="separator:a62d9a7ef39da1a8b776d157409bcd6dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af16829f31a1d2c5a4a42a88ce92496c2"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="type__id_8h.html#affe9d743c1ec4cbbb991c70437ac67ed">diseasetype_id</a>, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structislot__comestible.html#af16829f31a1d2c5a4a42a88ce92496c2">contamination</a></td></tr>
@@ -276,7 +276,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="itype_8h_source.html#l00142">142</a> of file <a class="el" href="itype_8h_source.html">itype.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="item__factory_8cpp_source.html#l02014">Item_factory::load()</a>, <a class="el" href="consumption_8cpp_source.html#l01044">Character::modify_addiction()</a>, and <a class="el" href="consumption_8cpp_source.html#l00999">Character::modify_stimulation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="item__factory_8cpp_source.html#l02014">Item_factory::load()</a>, <a class="el" href="consumption_8cpp_source.html#l01051">Character::modify_addiction()</a>, and <a class="el" href="consumption_8cpp_source.html#l01006">Character::modify_stimulation()</a>.</p>
 
 </div>
 </div>
@@ -296,7 +296,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="itype_8h_source.html#l00139">139</a> of file <a class="el" href="itype_8h_source.html">itype.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="item__factory_8cpp_source.html#l02014">Item_factory::load()</a>, and <a class="el" href="consumption_8cpp_source.html#l01044">Character::modify_addiction()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="item__factory_8cpp_source.html#l02014">Item_factory::load()</a>, and <a class="el" href="consumption_8cpp_source.html#l01051">Character::modify_addiction()</a>.</p>
 
 </div>
 </div>
@@ -417,7 +417,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="itype_8h_source.html#l00148">148</a> of file <a class="el" href="itype_8h_source.html">itype.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="item__factory_8cpp_source.html#l02014">Item_factory::load()</a>, and <a class="el" href="consumption_8cpp_source.html#l01034">Character::modify_fatigue()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="item__factory_8cpp_source.html#l02014">Item_factory::load()</a>, and <a class="el" href="consumption_8cpp_source.html#l01041">Character::modify_fatigue()</a>.</p>
 
 </div>
 </div>
@@ -428,7 +428,7 @@ Private Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int islot_comestible::freeze_point = <a class="el" href="namespacetemperatures.html#aa801a22d811cee8d2deaabd3fbf89c36">temperatures::freezing</a></td>
+          <td class="memname">int islot_comestible::freeze_point = <a class="el" href="namespaceunits.html#a375816854bc926ebda4d9240e7d6cf64">units::to_fahrenheit</a>( <a class="el" href="namespacetemperatures.html#a6fe2961d424ef5406871b8ee32764330">temperatures::freezing</a> )</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -485,7 +485,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="itype_8h_source.html#l00157">157</a> of file <a class="el" href="itype_8h_source.html">itype.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="item__factory_8cpp_source.html#l02014">Item_factory::load()</a>, and <a class="el" href="consumption_8cpp_source.html#l00991">Character::modify_health()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="item__factory_8cpp_source.html#l02014">Item_factory::load()</a>, and <a class="el" href="consumption_8cpp_source.html#l00998">Character::modify_health()</a>.</p>
 
 </div>
 </div>
@@ -545,7 +545,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="itype_8h_source.html#l00180">180</a> of file <a class="el" href="itype_8h_source.html">itype.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="itype_8h_source.html#l00186">get_default_nutr()</a>, <a class="el" href="item__factory_8cpp_source.html#l02014">Item_factory::load()</a>, and <a class="el" href="consumption_8cpp_source.html#l00460">Character::nutrition_for()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="itype_8h_source.html#l00186">get_default_nutr()</a>, <a class="el" href="item__factory_8cpp_source.html#l02014">Item_factory::load()</a>, and <a class="el" href="consumption_8cpp_source.html#l00467">Character::nutrition_for()</a>.</p>
 
 </div>
 </div>
@@ -643,7 +643,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="itype_8h_source.html#l00163">163</a> of file <a class="el" href="itype_8h_source.html">itype.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="item__factory_8cpp_source.html#l02014">Item_factory::load()</a>, and <a class="el" href="consumption_8cpp_source.html#l01039">Character::modify_radiation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="item__factory_8cpp_source.html#l02014">Item_factory::load()</a>, and <a class="el" href="consumption_8cpp_source.html#l01046">Character::modify_radiation()</a>.</p>
 
 </div>
 </div>
@@ -759,7 +759,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="itype_8h_source.html#l00136">136</a> of file <a class="el" href="itype_8h_source.html">itype.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="game__inventory_8cpp_source.html#l00507">comestible_inventory_preset::comestible_inventory_preset()</a>, and <a class="el" href="item__factory_8cpp_source.html#l02014">Item_factory::load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game__inventory_8cpp_source.html#l00508">comestible_inventory_preset::comestible_inventory_preset()</a>, and <a class="el" href="item__factory_8cpp_source.html#l02014">Item_factory::load()</a>.</p>
 
 </div>
 </div>
@@ -779,7 +779,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="itype_8h_source.html#l00145">145</a> of file <a class="el" href="itype_8h_source.html">itype.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="item__factory_8cpp_source.html#l02014">Item_factory::load()</a>, and <a class="el" href="consumption_8cpp_source.html#l00999">Character::modify_stimulation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="item__factory_8cpp_source.html#l02014">Item_factory::load()</a>, and <a class="el" href="consumption_8cpp_source.html#l01006">Character::modify_stimulation()</a>.</p>
 
 </div>
 </div>
@@ -813,7 +813,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structislot__comestible.html">islot_comestible</a></li>
-    <li class="footer">Generated on Mon Dec 26 2022 21:42:04 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Feb 21 2023 16:43:29 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

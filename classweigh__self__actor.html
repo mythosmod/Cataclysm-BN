@@ -246,15 +246,15 @@ Additional Inherited Members</h2></td></tr>
 <div class="line">        <span class="keywordflow">return</span> std::make_unique&lt;my_iuse_actor&gt;( *<span class="keyword">this</span> );</div>
 <div class="line">    }</div>
 <div class="line">};</div>
-<div class="ttc" id="aclassweigh__self__actor_html_a4ec741c11477e0bb0013081c269213f6"><div class="ttname"><a href="classweigh__self__actor.html#a4ec741c11477e0bb0013081c269213f6">weigh_self_actor::clone</a></div><div class="ttdeci">std::unique_ptr&lt; iuse_actor &gt; clone() const override</div><div class="ttdoc">Returns a deep copy of this object.</div><div class="ttdef"><b>Definition:</b> <a href="iuse__actor_8cpp_source.html#l04697">iuse_actor.cpp:4697</a></div></div>
+<div class="ttc" id="aclassweigh__self__actor_html_a4ec741c11477e0bb0013081c269213f6"><div class="ttname"><a href="classweigh__self__actor.html#a4ec741c11477e0bb0013081c269213f6">weigh_self_actor::clone</a></div><div class="ttdeci">std::unique_ptr&lt; iuse_actor &gt; clone() const override</div><div class="ttdoc">Returns a deep copy of this object.</div><div class="ttdef"><b>Definition:</b> <a href="iuse__actor_8cpp_source.html#l04707">iuse_actor.cpp:4707</a></div></div>
 </div><!-- fragment --><p> The returned value should behave like the original item and must have the same type. </p>
 
 <p>Implements <a class="el" href="classiuse__actor.html#a79a3e229ab9a4f5433d061cc1faec42d">iuse_actor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l04697">4697</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l04698" name="l04698"></a><span class="lineno"> 4698</span>{</div>
-<div class="line"><a id="l04699" name="l04699"></a><span class="lineno"> 4699</span>    <span class="keywordflow">return</span> std::make_unique&lt;weigh_self_actor&gt;( *<span class="keyword">this</span> );</div>
-<div class="line"><a id="l04700" name="l04700"></a><span class="lineno"> 4700</span>}</div>
+<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l04707">4707</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l04708" name="l04708"></a><span class="lineno"> 4708</span>{</div>
+<div class="line"><a id="l04709" name="l04709"></a><span class="lineno"> 4709</span>    <span class="keywordflow">return</span> std::make_unique&lt;weigh_self_actor&gt;( *<span class="keyword">this</span> );</div>
+<div class="line"><a id="l04710" name="l04710"></a><span class="lineno"> 4710</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -294,11 +294,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classiuse__actor.html#aa0955326b251f45c76a7a16e84b6b9e6">iuse_actor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l04670">4670</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l04671" name="l04671"></a><span class="lineno"> 4671</span>{</div>
-<div class="line"><a id="l04672" name="l04672"></a><span class="lineno"> 4672</span>    dump.emplace_back( <span class="stringliteral">&quot;DESCRIPTION&quot;</span>,</div>
-<div class="line"><a id="l04673" name="l04673"></a><span class="lineno"> 4673</span>                       <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;Use this item to weigh yourself.  Includes everything you are wearing.&quot;</span> ) );</div>
-<div class="line"><a id="l04674" name="l04674"></a><span class="lineno"> 4674</span>}</div>
+<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l04680">4680</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l04681" name="l04681"></a><span class="lineno"> 4681</span>{</div>
+<div class="line"><a id="l04682" name="l04682"></a><span class="lineno"> 4682</span>    dump.emplace_back( <span class="stringliteral">&quot;DESCRIPTION&quot;</span>,</div>
+<div class="line"><a id="l04683" name="l04683"></a><span class="lineno"> 4683</span>                       <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;Use this item to weigh yourself.  Includes everything you are wearing.&quot;</span> ) );</div>
+<div class="line"><a id="l04684" name="l04684"></a><span class="lineno"> 4684</span>}</div>
 <div class="ttc" id="atranslations_8h_html_aa829053017e23ef22d44dccecba63a34"><div class="ttname"><a href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a></div><div class="ttdeci">#define _(msg)</div><div class="ttdef"><b>Definition:</b> <a href="translations_8h_source.html#l00116">translations.h:116</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>.</p>
@@ -331,10 +331,10 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classiuse__actor.html#aa93b616e6f6e450b098209ad19ae78c4">iuse_actor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l04692">4692</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l04693" name="l04693"></a><span class="lineno"> 4693</span>{</div>
-<div class="line"><a id="l04694" name="l04694"></a><span class="lineno"> 4694</span>    <a class="code hl_function" href="assign_8h.html#ac353926c625eb31f78ef7534277c5aaf">assign</a>( jo, <span class="stringliteral">&quot;max_weight&quot;</span>, <a class="code hl_variable" href="classweigh__self__actor.html#ae649822d24934d41af6f7ff4f47e2ea0">max_weight</a> );</div>
-<div class="line"><a id="l04695" name="l04695"></a><span class="lineno"> 4695</span>}</div>
+<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l04702">4702</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l04703" name="l04703"></a><span class="lineno"> 4703</span>{</div>
+<div class="line"><a id="l04704" name="l04704"></a><span class="lineno"> 4704</span>    <a class="code hl_function" href="assign_8h.html#ac353926c625eb31f78ef7534277c5aaf">assign</a>( jo, <span class="stringliteral">&quot;max_weight&quot;</span>, <a class="code hl_variable" href="classweigh__self__actor.html#ae649822d24934d41af6f7ff4f47e2ea0">max_weight</a> );</div>
+<div class="line"><a id="l04705" name="l04705"></a><span class="lineno"> 4705</span>}</div>
 <div class="ttc" id="aassign_8h_html_ac353926c625eb31f78ef7534277c5aaf"><div class="ttname"><a href="assign_8h.html#ac353926c625eb31f78ef7534277c5aaf">assign</a></div><div class="ttdeci">bool assign(const JsonObject &amp;jo, const std::string &amp;name, T &amp;val, bool strict=false, T lo=std::numeric_limits&lt; T &gt;::lowest(), T hi=std::numeric_limits&lt; T &gt;::max())</div><div class="ttdef"><b>Definition:</b> <a href="assign_8h_source.html#l00059">assign.h:59</a></div></div>
 <div class="ttc" id="aclassweigh__self__actor_html_ae649822d24934d41af6f7ff4f47e2ea0"><div class="ttname"><a href="classweigh__self__actor.html#ae649822d24934d41af6f7ff4f47e2ea0">weigh_self_actor::max_weight</a></div><div class="ttdeci">units::mass max_weight</div><div class="ttdef"><b>Definition:</b> <a href="iuse__actor_8h_source.html#l01225">iuse_actor.h:1225</a></div></div>
 </div><!-- fragment -->
@@ -390,30 +390,30 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classiuse__actor.html#aa7ab08413d05764e42ae4471799fd6b0">iuse_actor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l04676">4676</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l04677" name="l04677"></a><span class="lineno"> 4677</span>{</div>
-<div class="line"><a id="l04678" name="l04678"></a><span class="lineno"> 4678</span>    <span class="keywordflow">if</span>( p.<a class="code hl_function" href="classCharacter.html#a67b51491c2529df09755e07bc633cc55">is_mounted</a>() ) {</div>
-<div class="line"><a id="l04679" name="l04679"></a><span class="lineno"> 4679</span>        p.<a class="code hl_function" href="classplayer.html#ae7009d849f19a4f5ebe877cbe463c459">add_msg_if_player</a>( <a class="code hl_enumvalue" href="enums_8h.html#a3baf36d700701401b6baf94db93d096ea5d3734a51686ceb1848704dd277dfc7f">m_info</a>, <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;You cannot weigh yourself while mounted.&quot;</span> ) );</div>
-<div class="line"><a id="l04680" name="l04680"></a><span class="lineno"> 4680</span>        <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a id="l04681" name="l04681"></a><span class="lineno"> 4681</span>    }</div>
-<div class="line"><a id="l04682" name="l04682"></a><span class="lineno"> 4682</span>    <span class="comment">// this is a weight, either in kgs or in lbs.</span></div>
-<div class="line"><a id="l04683" name="l04683"></a><span class="lineno"> 4683</span>    <span class="keywordtype">double</span> weight = <a class="code hl_function" href="units__utility_8cpp.html#a6701113802c6412b3c5d3fa59149ca6c">convert_weight</a>( p.<a class="code hl_function" href="classCharacter.html#a264388843c2319708b9f727da5d15a81">get_weight</a>() );</div>
-<div class="line"><a id="l04684" name="l04684"></a><span class="lineno"> 4684</span>    <span class="keywordflow">if</span>( weight &gt; <a class="code hl_function" href="units__utility_8cpp.html#a6701113802c6412b3c5d3fa59149ca6c">convert_weight</a>( <a class="code hl_variable" href="classweigh__self__actor.html#ae649822d24934d41af6f7ff4f47e2ea0">max_weight</a> ) ) {</div>
-<div class="line"><a id="l04685" name="l04685"></a><span class="lineno"> 4685</span>        <a class="code hl_function" href="output_8cpp.html#a1e645471d321d71b235fb285da5c08ff">popup</a>( <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;ERROR: Max weight of %.0f %s exceeded&quot;</span> ), <a class="code hl_function" href="units__utility_8cpp.html#a6701113802c6412b3c5d3fa59149ca6c">convert_weight</a>( <a class="code hl_variable" href="classweigh__self__actor.html#ae649822d24934d41af6f7ff4f47e2ea0">max_weight</a> ), <a class="code hl_function" href="units__utility_8cpp.html#a3556beacf095f6eb2944d7c9dbf235d3">weight_units</a>() );</div>
-<div class="line"><a id="l04686" name="l04686"></a><span class="lineno"> 4686</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l04687" name="l04687"></a><span class="lineno"> 4687</span>        <a class="code hl_function" href="output_8cpp.html#a1e645471d321d71b235fb285da5c08ff">popup</a>( <span class="stringliteral">&quot;%.0f %s&quot;</span>, weight, <a class="code hl_function" href="units__utility_8cpp.html#a3556beacf095f6eb2944d7c9dbf235d3">weight_units</a>() );</div>
-<div class="line"><a id="l04688" name="l04688"></a><span class="lineno"> 4688</span>    }</div>
-<div class="line"><a id="l04689" name="l04689"></a><span class="lineno"> 4689</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a id="l04690" name="l04690"></a><span class="lineno"> 4690</span>}</div>
-<div class="ttc" id="aclassCharacter_html_a264388843c2319708b9f727da5d15a81"><div class="ttname"><a href="classCharacter.html#a264388843c2319708b9f727da5d15a81">Character::get_weight</a></div><div class="ttdeci">units::mass get_weight() const override</div><div class="ttdoc">Returns body weight plus weight of inventory and worn/wielded items.</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l03676">character.cpp:3676</a></div></div>
-<div class="ttc" id="aclassCharacter_html_a67b51491c2529df09755e07bc633cc55"><div class="ttname"><a href="classCharacter.html#a67b51491c2529df09755e07bc633cc55">Character::is_mounted</a></div><div class="ttdeci">bool is_mounted() const</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l01198">character.cpp:1198</a></div></div>
-<div class="ttc" id="aclassplayer_html_ae7009d849f19a4f5ebe877cbe463c459"><div class="ttname"><a href="classplayer.html#ae7009d849f19a4f5ebe877cbe463c459">player::add_msg_if_player</a></div><div class="ttdeci">void add_msg_if_player(const std::string &amp;msg) const override</div><div class="ttdef"><b>Definition:</b> <a href="player_8cpp_source.html#l02593">player.cpp:2593</a></div></div>
+<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l04686">4686</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l04687" name="l04687"></a><span class="lineno"> 4687</span>{</div>
+<div class="line"><a id="l04688" name="l04688"></a><span class="lineno"> 4688</span>    <span class="keywordflow">if</span>( p.<a class="code hl_function" href="classCharacter.html#a67b51491c2529df09755e07bc633cc55">is_mounted</a>() ) {</div>
+<div class="line"><a id="l04689" name="l04689"></a><span class="lineno"> 4689</span>        p.<a class="code hl_function" href="classplayer.html#ae7009d849f19a4f5ebe877cbe463c459">add_msg_if_player</a>( <a class="code hl_enumvalue" href="enums_8h.html#a3baf36d700701401b6baf94db93d096ea5d3734a51686ceb1848704dd277dfc7f">m_info</a>, <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;You cannot weigh yourself while mounted.&quot;</span> ) );</div>
+<div class="line"><a id="l04690" name="l04690"></a><span class="lineno"> 4690</span>        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l04691" name="l04691"></a><span class="lineno"> 4691</span>    }</div>
+<div class="line"><a id="l04692" name="l04692"></a><span class="lineno"> 4692</span>    <span class="comment">// this is a weight, either in kgs or in lbs.</span></div>
+<div class="line"><a id="l04693" name="l04693"></a><span class="lineno"> 4693</span>    <span class="keywordtype">double</span> weight = <a class="code hl_function" href="units__utility_8cpp.html#a6701113802c6412b3c5d3fa59149ca6c">convert_weight</a>( p.<a class="code hl_function" href="classCharacter.html#a264388843c2319708b9f727da5d15a81">get_weight</a>() );</div>
+<div class="line"><a id="l04694" name="l04694"></a><span class="lineno"> 4694</span>    <span class="keywordflow">if</span>( weight &gt; <a class="code hl_function" href="units__utility_8cpp.html#a6701113802c6412b3c5d3fa59149ca6c">convert_weight</a>( <a class="code hl_variable" href="classweigh__self__actor.html#ae649822d24934d41af6f7ff4f47e2ea0">max_weight</a> ) ) {</div>
+<div class="line"><a id="l04695" name="l04695"></a><span class="lineno"> 4695</span>        <a class="code hl_function" href="output_8cpp.html#a1e645471d321d71b235fb285da5c08ff">popup</a>( <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;ERROR: Max weight of %.0f %s exceeded&quot;</span> ), <a class="code hl_function" href="units__utility_8cpp.html#a6701113802c6412b3c5d3fa59149ca6c">convert_weight</a>( <a class="code hl_variable" href="classweigh__self__actor.html#ae649822d24934d41af6f7ff4f47e2ea0">max_weight</a> ), <a class="code hl_function" href="units__utility_8cpp.html#a3556beacf095f6eb2944d7c9dbf235d3">weight_units</a>() );</div>
+<div class="line"><a id="l04696" name="l04696"></a><span class="lineno"> 4696</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l04697" name="l04697"></a><span class="lineno"> 4697</span>        <a class="code hl_function" href="output_8cpp.html#a1e645471d321d71b235fb285da5c08ff">popup</a>( <span class="stringliteral">&quot;%.0f %s&quot;</span>, weight, <a class="code hl_function" href="units__utility_8cpp.html#a3556beacf095f6eb2944d7c9dbf235d3">weight_units</a>() );</div>
+<div class="line"><a id="l04698" name="l04698"></a><span class="lineno"> 4698</span>    }</div>
+<div class="line"><a id="l04699" name="l04699"></a><span class="lineno"> 4699</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l04700" name="l04700"></a><span class="lineno"> 4700</span>}</div>
+<div class="ttc" id="aclassCharacter_html_a264388843c2319708b9f727da5d15a81"><div class="ttname"><a href="classCharacter.html#a264388843c2319708b9f727da5d15a81">Character::get_weight</a></div><div class="ttdeci">units::mass get_weight() const override</div><div class="ttdoc">Returns body weight plus weight of inventory and worn/wielded items.</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l03652">character.cpp:3652</a></div></div>
+<div class="ttc" id="aclassCharacter_html_a67b51491c2529df09755e07bc633cc55"><div class="ttname"><a href="classCharacter.html#a67b51491c2529df09755e07bc633cc55">Character::is_mounted</a></div><div class="ttdeci">bool is_mounted() const</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l01064">character.cpp:1064</a></div></div>
+<div class="ttc" id="aclassplayer_html_ae7009d849f19a4f5ebe877cbe463c459"><div class="ttname"><a href="classplayer.html#ae7009d849f19a4f5ebe877cbe463c459">player::add_msg_if_player</a></div><div class="ttdeci">void add_msg_if_player(const std::string &amp;msg) const override</div><div class="ttdef"><b>Definition:</b> <a href="player_8cpp_source.html#l00380">player.cpp:380</a></div></div>
 <div class="ttc" id="aenums_8h_html_a3baf36d700701401b6baf94db93d096ea5d3734a51686ceb1848704dd277dfc7f"><div class="ttname"><a href="enums_8h.html#a3baf36d700701401b6baf94db93d096ea5d3734a51686ceb1848704dd277dfc7f">m_info</a></div><div class="ttdeci">@ m_info</div><div class="ttdef"><b>Definition:</b> <a href="enums_8h_source.html#l00265">enums.h:265</a></div></div>
 <div class="ttc" id="aoutput_8cpp_html_a1e645471d321d71b235fb285da5c08ff"><div class="ttname"><a href="output_8cpp.html#a1e645471d321d71b235fb285da5c08ff">popup</a></div><div class="ttdeci">int popup(const std::string &amp;text, PopupFlags flags)</div><div class="ttdef"><b>Definition:</b> <a href="output_8cpp_source.html#l00764">output.cpp:764</a></div></div>
 <div class="ttc" id="aunits__utility_8cpp_html_a3556beacf095f6eb2944d7c9dbf235d3"><div class="ttname"><a href="units__utility_8cpp.html#a3556beacf095f6eb2944d7c9dbf235d3">weight_units</a></div><div class="ttdeci">const char * weight_units()</div><div class="ttdoc">Create a units label for a weight value.</div><div class="ttdef"><b>Definition:</b> <a href="units__utility_8cpp_source.html#l00032">units_utility.cpp:32</a></div></div>
 <div class="ttc" id="aunits__utility_8cpp_html_a6701113802c6412b3c5d3fa59149ca6c"><div class="ttname"><a href="units__utility_8cpp.html#a6701113802c6412b3c5d3fa59149ca6c">convert_weight</a></div><div class="ttdeci">double convert_weight(const units::mass &amp;weight)</div><div class="ttdoc">Convert weight in grams to units defined by user (kg or lbs)</div><div class="ttdef"><b>Definition:</b> <a href="units__utility_8cpp_source.html#l00085">units_utility.cpp:85</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="player_8cpp_source.html#l02593">player::add_msg_if_player()</a>, <a class="el" href="units__utility_8cpp_source.html#l00085">convert_weight()</a>, <a class="el" href="character_8cpp_source.html#l03676">Character::get_weight()</a>, <a class="el" href="character_8cpp_source.html#l01198">Character::is_mounted()</a>, <a class="el" href="enums_8h_source.html#l00265">m_info</a>, <a class="el" href="output_8cpp_source.html#l00764">popup()</a>, and <a class="el" href="units__utility_8cpp_source.html#l00032">weight_units()</a>.</p>
+<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="player_8cpp_source.html#l00380">player::add_msg_if_player()</a>, <a class="el" href="units__utility_8cpp_source.html#l00085">convert_weight()</a>, <a class="el" href="character_8cpp_source.html#l03652">Character::get_weight()</a>, <a class="el" href="character_8cpp_source.html#l01064">Character::is_mounted()</a>, <a class="el" href="enums_8h_source.html#l00265">m_info</a>, <a class="el" href="output_8cpp_source.html#l00764">popup()</a>, and <a class="el" href="units__utility_8cpp_source.html#l00032">weight_units()</a>.</p>
 
 </div>
 </div>
@@ -444,7 +444,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classweigh__self__actor.html">weigh_self_actor</a></li>
-    <li class="footer">Generated on Mon Dec 26 2022 21:42:17 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Feb 21 2023 16:43:42 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

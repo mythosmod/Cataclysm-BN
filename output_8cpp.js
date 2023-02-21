@@ -17,7 +17,7 @@ var output_8cpp =
     [ "fold_and_print", "output_8cpp.html#ab9659cbe9ec23a2efd813f795cb7fb73", null ],
     [ "fold_and_print_from", "output_8cpp.html#a2f8515020638461e15374b3bf6555c75", null ],
     [ "foldstring", "output_8cpp.html#afc0a91b0fbe1ed197d2e2ac5ceaac1a2", null ],
-    [ "format_item_info", "output_8cpp.html#a001be4a8b824418455d413a555b6d025", null ],
+    [ "format_item_info", "output_8cpp.html#a5dc86ed897a00eeab76780a2e1a12819", null ],
     [ "format_volume", "output_8cpp.html#a297635a05a44e1f896fb829a0474f586", null ],
     [ "format_volume", "output_8cpp.html#abdccfbcd0b2fc14537eaa5ca2e5ae3fe", null ],
     [ "get_bar", "output_8cpp.html#ad1263d7ad550abad4787d243193e4f04", null ],

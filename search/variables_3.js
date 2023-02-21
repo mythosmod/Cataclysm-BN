@@ -166,7 +166,7 @@ var searchData=
   ['coefficient_5fwater_5fresistance_163',['coefficient_water_resistance',['../classvehicle.html#ace10be719ab1c8e5d86ff203a3298131',1,'vehicle']]],
   ['col_164',['col',['../structovermap__ui_1_1note__cached.html#a8ed0028da71d8e7633a8c441c0aa4243',1,'overmap_ui::note_cached::col()'],['../structstring__col.html#a7d5c0900a9238f6f6fd57d9e665187aa',1,'string_col::col()'],['../structtalk__data.html#aaf0761d9f9f285671261868efb7f801c',1,'talk_data::col()'],['../structpage__entry.html#a1669ba070f9749072fb2f45c81374ad3',1,'page_entry::col()']]],
   ['col_5fid_165',['col_id',['../structcolor__manager_1_1color__struct.html#af92a0dde7adcc5796f824a6293bad61d',1,'color_manager::color_struct']]],
-  ['cold_166',['cold',['../namespacetemperatures.html#a226cec67fad4075fe2cf6c31c355fbed',1,'temperatures::cold()'],['../structplayer__morale_1_1body__part__data.html#a35d773161766a259d9d27088bf017d29',1,'player_morale::body_part_data::cold()']]],
+  ['cold_166',['cold',['../namespacetemperatures.html#a6a0e3903fa0a749ee4c45d95eb6016d2',1,'temperatures::cold()'],['../structplayer__morale_1_1body__part__data.html#a35d773161766a259d9d27088bf017d29',1,'player_morale::body_part_data::cold()']]],
   ['cold_5fmorale_5fmod_167',['cold_morale_mod',['../structbody__part__type.html#adf75db3d992ee796f36dc0e1f3350047',1,'body_part_type']]],
   ['coldest_5fhour_168',['coldest_hour',['../namespaceanonymous__namespace_02weather__gen_8cpp_03.html#a700033f9fcab08f4915c435aed946b98',1,'anonymous_namespace{weather_gen.cpp}']]],
   ['colglyph_169',['colGlyph',['../structweather__printable.html#a14f0e28a253a88e076cb316a037c5165',1,'weather_printable']]],

@@ -127,7 +127,6 @@ var classnpc =
     [ "has_healing_item", "classnpc.html#a4e8aba77e73ac0d6d29eba7f04d7cec2", null ],
     [ "has_healing_options", "classnpc.html#ac9750804446346082e700070b59cb663", null ],
     [ "has_healing_options", "classnpc.html#a5862dfb8868e02b9fcf7bdf175a7f09a", null ],
-    [ "has_identified", "classnpc.html#a2c9c461198d12d54e772d6229736aa3a", null ],
     [ "has_item_whitelist", "classnpc.html#ac52afe116abbbd44057f2da774cef3b5", null ],
     [ "has_job", "classnpc.html#abb973d85b8141f14a41d43171eb32353", null ],
     [ "has_omt_destination", "classnpc.html#accabb5b29880e5391317d3abc7ecf569", null ],

@@ -20,7 +20,7 @@ var searchData=
   ['region_5fterrain_5fand_5ffurniture_5fsettings_17',['region_terrain_and_furniture_settings',['../structregion__terrain__and__furniture__settings.html',1,'']]],
   ['regional_5fsettings_18',['regional_settings',['../structregional__settings.html',1,'']]],
   ['relic_19',['relic',['../classrelic.html',1,'']]],
-  ['reload_5foption_20',['reload_option',['../classitem_1_1reload__option.html',1,'item']]],
+  ['relic_5frecharge_20',['relic_recharge',['../classrelic__recharge.html',1,'']]],
   ['removeparthandler_21',['RemovePartHandler',['../classRemovePartHandler.html',1,'']]],
   ['repair_5finventory_5fpreset_22',['repair_inventory_preset',['../classrepair__inventory__preset.html',1,'']]],
   ['repair_5fitem_5factor_23',['repair_item_actor',['../classrepair__item__actor.html',1,'']]],

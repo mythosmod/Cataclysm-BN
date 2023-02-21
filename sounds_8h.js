@@ -67,7 +67,7 @@ var sounds_8h =
     [ "end_activity_sounds", "sounds_8h.html#a649e58c2b2476c8a814dfe94e865ec3e", null ],
     [ "fade_audio_channel", "sounds_8h.html#a7ff3fd42096d1f62481886c14051e632", null ],
     [ "fade_audio_group", "sounds_8h.html#a800c6363f481773ebcda3c4d525db571", null ],
-    [ "generate_gun_sound", "sounds_8h.html#ae07ec6b40b7da8acd1d5386ea3a8e41f", null ],
+    [ "generate_gun_sound", "sounds_8h.html#a9ad72e54c1ddc8c974d7dc9b357ae41a", null ],
     [ "generate_melee_sound", "sounds_8h.html#a5a9ede603b3172ac36976fd964eec8aa", null ],
     [ "get_footstep_markers", "sounds_8h.html#a658252f566c644d810dab49c5a6e2d7d", null ],
     [ "get_heard_angle", "sounds_8h.html#aa186eb63210729f73d7c76dcda527ff5", null ],

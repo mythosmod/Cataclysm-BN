@@ -114,6 +114,7 @@ $(document).ready(function(){initNavTree('mattack__actors_8cpp.html',''); initRe
 <code>#include &quot;<a class="el" href="npc_8h_source.html">npc.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="player_8h_source.html">player.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="point_8h_source.html">point.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ranged_8h_source.html">ranged.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="rng_8h_source.html">rng.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="sounds_8h_source.html">sounds.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="translations_8h_source.html">translations.h</a>&quot;</code><br />
@@ -188,30 +189,35 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mattack__actors_8cpp_source.html#l00483">483</a> of file <a class="el" href="mattack__actors_8cpp_source.html">mattack_actors.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00484" name="l00484"></a><span class="lineno">  484</span>{</div>
-<div class="line"><a id="l00485" name="l00485"></a><span class="lineno">  485</span>    <a class="code hl_class" href="classmap.html">map</a> &amp;here = <a class="code hl_function" href="map_8cpp.html#acb0b34be6e497bdd2f9f40ae6929d562">get_map</a>();</div>
-<div class="line"><a id="l00486" name="l00486"></a><span class="lineno">  486</span>    <a class="code hl_class" href="classvehicle.html">vehicle</a> *chosen = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00487" name="l00487"></a><span class="lineno">  487</span>    <span class="keywordflow">for</span>( <a class="code hl_struct" href="structwrapped__vehicle.html">wrapped_vehicle</a> &amp;v : here.<a class="code hl_function" href="classmap.html#ac1c02ce0648fe07137b86c84fc72f5de">get_vehicles</a>() ) {</div>
-<div class="line"><a id="l00488" name="l00488"></a><span class="lineno">  488</span>        <span class="keywordtype">int</span> new_dist = <a class="code hl_function" href="coordinates_8h.html#a47953b33a873caa0861b12222842a5ec">rl_dist</a>( z.<a class="code hl_function" href="classmonster.html#a55d95177d49525c0da7649f135a6306d">pos</a>(), v.pos );</div>
-<div class="line"><a id="l00489" name="l00489"></a><span class="lineno">  489</span>        <span class="keywordflow">if</span>( v.v-&gt;velocity != 0 &amp;&amp; new_dist &lt; range ) {</div>
-<div class="line"><a id="l00490" name="l00490"></a><span class="lineno">  490</span>            chosen = v.v;</div>
-<div class="line"><a id="l00491" name="l00491"></a><span class="lineno">  491</span>            range = new_dist;</div>
-<div class="line"><a id="l00492" name="l00492"></a><span class="lineno">  492</span>        }</div>
-<div class="line"><a id="l00493" name="l00493"></a><span class="lineno">  493</span>    }</div>
-<div class="line"><a id="l00494" name="l00494"></a><span class="lineno">  494</span>    <span class="keywordflow">return</span> chosen;</div>
-<div class="line"><a id="l00495" name="l00495"></a><span class="lineno">  495</span>}</div>
+<p class="definition">Definition at line <a class="el" href="mattack__actors_8cpp_source.html#l00484">484</a> of file <a class="el" href="mattack__actors_8cpp_source.html">mattack_actors.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00485" name="l00485"></a><span class="lineno">  485</span>{</div>
+<div class="line"><a id="l00486" name="l00486"></a><span class="lineno">  486</span>    <a class="code hl_class" href="classmap.html">map</a> &amp;here = <a class="code hl_function" href="map_8cpp.html#acb0b34be6e497bdd2f9f40ae6929d562">get_map</a>();</div>
+<div class="line"><a id="l00487" name="l00487"></a><span class="lineno">  487</span>    <a class="code hl_class" href="classvehicle.html">vehicle</a> *chosen = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00488" name="l00488"></a><span class="lineno">  488</span>    <span class="keywordflow">for</span>( <a class="code hl_struct" href="structwrapped__vehicle.html">wrapped_vehicle</a> &amp;v : here.<a class="code hl_function" href="classmap.html#ac1c02ce0648fe07137b86c84fc72f5de">get_vehicles</a>() ) {</div>
+<div class="line"><a id="l00489" name="l00489"></a><span class="lineno">  489</span>        <span class="keywordflow">if</span>( !<a class="code hl_variable" href="cached__options_8cpp.html#a1eedced6e405cd87cabd19fdd193de43">fov_3d</a> &amp;&amp; v.pos.z != z.<a class="code hl_function" href="classmonster.html#a55d95177d49525c0da7649f135a6306d">pos</a>().<a class="code hl_variable" href="structtripoint.html#ac944c0e329b5eba2602f7a52f66bbbb9">z</a> ) {</div>
+<div class="line"><a id="l00490" name="l00490"></a><span class="lineno">  490</span>            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00491" name="l00491"></a><span class="lineno">  491</span>        }</div>
+<div class="line"><a id="l00492" name="l00492"></a><span class="lineno">  492</span>        <span class="keywordtype">int</span> new_dist = <a class="code hl_function" href="coordinates_8h.html#a47953b33a873caa0861b12222842a5ec">rl_dist</a>( z.<a class="code hl_function" href="classmonster.html#a55d95177d49525c0da7649f135a6306d">pos</a>(), v.pos );</div>
+<div class="line"><a id="l00493" name="l00493"></a><span class="lineno">  493</span>        <span class="keywordflow">if</span>( v.v-&gt;velocity != 0 &amp;&amp; new_dist &lt; range ) {</div>
+<div class="line"><a id="l00494" name="l00494"></a><span class="lineno">  494</span>            chosen = v.v;</div>
+<div class="line"><a id="l00495" name="l00495"></a><span class="lineno">  495</span>            range = new_dist;</div>
+<div class="line"><a id="l00496" name="l00496"></a><span class="lineno">  496</span>        }</div>
+<div class="line"><a id="l00497" name="l00497"></a><span class="lineno">  497</span>    }</div>
+<div class="line"><a id="l00498" name="l00498"></a><span class="lineno">  498</span>    <span class="keywordflow">return</span> chosen;</div>
+<div class="line"><a id="l00499" name="l00499"></a><span class="lineno">  499</span>}</div>
+<div class="ttc" id="acached__options_8cpp_html_a1eedced6e405cd87cabd19fdd193de43"><div class="ttname"><a href="cached__options_8cpp.html#a1eedced6e405cd87cabd19fdd193de43">fov_3d</a></div><div class="ttdeci">bool fov_3d</div><div class="ttdoc">3D FoV enabled/disabled.</div><div class="ttdef"><b>Definition:</b> <a href="cached__options_8cpp_source.html#l00013">cached_options.cpp:13</a></div></div>
 <div class="ttc" id="aclassmap_html"><div class="ttname"><a href="classmap.html">map</a></div><div class="ttdoc">Manage and cache data about a part of the map.</div><div class="ttdef"><b>Definition:</b> <a href="map_8h_source.html#l00383">map.h:384</a></div></div>
 <div class="ttc" id="aclassmap_html_ac1c02ce0648fe07137b86c84fc72f5de"><div class="ttname"><a href="classmap.html#ac1c02ce0648fe07137b86c84fc72f5de">map::get_vehicles</a></div><div class="ttdeci">VehicleList get_vehicles()</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l00237">map.cpp:237</a></div></div>
 <div class="ttc" id="aclassmonster_html_a55d95177d49525c0da7649f135a6306d"><div class="ttname"><a href="classmonster.html#a55d95177d49525c0da7649f135a6306d">monster::pos</a></div><div class="ttdeci">const tripoint &amp; pos() const override</div><div class="ttdef"><b>Definition:</b> <a href="monster_8cpp_source.html#l00256">monster.cpp:256</a></div></div>
-<div class="ttc" id="aclassvehicle_html"><div class="ttname"><a href="classvehicle.html">vehicle</a></div><div class="ttdoc">A vehicle as a whole with all its components.</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8h_source.html#l00674">vehicle.h:675</a></div></div>
+<div class="ttc" id="aclassvehicle_html"><div class="ttname"><a href="classvehicle.html">vehicle</a></div><div class="ttdoc">A vehicle as a whole with all its components.</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8h_source.html#l00675">vehicle.h:676</a></div></div>
 <div class="ttc" id="acoordinates_8h_html_a47953b33a873caa0861b12222842a5ec"><div class="ttname"><a href="coordinates_8h.html#a47953b33a873caa0861b12222842a5ec">rl_dist</a></div><div class="ttdeci">int rl_dist(const coords::coord_point&lt; Point, Origin, Scale &gt; &amp;loc1, const coords::coord_point&lt; Point, Origin, Scale &gt; &amp;loc2)</div><div class="ttdef"><b>Definition:</b> <a href="coordinates_8h_source.html#l00519">coordinates.h:519</a></div></div>
 <div class="ttc" id="amap_8cpp_html_acb0b34be6e497bdd2f9f40ae6929d562"><div class="ttname"><a href="map_8cpp.html#acb0b34be6e497bdd2f9f40ae6929d562">get_map</a></div><div class="ttdeci">map &amp; get_map()</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l00146">map.cpp:146</a></div></div>
+<div class="ttc" id="astructtripoint_html_ac944c0e329b5eba2602f7a52f66bbbb9"><div class="ttname"><a href="structtripoint.html#ac944c0e329b5eba2602f7a52f66bbbb9">tripoint::z</a></div><div class="ttdeci">int z</div><div class="ttdef"><b>Definition:</b> <a href="point_8h_source.html#l00152">point.h:152</a></div></div>
 <div class="ttc" id="astructwrapped__vehicle_html"><div class="ttname"><a href="structwrapped__vehicle.html">wrapped_vehicle</a></div><div class="ttdef"><b>Definition:</b> <a href="map_8h_source.html#l00080">map.h:80</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="map_8cpp_source.html#l00146">get_map()</a>, <a class="el" href="map_8cpp_source.html#l00237">map::get_vehicles()</a>, <a class="el" href="monster_8cpp_source.html#l00256">monster::pos()</a>, and <a class="el" href="coordinates_8h_source.html#l00519">rl_dist()</a>.</p>
+<p class="reference">References <a class="el" href="cached__options_8cpp_source.html#l00013">fov_3d</a>, <a class="el" href="map_8cpp_source.html#l00146">get_map()</a>, <a class="el" href="map_8cpp_source.html#l00237">map::get_vehicles()</a>, <a class="el" href="monster_8cpp_source.html#l00256">monster::pos()</a>, <a class="el" href="coordinates_8h_source.html#l00519">rl_dist()</a>, and <a class="el" href="point_8h_source.html#l00152">tripoint::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mattack__actors_8cpp_source.html#l00497">gun_actor::call()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mattack__actors_8cpp_source.html#l00501">gun_actor::call()</a>.</p>
 
 </div>
 </div>
@@ -249,26 +255,26 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mattack__actors_8cpp_source.html#l00046">46</a> of file <a class="el" href="mattack__actors_8cpp_source.html">mattack_actors.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>{</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordflow">if</span>( <a class="code hl_function" href="coordinates_8h.html#a47953b33a873caa0861b12222842a5ec">rl_dist</a>( z.<a class="code hl_function" href="classmonster.html#a55d95177d49525c0da7649f135a6306d">pos</a>(), target.<a class="code hl_function" href="classCreature.html#a45926a7ba63ccc9be744f87a4d540b7d">pos</a>() ) != 1 ) {</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    }</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordflow">if</span>( !z.<a class="code hl_function" href="classmonster.html#ad2a28acb4525ce99d90c7d8254c9f27f">can_squeeze_to</a>( target.<a class="code hl_function" href="classCreature.html#a45926a7ba63ccc9be744f87a4d540b7d">pos</a>() ) ) {</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    }</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordflow">return</span> z.<a class="code hl_function" href="classmonster.html#a3690c104bd71bffc25153a86229f2a97">posz</a>() == target.<a class="code hl_function" href="classCreature.html#a3a3ada596854cf8084b3a728b633a9db">posz</a>();</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>}</div>
+<p class="definition">Definition at line <a class="el" href="mattack__actors_8cpp_source.html#l00047">47</a> of file <a class="el" href="mattack__actors_8cpp_source.html">mattack_actors.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>{</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordflow">if</span>( <a class="code hl_function" href="coordinates_8h.html#a47953b33a873caa0861b12222842a5ec">rl_dist</a>( z.<a class="code hl_function" href="classmonster.html#a55d95177d49525c0da7649f135a6306d">pos</a>(), target.<a class="code hl_function" href="classCreature.html#a45926a7ba63ccc9be744f87a4d540b7d">pos</a>() ) != 1 ) {</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    }</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordflow">if</span>( !z.<a class="code hl_function" href="classmonster.html#ad2a28acb4525ce99d90c7d8254c9f27f">can_squeeze_to</a>( target.<a class="code hl_function" href="classCreature.html#a45926a7ba63ccc9be744f87a4d540b7d">pos</a>() ) ) {</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    }</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordflow">return</span> z.<a class="code hl_function" href="classmonster.html#a3690c104bd71bffc25153a86229f2a97">posz</a>() == target.<a class="code hl_function" href="classCreature.html#a3a3ada596854cf8084b3a728b633a9db">posz</a>();</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>}</div>
 <div class="ttc" id="aclassCreature_html_a3a3ada596854cf8084b3a728b633a9db"><div class="ttname"><a href="classCreature.html#a3a3ada596854cf8084b3a728b633a9db">Creature::posz</a></div><div class="ttdeci">virtual int posz() const =0</div></div>
 <div class="ttc" id="aclassCreature_html_a45926a7ba63ccc9be744f87a4d540b7d"><div class="ttname"><a href="classCreature.html#a45926a7ba63ccc9be744f87a4d540b7d">Creature::pos</a></div><div class="ttdeci">virtual const tripoint &amp; pos() const =0</div></div>
-<div class="ttc" id="aclassmonster_html_a3690c104bd71bffc25153a86229f2a97"><div class="ttname"><a href="classmonster.html#a3690c104bd71bffc25153a86229f2a97">monster::posz</a></div><div class="ttdeci">int posz() const override</div><div class="ttdef"><b>Definition:</b> <a href="monster_8h_source.html#l00503">monster.h:503</a></div></div>
+<div class="ttc" id="aclassmonster_html_a3690c104bd71bffc25153a86229f2a97"><div class="ttname"><a href="classmonster.html#a3690c104bd71bffc25153a86229f2a97">monster::posz</a></div><div class="ttdeci">int posz() const override</div><div class="ttdef"><b>Definition:</b> <a href="monster_8h_source.html#l00500">monster.h:500</a></div></div>
 <div class="ttc" id="aclassmonster_html_ad2a28acb4525ce99d90c7d8254c9f27f"><div class="ttname"><a href="classmonster.html#ad2a28acb4525ce99d90c7d8254c9f27f">monster::can_squeeze_to</a></div><div class="ttdeci">bool can_squeeze_to(const tripoint &amp;p) const</div><div class="ttdef"><b>Definition:</b> <a href="monmove_8cpp_source.html#l00251">monmove.cpp:251</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="monmove_8cpp_source.html#l00251">monster::can_squeeze_to()</a>, <a class="el" href="classCreature.html#a45926a7ba63ccc9be744f87a4d540b7d">Creature::pos()</a>, <a class="el" href="monster_8cpp_source.html#l00256">monster::pos()</a>, <a class="el" href="classCreature.html#a3a3ada596854cf8084b3a728b633a9db">Creature::posz()</a>, <a class="el" href="monster_8h_source.html#l00503">monster::posz()</a>, and <a class="el" href="coordinates_8h_source.html#l00519">rl_dist()</a>.</p>
+<p class="reference">References <a class="el" href="monmove_8cpp_source.html#l00251">monster::can_squeeze_to()</a>, <a class="el" href="classCreature.html#a45926a7ba63ccc9be744f87a4d540b7d">Creature::pos()</a>, <a class="el" href="monster_8cpp_source.html#l00256">monster::pos()</a>, <a class="el" href="classCreature.html#a3a3ada596854cf8084b3a728b633a9db">Creature::posz()</a>, <a class="el" href="monster_8h_source.html#l00500">monster::posz()</a>, and <a class="el" href="coordinates_8h_source.html#l00519">rl_dist()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mattack__actors_8cpp_source.html#l00271">melee_actor::find_target()</a>, and <a class="el" href="game_8cpp_source.html#l02317">game::try_get_right_click_action()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mattack__actors_8cpp_source.html#l00272">melee_actor::find_target()</a>, and <a class="el" href="game_8cpp_source.html#l02320">game::try_get_right_click_action()</a>.</p>
 
 </div>
 </div>
@@ -297,7 +303,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="mattack__actors_8cpp_source.html#l00373">bite_actor::on_damage()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mattack__actors_8cpp_source.html#l00374">bite_actor::on_damage()</a>.</p>
 
 </div>
 </div>
@@ -325,7 +331,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="mattack__actors_8cpp_source.html#l00373">bite_actor::on_damage()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mattack__actors_8cpp_source.html#l00374">bite_actor::on_damage()</a>.</p>
 
 </div>
 </div>
@@ -353,7 +359,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="mattack__actors_8cpp_source.html#l00373">bite_actor::on_damage()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mattack__actors_8cpp_source.html#l00374">bite_actor::on_damage()</a>.</p>
 
 </div>
 </div>
@@ -381,7 +387,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="mattack__actors_8cpp_source.html#l00373">bite_actor::on_damage()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mattack__actors_8cpp_source.html#l00374">bite_actor::on_damage()</a>.</p>
 
 </div>
 </div>
@@ -409,7 +415,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="mattack__actors_8cpp_source.html#l00557">gun_actor::try_target()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mattack__actors_8cpp_source.html#l00561">gun_actor::try_target()</a>.</p>
 
 </div>
 </div>
@@ -437,7 +443,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="mattack__actors_8cpp_source.html#l00373">bite_actor::on_damage()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mattack__actors_8cpp_source.html#l00374">bite_actor::on_damage()</a>.</p>
 
 </div>
 </div>
@@ -465,7 +471,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="mattack__actors_8cpp_source.html#l00557">gun_actor::try_target()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mattack__actors_8cpp_source.html#l00561">gun_actor::try_target()</a>.</p>
 
 </div>
 </div>
@@ -493,7 +499,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="mattack__actors_8cpp_source.html#l00557">gun_actor::try_target()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mattack__actors_8cpp_source.html#l00561">gun_actor::try_target()</a>.</p>
 
 </div>
 </div>
@@ -521,7 +527,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="mattack__actors_8cpp_source.html#l00603">gun_actor::shoot()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mattack__actors_8cpp_source.html#l00607">gun_actor::shoot()</a>.</p>
 
 </div>
 </div>
@@ -549,7 +555,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="mattack__actors_8cpp_source.html#l00373">bite_actor::on_damage()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mattack__actors_8cpp_source.html#l00374">bite_actor::on_damage()</a>.</p>
 
 </div>
 </div>
@@ -559,7 +565,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="mattack__actors_8cpp.html">mattack_actors.cpp</a></li>
-    <li class="footer">Generated on Mon Dec 26 2022 21:41:53 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Feb 21 2023 16:43:19 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

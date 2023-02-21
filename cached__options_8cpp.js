@@ -5,7 +5,6 @@ var cached__options_8cpp =
     [ "fov_3d", "cached__options_8cpp.html#a1eedced6e405cd87cabd19fdd193de43", null ],
     [ "fov_3d_z_range", "cached__options_8cpp.html#a0cb65464a3fa34c1ed5474f5d2d853a7", null ],
     [ "json_report_strict", "cached__options_8cpp.html#a16e6bc0b3300c5fb311e7f3571fb67c7", null ],
-    [ "json_report_unused_fields", "cached__options_8cpp.html#a6db620b601fa3aad6109eb520cc20143", null ],
     [ "log_from_top", "cached__options_8cpp.html#afc4f471463e6180fa3293e6fe10ae33f", null ],
     [ "message_cooldown", "cached__options_8cpp.html#a2f5c9b53278004811db63fd290651753", null ],
     [ "message_ttl", "cached__options_8cpp.html#a3f29bf026ed39a38c2472d4df9262b65", null ],

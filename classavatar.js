@@ -4,6 +4,7 @@ var classavatar =
     [ "avatar", "classavatar.html#a57d5f267e332b8fa8d1e1d654d7aa292", null ],
     [ "avatar", "classavatar.html#a60941def788f6943e161c762cf1ce997", null ],
     [ "~avatar", "classavatar.html#a5914c9812e809ca1e43173118c7aa5ec", null ],
+    [ "add_faction_warning", "classavatar.html#a6e88d93951f40aa4c218defb5a0f0f57", null ],
     [ "as_avatar", "classavatar.html#a43a11e683b9560a39c546b418ac1b395", null ],
     [ "as_avatar", "classavatar.html#ae57f206a57b2a5ed0c67485ca939a61d", null ],
     [ "clear_memorized_tile", "classavatar.html#ac86956cd80a0f1ea1ce97d1477582b40", null ],
@@ -30,7 +31,7 @@ var classavatar =
     [ "get_per_base", "classavatar.html#add19f1e6c229aeee2a5b266f481fe408", null ],
     [ "get_str_base", "classavatar.html#a9eae7e6950829ede8ddb9dea08e9a96e", null ],
     [ "grab", "classavatar.html#ae8ce7a37a82a161735e383882ee7b3c0", null ],
-    [ "has_identified", "classavatar.html#a6a1fb5db7eeb5cd2c973318ed9546f7c", null ],
+    [ "has_identified", "classavatar.html#a673ba6fdcc574f3d7ed109e8d49082ec", null ],
     [ "has_memorized_tile_for_autodrive", "classavatar.html#a79d2431ee4e9f9f3e5b1c00af24cf2f3", null ],
     [ "invoke_item", "classavatar.html#a1570ed8af469f6fdf0f76ec97f393de0", null ],
     [ "invoke_item", "classavatar.html#a56d74b6f3a5a47f4011ddaeb1fa3bf4e", null ],
@@ -64,7 +65,6 @@ var classavatar =
     [ "set_active_mission", "classavatar.html#a00bfae63e1361a778f24a24255758001", null ],
     [ "set_movement_mode", "classavatar.html#ad75d14e271847b3a26402505bf2a8104", null ],
     [ "should_show_map_memory", "classavatar.html#a9ee20b72fcd867dd64dfae8c2d1ea956", null ],
-    [ "steal", "classavatar.html#aaa9bb94f7b6931ddf5b0c64c051e4362", null ],
     [ "store", "classavatar.html#a853edfa206f8a76167b239d34c79508f", null ],
     [ "time_to_read", "classavatar.html#a39ac38380034967be6b27ad986cba2c9", null ],
     [ "toggle_crouch_mode", "classavatar.html#ab10e5fb6060bc9dd059974b366103d6d", null ],
@@ -91,5 +91,6 @@ var classavatar =
     [ "preferred_aiming_mode", "classavatar.html#a98553758b9d158c58dd11c77d97ff55e", null ],
     [ "show_map_memory", "classavatar.html#ae30cd3f5d76ab5f173cf720d6b7aada7", null ],
     [ "str_upgrade", "classavatar.html#af77a633c27d6ce3780f820a87979a940", null ],
-    [ "translocators", "classavatar.html#a50440050ab962a28f493c25bca4bb441", null ]
+    [ "translocators", "classavatar.html#a50440050ab962a28f493c25bca4bb441", null ],
+    [ "warning_record", "classavatar.html#aacd0ed4827a3c98174d97dc89929e621", null ]
 ];

@@ -27,7 +27,7 @@ var searchData=
   ['kiln_5fempty_24',['kiln_empty',['../namespaceiexamine.html#a82fa11f641d3792302e86cdbec0e4011',1,'iexamine']]],
   ['kiln_5ffull_25',['kiln_full',['../namespaceiexamine.html#a9adbf32691928d1fb64896cadbabc373',1,'iexamine']]],
   ['knock_5fback_5ffrom_26',['knock_back_from',['../classCreature.html#aa39af83d946765e7e652fd66d50e807c',1,'Creature']]],
-  ['knock_5fback_5fto_27',['knock_back_to',['../classplayer.html#a9b07f11977446bd749238eb0dc424c61',1,'player::knock_back_to()'],['../classmonster.html#aa6c57b6cbf413727ea33c467f2bc886b',1,'monster::knock_back_to()'],['../classCreature.html#af79c1e1ef891477157860a3e31db8492',1,'Creature::knock_back_to()']]],
+  ['knock_5fback_5fto_27',['knock_back_to',['../classmonster.html#aa6c57b6cbf413727ea33c467f2bc886b',1,'monster::knock_back_to()'],['../classCreature.html#af79c1e1ef891477157860a3e31db8492',1,'Creature::knock_back_to()'],['../classCharacter.html#a9ff2dce9ec9feec5348cf93a37f3e736',1,'Character::knock_back_to()']]],
   ['knockback_28',['knockback',['../classgame.html#a481f8a8bc6db3e04e272914add9e8d90',1,'game::knockback(std::vector&lt; tripoint &gt; &amp;traj, int stun, int dam_mult, Creature *source)'],['../classgame.html#ab3391889b601a9e397a39ff8481d7a9c',1,'game::knockback(const tripoint &amp;s, const tripoint &amp;t, int force, int stun, int dam_mult, Creature *source)']]],
   ['known_5fmagic_29',['known_magic',['../classknown__magic.html#a2e9d576a3710bfe2534471e630df5bb7',1,'known_magic']]],
   ['knows_5frecipe_30',['knows_recipe',['../classCharacter.html#a7950b035ea05fa28a0851b4107377265',1,'Character']]],

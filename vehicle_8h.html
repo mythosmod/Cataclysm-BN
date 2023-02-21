@@ -156,6 +156,8 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacevehicles"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevehicles.html">vehicles</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacerot"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerot.html">rot</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
@@ -213,6 +215,8 @@ Functions</h2></td></tr>
 <tr class="separator:a8001239e356cfe527444f6019ee90205"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3c28976bd7014b628437d061f7dc6c7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vehicle_8h.html#ab3c28976bd7014b628437d061f7dc6c7">vmiph_to_cmps</a> (int vmiph)</td></tr>
 <tr class="separator:ab3c28976bd7014b628437d061f7dc6c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a008cc8b85d6b6c167f7bb10c5bf2f35c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enums_8h.html#a5f18231241dd5fb662d1c5313636ec5d">temperature_flag</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerot.html#a008cc8b85d6b6c167f7bb10c5bf2f35c">rot::temperature_flag_for_part</a> (const <a class="el" href="classvehicle.html">vehicle</a> &amp;veh, size_t part_index)</td></tr>
+<tr class="separator:a008cc8b85d6b6c167f7bb10c5bf2f35c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -268,17 +272,17 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="a120e32a2f241b5f666c5189a2f405eeaaa5d7ceb2c59b8cee46c2953fec9abc19" name="a120e32a2f241b5f666c5189a2f405eeaaa5d7ceb2c59b8cee46c2953fec9abc19"></a>finished&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="vehicle_8h_source.html#l00589">589</a> of file <a class="el" href="vehicle_8h_source.html">vehicle.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span>                            : <span class="keywordtype">int</span> {</div>
-<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span>    <span class="comment">// the driver successfully performed course correction or simply did nothing</span></div>
-<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span>    <span class="comment">// in order to keep going forward</span></div>
-<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span>    <a class="code hl_enumvalue" href="vehicle_8h.html#a120e32a2f241b5f666c5189a2f405eeaa444bcb3a3fcf8389296c49467f27e1d6">ok</a>,</div>
-<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>    <span class="comment">// something bad happened (navigation error, crash, loss of visibility, or just</span></div>
-<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span>    <span class="comment">// couldn&#39;t find a way around obstacles) and autodrive cannot continue</span></div>
-<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span>    <a class="code hl_enumvalue" href="vehicle_8h.html#a120e32a2f241b5f666c5189a2f405eeaa5bb94a1c12413a2e5d14deabab29f2aa">abort</a>,</div>
-<div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span>    <span class="comment">// arrived at the destination</span></div>
-<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>    <a class="code hl_enumvalue" href="vehicle_8h.html#a120e32a2f241b5f666c5189a2f405eeaaa5d7ceb2c59b8cee46c2953fec9abc19">finished</a></div>
-<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span>};</div>
+<p class="definition">Definition at line <a class="el" href="vehicle_8h_source.html#l00590">590</a> of file <a class="el" href="vehicle_8h_source.html">vehicle.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span>                            : <span class="keywordtype">int</span> {</div>
+<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span>    <span class="comment">// the driver successfully performed course correction or simply did nothing</span></div>
+<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span>    <span class="comment">// in order to keep going forward</span></div>
+<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>    <a class="code hl_enumvalue" href="vehicle_8h.html#a120e32a2f241b5f666c5189a2f405eeaa444bcb3a3fcf8389296c49467f27e1d6">ok</a>,</div>
+<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span>    <span class="comment">// something bad happened (navigation error, crash, loss of visibility, or just</span></div>
+<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span>    <span class="comment">// couldn&#39;t find a way around obstacles) and autodrive cannot continue</span></div>
+<div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span>    <a class="code hl_enumvalue" href="vehicle_8h.html#a120e32a2f241b5f666c5189a2f405eeaa5bb94a1c12413a2e5d14deabab29f2aa">abort</a>,</div>
+<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>    <span class="comment">// arrived at the destination</span></div>
+<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span>    <a class="code hl_enumvalue" href="vehicle_8h.html#a120e32a2f241b5f666c5189a2f405eeaaa5d7ceb2c59b8cee46c2953fec9abc19">finished</a></div>
+<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span>};</div>
 <div class="ttc" id="avehicle_8h_html_a120e32a2f241b5f666c5189a2f405eeaa444bcb3a3fcf8389296c49467f27e1d6"><div class="ttname"><a href="vehicle_8h.html#a120e32a2f241b5f666c5189a2f405eeaa444bcb3a3fcf8389296c49467f27e1d6">autodrive_result::ok</a></div><div class="ttdeci">@ ok</div></div>
 <div class="ttc" id="avehicle_8h_html_a120e32a2f241b5f666c5189a2f405eeaa5bb94a1c12413a2e5d14deabab29f2aa"><div class="ttname"><a href="vehicle_8h.html#a120e32a2f241b5f666c5189a2f405eeaa5bb94a1c12413a2e5d14deabab29f2aa">autodrive_result::abort</a></div><div class="ttdeci">@ abort</div></div>
 <div class="ttc" id="avehicle_8h_html_a120e32a2f241b5f666c5189a2f405eeaaa5d7ceb2c59b8cee46c2953fec9abc19"><div class="ttname"><a href="vehicle_8h.html#a120e32a2f241b5f666c5189a2f405eeaaa5d7ceb2c59b8cee46c2953fec9abc19">autodrive_result::finished</a></div><div class="ttdeci">@ finished</div></div>
@@ -311,13 +315,13 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="ad9a221cee9ae7a69d6f09d4de701f02caa10311459433adf322f2590a4987c423" name="ad9a221cee9ae7a69d6f09d4de701f02caa10311459433adf322f2590a4987c423"></a>enabled&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="vehicle_8h_source.html#l00083">83</a> of file <a class="el" href="vehicle_8h_source.html">vehicle.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                            : <span class="keywordtype">int</span> {</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <a class="code hl_enumvalue" href="namespacesfx.html#af20f2b1f5492d2f2d793da6d29740f18a100b8cad7cf2a56f6df78f171f97a1ec">any</a> = 0,</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <a class="code hl_enumvalue" href="vehicle_8h.html#ad9a221cee9ae7a69d6f09d4de701f02cac327b49efdca2668f28cd7b4beee54b3">working</a> = 1 &lt;&lt; 0,</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <a class="code hl_enumvalue" href="vehicle_8h.html#ad9a221cee9ae7a69d6f09d4de701f02cae4894ca167b08880bfc35862f18575eb">available</a> = 1 &lt;&lt; 1,</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <a class="code hl_enumvalue" href="vehicle_8h.html#ad9a221cee9ae7a69d6f09d4de701f02caa10311459433adf322f2590a4987c423">enabled</a> = 1 &lt;&lt; 2</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>};</div>
+<p class="definition">Definition at line <a class="el" href="vehicle_8h_source.html#l00084">84</a> of file <a class="el" href="vehicle_8h_source.html">vehicle.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                            : <span class="keywordtype">int</span> {</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <a class="code hl_enumvalue" href="namespacesfx.html#af20f2b1f5492d2f2d793da6d29740f18a100b8cad7cf2a56f6df78f171f97a1ec">any</a> = 0,</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <a class="code hl_enumvalue" href="vehicle_8h.html#ad9a221cee9ae7a69d6f09d4de701f02cac327b49efdca2668f28cd7b4beee54b3">working</a> = 1 &lt;&lt; 0,</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <a class="code hl_enumvalue" href="vehicle_8h.html#ad9a221cee9ae7a69d6f09d4de701f02cae4894ca167b08880bfc35862f18575eb">available</a> = 1 &lt;&lt; 1,</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <a class="code hl_enumvalue" href="vehicle_8h.html#ad9a221cee9ae7a69d6f09d4de701f02caa10311459433adf322f2590a4987c423">enabled</a> = 1 &lt;&lt; 2</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>};</div>
 <div class="ttc" id="anamespacesfx_html_af20f2b1f5492d2f2d793da6d29740f18a100b8cad7cf2a56f6df78f171f97a1ec"><div class="ttname"><a href="namespacesfx.html#af20f2b1f5492d2f2d793da6d29740f18a100b8cad7cf2a56f6df78f171f97a1ec">sfx::channel::any</a></div><div class="ttdeci">@ any</div></div>
 <div class="ttc" id="avehicle_8h_html_ad9a221cee9ae7a69d6f09d4de701f02caa10311459433adf322f2590a4987c423"><div class="ttname"><a href="vehicle_8h.html#ad9a221cee9ae7a69d6f09d4de701f02caa10311459433adf322f2590a4987c423">part_status_flag::enabled</a></div><div class="ttdeci">@ enabled</div></div>
 <div class="ttc" id="avehicle_8h_html_ad9a221cee9ae7a69d6f09d4de701f02cac327b49efdca2668f28cd7b4beee54b3"><div class="ttname"><a href="vehicle_8h.html#ad9a221cee9ae7a69d6f09d4de701f02cac327b49efdca2668f28cd7b4beee54b3">part_status_flag::working</a></div><div class="ttdeci">@ working</div></div>
@@ -343,17 +347,17 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="a39a3696f788e37c7c3e2231d358f1eacaa191bb356e1cdac10873ab538e0852d8" name="a39a3696f788e37c7c3e2231d358f1eacaa191bb356e1cdac10873ab538e0852d8"></a>NUM_TOW_TYPES&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="vehicle_8h_source.html#l00139">139</a> of file <a class="el" href="vehicle_8h_source.html">vehicle.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>                       : <span class="keywordtype">int</span> {</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    <a class="code hl_enumvalue" href="vehicle_8h.html#a39a3696f788e37c7c3e2231d358f1eacab6c366b229a91bf230e56f1ebbb466dc">TOW_FRONT</a>,</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    <a class="code hl_enumvalue" href="vehicle_8h.html#a39a3696f788e37c7c3e2231d358f1eaca7f496709e14f4b4ac751d042381f0f23">TOW_SIDE</a>,</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    <a class="code hl_enumvalue" href="vehicle_8h.html#a39a3696f788e37c7c3e2231d358f1eacaf59e8ef77cbda2984ea39fa8c005c763">TOW_BACK</a>,</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    <a class="code hl_enumvalue" href="vehicle_8h.html#a39a3696f788e37c7c3e2231d358f1eacaa191bb356e1cdac10873ab538e0852d8">NUM_TOW_TYPES</a></div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>};</div>
-<div class="ttc" id="avehicle_8h_html_a39a3696f788e37c7c3e2231d358f1eaca7f496709e14f4b4ac751d042381f0f23"><div class="ttname"><a href="vehicle_8h.html#a39a3696f788e37c7c3e2231d358f1eaca7f496709e14f4b4ac751d042381f0f23">TOW_SIDE</a></div><div class="ttdeci">@ TOW_SIDE</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8h_source.html#l00141">vehicle.h:141</a></div></div>
-<div class="ttc" id="avehicle_8h_html_a39a3696f788e37c7c3e2231d358f1eacaa191bb356e1cdac10873ab538e0852d8"><div class="ttname"><a href="vehicle_8h.html#a39a3696f788e37c7c3e2231d358f1eacaa191bb356e1cdac10873ab538e0852d8">NUM_TOW_TYPES</a></div><div class="ttdeci">@ NUM_TOW_TYPES</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8h_source.html#l00144">vehicle.h:143</a></div></div>
-<div class="ttc" id="avehicle_8h_html_a39a3696f788e37c7c3e2231d358f1eacab6c366b229a91bf230e56f1ebbb466dc"><div class="ttname"><a href="vehicle_8h.html#a39a3696f788e37c7c3e2231d358f1eacab6c366b229a91bf230e56f1ebbb466dc">TOW_FRONT</a></div><div class="ttdeci">@ TOW_FRONT</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8h_source.html#l00140">vehicle.h:140</a></div></div>
-<div class="ttc" id="avehicle_8h_html_a39a3696f788e37c7c3e2231d358f1eacaf59e8ef77cbda2984ea39fa8c005c763"><div class="ttname"><a href="vehicle_8h.html#a39a3696f788e37c7c3e2231d358f1eacaf59e8ef77cbda2984ea39fa8c005c763">TOW_BACK</a></div><div class="ttdeci">@ TOW_BACK</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8h_source.html#l00142">vehicle.h:142</a></div></div>
+<p class="definition">Definition at line <a class="el" href="vehicle_8h_source.html#l00140">140</a> of file <a class="el" href="vehicle_8h_source.html">vehicle.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>                       : <span class="keywordtype">int</span> {</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    <a class="code hl_enumvalue" href="vehicle_8h.html#a39a3696f788e37c7c3e2231d358f1eacab6c366b229a91bf230e56f1ebbb466dc">TOW_FRONT</a>,</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    <a class="code hl_enumvalue" href="vehicle_8h.html#a39a3696f788e37c7c3e2231d358f1eaca7f496709e14f4b4ac751d042381f0f23">TOW_SIDE</a>,</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    <a class="code hl_enumvalue" href="vehicle_8h.html#a39a3696f788e37c7c3e2231d358f1eacaf59e8ef77cbda2984ea39fa8c005c763">TOW_BACK</a>,</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    <a class="code hl_enumvalue" href="vehicle_8h.html#a39a3696f788e37c7c3e2231d358f1eacaa191bb356e1cdac10873ab538e0852d8">NUM_TOW_TYPES</a></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>};</div>
+<div class="ttc" id="avehicle_8h_html_a39a3696f788e37c7c3e2231d358f1eaca7f496709e14f4b4ac751d042381f0f23"><div class="ttname"><a href="vehicle_8h.html#a39a3696f788e37c7c3e2231d358f1eaca7f496709e14f4b4ac751d042381f0f23">TOW_SIDE</a></div><div class="ttdeci">@ TOW_SIDE</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8h_source.html#l00142">vehicle.h:142</a></div></div>
+<div class="ttc" id="avehicle_8h_html_a39a3696f788e37c7c3e2231d358f1eacaa191bb356e1cdac10873ab538e0852d8"><div class="ttname"><a href="vehicle_8h.html#a39a3696f788e37c7c3e2231d358f1eacaa191bb356e1cdac10873ab538e0852d8">NUM_TOW_TYPES</a></div><div class="ttdeci">@ NUM_TOW_TYPES</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8h_source.html#l00145">vehicle.h:144</a></div></div>
+<div class="ttc" id="avehicle_8h_html_a39a3696f788e37c7c3e2231d358f1eacab6c366b229a91bf230e56f1ebbb466dc"><div class="ttname"><a href="vehicle_8h.html#a39a3696f788e37c7c3e2231d358f1eacab6c366b229a91bf230e56f1ebbb466dc">TOW_FRONT</a></div><div class="ttdeci">@ TOW_FRONT</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8h_source.html#l00141">vehicle.h:141</a></div></div>
+<div class="ttc" id="avehicle_8h_html_a39a3696f788e37c7c3e2231d358f1eacaf59e8ef77cbda2984ea39fa8c005c763"><div class="ttname"><a href="vehicle_8h.html#a39a3696f788e37c7c3e2231d358f1eacaf59e8ef77cbda2984ea39fa8c005c763">TOW_BACK</a></div><div class="ttdeci">@ TOW_BACK</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8h_source.html#l00143">vehicle.h:143</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -377,21 +381,21 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="a53b960f88fea75df3467e17492458952a2ff1473db97168f56244720be81f3a73" name="a53b960f88fea75df3467e17492458952a2ff1473db97168f56244720be81f3a73"></a>num_veh_coll_types&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="vehicle_8h_source.html#l00098">98</a> of file <a class="el" href="vehicle_8h_source.html">vehicle.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                   : <span class="keywordtype">int</span> {</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <a class="code hl_enumvalue" href="vehicle_8h.html#a53b960f88fea75df3467e17492458952ad6f7a65f12e8eab61c4617147bbd6189">veh_coll_nothing</a>,  <span class="comment">// 0 - nothing,</span></div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <a class="code hl_enumvalue" href="vehicle_8h.html#a53b960f88fea75df3467e17492458952a81e75be1950a29c38a47c29ca62af371">veh_coll_body</a>,     <span class="comment">// 1 - monster/player/npc</span></div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <a class="code hl_enumvalue" href="vehicle_8h.html#a53b960f88fea75df3467e17492458952a9ce81fa4bb69ed5ab6ca3648ec842c39">veh_coll_veh</a>,      <span class="comment">// 2 - vehicle</span></div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <a class="code hl_enumvalue" href="vehicle_8h.html#a53b960f88fea75df3467e17492458952a9acfef3ceff4a9c4fa3c0cf62bb8d19c">veh_coll_bashable</a>, <span class="comment">// 3 - bashable</span></div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <a class="code hl_enumvalue" href="vehicle_8h.html#a53b960f88fea75df3467e17492458952af924b62a834eb9a80f9f8ac3d7ae4be3">veh_coll_other</a>,    <span class="comment">// 4 - other</span></div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <a class="code hl_enumvalue" href="vehicle_8h.html#a53b960f88fea75df3467e17492458952a2ff1473db97168f56244720be81f3a73">num_veh_coll_types</a></div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>};</div>
-<div class="ttc" id="avehicle_8h_html_a53b960f88fea75df3467e17492458952a2ff1473db97168f56244720be81f3a73"><div class="ttname"><a href="vehicle_8h.html#a53b960f88fea75df3467e17492458952a2ff1473db97168f56244720be81f3a73">num_veh_coll_types</a></div><div class="ttdeci">@ num_veh_coll_types</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8h_source.html#l00105">vehicle.h:104</a></div></div>
-<div class="ttc" id="avehicle_8h_html_a53b960f88fea75df3467e17492458952a81e75be1950a29c38a47c29ca62af371"><div class="ttname"><a href="vehicle_8h.html#a53b960f88fea75df3467e17492458952a81e75be1950a29c38a47c29ca62af371">veh_coll_body</a></div><div class="ttdeci">@ veh_coll_body</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8h_source.html#l00100">vehicle.h:100</a></div></div>
-<div class="ttc" id="avehicle_8h_html_a53b960f88fea75df3467e17492458952a9acfef3ceff4a9c4fa3c0cf62bb8d19c"><div class="ttname"><a href="vehicle_8h.html#a53b960f88fea75df3467e17492458952a9acfef3ceff4a9c4fa3c0cf62bb8d19c">veh_coll_bashable</a></div><div class="ttdeci">@ veh_coll_bashable</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8h_source.html#l00102">vehicle.h:102</a></div></div>
-<div class="ttc" id="avehicle_8h_html_a53b960f88fea75df3467e17492458952a9ce81fa4bb69ed5ab6ca3648ec842c39"><div class="ttname"><a href="vehicle_8h.html#a53b960f88fea75df3467e17492458952a9ce81fa4bb69ed5ab6ca3648ec842c39">veh_coll_veh</a></div><div class="ttdeci">@ veh_coll_veh</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8h_source.html#l00101">vehicle.h:101</a></div></div>
-<div class="ttc" id="avehicle_8h_html_a53b960f88fea75df3467e17492458952ad6f7a65f12e8eab61c4617147bbd6189"><div class="ttname"><a href="vehicle_8h.html#a53b960f88fea75df3467e17492458952ad6f7a65f12e8eab61c4617147bbd6189">veh_coll_nothing</a></div><div class="ttdeci">@ veh_coll_nothing</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8h_source.html#l00099">vehicle.h:99</a></div></div>
-<div class="ttc" id="avehicle_8h_html_a53b960f88fea75df3467e17492458952af924b62a834eb9a80f9f8ac3d7ae4be3"><div class="ttname"><a href="vehicle_8h.html#a53b960f88fea75df3467e17492458952af924b62a834eb9a80f9f8ac3d7ae4be3">veh_coll_other</a></div><div class="ttdeci">@ veh_coll_other</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8h_source.html#l00103">vehicle.h:103</a></div></div>
+<p class="definition">Definition at line <a class="el" href="vehicle_8h_source.html#l00099">99</a> of file <a class="el" href="vehicle_8h_source.html">vehicle.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                   : <span class="keywordtype">int</span> {</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <a class="code hl_enumvalue" href="vehicle_8h.html#a53b960f88fea75df3467e17492458952ad6f7a65f12e8eab61c4617147bbd6189">veh_coll_nothing</a>,  <span class="comment">// 0 - nothing,</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <a class="code hl_enumvalue" href="vehicle_8h.html#a53b960f88fea75df3467e17492458952a81e75be1950a29c38a47c29ca62af371">veh_coll_body</a>,     <span class="comment">// 1 - monster/player/npc</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <a class="code hl_enumvalue" href="vehicle_8h.html#a53b960f88fea75df3467e17492458952a9ce81fa4bb69ed5ab6ca3648ec842c39">veh_coll_veh</a>,      <span class="comment">// 2 - vehicle</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <a class="code hl_enumvalue" href="vehicle_8h.html#a53b960f88fea75df3467e17492458952a9acfef3ceff4a9c4fa3c0cf62bb8d19c">veh_coll_bashable</a>, <span class="comment">// 3 - bashable</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <a class="code hl_enumvalue" href="vehicle_8h.html#a53b960f88fea75df3467e17492458952af924b62a834eb9a80f9f8ac3d7ae4be3">veh_coll_other</a>,    <span class="comment">// 4 - other</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <a class="code hl_enumvalue" href="vehicle_8h.html#a53b960f88fea75df3467e17492458952a2ff1473db97168f56244720be81f3a73">num_veh_coll_types</a></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>};</div>
+<div class="ttc" id="avehicle_8h_html_a53b960f88fea75df3467e17492458952a2ff1473db97168f56244720be81f3a73"><div class="ttname"><a href="vehicle_8h.html#a53b960f88fea75df3467e17492458952a2ff1473db97168f56244720be81f3a73">num_veh_coll_types</a></div><div class="ttdeci">@ num_veh_coll_types</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8h_source.html#l00106">vehicle.h:105</a></div></div>
+<div class="ttc" id="avehicle_8h_html_a53b960f88fea75df3467e17492458952a81e75be1950a29c38a47c29ca62af371"><div class="ttname"><a href="vehicle_8h.html#a53b960f88fea75df3467e17492458952a81e75be1950a29c38a47c29ca62af371">veh_coll_body</a></div><div class="ttdeci">@ veh_coll_body</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8h_source.html#l00101">vehicle.h:101</a></div></div>
+<div class="ttc" id="avehicle_8h_html_a53b960f88fea75df3467e17492458952a9acfef3ceff4a9c4fa3c0cf62bb8d19c"><div class="ttname"><a href="vehicle_8h.html#a53b960f88fea75df3467e17492458952a9acfef3ceff4a9c4fa3c0cf62bb8d19c">veh_coll_bashable</a></div><div class="ttdeci">@ veh_coll_bashable</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8h_source.html#l00103">vehicle.h:103</a></div></div>
+<div class="ttc" id="avehicle_8h_html_a53b960f88fea75df3467e17492458952a9ce81fa4bb69ed5ab6ca3648ec842c39"><div class="ttname"><a href="vehicle_8h.html#a53b960f88fea75df3467e17492458952a9ce81fa4bb69ed5ab6ca3648ec842c39">veh_coll_veh</a></div><div class="ttdeci">@ veh_coll_veh</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8h_source.html#l00102">vehicle.h:102</a></div></div>
+<div class="ttc" id="avehicle_8h_html_a53b960f88fea75df3467e17492458952ad6f7a65f12e8eab61c4617147bbd6189"><div class="ttname"><a href="vehicle_8h.html#a53b960f88fea75df3467e17492458952ad6f7a65f12e8eab61c4617147bbd6189">veh_coll_nothing</a></div><div class="ttdeci">@ veh_coll_nothing</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8h_source.html#l00100">vehicle.h:100</a></div></div>
+<div class="ttc" id="avehicle_8h_html_a53b960f88fea75df3467e17492458952af924b62a834eb9a80f9f8ac3d7ae4be3"><div class="ttname"><a href="vehicle_8h.html#a53b960f88fea75df3467e17492458952af924b62a834eb9a80f9f8ac3d7ae4be3">veh_coll_other</a></div><div class="ttdeci">@ veh_coll_other</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8h_source.html#l00104">vehicle.h:104</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -420,7 +424,7 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="vehicle__move_8cpp_source.html#l00064">mps_to_miph</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l03555">vehicle::ground_acceleration()</a>, <a class="el" href="vehicle_8cpp_source.html#l03576">vehicle::rotor_acceleration()</a>, and <a class="el" href="vehicle_8cpp_source.html#l03586">vehicle::water_acceleration()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l03556">vehicle::ground_acceleration()</a>, <a class="el" href="vehicle_8cpp_source.html#l03577">vehicle::rotor_acceleration()</a>, and <a class="el" href="vehicle_8cpp_source.html#l03587">vehicle::water_acceleration()</a>.</p>
 
 </div>
 </div>
@@ -468,50 +472,50 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vehicle__use_8cpp_source.html#l00147">147</a> of file <a class="el" href="vehicle__use_8cpp_source.html">vehicle_use.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>{</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    <span class="keyword">const</span> <a class="code hl_class" href="classmap.html">map</a> &amp;here = <a class="code hl_function" href="map_8cpp.html#acb0b34be6e497bdd2f9f40ae6929d562">get_map</a>();</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    <a class="code hl_class" href="classCharacter.html">Character</a> &amp;pl = <a class="code hl_function" href="character_8cpp.html#a2fcb25d686f4a35fca374c6f71280311">get_player_character</a>();</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    <span class="keyword">const</span> <a class="code hl_class" href="classoptional__vpart__position.html">optional_vpart_position</a> vp = here.<a class="code hl_function" href="classmap.html#aa487d96256c3d35db7a1bf273156b64a">veh_at</a>( pl.<a class="code hl_function" href="classCharacter.html#ad24859164517ed6e392e21df69527199">pos</a>() );</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    <span class="keywordflow">if</span>( !vp ) {</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    }</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    <a class="code hl_class" href="classvehicle.html">vehicle</a> *<span class="keyword">const</span> veh = &amp;vp-&gt;vehicle();</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    <a class="code hl_function" href="messages_8cpp.html#a54489326fc37823819c5105addfa27f2">add_msg</a>( <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;You pull a handbrake.&quot;</span> ) );</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    veh-&gt;<a class="code hl_variable" href="classvehicle.html#af5c4cd455d31d1a9377ddad223cafe44">cruise_velocity</a> = 0;</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="namespacevehicle__movement.html#ad2c532fb5522d745b0006f7a3b36cab3">is_on_rails</a> = <a class="code hl_function" href="namespacevehicle__movement.html#ad2c532fb5522d745b0006f7a3b36cab3">vehicle_movement::is_on_rails</a>( here, *veh );</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    <span class="keywordflow">if</span>( !<a class="code hl_function" href="namespacevehicle__movement.html#ad2c532fb5522d745b0006f7a3b36cab3">is_on_rails</a> &amp;&amp; veh-&gt;<a class="code hl_variable" href="classvehicle.html#a3d4d97e9ca8cb2642001f8f61df500d5">last_turn</a> != 0_degrees &amp;&amp;</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        <a class="code hl_function" href="artifact_8cpp.html#a70800e95389f34dd34186fafaea2a840">rng</a>( 15, 60 ) * 100 &lt; std::abs( veh-&gt;<a class="code hl_variable" href="classvehicle.html#a4d83e86fe57ec6126893a68f68c3c304">velocity</a> ) ) {</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>        veh-&gt;<a class="code hl_variable" href="classvehicle.html#a320ca34b5c38568efd801731cef78a35">skidding</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        <a class="code hl_function" href="messages_8cpp.html#a54489326fc37823819c5105addfa27f2">add_msg</a>( <a class="code hl_enumvalue" href="enums_8h.html#a3baf36d700701401b6baf94db93d096eaed9222dd268c0a08567f6c9081b3e687">m_warning</a>, <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;You lose control of %s.&quot;</span> ), veh-&gt;<a class="code hl_variable" href="classvehicle.html#a441fa41f264fb7bc45df81d71244a0d1">name</a> );</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>        veh-&gt;<a class="code hl_function" href="classvehicle.html#a1380ff85985897f9f8a34eba538e04db">turn</a>( veh-&gt;<a class="code hl_variable" href="classvehicle.html#a3d4d97e9ca8cb2642001f8f61df500d5">last_turn</a> &gt; 0_degrees ? 60_degrees : -60_degrees );</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>        <span class="keywordtype">int</span> braking_power = std::abs( veh-&gt;<a class="code hl_variable" href="classvehicle.html#a4d83e86fe57ec6126893a68f68c3c304">velocity</a> ) / 2 + 10 * 100;</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>        <span class="keywordflow">if</span>( std::abs( veh-&gt;<a class="code hl_variable" href="classvehicle.html#a4d83e86fe57ec6126893a68f68c3c304">velocity</a> ) &lt; braking_power ) {</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>            veh-&gt;<a class="code hl_function" href="classvehicle.html#ab3ca604dd9cd1907f37c8a888934a1d3">stop</a>();</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>            <span class="keywordtype">int</span> <a class="code hl_function" href="enums_8h.html#a89bed42d8e3efcd44570febc837f088e">sgn</a> = veh-&gt;<a class="code hl_variable" href="classvehicle.html#a4d83e86fe57ec6126893a68f68c3c304">velocity</a> &gt; 0 ? 1 : -1;</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>            veh-&gt;<a class="code hl_variable" href="classvehicle.html#a4d83e86fe57ec6126893a68f68c3c304">velocity</a> = <a class="code hl_function" href="enums_8h.html#a89bed42d8e3efcd44570febc837f088e">sgn</a> * ( std::abs( veh-&gt;<a class="code hl_variable" href="classvehicle.html#a4d83e86fe57ec6126893a68f68c3c304">velocity</a> ) - braking_power );</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        }</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    }</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    pl.<a class="code hl_variable" href="classCreature.html#a8c5a392caa213bee9581b47e9f0e2052">moves</a> = 0;</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>}</div>
+<p class="definition">Definition at line <a class="el" href="vehicle__use_8cpp_source.html#l00148">148</a> of file <a class="el" href="vehicle__use_8cpp_source.html">vehicle_use.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>{</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    <span class="keyword">const</span> <a class="code hl_class" href="classmap.html">map</a> &amp;here = <a class="code hl_function" href="map_8cpp.html#acb0b34be6e497bdd2f9f40ae6929d562">get_map</a>();</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    <a class="code hl_class" href="classCharacter.html">Character</a> &amp;pl = <a class="code hl_function" href="character_8cpp.html#a2fcb25d686f4a35fca374c6f71280311">get_player_character</a>();</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    <span class="keyword">const</span> <a class="code hl_class" href="classoptional__vpart__position.html">optional_vpart_position</a> vp = here.<a class="code hl_function" href="classmap.html#aa487d96256c3d35db7a1bf273156b64a">veh_at</a>( pl.<a class="code hl_function" href="classCharacter.html#ad24859164517ed6e392e21df69527199">pos</a>() );</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    <span class="keywordflow">if</span>( !vp ) {</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    }</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    <a class="code hl_class" href="classvehicle.html">vehicle</a> *<span class="keyword">const</span> veh = &amp;vp-&gt;vehicle();</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    <a class="code hl_function" href="messages_8cpp.html#a54489326fc37823819c5105addfa27f2">add_msg</a>( <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;You pull a handbrake.&quot;</span> ) );</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    veh-&gt;<a class="code hl_variable" href="classvehicle.html#af5c4cd455d31d1a9377ddad223cafe44">cruise_velocity</a> = 0;</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="namespacevehicle__movement.html#ad2c532fb5522d745b0006f7a3b36cab3">is_on_rails</a> = <a class="code hl_function" href="namespacevehicle__movement.html#ad2c532fb5522d745b0006f7a3b36cab3">vehicle_movement::is_on_rails</a>( here, *veh );</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    <span class="keywordflow">if</span>( !<a class="code hl_function" href="namespacevehicle__movement.html#ad2c532fb5522d745b0006f7a3b36cab3">is_on_rails</a> &amp;&amp; veh-&gt;<a class="code hl_variable" href="classvehicle.html#a3d4d97e9ca8cb2642001f8f61df500d5">last_turn</a> != 0_degrees &amp;&amp;</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>        <a class="code hl_function" href="artifact_8cpp.html#a70800e95389f34dd34186fafaea2a840">rng</a>( 15, 60 ) * 100 &lt; std::abs( veh-&gt;<a class="code hl_variable" href="classvehicle.html#a4d83e86fe57ec6126893a68f68c3c304">velocity</a> ) ) {</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        veh-&gt;<a class="code hl_variable" href="classvehicle.html#a320ca34b5c38568efd801731cef78a35">skidding</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>        <a class="code hl_function" href="messages_8cpp.html#a54489326fc37823819c5105addfa27f2">add_msg</a>( <a class="code hl_enumvalue" href="enums_8h.html#a3baf36d700701401b6baf94db93d096eaed9222dd268c0a08567f6c9081b3e687">m_warning</a>, <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;You lose control of %s.&quot;</span> ), veh-&gt;<a class="code hl_variable" href="classvehicle.html#a441fa41f264fb7bc45df81d71244a0d1">name</a> );</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>        veh-&gt;<a class="code hl_function" href="classvehicle.html#a1380ff85985897f9f8a34eba538e04db">turn</a>( veh-&gt;<a class="code hl_variable" href="classvehicle.html#a3d4d97e9ca8cb2642001f8f61df500d5">last_turn</a> &gt; 0_degrees ? 60_degrees : -60_degrees );</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>        <span class="keywordtype">int</span> braking_power = std::abs( veh-&gt;<a class="code hl_variable" href="classvehicle.html#a4d83e86fe57ec6126893a68f68c3c304">velocity</a> ) / 2 + 10 * 100;</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>        <span class="keywordflow">if</span>( std::abs( veh-&gt;<a class="code hl_variable" href="classvehicle.html#a4d83e86fe57ec6126893a68f68c3c304">velocity</a> ) &lt; braking_power ) {</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>            veh-&gt;<a class="code hl_function" href="classvehicle.html#ab3ca604dd9cd1907f37c8a888934a1d3">stop</a>();</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>            <span class="keywordtype">int</span> <a class="code hl_function" href="enums_8h.html#a89bed42d8e3efcd44570febc837f088e">sgn</a> = veh-&gt;<a class="code hl_variable" href="classvehicle.html#a4d83e86fe57ec6126893a68f68c3c304">velocity</a> &gt; 0 ? 1 : -1;</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>            veh-&gt;<a class="code hl_variable" href="classvehicle.html#a4d83e86fe57ec6126893a68f68c3c304">velocity</a> = <a class="code hl_function" href="enums_8h.html#a89bed42d8e3efcd44570febc837f088e">sgn</a> * ( std::abs( veh-&gt;<a class="code hl_variable" href="classvehicle.html#a4d83e86fe57ec6126893a68f68c3c304">velocity</a> ) - braking_power );</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>        }</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    }</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    pl.<a class="code hl_variable" href="classCreature.html#a8c5a392caa213bee9581b47e9f0e2052">moves</a> = 0;</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>}</div>
 <div class="ttc" id="aartifact_8cpp_html_a70800e95389f34dd34186fafaea2a840"><div class="ttname"><a href="artifact_8cpp.html#a70800e95389f34dd34186fafaea2a840">rng</a></div><div class="ttdeci">units::quantity&lt; V, B &gt; rng(const units::quantity&lt; V, B &gt; &amp;min, const units::quantity&lt; V, B &gt; &amp;max)</div><div class="ttdef"><b>Definition:</b> <a href="artifact_8cpp_source.html#l00032">artifact.cpp:32</a></div></div>
-<div class="ttc" id="acharacter_8cpp_html_a2fcb25d686f4a35fca374c6f71280311"><div class="ttname"><a href="character_8cpp.html#a2fcb25d686f4a35fca374c6f71280311">get_player_character</a></div><div class="ttdeci">Character &amp; get_player_character()</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l00388">character.cpp:388</a></div></div>
-<div class="ttc" id="aclassCharacter_html"><div class="ttname"><a href="classCharacter.html">Character</a></div><div class="ttdef"><b>Definition:</b> <a href="character_8h_source.html#l00226">character.h:227</a></div></div>
-<div class="ttc" id="aclassCharacter_html_ad24859164517ed6e392e21df69527199"><div class="ttname"><a href="classCharacter.html#ad24859164517ed6e392e21df69527199">Character::pos</a></div><div class="ttdeci">const tripoint &amp; pos() const override</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l00721">character.cpp:721</a></div></div>
-<div class="ttc" id="aclassCreature_html_a8c5a392caa213bee9581b47e9f0e2052"><div class="ttname"><a href="classCreature.html#a8c5a392caa213bee9581b47e9f0e2052">Creature::moves</a></div><div class="ttdeci">int moves</div><div class="ttdef"><b>Definition:</b> <a href="creature_8h_source.html#l00570">creature.h:570</a></div></div>
+<div class="ttc" id="acharacter_8cpp_html_a2fcb25d686f4a35fca374c6f71280311"><div class="ttname"><a href="character_8cpp.html#a2fcb25d686f4a35fca374c6f71280311">get_player_character</a></div><div class="ttdeci">Character &amp; get_player_character()</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l00393">character.cpp:393</a></div></div>
+<div class="ttc" id="aclassCharacter_html"><div class="ttname"><a href="classCharacter.html">Character</a></div><div class="ttdef"><b>Definition:</b> <a href="character_8h_source.html#l00217">character.h:218</a></div></div>
+<div class="ttc" id="aclassCharacter_html_ad24859164517ed6e392e21df69527199"><div class="ttname"><a href="classCharacter.html#ad24859164517ed6e392e21df69527199">Character::pos</a></div><div class="ttdeci">const tripoint &amp; pos() const override</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l00587">character.cpp:587</a></div></div>
+<div class="ttc" id="aclassCreature_html_a8c5a392caa213bee9581b47e9f0e2052"><div class="ttname"><a href="classCreature.html#a8c5a392caa213bee9581b47e9f0e2052">Creature::moves</a></div><div class="ttdeci">int moves</div><div class="ttdef"><b>Definition:</b> <a href="creature_8h_source.html#l00574">creature.h:574</a></div></div>
 <div class="ttc" id="aclassmap_html"><div class="ttname"><a href="classmap.html">map</a></div><div class="ttdoc">Manage and cache data about a part of the map.</div><div class="ttdef"><b>Definition:</b> <a href="map_8h_source.html#l00383">map.h:384</a></div></div>
 <div class="ttc" id="aclassmap_html_aa487d96256c3d35db7a1bf273156b64a"><div class="ttname"><a href="classmap.html#aa487d96256c3d35db7a1bf273156b64a">map::veh_at</a></div><div class="ttdeci">optional_vpart_position veh_at(const tripoint &amp;p) const</div><div class="ttdoc">Checks if tile is occupied by vehicle and by which part.</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l01009">map.cpp:1009</a></div></div>
 <div class="ttc" id="aclassoptional__vpart__position_html"><div class="ttname"><a href="classoptional__vpart__position.html">optional_vpart_position</a></div><div class="ttdoc">Simple wrapper to forward functions that may return a cata::optional to vpart_position.</div><div class="ttdef"><b>Definition:</b> <a href="vpart__position_8h_source.html#l00103">vpart_position.h:104</a></div></div>
-<div class="ttc" id="aclassvehicle_html"><div class="ttname"><a href="classvehicle.html">vehicle</a></div><div class="ttdoc">A vehicle as a whole with all its components.</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8h_source.html#l00674">vehicle.h:675</a></div></div>
+<div class="ttc" id="aclassvehicle_html"><div class="ttname"><a href="classvehicle.html">vehicle</a></div><div class="ttdoc">A vehicle as a whole with all its components.</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8h_source.html#l00675">vehicle.h:676</a></div></div>
 <div class="ttc" id="aclassvehicle_html_a1380ff85985897f9f8a34eba538e04db"><div class="ttname"><a href="classvehicle.html#a1380ff85985897f9f8a34eba538e04db">vehicle::turn</a></div><div class="ttdeci">void turn(units::angle deg)</div><div class="ttdef"><b>Definition:</b> <a href="vehicle__move_8cpp_source.html#l00325">vehicle_move.cpp:325</a></div></div>
-<div class="ttc" id="aclassvehicle_html_a320ca34b5c38568efd801731cef78a35"><div class="ttname"><a href="classvehicle.html#a320ca34b5c38568efd801731cef78a35">vehicle::skidding</a></div><div class="ttdeci">bool skidding</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8h_source.html#l01999">vehicle.h:1999</a></div></div>
-<div class="ttc" id="aclassvehicle_html_a3d4d97e9ca8cb2642001f8f61df500d5"><div class="ttname"><a href="classvehicle.html#a3d4d97e9ca8cb2642001f8f61df500d5">vehicle::last_turn</a></div><div class="ttdeci">units::angle last_turn</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8h_source.html#l01929">vehicle.h:1929</a></div></div>
-<div class="ttc" id="aclassvehicle_html_a441fa41f264fb7bc45df81d71244a0d1"><div class="ttname"><a href="classvehicle.html#a441fa41f264fb7bc45df81d71244a0d1">vehicle::name</a></div><div class="ttdeci">std::string name</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8h_source.html#l01849">vehicle.h:1849</a></div></div>
-<div class="ttc" id="aclassvehicle_html_a4d83e86fe57ec6126893a68f68c3c304"><div class="ttname"><a href="classvehicle.html#a4d83e86fe57ec6126893a68f68c3c304">vehicle::velocity</a></div><div class="ttdeci">int velocity</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8h_source.html#l01918">vehicle.h:1918</a></div></div>
+<div class="ttc" id="aclassvehicle_html_a320ca34b5c38568efd801731cef78a35"><div class="ttname"><a href="classvehicle.html#a320ca34b5c38568efd801731cef78a35">vehicle::skidding</a></div><div class="ttdeci">bool skidding</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8h_source.html#l02007">vehicle.h:2007</a></div></div>
+<div class="ttc" id="aclassvehicle_html_a3d4d97e9ca8cb2642001f8f61df500d5"><div class="ttname"><a href="classvehicle.html#a3d4d97e9ca8cb2642001f8f61df500d5">vehicle::last_turn</a></div><div class="ttdeci">units::angle last_turn</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8h_source.html#l01937">vehicle.h:1937</a></div></div>
+<div class="ttc" id="aclassvehicle_html_a441fa41f264fb7bc45df81d71244a0d1"><div class="ttname"><a href="classvehicle.html#a441fa41f264fb7bc45df81d71244a0d1">vehicle::name</a></div><div class="ttdeci">std::string name</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8h_source.html#l01857">vehicle.h:1857</a></div></div>
+<div class="ttc" id="aclassvehicle_html_a4d83e86fe57ec6126893a68f68c3c304"><div class="ttname"><a href="classvehicle.html#a4d83e86fe57ec6126893a68f68c3c304">vehicle::velocity</a></div><div class="ttdeci">int velocity</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8h_source.html#l01926">vehicle.h:1926</a></div></div>
 <div class="ttc" id="aclassvehicle_html_ab3ca604dd9cd1907f37c8a888934a1d3"><div class="ttname"><a href="classvehicle.html#ab3ca604dd9cd1907f37c8a888934a1d3">vehicle::stop</a></div><div class="ttdeci">void stop(bool update_cache=true)</div><div class="ttdef"><b>Definition:</b> <a href="vehicle__move_8cpp_source.html#l00339">vehicle_move.cpp:339</a></div></div>
-<div class="ttc" id="aclassvehicle_html_af5c4cd455d31d1a9377ddad223cafe44"><div class="ttname"><a href="classvehicle.html#af5c4cd455d31d1a9377ddad223cafe44">vehicle::cruise_velocity</a></div><div class="ttdeci">int cruise_velocity</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8h_source.html#l01920">vehicle.h:1920</a></div></div>
+<div class="ttc" id="aclassvehicle_html_af5c4cd455d31d1a9377ddad223cafe44"><div class="ttname"><a href="classvehicle.html#af5c4cd455d31d1a9377ddad223cafe44">vehicle::cruise_velocity</a></div><div class="ttdeci">int cruise_velocity</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8h_source.html#l01928">vehicle.h:1928</a></div></div>
 <div class="ttc" id="aenums_8h_html_a3baf36d700701401b6baf94db93d096eaed9222dd268c0a08567f6c9081b3e687"><div class="ttname"><a href="enums_8h.html#a3baf36d700701401b6baf94db93d096eaed9222dd268c0a08567f6c9081b3e687">m_warning</a></div><div class="ttdeci">@ m_warning</div><div class="ttdef"><b>Definition:</b> <a href="enums_8h_source.html#l00264">enums.h:264</a></div></div>
 <div class="ttc" id="aenums_8h_html_a89bed42d8e3efcd44570febc837f088e"><div class="ttname"><a href="enums_8h.html#a89bed42d8e3efcd44570febc837f088e">sgn</a></div><div class="ttdeci">constexpr int sgn(const T x)</div><div class="ttdef"><b>Definition:</b> <a href="enums_8h_source.html#l00008">enums.h:8</a></div></div>
 <div class="ttc" id="amap_8cpp_html_acb0b34be6e497bdd2f9f40ae6929d562"><div class="ttname"><a href="map_8cpp.html#acb0b34be6e497bdd2f9f40ae6929d562">get_map</a></div><div class="ttdeci">map &amp; get_map()</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l00146">map.cpp:146</a></div></div>
@@ -519,9 +523,9 @@ Variables</h2></td></tr>
 <div class="ttc" id="anamespacevehicle__movement_html_ad2c532fb5522d745b0006f7a3b36cab3"><div class="ttname"><a href="namespacevehicle__movement.html#ad2c532fb5522d745b0006f7a3b36cab3">vehicle_movement::is_on_rails</a></div><div class="ttdeci">bool is_on_rails(const map &amp;m, const vehicle &amp;veh)</div><div class="ttdoc">Returns whether the vehicle is currently on rails.</div><div class="ttdef"><b>Definition:</b> <a href="vehicle__move_8cpp_source.html#l01930">vehicle_move.cpp:1930</a></div></div>
 <div class="ttc" id="atranslations_8h_html_aa829053017e23ef22d44dccecba63a34"><div class="ttname"><a href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a></div><div class="ttdeci">#define _(msg)</div><div class="ttdef"><b>Definition:</b> <a href="translations_8h_source.html#l00116">translations.h:116</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="messages_8cpp_source.html#l00884">add_msg()</a>, <a class="el" href="vehicle_8h_source.html#l01920">vehicle::cruise_velocity</a>, <a class="el" href="map_8cpp_source.html#l00146">get_map()</a>, <a class="el" href="character_8cpp_source.html#l00388">get_player_character()</a>, <a class="el" href="vehicle__move_8cpp_source.html#l01930">vehicle_movement::is_on_rails()</a>, <a class="el" href="vehicle_8h_source.html#l01929">vehicle::last_turn</a>, <a class="el" href="enums_8h_source.html#l00264">m_warning</a>, <a class="el" href="creature_8h_source.html#l00570">Creature::moves</a>, <a class="el" href="vehicle_8h_source.html#l01849">vehicle::name</a>, <a class="el" href="character_8cpp_source.html#l00721">Character::pos()</a>, <a class="el" href="artifact_8cpp_source.html#l00032">rng()</a>, <a class="el" href="enums_8h_source.html#l00008">sgn()</a>, <a class="el" href="vehicle_8h_source.html#l01999">vehicle::skidding</a>, <a class="el" href="vehicle__move_8cpp_source.html#l00339">vehicle::stop()</a>, <a class="el" href="vehicle__move_8cpp_source.html#l00325">vehicle::turn()</a>, <a class="el" href="map_8cpp_source.html#l01009">map::veh_at()</a>, and <a class="el" href="vehicle_8h_source.html#l01918">vehicle::velocity</a>.</p>
+<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="messages_8cpp_source.html#l00884">add_msg()</a>, <a class="el" href="vehicle_8h_source.html#l01928">vehicle::cruise_velocity</a>, <a class="el" href="map_8cpp_source.html#l00146">get_map()</a>, <a class="el" href="character_8cpp_source.html#l00393">get_player_character()</a>, <a class="el" href="vehicle__move_8cpp_source.html#l01930">vehicle_movement::is_on_rails()</a>, <a class="el" href="vehicle_8h_source.html#l01937">vehicle::last_turn</a>, <a class="el" href="enums_8h_source.html#l00264">m_warning</a>, <a class="el" href="creature_8h_source.html#l00574">Creature::moves</a>, <a class="el" href="vehicle_8h_source.html#l01857">vehicle::name</a>, <a class="el" href="character_8cpp_source.html#l00587">Character::pos()</a>, <a class="el" href="artifact_8cpp_source.html#l00032">rng()</a>, <a class="el" href="enums_8h_source.html#l00008">sgn()</a>, <a class="el" href="vehicle_8h_source.html#l02007">vehicle::skidding</a>, <a class="el" href="vehicle__move_8cpp_source.html#l00339">vehicle::stop()</a>, <a class="el" href="vehicle__move_8cpp_source.html#l00325">vehicle::turn()</a>, <a class="el" href="map_8cpp_source.html#l01009">map::veh_at()</a>, and <a class="el" href="vehicle_8h_source.html#l01926">vehicle::velocity</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="handle__action_8cpp_source.html#l01519">game::handle_action()</a>, and <a class="el" href="vehicle__use_8cpp_source.html#l01925">vehicle::interact_with()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="handle__action_8cpp_source.html#l01520">game::handle_action()</a>, and <a class="el" href="vehicle__use_8cpp_source.html#l01926">vehicle::interact_with()</a>.</p>
 
 </div>
 </div>
@@ -551,17 +555,17 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vehicle__use_8cpp_source.html#l00097">97</a> of file <a class="el" href="vehicle__use_8cpp_source.html">vehicle_use.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>{</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="keyword">const</span> <span class="keyword">auto</span> keys = <a class="code hl_class" href="classinput__context.html">input_context</a>( context ).<a class="code hl_function" href="classinput__context.html#af2b7d6cab67d5a2eeb1122f3041edf79">keys_bound_to</a>( opt );</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="keywordflow">return</span> keys.empty() ? <span class="charliteral">&#39; &#39;</span> : keys.front();</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>}</div>
+<p class="definition">Definition at line <a class="el" href="vehicle__use_8cpp_source.html#l00098">98</a> of file <a class="el" href="vehicle__use_8cpp_source.html">vehicle_use.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>{</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="keyword">const</span> <span class="keyword">auto</span> keys = <a class="code hl_class" href="classinput__context.html">input_context</a>( context ).<a class="code hl_function" href="classinput__context.html#af2b7d6cab67d5a2eeb1122f3041edf79">keys_bound_to</a>( opt );</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="keywordflow">return</span> keys.empty() ? <span class="charliteral">&#39; &#39;</span> : keys.front();</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>}</div>
 <div class="ttc" id="aclassinput__context_html"><div class="ttname"><a href="classinput__context.html">input_context</a></div><div class="ttdoc">Represents a context in which a set of actions can be performed.</div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00385">input.h:386</a></div></div>
 <div class="ttc" id="aclassinput__context_html_af2b7d6cab67d5a2eeb1122f3041edf79"><div class="ttname"><a href="classinput__context.html#af2b7d6cab67d5a2eeb1122f3041edf79">input_context::keys_bound_to</a></div><div class="ttdeci">std::vector&lt; char &gt; keys_bound_to(const std::string &amp;action_descriptor, bool restrict_to_printable=true) const</div><div class="ttdoc">Keys (and only keys, other input types are not included) that trigger the given action.</div><div class="ttdef"><b>Definition:</b> <a href="input_8cpp_source.html#l00695">input.cpp:695</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="input_8cpp_source.html#l00695">input_context::keys_bound_to()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="vehicle__use_8cpp_source.html#l01925">vehicle::interact_with()</a>, <a class="el" href="vehicle__use_8cpp_source.html#l00269">vehicle::set_electronics_menu_options()</a>, and <a class="el" href="vehicle__use_8cpp_source.html#l00641">vehicle::use_controls()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle__use_8cpp_source.html#l01926">vehicle::interact_with()</a>, <a class="el" href="vehicle__use_8cpp_source.html#l00270">vehicle::set_electronics_menu_options()</a>, and <a class="el" href="vehicle__use_8cpp_source.html#l00642">vehicle::use_controls()</a>.</p>
 
 </div>
 </div>
@@ -589,7 +593,7 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="vehicle__move_8cpp_source.html#l00062">mi_to_vmi</a>, and <a class="el" href="vehicle__move_8cpp_source.html#l00064">mps_to_miph</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="vehicle__move_8cpp_source.html#l01245">vehicle::act_on_map()</a>, <a class="el" href="vehicle_8cpp_source.html#l03682">vehicle::max_ground_velocity()</a>, <a class="el" href="vehicle_8cpp_source.html#l03714">vehicle::max_rotor_velocity()</a>, <a class="el" href="vehicle_8cpp_source.html#l03704">vehicle::max_water_velocity()</a>, <a class="el" href="vehicle_8cpp_source.html#l03747">vehicle::safe_ground_velocity()</a>, <a class="el" href="vehicle_8cpp_source.html#l03757">vehicle::safe_rotor_velocity()</a>, <a class="el" href="vehicle_8cpp_source.html#l03765">vehicle::safe_water_velocity()</a>, and <a class="el" href="vehicle__move_8cpp_source.html#l00088">vehicle::slowdown()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle__move_8cpp_source.html#l01245">vehicle::act_on_map()</a>, <a class="el" href="vehicle_8cpp_source.html#l03683">vehicle::max_ground_velocity()</a>, <a class="el" href="vehicle_8cpp_source.html#l03715">vehicle::max_rotor_velocity()</a>, <a class="el" href="vehicle_8cpp_source.html#l03705">vehicle::max_water_velocity()</a>, <a class="el" href="vehicle_8cpp_source.html#l03748">vehicle::safe_ground_velocity()</a>, <a class="el" href="vehicle_8cpp_source.html#l03758">vehicle::safe_rotor_velocity()</a>, <a class="el" href="vehicle_8cpp_source.html#l03766">vehicle::safe_water_velocity()</a>, and <a class="el" href="vehicle__move_8cpp_source.html#l00088">vehicle::slowdown()</a>.</p>
 
 </div>
 </div>
@@ -627,10 +631,10 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vehicle_8h_source.html#l00093">93</a> of file <a class="el" href="vehicle_8h_source.html">vehicle.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>{</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>( lhs ) &amp; <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>( rhs );</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>}</div>
+<p class="definition">Definition at line <a class="el" href="vehicle_8h_source.html#l00094">94</a> of file <a class="el" href="vehicle_8h_source.html">vehicle.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>{</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>( lhs ) &amp; <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>( rhs );</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -668,11 +672,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vehicle_8h_source.html#l00089">89</a> of file <a class="el" href="vehicle_8h_source.html">vehicle.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>{</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><a class="code hl_enumeration" href="vehicle_8h.html#ad9a221cee9ae7a69d6f09d4de701f02c">part_status_flag</a><span class="keyword">&gt;</span>( <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>( lhs ) | <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>( rhs ) );</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>}</div>
-<div class="ttc" id="avehicle_8h_html_ad9a221cee9ae7a69d6f09d4de701f02c"><div class="ttname"><a href="vehicle_8h.html#ad9a221cee9ae7a69d6f09d4de701f02c">part_status_flag</a></div><div class="ttdeci">part_status_flag</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8h_source.html#l00083">vehicle.h:83</a></div></div>
+<p class="definition">Definition at line <a class="el" href="vehicle_8h_source.html#l00090">90</a> of file <a class="el" href="vehicle_8h_source.html">vehicle.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>{</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><a class="code hl_enumeration" href="vehicle_8h.html#ad9a221cee9ae7a69d6f09d4de701f02c">part_status_flag</a><span class="keyword">&gt;</span>( <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>( lhs ) | <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>( rhs ) );</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>}</div>
+<div class="ttc" id="avehicle_8h_html_ad9a221cee9ae7a69d6f09d4de701f02c"><div class="ttname"><a href="vehicle_8h.html#ad9a221cee9ae7a69d6f09d4de701f02c">part_status_flag</a></div><div class="ttdeci">part_status_flag</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8h_source.html#l00084">vehicle.h:84</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -699,7 +703,7 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="vehicle__move_8cpp_source.html#l00064">mps_to_miph</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l03555">vehicle::ground_acceleration()</a>, and <a class="el" href="vehicle_8cpp_source.html#l03586">vehicle::water_acceleration()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l03556">vehicle::ground_acceleration()</a>, and <a class="el" href="vehicle_8cpp_source.html#l03587">vehicle::water_acceleration()</a>.</p>
 
 </div>
 </div>
@@ -751,7 +755,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vehicle_8h_source.html#l00081">81</a> of file <a class="el" href="vehicle_8h_source.html">vehicle.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vehicle_8h_source.html#l00082">82</a> of file <a class="el" href="vehicle_8h_source.html">vehicle.h</a>.</p>
 
 </div>
 </div>
@@ -775,9 +779,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vehicle_8h_source.html#l00079">79</a> of file <a class="el" href="vehicle_8h_source.html">vehicle.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vehicle_8h_source.html#l00080">80</a> of file <a class="el" href="vehicle_8h_source.html">vehicle.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l06528">vehicle::break_off()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l06520">vehicle::break_off()</a>.</p>
 
 </div>
 </div>
@@ -787,7 +791,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="vehicle_8h.html">vehicle.h</a></li>
-    <li class="footer">Generated on Mon Dec 26 2022 21:41:55 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Feb 21 2023 16:43:21 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

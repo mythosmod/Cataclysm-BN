@@ -8,7 +8,6 @@ var searchData=
   ['jsin_5f_5',['jsin_',['../classJsonValue.html#abaeb986892e3e8bfece5287a7406908e',1,'JsonValue']]],
   ['json_5fflags_5fall_6',['json_flags_all',['../namespaceanonymous__namespace_02flag_8cpp_03.html#a350134e384453fc7894769c944211389',1,'anonymous_namespace{flag.cpp}']]],
   ['json_5freport_5fstrict_7',['json_report_strict',['../cached__options_8cpp.html#a16e6bc0b3300c5fb311e7f3571fb67c7',1,'json_report_strict():&#160;cached_options.cpp'],['../cached__options_8h.html#a16e6bc0b3300c5fb311e7f3571fb67c7',1,'json_report_strict():&#160;cached_options.cpp']]],
-  ['json_5freport_5funused_5ffields_8',['json_report_unused_fields',['../cached__options_8cpp.html#a6db620b601fa3aad6109eb520cc20143',1,'json_report_unused_fields():&#160;cached_options.cpp'],['../cached__options_8h.html#a6db620b601fa3aad6109eb520cc20143',1,'json_report_unused_fields():&#160;cached_options.cpp']]],
-  ['json_5ftalk_5ftopics_9',['json_talk_topics',['../npctalk_8cpp.html#a9d58f009a148e9132fad232a12f96306',1,'npctalk.cpp']]],
-  ['jsrcloc_10',['jsrcloc',['../classmapgen__function__json__base.html#a8c88ac86116db0a187e671519fbbeaab',1,'mapgen_function_json_base']]]
+  ['json_5ftalk_5ftopics_8',['json_talk_topics',['../npctalk_8cpp.html#a9d58f009a148e9132fad232a12f96306',1,'npctalk.cpp']]],
+  ['jsrcloc_9',['jsrcloc',['../classmapgen__function__json__base.html#a8c88ac86116db0a187e671519fbbeaab',1,'mapgen_function_json_base']]]
 ];

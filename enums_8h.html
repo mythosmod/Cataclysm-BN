@@ -145,13 +145,13 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a7d3ec9c894bd9fab7bce62605cb6470d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f18231241dd5fb662d1c5313636ec5d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enums_8h.html#a5f18231241dd5fb662d1c5313636ec5d">temperature_flag</a> : int { <br />
-&#160;&#160;<a class="el" href="enums_8h.html#a5f18231241dd5fb662d1c5313636ec5da1c0c1c880058ab81dac39f56cedc8a79">TEMP_NORMAL</a> = 0
-, <a class="el" href="enums_8h.html#a5f18231241dd5fb662d1c5313636ec5da93448fee2eb097fb12c53b8ba231c5c7">TEMP_HEATER</a>
-, <a class="el" href="enums_8h.html#a5f18231241dd5fb662d1c5313636ec5da4978bba20e7552637c632abb1f58cbb7">TEMP_FRIDGE</a>
-, <a class="el" href="enums_8h.html#a5f18231241dd5fb662d1c5313636ec5da59395dc1c992166e25938dccc39ade1b">TEMP_FREEZER</a>
+<tr class="memitem:a5f18231241dd5fb662d1c5313636ec5d"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enums_8h.html#a5f18231241dd5fb662d1c5313636ec5d">temperature_flag</a> : int { <br />
+&#160;&#160;<a class="el" href="enums_8h.html#a5f18231241dd5fb662d1c5313636ec5da97a8a8356c8e6ec71bc071918368ab20">TEMP_NORMAL</a> = 0
+, <a class="el" href="enums_8h.html#a5f18231241dd5fb662d1c5313636ec5da6d106a78eac33e56fc089873c46de0dd">TEMP_HEATER</a>
+, <a class="el" href="enums_8h.html#a5f18231241dd5fb662d1c5313636ec5dad2e703e320bca1fe9991716791e958fb">TEMP_FRIDGE</a>
+, <a class="el" href="enums_8h.html#a5f18231241dd5fb662d1c5313636ec5daab79f10607e00f5f2377eaefe8c09a9a">TEMP_FREEZER</a>
 , <br />
-&#160;&#160;<a class="el" href="enums_8h.html#a5f18231241dd5fb662d1c5313636ec5da59adbf73d937364bb9da73c4057adf74">TEMP_ROOT_CELLAR</a>
+&#160;&#160;<a class="el" href="enums_8h.html#a5f18231241dd5fb662d1c5313636ec5da485a07b934a4c717af6dd180aadcb207">TEMP_ROOT_CELLAR</a>
 <br />
  }</td></tr>
 <tr class="separator:a5f18231241dd5fb662d1c5313636ec5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1279,33 +1279,41 @@ Functions</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="enums_8h.html#a5f18231241dd5fb662d1c5313636ec5d">temperature_flag</a> : int</td>
+          <td class="memname">enum class <a class="el" href="enums_8h.html#a5f18231241dd5fb662d1c5313636ec5d">temperature_flag</a> : int</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5f18231241dd5fb662d1c5313636ec5da1c0c1c880058ab81dac39f56cedc8a79" name="a5f18231241dd5fb662d1c5313636ec5da1c0c1c880058ab81dac39f56cedc8a79"></a>TEMP_NORMAL&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5f18231241dd5fb662d1c5313636ec5da93448fee2eb097fb12c53b8ba231c5c7" name="a5f18231241dd5fb662d1c5313636ec5da93448fee2eb097fb12c53b8ba231c5c7"></a>TEMP_HEATER&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5f18231241dd5fb662d1c5313636ec5da4978bba20e7552637c632abb1f58cbb7" name="a5f18231241dd5fb662d1c5313636ec5da4978bba20e7552637c632abb1f58cbb7"></a>TEMP_FRIDGE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5f18231241dd5fb662d1c5313636ec5da59395dc1c992166e25938dccc39ade1b" name="a5f18231241dd5fb662d1c5313636ec5da59395dc1c992166e25938dccc39ade1b"></a>TEMP_FREEZER&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5f18231241dd5fb662d1c5313636ec5da59adbf73d937364bb9da73c4057adf74" name="a5f18231241dd5fb662d1c5313636ec5da59adbf73d937364bb9da73c4057adf74"></a>TEMP_ROOT_CELLAR&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5f18231241dd5fb662d1c5313636ec5da97a8a8356c8e6ec71bc071918368ab20" name="a5f18231241dd5fb662d1c5313636ec5da97a8a8356c8e6ec71bc071918368ab20"></a>TEMP_NORMAL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5f18231241dd5fb662d1c5313636ec5da6d106a78eac33e56fc089873c46de0dd" name="a5f18231241dd5fb662d1c5313636ec5da6d106a78eac33e56fc089873c46de0dd"></a>TEMP_HEATER&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5f18231241dd5fb662d1c5313636ec5dad2e703e320bca1fe9991716791e958fb" name="a5f18231241dd5fb662d1c5313636ec5dad2e703e320bca1fe9991716791e958fb"></a>TEMP_FRIDGE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5f18231241dd5fb662d1c5313636ec5daab79f10607e00f5f2377eaefe8c09a9a" name="a5f18231241dd5fb662d1c5313636ec5daab79f10607e00f5f2377eaefe8c09a9a"></a>TEMP_FREEZER&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5f18231241dd5fb662d1c5313636ec5da485a07b934a4c717af6dd180aadcb207" name="a5f18231241dd5fb662d1c5313636ec5da485a07b934a4c717af6dd180aadcb207"></a>TEMP_ROOT_CELLAR&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 <p class="definition">Definition at line <a class="el" href="enums_8h_source.html#l00042">42</a> of file <a class="el" href="enums_8h_source.html">enums.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                      : <span class="keywordtype">int</span> {</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <a class="code hl_enumvalue" href="enums_8h.html#a5f18231241dd5fb662d1c5313636ec5da1c0c1c880058ab81dac39f56cedc8a79">TEMP_NORMAL</a> = 0,</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <a class="code hl_enumvalue" href="enums_8h.html#a5f18231241dd5fb662d1c5313636ec5da93448fee2eb097fb12c53b8ba231c5c7">TEMP_HEATER</a>,</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <a class="code hl_enumvalue" href="enums_8h.html#a5f18231241dd5fb662d1c5313636ec5da4978bba20e7552637c632abb1f58cbb7">TEMP_FRIDGE</a>,</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <a class="code hl_enumvalue" href="enums_8h.html#a5f18231241dd5fb662d1c5313636ec5da59395dc1c992166e25938dccc39ade1b">TEMP_FREEZER</a>,</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <a class="code hl_enumvalue" href="enums_8h.html#a5f18231241dd5fb662d1c5313636ec5da59adbf73d937364bb9da73c4057adf74">TEMP_ROOT_CELLAR</a></div>
+<div class="fragment"><div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                            : <span class="keywordtype">int</span> {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <a class="code hl_enumvalue" href="enums_8h.html#a5f18231241dd5fb662d1c5313636ec5da97a8a8356c8e6ec71bc071918368ab20">TEMP_NORMAL</a> = 0,</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <a class="code hl_enumvalue" href="enums_8h.html#a5f18231241dd5fb662d1c5313636ec5da6d106a78eac33e56fc089873c46de0dd">TEMP_HEATER</a>,</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <a class="code hl_enumvalue" href="enums_8h.html#a5f18231241dd5fb662d1c5313636ec5dad2e703e320bca1fe9991716791e958fb">TEMP_FRIDGE</a>,</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <a class="code hl_enumvalue" href="enums_8h.html#a5f18231241dd5fb662d1c5313636ec5daab79f10607e00f5f2377eaefe8c09a9a">TEMP_FREEZER</a>,</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <a class="code hl_enumvalue" href="enums_8h.html#a5f18231241dd5fb662d1c5313636ec5da485a07b934a4c717af6dd180aadcb207">TEMP_ROOT_CELLAR</a></div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>};</div>
-<div class="ttc" id="aenums_8h_html_a5f18231241dd5fb662d1c5313636ec5da1c0c1c880058ab81dac39f56cedc8a79"><div class="ttname"><a href="enums_8h.html#a5f18231241dd5fb662d1c5313636ec5da1c0c1c880058ab81dac39f56cedc8a79">TEMP_NORMAL</a></div><div class="ttdeci">@ TEMP_NORMAL</div><div class="ttdef"><b>Definition:</b> <a href="enums_8h_source.html#l00043">enums.h:43</a></div></div>
-<div class="ttc" id="aenums_8h_html_a5f18231241dd5fb662d1c5313636ec5da4978bba20e7552637c632abb1f58cbb7"><div class="ttname"><a href="enums_8h.html#a5f18231241dd5fb662d1c5313636ec5da4978bba20e7552637c632abb1f58cbb7">TEMP_FRIDGE</a></div><div class="ttdeci">@ TEMP_FRIDGE</div><div class="ttdef"><b>Definition:</b> <a href="enums_8h_source.html#l00045">enums.h:45</a></div></div>
-<div class="ttc" id="aenums_8h_html_a5f18231241dd5fb662d1c5313636ec5da59395dc1c992166e25938dccc39ade1b"><div class="ttname"><a href="enums_8h.html#a5f18231241dd5fb662d1c5313636ec5da59395dc1c992166e25938dccc39ade1b">TEMP_FREEZER</a></div><div class="ttdeci">@ TEMP_FREEZER</div><div class="ttdef"><b>Definition:</b> <a href="enums_8h_source.html#l00046">enums.h:46</a></div></div>
-<div class="ttc" id="aenums_8h_html_a5f18231241dd5fb662d1c5313636ec5da59adbf73d937364bb9da73c4057adf74"><div class="ttname"><a href="enums_8h.html#a5f18231241dd5fb662d1c5313636ec5da59adbf73d937364bb9da73c4057adf74">TEMP_ROOT_CELLAR</a></div><div class="ttdeci">@ TEMP_ROOT_CELLAR</div><div class="ttdef"><b>Definition:</b> <a href="enums_8h_source.html#l00048">enums.h:47</a></div></div>
-<div class="ttc" id="aenums_8h_html_a5f18231241dd5fb662d1c5313636ec5da93448fee2eb097fb12c53b8ba231c5c7"><div class="ttname"><a href="enums_8h.html#a5f18231241dd5fb662d1c5313636ec5da93448fee2eb097fb12c53b8ba231c5c7">TEMP_HEATER</a></div><div class="ttdeci">@ TEMP_HEATER</div><div class="ttdef"><b>Definition:</b> <a href="enums_8h_source.html#l00044">enums.h:44</a></div></div>
+<div class="ttc" id="aenums_8h_html_a5f18231241dd5fb662d1c5313636ec5da485a07b934a4c717af6dd180aadcb207"><div class="ttname"><a href="enums_8h.html#a5f18231241dd5fb662d1c5313636ec5da485a07b934a4c717af6dd180aadcb207">temperature_flag::TEMP_ROOT_CELLAR</a></div><div class="ttdeci">@ TEMP_ROOT_CELLAR</div></div>
+<div class="ttc" id="aenums_8h_html_a5f18231241dd5fb662d1c5313636ec5da6d106a78eac33e56fc089873c46de0dd"><div class="ttname"><a href="enums_8h.html#a5f18231241dd5fb662d1c5313636ec5da6d106a78eac33e56fc089873c46de0dd">temperature_flag::TEMP_HEATER</a></div><div class="ttdeci">@ TEMP_HEATER</div></div>
+<div class="ttc" id="aenums_8h_html_a5f18231241dd5fb662d1c5313636ec5da97a8a8356c8e6ec71bc071918368ab20"><div class="ttname"><a href="enums_8h.html#a5f18231241dd5fb662d1c5313636ec5da97a8a8356c8e6ec71bc071918368ab20">temperature_flag::TEMP_NORMAL</a></div><div class="ttdeci">@ TEMP_NORMAL</div></div>
+<div class="ttc" id="aenums_8h_html_a5f18231241dd5fb662d1c5313636ec5daab79f10607e00f5f2377eaefe8c09a9a"><div class="ttname"><a href="enums_8h.html#a5f18231241dd5fb662d1c5313636ec5daab79f10607e00f5f2377eaefe8c09a9a">temperature_flag::TEMP_FREEZER</a></div><div class="ttdeci">@ TEMP_FREEZER</div></div>
+<div class="ttc" id="aenums_8h_html_a5f18231241dd5fb662d1c5313636ec5dad2e703e320bca1fe9991716791e958fb"><div class="ttname"><a href="enums_8h.html#a5f18231241dd5fb662d1c5313636ec5dad2e703e320bca1fe9991716791e958fb">temperature_flag::TEMP_FRIDGE</a></div><div class="ttdeci">@ TEMP_FRIDGE</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1484,7 +1492,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keywordflow">return</span> x &lt; 0 ? -1 : ( x &gt; 0 ? 1 : 0 );</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>}</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="morale_8cpp_source.html#l00177">player_morale::morale_point::add()</a>, <a class="el" href="line_8cpp_source.html#l00024">bresenham()</a>, <a class="el" href="vehicle__move_8cpp_source.html#l00355">vehicle::collision()</a>, <a class="el" href="vehicle__use_8cpp_source.html#l00147">handbrake()</a>, <a class="el" href="iexamine_8cpp_source.html#l04606">iexamine::ledge()</a>, <a class="el" href="consumption_8cpp_source.html#l00999">Character::modify_stimulation()</a>, <a class="el" href="map_8cpp_source.html#l00520">map::move_vehicle()</a>, <a class="el" href="vehicle__move_8cpp_source.html#l00471">vehicle::part_collision()</a>, <a class="el" href="game_8cpp_source.html#l09403">game::phasing_move()</a>, <a class="el" href="ballistics_8cpp_source.html#l00201">projectile_attack()</a>, <a class="el" href="magic__spell__effect_8cpp_source.html#l00239">spell_effect::spell_effect_line()</a>, <a class="el" href="line_8cpp_source.html#l00552">squares_closer_to()</a>, <a class="el" href="vehicle__move_8cpp_source.html#l00130">vehicle::thrust()</a>, and <a class="el" href="character_8cpp_source.html#l04633">Character::update_health()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="morale_8cpp_source.html#l00177">player_morale::morale_point::add()</a>, <a class="el" href="line_8cpp_source.html#l00024">bresenham()</a>, <a class="el" href="vehicle__move_8cpp_source.html#l00355">vehicle::collision()</a>, <a class="el" href="vehicle__use_8cpp_source.html#l00148">handbrake()</a>, <a class="el" href="iexamine_8cpp_source.html#l04607">iexamine::ledge()</a>, <a class="el" href="consumption_8cpp_source.html#l01006">Character::modify_stimulation()</a>, <a class="el" href="map_8cpp_source.html#l00520">map::move_vehicle()</a>, <a class="el" href="vehicle__move_8cpp_source.html#l00471">vehicle::part_collision()</a>, <a class="el" href="game_8cpp_source.html#l09409">game::phasing_move()</a>, <a class="el" href="ballistics_8cpp_source.html#l00201">projectile_attack()</a>, <a class="el" href="magic__spell__effect_8cpp_source.html#l00239">spell_effect::spell_effect_line()</a>, <a class="el" href="line_8cpp_source.html#l00552">squares_closer_to()</a>, <a class="el" href="vehicle__move_8cpp_source.html#l00130">vehicle::thrust()</a>, and <a class="el" href="character_8cpp_source.html#l04609">Character::update_health()</a>.</p>
 
 </div>
 </div>
@@ -1494,7 +1502,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="enums_8h.html">enums.h</a></li>
-    <li class="footer">Generated on Mon Dec 26 2022 21:41:50 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Feb 21 2023 16:43:17 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

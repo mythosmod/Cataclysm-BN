@@ -42,6 +42,7 @@ var vehicle_8h =
     [ "mps_to_vmiph", "vehicle_8h.html#a3bf51af37129f24d376a74ca56b2644e", null ],
     [ "operator&", "vehicle_8h.html#a23170b598ae35f5fbe0bfe230296fede", null ],
     [ "operator|", "vehicle_8h.html#a3c49987dbdbfec965ad178fb2ad84e90", null ],
+    [ "temperature_flag_for_part", "vehicle_8h.html#a008cc8b85d6b6c167f7bb10c5bf2f35c", null ],
     [ "vmiph_to_cmps", "vehicle_8h.html#ab3c28976bd7014b628437d061f7dc6c7", null ],
     [ "vmiph_to_mps", "vehicle_8h.html#a5b4f290597a25f2c2f9447eb786c37c5", null ],
     [ "k_mvel", "vehicle_8h.html#a8eb81317966ac1a09e05270fcb9af5f1", null ],

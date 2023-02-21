@@ -55,7 +55,6 @@ var structitype =
     [ "gun", "structitype.html#a623ec8243b1e599086fa3a23c3179370", null ],
     [ "gunmod", "structitype.html#a37edee7dafc5711621f26844cab78cf6", null ],
     [ "id", "structitype.html#ab018b62882b32eef884f4efd769c0993", null ],
-    [ "insulation_factor", "structitype.html#a1f98e4086129c4db4a4903e7a6bdac72", null ],
     [ "integral_volume", "structitype.html#aa5c0438c1bc94ded4e950ad684463a72", null ],
     [ "integral_weight", "structitype.html#a5699c972f1a284761d3b0e1501fe8185", null ],
     [ "item_tags", "structitype.html#abd1f0b721206f746d2a645b4ef6f804b", null ],

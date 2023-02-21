@@ -41,6 +41,7 @@ var game_8cpp =
     [ "zones_manager_shortcuts", "game_8cpp.html#a3d2861623c79fc06a868aad110354586", null ],
     [ "ACT_AUTODRIVE", "game_8cpp.html#a29ec63cb35cf535bb4341985d5185c75", null ],
     [ "ACT_OPERATION", "game_8cpp.html#a63e5739b23bda74126ceb8fbb66e502b", null ],
+    [ "bio_probability_travel", "game_8cpp.html#ab5724f8e26e287fadc2a025cd49e43b2", null ],
     [ "bio_remote", "game_8cpp.html#a877c05aa692195373f92cc206f0079ef", null ],
     [ "DANGEROUS_PROXIMITY", "game_8cpp.html#aff4096534fed5be68086192f662b287f", null ],
     [ "effect_accumulated_mutagen", "game_8cpp.html#aa8e32bb04bc4716c14c47160278c6173", null ],

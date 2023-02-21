@@ -3,7 +3,7 @@ var avatar__action_8cpp =
     [ "dbg", "avatar__action_8cpp.html#a49bc164f30e64702250d2cbea09bf86c", null ],
     [ "can_fire_turret", "avatar__action_8cpp.html#acab6cc93cce95ac4ad412abf42f6e569", null ],
     [ "can_reload_item_or_mods", "avatar__action_8cpp.html#ab8c230f51e83af172fcf4d4976b93f57", null ],
-    [ "favorite_ammo_or_select", "avatar__action_8cpp.html#a19b5a4302bc792b49fac5c46c1652e4d", null ],
+    [ "favorite_ammo_or_select", "avatar__action_8cpp.html#a001c08d001600594e5161e1c2285faf9", null ],
     [ "flag_ALLOWS_REMOTE_USE", "avatar__action_8cpp.html#a3836b621d638fb875de3f98ef861c69e", null ],
     [ "flag_DIG_TOOL", "avatar__action_8cpp.html#a6b952da7b096645b7f40de782e66a3c0", null ],
     [ "flag_NO_UNWIELD", "avatar__action_8cpp.html#a15b501504e4690e3d9c3b3a558ff0d0b", null ],

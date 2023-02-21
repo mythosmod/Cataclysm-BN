@@ -199,11 +199,11 @@ var enums_8h =
       [ "NUM_SPECIAL_GAMES", "enums_8h.html#a118d644b670026ee446a0163e9b7bba3a7c40d7fb736f500a02846a5a5c3f74cf", null ]
     ] ],
     [ "temperature_flag", "enums_8h.html#a5f18231241dd5fb662d1c5313636ec5d", [
-      [ "TEMP_NORMAL", "enums_8h.html#a5f18231241dd5fb662d1c5313636ec5da1c0c1c880058ab81dac39f56cedc8a79", null ],
-      [ "TEMP_HEATER", "enums_8h.html#a5f18231241dd5fb662d1c5313636ec5da93448fee2eb097fb12c53b8ba231c5c7", null ],
-      [ "TEMP_FRIDGE", "enums_8h.html#a5f18231241dd5fb662d1c5313636ec5da4978bba20e7552637c632abb1f58cbb7", null ],
-      [ "TEMP_FREEZER", "enums_8h.html#a5f18231241dd5fb662d1c5313636ec5da59395dc1c992166e25938dccc39ade1b", null ],
-      [ "TEMP_ROOT_CELLAR", "enums_8h.html#a5f18231241dd5fb662d1c5313636ec5da59adbf73d937364bb9da73c4057adf74", null ]
+      [ "TEMP_NORMAL", "enums_8h.html#a5f18231241dd5fb662d1c5313636ec5da97a8a8356c8e6ec71bc071918368ab20", null ],
+      [ "TEMP_HEATER", "enums_8h.html#a5f18231241dd5fb662d1c5313636ec5da6d106a78eac33e56fc089873c46de0dd", null ],
+      [ "TEMP_FRIDGE", "enums_8h.html#a5f18231241dd5fb662d1c5313636ec5dad2e703e320bca1fe9991716791e958fb", null ],
+      [ "TEMP_FREEZER", "enums_8h.html#a5f18231241dd5fb662d1c5313636ec5daab79f10607e00f5f2377eaefe8c09a9a", null ],
+      [ "TEMP_ROOT_CELLAR", "enums_8h.html#a5f18231241dd5fb662d1c5313636ec5da485a07b934a4c717af6dd180aadcb207", null ]
     ] ],
     [ "visibility_type", "enums_8h.html#a098f2c63abf2d51d89c2b3e8db8b313b", [
       [ "VIS_HIDDEN", "enums_8h.html#a098f2c63abf2d51d89c2b3e8db8b313ba7dd751e9fe96ac405cedd727943ab660", null ],

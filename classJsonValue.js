@@ -15,6 +15,7 @@ var classJsonValue =
     [ "operator std::string", "classJsonValue.html#aaf9ccde13c2b95194650b9088b542130", null ],
     [ "read", "classJsonValue.html#a1e0ef99f707e0ddadfb97fe0123ff7b8", null ],
     [ "seek", "classJsonValue.html#a2fa70e2f5bcf43771b8bdd9f36c71833", null ],
+    [ "show_warning", "classJsonValue.html#a2c679272dfb2b3258455878807488a02", null ],
     [ "test_array", "classJsonValue.html#a330b5aee6bbf5749eb972c833d8d7b2a", null ],
     [ "test_bool", "classJsonValue.html#a9e4dc1a138f4b42b16454ac00cda0958", null ],
     [ "test_float", "classJsonValue.html#af290f83fcb83c41c65926f8341adbc3b", null ],

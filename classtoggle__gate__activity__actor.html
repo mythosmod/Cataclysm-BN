@@ -292,7 +292,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span>            <span class="keywordflow">return</span> std::make_unique&lt;toggle_gate_activity_actor&gt;( *<span class="keyword">this</span> );</div>
 <div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>        }</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="activity__actor_8cpp_source.html#l01116">deserialize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="activity__actor_8cpp_source.html#l01118">deserialize()</a>.</p>
 
 </div>
 </div>
@@ -320,23 +320,23 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="activity__actor_8cpp_source.html#l01116">1116</a> of file <a class="el" href="activity__actor_8cpp_source.html">activity_actor.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01117" name="l01117"></a><span class="lineno"> 1117</span>{</div>
-<div class="line"><a id="l01118" name="l01118"></a><span class="lineno"> 1118</span>    <a class="code hl_class" href="classtoggle__gate__activity__actor.html">toggle_gate_activity_actor</a> actor( 0, <a class="code hl_variable" href="point_8h.html#a4b1a6bcaa42d2c06ecc3afc63305bfdf">tripoint_zero</a> );</div>
-<div class="line"><a id="l01119" name="l01119"></a><span class="lineno"> 1119</span> </div>
-<div class="line"><a id="l01120" name="l01120"></a><span class="lineno"> 1120</span>    <a class="code hl_class" href="classJsonObject.html">JsonObject</a> data = jsin.<a class="code hl_function" href="classJsonIn.html#af988f122efed0696d9d05f649e57c9b2">get_object</a>();</div>
+<p class="definition">Definition at line <a class="el" href="activity__actor_8cpp_source.html#l01118">1118</a> of file <a class="el" href="activity__actor_8cpp_source.html">activity_actor.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01119" name="l01119"></a><span class="lineno"> 1119</span>{</div>
+<div class="line"><a id="l01120" name="l01120"></a><span class="lineno"> 1120</span>    <a class="code hl_class" href="classtoggle__gate__activity__actor.html">toggle_gate_activity_actor</a> actor( 0, <a class="code hl_variable" href="point_8h.html#a4b1a6bcaa42d2c06ecc3afc63305bfdf">tripoint_zero</a> );</div>
 <div class="line"><a id="l01121" name="l01121"></a><span class="lineno"> 1121</span> </div>
-<div class="line"><a id="l01122" name="l01122"></a><span class="lineno"> 1122</span>    data.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;moves&quot;</span>, actor.moves_total );</div>
-<div class="line"><a id="l01123" name="l01123"></a><span class="lineno"> 1123</span>    data.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;placement&quot;</span>, actor.placement );</div>
-<div class="line"><a id="l01124" name="l01124"></a><span class="lineno"> 1124</span> </div>
-<div class="line"><a id="l01125" name="l01125"></a><span class="lineno"> 1125</span>    <span class="keywordflow">return</span> actor.clone();</div>
-<div class="line"><a id="l01126" name="l01126"></a><span class="lineno"> 1126</span>}</div>
-<div class="ttc" id="aclassJsonIn_html_af988f122efed0696d9d05f649e57c9b2"><div class="ttname"><a href="classJsonIn.html#af988f122efed0696d9d05f649e57c9b2">JsonIn::get_object</a></div><div class="ttdeci">JsonObject get_object()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01364">json.cpp:1364</a></div></div>
-<div class="ttc" id="aclassJsonObject_html"><div class="ttname"><a href="classJsonObject.html">JsonObject</a></div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00831">json.h:832</a></div></div>
-<div class="ttc" id="aclassJsonObject_html_ae66d47f9cb4993dfaf79819ec2aff2f8"><div class="ttname"><a href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">JsonObject::read</a></div><div class="ttdeci">bool read(const std::string &amp;name, T &amp;t, bool throw_on_error=true) const</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00944">json.h:944</a></div></div>
+<div class="line"><a id="l01122" name="l01122"></a><span class="lineno"> 1122</span>    <a class="code hl_class" href="classJsonObject.html">JsonObject</a> data = jsin.<a class="code hl_function" href="classJsonIn.html#af988f122efed0696d9d05f649e57c9b2">get_object</a>();</div>
+<div class="line"><a id="l01123" name="l01123"></a><span class="lineno"> 1123</span> </div>
+<div class="line"><a id="l01124" name="l01124"></a><span class="lineno"> 1124</span>    data.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;moves&quot;</span>, actor.moves_total );</div>
+<div class="line"><a id="l01125" name="l01125"></a><span class="lineno"> 1125</span>    data.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;placement&quot;</span>, actor.placement );</div>
+<div class="line"><a id="l01126" name="l01126"></a><span class="lineno"> 1126</span> </div>
+<div class="line"><a id="l01127" name="l01127"></a><span class="lineno"> 1127</span>    <span class="keywordflow">return</span> actor.clone();</div>
+<div class="line"><a id="l01128" name="l01128"></a><span class="lineno"> 1128</span>}</div>
+<div class="ttc" id="aclassJsonIn_html_af988f122efed0696d9d05f649e57c9b2"><div class="ttname"><a href="classJsonIn.html#af988f122efed0696d9d05f649e57c9b2">JsonIn::get_object</a></div><div class="ttdeci">JsonObject get_object()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01431">json.cpp:1431</a></div></div>
+<div class="ttc" id="aclassJsonObject_html"><div class="ttname"><a href="classJsonObject.html">JsonObject</a></div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00827">json.h:828</a></div></div>
+<div class="ttc" id="aclassJsonObject_html_ae66d47f9cb4993dfaf79819ec2aff2f8"><div class="ttname"><a href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">JsonObject::read</a></div><div class="ttdeci">bool read(const std::string &amp;name, T &amp;t, bool throw_on_error=true) const</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00942">json.h:942</a></div></div>
 <div class="ttc" id="apoint_8h_html_a4b1a6bcaa42d2c06ecc3afc63305bfdf"><div class="ttname"><a href="point_8h.html#a4b1a6bcaa42d2c06ecc3afc63305bfdf">tripoint_zero</a></div><div class="ttdeci">static constexpr tripoint tripoint_zero</div><div class="ttdef"><b>Definition:</b> <a href="point_8h_source.html#l00273">point.h:273</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="activity__actor__definitions_8h_source.html#l00403">clone()</a>, <a class="el" href="json_8cpp_source.html#l01364">JsonIn::get_object()</a>, <a class="el" href="activity__actor__definitions_8h_source.html#l00379">moves_total</a>, <a class="el" href="activity__actor__definitions_8h_source.html#l00380">placement</a>, <a class="el" href="json_8h_source.html#l00944">JsonObject::read()</a>, and <a class="el" href="point_8h_source.html#l00273">tripoint_zero</a>.</p>
+<p class="reference">References <a class="el" href="activity__actor__definitions_8h_source.html#l00403">clone()</a>, <a class="el" href="json_8cpp_source.html#l01431">JsonIn::get_object()</a>, <a class="el" href="activity__actor__definitions_8h_source.html#l00379">moves_total</a>, <a class="el" href="activity__actor__definitions_8h_source.html#l00380">placement</a>, <a class="el" href="json_8h_source.html#l00942">JsonObject::read()</a>, and <a class="el" href="point_8h_source.html#l00273">tripoint_zero</a>.</p>
 
 </div>
 </div>
@@ -421,11 +421,11 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classactivity__actor.html#af48795a3ce174ab25b58db059de179b5">activity_actor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="activity__actor_8cpp_source.html#l01100">1100</a> of file <a class="el" href="activity__actor_8cpp_source.html">activity_actor.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01101" name="l01101"></a><span class="lineno"> 1101</span>{</div>
-<div class="line"><a id="l01102" name="l01102"></a><span class="lineno"> 1102</span>    <a class="code hl_function" href="namespacegates.html#a84015d35b252bacce5c6ee9ae9f6fde2">gates::toggle_gate</a>( <a class="code hl_variable" href="classtoggle__gate__activity__actor.html#afe92adfce6c27b698678b41f46493cfc">placement</a> );</div>
-<div class="line"><a id="l01103" name="l01103"></a><span class="lineno"> 1103</span>    <a class="code hl_variable" href="sounds_8cpp.html#ad9fe7b616a93a8209da903eba756237e">act</a>.set_to_null();</div>
-<div class="line"><a id="l01104" name="l01104"></a><span class="lineno"> 1104</span>}</div>
+<p class="definition">Definition at line <a class="el" href="activity__actor_8cpp_source.html#l01102">1102</a> of file <a class="el" href="activity__actor_8cpp_source.html">activity_actor.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01103" name="l01103"></a><span class="lineno"> 1103</span>{</div>
+<div class="line"><a id="l01104" name="l01104"></a><span class="lineno"> 1104</span>    <a class="code hl_function" href="namespacegates.html#a84015d35b252bacce5c6ee9ae9f6fde2">gates::toggle_gate</a>( <a class="code hl_variable" href="classtoggle__gate__activity__actor.html#afe92adfce6c27b698678b41f46493cfc">placement</a> );</div>
+<div class="line"><a id="l01105" name="l01105"></a><span class="lineno"> 1105</span>    <a class="code hl_variable" href="sounds_8cpp.html#ad9fe7b616a93a8209da903eba756237e">act</a>.set_to_null();</div>
+<div class="line"><a id="l01106" name="l01106"></a><span class="lineno"> 1106</span>}</div>
 <div class="ttc" id="anamespacegates_html_a84015d35b252bacce5c6ee9ae9f6fde2"><div class="ttname"><a href="namespacegates.html#a84015d35b252bacce5c6ee9ae9f6fde2">gates::toggle_gate</a></div><div class="ttdeci">void toggle_gate(const tripoint &amp;pos, player &amp;p)</div><div class="ttdoc">opens/closes the gate via player's activity</div><div class="ttdef"><b>Definition:</b> <a href="gates_8cpp_source.html#l00236">gates.cpp:236</a></div></div>
 <div class="ttc" id="asounds_8cpp_html_ad9fe7b616a93a8209da903eba756237e"><div class="ttname"><a href="sounds_8cpp.html#ad9fe7b616a93a8209da903eba756237e">act</a></div><div class="ttdeci">activity_id act</div><div class="ttdef"><b>Definition:</b> <a href="sounds_8cpp_source.html#l00075">sounds.cpp:75</a></div></div>
 </div><!-- fragment -->
@@ -496,20 +496,20 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classactivity__actor.html#a3a5855ba3c1236acfe2be439522997cd">activity_actor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="activity__actor_8cpp_source.html#l01106">1106</a> of file <a class="el" href="activity__actor_8cpp_source.html">activity_actor.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01107" name="l01107"></a><span class="lineno"> 1107</span>{</div>
-<div class="line"><a id="l01108" name="l01108"></a><span class="lineno"> 1108</span>    jsout.<a class="code hl_function" href="classJsonOut.html#a4756f9a569adbfc60de127f7c335d82f">start_object</a>();</div>
-<div class="line"><a id="l01109" name="l01109"></a><span class="lineno"> 1109</span> </div>
-<div class="line"><a id="l01110" name="l01110"></a><span class="lineno"> 1110</span>    jsout.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;moves&quot;</span>, <a class="code hl_variable" href="classtoggle__gate__activity__actor.html#a4f779b413fe26489e96962b4cc35457b">moves_total</a> );</div>
-<div class="line"><a id="l01111" name="l01111"></a><span class="lineno"> 1111</span>    jsout.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;placement&quot;</span>, <a class="code hl_variable" href="classtoggle__gate__activity__actor.html#afe92adfce6c27b698678b41f46493cfc">placement</a> );</div>
-<div class="line"><a id="l01112" name="l01112"></a><span class="lineno"> 1112</span> </div>
-<div class="line"><a id="l01113" name="l01113"></a><span class="lineno"> 1113</span>    jsout.<a class="code hl_function" href="classJsonOut.html#aa38d37840ed6ba168b78a43570e98681">end_object</a>();</div>
-<div class="line"><a id="l01114" name="l01114"></a><span class="lineno"> 1114</span>}</div>
-<div class="ttc" id="aclassJsonOut_html_a4756f9a569adbfc60de127f7c335d82f"><div class="ttname"><a href="classJsonOut.html#a4756f9a569adbfc60de127f7c335d82f">JsonOut::start_object</a></div><div class="ttdeci">void start_object(bool wrap=false)</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01931">json.cpp:1931</a></div></div>
-<div class="ttc" id="aclassJsonOut_html_aa38d37840ed6ba168b78a43570e98681"><div class="ttname"><a href="classJsonOut.html#aa38d37840ed6ba168b78a43570e98681">JsonOut::end_object</a></div><div class="ttdeci">void end_object()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01942">json.cpp:1942</a></div></div>
-<div class="ttc" id="aclassJsonOut_html_adb3c899f0ad7fc4f25cd3357c51a2c42"><div class="ttname"><a href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">JsonOut::member</a></div><div class="ttdeci">void member(const std::string &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l02046">json.cpp:2046</a></div></div>
+<p class="definition">Definition at line <a class="el" href="activity__actor_8cpp_source.html#l01108">1108</a> of file <a class="el" href="activity__actor_8cpp_source.html">activity_actor.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01109" name="l01109"></a><span class="lineno"> 1109</span>{</div>
+<div class="line"><a id="l01110" name="l01110"></a><span class="lineno"> 1110</span>    jsout.<a class="code hl_function" href="classJsonOut.html#a4756f9a569adbfc60de127f7c335d82f">start_object</a>();</div>
+<div class="line"><a id="l01111" name="l01111"></a><span class="lineno"> 1111</span> </div>
+<div class="line"><a id="l01112" name="l01112"></a><span class="lineno"> 1112</span>    jsout.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;moves&quot;</span>, <a class="code hl_variable" href="classtoggle__gate__activity__actor.html#a4f779b413fe26489e96962b4cc35457b">moves_total</a> );</div>
+<div class="line"><a id="l01113" name="l01113"></a><span class="lineno"> 1113</span>    jsout.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;placement&quot;</span>, <a class="code hl_variable" href="classtoggle__gate__activity__actor.html#afe92adfce6c27b698678b41f46493cfc">placement</a> );</div>
+<div class="line"><a id="l01114" name="l01114"></a><span class="lineno"> 1114</span> </div>
+<div class="line"><a id="l01115" name="l01115"></a><span class="lineno"> 1115</span>    jsout.<a class="code hl_function" href="classJsonOut.html#aa38d37840ed6ba168b78a43570e98681">end_object</a>();</div>
+<div class="line"><a id="l01116" name="l01116"></a><span class="lineno"> 1116</span>}</div>
+<div class="ttc" id="aclassJsonOut_html_a4756f9a569adbfc60de127f7c335d82f"><div class="ttname"><a href="classJsonOut.html#a4756f9a569adbfc60de127f7c335d82f">JsonOut::start_object</a></div><div class="ttdeci">void start_object(bool wrap=false)</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01998">json.cpp:1998</a></div></div>
+<div class="ttc" id="aclassJsonOut_html_aa38d37840ed6ba168b78a43570e98681"><div class="ttname"><a href="classJsonOut.html#aa38d37840ed6ba168b78a43570e98681">JsonOut::end_object</a></div><div class="ttdeci">void end_object()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l02009">json.cpp:2009</a></div></div>
+<div class="ttc" id="aclassJsonOut_html_adb3c899f0ad7fc4f25cd3357c51a2c42"><div class="ttname"><a href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">JsonOut::member</a></div><div class="ttdeci">void member(const std::string &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l02113">json.cpp:2113</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="json_8cpp_source.html#l01942">JsonOut::end_object()</a>, <a class="el" href="json_8cpp_source.html#l02046">JsonOut::member()</a>, <a class="el" href="activity__actor__definitions_8h_source.html#l00379">moves_total</a>, <a class="el" href="activity__actor__definitions_8h_source.html#l00380">placement</a>, and <a class="el" href="json_8cpp_source.html#l01931">JsonOut::start_object()</a>.</p>
+<p class="reference">References <a class="el" href="json_8cpp_source.html#l02009">JsonOut::end_object()</a>, <a class="el" href="json_8cpp_source.html#l02113">JsonOut::member()</a>, <a class="el" href="activity__actor__definitions_8h_source.html#l00379">moves_total</a>, <a class="el" href="activity__actor__definitions_8h_source.html#l00380">placement</a>, and <a class="el" href="json_8cpp_source.html#l01998">JsonOut::start_object()</a>.</p>
 
 </div>
 </div>
@@ -552,11 +552,11 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classactivity__actor.html#a7a6d2b0ca0560dfca09ff8919cd9f44a">activity_actor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="activity__actor_8cpp_source.html#l01094">1094</a> of file <a class="el" href="activity__actor_8cpp_source.html">activity_actor.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01095" name="l01095"></a><span class="lineno"> 1095</span>{</div>
-<div class="line"><a id="l01096" name="l01096"></a><span class="lineno"> 1096</span>    <a class="code hl_variable" href="sounds_8cpp.html#ad9fe7b616a93a8209da903eba756237e">act</a>.moves_total = <a class="code hl_variable" href="classtoggle__gate__activity__actor.html#a4f779b413fe26489e96962b4cc35457b">moves_total</a>;</div>
-<div class="line"><a id="l01097" name="l01097"></a><span class="lineno"> 1097</span>    <a class="code hl_variable" href="sounds_8cpp.html#ad9fe7b616a93a8209da903eba756237e">act</a>.moves_left = <a class="code hl_variable" href="classtoggle__gate__activity__actor.html#a4f779b413fe26489e96962b4cc35457b">moves_total</a>;</div>
-<div class="line"><a id="l01098" name="l01098"></a><span class="lineno"> 1098</span>}</div>
+<p class="definition">Definition at line <a class="el" href="activity__actor_8cpp_source.html#l01096">1096</a> of file <a class="el" href="activity__actor_8cpp_source.html">activity_actor.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01097" name="l01097"></a><span class="lineno"> 1097</span>{</div>
+<div class="line"><a id="l01098" name="l01098"></a><span class="lineno"> 1098</span>    <a class="code hl_variable" href="sounds_8cpp.html#ad9fe7b616a93a8209da903eba756237e">act</a>.moves_total = <a class="code hl_variable" href="classtoggle__gate__activity__actor.html#a4f779b413fe26489e96962b4cc35457b">moves_total</a>;</div>
+<div class="line"><a id="l01099" name="l01099"></a><span class="lineno"> 1099</span>    <a class="code hl_variable" href="sounds_8cpp.html#ad9fe7b616a93a8209da903eba756237e">act</a>.moves_left = <a class="code hl_variable" href="classtoggle__gate__activity__actor.html#a4f779b413fe26489e96962b4cc35457b">moves_total</a>;</div>
+<div class="line"><a id="l01100" name="l01100"></a><span class="lineno"> 1100</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="sounds_8cpp_source.html#l00075">act</a>, and <a class="el" href="activity__actor__definitions_8h_source.html#l00379">moves_total</a>.</p>
 
@@ -585,7 +585,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="activity__actor__definitions_8h_source.html#l00379">379</a> of file <a class="el" href="activity__actor__definitions_8h_source.html">activity_actor_definitions.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="activity__actor_8cpp_source.html#l01116">deserialize()</a>, <a class="el" href="activity__actor_8cpp_source.html#l01106">serialize()</a>, and <a class="el" href="activity__actor_8cpp_source.html#l01094">start()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="activity__actor_8cpp_source.html#l01118">deserialize()</a>, <a class="el" href="activity__actor_8cpp_source.html#l01108">serialize()</a>, and <a class="el" href="activity__actor_8cpp_source.html#l01096">start()</a>.</p>
 
 </div>
 </div>
@@ -611,7 +611,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="activity__actor__definitions_8h_source.html#l00380">380</a> of file <a class="el" href="activity__actor__definitions_8h_source.html">activity_actor_definitions.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="activity__actor__definitions_8h_source.html#l00385">can_resume_with_internal()</a>, <a class="el" href="activity__actor_8cpp_source.html#l01116">deserialize()</a>, <a class="el" href="activity__actor_8cpp_source.html#l01100">finish()</a>, and <a class="el" href="activity__actor_8cpp_source.html#l01106">serialize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="activity__actor__definitions_8h_source.html#l00385">can_resume_with_internal()</a>, <a class="el" href="activity__actor_8cpp_source.html#l01118">deserialize()</a>, <a class="el" href="activity__actor_8cpp_source.html#l01102">finish()</a>, and <a class="el" href="activity__actor_8cpp_source.html#l01108">serialize()</a>.</p>
 
 </div>
 </div>
@@ -625,7 +625,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classtoggle__gate__activity__actor.html">toggle_gate_activity_actor</a></li>
-    <li class="footer">Generated on Mon Dec 26 2022 21:42:15 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Feb 21 2023 16:43:40 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

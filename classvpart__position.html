@@ -241,27 +241,27 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>The label at this part of the vehicle, if there is any. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="vehicle_8cpp_source.html#l02655">2655</a> of file <a class="el" href="vehicle_8cpp_source.html">vehicle.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l02656" name="l02656"></a><span class="lineno"> 2656</span>{</div>
-<div class="line"><a id="l02657" name="l02657"></a><span class="lineno"> 2657</span>    <span class="keyword">const</span> <span class="keyword">auto</span> it = <a class="code hl_function" href="classvpart__position.html#ab3ee9d013d071be4deed9f8f40cc4722">vehicle</a>().<a class="code hl_variable" href="classvehicle.html#a7c2d668e2b8f48a53f5c5e94aa2bd408">labels</a>.find( <a class="code hl_struct" href="structlabel.html">label</a>( <a class="code hl_function" href="classvpart__position.html#a46700b8fb722ddb6c104f114e820c9b8">mount</a>() ) );</div>
-<div class="line"><a id="l02658" name="l02658"></a><span class="lineno"> 2658</span>    <span class="keywordflow">if</span>( it == <a class="code hl_function" href="classvpart__position.html#ab3ee9d013d071be4deed9f8f40cc4722">vehicle</a>().labels.end() ) {</div>
-<div class="line"><a id="l02659" name="l02659"></a><span class="lineno"> 2659</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="namespacecata.html#ad05314667ac5d05f984aeeef26b9a87f">cata::nullopt</a>;</div>
-<div class="line"><a id="l02660" name="l02660"></a><span class="lineno"> 2660</span>    }</div>
-<div class="line"><a id="l02661" name="l02661"></a><span class="lineno"> 2661</span>    <span class="keywordflow">if</span>( it-&gt;text.empty() ) {</div>
-<div class="line"><a id="l02662" name="l02662"></a><span class="lineno"> 2662</span>        <span class="comment">// legacy support TODO: change labels into a map and keep track of deleted labels</span></div>
-<div class="line"><a id="l02663" name="l02663"></a><span class="lineno"> 2663</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="namespacecata.html#ad05314667ac5d05f984aeeef26b9a87f">cata::nullopt</a>;</div>
-<div class="line"><a id="l02664" name="l02664"></a><span class="lineno"> 2664</span>    }</div>
-<div class="line"><a id="l02665" name="l02665"></a><span class="lineno"> 2665</span>    <span class="keywordflow">return</span> it-&gt;text;</div>
-<div class="line"><a id="l02666" name="l02666"></a><span class="lineno"> 2666</span>}</div>
-<div class="ttc" id="aclassvehicle_html_a7c2d668e2b8f48a53f5c5e94aa2bd408"><div class="ttname"><a href="classvehicle.html#a7c2d668e2b8f48a53f5c5e94aa2bd408">vehicle::labels</a></div><div class="ttdeci">std::set&lt; label &gt; labels</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8h_source.html#l01858">vehicle.h:1858</a></div></div>
-<div class="ttc" id="aclassvpart__position_html_a46700b8fb722ddb6c104f114e820c9b8"><div class="ttname"><a href="classvpart__position.html#a46700b8fb722ddb6c104f114e820c9b8">vpart_position::mount</a></div><div class="ttdeci">point mount() const</div><div class="ttdoc">Returns the mount point: the point in the vehicles own coordinate system.</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8cpp_source.html#l06789">vehicle.cpp:6789</a></div></div>
+<p class="definition">Definition at line <a class="el" href="vehicle_8cpp_source.html#l02656">2656</a> of file <a class="el" href="vehicle_8cpp_source.html">vehicle.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l02657" name="l02657"></a><span class="lineno"> 2657</span>{</div>
+<div class="line"><a id="l02658" name="l02658"></a><span class="lineno"> 2658</span>    <span class="keyword">const</span> <span class="keyword">auto</span> it = <a class="code hl_function" href="classvpart__position.html#ab3ee9d013d071be4deed9f8f40cc4722">vehicle</a>().<a class="code hl_variable" href="classvehicle.html#a7c2d668e2b8f48a53f5c5e94aa2bd408">labels</a>.find( <a class="code hl_struct" href="structlabel.html">label</a>( <a class="code hl_function" href="classvpart__position.html#a46700b8fb722ddb6c104f114e820c9b8">mount</a>() ) );</div>
+<div class="line"><a id="l02659" name="l02659"></a><span class="lineno"> 2659</span>    <span class="keywordflow">if</span>( it == <a class="code hl_function" href="classvpart__position.html#ab3ee9d013d071be4deed9f8f40cc4722">vehicle</a>().labels.end() ) {</div>
+<div class="line"><a id="l02660" name="l02660"></a><span class="lineno"> 2660</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="namespacecata.html#ad05314667ac5d05f984aeeef26b9a87f">cata::nullopt</a>;</div>
+<div class="line"><a id="l02661" name="l02661"></a><span class="lineno"> 2661</span>    }</div>
+<div class="line"><a id="l02662" name="l02662"></a><span class="lineno"> 2662</span>    <span class="keywordflow">if</span>( it-&gt;text.empty() ) {</div>
+<div class="line"><a id="l02663" name="l02663"></a><span class="lineno"> 2663</span>        <span class="comment">// legacy support TODO: change labels into a map and keep track of deleted labels</span></div>
+<div class="line"><a id="l02664" name="l02664"></a><span class="lineno"> 2664</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="namespacecata.html#ad05314667ac5d05f984aeeef26b9a87f">cata::nullopt</a>;</div>
+<div class="line"><a id="l02665" name="l02665"></a><span class="lineno"> 2665</span>    }</div>
+<div class="line"><a id="l02666" name="l02666"></a><span class="lineno"> 2666</span>    <span class="keywordflow">return</span> it-&gt;text;</div>
+<div class="line"><a id="l02667" name="l02667"></a><span class="lineno"> 2667</span>}</div>
+<div class="ttc" id="aclassvehicle_html_a7c2d668e2b8f48a53f5c5e94aa2bd408"><div class="ttname"><a href="classvehicle.html#a7c2d668e2b8f48a53f5c5e94aa2bd408">vehicle::labels</a></div><div class="ttdeci">std::set&lt; label &gt; labels</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8h_source.html#l01866">vehicle.h:1866</a></div></div>
+<div class="ttc" id="aclassvpart__position_html_a46700b8fb722ddb6c104f114e820c9b8"><div class="ttname"><a href="classvpart__position.html#a46700b8fb722ddb6c104f114e820c9b8">vpart_position::mount</a></div><div class="ttdeci">point mount() const</div><div class="ttdoc">Returns the mount point: the point in the vehicles own coordinate system.</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8cpp_source.html#l06781">vehicle.cpp:6781</a></div></div>
 <div class="ttc" id="aclassvpart__position_html_ab3ee9d013d071be4deed9f8f40cc4722"><div class="ttname"><a href="classvpart__position.html#ab3ee9d013d071be4deed9f8f40cc4722">vpart_position::vehicle</a></div><div class="ttdeci">::vehicle &amp; vehicle() const</div><div class="ttdef"><b>Definition:</b> <a href="vpart__position_8h_source.html#l00049">vpart_position.h:49</a></div></div>
 <div class="ttc" id="anamespacecata_html_ad05314667ac5d05f984aeeef26b9a87f"><div class="ttname"><a href="namespacecata.html#ad05314667ac5d05f984aeeef26b9a87f">cata::nullopt</a></div><div class="ttdeci">static constexpr nullopt_t nullopt</div><div class="ttdef"><b>Definition:</b> <a href="optional_8h_source.html#l00022">optional.h:22</a></div></div>
-<div class="ttc" id="astructlabel_html"><div class="ttname"><a href="structlabel.html">label</a></div><div class="ttdoc">Struct used for storing labels (easier to json opposed to a std::map&lt;point, std::string&gt;)</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8h_source.html#l00578">vehicle.h:578</a></div></div>
+<div class="ttc" id="astructlabel_html"><div class="ttname"><a href="structlabel.html">label</a></div><div class="ttdoc">Struct used for storing labels (easier to json opposed to a std::map&lt;point, std::string&gt;)</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8h_source.html#l00579">vehicle.h:579</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="vehicle_8h_source.html#l01858">vehicle::labels</a>, <a class="el" href="vehicle_8cpp_source.html#l06789">mount()</a>, <a class="el" href="optional_8h_source.html#l00022">cata::nullopt</a>, and <a class="el" href="vpart__position_8h_source.html#l00049">vehicle()</a>.</p>
+<p class="reference">References <a class="el" href="vehicle_8h_source.html#l01866">vehicle::labels</a>, <a class="el" href="vehicle_8cpp_source.html#l06781">mount()</a>, <a class="el" href="optional_8h_source.html#l00022">cata::nullopt</a>, and <a class="el" href="vpart__position_8h_source.html#l00049">vehicle()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="item__location_8cpp_source.html#l00449">item_location::impl::item_on_vehicle::describe()</a>, <a class="el" href="veh__interact_8cpp_source.html#l02081">veh_interact::do_relabel()</a>, <a class="el" href="vpart__position_8h_source.html#l00109">optional_vpart_position::get_label()</a>, and <a class="el" href="vehicle__display_8cpp_source.html#l00157">vehicle::print_part_list()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="item__location_8cpp_source.html#l00449">item_location::impl::item_on_vehicle::describe()</a>, <a class="el" href="veh__interact_8cpp_source.html#l02087">veh_interact::do_relabel()</a>, <a class="el" href="vpart__position_8h_source.html#l00109">optional_vpart_position::get_label()</a>, and <a class="el" href="vehicle__display_8cpp_source.html#l00157">vehicle::print_part_list()</a>.</p>
 
 </div>
 </div>
@@ -280,22 +280,22 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vehicle_8cpp_source.html#l06346">6346</a> of file <a class="el" href="vehicle_8cpp_source.html">vehicle.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l06347" name="l06347"></a><span class="lineno"> 6347</span>{</div>
-<div class="line"><a id="l06348" name="l06348"></a><span class="lineno"> 6348</span>    <span class="comment">// TODO: this is a bit of a hack as refresh_insides has side effects</span></div>
-<div class="line"><a id="l06349" name="l06349"></a><span class="lineno"> 6349</span>    <span class="comment">// this should be called elsewhere and not in a function that intends to just query</span></div>
-<div class="line"><a id="l06350" name="l06350"></a><span class="lineno"> 6350</span>    <span class="comment">// it&#39;s also a no-op if the insides are up to date.</span></div>
-<div class="line"><a id="l06351" name="l06351"></a><span class="lineno"> 6351</span>    <a class="code hl_function" href="classvpart__position.html#ab3ee9d013d071be4deed9f8f40cc4722">vehicle</a>().<a class="code hl_function" href="classvehicle.html#a8610ffeac8223a463ed316e3c3134662">refresh_insides</a>();</div>
-<div class="line"><a id="l06352" name="l06352"></a><span class="lineno"> 6352</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classvpart__position.html#ab3ee9d013d071be4deed9f8f40cc4722">vehicle</a>().<a class="code hl_function" href="classvehicle.html#acdb2ebf673a32f657ac9e29b842ee7f5">part</a>( <a class="code hl_function" href="classvpart__position.html#a89192e86585711fa4c803a48d9f5de29">part_index</a>() ).<a class="code hl_variable" href="structvehicle__part.html#af44cb7c714134ca0a8db2a4ab296219b">inside</a>;</div>
-<div class="line"><a id="l06353" name="l06353"></a><span class="lineno"> 6353</span>}</div>
-<div class="ttc" id="aclassvehicle_html_a8610ffeac8223a463ed316e3c3134662"><div class="ttname"><a href="classvehicle.html#a8610ffeac8223a463ed316e3c3134662">vehicle::refresh_insides</a></div><div class="ttdeci">void refresh_insides()</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8cpp_source.html#l06296">vehicle.cpp:6296</a></div></div>
-<div class="ttc" id="aclassvehicle_html_acdb2ebf673a32f657ac9e29b842ee7f5"><div class="ttname"><a href="classvehicle.html#acdb2ebf673a32f657ac9e29b842ee7f5">vehicle::part</a></div><div class="ttdeci">vehicle_part &amp; part(int part_num)</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8cpp_source.html#l07082">vehicle.cpp:7082</a></div></div>
+<p class="definition">Definition at line <a class="el" href="vehicle_8cpp_source.html#l06338">6338</a> of file <a class="el" href="vehicle_8cpp_source.html">vehicle.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l06339" name="l06339"></a><span class="lineno"> 6339</span>{</div>
+<div class="line"><a id="l06340" name="l06340"></a><span class="lineno"> 6340</span>    <span class="comment">// TODO: this is a bit of a hack as refresh_insides has side effects</span></div>
+<div class="line"><a id="l06341" name="l06341"></a><span class="lineno"> 6341</span>    <span class="comment">// this should be called elsewhere and not in a function that intends to just query</span></div>
+<div class="line"><a id="l06342" name="l06342"></a><span class="lineno"> 6342</span>    <span class="comment">// it&#39;s also a no-op if the insides are up to date.</span></div>
+<div class="line"><a id="l06343" name="l06343"></a><span class="lineno"> 6343</span>    <a class="code hl_function" href="classvpart__position.html#ab3ee9d013d071be4deed9f8f40cc4722">vehicle</a>().<a class="code hl_function" href="classvehicle.html#a8610ffeac8223a463ed316e3c3134662">refresh_insides</a>();</div>
+<div class="line"><a id="l06344" name="l06344"></a><span class="lineno"> 6344</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classvpart__position.html#ab3ee9d013d071be4deed9f8f40cc4722">vehicle</a>().<a class="code hl_function" href="classvehicle.html#acdb2ebf673a32f657ac9e29b842ee7f5">part</a>( <a class="code hl_function" href="classvpart__position.html#a89192e86585711fa4c803a48d9f5de29">part_index</a>() ).<a class="code hl_variable" href="structvehicle__part.html#af44cb7c714134ca0a8db2a4ab296219b">inside</a>;</div>
+<div class="line"><a id="l06345" name="l06345"></a><span class="lineno"> 6345</span>}</div>
+<div class="ttc" id="aclassvehicle_html_a8610ffeac8223a463ed316e3c3134662"><div class="ttname"><a href="classvehicle.html#a8610ffeac8223a463ed316e3c3134662">vehicle::refresh_insides</a></div><div class="ttdeci">void refresh_insides()</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8cpp_source.html#l06288">vehicle.cpp:6288</a></div></div>
+<div class="ttc" id="aclassvehicle_html_acdb2ebf673a32f657ac9e29b842ee7f5"><div class="ttname"><a href="classvehicle.html#acdb2ebf673a32f657ac9e29b842ee7f5">vehicle::part</a></div><div class="ttdeci">vehicle_part &amp; part(int part_num)</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8cpp_source.html#l07074">vehicle.cpp:7074</a></div></div>
 <div class="ttc" id="aclassvpart__position_html_a89192e86585711fa4c803a48d9f5de29"><div class="ttname"><a href="classvpart__position.html#a89192e86585711fa4c803a48d9f5de29">vpart_position::part_index</a></div><div class="ttdeci">size_t part_index() const</div><div class="ttdef"><b>Definition:</b> <a href="vpart__position_8h_source.html#l00053">vpart_position.h:53</a></div></div>
-<div class="ttc" id="astructvehicle__part_html_af44cb7c714134ca0a8db2a4ab296219b"><div class="ttname"><a href="structvehicle__part.html#af44cb7c714134ca0a8db2a4ab296219b">vehicle_part::inside</a></div><div class="ttdeci">bool inside</div><div class="ttdoc">if tile provides cover.</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8h_source.html#l00404">vehicle.h:404</a></div></div>
+<div class="ttc" id="astructvehicle__part_html_af44cb7c714134ca0a8db2a4ab296219b"><div class="ttname"><a href="structvehicle__part.html#af44cb7c714134ca0a8db2a4ab296219b">vehicle_part::inside</a></div><div class="ttdeci">bool inside</div><div class="ttdoc">if tile provides cover.</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8h_source.html#l00405">vehicle.h:405</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="vehicle_8h_source.html#l00404">vehicle_part::inside</a>, <a class="el" href="vehicle_8cpp_source.html#l07082">vehicle::part()</a>, <a class="el" href="vpart__position_8h_source.html#l00053">part_index()</a>, <a class="el" href="vehicle_8cpp_source.html#l06296">vehicle::refresh_insides()</a>, and <a class="el" href="vpart__position_8h_source.html#l00049">vehicle()</a>.</p>
+<p class="reference">References <a class="el" href="vehicle_8h_source.html#l00405">vehicle_part::inside</a>, <a class="el" href="vehicle_8cpp_source.html#l07074">vehicle::part()</a>, <a class="el" href="vpart__position_8h_source.html#l00053">part_index()</a>, <a class="el" href="vehicle_8cpp_source.html#l06288">vehicle::refresh_insides()</a>, and <a class="el" href="vpart__position_8h_source.html#l00049">vehicle()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="map_8cpp_source.html#l08137">vehicle_caching_internal()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="map_8cpp_source.html#l08139">vehicle_caching_internal()</a>.</p>
 
 </div>
 </div>
@@ -317,15 +317,15 @@ Private Attributes</h2></td></tr>
 <p>Returns the mount point: the point in the vehicles own coordinate system. </p>
 <p >This system is independent of movement / rotation. </p>
 
-<p class="definition">Definition at line <a class="el" href="vehicle_8cpp_source.html#l06789">6789</a> of file <a class="el" href="vehicle_8cpp_source.html">vehicle.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l06790" name="l06790"></a><span class="lineno"> 6790</span>{</div>
-<div class="line"><a id="l06791" name="l06791"></a><span class="lineno"> 6791</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classvpart__position.html#ab3ee9d013d071be4deed9f8f40cc4722">vehicle</a>().<a class="code hl_function" href="classvehicle.html#acdb2ebf673a32f657ac9e29b842ee7f5">part</a>( <a class="code hl_function" href="classvpart__position.html#a89192e86585711fa4c803a48d9f5de29">part_index</a>() ).<a class="code hl_variable" href="structvehicle__part.html#ac6e2dfa7178b8bed91baea3543961a86">mount</a>;</div>
-<div class="line"><a id="l06792" name="l06792"></a><span class="lineno"> 6792</span>}</div>
-<div class="ttc" id="astructvehicle__part_html_ac6e2dfa7178b8bed91baea3543961a86"><div class="ttname"><a href="structvehicle__part.html#ac6e2dfa7178b8bed91baea3543961a86">vehicle_part::mount</a></div><div class="ttdeci">point mount</div><div class="ttdoc">mount point: x is on the forward/backward axis, y is on the left/right axis</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8h_source.html#l00367">vehicle.h:367</a></div></div>
+<p class="definition">Definition at line <a class="el" href="vehicle_8cpp_source.html#l06781">6781</a> of file <a class="el" href="vehicle_8cpp_source.html">vehicle.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l06782" name="l06782"></a><span class="lineno"> 6782</span>{</div>
+<div class="line"><a id="l06783" name="l06783"></a><span class="lineno"> 6783</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classvpart__position.html#ab3ee9d013d071be4deed9f8f40cc4722">vehicle</a>().<a class="code hl_function" href="classvehicle.html#acdb2ebf673a32f657ac9e29b842ee7f5">part</a>( <a class="code hl_function" href="classvpart__position.html#a89192e86585711fa4c803a48d9f5de29">part_index</a>() ).<a class="code hl_variable" href="structvehicle__part.html#ac6e2dfa7178b8bed91baea3543961a86">mount</a>;</div>
+<div class="line"><a id="l06784" name="l06784"></a><span class="lineno"> 6784</span>}</div>
+<div class="ttc" id="astructvehicle__part_html_ac6e2dfa7178b8bed91baea3543961a86"><div class="ttname"><a href="structvehicle__part.html#ac6e2dfa7178b8bed91baea3543961a86">vehicle_part::mount</a></div><div class="ttdeci">point mount</div><div class="ttdoc">mount point: x is on the forward/backward axis, y is on the left/right axis</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8h_source.html#l00368">vehicle.h:368</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="vehicle_8h_source.html#l00367">vehicle_part::mount</a>, <a class="el" href="vehicle_8cpp_source.html#l07082">vehicle::part()</a>, <a class="el" href="vpart__position_8h_source.html#l00053">part_index()</a>, and <a class="el" href="vpart__position_8h_source.html#l00049">vehicle()</a>.</p>
+<p class="reference">References <a class="el" href="vehicle_8h_source.html#l00368">vehicle_part::mount</a>, <a class="el" href="vehicle_8cpp_source.html#l07074">vehicle::part()</a>, <a class="el" href="vpart__position_8h_source.html#l00053">part_index()</a>, and <a class="el" href="vpart__position_8h_source.html#l00049">vehicle()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l02655">get_label()</a>, <a class="el" href="vehicle_8cpp_source.html#l02452">part_displayed()</a>, <a class="el" href="map_8cpp_source.html#l04659">map::process_items_in_vehicle()</a>, <a class="el" href="vehicle_8cpp_source.html#l02668">set_label()</a>, and <a class="el" href="map_8cpp_source.html#l08137">vehicle_caching_internal()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l02656">get_label()</a>, <a class="el" href="vehicle_8cpp_source.html#l02453">part_displayed()</a>, <a class="el" href="map_8cpp_source.html#l04665">map::process_items_in_vehicle()</a>, <a class="el" href="vehicle_8cpp_source.html#l02669">set_label()</a>, and <a class="el" href="map_8cpp_source.html#l08139">vehicle_caching_internal()</a>.</p>
 
 </div>
 </div>
@@ -347,27 +347,27 @@ Private Attributes</h2></td></tr>
 <p>Returns the obstacle that exists at this point of the vehicle (if any). </p>
 <p >Open doors don't count as obstacles, but closed one do. Broken parts are also never obstacles. </p>
 
-<p class="definition">Definition at line <a class="el" href="vehicle_8cpp_source.html#l02438">2438</a> of file <a class="el" href="vehicle_8cpp_source.html">vehicle.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l02439" name="l02439"></a><span class="lineno"> 2439</span>{</div>
-<div class="line"><a id="l02440" name="l02440"></a><span class="lineno"> 2440</span>    <span class="keyword">const</span> <a class="code hl_class" href="classcata_1_1optional.html">cata::optional&lt;vpart_reference&gt;</a> part = <a class="code hl_function" href="classvpart__position.html#a07a34973fef988ab4a395bc64772deca">part_with_feature</a>( <a class="code hl_enumvalue" href="veh__type_8h.html#aa3ff66a8c100c3deb40dfa70f1eb307ea68f5db7dd9e594e9b0b49dce12b2fcba">VPFLAG_OBSTACLE</a>, <span class="keyword">true</span> );</div>
-<div class="line"><a id="l02441" name="l02441"></a><span class="lineno"> 2441</span>    <span class="keywordflow">if</span>( !part ) {</div>
-<div class="line"><a id="l02442" name="l02442"></a><span class="lineno"> 2442</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="namespacecata.html#ad05314667ac5d05f984aeeef26b9a87f">cata::nullopt</a>; <span class="comment">// No obstacle here</span></div>
-<div class="line"><a id="l02443" name="l02443"></a><span class="lineno"> 2443</span>    }</div>
-<div class="line"><a id="l02444" name="l02444"></a><span class="lineno"> 2444</span> </div>
-<div class="line"><a id="l02445" name="l02445"></a><span class="lineno"> 2445</span>    <span class="keywordflow">if</span>( part-&gt;has_feature( <a class="code hl_enumvalue" href="veh__type_8h.html#aa3ff66a8c100c3deb40dfa70f1eb307ea812fb775f113f8e70717ffcf2dacf15f">VPFLAG_OPENABLE</a> ) &amp;&amp; part-&gt;part().open ) {</div>
-<div class="line"><a id="l02446" name="l02446"></a><span class="lineno"> 2446</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="namespacecata.html#ad05314667ac5d05f984aeeef26b9a87f">cata::nullopt</a>; <span class="comment">// Open door here</span></div>
-<div class="line"><a id="l02447" name="l02447"></a><span class="lineno"> 2447</span>    }</div>
-<div class="line"><a id="l02448" name="l02448"></a><span class="lineno"> 2448</span> </div>
-<div class="line"><a id="l02449" name="l02449"></a><span class="lineno"> 2449</span>    <span class="keywordflow">return</span> part;</div>
-<div class="line"><a id="l02450" name="l02450"></a><span class="lineno"> 2450</span>}</div>
+<p class="definition">Definition at line <a class="el" href="vehicle_8cpp_source.html#l02439">2439</a> of file <a class="el" href="vehicle_8cpp_source.html">vehicle.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l02440" name="l02440"></a><span class="lineno"> 2440</span>{</div>
+<div class="line"><a id="l02441" name="l02441"></a><span class="lineno"> 2441</span>    <span class="keyword">const</span> <a class="code hl_class" href="classcata_1_1optional.html">cata::optional&lt;vpart_reference&gt;</a> part = <a class="code hl_function" href="classvpart__position.html#a07a34973fef988ab4a395bc64772deca">part_with_feature</a>( <a class="code hl_enumvalue" href="veh__type_8h.html#aa3ff66a8c100c3deb40dfa70f1eb307ea68f5db7dd9e594e9b0b49dce12b2fcba">VPFLAG_OBSTACLE</a>, <span class="keyword">true</span> );</div>
+<div class="line"><a id="l02442" name="l02442"></a><span class="lineno"> 2442</span>    <span class="keywordflow">if</span>( !part ) {</div>
+<div class="line"><a id="l02443" name="l02443"></a><span class="lineno"> 2443</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="namespacecata.html#ad05314667ac5d05f984aeeef26b9a87f">cata::nullopt</a>; <span class="comment">// No obstacle here</span></div>
+<div class="line"><a id="l02444" name="l02444"></a><span class="lineno"> 2444</span>    }</div>
+<div class="line"><a id="l02445" name="l02445"></a><span class="lineno"> 2445</span> </div>
+<div class="line"><a id="l02446" name="l02446"></a><span class="lineno"> 2446</span>    <span class="keywordflow">if</span>( part-&gt;has_feature( <a class="code hl_enumvalue" href="veh__type_8h.html#aa3ff66a8c100c3deb40dfa70f1eb307ea812fb775f113f8e70717ffcf2dacf15f">VPFLAG_OPENABLE</a> ) &amp;&amp; part-&gt;part().open ) {</div>
+<div class="line"><a id="l02447" name="l02447"></a><span class="lineno"> 2447</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="namespacecata.html#ad05314667ac5d05f984aeeef26b9a87f">cata::nullopt</a>; <span class="comment">// Open door here</span></div>
+<div class="line"><a id="l02448" name="l02448"></a><span class="lineno"> 2448</span>    }</div>
+<div class="line"><a id="l02449" name="l02449"></a><span class="lineno"> 2449</span> </div>
+<div class="line"><a id="l02450" name="l02450"></a><span class="lineno"> 2450</span>    <span class="keywordflow">return</span> part;</div>
+<div class="line"><a id="l02451" name="l02451"></a><span class="lineno"> 2451</span>}</div>
 <div class="ttc" id="aclasscata_1_1optional_html"><div class="ttname"><a href="classcata_1_1optional.html">cata::optional</a></div><div class="ttdef"><b>Definition:</b> <a href="optional_8h_source.html#l00030">optional.h:31</a></div></div>
-<div class="ttc" id="aclassvpart__position_html_a07a34973fef988ab4a395bc64772deca"><div class="ttname"><a href="classvpart__position.html#a07a34973fef988ab4a395bc64772deca">vpart_position::part_with_feature</a></div><div class="ttdeci">cata::optional&lt; vpart_reference &gt; part_with_feature(const std::string &amp;f, bool unbroken) const</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8cpp_source.html#l02461">vehicle.cpp:2461</a></div></div>
+<div class="ttc" id="aclassvpart__position_html_a07a34973fef988ab4a395bc64772deca"><div class="ttname"><a href="classvpart__position.html#a07a34973fef988ab4a395bc64772deca">vpart_position::part_with_feature</a></div><div class="ttdeci">cata::optional&lt; vpart_reference &gt; part_with_feature(const std::string &amp;f, bool unbroken) const</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8cpp_source.html#l02462">vehicle.cpp:2462</a></div></div>
 <div class="ttc" id="aveh__type_8h_html_aa3ff66a8c100c3deb40dfa70f1eb307ea68f5db7dd9e594e9b0b49dce12b2fcba"><div class="ttname"><a href="veh__type_8h.html#aa3ff66a8c100c3deb40dfa70f1eb307ea68f5db7dd9e594e9b0b49dce12b2fcba">VPFLAG_OBSTACLE</a></div><div class="ttdeci">@ VPFLAG_OBSTACLE</div><div class="ttdef"><b>Definition:</b> <a href="veh__type_8h_source.html#l00042">veh_type.h:42</a></div></div>
 <div class="ttc" id="aveh__type_8h_html_aa3ff66a8c100c3deb40dfa70f1eb307ea812fb775f113f8e70717ffcf2dacf15f"><div class="ttname"><a href="veh__type_8h.html#aa3ff66a8c100c3deb40dfa70f1eb307ea812fb775f113f8e70717ffcf2dacf15f">VPFLAG_OPENABLE</a></div><div class="ttdeci">@ VPFLAG_OPENABLE</div><div class="ttdef"><b>Definition:</b> <a href="veh__type_8h_source.html#l00044">veh_type.h:44</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="optional_8h_source.html#l00022">cata::nullopt</a>, <a class="el" href="vehicle_8cpp_source.html#l02461">part_with_feature()</a>, <a class="el" href="veh__type_8h_source.html#l00042">VPFLAG_OBSTACLE</a>, and <a class="el" href="veh__type_8h_source.html#l00044">VPFLAG_OPENABLE</a>.</p>
+<p class="reference">References <a class="el" href="optional_8h_source.html#l00022">cata::nullopt</a>, <a class="el" href="vehicle_8cpp_source.html#l02462">part_with_feature()</a>, <a class="el" href="veh__type_8h_source.html#l00042">VPFLAG_OBSTACLE</a>, and <a class="el" href="veh__type_8h_source.html#l00044">VPFLAG_OPENABLE</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="map_8cpp_source.html#l06070">map::draw_from_above()</a>, <a class="el" href="map_8cpp_source.html#l01743">map::move_cost_internal()</a>, <a class="el" href="vehicle_8cpp_source.html#l02493">optional_vpart_position::obstacle_at_part()</a>, and <a class="el" href="pathfinding_8cpp_source.html#l00194">map::route()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="map_8cpp_source.html#l06071">map::draw_from_above()</a>, <a class="el" href="map_8cpp_source.html#l01743">map::move_cost_internal()</a>, <a class="el" href="vehicle_8cpp_source.html#l02494">optional_vpart_position::obstacle_at_part()</a>, and <a class="el" href="pathfinding_8cpp_source.html#l00194">map::route()</a>.</p>
 
 </div>
 </div>
@@ -414,20 +414,20 @@ Private Attributes</h2></td></tr>
 
 <p>Returns the part displayed at this point of the vehicle. </p>
 
-<p class="definition">Definition at line <a class="el" href="vehicle_8cpp_source.html#l02452">2452</a> of file <a class="el" href="vehicle_8cpp_source.html">vehicle.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l02453" name="l02453"></a><span class="lineno"> 2453</span>{</div>
-<div class="line"><a id="l02454" name="l02454"></a><span class="lineno"> 2454</span>    <span class="keywordtype">int</span> part_id = <a class="code hl_function" href="classvpart__position.html#ab3ee9d013d071be4deed9f8f40cc4722">vehicle</a>().<a class="code hl_function" href="classvehicle.html#adc20027ac440f3052242f9f6f0441934">part_displayed_at</a>( <a class="code hl_function" href="classvpart__position.html#a46700b8fb722ddb6c104f114e820c9b8">mount</a>() );</div>
-<div class="line"><a id="l02455" name="l02455"></a><span class="lineno"> 2455</span>    <span class="keywordflow">if</span>( part_id == -1 ) {</div>
-<div class="line"><a id="l02456" name="l02456"></a><span class="lineno"> 2456</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="namespacecata.html#ad05314667ac5d05f984aeeef26b9a87f">cata::nullopt</a>;</div>
-<div class="line"><a id="l02457" name="l02457"></a><span class="lineno"> 2457</span>    }</div>
-<div class="line"><a id="l02458" name="l02458"></a><span class="lineno"> 2458</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="classvpart__reference.html">vpart_reference</a>( <a class="code hl_function" href="classvpart__position.html#ab3ee9d013d071be4deed9f8f40cc4722">vehicle</a>(), part_id );</div>
-<div class="line"><a id="l02459" name="l02459"></a><span class="lineno"> 2459</span>}</div>
-<div class="ttc" id="aclassvehicle_html_adc20027ac440f3052242f9f6f0441934"><div class="ttname"><a href="classvehicle.html#adc20027ac440f3052242f9f6f0441934">vehicle::part_displayed_at</a></div><div class="ttdeci">int part_displayed_at(const point &amp;dp) const</div><div class="ttdoc">Returns which part (as an index into the parts list) is the one that will be displayed for the given ...</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8cpp_source.html#l02970">vehicle.cpp:2970</a></div></div>
+<p class="definition">Definition at line <a class="el" href="vehicle_8cpp_source.html#l02453">2453</a> of file <a class="el" href="vehicle_8cpp_source.html">vehicle.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l02454" name="l02454"></a><span class="lineno"> 2454</span>{</div>
+<div class="line"><a id="l02455" name="l02455"></a><span class="lineno"> 2455</span>    <span class="keywordtype">int</span> part_id = <a class="code hl_function" href="classvpart__position.html#ab3ee9d013d071be4deed9f8f40cc4722">vehicle</a>().<a class="code hl_function" href="classvehicle.html#adc20027ac440f3052242f9f6f0441934">part_displayed_at</a>( <a class="code hl_function" href="classvpart__position.html#a46700b8fb722ddb6c104f114e820c9b8">mount</a>() );</div>
+<div class="line"><a id="l02456" name="l02456"></a><span class="lineno"> 2456</span>    <span class="keywordflow">if</span>( part_id == -1 ) {</div>
+<div class="line"><a id="l02457" name="l02457"></a><span class="lineno"> 2457</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="namespacecata.html#ad05314667ac5d05f984aeeef26b9a87f">cata::nullopt</a>;</div>
+<div class="line"><a id="l02458" name="l02458"></a><span class="lineno"> 2458</span>    }</div>
+<div class="line"><a id="l02459" name="l02459"></a><span class="lineno"> 2459</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="classvpart__reference.html">vpart_reference</a>( <a class="code hl_function" href="classvpart__position.html#ab3ee9d013d071be4deed9f8f40cc4722">vehicle</a>(), part_id );</div>
+<div class="line"><a id="l02460" name="l02460"></a><span class="lineno"> 2460</span>}</div>
+<div class="ttc" id="aclassvehicle_html_adc20027ac440f3052242f9f6f0441934"><div class="ttname"><a href="classvehicle.html#adc20027ac440f3052242f9f6f0441934">vehicle::part_displayed_at</a></div><div class="ttdeci">int part_displayed_at(const point &amp;dp) const</div><div class="ttdoc">Returns which part (as an index into the parts list) is the one that will be displayed for the given ...</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8cpp_source.html#l02971">vehicle.cpp:2971</a></div></div>
 <div class="ttc" id="aclassvpart__reference_html"><div class="ttname"><a href="classvpart__reference.html">vpart_reference</a></div><div class="ttdoc">This is a wrapper over a vehicle pointer and a reference to a part of it.</div><div class="ttdef"><b>Definition:</b> <a href="vpart__position_8h_source.html#l00126">vpart_position.h:127</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="vehicle_8cpp_source.html#l06789">mount()</a>, <a class="el" href="optional_8h_source.html#l00022">cata::nullopt</a>, <a class="el" href="vehicle_8cpp_source.html#l02970">vehicle::part_displayed_at()</a>, and <a class="el" href="vpart__position_8h_source.html#l00049">vehicle()</a>.</p>
+<p class="reference">References <a class="el" href="vehicle_8cpp_source.html#l06781">mount()</a>, <a class="el" href="optional_8h_source.html#l00022">cata::nullopt</a>, <a class="el" href="vehicle_8cpp_source.html#l02971">vehicle::part_displayed_at()</a>, and <a class="el" href="vpart__position_8h_source.html#l00049">vehicle()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l02498">optional_vpart_position::part_displayed()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l02499">optional_vpart_position::part_displayed()</a>.</p>
 
 </div>
 </div>
@@ -461,7 +461,7 @@ Private Attributes</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="vpart__position_8h_source.html#l00042">part_index_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l06784">vpart_reference::get_passenger()</a>, <a class="el" href="vehicle_8cpp_source.html#l06346">is_inside()</a>, <a class="el" href="vehicle_8cpp_source.html#l06789">mount()</a>, <a class="el" href="vehicle_8cpp_source.html#l06773">vpart_reference::part()</a>, <a class="el" href="vehicle_8cpp_source.html#l02461">part_with_feature()</a>, <a class="el" href="vehicle_8cpp_source.html#l06794">pos()</a>, and <a class="el" href="map_8cpp_source.html#l08137">vehicle_caching_internal()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l06776">vpart_reference::get_passenger()</a>, <a class="el" href="vehicle_8cpp_source.html#l06338">is_inside()</a>, <a class="el" href="vehicle_8cpp_source.html#l06781">mount()</a>, <a class="el" href="vehicle_8cpp_source.html#l06765">vpart_reference::part()</a>, <a class="el" href="vehicle_8cpp_source.html#l02462">part_with_feature()</a>, <a class="el" href="vehicle_8cpp_source.html#l06786">pos()</a>, and <a class="el" href="map_8cpp_source.html#l08139">vehicle_caching_internal()</a>.</p>
 
 </div>
 </div>
@@ -492,19 +492,19 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classvehicle.html#a00f013bfeaa4b6d44eaa67961f0c1e59">vehicle::part_with_feature</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="vehicle_8cpp_source.html#l02461">2461</a> of file <a class="el" href="vehicle_8cpp_source.html">vehicle.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l02463" name="l02463"></a><span class="lineno"> 2463</span>{</div>
-<div class="line"><a id="l02464" name="l02464"></a><span class="lineno"> 2464</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> i = <a class="code hl_function" href="classvpart__position.html#ab3ee9d013d071be4deed9f8f40cc4722">vehicle</a>().<a class="code hl_function" href="classvehicle.html#a00f013bfeaa4b6d44eaa67961f0c1e59">part_with_feature</a>( <a class="code hl_function" href="classvpart__position.html#a89192e86585711fa4c803a48d9f5de29">part_index</a>(), f, unbroken );</div>
-<div class="line"><a id="l02465" name="l02465"></a><span class="lineno"> 2465</span>    <span class="keywordflow">if</span>( i &lt; 0 ) {</div>
-<div class="line"><a id="l02466" name="l02466"></a><span class="lineno"> 2466</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="namespacecata.html#ad05314667ac5d05f984aeeef26b9a87f">cata::nullopt</a>;</div>
-<div class="line"><a id="l02467" name="l02467"></a><span class="lineno"> 2467</span>    }</div>
-<div class="line"><a id="l02468" name="l02468"></a><span class="lineno"> 2468</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="classvpart__reference.html">vpart_reference</a>( <a class="code hl_function" href="classvpart__position.html#ab3ee9d013d071be4deed9f8f40cc4722">vehicle</a>(), i );</div>
-<div class="line"><a id="l02469" name="l02469"></a><span class="lineno"> 2469</span>}</div>
-<div class="ttc" id="aclassvehicle_html_a00f013bfeaa4b6d44eaa67961f0c1e59"><div class="ttname"><a href="classvehicle.html#a00f013bfeaa4b6d44eaa67961f0c1e59">vehicle::part_with_feature</a></div><div class="ttdeci">int part_with_feature(int p, const std::string &amp;f, bool unbroken) const</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8cpp_source.html#l02520">vehicle.cpp:2520</a></div></div>
+<p class="definition">Definition at line <a class="el" href="vehicle_8cpp_source.html#l02462">2462</a> of file <a class="el" href="vehicle_8cpp_source.html">vehicle.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l02464" name="l02464"></a><span class="lineno"> 2464</span>{</div>
+<div class="line"><a id="l02465" name="l02465"></a><span class="lineno"> 2465</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> i = <a class="code hl_function" href="classvpart__position.html#ab3ee9d013d071be4deed9f8f40cc4722">vehicle</a>().<a class="code hl_function" href="classvehicle.html#a00f013bfeaa4b6d44eaa67961f0c1e59">part_with_feature</a>( <a class="code hl_function" href="classvpart__position.html#a89192e86585711fa4c803a48d9f5de29">part_index</a>(), f, unbroken );</div>
+<div class="line"><a id="l02466" name="l02466"></a><span class="lineno"> 2466</span>    <span class="keywordflow">if</span>( i &lt; 0 ) {</div>
+<div class="line"><a id="l02467" name="l02467"></a><span class="lineno"> 2467</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="namespacecata.html#ad05314667ac5d05f984aeeef26b9a87f">cata::nullopt</a>;</div>
+<div class="line"><a id="l02468" name="l02468"></a><span class="lineno"> 2468</span>    }</div>
+<div class="line"><a id="l02469" name="l02469"></a><span class="lineno"> 2469</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="classvpart__reference.html">vpart_reference</a>( <a class="code hl_function" href="classvpart__position.html#ab3ee9d013d071be4deed9f8f40cc4722">vehicle</a>(), i );</div>
+<div class="line"><a id="l02470" name="l02470"></a><span class="lineno"> 2470</span>}</div>
+<div class="ttc" id="aclassvehicle_html_a00f013bfeaa4b6d44eaa67961f0c1e59"><div class="ttname"><a href="classvehicle.html#a00f013bfeaa4b6d44eaa67961f0c1e59">vehicle::part_with_feature</a></div><div class="ttdeci">int part_with_feature(int p, const std::string &amp;f, bool unbroken) const</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8cpp_source.html#l02521">vehicle.cpp:2521</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="optional_8h_source.html#l00022">cata::nullopt</a>, <a class="el" href="vpart__position_8h_source.html#l00053">part_index()</a>, <a class="el" href="vehicle_8cpp_source.html#l02520">vehicle::part_with_feature()</a>, and <a class="el" href="vpart__position_8h_source.html#l00049">vehicle()</a>.</p>
+<p class="reference">References <a class="el" href="optional_8h_source.html#l00022">cata::nullopt</a>, <a class="el" href="vpart__position_8h_source.html#l00053">part_index()</a>, <a class="el" href="vehicle_8cpp_source.html#l02521">vehicle::part_with_feature()</a>, and <a class="el" href="vpart__position_8h_source.html#l00049">vehicle()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l05135">game::control_vehicle()</a>, <a class="el" href="item__location_8cpp_source.html#l00449">item_location::impl::item_on_vehicle::describe()</a>, <a class="el" href="map_8cpp_source.html#l01743">map::move_cost_internal()</a>, <a class="el" href="vehicle_8cpp_source.html#l02438">obstacle_at_part()</a>, and <a class="el" href="vehicle_8cpp_source.html#l02481">optional_vpart_position::part_with_feature()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l05137">game::control_vehicle()</a>, <a class="el" href="item__location_8cpp_source.html#l00449">item_location::impl::item_on_vehicle::describe()</a>, <a class="el" href="map_8cpp_source.html#l01743">map::move_cost_internal()</a>, <a class="el" href="vehicle_8cpp_source.html#l02439">obstacle_at_part()</a>, and <a class="el" href="vehicle_8cpp_source.html#l02482">optional_vpart_position::part_with_feature()</a>.</p>
 
 </div>
 </div>
@@ -535,16 +535,16 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classvehicle.html#a00f013bfeaa4b6d44eaa67961f0c1e59">vehicle::part_with_feature</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="vehicle_8cpp_source.html#l02471">2471</a> of file <a class="el" href="vehicle_8cpp_source.html">vehicle.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l02473" name="l02473"></a><span class="lineno"> 2473</span>{</div>
-<div class="line"><a id="l02474" name="l02474"></a><span class="lineno"> 2474</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> i = <a class="code hl_function" href="classvpart__position.html#ab3ee9d013d071be4deed9f8f40cc4722">vehicle</a>().<a class="code hl_function" href="classvehicle.html#a00f013bfeaa4b6d44eaa67961f0c1e59">part_with_feature</a>( <a class="code hl_function" href="classvpart__position.html#a89192e86585711fa4c803a48d9f5de29">part_index</a>(), f, unbroken );</div>
-<div class="line"><a id="l02475" name="l02475"></a><span class="lineno"> 2475</span>    <span class="keywordflow">if</span>( i &lt; 0 ) {</div>
-<div class="line"><a id="l02476" name="l02476"></a><span class="lineno"> 2476</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="namespacecata.html#ad05314667ac5d05f984aeeef26b9a87f">cata::nullopt</a>;</div>
-<div class="line"><a id="l02477" name="l02477"></a><span class="lineno"> 2477</span>    }</div>
-<div class="line"><a id="l02478" name="l02478"></a><span class="lineno"> 2478</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="classvpart__reference.html">vpart_reference</a>( <a class="code hl_function" href="classvpart__position.html#ab3ee9d013d071be4deed9f8f40cc4722">vehicle</a>(), i );</div>
-<div class="line"><a id="l02479" name="l02479"></a><span class="lineno"> 2479</span>}</div>
+<p class="definition">Definition at line <a class="el" href="vehicle_8cpp_source.html#l02472">2472</a> of file <a class="el" href="vehicle_8cpp_source.html">vehicle.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l02474" name="l02474"></a><span class="lineno"> 2474</span>{</div>
+<div class="line"><a id="l02475" name="l02475"></a><span class="lineno"> 2475</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> i = <a class="code hl_function" href="classvpart__position.html#ab3ee9d013d071be4deed9f8f40cc4722">vehicle</a>().<a class="code hl_function" href="classvehicle.html#a00f013bfeaa4b6d44eaa67961f0c1e59">part_with_feature</a>( <a class="code hl_function" href="classvpart__position.html#a89192e86585711fa4c803a48d9f5de29">part_index</a>(), f, unbroken );</div>
+<div class="line"><a id="l02476" name="l02476"></a><span class="lineno"> 2476</span>    <span class="keywordflow">if</span>( i &lt; 0 ) {</div>
+<div class="line"><a id="l02477" name="l02477"></a><span class="lineno"> 2477</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="namespacecata.html#ad05314667ac5d05f984aeeef26b9a87f">cata::nullopt</a>;</div>
+<div class="line"><a id="l02478" name="l02478"></a><span class="lineno"> 2478</span>    }</div>
+<div class="line"><a id="l02479" name="l02479"></a><span class="lineno"> 2479</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="classvpart__reference.html">vpart_reference</a>( <a class="code hl_function" href="classvpart__position.html#ab3ee9d013d071be4deed9f8f40cc4722">vehicle</a>(), i );</div>
+<div class="line"><a id="l02480" name="l02480"></a><span class="lineno"> 2480</span>}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="optional_8h_source.html#l00022">cata::nullopt</a>, <a class="el" href="vpart__position_8h_source.html#l00053">part_index()</a>, <a class="el" href="vehicle_8cpp_source.html#l02520">vehicle::part_with_feature()</a>, and <a class="el" href="vpart__position_8h_source.html#l00049">vehicle()</a>.</p>
+<p class="reference">References <a class="el" href="optional_8h_source.html#l00022">cata::nullopt</a>, <a class="el" href="vpart__position_8h_source.html#l00053">part_index()</a>, <a class="el" href="vehicle_8cpp_source.html#l02521">vehicle::part_with_feature()</a>, and <a class="el" href="vpart__position_8h_source.html#l00049">vehicle()</a>.</p>
 
 </div>
 </div>
@@ -566,13 +566,13 @@ Private Attributes</h2></td></tr>
 <p>Returns the position of this part in the coordinates system that <a class="el" href="classgame.html#ab6a1689fcb99f28cb9bee5b831a21450">game::m</a> uses. </p>
 <p >Postcondition (if the vehicle cache of the map is correct and if there are un-removed parts at this positions): <code>g-&gt;m.veh_at( this-&gt;<a class="el" href="classvpart__position.html#a94bbba6ce79073316fdb7fea7c6d8a60" title="Returns the position of this part in the coordinates system that game::m uses.">pos()</a> )</code> (there is a vehicle there) <code>g-&gt;m.veh_at( this-&gt;<a class="el" href="classvpart__position.html#a94bbba6ce79073316fdb7fea7c6d8a60" title="Returns the position of this part in the coordinates system that game::m uses.">pos()</a> )-&gt;<a class="el" href="classvpart__position.html#ab3ee9d013d071be4deed9f8f40cc4722">vehicle()</a> == this-&gt;<a class="el" href="classvpart__position.html#ab3ee9d013d071be4deed9f8f40cc4722">vehicle()</a></code> (it's this one) </p>
 
-<p class="definition">Definition at line <a class="el" href="vehicle_8cpp_source.html#l06794">6794</a> of file <a class="el" href="vehicle_8cpp_source.html">vehicle.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l06795" name="l06795"></a><span class="lineno"> 6795</span>{</div>
-<div class="line"><a id="l06796" name="l06796"></a><span class="lineno"> 6796</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classvpart__position.html#ab3ee9d013d071be4deed9f8f40cc4722">vehicle</a>().<a class="code hl_function" href="classvehicle.html#ae8132c34a1ea24866889e6e599796adc">global_part_pos3</a>( <a class="code hl_function" href="classvpart__position.html#a89192e86585711fa4c803a48d9f5de29">part_index</a>() );</div>
-<div class="line"><a id="l06797" name="l06797"></a><span class="lineno"> 6797</span>}</div>
-<div class="ttc" id="aclassvehicle_html_ae8132c34a1ea24866889e6e599796adc"><div class="ttname"><a href="classvehicle.html#ae8132c34a1ea24866889e6e599796adc">vehicle::global_part_pos3</a></div><div class="ttdeci">tripoint global_part_pos3(const int &amp;index) const</div><div class="ttdoc">Get the coordinates of the studied part of the vehicle.</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8cpp_source.html#l03286">vehicle.cpp:3286</a></div></div>
+<p class="definition">Definition at line <a class="el" href="vehicle_8cpp_source.html#l06786">6786</a> of file <a class="el" href="vehicle_8cpp_source.html">vehicle.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l06787" name="l06787"></a><span class="lineno"> 6787</span>{</div>
+<div class="line"><a id="l06788" name="l06788"></a><span class="lineno"> 6788</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classvpart__position.html#ab3ee9d013d071be4deed9f8f40cc4722">vehicle</a>().<a class="code hl_function" href="classvehicle.html#ae8132c34a1ea24866889e6e599796adc">global_part_pos3</a>( <a class="code hl_function" href="classvpart__position.html#a89192e86585711fa4c803a48d9f5de29">part_index</a>() );</div>
+<div class="line"><a id="l06789" name="l06789"></a><span class="lineno"> 6789</span>}</div>
+<div class="ttc" id="aclassvehicle_html_ae8132c34a1ea24866889e6e599796adc"><div class="ttname"><a href="classvehicle.html#ae8132c34a1ea24866889e6e599796adc">vehicle::global_part_pos3</a></div><div class="ttdeci">tripoint global_part_pos3(const int &amp;index) const</div><div class="ttdoc">Get the coordinates of the studied part of the vehicle.</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8cpp_source.html#l03287">vehicle.cpp:3287</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="vehicle_8cpp_source.html#l03286">vehicle::global_part_pos3()</a>, <a class="el" href="vpart__position_8h_source.html#l00053">part_index()</a>, and <a class="el" href="vpart__position_8h_source.html#l00049">vehicle()</a>.</p>
+<p class="reference">References <a class="el" href="vehicle_8cpp_source.html#l03287">vehicle::global_part_pos3()</a>, <a class="el" href="vpart__position_8h_source.html#l00053">part_index()</a>, and <a class="el" href="vpart__position_8h_source.html#l00049">vehicle()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="item__location_8cpp_source.html#l00449">item_location::impl::item_on_vehicle::describe()</a>.</p>
 
@@ -597,22 +597,22 @@ Private Attributes</h2></td></tr>
 <p>Sets the label at this part of the vehicle. </p>
 <p >Removes the label if <code>text</code> is empty. </p>
 
-<p class="definition">Definition at line <a class="el" href="vehicle_8cpp_source.html#l02668">2668</a> of file <a class="el" href="vehicle_8cpp_source.html">vehicle.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l02669" name="l02669"></a><span class="lineno"> 2669</span>{</div>
-<div class="line"><a id="l02670" name="l02670"></a><span class="lineno"> 2670</span>    <span class="keyword">auto</span> &amp;labels = <a class="code hl_function" href="classvpart__position.html#ab3ee9d013d071be4deed9f8f40cc4722">vehicle</a>().<a class="code hl_variable" href="classvehicle.html#a7c2d668e2b8f48a53f5c5e94aa2bd408">labels</a>;</div>
-<div class="line"><a id="l02671" name="l02671"></a><span class="lineno"> 2671</span>    <span class="keyword">const</span> <span class="keyword">auto</span> it = labels.find( <a class="code hl_struct" href="structlabel.html">label</a>( <a class="code hl_function" href="classvpart__position.html#a46700b8fb722ddb6c104f114e820c9b8">mount</a>() ) );</div>
-<div class="line"><a id="l02672" name="l02672"></a><span class="lineno"> 2672</span>    <span class="comment">// TODO: empty text should remove the label instead of just storing an empty string, see get_label</span></div>
-<div class="line"><a id="l02673" name="l02673"></a><span class="lineno"> 2673</span>    <span class="keywordflow">if</span>( it == labels.end() ) {</div>
-<div class="line"><a id="l02674" name="l02674"></a><span class="lineno"> 2674</span>        labels.insert( <a class="code hl_struct" href="structlabel.html">label</a>( <a class="code hl_function" href="classvpart__position.html#a46700b8fb722ddb6c104f114e820c9b8">mount</a>(), text ) );</div>
-<div class="line"><a id="l02675" name="l02675"></a><span class="lineno"> 2675</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l02676" name="l02676"></a><span class="lineno"> 2676</span>        <span class="comment">// labels should really be a map</span></div>
-<div class="line"><a id="l02677" name="l02677"></a><span class="lineno"> 2677</span>        labels.insert( labels.erase( it ), <a class="code hl_struct" href="structlabel.html">label</a>( <a class="code hl_function" href="classvpart__position.html#a46700b8fb722ddb6c104f114e820c9b8">mount</a>(), text ) );</div>
-<div class="line"><a id="l02678" name="l02678"></a><span class="lineno"> 2678</span>    }</div>
-<div class="line"><a id="l02679" name="l02679"></a><span class="lineno"> 2679</span>}</div>
+<p class="definition">Definition at line <a class="el" href="vehicle_8cpp_source.html#l02669">2669</a> of file <a class="el" href="vehicle_8cpp_source.html">vehicle.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l02670" name="l02670"></a><span class="lineno"> 2670</span>{</div>
+<div class="line"><a id="l02671" name="l02671"></a><span class="lineno"> 2671</span>    <span class="keyword">auto</span> &amp;labels = <a class="code hl_function" href="classvpart__position.html#ab3ee9d013d071be4deed9f8f40cc4722">vehicle</a>().<a class="code hl_variable" href="classvehicle.html#a7c2d668e2b8f48a53f5c5e94aa2bd408">labels</a>;</div>
+<div class="line"><a id="l02672" name="l02672"></a><span class="lineno"> 2672</span>    <span class="keyword">const</span> <span class="keyword">auto</span> it = labels.find( <a class="code hl_struct" href="structlabel.html">label</a>( <a class="code hl_function" href="classvpart__position.html#a46700b8fb722ddb6c104f114e820c9b8">mount</a>() ) );</div>
+<div class="line"><a id="l02673" name="l02673"></a><span class="lineno"> 2673</span>    <span class="comment">// TODO: empty text should remove the label instead of just storing an empty string, see get_label</span></div>
+<div class="line"><a id="l02674" name="l02674"></a><span class="lineno"> 2674</span>    <span class="keywordflow">if</span>( it == labels.end() ) {</div>
+<div class="line"><a id="l02675" name="l02675"></a><span class="lineno"> 2675</span>        labels.insert( <a class="code hl_struct" href="structlabel.html">label</a>( <a class="code hl_function" href="classvpart__position.html#a46700b8fb722ddb6c104f114e820c9b8">mount</a>(), text ) );</div>
+<div class="line"><a id="l02676" name="l02676"></a><span class="lineno"> 2676</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l02677" name="l02677"></a><span class="lineno"> 2677</span>        <span class="comment">// labels should really be a map</span></div>
+<div class="line"><a id="l02678" name="l02678"></a><span class="lineno"> 2678</span>        labels.insert( labels.erase( it ), <a class="code hl_struct" href="structlabel.html">label</a>( <a class="code hl_function" href="classvpart__position.html#a46700b8fb722ddb6c104f114e820c9b8">mount</a>(), text ) );</div>
+<div class="line"><a id="l02679" name="l02679"></a><span class="lineno"> 2679</span>    }</div>
+<div class="line"><a id="l02680" name="l02680"></a><span class="lineno"> 2680</span>}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="vehicle_8h_source.html#l01858">vehicle::labels</a>, <a class="el" href="vehicle_8cpp_source.html#l06789">mount()</a>, and <a class="el" href="vpart__position_8h_source.html#l00049">vehicle()</a>.</p>
+<p class="reference">References <a class="el" href="vehicle_8h_source.html#l01866">vehicle::labels</a>, <a class="el" href="vehicle_8cpp_source.html#l06781">mount()</a>, and <a class="el" href="vpart__position_8h_source.html#l00049">vehicle()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="veh__interact_8cpp_source.html#l02081">veh_interact::do_relabel()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="veh__interact_8cpp_source.html#l02087">veh_interact::do_relabel()</a>.</p>
 
 </div>
 </div>
@@ -646,7 +646,7 @@ Private Attributes</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="vpart__position_8h_source.html#l00040">vehicle_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l02655">get_label()</a>, <a class="el" href="vehicle_8cpp_source.html#l06346">is_inside()</a>, <a class="el" href="vehicle_8cpp_source.html#l06789">mount()</a>, <a class="el" href="vehicle_8cpp_source.html#l02452">part_displayed()</a>, <a class="el" href="vehicle_8cpp_source.html#l02461">part_with_feature()</a>, <a class="el" href="vehicle_8cpp_source.html#l06794">pos()</a>, <a class="el" href="vehicle_8cpp_source.html#l02668">set_label()</a>, and <a class="el" href="iuse__actor_8cpp_source.html#l01259">deploy_furn_actor::use()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l02656">get_label()</a>, <a class="el" href="vehicle_8cpp_source.html#l06338">is_inside()</a>, <a class="el" href="vehicle_8cpp_source.html#l06781">mount()</a>, <a class="el" href="vehicle_8cpp_source.html#l02453">part_displayed()</a>, <a class="el" href="vehicle_8cpp_source.html#l02462">part_with_feature()</a>, <a class="el" href="vehicle_8cpp_source.html#l06786">pos()</a>, <a class="el" href="vehicle_8cpp_source.html#l02669">set_label()</a>, and <a class="el" href="iuse__actor_8cpp_source.html#l01260">deploy_furn_actor::use()</a>.</p>
 
 </div>
 </div>
@@ -713,7 +713,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classvpart__position.html">vpart_position</a></li>
-    <li class="footer">Generated on Mon Dec 26 2022 21:42:17 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Feb 21 2023 16:43:42 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

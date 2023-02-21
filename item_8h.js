@@ -2,10 +2,10 @@ var item_8h =
 [
     [ "light_emission", "structlight__emission.html", "structlight__emission" ],
     [ "iteminfo", "structiteminfo.html", "structiteminfo" ],
+    [ "item_reload_option", "classitem__reload__option.html", "classitem__reload__option" ],
     [ "item", "classitem.html", "classitem" ],
     [ "item::default_charges_tag", "structitem_1_1default__charges__tag.html", null ],
     [ "item::solitary_tag", "structitem_1_1solitary__tag.html", null ],
-    [ "item::reload_option", "classitem_1_1reload__option.html", "classitem_1_1reload__option" ],
     [ "item::sound_data", "structitem_1_1sound__data.html", "structitem_1_1sound__data" ],
     [ "item::craft_data", "classitem_1_1craft__data.html", "classitem_1_1craft__data" ],
     [ "CATA_SRC_ITEM_H", "item_8h.html#a3c76500ce8f73cc9398460b182ac31c2", null ],

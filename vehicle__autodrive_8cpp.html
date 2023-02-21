@@ -569,11 +569,11 @@ Variables</h2></td></tr>
 <div class="line"><a id="l00845" name="l00845"></a><span class="lineno">  845</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="namespacecata_1_1hash64__detail.html#a5ca825db6fd06946302c60daa97333e4">ret</a>;</div>
 <div class="line"><a id="l00846" name="l00846"></a><span class="lineno">  846</span>}</div>
 <div class="ttc" id="aclasstileray_html_a9da6e7e500fc5e5eef7d228190e9180c"><div class="ttname"><a href="classtileray.html#a9da6e7e500fc5e5eef7d228190e9180c">tileray::get_steps</a></div><div class="ttdeci">int get_steps() const</div><div class="ttdef"><b>Definition:</b> <a href="tileray_8cpp_source.html#l00237">tileray.cpp:237</a></div></div>
-<div class="ttc" id="aclassvehicle_html_a4d83e86fe57ec6126893a68f68c3c304"><div class="ttname"><a href="classvehicle.html#a4d83e86fe57ec6126893a68f68c3c304">vehicle::velocity</a></div><div class="ttdeci">int velocity</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8h_source.html#l01918">vehicle.h:1918</a></div></div>
-<div class="ttc" id="aclassvehicle_html_a8e021d197980bbed36ff3c43962df957"><div class="ttname"><a href="classvehicle.html#a8e021d197980bbed36ff3c43962df957">vehicle::face</a></div><div class="ttdeci">tileray face</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8h_source.html#l01948">vehicle.h:1948</a></div></div>
+<div class="ttc" id="aclassvehicle_html_a4d83e86fe57ec6126893a68f68c3c304"><div class="ttname"><a href="classvehicle.html#a4d83e86fe57ec6126893a68f68c3c304">vehicle::velocity</a></div><div class="ttdeci">int velocity</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8h_source.html#l01926">vehicle.h:1926</a></div></div>
+<div class="ttc" id="aclassvehicle_html_a8e021d197980bbed36ff3c43962df957"><div class="ttname"><a href="classvehicle.html#a8e021d197980bbed36ff3c43962df957">vehicle::face</a></div><div class="ttdeci">tileray face</div><div class="ttdef"><b>Definition:</b> <a href="vehicle_8h_source.html#l01956">vehicle.h:1956</a></div></div>
 <div class="ttc" id="astructnavigation__node_html"><div class="ttname"><a href="structnavigation__node.html">navigation_node</a></div><div class="ttdef"><b>Definition:</b> <a href="vehicle__autodrive_8cpp_source.html#l00224">vehicle_autodrive.cpp:224</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="vehicle_8h_source.html#l01948">vehicle::face</a>, <a class="el" href="tileray_8cpp_source.html#l00237">tileray::get_steps()</a>, <a class="el" href="hash__utils_8h_source.html#l00097">cata::hash64_detail::ret</a>, and <a class="el" href="vehicle_8h_source.html#l01918">vehicle::velocity</a>.</p>
+<p class="reference">References <a class="el" href="vehicle_8h_source.html#l01956">vehicle::face</a>, <a class="el" href="tileray_8cpp_source.html#l00237">tileray::get_steps()</a>, <a class="el" href="hash__utils_8h_source.html#l00097">cata::hash64_detail::ret</a>, and <a class="el" href="vehicle_8h_source.html#l01926">vehicle::velocity</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="vehicle__autodrive_8cpp_source.html#l00945">vehicle::autodrive_controller::compute_path()</a>.</p>
 
@@ -655,8 +655,9 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="vehicle__autodrive_8cpp_source.html#l00433">433</a> of file <a class="el" href="vehicle__autodrive_8cpp_source.html">vehicle_autodrive.cpp</a>.</p>
 <div class="fragment"><div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span>{</div>
-<div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span>    <span class="keywordflow">return</span> dir + <span class="keyword">static_cast&lt;</span><a class="code hl_enumeration" href="vehicle__autodrive_8cpp.html#a8a8ef3bbd9ed2a52dac59671e4bcb210">orientation</a><span class="keyword">&gt;</span>( <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>( rot ) *  <a class="code hl_variable" href="vehicle__autodrive_8cpp.html#a215f412e7c5d4e90bec0e8d2035793c9">NUM_ORIENTATIONS</a> / 4 );</div>
+<div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span>    <span class="keywordflow">return</span> dir + <span class="keyword">static_cast&lt;</span><a class="code hl_enumeration" href="vehicle__autodrive_8cpp.html#a8a8ef3bbd9ed2a52dac59671e4bcb210">orientation</a><span class="keyword">&gt;</span>( <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>( <a class="code hl_namespace" href="namespacerot.html">rot</a> ) *  <a class="code hl_variable" href="vehicle__autodrive_8cpp.html#a215f412e7c5d4e90bec0e8d2035793c9">NUM_ORIENTATIONS</a> / 4 );</div>
 <div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span>}</div>
+<div class="ttc" id="anamespacerot_html"><div class="ttname"><a href="namespacerot.html">rot</a></div><div class="ttdef"><b>Definition:</b> <a href="rot_8cpp_source.html#l00010">rot.cpp:11</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="vehicle__autodrive_8cpp_source.html#l00137">NUM_ORIENTATIONS</a>.</p>
 
@@ -828,7 +829,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="vehicle__autodrive_8cpp_source.html#l00438">438</a> of file <a class="el" href="vehicle__autodrive_8cpp_source.html">vehicle_autodrive.cpp</a>.</p>
 <div class="fragment"><div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span>{</div>
-<div class="line"><a id="l00440" name="l00440"></a><span class="lineno">  440</span>    <span class="keywordflow">return</span> dir = dir + rot;</div>
+<div class="line"><a id="l00440" name="l00440"></a><span class="lineno">  440</span>    <span class="keywordflow">return</span> dir = dir + <a class="code hl_namespace" href="namespacerot.html">rot</a>;</div>
 <div class="line"><a id="l00441" name="l00441"></a><span class="lineno">  441</span>}</div>
 </div><!-- fragment -->
 </div>
@@ -934,7 +935,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="vehicle__autodrive_8cpp_source.html#l00418">418</a> of file <a class="el" href="vehicle__autodrive_8cpp_source.html">vehicle_autodrive.cpp</a>.</p>
 <div class="fragment"><div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>{</div>
-<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><a class="code hl_enumeration" href="vehicle__autodrive_8cpp.html#a05cbb1ebfffc0786b82e54aafb09632a">quad_rotation</a><span class="keyword">&gt;</span>( ( 4 - <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>( rot ) ) % 4 );</div>
+<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><a class="code hl_enumeration" href="vehicle__autodrive_8cpp.html#a05cbb1ebfffc0786b82e54aafb09632a">quad_rotation</a><span class="keyword">&gt;</span>( ( 4 - <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>( <a class="code hl_namespace" href="namespacerot.html">rot</a> ) ) % 4 );</div>
 <div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span>}</div>
 </div><!-- fragment -->
 </div>
@@ -1077,7 +1078,7 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="vehicle__autodrive_8cpp.html#a05cbb1ebfffc0786b82e54aafb09632aa133137876e26fb4c4088bb8cccd04195">d0</a>, <a class="el" href="vehicle__autodrive_8cpp.html#a05cbb1ebfffc0786b82e54aafb09632aa79e0a18f5029dac0a8662dca40b4e79e">d180</a>, <a class="el" href="vehicle__autodrive_8cpp.html#a05cbb1ebfffc0786b82e54aafb09632aaa563e7ecf76c86ab5a38ef4229bd58bb">d270</a>, <a class="el" href="vehicle__autodrive_8cpp.html#a05cbb1ebfffc0786b82e54aafb09632aaef0b0b5b1f685fd8e36cb1c9bd1387b8">d90</a>, <a class="el" href="point_8h_source.html#l00038">point::x</a>, and <a class="el" href="point_8h_source.html#l00039">point::y</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="overmap_8cpp_source.html#l04178">om_direction::displace()</a>, <a class="el" href="veh__interact_8cpp_source.html#l02242">veh_interact::display_veh()</a>, <a class="el" href="input_8cpp_source.html#l00961">input_context::get_direction()</a>, <a class="el" href="vehicle_8cpp_source.html#l00769">vehicle::immediate_path()</a>, <a class="el" href="overmap_8cpp_source.html#l04168">om_direction::rotate()</a>, <a class="el" href="mapgen_8cpp_source.html#l05980">science_room()</a>, and <a class="el" href="vehicle__autodrive_8cpp_source.html#l00529">coord_transformation::transform()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="overmap_8cpp_source.html#l04178">om_direction::displace()</a>, <a class="el" href="veh__interact_8cpp_source.html#l02248">veh_interact::display_veh()</a>, <a class="el" href="input_8cpp_source.html#l00961">input_context::get_direction()</a>, <a class="el" href="vehicle_8cpp_source.html#l00770">vehicle::immediate_path()</a>, <a class="el" href="overmap_8cpp_source.html#l04168">om_direction::rotate()</a>, <a class="el" href="mapgen_8cpp_source.html#l05979">science_room()</a>, and <a class="el" href="vehicle__autodrive_8cpp_source.html#l00529">coord_transformation::transform()</a>.</p>
 
 </div>
 </div>
@@ -1585,7 +1586,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="vehicle__autodrive_8cpp.html">vehicle_autodrive.cpp</a></li>
-    <li class="footer">Generated on Mon Dec 26 2022 21:41:55 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Feb 21 2023 16:43:21 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

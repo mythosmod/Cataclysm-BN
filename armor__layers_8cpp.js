@@ -29,5 +29,6 @@ var armor__layers_8cpp =
     [ "flag_WATERPROOF", "armor__layers_8cpp.html#aef81e14ebf3e79df70f178bcf0f61241", null ],
     [ "get_item_penalties", "armor__layers_8cpp.html#a2e94b6058062109e294a70310b442785", null ],
     [ "items_cover_bp", "armor__layers_8cpp.html#ad04de11efcd4e6e4f19cda10ada6068a", null ],
+    [ "show_armor_layers_ui", "armor__layers_8cpp.html#a363564c14afce8766c48730a2e9f627d", null ],
     [ "ACT_ARMOR_LAYERS", "armor__layers_8cpp.html#ae518095eb6fc2c44425fb0796e548c1a", null ]
 ];

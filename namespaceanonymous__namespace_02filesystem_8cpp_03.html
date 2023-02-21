@@ -147,73 +147,77 @@ template&lt;typename Predicate &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="filesystem_8cpp_source.html#l00300">300</a> of file <a class="el" href="filesystem_8cpp_source.html">filesystem.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>{</div>
-<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>    std::deque&lt;std::string&gt;  directories;</div>
-<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>    <span class="keywordflow">if</span>( root_path.empty() ) {</div>
-<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>        directories.emplace_back( <span class="stringliteral">&quot;./&quot;</span> );</div>
-<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( <a class="code hl_function" href="string__utils_8cpp.html#a836373abd77ef65988abf2bcbff6929a">string_ends_with</a>( root_path, <span class="stringliteral">&quot;/&quot;</span> ) ) {</div>
-<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>        directories.emplace_back( root_path );</div>
-<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>        directories.emplace_back( root_path + <span class="stringliteral">&quot;/&quot;</span> );</div>
-<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>    }</div>
-<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>    std::vector&lt;std::string&gt; results;</div>
-<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span> </div>
-<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>    <span class="keywordflow">while</span>( !directories.empty() ) {</div>
-<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>        <span class="keyword">const</span> <span class="keyword">auto</span> path = <a class="code hl_function" href="namespaceavatar__action.html#a76ba74774376a08222b8cdcce08f7304">std::move</a>( directories.front() );</div>
-<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>        directories.pop_front();</div>
+<p class="definition">Definition at line <a class="el" href="filesystem_8cpp_source.html#l00301">301</a> of file <a class="el" href="filesystem_8cpp_source.html">filesystem.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>{</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>    std::deque&lt;std::string&gt;  directories;</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>    <span class="keywordflow">if</span>( root_path.empty() ) {</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>        directories.emplace_back( <span class="stringliteral">&quot;./&quot;</span> );</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( <a class="code hl_function" href="string__utils_8cpp.html#a836373abd77ef65988abf2bcbff6929a">string_ends_with</a>( root_path, <span class="stringliteral">&quot;/&quot;</span> ) ) {</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>        directories.emplace_back( root_path );</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>        directories.emplace_back( root_path + <span class="stringliteral">&quot;/&quot;</span> );</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>    }</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>    std::vector&lt;std::string&gt; results;</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>    <span class="keywordflow">if</span>( !<a class="code hl_function" href="filesystem_8cpp.html#a77e06a4b0a7360f651203318449de6db">dir_exist</a>( *directories.begin() ) ) {</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>        <span class="keywordflow">return</span> results;</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>    }</div>
 <div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span> </div>
-<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>        <span class="keyword">const</span> <span class="keyword">auto</span> n_dirs    = <span class="keyword">static_cast&lt;</span>std::ptrdiff_t<span class="keyword">&gt;</span>( directories.size() );</div>
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>        <span class="keyword">const</span> <span class="keyword">auto</span> n_results = <span class="keyword">static_cast&lt;</span>std::ptrdiff_t<span class="keyword">&gt;</span>( results.size() );</div>
-<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span> </div>
-<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>        <a class="code hl_function" href="namespaceanonymous__namespace_02filesystem_8cpp_03.html#a4b9f6aa9c9135b431541495df475138c">for_each_dir_entry</a>( path, [&amp;]( <span class="keyword">const</span> <a class="code hl_struct" href="structdirent.html">dirent</a> &amp; entry ) {</div>
-<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>            <span class="comment">// exclude special directories.</span></div>
-<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>            <span class="keywordflow">if</span>( <a class="code hl_function" href="namespaceanonymous__namespace_02filesystem_8cpp_03.html#ac124899f234232f7c5f11a306d23c483">is_special_dir</a>( entry ) ) {</div>
-<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>                <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>            }</div>
-<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span> </div>
-<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>            <span class="keyword">const</span> <span class="keyword">auto</span> full_path = path + entry.<a class="code hl_variable" href="structdirent.html#a2db57e8744079cc6ae87dd367919957a">d_name</a>;</div>
-<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span> </div>
-<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>            <span class="comment">// don&#39;t add files ending in &#39;~&#39;.</span></div>
-<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>            <span class="keywordflow">if</span>( full_path.back() == <span class="charliteral">&#39;~&#39;</span> ) {</div>
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>                return;</div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>            }</div>
-<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span> </div>
-<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>            <span class="comment">// add sub directories to recursive_search if requested</span></div>
-<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>            <span class="keyword">const</span> <span class="keyword">auto</span> is_dir = <a class="code hl_function" href="namespaceanonymous__namespace_02filesystem_8cpp_03.html#a1e4eec30651982ae1817a8f0417a7d08">is_directory</a>( entry, full_path );</div>
-<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>            <span class="keywordflow">if</span>( recursive_search &amp;&amp; is_dir ) {</div>
-<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>                directories.emplace_back( full_path + <span class="stringliteral">&quot;/&quot;</span> );</div>
-<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>            }</div>
-<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span> </div>
-<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>            <span class="comment">// check the file</span></div>
-<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>            <span class="keywordflow">if</span>( !predicate( entry, is_dir ) ) {</div>
-<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>                <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>            }</div>
-<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span> </div>
-<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>            results.emplace_back( full_path );</div>
-<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>        } );</div>
-<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span> </div>
-<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>        <span class="comment">// Keep files and directories to recurse ordered consistently</span></div>
-<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>        <span class="comment">// by sorting from the old end to the new end.</span></div>
-<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>        <span class="comment">// NOLINTNEXTLINE(cata-use-localized-sorting)</span></div>
-<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>        std::sort( std::begin( directories ) + n_dirs,    std::end( directories ) );</div>
-<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>        <span class="comment">// NOLINTNEXTLINE(cata-use-localized-sorting)</span></div>
-<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>        std::sort( std::begin( results )     + n_results, std::end( results ) );</div>
-<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>    }</div>
-<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span> </div>
-<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>    <span class="keywordflow">return</span> results;</div>
-<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>}</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>    <span class="keywordflow">while</span>( !directories.empty() ) {</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>        <span class="keyword">const</span> <span class="keyword">auto</span> path = <a class="code hl_function" href="namespaceavatar__action.html#a76ba74774376a08222b8cdcce08f7304">std::move</a>( directories.front() );</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>        directories.pop_front();</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span> </div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>        <span class="keyword">const</span> <span class="keyword">auto</span> n_dirs    = <span class="keyword">static_cast&lt;</span>std::ptrdiff_t<span class="keyword">&gt;</span>( directories.size() );</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>        <span class="keyword">const</span> <span class="keyword">auto</span> n_results = <span class="keyword">static_cast&lt;</span>std::ptrdiff_t<span class="keyword">&gt;</span>( results.size() );</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span> </div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>        <a class="code hl_function" href="namespaceanonymous__namespace_02filesystem_8cpp_03.html#a4b9f6aa9c9135b431541495df475138c">for_each_dir_entry</a>( path, [&amp;]( <span class="keyword">const</span> <a class="code hl_struct" href="structdirent.html">dirent</a> &amp; entry ) {</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>            <span class="comment">// exclude special directories.</span></div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>            <span class="keywordflow">if</span>( <a class="code hl_function" href="namespaceanonymous__namespace_02filesystem_8cpp_03.html#ac124899f234232f7c5f11a306d23c483">is_special_dir</a>( entry ) ) {</div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>                <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>            }</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span> </div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>            <span class="keyword">const</span> <span class="keyword">auto</span> full_path = path + entry.<a class="code hl_variable" href="structdirent.html#a2db57e8744079cc6ae87dd367919957a">d_name</a>;</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span> </div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>            <span class="comment">// don&#39;t add files ending in &#39;~&#39;.</span></div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>            <span class="keywordflow">if</span>( full_path.back() == <span class="charliteral">&#39;~&#39;</span> ) {</div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>                return;</div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>            }</div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span> </div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>            <span class="comment">// add sub directories to recursive_search if requested</span></div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>            <span class="keyword">const</span> <span class="keyword">auto</span> is_dir = <a class="code hl_function" href="namespaceanonymous__namespace_02filesystem_8cpp_03.html#a1e4eec30651982ae1817a8f0417a7d08">is_directory</a>( entry, full_path );</div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>            <span class="keywordflow">if</span>( recursive_search &amp;&amp; is_dir ) {</div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>                directories.emplace_back( full_path + <span class="stringliteral">&quot;/&quot;</span> );</div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>            }</div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span> </div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>            <span class="comment">// check the file</span></div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>            <span class="keywordflow">if</span>( !predicate( entry, is_dir ) ) {</div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>                <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>            }</div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span> </div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>            results.emplace_back( full_path );</div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>        } );</div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span> </div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>        <span class="comment">// Keep files and directories to recurse ordered consistently</span></div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>        <span class="comment">// by sorting from the old end to the new end.</span></div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>        <span class="comment">// NOLINTNEXTLINE(cata-use-localized-sorting)</span></div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>        std::sort( std::begin( directories ) + n_dirs,    std::end( directories ) );</div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>        <span class="comment">// NOLINTNEXTLINE(cata-use-localized-sorting)</span></div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>        std::sort( std::begin( results )     + n_results, std::end( results ) );</div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>    }</div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span> </div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>    <span class="keywordflow">return</span> results;</div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>}</div>
+<div class="ttc" id="afilesystem_8cpp_html_a77e06a4b0a7360f651203318449de6db"><div class="ttname"><a href="filesystem_8cpp.html#a77e06a4b0a7360f651203318449de6db">dir_exist</a></div><div class="ttdeci">bool dir_exist(const std::string &amp;path)</div><div class="ttdoc">Check if directory exists.</div><div class="ttdef"><b>Definition:</b> <a href="filesystem_8cpp_source.html#l00056">filesystem.cpp:56</a></div></div>
 <div class="ttc" id="anamespaceanonymous__namespace_02filesystem_8cpp_03_html_a1e4eec30651982ae1817a8f0417a7d08"><div class="ttname"><a href="namespaceanonymous__namespace_02filesystem_8cpp_03.html#a1e4eec30651982ae1817a8f0417a7d08">anonymous_namespace{filesystem.cpp}::is_directory</a></div><div class="ttdeci">bool is_directory(const dirent &amp;entry, const std::string &amp;full_path)</div><div class="ttdef"><b>Definition:</b> <a href="filesystem_8cpp_source.html#l00242">filesystem.cpp:242</a></div></div>
 <div class="ttc" id="anamespaceanonymous__namespace_02filesystem_8cpp_03_html_a4b9f6aa9c9135b431541495df475138c"><div class="ttname"><a href="namespaceanonymous__namespace_02filesystem_8cpp_03.html#a4b9f6aa9c9135b431541495df475138c">anonymous_namespace{filesystem.cpp}::for_each_dir_entry</a></div><div class="ttdeci">void for_each_dir_entry(const std::string &amp;path, Function function)</div><div class="ttdef"><b>Definition:</b> <a href="filesystem_8cpp_source.html#l00160">filesystem.cpp:160</a></div></div>
 <div class="ttc" id="anamespaceanonymous__namespace_02filesystem_8cpp_03_html_ac124899f234232f7c5f11a306d23c483"><div class="ttname"><a href="namespaceanonymous__namespace_02filesystem_8cpp_03.html#ac124899f234232f7c5f11a306d23c483">anonymous_namespace{filesystem.cpp}::is_special_dir</a></div><div class="ttdeci">bool is_special_dir(const dirent &amp;entry)</div><div class="ttdef"><b>Definition:</b> <a href="filesystem_8cpp_source.html#l00265">filesystem.cpp:265</a></div></div>
-<div class="ttc" id="anamespaceavatar__action_html_a76ba74774376a08222b8cdcce08f7304"><div class="ttname"><a href="namespaceavatar__action.html#a76ba74774376a08222b8cdcce08f7304">avatar_action::move</a></div><div class="ttdeci">bool move(avatar &amp;you, map &amp;m, const tripoint &amp;d)</div><div class="ttdef"><b>Definition:</b> <a href="avatar__action_8cpp_source.html#l00094">avatar_action.cpp:94</a></div></div>
+<div class="ttc" id="anamespaceavatar__action_html_a76ba74774376a08222b8cdcce08f7304"><div class="ttname"><a href="namespaceavatar__action.html#a76ba74774376a08222b8cdcce08f7304">avatar_action::move</a></div><div class="ttdeci">bool move(avatar &amp;you, map &amp;m, const tripoint &amp;d)</div><div class="ttdef"><b>Definition:</b> <a href="avatar__action_8cpp_source.html#l00096">avatar_action.cpp:96</a></div></div>
 <div class="ttc" id="astring__utils_8cpp_html_a836373abd77ef65988abf2bcbff6929a"><div class="ttname"><a href="string__utils_8cpp.html#a836373abd77ef65988abf2bcbff6929a">string_ends_with</a></div><div class="ttdeci">bool string_ends_with(const std::string &amp;s1, const std::string &amp;s2)</div><div class="ttdoc">Returns true if s1 ends with s2.</div><div class="ttdef"><b>Definition:</b> <a href="string__utils_8cpp_source.html#l00084">string_utils.cpp:84</a></div></div>
 <div class="ttc" id="astructdirent_html"><div class="ttname"><a href="structdirent.html">dirent</a></div><div class="ttdef"><b>Definition:</b> <a href="wdirent_8h_source.html#l00293">wdirent.h:293</a></div></div>
 <div class="ttc" id="astructdirent_html_a2db57e8744079cc6ae87dd367919957a"><div class="ttname"><a href="structdirent.html#a2db57e8744079cc6ae87dd367919957a">dirent::d_name</a></div><div class="ttdeci">char d_name[PATH_MAX+1]</div><div class="ttdef"><b>Definition:</b> <a href="wdirent_8h_source.html#l00310">wdirent.h:310</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="wdirent_8h_source.html#l00310">dirent::d_name</a>, <a class="el" href="filesystem_8cpp_source.html#l00160">for_each_dir_entry()</a>, <a class="el" href="filesystem_8cpp_source.html#l00242">is_directory()</a>, <a class="el" href="filesystem_8cpp_source.html#l00265">is_special_dir()</a>, <a class="el" href="avatar__action_8cpp_source.html#l00094">avatar_action::move()</a>, and <a class="el" href="string__utils_8cpp_source.html#l00084">string_ends_with()</a>.</p>
+<p class="reference">References <a class="el" href="wdirent_8h_source.html#l00310">dirent::d_name</a>, <a class="el" href="filesystem_8cpp_source.html#l00056">dir_exist()</a>, <a class="el" href="filesystem_8cpp_source.html#l00160">for_each_dir_entry()</a>, <a class="el" href="filesystem_8cpp_source.html#l00242">is_directory()</a>, <a class="el" href="filesystem_8cpp_source.html#l00265">is_special_dir()</a>, <a class="el" href="avatar__action_8cpp_source.html#l00096">avatar_action::move()</a>, and <a class="el" href="string__utils_8cpp_source.html#l00084">string_ends_with()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="filesystem_8cpp_source.html#l00377">get_directories_with()</a>, and <a class="el" href="filesystem_8cpp_source.html#l00362">get_files_from_path()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="filesystem_8cpp_source.html#l00381">get_directories_with()</a>, and <a class="el" href="filesystem_8cpp_source.html#l00366">get_files_from_path()</a>.</p>
 
 </div>
 </div>
@@ -274,7 +278,7 @@ template&lt;typename Function &gt; </div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="wdirent_8h_source.html#l00688">closedir()</a>, <a class="el" href="filesystem_8cpp_source.html#l00034">dbg</a>, <a class="el" href="wdirent_8h_source.html#l00559">opendir()</a>, <a class="el" href="wdirent_8h_source.html#l00597">readdir()</a>, and <a class="el" href="debug_8h.html#a157bb3f8cadfd404439ad477a19e8515a56525ae64d370c0b448ac0d60710ef17">Warn</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="filesystem_8cpp_source.html#l00300">find_file_if_bfs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="filesystem_8cpp_source.html#l00301">find_file_if_bfs()</a>.</p>
 
 </div>
 </div>
@@ -331,7 +335,7 @@ template&lt;typename Function &gt; </div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="wdirent_8h_source.html#l00307">dirent::d_type</a>, <a class="el" href="wdirent_8h_source.html#l00201">DT_DIR</a>, <a class="el" href="wdirent_8h_source.html#l00206">DT_LNK</a>, <a class="el" href="wdirent_8h_source.html#l00199">DT_UNKNOWN</a>, <a class="el" href="filesystem_8cpp_source.html#l00199">is_directory_stat()</a>, and <a class="el" href="filesystem_8cpp_source.html#l00183">resolve_path()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="filesystem_8cpp_source.html#l00300">find_file_if_bfs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="filesystem_8cpp_source.html#l00301">find_file_if_bfs()</a>.</p>
 
 </div>
 </div>
@@ -418,7 +422,7 @@ template&lt;typename Function &gt; </div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="wdirent_8h_source.html#l00310">dirent::d_name</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="filesystem_8cpp_source.html#l00300">find_file_if_bfs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="filesystem_8cpp_source.html#l00301">find_file_if_bfs()</a>.</p>
 
 </div>
 </div>
@@ -469,7 +473,7 @@ template&lt;typename Function &gt; </div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="wdirent_8h_source.html#l00310">dirent::d_name</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="filesystem_8cpp_source.html#l00377">get_directories_with()</a>, and <a class="el" href="filesystem_8cpp_source.html#l00362">get_files_from_path()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="filesystem_8cpp_source.html#l00381">get_directories_with()</a>, and <a class="el" href="filesystem_8cpp_source.html#l00366">get_files_from_path()</a>.</p>
 
 </div>
 </div>
@@ -548,7 +552,7 @@ template&lt;typename T , size_t N&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceanonymous__namespace_02filesystem_8cpp_03.html">anonymous_namespace{filesystem.cpp}</a></li>
-    <li class="footer">Generated on Mon Dec 26 2022 21:42:18 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Feb 21 2023 16:43:43 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -8,6 +8,6 @@ var magic__enchantment_8cpp =
     [ "enum_to_string< enchantment::has >", "magic__enchantment_8cpp.html#a9bcc99d0408430c93bbc80325d611b9b", null ],
     [ "is_set_value", "magic__enchantment_8cpp.html#aabd90917ed74421ca18812b8922c41a8", null ],
     [ "is_set_value", "magic__enchantment_8cpp.html#a5fcc56ba11bba20034a45fa200fb9db8", null ],
-    [ "migrate_ench_vals_enums", "magic__enchantment_8cpp.html#a544b9bce2807b621fed1d5f4de43b8e2", null ],
+    [ "migrate_ench_vals_enums", "magic__enchantment_8cpp.html#a0119747a323a0985ef2b9e163353e2a4", null ],
     [ "enchant_factory", "magic__enchantment_8cpp.html#ad87b7bcda1e52a08d07509bcaa2274db", null ]
 ];

@@ -112,6 +112,7 @@ $(document).ready(function(){initNavTree('vehicle_8cpp.html',''); initResizable(
 <code>#include &lt;unordered_set&gt;</code><br />
 <code>#include &quot;<a class="el" href="active__tile__data__def_8h_source.html">active_tile_data_def.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="avatar_8h_source.html">avatar.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="avatar__functions_8h_source.html">avatar_functions.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="bionics_8h_source.html">bionics.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="cata__utility_8h_source.html">cata_utility.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="character_8h_source.html">character.h</a>&quot;</code><br />
@@ -290,7 +291,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l04799">vehicle::power_parts()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l04791">vehicle::power_parts()</a>.</p>
 
 </div>
 </div>
@@ -340,30 +341,30 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vehicle_8cpp_source.html#l00793">793</a> of file <a class="el" href="vehicle_8cpp_source.html">vehicle.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00795" name="l00795"></a><span class="lineno">  795</span>{</div>
-<div class="line"><a id="l00796" name="l00796"></a><span class="lineno">  796</span>    <span class="keywordflow">if</span>( <a class="code hl_typedef" href="namespaceunits.html#a2c7fe916bf04655f9fb4f2abdc5d28ed">angle</a> &gt; 10.0_degrees &amp;&amp; <a class="code hl_typedef" href="namespaceunits.html#a2c7fe916bf04655f9fb4f2abdc5d28ed">angle</a> &lt;= 45.0_degrees ) {</div>
-<div class="line"><a id="l00797" name="l00797"></a><span class="lineno">  797</span>        <span class="keywordflow">return</span> reverse ? 4 : 1;</div>
-<div class="line"><a id="l00798" name="l00798"></a><span class="lineno">  798</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( <a class="code hl_typedef" href="namespaceunits.html#a2c7fe916bf04655f9fb4f2abdc5d28ed">angle</a> &gt; 45.0_degrees &amp;&amp; <a class="code hl_typedef" href="namespaceunits.html#a2c7fe916bf04655f9fb4f2abdc5d28ed">angle</a> &lt;= 90.0_degrees ) {</div>
-<div class="line"><a id="l00799" name="l00799"></a><span class="lineno">  799</span>        <span class="keywordflow">return</span> 3;</div>
-<div class="line"><a id="l00800" name="l00800"></a><span class="lineno">  800</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( <a class="code hl_typedef" href="namespaceunits.html#a2c7fe916bf04655f9fb4f2abdc5d28ed">angle</a> &gt; 90.0_degrees &amp;&amp; <a class="code hl_typedef" href="namespaceunits.html#a2c7fe916bf04655f9fb4f2abdc5d28ed">angle</a> &lt; 180.0_degrees ) {</div>
-<div class="line"><a id="l00801" name="l00801"></a><span class="lineno">  801</span>        <span class="keywordflow">return</span> reverse ? 1 : 4;</div>
-<div class="line"><a id="l00802" name="l00802"></a><span class="lineno">  802</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( angle &lt; -10.0_degrees &amp;&amp; angle &gt;= -45.0_degrees ) {</div>
-<div class="line"><a id="l00803" name="l00803"></a><span class="lineno">  803</span>        <span class="keywordflow">return</span> reverse ? -4 : -1;</div>
-<div class="line"><a id="l00804" name="l00804"></a><span class="lineno">  804</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( angle &lt; -45.0_degrees &amp;&amp; angle &gt;= -90.0_degrees ) {</div>
-<div class="line"><a id="l00805" name="l00805"></a><span class="lineno">  805</span>        <span class="keywordflow">return</span> -3;</div>
-<div class="line"><a id="l00806" name="l00806"></a><span class="lineno">  806</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( angle &lt; -90.0_degrees &amp;&amp; angle &gt; -180.0_degrees ) {</div>
-<div class="line"><a id="l00807" name="l00807"></a><span class="lineno">  807</span>        <span class="keywordflow">return</span> reverse ? -1 : -4;</div>
-<div class="line"><a id="l00808" name="l00808"></a><span class="lineno">  808</span>        <span class="comment">// edge case of being exactly on the button for the target.</span></div>
-<div class="line"><a id="l00809" name="l00809"></a><span class="lineno">  809</span>        <span class="comment">// just keep driving, the next path point will be picked up.</span></div>
-<div class="line"><a id="l00810" name="l00810"></a><span class="lineno">  810</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( ( <a class="code hl_typedef" href="namespaceunits.html#a2c7fe916bf04655f9fb4f2abdc5d28ed">angle</a> == 180_degrees || <a class="code hl_typedef" href="namespaceunits.html#a2c7fe916bf04655f9fb4f2abdc5d28ed">angle</a> == -180_degrees ) &amp;&amp; vehpos == target ) {</div>
-<div class="line"><a id="l00811" name="l00811"></a><span class="lineno">  811</span>        <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a id="l00812" name="l00812"></a><span class="lineno">  812</span>    }</div>
-<div class="line"><a id="l00813" name="l00813"></a><span class="lineno">  813</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a id="l00814" name="l00814"></a><span class="lineno">  814</span>}</div>
+<p class="definition">Definition at line <a class="el" href="vehicle_8cpp_source.html#l00794">794</a> of file <a class="el" href="vehicle_8cpp_source.html">vehicle.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00796" name="l00796"></a><span class="lineno">  796</span>{</div>
+<div class="line"><a id="l00797" name="l00797"></a><span class="lineno">  797</span>    <span class="keywordflow">if</span>( <a class="code hl_typedef" href="namespaceunits.html#a2c7fe916bf04655f9fb4f2abdc5d28ed">angle</a> &gt; 10.0_degrees &amp;&amp; <a class="code hl_typedef" href="namespaceunits.html#a2c7fe916bf04655f9fb4f2abdc5d28ed">angle</a> &lt;= 45.0_degrees ) {</div>
+<div class="line"><a id="l00798" name="l00798"></a><span class="lineno">  798</span>        <span class="keywordflow">return</span> reverse ? 4 : 1;</div>
+<div class="line"><a id="l00799" name="l00799"></a><span class="lineno">  799</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( <a class="code hl_typedef" href="namespaceunits.html#a2c7fe916bf04655f9fb4f2abdc5d28ed">angle</a> &gt; 45.0_degrees &amp;&amp; <a class="code hl_typedef" href="namespaceunits.html#a2c7fe916bf04655f9fb4f2abdc5d28ed">angle</a> &lt;= 90.0_degrees ) {</div>
+<div class="line"><a id="l00800" name="l00800"></a><span class="lineno">  800</span>        <span class="keywordflow">return</span> 3;</div>
+<div class="line"><a id="l00801" name="l00801"></a><span class="lineno">  801</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( <a class="code hl_typedef" href="namespaceunits.html#a2c7fe916bf04655f9fb4f2abdc5d28ed">angle</a> &gt; 90.0_degrees &amp;&amp; <a class="code hl_typedef" href="namespaceunits.html#a2c7fe916bf04655f9fb4f2abdc5d28ed">angle</a> &lt; 180.0_degrees ) {</div>
+<div class="line"><a id="l00802" name="l00802"></a><span class="lineno">  802</span>        <span class="keywordflow">return</span> reverse ? 1 : 4;</div>
+<div class="line"><a id="l00803" name="l00803"></a><span class="lineno">  803</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( angle &lt; -10.0_degrees &amp;&amp; angle &gt;= -45.0_degrees ) {</div>
+<div class="line"><a id="l00804" name="l00804"></a><span class="lineno">  804</span>        <span class="keywordflow">return</span> reverse ? -4 : -1;</div>
+<div class="line"><a id="l00805" name="l00805"></a><span class="lineno">  805</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( angle &lt; -45.0_degrees &amp;&amp; angle &gt;= -90.0_degrees ) {</div>
+<div class="line"><a id="l00806" name="l00806"></a><span class="lineno">  806</span>        <span class="keywordflow">return</span> -3;</div>
+<div class="line"><a id="l00807" name="l00807"></a><span class="lineno">  807</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( angle &lt; -90.0_degrees &amp;&amp; angle &gt; -180.0_degrees ) {</div>
+<div class="line"><a id="l00808" name="l00808"></a><span class="lineno">  808</span>        <span class="keywordflow">return</span> reverse ? -1 : -4;</div>
+<div class="line"><a id="l00809" name="l00809"></a><span class="lineno">  809</span>        <span class="comment">// edge case of being exactly on the button for the target.</span></div>
+<div class="line"><a id="l00810" name="l00810"></a><span class="lineno">  810</span>        <span class="comment">// just keep driving, the next path point will be picked up.</span></div>
+<div class="line"><a id="l00811" name="l00811"></a><span class="lineno">  811</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( ( <a class="code hl_typedef" href="namespaceunits.html#a2c7fe916bf04655f9fb4f2abdc5d28ed">angle</a> == 180_degrees || <a class="code hl_typedef" href="namespaceunits.html#a2c7fe916bf04655f9fb4f2abdc5d28ed">angle</a> == -180_degrees ) &amp;&amp; vehpos == target ) {</div>
+<div class="line"><a id="l00812" name="l00812"></a><span class="lineno">  812</span>        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00813" name="l00813"></a><span class="lineno">  813</span>    }</div>
+<div class="line"><a id="l00814" name="l00814"></a><span class="lineno">  814</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00815" name="l00815"></a><span class="lineno">  815</span>}</div>
 <div class="ttc" id="anamespaceunits_html_a2c7fe916bf04655f9fb4f2abdc5d28ed"><div class="ttname"><a href="namespaceunits.html#a2c7fe916bf04655f9fb4f2abdc5d28ed">units::angle</a></div><div class="ttdeci">quantity&lt; double, angle_in_radians_tag &gt; angle</div><div class="ttdef"><b>Definition:</b> <a href="units__angle_8h_source.html#l00017">units_angle.h:17</a></div></div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l05935">vehicle::do_towing_move()</a>, and <a class="el" href="vehicle_8cpp_source.html#l00816">vehicle::drive_to_local_target()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l05927">vehicle::do_towing_move()</a>, and <a class="el" href="vehicle_8cpp_source.html#l00817">vehicle::drive_to_local_target()</a>.</p>
 
 </div>
 </div>
@@ -391,25 +392,25 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vehicle_8cpp_source.html#l06829">6829</a> of file <a class="el" href="vehicle_8cpp_source.html">vehicle.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l06830" name="l06830"></a><span class="lineno"> 6830</span>{</div>
+<p class="definition">Definition at line <a class="el" href="vehicle_8cpp_source.html#l06821">6821</a> of file <a class="el" href="vehicle_8cpp_source.html">vehicle.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l06822" name="l06822"></a><span class="lineno"> 6822</span>{</div>
+<div class="line"><a id="l06823" name="l06823"></a><span class="lineno"> 6823</span> </div>
+<div class="line"><a id="l06824" name="l06824"></a><span class="lineno"> 6824</span>    <span class="keyword">const</span> <a class="code hl_struct" href="structtripoint.html">tripoint</a> smp = <a class="code hl_function" href="coordinate__conversions_8cpp.html#aab2861adbce30d229bf852df21a98c1a">ms_to_sm_copy</a>( real_global_pos );</div>
+<div class="line"><a id="l06825" name="l06825"></a><span class="lineno"> 6825</span>    <span class="keyword">const</span> <a class="code hl_struct" href="structpoint.html">point</a> p( <a class="code hl_function" href="cata__utility_8cpp.html#aa6f470a02d08b2537d7ac06d3cabaf45">modulo</a>( real_global_pos.<a class="code hl_variable" href="structtripoint.html#affdc0d5b75024cbfacd208a495def3dc">x</a>, <a class="code hl_variable" href="game__constants_8h.html#a39fd8a829e3dc412646663066dbdb54c">SEEX</a> ), <a class="code hl_function" href="cata__utility_8cpp.html#aa6f470a02d08b2537d7ac06d3cabaf45">modulo</a>( real_global_pos.<a class="code hl_variable" href="structtripoint.html#a89f6c0a16e2bfd7ce4f1f1d20404c4d7">y</a>, <a class="code hl_variable" href="game__constants_8h.html#a4cfa35de359af17f7bc6c2a424339eb5">SEEY</a> ) );</div>
+<div class="line"><a id="l06826" name="l06826"></a><span class="lineno"> 6826</span>    <span class="keyword">auto</span> <a class="code hl_variable" href="namespacecoords.html#a7457d0a4e8c8e6407a2c0ee89d275962">sm</a> = <a class="code hl_variable" href="mapbuffer_8cpp.html#abc900a0fe17d282e0e4717540106e608">MAPBUFFER</a>.<a class="code hl_function" href="classmapbuffer.html#a84df91661b328060eb44b4e4eaba0dcd">lookup_submap</a>( smp );</div>
+<div class="line"><a id="l06827" name="l06827"></a><span class="lineno"> 6827</span>    <span class="keywordflow">if</span>( <a class="code hl_variable" href="namespacecoords.html#a7457d0a4e8c8e6407a2c0ee89d275962">sm</a> == <span class="keyword">nullptr</span> ) {</div>
+<div class="line"><a id="l06828" name="l06828"></a><span class="lineno"> 6828</span>        <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;is_sm_tile_outside(): couldn&#39;t find submap %d,%d,%d&quot;</span>, smp.<a class="code hl_variable" href="structtripoint.html#affdc0d5b75024cbfacd208a495def3dc">x</a>, smp.<a class="code hl_variable" href="structtripoint.html#a89f6c0a16e2bfd7ce4f1f1d20404c4d7">y</a>, smp.<a class="code hl_variable" href="structtripoint.html#ac944c0e329b5eba2602f7a52f66bbbb9">z</a> );</div>
+<div class="line"><a id="l06829" name="l06829"></a><span class="lineno"> 6829</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l06830" name="l06830"></a><span class="lineno"> 6830</span>    }</div>
 <div class="line"><a id="l06831" name="l06831"></a><span class="lineno"> 6831</span> </div>
-<div class="line"><a id="l06832" name="l06832"></a><span class="lineno"> 6832</span>    <span class="keyword">const</span> <a class="code hl_struct" href="structtripoint.html">tripoint</a> smp = <a class="code hl_function" href="coordinate__conversions_8cpp.html#aab2861adbce30d229bf852df21a98c1a">ms_to_sm_copy</a>( real_global_pos );</div>
-<div class="line"><a id="l06833" name="l06833"></a><span class="lineno"> 6833</span>    <span class="keyword">const</span> <a class="code hl_struct" href="structpoint.html">point</a> p( <a class="code hl_function" href="cata__utility_8cpp.html#aa6f470a02d08b2537d7ac06d3cabaf45">modulo</a>( real_global_pos.<a class="code hl_variable" href="structtripoint.html#affdc0d5b75024cbfacd208a495def3dc">x</a>, <a class="code hl_variable" href="game__constants_8h.html#a39fd8a829e3dc412646663066dbdb54c">SEEX</a> ), <a class="code hl_function" href="cata__utility_8cpp.html#aa6f470a02d08b2537d7ac06d3cabaf45">modulo</a>( real_global_pos.<a class="code hl_variable" href="structtripoint.html#a89f6c0a16e2bfd7ce4f1f1d20404c4d7">y</a>, <a class="code hl_variable" href="game__constants_8h.html#a4cfa35de359af17f7bc6c2a424339eb5">SEEY</a> ) );</div>
-<div class="line"><a id="l06834" name="l06834"></a><span class="lineno"> 6834</span>    <span class="keyword">auto</span> <a class="code hl_variable" href="namespacecoords.html#a7457d0a4e8c8e6407a2c0ee89d275962">sm</a> = <a class="code hl_variable" href="mapbuffer_8cpp.html#abc900a0fe17d282e0e4717540106e608">MAPBUFFER</a>.<a class="code hl_function" href="classmapbuffer.html#a84df91661b328060eb44b4e4eaba0dcd">lookup_submap</a>( smp );</div>
-<div class="line"><a id="l06835" name="l06835"></a><span class="lineno"> 6835</span>    <span class="keywordflow">if</span>( <a class="code hl_variable" href="namespacecoords.html#a7457d0a4e8c8e6407a2c0ee89d275962">sm</a> == <span class="keyword">nullptr</span> ) {</div>
-<div class="line"><a id="l06836" name="l06836"></a><span class="lineno"> 6836</span>        <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;is_sm_tile_outside(): couldn&#39;t find submap %d,%d,%d&quot;</span>, smp.<a class="code hl_variable" href="structtripoint.html#affdc0d5b75024cbfacd208a495def3dc">x</a>, smp.<a class="code hl_variable" href="structtripoint.html#a89f6c0a16e2bfd7ce4f1f1d20404c4d7">y</a>, smp.<a class="code hl_variable" href="structtripoint.html#ac944c0e329b5eba2602f7a52f66bbbb9">z</a> );</div>
-<div class="line"><a id="l06837" name="l06837"></a><span class="lineno"> 6837</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l06838" name="l06838"></a><span class="lineno"> 6838</span>    }</div>
-<div class="line"><a id="l06839" name="l06839"></a><span class="lineno"> 6839</span> </div>
-<div class="line"><a id="l06840" name="l06840"></a><span class="lineno"> 6840</span>    <span class="keywordflow">if</span>( p.x &lt; 0 || p.x &gt;= <a class="code hl_variable" href="game__constants_8h.html#a39fd8a829e3dc412646663066dbdb54c">SEEX</a> || p.y &lt; 0 || p.y &gt;= <a class="code hl_variable" href="game__constants_8h.html#a4cfa35de359af17f7bc6c2a424339eb5">SEEY</a> ) {</div>
-<div class="line"><a id="l06841" name="l06841"></a><span class="lineno"> 6841</span>        <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;err %d,%d&quot;</span>, p.x, p.y );</div>
-<div class="line"><a id="l06842" name="l06842"></a><span class="lineno"> 6842</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l06843" name="l06843"></a><span class="lineno"> 6843</span>    }</div>
-<div class="line"><a id="l06844" name="l06844"></a><span class="lineno"> 6844</span> </div>
-<div class="line"><a id="l06845" name="l06845"></a><span class="lineno"> 6845</span>    <span class="keywordflow">return</span> !( <a class="code hl_variable" href="namespacecoords.html#a7457d0a4e8c8e6407a2c0ee89d275962">sm</a>-&gt;get_ter( p ).obj().has_flag( <a class="code hl_enumvalue" href="mapdata_8h.html#aa04d037303ea30193f7cf0cd82304258a526400ab16c5537e7cbbe1a1a400ae6e">TFLAG_INDOORS</a> ) ||</div>
-<div class="line"><a id="l06846" name="l06846"></a><span class="lineno"> 6846</span>              <a class="code hl_variable" href="namespacecoords.html#a7457d0a4e8c8e6407a2c0ee89d275962">sm</a>-&gt;get_furn( p ).obj().has_flag( <a class="code hl_enumvalue" href="mapdata_8h.html#aa04d037303ea30193f7cf0cd82304258a526400ab16c5537e7cbbe1a1a400ae6e">TFLAG_INDOORS</a> ) );</div>
-<div class="line"><a id="l06847" name="l06847"></a><span class="lineno"> 6847</span>}</div>
+<div class="line"><a id="l06832" name="l06832"></a><span class="lineno"> 6832</span>    <span class="keywordflow">if</span>( p.x &lt; 0 || p.x &gt;= <a class="code hl_variable" href="game__constants_8h.html#a39fd8a829e3dc412646663066dbdb54c">SEEX</a> || p.y &lt; 0 || p.y &gt;= <a class="code hl_variable" href="game__constants_8h.html#a4cfa35de359af17f7bc6c2a424339eb5">SEEY</a> ) {</div>
+<div class="line"><a id="l06833" name="l06833"></a><span class="lineno"> 6833</span>        <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;err %d,%d&quot;</span>, p.x, p.y );</div>
+<div class="line"><a id="l06834" name="l06834"></a><span class="lineno"> 6834</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l06835" name="l06835"></a><span class="lineno"> 6835</span>    }</div>
+<div class="line"><a id="l06836" name="l06836"></a><span class="lineno"> 6836</span> </div>
+<div class="line"><a id="l06837" name="l06837"></a><span class="lineno"> 6837</span>    <span class="keywordflow">return</span> !( <a class="code hl_variable" href="namespacecoords.html#a7457d0a4e8c8e6407a2c0ee89d275962">sm</a>-&gt;get_ter( p ).obj().has_flag( <a class="code hl_enumvalue" href="mapdata_8h.html#aa04d037303ea30193f7cf0cd82304258a526400ab16c5537e7cbbe1a1a400ae6e">TFLAG_INDOORS</a> ) ||</div>
+<div class="line"><a id="l06838" name="l06838"></a><span class="lineno"> 6838</span>              <a class="code hl_variable" href="namespacecoords.html#a7457d0a4e8c8e6407a2c0ee89d275962">sm</a>-&gt;get_furn( p ).obj().has_flag( <a class="code hl_enumvalue" href="mapdata_8h.html#aa04d037303ea30193f7cf0cd82304258a526400ab16c5537e7cbbe1a1a400ae6e">TFLAG_INDOORS</a> ) );</div>
+<div class="line"><a id="l06839" name="l06839"></a><span class="lineno"> 6839</span>}</div>
 <div class="ttc" id="acata__utility_8cpp_html_aa6f470a02d08b2537d7ac06d3cabaf45"><div class="ttname"><a href="cata__utility_8cpp.html#aa6f470a02d08b2537d7ac06d3cabaf45">modulo</a></div><div class="ttdeci">int modulo(int v, int m)</div><div class="ttdef"><b>Definition:</b> <a href="cata__utility_8cpp_source.html#l00050">cata_utility.cpp:50</a></div></div>
 <div class="ttc" id="aclassmapbuffer_html_a84df91661b328060eb44b4e4eaba0dcd"><div class="ttname"><a href="classmapbuffer.html#a84df91661b328060eb44b4e4eaba0dcd">mapbuffer::lookup_submap</a></div><div class="ttdeci">submap * lookup_submap(const tripoint &amp;p)</div><div class="ttdoc">Get a submap stored in this buffer.</div><div class="ttdef"><b>Definition:</b> <a href="mapbuffer_8cpp_source.html#l00088">mapbuffer.cpp:88</a></div></div>
 <div class="ttc" id="acoordinate__conversions_8cpp_html_aab2861adbce30d229bf852df21a98c1a"><div class="ttname"><a href="coordinate__conversions_8cpp.html#aab2861adbce30d229bf852df21a98c1a">ms_to_sm_copy</a></div><div class="ttdeci">point ms_to_sm_copy(const point &amp;p)</div><div class="ttdef"><b>Definition:</b> <a href="coordinate__conversions_8cpp_source.html#l00125">coordinate_conversions.cpp:125</a></div></div>
@@ -427,7 +428,7 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="debug_8h_source.html#l00074">debugmsg</a>, <a class="el" href="mapbuffer_8cpp_source.html#l00088">mapbuffer::lookup_submap()</a>, <a class="el" href="mapbuffer_8cpp_source.html#l00040">MAPBUFFER</a>, <a class="el" href="cata__utility_8cpp_source.html#l00050">modulo()</a>, <a class="el" href="coordinate__conversions_8cpp_source.html#l00125">ms_to_sm_copy()</a>, <a class="el" href="game__constants_8h_source.html#l00035">SEEX</a>, <a class="el" href="game__constants_8h_source.html#l00036">SEEY</a>, <a class="el" href="coordinates_8h_source.html#l00031">coords::sm</a>, <a class="el" href="mapdata_8h_source.html#l00291">TFLAG_INDOORS</a>, <a class="el" href="point_8h_source.html#l00038">point::x</a>, <a class="el" href="point_8h_source.html#l00150">tripoint::x</a>, <a class="el" href="point_8h_source.html#l00039">point::y</a>, <a class="el" href="point_8h_source.html#l00151">tripoint::y</a>, and <a class="el" href="point_8h_source.html#l00152">tripoint::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l04694">vehicle::total_solar_epower_w()</a>, <a class="el" href="vehicle_8cpp_source.html#l04716">vehicle::total_wind_epower_w()</a>, and <a class="el" href="vehicle_8cpp_source.html#l06849">vehicle::update_time()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l04686">vehicle::total_solar_epower_w()</a>, <a class="el" href="vehicle_8cpp_source.html#l04708">vehicle::total_wind_epower_w()</a>, and <a class="el" href="vehicle_8cpp_source.html#l06841">vehicle::update_time()</a>.</p>
 
 </div>
 </div>
@@ -455,30 +456,30 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vehicle_8cpp_source.html#l06809">6809</a> of file <a class="el" href="vehicle_8cpp_source.html">vehicle.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l06810" name="l06810"></a><span class="lineno"> 6810</span>{</div>
+<p class="definition">Definition at line <a class="el" href="vehicle_8cpp_source.html#l06801">6801</a> of file <a class="el" href="vehicle_8cpp_source.html">vehicle.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l06802" name="l06802"></a><span class="lineno"> 6802</span>{</div>
+<div class="line"><a id="l06803" name="l06803"></a><span class="lineno"> 6803</span> </div>
+<div class="line"><a id="l06804" name="l06804"></a><span class="lineno"> 6804</span>    <span class="keyword">const</span> <a class="code hl_struct" href="structtripoint.html">tripoint</a> smp = <a class="code hl_function" href="coordinate__conversions_8cpp.html#aab2861adbce30d229bf852df21a98c1a">ms_to_sm_copy</a>( real_global_pos );</div>
+<div class="line"><a id="l06805" name="l06805"></a><span class="lineno"> 6805</span>    <span class="keyword">const</span> <a class="code hl_struct" href="structpoint.html">point</a> p( <a class="code hl_function" href="cata__utility_8cpp.html#aa6f470a02d08b2537d7ac06d3cabaf45">modulo</a>( real_global_pos.<a class="code hl_variable" href="structtripoint.html#affdc0d5b75024cbfacd208a495def3dc">x</a>, <a class="code hl_variable" href="game__constants_8h.html#a39fd8a829e3dc412646663066dbdb54c">SEEX</a> ), <a class="code hl_function" href="cata__utility_8cpp.html#aa6f470a02d08b2537d7ac06d3cabaf45">modulo</a>( real_global_pos.<a class="code hl_variable" href="structtripoint.html#a89f6c0a16e2bfd7ce4f1f1d20404c4d7">y</a>, <a class="code hl_variable" href="game__constants_8h.html#a4cfa35de359af17f7bc6c2a424339eb5">SEEY</a> ) );</div>
+<div class="line"><a id="l06806" name="l06806"></a><span class="lineno"> 6806</span>    <span class="keyword">auto</span> <a class="code hl_variable" href="namespacecoords.html#a7457d0a4e8c8e6407a2c0ee89d275962">sm</a> = <a class="code hl_variable" href="mapbuffer_8cpp.html#abc900a0fe17d282e0e4717540106e608">MAPBUFFER</a>.<a class="code hl_function" href="classmapbuffer.html#a84df91661b328060eb44b4e4eaba0dcd">lookup_submap</a>( smp );</div>
+<div class="line"><a id="l06807" name="l06807"></a><span class="lineno"> 6807</span>    <span class="keywordflow">if</span>( <a class="code hl_variable" href="namespacecoords.html#a7457d0a4e8c8e6407a2c0ee89d275962">sm</a> == <span class="keyword">nullptr</span> ) {</div>
+<div class="line"><a id="l06808" name="l06808"></a><span class="lineno"> 6808</span>        <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;is_sm_tile_outside(): couldn&#39;t find submap %d,%d,%d&quot;</span>, smp.<a class="code hl_variable" href="structtripoint.html#affdc0d5b75024cbfacd208a495def3dc">x</a>, smp.<a class="code hl_variable" href="structtripoint.html#a89f6c0a16e2bfd7ce4f1f1d20404c4d7">y</a>, smp.<a class="code hl_variable" href="structtripoint.html#ac944c0e329b5eba2602f7a52f66bbbb9">z</a> );</div>
+<div class="line"><a id="l06809" name="l06809"></a><span class="lineno"> 6809</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l06810" name="l06810"></a><span class="lineno"> 6810</span>    }</div>
 <div class="line"><a id="l06811" name="l06811"></a><span class="lineno"> 6811</span> </div>
-<div class="line"><a id="l06812" name="l06812"></a><span class="lineno"> 6812</span>    <span class="keyword">const</span> <a class="code hl_struct" href="structtripoint.html">tripoint</a> smp = <a class="code hl_function" href="coordinate__conversions_8cpp.html#aab2861adbce30d229bf852df21a98c1a">ms_to_sm_copy</a>( real_global_pos );</div>
-<div class="line"><a id="l06813" name="l06813"></a><span class="lineno"> 6813</span>    <span class="keyword">const</span> <a class="code hl_struct" href="structpoint.html">point</a> p( <a class="code hl_function" href="cata__utility_8cpp.html#aa6f470a02d08b2537d7ac06d3cabaf45">modulo</a>( real_global_pos.<a class="code hl_variable" href="structtripoint.html#affdc0d5b75024cbfacd208a495def3dc">x</a>, <a class="code hl_variable" href="game__constants_8h.html#a39fd8a829e3dc412646663066dbdb54c">SEEX</a> ), <a class="code hl_function" href="cata__utility_8cpp.html#aa6f470a02d08b2537d7ac06d3cabaf45">modulo</a>( real_global_pos.<a class="code hl_variable" href="structtripoint.html#a89f6c0a16e2bfd7ce4f1f1d20404c4d7">y</a>, <a class="code hl_variable" href="game__constants_8h.html#a4cfa35de359af17f7bc6c2a424339eb5">SEEY</a> ) );</div>
-<div class="line"><a id="l06814" name="l06814"></a><span class="lineno"> 6814</span>    <span class="keyword">auto</span> <a class="code hl_variable" href="namespacecoords.html#a7457d0a4e8c8e6407a2c0ee89d275962">sm</a> = <a class="code hl_variable" href="mapbuffer_8cpp.html#abc900a0fe17d282e0e4717540106e608">MAPBUFFER</a>.<a class="code hl_function" href="classmapbuffer.html#a84df91661b328060eb44b4e4eaba0dcd">lookup_submap</a>( smp );</div>
-<div class="line"><a id="l06815" name="l06815"></a><span class="lineno"> 6815</span>    <span class="keywordflow">if</span>( <a class="code hl_variable" href="namespacecoords.html#a7457d0a4e8c8e6407a2c0ee89d275962">sm</a> == <span class="keyword">nullptr</span> ) {</div>
-<div class="line"><a id="l06816" name="l06816"></a><span class="lineno"> 6816</span>        <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;is_sm_tile_outside(): couldn&#39;t find submap %d,%d,%d&quot;</span>, smp.<a class="code hl_variable" href="structtripoint.html#affdc0d5b75024cbfacd208a495def3dc">x</a>, smp.<a class="code hl_variable" href="structtripoint.html#a89f6c0a16e2bfd7ce4f1f1d20404c4d7">y</a>, smp.<a class="code hl_variable" href="structtripoint.html#ac944c0e329b5eba2602f7a52f66bbbb9">z</a> );</div>
-<div class="line"><a id="l06817" name="l06817"></a><span class="lineno"> 6817</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l06818" name="l06818"></a><span class="lineno"> 6818</span>    }</div>
-<div class="line"><a id="l06819" name="l06819"></a><span class="lineno"> 6819</span> </div>
-<div class="line"><a id="l06820" name="l06820"></a><span class="lineno"> 6820</span>    <span class="keywordflow">if</span>( p.x &lt; 0 || p.x &gt;= <a class="code hl_variable" href="game__constants_8h.html#a39fd8a829e3dc412646663066dbdb54c">SEEX</a> || p.y &lt; 0 || p.y &gt;= <a class="code hl_variable" href="game__constants_8h.html#a4cfa35de359af17f7bc6c2a424339eb5">SEEY</a> ) {</div>
-<div class="line"><a id="l06821" name="l06821"></a><span class="lineno"> 6821</span>        <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;err %d,%d&quot;</span>, p.x, p.y );</div>
-<div class="line"><a id="l06822" name="l06822"></a><span class="lineno"> 6822</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l06823" name="l06823"></a><span class="lineno"> 6823</span>    }</div>
-<div class="line"><a id="l06824" name="l06824"></a><span class="lineno"> 6824</span> </div>
-<div class="line"><a id="l06825" name="l06825"></a><span class="lineno"> 6825</span>    <span class="keywordflow">return</span> ( <a class="code hl_variable" href="namespacecoords.html#a7457d0a4e8c8e6407a2c0ee89d275962">sm</a>-&gt;get_ter( p ).obj().has_flag( <a class="code hl_enumvalue" href="mapdata_8h.html#aa04d037303ea30193f7cf0cd82304258a4abde628233e47d94c647c43f939df1b">TFLAG_CURRENT</a> ) ||</div>
-<div class="line"><a id="l06826" name="l06826"></a><span class="lineno"> 6826</span>             <a class="code hl_variable" href="namespacecoords.html#a7457d0a4e8c8e6407a2c0ee89d275962">sm</a>-&gt;get_furn( p ).obj().has_flag( <a class="code hl_enumvalue" href="mapdata_8h.html#aa04d037303ea30193f7cf0cd82304258a4abde628233e47d94c647c43f939df1b">TFLAG_CURRENT</a> ) );</div>
-<div class="line"><a id="l06827" name="l06827"></a><span class="lineno"> 6827</span>}</div>
+<div class="line"><a id="l06812" name="l06812"></a><span class="lineno"> 6812</span>    <span class="keywordflow">if</span>( p.x &lt; 0 || p.x &gt;= <a class="code hl_variable" href="game__constants_8h.html#a39fd8a829e3dc412646663066dbdb54c">SEEX</a> || p.y &lt; 0 || p.y &gt;= <a class="code hl_variable" href="game__constants_8h.html#a4cfa35de359af17f7bc6c2a424339eb5">SEEY</a> ) {</div>
+<div class="line"><a id="l06813" name="l06813"></a><span class="lineno"> 6813</span>        <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;err %d,%d&quot;</span>, p.x, p.y );</div>
+<div class="line"><a id="l06814" name="l06814"></a><span class="lineno"> 6814</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l06815" name="l06815"></a><span class="lineno"> 6815</span>    }</div>
+<div class="line"><a id="l06816" name="l06816"></a><span class="lineno"> 6816</span> </div>
+<div class="line"><a id="l06817" name="l06817"></a><span class="lineno"> 6817</span>    <span class="keywordflow">return</span> ( <a class="code hl_variable" href="namespacecoords.html#a7457d0a4e8c8e6407a2c0ee89d275962">sm</a>-&gt;get_ter( p ).obj().has_flag( <a class="code hl_enumvalue" href="mapdata_8h.html#aa04d037303ea30193f7cf0cd82304258a4abde628233e47d94c647c43f939df1b">TFLAG_CURRENT</a> ) ||</div>
+<div class="line"><a id="l06818" name="l06818"></a><span class="lineno"> 6818</span>             <a class="code hl_variable" href="namespacecoords.html#a7457d0a4e8c8e6407a2c0ee89d275962">sm</a>-&gt;get_furn( p ).obj().has_flag( <a class="code hl_enumvalue" href="mapdata_8h.html#aa04d037303ea30193f7cf0cd82304258a4abde628233e47d94c647c43f939df1b">TFLAG_CURRENT</a> ) );</div>
+<div class="line"><a id="l06819" name="l06819"></a><span class="lineno"> 6819</span>}</div>
 <div class="ttc" id="amapdata_8h_html_aa04d037303ea30193f7cf0cd82304258a4abde628233e47d94c647c43f939df1b"><div class="ttname"><a href="mapdata_8h.html#aa04d037303ea30193f7cf0cd82304258a4abde628233e47d94c647c43f939df1b">TFLAG_CURRENT</a></div><div class="ttdeci">@ TFLAG_CURRENT</div><div class="ttdef"><b>Definition:</b> <a href="mapdata_8h_source.html#l00302">mapdata.h:302</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="debug_8h_source.html#l00074">debugmsg</a>, <a class="el" href="mapbuffer_8cpp_source.html#l00088">mapbuffer::lookup_submap()</a>, <a class="el" href="mapbuffer_8cpp_source.html#l00040">MAPBUFFER</a>, <a class="el" href="cata__utility_8cpp_source.html#l00050">modulo()</a>, <a class="el" href="coordinate__conversions_8cpp_source.html#l00125">ms_to_sm_copy()</a>, <a class="el" href="game__constants_8h_source.html#l00035">SEEX</a>, <a class="el" href="game__constants_8h_source.html#l00036">SEEY</a>, <a class="el" href="coordinates_8h_source.html#l00031">coords::sm</a>, <a class="el" href="mapdata_8h_source.html#l00302">TFLAG_CURRENT</a>, <a class="el" href="point_8h_source.html#l00038">point::x</a>, <a class="el" href="point_8h_source.html#l00150">tripoint::x</a>, <a class="el" href="point_8h_source.html#l00039">point::y</a>, <a class="el" href="point_8h_source.html#l00151">tripoint::y</a>, and <a class="el" href="point_8h_source.html#l00152">tripoint::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l04741">vehicle::total_water_wheel_epower_w()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l04733">vehicle::total_water_wheel_epower_w()</a>.</p>
 
 </div>
 </div>
@@ -506,7 +507,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l03969">vehicle::coeff_air_drag()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l03970">vehicle::coeff_air_drag()</a>.</p>
 
 </div>
 </div>
@@ -534,7 +535,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l03969">vehicle::coeff_air_drag()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l03970">vehicle::coeff_air_drag()</a>.</p>
 
 </div>
 </div>
@@ -562,7 +563,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l00317">vehicle::add_missing_frames()</a>, <a class="el" href="vehicle_8cpp_source.html#l06528">vehicle::break_off()</a>, <a class="el" href="vehicle_8cpp_source.html#l01271">vehicle::can_mount()</a>, <a class="el" href="vehicle_8cpp_source.html#l01388">vehicle::can_unmount()</a>, <a class="el" href="vehicle_8cpp_source.html#l03969">vehicle::coeff_air_drag()</a>, <a class="el" href="vehicle_8cpp_source.html#l04227">vehicle::coeff_water_drag()</a>, <a class="el" href="vehicle_8cpp_source.html#l06442">vehicle::damage_all()</a>, <a class="el" href="vehicle_8cpp_source.html#l02117">vehicle::find_and_split_vehicles()</a>, <a class="el" href="vehicle_8cpp_source.html#l01239">vehicle::has_structural_part()</a>, <a class="el" href="vehicle_8cpp_source.html#l01254">vehicle::is_structural_part_removed()</a>, <a class="el" href="vehicle_8cpp_source.html#l01654">vehicle::merge_rackable_vehicle()</a>, <a class="el" href="vehicle_8cpp_source.html#l00936">vehicle::smash()</a>, <a class="el" href="vehicle_8cpp_source.html#l02222">vehicle::split_vehicles()</a>, and <a class="el" href="vehicle_8cpp_source.html#l04320">vehicle::sufficient_wheel_config()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l00318">vehicle::add_missing_frames()</a>, <a class="el" href="vehicle_8cpp_source.html#l06520">vehicle::break_off()</a>, <a class="el" href="vehicle_8cpp_source.html#l01272">vehicle::can_mount()</a>, <a class="el" href="vehicle_8cpp_source.html#l01389">vehicle::can_unmount()</a>, <a class="el" href="vehicle_8cpp_source.html#l03970">vehicle::coeff_air_drag()</a>, <a class="el" href="vehicle_8cpp_source.html#l04228">vehicle::coeff_water_drag()</a>, <a class="el" href="vehicle_8cpp_source.html#l06434">vehicle::damage_all()</a>, <a class="el" href="vehicle_8cpp_source.html#l02118">vehicle::find_and_split_vehicles()</a>, <a class="el" href="vehicle_8cpp_source.html#l01240">vehicle::has_structural_part()</a>, <a class="el" href="vehicle_8cpp_source.html#l01255">vehicle::is_structural_part_removed()</a>, <a class="el" href="vehicle_8cpp_source.html#l01655">vehicle::merge_rackable_vehicle()</a>, <a class="el" href="vehicle_8cpp_source.html#l00937">vehicle::smash()</a>, <a class="el" href="vehicle_8cpp_source.html#l02223">vehicle::split_vehicles()</a>, and <a class="el" href="vehicle_8cpp_source.html#l04321">vehicle::sufficient_wheel_config()</a>.</p>
 
 </div>
 </div>
@@ -612,43 +613,43 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vehicle_8cpp_source.html#l03611">3611</a> of file <a class="el" href="vehicle_8cpp_source.html">vehicle.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l03612" name="l03612"></a><span class="lineno"> 3612</span>{</div>
-<div class="line"><a id="l03613" name="l03613"></a><span class="lineno"> 3613</span>    <span class="keywordtype">double</span> p = -<a class="code hl_variable" href="magic_8cpp.html#aa93a189fb7bbbf87be54bcc7bd11bb6f">b</a> / ( 3 * <a class="code hl_variable" href="magic_8cpp.html#a188caae18b60b66f9f44214c7e28ac1f">a</a> );</div>
-<div class="line"><a id="l03614" name="l03614"></a><span class="lineno"> 3614</span>    <span class="keywordtype">double</span> q = p * p * p + ( <a class="code hl_variable" href="magic_8cpp.html#aa93a189fb7bbbf87be54bcc7bd11bb6f">b</a> * <a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a> - 3 * <a class="code hl_variable" href="magic_8cpp.html#a188caae18b60b66f9f44214c7e28ac1f">a</a> * d ) / ( 6 * <a class="code hl_variable" href="magic_8cpp.html#a188caae18b60b66f9f44214c7e28ac1f">a</a> * <a class="code hl_variable" href="magic_8cpp.html#a188caae18b60b66f9f44214c7e28ac1f">a</a> );</div>
-<div class="line"><a id="l03615" name="l03615"></a><span class="lineno"> 3615</span>    <span class="keywordtype">double</span> r = <a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a> / ( 3 * <a class="code hl_variable" href="magic_8cpp.html#a188caae18b60b66f9f44214c7e28ac1f">a</a> );</div>
-<div class="line"><a id="l03616" name="l03616"></a><span class="lineno"> 3616</span>    <span class="keywordtype">double</span> t = r - p * p;</div>
-<div class="line"><a id="l03617" name="l03617"></a><span class="lineno"> 3617</span>    <span class="keywordtype">double</span> tricky_bit = q * q + t * t * t;</div>
-<div class="line"><a id="l03618" name="l03618"></a><span class="lineno"> 3618</span>    <span class="keywordflow">if</span>( tricky_bit &lt; 0 ) {</div>
-<div class="line"><a id="l03619" name="l03619"></a><span class="lineno"> 3619</span>        <span class="keywordtype">double</span> cr = 1.0 / 3.0; <span class="comment">// approximate the cube root of a complex number</span></div>
-<div class="line"><a id="l03620" name="l03620"></a><span class="lineno"> 3620</span>        std::complex&lt;double&gt; q_complex( q );</div>
-<div class="line"><a id="l03621" name="l03621"></a><span class="lineno"> 3621</span>        std::complex&lt;double&gt; tricky_complex( std::sqrt( std::complex&lt;double&gt;( tricky_bit ) ) );</div>
-<div class="line"><a id="l03622" name="l03622"></a><span class="lineno"> 3622</span>        std::complex&lt;double&gt; term1( std::pow( q_complex + tricky_complex, cr ) );</div>
-<div class="line"><a id="l03623" name="l03623"></a><span class="lineno"> 3623</span>        std::complex&lt;double&gt; term2( std::pow( q_complex - tricky_complex, cr ) );</div>
-<div class="line"><a id="l03624" name="l03624"></a><span class="lineno"> 3624</span>        std::complex&lt;double&gt; term_sum( term1 + term2 );</div>
-<div class="line"><a id="l03625" name="l03625"></a><span class="lineno"> 3625</span> </div>
-<div class="line"><a id="l03626" name="l03626"></a><span class="lineno"> 3626</span>        <span class="keywordflow">if</span>( imag( term_sum ) &lt; 2 ) {</div>
-<div class="line"><a id="l03627" name="l03627"></a><span class="lineno"> 3627</span>            <span class="keywordflow">return</span> p + real( term_sum );</div>
-<div class="line"><a id="l03628" name="l03628"></a><span class="lineno"> 3628</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l03629" name="l03629"></a><span class="lineno"> 3629</span>            <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;cubic solution returned imaginary values&quot;</span> );</div>
-<div class="line"><a id="l03630" name="l03630"></a><span class="lineno"> 3630</span>            <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a id="l03631" name="l03631"></a><span class="lineno"> 3631</span>        }</div>
-<div class="line"><a id="l03632" name="l03632"></a><span class="lineno"> 3632</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l03633" name="l03633"></a><span class="lineno"> 3633</span>        <span class="keywordtype">double</span> tricky_final = std::sqrt( tricky_bit );</div>
-<div class="line"><a id="l03634" name="l03634"></a><span class="lineno"> 3634</span>        <span class="keywordtype">double</span> term1_part = q + tricky_final;</div>
-<div class="line"><a id="l03635" name="l03635"></a><span class="lineno"> 3635</span>        <span class="keywordtype">double</span> term2_part = q - tricky_final;</div>
-<div class="line"><a id="l03636" name="l03636"></a><span class="lineno"> 3636</span>        <span class="keywordtype">double</span> term1 = std::cbrt( term1_part );</div>
-<div class="line"><a id="l03637" name="l03637"></a><span class="lineno"> 3637</span>        <span class="keywordtype">double</span> term2 = std::cbrt( term2_part );</div>
-<div class="line"><a id="l03638" name="l03638"></a><span class="lineno"> 3638</span>        <span class="keywordflow">return</span> p + term1 + term2;</div>
-<div class="line"><a id="l03639" name="l03639"></a><span class="lineno"> 3639</span>    }</div>
-<div class="line"><a id="l03640" name="l03640"></a><span class="lineno"> 3640</span>}</div>
+<p class="definition">Definition at line <a class="el" href="vehicle_8cpp_source.html#l03612">3612</a> of file <a class="el" href="vehicle_8cpp_source.html">vehicle.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l03613" name="l03613"></a><span class="lineno"> 3613</span>{</div>
+<div class="line"><a id="l03614" name="l03614"></a><span class="lineno"> 3614</span>    <span class="keywordtype">double</span> p = -<a class="code hl_variable" href="magic_8cpp.html#aa93a189fb7bbbf87be54bcc7bd11bb6f">b</a> / ( 3 * <a class="code hl_variable" href="magic_8cpp.html#a188caae18b60b66f9f44214c7e28ac1f">a</a> );</div>
+<div class="line"><a id="l03615" name="l03615"></a><span class="lineno"> 3615</span>    <span class="keywordtype">double</span> q = p * p * p + ( <a class="code hl_variable" href="magic_8cpp.html#aa93a189fb7bbbf87be54bcc7bd11bb6f">b</a> * <a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a> - 3 * <a class="code hl_variable" href="magic_8cpp.html#a188caae18b60b66f9f44214c7e28ac1f">a</a> * d ) / ( 6 * <a class="code hl_variable" href="magic_8cpp.html#a188caae18b60b66f9f44214c7e28ac1f">a</a> * <a class="code hl_variable" href="magic_8cpp.html#a188caae18b60b66f9f44214c7e28ac1f">a</a> );</div>
+<div class="line"><a id="l03616" name="l03616"></a><span class="lineno"> 3616</span>    <span class="keywordtype">double</span> r = <a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a> / ( 3 * <a class="code hl_variable" href="magic_8cpp.html#a188caae18b60b66f9f44214c7e28ac1f">a</a> );</div>
+<div class="line"><a id="l03617" name="l03617"></a><span class="lineno"> 3617</span>    <span class="keywordtype">double</span> t = r - p * p;</div>
+<div class="line"><a id="l03618" name="l03618"></a><span class="lineno"> 3618</span>    <span class="keywordtype">double</span> tricky_bit = q * q + t * t * t;</div>
+<div class="line"><a id="l03619" name="l03619"></a><span class="lineno"> 3619</span>    <span class="keywordflow">if</span>( tricky_bit &lt; 0 ) {</div>
+<div class="line"><a id="l03620" name="l03620"></a><span class="lineno"> 3620</span>        <span class="keywordtype">double</span> cr = 1.0 / 3.0; <span class="comment">// approximate the cube root of a complex number</span></div>
+<div class="line"><a id="l03621" name="l03621"></a><span class="lineno"> 3621</span>        std::complex&lt;double&gt; q_complex( q );</div>
+<div class="line"><a id="l03622" name="l03622"></a><span class="lineno"> 3622</span>        std::complex&lt;double&gt; tricky_complex( std::sqrt( std::complex&lt;double&gt;( tricky_bit ) ) );</div>
+<div class="line"><a id="l03623" name="l03623"></a><span class="lineno"> 3623</span>        std::complex&lt;double&gt; term1( std::pow( q_complex + tricky_complex, cr ) );</div>
+<div class="line"><a id="l03624" name="l03624"></a><span class="lineno"> 3624</span>        std::complex&lt;double&gt; term2( std::pow( q_complex - tricky_complex, cr ) );</div>
+<div class="line"><a id="l03625" name="l03625"></a><span class="lineno"> 3625</span>        std::complex&lt;double&gt; term_sum( term1 + term2 );</div>
+<div class="line"><a id="l03626" name="l03626"></a><span class="lineno"> 3626</span> </div>
+<div class="line"><a id="l03627" name="l03627"></a><span class="lineno"> 3627</span>        <span class="keywordflow">if</span>( imag( term_sum ) &lt; 2 ) {</div>
+<div class="line"><a id="l03628" name="l03628"></a><span class="lineno"> 3628</span>            <span class="keywordflow">return</span> p + real( term_sum );</div>
+<div class="line"><a id="l03629" name="l03629"></a><span class="lineno"> 3629</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l03630" name="l03630"></a><span class="lineno"> 3630</span>            <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;cubic solution returned imaginary values&quot;</span> );</div>
+<div class="line"><a id="l03631" name="l03631"></a><span class="lineno"> 3631</span>            <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l03632" name="l03632"></a><span class="lineno"> 3632</span>        }</div>
+<div class="line"><a id="l03633" name="l03633"></a><span class="lineno"> 3633</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l03634" name="l03634"></a><span class="lineno"> 3634</span>        <span class="keywordtype">double</span> tricky_final = std::sqrt( tricky_bit );</div>
+<div class="line"><a id="l03635" name="l03635"></a><span class="lineno"> 3635</span>        <span class="keywordtype">double</span> term1_part = q + tricky_final;</div>
+<div class="line"><a id="l03636" name="l03636"></a><span class="lineno"> 3636</span>        <span class="keywordtype">double</span> term2_part = q - tricky_final;</div>
+<div class="line"><a id="l03637" name="l03637"></a><span class="lineno"> 3637</span>        <span class="keywordtype">double</span> term1 = std::cbrt( term1_part );</div>
+<div class="line"><a id="l03638" name="l03638"></a><span class="lineno"> 3638</span>        <span class="keywordtype">double</span> term2 = std::cbrt( term2_part );</div>
+<div class="line"><a id="l03639" name="l03639"></a><span class="lineno"> 3639</span>        <span class="keywordflow">return</span> p + term1 + term2;</div>
+<div class="line"><a id="l03640" name="l03640"></a><span class="lineno"> 3640</span>    }</div>
+<div class="line"><a id="l03641" name="l03641"></a><span class="lineno"> 3641</span>}</div>
 <div class="ttc" id="amagic_8cpp_html_a188caae18b60b66f9f44214c7e28ac1f"><div class="ttname"><a href="magic_8cpp.html#a188caae18b60b66f9f44214c7e28ac1f">a</a></div><div class="ttdeci">constexpr double a</div><div class="ttdef"><b>Definition:</b> <a href="magic_8cpp_source.html#l01030">magic.cpp:1030</a></div></div>
 <div class="ttc" id="amagic_8cpp_html_a6753ecfe87da659675b18c2f81d6ec12"><div class="ttname"><a href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a></div><div class="ttdeci">constexpr double c</div><div class="ttdef"><b>Definition:</b> <a href="magic_8cpp_source.html#l01032">magic.cpp:1032</a></div></div>
 <div class="ttc" id="amagic_8cpp_html_aa93a189fb7bbbf87be54bcc7bd11bb6f"><div class="ttname"><a href="magic_8cpp.html#aa93a189fb7bbbf87be54bcc7bd11bb6f">b</a></div><div class="ttdeci">constexpr double b</div><div class="ttdef"><b>Definition:</b> <a href="magic_8cpp_source.html#l01031">magic.cpp:1031</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="magic_8cpp_source.html#l01030">a</a>, <a class="el" href="magic_8cpp_source.html#l01031">b</a>, <a class="el" href="magic_8cpp_source.html#l01032">c</a>, and <a class="el" href="debug_8h_source.html#l00074">debugmsg</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l03682">vehicle::max_ground_velocity()</a>, and <a class="el" href="vehicle_8cpp_source.html#l03747">vehicle::safe_ground_velocity()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l03683">vehicle::max_ground_velocity()</a>, and <a class="el" href="vehicle_8cpp_source.html#l03748">vehicle::safe_ground_velocity()</a>.</p>
 
 </div>
 </div>
@@ -676,18 +677,18 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vehicle_8cpp_source.html#l03939">3939</a> of file <a class="el" href="vehicle_8cpp_source.html">vehicle.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l03940" name="l03940"></a><span class="lineno"> 3940</span>{</div>
-<div class="line"><a id="l03941" name="l03941"></a><span class="lineno"> 3941</span>    <span class="keywordflow">if</span>( tiles &lt; 1 ) {</div>
-<div class="line"><a id="l03942" name="l03942"></a><span class="lineno"> 3942</span>        <span class="keywordflow">return</span> 0.1;</div>
-<div class="line"><a id="l03943" name="l03943"></a><span class="lineno"> 3943</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( tiles &lt; 6 ) {</div>
-<div class="line"><a id="l03944" name="l03944"></a><span class="lineno"> 3944</span>        <span class="keywordflow">return</span> 0.5 + 0.4 * tiles;</div>
-<div class="line"><a id="l03945" name="l03945"></a><span class="lineno"> 3945</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l03946" name="l03946"></a><span class="lineno"> 3946</span>        <span class="keywordflow">return</span> 2.5 + 0.15 * ( tiles - 5 );</div>
-<div class="line"><a id="l03947" name="l03947"></a><span class="lineno"> 3947</span>    }</div>
-<div class="line"><a id="l03948" name="l03948"></a><span class="lineno"> 3948</span>}</div>
+<p class="definition">Definition at line <a class="el" href="vehicle_8cpp_source.html#l03940">3940</a> of file <a class="el" href="vehicle_8cpp_source.html">vehicle.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l03941" name="l03941"></a><span class="lineno"> 3941</span>{</div>
+<div class="line"><a id="l03942" name="l03942"></a><span class="lineno"> 3942</span>    <span class="keywordflow">if</span>( tiles &lt; 1 ) {</div>
+<div class="line"><a id="l03943" name="l03943"></a><span class="lineno"> 3943</span>        <span class="keywordflow">return</span> 0.1;</div>
+<div class="line"><a id="l03944" name="l03944"></a><span class="lineno"> 3944</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( tiles &lt; 6 ) {</div>
+<div class="line"><a id="l03945" name="l03945"></a><span class="lineno"> 3945</span>        <span class="keywordflow">return</span> 0.5 + 0.4 * tiles;</div>
+<div class="line"><a id="l03946" name="l03946"></a><span class="lineno"> 3946</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l03947" name="l03947"></a><span class="lineno"> 3947</span>        <span class="keywordflow">return</span> 2.5 + 0.15 * ( tiles - 5 );</div>
+<div class="line"><a id="l03948" name="l03948"></a><span class="lineno"> 3948</span>    }</div>
+<div class="line"><a id="l03949" name="l03949"></a><span class="lineno"> 3949</span>}</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l03969">vehicle::coeff_air_drag()</a>, and <a class="el" href="vehicle_8cpp_source.html#l04227">vehicle::coeff_water_drag()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l03970">vehicle::coeff_air_drag()</a>, and <a class="el" href="vehicle_8cpp_source.html#l04228">vehicle::coeff_water_drag()</a>.</p>
 
 </div>
 </div>
@@ -716,7 +717,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l00151">DefaultRemovePartHandler::removed()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l00152">DefaultRemovePartHandler::removed()</a>.</p>
 
 </div>
 </div>
@@ -732,9 +733,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vehicle_8cpp_source.html#l00114">114</a> of file <a class="el" href="vehicle_8cpp_source.html">vehicle.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vehicle_8cpp_source.html#l00115">115</a> of file <a class="el" href="vehicle_8cpp_source.html">vehicle.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l01217">vehicle::power_to_energy_bat()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l01218">vehicle::power_to_energy_bat()</a>.</p>
 
 </div>
 </div>
@@ -762,7 +763,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l04580">vehicle::consume_fuel()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l04572">vehicle::consume_fuel()</a>.</p>
 
 </div>
 </div>
@@ -790,7 +791,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l00683">vehicle::activate_animal_follow()</a>, <a class="el" href="vehicle_8cpp_source.html#l06627">vehicle::damage_direct()</a>, <a class="el" href="vehicle_8cpp_source.html#l01149">vehicle::part_vpower_w()</a>, and <a class="el" href="vehicle_8cpp_source.html#l04464">vehicle::steering_effectiveness()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l00684">vehicle::activate_animal_follow()</a>, <a class="el" href="vehicle_8cpp_source.html#l06619">vehicle::damage_direct()</a>, <a class="el" href="vehicle_8cpp_source.html#l01150">vehicle::part_vpower_w()</a>, and <a class="el" href="vehicle_8cpp_source.html#l04456">vehicle::steering_effectiveness()</a>.</p>
 
 </div>
 </div>
@@ -844,7 +845,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l03477">vehicle::basic_consumption()</a>, <a class="el" href="vehicle_8cpp_source.html#l04520">vehicle::fuel_usage()</a>, and <a class="el" href="vehicle_8cpp_source.html#l03824">vehicle::noise_and_smoke()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l03478">vehicle::basic_consumption()</a>, <a class="el" href="vehicle_8cpp_source.html#l04512">vehicle::fuel_usage()</a>, and <a class="el" href="vehicle_8cpp_source.html#l03825">vehicle::noise_and_smoke()</a>.</p>
 
 </div>
 </div>
@@ -872,7 +873,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l03824">vehicle::noise_and_smoke()</a>, and <a class="el" href="vehicle_8cpp_source.html#l03513">vehicle::total_power_w()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l03825">vehicle::noise_and_smoke()</a>, and <a class="el" href="vehicle_8cpp_source.html#l03514">vehicle::total_power_w()</a>.</p>
 
 </div>
 </div>
@@ -900,7 +901,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l00386">vehicle::init_state()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l00387">vehicle::init_state()</a>.</p>
 
 </div>
 </div>
@@ -916,9 +917,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vehicle_8cpp_source.html#l03033">3033</a> of file <a class="el" href="vehicle_8cpp_source.html">vehicle.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vehicle_8cpp_source.html#l03034">3034</a> of file <a class="el" href="vehicle_8cpp_source.html">vehicle.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l03063">vehicle::coord_translate()</a>, and <a class="el" href="vehicle_8cpp_source.html#l03087">vehicle::coord_translate_reverse()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l03064">vehicle::coord_translate()</a>, and <a class="el" href="vehicle_8cpp_source.html#l03088">vehicle::coord_translate_reverse()</a>.</p>
 
 </div>
 </div>
@@ -934,9 +935,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vehicle_8cpp_source.html#l03034">3034</a> of file <a class="el" href="vehicle_8cpp_source.html">vehicle.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vehicle_8cpp_source.html#l03035">3035</a> of file <a class="el" href="vehicle_8cpp_source.html">vehicle.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l03063">vehicle::coord_translate()</a>, and <a class="el" href="vehicle_8cpp_source.html#l03087">vehicle::coord_translate_reverse()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l03064">vehicle::coord_translate()</a>, and <a class="el" href="vehicle_8cpp_source.html#l03088">vehicle::coord_translate_reverse()</a>.</p>
 
 </div>
 </div>
@@ -964,7 +965,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l00683">vehicle::activate_animal_follow()</a>, <a class="el" href="vehicle_8cpp_source.html#l05213">vehicle::idle()</a>, <a class="el" href="vehicle_8cpp_source.html#l01149">vehicle::part_vpower_w()</a>, <a class="el" href="vehicle_8cpp_source.html#l00277">vehicle::player_in_control()</a>, and <a class="el" href="vehicle_8cpp_source.html#l04464">vehicle::steering_effectiveness()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l00684">vehicle::activate_animal_follow()</a>, <a class="el" href="vehicle_8cpp_source.html#l05205">vehicle::idle()</a>, <a class="el" href="vehicle_8cpp_source.html#l01150">vehicle::part_vpower_w()</a>, <a class="el" href="vehicle_8cpp_source.html#l00278">vehicle::player_in_control()</a>, and <a class="el" href="vehicle_8cpp_source.html#l04456">vehicle::steering_effectiveness()</a>.</p>
 
 </div>
 </div>
@@ -992,7 +993,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l03477">vehicle::basic_consumption()</a>, <a class="el" href="vehicle_8cpp_source.html#l05106">vehicle::charge_battery()</a>, <a class="el" href="vehicle_8cpp_source.html#l04580">vehicle::consume_fuel()</a>, <a class="el" href="vehicle_8cpp_source.html#l03426">vehicle::drain()</a>, <a class="el" href="vehicle_8cpp_source.html#l04551">vehicle::drain_energy()</a>, <a class="el" href="vehicle_8cpp_source.html#l03359">vehicle::fuel_left()</a>, <a class="el" href="vehicle_8cpp_source.html#l01112">vehicle::has_security_working()</a>, <a class="el" href="vehicle_8cpp_source.html#l03734">vehicle::max_reverse_velocity()</a>, <a class="el" href="vehicle_8cpp_source.html#l04799">vehicle::power_parts()</a>, and <a class="el" href="vehicle_8cpp_source.html#l05294">vehicle::slow_leak()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l03478">vehicle::basic_consumption()</a>, <a class="el" href="vehicle_8cpp_source.html#l05098">vehicle::charge_battery()</a>, <a class="el" href="vehicle_8cpp_source.html#l04572">vehicle::consume_fuel()</a>, <a class="el" href="vehicle_8cpp_source.html#l03427">vehicle::drain()</a>, <a class="el" href="vehicle_8cpp_source.html#l04543">vehicle::drain_energy()</a>, <a class="el" href="vehicle_8cpp_source.html#l03360">vehicle::fuel_left()</a>, <a class="el" href="vehicle_8cpp_source.html#l01113">vehicle::has_security_working()</a>, <a class="el" href="vehicle_8cpp_source.html#l03735">vehicle::max_reverse_velocity()</a>, <a class="el" href="vehicle_8cpp_source.html#l04791">vehicle::power_parts()</a>, and <a class="el" href="vehicle_8cpp_source.html#l05286">vehicle::slow_leak()</a>.</p>
 
 </div>
 </div>
@@ -1020,7 +1021,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l00669">vehicle::activate_magical_follow()</a>, and <a class="el" href="vehicle_8cpp_source.html#l05213">vehicle::idle()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l00670">vehicle::activate_magical_follow()</a>, and <a class="el" href="vehicle_8cpp_source.html#l05205">vehicle::idle()</a>.</p>
 
 </div>
 </div>
@@ -1048,7 +1049,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l04580">vehicle::consume_fuel()</a>, <a class="el" href="vehicle_8cpp_source.html#l03359">vehicle::fuel_left()</a>, <a class="el" href="vehicle_8cpp_source.html#l05213">vehicle::idle()</a>, and <a class="el" href="vehicle_8cpp_source.html#l00386">vehicle::init_state()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l04572">vehicle::consume_fuel()</a>, <a class="el" href="vehicle_8cpp_source.html#l03360">vehicle::fuel_left()</a>, <a class="el" href="vehicle_8cpp_source.html#l05205">vehicle::idle()</a>, and <a class="el" href="vehicle_8cpp_source.html#l00387">vehicle::init_state()</a>.</p>
 
 </div>
 </div>
@@ -1076,7 +1077,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l05294">vehicle::slow_leak()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l05286">vehicle::slow_leak()</a>.</p>
 
 </div>
 </div>
@@ -1104,7 +1105,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l05213">vehicle::idle()</a>, and <a class="el" href="vehicle_8cpp_source.html#l01149">vehicle::part_vpower_w()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l05205">vehicle::idle()</a>, and <a class="el" href="vehicle_8cpp_source.html#l01150">vehicle::part_vpower_w()</a>.</p>
 
 </div>
 </div>
@@ -1120,7 +1121,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vehicle_8cpp_source.html#l03032">3032</a> of file <a class="el" href="vehicle_8cpp_source.html">vehicle.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vehicle_8cpp_source.html#l03033">3033</a> of file <a class="el" href="vehicle_8cpp_source.html">vehicle.cpp</a>.</p>
 
 </div>
 </div>
@@ -1148,7 +1149,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l00386">vehicle::init_state()</a>, and <a class="el" href="vehicle_8cpp_source.html#l06849">vehicle::update_time()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l00387">vehicle::init_state()</a>, and <a class="el" href="vehicle_8cpp_source.html#l06841">vehicle::update_time()</a>.</p>
 
 </div>
 </div>
@@ -1176,7 +1177,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l00386">vehicle::init_state()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l00387">vehicle::init_state()</a>.</p>
 
 </div>
 </div>
@@ -1204,7 +1205,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l06849">vehicle::update_time()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l06841">vehicle::update_time()</a>.</p>
 
 </div>
 </div>
@@ -1232,7 +1233,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l06849">vehicle::update_time()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l06841">vehicle::update_time()</a>.</p>
 
 </div>
 </div>
@@ -1260,7 +1261,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l06849">vehicle::update_time()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l06841">vehicle::update_time()</a>.</p>
 
 </div>
 </div>
@@ -1284,9 +1285,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vehicle_8cpp_source.html#l03951">3951</a> of file <a class="el" href="vehicle_8cpp_source.html">vehicle.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vehicle_8cpp_source.html#l03952">3952</a> of file <a class="el" href="vehicle_8cpp_source.html">vehicle.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l03969">vehicle::coeff_air_drag()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l03970">vehicle::coeff_air_drag()</a>.</p>
 
 </div>
 </div>
@@ -1310,9 +1311,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vehicle_8cpp_source.html#l03950">3950</a> of file <a class="el" href="vehicle_8cpp_source.html">vehicle.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vehicle_8cpp_source.html#l03951">3951</a> of file <a class="el" href="vehicle_8cpp_source.html">vehicle.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l03969">vehicle::coeff_air_drag()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l03970">vehicle::coeff_air_drag()</a>.</p>
 
 </div>
 </div>
@@ -1356,7 +1357,7 @@ Variables</h2></td></tr>
 <div class="ttc" id="anamespaceunits_html_a1bd284bde31c6b9124add6c8362c8a90"><div class="ttname"><a href="namespaceunits.html#a1bd284bde31c6b9124add6c8362c8a90">units::to_radians</a></div><div class="ttdeci">constexpr double to_radians(const units::angle v)</div><div class="ttdef"><b>Definition:</b> <a href="units__angle_8h_source.html#l00025">units_angle.h:25</a></div></div>
 <div class="ttc" id="anamespaceunits_html_a621a54983f3ca5630ec5c16451c9f344"><div class="ttname"><a href="namespaceunits.html#a621a54983f3ca5630ec5c16451c9f344">units::tan</a></div><div class="ttdeci">double tan(angle a)</div><div class="ttdef"><b>Definition:</b> <a href="units__angle_8h_source.html#l00062">units_angle.h:62</a></div></div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l03063">vehicle::coord_translate()</a>, and <a class="el" href="vehicle_8cpp_source.html#l03087">vehicle::coord_translate_reverse()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l03064">vehicle::coord_translate()</a>, and <a class="el" href="vehicle_8cpp_source.html#l03088">vehicle::coord_translate_reverse()</a>.</p>
 
 </div>
 </div>
@@ -1372,9 +1373,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vehicle_8cpp_source.html#l03035">3035</a> of file <a class="el" href="vehicle_8cpp_source.html">vehicle.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vehicle_8cpp_source.html#l03036">3036</a> of file <a class="el" href="vehicle_8cpp_source.html">vehicle.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l03063">vehicle::coord_translate()</a>, and <a class="el" href="vehicle_8cpp_source.html#l03087">vehicle::coord_translate_reverse()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l03064">vehicle::coord_translate()</a>, and <a class="el" href="vehicle_8cpp_source.html#l03088">vehicle::coord_translate_reverse()</a>.</p>
 
 </div>
 </div>
@@ -1384,7 +1385,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="vehicle_8cpp.html">vehicle.cpp</a></li>
-    <li class="footer">Generated on Mon Dec 26 2022 21:41:55 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Feb 21 2023 16:43:21 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

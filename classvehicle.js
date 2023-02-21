@@ -146,7 +146,7 @@ var classvehicle =
     [ "global_pos3", "classvehicle.html#a3900ee345be0453828a955a200154db1", null ],
     [ "global_square_location", "classvehicle.html#a789289c4179f7677e45cb100ff5ffb9a", null ],
     [ "ground_acceleration", "classvehicle.html#a864572607b3e016a73c6e3b421021a84", null ],
-    [ "handle_potential_theft", "classvehicle.html#a2f52c81265462fd7eee8fd158666f9be", null ],
+    [ "handle_potential_theft", "classvehicle.html#af4d2bd2818d95c35c44531a02954d9b3", null ],
     [ "handle_trap", "classvehicle.html#ae4630e42613cfd4129edd33828c10dc4", null ],
     [ "handling_difficulty", "classvehicle.html#aedeb37c9ce1c25bd8b9765e91ef6e502", null ],
     [ "has_engine_conflict", "classvehicle.html#a6632253ff56fbb0b5eaee359011d1e3c", null ],

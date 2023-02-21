@@ -374,7 +374,7 @@ var classmap =
     [ "reachable_flood_steps", "classmap.html#ac5b071f269f509ae698f95bc9966cbf7", null ],
     [ "register_vehicle_zone", "classmap.html#a42f8b2d41163c6a3261af6bc6613e403", null ],
     [ "remove_field", "classmap.html#a02ff5fbdbdb3df97210f4874c41fd75a", null ],
-    [ "remove_rotten_items", "classmap.html#a049fee607a4d1c1c18a0613f7290fe67", null ],
+    [ "remove_rotten_items", "classmap.html#a737bd8d124f28eb024a91c65fb372bb0", null ],
     [ "remove_submap_camp", "classmap.html#a598ecce13c7f2d3720ce852ee7246d63", null ],
     [ "remove_trap", "classmap.html#ae6be5b2b977897215861971bf64fb502", null ],
     [ "reset_vehicle_cache", "classmap.html#ad21f17086e40605801ba0fcc160c605c", null ],
