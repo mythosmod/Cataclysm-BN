@@ -1,5 +1,7 @@
 var NAVTREEINDEX104 =
 {
+"mapgendata_8cpp_source.html":[37,0,1,373],
+"mapgendata_8h.html":[37,0,1,374],
 "mapgendata_8h.html#ac43178b953309b903b804c0ea16875a6":[37,0,1,374,1],
 "mapgendata_8h_source.html":[37,0,1,374],
 "mapgenformat_8cpp.html":[37,0,1,375],
@@ -247,7 +249,5 @@ var NAVTREEINDEX104 =
 "messages_8cpp.html#acc0b013de5c7090d41e70d9e05778be6":[37,0,1,394,6],
 "messages_8cpp_source.html":[37,0,1,394],
 "messages_8h.html":[37,0,1,395],
-"messages_8h.html#a03fbfe883b22d0d43787cd4390e49360":[37,0,1,395,6],
-"messages_8h.html#a156ac466eeb7b86befecfd69abc1ab5d":[37,0,1,395,8],
-"messages_8h.html#a54489326fc37823819c5105addfa27f2":[37,0,1,395,9]
+"messages_8h.html#a03fbfe883b22d0d43787cd4390e49360":[37,0,1,395,6]
 };

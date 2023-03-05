@@ -252,10 +252,10 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vehicle__move_8cpp_source.html#l01214">1214</a> of file <a class="el" href="vehicle__move_8cpp_source.html">vehicle_move.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01215" name="l01215"></a><span class="lineno"> 1215</span>{</div>
-<div class="line"><a id="l01216" name="l01216"></a><span class="lineno"> 1216</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="structrl__vec2d.html">rl_vec2d</a>( <a class="code hl_function" href="namespaceunits.html#a9c92bd154caa6182d686cab22405b92e">units::cos</a>( <a class="code hl_typedef" href="namespaceunits.html#a2c7fe916bf04655f9fb4f2abdc5d28ed">angle</a> ), <a class="code hl_function" href="namespaceunits.html#a4b5ee56fbe0ef728f4b190e1282a5d82">units::sin</a>( <a class="code hl_typedef" href="namespaceunits.html#a2c7fe916bf04655f9fb4f2abdc5d28ed">angle</a> ) );</div>
-<div class="line"><a id="l01217" name="l01217"></a><span class="lineno"> 1217</span>}</div>
+<p class="definition">Definition at line <a class="el" href="vehicle__move_8cpp_source.html#l01233">1233</a> of file <a class="el" href="vehicle__move_8cpp_source.html">vehicle_move.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01234" name="l01234"></a><span class="lineno"> 1234</span>{</div>
+<div class="line"><a id="l01235" name="l01235"></a><span class="lineno"> 1235</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="structrl__vec2d.html">rl_vec2d</a>( <a class="code hl_function" href="namespaceunits.html#a9c92bd154caa6182d686cab22405b92e">units::cos</a>( <a class="code hl_typedef" href="namespaceunits.html#a2c7fe916bf04655f9fb4f2abdc5d28ed">angle</a> ), <a class="code hl_function" href="namespaceunits.html#a4b5ee56fbe0ef728f4b190e1282a5d82">units::sin</a>( <a class="code hl_typedef" href="namespaceunits.html#a2c7fe916bf04655f9fb4f2abdc5d28ed">angle</a> ) );</div>
+<div class="line"><a id="l01236" name="l01236"></a><span class="lineno"> 1236</span>}</div>
 <div class="ttc" id="anamespaceunits_html_a2c7fe916bf04655f9fb4f2abdc5d28ed"><div class="ttname"><a href="namespaceunits.html#a2c7fe916bf04655f9fb4f2abdc5d28ed">units::angle</a></div><div class="ttdeci">quantity&lt; double, angle_in_radians_tag &gt; angle</div><div class="ttdef"><b>Definition:</b> <a href="units__angle_8h_source.html#l00017">units_angle.h:17</a></div></div>
 <div class="ttc" id="anamespaceunits_html_a4b5ee56fbe0ef728f4b190e1282a5d82"><div class="ttname"><a href="namespaceunits.html#a4b5ee56fbe0ef728f4b190e1282a5d82">units::sin</a></div><div class="ttdeci">double sin(angle a)</div><div class="ttdef"><b>Definition:</b> <a href="units__angle_8h_source.html#l00052">units_angle.h:52</a></div></div>
 <div class="ttc" id="anamespaceunits_html_a9c92bd154caa6182d686cab22405b92e"><div class="ttname"><a href="namespaceunits.html#a9c92bd154caa6182d686cab22405b92e">units::cos</a></div><div class="ttdeci">double cos(angle a)</div><div class="ttdef"><b>Definition:</b> <a href="units__angle_8h_source.html#l00057">units_angle.h:57</a></div></div>
@@ -263,7 +263,7 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="units__angle_8h_source.html#l00057">units::cos()</a>, and <a class="el" href="units__angle_8h_source.html#l00052">units::sin()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="vehicle__move_8cpp_source.html#l01231">vehicle::dir_vec()</a>, <a class="el" href="vehicle__move_8cpp_source.html#l01226">vehicle::face_vec()</a>, and <a class="el" href="vehicle__move_8cpp_source.html#l01220">vehicle::move_vec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle__move_8cpp_source.html#l01250">vehicle::dir_vec()</a>, <a class="el" href="vehicle__move_8cpp_source.html#l01245">vehicle::face_vec()</a>, and <a class="el" href="vehicle__move_8cpp_source.html#l01239">vehicle::move_vec()</a>.</p>
 
 </div>
 </div>
@@ -311,14 +311,14 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vehicle__move_8cpp_source.html#l01236">1236</a> of file <a class="el" href="vehicle__move_8cpp_source.html">vehicle_move.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01237" name="l01237"></a><span class="lineno"> 1237</span>{</div>
-<div class="line"><a id="l01238" name="l01238"></a><span class="lineno"> 1238</span>    <span class="keywordflow">if</span>( std::abs( delta_v ) &lt;= 31 ) {</div>
-<div class="line"><a id="l01239" name="l01239"></a><span class="lineno"> 1239</span>        <span class="keywordflow">return</span> ( 1 - ( 0.9 * std::abs( delta_v ) ) / 31 );</div>
-<div class="line"><a id="l01240" name="l01240"></a><span class="lineno"> 1240</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l01241" name="l01241"></a><span class="lineno"> 1241</span>        <span class="keywordflow">return</span> 0.1;</div>
-<div class="line"><a id="l01242" name="l01242"></a><span class="lineno"> 1242</span>    }</div>
-<div class="line"><a id="l01243" name="l01243"></a><span class="lineno"> 1243</span>}</div>
+<p class="definition">Definition at line <a class="el" href="vehicle__move_8cpp_source.html#l01255">1255</a> of file <a class="el" href="vehicle__move_8cpp_source.html">vehicle_move.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01256" name="l01256"></a><span class="lineno"> 1256</span>{</div>
+<div class="line"><a id="l01257" name="l01257"></a><span class="lineno"> 1257</span>    <span class="keywordflow">if</span>( std::abs( delta_v ) &lt;= 31 ) {</div>
+<div class="line"><a id="l01258" name="l01258"></a><span class="lineno"> 1258</span>        <span class="keywordflow">return</span> ( 1 - ( 0.9 * std::abs( delta_v ) ) / 31 );</div>
+<div class="line"><a id="l01259" name="l01259"></a><span class="lineno"> 1259</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l01260" name="l01260"></a><span class="lineno"> 1260</span>        <span class="keywordflow">return</span> 0.1;</div>
+<div class="line"><a id="l01261" name="l01261"></a><span class="lineno"> 1261</span>    }</div>
+<div class="line"><a id="l01262" name="l01262"></a><span class="lineno"> 1262</span>}</div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="map_8cpp_source.html#l00762">map::vehicle_vehicle_collision()</a>.</p>
 
@@ -348,7 +348,7 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="vehicle__move_8cpp_source.html#l00062">mi_to_vmi</a>, and <a class="el" href="vehicle__move_8cpp_source.html#l00064">mps_to_miph</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="vehicle__move_8cpp_source.html#l01245">vehicle::act_on_map()</a>, <a class="el" href="vehicle_8cpp_source.html#l03683">vehicle::max_ground_velocity()</a>, <a class="el" href="vehicle_8cpp_source.html#l03715">vehicle::max_rotor_velocity()</a>, <a class="el" href="vehicle_8cpp_source.html#l03705">vehicle::max_water_velocity()</a>, <a class="el" href="vehicle_8cpp_source.html#l03748">vehicle::safe_ground_velocity()</a>, <a class="el" href="vehicle_8cpp_source.html#l03758">vehicle::safe_rotor_velocity()</a>, <a class="el" href="vehicle_8cpp_source.html#l03766">vehicle::safe_water_velocity()</a>, and <a class="el" href="vehicle__move_8cpp_source.html#l00088">vehicle::slowdown()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle__move_8cpp_source.html#l01264">vehicle::act_on_map()</a>, <a class="el" href="vehicle_8cpp_source.html#l03683">vehicle::max_ground_velocity()</a>, <a class="el" href="vehicle_8cpp_source.html#l03715">vehicle::max_rotor_velocity()</a>, <a class="el" href="vehicle_8cpp_source.html#l03705">vehicle::max_water_velocity()</a>, <a class="el" href="vehicle_8cpp_source.html#l03748">vehicle::safe_ground_velocity()</a>, <a class="el" href="vehicle_8cpp_source.html#l03758">vehicle::safe_rotor_velocity()</a>, <a class="el" href="vehicle_8cpp_source.html#l03766">vehicle::safe_water_velocity()</a>, and <a class="el" href="vehicle__move_8cpp_source.html#l00088">vehicle::slowdown()</a>.</p>
 
 </div>
 </div>
@@ -504,7 +504,7 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="vehicle__move_8cpp_source.html#l00062">mi_to_vmi</a>, and <a class="el" href="vehicle__move_8cpp_source.html#l00064">mps_to_miph</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="vehicle__move_8cpp_source.html#l01245">vehicle::act_on_map()</a>, and <a class="el" href="vehicle__move_8cpp_source.html#l00088">vehicle::slowdown()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle__move_8cpp_source.html#l01264">vehicle::act_on_map()</a>, and <a class="el" href="vehicle__move_8cpp_source.html#l00088">vehicle::slowdown()</a>.</p>
 
 </div>
 </div>
@@ -753,7 +753,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="vehicle__move_8cpp_source.html#l01245">vehicle::act_on_map()</a>, <a class="el" href="vehicle__move_8cpp_source.html#l01067">vehicle::pldrive()</a>, and <a class="el" href="vehicle__move_8cpp_source.html#l01631">map::shake_vehicle()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle__move_8cpp_source.html#l01264">vehicle::act_on_map()</a>, <a class="el" href="vehicle__move_8cpp_source.html#l01086">vehicle::pldrive()</a>, and <a class="el" href="vehicle__move_8cpp_source.html#l01650">map::shake_vehicle()</a>.</p>
 
 </div>
 </div>
@@ -779,7 +779,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="vehicle__move_8cpp_source.html#l00060">60</a> of file <a class="el" href="vehicle__move_8cpp_source.html">vehicle_move.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="vehicle__move_8cpp_source.html#l01245">vehicle::act_on_map()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle__move_8cpp_source.html#l01264">vehicle::act_on_map()</a>.</p>
 
 </div>
 </div>
@@ -789,7 +789,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="vehicle__move_8cpp.html">vehicle_move.cpp</a></li>
-    <li class="footer">Generated on Tue Feb 21 2023 16:43:21 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Mar 5 2023 13:50:56 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

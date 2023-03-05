@@ -40,5 +40,6 @@ var vehicle_8cpp =
     [ "maxrow", "vehicle_8cpp.html#a3ff34f557908f2c21ec8f1bf3e25af65", null ],
     [ "minrow", "vehicle_8cpp.html#ae6e50ea1c6f681b76fbb6761d19a8069", null ],
     [ "rotation_info", "vehicle_8cpp.html#a826cb2188fd2030ab8d0e7f7da106651", null ],
-    [ "swapXY", "vehicle_8cpp.html#a1f314834123bd77463ad68546fc483d7", null ]
+    [ "swapXY", "vehicle_8cpp.html#a1f314834123bd77463ad68546fc483d7", null ],
+    [ "water_density", "vehicle_8cpp.html#a0adc9ed25dfdb9fbd183b7b3f3f07a97", null ]
 ];

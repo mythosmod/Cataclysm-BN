@@ -1,5 +1,7 @@
 var NAVTREEINDEX154 =
 {
+"structovermap__spawns.html#a5fc075addea376935cec15a65d406ebc":[36,0,723,1],
+"structovermap__spawns.html#ad91286dc49d31226690cd5af48541164":[36,0,723,2],
 "structovermap__special__connection.html":[36,0,726],
 "structovermap__special__connection.html#a143b5363d069e98926785999f57268f2":[36,0,726,2],
 "structovermap__special__connection.html#a425b8a15489c643eab6bfe4c638929ed":[36,0,726,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX154 =
 "structplace__trap__actor_1_1data.html#a050bcfa7593c4a8c75bab8934e43a5e1":[36,0,754,0,0],
 "structplace__trap__actor_1_1data.html#a37deb59b9e661cea2ffb847c3a006443":[36,0,754,0,1],
 "structplace__trap__actor_1_1data.html#a3baa57d72d5ed9248d9b3bb101e77dfd":[36,0,754,0,4],
-"structplace__trap__actor_1_1data.html#a90be6512abeb45dac2e12eec0fc6e07a":[36,0,754,0,3],
-"structplace__trap__actor_1_1data.html#aa01f97eec82d00bc1d0d78f180a5155d":[36,0,754,0,2],
-"structplace__trap__actor_1_1data.html#ab56178fc1c1d5dd4453ee7478c67df94":[36,0,754,0,5]
+"structplace__trap__actor_1_1data.html#a90be6512abeb45dac2e12eec0fc6e07a":[36,0,754,0,3]
 };

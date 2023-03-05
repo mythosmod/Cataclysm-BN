@@ -113,7 +113,7 @@ var map__extras_8cpp =
     [ "itype_withered", "map__extras_8cpp.html#aa5684538e06ca62438cd7920fc56102f", null ],
     [ "itype_wrench", "map__extras_8cpp.html#a1492fbe161ca13c72195f8b869103dc7", null ],
     [ "mon_dispatch", "map__extras_8cpp.html#a5c76640965ff88391dbfe2039ea02f89", null ],
-    [ "mon_jabberwock", "map__extras_8cpp.html#a3b1a98f16912507b076db921e1657f49", null ],
+    [ "mon_fleshy_shambler", "map__extras_8cpp.html#a589b23ec8c8cd23e07cd1520bbf1daf3", null ],
     [ "mon_marloss_zealot_f", "map__extras_8cpp.html#acb3311c1cf4235e1b73acba98b51b130", null ],
     [ "mon_marloss_zealot_m", "map__extras_8cpp.html#a6680f18e1c6b6f42c739ff218863b5de", null ],
     [ "mon_shia", "map__extras_8cpp.html#a4c1c379ae0ace01690a181403c5e8792", null ],

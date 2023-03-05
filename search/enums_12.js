@@ -20,8 +20,7 @@ var searchData=
   ['towing_5fpoint_5fside_17',['towing_point_side',['../vehicle_8h.html#a39a3696f788e37c7c3e2231d358f1eac',1,'vehicle.h']]],
   ['traverse_5fvisitor_5fresult_18',['traverse_visitor_result',['../namespacedistribution__graph.html#a2693ab255ec1b2e508b6af35709ce9eb',1,'distribution_graph']]],
   ['tut_5flesson_19',['tut_lesson',['../gamemode__tutorial_8h.html#a543ad4708a13f830fca96aa55b64d9ee',1,'gamemode_tutorial.h']]],
-  ['type_20',['type',['../namespaceom__direction.html#a3f3a3bf2c5af33fc8036734d1ba70b7c',1,'om_direction::type()'],['../namespacesign.html#a15b7528752011adf8078cdaf330a21a8',1,'sign::type()'],['../namespacealign.html#aff2772e23f6ac91520e57d4b3ac0c759',1,'align::type()'],['../namespacedetail.html#ad46d232fb6116de4dac0c43dbde8e7a9',1,'detail::type()']]],
+  ['type_20',['type',['../namespaceom__direction.html#a3f3a3bf2c5af33fc8036734d1ba70b7c',1,'om_direction::type()'],['../namespacesign.html#a15b7528752011adf8078cdaf330a21a8',1,'sign::type()'],['../namespacealign.html#aff2772e23f6ac91520e57d4b3ac0c759',1,'align::type()'],['../namespacedetail.html#ad46d232fb6116de4dac0c43dbde8e7a9',1,'detail::type()'],['../classitem__location.html#a038e108475b9fb4f9833268f5fa2888d',1,'item_location::type()']]],
   ['type_21',['Type',['../classSingle__item__creator.html#aee007d93bc2db77d2035c62fa80369f4',1,'Single_item_creator::Type()'],['../classItem__group.html#ae51de1ef43540d3d8671f68faaa88ea0',1,'Item_group::Type()']]],
-  ['type_22',['type',['../classitem__location.html#a038e108475b9fb4f9833268f5fa2888d',1,'item_location']]],
-  ['type_5ft_23',['type_t',['../structdistribution__graph_1_1vehicle__or__grid.html#a3bf42962faa4aad33dfbdeac01eaec5d',1,'distribution_graph::vehicle_or_grid']]]
+  ['type_5ft_22',['type_t',['../structdistribution__graph_1_1vehicle__or__grid.html#a3bf42962faa4aad33dfbdeac01eaec5d',1,'distribution_graph::vehicle_or_grid']]]
 ];

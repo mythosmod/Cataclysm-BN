@@ -769,28 +769,28 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="activity__handlers_8cpp_source.html#l04647">4647</a> of file <a class="el" href="activity__handlers_8cpp_source.html">activity_handlers.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l04648" name="l04648"></a><span class="lineno"> 4648</span>{</div>
-<div class="line"><a id="l04649" name="l04649"></a><span class="lineno"> 4649</span>    std::vector&lt;uilist_entry&gt; uile;</div>
-<div class="line"><a id="l04650" name="l04650"></a><span class="lineno"> 4650</span>    std::vector&lt;bodypart_id&gt; parts;</div>
-<div class="line"><a id="l04651" name="l04651"></a><span class="lineno"> 4651</span>    <span class="keywordtype">int</span> i = 0;</div>
-<div class="line"><a id="l04652" name="l04652"></a><span class="lineno"> 4652</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_class" href="classint__id.html">bodypart_id</a> &amp;bp : p-&gt;<a class="code hl_function" href="classCreature.html#a9f9cc294949ffc5bd51ab464b5c5ad6f">get_all_body_parts</a>( <span class="keyword">true</span> ) ) {</div>
-<div class="line"><a id="l04653" name="l04653"></a><span class="lineno"> 4653</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> hp_cur = p-&gt;<a class="code hl_function" href="classCreature.html#ab901ee8b150fdad01ff2028ec8dba84c">get_part_hp_cur</a>( bp );</div>
-<div class="line"><a id="l04654" name="l04654"></a><span class="lineno"> 4654</span>        <a class="code hl_struct" href="structuilist__entry.html">uilist_entry</a> entry( i, hp_cur &gt; cost, i + 49, <a class="code hl_function" href="bodypart_8cpp.html#a49be576e7a6c79dcf97026a9fc0ff149">body_part_hp_bar_ui_text</a>( bp ) );</div>
-<div class="line"><a id="l04655" name="l04655"></a><span class="lineno"> 4655</span> </div>
-<div class="line"><a id="l04656" name="l04656"></a><span class="lineno"> 4656</span>        <span class="keyword">const</span> std::pair&lt;std::string, nc_color&gt; &amp;<a class="code hl_enumvalue" href="relic_8h.html#a37cd9dd49ee6b62891ec331828640ddcad2ccda10db94c2b5d51beed10484c025">hp</a> = <a class="code hl_function" href="output_8cpp.html#a4fce254b5cc5c01524772be29ea40980">get_hp_bar</a>( hp_cur, p-&gt;<a class="code hl_function" href="classCreature.html#aad6dc5532f233030d367ed67e0ea6613">get_part_hp_max</a>( bp ) );</div>
-<div class="line"><a id="l04657" name="l04657"></a><span class="lineno"> 4657</span>        entry.ctxt = <a class="code hl_function" href="color_8cpp.html#a0f25678be1fc95cb81381a004493a4cc">colorize</a>( <a class="code hl_enumvalue" href="relic_8h.html#a37cd9dd49ee6b62891ec331828640ddcad2ccda10db94c2b5d51beed10484c025">hp</a>.first, <a class="code hl_enumvalue" href="relic_8h.html#a37cd9dd49ee6b62891ec331828640ddcad2ccda10db94c2b5d51beed10484c025">hp</a>.second );</div>
-<div class="line"><a id="l04658" name="l04658"></a><span class="lineno"> 4658</span>        uile.emplace_back( entry );</div>
-<div class="line"><a id="l04659" name="l04659"></a><span class="lineno"> 4659</span>        parts.push_back( bp );</div>
-<div class="line"><a id="l04660" name="l04660"></a><span class="lineno"> 4660</span>        i++;</div>
-<div class="line"><a id="l04661" name="l04661"></a><span class="lineno"> 4661</span>    }</div>
-<div class="line"><a id="l04662" name="l04662"></a><span class="lineno"> 4662</span>    <span class="keywordtype">int</span> <a class="code hl_enumvalue" href="dialogue_8h.html#abfef6960b077f40e23bc00055370cc71a0639a24a99be1d60fe688dd938b7eca8">action</a> = -1;</div>
-<div class="line"><a id="l04663" name="l04663"></a><span class="lineno"> 4663</span>    <span class="keywordflow">while</span>( <a class="code hl_enumvalue" href="dialogue_8h.html#abfef6960b077f40e23bc00055370cc71a0639a24a99be1d60fe688dd938b7eca8">action</a> &lt; 0 ) {</div>
-<div class="line"><a id="l04664" name="l04664"></a><span class="lineno"> 4664</span>        <a class="code hl_enumvalue" href="dialogue_8h.html#abfef6960b077f40e23bc00055370cc71a0639a24a99be1d60fe688dd938b7eca8">action</a> = <a class="code hl_class" href="classuilist.html">uilist</a>( <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;Choose part\nto draw blood from.&quot;</span> ), uile );</div>
-<div class="line"><a id="l04665" name="l04665"></a><span class="lineno"> 4665</span>    }</div>
-<div class="line"><a id="l04666" name="l04666"></a><span class="lineno"> 4666</span>    p-&gt;<a class="code hl_function" href="classCreature.html#a29006b1d624e44def0208134e7f0ac3f">mod_part_hp_cur</a>( parts[<a class="code hl_enumvalue" href="dialogue_8h.html#abfef6960b077f40e23bc00055370cc71a0639a24a99be1d60fe688dd938b7eca8">action</a>], - cost );</div>
-<div class="line"><a id="l04667" name="l04667"></a><span class="lineno"> 4667</span>    p-&gt;<a class="code hl_function" href="classCharacter.html#a01a3b9dd92576401225db8f71192f9f0">mod_pain</a>( std::max( 1, cost / 3 ) );</div>
-<div class="line"><a id="l04668" name="l04668"></a><span class="lineno"> 4668</span>}</div>
+<p class="definition">Definition at line <a class="el" href="activity__handlers_8cpp_source.html#l04663">4663</a> of file <a class="el" href="activity__handlers_8cpp_source.html">activity_handlers.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l04664" name="l04664"></a><span class="lineno"> 4664</span>{</div>
+<div class="line"><a id="l04665" name="l04665"></a><span class="lineno"> 4665</span>    std::vector&lt;uilist_entry&gt; uile;</div>
+<div class="line"><a id="l04666" name="l04666"></a><span class="lineno"> 4666</span>    std::vector&lt;bodypart_id&gt; parts;</div>
+<div class="line"><a id="l04667" name="l04667"></a><span class="lineno"> 4667</span>    <span class="keywordtype">int</span> i = 0;</div>
+<div class="line"><a id="l04668" name="l04668"></a><span class="lineno"> 4668</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_class" href="classint__id.html">bodypart_id</a> &amp;bp : p-&gt;<a class="code hl_function" href="classCreature.html#a9f9cc294949ffc5bd51ab464b5c5ad6f">get_all_body_parts</a>( <span class="keyword">true</span> ) ) {</div>
+<div class="line"><a id="l04669" name="l04669"></a><span class="lineno"> 4669</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> hp_cur = p-&gt;<a class="code hl_function" href="classCreature.html#ab901ee8b150fdad01ff2028ec8dba84c">get_part_hp_cur</a>( bp );</div>
+<div class="line"><a id="l04670" name="l04670"></a><span class="lineno"> 4670</span>        <a class="code hl_struct" href="structuilist__entry.html">uilist_entry</a> entry( i, hp_cur &gt; cost, i + 49, <a class="code hl_function" href="bodypart_8cpp.html#a49be576e7a6c79dcf97026a9fc0ff149">body_part_hp_bar_ui_text</a>( bp ) );</div>
+<div class="line"><a id="l04671" name="l04671"></a><span class="lineno"> 4671</span> </div>
+<div class="line"><a id="l04672" name="l04672"></a><span class="lineno"> 4672</span>        <span class="keyword">const</span> std::pair&lt;std::string, nc_color&gt; &amp;<a class="code hl_enumvalue" href="relic_8h.html#a37cd9dd49ee6b62891ec331828640ddcad2ccda10db94c2b5d51beed10484c025">hp</a> = <a class="code hl_function" href="output_8cpp.html#a4fce254b5cc5c01524772be29ea40980">get_hp_bar</a>( hp_cur, p-&gt;<a class="code hl_function" href="classCreature.html#aad6dc5532f233030d367ed67e0ea6613">get_part_hp_max</a>( bp ) );</div>
+<div class="line"><a id="l04673" name="l04673"></a><span class="lineno"> 4673</span>        entry.ctxt = <a class="code hl_function" href="color_8cpp.html#a0f25678be1fc95cb81381a004493a4cc">colorize</a>( <a class="code hl_enumvalue" href="relic_8h.html#a37cd9dd49ee6b62891ec331828640ddcad2ccda10db94c2b5d51beed10484c025">hp</a>.first, <a class="code hl_enumvalue" href="relic_8h.html#a37cd9dd49ee6b62891ec331828640ddcad2ccda10db94c2b5d51beed10484c025">hp</a>.second );</div>
+<div class="line"><a id="l04674" name="l04674"></a><span class="lineno"> 4674</span>        uile.emplace_back( entry );</div>
+<div class="line"><a id="l04675" name="l04675"></a><span class="lineno"> 4675</span>        parts.push_back( bp );</div>
+<div class="line"><a id="l04676" name="l04676"></a><span class="lineno"> 4676</span>        i++;</div>
+<div class="line"><a id="l04677" name="l04677"></a><span class="lineno"> 4677</span>    }</div>
+<div class="line"><a id="l04678" name="l04678"></a><span class="lineno"> 4678</span>    <span class="keywordtype">int</span> <a class="code hl_enumvalue" href="dialogue_8h.html#abfef6960b077f40e23bc00055370cc71a0639a24a99be1d60fe688dd938b7eca8">action</a> = -1;</div>
+<div class="line"><a id="l04679" name="l04679"></a><span class="lineno"> 4679</span>    <span class="keywordflow">while</span>( <a class="code hl_enumvalue" href="dialogue_8h.html#abfef6960b077f40e23bc00055370cc71a0639a24a99be1d60fe688dd938b7eca8">action</a> &lt; 0 ) {</div>
+<div class="line"><a id="l04680" name="l04680"></a><span class="lineno"> 4680</span>        <a class="code hl_enumvalue" href="dialogue_8h.html#abfef6960b077f40e23bc00055370cc71a0639a24a99be1d60fe688dd938b7eca8">action</a> = <a class="code hl_class" href="classuilist.html">uilist</a>( <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;Choose part\nto draw blood from.&quot;</span> ), uile );</div>
+<div class="line"><a id="l04681" name="l04681"></a><span class="lineno"> 4681</span>    }</div>
+<div class="line"><a id="l04682" name="l04682"></a><span class="lineno"> 4682</span>    p-&gt;<a class="code hl_function" href="classCreature.html#a29006b1d624e44def0208134e7f0ac3f">mod_part_hp_cur</a>( parts[<a class="code hl_enumvalue" href="dialogue_8h.html#abfef6960b077f40e23bc00055370cc71a0639a24a99be1d60fe688dd938b7eca8">action</a>], - cost );</div>
+<div class="line"><a id="l04683" name="l04683"></a><span class="lineno"> 4683</span>    p-&gt;<a class="code hl_function" href="classCharacter.html#a01a3b9dd92576401225db8f71192f9f0">mod_pain</a>( std::max( 1, cost / 3 ) );</div>
+<div class="line"><a id="l04684" name="l04684"></a><span class="lineno"> 4684</span>}</div>
 <div class="ttc" id="abodypart_8cpp_html_a49be576e7a6c79dcf97026a9fc0ff149"><div class="ttname"><a href="bodypart_8cpp.html#a49be576e7a6c79dcf97026a9fc0ff149">body_part_hp_bar_ui_text</a></div><div class="ttdeci">std::string body_part_hp_bar_ui_text(const bodypart_id &amp;bp)</div><div class="ttdoc">Returns the body part text to be displayed in the HP bar.</div><div class="ttdef"><b>Definition:</b> <a href="bodypart_8cpp_source.html#l00353">bodypart.cpp:353</a></div></div>
 <div class="ttc" id="aclassCharacter_html_a01a3b9dd92576401225db8f71192f9f0"><div class="ttname"><a href="classCharacter.html#a01a3b9dd92576401225db8f71192f9f0">Character::mod_pain</a></div><div class="ttdeci">void mod_pain(int npain) override</div><div class="ttdoc">Modifies a pain value by player traits before passing it to Creature::mod_pain()</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l00750">character.cpp:750</a></div></div>
 <div class="ttc" id="aclassCreature_html_a29006b1d624e44def0208134e7f0ac3f"><div class="ttname"><a href="classCreature.html#a29006b1d624e44def0208134e7f0ac3f">Creature::mod_part_hp_cur</a></div><div class="ttdeci">void mod_part_hp_cur(const bodypart_id &amp;id, int mod)</div><div class="ttdef"><b>Definition:</b> <a href="creature_8cpp_source.html#l01596">creature.cpp:1596</a></div></div>
@@ -808,7 +808,7 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="dialogue_8h_source.html#l00036">action</a>, <a class="el" href="bodypart_8cpp_source.html#l00353">body_part_hp_bar_ui_text()</a>, <a class="el" href="color_8cpp_source.html#l00669">colorize()</a>, <a class="el" href="ui_8h_source.html#l00068">uilist_entry::ctxt</a>, <a class="el" href="creature_8cpp_source.html#l01633">Creature::get_all_body_parts()</a>, <a class="el" href="output_8cpp_source.html#l01604">get_hp_bar()</a>, <a class="el" href="creature_8cpp_source.html#l01566">Creature::get_part_hp_cur()</a>, <a class="el" href="creature_8cpp_source.html#l01571">Creature::get_part_hp_max()</a>, <a class="el" href="relic_8h.html#a37cd9dd49ee6b62891ec331828640ddcad2ccda10db94c2b5d51beed10484c025">hp</a>, <a class="el" href="character_8cpp_source.html#l00750">Character::mod_pain()</a>, and <a class="el" href="creature_8cpp_source.html#l01596">Creature::mod_part_hp_cur()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="activity__handlers_8cpp_source.html#l04670">activity_handlers::spellcasting_finish()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="activity__handlers_8cpp_source.html#l04686">activity_handlers::spellcasting_finish()</a>.</p>
 
 </div>
 </div>
@@ -1425,26 +1425,26 @@ template&lt;typename fn &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="activity__handlers_8cpp_source.html#l04403">4403</a> of file <a class="el" href="activity__handlers_8cpp_source.html">activity_handlers.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l04404" name="l04404"></a><span class="lineno"> 4404</span>{</div>
-<div class="line"><a id="l04405" name="l04405"></a><span class="lineno"> 4405</span>    <span class="keyword">auto</span> it = tiles.begin();</div>
-<div class="line"><a id="l04406" name="l04406"></a><span class="lineno"> 4406</span>    <a class="code hl_class" href="classmap.html">map</a> &amp;here = <a class="code hl_function" href="map_8cpp.html#acb0b34be6e497bdd2f9f40ae6929d562">get_map</a>();</div>
-<div class="line"><a id="l04407" name="l04407"></a><span class="lineno"> 4407</span>    <span class="keywordflow">while</span>( it != tiles.end() ) {</div>
-<div class="line"><a id="l04408" name="l04408"></a><span class="lineno"> 4408</span>        <span class="keyword">auto</span> current = it++;</div>
-<div class="line"><a id="l04409" name="l04409"></a><span class="lineno"> 4409</span> </div>
-<div class="line"><a id="l04410" name="l04410"></a><span class="lineno"> 4410</span>        <span class="keyword">const</span> <a class="code hl_struct" href="structtripoint.html">tripoint</a> &amp;tile_loc = here.<a class="code hl_function" href="classmap.html#a426c21f7244ff80a61685a89e9146fec">getlocal</a>( *current );</div>
-<div class="line"><a id="l04411" name="l04411"></a><span class="lineno"> 4411</span> </div>
-<div class="line"><a id="l04412" name="l04412"></a><span class="lineno"> 4412</span>        <span class="keywordflow">if</span>( cleanup( tile_loc ) ) {</div>
-<div class="line"><a id="l04413" name="l04413"></a><span class="lineno"> 4413</span>            tiles.erase( current );</div>
-<div class="line"><a id="l04414" name="l04414"></a><span class="lineno"> 4414</span>        }</div>
-<div class="line"><a id="l04415" name="l04415"></a><span class="lineno"> 4415</span>    }</div>
-<div class="line"><a id="l04416" name="l04416"></a><span class="lineno"> 4416</span>}</div>
+<p class="definition">Definition at line <a class="el" href="activity__handlers_8cpp_source.html#l04419">4419</a> of file <a class="el" href="activity__handlers_8cpp_source.html">activity_handlers.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l04420" name="l04420"></a><span class="lineno"> 4420</span>{</div>
+<div class="line"><a id="l04421" name="l04421"></a><span class="lineno"> 4421</span>    <span class="keyword">auto</span> it = tiles.begin();</div>
+<div class="line"><a id="l04422" name="l04422"></a><span class="lineno"> 4422</span>    <a class="code hl_class" href="classmap.html">map</a> &amp;here = <a class="code hl_function" href="map_8cpp.html#acb0b34be6e497bdd2f9f40ae6929d562">get_map</a>();</div>
+<div class="line"><a id="l04423" name="l04423"></a><span class="lineno"> 4423</span>    <span class="keywordflow">while</span>( it != tiles.end() ) {</div>
+<div class="line"><a id="l04424" name="l04424"></a><span class="lineno"> 4424</span>        <span class="keyword">auto</span> current = it++;</div>
+<div class="line"><a id="l04425" name="l04425"></a><span class="lineno"> 4425</span> </div>
+<div class="line"><a id="l04426" name="l04426"></a><span class="lineno"> 4426</span>        <span class="keyword">const</span> <a class="code hl_struct" href="structtripoint.html">tripoint</a> &amp;tile_loc = here.<a class="code hl_function" href="classmap.html#a426c21f7244ff80a61685a89e9146fec">getlocal</a>( *current );</div>
+<div class="line"><a id="l04427" name="l04427"></a><span class="lineno"> 4427</span> </div>
+<div class="line"><a id="l04428" name="l04428"></a><span class="lineno"> 4428</span>        <span class="keywordflow">if</span>( cleanup( tile_loc ) ) {</div>
+<div class="line"><a id="l04429" name="l04429"></a><span class="lineno"> 4429</span>            tiles.erase( current );</div>
+<div class="line"><a id="l04430" name="l04430"></a><span class="lineno"> 4430</span>        }</div>
+<div class="line"><a id="l04431" name="l04431"></a><span class="lineno"> 4431</span>    }</div>
+<div class="line"><a id="l04432" name="l04432"></a><span class="lineno"> 4432</span>}</div>
 <div class="ttc" id="aclassmap_html_a426c21f7244ff80a61685a89e9146fec"><div class="ttname"><a href="classmap.html#a426c21f7244ff80a61685a89e9146fec">map::getlocal</a></div><div class="ttdeci">tripoint getlocal(const tripoint &amp;p) const</div><div class="ttdoc">Inverse of getabs.</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l08282">map.cpp:8282</a></div></div>
 <div class="ttc" id="astructtripoint_html"><div class="ttname"><a href="structtripoint.html">tripoint</a></div><div class="ttdef"><b>Definition:</b> <a href="point_8h_source.html#l00147">point.h:147</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="map_8cpp_source.html#l00146">get_map()</a>, and <a class="el" href="map_8cpp_source.html#l08282">map::getlocal()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="activity__handlers_8cpp_source.html#l04418">perform_zone_activity_turn()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="activity__handlers_8cpp_source.html#l04434">perform_zone_activity_turn()</a>.</p>
 
 </div>
 </div>
@@ -2595,27 +2595,27 @@ template&lt;typename fn &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="activity__handlers_8cpp_source.html#l04386">4386</a> of file <a class="el" href="activity__handlers_8cpp_source.html">activity_handlers.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l04388" name="l04388"></a><span class="lineno"> 4388</span>{</div>
-<div class="line"><a id="l04389" name="l04389"></a><span class="lineno"> 4389</span>    <span class="keyword">const</span> <span class="keyword">auto</span> cmp = [abspos]( <a class="code hl_struct" href="structtripoint.html">tripoint</a> <a class="code hl_variable" href="magic_8cpp.html#a188caae18b60b66f9f44214c7e28ac1f">a</a>, <a class="code hl_struct" href="structtripoint.html">tripoint</a> <a class="code hl_variable" href="magic_8cpp.html#aa93a189fb7bbbf87be54bcc7bd11bb6f">b</a> ) {</div>
-<div class="line"><a id="l04390" name="l04390"></a><span class="lineno"> 4390</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> da = <a class="code hl_function" href="coordinates_8h.html#a47953b33a873caa0861b12222842a5ec">rl_dist</a>( abspos, <a class="code hl_variable" href="magic_8cpp.html#a188caae18b60b66f9f44214c7e28ac1f">a</a> );</div>
-<div class="line"><a id="l04391" name="l04391"></a><span class="lineno"> 4391</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> db = <a class="code hl_function" href="coordinates_8h.html#a47953b33a873caa0861b12222842a5ec">rl_dist</a>( abspos, <a class="code hl_variable" href="magic_8cpp.html#aa93a189fb7bbbf87be54bcc7bd11bb6f">b</a> );</div>
-<div class="line"><a id="l04392" name="l04392"></a><span class="lineno"> 4392</span> </div>
-<div class="line"><a id="l04393" name="l04393"></a><span class="lineno"> 4393</span>        <span class="keywordflow">return</span> da &lt; db;</div>
-<div class="line"><a id="l04394" name="l04394"></a><span class="lineno"> 4394</span>    };</div>
-<div class="line"><a id="l04395" name="l04395"></a><span class="lineno"> 4395</span> </div>
-<div class="line"><a id="l04396" name="l04396"></a><span class="lineno"> 4396</span>    std::vector&lt;tripoint&gt; sorted( tiles.begin(), tiles.end() );</div>
-<div class="line"><a id="l04397" name="l04397"></a><span class="lineno"> 4397</span>    std::sort( sorted.begin(), sorted.end(), cmp );</div>
-<div class="line"><a id="l04398" name="l04398"></a><span class="lineno"> 4398</span> </div>
-<div class="line"><a id="l04399" name="l04399"></a><span class="lineno"> 4399</span>    <span class="keywordflow">return</span> sorted;</div>
-<div class="line"><a id="l04400" name="l04400"></a><span class="lineno"> 4400</span>}</div>
+<p class="definition">Definition at line <a class="el" href="activity__handlers_8cpp_source.html#l04402">4402</a> of file <a class="el" href="activity__handlers_8cpp_source.html">activity_handlers.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l04404" name="l04404"></a><span class="lineno"> 4404</span>{</div>
+<div class="line"><a id="l04405" name="l04405"></a><span class="lineno"> 4405</span>    <span class="keyword">const</span> <span class="keyword">auto</span> cmp = [abspos]( <a class="code hl_struct" href="structtripoint.html">tripoint</a> <a class="code hl_variable" href="magic_8cpp.html#a188caae18b60b66f9f44214c7e28ac1f">a</a>, <a class="code hl_struct" href="structtripoint.html">tripoint</a> <a class="code hl_variable" href="magic_8cpp.html#aa93a189fb7bbbf87be54bcc7bd11bb6f">b</a> ) {</div>
+<div class="line"><a id="l04406" name="l04406"></a><span class="lineno"> 4406</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> da = <a class="code hl_function" href="coordinates_8h.html#a47953b33a873caa0861b12222842a5ec">rl_dist</a>( abspos, <a class="code hl_variable" href="magic_8cpp.html#a188caae18b60b66f9f44214c7e28ac1f">a</a> );</div>
+<div class="line"><a id="l04407" name="l04407"></a><span class="lineno"> 4407</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> db = <a class="code hl_function" href="coordinates_8h.html#a47953b33a873caa0861b12222842a5ec">rl_dist</a>( abspos, <a class="code hl_variable" href="magic_8cpp.html#aa93a189fb7bbbf87be54bcc7bd11bb6f">b</a> );</div>
+<div class="line"><a id="l04408" name="l04408"></a><span class="lineno"> 4408</span> </div>
+<div class="line"><a id="l04409" name="l04409"></a><span class="lineno"> 4409</span>        <span class="keywordflow">return</span> da &lt; db;</div>
+<div class="line"><a id="l04410" name="l04410"></a><span class="lineno"> 4410</span>    };</div>
+<div class="line"><a id="l04411" name="l04411"></a><span class="lineno"> 4411</span> </div>
+<div class="line"><a id="l04412" name="l04412"></a><span class="lineno"> 4412</span>    std::vector&lt;tripoint&gt; sorted( tiles.begin(), tiles.end() );</div>
+<div class="line"><a id="l04413" name="l04413"></a><span class="lineno"> 4413</span>    std::sort( sorted.begin(), sorted.end(), cmp );</div>
+<div class="line"><a id="l04414" name="l04414"></a><span class="lineno"> 4414</span> </div>
+<div class="line"><a id="l04415" name="l04415"></a><span class="lineno"> 4415</span>    <span class="keywordflow">return</span> sorted;</div>
+<div class="line"><a id="l04416" name="l04416"></a><span class="lineno"> 4416</span>}</div>
 <div class="ttc" id="acoordinates_8h_html_a47953b33a873caa0861b12222842a5ec"><div class="ttname"><a href="coordinates_8h.html#a47953b33a873caa0861b12222842a5ec">rl_dist</a></div><div class="ttdeci">int rl_dist(const coords::coord_point&lt; Point, Origin, Scale &gt; &amp;loc1, const coords::coord_point&lt; Point, Origin, Scale &gt; &amp;loc2)</div><div class="ttdef"><b>Definition:</b> <a href="coordinates_8h_source.html#l00519">coordinates.h:519</a></div></div>
 <div class="ttc" id="amagic_8cpp_html_a188caae18b60b66f9f44214c7e28ac1f"><div class="ttname"><a href="magic_8cpp.html#a188caae18b60b66f9f44214c7e28ac1f">a</a></div><div class="ttdeci">constexpr double a</div><div class="ttdef"><b>Definition:</b> <a href="magic_8cpp_source.html#l01030">magic.cpp:1030</a></div></div>
 <div class="ttc" id="amagic_8cpp_html_aa93a189fb7bbbf87be54bcc7bd11bb6f"><div class="ttname"><a href="magic_8cpp.html#aa93a189fb7bbbf87be54bcc7bd11bb6f">b</a></div><div class="ttdeci">constexpr double b</div><div class="ttdef"><b>Definition:</b> <a href="magic_8cpp_source.html#l01031">magic.cpp:1031</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="magic_8cpp_source.html#l01030">a</a>, <a class="el" href="magic_8cpp_source.html#l01031">b</a>, and <a class="el" href="coordinates_8h_source.html#l00519">rl_dist()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="activity__item__handling_8cpp_source.html#l02137">activity_on_turn_move_loot()</a>, <a class="el" href="faction__camp_8cpp_source.html#l00639">talk_function::basecamp_mission()</a>, <a class="el" href="activity__item__handling_8cpp_source.html#l03099">find_refuel_spot_zone()</a>, <a class="el" href="activity__item__handling_8cpp_source.html#l02950">generic_multi_activity_handler()</a>, <a class="el" href="activity__handlers_8cpp_source.html#l04418">perform_zone_activity_turn()</a>, <a class="el" href="faction__camp_8cpp_source.html#l03988">basecamp::place_results()</a>, <a class="el" href="activity__item__handling_8cpp_source.html#l01024">route_adjacent()</a>, <a class="el" href="activity__item__handling_8cpp_source.html#l01945">tidy_activity()</a>, and <a class="el" href="faction__camp_8cpp_source.html#l03585">basecamp::validate_sort_points()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="activity__item__handling_8cpp_source.html#l02137">activity_on_turn_move_loot()</a>, <a class="el" href="faction__camp_8cpp_source.html#l00639">talk_function::basecamp_mission()</a>, <a class="el" href="activity__item__handling_8cpp_source.html#l03099">find_refuel_spot_zone()</a>, <a class="el" href="activity__item__handling_8cpp_source.html#l02950">generic_multi_activity_handler()</a>, <a class="el" href="activity__handlers_8cpp_source.html#l04434">perform_zone_activity_turn()</a>, <a class="el" href="faction__camp_8cpp_source.html#l03988">basecamp::place_results()</a>, <a class="el" href="activity__item__handling_8cpp_source.html#l01024">route_adjacent()</a>, <a class="el" href="activity__item__handling_8cpp_source.html#l01945">tidy_activity()</a>, and <a class="el" href="faction__camp_8cpp_source.html#l03585">basecamp::validate_sort_points()</a>.</p>
 
 </div>
 </div>
@@ -2751,43 +2751,43 @@ template&lt;typename fn &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="activity__handlers_8cpp_source.html#l04418">4418</a> of file <a class="el" href="activity__handlers_8cpp_source.html">activity_handlers.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l04423" name="l04423"></a><span class="lineno"> 4423</span>{</div>
-<div class="line"><a id="l04424" name="l04424"></a><span class="lineno"> 4424</span>    <span class="keyword">const</span> <a class="code hl_class" href="classzone__manager.html">zone_manager</a> &amp;mgr = <a class="code hl_function" href="classzone__manager.html#a11e6a0ecb51069e3c334b6f4b9c5c6bc">zone_manager::get_manager</a>();</div>
-<div class="line"><a id="l04425" name="l04425"></a><span class="lineno"> 4425</span>    <a class="code hl_class" href="classmap.html">map</a> &amp;here = <a class="code hl_function" href="map_8cpp.html#acb0b34be6e497bdd2f9f40ae6929d562">get_map</a>();</div>
-<div class="line"><a id="l04426" name="l04426"></a><span class="lineno"> 4426</span>    <span class="keyword">const</span> <a class="code hl_struct" href="structtripoint.html">tripoint</a> abspos = here.<a class="code hl_function" href="classmap.html#a501f3a1d449ac022f1b36b99da653e94">getabs</a>( p-&gt;<a class="code hl_function" href="classCharacter.html#ad24859164517ed6e392e21df69527199">pos</a>() );</div>
-<div class="line"><a id="l04427" name="l04427"></a><span class="lineno"> 4427</span>    std::unordered_set&lt;tripoint&gt; unsorted_tiles = mgr.<a class="code hl_function" href="classzone__manager.html#a9790f2a2f3d3b707b0fb0a9d873de1ab">get_near</a>( ztype, abspos );</div>
-<div class="line"><a id="l04428" name="l04428"></a><span class="lineno"> 4428</span> </div>
-<div class="line"><a id="l04429" name="l04429"></a><span class="lineno"> 4429</span>    <a class="code hl_function" href="activity__handlers_8cpp.html#ae09f2e3b178fd8aaf60b7d17c5c8f613">cleanup_tiles</a>( unsorted_tiles, tile_filter );</div>
-<div class="line"><a id="l04430" name="l04430"></a><span class="lineno"> 4430</span> </div>
-<div class="line"><a id="l04431" name="l04431"></a><span class="lineno"> 4431</span>    <span class="comment">// sort remaining tiles by distance</span></div>
-<div class="line"><a id="l04432" name="l04432"></a><span class="lineno"> 4432</span>    <span class="keyword">const</span> std::vector&lt;tripoint&gt; &amp;tiles = <a class="code hl_function" href="activity__handlers_8cpp.html#ad56bc2a183ef33fafef613435a366c27">get_sorted_tiles_by_distance</a>( abspos, unsorted_tiles );</div>
-<div class="line"><a id="l04433" name="l04433"></a><span class="lineno"> 4433</span> </div>
-<div class="line"><a id="l04434" name="l04434"></a><span class="lineno"> 4434</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_struct" href="structtripoint.html">tripoint</a> &amp;tile : tiles ) {</div>
-<div class="line"><a id="l04435" name="l04435"></a><span class="lineno"> 4435</span>        <span class="keyword">const</span> <a class="code hl_struct" href="structtripoint.html">tripoint</a> &amp;tile_loc = here.<a class="code hl_function" href="classmap.html#a426c21f7244ff80a61685a89e9146fec">getlocal</a>( tile );</div>
-<div class="line"><a id="l04436" name="l04436"></a><span class="lineno"> 4436</span> </div>
-<div class="line"><a id="l04437" name="l04437"></a><span class="lineno"> 4437</span>        std::vector&lt;tripoint&gt; route = here.<a class="code hl_function" href="classmap.html#a6b4a1306861221ee22ba193a884ef606">route</a>( p-&gt;<a class="code hl_function" href="classCharacter.html#ad24859164517ed6e392e21df69527199">pos</a>(), tile_loc, p-&gt;<a class="code hl_function" href="classCharacter.html#aa7240b1a7ad2b5c556a6aeafc2132d46">get_pathfinding_settings</a>(),</div>
-<div class="line"><a id="l04438" name="l04438"></a><span class="lineno"> 4438</span>                                      p-&gt;<a class="code hl_function" href="classCharacter.html#a4820be3a01e28cb0ad60f95a2df82e06">get_path_avoid</a>() );</div>
-<div class="line"><a id="l04439" name="l04439"></a><span class="lineno"> 4439</span>        <span class="keywordflow">if</span>( route.size() &gt; 1 ) {</div>
-<div class="line"><a id="l04440" name="l04440"></a><span class="lineno"> 4440</span>            route.pop_back();</div>
-<div class="line"><a id="l04441" name="l04441"></a><span class="lineno"> 4441</span> </div>
-<div class="line"><a id="l04442" name="l04442"></a><span class="lineno"> 4442</span>            p-&gt;<a class="code hl_function" href="classCharacter.html#a05f34432b3b1eabef92da141910daf09">set_destination</a>( route, p-&gt;<a class="code hl_variable" href="classCharacter.html#a20839520f569c4f05876a55e89f67361">activity</a> );</div>
-<div class="line"><a id="l04443" name="l04443"></a><span class="lineno"> 4443</span>            p-&gt;<a class="code hl_variable" href="classCharacter.html#a20839520f569c4f05876a55e89f67361">activity</a>.<a class="code hl_function" href="classplayer__activity.html#a765ca7b3410253c05939a8c1f1999c4a">set_to_null</a>();</div>
-<div class="line"><a id="l04444" name="l04444"></a><span class="lineno"> 4444</span>            <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l04445" name="l04445"></a><span class="lineno"> 4445</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l04446" name="l04446"></a><span class="lineno"> 4446</span>            <span class="comment">// we are at destination already</span></div>
-<div class="line"><a id="l04447" name="l04447"></a><span class="lineno"> 4447</span>            <span class="comment">/* Perform action */</span></div>
-<div class="line"><a id="l04448" name="l04448"></a><span class="lineno"> 4448</span>            tile_action( *p, tile_loc );</div>
-<div class="line"><a id="l04449" name="l04449"></a><span class="lineno"> 4449</span>            <span class="keywordflow">if</span>( p-&gt;<a class="code hl_variable" href="classCreature.html#a8c5a392caa213bee9581b47e9f0e2052">moves</a> &lt;= 0 ) {</div>
-<div class="line"><a id="l04450" name="l04450"></a><span class="lineno"> 4450</span>                <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l04451" name="l04451"></a><span class="lineno"> 4451</span>            }</div>
-<div class="line"><a id="l04452" name="l04452"></a><span class="lineno"> 4452</span>        }</div>
-<div class="line"><a id="l04453" name="l04453"></a><span class="lineno"> 4453</span>    }</div>
-<div class="line"><a id="l04454" name="l04454"></a><span class="lineno"> 4454</span>    <a class="code hl_function" href="messages_8cpp.html#a54489326fc37823819c5105addfa27f2">add_msg</a>( <a class="code hl_enumvalue" href="enums_8h.html#a3baf36d700701401b6baf94db93d096ea5d3734a51686ceb1848704dd277dfc7f">m_info</a>, finished_msg );</div>
-<div class="line"><a id="l04455" name="l04455"></a><span class="lineno"> 4455</span>    p-&gt;<a class="code hl_variable" href="classCharacter.html#a20839520f569c4f05876a55e89f67361">activity</a>.<a class="code hl_function" href="classplayer__activity.html#a765ca7b3410253c05939a8c1f1999c4a">set_to_null</a>();</div>
-<div class="line"><a id="l04456" name="l04456"></a><span class="lineno"> 4456</span>}</div>
-<div class="ttc" id="aactivity__handlers_8cpp_html_ad56bc2a183ef33fafef613435a366c27"><div class="ttname"><a href="activity__handlers_8cpp.html#ad56bc2a183ef33fafef613435a366c27">get_sorted_tiles_by_distance</a></div><div class="ttdeci">std::vector&lt; tripoint &gt; get_sorted_tiles_by_distance(const tripoint &amp;abspos, const std::unordered_set&lt; tripoint &gt; &amp;tiles)</div><div class="ttdef"><b>Definition:</b> <a href="activity__handlers_8cpp_source.html#l04386">activity_handlers.cpp:4386</a></div></div>
-<div class="ttc" id="aactivity__handlers_8cpp_html_ae09f2e3b178fd8aaf60b7d17c5c8f613"><div class="ttname"><a href="activity__handlers_8cpp.html#ae09f2e3b178fd8aaf60b7d17c5c8f613">cleanup_tiles</a></div><div class="ttdeci">static void cleanup_tiles(std::unordered_set&lt; tripoint &gt; &amp;tiles, fn &amp;cleanup)</div><div class="ttdef"><b>Definition:</b> <a href="activity__handlers_8cpp_source.html#l04403">activity_handlers.cpp:4403</a></div></div>
+<p class="definition">Definition at line <a class="el" href="activity__handlers_8cpp_source.html#l04434">4434</a> of file <a class="el" href="activity__handlers_8cpp_source.html">activity_handlers.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l04439" name="l04439"></a><span class="lineno"> 4439</span>{</div>
+<div class="line"><a id="l04440" name="l04440"></a><span class="lineno"> 4440</span>    <span class="keyword">const</span> <a class="code hl_class" href="classzone__manager.html">zone_manager</a> &amp;mgr = <a class="code hl_function" href="classzone__manager.html#a11e6a0ecb51069e3c334b6f4b9c5c6bc">zone_manager::get_manager</a>();</div>
+<div class="line"><a id="l04441" name="l04441"></a><span class="lineno"> 4441</span>    <a class="code hl_class" href="classmap.html">map</a> &amp;here = <a class="code hl_function" href="map_8cpp.html#acb0b34be6e497bdd2f9f40ae6929d562">get_map</a>();</div>
+<div class="line"><a id="l04442" name="l04442"></a><span class="lineno"> 4442</span>    <span class="keyword">const</span> <a class="code hl_struct" href="structtripoint.html">tripoint</a> abspos = here.<a class="code hl_function" href="classmap.html#a501f3a1d449ac022f1b36b99da653e94">getabs</a>( p-&gt;<a class="code hl_function" href="classCharacter.html#ad24859164517ed6e392e21df69527199">pos</a>() );</div>
+<div class="line"><a id="l04443" name="l04443"></a><span class="lineno"> 4443</span>    std::unordered_set&lt;tripoint&gt; unsorted_tiles = mgr.<a class="code hl_function" href="classzone__manager.html#a9790f2a2f3d3b707b0fb0a9d873de1ab">get_near</a>( ztype, abspos );</div>
+<div class="line"><a id="l04444" name="l04444"></a><span class="lineno"> 4444</span> </div>
+<div class="line"><a id="l04445" name="l04445"></a><span class="lineno"> 4445</span>    <a class="code hl_function" href="activity__handlers_8cpp.html#ae09f2e3b178fd8aaf60b7d17c5c8f613">cleanup_tiles</a>( unsorted_tiles, tile_filter );</div>
+<div class="line"><a id="l04446" name="l04446"></a><span class="lineno"> 4446</span> </div>
+<div class="line"><a id="l04447" name="l04447"></a><span class="lineno"> 4447</span>    <span class="comment">// sort remaining tiles by distance</span></div>
+<div class="line"><a id="l04448" name="l04448"></a><span class="lineno"> 4448</span>    <span class="keyword">const</span> std::vector&lt;tripoint&gt; &amp;tiles = <a class="code hl_function" href="activity__handlers_8cpp.html#ad56bc2a183ef33fafef613435a366c27">get_sorted_tiles_by_distance</a>( abspos, unsorted_tiles );</div>
+<div class="line"><a id="l04449" name="l04449"></a><span class="lineno"> 4449</span> </div>
+<div class="line"><a id="l04450" name="l04450"></a><span class="lineno"> 4450</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_struct" href="structtripoint.html">tripoint</a> &amp;tile : tiles ) {</div>
+<div class="line"><a id="l04451" name="l04451"></a><span class="lineno"> 4451</span>        <span class="keyword">const</span> <a class="code hl_struct" href="structtripoint.html">tripoint</a> &amp;tile_loc = here.<a class="code hl_function" href="classmap.html#a426c21f7244ff80a61685a89e9146fec">getlocal</a>( tile );</div>
+<div class="line"><a id="l04452" name="l04452"></a><span class="lineno"> 4452</span> </div>
+<div class="line"><a id="l04453" name="l04453"></a><span class="lineno"> 4453</span>        std::vector&lt;tripoint&gt; route = here.<a class="code hl_function" href="classmap.html#a6b4a1306861221ee22ba193a884ef606">route</a>( p-&gt;<a class="code hl_function" href="classCharacter.html#ad24859164517ed6e392e21df69527199">pos</a>(), tile_loc, p-&gt;<a class="code hl_function" href="classCharacter.html#aa7240b1a7ad2b5c556a6aeafc2132d46">get_pathfinding_settings</a>(),</div>
+<div class="line"><a id="l04454" name="l04454"></a><span class="lineno"> 4454</span>                                      p-&gt;<a class="code hl_function" href="classCharacter.html#a4820be3a01e28cb0ad60f95a2df82e06">get_path_avoid</a>() );</div>
+<div class="line"><a id="l04455" name="l04455"></a><span class="lineno"> 4455</span>        <span class="keywordflow">if</span>( route.size() &gt; 1 ) {</div>
+<div class="line"><a id="l04456" name="l04456"></a><span class="lineno"> 4456</span>            route.pop_back();</div>
+<div class="line"><a id="l04457" name="l04457"></a><span class="lineno"> 4457</span> </div>
+<div class="line"><a id="l04458" name="l04458"></a><span class="lineno"> 4458</span>            p-&gt;<a class="code hl_function" href="classCharacter.html#a05f34432b3b1eabef92da141910daf09">set_destination</a>( route, p-&gt;<a class="code hl_variable" href="classCharacter.html#a20839520f569c4f05876a55e89f67361">activity</a> );</div>
+<div class="line"><a id="l04459" name="l04459"></a><span class="lineno"> 4459</span>            p-&gt;<a class="code hl_variable" href="classCharacter.html#a20839520f569c4f05876a55e89f67361">activity</a>.<a class="code hl_function" href="classplayer__activity.html#a765ca7b3410253c05939a8c1f1999c4a">set_to_null</a>();</div>
+<div class="line"><a id="l04460" name="l04460"></a><span class="lineno"> 4460</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l04461" name="l04461"></a><span class="lineno"> 4461</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l04462" name="l04462"></a><span class="lineno"> 4462</span>            <span class="comment">// we are at destination already</span></div>
+<div class="line"><a id="l04463" name="l04463"></a><span class="lineno"> 4463</span>            <span class="comment">/* Perform action */</span></div>
+<div class="line"><a id="l04464" name="l04464"></a><span class="lineno"> 4464</span>            tile_action( *p, tile_loc );</div>
+<div class="line"><a id="l04465" name="l04465"></a><span class="lineno"> 4465</span>            <span class="keywordflow">if</span>( p-&gt;<a class="code hl_variable" href="classCreature.html#a8c5a392caa213bee9581b47e9f0e2052">moves</a> &lt;= 0 ) {</div>
+<div class="line"><a id="l04466" name="l04466"></a><span class="lineno"> 4466</span>                <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l04467" name="l04467"></a><span class="lineno"> 4467</span>            }</div>
+<div class="line"><a id="l04468" name="l04468"></a><span class="lineno"> 4468</span>        }</div>
+<div class="line"><a id="l04469" name="l04469"></a><span class="lineno"> 4469</span>    }</div>
+<div class="line"><a id="l04470" name="l04470"></a><span class="lineno"> 4470</span>    <a class="code hl_function" href="messages_8cpp.html#a54489326fc37823819c5105addfa27f2">add_msg</a>( <a class="code hl_enumvalue" href="enums_8h.html#a3baf36d700701401b6baf94db93d096ea5d3734a51686ceb1848704dd277dfc7f">m_info</a>, finished_msg );</div>
+<div class="line"><a id="l04471" name="l04471"></a><span class="lineno"> 4471</span>    p-&gt;<a class="code hl_variable" href="classCharacter.html#a20839520f569c4f05876a55e89f67361">activity</a>.<a class="code hl_function" href="classplayer__activity.html#a765ca7b3410253c05939a8c1f1999c4a">set_to_null</a>();</div>
+<div class="line"><a id="l04472" name="l04472"></a><span class="lineno"> 4472</span>}</div>
+<div class="ttc" id="aactivity__handlers_8cpp_html_ad56bc2a183ef33fafef613435a366c27"><div class="ttname"><a href="activity__handlers_8cpp.html#ad56bc2a183ef33fafef613435a366c27">get_sorted_tiles_by_distance</a></div><div class="ttdeci">std::vector&lt; tripoint &gt; get_sorted_tiles_by_distance(const tripoint &amp;abspos, const std::unordered_set&lt; tripoint &gt; &amp;tiles)</div><div class="ttdef"><b>Definition:</b> <a href="activity__handlers_8cpp_source.html#l04402">activity_handlers.cpp:4402</a></div></div>
+<div class="ttc" id="aactivity__handlers_8cpp_html_ae09f2e3b178fd8aaf60b7d17c5c8f613"><div class="ttname"><a href="activity__handlers_8cpp.html#ae09f2e3b178fd8aaf60b7d17c5c8f613">cleanup_tiles</a></div><div class="ttdeci">static void cleanup_tiles(std::unordered_set&lt; tripoint &gt; &amp;tiles, fn &amp;cleanup)</div><div class="ttdef"><b>Definition:</b> <a href="activity__handlers_8cpp_source.html#l04419">activity_handlers.cpp:4419</a></div></div>
 <div class="ttc" id="aclassCharacter_html_a05f34432b3b1eabef92da141910daf09"><div class="ttname"><a href="classCharacter.html#a05f34432b3b1eabef92da141910daf09">Character::set_destination</a></div><div class="ttdeci">void set_destination(const std::vector&lt; tripoint &gt; &amp;route, const player_activity &amp;new_destination_activity=player_activity())</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l10439">character.cpp:10439</a></div></div>
 <div class="ttc" id="aclassCharacter_html_a20839520f569c4f05876a55e89f67361"><div class="ttname"><a href="classCharacter.html#a20839520f569c4f05876a55e89f67361">Character::activity</a></div><div class="ttdeci">player_activity activity</div><div class="ttdef"><b>Definition:</b> <a href="character_8h_source.html#l01541">character.h:1541</a></div></div>
 <div class="ttc" id="aclassCharacter_html_a4820be3a01e28cb0ad60f95a2df82e06"><div class="ttname"><a href="classCharacter.html#a4820be3a01e28cb0ad60f95a2df82e06">Character::get_path_avoid</a></div><div class="ttdeci">std::set&lt; tripoint &gt; get_path_avoid() const override</div><div class="ttdoc">Returns a set of points we do not want to path through.</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l09907">character.cpp:9907</a></div></div>
@@ -2801,9 +2801,9 @@ template&lt;typename fn &gt; </div>
 <div class="ttc" id="aclasszone__manager_html_a9790f2a2f3d3b707b0fb0a9d873de1ab"><div class="ttname"><a href="classzone__manager.html#a9790f2a2f3d3b707b0fb0a9d873de1ab">zone_manager::get_near</a></div><div class="ttdeci">std::unordered_set&lt; tripoint &gt; get_near(const zone_type_id &amp;type, const tripoint &amp;where, int range=MAX_DISTANCE, const item *it=nullptr, const faction_id &amp;fac=your_fac) const</div><div class="ttdef"><b>Definition:</b> <a href="clzones_8cpp_source.html#l00772">clzones.cpp:772</a></div></div>
 <div class="ttc" id="aenums_8h_html_a3baf36d700701401b6baf94db93d096ea5d3734a51686ceb1848704dd277dfc7f"><div class="ttname"><a href="enums_8h.html#a3baf36d700701401b6baf94db93d096ea5d3734a51686ceb1848704dd277dfc7f">m_info</a></div><div class="ttdeci">@ m_info</div><div class="ttdef"><b>Definition:</b> <a href="enums_8h_source.html#l00265">enums.h:265</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="character_8h_source.html#l01541">Character::activity</a>, <a class="el" href="messages_8cpp_source.html#l00884">add_msg()</a>, <a class="el" href="activity__handlers_8cpp_source.html#l04403">cleanup_tiles()</a>, <a class="el" href="clzones_8cpp_source.html#l00126">zone_manager::get_manager()</a>, <a class="el" href="map_8cpp_source.html#l00146">get_map()</a>, <a class="el" href="clzones_8cpp_source.html#l00772">zone_manager::get_near()</a>, <a class="el" href="character_8cpp_source.html#l09907">Character::get_path_avoid()</a>, <a class="el" href="character_8cpp_source.html#l09921">Character::get_pathfinding_settings()</a>, <a class="el" href="activity__handlers_8cpp_source.html#l04386">get_sorted_tiles_by_distance()</a>, <a class="el" href="map_8cpp_source.html#l08277">map::getabs()</a>, <a class="el" href="map_8cpp_source.html#l08282">map::getlocal()</a>, <a class="el" href="enums_8h_source.html#l00265">m_info</a>, <a class="el" href="creature_8h_source.html#l00574">Creature::moves</a>, <a class="el" href="character_8cpp_source.html#l00587">Character::pos()</a>, <a class="el" href="pathfinding_8cpp_source.html#l00194">map::route()</a>, <a class="el" href="character_8cpp_source.html#l10439">Character::set_destination()</a>, and <a class="el" href="player__activity_8cpp_source.html#l00081">player_activity::set_to_null()</a>.</p>
+<p class="reference">References <a class="el" href="character_8h_source.html#l01541">Character::activity</a>, <a class="el" href="messages_8cpp_source.html#l00884">add_msg()</a>, <a class="el" href="activity__handlers_8cpp_source.html#l04419">cleanup_tiles()</a>, <a class="el" href="clzones_8cpp_source.html#l00126">zone_manager::get_manager()</a>, <a class="el" href="map_8cpp_source.html#l00146">get_map()</a>, <a class="el" href="clzones_8cpp_source.html#l00772">zone_manager::get_near()</a>, <a class="el" href="character_8cpp_source.html#l09907">Character::get_path_avoid()</a>, <a class="el" href="character_8cpp_source.html#l09921">Character::get_pathfinding_settings()</a>, <a class="el" href="activity__handlers_8cpp_source.html#l04402">get_sorted_tiles_by_distance()</a>, <a class="el" href="map_8cpp_source.html#l08277">map::getabs()</a>, <a class="el" href="map_8cpp_source.html#l08282">map::getlocal()</a>, <a class="el" href="enums_8h_source.html#l00265">m_info</a>, <a class="el" href="creature_8h_source.html#l00574">Creature::moves</a>, <a class="el" href="character_8cpp_source.html#l00587">Character::pos()</a>, <a class="el" href="pathfinding_8cpp_source.html#l00194">map::route()</a>, <a class="el" href="character_8cpp_source.html#l10439">Character::set_destination()</a>, and <a class="el" href="player__activity_8cpp_source.html#l00081">player_activity::set_to_null()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="activity__handlers_8cpp_source.html#l04458">activity_handlers::fertilize_plot_do_turn()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="activity__handlers_8cpp_source.html#l04474">activity_handlers::fertilize_plot_do_turn()</a>.</p>
 
 </div>
 </div>
@@ -5657,7 +5657,7 @@ template&lt;typename fn &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="activity__handlers_8cpp_source.html#l04528">activity_handlers::robot_control_finish()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="activity__handlers_8cpp_source.html#l04544">activity_handlers::robot_control_finish()</a>.</p>
 
 </div>
 </div>
@@ -5825,7 +5825,7 @@ template&lt;typename fn &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="activity__handlers_8cpp_source.html#l04266">activity_handlers::chop_planks_finish()</a>, and <a class="el" href="activity__handlers_8cpp_source.html#l04101">activity_handlers::pry_nails_finish()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="activity__handlers_8cpp_source.html#l04282">activity_handlers::chop_planks_finish()</a>, and <a class="el" href="activity__handlers_8cpp_source.html#l04101">activity_handlers::pry_nails_finish()</a>.</p>
 
 </div>
 </div>
@@ -5993,7 +5993,7 @@ template&lt;typename fn &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="activity__handlers_8cpp_source.html#l04220">activity_handlers::chop_logs_finish()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="activity__handlers_8cpp_source.html#l04240">activity_handlers::chop_logs_finish()</a>.</p>
 
 </div>
 </div>
@@ -6021,7 +6021,7 @@ template&lt;typename fn &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="activity__handlers_8cpp_source.html#l04836">activity_handlers::mind_splicer_finish()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="activity__handlers_8cpp_source.html#l04852">activity_handlers::mind_splicer_finish()</a>.</p>
 
 </div>
 </div>
@@ -6273,7 +6273,7 @@ template&lt;typename fn &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="activity__handlers_8cpp_source.html#l04220">activity_handlers::chop_logs_finish()</a>, and <a class="el" href="activity__handlers_8cpp_source.html#l04266">activity_handlers::chop_planks_finish()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="activity__handlers_8cpp_source.html#l04240">activity_handlers::chop_logs_finish()</a>, and <a class="el" href="activity__handlers_8cpp_source.html#l04282">activity_handlers::chop_planks_finish()</a>.</p>
 
 </div>
 </div>
@@ -6357,7 +6357,7 @@ template&lt;typename fn &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="activity__handlers_8cpp_source.html#l04220">activity_handlers::chop_logs_finish()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="activity__handlers_8cpp_source.html#l04240">activity_handlers::chop_logs_finish()</a>.</p>
 
 </div>
 </div>
@@ -6609,7 +6609,7 @@ template&lt;typename fn &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="activity__handlers_8cpp_source.html#l04528">activity_handlers::robot_control_finish()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="activity__handlers_8cpp_source.html#l04544">activity_handlers::robot_control_finish()</a>.</p>
 
 </div>
 </div>
@@ -6833,7 +6833,7 @@ template&lt;typename fn &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="activity__handlers_8cpp_source.html#l04590">activity_handlers::tree_communion_do_turn()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="activity__handlers_8cpp_source.html#l04606">activity_handlers::tree_communion_do_turn()</a>.</p>
 
 </div>
 </div>
@@ -6917,7 +6917,7 @@ template&lt;typename fn &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="activity__handlers_8cpp_source.html#l04458">activity_handlers::fertilize_plot_do_turn()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="activity__handlers_8cpp_source.html#l04474">activity_handlers::fertilize_plot_do_turn()</a>.</p>
 
 </div>
 </div>
@@ -6927,7 +6927,7 @@ template&lt;typename fn &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="activity__handlers_8cpp.html">activity_handlers.cpp</a></li>
-    <li class="footer">Generated on Tue Feb 21 2023 16:43:15 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Mar 5 2023 13:50:50 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

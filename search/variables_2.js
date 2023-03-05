@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['b_0',['B',['../classtileset__loader.html#ac360ca5bb6b22dd42d6f98b0adff0cdb',1,'tileset_loader']]],
-  ['b_1',['b',['../magic_8cpp.html#aa93a189fb7bbbf87be54bcc7bd11bb6f',1,'b():&#160;magic.cpp'],['../structcata__libintl_1_1PlfNode.html#ae4ce93dcac0d4177f27f033261852941',1,'cata_libintl::PlfNode::b()']]],
+  ['b_0',['b',['../structcata__libintl_1_1PlfNode.html#ae4ce93dcac0d4177f27f033261852941',1,'cata_libintl::PlfNode::b()'],['../magic_8cpp.html#aa93a189fb7bbbf87be54bcc7bd11bb6f',1,'b():&#160;magic.cpp']]],
+  ['b_1',['B',['../classtileset__loader.html#ac360ca5bb6b22dd42d6f98b0adff0cdb',1,'tileset_loader']]],
   ['baby_5fcount_2',['baby_count',['../structmtype.html#a067238f4291179596bd5a657768faf5e',1,'mtype']]],
   ['baby_5fegg_3',['baby_egg',['../structmtype.html#a3a13c9cf426dc128a044ac158b505ccd',1,'mtype']]],
   ['baby_5fflags_4',['baby_flags',['../structmtype.html#a9636bf314611b06345f1a78b4e88e8ae',1,'mtype']]],

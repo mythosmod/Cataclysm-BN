@@ -1,5 +1,7 @@
 var NAVTREEINDEX96 =
 {
+"iuse__software__kitten_8cpp.html#ab91264844d482eccf3df3c244542c887":[37,0,1,308,1],
+"iuse__software__kitten_8cpp.html#aebe00da7c53c51646139738ce751d23e":[37,0,1,308,0],
 "iuse__software__kitten_8cpp_source.html":[37,0,1,308],
 "iuse__software__kitten_8h.html":[37,0,1,309],
 "iuse__software__kitten_8h.html#a13c50bed5abc547b870a1b17c01bd5c6":[37,0,1,309,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX96 =
 "line_8h.html#abe565ec8aa356531238f99029077c3a1":[37,0,1,329,18],
 "line_8h.html#abfa81dbbf47555a0fbf54985c0a5e34b":[37,0,1,329,19],
 "line_8h.html#ac2bc9d6af659b097677d1edafa6f18dc":[37,0,1,329,23],
-"line_8h.html#ac316ae5a3a80221fde94d96fd20b3252":[37,0,1,329,46],
-"line_8h.html#ac383ece74a1052e55c219ae67eae23ed":[37,0,1,329,29],
-"line_8h.html#acc34ec60c39ad9adea4b3c003a0e346f":[37,0,1,329,30]
+"line_8h.html#ac316ae5a3a80221fde94d96fd20b3252":[37,0,1,329,46]
 };
