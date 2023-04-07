@@ -1,8 +1,8 @@
 var structjmapgen__setmap =
 [
     [ "jmapgen_setmap", "structjmapgen__setmap.html#a4b664addf801fbf880ee348287135794", null ],
-    [ "apply", "structjmapgen__setmap.html#a20df09960af82695daccb6faf6c2824a", null ],
-    [ "has_vehicle_collision", "structjmapgen__setmap.html#afe1f9f6f16569ac174201864d98d14d0", null ],
+    [ "apply", "structjmapgen__setmap.html#a411edba395fd66bd2404335c03e81b6c", null ],
+    [ "has_vehicle_collision", "structjmapgen__setmap.html#a3b846e04cbae27cbb0378530caf20c46", null ],
     [ "chance", "structjmapgen__setmap.html#ac9d3a111a91e8f062045cd78442fb445", null ],
     [ "fuel", "structjmapgen__setmap.html#ad9c6445133620989a8f7d179e64f09ac", null ],
     [ "op", "structjmapgen__setmap.html#a669bae04b0376f4d93386ff9a065cc77", null ],

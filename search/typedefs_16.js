@@ -6,7 +6,7 @@ var searchData=
   ['vehiclelist_3',['VehicleList',['../map_8h.html#ae705edb5469cf2668ca5bc3297d75ebb',1,'map.h']]],
   ['vgroup_5fid_4',['vgroup_id',['../type__id_8h.html#a8a80a957797f7274f4034bf3d715bb95',1,'type_id.h']]],
   ['vitamin_5fid_5',['vitamin_id',['../type__id_8h.html#a62798cd4a1ea702e8d25b8c0f17a4834',1,'type_id.h']]],
-  ['void_5ft_6',['void_t',['../namespacecata.html#ac6db800fd10425e04b1a5cf12c5b63b4',1,'cata::void_t()'],['../namespacedetail.html#a7bf6775e36600ae7e2bf9d6e0a309a0e',1,'detail::void_t()']]],
+  ['void_5ft_6',['void_t',['../namespacedetail.html#a7bf6775e36600ae7e2bf9d6e0a309a0e',1,'detail']]],
   ['volume_7',['volume',['../namespaceunits.html#a5d16607c866588620acb381e7dbbf0a6',1,'units']]],
   ['vpart_5fid_8',['vpart_id',['../type__id_8h.html#a01bb48ae3e1e67dbfa6a3a9679dc1b13',1,'type_id.h']]],
   ['vplacement_5fid_9',['vplacement_id',['../vehicle__group_8cpp.html#afcd71f287dfca44f11be446cc349e71f',1,'vehicle_group.cpp']]],

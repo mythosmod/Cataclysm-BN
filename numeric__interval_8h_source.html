@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('numeric__interval_8h_source.html','');
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> * An interval of numeric values between @ref min and @ref max (including both).</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"> * By default it&#39;s [0, 0].</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>template&lt;typename T, typename = typename std::enable_if&lt;std::is_arithmetic&lt;T&gt;::value, T&gt;<a class="code hl_enumvalue" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">::type</a>&gt;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>template&lt;typename T, typename = typename std::enable_if&lt;std::is_arithmetic&lt;T&gt;::value, T&gt;::type&gt;</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="structnumeric__interval.html">   13</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structnumeric__interval.html">numeric_interval</a> {</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="structnumeric__interval.html#a269629dbf5c857a4fb8327be528f6979">   14</a></span>    T <a class="code hl_variable" href="structnumeric__interval.html#a269629dbf5c857a4fb8327be528f6979">min</a> = <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>( 0 );</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="structnumeric__interval.html#a13c026787e036352244b6d14bb7c8974">   15</a></span>    T <a class="code hl_variable" href="structnumeric__interval.html#a13c026787e036352244b6d14bb7c8974">max</a> = <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>( 0 );</div>
@@ -136,7 +136,6 @@ $(document).ready(function(){initNavTree('numeric__interval_8h_source.html','');
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>};</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">#endif </span><span class="comment">// CATA_SRC_NUMERIC_INTERVAL_H</span></div>
-<div class="ttc" id="aenums_8h_html_ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab"><div class="ttname"><a href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a></div><div class="ttdeci">@ type</div><div class="ttdef"><b>Definition:</b> <a href="enums_8h_source.html#l00075">enums.h:75</a></div></div>
 <div class="ttc" id="astructnumeric__interval_html"><div class="ttname"><a href="structnumeric__interval.html">numeric_interval</a></div><div class="ttdoc">An interval of numeric values between min and max (including both).</div><div class="ttdef"><b>Definition:</b> <a href="numeric__interval_8h_source.html#l00013">numeric_interval.h:13</a></div></div>
 <div class="ttc" id="astructnumeric__interval_html_a13c026787e036352244b6d14bb7c8974"><div class="ttname"><a href="structnumeric__interval.html#a13c026787e036352244b6d14bb7c8974">numeric_interval::max</a></div><div class="ttdeci">T max</div><div class="ttdef"><b>Definition:</b> <a href="numeric__interval_8h_source.html#l00015">numeric_interval.h:15</a></div></div>
 <div class="ttc" id="astructnumeric__interval_html_a269629dbf5c857a4fb8327be528f6979"><div class="ttname"><a href="structnumeric__interval.html#a269629dbf5c857a4fb8327be528f6979">numeric_interval::min</a></div><div class="ttdeci">T min</div><div class="ttdef"><b>Definition:</b> <a href="numeric__interval_8h_source.html#l00014">numeric_interval.h:14</a></div></div>
@@ -153,7 +152,7 @@ $(document).ready(function(){initNavTree('numeric__interval_8h_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="numeric__interval_8h.html">numeric_interval.h</a></li>
-    <li class="footer">Generated on Sun Mar 5 2023 13:50:46 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Apr 7 2023 11:54:23 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

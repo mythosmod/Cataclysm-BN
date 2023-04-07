@@ -11,5 +11,5 @@ var panels_8h =
       [ "num_face_types", "panels_8h.html#aa9ae456d755307b1a665dd781dbc4310a959995eb8d5a16e6cf71bdd5553a754f", null ]
     ] ],
     [ "default_render", "panels_8h.html#a395dae91e0e6afff7a8cfa369fcef79e", null ],
-    [ "draw_overmap_chunk", "panels_8h.html#a37d0b9bb160674dc0bbc582369d92851", null ]
+    [ "draw_overmap_chunk", "panels_8h.html#ab7ad1426d5b3660c6739b39aae49ac75", null ]
 ];

@@ -17,7 +17,7 @@ var bionics__ui_8cpp =
     [ "build_bionic_poweronly_string", "bionics__ui_8cpp.html#abbbbc3a3f59aa742c56d1859f4322d81", null ],
     [ "draw_bionics_tabs", "bionics__ui_8cpp.html#a495d46ceb2a001ed1facf8fbf3ab2214", null ],
     [ "draw_bionics_titlebar", "bionics__ui_8cpp.html#a3f0236709f98a67d2e06209760516c29", null ],
-    [ "draw_connectors", "bionics__ui_8cpp.html#ad287f2588d6099c5a707d3fb393c48f3", null ],
+    [ "draw_connectors", "bionics__ui_8cpp.html#a9ef7fe282d51ffdf89128616b9ae341a", null ],
     [ "draw_description", "bionics__ui_8cpp.html#a0832672891b5d01f28b63b87ebef7000", null ],
     [ "enum_to_string< bionic_ui_sort_mode >", "bionics__ui_8cpp.html#a816d44b68b7e973810bc31ab307bc3ca", null ],
     [ "filtered_bionics", "bionics__ui_8cpp.html#a95f7f538372383fda933731f36111520", null ],

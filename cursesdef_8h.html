@@ -98,6 +98,7 @@ $(document).ready(function(){initNavTree('cursesdef_8h.html',''); initResizable(
 <div class="textblock"><code>#include &lt;memory&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;utility&gt;</code><br />
+<code>#include &quot;<a class="el" href="point_8h_source.html">point.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="string__formatter_8h_source.html">string_formatter.h</a>&quot;</code><br />
 </div>
 <p><a href="cursesdef_8h_source.html">Go to the source code of this file.</a></p>
@@ -146,14 +147,14 @@ Enumerations</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a32aaa8d91a1c9743a545d4efb24f7c39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecatacurses.html#a32aaa8d91a1c9743a545d4efb24f7c39">catacurses::init_interface</a> ()</td></tr>
 <tr class="separator:a32aaa8d91a1c9743a545d4efb24f7c39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a576fd20080b8f49e27acf97af45b374b"><td class="memItemLeft" align="right" valign="top">window&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecatacurses.html#a576fd20080b8f49e27acf97af45b374b">catacurses::newwin</a> (int nlines, int ncols, const <a class="el" href="structpoint.html">point</a> &amp;begin)</td></tr>
-<tr class="separator:a576fd20080b8f49e27acf97af45b374b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46f283ad0553e1f25b069e41c3a6bd3f"><td class="memItemLeft" align="right" valign="top">window&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecatacurses.html#a46f283ad0553e1f25b069e41c3a6bd3f">catacurses::newwin</a> (int nlines, int ncols, <a class="el" href="structpoint.html">point</a> begin)</td></tr>
+<tr class="separator:a46f283ad0553e1f25b069e41c3a6bd3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b4f58d631572c4763be9efe9af6c6bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecatacurses.html#a4b4f58d631572c4763be9efe9af6c6bc">catacurses::wborder</a> (const window &amp;win, chtype ls, chtype rs, chtype ts, chtype bs, chtype tl, chtype tr, chtype bl, chtype br)</td></tr>
 <tr class="separator:a4b4f58d631572c4763be9efe9af6c6bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a378d993a574b6bf30ea509fa46de2142"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecatacurses.html#a378d993a574b6bf30ea509fa46de2142">catacurses::mvwhline</a> (const window &amp;win, const <a class="el" href="structpoint.html">point</a> &amp;p, chtype ch, int n)</td></tr>
-<tr class="separator:a378d993a574b6bf30ea509fa46de2142"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b1752cd3ddf8789d193e23b540d6354"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecatacurses.html#a6b1752cd3ddf8789d193e23b540d6354">catacurses::mvwvline</a> (const window &amp;win, const <a class="el" href="structpoint.html">point</a> &amp;p, chtype ch, int n)</td></tr>
-<tr class="separator:a6b1752cd3ddf8789d193e23b540d6354"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5533daa5f2a9fcf1f9f313a3556d7f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecatacurses.html#ab5533daa5f2a9fcf1f9f313a3556d7f4">catacurses::mvwhline</a> (const window &amp;win, <a class="el" href="structpoint.html">point</a> p, chtype ch, int n)</td></tr>
+<tr class="separator:ab5533daa5f2a9fcf1f9f313a3556d7f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af889ea12da0cb260a5062cb2c14dcd6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecatacurses.html#af889ea12da0cb260a5062cb2c14dcd6c">catacurses::mvwvline</a> (const window &amp;win, <a class="el" href="structpoint.html">point</a> p, chtype ch, int n)</td></tr>
+<tr class="separator:af889ea12da0cb260a5062cb2c14dcd6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9823d249c21fa50daf277957fabb175"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecatacurses.html#aa9823d249c21fa50daf277957fabb175">catacurses::wnoutrefresh</a> (const window &amp;win)</td></tr>
 <tr class="separator:aa9823d249c21fa50daf277957fabb175"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a896759dbb967711125b3bd6677dcb578"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecatacurses.html#a896759dbb967711125b3bd6677dcb578">catacurses::wrefresh</a> (const window &amp;win)</td></tr>
@@ -164,11 +165,11 @@ Functions</h2></td></tr>
 <tr class="separator:a27081969be8988bf3f1679ebf24c151e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a978385287cda8b0d536e49accf5d8670"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecatacurses.html#a978385287cda8b0d536e49accf5d8670">catacurses::wredrawln</a> (const window &amp;win, int beg_line, int num_lines)</td></tr>
 <tr class="separator:a978385287cda8b0d536e49accf5d8670"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abde9c157650e464f0a27441d81c84644"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecatacurses.html#abde9c157650e464f0a27441d81c84644">catacurses::mvwprintw</a> (const window &amp;win, const <a class="el" href="structpoint.html">point</a> &amp;p, const std::string &amp;text)</td></tr>
-<tr class="separator:abde9c157650e464f0a27441d81c84644"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5c0cec490a21d0b2a143ec2b23f9d0d"><td class="memTemplParams" colspan="2">template&lt;typename ... Args&gt; </td></tr>
-<tr class="memitem:ac5c0cec490a21d0b2a143ec2b23f9d0d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecatacurses.html#ac5c0cec490a21d0b2a143ec2b23f9d0d">catacurses::mvwprintw</a> (const window &amp;win, const <a class="el" href="structpoint.html">point</a> &amp;p, const char *const fmt, Args &amp;&amp;... args)</td></tr>
-<tr class="separator:ac5c0cec490a21d0b2a143ec2b23f9d0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe25c16ff9629ebead2700627a024798"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecatacurses.html#abe25c16ff9629ebead2700627a024798">catacurses::mvwprintw</a> (const window &amp;win, <a class="el" href="structpoint.html">point</a> p, const std::string &amp;text)</td></tr>
+<tr class="separator:abe25c16ff9629ebead2700627a024798"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17ad637d111cd64a16643380c6c5af84"><td class="memTemplParams" colspan="2">template&lt;typename ... Args&gt; </td></tr>
+<tr class="memitem:a17ad637d111cd64a16643380c6c5af84"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecatacurses.html#a17ad637d111cd64a16643380c6c5af84">catacurses::mvwprintw</a> (const window &amp;win, <a class="el" href="structpoint.html">point</a> p, const char *const fmt, Args &amp;&amp;... args)</td></tr>
+<tr class="separator:a17ad637d111cd64a16643380c6c5af84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6a3d2a02cedf27061fed6e3991b0dc5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecatacurses.html#ae6a3d2a02cedf27061fed6e3991b0dc5">catacurses::wprintw</a> (const window &amp;win, const std::string &amp;text)</td></tr>
 <tr class="separator:ae6a3d2a02cedf27061fed6e3991b0dc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15fdfac7c1c8dabb4e3455539c483af5"><td class="memTemplParams" colspan="2">template&lt;typename ... Args&gt; </td></tr>
@@ -180,16 +181,16 @@ Functions</h2></td></tr>
 <tr class="separator:ace2ce3990cb812fb83adf6e4ea1f9e8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e9a783e2fdee22a75e15b2588c683f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecatacurses.html#a6e9a783e2fdee22a75e15b2588c683f8">catacurses::init_pair</a> (short pair, base_color f, base_color <a class="el" href="magic_8cpp.html#aa93a189fb7bbbf87be54bcc7bd11bb6f">b</a>)</td></tr>
 <tr class="separator:a6e9a783e2fdee22a75e15b2588c683f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7f0e03a6caab1f1ccc2fb5f01ba00ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecatacurses.html#af7f0e03a6caab1f1ccc2fb5f01ba00ac">catacurses::wmove</a> (const window &amp;win, const <a class="el" href="structpoint.html">point</a> &amp;p)</td></tr>
-<tr class="separator:af7f0e03a6caab1f1ccc2fb5f01ba00ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e5613e777bbcbfc5535e7207c124fc3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecatacurses.html#a2e5613e777bbcbfc5535e7207c124fc3">catacurses::wmove</a> (const window &amp;win, <a class="el" href="structpoint.html">point</a> p)</td></tr>
+<tr class="separator:a2e5613e777bbcbfc5535e7207c124fc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c7bd928a22237a0e44655339ee91cc5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecatacurses.html#a4c7bd928a22237a0e44655339ee91cc5">catacurses::clear</a> ()</td></tr>
 <tr class="separator:a4c7bd928a22237a0e44655339ee91cc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab21fb51b59b9cfef11982366b84e8ebe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecatacurses.html#ab21fb51b59b9cfef11982366b84e8ebe">catacurses::erase</a> ()</td></tr>
 <tr class="separator:ab21fb51b59b9cfef11982366b84e8ebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa6ab6a4b5d9ec592a63954a98ae5d69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecatacurses.html#afa6ab6a4b5d9ec592a63954a98ae5d69">catacurses::endwin</a> ()</td></tr>
 <tr class="separator:afa6ab6a4b5d9ec592a63954a98ae5d69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1687642ac64126135cb717de36e9e087"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecatacurses.html#a1687642ac64126135cb717de36e9e087">catacurses::mvwaddch</a> (const window &amp;win, const <a class="el" href="structpoint.html">point</a> &amp;p, chtype ch)</td></tr>
-<tr class="separator:a1687642ac64126135cb717de36e9e087"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9db44d32ed9ffa121c71f636076a2cda"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecatacurses.html#a9db44d32ed9ffa121c71f636076a2cda">catacurses::mvwaddch</a> (const window &amp;win, <a class="el" href="structpoint.html">point</a> p, chtype ch)</td></tr>
+<tr class="separator:a9db44d32ed9ffa121c71f636076a2cda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a402d7f84a5c7c6cf98374e9755bd2c02"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecatacurses.html#a402d7f84a5c7c6cf98374e9755bd2c02">catacurses::wclear</a> (const window &amp;win)</td></tr>
 <tr class="separator:a402d7f84a5c7c6cf98374e9755bd2c02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a318ed8a6d24b14199d44f3303d281622"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecatacurses.html#a318ed8a6d24b14199d44f3303d281622">catacurses::curs_set</a> (int visibility)</td></tr>
@@ -241,7 +242,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="cursesdef_8h.html">cursesdef.h</a></li>
-    <li class="footer">Generated on Sun Mar 5 2023 13:50:51 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Apr 7 2023 11:54:29 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

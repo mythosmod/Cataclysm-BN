@@ -1,7 +1,7 @@
 var structmaptile__soa =
 [
-    [ "swap_soa_tile", "structmaptile__soa.html#a17238cbe03c34a5286e7ee1a54f87fdf", null ],
-    [ "swap_soa_tile", "structmaptile__soa.html#a8005c7bf6bef10c5dbfd28c42ed0c895", null ],
+    [ "swap_soa_tile", "structmaptile__soa.html#afbdb69a3d548dece1672cc9862475216", null ],
+    [ "swap_soa_tile", "structmaptile__soa.html#a4b544f27517996f2abbbe9ebffc18f36", null ],
     [ "fld", "structmaptile__soa.html#ad49da78bfefd8945c194955ef1922a94", null ],
     [ "frn", "structmaptile__soa.html#ae1af4924187739d419937a1a9e33f00a", null ],
     [ "itm", "structmaptile__soa.html#a9ba85c89aefe1632a1951ecbc71c25b3", null ],

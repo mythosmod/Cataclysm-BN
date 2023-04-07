@@ -154,7 +154,7 @@ class typed_flag_reader&lt; T &gt;</div><p >Uses a map (unordered or standard) t
 <p >One can use this if the member is <code>std::set&lt;some_enum&gt;</code> or <code>some_enum</code> and a map <code>std::map&lt;std::string, some_enum&gt;</code> with all the value enumeration values exists.</p>
 <p >The class can be conveniently instantiated for a given map <code>mapping</code> using the helper function <a class="el" href="generic__readers_8h.html#a8385f74f5687d1b7e43934bfad338d43">make_flag_reader</a> (see below). The flag type (<a class="el" href="classtyped__flag__reader.html#a345bc3f9f6dc5ea4d30f7f73810dab05">flag_type</a>) is used when the input contains invalid flags (a string that is not contained in the map). It should sound something like "my-enum-type". </p>
 
-<p class="definition">Definition at line <a class="el" href="generic__readers_8h_source.html#l00385">385</a> of file <a class="el" href="generic__readers_8h_source.html">generic_readers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generic__readers_8h_source.html#l00384">384</a> of file <a class="el" href="generic__readers_8h_source.html">generic_readers.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a2988ea6d8cd9754bf6d1fe1b63a69b64" name="a2988ea6d8cd9754bf6d1fe1b63a69b64"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2988ea6d8cd9754bf6d1fe1b63a69b64">&#9670;&nbsp;</a></span>map_t</h2>
@@ -178,7 +178,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="generic__readers_8h_source.html#l00388">388</a> of file <a class="el" href="generic__readers_8h_source.html">generic_readers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generic__readers_8h_source.html#l00387">387</a> of file <a class="el" href="generic__readers_8h_source.html">generic_readers.h</a>.</p>
 
 </div>
 </div>
@@ -219,12 +219,12 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="generic__readers_8h_source.html#l00395">395</a> of file <a class="el" href="generic__readers_8h_source.html">generic_readers.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>            : <a class="code hl_variable" href="classtyped__flag__reader.html#abcb93de0f96d6ef8bd07a797cfd64005">flag_map</a>( <a class="code hl_variable" href="classtyped__flag__reader.html#abcb93de0f96d6ef8bd07a797cfd64005">flag_map</a> )</div>
-<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>            , <a class="code hl_variable" href="classtyped__flag__reader.html#a345bc3f9f6dc5ea4d30f7f73810dab05">flag_type</a>( <a class="code hl_variable" href="classtyped__flag__reader.html#a345bc3f9f6dc5ea4d30f7f73810dab05">flag_type</a> ) {</div>
-<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>        }</div>
-<div class="ttc" id="aclasstyped__flag__reader_html_a345bc3f9f6dc5ea4d30f7f73810dab05"><div class="ttname"><a href="classtyped__flag__reader.html#a345bc3f9f6dc5ea4d30f7f73810dab05">typed_flag_reader::flag_type</a></div><div class="ttdeci">const std::string flag_type</div><div class="ttdef"><b>Definition:</b> <a href="generic__readers_8h_source.html#l00392">generic_readers.h:392</a></div></div>
-<div class="ttc" id="aclasstyped__flag__reader_html_abcb93de0f96d6ef8bd07a797cfd64005"><div class="ttname"><a href="classtyped__flag__reader.html#abcb93de0f96d6ef8bd07a797cfd64005">typed_flag_reader::flag_map</a></div><div class="ttdeci">const map_t &amp; flag_map</div><div class="ttdef"><b>Definition:</b> <a href="generic__readers_8h_source.html#l00391">generic_readers.h:391</a></div></div>
+<p class="definition">Definition at line <a class="el" href="generic__readers_8h_source.html#l00394">394</a> of file <a class="el" href="generic__readers_8h_source.html">generic_readers.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>            : <a class="code hl_variable" href="classtyped__flag__reader.html#abcb93de0f96d6ef8bd07a797cfd64005">flag_map</a>( <a class="code hl_variable" href="classtyped__flag__reader.html#abcb93de0f96d6ef8bd07a797cfd64005">flag_map</a> )</div>
+<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>            , <a class="code hl_variable" href="classtyped__flag__reader.html#a345bc3f9f6dc5ea4d30f7f73810dab05">flag_type</a>( <a class="code hl_variable" href="classtyped__flag__reader.html#a345bc3f9f6dc5ea4d30f7f73810dab05">flag_type</a> ) {</div>
+<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>        }</div>
+<div class="ttc" id="aclasstyped__flag__reader_html_a345bc3f9f6dc5ea4d30f7f73810dab05"><div class="ttname"><a href="classtyped__flag__reader.html#a345bc3f9f6dc5ea4d30f7f73810dab05">typed_flag_reader::flag_type</a></div><div class="ttdeci">const std::string flag_type</div><div class="ttdef"><b>Definition:</b> <a href="generic__readers_8h_source.html#l00391">generic_readers.h:391</a></div></div>
+<div class="ttc" id="aclasstyped__flag__reader_html_abcb93de0f96d6ef8bd07a797cfd64005"><div class="ttname"><a href="classtyped__flag__reader.html#abcb93de0f96d6ef8bd07a797cfd64005">typed_flag_reader::flag_map</a></div><div class="ttdeci">const map_t &amp; flag_map</div><div class="ttdef"><b>Definition:</b> <a href="generic__readers_8h_source.html#l00390">generic_readers.h:390</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -255,25 +255,25 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="generic__readers_8h_source.html#l00400">400</a> of file <a class="el" href="generic__readers_8h_source.html">generic_readers.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>                                        {</div>
-<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>            <span class="keyword">const</span> std::string flag = jin.<a class="code hl_function" href="classJsonIn.html#a7af38e6fc060866be2322268b5d3bcb9">get_string</a>();</div>
-<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span>            <span class="keyword">const</span> <span class="keyword">auto</span> iter = <a class="code hl_variable" href="classtyped__flag__reader.html#abcb93de0f96d6ef8bd07a797cfd64005">flag_map</a>.find( flag );</div>
-<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span> </div>
-<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span>            <span class="keywordflow">if</span>( iter == <a class="code hl_variable" href="classtyped__flag__reader.html#abcb93de0f96d6ef8bd07a797cfd64005">flag_map</a>.cend() ) {</div>
-<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>                jin.<a class="code hl_function" href="classJsonIn.html#a1e30e812d36d9f3ec4321173910ef58a">seek</a>( jin.<a class="code hl_function" href="classJsonIn.html#a5873a409b1f51a11b40dedd448e4438d">tell</a>() );</div>
-<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span>                jin.<a class="code hl_function" href="classJsonIn.html#a7178372186175a21337660d591f2c858">error</a>( <a class="code hl_function" href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a>( <span class="stringliteral">&quot;invalid %s: \&quot;%s\&quot;&quot;</span>, <a class="code hl_variable" href="classtyped__flag__reader.html#a345bc3f9f6dc5ea4d30f7f73810dab05">flag_type</a>, flag ) );</div>
-<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span>            }</div>
-<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span> </div>
-<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>            <span class="keywordflow">return</span> iter-&gt;second;</div>
-<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>        }</div>
+<p class="definition">Definition at line <a class="el" href="generic__readers_8h_source.html#l00399">399</a> of file <a class="el" href="generic__readers_8h_source.html">generic_readers.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>                                        {</div>
+<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>            <span class="keyword">const</span> std::string flag = jin.<a class="code hl_function" href="classJsonIn.html#a7af38e6fc060866be2322268b5d3bcb9">get_string</a>();</div>
+<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>            <span class="keyword">const</span> <span class="keyword">auto</span> iter = <a class="code hl_variable" href="classtyped__flag__reader.html#abcb93de0f96d6ef8bd07a797cfd64005">flag_map</a>.find( flag );</div>
+<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span> </div>
+<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span>            <span class="keywordflow">if</span>( iter == <a class="code hl_variable" href="classtyped__flag__reader.html#abcb93de0f96d6ef8bd07a797cfd64005">flag_map</a>.cend() ) {</div>
+<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span>                jin.<a class="code hl_function" href="classJsonIn.html#a1e30e812d36d9f3ec4321173910ef58a">seek</a>( jin.<a class="code hl_function" href="classJsonIn.html#a5873a409b1f51a11b40dedd448e4438d">tell</a>() );</div>
+<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>                jin.<a class="code hl_function" href="classJsonIn.html#a7178372186175a21337660d591f2c858">error</a>( <a class="code hl_function" href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a>( <span class="stringliteral">&quot;invalid %s: \&quot;%s\&quot;&quot;</span>, <a class="code hl_variable" href="classtyped__flag__reader.html#a345bc3f9f6dc5ea4d30f7f73810dab05">flag_type</a>, flag ) );</div>
+<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span>            }</div>
+<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span> </div>
+<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>            <span class="keywordflow">return</span> iter-&gt;second;</div>
+<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>        }</div>
 <div class="ttc" id="aclassJsonIn_html_a1e30e812d36d9f3ec4321173910ef58a"><div class="ttname"><a href="classJsonIn.html#a1e30e812d36d9f3ec4321173910ef58a">JsonIn::seek</a></div><div class="ttdeci">void seek(int pos)</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l00808">json.cpp:808</a></div></div>
 <div class="ttc" id="aclassJsonIn_html_a5873a409b1f51a11b40dedd448e4438d"><div class="ttname"><a href="classJsonIn.html#a5873a409b1f51a11b40dedd448e4438d">JsonIn::tell</a></div><div class="ttdeci">int tell()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l00795">json.cpp:795</a></div></div>
 <div class="ttc" id="aclassJsonIn_html_a7178372186175a21337660d591f2c858"><div class="ttname"><a href="classJsonIn.html#a7178372186175a21337660d591f2c858">JsonIn::error</a></div><div class="ttdeci">void error(const std::string &amp;message, int offset=0)</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01745">json.cpp:1745</a></div></div>
 <div class="ttc" id="aclassJsonIn_html_a7af38e6fc060866be2322268b5d3bcb9"><div class="ttname"><a href="classJsonIn.html#a7af38e6fc060866be2322268b5d3bcb9">JsonIn::get_string</a></div><div class="ttdeci">std::string get_string()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01163">json.cpp:1163</a></div></div>
 <div class="ttc" id="astring__formatter_8h_html_a8964099387da2f95396c67566bafce3d"><div class="ttname"><a href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a></div><div class="ttdeci">std::string string_format(std::string_view format, Args &amp;&amp;...args)</div><div class="ttdoc">Simple wrapper over string_formatter::parse.</div><div class="ttdef"><b>Definition:</b> <a href="string__formatter_8h_source.html#l00431">string_formatter.h:431</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="json_8cpp_source.html#l01745">JsonIn::error()</a>, <a class="el" href="generic__readers_8h_source.html#l00391">typed_flag_reader&lt; T &gt;::flag_map</a>, <a class="el" href="generic__readers_8h_source.html#l00392">typed_flag_reader&lt; T &gt;::flag_type</a>, <a class="el" href="json_8cpp_source.html#l01163">JsonIn::get_string()</a>, <a class="el" href="json_8cpp_source.html#l00808">JsonIn::seek()</a>, <a class="el" href="string__formatter_8h_source.html#l00431">string_format()</a>, and <a class="el" href="json_8cpp_source.html#l00795">JsonIn::tell()</a>.</p>
+<p class="reference">References <a class="el" href="json_8cpp_source.html#l01745">JsonIn::error()</a>, <a class="el" href="generic__readers_8h_source.html#l00390">typed_flag_reader&lt; T &gt;::flag_map</a>, <a class="el" href="generic__readers_8h_source.html#l00391">typed_flag_reader&lt; T &gt;::flag_type</a>, <a class="el" href="json_8cpp_source.html#l01163">JsonIn::get_string()</a>, <a class="el" href="json_8cpp_source.html#l00808">JsonIn::seek()</a>, <a class="el" href="string__formatter_8h_source.html#l00431">string_format()</a>, and <a class="el" href="json_8cpp_source.html#l00795">JsonIn::tell()</a>.</p>
 
 </div>
 </div>
@@ -300,9 +300,9 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="generic__readers_8h_source.html#l00391">391</a> of file <a class="el" href="generic__readers_8h_source.html">generic_readers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generic__readers_8h_source.html#l00390">390</a> of file <a class="el" href="generic__readers_8h_source.html">generic_readers.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="generic__readers_8h_source.html#l00400">typed_flag_reader&lt; T &gt;::get_next()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="generic__readers_8h_source.html#l00399">typed_flag_reader&lt; T &gt;::get_next()</a>.</p>
 
 </div>
 </div>
@@ -328,9 +328,9 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="generic__readers_8h_source.html#l00392">392</a> of file <a class="el" href="generic__readers_8h_source.html">generic_readers.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generic__readers_8h_source.html#l00391">391</a> of file <a class="el" href="generic__readers_8h_source.html">generic_readers.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="generic__readers_8h_source.html#l00400">typed_flag_reader&lt; T &gt;::get_next()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="generic__readers_8h_source.html#l00399">typed_flag_reader&lt; T &gt;::get_next()</a>.</p>
 
 </div>
 </div>
@@ -343,7 +343,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classtyped__flag__reader.html">typed_flag_reader</a></li>
-    <li class="footer">Generated on Sun Mar 5 2023 13:51:16 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Apr 7 2023 11:54:54 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

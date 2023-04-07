@@ -36,7 +36,6 @@ var namespacecata =
     [ "is_string_id", "group__string__formatter__convert.html#gafe5f603f964000474f39cd1a455755ca", null ],
     [ "is_string_view", "group__string__formatter__convert.html#gac891c0dc2a272c2c3c35f143a9d9a912", null ],
     [ "is_translation", "group__string__formatter__convert.html#gad2c98dadf755c324b57ef7c8172f47dd", null ],
-    [ "void_t", "namespacecata.html#ac6db800fd10425e04b1a5cf12c5b63b4", null ],
     [ "convert", "group__string__formatter__convert.html#gaf6c1b09e9154ca0f0018624028929df5", null ],
     [ "convert", "namespacecata.html#gaf6c1b09e9154ca0f0018624028929df5", null ],
     [ "convert", "namespacecata.html#gaf6c1b09e9154ca0f0018624028929df5", null ],

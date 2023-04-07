@@ -245,7 +245,7 @@ template&lt;typename E &gt; </div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="enum__bitset_8h_source.html#l00095">enum_bitset&lt; E &gt;::bits</a>, and <a class="el" href="enum__bitset_8h_source.html#l00091">enum_bitset&lt; E &gt;::get_pos()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="generic__readers_8h_source.html#l00083">reader_detail::handler&lt; enum_bitset&lt; E &gt; &gt;::erase()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="generic__readers_8h_source.html#l00082">reader_detail::handler&lt; enum_bitset&lt; E &gt; &gt;::erase()</a>.</p>
 
 </div>
 </div>
@@ -282,7 +282,7 @@ template&lt;typename E &gt; </div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="enum__bitset_8h_source.html#l00095">enum_bitset&lt; E &gt;::bits</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="generic__readers_8h_source.html#l00075">reader_detail::handler&lt; enum_bitset&lt; E &gt; &gt;::clear()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="generic__readers_8h_source.html#l00074">reader_detail::handler&lt; enum_bitset&lt; E &gt; &gt;::clear()</a>.</p>
 
 </div>
 </div>
@@ -348,12 +348,9 @@ template&lt;typename E &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="enum__bitset_8h_source.html#l00091">91</a> of file <a class="el" href="enum__bitset_8h_source.html">enum_bitset.h</a>.</p>
 <div class="fragment"><div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                                                        {</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>( <span class="keyword">static_cast&lt;</span>typename <a class="code hl_enumvalue" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">std::underlying_type&lt;E&gt;::type</a><span class="keyword">&gt;</span>( e ) );</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>( <span class="keyword">static_cast&lt;</span>typename std::underlying_type&lt;E&gt;::type<span class="keyword">&gt;</span>( e ) );</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        }</div>
-<div class="ttc" id="aenums_8h_html_ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab"><div class="ttname"><a href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a></div><div class="ttdeci">@ type</div><div class="ttdef"><b>Definition:</b> <a href="enums_8h_source.html#l00075">enums.h:75</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="enums_8h_source.html#l00075">type</a>.</p>
-
 <p class="reference">Referenced by <a class="el" href="enum__bitset_8h_source.html#l00060">enum_bitset&lt; E &gt;::clear()</a>, <a class="el" href="enum__bitset_8h_source.html#l00042">enum_bitset&lt; E &gt;::operator[]()</a>, <a class="el" href="enum__bitset_8h_source.html#l00050">enum_bitset&lt; E &gt;::set()</a>, <a class="el" href="enum__bitset_8h_source.html#l00086">enum_bitset&lt; E &gt;::size()</a>, and <a class="el" href="enum__bitset_8h_source.html#l00070">enum_bitset&lt; E &gt;::test()</a>.</p>
 
 </div>
@@ -640,7 +637,7 @@ template&lt;typename E &gt; </div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="enum__bitset_8h_source.html#l00095">enum_bitset&lt; E &gt;::bits</a>, and <a class="el" href="enum__bitset_8h_source.html#l00091">enum_bitset&lt; E &gt;::get_pos()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="options_8cpp_source.html#l03312">options_manager::cache_to_globals()</a>, and <a class="el" href="generic__readers_8h_source.html#l00079">reader_detail::handler&lt; enum_bitset&lt; E &gt; &gt;::insert()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="options_8cpp_source.html#l03323">options_manager::cache_to_globals()</a>, and <a class="el" href="generic__readers_8h_source.html#l00078">reader_detail::handler&lt; enum_bitset&lt; E &gt; &gt;::insert()</a>.</p>
 
 </div>
 </div>
@@ -862,7 +859,7 @@ template&lt;typename E &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classenum__bitset.html">enum_bitset</a></li>
-    <li class="footer">Generated on Sun Mar 5 2023 13:51:02 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Apr 7 2023 11:54:40 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

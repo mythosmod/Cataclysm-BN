@@ -107,8 +107,8 @@ Inheritance diagram for special_game:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a3136fdad68f271d5b8f79c09a67264c4"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspecial__game.html#a3136fdad68f271d5b8f79c09a67264c4">~special_game</a> ()=default</td></tr>
 <tr class="separator:a3136fdad68f271d5b8f79c09a67264c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf6c50c34d2f50c0ff1aff97fb1ccede"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="enums_8h.html#a118d644b670026ee446a0163e9b7bba3">special_game_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspecial__game.html#abf6c50c34d2f50c0ff1aff97fb1ccede">id</a> ()</td></tr>
-<tr class="separator:abf6c50c34d2f50c0ff1aff97fb1ccede"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e5f31acb8aba2cab1fa8f257068f22f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="enums_8h.html#ace4a265a663117b0e316e492302dce8d">special_game_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspecial__game.html#a0e5f31acb8aba2cab1fa8f257068f22f">id</a> ()</td></tr>
+<tr class="separator:a0e5f31acb8aba2cab1fa8f257068f22f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2febfae6530cda3acc72b21a46d4c551"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspecial__game.html#a2febfae6530cda3acc72b21a46d4c551">init</a> ()</td></tr>
 <tr class="separator:a2febfae6530cda3acc72b21a46d4c551"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0c04bd0dcb11813b61432ffc26e9007"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspecial__game.html#af0c04bd0dcb11813b61432ffc26e9007">per_turn</a> ()</td></tr>
@@ -180,8 +180,8 @@ Public Member Functions</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="abf6c50c34d2f50c0ff1aff97fb1ccede" name="abf6c50c34d2f50c0ff1aff97fb1ccede"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abf6c50c34d2f50c0ff1aff97fb1ccede">&#9670;&nbsp;</a></span>id()</h2>
+<a id="a0e5f31acb8aba2cab1fa8f257068f22f" name="a0e5f31acb8aba2cab1fa8f257068f22f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e5f31acb8aba2cab1fa8f257068f22f">&#9670;&nbsp;</a></span>id()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -190,7 +190,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="enums_8h.html#a118d644b670026ee446a0163e9b7bba3">special_game_id</a> special_game::id </td>
+          <td class="memname">virtual <a class="el" href="enums_8h.html#ace4a265a663117b0e316e492302dce8d">special_game_type</a> special_game::id </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -203,15 +203,15 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="structdefense__game.html#a735cfcf928a67a7492d5596eb1397f96">defense_game</a>, and <a class="el" href="structtutorial__game.html#acf7019ecf9891283e523eb9a512d9f31">tutorial_game</a>.</p>
+<p>Reimplemented in <a class="el" href="structdefense__game.html#a79ffdaa7e17dd2be0e48e92187ec30ba">defense_game</a>, and <a class="el" href="structtutorial__game.html#a040bc33a254c73e418aa27466e375f14">tutorial_game</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="gamemode_8h_source.html#l00018">18</a> of file <a class="el" href="gamemode_8h_source.html">gamemode.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>                                 {</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="enums_8h.html#a118d644b670026ee446a0163e9b7bba3a163ee9f2adfc062e1c3d26fa4b92efdd">SGAME_NULL</a>;</div>
+<div class="fragment"><div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>                                   {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="enums_8h.html#ace4a265a663117b0e316e492302dce8dab50339a10e1de285ac99d4c3990b8693">special_game_type::NONE</a>;</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    }</div>
-<div class="ttc" id="aenums_8h_html_a118d644b670026ee446a0163e9b7bba3a163ee9f2adfc062e1c3d26fa4b92efdd"><div class="ttname"><a href="enums_8h.html#a118d644b670026ee446a0163e9b7bba3a163ee9f2adfc062e1c3d26fa4b92efdd">SGAME_NULL</a></div><div class="ttdeci">@ SGAME_NULL</div><div class="ttdef"><b>Definition:</b> <a href="enums_8h_source.html#l00093">enums.h:93</a></div></div>
+<div class="ttc" id="aenums_8h_html_ace4a265a663117b0e316e492302dce8dab50339a10e1de285ac99d4c3990b8693"><div class="ttname"><a href="enums_8h.html#ace4a265a663117b0e316e492302dce8dab50339a10e1de285ac99d4c3990b8693">special_game_type::NONE</a></div><div class="ttdeci">@ NONE</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="enums_8h_source.html#l00093">SGAME_NULL</a>.</p>
+<p class="reference">References <a class="el" href="enums_8h.html#ace4a265a663117b0e316e492302dce8dab50339a10e1de285ac99d4c3990b8693">NONE</a>.</p>
 
 </div>
 </div>
@@ -348,7 +348,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structspecial__game.html">special_game</a></li>
-    <li class="footer">Generated on Sun Mar 5 2023 13:51:14 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Apr 7 2023 11:54:53 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

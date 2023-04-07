@@ -25,8 +25,6 @@ var mutation_8cpp =
     [ "trait_BURROW", "mutation_8cpp.html#a17ec945038dd28db3e0041be27e319ad", null ],
     [ "trait_CARNIVORE", "mutation_8cpp.html#a4fbf975d8c329497caf15aa91d65a664", null ],
     [ "trait_CHAOTIC_BAD", "mutation_8cpp.html#a700ae431e7988b8f3be5fe9572f52b9c", null ],
-    [ "trait_DEBUG_BIONIC_POWER", "mutation_8cpp.html#af151d09e7927fa1f3c8a519c00c423aa", null ],
-    [ "trait_DEBUG_BIONIC_POWERGEN", "mutation_8cpp.html#ad8070411aeeb1479ed4338d77690d6a4", null ],
     [ "trait_DEX_ALPHA", "mutation_8cpp.html#a6380406c807f13fd2ffc1e21597c248b", null ],
     [ "trait_GLASSJAW", "mutation_8cpp.html#a3f742aa34df003b0993164f14681c2ac", null ],
     [ "trait_INT_ALPHA", "mutation_8cpp.html#ad95b62bdffc9f7ad3304b061b21576ac", null ],

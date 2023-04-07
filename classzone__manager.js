@@ -9,7 +9,7 @@ var classzone__manager =
     [ "add", "classzone__manager.html#a68184f184b0519b8772cf6b2ba79fb59", null ],
     [ "cache_data", "classzone__manager.html#a87dd76c2aa5f4d37b5c9bc130bcd6f34", null ],
     [ "cache_vzones", "classzone__manager.html#a4a274503e1533dbfa343c22cdd082c4d", null ],
-    [ "create_vehicle_loot_zone", "classzone__manager.html#a9f4190e4f0475d9ea0e621629e2ad1ad", null ],
+    [ "create_vehicle_loot_zone", "classzone__manager.html#a3119ff893b68f78c54918810fd64cd5d", null ],
     [ "custom_loot_has", "classzone__manager.html#a2db7673ceb17fe4fc4d5e9609ab1833b", null ],
     [ "deserialize", "classzone__manager.html#a54f442d497cd74a4589209a4fcfff955", null ],
     [ "get_bottom_zone", "classzone__manager.html#ad329b936c24baa753e34cf4a4c2467a1", null ],

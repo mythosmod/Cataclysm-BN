@@ -144,7 +144,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="activity__actor__definitions_8h_source.html#l00325">325</a> of file <a class="el" href="activity__actor__definitions_8h_source.html">activity_actor_definitions.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="activity__actor__definitions_8h_source.html#l00328">328</a> of file <a class="el" href="activity__actor__definitions_8h_source.html">activity_actor_definitions.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa7434cc4844ea263ed8a0a1e44930362" name="aa7434cc4844ea263ed8a0a1e44930362"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa7434cc4844ea263ed8a0a1e44930362">&#9670;&nbsp;</a></span>migration_cancel_activity_actor()</h2>
@@ -169,7 +169,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="activity__actor_8cpp_source.html#l01091">deserialize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="activity__actor_8cpp_source.html#l01078">deserialize()</a>.</p>
 
 </div>
 </div>
@@ -203,15 +203,15 @@ Static Public Member Functions</h2></td></tr>
 <div class="line">        <span class="keywordflow">return</span> std::make_unique&lt;my_activity_actor&gt;( *<span class="keyword">this</span> );</div>
 <div class="line">    }</div>
 <div class="line">};</div>
-<div class="ttc" id="aclassmigration__cancel__activity__actor_html_a82017fee2be45ebe15100e0204adb699"><div class="ttname"><a href="classmigration__cancel__activity__actor.html#a82017fee2be45ebe15100e0204adb699">migration_cancel_activity_actor::clone</a></div><div class="ttdeci">std::unique_ptr&lt; activity_actor &gt; clone() const override</div><div class="ttdoc">Returns a deep copy of this object.</div><div class="ttdef"><b>Definition:</b> <a href="activity__actor__definitions_8h_source.html#l00338">activity_actor_definitions.h:338</a></div></div>
+<div class="ttc" id="aclassmigration__cancel__activity__actor_html_a82017fee2be45ebe15100e0204adb699"><div class="ttname"><a href="classmigration__cancel__activity__actor.html#a82017fee2be45ebe15100e0204adb699">migration_cancel_activity_actor::clone</a></div><div class="ttdeci">std::unique_ptr&lt; activity_actor &gt; clone() const override</div><div class="ttdoc">Returns a deep copy of this object.</div><div class="ttdef"><b>Definition:</b> <a href="activity__actor__definitions_8h_source.html#l00341">activity_actor_definitions.h:341</a></div></div>
 </div><!-- fragment --><p> The returned value should behave like the original item and must have the same type. </p>
 
 <p>Implements <a class="el" href="classactivity__actor.html#a3ec9b06fa1f7109ef5262538ac047b9b">activity_actor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="activity__actor__definitions_8h_source.html#l00338">338</a> of file <a class="el" href="activity__actor__definitions_8h_source.html">activity_actor_definitions.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>                                                             {</div>
-<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>            <span class="keywordflow">return</span> std::make_unique&lt;migration_cancel_activity_actor&gt;( *<span class="keyword">this</span> );</div>
-<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>        }</div>
+<p class="definition">Definition at line <a class="el" href="activity__actor__definitions_8h_source.html#l00341">341</a> of file <a class="el" href="activity__actor__definitions_8h_source.html">activity_actor_definitions.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>                                                             {</div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>            <span class="keywordflow">return</span> std::make_unique&lt;migration_cancel_activity_actor&gt;( *<span class="keyword">this</span> );</div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -239,10 +239,10 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="activity__actor_8cpp_source.html#l01091">1091</a> of file <a class="el" href="activity__actor_8cpp_source.html">activity_actor.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01092" name="l01092"></a><span class="lineno"> 1092</span>{</div>
-<div class="line"><a id="l01093" name="l01093"></a><span class="lineno"> 1093</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classmigration__cancel__activity__actor.html#aa7434cc4844ea263ed8a0a1e44930362">migration_cancel_activity_actor</a>().clone();</div>
-<div class="line"><a id="l01094" name="l01094"></a><span class="lineno"> 1094</span>}</div>
+<p class="definition">Definition at line <a class="el" href="activity__actor_8cpp_source.html#l01078">1078</a> of file <a class="el" href="activity__actor_8cpp_source.html">activity_actor.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01079" name="l01079"></a><span class="lineno"> 1079</span>{</div>
+<div class="line"><a id="l01080" name="l01080"></a><span class="lineno"> 1080</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classmigration__cancel__activity__actor.html#aa7434cc4844ea263ed8a0a1e44930362">migration_cancel_activity_actor</a>().clone();</div>
+<div class="line"><a id="l01081" name="l01081"></a><span class="lineno"> 1081</span>}</div>
 <div class="ttc" id="aclassmigration__cancel__activity__actor_html_aa7434cc4844ea263ed8a0a1e44930362"><div class="ttname"><a href="classmigration__cancel__activity__actor.html#aa7434cc4844ea263ed8a0a1e44930362">migration_cancel_activity_actor::migration_cancel_activity_actor</a></div><div class="ttdeci">migration_cancel_activity_actor()=default</div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classmigration__cancel__activity__actor.html#aa7434cc4844ea263ed8a0a1e44930362">migration_cancel_activity_actor()</a>.</p>
@@ -287,30 +287,30 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="classactivity__actor.html#ad414594da4c234257dc1874724d726c9">activity_actor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="activity__actor_8cpp_source.html#l01068">1068</a> of file <a class="el" href="activity__actor_8cpp_source.html">activity_actor.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01069" name="l01069"></a><span class="lineno"> 1069</span>{</div>
-<div class="line"><a id="l01070" name="l01070"></a><span class="lineno"> 1070</span>    <span class="comment">// Stop the activity</span></div>
-<div class="line"><a id="l01071" name="l01071"></a><span class="lineno"> 1071</span>    <a class="code hl_variable" href="sounds_8cpp.html#ad9fe7b616a93a8209da903eba756237e">act</a>.set_to_null();</div>
-<div class="line"><a id="l01072" name="l01072"></a><span class="lineno"> 1072</span> </div>
-<div class="line"><a id="l01073" name="l01073"></a><span class="lineno"> 1073</span>    <span class="comment">// Ensure that neither avatars nor npcs end up in an invalid state</span></div>
-<div class="line"><a id="l01074" name="l01074"></a><span class="lineno"> 1074</span>    <span class="keywordflow">if</span>( who.<a class="code hl_function" href="classCreature.html#aed84fe52e1335d48d53f482f8a278c87">is_npc</a>() ) {</div>
-<div class="line"><a id="l01075" name="l01075"></a><span class="lineno"> 1075</span>        <a class="code hl_class" href="classnpc.html">npc</a> &amp;npc_who = <span class="keyword">dynamic_cast&lt;</span><a class="code hl_class" href="classnpc.html">npc</a> &amp;<span class="keyword">&gt;</span>( who );</div>
-<div class="line"><a id="l01076" name="l01076"></a><span class="lineno"> 1076</span>        npc_who.<a class="code hl_function" href="classnpc.html#aefeae3d14dd64533e5bff412e280c2e8">revert_after_activity</a>();</div>
-<div class="line"><a id="l01077" name="l01077"></a><span class="lineno"> 1077</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l01078" name="l01078"></a><span class="lineno"> 1078</span>        <a class="code hl_class" href="classavatar.html">avatar</a> &amp;avatar_who = <span class="keyword">dynamic_cast&lt;</span><a class="code hl_class" href="classavatar.html">avatar</a> &amp;<span class="keyword">&gt;</span>( who );</div>
-<div class="line"><a id="l01079" name="l01079"></a><span class="lineno"> 1079</span>        avatar_who.<a class="code hl_function" href="classCharacter.html#a0ea61d6622ef255afac7216bebfb337e">clear_destination</a>();</div>
-<div class="line"><a id="l01080" name="l01080"></a><span class="lineno"> 1080</span>        avatar_who.<a class="code hl_variable" href="classCharacter.html#ad2f8dc354e09863a8d257b353a749caa">backlog</a>.clear();</div>
-<div class="line"><a id="l01081" name="l01081"></a><span class="lineno"> 1081</span>    }</div>
-<div class="line"><a id="l01082" name="l01082"></a><span class="lineno"> 1082</span>}</div>
-<div class="ttc" id="aclassCharacter_html_a0ea61d6622ef255afac7216bebfb337e"><div class="ttname"><a href="classCharacter.html#a0ea61d6622ef255afac7216bebfb337e">Character::clear_destination</a></div><div class="ttdeci">void clear_destination()</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l10447">character.cpp:10447</a></div></div>
+<p class="definition">Definition at line <a class="el" href="activity__actor_8cpp_source.html#l01055">1055</a> of file <a class="el" href="activity__actor_8cpp_source.html">activity_actor.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01056" name="l01056"></a><span class="lineno"> 1056</span>{</div>
+<div class="line"><a id="l01057" name="l01057"></a><span class="lineno"> 1057</span>    <span class="comment">// Stop the activity</span></div>
+<div class="line"><a id="l01058" name="l01058"></a><span class="lineno"> 1058</span>    <a class="code hl_variable" href="sounds_8cpp.html#ad9fe7b616a93a8209da903eba756237e">act</a>.set_to_null();</div>
+<div class="line"><a id="l01059" name="l01059"></a><span class="lineno"> 1059</span> </div>
+<div class="line"><a id="l01060" name="l01060"></a><span class="lineno"> 1060</span>    <span class="comment">// Ensure that neither avatars nor npcs end up in an invalid state</span></div>
+<div class="line"><a id="l01061" name="l01061"></a><span class="lineno"> 1061</span>    <span class="keywordflow">if</span>( who.<a class="code hl_function" href="classCreature.html#aed84fe52e1335d48d53f482f8a278c87">is_npc</a>() ) {</div>
+<div class="line"><a id="l01062" name="l01062"></a><span class="lineno"> 1062</span>        <a class="code hl_class" href="classnpc.html">npc</a> &amp;npc_who = <span class="keyword">dynamic_cast&lt;</span><a class="code hl_class" href="classnpc.html">npc</a> &amp;<span class="keyword">&gt;</span>( who );</div>
+<div class="line"><a id="l01063" name="l01063"></a><span class="lineno"> 1063</span>        npc_who.<a class="code hl_function" href="classnpc.html#aefeae3d14dd64533e5bff412e280c2e8">revert_after_activity</a>();</div>
+<div class="line"><a id="l01064" name="l01064"></a><span class="lineno"> 1064</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l01065" name="l01065"></a><span class="lineno"> 1065</span>        <a class="code hl_class" href="classavatar.html">avatar</a> &amp;avatar_who = <span class="keyword">dynamic_cast&lt;</span><a class="code hl_class" href="classavatar.html">avatar</a> &amp;<span class="keyword">&gt;</span>( who );</div>
+<div class="line"><a id="l01066" name="l01066"></a><span class="lineno"> 1066</span>        avatar_who.<a class="code hl_function" href="classCharacter.html#a0ea61d6622ef255afac7216bebfb337e">clear_destination</a>();</div>
+<div class="line"><a id="l01067" name="l01067"></a><span class="lineno"> 1067</span>        avatar_who.<a class="code hl_variable" href="classCharacter.html#ad2f8dc354e09863a8d257b353a749caa">backlog</a>.clear();</div>
+<div class="line"><a id="l01068" name="l01068"></a><span class="lineno"> 1068</span>    }</div>
+<div class="line"><a id="l01069" name="l01069"></a><span class="lineno"> 1069</span>}</div>
+<div class="ttc" id="aclassCharacter_html_a0ea61d6622ef255afac7216bebfb337e"><div class="ttname"><a href="classCharacter.html#a0ea61d6622ef255afac7216bebfb337e">Character::clear_destination</a></div><div class="ttdeci">void clear_destination()</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l10450">character.cpp:10450</a></div></div>
 <div class="ttc" id="aclassCharacter_html_ad2f8dc354e09863a8d257b353a749caa"><div class="ttname"><a href="classCharacter.html#ad2f8dc354e09863a8d257b353a749caa">Character::backlog</a></div><div class="ttdeci">std::list&lt; player_activity &gt; backlog</div><div class="ttdef"><b>Definition:</b> <a href="character_8h_source.html#l01542">character.h:1542</a></div></div>
 <div class="ttc" id="aclassCreature_html_aed84fe52e1335d48d53f482f8a278c87"><div class="ttname"><a href="classCreature.html#aed84fe52e1335d48d53f482f8a278c87">Creature::is_npc</a></div><div class="ttdeci">virtual bool is_npc() const</div><div class="ttdef"><b>Definition:</b> <a href="creature_8h_source.html#l00098">creature.h:98</a></div></div>
 <div class="ttc" id="aclassavatar_html"><div class="ttname"><a href="classavatar.html">avatar</a></div><div class="ttdef"><b>Definition:</b> <a href="avatar_8h_source.html#l00054">avatar.h:55</a></div></div>
-<div class="ttc" id="aclassnpc_html"><div class="ttname"><a href="classnpc.html">npc</a></div><div class="ttdef"><b>Definition:</b> <a href="npc_8h_source.html#l00780">npc.h:781</a></div></div>
+<div class="ttc" id="aclassnpc_html"><div class="ttname"><a href="classnpc.html">npc</a></div><div class="ttdef"><b>Definition:</b> <a href="npc_8h_source.html#l00743">npc.h:744</a></div></div>
 <div class="ttc" id="aclassnpc_html_aefeae3d14dd64533e5bff412e280c2e8"><div class="ttname"><a href="classnpc.html#aefeae3d14dd64533e5bff412e280c2e8">npc::revert_after_activity</a></div><div class="ttdeci">void revert_after_activity()</div><div class="ttdef"><b>Definition:</b> <a href="npc_8cpp_source.html#l00655">npc.cpp:655</a></div></div>
 <div class="ttc" id="asounds_8cpp_html_ad9fe7b616a93a8209da903eba756237e"><div class="ttname"><a href="sounds_8cpp.html#ad9fe7b616a93a8209da903eba756237e">act</a></div><div class="ttdeci">activity_id act</div><div class="ttdef"><b>Definition:</b> <a href="sounds_8cpp_source.html#l00075">sounds.cpp:75</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="sounds_8cpp_source.html#l00075">act</a>, <a class="el" href="character_8h_source.html#l01542">Character::backlog</a>, <a class="el" href="character_8cpp_source.html#l10447">Character::clear_destination()</a>, <a class="el" href="creature_8h_source.html#l00098">Creature::is_npc()</a>, and <a class="el" href="npc_8cpp_source.html#l00655">npc::revert_after_activity()</a>.</p>
+<p class="reference">References <a class="el" href="sounds_8cpp_source.html#l00075">act</a>, <a class="el" href="character_8h_source.html#l01542">Character::backlog</a>, <a class="el" href="character_8cpp_source.html#l10450">Character::clear_destination()</a>, <a class="el" href="creature_8h_source.html#l00098">Creature::is_npc()</a>, and <a class="el" href="npc_8cpp_source.html#l00655">npc::revert_after_activity()</a>.</p>
 
 </div>
 </div>
@@ -352,8 +352,8 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="classactivity__actor.html#af48795a3ce174ab25b58db059de179b5">activity_actor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="activity__actor__definitions_8h_source.html#l00336">336</a> of file <a class="el" href="activity__actor__definitions_8h_source.html">activity_actor_definitions.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>{};</div>
+<p class="definition">Definition at line <a class="el" href="activity__actor__definitions_8h_source.html#l00339">339</a> of file <a class="el" href="activity__actor__definitions_8h_source.html">activity_actor_definitions.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>{};</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -384,10 +384,10 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="classactivity__actor.html#ac085520515863c449d3326a55bdd66d9">activity_actor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="activity__actor__definitions_8h_source.html#l00330">330</a> of file <a class="el" href="activity__actor__definitions_8h_source.html">activity_actor_definitions.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>                                              {</div>
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>            <span class="keywordflow">return</span> <a class="code hl_typedef" href="activity__type_8h.html#a61b219d1f1a69a8d5e8af6b500f09354">activity_id</a>( <span class="stringliteral">&quot;ACT_MIGRATION_CANCEL&quot;</span> );</div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>        }</div>
+<p class="definition">Definition at line <a class="el" href="activity__actor__definitions_8h_source.html#l00333">333</a> of file <a class="el" href="activity__actor__definitions_8h_source.html">activity_actor_definitions.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>                                              {</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>            <span class="keywordflow">return</span> <a class="code hl_typedef" href="activity__type_8h.html#a61b219d1f1a69a8d5e8af6b500f09354">activity_id</a>( <span class="stringliteral">&quot;ACT_MIGRATION_CANCEL&quot;</span> );</div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>        }</div>
 <div class="ttc" id="aactivity__type_8h_html_a61b219d1f1a69a8d5e8af6b500f09354"><div class="ttname"><a href="activity__type_8h.html#a61b219d1f1a69a8d5e8af6b500f09354">activity_id</a></div><div class="ttdeci">string_id&lt; activity_type &gt; activity_id</div><div class="ttdef"><b>Definition:</b> <a href="activity__type_8h_source.html#l00015">activity_type.h:15</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -420,12 +420,12 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="classactivity__actor.html#a3a5855ba3c1236acfe2be439522997cd">activity_actor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="activity__actor_8cpp_source.html#l01084">1084</a> of file <a class="el" href="activity__actor_8cpp_source.html">activity_actor.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01085" name="l01085"></a><span class="lineno"> 1085</span>{</div>
-<div class="line"><a id="l01086" name="l01086"></a><span class="lineno"> 1086</span>    <span class="comment">// This will probably never be called, but write null to avoid invalid json in</span></div>
-<div class="line"><a id="l01087" name="l01087"></a><span class="lineno"> 1087</span>    <span class="comment">// the case that it is</span></div>
-<div class="line"><a id="l01088" name="l01088"></a><span class="lineno"> 1088</span>    jsout.<a class="code hl_function" href="classJsonOut.html#a449a76cf061d1949ff144ebd7261102f">write_null</a>();</div>
-<div class="line"><a id="l01089" name="l01089"></a><span class="lineno"> 1089</span>}</div>
+<p class="definition">Definition at line <a class="el" href="activity__actor_8cpp_source.html#l01071">1071</a> of file <a class="el" href="activity__actor_8cpp_source.html">activity_actor.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01072" name="l01072"></a><span class="lineno"> 1072</span>{</div>
+<div class="line"><a id="l01073" name="l01073"></a><span class="lineno"> 1073</span>    <span class="comment">// This will probably never be called, but write null to avoid invalid json in</span></div>
+<div class="line"><a id="l01074" name="l01074"></a><span class="lineno"> 1074</span>    <span class="comment">// the case that it is</span></div>
+<div class="line"><a id="l01075" name="l01075"></a><span class="lineno"> 1075</span>    jsout.<a class="code hl_function" href="classJsonOut.html#a449a76cf061d1949ff144ebd7261102f">write_null</a>();</div>
+<div class="line"><a id="l01076" name="l01076"></a><span class="lineno"> 1076</span>}</div>
 <div class="ttc" id="aclassJsonOut_html_a449a76cf061d1949ff144ebd7261102f"><div class="ttname"><a href="classJsonOut.html#a449a76cf061d1949ff144ebd7261102f">JsonOut::write_null</a></div><div class="ttdeci">void write_null()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l02036">json.cpp:2036</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="json_8cpp_source.html#l02036">JsonOut::write_null()</a>.</p>
@@ -471,8 +471,8 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="classactivity__actor.html#a7a6d2b0ca0560dfca09ff8919cd9f44a">activity_actor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="activity__actor__definitions_8h_source.html#l00334">334</a> of file <a class="el" href="activity__actor__definitions_8h_source.html">activity_actor_definitions.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>{};</div>
+<p class="definition">Definition at line <a class="el" href="activity__actor__definitions_8h_source.html#l00337">337</a> of file <a class="el" href="activity__actor__definitions_8h_source.html">activity_actor_definitions.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>{};</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -486,7 +486,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classmigration__cancel__activity__actor.html">migration_cancel_activity_actor</a></li>
-    <li class="footer">Generated on Sun Mar 5 2023 13:51:10 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Apr 7 2023 11:54:48 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -15,7 +15,7 @@ var map_8h =
     [ "CATA_SRC_MAP_H", "map_8h.html#ab6d4519b1a8dbb99a253de0fe2429f69", null ],
     [ "VehicleList", "map_8h.html#ae705edb5469cf2668ca5bc3297d75ebb", null ],
     [ "get_map", "map_8h.html#acb0b34be6e497bdd2f9f40ae6929d562", null ],
-    [ "shift_bitset_cache", "map_8h.html#a7c3a7f6a3874e9928b498a842013d636", null ],
+    [ "shift_bitset_cache", "map_8h.html#ac29bff109b2df5419d0c3822e6f875a1", null ],
     [ "ter_furn_has_flag", "map_8h.html#a154653b69f33e37a47333fd07d81c6f0", null ],
     [ "disable_mapgen", "map_8h.html#ae6af50176f3458f8541902c00ce67666", null ]
 ];

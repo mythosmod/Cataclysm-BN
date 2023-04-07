@@ -5,6 +5,8 @@ var cata__utility_8cpp =
     [ "clamp_to_width", "cata__utility_8cpp.html#a7932fbdf57e169d07e4e745365262393", null ],
     [ "clamp_to_width", "cata__utility_8cpp.html#af1fdd27f531841ea8ab1bf12c500cb8f", null ],
     [ "deserialize_wrapper", "cata__utility_8cpp.html#a3bef7ba76ece7cbf962a0effbd5d7d11", null ],
+    [ "get_holiday_from_time", "cata__utility_8cpp.html#aac8d91d75b64589d025fcb62e6b1e796", null ],
+    [ "is_easter", "cata__utility_8cpp.html#a76f0c23f4e3eef00e51ddb87b6e7f80e", null ],
     [ "isBetween", "cata__utility_8cpp.html#aacdf27156d98b65ffe95503a510df4f5", null ],
     [ "logarithmic", "cata__utility_8cpp.html#a1dabdd2cede5afc6bec5c63bfdadf13d", null ],
     [ "logarithmic_range", "cata__utility_8cpp.html#a6a85dc6d2ab7bcb093e77d20fcf171d6", null ],

@@ -124,7 +124,7 @@ Private Attributes</h2></td></tr>
 class list_circularizer&lt; T &gt;</div><p >Class used to access a list as if it were circular. </p>
 <p >Some times you just want to have a list loop around on itself. This wrapper class allows you to do that. It requires the list to exist separately, but that also means any changes to the list get propagated (both ways). </p>
 
-<p class="definition">Definition at line <a class="el" href="cata__utility_8h_source.html#l00183">183</a> of file <a class="el" href="cata__utility_8h_source.html">cata_utility.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cata__utility_8h_source.html#l00187">187</a> of file <a class="el" href="cata__utility_8h_source.html">cata_utility.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4952cb1330a0565e1fcf12e6d1dc9810" name="a4952cb1330a0565e1fcf12e6d1dc9810"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4952cb1330a0565e1fcf12e6d1dc9810">&#9670;&nbsp;</a></span>list_circularizer()</h2>
@@ -154,10 +154,10 @@ template&lt;typename T &gt; </div>
 
 <p>Construct <a class="el" href="classlist__circularizer.html" title="Class used to access a list as if it were circular.">list_circularizer</a> from an existing std::vector. </p>
 
-<p class="definition">Definition at line <a class="el" href="cata__utility_8h_source.html#l00190">190</a> of file <a class="el" href="cata__utility_8h_source.html">cata_utility.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>                                                 : <a class="code hl_variable" href="classlist__circularizer.html#aea56b148595af5caa72ed9063554c341">_list</a>( &amp;<a class="code hl_variable" href="classlist__circularizer.html#aea56b148595af5caa72ed9063554c341">_list</a> ) {</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>        }</div>
-<div class="ttc" id="aclasslist__circularizer_html_aea56b148595af5caa72ed9063554c341"><div class="ttname"><a href="classlist__circularizer.html#aea56b148595af5caa72ed9063554c341">list_circularizer::_list</a></div><div class="ttdeci">std::vector&lt; T &gt; * _list</div><div class="ttdef"><b>Definition:</b> <a href="cata__utility_8h_source.html#l00187">cata_utility.h:187</a></div></div>
+<p class="definition">Definition at line <a class="el" href="cata__utility_8h_source.html#l00194">194</a> of file <a class="el" href="cata__utility_8h_source.html">cata_utility.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>                                                 : <a class="code hl_variable" href="classlist__circularizer.html#aea56b148595af5caa72ed9063554c341">_list</a>( &amp;<a class="code hl_variable" href="classlist__circularizer.html#aea56b148595af5caa72ed9063554c341">_list</a> ) {</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>        }</div>
+<div class="ttc" id="aclasslist__circularizer_html_aea56b148595af5caa72ed9063554c341"><div class="ttname"><a href="classlist__circularizer.html#aea56b148595af5caa72ed9063554c341">list_circularizer::_list</a></div><div class="ttdeci">std::vector&lt; T &gt; * _list</div><div class="ttdef"><b>Definition:</b> <a href="cata__utility_8h_source.html#l00191">cata_utility.h:191</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -189,16 +189,16 @@ template&lt;typename T &gt; </div>
 
 <p>Return list element at the current location. </p>
 
-<p class="definition">Definition at line <a class="el" href="cata__utility_8h_source.html#l00204">204</a> of file <a class="el" href="cata__utility_8h_source.html">cata_utility.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>                       {</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>            <span class="comment">// list could be null, but it would be a design time mistake and really, the callers fault.</span></div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>            <span class="keywordflow">return</span> ( *<a class="code hl_variable" href="classlist__circularizer.html#aea56b148595af5caa72ed9063554c341">_list</a> )[<a class="code hl_variable" href="classlist__circularizer.html#a0af0bf63d8477a43f98d3c10522c2a6e">_index</a>];</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>        }</div>
-<div class="ttc" id="aclasslist__circularizer_html_a0af0bf63d8477a43f98d3c10522c2a6e"><div class="ttname"><a href="classlist__circularizer.html#a0af0bf63d8477a43f98d3c10522c2a6e">list_circularizer::_index</a></div><div class="ttdeci">unsigned int _index</div><div class="ttdef"><b>Definition:</b> <a href="cata__utility_8h_source.html#l00186">cata_utility.h:186</a></div></div>
+<p class="definition">Definition at line <a class="el" href="cata__utility_8h_source.html#l00208">208</a> of file <a class="el" href="cata__utility_8h_source.html">cata_utility.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>                       {</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>            <span class="comment">// list could be null, but it would be a design time mistake and really, the callers fault.</span></div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>            <span class="keywordflow">return</span> ( *<a class="code hl_variable" href="classlist__circularizer.html#aea56b148595af5caa72ed9063554c341">_list</a> )[<a class="code hl_variable" href="classlist__circularizer.html#a0af0bf63d8477a43f98d3c10522c2a6e">_index</a>];</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>        }</div>
+<div class="ttc" id="aclasslist__circularizer_html_a0af0bf63d8477a43f98d3c10522c2a6e"><div class="ttname"><a href="classlist__circularizer.html#a0af0bf63d8477a43f98d3c10522c2a6e">list_circularizer::_index</a></div><div class="ttdeci">unsigned int _index</div><div class="ttdef"><b>Definition:</b> <a href="cata__utility_8h_source.html#l00190">cata_utility.h:190</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="cata__utility_8h_source.html#l00186">list_circularizer&lt; T &gt;::_index</a>, and <a class="el" href="cata__utility_8h_source.html#l00187">list_circularizer&lt; T &gt;::_list</a>.</p>
+<p class="reference">References <a class="el" href="cata__utility_8h_source.html#l00190">list_circularizer&lt; T &gt;::_index</a>, and <a class="el" href="cata__utility_8h_source.html#l00191">list_circularizer&lt; T &gt;::_list</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="crafting__gui_8cpp_source.html#l00162">select_crafting_recipe()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="crafting__gui_8cpp_source.html#l00163">select_crafting_recipe()</a>.</p>
 
 </div>
 </div>
@@ -229,14 +229,14 @@ template&lt;typename T &gt; </div>
 
 <p>Advance list to next item, wrapping back to 0 at end of list. </p>
 
-<p class="definition">Definition at line <a class="el" href="cata__utility_8h_source.html#l00194">194</a> of file <a class="el" href="cata__utility_8h_source.html">cata_utility.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>                    {</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>            <a class="code hl_variable" href="classlist__circularizer.html#a0af0bf63d8477a43f98d3c10522c2a6e">_index</a> = ( <a class="code hl_variable" href="classlist__circularizer.html#a0af0bf63d8477a43f98d3c10522c2a6e">_index</a> == <a class="code hl_variable" href="classlist__circularizer.html#aea56b148595af5caa72ed9063554c341">_list</a>-&gt;size() - 1 ? 0 : <a class="code hl_variable" href="classlist__circularizer.html#a0af0bf63d8477a43f98d3c10522c2a6e">_index</a> + 1 );</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>        }</div>
+<p class="definition">Definition at line <a class="el" href="cata__utility_8h_source.html#l00198">198</a> of file <a class="el" href="cata__utility_8h_source.html">cata_utility.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>                    {</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>            <a class="code hl_variable" href="classlist__circularizer.html#a0af0bf63d8477a43f98d3c10522c2a6e">_index</a> = ( <a class="code hl_variable" href="classlist__circularizer.html#a0af0bf63d8477a43f98d3c10522c2a6e">_index</a> == <a class="code hl_variable" href="classlist__circularizer.html#aea56b148595af5caa72ed9063554c341">_list</a>-&gt;size() - 1 ? 0 : <a class="code hl_variable" href="classlist__circularizer.html#a0af0bf63d8477a43f98d3c10522c2a6e">_index</a> + 1 );</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>        }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="cata__utility_8h_source.html#l00186">list_circularizer&lt; T &gt;::_index</a>, and <a class="el" href="cata__utility_8h_source.html#l00187">list_circularizer&lt; T &gt;::_list</a>.</p>
+<p class="reference">References <a class="el" href="cata__utility_8h_source.html#l00190">list_circularizer&lt; T &gt;::_index</a>, and <a class="el" href="cata__utility_8h_source.html#l00191">list_circularizer&lt; T &gt;::_list</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="crafting__gui_8cpp_source.html#l00162">select_crafting_recipe()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="crafting__gui_8cpp_source.html#l00163">select_crafting_recipe()</a>.</p>
 
 </div>
 </div>
@@ -267,14 +267,14 @@ template&lt;typename T &gt; </div>
 
 <p>Advance list to previous item, wrapping back to end at zero. </p>
 
-<p class="definition">Definition at line <a class="el" href="cata__utility_8h_source.html#l00199">199</a> of file <a class="el" href="cata__utility_8h_source.html">cata_utility.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>                    {</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>            <a class="code hl_variable" href="classlist__circularizer.html#a0af0bf63d8477a43f98d3c10522c2a6e">_index</a> = ( <a class="code hl_variable" href="classlist__circularizer.html#a0af0bf63d8477a43f98d3c10522c2a6e">_index</a> == 0 ? <a class="code hl_variable" href="classlist__circularizer.html#aea56b148595af5caa72ed9063554c341">_list</a>-&gt;size() - 1 : <a class="code hl_variable" href="classlist__circularizer.html#a0af0bf63d8477a43f98d3c10522c2a6e">_index</a> - 1 );</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>        }</div>
+<p class="definition">Definition at line <a class="el" href="cata__utility_8h_source.html#l00203">203</a> of file <a class="el" href="cata__utility_8h_source.html">cata_utility.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>                    {</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>            <a class="code hl_variable" href="classlist__circularizer.html#a0af0bf63d8477a43f98d3c10522c2a6e">_index</a> = ( <a class="code hl_variable" href="classlist__circularizer.html#a0af0bf63d8477a43f98d3c10522c2a6e">_index</a> == 0 ? <a class="code hl_variable" href="classlist__circularizer.html#aea56b148595af5caa72ed9063554c341">_list</a>-&gt;size() - 1 : <a class="code hl_variable" href="classlist__circularizer.html#a0af0bf63d8477a43f98d3c10522c2a6e">_index</a> - 1 );</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>        }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="cata__utility_8h_source.html#l00186">list_circularizer&lt; T &gt;::_index</a>, and <a class="el" href="cata__utility_8h_source.html#l00187">list_circularizer&lt; T &gt;::_list</a>.</p>
+<p class="reference">References <a class="el" href="cata__utility_8h_source.html#l00190">list_circularizer&lt; T &gt;::_index</a>, and <a class="el" href="cata__utility_8h_source.html#l00191">list_circularizer&lt; T &gt;::_list</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="crafting__gui_8cpp_source.html#l00162">select_crafting_recipe()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="crafting__gui_8cpp_source.html#l00163">select_crafting_recipe()</a>.</p>
 
 </div>
 </div>
@@ -301,9 +301,9 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cata__utility_8h_source.html#l00186">186</a> of file <a class="el" href="cata__utility_8h_source.html">cata_utility.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cata__utility_8h_source.html#l00190">190</a> of file <a class="el" href="cata__utility_8h_source.html">cata_utility.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="cata__utility_8h_source.html#l00204">list_circularizer&lt; T &gt;::cur()</a>, <a class="el" href="cata__utility_8h_source.html#l00194">list_circularizer&lt; T &gt;::next()</a>, and <a class="el" href="cata__utility_8h_source.html#l00199">list_circularizer&lt; T &gt;::prev()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="cata__utility_8h_source.html#l00208">list_circularizer&lt; T &gt;::cur()</a>, <a class="el" href="cata__utility_8h_source.html#l00198">list_circularizer&lt; T &gt;::next()</a>, and <a class="el" href="cata__utility_8h_source.html#l00203">list_circularizer&lt; T &gt;::prev()</a>.</p>
 
 </div>
 </div>
@@ -329,9 +329,9 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cata__utility_8h_source.html#l00187">187</a> of file <a class="el" href="cata__utility_8h_source.html">cata_utility.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cata__utility_8h_source.html#l00191">191</a> of file <a class="el" href="cata__utility_8h_source.html">cata_utility.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="cata__utility_8h_source.html#l00204">list_circularizer&lt; T &gt;::cur()</a>, <a class="el" href="cata__utility_8h_source.html#l00194">list_circularizer&lt; T &gt;::next()</a>, and <a class="el" href="cata__utility_8h_source.html#l00199">list_circularizer&lt; T &gt;::prev()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="cata__utility_8h_source.html#l00208">list_circularizer&lt; T &gt;::cur()</a>, <a class="el" href="cata__utility_8h_source.html#l00198">list_circularizer&lt; T &gt;::next()</a>, and <a class="el" href="cata__utility_8h_source.html#l00203">list_circularizer&lt; T &gt;::prev()</a>.</p>
 
 </div>
 </div>
@@ -344,7 +344,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classlist__circularizer.html">list_circularizer</a></li>
-    <li class="footer">Generated on Sun Mar 5 2023 13:51:08 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Apr 7 2023 11:54:46 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

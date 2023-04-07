@@ -289,5 +289,6 @@ var searchData=
   ['turgid_286',['turgid',['../character_8h.html#a2e6af65e94e820564fb484840378cf4aa2e01a05d962bd116bccfe3c311d0396e',1,'character.h']]],
   ['turretmanual_287',['TurretManual',['../classtarget__ui.html#ae0dd055ba040ba97125cbf165a33c997af2e067641e81adda1d3883190c756e70',1,'target_ui']]],
   ['turrets_288',['Turrets',['../classtarget__ui.html#ae0dd055ba040ba97125cbf165a33c997a90be8abd7ec18957825330f13ca888bb',1,'target_ui']]],
-  ['type_289',['type',['../enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab',1,'enums.h']]]
+  ['tutorial_289',['TUTORIAL',['../enums_8h.html#ace4a265a663117b0e316e492302dce8dab8e2e6f28d96c901009d75312887a6da',1,'enums.h']]],
+  ['type_290',['type',['../enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40a599dcce2998a6b40b1e38e8c6006cb0a',1,'enums.h']]]
 ];

@@ -250,7 +250,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="iuse__actor_8h_source.html#l00365">365</a> of file <a class="el" href="iuse__actor_8h_source.html">iuse_actor.h</a>.</p>
 <div class="fragment"><div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>: <a class="code hl_function" href="classiuse__transform.html#aa68bf9c2fb27972aa0b3776fcaa725cb">iuse_transform</a>( <a class="code hl_variable" href="classiuse__actor.html#a5bfc0cc8ea9046eb540641ff464af80c">type</a> ) {}</div>
-<div class="ttc" id="aclassiuse__actor_html_a5bfc0cc8ea9046eb540641ff464af80c"><div class="ttname"><a href="classiuse__actor.html#a5bfc0cc8ea9046eb540641ff464af80c">iuse_actor::type</a></div><div class="ttdeci">const std::string type</div><div class="ttdoc">The type of the action.</div><div class="ttdef"><b>Definition:</b> <a href="iuse_8h_source.html#l00266">iuse.h:266</a></div></div>
+<div class="ttc" id="aclassiuse__actor_html_a5bfc0cc8ea9046eb540641ff464af80c"><div class="ttname"><a href="classiuse__actor.html#a5bfc0cc8ea9046eb540641ff464af80c">iuse_actor::type</a></div><div class="ttdeci">const std::string type</div><div class="ttdoc">The type of the action.</div><div class="ttdef"><b>Definition:</b> <a href="iuse_8h_source.html#l00267">iuse.h:267</a></div></div>
 <div class="ttc" id="aclassiuse__transform_html_aa68bf9c2fb27972aa0b3776fcaa725cb"><div class="ttname"><a href="classiuse__transform.html#aa68bf9c2fb27972aa0b3776fcaa725cb">iuse_transform::iuse_transform</a></div><div class="ttdeci">iuse_transform(const std::string &amp;type=&quot;transform&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="iuse__actor_8h_source.html#l00104">iuse_actor.h:104</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -321,15 +321,15 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Hack: Bypasses normal checks to transform an item. </p>
 
-<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l00983">983</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00984" name="l00984"></a><span class="lineno">  984</span>{</div>
-<div class="line"><a id="l00985" name="l00985"></a><span class="lineno">  985</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classiuse__transform.html#ad4ea3c8df40cf7b8117af9cc3a7ddbc9">iuse_transform::use</a>( p, it, t, pos );</div>
-<div class="line"><a id="l00986" name="l00986"></a><span class="lineno">  986</span>}</div>
-<div class="ttc" id="aclassiuse__transform_html_ad4ea3c8df40cf7b8117af9cc3a7ddbc9"><div class="ttname"><a href="classiuse__transform.html#ad4ea3c8df40cf7b8117af9cc3a7ddbc9">iuse_transform::use</a></div><div class="ttdeci">int use(player &amp;, item &amp;, bool, const tripoint &amp;) const override</div><div class="ttdef"><b>Definition:</b> <a href="iuse__actor_8cpp_source.html#l00213">iuse_actor.cpp:213</a></div></div>
+<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l00984">984</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00985" name="l00985"></a><span class="lineno">  985</span>{</div>
+<div class="line"><a id="l00986" name="l00986"></a><span class="lineno">  986</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classiuse__transform.html#ad4ea3c8df40cf7b8117af9cc3a7ddbc9">iuse_transform::use</a>( p, it, t, pos );</div>
+<div class="line"><a id="l00987" name="l00987"></a><span class="lineno">  987</span>}</div>
+<div class="ttc" id="aclassiuse__transform_html_ad4ea3c8df40cf7b8117af9cc3a7ddbc9"><div class="ttname"><a href="classiuse__transform.html#ad4ea3c8df40cf7b8117af9cc3a7ddbc9">iuse_transform::use</a></div><div class="ttdeci">int use(player &amp;, item &amp;, bool, const tripoint &amp;) const override</div><div class="ttdef"><b>Definition:</b> <a href="iuse__actor_8cpp_source.html#l00214">iuse_actor.cpp:214</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="character_8cpp_source.html#l00587">Character::pos()</a>, and <a class="el" href="iuse__actor_8cpp_source.html#l00213">iuse_transform::use()</a>.</p>
+<p class="reference">References <a class="el" href="character_8cpp_source.html#l00587">Character::pos()</a>, and <a class="el" href="iuse__actor_8cpp_source.html#l00214">iuse_transform::use()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="item_8cpp_source.html#l04373">item::on_takeoff()</a>, <a class="el" href="item_8cpp_source.html#l04275">item::on_wear()</a>, <a class="el" href="item_8cpp_source.html#l09453">item::process_tool()</a>, and <a class="el" href="iuse__actor_8cpp_source.html#l00915">set_transform_iuse::use()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="item_8cpp_source.html#l04395">item::on_takeoff()</a>, <a class="el" href="item_8cpp_source.html#l04297">item::on_wear()</a>, <a class="el" href="item_8cpp_source.html#l09461">item::process_tool()</a>, and <a class="el" href="iuse__actor_8cpp_source.html#l00916">set_transform_iuse::use()</a>.</p>
 
 </div>
 </div>
@@ -381,14 +381,14 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classiuse__transform.html#a626a9e9faa71357dbb1980b727a0b420">iuse_transform</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l00988">988</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00990" name="l00990"></a><span class="lineno">  990</span>{</div>
-<div class="line"><a id="l00991" name="l00991"></a><span class="lineno">  991</span>    <span class="keywordflow">if</span>( <a class="code hl_variable" href="classset__transformed__iuse.html#a8259eefe072d99d3bfd926c57ad6608f">restricted</a> ) {</div>
-<div class="line"><a id="l00992" name="l00992"></a><span class="lineno">  992</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classret__val.html#a415798e6fd736bd724329890cae0df4a">ret_val&lt;bool&gt;::make_failure</a>( <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;Activate via main piece.&quot;</span> ) );</div>
-<div class="line"><a id="l00993" name="l00993"></a><span class="lineno">  993</span>    }</div>
-<div class="line"><a id="l00994" name="l00994"></a><span class="lineno">  994</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classret__val.html#a0bbde13713bc279563fa85782599f957">ret_val&lt;bool&gt;::make_success</a>();</div>
-<div class="line"><a id="l00995" name="l00995"></a><span class="lineno">  995</span> </div>
-<div class="line"><a id="l00996" name="l00996"></a><span class="lineno">  996</span>}</div>
+<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l00989">989</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00991" name="l00991"></a><span class="lineno">  991</span>{</div>
+<div class="line"><a id="l00992" name="l00992"></a><span class="lineno">  992</span>    <span class="keywordflow">if</span>( <a class="code hl_variable" href="classset__transformed__iuse.html#a8259eefe072d99d3bfd926c57ad6608f">restricted</a> ) {</div>
+<div class="line"><a id="l00993" name="l00993"></a><span class="lineno">  993</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classret__val.html#a415798e6fd736bd724329890cae0df4a">ret_val&lt;bool&gt;::make_failure</a>( <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;Activate via main piece.&quot;</span> ) );</div>
+<div class="line"><a id="l00994" name="l00994"></a><span class="lineno">  994</span>    }</div>
+<div class="line"><a id="l00995" name="l00995"></a><span class="lineno">  995</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classret__val.html#a0bbde13713bc279563fa85782599f957">ret_val&lt;bool&gt;::make_success</a>();</div>
+<div class="line"><a id="l00996" name="l00996"></a><span class="lineno">  996</span> </div>
+<div class="line"><a id="l00997" name="l00997"></a><span class="lineno">  997</span>}</div>
 <div class="ttc" id="aclassret__val_html_a0bbde13713bc279563fa85782599f957"><div class="ttname"><a href="classret__val.html#a0bbde13713bc279563fa85782599f957">ret_val::make_success</a></div><div class="ttdeci">static ret_val make_success(T val=default_success::value)</div><div class="ttdef"><b>Definition:</b> <a href="ret__val_8h_source.html#l00042">ret_val.h:42</a></div></div>
 <div class="ttc" id="aclassret__val_html_a415798e6fd736bd724329890cae0df4a"><div class="ttname"><a href="classret__val.html#a415798e6fd736bd724329890cae0df4a">ret_val::make_failure</a></div><div class="ttdeci">static ret_val make_failure(T val=default_failure::value)</div><div class="ttdef"><b>Definition:</b> <a href="ret__val_8h_source.html#l00046">ret_val.h:46</a></div></div>
 <div class="ttc" id="aclassset__transformed__iuse_html_a8259eefe072d99d3bfd926c57ad6608f"><div class="ttname"><a href="classset__transformed__iuse.html#a8259eefe072d99d3bfd926c57ad6608f">set_transformed_iuse::restricted</a></div><div class="ttdeci">bool restricted</div><div class="ttdoc">Whether the object can only be transformed externally.</div><div class="ttdef"><b>Definition:</b> <a href="iuse__actor_8h_source.html#l00355">iuse_actor.h:355</a></div></div>
@@ -427,15 +427,15 @@ Additional Inherited Members</h2></td></tr>
 <div class="line">        <span class="keywordflow">return</span> std::make_unique&lt;my_iuse_actor&gt;( *<span class="keyword">this</span> );</div>
 <div class="line">    }</div>
 <div class="line">};</div>
-<div class="ttc" id="aclassset__transformed__iuse_html_a64c6c210c7bb95b743c5d14872d9a444"><div class="ttname"><a href="classset__transformed__iuse.html#a64c6c210c7bb95b743c5d14872d9a444">set_transformed_iuse::clone</a></div><div class="ttdeci">std::unique_ptr&lt; iuse_actor &gt; clone() const override</div><div class="ttdoc">Returns a deep copy of this object.</div><div class="ttdef"><b>Definition:</b> <a href="iuse__actor_8cpp_source.html#l00960">iuse_actor.cpp:960</a></div></div>
+<div class="ttc" id="aclassset__transformed__iuse_html_a64c6c210c7bb95b743c5d14872d9a444"><div class="ttname"><a href="classset__transformed__iuse.html#a64c6c210c7bb95b743c5d14872d9a444">set_transformed_iuse::clone</a></div><div class="ttdeci">std::unique_ptr&lt; iuse_actor &gt; clone() const override</div><div class="ttdoc">Returns a deep copy of this object.</div><div class="ttdef"><b>Definition:</b> <a href="iuse__actor_8cpp_source.html#l00961">iuse_actor.cpp:961</a></div></div>
 </div><!-- fragment --><p> The returned value should behave like the original item and must have the same type. </p>
 
 <p>Reimplemented from <a class="el" href="classiuse__transform.html#a07af531026f860633339769ffe7ea5ff">iuse_transform</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l00960">960</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00961" name="l00961"></a><span class="lineno">  961</span>{</div>
-<div class="line"><a id="l00962" name="l00962"></a><span class="lineno">  962</span>    <span class="keywordflow">return</span> std::make_unique&lt;set_transformed_iuse&gt;( *<span class="keyword">this</span> );</div>
-<div class="line"><a id="l00963" name="l00963"></a><span class="lineno">  963</span>}</div>
+<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l00961">961</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00962" name="l00962"></a><span class="lineno">  962</span>{</div>
+<div class="line"><a id="l00963" name="l00963"></a><span class="lineno">  963</span>    <span class="keywordflow">return</span> std::make_unique&lt;set_transformed_iuse&gt;( *<span class="keyword">this</span> );</div>
+<div class="line"><a id="l00964" name="l00964"></a><span class="lineno">  964</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -465,17 +465,17 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classiuse__transform.html#afa4bc16c277d48c916701a18e89c81eb">iuse_transform</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l00965">965</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00966" name="l00966"></a><span class="lineno">  966</span>{</div>
-<div class="line"><a id="l00967" name="l00967"></a><span class="lineno">  967</span>    <a class="code hl_function" href="classiuse__transform.html#afa4bc16c277d48c916701a18e89c81eb">iuse_transform::load</a>( obj );</div>
-<div class="line"><a id="l00968" name="l00968"></a><span class="lineno">  968</span>    obj.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;restricted&quot;</span>, <a class="code hl_variable" href="classset__transformed__iuse.html#a8259eefe072d99d3bfd926c57ad6608f">restricted</a> );</div>
-<div class="line"><a id="l00969" name="l00969"></a><span class="lineno">  969</span>    obj.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;dependencies&quot;</span>, <a class="code hl_variable" href="classset__transformed__iuse.html#addd27ac331e7684188e78685397024c4">dependencies</a> );</div>
-<div class="line"><a id="l00970" name="l00970"></a><span class="lineno">  970</span>}</div>
+<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l00966">966</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00967" name="l00967"></a><span class="lineno">  967</span>{</div>
+<div class="line"><a id="l00968" name="l00968"></a><span class="lineno">  968</span>    <a class="code hl_function" href="classiuse__transform.html#afa4bc16c277d48c916701a18e89c81eb">iuse_transform::load</a>( obj );</div>
+<div class="line"><a id="l00969" name="l00969"></a><span class="lineno">  969</span>    obj.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;restricted&quot;</span>, <a class="code hl_variable" href="classset__transformed__iuse.html#a8259eefe072d99d3bfd926c57ad6608f">restricted</a> );</div>
+<div class="line"><a id="l00970" name="l00970"></a><span class="lineno">  970</span>    obj.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;dependencies&quot;</span>, <a class="code hl_variable" href="classset__transformed__iuse.html#addd27ac331e7684188e78685397024c4">dependencies</a> );</div>
+<div class="line"><a id="l00971" name="l00971"></a><span class="lineno">  971</span>}</div>
 <div class="ttc" id="aclassJsonObject_html_ae66d47f9cb4993dfaf79819ec2aff2f8"><div class="ttname"><a href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">JsonObject::read</a></div><div class="ttdeci">bool read(const std::string &amp;name, T &amp;t, bool throw_on_error=true) const</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00942">json.h:942</a></div></div>
-<div class="ttc" id="aclassiuse__transform_html_afa4bc16c277d48c916701a18e89c81eb"><div class="ttname"><a href="classiuse__transform.html#afa4bc16c277d48c916701a18e89c81eb">iuse_transform::load</a></div><div class="ttdeci">void load(const JsonObject &amp;obj) override</div><div class="ttdef"><b>Definition:</b> <a href="iuse__actor_8cpp_source.html#l00159">iuse_actor.cpp:159</a></div></div>
+<div class="ttc" id="aclassiuse__transform_html_afa4bc16c277d48c916701a18e89c81eb"><div class="ttname"><a href="classiuse__transform.html#afa4bc16c277d48c916701a18e89c81eb">iuse_transform::load</a></div><div class="ttdeci">void load(const JsonObject &amp;obj) override</div><div class="ttdef"><b>Definition:</b> <a href="iuse__actor_8cpp_source.html#l00160">iuse_actor.cpp:160</a></div></div>
 <div class="ttc" id="aclassset__transformed__iuse_html_addd27ac331e7684188e78685397024c4"><div class="ttname"><a href="classset__transformed__iuse.html#addd27ac331e7684188e78685397024c4">set_transformed_iuse::dependencies</a></div><div class="ttdeci">std::string dependencies</div><div class="ttdoc">String defining flag needed on activating item.</div><div class="ttdef"><b>Definition:</b> <a href="iuse__actor_8h_source.html#l00360">iuse_actor.h:360</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="iuse__actor_8h_source.html#l00360">dependencies</a>, <a class="el" href="iuse__actor_8cpp_source.html#l00159">iuse_transform::load()</a>, <a class="el" href="json_8h_source.html#l00942">JsonObject::read()</a>, and <a class="el" href="iuse__actor_8h_source.html#l00355">restricted</a>.</p>
+<p class="reference">References <a class="el" href="iuse__actor_8h_source.html#l00360">dependencies</a>, <a class="el" href="iuse__actor_8cpp_source.html#l00160">iuse_transform::load()</a>, <a class="el" href="json_8h_source.html#l00942">JsonObject::read()</a>, and <a class="el" href="iuse__actor_8h_source.html#l00355">restricted</a>.</p>
 
 </div>
 </div>
@@ -527,18 +527,18 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classiuse__transform.html#ad4ea3c8df40cf7b8117af9cc3a7ddbc9">iuse_transform</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l00972">972</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00973" name="l00973"></a><span class="lineno">  973</span>{</div>
-<div class="line"><a id="l00974" name="l00974"></a><span class="lineno">  974</span>    <span class="keywordflow">if</span>( t ) {</div>
-<div class="line"><a id="l00975" name="l00975"></a><span class="lineno">  975</span>        <span class="keywordflow">return</span> 0; <span class="comment">// invoked from active item processing, do nothing.</span></div>
-<div class="line"><a id="l00976" name="l00976"></a><span class="lineno">  976</span>    }</div>
-<div class="line"><a id="l00977" name="l00977"></a><span class="lineno">  977</span> </div>
-<div class="line"><a id="l00978" name="l00978"></a><span class="lineno">  978</span>    <a class="code hl_function" href="classiuse__transform.html#ad4ea3c8df40cf7b8117af9cc3a7ddbc9">iuse_transform::use</a>( p, it, t, pos );</div>
-<div class="line"><a id="l00979" name="l00979"></a><span class="lineno">  979</span> </div>
-<div class="line"><a id="l00980" name="l00980"></a><span class="lineno">  980</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a id="l00981" name="l00981"></a><span class="lineno">  981</span>}</div>
+<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l00973">973</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00974" name="l00974"></a><span class="lineno">  974</span>{</div>
+<div class="line"><a id="l00975" name="l00975"></a><span class="lineno">  975</span>    <span class="keywordflow">if</span>( t ) {</div>
+<div class="line"><a id="l00976" name="l00976"></a><span class="lineno">  976</span>        <span class="keywordflow">return</span> 0; <span class="comment">// invoked from active item processing, do nothing.</span></div>
+<div class="line"><a id="l00977" name="l00977"></a><span class="lineno">  977</span>    }</div>
+<div class="line"><a id="l00978" name="l00978"></a><span class="lineno">  978</span> </div>
+<div class="line"><a id="l00979" name="l00979"></a><span class="lineno">  979</span>    <a class="code hl_function" href="classiuse__transform.html#ad4ea3c8df40cf7b8117af9cc3a7ddbc9">iuse_transform::use</a>( p, it, t, pos );</div>
+<div class="line"><a id="l00980" name="l00980"></a><span class="lineno">  980</span> </div>
+<div class="line"><a id="l00981" name="l00981"></a><span class="lineno">  981</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00982" name="l00982"></a><span class="lineno">  982</span>}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="character_8cpp_source.html#l00587">Character::pos()</a>, and <a class="el" href="iuse__actor_8cpp_source.html#l00213">iuse_transform::use()</a>.</p>
+<p class="reference">References <a class="el" href="character_8cpp_source.html#l00587">Character::pos()</a>, and <a class="el" href="iuse__actor_8cpp_source.html#l00214">iuse_transform::use()</a>.</p>
 
 </div>
 </div>
@@ -559,7 +559,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="iuse__actor_8h_source.html#l00360">360</a> of file <a class="el" href="iuse__actor_8h_source.html">iuse_actor.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l00965">load()</a>, <a class="el" href="item_8cpp_source.html#l04275">item::on_wear()</a>, and <a class="el" href="item_8cpp_source.html#l09453">item::process_tool()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l00966">load()</a>, <a class="el" href="item_8cpp_source.html#l04297">item::on_wear()</a>, and <a class="el" href="item_8cpp_source.html#l09461">item::process_tool()</a>.</p>
 
 </div>
 </div>
@@ -579,7 +579,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="iuse__actor_8h_source.html#l00355">355</a> of file <a class="el" href="iuse__actor_8h_source.html">iuse_actor.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l00988">can_use()</a>, <a class="el" href="iuse__actor_8cpp_source.html#l00965">load()</a>, <a class="el" href="item_8cpp_source.html#l04275">item::on_wear()</a>, and <a class="el" href="item_8cpp_source.html#l09453">item::process_tool()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l00989">can_use()</a>, <a class="el" href="iuse__actor_8cpp_source.html#l00966">load()</a>, <a class="el" href="item_8cpp_source.html#l04297">item::on_wear()</a>, and <a class="el" href="item_8cpp_source.html#l09461">item::process_tool()</a>.</p>
 
 </div>
 </div>
@@ -593,7 +593,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classset__transformed__iuse.html">set_transformed_iuse</a></li>
-    <li class="footer">Generated on Sun Mar 5 2023 13:51:14 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Apr 7 2023 11:54:52 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

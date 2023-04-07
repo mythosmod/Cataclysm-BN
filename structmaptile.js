@@ -1,6 +1,6 @@
 var structmaptile =
 [
-    [ "maptile", "structmaptile.html#ab994efd992447ec5685a47e68518579e", null ],
+    [ "maptile", "structmaptile.html#a725cb032f26e95e06984be10ab9fe7b8", null ],
     [ "find_field", "structmaptile.html#a938297885d93f2c7d4f283363ca2f606", null ],
     [ "get_field", "structmaptile.html#a15f6425e60113e76f02a16bc22f14032", null ],
     [ "get_furn", "structmaptile.html#a5c9e3d51ccd6ac8307ed526a0a3c48fb", null ],
@@ -16,7 +16,7 @@ var structmaptile =
     [ "get_uppermost_item", "structmaptile.html#a0a30748f84a4e66e904219b5bec49990", null ],
     [ "has_graffiti", "structmaptile.html#a0159d631feffce6738c8e07a38c934a1", null ],
     [ "has_signage", "structmaptile.html#a4c5065f1a6d5945d49c28992f6c92765", null ],
-    [ "pos", "structmaptile.html#aad3a88be9212f3a75c31ca6d07863653", null ],
+    [ "pos", "structmaptile.html#ab61517185726936287df087b2bfed289", null ],
     [ "map", "structmaptile.html#a465c6b366a6b6cb882b8668c698bf42d", null ],
     [ "pos_", "structmaptile.html#a93e125b91c77b00f653a12800b24dbc9", null ],
     [ "sm", "structmaptile.html#ad952a69376efc35d1e4782ca90718626", null ],

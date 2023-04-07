@@ -77,6 +77,7 @@ var classrecipe =
     [ "reversible", "classrecipe.html#a9962c832b13dd4ea662fead23963b8be", null ],
     [ "skill_used", "classrecipe.html#a0af03931c6f034e6b5269a5206e31bd2", null ],
     [ "skills_blueprint", "classrecipe.html#a06882977700a57c968f9da3d16ec75a4", null ],
+    [ "src", "classrecipe.html#a3340e6c14161c889be7c95cdd0f3b6f5", null ],
     [ "subcategory", "classrecipe.html#a0abc3495580963e9f6e3d5e88b8bfcf3", null ],
     [ "time", "classrecipe.html#a6f112b43cfa1f07bb48529d110839e6d", null ],
     [ "time_blueprint", "classrecipe.html#aa9e0d7b482ae05e58c49856eb8b4ff4e", null ]

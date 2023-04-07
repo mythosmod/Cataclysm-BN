@@ -1,7 +1,7 @@
 var structvehicle__part =
 [
     [ "vehicle_part", "structvehicle__part.html#ad19cdfd7981b8ccb3565eacfa5b26980", null ],
-    [ "vehicle_part", "structvehicle__part.html#a0fd040932e7bca60c8f5025d06888d51", null ],
+    [ "vehicle_part", "structvehicle__part.html#a912e402de55117165dd6c54c19715ebc", null ],
     [ "ammo_capacity", "structvehicle__part.html#a3cdc75652e7509b56d164fe9e5c15231", null ],
     [ "ammo_consume", "structvehicle__part.html#aba8156669b1112e8ff258878066505b9", null ],
     [ "ammo_current", "structvehicle__part.html#ad8e149b4d200656c134e3f90f82f3fe4", null ],

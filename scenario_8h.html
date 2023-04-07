@@ -116,6 +116,10 @@ Macros</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a856d9e09957ae5ecc59fca00bfbd86dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scenario_8h.html#a856d9e09957ae5ecc59fca00bfbd86dc">reset_scenarios_blacklist</a> ()</td></tr>
 <tr class="separator:a856d9e09957ae5ecc59fca00bfbd86dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cfbfc416a4a2e3a87f331e2ce5a99e5"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classscenario.html">scenario</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scenario_8h.html#a0cfbfc416a4a2e3a87f331e2ce5a99e5">get_scenario</a> ()</td></tr>
+<tr class="separator:a0cfbfc416a4a2e3a87f331e2ce5a99e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a8a128d64bcb9da0329221c1c37fe28"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scenario_8h.html#a9a8a128d64bcb9da0329221c1c37fe28">set_scenario</a> (const <a class="el" href="classscenario.html">scenario</a> *new_scenario)</td></tr>
+<tr class="separator:a9a8a128d64bcb9da0329221c1c37fe28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a5ebf3eaa7404930356d1b4c4a2bbb346" name="a5ebf3eaa7404930356d1b4c4a2bbb346"></a>
@@ -135,6 +139,33 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a0cfbfc416a4a2e3a87f331e2ce5a99e5" name="a0cfbfc416a4a2e3a87f331e2ce5a99e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cfbfc416a4a2e3a87f331e2ce5a99e5">&#9670;&nbsp;</a></span>get_scenario()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classscenario.html">scenario</a> * get_scenario </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="game_8cpp_source.html#l12027">12027</a> of file <a class="el" href="game_8cpp_source.html">game.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l12028" name="l12028"></a><span class="lineno">12028</span>{</div>
+<div class="line"><a id="l12029" name="l12029"></a><span class="lineno">12029</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="game_8cpp.html#abeb98e93502d73818b4a73fabe191bc1">g</a>-&gt;scen;</div>
+<div class="line"><a id="l12030" name="l12030"></a><span class="lineno">12030</span>}</div>
+<div class="ttc" id="agame_8cpp_html_abeb98e93502d73818b4a73fabe191bc1"><div class="ttname"><a href="game_8cpp.html#abeb98e93502d73818b4a73fabe191bc1">g</a></div><div class="ttdeci">std::unique_ptr&lt; game &gt; g</div><div class="ttdef"><b>Definition:</b> <a href="game_8cpp_source.html#l00281">game.cpp:281</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="game_8cpp_source.html#l00281">g</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="main__menu_8cpp_source.html#l00554">main_menu::opening_screen()</a>.</p>
+
+</div>
+</div>
 <a id="a856d9e09957ae5ecc59fca00bfbd86dc" name="a856d9e09957ae5ecc59fca00bfbd86dc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a856d9e09957ae5ecc59fca00bfbd86dc">&#9670;&nbsp;</a></span>reset_scenarios_blacklist()</h2>
 
@@ -159,7 +190,32 @@ Functions</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="scenario_8cpp_source.html#l00037">sc_blacklist</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8cpp_source.html#l00536">DynamicDataLoader::unload_data()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8cpp_source.html#l00537">DynamicDataLoader::unload_data()</a>.</p>
+
+</div>
+</div>
+<a id="a9a8a128d64bcb9da0329221c1c37fe28" name="a9a8a128d64bcb9da0329221c1c37fe28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a8a128d64bcb9da0329221c1c37fe28">&#9670;&nbsp;</a></span>set_scenario()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void set_scenario </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classscenario.html">scenario</a> *&#160;</td>
+          <td class="paramname"><em>new_scenario</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="game_8cpp_source.html#l12031">12031</a> of file <a class="el" href="game_8cpp_source.html">game.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l12032" name="l12032"></a><span class="lineno">12032</span>{</div>
+<div class="line"><a id="l12033" name="l12033"></a><span class="lineno">12033</span>    <a class="code hl_variable" href="game_8cpp.html#abeb98e93502d73818b4a73fabe191bc1">g</a>-&gt;scen = new_scenario;</div>
+<div class="line"><a id="l12034" name="l12034"></a><span class="lineno">12034</span>}</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="game_8cpp_source.html#l00281">g</a>.</p>
 
 </div>
 </div>
@@ -169,7 +225,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="scenario_8h.html">scenario.h</a></li>
-    <li class="footer">Generated on Sun Mar 5 2023 13:50:56 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Apr 7 2023 11:54:33 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

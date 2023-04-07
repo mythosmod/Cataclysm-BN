@@ -156,7 +156,7 @@ Functions</h2></td></tr>
 <tr class="separator:aaac198e963169aff2cdea16f5659fe0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a758c65ab73b99503f2c2ff9bb7780e15"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="monstergenerator_8cpp.html#a758c65ab73b99503f2c2ff9bb7780e15">load_monster_adjustment</a> (const <a class="el" href="classJsonObject.html">JsonObject</a> &amp;jsobj)</td></tr>
 <tr class="separator:a758c65ab73b99503f2c2ff9bb7780e15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1fd51a7a7445dc32455ff256e6c131d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="monstergenerator_8cpp.html#af1fd51a7a7445dc32455ff256e6c131d">build_behavior_tree</a> (<a class="el" href="structmtype.html">mtype</a> &amp;<a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a>)</td></tr>
+<tr class="memitem:af1fd51a7a7445dc32455ff256e6c131d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="monstergenerator_8cpp.html#af1fd51a7a7445dc32455ff256e6c131d">build_behavior_tree</a> (<a class="el" href="structmtype.html">mtype</a> &amp;type)</td></tr>
 <tr class="separator:af1fd51a7a7445dc32455ff256e6c131d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c873449004aa8a18c63f62eb893bc02"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmon__effect__data.html">mon_effect_data</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="monstergenerator_8cpp.html#a8c873449004aa8a18c63f62eb893bc02">load_mon_effect_data</a> (const <a class="el" href="classJsonObject.html">JsonObject</a> &amp;e)</td></tr>
 <tr class="separator:a8c873449004aa8a18c63f62eb893bc02"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -193,16 +193,16 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="monstergenerator_8cpp_source.html#l00337">337</a> of file <a class="el" href="monstergenerator_8cpp_source.html">monstergenerator.cpp</a>.</p>
 <div class="fragment"><div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>{</div>
-<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>    <a class="code hl_enumvalue" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a>.set_strategy();</div>
-<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>    <span class="keywordflow">if</span>( <a class="code hl_enumvalue" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a>.has_flag( <a class="code hl_enumvalue" href="mtype_8h.html#afa4c966d04d2ddb261a7cde725eca842a1a666e01cb5ba8b6877255696101b247">MF_ABSORBS</a> ) || <a class="code hl_enumvalue" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a>.has_flag( <a class="code hl_enumvalue" href="mtype_8h.html#afa4c966d04d2ddb261a7cde725eca842aaf6826378e83b5f5ffa271deff984d55">MF_ABSORBS_SPLITS</a> ) ) {</div>
-<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>        <a class="code hl_enumvalue" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a>.add_goal( <span class="stringliteral">&quot;absorb_items&quot;</span> );</div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>    <a class="code hl_enumeration" href="namespacedetail.html#ad46d232fb6116de4dac0c43dbde8e7a9">type</a>.set_strategy();</div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>    <span class="keywordflow">if</span>( <a class="code hl_enumeration" href="namespacedetail.html#ad46d232fb6116de4dac0c43dbde8e7a9">type</a>.has_flag( <a class="code hl_enumvalue" href="mtype_8h.html#afa4c966d04d2ddb261a7cde725eca842a1a666e01cb5ba8b6877255696101b247">MF_ABSORBS</a> ) || <a class="code hl_enumeration" href="namespacedetail.html#ad46d232fb6116de4dac0c43dbde8e7a9">type</a>.has_flag( <a class="code hl_enumvalue" href="mtype_8h.html#afa4c966d04d2ddb261a7cde725eca842aaf6826378e83b5f5ffa271deff984d55">MF_ABSORBS_SPLITS</a> ) ) {</div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>        <a class="code hl_enumeration" href="namespacedetail.html#ad46d232fb6116de4dac0c43dbde8e7a9">type</a>.add_goal( <span class="stringliteral">&quot;absorb_items&quot;</span> );</div>
 <div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>    }</div>
 <div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>}</div>
-<div class="ttc" id="aenums_8h_html_ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab"><div class="ttname"><a href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a></div><div class="ttdeci">@ type</div><div class="ttdef"><b>Definition:</b> <a href="enums_8h_source.html#l00075">enums.h:75</a></div></div>
 <div class="ttc" id="amtype_8h_html_afa4c966d04d2ddb261a7cde725eca842a1a666e01cb5ba8b6877255696101b247"><div class="ttname"><a href="mtype_8h.html#afa4c966d04d2ddb261a7cde725eca842a1a666e01cb5ba8b6877255696101b247">MF_ABSORBS</a></div><div class="ttdeci">@ MF_ABSORBS</div><div class="ttdef"><b>Definition:</b> <a href="mtype_8h_source.html#l00133">mtype.h:133</a></div></div>
 <div class="ttc" id="amtype_8h_html_afa4c966d04d2ddb261a7cde725eca842aaf6826378e83b5f5ffa271deff984d55"><div class="ttname"><a href="mtype_8h.html#afa4c966d04d2ddb261a7cde725eca842aaf6826378e83b5f5ffa271deff984d55">MF_ABSORBS_SPLITS</a></div><div class="ttdeci">@ MF_ABSORBS_SPLITS</div><div class="ttdef"><b>Definition:</b> <a href="mtype_8h_source.html#l00134">mtype.h:134</a></div></div>
+<div class="ttc" id="anamespacedetail_html_ad46d232fb6116de4dac0c43dbde8e7a9"><div class="ttname"><a href="namespacedetail.html#ad46d232fb6116de4dac0c43dbde8e7a9">detail::type</a></div><div class="ttdeci">type</div><div class="ttdef"><b>Definition:</b> <a href="fmtlib__core_8h_source.html#l01087">fmtlib_core.h:1087</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="mtype_8h_source.html#l00133">MF_ABSORBS</a>, <a class="el" href="mtype_8h_source.html#l00134">MF_ABSORBS_SPLITS</a>, and <a class="el" href="enums_8h_source.html#l00075">type</a>.</p>
+<p class="reference">References <a class="el" href="mtype_8h_source.html#l00133">MF_ABSORBS</a>, and <a class="el" href="mtype_8h_source.html#l00134">MF_ABSORBS_SPLITS</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="monstergenerator_8cpp_source.html#l00345">MonsterGenerator::finalize_mtypes()</a>.</p>
 
@@ -358,7 +358,7 @@ Variables</h2></td></tr>
 <div class="ttc" id="astructmonster__adjustment_html_a48dbf44df27f538ef356a0d33f2ee3aa"><div class="ttname"><a href="structmonster__adjustment.html#a48dbf44df27f538ef356a0d33f2ee3aa">monster_adjustment::flag</a></div><div class="ttdeci">std::string flag</div><div class="ttdef"><b>Definition:</b> <a href="monstergenerator_8cpp_source.html#l00282">monstergenerator.cpp:282</a></div></div>
 <div class="ttc" id="astructmonster__adjustment_html_a5c99817bc38c267eab9d534acf847d8f"><div class="ttname"><a href="structmonster__adjustment.html#a5c99817bc38c267eab9d534acf847d8f">monster_adjustment::stat_adjust</a></div><div class="ttdeci">float stat_adjust</div><div class="ttdef"><b>Definition:</b> <a href="monstergenerator_8cpp_source.html#l00281">monstergenerator.cpp:281</a></div></div>
 <div class="ttc" id="astructmonster__adjustment_html_a709044cf9bce01dd33e9250f14f9033d"><div class="ttname"><a href="structmonster__adjustment.html#a709044cf9bce01dd33e9250f14f9033d">monster_adjustment::stat</a></div><div class="ttdeci">std::string stat</div><div class="ttdef"><b>Definition:</b> <a href="monstergenerator_8cpp_source.html#l00280">monstergenerator.cpp:280</a></div></div>
-<div class="ttc" id="atype__id_8h_html_aabb3ae1a3aec00a1aa497b29c81ed527"><div class="ttname"><a href="type__id_8h.html#aabb3ae1a3aec00a1aa497b29c81ed527">species_id</a></div><div class="ttdeci">string_id&lt; species_type &gt; species_id</div><div class="ttdef"><b>Definition:</b> <a href="type__id_8h_source.html#l00152">type_id.h:152</a></div></div>
+<div class="ttc" id="atype__id_8h_html_aabb3ae1a3aec00a1aa497b29c81ed527"><div class="ttname"><a href="type__id_8h.html#aabb3ae1a3aec00a1aa497b29c81ed527">species_id</a></div><div class="ttdeci">string_id&lt; species_type &gt; species_id</div><div class="ttdef"><b>Definition:</b> <a href="type__id_8h_source.html#l00155">type_id.h:155</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="monstergenerator_8cpp_source.html#l00310">adjustments</a>, <a class="el" href="monstergenerator_8cpp_source.html#l00282">monster_adjustment::flag</a>, <a class="el" href="monstergenerator_8cpp_source.html#l00283">monster_adjustment::flag_val</a>, <a class="el" href="json_8cpp_source.html#l00428">JsonObject::get_object()</a>, <a class="el" href="json_8cpp_source.html#l00381">JsonObject::get_string()</a>, <a class="el" href="json_8cpp_source.html#l00181">JsonObject::has_member()</a>, <a class="el" href="json_8h_source.html#l00942">JsonObject::read()</a>, <a class="el" href="monstergenerator_8cpp_source.html#l00284">monster_adjustment::special</a>, <a class="el" href="monstergenerator_8cpp_source.html#l00279">monster_adjustment::species</a>, <a class="el" href="monstergenerator_8cpp_source.html#l00280">monster_adjustment::stat</a>, and <a class="el" href="monstergenerator_8cpp_source.html#l00281">monster_adjustment::stat_adjust</a>.</p>
 
@@ -388,7 +388,7 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="monstergenerator_8cpp_source.html#l00310">adjustments</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8cpp_source.html#l00536">DynamicDataLoader::unload_data()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8cpp_source.html#l00537">DynamicDataLoader::unload_data()</a>.</p>
 
 </div>
 </div>
@@ -474,7 +474,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="monstergenerator_8cpp.html">monstergenerator.cpp</a></li>
-    <li class="footer">Generated on Sun Mar 5 2023 13:50:54 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Apr 7 2023 11:54:32 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

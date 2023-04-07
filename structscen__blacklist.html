@@ -217,14 +217,14 @@ Public Attributes</h2></td></tr>
 <div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>        jo.<a class="code hl_function" href="classJsonObject.html#ae7bcdb4ec8ab2c64e607b411cb98d00c">throw_error</a>( <span class="stringliteral">&quot;Blacklist subtype is not a valid subtype.&quot;</span> );</div>
 <div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>    }</div>
 <div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span> </div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> std::string &amp;<a class="code hl_function" href="mapgen_8cpp.html#a90f1f53dc044e93e7f7f9314cef1bd45">line</a> : jo.<a class="code hl_function" href="classJsonObject.html#a69f62f59b5e39da6059b7c3cf8b12421">get_array</a>( <span class="stringliteral">&quot;scenarios&quot;</span> ) ) {</div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>        <a class="code hl_variable" href="structscen__blacklist.html#aa41bd97689f2f936ff1b41a000d5bd45">scenarios</a>.emplace( <a class="code hl_function" href="mapgen_8cpp.html#a90f1f53dc044e93e7f7f9314cef1bd45">line</a> );</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> std::string &amp;<a class="code hl_function" href="mapgen_8cpp.html#a7a9bb2e98af3268deb7dd8fda06a7d2e">line</a> : jo.<a class="code hl_function" href="classJsonObject.html#a69f62f59b5e39da6059b7c3cf8b12421">get_array</a>( <span class="stringliteral">&quot;scenarios&quot;</span> ) ) {</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>        <a class="code hl_variable" href="structscen__blacklist.html#aa41bd97689f2f936ff1b41a000d5bd45">scenarios</a>.emplace( <a class="code hl_function" href="mapgen_8cpp.html#a7a9bb2e98af3268deb7dd8fda06a7d2e">line</a> );</div>
 <div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>    }</div>
 <div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>}</div>
 <div class="ttc" id="aclassJsonObject_html_a69f62f59b5e39da6059b7c3cf8b12421"><div class="ttname"><a href="classJsonObject.html#a69f62f59b5e39da6059b7c3cf8b12421">JsonObject::get_array</a></div><div class="ttdeci">JsonArray get_array(const std::string &amp;name) const</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l00399">json.cpp:399</a></div></div>
 <div class="ttc" id="aclassJsonObject_html_a96b6d1b9cf7bda4fc9cd177a99e0631c"><div class="ttname"><a href="classJsonObject.html#a96b6d1b9cf7bda4fc9cd177a99e0631c">JsonObject::get_string</a></div><div class="ttdeci">std::string get_string(const std::string &amp;name) const</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l00381">json.cpp:381</a></div></div>
 <div class="ttc" id="aclassJsonObject_html_ae7bcdb4ec8ab2c64e607b411cb98d00c"><div class="ttname"><a href="classJsonObject.html#ae7bcdb4ec8ab2c64e607b411cb98d00c">JsonObject::throw_error</a></div><div class="ttdeci">void throw_error(std::string err) const</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l00233">json.cpp:233</a></div></div>
-<div class="ttc" id="amapgen_8cpp_html_a90f1f53dc044e93e7f7f9314cef1bd45"><div class="ttname"><a href="mapgen_8cpp.html#a90f1f53dc044e93e7f7f9314cef1bd45">line</a></div><div class="ttdeci">void line(map *m, const ter_id &amp;type, const point &amp;p1, const point &amp;p2)</div><div class="ttdef"><b>Definition:</b> <a href="mapgen_8cpp_source.html#l06485">mapgen.cpp:6485</a></div></div>
+<div class="ttc" id="amapgen_8cpp_html_a7a9bb2e98af3268deb7dd8fda06a7d2e"><div class="ttname"><a href="mapgen_8cpp.html#a7a9bb2e98af3268deb7dd8fda06a7d2e">line</a></div><div class="ttdeci">void line(map *m, const ter_id &amp;type, point p1, point p2)</div><div class="ttdef"><b>Definition:</b> <a href="mapgen_8cpp_source.html#l06485">mapgen.cpp:6485</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="json_8cpp_source.html#l00399">JsonObject::get_array()</a>, <a class="el" href="json_8cpp_source.html#l00381">JsonObject::get_string()</a>, <a class="el" href="mapgen_8cpp_source.html#l06485">line()</a>, <a class="el" href="scenario_8h_source.html#l00119">scenarios</a>, <a class="el" href="json_8cpp_source.html#l00233">JsonObject::throw_error()</a>, and <a class="el" href="scenario_8h_source.html#l00120">whitelist</a>.</p>
 
@@ -325,7 +325,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structscen__blacklist.html">scen_blacklist</a></li>
-    <li class="footer">Generated on Sun Mar 5 2023 13:51:14 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Apr 7 2023 11:54:52 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

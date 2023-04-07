@@ -106,7 +106,7 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a3ade4e0c2935dab1e528810afe6f8445"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event_8cpp.html#a3ade4e0c2935dab1e528810afe6f8445">DEFINE_EVENT_FIELDS</a>(<a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a>)</td></tr>
+<tr class="memitem:a3ade4e0c2935dab1e528810afe6f8445"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="event_8cpp.html#a3ade4e0c2935dab1e528810afe6f8445">DEFINE_EVENT_FIELDS</a>(type)</td></tr>
 <tr class="separator:a3ade4e0c2935dab1e528810afe6f8445"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -115,10 +115,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a464ed8b5753eecbc03aa4c5ffe228b70"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceio.html#a464ed8b5753eecbc03aa4c5ffe228b70">io::enum_to_string&lt; event_type &gt;</a> (<a class="el" href="event_8h.html#a430b444c74dd3fd1472a31714ec5f1ce">event_type</a> data)</td></tr>
 <tr class="separator:a464ed8b5753eecbc03aa4c5ffe228b70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d045723eef39961df4f842574c02682"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="event_8h.html#a430b444c74dd3fd1472a31714ec5f1ce">event_type</a> Type&gt; </td></tr>
-<tr class="memitem:a3d045723eef39961df4f842574c02682"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecata.html#a3d045723eef39961df4f842574c02682">cata::get_fields_if_match</a> (<a class="el" href="event_8h.html#a430b444c74dd3fd1472a31714ec5f1ce">event_type</a> <a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a>, event::fields_type &amp;out)</td></tr>
+<tr class="memitem:a3d045723eef39961df4f842574c02682"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecata.html#a3d045723eef39961df4f842574c02682">cata::get_fields_if_match</a> (<a class="el" href="event_8h.html#a430b444c74dd3fd1472a31714ec5f1ce">event_type</a> type, event::fields_type &amp;out)</td></tr>
 <tr class="separator:a3d045723eef39961df4f842574c02682"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae46986af1dab17c49a326aca49824ebb"><td class="memTemplParams" colspan="2">template&lt;int... I&gt; </td></tr>
-<tr class="memitem:ae46986af1dab17c49a326aca49824ebb"><td class="memTemplItemLeft" align="right" valign="top">static event::fields_type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecata.html#ae46986af1dab17c49a326aca49824ebb">cata::get_fields_helper</a> (<a class="el" href="event_8h.html#a430b444c74dd3fd1472a31714ec5f1ce">event_type</a> <a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a>, std::integer_sequence&lt; int, I... &gt;)</td></tr>
+<tr class="memitem:ae46986af1dab17c49a326aca49824ebb"><td class="memTemplItemLeft" align="right" valign="top">static event::fields_type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecata.html#ae46986af1dab17c49a326aca49824ebb">cata::get_fields_helper</a> (<a class="el" href="event_8h.html#a430b444c74dd3fd1472a31714ec5f1ce">event_type</a> type, std::integer_sequence&lt; int, I... &gt;)</td></tr>
 <tr class="separator:ae46986af1dab17c49a326aca49824ebb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -132,7 +132,7 @@ Functions</h2></td></tr>
           <td class="memname">#define DEFINE_EVENT_FIELDS</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a></td><td>)</td>
+          <td class="paramname">type</td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -151,7 +151,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="event_8cpp.html">event.cpp</a></li>
-    <li class="footer">Generated on Sun Mar 5 2023 13:50:52 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Apr 7 2023 11:54:29 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

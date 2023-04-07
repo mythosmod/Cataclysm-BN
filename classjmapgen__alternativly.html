@@ -111,8 +111,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5884f89c3637f23756016c827558a362"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjmapgen__alternativly.html#a5884f89c3637f23756016c827558a362">apply</a> (<a class="el" href="classmapgendata.html">mapgendata</a> &amp;dat, const <a class="el" href="structjmapgen__int.html">jmapgen_int</a> &amp;x, const <a class="el" href="structjmapgen__int.html">jmapgen_int</a> &amp;y) const override</td></tr>
 <tr class="memdesc:a5884f89c3637f23756016c827558a362"><td class="mdescLeft">&#160;</td><td class="mdescRight">Place something on the map from mapgendata &amp;dat, at (x,y).  <a href="classjmapgen__alternativly.html#a5884f89c3637f23756016c827558a362">More...</a><br /></td></tr>
 <tr class="separator:a5884f89c3637f23756016c827558a362"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b24af2aa121ba7c17829a30b9c52171"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjmapgen__alternativly.html#a6b24af2aa121ba7c17829a30b9c52171">has_vehicle_collision</a> (<a class="el" href="classmapgendata.html">mapgendata</a> &amp;dat, const <a class="el" href="structpoint.html">point</a> &amp;p) const override</td></tr>
-<tr class="separator:a6b24af2aa121ba7c17829a30b9c52171"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9c2d94326a8609617e65e1c4b881c02"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjmapgen__alternativly.html#aa9c2d94326a8609617e65e1c4b881c02">has_vehicle_collision</a> (<a class="el" href="classmapgendata.html">mapgendata</a> &amp;dat, <a class="el" href="structpoint.html">point</a> p) const override</td></tr>
+<tr class="separator:aa9c2d94326a8609617e65e1c4b881c02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classjmapgen__piece"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classjmapgen__piece')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classjmapgen__piece.html">jmapgen_piece</a></td></tr>
 <tr class="memitem:a74492b6c35350d7c43725ea1a3182fff inherit pub_methods_classjmapgen__piece"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjmapgen__piece.html#a74492b6c35350d7c43725ea1a3182fff">check</a> (const std::string &amp;) const</td></tr>
 <tr class="memdesc:a74492b6c35350d7c43725ea1a3182fff inherit pub_methods_classjmapgen__piece"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sanity-check this piece.  <a href="classjmapgen__piece.html#a74492b6c35350d7c43725ea1a3182fff">More...</a><br /></td></tr>
@@ -228,8 +228,8 @@ template&lt;typename PieceType &gt; </div>
 
 </div>
 </div>
-<a id="a6b24af2aa121ba7c17829a30b9c52171" name="a6b24af2aa121ba7c17829a30b9c52171"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b24af2aa121ba7c17829a30b9c52171">&#9670;&nbsp;</a></span>has_vehicle_collision()</h2>
+<a id="aa9c2d94326a8609617e65e1c4b881c02" name="aa9c2d94326a8609617e65e1c4b881c02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9c2d94326a8609617e65e1c4b881c02">&#9670;&nbsp;</a></span>has_vehicle_collision()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -248,7 +248,7 @@ template&lt;typename PieceType &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structpoint.html">point</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="structpoint.html">point</a>&#160;</td>
           <td class="paramname"><em>p</em>&#160;</td>
         </tr>
         <tr>
@@ -264,19 +264,19 @@ template&lt;typename PieceType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented from <a class="el" href="classjmapgen__piece.html#a74765ff59286d23cda1aa6ca250f1358">jmapgen_piece</a>.</p>
+<p>Reimplemented from <a class="el" href="classjmapgen__piece.html#adf9845ad8cb15013e7f838c25aa6b8a6">jmapgen_piece</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="mapgen_8cpp_source.html#l00842">842</a> of file <a class="el" href="mapgen_8cpp_source.html">mapgen.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00842" name="l00842"></a><span class="lineno">  842</span>                                                                                     {</div>
+<div class="fragment"><div class="line"><a id="l00842" name="l00842"></a><span class="lineno">  842</span>                                                                              {</div>
 <div class="line"><a id="l00843" name="l00843"></a><span class="lineno">  843</span>            <span class="keywordflow">return</span> dat.<a class="code hl_variable" href="classmapgendata.html#a7d9e28b073b22b2391e6d3972fd6aa12">m</a>.<a class="code hl_function" href="classmap.html#aa487d96256c3d35db7a1bf273156b64a">veh_at</a>( <a class="code hl_struct" href="structtripoint.html">tripoint</a>( p, dat.<a class="code hl_function" href="classmapgendata.html#a8b23644fccfcc73e7f06a6fc3cb61d3f">zlevel</a>() ) ).<a class="code hl_function" href="classcata_1_1optional.html#ad5b847e0e2f1db1387a10bac3751ccf4">has_value</a>();</div>
 <div class="line"><a id="l00844" name="l00844"></a><span class="lineno">  844</span>        }</div>
 <div class="ttc" id="aclasscata_1_1optional_html_ad5b847e0e2f1db1387a10bac3751ccf4"><div class="ttname"><a href="classcata_1_1optional.html#ad5b847e0e2f1db1387a10bac3751ccf4">cata::optional::has_value</a></div><div class="ttdeci">constexpr bool has_value() const noexcept</div><div class="ttdef"><b>Definition:</b> <a href="optional_8h_source.html#l00123">optional.h:123</a></div></div>
-<div class="ttc" id="aclassmap_html_aa487d96256c3d35db7a1bf273156b64a"><div class="ttname"><a href="classmap.html#aa487d96256c3d35db7a1bf273156b64a">map::veh_at</a></div><div class="ttdeci">optional_vpart_position veh_at(const tripoint &amp;p) const</div><div class="ttdoc">Checks if tile is occupied by vehicle and by which part.</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l01009">map.cpp:1009</a></div></div>
+<div class="ttc" id="aclassmap_html_aa487d96256c3d35db7a1bf273156b64a"><div class="ttname"><a href="classmap.html#aa487d96256c3d35db7a1bf273156b64a">map::veh_at</a></div><div class="ttdeci">optional_vpart_position veh_at(const tripoint &amp;p) const</div><div class="ttdoc">Checks if tile is occupied by vehicle and by which part.</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l01067">map.cpp:1067</a></div></div>
 <div class="ttc" id="aclassmapgendata_html_a7d9e28b073b22b2391e6d3972fd6aa12"><div class="ttname"><a href="classmapgendata.html#a7d9e28b073b22b2391e6d3972fd6aa12">mapgendata::m</a></div><div class="ttdeci">map &amp; m</div><div class="ttdef"><b>Definition:</b> <a href="mapgendata_8h_source.html#l00061">mapgendata.h:61</a></div></div>
 <div class="ttc" id="aclassmapgendata_html_a8b23644fccfcc73e7f06a6fc3cb61d3f"><div class="ttname"><a href="classmapgendata.html#a8b23644fccfcc73e7f06a6fc3cb61d3f">mapgendata::zlevel</a></div><div class="ttdeci">int zlevel() const</div><div class="ttdef"><b>Definition:</b> <a href="mapgendata_8h_source.html#l00099">mapgendata.h:99</a></div></div>
-<div class="ttc" id="astructtripoint_html"><div class="ttname"><a href="structtripoint.html">tripoint</a></div><div class="ttdef"><b>Definition:</b> <a href="point_8h_source.html#l00147">point.h:147</a></div></div>
+<div class="ttc" id="astructtripoint_html"><div class="ttname"><a href="structtripoint.html">tripoint</a></div><div class="ttdef"><b>Definition:</b> <a href="point_8h_source.html#l00133">point.h:133</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="optional_8h_source.html#l00123">cata::optional&lt; T &gt;::has_value()</a>, <a class="el" href="mapgendata_8h_source.html#l00061">mapgendata::m</a>, <a class="el" href="map_8cpp_source.html#l01009">map::veh_at()</a>, and <a class="el" href="mapgendata_8h_source.html#l00099">mapgendata::zlevel()</a>.</p>
+<p class="reference">References <a class="el" href="optional_8h_source.html#l00123">cata::optional&lt; T &gt;::has_value()</a>, <a class="el" href="mapgendata_8h_source.html#l00061">mapgendata::m</a>, <a class="el" href="map_8cpp_source.html#l01067">map::veh_at()</a>, and <a class="el" href="mapgendata_8h_source.html#l00099">mapgendata::zlevel()</a>.</p>
 
 </div>
 </div>
@@ -310,7 +310,7 @@ template&lt;typename PieceType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classjmapgen__alternativly.html">jmapgen_alternativly</a></li>
-    <li class="footer">Generated on Sun Mar 5 2023 13:51:07 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Apr 7 2023 11:54:45 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

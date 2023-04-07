@@ -117,8 +117,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a74492b6c35350d7c43725ea1a3182fff inherit pub_methods_classjmapgen__piece"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4088bc4883e7a9f3c661abd1b8394ec inherit pub_methods_classjmapgen__piece"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjmapgen__piece.html#ab4088bc4883e7a9f3c661abd1b8394ec">~jmapgen_piece</a> ()=default</td></tr>
 <tr class="separator:ab4088bc4883e7a9f3c661abd1b8394ec inherit pub_methods_classjmapgen__piece"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74765ff59286d23cda1aa6ca250f1358 inherit pub_methods_classjmapgen__piece"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjmapgen__piece.html#a74765ff59286d23cda1aa6ca250f1358">has_vehicle_collision</a> (<a class="el" href="classmapgendata.html">mapgendata</a> &amp;, const <a class="el" href="structpoint.html">point</a> &amp;) const</td></tr>
-<tr class="separator:a74765ff59286d23cda1aa6ca250f1358 inherit pub_methods_classjmapgen__piece"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf9845ad8cb15013e7f838c25aa6b8a6 inherit pub_methods_classjmapgen__piece"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjmapgen__piece.html#adf9845ad8cb15013e7f838c25aa6b8a6">has_vehicle_collision</a> (<a class="el" href="classmapgendata.html">mapgendata</a> &amp;, <a class="el" href="structpoint.html">point</a>) const</td></tr>
+<tr class="separator:adf9845ad8cb15013e7f838c25aa6b8a6 inherit pub_methods_classjmapgen__piece"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -140,7 +140,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><p >Translate terrain from one ter_id to another. </p>
 <p >"from": id of the starting terrain. "to": id of the ending terrain not useful for normal mapgen, very useful for mapgen_update </p>
 
-<p class="definition">Definition at line <a class="el" href="mapgen_8cpp_source.html#l01733">1733</a> of file <a class="el" href="mapgen_8cpp_source.html">mapgen.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mapgen_8cpp_source.html#l01731">1731</a> of file <a class="el" href="mapgen_8cpp_source.html">mapgen.cpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a088c7697509f0e54577d7a7addc98a20" name="a088c7697509f0e54577d7a7addc98a20"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a088c7697509f0e54577d7a7addc98a20">&#9670;&nbsp;</a></span>jmapgen_translate()</h2>
@@ -166,23 +166,23 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mapgen_8cpp_source.html#l01738">1738</a> of file <a class="el" href="mapgen_8cpp_source.html">mapgen.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01738" name="l01738"></a><span class="lineno"> 1738</span>                                                   {</div>
-<div class="line"><a id="l01739" name="l01739"></a><span class="lineno"> 1739</span>            <span class="keywordflow">if</span>( <a class="code hl_variable" href="namespacemapgen__defer.html#ac7abbde97374a05af2e7077ba9955ed1">jsi</a>.<a class="code hl_function" href="classJsonObject.html#a19d83d03e3d5cc6905bcb850d80a1f05">has_string</a>( <span class="stringliteral">&quot;from&quot;</span> ) &amp;&amp; <a class="code hl_variable" href="namespacemapgen__defer.html#ac7abbde97374a05af2e7077ba9955ed1">jsi</a>.<a class="code hl_function" href="classJsonObject.html#a19d83d03e3d5cc6905bcb850d80a1f05">has_string</a>( <span class="stringliteral">&quot;to&quot;</span> ) ) {</div>
-<div class="line"><a id="l01740" name="l01740"></a><span class="lineno"> 1740</span>                <span class="keyword">const</span> std::string from_id = <a class="code hl_variable" href="namespacemapgen__defer.html#ac7abbde97374a05af2e7077ba9955ed1">jsi</a>.<a class="code hl_function" href="classJsonObject.html#a96b6d1b9cf7bda4fc9cd177a99e0631c">get_string</a>( <span class="stringliteral">&quot;from&quot;</span> );</div>
-<div class="line"><a id="l01741" name="l01741"></a><span class="lineno"> 1741</span>                <span class="keyword">const</span> std::string to_id = <a class="code hl_variable" href="namespacemapgen__defer.html#ac7abbde97374a05af2e7077ba9955ed1">jsi</a>.<a class="code hl_function" href="classJsonObject.html#a96b6d1b9cf7bda4fc9cd177a99e0631c">get_string</a>( <span class="stringliteral">&quot;to&quot;</span> );</div>
-<div class="line"><a id="l01742" name="l01742"></a><span class="lineno"> 1742</span>                <a class="code hl_variable" href="classjmapgen__translate.html#a29177ca3081c1e70c8fcb44f2b8ce679">from</a> = <a class="code hl_enumvalue" href="cata__variant_8h.html#adfe42687fffdd05d233096b4e7dac2f4ace91d270e314ee1f266a1f4e30ea129b">ter_id</a>( from_id );</div>
-<div class="line"><a id="l01743" name="l01743"></a><span class="lineno"> 1743</span>                <a class="code hl_variable" href="classjmapgen__translate.html#a7d2edce19eac1cc6e4bba2e18223c052">to</a> = <a class="code hl_enumvalue" href="cata__variant_8h.html#adfe42687fffdd05d233096b4e7dac2f4ace91d270e314ee1f266a1f4e30ea129b">ter_id</a>( to_id );</div>
-<div class="line"><a id="l01744" name="l01744"></a><span class="lineno"> 1744</span>            }</div>
-<div class="line"><a id="l01745" name="l01745"></a><span class="lineno"> 1745</span>        }</div>
+<p class="definition">Definition at line <a class="el" href="mapgen_8cpp_source.html#l01736">1736</a> of file <a class="el" href="mapgen_8cpp_source.html">mapgen.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01736" name="l01736"></a><span class="lineno"> 1736</span>                                                   {</div>
+<div class="line"><a id="l01737" name="l01737"></a><span class="lineno"> 1737</span>            <span class="keywordflow">if</span>( <a class="code hl_variable" href="namespacemapgen__defer.html#ac7abbde97374a05af2e7077ba9955ed1">jsi</a>.<a class="code hl_function" href="classJsonObject.html#a19d83d03e3d5cc6905bcb850d80a1f05">has_string</a>( <span class="stringliteral">&quot;from&quot;</span> ) &amp;&amp; <a class="code hl_variable" href="namespacemapgen__defer.html#ac7abbde97374a05af2e7077ba9955ed1">jsi</a>.<a class="code hl_function" href="classJsonObject.html#a19d83d03e3d5cc6905bcb850d80a1f05">has_string</a>( <span class="stringliteral">&quot;to&quot;</span> ) ) {</div>
+<div class="line"><a id="l01738" name="l01738"></a><span class="lineno"> 1738</span>                <span class="keyword">const</span> std::string from_id = <a class="code hl_variable" href="namespacemapgen__defer.html#ac7abbde97374a05af2e7077ba9955ed1">jsi</a>.<a class="code hl_function" href="classJsonObject.html#a96b6d1b9cf7bda4fc9cd177a99e0631c">get_string</a>( <span class="stringliteral">&quot;from&quot;</span> );</div>
+<div class="line"><a id="l01739" name="l01739"></a><span class="lineno"> 1739</span>                <span class="keyword">const</span> std::string to_id = <a class="code hl_variable" href="namespacemapgen__defer.html#ac7abbde97374a05af2e7077ba9955ed1">jsi</a>.<a class="code hl_function" href="classJsonObject.html#a96b6d1b9cf7bda4fc9cd177a99e0631c">get_string</a>( <span class="stringliteral">&quot;to&quot;</span> );</div>
+<div class="line"><a id="l01740" name="l01740"></a><span class="lineno"> 1740</span>                <a class="code hl_variable" href="classjmapgen__translate.html#a29177ca3081c1e70c8fcb44f2b8ce679">from</a> = <a class="code hl_enumvalue" href="cata__variant_8h.html#adfe42687fffdd05d233096b4e7dac2f4ace91d270e314ee1f266a1f4e30ea129b">ter_id</a>( from_id );</div>
+<div class="line"><a id="l01741" name="l01741"></a><span class="lineno"> 1741</span>                <a class="code hl_variable" href="classjmapgen__translate.html#a7d2edce19eac1cc6e4bba2e18223c052">to</a> = <a class="code hl_enumvalue" href="cata__variant_8h.html#adfe42687fffdd05d233096b4e7dac2f4ace91d270e314ee1f266a1f4e30ea129b">ter_id</a>( to_id );</div>
+<div class="line"><a id="l01742" name="l01742"></a><span class="lineno"> 1742</span>            }</div>
+<div class="line"><a id="l01743" name="l01743"></a><span class="lineno"> 1743</span>        }</div>
 <div class="ttc" id="acata__variant_8h_html_adfe42687fffdd05d233096b4e7dac2f4ace91d270e314ee1f266a1f4e30ea129b"><div class="ttname"><a href="cata__variant_8h.html#adfe42687fffdd05d233096b4e7dac2f4ace91d270e314ee1f266a1f4e30ea129b">cata_variant_type::ter_id</a></div><div class="ttdeci">@ ter_id</div></div>
 <div class="ttc" id="aclassJsonObject_html_a19d83d03e3d5cc6905bcb850d80a1f05"><div class="ttname"><a href="classJsonObject.html#a19d83d03e3d5cc6905bcb850d80a1f05">JsonObject::has_string</a></div><div class="ttdeci">bool has_string(const std::string &amp;name) const</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l00472">json.cpp:472</a></div></div>
 <div class="ttc" id="aclassJsonObject_html_a96b6d1b9cf7bda4fc9cd177a99e0631c"><div class="ttname"><a href="classJsonObject.html#a96b6d1b9cf7bda4fc9cd177a99e0631c">JsonObject::get_string</a></div><div class="ttdeci">std::string get_string(const std::string &amp;name) const</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l00381">json.cpp:381</a></div></div>
-<div class="ttc" id="aclassjmapgen__translate_html_a29177ca3081c1e70c8fcb44f2b8ce679"><div class="ttname"><a href="classjmapgen__translate.html#a29177ca3081c1e70c8fcb44f2b8ce679">jmapgen_translate::from</a></div><div class="ttdeci">ter_id from</div><div class="ttdef"><b>Definition:</b> <a href="mapgen_8cpp_source.html#l01736">mapgen.cpp:1736</a></div></div>
-<div class="ttc" id="aclassjmapgen__translate_html_a7d2edce19eac1cc6e4bba2e18223c052"><div class="ttname"><a href="classjmapgen__translate.html#a7d2edce19eac1cc6e4bba2e18223c052">jmapgen_translate::to</a></div><div class="ttdeci">ter_id to</div><div class="ttdef"><b>Definition:</b> <a href="mapgen_8cpp_source.html#l01737">mapgen.cpp:1737</a></div></div>
+<div class="ttc" id="aclassjmapgen__translate_html_a29177ca3081c1e70c8fcb44f2b8ce679"><div class="ttname"><a href="classjmapgen__translate.html#a29177ca3081c1e70c8fcb44f2b8ce679">jmapgen_translate::from</a></div><div class="ttdeci">ter_id from</div><div class="ttdef"><b>Definition:</b> <a href="mapgen_8cpp_source.html#l01734">mapgen.cpp:1734</a></div></div>
+<div class="ttc" id="aclassjmapgen__translate_html_a7d2edce19eac1cc6e4bba2e18223c052"><div class="ttname"><a href="classjmapgen__translate.html#a7d2edce19eac1cc6e4bba2e18223c052">jmapgen_translate::to</a></div><div class="ttdeci">ter_id to</div><div class="ttdef"><b>Definition:</b> <a href="mapgen_8cpp_source.html#l01735">mapgen.cpp:1735</a></div></div>
 <div class="ttc" id="anamespacemapgen__defer_html_ac7abbde97374a05af2e7077ba9955ed1"><div class="ttname"><a href="namespacemapgen__defer.html#ac7abbde97374a05af2e7077ba9955ed1">mapgen_defer::jsi</a></div><div class="ttdeci">JsonObject jsi</div><div class="ttdef"><b>Definition:</b> <a href="mapgen_8cpp_source.html#l00413">mapgen.cpp:413</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="mapgen_8cpp_source.html#l01736">from</a>, <a class="el" href="json_8cpp_source.html#l00381">JsonObject::get_string()</a>, <a class="el" href="json_8cpp_source.html#l00472">JsonObject::has_string()</a>, <a class="el" href="mapgen_8cpp_source.html#l00413">mapgen_defer::jsi</a>, <a class="el" href="cata__variant_8h.html#adfe42687fffdd05d233096b4e7dac2f4ace91d270e314ee1f266a1f4e30ea129b">ter_id</a>, and <a class="el" href="mapgen_8cpp_source.html#l01737">to</a>.</p>
+<p class="reference">References <a class="el" href="mapgen_8cpp_source.html#l01734">from</a>, <a class="el" href="json_8cpp_source.html#l00381">JsonObject::get_string()</a>, <a class="el" href="json_8cpp_source.html#l00472">JsonObject::has_string()</a>, <a class="el" href="mapgen_8cpp_source.html#l00413">mapgen_defer::jsi</a>, <a class="el" href="cata__variant_8h.html#adfe42687fffdd05d233096b4e7dac2f4ace91d270e314ee1f266a1f4e30ea129b">ter_id</a>, and <a class="el" href="mapgen_8cpp_source.html#l01735">to</a>.</p>
 
 </div>
 </div>
@@ -231,14 +231,14 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classjmapgen__piece.html#a82c99884542de41c80a197f389afe18a">jmapgen_piece</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="mapgen_8cpp_source.html#l01746">1746</a> of file <a class="el" href="mapgen_8cpp_source.html">mapgen.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01746" name="l01746"></a><span class="lineno"> 1746</span>                                                                                                 {</div>
-<div class="line"><a id="l01747" name="l01747"></a><span class="lineno"> 1747</span>            dat.<a class="code hl_variable" href="classmapgendata.html#a7d9e28b073b22b2391e6d3972fd6aa12">m</a>.<a class="code hl_function" href="classmap.html#a16c42a0494cf948a154567bc43571f90">translate</a>( <a class="code hl_variable" href="classjmapgen__translate.html#a29177ca3081c1e70c8fcb44f2b8ce679">from</a>, <a class="code hl_variable" href="classjmapgen__translate.html#a7d2edce19eac1cc6e4bba2e18223c052">to</a> );</div>
-<div class="line"><a id="l01748" name="l01748"></a><span class="lineno"> 1748</span>        }</div>
-<div class="ttc" id="aclassmap_html_a16c42a0494cf948a154567bc43571f90"><div class="ttname"><a href="classmap.html#a16c42a0494cf948a154567bc43571f90">map::translate</a></div><div class="ttdeci">void translate(const ter_id &amp;from, const ter_id &amp;to)</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l03934">map.cpp:3934</a></div></div>
+<p class="definition">Definition at line <a class="el" href="mapgen_8cpp_source.html#l01744">1744</a> of file <a class="el" href="mapgen_8cpp_source.html">mapgen.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01744" name="l01744"></a><span class="lineno"> 1744</span>                                                                                                 {</div>
+<div class="line"><a id="l01745" name="l01745"></a><span class="lineno"> 1745</span>            dat.<a class="code hl_variable" href="classmapgendata.html#a7d9e28b073b22b2391e6d3972fd6aa12">m</a>.<a class="code hl_function" href="classmap.html#a16c42a0494cf948a154567bc43571f90">translate</a>( <a class="code hl_variable" href="classjmapgen__translate.html#a29177ca3081c1e70c8fcb44f2b8ce679">from</a>, <a class="code hl_variable" href="classjmapgen__translate.html#a7d2edce19eac1cc6e4bba2e18223c052">to</a> );</div>
+<div class="line"><a id="l01746" name="l01746"></a><span class="lineno"> 1746</span>        }</div>
+<div class="ttc" id="aclassmap_html_a16c42a0494cf948a154567bc43571f90"><div class="ttname"><a href="classmap.html#a16c42a0494cf948a154567bc43571f90">map::translate</a></div><div class="ttdeci">void translate(const ter_id &amp;from, const ter_id &amp;to)</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l03961">map.cpp:3961</a></div></div>
 <div class="ttc" id="aclassmapgendata_html_a7d9e28b073b22b2391e6d3972fd6aa12"><div class="ttname"><a href="classmapgendata.html#a7d9e28b073b22b2391e6d3972fd6aa12">mapgendata::m</a></div><div class="ttdeci">map &amp; m</div><div class="ttdef"><b>Definition:</b> <a href="mapgendata_8h_source.html#l00061">mapgendata.h:61</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="mapgen_8cpp_source.html#l01736">from</a>, <a class="el" href="mapgendata_8h_source.html#l00061">mapgendata::m</a>, <a class="el" href="mapgen_8cpp_source.html#l01737">to</a>, and <a class="el" href="map_8cpp_source.html#l03934">map::translate()</a>.</p>
+<p class="reference">References <a class="el" href="mapgen_8cpp_source.html#l01734">from</a>, <a class="el" href="mapgendata_8h_source.html#l00061">mapgendata::m</a>, <a class="el" href="mapgen_8cpp_source.html#l01735">to</a>, and <a class="el" href="map_8cpp_source.html#l03961">map::translate()</a>.</p>
 
 </div>
 </div>
@@ -255,9 +255,9 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mapgen_8cpp_source.html#l01736">1736</a> of file <a class="el" href="mapgen_8cpp_source.html">mapgen.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mapgen_8cpp_source.html#l01734">1734</a> of file <a class="el" href="mapgen_8cpp_source.html">mapgen.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mapgen_8cpp_source.html#l01746">apply()</a>, and <a class="el" href="mapgen_8cpp_source.html#l01738">jmapgen_translate()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mapgen_8cpp_source.html#l01744">apply()</a>, and <a class="el" href="mapgen_8cpp_source.html#l01736">jmapgen_translate()</a>.</p>
 
 </div>
 </div>
@@ -273,9 +273,9 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mapgen_8cpp_source.html#l01737">1737</a> of file <a class="el" href="mapgen_8cpp_source.html">mapgen.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mapgen_8cpp_source.html#l01735">1735</a> of file <a class="el" href="mapgen_8cpp_source.html">mapgen.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mapgen_8cpp_source.html#l01746">apply()</a>, and <a class="el" href="mapgen_8cpp_source.html#l01738">jmapgen_translate()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mapgen_8cpp_source.html#l01744">apply()</a>, and <a class="el" href="mapgen_8cpp_source.html#l01736">jmapgen_translate()</a>.</p>
 
 </div>
 </div>
@@ -288,7 +288,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classjmapgen__translate.html">jmapgen_translate</a></li>
-    <li class="footer">Generated on Sun Mar 5 2023 13:51:07 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Apr 7 2023 11:54:45 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

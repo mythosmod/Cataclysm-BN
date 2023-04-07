@@ -1,6 +1,6 @@
 var structpathfinder =
 [
-    [ "pathfinder", "structpathfinder.html#a14564b8f0d59b7a4ad791f5f59480547", null ],
+    [ "pathfinder", "structpathfinder.html#a7431e65599af6dc7ad761bca3cfee421", null ],
     [ "add_point", "structpathfinder.html#ab7b80d453998f12d82f075db97234f05", null ],
     [ "close_point", "structpathfinder.html#aab715954a28f2efa66c81e0b65284f10", null ],
     [ "empty", "structpathfinder.html#a083a5fbadeb8cbaf3c408c093e90479b", null ],

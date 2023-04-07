@@ -1,6 +1,6 @@
 var classmapgen__function__json =
 [
-    [ "mapgen_function_json", "classmapgen__function__json.html#a369c672de73aab762c2e8a8f1b82a9e0", null ],
+    [ "mapgen_function_json", "classmapgen__function__json.html#a5a1d5ee0e18946b8efc3ae87d98a0c8b", null ],
     [ "~mapgen_function_json", "classmapgen__function__json.html#a7e0f330c89bbae6621bb1a140581ae48", null ],
     [ "check", "classmapgen__function__json.html#a739e8388a8e8db5a502a9f5447201fe5", null ],
     [ "generate", "classmapgen__function__json.html#ad84c2d449021d8ca02cb05bdce90f154", null ],

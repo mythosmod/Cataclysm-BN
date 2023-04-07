@@ -91,13 +91,13 @@ $(document).ready(function(){initNavTree('classsave__t.html',''); initResizable(
 <p>This is the complete list of members for <a class="el" href="classsave__t.html">save_t</a>, including all inherited members.</p>
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="classsave__t.html#ae538fab6674feb86b0a2a9ec725cb3b7">base_path</a>() const</td><td class="entry"><a class="el" href="classsave__t.html">save_t</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classsave__t.html#ad4e21e83d9898f54ef649afe320c4b87">from_base_path</a>(const std::string &amp;base_path)</td><td class="entry"><a class="el" href="classsave__t.html">save_t</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classsave__t.html#a5ab383619ad40a333bacb0cc3938a75d">from_player_name</a>(const std::string &amp;name)</td><td class="entry"><a class="el" href="classsave__t.html">save_t</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classsave__t.html#af085a438df4f633c46f239b72b8f9f7c">name</a></td><td class="entry"><a class="el" href="classsave__t.html">save_t</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classsave__t.html#a42e732bc567bee8d0ff0cf97a9886eac">operator!=</a>(const save_t &amp;rhs) const</td><td class="entry"><a class="el" href="classsave__t.html">save_t</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classsave__t.html#a450c36f2326a9c909f4acf3f08411328">operator=</a>(const save_t &amp;)=default</td><td class="entry"><a class="el" href="classsave__t.html">save_t</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classsave__t.html#a12dd0cb71836dd7e0507c8f3d8e06eb4">operator==</a>(const save_t &amp;rhs) const</td><td class="entry"><a class="el" href="classsave__t.html">save_t</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classsave__t.html#a69e3fc9a83075825158845e72ff2488c">player_name</a>() const</td><td class="entry"><a class="el" href="classsave__t.html">save_t</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classsave__t.html#ae371c816c864f978d25b729ceaebc7a4">decoded_name</a>() const</td><td class="entry"><a class="el" href="classsave__t.html">save_t</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classsave__t.html#ad4e21e83d9898f54ef649afe320c4b87">from_base_path</a>(const std::string &amp;base_path)</td><td class="entry"><a class="el" href="classsave__t.html">save_t</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classsave__t.html#a5165be2760ed160e3bc0c020516bf267">from_save_id</a>(const std::string &amp;save_id)</td><td class="entry"><a class="el" href="classsave__t.html">save_t</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classsave__t.html#af085a438df4f633c46f239b72b8f9f7c">name</a></td><td class="entry"><a class="el" href="classsave__t.html">save_t</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classsave__t.html#a42e732bc567bee8d0ff0cf97a9886eac">operator!=</a>(const save_t &amp;rhs) const</td><td class="entry"><a class="el" href="classsave__t.html">save_t</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classsave__t.html#a450c36f2326a9c909f4acf3f08411328">operator=</a>(const save_t &amp;)=default</td><td class="entry"><a class="el" href="classsave__t.html">save_t</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classsave__t.html#a12dd0cb71836dd7e0507c8f3d8e06eb4">operator==</a>(const save_t &amp;rhs) const</td><td class="entry"><a class="el" href="classsave__t.html">save_t</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classsave__t.html#a8ed95418484bacd36a3ada7b4d1c38e2">save_t</a>(const std::string &amp;name)</td><td class="entry"><a class="el" href="classsave__t.html">save_t</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classsave__t.html#a62fe509956dacbcc3a4115287170d7e9">save_t</a>(const save_t &amp;)=default</td><td class="entry"><a class="el" href="classsave__t.html">save_t</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
@@ -105,7 +105,7 @@ $(document).ready(function(){initNavTree('classsave__t.html',''); initResizable(
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Mar 5 2023 13:51:14 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Apr 7 2023 11:54:52 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

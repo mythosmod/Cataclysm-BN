@@ -42,7 +42,6 @@ var character__turn_8cpp =
     [ "trait_CHITIN_FUR3", "character__turn_8cpp.html#a7b9b5dc5aace58de30f3602e0413cfb8", null ],
     [ "trait_COLDBLOOD4", "character__turn_8cpp.html#a2d4878472a9c5543436349f994a98e48", null ],
     [ "trait_COMPOUND_EYES", "character__turn_8cpp.html#a2f88100c922915703a21ea4c48e8c6bd", null ],
-    [ "trait_DEBUG_BIONIC_POWER", "character__turn_8cpp.html#af151d09e7927fa1f3c8a519c00c423aa", null ],
     [ "trait_EATHEALTH", "character__turn_8cpp.html#abb2203fc9372a7f9651ccca81239445a", null ],
     [ "trait_FAT", "character__turn_8cpp.html#a43ae85111a2b2e6825a41a5cd5e619ae", null ],
     [ "trait_FELINE_FUR", "character__turn_8cpp.html#a83afbd8e4dbefc1f99df9624fd9d7824", null ],

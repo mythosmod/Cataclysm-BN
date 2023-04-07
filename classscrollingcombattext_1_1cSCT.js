@@ -1,6 +1,6 @@
 var classscrollingcombattext_1_1cSCT =
 [
-    [ "cSCT", "classscrollingcombattext_1_1cSCT.html#a6a49a755d60a770117e7fb7673a98818", null ],
+    [ "cSCT", "classscrollingcombattext_1_1cSCT.html#acc38ee38a6f6c7179821c8e25503feac", null ],
     [ "advanceStep", "classscrollingcombattext_1_1cSCT.html#ac94189dc43199258a538869eab7b5818", null ],
     [ "advanceStepOffset", "classscrollingcombattext_1_1cSCT.html#a1d416a106a5b38c2aa116767e43f257a", null ],
     [ "getDirecton", "classscrollingcombattext_1_1cSCT.html#a44901ce2f189c9b8bdf7068bff0ba8ce", null ],

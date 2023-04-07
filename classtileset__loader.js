@@ -2,8 +2,8 @@ var classtileset__loader =
 [
     [ "tileset_loader", "classtileset__loader.html#a7e659e2616197b4eb18731d551a46cfb", null ],
     [ "add_ascii_subtile", "classtileset__loader.html#a308a1de31f76c488045dd93db31c3c43", null ],
-    [ "copy_surface_to_texture", "classtileset__loader.html#a774a843be633c8714de15d2713ebae51", null ],
-    [ "create_textures_from_tile_atlas", "classtileset__loader.html#ad9e66efc08103955403e67c30581a11b", null ],
+    [ "copy_surface_to_texture", "classtileset__loader.html#a44f5a55d24e93e8770ab8045ab6b5e30", null ],
+    [ "create_textures_from_tile_atlas", "classtileset__loader.html#ac25d115bd954c623472b6eda0a985f65", null ],
     [ "ensure_default_item_highlight", "classtileset__loader.html#a8f3c780182e7dfe4cdc539d2a1b97e6a", null ],
     [ "load", "classtileset__loader.html#acf095fd647daa4621ba1fafb2f80ebb0", null ],
     [ "load_ascii", "classtileset__loader.html#a9599839fdd9ef4711fdde0422e231daa", null ],

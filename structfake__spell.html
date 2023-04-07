@@ -222,16 +222,16 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="magic_8cpp_source.html#l02060">2060</a> of file <a class="el" href="magic_8cpp_source.html">magic.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l02061" name="l02061"></a><span class="lineno"> 2061</span>{</div>
-<div class="line"><a id="l02062" name="l02062"></a><span class="lineno"> 2062</span>    <a class="code hl_class" href="classJsonObject.html">JsonObject</a> data = jsin.<a class="code hl_function" href="classJsonIn.html#af988f122efed0696d9d05f649e57c9b2">get_object</a>();</div>
-<div class="line"><a id="l02063" name="l02063"></a><span class="lineno"> 2063</span>    <a class="code hl_function" href="structfake__spell.html#ac440226452aa226c3cf41da10d905760">load</a>( data );</div>
-<div class="line"><a id="l02064" name="l02064"></a><span class="lineno"> 2064</span>}</div>
+<p class="definition">Definition at line <a class="el" href="magic_8cpp_source.html#l02059">2059</a> of file <a class="el" href="magic_8cpp_source.html">magic.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l02060" name="l02060"></a><span class="lineno"> 2060</span>{</div>
+<div class="line"><a id="l02061" name="l02061"></a><span class="lineno"> 2061</span>    <a class="code hl_class" href="classJsonObject.html">JsonObject</a> data = jsin.<a class="code hl_function" href="classJsonIn.html#af988f122efed0696d9d05f649e57c9b2">get_object</a>();</div>
+<div class="line"><a id="l02062" name="l02062"></a><span class="lineno"> 2062</span>    <a class="code hl_function" href="structfake__spell.html#ac440226452aa226c3cf41da10d905760">load</a>( data );</div>
+<div class="line"><a id="l02063" name="l02063"></a><span class="lineno"> 2063</span>}</div>
 <div class="ttc" id="aclassJsonIn_html_af988f122efed0696d9d05f649e57c9b2"><div class="ttname"><a href="classJsonIn.html#af988f122efed0696d9d05f649e57c9b2">JsonIn::get_object</a></div><div class="ttdeci">JsonObject get_object()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01431">json.cpp:1431</a></div></div>
 <div class="ttc" id="aclassJsonObject_html"><div class="ttname"><a href="classJsonObject.html">JsonObject</a></div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00827">json.h:828</a></div></div>
-<div class="ttc" id="astructfake__spell_html_ac440226452aa226c3cf41da10d905760"><div class="ttname"><a href="structfake__spell.html#ac440226452aa226c3cf41da10d905760">fake_spell::load</a></div><div class="ttdeci">void load(const JsonObject &amp;jo)</div><div class="ttdef"><b>Definition:</b> <a href="magic_8cpp_source.html#l02021">magic.cpp:2021</a></div></div>
+<div class="ttc" id="astructfake__spell_html_ac440226452aa226c3cf41da10d905760"><div class="ttname"><a href="structfake__spell.html#ac440226452aa226c3cf41da10d905760">fake_spell::load</a></div><div class="ttdeci">void load(const JsonObject &amp;jo)</div><div class="ttdef"><b>Definition:</b> <a href="magic_8cpp_source.html#l02020">magic.cpp:2020</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="json_8cpp_source.html#l01431">JsonIn::get_object()</a>, and <a class="el" href="magic_8cpp_source.html#l02021">load()</a>.</p>
+<p class="reference">References <a class="el" href="json_8cpp_source.html#l01431">JsonIn::get_object()</a>, and <a class="el" href="magic_8cpp_source.html#l02020">load()</a>.</p>
 
 </div>
 </div>
@@ -251,35 +251,35 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="magic_8cpp_source.html#l02066">2066</a> of file <a class="el" href="magic_8cpp_source.html">magic.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l02067" name="l02067"></a><span class="lineno"> 2067</span>{</div>
-<div class="line"><a id="l02068" name="l02068"></a><span class="lineno"> 2068</span>    <a class="code hl_class" href="classspell.html">spell</a> sp( <span class="keywordtype">id</span> );</div>
-<div class="line"><a id="l02069" name="l02069"></a><span class="lineno"> 2069</span>    <span class="comment">// the max level this spell will be. can be optionally limited</span></div>
-<div class="line"><a id="l02070" name="l02070"></a><span class="lineno"> 2070</span>    <span class="keywordtype">int</span> spell_limiter = <a class="code hl_variable" href="structfake__spell.html#a88fae3dea79cfe539adb98c89ca6be6f">max_level</a> ? std::min( *<a class="code hl_variable" href="structfake__spell.html#a88fae3dea79cfe539adb98c89ca6be6f">max_level</a>, sp.get_max_level() ) : sp.get_max_level();</div>
-<div class="line"><a id="l02071" name="l02071"></a><span class="lineno"> 2071</span>    <span class="comment">// level is the minimum level the fake_spell will output</span></div>
-<div class="line"><a id="l02072" name="l02072"></a><span class="lineno"> 2072</span>    min_level_override = std::max( min_level_override, <a class="code hl_variable" href="structfake__spell.html#a59f61e26f45fbd72f16081ee60b2489e">level</a> );</div>
-<div class="line"><a id="l02073" name="l02073"></a><span class="lineno"> 2073</span>    <span class="keywordflow">if</span>( min_level_override &gt; spell_limiter ) {</div>
-<div class="line"><a id="l02074" name="l02074"></a><span class="lineno"> 2074</span>        <span class="comment">// this override is for min level, and does not override max level</span></div>
-<div class="line"><a id="l02075" name="l02075"></a><span class="lineno"> 2075</span>        min_level_override = spell_limiter;</div>
-<div class="line"><a id="l02076" name="l02076"></a><span class="lineno"> 2076</span>    }</div>
-<div class="line"><a id="l02077" name="l02077"></a><span class="lineno"> 2077</span>    <span class="comment">// the &quot;level&quot; of the fake spell is the goal, but needs to be clamped to min and max</span></div>
-<div class="line"><a id="l02078" name="l02078"></a><span class="lineno"> 2078</span>    <span class="keywordtype">int</span> level_of_spell = <a class="code hl_function" href="cata__utility_8h.html#ad22b4a043b6eb4c2c06f87f83b720b15">clamp</a>( <a class="code hl_variable" href="structfake__spell.html#a59f61e26f45fbd72f16081ee60b2489e">level</a>, min_level_override,  std::min( sp.get_max_level(),</div>
-<div class="line"><a id="l02079" name="l02079"></a><span class="lineno"> 2079</span>                                spell_limiter ) );</div>
-<div class="line"><a id="l02080" name="l02080"></a><span class="lineno"> 2080</span>    <span class="keywordflow">if</span>( <a class="code hl_variable" href="structfake__spell.html#a59f61e26f45fbd72f16081ee60b2489e">level</a> &gt; spell_limiter ) {</div>
-<div class="line"><a id="l02081" name="l02081"></a><span class="lineno"> 2081</span>        <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;ERROR: fake spell %s has higher min_level than max_level&quot;</span>, <span class="keywordtype">id</span>.c_str() );</div>
-<div class="line"><a id="l02082" name="l02082"></a><span class="lineno"> 2082</span>        <span class="keywordflow">return</span> sp;</div>
-<div class="line"><a id="l02083" name="l02083"></a><span class="lineno"> 2083</span>    }</div>
-<div class="line"><a id="l02084" name="l02084"></a><span class="lineno"> 2084</span>    <span class="keywordflow">while</span>( sp.get_level() &lt; level_of_spell ) {</div>
-<div class="line"><a id="l02085" name="l02085"></a><span class="lineno"> 2085</span>        sp.gain_level();</div>
-<div class="line"><a id="l02086" name="l02086"></a><span class="lineno"> 2086</span>    }</div>
-<div class="line"><a id="l02087" name="l02087"></a><span class="lineno"> 2087</span>    <span class="keywordflow">return</span> sp;</div>
-<div class="line"><a id="l02088" name="l02088"></a><span class="lineno"> 2088</span>}</div>
-<div class="ttc" id="acata__utility_8h_html_ad22b4a043b6eb4c2c06f87f83b720b15"><div class="ttname"><a href="cata__utility_8h.html#ad22b4a043b6eb4c2c06f87f83b720b15">clamp</a></div><div class="ttdeci">constexpr T clamp(const T &amp;val, const T &amp;min, const T &amp;max)</div><div class="ttdoc">Clamp first argument so that it is no lower than second and no higher than third.</div><div class="ttdef"><b>Definition:</b> <a href="cata__utility_8h_source.html#l00145">cata_utility.h:145</a></div></div>
+<p class="definition">Definition at line <a class="el" href="magic_8cpp_source.html#l02065">2065</a> of file <a class="el" href="magic_8cpp_source.html">magic.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l02066" name="l02066"></a><span class="lineno"> 2066</span>{</div>
+<div class="line"><a id="l02067" name="l02067"></a><span class="lineno"> 2067</span>    <a class="code hl_class" href="classspell.html">spell</a> sp( <span class="keywordtype">id</span> );</div>
+<div class="line"><a id="l02068" name="l02068"></a><span class="lineno"> 2068</span>    <span class="comment">// the max level this spell will be. can be optionally limited</span></div>
+<div class="line"><a id="l02069" name="l02069"></a><span class="lineno"> 2069</span>    <span class="keywordtype">int</span> spell_limiter = <a class="code hl_variable" href="structfake__spell.html#a88fae3dea79cfe539adb98c89ca6be6f">max_level</a> ? std::min( *<a class="code hl_variable" href="structfake__spell.html#a88fae3dea79cfe539adb98c89ca6be6f">max_level</a>, sp.get_max_level() ) : sp.get_max_level();</div>
+<div class="line"><a id="l02070" name="l02070"></a><span class="lineno"> 2070</span>    <span class="comment">// level is the minimum level the fake_spell will output</span></div>
+<div class="line"><a id="l02071" name="l02071"></a><span class="lineno"> 2071</span>    min_level_override = std::max( min_level_override, <a class="code hl_variable" href="structfake__spell.html#a59f61e26f45fbd72f16081ee60b2489e">level</a> );</div>
+<div class="line"><a id="l02072" name="l02072"></a><span class="lineno"> 2072</span>    <span class="keywordflow">if</span>( min_level_override &gt; spell_limiter ) {</div>
+<div class="line"><a id="l02073" name="l02073"></a><span class="lineno"> 2073</span>        <span class="comment">// this override is for min level, and does not override max level</span></div>
+<div class="line"><a id="l02074" name="l02074"></a><span class="lineno"> 2074</span>        min_level_override = spell_limiter;</div>
+<div class="line"><a id="l02075" name="l02075"></a><span class="lineno"> 2075</span>    }</div>
+<div class="line"><a id="l02076" name="l02076"></a><span class="lineno"> 2076</span>    <span class="comment">// the &quot;level&quot; of the fake spell is the goal, but needs to be clamped to min and max</span></div>
+<div class="line"><a id="l02077" name="l02077"></a><span class="lineno"> 2077</span>    <span class="keywordtype">int</span> level_of_spell = <a class="code hl_function" href="cata__utility_8h.html#ad22b4a043b6eb4c2c06f87f83b720b15">clamp</a>( <a class="code hl_variable" href="structfake__spell.html#a59f61e26f45fbd72f16081ee60b2489e">level</a>, min_level_override,  std::min( sp.get_max_level(),</div>
+<div class="line"><a id="l02078" name="l02078"></a><span class="lineno"> 2078</span>                                spell_limiter ) );</div>
+<div class="line"><a id="l02079" name="l02079"></a><span class="lineno"> 2079</span>    <span class="keywordflow">if</span>( <a class="code hl_variable" href="structfake__spell.html#a59f61e26f45fbd72f16081ee60b2489e">level</a> &gt; spell_limiter ) {</div>
+<div class="line"><a id="l02080" name="l02080"></a><span class="lineno"> 2080</span>        <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;ERROR: fake spell %s has higher min_level than max_level&quot;</span>, <span class="keywordtype">id</span>.c_str() );</div>
+<div class="line"><a id="l02081" name="l02081"></a><span class="lineno"> 2081</span>        <span class="keywordflow">return</span> sp;</div>
+<div class="line"><a id="l02082" name="l02082"></a><span class="lineno"> 2082</span>    }</div>
+<div class="line"><a id="l02083" name="l02083"></a><span class="lineno"> 2083</span>    <span class="keywordflow">while</span>( sp.get_level() &lt; level_of_spell ) {</div>
+<div class="line"><a id="l02084" name="l02084"></a><span class="lineno"> 2084</span>        sp.gain_level();</div>
+<div class="line"><a id="l02085" name="l02085"></a><span class="lineno"> 2085</span>    }</div>
+<div class="line"><a id="l02086" name="l02086"></a><span class="lineno"> 2086</span>    <span class="keywordflow">return</span> sp;</div>
+<div class="line"><a id="l02087" name="l02087"></a><span class="lineno"> 2087</span>}</div>
+<div class="ttc" id="acata__utility_8h_html_ad22b4a043b6eb4c2c06f87f83b720b15"><div class="ttname"><a href="cata__utility_8h.html#ad22b4a043b6eb4c2c06f87f83b720b15">clamp</a></div><div class="ttdeci">constexpr T clamp(const T &amp;val, const T &amp;min, const T &amp;max)</div><div class="ttdoc">Clamp first argument so that it is no lower than second and no higher than third.</div><div class="ttdef"><b>Definition:</b> <a href="cata__utility_8h_source.html#l00149">cata_utility.h:149</a></div></div>
 <div class="ttc" id="aclassspell_html"><div class="ttname"><a href="classspell.html">spell</a></div><div class="ttdef"><b>Definition:</b> <a href="magic_8h_source.html#l00285">magic.h:286</a></div></div>
 <div class="ttc" id="adebug_8h_html_a87e509562277a7ada3a75330d00cb445"><div class="ttname"><a href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a></div><div class="ttdeci">#define debugmsg(...)</div><div class="ttdoc">Debug message of level DL::Error and class DC::DebugMsg, also includes the source file name and line,...</div><div class="ttdef"><b>Definition:</b> <a href="debug_8h_source.html#l00074">debug.h:74</a></div></div>
 <div class="ttc" id="astructfake__spell_html_a59f61e26f45fbd72f16081ee60b2489e"><div class="ttname"><a href="structfake__spell.html#a59f61e26f45fbd72f16081ee60b2489e">fake_spell::level</a></div><div class="ttdeci">int level</div><div class="ttdef"><b>Definition:</b> <a href="magic_8h_source.html#l00100">magic.h:100</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="cata__utility_8h_source.html#l00145">clamp()</a>, <a class="el" href="debug_8h_source.html#l00074">debugmsg</a>, <a class="el" href="magic_8cpp_source.html#l00597">spell::gain_level()</a>, <a class="el" href="magic_8cpp_source.html#l01034">spell::get_level()</a>, <a class="el" href="magic_8cpp_source.html#l01040">spell::get_max_level()</a>, <a class="el" href="magic_8h_source.html#l00100">level</a>, and <a class="el" href="magic_8h_source.html#l00098">max_level</a>.</p>
+<p class="reference">References <a class="el" href="cata__utility_8h_source.html#l00149">clamp()</a>, <a class="el" href="debug_8h_source.html#l00074">debugmsg</a>, <a class="el" href="magic_8cpp_source.html#l00597">spell::gain_level()</a>, <a class="el" href="magic_8cpp_source.html#l01034">spell::get_level()</a>, <a class="el" href="magic_8cpp_source.html#l01040">spell::get_max_level()</a>, <a class="el" href="magic_8h_source.html#l00100">level</a>, and <a class="el" href="magic_8h_source.html#l00098">max_level</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="magic__enchantment_8cpp_source.html#l00451">enchantment::activate_passive()</a>, <a class="el" href="magic_8cpp_source.html#l01181">spell::cast_all_effects()</a>, <a class="el" href="magic__enchantment_8cpp_source.html#l00495">enchantment::cast_enchantment_spell()</a>, and <a class="el" href="mattack__actors_8cpp_source.html#l00169">mon_spellcasting_actor::load_internal()</a>.</p>
 
@@ -301,40 +301,40 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="magic_8cpp_source.html#l02021">2021</a> of file <a class="el" href="magic_8cpp_source.html">magic.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l02022" name="l02022"></a><span class="lineno"> 2022</span>{</div>
-<div class="line"><a id="l02023" name="l02023"></a><span class="lineno"> 2023</span>    std::string temp_id;</div>
-<div class="line"><a id="l02024" name="l02024"></a><span class="lineno"> 2024</span>    <a class="code hl_function" href="generic__factory_8h.html#a0a177c754c5ba89ac6c543656b0652cc">mandatory</a>( jo, <span class="keyword">false</span>, <span class="stringliteral">&quot;id&quot;</span>, temp_id );</div>
-<div class="line"><a id="l02025" name="l02025"></a><span class="lineno"> 2025</span>    <span class="keywordtype">id</span> = <a class="code hl_enumvalue" href="cata__variant_8h.html#adfe42687fffdd05d233096b4e7dac2f4a26fc65fa85c36140553bad2b5359989f">spell_id</a>( temp_id );</div>
-<div class="line"><a id="l02026" name="l02026"></a><span class="lineno"> 2026</span>    <a class="code hl_function" href="generic__factory_8h.html#a6bc35b9738f0a0a68ccc6b4cfc7918f1">optional</a>( jo, <span class="keyword">false</span>, <span class="stringliteral">&quot;hit_self&quot;</span>, <span class="keyword">self</span>, <span class="keyword">false</span> );</div>
-<div class="line"><a id="l02027" name="l02027"></a><span class="lineno"> 2027</span> </div>
-<div class="line"><a id="l02028" name="l02028"></a><span class="lineno"> 2028</span>    <a class="code hl_function" href="generic__factory_8h.html#a6bc35b9738f0a0a68ccc6b4cfc7918f1">optional</a>( jo, <span class="keyword">false</span>, <span class="stringliteral">&quot;once_in&quot;</span>, <a class="code hl_variable" href="structfake__spell.html#a0b3a2e1b616c1146f62625e2d577634f">trigger_once_in</a>, 1 );</div>
-<div class="line"><a id="l02029" name="l02029"></a><span class="lineno"> 2029</span>    <a class="code hl_function" href="generic__factory_8h.html#a6bc35b9738f0a0a68ccc6b4cfc7918f1">optional</a>( jo, <span class="keyword">false</span>, <span class="stringliteral">&quot;message&quot;</span>, <a class="code hl_variable" href="structfake__spell.html#a0e93c0553212a7274c94085f50e3228f">trigger_message</a> );</div>
-<div class="line"><a id="l02030" name="l02030"></a><span class="lineno"> 2030</span>    <a class="code hl_function" href="generic__factory_8h.html#a6bc35b9738f0a0a68ccc6b4cfc7918f1">optional</a>( jo, <span class="keyword">false</span>, <span class="stringliteral">&quot;npc_message&quot;</span>, <a class="code hl_variable" href="structfake__spell.html#afd432c043173deab21515ad5ae6123b0">npc_trigger_message</a> );</div>
-<div class="line"><a id="l02031" name="l02031"></a><span class="lineno"> 2031</span>    <span class="keywordtype">int</span> max_level_int;</div>
-<div class="line"><a id="l02032" name="l02032"></a><span class="lineno"> 2032</span>    <a class="code hl_function" href="generic__factory_8h.html#a6bc35b9738f0a0a68ccc6b4cfc7918f1">optional</a>( jo, <span class="keyword">false</span>, <span class="stringliteral">&quot;max_level&quot;</span>, max_level_int, -1 );</div>
-<div class="line"><a id="l02033" name="l02033"></a><span class="lineno"> 2033</span>    <span class="keywordflow">if</span>( max_level_int == -1 ) {</div>
-<div class="line"><a id="l02034" name="l02034"></a><span class="lineno"> 2034</span>        <a class="code hl_variable" href="structfake__spell.html#a88fae3dea79cfe539adb98c89ca6be6f">max_level</a> = <a class="code hl_variable" href="namespacecata.html#ad05314667ac5d05f984aeeef26b9a87f">cata::nullopt</a>;</div>
-<div class="line"><a id="l02035" name="l02035"></a><span class="lineno"> 2035</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l02036" name="l02036"></a><span class="lineno"> 2036</span>        <a class="code hl_variable" href="structfake__spell.html#a88fae3dea79cfe539adb98c89ca6be6f">max_level</a> = max_level_int;</div>
-<div class="line"><a id="l02037" name="l02037"></a><span class="lineno"> 2037</span>    }</div>
-<div class="line"><a id="l02038" name="l02038"></a><span class="lineno"> 2038</span>    <a class="code hl_function" href="generic__factory_8h.html#a6bc35b9738f0a0a68ccc6b4cfc7918f1">optional</a>( jo, <span class="keyword">false</span>, <span class="stringliteral">&quot;min_level&quot;</span>, <a class="code hl_variable" href="structfake__spell.html#a59f61e26f45fbd72f16081ee60b2489e">level</a>, 0 );</div>
-<div class="line"><a id="l02039" name="l02039"></a><span class="lineno"> 2039</span>    <span class="keywordflow">if</span>( jo.<a class="code hl_function" href="classJsonObject.html#a19d83d03e3d5cc6905bcb850d80a1f05">has_string</a>( <span class="stringliteral">&quot;level&quot;</span> ) ) {</div>
-<div class="line"><a id="l02040" name="l02040"></a><span class="lineno"> 2040</span>        <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;level member for fake_spell was renamed to min_level.  id: %s&quot;</span>, temp_id );</div>
-<div class="line"><a id="l02041" name="l02041"></a><span class="lineno"> 2041</span>    }</div>
-<div class="line"><a id="l02042" name="l02042"></a><span class="lineno"> 2042</span>}</div>
+<p class="definition">Definition at line <a class="el" href="magic_8cpp_source.html#l02020">2020</a> of file <a class="el" href="magic_8cpp_source.html">magic.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l02021" name="l02021"></a><span class="lineno"> 2021</span>{</div>
+<div class="line"><a id="l02022" name="l02022"></a><span class="lineno"> 2022</span>    std::string temp_id;</div>
+<div class="line"><a id="l02023" name="l02023"></a><span class="lineno"> 2023</span>    <a class="code hl_function" href="generic__factory_8h.html#a0a177c754c5ba89ac6c543656b0652cc">mandatory</a>( jo, <span class="keyword">false</span>, <span class="stringliteral">&quot;id&quot;</span>, temp_id );</div>
+<div class="line"><a id="l02024" name="l02024"></a><span class="lineno"> 2024</span>    <span class="keywordtype">id</span> = <a class="code hl_enumvalue" href="cata__variant_8h.html#adfe42687fffdd05d233096b4e7dac2f4a26fc65fa85c36140553bad2b5359989f">spell_id</a>( temp_id );</div>
+<div class="line"><a id="l02025" name="l02025"></a><span class="lineno"> 2025</span>    <a class="code hl_function" href="generic__factory_8h.html#a6bc35b9738f0a0a68ccc6b4cfc7918f1">optional</a>( jo, <span class="keyword">false</span>, <span class="stringliteral">&quot;hit_self&quot;</span>, <span class="keyword">self</span>, <span class="keyword">false</span> );</div>
+<div class="line"><a id="l02026" name="l02026"></a><span class="lineno"> 2026</span> </div>
+<div class="line"><a id="l02027" name="l02027"></a><span class="lineno"> 2027</span>    <a class="code hl_function" href="generic__factory_8h.html#a6bc35b9738f0a0a68ccc6b4cfc7918f1">optional</a>( jo, <span class="keyword">false</span>, <span class="stringliteral">&quot;once_in&quot;</span>, <a class="code hl_variable" href="structfake__spell.html#a0b3a2e1b616c1146f62625e2d577634f">trigger_once_in</a>, 1 );</div>
+<div class="line"><a id="l02028" name="l02028"></a><span class="lineno"> 2028</span>    <a class="code hl_function" href="generic__factory_8h.html#a6bc35b9738f0a0a68ccc6b4cfc7918f1">optional</a>( jo, <span class="keyword">false</span>, <span class="stringliteral">&quot;message&quot;</span>, <a class="code hl_variable" href="structfake__spell.html#a0e93c0553212a7274c94085f50e3228f">trigger_message</a> );</div>
+<div class="line"><a id="l02029" name="l02029"></a><span class="lineno"> 2029</span>    <a class="code hl_function" href="generic__factory_8h.html#a6bc35b9738f0a0a68ccc6b4cfc7918f1">optional</a>( jo, <span class="keyword">false</span>, <span class="stringliteral">&quot;npc_message&quot;</span>, <a class="code hl_variable" href="structfake__spell.html#afd432c043173deab21515ad5ae6123b0">npc_trigger_message</a> );</div>
+<div class="line"><a id="l02030" name="l02030"></a><span class="lineno"> 2030</span>    <span class="keywordtype">int</span> max_level_int;</div>
+<div class="line"><a id="l02031" name="l02031"></a><span class="lineno"> 2031</span>    <a class="code hl_function" href="generic__factory_8h.html#a6bc35b9738f0a0a68ccc6b4cfc7918f1">optional</a>( jo, <span class="keyword">false</span>, <span class="stringliteral">&quot;max_level&quot;</span>, max_level_int, -1 );</div>
+<div class="line"><a id="l02032" name="l02032"></a><span class="lineno"> 2032</span>    <span class="keywordflow">if</span>( max_level_int == -1 ) {</div>
+<div class="line"><a id="l02033" name="l02033"></a><span class="lineno"> 2033</span>        <a class="code hl_variable" href="structfake__spell.html#a88fae3dea79cfe539adb98c89ca6be6f">max_level</a> = <a class="code hl_variable" href="namespacecata.html#ad05314667ac5d05f984aeeef26b9a87f">cata::nullopt</a>;</div>
+<div class="line"><a id="l02034" name="l02034"></a><span class="lineno"> 2034</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l02035" name="l02035"></a><span class="lineno"> 2035</span>        <a class="code hl_variable" href="structfake__spell.html#a88fae3dea79cfe539adb98c89ca6be6f">max_level</a> = max_level_int;</div>
+<div class="line"><a id="l02036" name="l02036"></a><span class="lineno"> 2036</span>    }</div>
+<div class="line"><a id="l02037" name="l02037"></a><span class="lineno"> 2037</span>    <a class="code hl_function" href="generic__factory_8h.html#a6bc35b9738f0a0a68ccc6b4cfc7918f1">optional</a>( jo, <span class="keyword">false</span>, <span class="stringliteral">&quot;min_level&quot;</span>, <a class="code hl_variable" href="structfake__spell.html#a59f61e26f45fbd72f16081ee60b2489e">level</a>, 0 );</div>
+<div class="line"><a id="l02038" name="l02038"></a><span class="lineno"> 2038</span>    <span class="keywordflow">if</span>( jo.<a class="code hl_function" href="classJsonObject.html#a19d83d03e3d5cc6905bcb850d80a1f05">has_string</a>( <span class="stringliteral">&quot;level&quot;</span> ) ) {</div>
+<div class="line"><a id="l02039" name="l02039"></a><span class="lineno"> 2039</span>        <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;level member for fake_spell was renamed to min_level.  id: %s&quot;</span>, temp_id );</div>
+<div class="line"><a id="l02040" name="l02040"></a><span class="lineno"> 2040</span>    }</div>
+<div class="line"><a id="l02041" name="l02041"></a><span class="lineno"> 2041</span>}</div>
 <div class="ttc" id="acata__variant_8h_html_adfe42687fffdd05d233096b4e7dac2f4a26fc65fa85c36140553bad2b5359989f"><div class="ttname"><a href="cata__variant_8h.html#adfe42687fffdd05d233096b4e7dac2f4a26fc65fa85c36140553bad2b5359989f">cata_variant_type::spell_id</a></div><div class="ttdeci">@ spell_id</div></div>
 <div class="ttc" id="aclassJsonObject_html_a19d83d03e3d5cc6905bcb850d80a1f05"><div class="ttname"><a href="classJsonObject.html#a19d83d03e3d5cc6905bcb850d80a1f05">JsonObject::has_string</a></div><div class="ttdeci">bool has_string(const std::string &amp;name) const</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l00472">json.cpp:472</a></div></div>
-<div class="ttc" id="ageneric__factory_8h_html_a0a177c754c5ba89ac6c543656b0652cc"><div class="ttname"><a href="generic__factory_8h.html#a0a177c754c5ba89ac6c543656b0652cc">mandatory</a></div><div class="ttdeci">void mandatory(const JsonObject &amp;jo, const bool was_loaded, const std::string &amp;name, MemberType &amp;member)</div><div class="ttdef"><b>Definition:</b> <a href="generic__factory_8h_source.html#l00611">generic_factory.h:611</a></div></div>
-<div class="ttc" id="ageneric__factory_8h_html_a6bc35b9738f0a0a68ccc6b4cfc7918f1"><div class="ttname"><a href="generic__factory_8h.html#a6bc35b9738f0a0a68ccc6b4cfc7918f1">optional</a></div><div class="ttdeci">void optional(const JsonObject &amp;jo, const bool was_loaded, const std::string &amp;name, MemberType &amp;member)</div><div class="ttdef"><b>Definition:</b> <a href="generic__factory_8h_source.html#l00791">generic_factory.h:791</a></div></div>
+<div class="ttc" id="ageneric__factory_8h_html_a0a177c754c5ba89ac6c543656b0652cc"><div class="ttname"><a href="generic__factory_8h.html#a0a177c754c5ba89ac6c543656b0652cc">mandatory</a></div><div class="ttdeci">void mandatory(const JsonObject &amp;jo, const bool was_loaded, const std::string &amp;name, MemberType &amp;member)</div><div class="ttdef"><b>Definition:</b> <a href="generic__factory_8h_source.html#l00610">generic_factory.h:610</a></div></div>
+<div class="ttc" id="ageneric__factory_8h_html_a6bc35b9738f0a0a68ccc6b4cfc7918f1"><div class="ttname"><a href="generic__factory_8h.html#a6bc35b9738f0a0a68ccc6b4cfc7918f1">optional</a></div><div class="ttdeci">void optional(const JsonObject &amp;jo, const bool was_loaded, const std::string &amp;name, MemberType &amp;member)</div><div class="ttdef"><b>Definition:</b> <a href="generic__factory_8h_source.html#l00790">generic_factory.h:790</a></div></div>
 <div class="ttc" id="anamespacecata_html_ad05314667ac5d05f984aeeef26b9a87f"><div class="ttname"><a href="namespacecata.html#ad05314667ac5d05f984aeeef26b9a87f">cata::nullopt</a></div><div class="ttdeci">static constexpr nullopt_t nullopt</div><div class="ttdef"><b>Definition:</b> <a href="optional_8h_source.html#l00022">optional.h:22</a></div></div>
 <div class="ttc" id="astructfake__spell_html_a0b3a2e1b616c1146f62625e2d577634f"><div class="ttname"><a href="structfake__spell.html#a0b3a2e1b616c1146f62625e2d577634f">fake_spell::trigger_once_in</a></div><div class="ttdeci">int trigger_once_in</div><div class="ttdef"><b>Definition:</b> <a href="magic_8h_source.html#l00104">magic.h:104</a></div></div>
 <div class="ttc" id="astructfake__spell_html_a0e93c0553212a7274c94085f50e3228f"><div class="ttname"><a href="structfake__spell.html#a0e93c0553212a7274c94085f50e3228f">fake_spell::trigger_message</a></div><div class="ttdeci">translation trigger_message</div><div class="ttdef"><b>Definition:</b> <a href="magic_8h_source.html#l00106">magic.h:106</a></div></div>
 <div class="ttc" id="astructfake__spell_html_afd432c043173deab21515ad5ae6123b0"><div class="ttname"><a href="structfake__spell.html#afd432c043173deab21515ad5ae6123b0">fake_spell::npc_trigger_message</a></div><div class="ttdeci">translation npc_trigger_message</div><div class="ttdef"><b>Definition:</b> <a href="magic_8h_source.html#l00108">magic.h:108</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="debug_8h_source.html#l00074">debugmsg</a>, <a class="el" href="json_8cpp_source.html#l00472">JsonObject::has_string()</a>, <a class="el" href="magic_8h_source.html#l00100">level</a>, <a class="el" href="generic__factory_8h_source.html#l00611">mandatory()</a>, <a class="el" href="magic_8h_source.html#l00098">max_level</a>, <a class="el" href="magic_8h_source.html#l00108">npc_trigger_message</a>, <a class="el" href="optional_8h_source.html#l00022">cata::nullopt</a>, <a class="el" href="generic__factory_8h_source.html#l00791">optional()</a>, <a class="el" href="cata__variant_8h.html#adfe42687fffdd05d233096b4e7dac2f4a26fc65fa85c36140553bad2b5359989f">spell_id</a>, <a class="el" href="magic_8h_source.html#l00106">trigger_message</a>, and <a class="el" href="magic_8h_source.html#l00104">trigger_once_in</a>.</p>
+<p class="reference">References <a class="el" href="debug_8h_source.html#l00074">debugmsg</a>, <a class="el" href="json_8cpp_source.html#l00472">JsonObject::has_string()</a>, <a class="el" href="magic_8h_source.html#l00100">level</a>, <a class="el" href="generic__factory_8h_source.html#l00610">mandatory()</a>, <a class="el" href="magic_8h_source.html#l00098">max_level</a>, <a class="el" href="magic_8h_source.html#l00108">npc_trigger_message</a>, <a class="el" href="optional_8h_source.html#l00022">cata::nullopt</a>, <a class="el" href="generic__factory_8h_source.html#l00790">optional()</a>, <a class="el" href="cata__variant_8h.html#adfe42687fffdd05d233096b4e7dac2f4a26fc65fa85c36140553bad2b5359989f">spell_id</a>, <a class="el" href="magic_8h_source.html#l00106">trigger_message</a>, and <a class="el" href="magic_8h_source.html#l00104">trigger_once_in</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="magic_8cpp_source.html#l02060">deserialize()</a>, <a class="el" href="relic_8cpp_source.html#l00163">relic::load()</a>, <a class="el" href="magic_8cpp_source.html#l00209">spell_type::load()</a>, and <a class="el" href="magic__enchantment_8cpp_source.html#l00206">enchantment::load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="magic_8cpp_source.html#l02059">deserialize()</a>, <a class="el" href="relic_8cpp_source.html#l00163">relic::load()</a>, <a class="el" href="magic_8cpp_source.html#l00209">spell_type::load()</a>, and <a class="el" href="magic__enchantment_8cpp_source.html#l00206">enchantment::load()</a>.</p>
 
 </div>
 </div>
@@ -354,16 +354,16 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="magic_8cpp_source.html#l02090">2090</a> of file <a class="el" href="magic_8cpp_source.html">magic.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l02091" name="l02091"></a><span class="lineno"> 2091</span>{</div>
-<div class="line"><a id="l02092" name="l02092"></a><span class="lineno"> 2092</span>    <span class="keywordflow">return</span> <span class="keywordtype">id</span> == rhs.<a class="code hl_variable" href="structfake__spell.html#abef5b674d81d5f6009385005f20b26b9">id</a> &amp;&amp;</div>
-<div class="line"><a id="l02093" name="l02093"></a><span class="lineno"> 2093</span>           <a class="code hl_variable" href="structfake__spell.html#a88fae3dea79cfe539adb98c89ca6be6f">max_level</a> == rhs.<a class="code hl_variable" href="structfake__spell.html#a88fae3dea79cfe539adb98c89ca6be6f">max_level</a> &amp;&amp;</div>
-<div class="line"><a id="l02094" name="l02094"></a><span class="lineno"> 2094</span>           <a class="code hl_variable" href="structfake__spell.html#a59f61e26f45fbd72f16081ee60b2489e">level</a> == rhs.<a class="code hl_variable" href="structfake__spell.html#a59f61e26f45fbd72f16081ee60b2489e">level</a> &amp;&amp;</div>
-<div class="line"><a id="l02095" name="l02095"></a><span class="lineno"> 2095</span>           <span class="keyword">self</span> == rhs.<a class="code hl_variable" href="structfake__spell.html#afa2a4b38d223f38100fb8148d92fca2a">self</a> &amp;&amp;</div>
-<div class="line"><a id="l02096" name="l02096"></a><span class="lineno"> 2096</span>           <a class="code hl_variable" href="structfake__spell.html#a0b3a2e1b616c1146f62625e2d577634f">trigger_once_in</a> == rhs.<a class="code hl_variable" href="structfake__spell.html#a0b3a2e1b616c1146f62625e2d577634f">trigger_once_in</a> &amp;&amp;</div>
-<div class="line"><a id="l02097" name="l02097"></a><span class="lineno"> 2097</span>           <a class="code hl_variable" href="structfake__spell.html#a0e93c0553212a7274c94085f50e3228f">trigger_message</a> == rhs.<a class="code hl_variable" href="structfake__spell.html#a0e93c0553212a7274c94085f50e3228f">trigger_message</a> &amp;&amp;</div>
-<div class="line"><a id="l02098" name="l02098"></a><span class="lineno"> 2098</span>           <a class="code hl_variable" href="structfake__spell.html#afd432c043173deab21515ad5ae6123b0">npc_trigger_message</a> == rhs.<a class="code hl_variable" href="structfake__spell.html#afd432c043173deab21515ad5ae6123b0">npc_trigger_message</a>;</div>
-<div class="line"><a id="l02099" name="l02099"></a><span class="lineno"> 2099</span>}</div>
+<p class="definition">Definition at line <a class="el" href="magic_8cpp_source.html#l02089">2089</a> of file <a class="el" href="magic_8cpp_source.html">magic.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l02090" name="l02090"></a><span class="lineno"> 2090</span>{</div>
+<div class="line"><a id="l02091" name="l02091"></a><span class="lineno"> 2091</span>    <span class="keywordflow">return</span> <span class="keywordtype">id</span> == rhs.<a class="code hl_variable" href="structfake__spell.html#abef5b674d81d5f6009385005f20b26b9">id</a> &amp;&amp;</div>
+<div class="line"><a id="l02092" name="l02092"></a><span class="lineno"> 2092</span>           <a class="code hl_variable" href="structfake__spell.html#a88fae3dea79cfe539adb98c89ca6be6f">max_level</a> == rhs.<a class="code hl_variable" href="structfake__spell.html#a88fae3dea79cfe539adb98c89ca6be6f">max_level</a> &amp;&amp;</div>
+<div class="line"><a id="l02093" name="l02093"></a><span class="lineno"> 2093</span>           <a class="code hl_variable" href="structfake__spell.html#a59f61e26f45fbd72f16081ee60b2489e">level</a> == rhs.<a class="code hl_variable" href="structfake__spell.html#a59f61e26f45fbd72f16081ee60b2489e">level</a> &amp;&amp;</div>
+<div class="line"><a id="l02094" name="l02094"></a><span class="lineno"> 2094</span>           <span class="keyword">self</span> == rhs.<a class="code hl_variable" href="structfake__spell.html#afa2a4b38d223f38100fb8148d92fca2a">self</a> &amp;&amp;</div>
+<div class="line"><a id="l02095" name="l02095"></a><span class="lineno"> 2095</span>           <a class="code hl_variable" href="structfake__spell.html#a0b3a2e1b616c1146f62625e2d577634f">trigger_once_in</a> == rhs.<a class="code hl_variable" href="structfake__spell.html#a0b3a2e1b616c1146f62625e2d577634f">trigger_once_in</a> &amp;&amp;</div>
+<div class="line"><a id="l02096" name="l02096"></a><span class="lineno"> 2096</span>           <a class="code hl_variable" href="structfake__spell.html#a0e93c0553212a7274c94085f50e3228f">trigger_message</a> == rhs.<a class="code hl_variable" href="structfake__spell.html#a0e93c0553212a7274c94085f50e3228f">trigger_message</a> &amp;&amp;</div>
+<div class="line"><a id="l02097" name="l02097"></a><span class="lineno"> 2097</span>           <a class="code hl_variable" href="structfake__spell.html#afd432c043173deab21515ad5ae6123b0">npc_trigger_message</a> == rhs.<a class="code hl_variable" href="structfake__spell.html#afd432c043173deab21515ad5ae6123b0">npc_trigger_message</a>;</div>
+<div class="line"><a id="l02098" name="l02098"></a><span class="lineno"> 2098</span>}</div>
 <div class="ttc" id="astructfake__spell_html_afa2a4b38d223f38100fb8148d92fca2a"><div class="ttname"><a href="structfake__spell.html#afa2a4b38d223f38100fb8148d92fca2a">fake_spell::self</a></div><div class="ttdeci">bool self</div><div class="ttdef"><b>Definition:</b> <a href="magic_8h_source.html#l00102">magic.h:102</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="magic_8h_source.html#l00095">id</a>, <a class="el" href="magic_8h_source.html#l00100">level</a>, <a class="el" href="magic_8h_source.html#l00098">max_level</a>, <a class="el" href="magic_8h_source.html#l00108">npc_trigger_message</a>, <a class="el" href="magic_8h_source.html#l00102">self</a>, <a class="el" href="magic_8h_source.html#l00106">trigger_message</a>, and <a class="el" href="magic_8h_source.html#l00104">trigger_once_in</a>.</p>
@@ -386,21 +386,21 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="magic_8cpp_source.html#l02044">2044</a> of file <a class="el" href="magic_8cpp_source.html">magic.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l02045" name="l02045"></a><span class="lineno"> 2045</span>{</div>
-<div class="line"><a id="l02046" name="l02046"></a><span class="lineno"> 2046</span>    json.<a class="code hl_function" href="classJsonOut.html#a4756f9a569adbfc60de127f7c335d82f">start_object</a>();</div>
-<div class="line"><a id="l02047" name="l02047"></a><span class="lineno"> 2047</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;id&quot;</span>, <span class="keywordtype">id</span> );</div>
-<div class="line"><a id="l02048" name="l02048"></a><span class="lineno"> 2048</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;hit_self&quot;</span>, <span class="keyword">self</span> );</div>
-<div class="line"><a id="l02049" name="l02049"></a><span class="lineno"> 2049</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;once_in&quot;</span>, <a class="code hl_variable" href="structfake__spell.html#a0b3a2e1b616c1146f62625e2d577634f">trigger_once_in</a> );</div>
-<div class="line"><a id="l02050" name="l02050"></a><span class="lineno"> 2050</span> </div>
-<div class="line"><a id="l02051" name="l02051"></a><span class="lineno"> 2051</span>    <span class="keywordflow">if</span>( !<a class="code hl_variable" href="structfake__spell.html#a88fae3dea79cfe539adb98c89ca6be6f">max_level</a> ) {</div>
-<div class="line"><a id="l02052" name="l02052"></a><span class="lineno"> 2052</span>        json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;max_level&quot;</span>, -1 );</div>
-<div class="line"><a id="l02053" name="l02053"></a><span class="lineno"> 2053</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l02054" name="l02054"></a><span class="lineno"> 2054</span>        json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;max_level&quot;</span>, *<a class="code hl_variable" href="structfake__spell.html#a88fae3dea79cfe539adb98c89ca6be6f">max_level</a> );</div>
-<div class="line"><a id="l02055" name="l02055"></a><span class="lineno"> 2055</span>    }</div>
-<div class="line"><a id="l02056" name="l02056"></a><span class="lineno"> 2056</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;min_level&quot;</span>, <a class="code hl_variable" href="structfake__spell.html#a59f61e26f45fbd72f16081ee60b2489e">level</a> );</div>
-<div class="line"><a id="l02057" name="l02057"></a><span class="lineno"> 2057</span>    json.<a class="code hl_function" href="classJsonOut.html#aa38d37840ed6ba168b78a43570e98681">end_object</a>();</div>
-<div class="line"><a id="l02058" name="l02058"></a><span class="lineno"> 2058</span>}</div>
+<p class="definition">Definition at line <a class="el" href="magic_8cpp_source.html#l02043">2043</a> of file <a class="el" href="magic_8cpp_source.html">magic.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l02044" name="l02044"></a><span class="lineno"> 2044</span>{</div>
+<div class="line"><a id="l02045" name="l02045"></a><span class="lineno"> 2045</span>    json.<a class="code hl_function" href="classJsonOut.html#a4756f9a569adbfc60de127f7c335d82f">start_object</a>();</div>
+<div class="line"><a id="l02046" name="l02046"></a><span class="lineno"> 2046</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;id&quot;</span>, <span class="keywordtype">id</span> );</div>
+<div class="line"><a id="l02047" name="l02047"></a><span class="lineno"> 2047</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;hit_self&quot;</span>, <span class="keyword">self</span> );</div>
+<div class="line"><a id="l02048" name="l02048"></a><span class="lineno"> 2048</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;once_in&quot;</span>, <a class="code hl_variable" href="structfake__spell.html#a0b3a2e1b616c1146f62625e2d577634f">trigger_once_in</a> );</div>
+<div class="line"><a id="l02049" name="l02049"></a><span class="lineno"> 2049</span> </div>
+<div class="line"><a id="l02050" name="l02050"></a><span class="lineno"> 2050</span>    <span class="keywordflow">if</span>( !<a class="code hl_variable" href="structfake__spell.html#a88fae3dea79cfe539adb98c89ca6be6f">max_level</a> ) {</div>
+<div class="line"><a id="l02051" name="l02051"></a><span class="lineno"> 2051</span>        json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;max_level&quot;</span>, -1 );</div>
+<div class="line"><a id="l02052" name="l02052"></a><span class="lineno"> 2052</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l02053" name="l02053"></a><span class="lineno"> 2053</span>        json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;max_level&quot;</span>, *<a class="code hl_variable" href="structfake__spell.html#a88fae3dea79cfe539adb98c89ca6be6f">max_level</a> );</div>
+<div class="line"><a id="l02054" name="l02054"></a><span class="lineno"> 2054</span>    }</div>
+<div class="line"><a id="l02055" name="l02055"></a><span class="lineno"> 2055</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;min_level&quot;</span>, <a class="code hl_variable" href="structfake__spell.html#a59f61e26f45fbd72f16081ee60b2489e">level</a> );</div>
+<div class="line"><a id="l02056" name="l02056"></a><span class="lineno"> 2056</span>    json.<a class="code hl_function" href="classJsonOut.html#aa38d37840ed6ba168b78a43570e98681">end_object</a>();</div>
+<div class="line"><a id="l02057" name="l02057"></a><span class="lineno"> 2057</span>}</div>
 <div class="ttc" id="aclassJsonOut_html_a4756f9a569adbfc60de127f7c335d82f"><div class="ttname"><a href="classJsonOut.html#a4756f9a569adbfc60de127f7c335d82f">JsonOut::start_object</a></div><div class="ttdeci">void start_object(bool wrap=false)</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01998">json.cpp:1998</a></div></div>
 <div class="ttc" id="aclassJsonOut_html_aa38d37840ed6ba168b78a43570e98681"><div class="ttname"><a href="classJsonOut.html#aa38d37840ed6ba168b78a43570e98681">JsonOut::end_object</a></div><div class="ttdeci">void end_object()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l02009">json.cpp:2009</a></div></div>
 <div class="ttc" id="aclassJsonOut_html_adb3c899f0ad7fc4f25cd3357c51a2c42"><div class="ttname"><a href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">JsonOut::member</a></div><div class="ttdeci">void member(const std::string &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l02113">json.cpp:2113</a></div></div>
@@ -426,7 +426,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="magic_8h_source.html#l00095">95</a> of file <a class="el" href="magic_8h_source.html">magic.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="magic_8cpp_source.html#l02090">operator==()</a>, and <a class="el" href="magic_8cpp_source.html#l00345">spell_infinite_loop_check()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="magic_8cpp_source.html#l02089">operator==()</a>, and <a class="el" href="magic_8cpp_source.html#l00345">spell_infinite_loop_check()</a>.</p>
 
 </div>
 </div>
@@ -444,7 +444,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="magic_8h_source.html#l00100">100</a> of file <a class="el" href="magic_8h_source.html">magic.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="magic__enchantment_8cpp_source.html#l00495">enchantment::cast_enchantment_spell()</a>, <a class="el" href="magic_8cpp_source.html#l02066">get_spell()</a>, <a class="el" href="magic_8cpp_source.html#l02021">load()</a>, <a class="el" href="magic_8cpp_source.html#l02090">operator==()</a>, and <a class="el" href="magic_8cpp_source.html#l02044">serialize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="magic__enchantment_8cpp_source.html#l00495">enchantment::cast_enchantment_spell()</a>, <a class="el" href="magic_8cpp_source.html#l02065">get_spell()</a>, <a class="el" href="magic_8cpp_source.html#l02020">load()</a>, <a class="el" href="magic_8cpp_source.html#l02089">operator==()</a>, and <a class="el" href="magic_8cpp_source.html#l02043">serialize()</a>.</p>
 
 </div>
 </div>
@@ -462,7 +462,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="magic_8h_source.html#l00098">98</a> of file <a class="el" href="magic_8h_source.html">magic.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="magic_8cpp_source.html#l02066">get_spell()</a>, <a class="el" href="magic_8cpp_source.html#l02021">load()</a>, <a class="el" href="magic_8cpp_source.html#l02090">operator==()</a>, and <a class="el" href="magic_8cpp_source.html#l02044">serialize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="magic_8cpp_source.html#l02065">get_spell()</a>, <a class="el" href="magic_8cpp_source.html#l02020">load()</a>, <a class="el" href="magic_8cpp_source.html#l02089">operator==()</a>, and <a class="el" href="magic_8cpp_source.html#l02043">serialize()</a>.</p>
 
 </div>
 </div>
@@ -480,7 +480,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="magic_8h_source.html#l00108">108</a> of file <a class="el" href="magic_8h_source.html">magic.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="magic__enchantment_8cpp_source.html#l00495">enchantment::cast_enchantment_spell()</a>, <a class="el" href="magic_8cpp_source.html#l02021">load()</a>, and <a class="el" href="magic_8cpp_source.html#l02090">operator==()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="magic__enchantment_8cpp_source.html#l00495">enchantment::cast_enchantment_spell()</a>, <a class="el" href="magic_8cpp_source.html#l02020">load()</a>, and <a class="el" href="magic_8cpp_source.html#l02089">operator==()</a>.</p>
 
 </div>
 </div>
@@ -498,7 +498,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="magic_8h_source.html#l00102">102</a> of file <a class="el" href="magic_8h_source.html">magic.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="magic_8cpp_source.html#l01181">spell::cast_all_effects()</a>, <a class="el" href="magic__enchantment_8cpp_source.html#l00495">enchantment::cast_enchantment_spell()</a>, <a class="el" href="mattack__actors_8cpp_source.html#l00169">mon_spellcasting_actor::load_internal()</a>, and <a class="el" href="magic_8cpp_source.html#l02090">operator==()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="magic_8cpp_source.html#l01181">spell::cast_all_effects()</a>, <a class="el" href="magic__enchantment_8cpp_source.html#l00495">enchantment::cast_enchantment_spell()</a>, <a class="el" href="mattack__actors_8cpp_source.html#l00169">mon_spellcasting_actor::load_internal()</a>, and <a class="el" href="magic_8cpp_source.html#l02089">operator==()</a>.</p>
 
 </div>
 </div>
@@ -516,7 +516,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="magic_8h_source.html#l00106">106</a> of file <a class="el" href="magic_8h_source.html">magic.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="magic__enchantment_8cpp_source.html#l00495">enchantment::cast_enchantment_spell()</a>, <a class="el" href="magic_8cpp_source.html#l02021">load()</a>, and <a class="el" href="magic_8cpp_source.html#l02090">operator==()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="magic__enchantment_8cpp_source.html#l00495">enchantment::cast_enchantment_spell()</a>, <a class="el" href="magic_8cpp_source.html#l02020">load()</a>, and <a class="el" href="magic_8cpp_source.html#l02089">operator==()</a>.</p>
 
 </div>
 </div>
@@ -534,7 +534,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="magic_8h_source.html#l00104">104</a> of file <a class="el" href="magic_8h_source.html">magic.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="magic__enchantment_8cpp_source.html#l00495">enchantment::cast_enchantment_spell()</a>, <a class="el" href="magic_8cpp_source.html#l02021">load()</a>, <a class="el" href="magic_8cpp_source.html#l02090">operator==()</a>, and <a class="el" href="magic_8cpp_source.html#l02044">serialize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="magic__enchantment_8cpp_source.html#l00495">enchantment::cast_enchantment_spell()</a>, <a class="el" href="magic_8cpp_source.html#l02020">load()</a>, <a class="el" href="magic_8cpp_source.html#l02089">operator==()</a>, and <a class="el" href="magic_8cpp_source.html#l02043">serialize()</a>.</p>
 
 </div>
 </div>
@@ -548,7 +548,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structfake__spell.html">fake_spell</a></li>
-    <li class="footer">Generated on Sun Mar 5 2023 13:51:02 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Apr 7 2023 11:54:40 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

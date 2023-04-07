@@ -36,6 +36,7 @@ var iuse__actor_8h =
     [ "place_trap_actor::data", "structplace__trap__actor_1_1data.html", "structplace__trap__actor_1_1data" ],
     [ "emit_actor", "classemit__actor.html", "classemit__actor" ],
     [ "saw_barrel_actor", "classsaw__barrel__actor.html", "classsaw__barrel__actor" ],
+    [ "saw_stock_actor", "classsaw__stock__actor.html", "classsaw__stock__actor" ],
     [ "install_bionic_actor", "classinstall__bionic__actor.html", "classinstall__bionic__actor" ],
     [ "detach_gunmods_actor", "classdetach__gunmods__actor.html", "classdetach__gunmods__actor" ],
     [ "mutagen_actor", "classmutagen__actor.html", "classmutagen__actor" ],

@@ -6,6 +6,7 @@ var iteminfo__query_8h =
     [ "iteminfo_parts", "iteminfo__query_8h.html#aa68a581556ddf9d10387ba6d9f760cda", [
       [ "BASE_CATEGORY", "iteminfo__query_8h.html#aa68a581556ddf9d10387ba6d9f760cdaa75a792139684dc53e8d06ed67b4c2b05", null ],
       [ "BASE_MOD_SRC", "iteminfo__query_8h.html#aa68a581556ddf9d10387ba6d9f760cdaa873770393665c1a496127caa092e469c", null ],
+      [ "BASE_ID", "iteminfo__query_8h.html#aa68a581556ddf9d10387ba6d9f760cdaaaee57caad11dc36d5baf9c415a98fe92", null ],
       [ "BASE_PRICE", "iteminfo__query_8h.html#aa68a581556ddf9d10387ba6d9f760cdaaf274919abb7f766dc610cb2b52cccea9", null ],
       [ "BASE_BARTER", "iteminfo__query_8h.html#aa68a581556ddf9d10387ba6d9f760cdaa6969097b379c9c7fcb8105d3d51d13a6", null ],
       [ "BASE_VOLUME", "iteminfo__query_8h.html#aa68a581556ddf9d10387ba6d9f760cdaa71cf0f0e6acd28ae9bf66f560dccbb88", null ],
@@ -19,6 +20,7 @@ var iteminfo__query_8h =
       [ "BASE_CONTENTS", "iteminfo__query_8h.html#aa68a581556ddf9d10387ba6d9f760cdaac2437dc830ebe555fbc8bf71e8975be8", null ],
       [ "BASE_AMOUNT", "iteminfo__query_8h.html#aa68a581556ddf9d10387ba6d9f760cdaa0bc56aace05539f0536ac1c5ba320e20", null ],
       [ "BASE_DEBUG", "iteminfo__query_8h.html#aa68a581556ddf9d10387ba6d9f760cdaa282d49c6e57b86ca0494ffe2425fa785", null ],
+      [ "WEAPON_CATEGORY", "iteminfo__query_8h.html#aa68a581556ddf9d10387ba6d9f760cdaaf5b668f8b13fa24b965adf460e0ff41e", null ],
       [ "MED_JOY", "iteminfo__query_8h.html#aa68a581556ddf9d10387ba6d9f760cdaa4ec8d89f01be7fffe75d3f217900512b", null ],
       [ "MED_PORTIONS", "iteminfo__query_8h.html#aa68a581556ddf9d10387ba6d9f760cdaa402590280b74396031d11226881121d9", null ],
       [ "MED_STIMULATION", "iteminfo__query_8h.html#aa68a581556ddf9d10387ba6d9f760cdaa9f3ddddbbac6b640d1777fd1b7492b6e", null ],

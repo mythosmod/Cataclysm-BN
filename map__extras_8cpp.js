@@ -56,7 +56,7 @@ var map__extras_8cpp =
     [ "mx_shrubbery", "map__extras_8cpp.html#a7d1c8eaa2688dcd59193e585e71bc0f6", null ],
     [ "mx_spider", "map__extras_8cpp.html#a1caac5b7408bb99894c73256625604a3", null ],
     [ "mx_supplydrop", "map__extras_8cpp.html#a63a632a4de744db6d8997bfefefc6172", null ],
-    [ "place_fumarole", "map__extras_8cpp.html#abbf5ec4c4ffcbf9a850735dfd9c623c4", null ],
+    [ "place_fumarole", "map__extras_8cpp.html#a704105cd733d55698ae55723d25e778a", null ],
     [ "reset", "map__extras_8cpp.html#abcc7ff03f78ad0890e4e19ae2fe62dea", null ],
     [ "all_function_names", "map__extras_8cpp.html#a161969430a2960b3408db9567fb55d0c", null ],
     [ "builtin_functions", "map__extras_8cpp.html#a98f5385324714fff39e9ce79212dfff5", null ],

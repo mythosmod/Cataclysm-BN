@@ -338,7 +338,7 @@ Friends</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="debug_8h_source.html#l00074">debugmsg</a>, <a class="el" href="effect_8cpp_source.html#l00044">anonymous_namespace{effect.cpp}::effect_types</a>, <a class="el" href="effect_8cpp_source.html#l00502">get_morale_type()</a>, <a class="el" href="effect_8h_source.html#l00042">id</a>, <a class="el" href="achievement_8cpp_source.html#l00065">string_id&lt; T &gt;::is_valid()</a>, and <a class="el" href="string__id_8h_source.html#l00255">string_id&lt; T &gt;::str()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8cpp_source.html#l00721">DynamicDataLoader::check_consistency()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8cpp_source.html#l00723">DynamicDataLoader::check_consistency()</a>.</p>
 
 </div>
 </div>
@@ -1094,7 +1094,7 @@ Friends</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="string__id_8h_source.html#l00247">string_id&lt; T &gt;::c_str()</a>, <a class="el" href="debug_8h_source.html#l00074">debugmsg</a>, <a class="el" href="effect_8cpp_source.html#l00044">anonymous_namespace{effect.cpp}::effect_types</a>, <a class="el" href="effect_8h_source.html#l00042">id</a>, and <a class="el" href="achievement_8cpp_source.html#l00065">string_id&lt; T &gt;::is_valid()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="martialarts_8cpp_source.html#l00402">finialize_martial_arts()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="martialarts_8cpp_source.html#l00443">finialize_martial_arts()</a>.</p>
 
 </div>
 </div>
@@ -1231,15 +1231,15 @@ Friends</h2></td></tr>
 <div class="line"><a id="l01276" name="l01276"></a><span class="lineno"> 1276</span>    new_etype.<a class="code hl_variable" href="classeffect__type.html#af8d24370daafd8666c27ba047ad42e76">speed_mod_name</a> = jo.<a class="code hl_function" href="classJsonObject.html#a96b6d1b9cf7bda4fc9cd177a99e0631c">get_string</a>( <span class="stringliteral">&quot;speed_name&quot;</span>, <span class="stringliteral">&quot;&quot;</span> );</div>
 <div class="line"><a id="l01277" name="l01277"></a><span class="lineno"> 1277</span> </div>
 <div class="line"><a id="l01278" name="l01278"></a><span class="lineno"> 1278</span>    <span class="keywordflow">if</span>( jo.<a class="code hl_function" href="classJsonObject.html#a887d230c6a42ef2a6cf72c0e040cd4e3">has_member</a>( <span class="stringliteral">&quot;desc&quot;</span> ) ) {</div>
-<div class="line"><a id="l01279" name="l01279"></a><span class="lineno"> 1279</span>        <span class="keywordflow">for</span>( <span class="keyword">const</span> std::string <a class="code hl_function" href="mapgen_8cpp.html#a90f1f53dc044e93e7f7f9314cef1bd45">line</a> : jo.<a class="code hl_function" href="classJsonObject.html#a69f62f59b5e39da6059b7c3cf8b12421">get_array</a>( <span class="stringliteral">&quot;desc&quot;</span> ) ) {</div>
-<div class="line"><a id="l01280" name="l01280"></a><span class="lineno"> 1280</span>            new_etype.<a class="code hl_variable" href="classeffect__type.html#a7d38b0269f78db39cd5d56676c1e2b37">desc</a>.push_back( <a class="code hl_function" href="mapgen_8cpp.html#a90f1f53dc044e93e7f7f9314cef1bd45">line</a> );</div>
+<div class="line"><a id="l01279" name="l01279"></a><span class="lineno"> 1279</span>        <span class="keywordflow">for</span>( <span class="keyword">const</span> std::string <a class="code hl_function" href="mapgen_8cpp.html#a7a9bb2e98af3268deb7dd8fda06a7d2e">line</a> : jo.<a class="code hl_function" href="classJsonObject.html#a69f62f59b5e39da6059b7c3cf8b12421">get_array</a>( <span class="stringliteral">&quot;desc&quot;</span> ) ) {</div>
+<div class="line"><a id="l01280" name="l01280"></a><span class="lineno"> 1280</span>            new_etype.<a class="code hl_variable" href="classeffect__type.html#a7d38b0269f78db39cd5d56676c1e2b37">desc</a>.push_back( <a class="code hl_function" href="mapgen_8cpp.html#a7a9bb2e98af3268deb7dd8fda06a7d2e">line</a> );</div>
 <div class="line"><a id="l01281" name="l01281"></a><span class="lineno"> 1281</span>        }</div>
 <div class="line"><a id="l01282" name="l01282"></a><span class="lineno"> 1282</span>    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l01283" name="l01283"></a><span class="lineno"> 1283</span>        new_etype.<a class="code hl_variable" href="classeffect__type.html#a7d38b0269f78db39cd5d56676c1e2b37">desc</a>.push_back( <span class="stringliteral">&quot;&quot;</span> );</div>
 <div class="line"><a id="l01284" name="l01284"></a><span class="lineno"> 1284</span>    }</div>
 <div class="line"><a id="l01285" name="l01285"></a><span class="lineno"> 1285</span>    <span class="keywordflow">if</span>( jo.<a class="code hl_function" href="classJsonObject.html#a887d230c6a42ef2a6cf72c0e040cd4e3">has_member</a>( <span class="stringliteral">&quot;reduced_desc&quot;</span> ) ) {</div>
-<div class="line"><a id="l01286" name="l01286"></a><span class="lineno"> 1286</span>        <span class="keywordflow">for</span>( <span class="keyword">const</span> std::string <a class="code hl_function" href="mapgen_8cpp.html#a90f1f53dc044e93e7f7f9314cef1bd45">line</a> : jo.<a class="code hl_function" href="classJsonObject.html#a69f62f59b5e39da6059b7c3cf8b12421">get_array</a>( <span class="stringliteral">&quot;reduced_desc&quot;</span> ) ) {</div>
-<div class="line"><a id="l01287" name="l01287"></a><span class="lineno"> 1287</span>            new_etype.<a class="code hl_variable" href="classeffect__type.html#ae82de0a68e5f2c6f7cca9215d12c7c03">reduced_desc</a>.push_back( <a class="code hl_function" href="mapgen_8cpp.html#a90f1f53dc044e93e7f7f9314cef1bd45">line</a> );</div>
+<div class="line"><a id="l01286" name="l01286"></a><span class="lineno"> 1286</span>        <span class="keywordflow">for</span>( <span class="keyword">const</span> std::string <a class="code hl_function" href="mapgen_8cpp.html#a7a9bb2e98af3268deb7dd8fda06a7d2e">line</a> : jo.<a class="code hl_function" href="classJsonObject.html#a69f62f59b5e39da6059b7c3cf8b12421">get_array</a>( <span class="stringliteral">&quot;reduced_desc&quot;</span> ) ) {</div>
+<div class="line"><a id="l01287" name="l01287"></a><span class="lineno"> 1287</span>            new_etype.<a class="code hl_variable" href="classeffect__type.html#ae82de0a68e5f2c6f7cca9215d12c7c03">reduced_desc</a>.push_back( <a class="code hl_function" href="mapgen_8cpp.html#a7a9bb2e98af3268deb7dd8fda06a7d2e">line</a> );</div>
 <div class="line"><a id="l01288" name="l01288"></a><span class="lineno"> 1288</span>        }</div>
 <div class="line"><a id="l01289" name="l01289"></a><span class="lineno"> 1289</span>    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l01290" name="l01290"></a><span class="lineno"> 1290</span>        new_etype.<a class="code hl_variable" href="classeffect__type.html#ae82de0a68e5f2c6f7cca9215d12c7c03">reduced_desc</a> = new_etype.<a class="code hl_variable" href="classeffect__type.html#a7d38b0269f78db39cd5d56676c1e2b37">desc</a>;</div>
@@ -1324,7 +1324,7 @@ Friends</h2></td></tr>
 <div class="line"><a id="l01369" name="l01369"></a><span class="lineno"> 1369</span> </div>
 <div class="line"><a id="l01370" name="l01370"></a><span class="lineno"> 1370</span>    new_etype.<a class="code hl_variable" href="classeffect__type.html#a8fa3890b70cbc2d39d94faf9d7087864">flags</a> = jo.<a class="code hl_function" href="classJsonObject.html#a5a52ac1f583a3db5af2c12faa46868ed">get_tags</a>( <span class="stringliteral">&quot;flags&quot;</span> );</div>
 <div class="line"><a id="l01371" name="l01371"></a><span class="lineno"> 1371</span> </div>
-<div class="line"><a id="l01372" name="l01372"></a><span class="lineno"> 1372</span>    <a class="code hl_function" href="assign_8h.html#ac353926c625eb31f78ef7534277c5aaf">assign</a>( jo, <span class="stringliteral">&quot;morale&quot;</span>, new_etype.<a class="code hl_variable" href="classeffect__type.html#af867b4fa296b0ab28b4943083fdd6574">morale</a> );</div>
+<div class="line"><a id="l01372" name="l01372"></a><span class="lineno"> 1372</span>    <a class="code hl_function" href="assign_8cpp.html#ab5bcf0475efcfec70e83348a7bb79794">assign</a>( jo, <span class="stringliteral">&quot;morale&quot;</span>, new_etype.<a class="code hl_variable" href="classeffect__type.html#af867b4fa296b0ab28b4943083fdd6574">morale</a> );</div>
 <div class="line"><a id="l01373" name="l01373"></a><span class="lineno"> 1373</span> </div>
 <div class="line"><a id="l01374" name="l01374"></a><span class="lineno"> 1374</span>    <span class="keyword">const</span> <span class="keyword">auto</span> morale_effect = std::find_if( new_etype.<a class="code hl_variable" href="classeffect__type.html#a6d7ca579603e005da602c4e7985df8de">mod_data</a>.begin(),</div>
 <div class="line"><a id="l01375" name="l01375"></a><span class="lineno"> 1375</span>    new_etype.<a class="code hl_variable" href="classeffect__type.html#a6d7ca579603e005da602c4e7985df8de">mod_data</a>.end(), []( <span class="keyword">decltype</span>( *new_etype.<a class="code hl_variable" href="classeffect__type.html#a6d7ca579603e005da602c4e7985df8de">mod_data</a>.begin() ) &amp; pr ) {</div>
@@ -1361,7 +1361,7 @@ Friends</h2></td></tr>
 <div class="line"><a id="l01406" name="l01406"></a><span class="lineno"> 1406</span> </div>
 <div class="line"><a id="l01407" name="l01407"></a><span class="lineno"> 1407</span>    <a class="code hl_variable" href="namespaceanonymous__namespace_02effect_8cpp_03.html#a75793a94926b8584aca04f3fe489f7ec">effect_types</a>[new_etype.<a class="code hl_variable" href="classeffect__type.html#a5ae803354ca113811c3f83c81b55f6d2">id</a>] = new_etype;</div>
 <div class="line"><a id="l01408" name="l01408"></a><span class="lineno"> 1408</span>}</div>
-<div class="ttc" id="aassign_8h_html_ac353926c625eb31f78ef7534277c5aaf"><div class="ttname"><a href="assign_8h.html#ac353926c625eb31f78ef7534277c5aaf">assign</a></div><div class="ttdeci">bool assign(const JsonObject &amp;jo, const std::string &amp;name, T &amp;val, bool strict=false, T lo=std::numeric_limits&lt; T &gt;::lowest(), T hi=std::numeric_limits&lt; T &gt;::max())</div><div class="ttdef"><b>Definition:</b> <a href="assign_8h_source.html#l00059">assign.h:59</a></div></div>
+<div class="ttc" id="aassign_8cpp_html_ab5bcf0475efcfec70e83348a7bb79794"><div class="ttname"><a href="assign_8cpp.html#ab5bcf0475efcfec70e83348a7bb79794">assign</a></div><div class="ttdeci">bool assign(const JsonObject &amp;jo, const std::string &amp;name, bool &amp;val, bool strict)</div><div class="ttdef"><b>Definition:</b> <a href="assign_8cpp_source.html#l00016">assign.cpp:16</a></div></div>
 <div class="ttc" id="acata__variant_8h_html_adfe42687fffdd05d233096b4e7dac2f4a5ba36ff0c0cae9ccd113903466f4e47c"><div class="ttname"><a href="cata__variant_8h.html#adfe42687fffdd05d233096b4e7dac2f4a5ba36ff0c0cae9ccd113903466f4e47c">cata_variant_type::efftype_id</a></div><div class="ttdeci">@ efftype_id</div></div>
 <div class="ttc" id="acata__variant_8h_html_adfe42687fffdd05d233096b4e7dac2f4ad03d97c03c94cd08796f4787856af713"><div class="ttname"><a href="cata__variant_8h.html#adfe42687fffdd05d233096b4e7dac2f4ad03d97c03c94cd08796f4787856af713">cata_variant_type::trait_id</a></div><div class="ttdeci">@ trait_id</div></div>
 <div class="ttc" id="aclassJsonObject_html_a19d83d03e3d5cc6905bcb850d80a1f05"><div class="ttname"><a href="classJsonObject.html#a19d83d03e3d5cc6905bcb850d80a1f05">JsonObject::has_string</a></div><div class="ttdeci">bool has_string(const std::string &amp;name) const</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l00472">json.cpp:472</a></div></div>
@@ -1398,7 +1398,7 @@ Friends</h2></td></tr>
 <div class="ttc" id="aclasstime__duration_html_a4694c27b90feb607344d0605cfa50db8"><div class="ttname"><a href="classtime__duration.html#a4694c27b90feb607344d0605cfa50db8">time_duration::units</a></div><div class="ttdeci">static const std::vector&lt; std::pair&lt; std::string, time_duration &gt; &gt; units</div><div class="ttdef"><b>Definition:</b> <a href="calendar_8h_source.html#l00335">calendar.h:335</a></div></div>
 <div class="ttc" id="aclasstranslation_html"><div class="ttname"><a href="classtranslation.html">translation</a></div><div class="ttdoc">Class for storing translation context and raw string for deferred translation.</div><div class="ttdef"><b>Definition:</b> <a href="translations_8h_source.html#l00151">translations.h:152</a></div></div>
 <div class="ttc" id="aeffect_8cpp_html_ae8c272a42ac5e522ed8830e5849a8be8"><div class="ttname"><a href="effect_8cpp.html#ae8c272a42ac5e522ed8830e5849a8be8">hardcoded_movement_impairing</a></div><div class="ttdeci">static const std::unordered_set&lt; efftype_id &gt; hardcoded_movement_impairing</div><div class="ttdef"><b>Definition:</b> <a href="effect_8cpp_source.html#l01247">effect.cpp:1247</a></div></div>
-<div class="ttc" id="amapgen_8cpp_html_a90f1f53dc044e93e7f7f9314cef1bd45"><div class="ttname"><a href="mapgen_8cpp.html#a90f1f53dc044e93e7f7f9314cef1bd45">line</a></div><div class="ttdeci">void line(map *m, const ter_id &amp;type, const point &amp;p1, const point &amp;p2)</div><div class="ttdef"><b>Definition:</b> <a href="mapgen_8cpp_source.html#l06485">mapgen.cpp:6485</a></div></div>
+<div class="ttc" id="amapgen_8cpp_html_a7a9bb2e98af3268deb7dd8fda06a7d2e"><div class="ttname"><a href="mapgen_8cpp.html#a7a9bb2e98af3268deb7dd8fda06a7d2e">line</a></div><div class="ttdeci">void line(map *m, const ter_id &amp;type, point p1, point p2)</div><div class="ttdef"><b>Definition:</b> <a href="mapgen_8cpp_source.html#l06485">mapgen.cpp:6485</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1555,7 +1555,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="effect_8h_source.html#l00138">138</a> of file <a class="el" href="effect_8h_source.html">effect.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="effect_8cpp_source.html#l00605">effect::disp_desc()</a>, <a class="el" href="effect_8cpp_source.html#l00756">effect::disp_short_desc()</a>, <a class="el" href="martialarts_8cpp_source.html#l00383">ma_buff_effect_type::ma_buff_effect_type()</a>, and <a class="el" href="effect_8cpp_source.html#l00419">use_desc_ints()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="effect_8cpp_source.html#l00605">effect::disp_desc()</a>, <a class="el" href="effect_8cpp_source.html#l00756">effect::disp_short_desc()</a>, <a class="el" href="martialarts_8cpp_source.html#l00424">ma_buff_effect_type::ma_buff_effect_type()</a>, and <a class="el" href="effect_8cpp_source.html#l00419">use_desc_ints()</a>.</p>
 
 </div>
 </div>
@@ -1581,7 +1581,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="effect_8h_source.html#l00105">105</a> of file <a class="el" href="effect_8h_source.html">effect.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="effect_8cpp_source.html#l01203">effect::get_dur_add_perc()</a>, and <a class="el" href="martialarts_8cpp_source.html#l00383">ma_buff_effect_type::ma_buff_effect_type()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="effect_8cpp_source.html#l01203">effect::get_dur_add_perc()</a>, and <a class="el" href="martialarts_8cpp_source.html#l00424">ma_buff_effect_type::ma_buff_effect_type()</a>.</p>
 
 </div>
 </div>
@@ -1677,7 +1677,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="effect_8h_source.html#l00042">42</a> of file <a class="el" href="effect_8h_source.html">effect.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="effect_8cpp_source.html#l00540">check_consistency()</a>, <a class="el" href="effect_8cpp_source.html#l00558">effect::disp_name()</a>, <a class="el" href="martialarts_8cpp_source.html#l00624">ma_buff::from_effect()</a>, <a class="el" href="effect_8h_source.html#l00305">effect::get_id()</a>, <a class="el" href="effect_8cpp_source.html#l01420">register_ma_buff_effect()</a>, and <a class="el" href="effect_8cpp_source.html#l01430">effect::serialize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="effect_8cpp_source.html#l00540">check_consistency()</a>, <a class="el" href="effect_8cpp_source.html#l00558">effect::disp_name()</a>, <a class="el" href="martialarts_8cpp_source.html#l00665">ma_buff::from_effect()</a>, <a class="el" href="effect_8h_source.html#l00305">effect::get_id()</a>, <a class="el" href="effect_8cpp_source.html#l01420">register_ma_buff_effect()</a>, and <a class="el" href="effect_8cpp_source.html#l01430">effect::serialize()</a>.</p>
 
 </div>
 </div>
@@ -1729,7 +1729,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="effect_8h_source.html#l00106">106</a> of file <a class="el" href="effect_8h_source.html">effect.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="effect_8cpp_source.html#l01211">effect::get_int_add_val()</a>, and <a class="el" href="martialarts_8cpp_source.html#l00383">ma_buff_effect_type::ma_buff_effect_type()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="effect_8cpp_source.html#l01211">effect::get_int_add_val()</a>, and <a class="el" href="martialarts_8cpp_source.html#l00424">ma_buff_effect_type::ma_buff_effect_type()</a>.</p>
 
 </div>
 </div>
@@ -1755,7 +1755,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="effect_8h_source.html#l00108">108</a> of file <a class="el" href="effect_8h_source.html">effect.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="effect_8cpp_source.html#l00773">effect::decay()</a>, and <a class="el" href="martialarts_8cpp_source.html#l00383">ma_buff_effect_type::ma_buff_effect_type()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="effect_8cpp_source.html#l00773">effect::decay()</a>, and <a class="el" href="martialarts_8cpp_source.html#l00424">ma_buff_effect_type::ma_buff_effect_type()</a>.</p>
 
 </div>
 </div>
@@ -1781,7 +1781,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="effect_8h_source.html#l00109">109</a> of file <a class="el" href="effect_8h_source.html">effect.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="effect_8cpp_source.html#l00773">effect::decay()</a>, and <a class="el" href="martialarts_8cpp_source.html#l00383">ma_buff_effect_type::ma_buff_effect_type()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="effect_8cpp_source.html#l00773">effect::decay()</a>, and <a class="el" href="martialarts_8cpp_source.html#l00424">ma_buff_effect_type::ma_buff_effect_type()</a>.</p>
 
 </div>
 </div>
@@ -1807,7 +1807,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="effect_8h_source.html#l00110">110</a> of file <a class="el" href="effect_8h_source.html">effect.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="effect_8cpp_source.html#l00498">get_int_dur_factor()</a>, <a class="el" href="martialarts_8cpp_source.html#l00383">ma_buff_effect_type::ma_buff_effect_type()</a>, and <a class="el" href="effect_8cpp_source.html#l00805">effect::set_duration()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="effect_8cpp_source.html#l00498">get_int_dur_factor()</a>, <a class="el" href="martialarts_8cpp_source.html#l00424">ma_buff_effect_type::ma_buff_effect_type()</a>, and <a class="el" href="effect_8cpp_source.html#l00805">effect::set_duration()</a>.</p>
 
 </div>
 </div>
@@ -1859,7 +1859,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="effect_8h_source.html#l00103">103</a> of file <a class="el" href="effect_8h_source.html">effect.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="effect_8cpp_source.html#l00486">get_max_duration()</a>, <a class="el" href="martialarts_8cpp_source.html#l00383">ma_buff_effect_type::ma_buff_effect_type()</a>, and <a class="el" href="effect_8cpp_source.html#l00805">effect::set_duration()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="effect_8cpp_source.html#l00486">get_max_duration()</a>, <a class="el" href="martialarts_8cpp_source.html#l00424">ma_buff_effect_type::ma_buff_effect_type()</a>, and <a class="el" href="effect_8cpp_source.html#l00805">effect::set_duration()</a>.</p>
 
 </div>
 </div>
@@ -1911,7 +1911,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="effect_8h_source.html#l00101">101</a> of file <a class="el" href="effect_8h_source.html">effect.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="effect_8cpp_source.html#l00853">effect::get_max_intensity()</a>, <a class="el" href="martialarts_8cpp_source.html#l00383">ma_buff_effect_type::ma_buff_effect_type()</a>, <a class="el" href="effect_8cpp_source.html#l00858">effect::set_intensity()</a>, and <a class="el" href="effect_8cpp_source.html#l00419">use_desc_ints()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="effect_8cpp_source.html#l00853">effect::get_max_intensity()</a>, <a class="el" href="martialarts_8cpp_source.html#l00424">ma_buff_effect_type::ma_buff_effect_type()</a>, <a class="el" href="effect_8cpp_source.html#l00858">effect::set_intensity()</a>, and <a class="el" href="effect_8cpp_source.html#l00419">use_desc_ints()</a>.</p>
 
 </div>
 </div>
@@ -2017,7 +2017,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="effect_8h_source.html#l00136">136</a> of file <a class="el" href="effect_8h_source.html">effect.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="effect_8cpp_source.html#l00558">effect::disp_name()</a>, <a class="el" href="effect_8cpp_source.html#l01220">effect::get_speed_name()</a>, <a class="el" href="martialarts_8cpp_source.html#l00383">ma_buff_effect_type::ma_buff_effect_type()</a>, and <a class="el" href="effect_8cpp_source.html#l00414">use_name_ints()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="effect_8cpp_source.html#l00558">effect::disp_name()</a>, <a class="el" href="effect_8cpp_source.html#l01220">effect::get_speed_name()</a>, <a class="el" href="martialarts_8cpp_source.html#l00424">ma_buff_effect_type::ma_buff_effect_type()</a>, and <a class="el" href="effect_8cpp_source.html#l00414">use_name_ints()</a>.</p>
 
 </div>
 </div>
@@ -2147,7 +2147,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="effect_8h_source.html#l00144">144</a> of file <a class="el" href="effect_8h_source.html">effect.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="effect_8cpp_source.html#l00428">gain_game_message_type()</a>, <a class="el" href="effect_8cpp_source.html#l00409">get_rating()</a>, <a class="el" href="effect_8cpp_source.html#l00444">lose_game_message_type()</a>, and <a class="el" href="martialarts_8cpp_source.html#l00383">ma_buff_effect_type::ma_buff_effect_type()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="effect_8cpp_source.html#l00428">gain_game_message_type()</a>, <a class="el" href="effect_8cpp_source.html#l00409">get_rating()</a>, <a class="el" href="effect_8cpp_source.html#l00444">lose_game_message_type()</a>, and <a class="el" href="martialarts_8cpp_source.html#l00424">ma_buff_effect_type::ma_buff_effect_type()</a>.</p>
 
 </div>
 </div>
@@ -2369,7 +2369,7 @@ Friends</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classeffect__type.html">effect_type</a></li>
-    <li class="footer">Generated on Sun Mar 5 2023 13:51:02 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Apr 7 2023 11:54:39 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

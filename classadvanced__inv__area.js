@@ -2,7 +2,7 @@ var classadvanced__inv__area =
 [
     [ "itemstack", "classadvanced__inv__area.html#afa05ed0cbe82e78290738a786749622f", null ],
     [ "advanced_inv_area", "classadvanced__inv__area.html#aec7216c64f7b8cda168a15c0f2181c28", null ],
-    [ "advanced_inv_area", "classadvanced__inv__area.html#ad9b11ac1e52768b0acdd49a63dfdfca9", null ],
+    [ "advanced_inv_area", "classadvanced__inv__area.html#a502650904f7c05741cbaf1916054a523", null ],
     [ "can_store_in_vehicle", "classadvanced__inv__area.html#aa22948105c9e2b1f3da108fd52ac0889", null ],
     [ "canputitems", "classadvanced__inv__area.html#a0e4f42a6b89a03331f79c171e8e96796", null ],
     [ "free_volume", "classadvanced__inv__area.html#a1167761883fcb0249190dee49696ad69", null ],

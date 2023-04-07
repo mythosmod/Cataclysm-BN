@@ -201,14 +201,14 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="savegame__json_8cpp_source.html#l03406">3406</a> of file <a class="el" href="savegame__json_8cpp_source.html">savegame_json.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l03407" name="l03407"></a><span class="lineno"> 3407</span>{</div>
-<div class="line"><a id="l03408" name="l03408"></a><span class="lineno"> 3408</span>    <a class="code hl_class" href="classJsonObject.html">JsonObject</a> jo = jsin.<a class="code hl_function" href="classJsonIn.html#af988f122efed0696d9d05f649e57c9b2">get_object</a>();</div>
-<div class="line"><a id="l03409" name="l03409"></a><span class="lineno"> 3409</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae00f195360e3783cf50527cf07344202">allow_omitted_members</a>();</div>
-<div class="line"><a id="l03410" name="l03410"></a><span class="lineno"> 3410</span>    <a class="code hl_variable" href="classaddiction.html#a1f821f3d8aeefae18cdab457db95a1f2">type</a> = <span class="keyword">static_cast&lt;</span><a class="code hl_enumeration" href="pldata_8h.html#abffc2f52fa6cfeac2e388c6de0ac295b">add_type</a><span class="keyword">&gt;</span>( jo.<a class="code hl_function" href="classJsonObject.html#a99e64f59bc5e72e7572125064b68da29">get_int</a>( <span class="stringliteral">&quot;type_enum&quot;</span> ) );</div>
-<div class="line"><a id="l03411" name="l03411"></a><span class="lineno"> 3411</span>    <a class="code hl_variable" href="classaddiction.html#af268c0fc4a1d2c07eac4ac4ee6bb2095">intensity</a> = jo.<a class="code hl_function" href="classJsonObject.html#a99e64f59bc5e72e7572125064b68da29">get_int</a>( <span class="stringliteral">&quot;intensity&quot;</span> );</div>
-<div class="line"><a id="l03412" name="l03412"></a><span class="lineno"> 3412</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;sated&quot;</span>, <a class="code hl_variable" href="classaddiction.html#ad637a1e5ac481959713ccaaabd07e85a">sated</a> );</div>
-<div class="line"><a id="l03413" name="l03413"></a><span class="lineno"> 3413</span>}</div>
+<p class="definition">Definition at line <a class="el" href="savegame__json_8cpp_source.html#l03407">3407</a> of file <a class="el" href="savegame__json_8cpp_source.html">savegame_json.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l03408" name="l03408"></a><span class="lineno"> 3408</span>{</div>
+<div class="line"><a id="l03409" name="l03409"></a><span class="lineno"> 3409</span>    <a class="code hl_class" href="classJsonObject.html">JsonObject</a> jo = jsin.<a class="code hl_function" href="classJsonIn.html#af988f122efed0696d9d05f649e57c9b2">get_object</a>();</div>
+<div class="line"><a id="l03410" name="l03410"></a><span class="lineno"> 3410</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae00f195360e3783cf50527cf07344202">allow_omitted_members</a>();</div>
+<div class="line"><a id="l03411" name="l03411"></a><span class="lineno"> 3411</span>    <a class="code hl_variable" href="classaddiction.html#a1f821f3d8aeefae18cdab457db95a1f2">type</a> = <span class="keyword">static_cast&lt;</span><a class="code hl_enumeration" href="pldata_8h.html#abffc2f52fa6cfeac2e388c6de0ac295b">add_type</a><span class="keyword">&gt;</span>( jo.<a class="code hl_function" href="classJsonObject.html#a99e64f59bc5e72e7572125064b68da29">get_int</a>( <span class="stringliteral">&quot;type_enum&quot;</span> ) );</div>
+<div class="line"><a id="l03412" name="l03412"></a><span class="lineno"> 3412</span>    <a class="code hl_variable" href="classaddiction.html#af268c0fc4a1d2c07eac4ac4ee6bb2095">intensity</a> = jo.<a class="code hl_function" href="classJsonObject.html#a99e64f59bc5e72e7572125064b68da29">get_int</a>( <span class="stringliteral">&quot;intensity&quot;</span> );</div>
+<div class="line"><a id="l03413" name="l03413"></a><span class="lineno"> 3413</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;sated&quot;</span>, <a class="code hl_variable" href="classaddiction.html#ad637a1e5ac481959713ccaaabd07e85a">sated</a> );</div>
+<div class="line"><a id="l03414" name="l03414"></a><span class="lineno"> 3414</span>}</div>
 <div class="ttc" id="aclassJsonIn_html_af988f122efed0696d9d05f649e57c9b2"><div class="ttname"><a href="classJsonIn.html#af988f122efed0696d9d05f649e57c9b2">JsonIn::get_object</a></div><div class="ttdeci">JsonObject get_object()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01431">json.cpp:1431</a></div></div>
 <div class="ttc" id="aclassJsonObject_html"><div class="ttname"><a href="classJsonObject.html">JsonObject</a></div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00827">json.h:828</a></div></div>
 <div class="ttc" id="aclassJsonObject_html_a99e64f59bc5e72e7572125064b68da29"><div class="ttname"><a href="classJsonObject.html#a99e64f59bc5e72e7572125064b68da29">JsonObject::get_int</a></div><div class="ttdeci">int get_int(const std::string &amp;name) const</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l00349">json.cpp:349</a></div></div>
@@ -237,14 +237,14 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="savegame__json_8cpp_source.html#l03397">3397</a> of file <a class="el" href="savegame__json_8cpp_source.html">savegame_json.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l03398" name="l03398"></a><span class="lineno"> 3398</span>{</div>
-<div class="line"><a id="l03399" name="l03399"></a><span class="lineno"> 3399</span>    json.<a class="code hl_function" href="classJsonOut.html#a4756f9a569adbfc60de127f7c335d82f">start_object</a>();</div>
-<div class="line"><a id="l03400" name="l03400"></a><span class="lineno"> 3400</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;type_enum&quot;</span>, <a class="code hl_variable" href="classaddiction.html#a1f821f3d8aeefae18cdab457db95a1f2">type</a> );</div>
-<div class="line"><a id="l03401" name="l03401"></a><span class="lineno"> 3401</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;intensity&quot;</span>, <a class="code hl_variable" href="classaddiction.html#af268c0fc4a1d2c07eac4ac4ee6bb2095">intensity</a> );</div>
-<div class="line"><a id="l03402" name="l03402"></a><span class="lineno"> 3402</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;sated&quot;</span>, <a class="code hl_variable" href="classaddiction.html#ad637a1e5ac481959713ccaaabd07e85a">sated</a> );</div>
-<div class="line"><a id="l03403" name="l03403"></a><span class="lineno"> 3403</span>    json.<a class="code hl_function" href="classJsonOut.html#aa38d37840ed6ba168b78a43570e98681">end_object</a>();</div>
-<div class="line"><a id="l03404" name="l03404"></a><span class="lineno"> 3404</span>}</div>
+<p class="definition">Definition at line <a class="el" href="savegame__json_8cpp_source.html#l03398">3398</a> of file <a class="el" href="savegame__json_8cpp_source.html">savegame_json.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l03399" name="l03399"></a><span class="lineno"> 3399</span>{</div>
+<div class="line"><a id="l03400" name="l03400"></a><span class="lineno"> 3400</span>    json.<a class="code hl_function" href="classJsonOut.html#a4756f9a569adbfc60de127f7c335d82f">start_object</a>();</div>
+<div class="line"><a id="l03401" name="l03401"></a><span class="lineno"> 3401</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;type_enum&quot;</span>, <a class="code hl_variable" href="classaddiction.html#a1f821f3d8aeefae18cdab457db95a1f2">type</a> );</div>
+<div class="line"><a id="l03402" name="l03402"></a><span class="lineno"> 3402</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;intensity&quot;</span>, <a class="code hl_variable" href="classaddiction.html#af268c0fc4a1d2c07eac4ac4ee6bb2095">intensity</a> );</div>
+<div class="line"><a id="l03403" name="l03403"></a><span class="lineno"> 3403</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;sated&quot;</span>, <a class="code hl_variable" href="classaddiction.html#ad637a1e5ac481959713ccaaabd07e85a">sated</a> );</div>
+<div class="line"><a id="l03404" name="l03404"></a><span class="lineno"> 3404</span>    json.<a class="code hl_function" href="classJsonOut.html#aa38d37840ed6ba168b78a43570e98681">end_object</a>();</div>
+<div class="line"><a id="l03405" name="l03405"></a><span class="lineno"> 3405</span>}</div>
 <div class="ttc" id="aclassJsonOut_html_a4756f9a569adbfc60de127f7c335d82f"><div class="ttname"><a href="classJsonOut.html#a4756f9a569adbfc60de127f7c335d82f">JsonOut::start_object</a></div><div class="ttdeci">void start_object(bool wrap=false)</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01998">json.cpp:1998</a></div></div>
 <div class="ttc" id="aclassJsonOut_html_aa38d37840ed6ba168b78a43570e98681"><div class="ttname"><a href="classJsonOut.html#aa38d37840ed6ba168b78a43570e98681">JsonOut::end_object</a></div><div class="ttdeci">void end_object()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l02009">json.cpp:2009</a></div></div>
 <div class="ttc" id="aclassJsonOut_html_adb3c899f0ad7fc4f25cd3357c51a2c42"><div class="ttname"><a href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">JsonOut::member</a></div><div class="ttdeci">void member(const std::string &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l02113">json.cpp:2113</a></div></div>
@@ -314,7 +314,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classaddiction.html">addiction</a></li>
-    <li class="footer">Generated on Sun Mar 5 2023 13:50:57 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Apr 7 2023 11:54:34 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

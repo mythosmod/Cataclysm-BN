@@ -101,6 +101,7 @@ var structitype =
     [ "use_methods", "structitype.html#afa43bb71000c037c9918d907fdacf0b5", null ],
     [ "volume", "structitype.html#abd3ca12912367ae92d488864e09ea921", null ],
     [ "was_loaded", "structitype.html#a2fd0fb8931b801aaeb42d19d9725c958", null ],
+    [ "weapon_category", "structitype.html#a17e05c547c1dd581333c64cdb24299a0", null ],
     [ "weight", "structitype.html#a4ecb806dae208ff275b4aa50ffcd3902", null ],
     [ "wheel", "structitype.html#a5c286a821362f883c93b7d984ecae163", null ]
 ];

@@ -3,7 +3,7 @@ var generic__factory_8h =
     [ "generic_factory< T >", "classgeneric__factory.html", "classgeneric__factory" ],
     [ "generic_factory< T >::Version", "classgeneric__factory_1_1Version.html", "classgeneric__factory_1_1Version" ],
     [ "supports_proportional< T, typename >", "structsupports__proportional.html", null ],
-    [ "supports_proportional< T, cata::void_t< decltype(std::declval< T & >() *=std::declval< float >())> >", "structsupports__proportional_3_01T_00_01cata_1_1void__t_3_01decltype_07std_1_1declval_3_01T_01_65a900226014ad1185c6b766ea4e24245.html", null ],
+    [ "supports_proportional< T, std::void_t< decltype(std::declval< T & >() *=std::declval< float >())> >", "structsupports__proportional_3_01T_00_01std_1_1void__t_3_01decltype_07std_1_1declval_3_01T_01_6_feffb41c6ab1ef1da38e3c6e8b927d83.html", null ],
     [ "supports_proportional< bool >", "structsupports__proportional_3_01bool_01_4.html", null ],
     [ "CATA_SRC_GENERIC_FACTORY_H", "generic__factory_8h.html#a4f86324883d8b6c4a037e5897b3edce5", null ],
     [ "handle_proportional", "generic__factory_8h.html#adc5c64f942c41307cd544bfafdff9db7", null ],

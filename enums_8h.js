@@ -173,11 +173,11 @@ var enums_8h =
       [ "NUM_OBJECTS", "enums_8h.html#af54461b7c3322b2256322f7b545bd623a5b909e6373903540662b417c632314e7", null ]
     ] ],
     [ "ot_match_type", "enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40", [
-      [ "exact", "enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40a4dc2e2416faefa33a23a45ed367e9fa6", null ],
-      [ "type", "enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab", null ],
-      [ "prefix", "enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40a7afa939f8bd773f5f7e326990b07580c", null ],
-      [ "contains", "enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40abb56b2cfd438fea4417d59941a2018ad", null ],
-      [ "num_ot_match_type", "enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40ae8c8970a6bb8cc2477992a59c4f01eba", null ]
+      [ "exact", "enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40a3b7efa09444a31c5d58596e5bbf87d47", null ],
+      [ "type", "enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40a599dcce2998a6b40b1e38e8c6006cb0a", null ],
+      [ "prefix", "enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40a851f5ac9941d720844d143ed9cfcf60a", null ],
+      [ "contains", "enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40a857af22f119fefbfa24769ed2ad6d5e7", null ],
+      [ "num_ot_match_type", "enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40a0cefc8799f07717e8c3358c8a37d9501", null ]
     ] ],
     [ "phase_id", "enums_8h.html#ade8f325e8cc8463cef8f944f3209d0e5", [
       [ "PNULL", "enums_8h.html#ade8f325e8cc8463cef8f944f3209d0e5a01ff92f3183a47a53bc0d332249d0b0b", null ],
@@ -192,11 +192,11 @@ var enums_8h =
       [ "RULE_WHITELISTED", "enums_8h.html#ad05def87273524522ee10384f0cf103caa5a69c112de6ea3b835c5bc2067f7f91", null ],
       [ "RULE_BLACKLISTED", "enums_8h.html#ad05def87273524522ee10384f0cf103ca05702fa9c14599b62f74dcd5b889a256", null ]
     ] ],
-    [ "special_game_id", "enums_8h.html#a118d644b670026ee446a0163e9b7bba3", [
-      [ "SGAME_NULL", "enums_8h.html#a118d644b670026ee446a0163e9b7bba3a163ee9f2adfc062e1c3d26fa4b92efdd", null ],
-      [ "SGAME_TUTORIAL", "enums_8h.html#a118d644b670026ee446a0163e9b7bba3ab6ecb5988b8f11d51680674be085dd78", null ],
-      [ "SGAME_DEFENSE", "enums_8h.html#a118d644b670026ee446a0163e9b7bba3a794c9b86c96a94be93c2e04fdb89b052", null ],
-      [ "NUM_SPECIAL_GAMES", "enums_8h.html#a118d644b670026ee446a0163e9b7bba3a7c40d7fb736f500a02846a5a5c3f74cf", null ]
+    [ "special_game_type", "enums_8h.html#ace4a265a663117b0e316e492302dce8d", [
+      [ "NONE", "enums_8h.html#ace4a265a663117b0e316e492302dce8dab50339a10e1de285ac99d4c3990b8693", null ],
+      [ "TUTORIAL", "enums_8h.html#ace4a265a663117b0e316e492302dce8dab8e2e6f28d96c901009d75312887a6da", null ],
+      [ "DEFENSE", "enums_8h.html#ace4a265a663117b0e316e492302dce8da97f380976e65f683a02ec855289ebfc0", null ],
+      [ "NUM_SPECIAL_GAME_TYPES", "enums_8h.html#ace4a265a663117b0e316e492302dce8daaa68899f1652dc0e75a144fd0f1d434f", null ]
     ] ],
     [ "temperature_flag", "enums_8h.html#a5f18231241dd5fb662d1c5313636ec5d", [
       [ "TEMP_NORMAL", "enums_8h.html#a5f18231241dd5fb662d1c5313636ec5da97a8a8356c8e6ec71bc071918368ab20", null ],

@@ -227,7 +227,7 @@ template&lt;typename T , size_t... I&gt; </div>
 <div class="fragment"><div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>{</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keyword">constexpr</span> <span class="keywordtype">size_t</span> <a class="code hl_enumvalue" href="cata__variant_8h.html#adfe42687fffdd05d233096b4e7dac2f4ae49c2c95de1ecabfc8c44fe4d376b2bb">num_types</a> = <span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>( <a class="code hl_enumvalue" href="cata__variant_8h.html#adfe42687fffdd05d233096b4e7dac2f4ae49c2c95de1ecabfc8c44fe4d376b2bb">cata_variant_type::num_types</a> );</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keyword">constexpr</span> std::array&lt;bool, num_types&gt; matches = {{</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            std::is_same&lt;T, typename convert&lt;static_cast&lt;cata_variant_type&gt;( I )&gt;<a class="code hl_enumvalue" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">::type</a>&gt;::value...</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            std::is_same&lt;T, typename convert&lt;static_cast&lt;cata_variant_type&gt;( I )&gt;::type&gt;::value...</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        }</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    };</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keywordflow">for</span>( <span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_enumvalue" href="cata__variant_8h.html#adfe42687fffdd05d233096b4e7dac2f4ae49c2c95de1ecabfc8c44fe4d376b2bb">num_types</a>; ++i ) {</div>
@@ -239,9 +239,8 @@ template&lt;typename T , size_t... I&gt; </div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="cata__variant_8h.html#adfe42687fffdd05d233096b4e7dac2f4ae49c2c95de1ecabfc8c44fe4d376b2bb">cata_variant_type::num_types</a>;</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>}</div>
 <div class="ttc" id="acata__variant_8h_html_adfe42687fffdd05d233096b4e7dac2f4"><div class="ttname"><a href="cata__variant_8h.html#adfe42687fffdd05d233096b4e7dac2f4">cata_variant_type</a></div><div class="ttdeci">cata_variant_type</div><div class="ttdef"><b>Definition:</b> <a href="cata__variant_8h_source.html#l00031">cata_variant.h:31</a></div></div>
-<div class="ttc" id="aenums_8h_html_ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab"><div class="ttname"><a href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a></div><div class="ttdeci">@ type</div><div class="ttdef"><b>Definition:</b> <a href="enums_8h_source.html#l00075">enums.h:75</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="cata__variant_8h.html#adfe42687fffdd05d233096b4e7dac2f4ae49c2c95de1ecabfc8c44fe4d376b2bb">num_types</a>, and <a class="el" href="enums_8h_source.html#l00075">type</a>.</p>
+<p class="reference">References <a class="el" href="cata__variant_8h.html#adfe42687fffdd05d233096b4e7dac2f4ae49c2c95de1ecabfc8c44fe4d376b2bb">num_types</a>, and <a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40a599dcce2998a6b40b1e38e8c6006cb0a">type</a>.</p>
 
 </div>
 </div>
@@ -251,7 +250,7 @@ template&lt;typename T , size_t... I&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacecata__variant__detail.html">cata_variant_detail</a></li>
-    <li class="footer">Generated on Sun Mar 5 2023 13:51:20 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Apr 7 2023 11:54:59 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

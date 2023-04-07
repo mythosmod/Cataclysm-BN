@@ -188,8 +188,8 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="iuse__actor_8h_source.html#l00143">143</a> of file <a class="el" href="iuse__actor_8h_source.html">iuse_actor.h</a>.</p>
 <div class="fragment"><div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>: <a class="code hl_function" href="classiuse__actor.html#a3e13735b7baa2c93610ccb78abda2d09">iuse_actor</a>( <a class="code hl_variable" href="classiuse__actor.html#a5bfc0cc8ea9046eb540641ff464af80c">type</a> ) {}</div>
-<div class="ttc" id="aclassiuse__actor_html_a3e13735b7baa2c93610ccb78abda2d09"><div class="ttname"><a href="classiuse__actor.html#a3e13735b7baa2c93610ccb78abda2d09">iuse_actor::iuse_actor</a></div><div class="ttdeci">iuse_actor(const std::string &amp;type, int cost=-1)</div><div class="ttdef"><b>Definition:</b> <a href="iuse_8h_source.html#l00259">iuse.h:259</a></div></div>
-<div class="ttc" id="aclassiuse__actor_html_a5bfc0cc8ea9046eb540641ff464af80c"><div class="ttname"><a href="classiuse__actor.html#a5bfc0cc8ea9046eb540641ff464af80c">iuse_actor::type</a></div><div class="ttdeci">const std::string type</div><div class="ttdoc">The type of the action.</div><div class="ttdef"><b>Definition:</b> <a href="iuse_8h_source.html#l00266">iuse.h:266</a></div></div>
+<div class="ttc" id="aclassiuse__actor_html_a3e13735b7baa2c93610ccb78abda2d09"><div class="ttname"><a href="classiuse__actor.html#a3e13735b7baa2c93610ccb78abda2d09">iuse_actor::iuse_actor</a></div><div class="ttdeci">iuse_actor(const std::string &amp;type, int cost=-1)</div><div class="ttdef"><b>Definition:</b> <a href="iuse_8h_source.html#l00260">iuse.h:260</a></div></div>
+<div class="ttc" id="aclassiuse__actor_html_a5bfc0cc8ea9046eb540641ff464af80c"><div class="ttname"><a href="classiuse__actor.html#a5bfc0cc8ea9046eb540641ff464af80c">iuse_actor::type</a></div><div class="ttdeci">const std::string type</div><div class="ttdoc">The type of the action.</div><div class="ttdef"><b>Definition:</b> <a href="iuse_8h_source.html#l00267">iuse.h:267</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -267,14 +267,14 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classiuse__actor.html#a46803e26f384386f9f8061044c7373ff">iuse_actor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l00461">461</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00463" name="l00463"></a><span class="lineno">  463</span>{</div>
-<div class="line"><a id="l00464" name="l00464"></a><span class="lineno">  464</span>    <span class="keywordflow">if</span>( it.<a class="code hl_variable" href="classitem.html#a2993eb10a5ae589e6bb1be0a74cb65c1">active</a> ) {</div>
-<div class="line"><a id="l00465" name="l00465"></a><span class="lineno">  465</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classret__val.html#a415798e6fd736bd724329890cae0df4a">ret_val&lt;bool&gt;::make_failure</a>( <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;It&#39;s already been triggered.&quot;</span> ) );</div>
-<div class="line"><a id="l00466" name="l00466"></a><span class="lineno">  466</span>    }</div>
-<div class="line"><a id="l00467" name="l00467"></a><span class="lineno">  467</span> </div>
-<div class="line"><a id="l00468" name="l00468"></a><span class="lineno">  468</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classret__val.html#a0bbde13713bc279563fa85782599f957">ret_val&lt;bool&gt;::make_success</a>();</div>
-<div class="line"><a id="l00469" name="l00469"></a><span class="lineno">  469</span>}</div>
+<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l00462">462</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00464" name="l00464"></a><span class="lineno">  464</span>{</div>
+<div class="line"><a id="l00465" name="l00465"></a><span class="lineno">  465</span>    <span class="keywordflow">if</span>( it.<a class="code hl_variable" href="classitem.html#a2993eb10a5ae589e6bb1be0a74cb65c1">active</a> ) {</div>
+<div class="line"><a id="l00466" name="l00466"></a><span class="lineno">  466</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classret__val.html#a415798e6fd736bd724329890cae0df4a">ret_val&lt;bool&gt;::make_failure</a>( <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;It&#39;s already been triggered.&quot;</span> ) );</div>
+<div class="line"><a id="l00467" name="l00467"></a><span class="lineno">  467</span>    }</div>
+<div class="line"><a id="l00468" name="l00468"></a><span class="lineno">  468</span> </div>
+<div class="line"><a id="l00469" name="l00469"></a><span class="lineno">  469</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classret__val.html#a0bbde13713bc279563fa85782599f957">ret_val&lt;bool&gt;::make_success</a>();</div>
+<div class="line"><a id="l00470" name="l00470"></a><span class="lineno">  470</span>}</div>
 <div class="ttc" id="aclassitem_html_a2993eb10a5ae589e6bb1be0a74cb65c1"><div class="ttname"><a href="classitem.html#a2993eb10a5ae589e6bb1be0a74cb65c1">item::active</a></div><div class="ttdeci">bool active</div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l02234">item.h:2234</a></div></div>
 <div class="ttc" id="aclassret__val_html_a0bbde13713bc279563fa85782599f957"><div class="ttname"><a href="classret__val.html#a0bbde13713bc279563fa85782599f957">ret_val::make_success</a></div><div class="ttdeci">static ret_val make_success(T val=default_success::value)</div><div class="ttdef"><b>Definition:</b> <a href="ret__val_8h_source.html#l00042">ret_val.h:42</a></div></div>
 <div class="ttc" id="aclassret__val_html_a415798e6fd736bd724329890cae0df4a"><div class="ttname"><a href="classret__val.html#a415798e6fd736bd724329890cae0df4a">ret_val::make_failure</a></div><div class="ttdeci">static ret_val make_failure(T val=default_failure::value)</div><div class="ttdef"><b>Definition:</b> <a href="ret__val_8h_source.html#l00046">ret_val.h:46</a></div></div>
@@ -313,15 +313,15 @@ Additional Inherited Members</h2></td></tr>
 <div class="line">        <span class="keywordflow">return</span> std::make_unique&lt;my_iuse_actor&gt;( *<span class="keyword">this</span> );</div>
 <div class="line">    }</div>
 <div class="line">};</div>
-<div class="ttc" id="aclasscountdown__actor_html_a695574c24a09dbb87d87c76717cf5d77"><div class="ttname"><a href="classcountdown__actor.html#a695574c24a09dbb87d87c76717cf5d77">countdown_actor::clone</a></div><div class="ttdeci">std::unique_ptr&lt; iuse_actor &gt; clone() const override</div><div class="ttdoc">Returns a deep copy of this object.</div><div class="ttdef"><b>Definition:</b> <a href="iuse__actor_8cpp_source.html#l00430">iuse_actor.cpp:430</a></div></div>
+<div class="ttc" id="aclasscountdown__actor_html_a695574c24a09dbb87d87c76717cf5d77"><div class="ttname"><a href="classcountdown__actor.html#a695574c24a09dbb87d87c76717cf5d77">countdown_actor::clone</a></div><div class="ttdeci">std::unique_ptr&lt; iuse_actor &gt; clone() const override</div><div class="ttdoc">Returns a deep copy of this object.</div><div class="ttdef"><b>Definition:</b> <a href="iuse__actor_8cpp_source.html#l00431">iuse_actor.cpp:431</a></div></div>
 </div><!-- fragment --><p> The returned value should behave like the original item and must have the same type. </p>
 
 <p>Implements <a class="el" href="classiuse__actor.html#a79a3e229ab9a4f5433d061cc1faec42d">iuse_actor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l00430">430</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00431" name="l00431"></a><span class="lineno">  431</span>{</div>
-<div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span>    <span class="keywordflow">return</span> std::make_unique&lt;countdown_actor&gt;( *<span class="keyword">this</span> );</div>
-<div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span>}</div>
+<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l00431">431</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span>{</div>
+<div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span>    <span class="keywordflow">return</span> std::make_unique&lt;countdown_actor&gt;( *<span class="keyword">this</span> );</div>
+<div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -353,13 +353,13 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classiuse__actor.html#a4c0e5b1f19b2f17d2a40220bc8ac28dc">iuse_actor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l00471">471</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00472" name="l00472"></a><span class="lineno">  472</span>{</div>
-<div class="line"><a id="l00473" name="l00473"></a><span class="lineno">  473</span>    <span class="keywordflow">if</span>( !<a class="code hl_variable" href="classcountdown__actor.html#af2d93d50361de103b9921a6589978553">name</a>.empty() ) {</div>
-<div class="line"><a id="l00474" name="l00474"></a><span class="lineno">  474</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classcountdown__actor.html#af2d93d50361de103b9921a6589978553">name</a>;</div>
-<div class="line"><a id="l00475" name="l00475"></a><span class="lineno">  475</span>    }</div>
-<div class="line"><a id="l00476" name="l00476"></a><span class="lineno">  476</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classiuse__actor.html#a4c0e5b1f19b2f17d2a40220bc8ac28dc">iuse_actor::get_name</a>();</div>
-<div class="line"><a id="l00477" name="l00477"></a><span class="lineno">  477</span>}</div>
+<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l00472">472</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00473" name="l00473"></a><span class="lineno">  473</span>{</div>
+<div class="line"><a id="l00474" name="l00474"></a><span class="lineno">  474</span>    <span class="keywordflow">if</span>( !<a class="code hl_variable" href="classcountdown__actor.html#af2d93d50361de103b9921a6589978553">name</a>.empty() ) {</div>
+<div class="line"><a id="l00475" name="l00475"></a><span class="lineno">  475</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classcountdown__actor.html#af2d93d50361de103b9921a6589978553">name</a>;</div>
+<div class="line"><a id="l00476" name="l00476"></a><span class="lineno">  476</span>    }</div>
+<div class="line"><a id="l00477" name="l00477"></a><span class="lineno">  477</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classiuse__actor.html#a4c0e5b1f19b2f17d2a40220bc8ac28dc">iuse_actor::get_name</a>();</div>
+<div class="line"><a id="l00478" name="l00478"></a><span class="lineno">  478</span>}</div>
 <div class="ttc" id="aclasscountdown__actor_html_af2d93d50361de103b9921a6589978553"><div class="ttname"><a href="classcountdown__actor.html#af2d93d50361de103b9921a6589978553">countdown_actor::name</a></div><div class="ttdeci">std::string name</div><div class="ttdoc">if specified overrides default action name</div><div class="ttdef"><b>Definition:</b> <a href="iuse__actor_8h_source.html#l00146">iuse_actor.h:146</a></div></div>
 <div class="ttc" id="aclassiuse__actor_html_a4c0e5b1f19b2f17d2a40220bc8ac28dc"><div class="ttname"><a href="classiuse__actor.html#a4c0e5b1f19b2f17d2a40220bc8ac28dc">iuse_actor::get_name</a></div><div class="ttdeci">virtual std::string get_name() const</div><div class="ttdoc">Returns the translated name of the action.</div><div class="ttdef"><b>Definition:</b> <a href="item__action_8cpp_source.html#l00360">item_action.cpp:360</a></div></div>
 </div><!-- fragment -->
@@ -403,26 +403,26 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classiuse__actor.html#aa0955326b251f45c76a7a16e84b6b9e6">iuse_actor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l00479">479</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00480" name="l00480"></a><span class="lineno">  480</span>{</div>
-<div class="line"><a id="l00481" name="l00481"></a><span class="lineno">  481</span>    dump.emplace_back( <span class="stringliteral">&quot;TOOL&quot;</span>, <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;Countdown: &quot;</span> ),</div>
-<div class="line"><a id="l00482" name="l00482"></a><span class="lineno">  482</span>                       <a class="code hl_struct" href="structinterval.html">interval</a> &gt; 0 ? <a class="code hl_struct" href="structinterval.html">interval</a> : it.<a class="code hl_variable" href="classitem.html#ac1d2c4c33b8a499812f3437cb2fad742">type</a>-&gt;<a class="code hl_variable" href="structitype.html#af4a7035d85d1258ac55efae66eea72eb">countdown_interval</a> );</div>
-<div class="line"><a id="l00483" name="l00483"></a><span class="lineno">  483</span>    <span class="keyword">const</span> <span class="keyword">auto</span> <a class="code hl_class" href="classcountdown__actor.html">countdown_actor</a> = it.<a class="code hl_variable" href="classitem.html#ac1d2c4c33b8a499812f3437cb2fad742">type</a>-&gt;<a class="code hl_variable" href="structitype.html#a2e3c835eaac65d9922f07f99f2f3cf5d">countdown_action</a>.<a class="code hl_function" href="structuse__function.html#a8d0d0e5c09c76fee575b38ca99e3719e">get_actor_ptr</a>();</div>
-<div class="line"><a id="l00484" name="l00484"></a><span class="lineno">  484</span>    <span class="keywordflow">if</span>( <a class="code hl_class" href="classcountdown__actor.html">countdown_actor</a> != <span class="keyword">nullptr</span> ) {</div>
-<div class="line"><a id="l00485" name="l00485"></a><span class="lineno">  485</span>        <a class="code hl_class" href="classcountdown__actor.html">countdown_actor</a>-&gt;<a class="code hl_function" href="classcountdown__actor.html#afdea77418aa05982987d0b8caec33676">info</a>( it, dump );</div>
-<div class="line"><a id="l00486" name="l00486"></a><span class="lineno">  486</span>    }</div>
-<div class="line"><a id="l00487" name="l00487"></a><span class="lineno">  487</span>}</div>
+<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l00480">480</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00481" name="l00481"></a><span class="lineno">  481</span>{</div>
+<div class="line"><a id="l00482" name="l00482"></a><span class="lineno">  482</span>    dump.emplace_back( <span class="stringliteral">&quot;TOOL&quot;</span>, <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;Countdown: &quot;</span> ),</div>
+<div class="line"><a id="l00483" name="l00483"></a><span class="lineno">  483</span>                       <a class="code hl_struct" href="structinterval.html">interval</a> &gt; 0 ? <a class="code hl_struct" href="structinterval.html">interval</a> : it.<a class="code hl_variable" href="classitem.html#ac1d2c4c33b8a499812f3437cb2fad742">type</a>-&gt;<a class="code hl_variable" href="structitype.html#af4a7035d85d1258ac55efae66eea72eb">countdown_interval</a> );</div>
+<div class="line"><a id="l00484" name="l00484"></a><span class="lineno">  484</span>    <span class="keyword">const</span> <span class="keyword">auto</span> <a class="code hl_class" href="classcountdown__actor.html">countdown_actor</a> = it.<a class="code hl_variable" href="classitem.html#ac1d2c4c33b8a499812f3437cb2fad742">type</a>-&gt;<a class="code hl_variable" href="structitype.html#a2e3c835eaac65d9922f07f99f2f3cf5d">countdown_action</a>.<a class="code hl_function" href="structuse__function.html#a8d0d0e5c09c76fee575b38ca99e3719e">get_actor_ptr</a>();</div>
+<div class="line"><a id="l00485" name="l00485"></a><span class="lineno">  485</span>    <span class="keywordflow">if</span>( <a class="code hl_class" href="classcountdown__actor.html">countdown_actor</a> != <span class="keyword">nullptr</span> ) {</div>
+<div class="line"><a id="l00486" name="l00486"></a><span class="lineno">  486</span>        <a class="code hl_class" href="classcountdown__actor.html">countdown_actor</a>-&gt;<a class="code hl_function" href="classcountdown__actor.html#afdea77418aa05982987d0b8caec33676">info</a>( it, dump );</div>
+<div class="line"><a id="l00487" name="l00487"></a><span class="lineno">  487</span>    }</div>
+<div class="line"><a id="l00488" name="l00488"></a><span class="lineno">  488</span>}</div>
 <div class="ttc" id="aclasscountdown__actor_html"><div class="ttname"><a href="classcountdown__actor.html">countdown_actor</a></div><div class="ttdef"><b>Definition:</b> <a href="iuse__actor_8h_source.html#l00140">iuse_actor.h:141</a></div></div>
-<div class="ttc" id="aclasscountdown__actor_html_afdea77418aa05982987d0b8caec33676"><div class="ttname"><a href="classcountdown__actor.html#afdea77418aa05982987d0b8caec33676">countdown_actor::info</a></div><div class="ttdeci">void info(const item &amp;, std::vector&lt; iteminfo &gt; &amp;) const override</div><div class="ttdef"><b>Definition:</b> <a href="iuse__actor_8cpp_source.html#l00479">iuse_actor.cpp:479</a></div></div>
+<div class="ttc" id="aclasscountdown__actor_html_afdea77418aa05982987d0b8caec33676"><div class="ttname"><a href="classcountdown__actor.html#afdea77418aa05982987d0b8caec33676">countdown_actor::info</a></div><div class="ttdeci">void info(const item &amp;, std::vector&lt; iteminfo &gt; &amp;) const override</div><div class="ttdef"><b>Definition:</b> <a href="iuse__actor_8cpp_source.html#l00480">iuse_actor.cpp:480</a></div></div>
 <div class="ttc" id="aclassitem_html_ac1d2c4c33b8a499812f3437cb2fad742"><div class="ttname"><a href="classitem.html#ac1d2c4c33b8a499812f3437cb2fad742">item::type</a></div><div class="ttdeci">const itype * type</div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l02157">item.h:2157</a></div></div>
 <div class="ttc" id="astructinterval_html"><div class="ttname"><a href="structinterval.html">interval</a></div><div class="ttdef"><b>Definition:</b> <a href="wcwidth_8cpp_source.html#l00066">wcwidth.cpp:66</a></div></div>
-<div class="ttc" id="astructitype_html_a2e3c835eaac65d9922f07f99f2f3cf5d"><div class="ttname"><a href="structitype.html#a2e3c835eaac65d9922f07f99f2f3cf5d">itype::countdown_action</a></div><div class="ttdeci">use_function countdown_action</div><div class="ttdoc">Action to take when countdown expires.</div><div class="ttdef"><b>Definition:</b> <a href="itype_8h_source.html#l00958">itype.h:958</a></div></div>
-<div class="ttc" id="astructitype_html_af4a7035d85d1258ac55efae66eea72eb"><div class="ttname"><a href="structitype.html#af4a7035d85d1258ac55efae66eea72eb">itype::countdown_interval</a></div><div class="ttdeci">int countdown_interval</div><div class="ttdoc">Default countdown interval (if any) for item.</div><div class="ttdef"><b>Definition:</b> <a href="itype_8h_source.html#l00955">itype.h:955</a></div></div>
-<div class="ttc" id="astructuse__function_html_a8d0d0e5c09c76fee575b38ca99e3719e"><div class="ttname"><a href="structuse__function.html#a8d0d0e5c09c76fee575b38ca99e3719e">use_function::get_actor_ptr</a></div><div class="ttdeci">iuse_actor * get_actor_ptr()</div><div class="ttdef"><b>Definition:</b> <a href="iuse_8h_source.html#l00314">iuse.h:314</a></div></div>
+<div class="ttc" id="astructitype_html_a2e3c835eaac65d9922f07f99f2f3cf5d"><div class="ttname"><a href="structitype.html#a2e3c835eaac65d9922f07f99f2f3cf5d">itype::countdown_action</a></div><div class="ttdeci">use_function countdown_action</div><div class="ttdoc">Action to take when countdown expires.</div><div class="ttdef"><b>Definition:</b> <a href="itype_8h_source.html#l00956">itype.h:956</a></div></div>
+<div class="ttc" id="astructitype_html_af4a7035d85d1258ac55efae66eea72eb"><div class="ttname"><a href="structitype.html#af4a7035d85d1258ac55efae66eea72eb">itype::countdown_interval</a></div><div class="ttdeci">int countdown_interval</div><div class="ttdoc">Default countdown interval (if any) for item.</div><div class="ttdef"><b>Definition:</b> <a href="itype_8h_source.html#l00953">itype.h:953</a></div></div>
+<div class="ttc" id="astructuse__function_html_a8d0d0e5c09c76fee575b38ca99e3719e"><div class="ttname"><a href="structuse__function.html#a8d0d0e5c09c76fee575b38ca99e3719e">use_function::get_actor_ptr</a></div><div class="ttdeci">iuse_actor * get_actor_ptr()</div><div class="ttdef"><b>Definition:</b> <a href="iuse_8h_source.html#l00315">iuse.h:315</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="itype_8h_source.html#l00958">itype::countdown_action</a>, <a class="el" href="itype_8h_source.html#l00955">itype::countdown_interval</a>, <a class="el" href="iuse_8h_source.html#l00314">use_function::get_actor_ptr()</a>, <a class="el" href="iuse__actor_8cpp_source.html#l00479">info()</a>, and <a class="el" href="item_8h_source.html#l02157">item::type</a>.</p>
+<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="itype_8h_source.html#l00956">itype::countdown_action</a>, <a class="el" href="itype_8h_source.html#l00953">itype::countdown_interval</a>, <a class="el" href="iuse_8h_source.html#l00315">use_function::get_actor_ptr()</a>, <a class="el" href="iuse__actor_8cpp_source.html#l00480">info()</a>, and <a class="el" href="item_8h_source.html#l02157">item::type</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l00479">info()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l00480">info()</a>.</p>
 
 </div>
 </div>
@@ -452,12 +452,12 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classiuse__actor.html#aa93b616e6f6e450b098209ad19ae78c4">iuse_actor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l00435">435</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span>{</div>
-<div class="line"><a id="l00437" name="l00437"></a><span class="lineno">  437</span>    obj.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;name&quot;</span>, <a class="code hl_variable" href="classcountdown__actor.html#af2d93d50361de103b9921a6589978553">name</a> );</div>
-<div class="line"><a id="l00438" name="l00438"></a><span class="lineno">  438</span>    obj.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;interval&quot;</span>, <a class="code hl_struct" href="structinterval.html">interval</a> );</div>
-<div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span>    obj.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;message&quot;</span>, <a class="code hl_variable" href="classcountdown__actor.html#a3bcfc05e3e075d302a218221b959fe2c">message</a> );</div>
-<div class="line"><a id="l00440" name="l00440"></a><span class="lineno">  440</span>}</div>
+<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l00436">436</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00437" name="l00437"></a><span class="lineno">  437</span>{</div>
+<div class="line"><a id="l00438" name="l00438"></a><span class="lineno">  438</span>    obj.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;name&quot;</span>, <a class="code hl_variable" href="classcountdown__actor.html#af2d93d50361de103b9921a6589978553">name</a> );</div>
+<div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span>    obj.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;interval&quot;</span>, <a class="code hl_struct" href="structinterval.html">interval</a> );</div>
+<div class="line"><a id="l00440" name="l00440"></a><span class="lineno">  440</span>    obj.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;message&quot;</span>, <a class="code hl_variable" href="classcountdown__actor.html#a3bcfc05e3e075d302a218221b959fe2c">message</a> );</div>
+<div class="line"><a id="l00441" name="l00441"></a><span class="lineno">  441</span>}</div>
 <div class="ttc" id="aclassJsonObject_html_ae66d47f9cb4993dfaf79819ec2aff2f8"><div class="ttname"><a href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">JsonObject::read</a></div><div class="ttdeci">bool read(const std::string &amp;name, T &amp;t, bool throw_on_error=true) const</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00942">json.h:942</a></div></div>
 <div class="ttc" id="aclasscountdown__actor_html_a3bcfc05e3e075d302a218221b959fe2c"><div class="ttname"><a href="classcountdown__actor.html#a3bcfc05e3e075d302a218221b959fe2c">countdown_actor::message</a></div><div class="ttdeci">std::string message</div><div class="ttdoc">message if player sees activation with s replaced by item name</div><div class="ttdef"><b>Definition:</b> <a href="iuse__actor_8h_source.html#l00152">iuse_actor.h:152</a></div></div>
 </div><!-- fragment -->
@@ -513,32 +513,32 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classiuse__actor.html#aa7ab08413d05764e42ae4471799fd6b0">iuse_actor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l00442">442</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00443" name="l00443"></a><span class="lineno">  443</span>{</div>
-<div class="line"><a id="l00444" name="l00444"></a><span class="lineno">  444</span>    <span class="keywordflow">if</span>( t ) {</div>
-<div class="line"><a id="l00445" name="l00445"></a><span class="lineno">  445</span>        <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a id="l00446" name="l00446"></a><span class="lineno">  446</span>    }</div>
-<div class="line"><a id="l00447" name="l00447"></a><span class="lineno">  447</span> </div>
-<div class="line"><a id="l00448" name="l00448"></a><span class="lineno">  448</span>    <span class="keywordflow">if</span>( it.<a class="code hl_variable" href="classitem.html#a2993eb10a5ae589e6bb1be0a74cb65c1">active</a> ) {</div>
-<div class="line"><a id="l00449" name="l00449"></a><span class="lineno">  449</span>        <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a id="l00450" name="l00450"></a><span class="lineno">  450</span>    }</div>
-<div class="line"><a id="l00451" name="l00451"></a><span class="lineno">  451</span> </div>
-<div class="line"><a id="l00452" name="l00452"></a><span class="lineno">  452</span>    <span class="keywordflow">if</span>( p.<a class="code hl_function" href="classCharacter.html#aba9bd7517b334e6ed4149889ed32377a">sees</a>( pos ) &amp;&amp; !<a class="code hl_variable" href="classcountdown__actor.html#a3bcfc05e3e075d302a218221b959fe2c">message</a>.empty() ) {</div>
-<div class="line"><a id="l00453" name="l00453"></a><span class="lineno">  453</span>        p.<a class="code hl_function" href="classplayer.html#ae7009d849f19a4f5ebe877cbe463c459">add_msg_if_player</a>( <a class="code hl_enumvalue" href="enums_8h.html#a3baf36d700701401b6baf94db93d096ea3ab788e6c7dfa584be4ca2e90c49ec8c">m_neutral</a>, <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <a class="code hl_variable" href="classcountdown__actor.html#a3bcfc05e3e075d302a218221b959fe2c">message</a> ), it.<a class="code hl_function" href="classitem.html#a7e78e26dcf9b357cda769c3ca2938eda">tname</a>() );</div>
-<div class="line"><a id="l00454" name="l00454"></a><span class="lineno">  454</span>    }</div>
-<div class="line"><a id="l00455" name="l00455"></a><span class="lineno">  455</span> </div>
-<div class="line"><a id="l00456" name="l00456"></a><span class="lineno">  456</span>    it.<a class="code hl_variable" href="classitem.html#ac5ff6ac1e7657b7b8525140669744a28">item_counter</a> = <a class="code hl_struct" href="structinterval.html">interval</a> &gt; 0 ? <a class="code hl_variable" href="classcountdown__actor.html#aa55100bfb689b74f9ff923eee794c9fa">interval</a> : it.<a class="code hl_variable" href="classitem.html#ac1d2c4c33b8a499812f3437cb2fad742">type</a>-&gt;<a class="code hl_variable" href="structitype.html#af4a7035d85d1258ac55efae66eea72eb">countdown_interval</a>;</div>
-<div class="line"><a id="l00457" name="l00457"></a><span class="lineno">  457</span>    it.<a class="code hl_variable" href="classitem.html#a2993eb10a5ae589e6bb1be0a74cb65c1">active</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00458" name="l00458"></a><span class="lineno">  458</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a id="l00459" name="l00459"></a><span class="lineno">  459</span>}</div>
-<div class="ttc" id="aclassCharacter_html_aba9bd7517b334e6ed4149889ed32377a"><div class="ttname"><a href="classCharacter.html#aba9bd7517b334e6ed4149889ed32377a">Character::sees</a></div><div class="ttdeci">bool sees(const tripoint &amp;t, bool is_player=false, int range_mod=0) const override</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l10388">character.cpp:10388</a></div></div>
+<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l00443">443</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00444" name="l00444"></a><span class="lineno">  444</span>{</div>
+<div class="line"><a id="l00445" name="l00445"></a><span class="lineno">  445</span>    <span class="keywordflow">if</span>( t ) {</div>
+<div class="line"><a id="l00446" name="l00446"></a><span class="lineno">  446</span>        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00447" name="l00447"></a><span class="lineno">  447</span>    }</div>
+<div class="line"><a id="l00448" name="l00448"></a><span class="lineno">  448</span> </div>
+<div class="line"><a id="l00449" name="l00449"></a><span class="lineno">  449</span>    <span class="keywordflow">if</span>( it.<a class="code hl_variable" href="classitem.html#a2993eb10a5ae589e6bb1be0a74cb65c1">active</a> ) {</div>
+<div class="line"><a id="l00450" name="l00450"></a><span class="lineno">  450</span>        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00451" name="l00451"></a><span class="lineno">  451</span>    }</div>
+<div class="line"><a id="l00452" name="l00452"></a><span class="lineno">  452</span> </div>
+<div class="line"><a id="l00453" name="l00453"></a><span class="lineno">  453</span>    <span class="keywordflow">if</span>( p.<a class="code hl_function" href="classCharacter.html#aba9bd7517b334e6ed4149889ed32377a">sees</a>( pos ) &amp;&amp; !<a class="code hl_variable" href="classcountdown__actor.html#a3bcfc05e3e075d302a218221b959fe2c">message</a>.empty() ) {</div>
+<div class="line"><a id="l00454" name="l00454"></a><span class="lineno">  454</span>        p.<a class="code hl_function" href="classplayer.html#ae7009d849f19a4f5ebe877cbe463c459">add_msg_if_player</a>( <a class="code hl_enumvalue" href="enums_8h.html#a3baf36d700701401b6baf94db93d096ea3ab788e6c7dfa584be4ca2e90c49ec8c">m_neutral</a>, <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <a class="code hl_variable" href="classcountdown__actor.html#a3bcfc05e3e075d302a218221b959fe2c">message</a> ), it.<a class="code hl_function" href="classitem.html#a7e78e26dcf9b357cda769c3ca2938eda">tname</a>() );</div>
+<div class="line"><a id="l00455" name="l00455"></a><span class="lineno">  455</span>    }</div>
+<div class="line"><a id="l00456" name="l00456"></a><span class="lineno">  456</span> </div>
+<div class="line"><a id="l00457" name="l00457"></a><span class="lineno">  457</span>    it.<a class="code hl_variable" href="classitem.html#ac5ff6ac1e7657b7b8525140669744a28">item_counter</a> = <a class="code hl_struct" href="structinterval.html">interval</a> &gt; 0 ? <a class="code hl_variable" href="classcountdown__actor.html#aa55100bfb689b74f9ff923eee794c9fa">interval</a> : it.<a class="code hl_variable" href="classitem.html#ac1d2c4c33b8a499812f3437cb2fad742">type</a>-&gt;<a class="code hl_variable" href="structitype.html#af4a7035d85d1258ac55efae66eea72eb">countdown_interval</a>;</div>
+<div class="line"><a id="l00458" name="l00458"></a><span class="lineno">  458</span>    it.<a class="code hl_variable" href="classitem.html#a2993eb10a5ae589e6bb1be0a74cb65c1">active</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00459" name="l00459"></a><span class="lineno">  459</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00460" name="l00460"></a><span class="lineno">  460</span>}</div>
+<div class="ttc" id="aclassCharacter_html_aba9bd7517b334e6ed4149889ed32377a"><div class="ttname"><a href="classCharacter.html#aba9bd7517b334e6ed4149889ed32377a">Character::sees</a></div><div class="ttdeci">bool sees(const tripoint &amp;t, bool is_player=false, int range_mod=0) const override</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l10391">character.cpp:10391</a></div></div>
 <div class="ttc" id="aclasscountdown__actor_html_aa55100bfb689b74f9ff923eee794c9fa"><div class="ttname"><a href="classcountdown__actor.html#aa55100bfb689b74f9ff923eee794c9fa">countdown_actor::interval</a></div><div class="ttdeci">int interval</div><div class="ttdoc">turns before countdown action (defaults to itype::countdown_interval)</div><div class="ttdef"><b>Definition:</b> <a href="iuse__actor_8h_source.html#l00149">iuse_actor.h:149</a></div></div>
-<div class="ttc" id="aclassitem_html_a7e78e26dcf9b357cda769c3ca2938eda"><div class="ttname"><a href="classitem.html#a7e78e26dcf9b357cda769c3ca2938eda">item::tname</a></div><div class="ttdeci">std::string tname(unsigned int quantity=1, bool with_prefix=true, unsigned int truncate=0) const</div><div class="ttdoc">Return the (translated) item name.</div><div class="ttdef"><b>Definition:</b> <a href="item_8cpp_source.html#l04532">item.cpp:4532</a></div></div>
+<div class="ttc" id="aclassitem_html_a7e78e26dcf9b357cda769c3ca2938eda"><div class="ttname"><a href="classitem.html#a7e78e26dcf9b357cda769c3ca2938eda">item::tname</a></div><div class="ttdeci">std::string tname(unsigned int quantity=1, bool with_prefix=true, unsigned int truncate=0) const</div><div class="ttdoc">Return the (translated) item name.</div><div class="ttdef"><b>Definition:</b> <a href="item_8cpp_source.html#l04554">item.cpp:4554</a></div></div>
 <div class="ttc" id="aclassitem_html_ac5ff6ac1e7657b7b8525140669744a28"><div class="ttname"><a href="classitem.html#ac5ff6ac1e7657b7b8525140669744a28">item::item_counter</a></div><div class="ttdeci">int item_counter</div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l02205">item.h:2205</a></div></div>
 <div class="ttc" id="aclassplayer_html_ae7009d849f19a4f5ebe877cbe463c459"><div class="ttname"><a href="classplayer.html#ae7009d849f19a4f5ebe877cbe463c459">player::add_msg_if_player</a></div><div class="ttdeci">void add_msg_if_player(const std::string &amp;msg) const override</div><div class="ttdef"><b>Definition:</b> <a href="player_8cpp_source.html#l00380">player.cpp:380</a></div></div>
 <div class="ttc" id="aenums_8h_html_a3baf36d700701401b6baf94db93d096ea3ab788e6c7dfa584be4ca2e90c49ec8c"><div class="ttname"><a href="enums_8h.html#a3baf36d700701401b6baf94db93d096ea3ab788e6c7dfa584be4ca2e90c49ec8c">m_neutral</a></div><div class="ttdeci">@ m_neutral</div><div class="ttdef"><b>Definition:</b> <a href="enums_8h_source.html#l00267">enums.h:267</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="item_8h_source.html#l02234">item::active</a>, <a class="el" href="player_8cpp_source.html#l00380">player::add_msg_if_player()</a>, <a class="el" href="itype_8h_source.html#l00955">itype::countdown_interval</a>, <a class="el" href="iuse__actor_8h_source.html#l00149">interval</a>, <a class="el" href="item_8h_source.html#l02205">item::item_counter</a>, <a class="el" href="enums_8h_source.html#l00267">m_neutral</a>, <a class="el" href="iuse__actor_8h_source.html#l00152">message</a>, <a class="el" href="character_8cpp_source.html#l00587">Character::pos()</a>, <a class="el" href="character_8cpp_source.html#l10388">Character::sees()</a>, <a class="el" href="item_8cpp_source.html#l04532">item::tname()</a>, and <a class="el" href="item_8h_source.html#l02157">item::type</a>.</p>
+<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="item_8h_source.html#l02234">item::active</a>, <a class="el" href="player_8cpp_source.html#l00380">player::add_msg_if_player()</a>, <a class="el" href="itype_8h_source.html#l00953">itype::countdown_interval</a>, <a class="el" href="iuse__actor_8h_source.html#l00149">interval</a>, <a class="el" href="item_8h_source.html#l02205">item::item_counter</a>, <a class="el" href="enums_8h_source.html#l00267">m_neutral</a>, <a class="el" href="iuse__actor_8h_source.html#l00152">message</a>, <a class="el" href="character_8cpp_source.html#l00587">Character::pos()</a>, <a class="el" href="character_8cpp_source.html#l10391">Character::sees()</a>, <a class="el" href="item_8cpp_source.html#l04554">item::tname()</a>, and <a class="el" href="item_8h_source.html#l02157">item::type</a>.</p>
 
 </div>
 </div>
@@ -559,7 +559,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="iuse__actor_8h_source.html#l00149">149</a> of file <a class="el" href="iuse__actor_8h_source.html">iuse_actor.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l00442">use()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l00443">use()</a>.</p>
 
 </div>
 </div>
@@ -579,7 +579,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="iuse__actor_8h_source.html#l00152">152</a> of file <a class="el" href="iuse__actor_8h_source.html">iuse_actor.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l00435">load()</a>, and <a class="el" href="iuse__actor_8cpp_source.html#l00442">use()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l00436">load()</a>, and <a class="el" href="iuse__actor_8cpp_source.html#l00443">use()</a>.</p>
 
 </div>
 </div>
@@ -599,7 +599,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="iuse__actor_8h_source.html#l00146">146</a> of file <a class="el" href="iuse__actor_8h_source.html">iuse_actor.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l00471">get_name()</a>, and <a class="el" href="iuse__actor_8cpp_source.html#l00435">load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l00472">get_name()</a>, and <a class="el" href="iuse__actor_8cpp_source.html#l00436">load()</a>.</p>
 
 </div>
 </div>
@@ -613,7 +613,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classcountdown__actor.html">countdown_actor</a></li>
-    <li class="footer">Generated on Sun Mar 5 2023 13:51:00 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Apr 7 2023 11:54:38 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

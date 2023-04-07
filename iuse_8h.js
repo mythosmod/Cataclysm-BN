@@ -115,6 +115,7 @@ var iuse_8h =
     [ "meth", "iuse_8h.html#a1c55d9f8022241b470d2d2e3f26ccbb3", null ],
     [ "mind_splicer", "iuse_8h.html#a18ded3f37f4b03f690f1d23e5b4f0a50", null ],
     [ "mininuke", "iuse_8h.html#a21c8e65ced80f9b26011bc78dfa450a6", null ],
+    [ "modify_grid_connections", "iuse_8h.html#a4a2c4912356e6a153420d74fdd6c36c5", null ],
     [ "molotov_lit", "iuse_8h.html#ada78e14562e559ac1a3cc6f84f4c1604", null ],
     [ "mop", "iuse_8h.html#a8f16cb027c9e2d876a8a6617c6b62463", null ],
     [ "mp3", "iuse_8h.html#ae84247499c1f9c3996f54bb5e849ffe5", null ],

@@ -205,7 +205,7 @@ Friends</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="recipe__dictionary_8h_source.html#l00065">autolearn</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="character_8cpp_source.html#l10536">Character::get_learned_recipes()</a>, and <a class="el" href="newcharacter_8cpp_source.html#l01743">set_skills()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="character_8cpp_source.html#l10539">Character::get_learned_recipes()</a>, and <a class="el" href="newcharacter_8cpp_source.html#l01743">set_skills()</a>.</p>
 
 </div>
 </div>
@@ -261,10 +261,10 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="recipe__dictionary_8cpp_source.html#l00340">340</a> of file <a class="el" href="recipe__dictionary_8cpp_source.html">recipe_dictionary.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>{</div>
-<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classrecipe__dictionary.html#a901c2ebf1ac5b39f12986da3ea7e023a">recipes</a>.begin();</div>
-<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>}</div>
+<p class="definition">Definition at line <a class="el" href="recipe__dictionary_8cpp_source.html#l00345">345</a> of file <a class="el" href="recipe__dictionary_8cpp_source.html">recipe_dictionary.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>{</div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classrecipe__dictionary.html#a901c2ebf1ac5b39f12986da3ea7e023a">recipes</a>.begin();</div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>}</div>
 <div class="ttc" id="aclassrecipe__dictionary_html_a901c2ebf1ac5b39f12986da3ea7e023a"><div class="ttname"><a href="classrecipe__dictionary.html#a901c2ebf1ac5b39f12986da3ea7e023a">recipe_dictionary::recipes</a></div><div class="ttdeci">std::map&lt; recipe_id, recipe &gt; recipes</div><div class="ttdef"><b>Definition:</b> <a href="recipe__dictionary_8h_source.html#l00063">recipe_dictionary.h:63</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="recipe__dictionary_8h_source.html#l00063">recipes</a>.</p>
@@ -298,18 +298,18 @@ Friends</h2></td></tr>
 <p>Remove all recipes matching the predicate. </p>
 <dl class="section warning"><dt>Warning</dt><dd>must not be called after <a class="el" href="classrecipe__dictionary.html#ad5e10f23ae1e68737a623dcca14d56ef">finalize()</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="recipe__dictionary_8cpp_source.html#l00497">497</a> of file <a class="el" href="recipe__dictionary_8cpp_source.html">recipe_dictionary.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00498" name="l00498"></a><span class="lineno">  498</span>{</div>
-<div class="line"><a id="l00499" name="l00499"></a><span class="lineno">  499</span>    <a class="code hl_function" href="classrecipe__dictionary.html#ad49f5c9ba2c66330d4ad3daf00c2b781">::delete_if</a>( <a class="code hl_variable" href="recipe__dictionary_8cpp.html#a9fdb53bd54fb6dcc5f9b2e1e1b44570f">recipe_dict</a>.<a class="code hl_variable" href="classrecipe__dictionary.html#a901c2ebf1ac5b39f12986da3ea7e023a">recipes</a>, pred );</div>
-<div class="line"><a id="l00500" name="l00500"></a><span class="lineno">  500</span>    <a class="code hl_function" href="classrecipe__dictionary.html#ad49f5c9ba2c66330d4ad3daf00c2b781">::delete_if</a>( <a class="code hl_variable" href="recipe__dictionary_8cpp.html#a9fdb53bd54fb6dcc5f9b2e1e1b44570f">recipe_dict</a>.<a class="code hl_variable" href="classrecipe__dictionary.html#a977f03247775526e965b64dc314007e4">uncraft</a>, pred );</div>
-<div class="line"><a id="l00501" name="l00501"></a><span class="lineno">  501</span>}</div>
+<p class="definition">Definition at line <a class="el" href="recipe__dictionary_8cpp_source.html#l00502">502</a> of file <a class="el" href="recipe__dictionary_8cpp_source.html">recipe_dictionary.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00503" name="l00503"></a><span class="lineno">  503</span>{</div>
+<div class="line"><a id="l00504" name="l00504"></a><span class="lineno">  504</span>    <a class="code hl_function" href="classrecipe__dictionary.html#ad49f5c9ba2c66330d4ad3daf00c2b781">::delete_if</a>( <a class="code hl_variable" href="recipe__dictionary_8cpp.html#a9fdb53bd54fb6dcc5f9b2e1e1b44570f">recipe_dict</a>.<a class="code hl_variable" href="classrecipe__dictionary.html#a901c2ebf1ac5b39f12986da3ea7e023a">recipes</a>, pred );</div>
+<div class="line"><a id="l00505" name="l00505"></a><span class="lineno">  505</span>    <a class="code hl_function" href="classrecipe__dictionary.html#ad49f5c9ba2c66330d4ad3daf00c2b781">::delete_if</a>( <a class="code hl_variable" href="recipe__dictionary_8cpp.html#a9fdb53bd54fb6dcc5f9b2e1e1b44570f">recipe_dict</a>.<a class="code hl_variable" href="classrecipe__dictionary.html#a977f03247775526e965b64dc314007e4">uncraft</a>, pred );</div>
+<div class="line"><a id="l00506" name="l00506"></a><span class="lineno">  506</span>}</div>
 <div class="ttc" id="aclassrecipe__dictionary_html_a977f03247775526e965b64dc314007e4"><div class="ttname"><a href="classrecipe__dictionary.html#a977f03247775526e965b64dc314007e4">recipe_dictionary::uncraft</a></div><div class="ttdeci">std::map&lt; recipe_id, recipe &gt; uncraft</div><div class="ttdef"><b>Definition:</b> <a href="recipe__dictionary_8h_source.html#l00064">recipe_dictionary.h:64</a></div></div>
-<div class="ttc" id="aclassrecipe__dictionary_html_ad49f5c9ba2c66330d4ad3daf00c2b781"><div class="ttname"><a href="classrecipe__dictionary.html#ad49f5c9ba2c66330d4ad3daf00c2b781">recipe_dictionary::delete_if</a></div><div class="ttdeci">static void delete_if(const std::function&lt; bool(const recipe &amp;)&gt; &amp;pred)</div><div class="ttdoc">Remove all recipes matching the predicate.</div><div class="ttdef"><b>Definition:</b> <a href="recipe__dictionary_8cpp_source.html#l00497">recipe_dictionary.cpp:497</a></div></div>
+<div class="ttc" id="aclassrecipe__dictionary_html_ad49f5c9ba2c66330d4ad3daf00c2b781"><div class="ttname"><a href="classrecipe__dictionary.html#ad49f5c9ba2c66330d4ad3daf00c2b781">recipe_dictionary::delete_if</a></div><div class="ttdeci">static void delete_if(const std::function&lt; bool(const recipe &amp;)&gt; &amp;pred)</div><div class="ttdoc">Remove all recipes matching the predicate.</div><div class="ttdef"><b>Definition:</b> <a href="recipe__dictionary_8cpp_source.html#l00502">recipe_dictionary.cpp:502</a></div></div>
 <div class="ttc" id="arecipe__dictionary_8cpp_html_a9fdb53bd54fb6dcc5f9b2e1e1b44570f"><div class="ttname"><a href="recipe__dictionary_8cpp.html#a9fdb53bd54fb6dcc5f9b2e1e1b44570f">recipe_dict</a></div><div class="ttdeci">recipe_dictionary recipe_dict</div><div class="ttdef"><b>Definition:</b> <a href="recipe__dictionary_8cpp_source.html#l00029">recipe_dictionary.cpp:29</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="recipe__dictionary_8cpp_source.html#l00497">delete_if()</a>, <a class="el" href="recipe__dictionary_8cpp_source.html#l00029">recipe_dict</a>, <a class="el" href="recipe__dictionary_8h_source.html#l00063">recipes</a>, and <a class="el" href="recipe__dictionary_8h_source.html#l00064">uncraft</a>.</p>
+<p class="reference">References <a class="el" href="recipe__dictionary_8cpp_source.html#l00502">delete_if()</a>, <a class="el" href="recipe__dictionary_8cpp_source.html#l00029">recipe_dict</a>, <a class="el" href="recipe__dictionary_8h_source.html#l00063">recipes</a>, and <a class="el" href="recipe__dictionary_8h_source.html#l00064">uncraft</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="recipe__dictionary_8cpp_source.html#l00497">delete_if()</a>, <a class="el" href="recipe__dictionary_8cpp_source.html#l00424">finalize()</a>, <a class="el" href="recipe__dictionary_8cpp_source.html#l00355">finalize_internal()</a>, and <a class="el" href="item__factory_8cpp_source.html#l00671">Item_factory::finalize_item_blacklist()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="recipe__dictionary_8cpp_source.html#l00502">delete_if()</a>, <a class="el" href="recipe__dictionary_8cpp_source.html#l00429">finalize()</a>, <a class="el" href="recipe__dictionary_8cpp_source.html#l00360">finalize_internal()</a>, and <a class="el" href="item__factory_8cpp_source.html#l00671">Item_factory::finalize_item_blacklist()</a>.</p>
 
 </div>
 </div>
@@ -328,10 +328,10 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="recipe__dictionary_8cpp_source.html#l00345">345</a> of file <a class="el" href="recipe__dictionary_8cpp_source.html">recipe_dictionary.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>{</div>
-<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classrecipe__dictionary.html#a901c2ebf1ac5b39f12986da3ea7e023a">recipes</a>.end();</div>
-<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>}</div>
+<p class="definition">Definition at line <a class="el" href="recipe__dictionary_8cpp_source.html#l00350">350</a> of file <a class="el" href="recipe__dictionary_8cpp_source.html">recipe_dictionary.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>{</div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classrecipe__dictionary.html#a901c2ebf1ac5b39f12986da3ea7e023a">recipes</a>.end();</div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="recipe__dictionary_8h_source.html#l00063">recipes</a>.</p>
 
@@ -360,72 +360,72 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="recipe__dictionary_8cpp_source.html#l00424">424</a> of file <a class="el" href="recipe__dictionary_8cpp_source.html">recipe_dictionary.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span>{</div>
-<div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span>    <a class="code hl_function" href="classDynamicDataLoader.html#adca1972b6d79ffd55d6d7ca1a0c329b9">DynamicDataLoader::get_instance</a>().<a class="code hl_function" href="classDynamicDataLoader.html#adf725674a5fcd11a4e8a248e14717d27">load_deferred</a>( <a class="code hl_variable" href="recipe__dictionary_8cpp.html#a9c21005f31e0aa8c574e3a02f2d265db">deferred</a> );</div>
-<div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span> </div>
-<div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span>    <span class="comment">// remove abstract recipes</span></div>
-<div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span>    <a class="code hl_function" href="classrecipe__dictionary.html#ad49f5c9ba2c66330d4ad3daf00c2b781">delete_if</a>( []( <span class="keyword">const</span> <a class="code hl_class" href="classrecipe.html">recipe</a> &amp; element ) {</div>
-<div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span>        <span class="keywordflow">return</span> element.abstract;</div>
-<div class="line"><a id="l00431" name="l00431"></a><span class="lineno">  431</span>    } );</div>
+<p class="definition">Definition at line <a class="el" href="recipe__dictionary_8cpp_source.html#l00429">429</a> of file <a class="el" href="recipe__dictionary_8cpp_source.html">recipe_dictionary.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span>{</div>
+<div class="line"><a id="l00431" name="l00431"></a><span class="lineno">  431</span>    <a class="code hl_function" href="classDynamicDataLoader.html#adca1972b6d79ffd55d6d7ca1a0c329b9">DynamicDataLoader::get_instance</a>().<a class="code hl_function" href="classDynamicDataLoader.html#adf725674a5fcd11a4e8a248e14717d27">load_deferred</a>( <a class="code hl_variable" href="recipe__dictionary_8cpp.html#a9c21005f31e0aa8c574e3a02f2d265db">deferred</a> );</div>
 <div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span> </div>
-<div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span>    <a class="code hl_function" href="classrecipe__dictionary.html#a23e924cce688d42d2c540f135b01987a">finalize_internal</a>( <a class="code hl_variable" href="recipe__dictionary_8cpp.html#a9fdb53bd54fb6dcc5f9b2e1e1b44570f">recipe_dict</a>.<a class="code hl_variable" href="classrecipe__dictionary.html#a901c2ebf1ac5b39f12986da3ea7e023a">recipes</a> );</div>
-<div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span>    <a class="code hl_function" href="classrecipe__dictionary.html#a23e924cce688d42d2c540f135b01987a">finalize_internal</a>( <a class="code hl_variable" href="recipe__dictionary_8cpp.html#a9fdb53bd54fb6dcc5f9b2e1e1b44570f">recipe_dict</a>.<a class="code hl_variable" href="classrecipe__dictionary.html#a977f03247775526e965b64dc314007e4">uncraft</a> );</div>
-<div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span> </div>
-<div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span>    <span class="keywordflow">for</span>( <span class="keyword">auto</span> &amp;e : <a class="code hl_variable" href="recipe__dictionary_8cpp.html#a9fdb53bd54fb6dcc5f9b2e1e1b44570f">recipe_dict</a>.<a class="code hl_variable" href="classrecipe__dictionary.html#a901c2ebf1ac5b39f12986da3ea7e023a">recipes</a> ) {</div>
-<div class="line"><a id="l00437" name="l00437"></a><span class="lineno">  437</span>        <span class="keyword">auto</span> &amp;r = e.second;</div>
-<div class="line"><a id="l00438" name="l00438"></a><span class="lineno">  438</span> </div>
-<div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span>        <span class="keywordflow">if</span>( r.obsolete ) {</div>
-<div class="line"><a id="l00440" name="l00440"></a><span class="lineno">  440</span>            <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l00441" name="l00441"></a><span class="lineno">  441</span>        }</div>
-<div class="line"><a id="l00442" name="l00442"></a><span class="lineno">  442</span> </div>
-<div class="line"><a id="l00443" name="l00443"></a><span class="lineno">  443</span>        <span class="keywordflow">for</span>( <span class="keyword">const</span> <span class="keyword">auto</span> &amp;bk : r.booksets ) {</div>
-<div class="line"><a id="l00444" name="l00444"></a><span class="lineno">  444</span>            <span class="keyword">const</span> <a class="code hl_struct" href="structitype.html">itype</a> *booktype = &amp;*bk.first;</div>
-<div class="line"><a id="l00445" name="l00445"></a><span class="lineno">  445</span>            <span class="keywordtype">int</span> req = bk.second &gt; 0 ? bk.second : std::max( booktype-&gt;<a class="code hl_variable" href="structitype.html#aec04d23e907e3ea3cd9cfb08369dffcd">book</a>-&gt;req, r.difficulty );</div>
-<div class="line"><a id="l00446" name="l00446"></a><span class="lineno">  446</span>            <a class="code hl_struct" href="structislot__book_1_1recipe__with__description__t.html">islot_book::recipe_with_description_t</a> desc{ &amp;r, req, r.result_name(), <span class="keyword">false</span> };</div>
-<div class="line"><a id="l00447" name="l00447"></a><span class="lineno">  447</span>            <span class="keyword">const_cast&lt;</span><a class="code hl_struct" href="structislot__book.html">islot_book</a> &amp;<span class="keyword">&gt;</span>( *booktype-&gt;<a class="code hl_variable" href="structitype.html#aec04d23e907e3ea3cd9cfb08369dffcd">book</a> ).<a class="code hl_variable" href="classrecipe__dictionary.html#a901c2ebf1ac5b39f12986da3ea7e023a">recipes</a>.insert( desc );</div>
-<div class="line"><a id="l00448" name="l00448"></a><span class="lineno">  448</span>        }</div>
-<div class="line"><a id="l00449" name="l00449"></a><span class="lineno">  449</span> </div>
-<div class="line"><a id="l00450" name="l00450"></a><span class="lineno">  450</span>        <span class="comment">// if reversible and no specific uncraft recipe exists use this recipe</span></div>
-<div class="line"><a id="l00451" name="l00451"></a><span class="lineno">  451</span>        <span class="keywordflow">if</span>( r.is_reversible() &amp;&amp; !<a class="code hl_variable" href="recipe__dictionary_8cpp.html#a9fdb53bd54fb6dcc5f9b2e1e1b44570f">recipe_dict</a>.<a class="code hl_variable" href="classrecipe__dictionary.html#a977f03247775526e965b64dc314007e4">uncraft</a>.count( <a class="code hl_variable" href="classrecipe__dictionary.html#ad288eccf5581cea2d7dfc982c8c1069c">recipe_id</a>( r.result().str() ) ) ) {</div>
-<div class="line"><a id="l00452" name="l00452"></a><span class="lineno">  452</span>            <a class="code hl_variable" href="recipe__dictionary_8cpp.html#a9fdb53bd54fb6dcc5f9b2e1e1b44570f">recipe_dict</a>.<a class="code hl_variable" href="classrecipe__dictionary.html#a977f03247775526e965b64dc314007e4">uncraft</a>[ <a class="code hl_variable" href="classrecipe__dictionary.html#ad288eccf5581cea2d7dfc982c8c1069c">recipe_id</a>( r.result().str() ) ] = r;</div>
+<div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span>    <span class="comment">// remove abstract recipes</span></div>
+<div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span>    <a class="code hl_function" href="classrecipe__dictionary.html#ad49f5c9ba2c66330d4ad3daf00c2b781">delete_if</a>( []( <span class="keyword">const</span> <a class="code hl_class" href="classrecipe.html">recipe</a> &amp; element ) {</div>
+<div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span>        <span class="keywordflow">return</span> element.abstract;</div>
+<div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span>    } );</div>
+<div class="line"><a id="l00437" name="l00437"></a><span class="lineno">  437</span> </div>
+<div class="line"><a id="l00438" name="l00438"></a><span class="lineno">  438</span>    <a class="code hl_function" href="classrecipe__dictionary.html#a23e924cce688d42d2c540f135b01987a">finalize_internal</a>( <a class="code hl_variable" href="recipe__dictionary_8cpp.html#a9fdb53bd54fb6dcc5f9b2e1e1b44570f">recipe_dict</a>.<a class="code hl_variable" href="classrecipe__dictionary.html#a901c2ebf1ac5b39f12986da3ea7e023a">recipes</a> );</div>
+<div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span>    <a class="code hl_function" href="classrecipe__dictionary.html#a23e924cce688d42d2c540f135b01987a">finalize_internal</a>( <a class="code hl_variable" href="recipe__dictionary_8cpp.html#a9fdb53bd54fb6dcc5f9b2e1e1b44570f">recipe_dict</a>.<a class="code hl_variable" href="classrecipe__dictionary.html#a977f03247775526e965b64dc314007e4">uncraft</a> );</div>
+<div class="line"><a id="l00440" name="l00440"></a><span class="lineno">  440</span> </div>
+<div class="line"><a id="l00441" name="l00441"></a><span class="lineno">  441</span>    <span class="keywordflow">for</span>( <span class="keyword">auto</span> &amp;e : <a class="code hl_variable" href="recipe__dictionary_8cpp.html#a9fdb53bd54fb6dcc5f9b2e1e1b44570f">recipe_dict</a>.<a class="code hl_variable" href="classrecipe__dictionary.html#a901c2ebf1ac5b39f12986da3ea7e023a">recipes</a> ) {</div>
+<div class="line"><a id="l00442" name="l00442"></a><span class="lineno">  442</span>        <span class="keyword">auto</span> &amp;r = e.second;</div>
+<div class="line"><a id="l00443" name="l00443"></a><span class="lineno">  443</span> </div>
+<div class="line"><a id="l00444" name="l00444"></a><span class="lineno">  444</span>        <span class="keywordflow">if</span>( r.obsolete ) {</div>
+<div class="line"><a id="l00445" name="l00445"></a><span class="lineno">  445</span>            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00446" name="l00446"></a><span class="lineno">  446</span>        }</div>
+<div class="line"><a id="l00447" name="l00447"></a><span class="lineno">  447</span> </div>
+<div class="line"><a id="l00448" name="l00448"></a><span class="lineno">  448</span>        <span class="keywordflow">for</span>( <span class="keyword">const</span> <span class="keyword">auto</span> &amp;bk : r.booksets ) {</div>
+<div class="line"><a id="l00449" name="l00449"></a><span class="lineno">  449</span>            <span class="keyword">const</span> <a class="code hl_struct" href="structitype.html">itype</a> *booktype = &amp;*bk.first;</div>
+<div class="line"><a id="l00450" name="l00450"></a><span class="lineno">  450</span>            <span class="keywordtype">int</span> req = bk.second &gt; 0 ? bk.second : std::max( booktype-&gt;<a class="code hl_variable" href="structitype.html#aec04d23e907e3ea3cd9cfb08369dffcd">book</a>-&gt;req, r.difficulty );</div>
+<div class="line"><a id="l00451" name="l00451"></a><span class="lineno">  451</span>            <a class="code hl_struct" href="structislot__book_1_1recipe__with__description__t.html">islot_book::recipe_with_description_t</a> desc{ &amp;r, req, r.result_name(), <span class="keyword">false</span> };</div>
+<div class="line"><a id="l00452" name="l00452"></a><span class="lineno">  452</span>            <span class="keyword">const_cast&lt;</span><a class="code hl_struct" href="structislot__book.html">islot_book</a> &amp;<span class="keyword">&gt;</span>( *booktype-&gt;<a class="code hl_variable" href="structitype.html#aec04d23e907e3ea3cd9cfb08369dffcd">book</a> ).<a class="code hl_variable" href="classrecipe__dictionary.html#a901c2ebf1ac5b39f12986da3ea7e023a">recipes</a>.insert( desc );</div>
 <div class="line"><a id="l00453" name="l00453"></a><span class="lineno">  453</span>        }</div>
-<div class="line"><a id="l00454" name="l00454"></a><span class="lineno">  454</span>    }</div>
-<div class="line"><a id="l00455" name="l00455"></a><span class="lineno">  455</span> </div>
-<div class="line"><a id="l00456" name="l00456"></a><span class="lineno">  456</span>    <span class="comment">// add pseudo uncrafting recipes</span></div>
-<div class="line"><a id="l00457" name="l00457"></a><span class="lineno">  457</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_struct" href="structitype.html">itype</a> *e : <a class="code hl_variable" href="item__factory_8cpp.html#a62fc9d4e4ca8f0e62b4556f5f65b666c">item_controller</a>-&gt;all() ) {</div>
-<div class="line"><a id="l00458" name="l00458"></a><span class="lineno">  458</span>        <span class="keyword">const</span> <a class="code hl_class" href="classstring__id.html">itype_id</a> <span class="keywordtype">id</span> = e-&gt;<a class="code hl_function" href="structitype.html#abc2596bacfc718fba56ab8076bab5d6b">get_id</a>();</div>
-<div class="line"><a id="l00459" name="l00459"></a><span class="lineno">  459</span>        <span class="keyword">const</span> <a class="code hl_class" href="classstring__id.html">recipe_id</a> rid = <a class="code hl_variable" href="classrecipe__dictionary.html#ad288eccf5581cea2d7dfc982c8c1069c">recipe_id</a>( <span class="keywordtype">id</span>.str() );</div>
+<div class="line"><a id="l00454" name="l00454"></a><span class="lineno">  454</span> </div>
+<div class="line"><a id="l00455" name="l00455"></a><span class="lineno">  455</span>        <span class="comment">// if reversible and no specific uncraft recipe exists use this recipe</span></div>
+<div class="line"><a id="l00456" name="l00456"></a><span class="lineno">  456</span>        <span class="keywordflow">if</span>( r.is_reversible() &amp;&amp; !<a class="code hl_variable" href="recipe__dictionary_8cpp.html#a9fdb53bd54fb6dcc5f9b2e1e1b44570f">recipe_dict</a>.<a class="code hl_variable" href="classrecipe__dictionary.html#a977f03247775526e965b64dc314007e4">uncraft</a>.count( <a class="code hl_variable" href="classrecipe__dictionary.html#ad288eccf5581cea2d7dfc982c8c1069c">recipe_id</a>( r.result().str() ) ) ) {</div>
+<div class="line"><a id="l00457" name="l00457"></a><span class="lineno">  457</span>            <a class="code hl_variable" href="recipe__dictionary_8cpp.html#a9fdb53bd54fb6dcc5f9b2e1e1b44570f">recipe_dict</a>.<a class="code hl_variable" href="classrecipe__dictionary.html#a977f03247775526e965b64dc314007e4">uncraft</a>[ <a class="code hl_variable" href="classrecipe__dictionary.html#ad288eccf5581cea2d7dfc982c8c1069c">recipe_id</a>( r.result().str() ) ] = r;</div>
+<div class="line"><a id="l00458" name="l00458"></a><span class="lineno">  458</span>        }</div>
+<div class="line"><a id="l00459" name="l00459"></a><span class="lineno">  459</span>    }</div>
 <div class="line"><a id="l00460" name="l00460"></a><span class="lineno">  460</span> </div>
-<div class="line"><a id="l00461" name="l00461"></a><span class="lineno">  461</span>        <span class="comment">// books that don&#39;t already have an uncrafting recipe</span></div>
-<div class="line"><a id="l00462" name="l00462"></a><span class="lineno">  462</span>        <span class="keywordflow">if</span>( e-&gt;book &amp;&amp; !<a class="code hl_variable" href="recipe__dictionary_8cpp.html#a9fdb53bd54fb6dcc5f9b2e1e1b44570f">recipe_dict</a>.<a class="code hl_variable" href="classrecipe__dictionary.html#a977f03247775526e965b64dc314007e4">uncraft</a>.count( rid ) &amp;&amp; e-&gt;volume &gt; 0_ml ) {</div>
-<div class="line"><a id="l00463" name="l00463"></a><span class="lineno">  463</span>            <span class="keywordtype">int</span> pages = e-&gt;volume / 12.5_ml;</div>
-<div class="line"><a id="l00464" name="l00464"></a><span class="lineno">  464</span>            <span class="keyword">auto</span> &amp;bk = <a class="code hl_variable" href="recipe__dictionary_8cpp.html#a9fdb53bd54fb6dcc5f9b2e1e1b44570f">recipe_dict</a>.<a class="code hl_variable" href="classrecipe__dictionary.html#a977f03247775526e965b64dc314007e4">uncraft</a>[rid];</div>
-<div class="line"><a id="l00465" name="l00465"></a><span class="lineno">  465</span>            bk.ident_ = rid;</div>
-<div class="line"><a id="l00466" name="l00466"></a><span class="lineno">  466</span>            bk.result_ = <a class="code hl_variable" href="namespacebase__camps.html#a04fa69b1c0952a34dc4a7d26b3f9f786">id</a>;</div>
-<div class="line"><a id="l00467" name="l00467"></a><span class="lineno">  467</span>            bk.reversible = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00468" name="l00468"></a><span class="lineno">  468</span>            bk.requirements_ = *<a class="code hl_typedef" href="type__id_8h.html#afb36dc6d5925e5112e70d60a171ebeb1">requirement_id</a>( <span class="stringliteral">&quot;uncraft_book&quot;</span> ) * pages;</div>
-<div class="line"><a id="l00469" name="l00469"></a><span class="lineno">  469</span>            <span class="comment">// TODO: allow specifying time in requirement_data</span></div>
-<div class="line"><a id="l00470" name="l00470"></a><span class="lineno">  470</span>            bk.time = pages * 10;</div>
-<div class="line"><a id="l00471" name="l00471"></a><span class="lineno">  471</span>        }</div>
-<div class="line"><a id="l00472" name="l00472"></a><span class="lineno">  472</span>    }</div>
-<div class="line"><a id="l00473" name="l00473"></a><span class="lineno">  473</span> </div>
-<div class="line"><a id="l00474" name="l00474"></a><span class="lineno">  474</span>    <span class="comment">// Cache auto-learn recipes and blueprints</span></div>
-<div class="line"><a id="l00475" name="l00475"></a><span class="lineno">  475</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <span class="keyword">auto</span> &amp;e : <a class="code hl_variable" href="recipe__dictionary_8cpp.html#a9fdb53bd54fb6dcc5f9b2e1e1b44570f">recipe_dict</a>.<a class="code hl_variable" href="classrecipe__dictionary.html#a901c2ebf1ac5b39f12986da3ea7e023a">recipes</a> ) {</div>
-<div class="line"><a id="l00476" name="l00476"></a><span class="lineno">  476</span>        <span class="keywordflow">if</span>( e.second.autolearn ) {</div>
-<div class="line"><a id="l00477" name="l00477"></a><span class="lineno">  477</span>            <a class="code hl_variable" href="recipe__dictionary_8cpp.html#a9fdb53bd54fb6dcc5f9b2e1e1b44570f">recipe_dict</a>.<a class="code hl_variable" href="classrecipe__dictionary.html#a896d4331d7d1a8e228bd3c21afe5584b">autolearn</a>.insert( &amp;e.second );</div>
-<div class="line"><a id="l00478" name="l00478"></a><span class="lineno">  478</span>        }</div>
-<div class="line"><a id="l00479" name="l00479"></a><span class="lineno">  479</span>        <span class="keywordflow">if</span>( e.second.is_blueprint() ) {</div>
-<div class="line"><a id="l00480" name="l00480"></a><span class="lineno">  480</span>            <a class="code hl_variable" href="recipe__dictionary_8cpp.html#a9fdb53bd54fb6dcc5f9b2e1e1b44570f">recipe_dict</a>.<a class="code hl_variable" href="classrecipe__dictionary.html#a59217bb3c16430212409a23282f3666a">blueprints</a>.insert( &amp;e.second );</div>
-<div class="line"><a id="l00481" name="l00481"></a><span class="lineno">  481</span>        }</div>
-<div class="line"><a id="l00482" name="l00482"></a><span class="lineno">  482</span>    }</div>
-<div class="line"><a id="l00483" name="l00483"></a><span class="lineno">  483</span> </div>
-<div class="line"><a id="l00484" name="l00484"></a><span class="lineno">  484</span>    <a class="code hl_variable" href="recipe__dictionary_8cpp.html#a9fdb53bd54fb6dcc5f9b2e1e1b44570f">recipe_dict</a>.<a class="code hl_function" href="classrecipe__dictionary.html#a842b4f187c25f5305d38430868266526">find_items_on_loops</a>();</div>
-<div class="line"><a id="l00485" name="l00485"></a><span class="lineno">  485</span>}</div>
+<div class="line"><a id="l00461" name="l00461"></a><span class="lineno">  461</span>    <span class="comment">// add pseudo uncrafting recipes</span></div>
+<div class="line"><a id="l00462" name="l00462"></a><span class="lineno">  462</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_struct" href="structitype.html">itype</a> *e : <a class="code hl_variable" href="item__factory_8cpp.html#a62fc9d4e4ca8f0e62b4556f5f65b666c">item_controller</a>-&gt;all() ) {</div>
+<div class="line"><a id="l00463" name="l00463"></a><span class="lineno">  463</span>        <span class="keyword">const</span> <a class="code hl_class" href="classstring__id.html">itype_id</a> <span class="keywordtype">id</span> = e-&gt;<a class="code hl_function" href="structitype.html#abc2596bacfc718fba56ab8076bab5d6b">get_id</a>();</div>
+<div class="line"><a id="l00464" name="l00464"></a><span class="lineno">  464</span>        <span class="keyword">const</span> <a class="code hl_class" href="classstring__id.html">recipe_id</a> rid = <a class="code hl_variable" href="classrecipe__dictionary.html#ad288eccf5581cea2d7dfc982c8c1069c">recipe_id</a>( <span class="keywordtype">id</span>.str() );</div>
+<div class="line"><a id="l00465" name="l00465"></a><span class="lineno">  465</span> </div>
+<div class="line"><a id="l00466" name="l00466"></a><span class="lineno">  466</span>        <span class="comment">// books that don&#39;t already have an uncrafting recipe</span></div>
+<div class="line"><a id="l00467" name="l00467"></a><span class="lineno">  467</span>        <span class="keywordflow">if</span>( e-&gt;book &amp;&amp; !<a class="code hl_variable" href="recipe__dictionary_8cpp.html#a9fdb53bd54fb6dcc5f9b2e1e1b44570f">recipe_dict</a>.<a class="code hl_variable" href="classrecipe__dictionary.html#a977f03247775526e965b64dc314007e4">uncraft</a>.count( rid ) &amp;&amp; e-&gt;volume &gt; 0_ml ) {</div>
+<div class="line"><a id="l00468" name="l00468"></a><span class="lineno">  468</span>            <span class="keywordtype">int</span> pages = e-&gt;volume / 12.5_ml;</div>
+<div class="line"><a id="l00469" name="l00469"></a><span class="lineno">  469</span>            <span class="keyword">auto</span> &amp;bk = <a class="code hl_variable" href="recipe__dictionary_8cpp.html#a9fdb53bd54fb6dcc5f9b2e1e1b44570f">recipe_dict</a>.<a class="code hl_variable" href="classrecipe__dictionary.html#a977f03247775526e965b64dc314007e4">uncraft</a>[rid];</div>
+<div class="line"><a id="l00470" name="l00470"></a><span class="lineno">  470</span>            bk.ident_ = rid;</div>
+<div class="line"><a id="l00471" name="l00471"></a><span class="lineno">  471</span>            bk.result_ = <a class="code hl_variable" href="namespacebase__camps.html#a04fa69b1c0952a34dc4a7d26b3f9f786">id</a>;</div>
+<div class="line"><a id="l00472" name="l00472"></a><span class="lineno">  472</span>            bk.reversible = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00473" name="l00473"></a><span class="lineno">  473</span>            bk.requirements_ = *<a class="code hl_typedef" href="type__id_8h.html#afb36dc6d5925e5112e70d60a171ebeb1">requirement_id</a>( <span class="stringliteral">&quot;uncraft_book&quot;</span> ) * pages;</div>
+<div class="line"><a id="l00474" name="l00474"></a><span class="lineno">  474</span>            <span class="comment">// TODO: allow specifying time in requirement_data</span></div>
+<div class="line"><a id="l00475" name="l00475"></a><span class="lineno">  475</span>            bk.time = pages * 10;</div>
+<div class="line"><a id="l00476" name="l00476"></a><span class="lineno">  476</span>        }</div>
+<div class="line"><a id="l00477" name="l00477"></a><span class="lineno">  477</span>    }</div>
+<div class="line"><a id="l00478" name="l00478"></a><span class="lineno">  478</span> </div>
+<div class="line"><a id="l00479" name="l00479"></a><span class="lineno">  479</span>    <span class="comment">// Cache auto-learn recipes and blueprints</span></div>
+<div class="line"><a id="l00480" name="l00480"></a><span class="lineno">  480</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <span class="keyword">auto</span> &amp;e : <a class="code hl_variable" href="recipe__dictionary_8cpp.html#a9fdb53bd54fb6dcc5f9b2e1e1b44570f">recipe_dict</a>.<a class="code hl_variable" href="classrecipe__dictionary.html#a901c2ebf1ac5b39f12986da3ea7e023a">recipes</a> ) {</div>
+<div class="line"><a id="l00481" name="l00481"></a><span class="lineno">  481</span>        <span class="keywordflow">if</span>( e.second.autolearn ) {</div>
+<div class="line"><a id="l00482" name="l00482"></a><span class="lineno">  482</span>            <a class="code hl_variable" href="recipe__dictionary_8cpp.html#a9fdb53bd54fb6dcc5f9b2e1e1b44570f">recipe_dict</a>.<a class="code hl_variable" href="classrecipe__dictionary.html#a896d4331d7d1a8e228bd3c21afe5584b">autolearn</a>.insert( &amp;e.second );</div>
+<div class="line"><a id="l00483" name="l00483"></a><span class="lineno">  483</span>        }</div>
+<div class="line"><a id="l00484" name="l00484"></a><span class="lineno">  484</span>        <span class="keywordflow">if</span>( e.second.is_blueprint() ) {</div>
+<div class="line"><a id="l00485" name="l00485"></a><span class="lineno">  485</span>            <a class="code hl_variable" href="recipe__dictionary_8cpp.html#a9fdb53bd54fb6dcc5f9b2e1e1b44570f">recipe_dict</a>.<a class="code hl_variable" href="classrecipe__dictionary.html#a59217bb3c16430212409a23282f3666a">blueprints</a>.insert( &amp;e.second );</div>
+<div class="line"><a id="l00486" name="l00486"></a><span class="lineno">  486</span>        }</div>
+<div class="line"><a id="l00487" name="l00487"></a><span class="lineno">  487</span>    }</div>
+<div class="line"><a id="l00488" name="l00488"></a><span class="lineno">  488</span> </div>
+<div class="line"><a id="l00489" name="l00489"></a><span class="lineno">  489</span>    <a class="code hl_variable" href="recipe__dictionary_8cpp.html#a9fdb53bd54fb6dcc5f9b2e1e1b44570f">recipe_dict</a>.<a class="code hl_function" href="classrecipe__dictionary.html#a842b4f187c25f5305d38430868266526">find_items_on_loops</a>();</div>
+<div class="line"><a id="l00490" name="l00490"></a><span class="lineno">  490</span>}</div>
 <div class="ttc" id="aclassDynamicDataLoader_html_adca1972b6d79ffd55d6d7ca1a0c329b9"><div class="ttname"><a href="classDynamicDataLoader.html#adca1972b6d79ffd55d6d7ca1a0c329b9">DynamicDataLoader::get_instance</a></div><div class="ttdeci">static DynamicDataLoader &amp; get_instance()</div><div class="ttdoc">Returns the single instance of this class.</div><div class="ttdef"><b>Definition:</b> <a href="init_8cpp_source.html#l00119">init.cpp:119</a></div></div>
 <div class="ttc" id="aclassDynamicDataLoader_html_adf725674a5fcd11a4e8a248e14717d27"><div class="ttname"><a href="classDynamicDataLoader.html#adf725674a5fcd11a4e8a248e14717d27">DynamicDataLoader::load_deferred</a></div><div class="ttdeci">void load_deferred(deferred_json &amp;data)</div><div class="ttdoc">Loads and then removes entries from.</div><div class="ttdef"><b>Definition:</b> <a href="init_8cpp_source.html#l00158">init.cpp:158</a></div></div>
-<div class="ttc" id="aclassrecipe__dictionary_html_a23e924cce688d42d2c540f135b01987a"><div class="ttname"><a href="classrecipe__dictionary.html#a23e924cce688d42d2c540f135b01987a">recipe_dictionary::finalize_internal</a></div><div class="ttdeci">static void finalize_internal(std::map&lt; recipe_id, recipe &gt; &amp;obj)</div><div class="ttdef"><b>Definition:</b> <a href="recipe__dictionary_8cpp_source.html#l00355">recipe_dictionary.cpp:355</a></div></div>
-<div class="ttc" id="aclassrecipe__dictionary_html_a842b4f187c25f5305d38430868266526"><div class="ttname"><a href="classrecipe__dictionary.html#a842b4f187c25f5305d38430868266526">recipe_dictionary::find_items_on_loops</a></div><div class="ttdeci">void find_items_on_loops()</div><div class="ttdef"><b>Definition:</b> <a href="recipe__dictionary_8cpp_source.html#l00381">recipe_dictionary.cpp:381</a></div></div>
+<div class="ttc" id="aclassrecipe__dictionary_html_a23e924cce688d42d2c540f135b01987a"><div class="ttname"><a href="classrecipe__dictionary.html#a23e924cce688d42d2c540f135b01987a">recipe_dictionary::finalize_internal</a></div><div class="ttdeci">static void finalize_internal(std::map&lt; recipe_id, recipe &gt; &amp;obj)</div><div class="ttdef"><b>Definition:</b> <a href="recipe__dictionary_8cpp_source.html#l00360">recipe_dictionary.cpp:360</a></div></div>
+<div class="ttc" id="aclassrecipe__dictionary_html_a842b4f187c25f5305d38430868266526"><div class="ttname"><a href="classrecipe__dictionary.html#a842b4f187c25f5305d38430868266526">recipe_dictionary::find_items_on_loops</a></div><div class="ttdeci">void find_items_on_loops()</div><div class="ttdef"><b>Definition:</b> <a href="recipe__dictionary_8cpp_source.html#l00386">recipe_dictionary.cpp:386</a></div></div>
 <div class="ttc" id="aclassrecipe__dictionary_html_ad288eccf5581cea2d7dfc982c8c1069c"><div class="ttname"><a href="classrecipe__dictionary.html#ad288eccf5581cea2d7dfc982c8c1069c">recipe_dictionary::recipe_id</a></div><div class="ttdeci">friend recipe_id</div><div class="ttdef"><b>Definition:</b> <a href="recipe__dictionary_8h_source.html#l00024">recipe_dictionary.h:24</a></div></div>
 <div class="ttc" id="aclassrecipe_html"><div class="ttname"><a href="classrecipe.html">recipe</a></div><div class="ttdef"><b>Definition:</b> <a href="recipe_8h_source.html#l00034">recipe.h:35</a></div></div>
 <div class="ttc" id="aclassstring__id_html"><div class="ttname"><a href="classstring__id.html">string_id&lt; itype &gt;</a></div></div>
@@ -435,13 +435,13 @@ Friends</h2></td></tr>
 <div class="ttc" id="astructislot__book_1_1recipe__with__description__t_html"><div class="ttname"><a href="structislot__book_1_1recipe__with__description__t.html">islot_book::recipe_with_description_t</a></div><div class="ttdoc">What recipes can be learned from this book.</div><div class="ttdef"><b>Definition:</b> <a href="itype_8h_source.html#l00359">itype.h:359</a></div></div>
 <div class="ttc" id="astructislot__book_html"><div class="ttname"><a href="structislot__book.html">islot_book</a></div><div class="ttdef"><b>Definition:</b> <a href="itype_8h_source.html#l00322">itype.h:322</a></div></div>
 <div class="ttc" id="astructitype_html"><div class="ttname"><a href="structitype.html">itype</a></div><div class="ttdef"><b>Definition:</b> <a href="itype_8h_source.html#l00836">itype.h:836</a></div></div>
-<div class="ttc" id="astructitype_html_abc2596bacfc718fba56ab8076bab5d6b"><div class="ttname"><a href="structitype.html#abc2596bacfc718fba56ab8076bab5d6b">itype::get_id</a></div><div class="ttdeci">const itype_id &amp; get_id() const</div><div class="ttdef"><b>Definition:</b> <a href="itype_8h_source.html#l01065">itype.h:1065</a></div></div>
+<div class="ttc" id="astructitype_html_abc2596bacfc718fba56ab8076bab5d6b"><div class="ttname"><a href="structitype.html#abc2596bacfc718fba56ab8076bab5d6b">itype::get_id</a></div><div class="ttdeci">const itype_id &amp; get_id() const</div><div class="ttdef"><b>Definition:</b> <a href="itype_8cpp_source.html#l00088">itype.cpp:88</a></div></div>
 <div class="ttc" id="astructitype_html_aec04d23e907e3ea3cd9cfb08369dffcd"><div class="ttname"><a href="structitype.html#aec04d23e907e3ea3cd9cfb08369dffcd">itype::book</a></div><div class="ttdeci">cata::value_ptr&lt; islot_book &gt; book</div><div class="ttdef"><b>Definition:</b> <a href="itype_8h_source.html#l00854">itype.h:854</a></div></div>
-<div class="ttc" id="atype__id_8h_html_afb36dc6d5925e5112e70d60a171ebeb1"><div class="ttname"><a href="type__id_8h.html#afb36dc6d5925e5112e70d60a171ebeb1">requirement_id</a></div><div class="ttdeci">string_id&lt; requirement_data &gt; requirement_id</div><div class="ttdef"><b>Definition:</b> <a href="type__id_8h_source.html#l00143">type_id.h:143</a></div></div>
+<div class="ttc" id="atype__id_8h_html_afb36dc6d5925e5112e70d60a171ebeb1"><div class="ttname"><a href="type__id_8h.html#afb36dc6d5925e5112e70d60a171ebeb1">requirement_id</a></div><div class="ttdeci">string_id&lt; requirement_data &gt; requirement_id</div><div class="ttdef"><b>Definition:</b> <a href="type__id_8h_source.html#l00146">type_id.h:146</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="recipe__dictionary_8h_source.html#l00065">autolearn</a>, <a class="el" href="recipe__dictionary_8h_source.html#l00066">blueprints</a>, <a class="el" href="itype_8h_source.html#l00854">itype::book</a>, <a class="el" href="recipe__dictionary_8cpp_source.html#l00051">deferred</a>, <a class="el" href="recipe__dictionary_8cpp_source.html#l00497">delete_if()</a>, <a class="el" href="recipe__dictionary_8cpp_source.html#l00355">finalize_internal()</a>, <a class="el" href="recipe__dictionary_8cpp_source.html#l00381">find_items_on_loops()</a>, <a class="el" href="itype_8h_source.html#l01065">itype::get_id()</a>, <a class="el" href="init_8cpp_source.html#l00119">DynamicDataLoader::get_instance()</a>, <a class="el" href="basecamp_8h_source.html#l00087">base_camps::id</a>, <a class="el" href="item__factory_8cpp_source.html#l00085">item_controller</a>, <a class="el" href="init_8cpp_source.html#l00158">DynamicDataLoader::load_deferred()</a>, <a class="el" href="recipe__dictionary_8cpp_source.html#l00029">recipe_dict</a>, <a class="el" href="recipe__dictionary_8h_source.html#l00024">recipe_id</a>, <a class="el" href="recipe__dictionary_8h_source.html#l00063">recipes</a>, and <a class="el" href="recipe__dictionary_8h_source.html#l00064">uncraft</a>.</p>
+<p class="reference">References <a class="el" href="recipe__dictionary_8h_source.html#l00065">autolearn</a>, <a class="el" href="recipe__dictionary_8h_source.html#l00066">blueprints</a>, <a class="el" href="itype_8h_source.html#l00854">itype::book</a>, <a class="el" href="recipe__dictionary_8cpp_source.html#l00051">deferred</a>, <a class="el" href="recipe__dictionary_8cpp_source.html#l00502">delete_if()</a>, <a class="el" href="recipe__dictionary_8cpp_source.html#l00360">finalize_internal()</a>, <a class="el" href="recipe__dictionary_8cpp_source.html#l00386">find_items_on_loops()</a>, <a class="el" href="itype_8cpp_source.html#l00088">itype::get_id()</a>, <a class="el" href="init_8cpp_source.html#l00119">DynamicDataLoader::get_instance()</a>, <a class="el" href="basecamp_8h_source.html#l00087">base_camps::id</a>, <a class="el" href="item__factory_8cpp_source.html#l00085">item_controller</a>, <a class="el" href="init_8cpp_source.html#l00158">DynamicDataLoader::load_deferred()</a>, <a class="el" href="recipe__dictionary_8cpp_source.html#l00029">recipe_dict</a>, <a class="el" href="recipe__dictionary_8h_source.html#l00024">recipe_id</a>, <a class="el" href="recipe__dictionary_8h_source.html#l00063">recipes</a>, and <a class="el" href="recipe__dictionary_8h_source.html#l00064">uncraft</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8cpp_source.html#l00633">DynamicDataLoader::finalize_loaded_data()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8cpp_source.html#l00635">DynamicDataLoader::finalize_loaded_data()</a>.</p>
 
 </div>
 </div>
@@ -469,41 +469,41 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="recipe__dictionary_8cpp_source.html#l00355">355</a> of file <a class="el" href="recipe__dictionary_8cpp_source.html">recipe_dictionary.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>{</div>
-<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>    <span class="keywordflow">for</span>( <span class="keyword">auto</span> &amp;elem : obj ) {</div>
-<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>        elem.second.finalize();</div>
-<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>        <a class="code hl_variable" href="input_8cpp.html#af16c50890fa8503efa899fc3b6de56d7">inp_mngr</a>.<a class="code hl_function" href="classinput__manager.html#a56fd029f8ad1ca3dcd864a6bb5537045">pump_events</a>();</div>
-<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>    }</div>
-<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>    <span class="comment">// remove any blacklisted or invalid recipes...</span></div>
-<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>    <a class="code hl_function" href="classrecipe__dictionary.html#ad49f5c9ba2c66330d4ad3daf00c2b781">delete_if</a>( []( <span class="keyword">const</span> <a class="code hl_class" href="classrecipe.html">recipe</a> &amp; elem ) {</div>
-<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>        <span class="keywordflow">if</span>( elem.<a class="code hl_function" href="classrecipe.html#a43ba769dc6def540a0c521f00cfd717d">is_blacklisted</a>() ) {</div>
-<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>            return true;</div>
-<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>        }</div>
-<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span> </div>
-<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>        <span class="keywordflow">if</span>( elem.<a class="code hl_variable" href="classrecipe.html#a9cd5575d444e1e4224f1aadd6f74357e">obsolete</a> ) {</div>
-<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>            return false;</div>
-<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>        }</div>
-<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span> </div>
-<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>        <span class="keyword">const</span> std::string <a class="code hl_enumvalue" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5aea5ac52de38b8cf793e5d933bfb76edf45">error</a> = elem.<a class="code hl_function" href="classrecipe.html#ab6df307ac6b4c407ac74dbf8d615f60b">get_consistency_error</a>();</div>
-<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span> </div>
-<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>        <span class="keywordflow">if</span>( !<a class="code hl_enumvalue" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5aea5ac52de38b8cf793e5d933bfb76edf45">error</a>.empty() ) {</div>
-<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>            debugmsg( <span class="stringliteral">&quot;Recipe %s %s.&quot;</span>, elem.ident().c_str(), error.c_str() );</div>
-<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>        }</div>
-<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span> </div>
-<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>        <span class="keywordflow">return</span> !<a class="code hl_enumvalue" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5aea5ac52de38b8cf793e5d933bfb76edf45">error</a>.empty();</div>
-<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>    } );</div>
-<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>}</div>
+<p class="definition">Definition at line <a class="el" href="recipe__dictionary_8cpp_source.html#l00360">360</a> of file <a class="el" href="recipe__dictionary_8cpp_source.html">recipe_dictionary.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>{</div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>    <span class="keywordflow">for</span>( <span class="keyword">auto</span> &amp;elem : obj ) {</div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>        elem.second.finalize();</div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>        <a class="code hl_variable" href="input_8cpp.html#af16c50890fa8503efa899fc3b6de56d7">inp_mngr</a>.<a class="code hl_function" href="classinput__manager.html#a56fd029f8ad1ca3dcd864a6bb5537045">pump_events</a>();</div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>    }</div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>    <span class="comment">// remove any blacklisted or invalid recipes...</span></div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>    <a class="code hl_function" href="classrecipe__dictionary.html#ad49f5c9ba2c66330d4ad3daf00c2b781">delete_if</a>( []( <span class="keyword">const</span> <a class="code hl_class" href="classrecipe.html">recipe</a> &amp; elem ) {</div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>        <span class="keywordflow">if</span>( elem.<a class="code hl_function" href="classrecipe.html#a43ba769dc6def540a0c521f00cfd717d">is_blacklisted</a>() ) {</div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>            return true;</div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>        }</div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span> </div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>        <span class="keywordflow">if</span>( elem.<a class="code hl_variable" href="classrecipe.html#a9cd5575d444e1e4224f1aadd6f74357e">obsolete</a> ) {</div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>            return false;</div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>        }</div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span> </div>
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>        <span class="keyword">const</span> std::string <a class="code hl_enumvalue" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5aea5ac52de38b8cf793e5d933bfb76edf45">error</a> = elem.<a class="code hl_function" href="classrecipe.html#ab6df307ac6b4c407ac74dbf8d615f60b">get_consistency_error</a>();</div>
+<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span> </div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>        <span class="keywordflow">if</span>( !<a class="code hl_enumvalue" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5aea5ac52de38b8cf793e5d933bfb76edf45">error</a>.empty() ) {</div>
+<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>            debugmsg( <span class="stringliteral">&quot;Recipe %s %s.&quot;</span>, elem.ident().c_str(), error.c_str() );</div>
+<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>        }</div>
+<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span> </div>
+<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>        <span class="keywordflow">return</span> !<a class="code hl_enumvalue" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5aea5ac52de38b8cf793e5d933bfb76edf45">error</a>.empty();</div>
+<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>    } );</div>
+<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>}</div>
 <div class="ttc" id="aclassinput__manager_html_a56fd029f8ad1ca3dcd864a6bb5537045"><div class="ttname"><a href="classinput__manager.html#a56fd029f8ad1ca3dcd864a6bb5537045">input_manager::pump_events</a></div><div class="ttdeci">void pump_events()</div><div class="ttdoc">Resize &amp; refresh if necessary, process all pending window events, and ignore keypresses.</div><div class="ttdef"><b>Definition:</b> <a href="ncurses__def_8cpp_source.html#l00252">ncurses_def.cpp:252</a></div></div>
-<div class="ttc" id="aclassrecipe_html_a43ba769dc6def540a0c521f00cfd717d"><div class="ttname"><a href="classrecipe.html#a43ba769dc6def540a0c521f00cfd717d">recipe::is_blacklisted</a></div><div class="ttdeci">bool is_blacklisted() const</div><div class="ttdef"><b>Definition:</b> <a href="recipe_8h_source.html#l00079">recipe.h:79</a></div></div>
-<div class="ttc" id="aclassrecipe_html_a9cd5575d444e1e4224f1aadd6f74357e"><div class="ttname"><a href="classrecipe.html#a9cd5575d444e1e4224f1aadd6f74357e">recipe::obsolete</a></div><div class="ttdeci">bool obsolete</div><div class="ttdef"><b>Definition:</b> <a href="recipe_8h_source.html#l00052">recipe.h:52</a></div></div>
-<div class="ttc" id="aclassrecipe_html_ab6df307ac6b4c407ac74dbf8d615f60b"><div class="ttname"><a href="classrecipe.html#ab6df307ac6b4c407ac74dbf8d615f60b">recipe::get_consistency_error</a></div><div class="ttdeci">std::string get_consistency_error() const</div><div class="ttdoc">Returns a non-empty string describing an inconsistency (if any) in the recipe.</div><div class="ttdef"><b>Definition:</b> <a href="recipe_8cpp_source.html#l00387">recipe.cpp:387</a></div></div>
+<div class="ttc" id="aclassrecipe_html_a43ba769dc6def540a0c521f00cfd717d"><div class="ttname"><a href="classrecipe.html#a43ba769dc6def540a0c521f00cfd717d">recipe::is_blacklisted</a></div><div class="ttdeci">bool is_blacklisted() const</div><div class="ttdef"><b>Definition:</b> <a href="recipe_8h_source.html#l00081">recipe.h:81</a></div></div>
+<div class="ttc" id="aclassrecipe_html_a9cd5575d444e1e4224f1aadd6f74357e"><div class="ttname"><a href="classrecipe.html#a9cd5575d444e1e4224f1aadd6f74357e">recipe::obsolete</a></div><div class="ttdeci">bool obsolete</div><div class="ttdef"><b>Definition:</b> <a href="recipe_8h_source.html#l00054">recipe.h:54</a></div></div>
+<div class="ttc" id="aclassrecipe_html_ab6df307ac6b4c407ac74dbf8d615f60b"><div class="ttname"><a href="classrecipe.html#ab6df307ac6b4c407ac74dbf8d615f60b">recipe::get_consistency_error</a></div><div class="ttdeci">std::string get_consistency_error() const</div><div class="ttdoc">Returns a non-empty string describing an inconsistency (if any) in the recipe.</div><div class="ttdef"><b>Definition:</b> <a href="recipe_8cpp_source.html#l00390">recipe.cpp:390</a></div></div>
 <div class="ttc" id="ainput_8cpp_html_af16c50890fa8503efa899fc3b6de56d7"><div class="ttname"><a href="input_8cpp.html#af16c50890fa8503efa899fc3b6de56d7">inp_mngr</a></div><div class="ttdeci">input_manager inp_mngr</div><div class="ttdef"><b>Definition:</b> <a href="input_8cpp_source.html#l00109">input.cpp:109</a></div></div>
 <div class="ttc" id="anamespacedetail_1_1digits_html_aad69d2373aa047bdd9e81494bf3da5aea5ac52de38b8cf793e5d933bfb76edf45"><div class="ttname"><a href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5aea5ac52de38b8cf793e5d933bfb76edf45">detail::digits::error</a></div><div class="ttdeci">@ error</div><div class="ttdef"><b>Definition:</b> <a href="fmtlib__format-inl_8h_source.html#l01630">fmtlib_format-inl.h:1629</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="recipe__dictionary_8cpp_source.html#l00497">delete_if()</a>, <a class="el" href="fmtlib__format-inl_8h_source.html#l01629">detail::digits::error</a>, <a class="el" href="recipe_8cpp_source.html#l00387">recipe::get_consistency_error()</a>, <a class="el" href="input_8cpp_source.html#l00109">inp_mngr</a>, <a class="el" href="recipe_8h_source.html#l00079">recipe::is_blacklisted()</a>, <a class="el" href="recipe_8h_source.html#l00052">recipe::obsolete</a>, and <a class="el" href="ncurses__def_8cpp_source.html#l00252">input_manager::pump_events()</a>.</p>
+<p class="reference">References <a class="el" href="recipe__dictionary_8cpp_source.html#l00502">delete_if()</a>, <a class="el" href="fmtlib__format-inl_8h_source.html#l01629">detail::digits::error</a>, <a class="el" href="recipe_8cpp_source.html#l00390">recipe::get_consistency_error()</a>, <a class="el" href="input_8cpp_source.html#l00109">inp_mngr</a>, <a class="el" href="recipe_8h_source.html#l00081">recipe::is_blacklisted()</a>, <a class="el" href="recipe_8h_source.html#l00054">recipe::obsolete</a>, and <a class="el" href="ncurses__def_8cpp_source.html#l00252">input_manager::pump_events()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="recipe__dictionary_8cpp_source.html#l00424">finalize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="recipe__dictionary_8cpp_source.html#l00429">finalize()</a>.</p>
 
 </div>
 </div>
@@ -530,50 +530,50 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="recipe__dictionary_8cpp_source.html#l00381">381</a> of file <a class="el" href="recipe__dictionary_8cpp_source.html">recipe_dictionary.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>{</div>
-<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>    <span class="comment">// Check for infinite recipe loops in food (which are problematic for</span></div>
-<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>    <span class="comment">// nutrient calculations).</span></div>
-<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>    <span class="comment">//</span></div>
-<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>    <span class="comment">// Start by building a directed graph of itypes to potential components of</span></div>
-<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>    <span class="comment">// those itypes.</span></div>
-<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>    <a class="code hl_variable" href="classrecipe__dictionary.html#aa915b4db5d46ad2f63245b2dd3d28cfd">items_on_loops</a>.clear();</div>
-<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>    std::unordered_map&lt;itype_id, std::vector&lt;itype_id&gt;&gt; potential_components_of;</div>
-<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_struct" href="structitype.html">itype</a> *i : <a class="code hl_variable" href="item__factory_8cpp.html#a62fc9d4e4ca8f0e62b4556f5f65b666c">item_controller</a>-&gt;all() ) {</div>
-<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>        <span class="keywordflow">if</span>( !i-&gt;comestible || i-&gt;has_flag( <span class="stringliteral">&quot;NUTRIENT_OVERRIDE&quot;</span> ) ) {</div>
-<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>            <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>        }</div>
-<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>        std::vector&lt;itype_id&gt; &amp;potential_components = potential_components_of[i-&gt;get_id()];</div>
-<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>        <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_class" href="classstring__id.html">recipe_id</a> &amp;rec : i-&gt;recipes ) {</div>
-<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>            <span class="keyword">const</span> <a class="code hl_struct" href="structrequirement__data.html">requirement_data</a> requirements = rec-&gt;<a class="code hl_function" href="classrecipe.html#a5dcc02c873f2936b832100109d0c3448">simple_requirements</a>();</div>
-<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>            <span class="keyword">const</span> <a class="code hl_typedef" href="structrequirement__data.html#a81eb3f292988bc3b327f50cdcbb74e0c">requirement_data::alter_item_comp_vector</a> &amp;component_requirements =</div>
-<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>                requirements.<a class="code hl_function" href="structrequirement__data.html#a56dbf23ade6bced0dc6148b8e1a12d4c">get_components</a>();</div>
-<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span> </div>
-<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>            <span class="keywordflow">for</span>( <span class="keyword">const</span> std::vector&lt;item_comp&gt; &amp;component_options : component_requirements ) {</div>
-<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>                <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_struct" href="structitem__comp.html">item_comp</a> &amp;component_option : component_options ) {</div>
-<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span>                    potential_components.push_back( component_option.type );</div>
-<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span>                }</div>
-<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span>            }</div>
-<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>        }</div>
-<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span>    }</div>
-<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span> </div>
-<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>    <span class="comment">// Now check that graph for loops</span></div>
-<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>    std::vector&lt;std::vector&lt;itype_id&gt;&gt; loops = <a class="code hl_function" href="namespacecata.html#ae05cec3261e3815245ec1d732e28bb67">cata::find_cycles</a>( potential_components_of );</div>
-<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> std::vector&lt;itype_id&gt; &amp;loop : loops ) {</div>
-<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>        std::string error_message =</div>
-<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>            <span class="stringliteral">&quot;loop in comestible recipes detected: &quot;</span> + loop.back().str();</div>
-<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>        <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_class" href="classstring__id.html">itype_id</a> &amp;i : loop ) {</div>
-<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>            error_message += <span class="stringliteral">&quot; -&gt; &quot;</span> + i.str();</div>
-<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>            <a class="code hl_variable" href="classrecipe__dictionary.html#aa915b4db5d46ad2f63245b2dd3d28cfd">items_on_loops</a>.insert( i );</div>
-<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>        }</div>
-<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>        error_message += <span class="stringliteral">&quot;.  Such loops can be broken by either removing or altering &quot;</span></div>
-<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>                         <span class="stringliteral">&quot;recipes or marking one of the items involved with the NUTRIENT_OVERRIDE &quot;</span></div>
-<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>                         <span class="stringliteral">&quot;flag&quot;</span>;</div>
-<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>        <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( error_message );</div>
-<div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span>    }</div>
-<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span>}</div>
+<p class="definition">Definition at line <a class="el" href="recipe__dictionary_8cpp_source.html#l00386">386</a> of file <a class="el" href="recipe__dictionary_8cpp_source.html">recipe_dictionary.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>{</div>
+<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>    <span class="comment">// Check for infinite recipe loops in food (which are problematic for</span></div>
+<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>    <span class="comment">// nutrient calculations).</span></div>
+<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>    <span class="comment">// Start by building a directed graph of itypes to potential components of</span></div>
+<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>    <span class="comment">// those itypes.</span></div>
+<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>    <a class="code hl_variable" href="classrecipe__dictionary.html#aa915b4db5d46ad2f63245b2dd3d28cfd">items_on_loops</a>.clear();</div>
+<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>    std::unordered_map&lt;itype_id, std::vector&lt;itype_id&gt;&gt; potential_components_of;</div>
+<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_struct" href="structitype.html">itype</a> *i : <a class="code hl_variable" href="item__factory_8cpp.html#a62fc9d4e4ca8f0e62b4556f5f65b666c">item_controller</a>-&gt;all() ) {</div>
+<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>        <span class="keywordflow">if</span>( !i-&gt;comestible || i-&gt;has_flag( <span class="stringliteral">&quot;NUTRIENT_OVERRIDE&quot;</span> ) ) {</div>
+<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>        }</div>
+<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>        std::vector&lt;itype_id&gt; &amp;potential_components = potential_components_of[i-&gt;get_id()];</div>
+<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>        <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_class" href="classstring__id.html">recipe_id</a> &amp;rec : i-&gt;recipes ) {</div>
+<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>            <span class="keyword">const</span> <a class="code hl_struct" href="structrequirement__data.html">requirement_data</a> requirements = rec-&gt;<a class="code hl_function" href="classrecipe.html#a5dcc02c873f2936b832100109d0c3448">simple_requirements</a>();</div>
+<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span>            <span class="keyword">const</span> <a class="code hl_typedef" href="structrequirement__data.html#a81eb3f292988bc3b327f50cdcbb74e0c">requirement_data::alter_item_comp_vector</a> &amp;component_requirements =</div>
+<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span>                requirements.<a class="code hl_function" href="structrequirement__data.html#a56dbf23ade6bced0dc6148b8e1a12d4c">get_components</a>();</div>
+<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span> </div>
+<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>            <span class="keywordflow">for</span>( <span class="keyword">const</span> std::vector&lt;item_comp&gt; &amp;component_options : component_requirements ) {</div>
+<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span>                <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_struct" href="structitem__comp.html">item_comp</a> &amp;component_option : component_options ) {</div>
+<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span>                    potential_components.push_back( component_option.type );</div>
+<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>                }</div>
+<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>            }</div>
+<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>        }</div>
+<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>    }</div>
+<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span> </div>
+<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>    <span class="comment">// Now check that graph for loops</span></div>
+<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>    std::vector&lt;std::vector&lt;itype_id&gt;&gt; loops = <a class="code hl_function" href="namespacecata.html#ae05cec3261e3815245ec1d732e28bb67">cata::find_cycles</a>( potential_components_of );</div>
+<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> std::vector&lt;itype_id&gt; &amp;loop : loops ) {</div>
+<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>        std::string error_message =</div>
+<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>            <span class="stringliteral">&quot;loop in comestible recipes detected: &quot;</span> + loop.back().str();</div>
+<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>        <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_class" href="classstring__id.html">itype_id</a> &amp;i : loop ) {</div>
+<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>            error_message += <span class="stringliteral">&quot; -&gt; &quot;</span> + i.str();</div>
+<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>            <a class="code hl_variable" href="classrecipe__dictionary.html#aa915b4db5d46ad2f63245b2dd3d28cfd">items_on_loops</a>.insert( i );</div>
+<div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span>        }</div>
+<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span>        error_message += <span class="stringliteral">&quot;.  Such loops can be broken by either removing or altering &quot;</span></div>
+<div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span>                         <span class="stringliteral">&quot;recipes or marking one of the items involved with the NUTRIENT_OVERRIDE &quot;</span></div>
+<div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span>                         <span class="stringliteral">&quot;flag&quot;</span>;</div>
+<div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span>        <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( error_message );</div>
+<div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span>    }</div>
+<div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span>}</div>
 <div class="ttc" id="aclassrecipe__dictionary_html_aa915b4db5d46ad2f63245b2dd3d28cfd"><div class="ttname"><a href="classrecipe__dictionary.html#aa915b4db5d46ad2f63245b2dd3d28cfd">recipe_dictionary::items_on_loops</a></div><div class="ttdeci">std::unordered_set&lt; itype_id &gt; items_on_loops</div><div class="ttdef"><b>Definition:</b> <a href="recipe__dictionary_8h_source.html#l00067">recipe_dictionary.h:67</a></div></div>
-<div class="ttc" id="aclassrecipe_html_a5dcc02c873f2936b832100109d0c3448"><div class="ttname"><a href="classrecipe.html#a5dcc02c873f2936b832100109d0c3448">recipe::simple_requirements</a></div><div class="ttdeci">const requirement_data &amp; simple_requirements() const</div><div class="ttdoc">Fetch combined requirement data (inline and via &quot;using&quot; syntax).</div><div class="ttdef"><b>Definition:</b> <a href="recipe_8h_source.html#l00067">recipe.h:67</a></div></div>
+<div class="ttc" id="aclassrecipe_html_a5dcc02c873f2936b832100109d0c3448"><div class="ttname"><a href="classrecipe.html#a5dcc02c873f2936b832100109d0c3448">recipe::simple_requirements</a></div><div class="ttdeci">const requirement_data &amp; simple_requirements() const</div><div class="ttdoc">Fetch combined requirement data (inline and via &quot;using&quot; syntax).</div><div class="ttdef"><b>Definition:</b> <a href="recipe_8h_source.html#l00069">recipe.h:69</a></div></div>
 <div class="ttc" id="adebug_8h_html_a87e509562277a7ada3a75330d00cb445"><div class="ttname"><a href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a></div><div class="ttdeci">#define debugmsg(...)</div><div class="ttdoc">Debug message of level DL::Error and class DC::DebugMsg, also includes the source file name and line,...</div><div class="ttdef"><b>Definition:</b> <a href="debug_8h_source.html#l00074">debug.h:74</a></div></div>
 <div class="ttc" id="anamespacecata_html_ae05cec3261e3815245ec1d732e28bb67"><div class="ttname"><a href="namespacecata.html#ae05cec3261e3815245ec1d732e28bb67">cata::find_cycles</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; T &gt; &gt; find_cycles(const std::unordered_map&lt; T, std::vector&lt; T &gt; &gt; &amp;edges)</div><div class="ttdef"><b>Definition:</b> <a href="cata__algo_8h_source.html#l00105">cata_algo.h:105</a></div></div>
 <div class="ttc" id="astructitem__comp_html"><div class="ttname"><a href="structitem__comp.html">item_comp</a></div><div class="ttdef"><b>Definition:</b> <a href="requirements_8h_source.html#l00116">requirements.h:116</a></div></div>
@@ -581,9 +581,9 @@ Friends</h2></td></tr>
 <div class="ttc" id="astructrequirement__data_html_a56dbf23ade6bced0dc6148b8e1a12d4c"><div class="ttname"><a href="structrequirement__data.html#a56dbf23ade6bced0dc6148b8e1a12d4c">requirement_data::get_components</a></div><div class="ttdeci">const alter_item_comp_vector &amp; get_components() const</div><div class="ttdef"><b>Definition:</b> <a href="requirements_8cpp_source.html#l00992">requirements.cpp:992</a></div></div>
 <div class="ttc" id="astructrequirement__data_html_a81eb3f292988bc3b327f50cdcbb74e0c"><div class="ttname"><a href="structrequirement__data.html#a81eb3f292988bc3b327f50cdcbb74e0c">requirement_data::alter_item_comp_vector</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; item_comp &gt; &gt; alter_item_comp_vector</div><div class="ttdef"><b>Definition:</b> <a href="requirements_8h_source.html#l00223">requirements.h:223</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="debug_8h_source.html#l00074">debugmsg</a>, <a class="el" href="cata__algo_8h_source.html#l00105">cata::find_cycles()</a>, <a class="el" href="requirements_8cpp_source.html#l00992">requirement_data::get_components()</a>, <a class="el" href="item__factory_8cpp_source.html#l00085">item_controller</a>, <a class="el" href="recipe__dictionary_8h_source.html#l00067">items_on_loops</a>, and <a class="el" href="recipe_8h_source.html#l00067">recipe::simple_requirements()</a>.</p>
+<p class="reference">References <a class="el" href="debug_8h_source.html#l00074">debugmsg</a>, <a class="el" href="cata__algo_8h_source.html#l00105">cata::find_cycles()</a>, <a class="el" href="requirements_8cpp_source.html#l00992">requirement_data::get_components()</a>, <a class="el" href="item__factory_8cpp_source.html#l00085">item_controller</a>, <a class="el" href="recipe__dictionary_8h_source.html#l00067">items_on_loops</a>, and <a class="el" href="recipe_8h_source.html#l00069">recipe::simple_requirements()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="recipe__dictionary_8cpp_source.html#l00424">finalize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="recipe__dictionary_8cpp_source.html#l00429">finalize()</a>.</p>
 
 </div>
 </div>
@@ -622,7 +622,7 @@ Friends</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="recipe__dictionary_8cpp_source.html#l00048">null_recipe</a>, <a class="el" href="recipe__dictionary_8cpp_source.html#l00029">recipe_dict</a>, <a class="el" href="recipe__dictionary_8h_source.html#l00024">recipe_id</a>, and <a class="el" href="recipe__dictionary_8h_source.html#l00064">uncraft</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l08097">add_disassemblables()</a>, <a class="el" href="game_8cpp_source.html#l08268">game::butcher()</a>, <a class="el" href="crafting_8cpp_source.html#l01877">crafting::can_disassemble()</a>, <a class="el" href="crafting_8cpp_source.html#l01017">complete_craft()</a>, <a class="el" href="crafting_8cpp_source.html#l02098">crafting::complete_disassemble()</a>, <a class="el" href="item_8cpp_source.html#l03162">item::disassembly_info()</a>, <a class="el" href="game__inventory_8cpp_source.html#l00489">disassemble_inventory_preset::get_recipe()</a>, <a class="el" href="item_8cpp_source.html#l10044">item::get_uncraft_components()</a>, <a class="el" href="crafting_8cpp_source.html#l01954">prompt_disassemble_in_seq()</a>, <a class="el" href="examine__item__menu_8cpp_source.html#l00425">examine_item_menu::rate_action_disassemble()</a>, <a class="el" href="activity__actor_8cpp_source.html#l00582">disassemble_activity_actor::try_start_single()</a>, and <a class="el" href="iuse__actor_8cpp_source.html#l01597">salvage_actor::try_to_cut_up()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l08098">add_disassemblables()</a>, <a class="el" href="game_8cpp_source.html#l08269">game::butcher()</a>, <a class="el" href="crafting_8cpp_source.html#l01877">crafting::can_disassemble()</a>, <a class="el" href="crafting_8cpp_source.html#l01017">complete_craft()</a>, <a class="el" href="crafting_8cpp_source.html#l02098">crafting::complete_disassemble()</a>, <a class="el" href="item_8cpp_source.html#l03174">item::disassembly_info()</a>, <a class="el" href="game__inventory_8cpp_source.html#l00489">disassemble_inventory_preset::get_recipe()</a>, <a class="el" href="item_8cpp_source.html#l10052">item::get_uncraft_components()</a>, <a class="el" href="crafting_8cpp_source.html#l01954">prompt_disassemble_in_seq()</a>, <a class="el" href="examine__item__menu_8cpp_source.html#l00425">examine_item_menu::rate_action_disassemble()</a>, <a class="el" href="activity__actor_8cpp_source.html#l00569">disassemble_activity_actor::try_start_single()</a>, and <a class="el" href="iuse__actor_8cpp_source.html#l01598">salvage_actor::try_to_cut_up()</a>.</p>
 
 </div>
 </div>
@@ -642,14 +642,14 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="recipe__dictionary_8cpp_source.html#l00350">350</a> of file <a class="el" href="recipe__dictionary_8cpp_source.html">recipe_dictionary.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>{</div>
-<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classrecipe__dictionary.html#aa915b4db5d46ad2f63245b2dd3d28cfd">items_on_loops</a>.count( i );</div>
-<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>}</div>
+<p class="definition">Definition at line <a class="el" href="recipe__dictionary_8cpp_source.html#l00355">355</a> of file <a class="el" href="recipe__dictionary_8cpp_source.html">recipe_dictionary.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>{</div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classrecipe__dictionary.html#aa915b4db5d46ad2f63245b2dd3d28cfd">items_on_loops</a>.count( i );</div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="recipe__dictionary_8h_source.html#l00067">items_on_loops</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="consumption_8cpp_source.html#l00425">Character::compute_nutrient_range()</a>, and <a class="el" href="item_8cpp_source.html#l01658">item::food_info()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="consumption_8cpp_source.html#l00425">Character::compute_nutrient_range()</a>, and <a class="el" href="item_8cpp_source.html#l01670">item::food_info()</a>.</p>
 
 </div>
 </div>
@@ -710,17 +710,23 @@ Friends</h2></td></tr>
 <div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span> </div>
 <div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>    r.<a class="code hl_function" href="classrecipe.html#a884eb2168906f99e9d8b4ad90be763dc">load</a>( jo, src );</div>
 <div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span> </div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>    <span class="keywordflow">return</span> out[ r.<a class="code hl_function" href="classrecipe.html#a5f1fa30e49785a8c16c4f5951d039afb">ident</a>() ] = <a class="code hl_function" href="namespaceavatar__action.html#a76ba74774376a08222b8cdcce08f7304">std::move</a>( r );</div>
-<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>}</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>    <span class="keywordflow">if</span>( !r.<a class="code hl_variable" href="classrecipe.html#a3340e6c14161c889be7c95cdd0f3b6f5">src</a>.empty() &amp;&amp; r.<a class="code hl_variable" href="classrecipe.html#a3340e6c14161c889be7c95cdd0f3b6f5">src</a>.back().first != r.<a class="code hl_function" href="classrecipe.html#a5f1fa30e49785a8c16c4f5951d039afb">ident</a>() ) {</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>        r.<a class="code hl_variable" href="classrecipe.html#a3340e6c14161c889be7c95cdd0f3b6f5">src</a>.clear();</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>    }</div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>    r.<a class="code hl_variable" href="classrecipe.html#a3340e6c14161c889be7c95cdd0f3b6f5">src</a>.emplace_back( r.<a class="code hl_function" href="classrecipe.html#a5f1fa30e49785a8c16c4f5951d039afb">ident</a>(), <a class="code hl_class" href="classstring__id.html">mod_id</a>( src ) );</div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span> </div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>    <span class="keywordflow">return</span> out[ r.<a class="code hl_function" href="classrecipe.html#a5f1fa30e49785a8c16c4f5951d039afb">ident</a>() ] = <a class="code hl_function" href="namespaceavatar__action.html#a76ba74774376a08222b8cdcce08f7304">std::move</a>( r );</div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>}</div>
 <div class="ttc" id="aclassJsonObject_html_a19d83d03e3d5cc6905bcb850d80a1f05"><div class="ttname"><a href="classJsonObject.html#a19d83d03e3d5cc6905bcb850d80a1f05">JsonObject::has_string</a></div><div class="ttdeci">bool has_string(const std::string &amp;name) const</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l00472">json.cpp:472</a></div></div>
 <div class="ttc" id="aclassJsonObject_html_a539477c9a10480af15673eb73be9c482"><div class="ttname"><a href="classJsonObject.html#a539477c9a10480af15673eb73be9c482">JsonObject::get_source_location</a></div><div class="ttdeci">json_source_location get_source_location() const</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l00316">json.cpp:316</a></div></div>
 <div class="ttc" id="aclassJsonObject_html_a96b6d1b9cf7bda4fc9cd177a99e0631c"><div class="ttname"><a href="classJsonObject.html#a96b6d1b9cf7bda4fc9cd177a99e0631c">JsonObject::get_string</a></div><div class="ttdeci">std::string get_string(const std::string &amp;name) const</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l00381">json.cpp:381</a></div></div>
 <div class="ttc" id="aclassJsonObject_html_ae00f195360e3783cf50527cf07344202"><div class="ttname"><a href="classJsonObject.html#ae00f195360e3783cf50527cf07344202">JsonObject::allow_omitted_members</a></div><div class="ttdeci">void allow_omitted_members() const</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l00150">json.cpp:150</a></div></div>
-<div class="ttc" id="aclassrecipe_html_a5f1fa30e49785a8c16c4f5951d039afb"><div class="ttname"><a href="classrecipe.html#a5f1fa30e49785a8c16c4f5951d039afb">recipe::ident</a></div><div class="ttdeci">const recipe_id &amp; ident() const</div><div class="ttdef"><b>Definition:</b> <a href="recipe_8h_source.html#l00075">recipe.h:75</a></div></div>
+<div class="ttc" id="aclassrecipe_html_a3340e6c14161c889be7c95cdd0f3b6f5"><div class="ttname"><a href="classrecipe.html#a3340e6c14161c889be7c95cdd0f3b6f5">recipe::src</a></div><div class="ttdeci">std::vector&lt; std::pair&lt; recipe_id, mod_id &gt; &gt; src</div><div class="ttdef"><b>Definition:</b> <a href="recipe_8h_source.html#l00052">recipe.h:52</a></div></div>
+<div class="ttc" id="aclassrecipe_html_a5f1fa30e49785a8c16c4f5951d039afb"><div class="ttname"><a href="classrecipe.html#a5f1fa30e49785a8c16c4f5951d039afb">recipe::ident</a></div><div class="ttdeci">const recipe_id &amp; ident() const</div><div class="ttdef"><b>Definition:</b> <a href="recipe_8h_source.html#l00077">recipe.h:77</a></div></div>
 <div class="ttc" id="aclassrecipe_html_a884eb2168906f99e9d8b4ad90be763dc"><div class="ttname"><a href="classrecipe.html#a884eb2168906f99e9d8b4ad90be763dc">recipe::load</a></div><div class="ttdeci">void load(const JsonObject &amp;jo, const std::string &amp;src)</div><div class="ttdef"><b>Definition:</b> <a href="recipe_8cpp_source.html#l00097">recipe.cpp:97</a></div></div>
 <div class="ttc" id="anamespaceavatar__action_html_a76ba74774376a08222b8cdcce08f7304"><div class="ttname"><a href="namespaceavatar__action.html#a76ba74774376a08222b8cdcce08f7304">avatar_action::move</a></div><div class="ttdeci">bool move(avatar &amp;you, map &amp;m, const tripoint &amp;d)</div><div class="ttdef"><b>Definition:</b> <a href="avatar__action_8cpp_source.html#l00096">avatar_action.cpp:96</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="json_8cpp_source.html#l00150">JsonObject::allow_omitted_members()</a>, <a class="el" href="recipe__dictionary_8cpp_source.html#l00051">deferred</a>, <a class="el" href="json_8cpp_source.html#l00316">JsonObject::get_source_location()</a>, <a class="el" href="json_8cpp_source.html#l00381">JsonObject::get_string()</a>, <a class="el" href="json_8cpp_source.html#l00472">JsonObject::has_string()</a>, <a class="el" href="recipe_8h_source.html#l00075">recipe::ident()</a>, <a class="el" href="recipe_8cpp_source.html#l00097">recipe::load()</a>, <a class="el" href="avatar__action_8cpp_source.html#l00096">avatar_action::move()</a>, <a class="el" href="recipe__dictionary_8cpp_source.html#l00048">null_recipe</a>, and <a class="el" href="recipe__dictionary_8h_source.html#l00024">recipe_id</a>.</p>
+<p class="reference">References <a class="el" href="json_8cpp_source.html#l00150">JsonObject::allow_omitted_members()</a>, <a class="el" href="recipe__dictionary_8cpp_source.html#l00051">deferred</a>, <a class="el" href="json_8cpp_source.html#l00316">JsonObject::get_source_location()</a>, <a class="el" href="json_8cpp_source.html#l00381">JsonObject::get_string()</a>, <a class="el" href="json_8cpp_source.html#l00472">JsonObject::has_string()</a>, <a class="el" href="recipe_8h_source.html#l00077">recipe::ident()</a>, <a class="el" href="recipe_8cpp_source.html#l00097">recipe::load()</a>, <a class="el" href="avatar__action_8cpp_source.html#l00096">avatar_action::move()</a>, <a class="el" href="recipe__dictionary_8cpp_source.html#l00048">null_recipe</a>, <a class="el" href="recipe__dictionary_8h_source.html#l00024">recipe_id</a>, and <a class="el" href="recipe_8h_source.html#l00052">recipe::src</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="recipe__dictionary_8cpp_source.html#l00304">load_recipe()</a>, and <a class="el" href="recipe__dictionary_8cpp_source.html#l00309">load_uncraft()</a>.</p>
 
@@ -840,19 +846,19 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="recipe__dictionary_8cpp_source.html#l00487">487</a> of file <a class="el" href="recipe__dictionary_8cpp_source.html">recipe_dictionary.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00488" name="l00488"></a><span class="lineno">  488</span>{</div>
-<div class="line"><a id="l00489" name="l00489"></a><span class="lineno">  489</span>    <a class="code hl_variable" href="recipe__dictionary_8cpp.html#a9c21005f31e0aa8c574e3a02f2d265db">deferred</a>.clear();</div>
-<div class="line"><a id="l00490" name="l00490"></a><span class="lineno">  490</span>    <a class="code hl_variable" href="recipe__dictionary_8cpp.html#a9fdb53bd54fb6dcc5f9b2e1e1b44570f">recipe_dict</a>.<a class="code hl_variable" href="classrecipe__dictionary.html#a59217bb3c16430212409a23282f3666a">blueprints</a>.clear();</div>
-<div class="line"><a id="l00491" name="l00491"></a><span class="lineno">  491</span>    <a class="code hl_variable" href="recipe__dictionary_8cpp.html#a9fdb53bd54fb6dcc5f9b2e1e1b44570f">recipe_dict</a>.<a class="code hl_variable" href="classrecipe__dictionary.html#a896d4331d7d1a8e228bd3c21afe5584b">autolearn</a>.clear();</div>
-<div class="line"><a id="l00492" name="l00492"></a><span class="lineno">  492</span>    <a class="code hl_variable" href="recipe__dictionary_8cpp.html#a9fdb53bd54fb6dcc5f9b2e1e1b44570f">recipe_dict</a>.<a class="code hl_variable" href="classrecipe__dictionary.html#a901c2ebf1ac5b39f12986da3ea7e023a">recipes</a>.clear();</div>
-<div class="line"><a id="l00493" name="l00493"></a><span class="lineno">  493</span>    <a class="code hl_variable" href="recipe__dictionary_8cpp.html#a9fdb53bd54fb6dcc5f9b2e1e1b44570f">recipe_dict</a>.<a class="code hl_variable" href="classrecipe__dictionary.html#a977f03247775526e965b64dc314007e4">uncraft</a>.clear();</div>
-<div class="line"><a id="l00494" name="l00494"></a><span class="lineno">  494</span>    <a class="code hl_variable" href="recipe__dictionary_8cpp.html#a9fdb53bd54fb6dcc5f9b2e1e1b44570f">recipe_dict</a>.<a class="code hl_variable" href="classrecipe__dictionary.html#aa915b4db5d46ad2f63245b2dd3d28cfd">items_on_loops</a>.clear();</div>
-<div class="line"><a id="l00495" name="l00495"></a><span class="lineno">  495</span>}</div>
+<p class="definition">Definition at line <a class="el" href="recipe__dictionary_8cpp_source.html#l00492">492</a> of file <a class="el" href="recipe__dictionary_8cpp_source.html">recipe_dictionary.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00493" name="l00493"></a><span class="lineno">  493</span>{</div>
+<div class="line"><a id="l00494" name="l00494"></a><span class="lineno">  494</span>    <a class="code hl_variable" href="recipe__dictionary_8cpp.html#a9c21005f31e0aa8c574e3a02f2d265db">deferred</a>.clear();</div>
+<div class="line"><a id="l00495" name="l00495"></a><span class="lineno">  495</span>    <a class="code hl_variable" href="recipe__dictionary_8cpp.html#a9fdb53bd54fb6dcc5f9b2e1e1b44570f">recipe_dict</a>.<a class="code hl_variable" href="classrecipe__dictionary.html#a59217bb3c16430212409a23282f3666a">blueprints</a>.clear();</div>
+<div class="line"><a id="l00496" name="l00496"></a><span class="lineno">  496</span>    <a class="code hl_variable" href="recipe__dictionary_8cpp.html#a9fdb53bd54fb6dcc5f9b2e1e1b44570f">recipe_dict</a>.<a class="code hl_variable" href="classrecipe__dictionary.html#a896d4331d7d1a8e228bd3c21afe5584b">autolearn</a>.clear();</div>
+<div class="line"><a id="l00497" name="l00497"></a><span class="lineno">  497</span>    <a class="code hl_variable" href="recipe__dictionary_8cpp.html#a9fdb53bd54fb6dcc5f9b2e1e1b44570f">recipe_dict</a>.<a class="code hl_variable" href="classrecipe__dictionary.html#a901c2ebf1ac5b39f12986da3ea7e023a">recipes</a>.clear();</div>
+<div class="line"><a id="l00498" name="l00498"></a><span class="lineno">  498</span>    <a class="code hl_variable" href="recipe__dictionary_8cpp.html#a9fdb53bd54fb6dcc5f9b2e1e1b44570f">recipe_dict</a>.<a class="code hl_variable" href="classrecipe__dictionary.html#a977f03247775526e965b64dc314007e4">uncraft</a>.clear();</div>
+<div class="line"><a id="l00499" name="l00499"></a><span class="lineno">  499</span>    <a class="code hl_variable" href="recipe__dictionary_8cpp.html#a9fdb53bd54fb6dcc5f9b2e1e1b44570f">recipe_dict</a>.<a class="code hl_variable" href="classrecipe__dictionary.html#aa915b4db5d46ad2f63245b2dd3d28cfd">items_on_loops</a>.clear();</div>
+<div class="line"><a id="l00500" name="l00500"></a><span class="lineno">  500</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="recipe__dictionary_8h_source.html#l00065">autolearn</a>, <a class="el" href="recipe__dictionary_8h_source.html#l00066">blueprints</a>, <a class="el" href="recipe__dictionary_8cpp_source.html#l00051">deferred</a>, <a class="el" href="recipe__dictionary_8h_source.html#l00067">items_on_loops</a>, <a class="el" href="recipe__dictionary_8cpp_source.html#l00029">recipe_dict</a>, <a class="el" href="recipe__dictionary_8h_source.html#l00063">recipes</a>, and <a class="el" href="recipe__dictionary_8h_source.html#l00064">uncraft</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8cpp_source.html#l00536">DynamicDataLoader::unload_data()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8cpp_source.html#l00537">DynamicDataLoader::unload_data()</a>.</p>
 
 </div>
 </div>
@@ -871,10 +877,10 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="recipe__dictionary_8cpp_source.html#l00335">335</a> of file <a class="el" href="recipe__dictionary_8cpp_source.html">recipe_dictionary.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>{</div>
-<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classrecipe__dictionary.html#a901c2ebf1ac5b39f12986da3ea7e023a">recipes</a>.size();</div>
-<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>}</div>
+<p class="definition">Definition at line <a class="el" href="recipe__dictionary_8cpp_source.html#l00340">340</a> of file <a class="el" href="recipe__dictionary_8cpp_source.html">recipe_dictionary.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>{</div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classrecipe__dictionary.html#a901c2ebf1ac5b39f12986da3ea7e023a">recipes</a>.size();</div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="recipe__dictionary_8h_source.html#l00063">recipes</a>.</p>
 
@@ -928,7 +934,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="recipe__dictionary_8h_source.html#l00065">65</a> of file <a class="el" href="recipe__dictionary_8h_source.html">recipe_dictionary.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="recipe__dictionary_8h_source.html#l00028">all_autolearn()</a>, <a class="el" href="recipe__dictionary_8cpp_source.html#l00424">finalize()</a>, and <a class="el" href="recipe__dictionary_8cpp_source.html#l00487">reset()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="recipe__dictionary_8h_source.html#l00028">all_autolearn()</a>, <a class="el" href="recipe__dictionary_8cpp_source.html#l00429">finalize()</a>, and <a class="el" href="recipe__dictionary_8cpp_source.html#l00492">reset()</a>.</p>
 
 </div>
 </div>
@@ -954,7 +960,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="recipe__dictionary_8h_source.html#l00066">66</a> of file <a class="el" href="recipe__dictionary_8h_source.html">recipe_dictionary.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="recipe__dictionary_8h_source.html#l00033">all_blueprints()</a>, <a class="el" href="recipe__dictionary_8cpp_source.html#l00424">finalize()</a>, and <a class="el" href="recipe__dictionary_8cpp_source.html#l00487">reset()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="recipe__dictionary_8h_source.html#l00033">all_blueprints()</a>, <a class="el" href="recipe__dictionary_8cpp_source.html#l00429">finalize()</a>, and <a class="el" href="recipe__dictionary_8cpp_source.html#l00492">reset()</a>.</p>
 
 </div>
 </div>
@@ -980,7 +986,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="recipe__dictionary_8h_source.html#l00067">67</a> of file <a class="el" href="recipe__dictionary_8h_source.html">recipe_dictionary.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="recipe__dictionary_8cpp_source.html#l00381">find_items_on_loops()</a>, <a class="el" href="recipe__dictionary_8cpp_source.html#l00350">is_item_on_loop()</a>, and <a class="el" href="recipe__dictionary_8cpp_source.html#l00487">reset()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="recipe__dictionary_8cpp_source.html#l00386">find_items_on_loops()</a>, <a class="el" href="recipe__dictionary_8cpp_source.html#l00355">is_item_on_loop()</a>, and <a class="el" href="recipe__dictionary_8cpp_source.html#l00492">reset()</a>.</p>
 
 </div>
 </div>
@@ -1006,7 +1012,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="recipe__dictionary_8h_source.html#l00024">24</a> of file <a class="el" href="recipe__dictionary_8h_source.html">recipe_dictionary.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="recipe__dictionary_8cpp_source.html#l00424">finalize()</a>, <a class="el" href="recipe__dictionary_8cpp_source.html#l00075">get_uncraft()</a>, and <a class="el" href="recipe__dictionary_8cpp_source.html#l00314">load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="recipe__dictionary_8cpp_source.html#l00429">finalize()</a>, <a class="el" href="recipe__dictionary_8cpp_source.html#l00075">get_uncraft()</a>, and <a class="el" href="recipe__dictionary_8cpp_source.html#l00314">load()</a>.</p>
 
 </div>
 </div>
@@ -1032,7 +1038,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="recipe__dictionary_8h_source.html#l00063">63</a> of file <a class="el" href="recipe__dictionary_8h_source.html">recipe_dictionary.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="recipe__dictionary_8cpp_source.html#l00340">begin()</a>, <a class="el" href="recipe__dictionary_8cpp_source.html#l00497">delete_if()</a>, <a class="el" href="recipe__dictionary_8cpp_source.html#l00345">end()</a>, <a class="el" href="recipe__dictionary_8cpp_source.html#l00424">finalize()</a>, <a class="el" href="recipe__dictionary_8cpp_source.html#l00304">load_recipe()</a>, <a class="el" href="recipe__dictionary_8cpp_source.html#l00487">reset()</a>, and <a class="el" href="recipe__dictionary_8cpp_source.html#l00335">size()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="recipe__dictionary_8cpp_source.html#l00345">begin()</a>, <a class="el" href="recipe__dictionary_8cpp_source.html#l00502">delete_if()</a>, <a class="el" href="recipe__dictionary_8cpp_source.html#l00350">end()</a>, <a class="el" href="recipe__dictionary_8cpp_source.html#l00429">finalize()</a>, <a class="el" href="recipe__dictionary_8cpp_source.html#l00304">load_recipe()</a>, <a class="el" href="recipe__dictionary_8cpp_source.html#l00492">reset()</a>, and <a class="el" href="recipe__dictionary_8cpp_source.html#l00340">size()</a>.</p>
 
 </div>
 </div>
@@ -1058,7 +1064,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="recipe__dictionary_8h_source.html#l00064">64</a> of file <a class="el" href="recipe__dictionary_8h_source.html">recipe_dictionary.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="recipe__dictionary_8cpp_source.html#l00497">delete_if()</a>, <a class="el" href="recipe__dictionary_8cpp_source.html#l00424">finalize()</a>, <a class="el" href="recipe__dictionary_8cpp_source.html#l00075">get_uncraft()</a>, <a class="el" href="recipe__dictionary_8cpp_source.html#l00309">load_uncraft()</a>, and <a class="el" href="recipe__dictionary_8cpp_source.html#l00487">reset()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="recipe__dictionary_8cpp_source.html#l00502">delete_if()</a>, <a class="el" href="recipe__dictionary_8cpp_source.html#l00429">finalize()</a>, <a class="el" href="recipe__dictionary_8cpp_source.html#l00075">get_uncraft()</a>, <a class="el" href="recipe__dictionary_8cpp_source.html#l00309">load_uncraft()</a>, and <a class="el" href="recipe__dictionary_8cpp_source.html#l00492">reset()</a>.</p>
 
 </div>
 </div>
@@ -1072,7 +1078,7 @@ Friends</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classrecipe__dictionary.html">recipe_dictionary</a></li>
-    <li class="footer">Generated on Sun Mar 5 2023 13:51:13 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Apr 7 2023 11:54:52 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

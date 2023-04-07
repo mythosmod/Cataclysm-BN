@@ -99,9 +99,9 @@ Functions</h2></td></tr>
 <tr class="separator:a023ea871de42d32d9280eb48dcccb561"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76b8b8dcfd6c0d1af778f5722bbb3bdb"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="structclothing__mod.html">clothing_mod</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceclothing__mods.html#a76b8b8dcfd6c0d1af778f5722bbb3bdb">get_all</a> ()</td></tr>
 <tr class="separator:a76b8b8dcfd6c0d1af778f5722bbb3bdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f2f25d2cd5b92e4ab3f62cfd98d7c6e"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="structclothing__mod.html">clothing_mod</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceclothing__mods.html#a8f2f25d2cd5b92e4ab3f62cfd98d7c6e">get_all_with</a> (<a class="el" href="clothing__mod_8h.html#ab129387d97c2c7f0393c210d21df0152">clothing_mod_type</a> <a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a>)</td></tr>
+<tr class="memitem:a8f2f25d2cd5b92e4ab3f62cfd98d7c6e"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="structclothing__mod.html">clothing_mod</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceclothing__mods.html#a8f2f25d2cd5b92e4ab3f62cfd98d7c6e">get_all_with</a> (<a class="el" href="clothing__mod_8h.html#ab129387d97c2c7f0393c210d21df0152">clothing_mod_type</a> type)</td></tr>
 <tr class="separator:a8f2f25d2cd5b92e4ab3f62cfd98d7c6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5bf63dd4b0368188aa71cfa230cfa989"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceclothing__mods.html#a5bf63dd4b0368188aa71cfa230cfa989">string_from_clothing_mod_type</a> (<a class="el" href="clothing__mod_8h.html#ab129387d97c2c7f0393c210d21df0152">clothing_mod_type</a> <a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a>)</td></tr>
+<tr class="memitem:a5bf63dd4b0368188aa71cfa230cfa989"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceclothing__mods.html#a5bf63dd4b0368188aa71cfa230cfa989">string_from_clothing_mod_type</a> (<a class="el" href="clothing__mod_8h.html#ab129387d97c2c7f0393c210d21df0152">clothing_mod_type</a> type)</td></tr>
 <tr class="separator:a5bf63dd4b0368188aa71cfa230cfa989"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
@@ -133,7 +133,7 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="namespaceanonymous__namespace_02clothing__mod_8cpp_03.html#a5f31d58dfc5fbaa8a5da0103182a3e81">anonymous_namespace{clothing_mod.cpp}::all_clothing_mods</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="item_8cpp_source.html#l10120">item::has_clothing_mod()</a>, and <a class="el" href="iuse__actor_8cpp_source.html#l04730">sew_advanced_actor::use()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="item_8cpp_source.html#l10128">item::has_clothing_mod()</a>, and <a class="el" href="iuse__actor_8cpp_source.html#l04808">sew_advanced_actor::use()</a>.</p>
 
 </div>
 </div>
@@ -155,29 +155,29 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="clothing__mod_8cpp_source.html#l00150">150</a> of file <a class="el" href="clothing__mod_8cpp_source.html">clothing_mod.cpp</a>.</p>
 <div class="fragment"><div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>{</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    <span class="keyword">const</span> <span class="keyword">auto</span> iter = <a class="code hl_variable" href="clothing__mod_8cpp.html#a24df55962855b615ae46bb335d144be5">clothing_mods_by_type</a>.find( <a class="code hl_enumvalue" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a> );</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    <span class="keyword">const</span> <span class="keyword">auto</span> iter = <a class="code hl_variable" href="clothing__mod_8cpp.html#a24df55962855b615ae46bb335d144be5">clothing_mods_by_type</a>.find( type );</div>
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    <span class="keywordflow">if</span>( iter != <a class="code hl_variable" href="clothing__mod_8cpp.html#a24df55962855b615ae46bb335d144be5">clothing_mods_by_type</a>.end() ) {</div>
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>        <span class="keywordflow">return</span> iter-&gt;second;</div>
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>        <span class="comment">// Build cache</span></div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        std::vector&lt;clothing_mod&gt; list;</div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        <span class="keywordflow">for</span>( <span class="keyword">auto</span> &amp;cm : <a class="code hl_function" href="namespaceammo__effects.html#ac865017e83604b57024c38c4e93d56bf">get_all</a>() ) {</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>            <span class="keywordflow">if</span>( cm.has_mod_type( <a class="code hl_enumvalue" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a> ) ) {</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>            <span class="keywordflow">if</span>( cm.has_mod_type( type ) ) {</div>
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>                list.push_back( cm );</div>
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>            }</div>
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        }</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>        <a class="code hl_variable" href="clothing__mod_8cpp.html#a24df55962855b615ae46bb335d144be5">clothing_mods_by_type</a>.emplace( <a class="code hl_enumvalue" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a>, <a class="code hl_function" href="namespaceavatar__action.html#a76ba74774376a08222b8cdcce08f7304">std::move</a>( list ) );</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="clothing__mod_8cpp.html#a24df55962855b615ae46bb335d144be5">clothing_mods_by_type</a>[<a class="code hl_enumvalue" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a>];</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>        <a class="code hl_variable" href="clothing__mod_8cpp.html#a24df55962855b615ae46bb335d144be5">clothing_mods_by_type</a>.emplace( type, <a class="code hl_function" href="namespaceavatar__action.html#a76ba74774376a08222b8cdcce08f7304">std::move</a>( list ) );</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="clothing__mod_8cpp.html#a24df55962855b615ae46bb335d144be5">clothing_mods_by_type</a>[<a class="code hl_enumeration" href="namespacedetail.html#ad46d232fb6116de4dac0c43dbde8e7a9">type</a>];</div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    }</div>
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>}</div>
 <div class="ttc" id="aclothing__mod_8cpp_html_a24df55962855b615ae46bb335d144be5"><div class="ttname"><a href="clothing__mod_8cpp.html#a24df55962855b615ae46bb335d144be5">clothing_mods_by_type</a></div><div class="ttdeci">static std::map&lt; clothing_mod_type, std::vector&lt; clothing_mod &gt; &gt; clothing_mods_by_type</div><div class="ttdef"><b>Definition:</b> <a href="clothing__mod_8cpp_source.html#l00024">clothing_mod.cpp:24</a></div></div>
-<div class="ttc" id="aenums_8h_html_ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab"><div class="ttname"><a href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a></div><div class="ttdeci">@ type</div><div class="ttdef"><b>Definition:</b> <a href="enums_8h_source.html#l00075">enums.h:75</a></div></div>
 <div class="ttc" id="anamespaceammo__effects_html_ac865017e83604b57024c38c4e93d56bf"><div class="ttname"><a href="namespaceammo__effects.html#ac865017e83604b57024c38c4e93d56bf">ammo_effects::get_all</a></div><div class="ttdeci">const std::vector&lt; ammo_effect &gt; &amp; get_all()</div><div class="ttdef"><b>Definition:</b> <a href="ammo__effect_8cpp_source.html#l00170">ammo_effect.cpp:170</a></div></div>
 <div class="ttc" id="anamespaceavatar__action_html_a76ba74774376a08222b8cdcce08f7304"><div class="ttname"><a href="namespaceavatar__action.html#a76ba74774376a08222b8cdcce08f7304">avatar_action::move</a></div><div class="ttdeci">bool move(avatar &amp;you, map &amp;m, const tripoint &amp;d)</div><div class="ttdef"><b>Definition:</b> <a href="avatar__action_8cpp_source.html#l00096">avatar_action.cpp:96</a></div></div>
+<div class="ttc" id="anamespacedetail_html_ad46d232fb6116de4dac0c43dbde8e7a9"><div class="ttname"><a href="namespacedetail.html#ad46d232fb6116de4dac0c43dbde8e7a9">detail::type</a></div><div class="ttdeci">type</div><div class="ttdef"><b>Definition:</b> <a href="fmtlib__core_8h_source.html#l01087">fmtlib_core.h:1087</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="clothing__mod_8cpp_source.html#l00024">clothing_mods_by_type</a>, <a class="el" href="ammo__effect_8cpp_source.html#l00170">ammo_effects::get_all()</a>, <a class="el" href="avatar__action_8cpp_source.html#l00096">avatar_action::move()</a>, and <a class="el" href="enums_8h_source.html#l00075">type</a>.</p>
+<p class="reference">References <a class="el" href="clothing__mod_8cpp_source.html#l00024">clothing_mods_by_type</a>, <a class="el" href="ammo__effect_8cpp_source.html#l00170">ammo_effects::get_all()</a>, and <a class="el" href="avatar__action_8cpp_source.html#l00096">avatar_action::move()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="item_8cpp_source.html#l10137">item::update_clothing_mod_val()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="item_8cpp_source.html#l10145">item::update_clothing_mod_val()</a>.</p>
 
 </div>
 </div>
@@ -241,7 +241,7 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="namespaceanonymous__namespace_02clothing__mod_8cpp_03.html#a5f31d58dfc5fbaa8a5da0103182a3e81">anonymous_namespace{clothing_mod.cpp}::all_clothing_mods</a>, and <a class="el" href="clothing__mod_8cpp_source.html#l00024">clothing_mods_by_type</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8cpp_source.html#l00536">DynamicDataLoader::unload_data()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8cpp_source.html#l00537">DynamicDataLoader::unload_data()</a>.</p>
 
 </div>
 </div>
@@ -263,13 +263,13 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="clothing__mod_8cpp_source.html#l00168">168</a> of file <a class="el" href="clothing__mod_8cpp_source.html">clothing_mod.cpp</a>.</p>
 <div class="fragment"><div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>{</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="namespaceio.html#aea9f5397c36437173351b5088c1d8f8b">io::enum_to_string&lt;clothing_mod_type&gt;</a>( <a class="code hl_enumvalue" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a> );</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="namespaceio.html#aea9f5397c36437173351b5088c1d8f8b">io::enum_to_string&lt;clothing_mod_type&gt;</a>( type );</div>
 <div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>}</div>
 <div class="ttc" id="anamespaceio_html_aea9f5397c36437173351b5088c1d8f8b"><div class="ttname"><a href="namespaceio.html#aea9f5397c36437173351b5088c1d8f8b">io::enum_to_string&lt; clothing_mod_type &gt;</a></div><div class="ttdeci">std::string enum_to_string&lt; clothing_mod_type &gt;(clothing_mod_type data)</div><div class="ttdef"><b>Definition:</b> <a href="clothing__mod_8cpp_source.html#l00044">clothing_mod.cpp:44</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="clothing__mod_8cpp_source.html#l00044">io::enum_to_string&lt; clothing_mod_type &gt;()</a>, and <a class="el" href="enums_8h_source.html#l00075">type</a>.</p>
+<p class="reference">References <a class="el" href="clothing__mod_8cpp_source.html#l00044">io::enum_to_string&lt; clothing_mod_type &gt;()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="item_8cpp_source.html#l10130">item::get_clothing_mod_val()</a>, and <a class="el" href="item_8cpp_source.html#l10137">item::update_clothing_mod_val()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="item_8cpp_source.html#l10138">item::get_clothing_mod_val()</a>, and <a class="el" href="item_8cpp_source.html#l10145">item::update_clothing_mod_val()</a>.</p>
 
 </div>
 </div>
@@ -317,7 +317,7 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="clothing__mod_8h_source.html#l00063">63</a> of file <a class="el" href="clothing__mod_8h_source.html">clothing_mod.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="item_8cpp_source.html#l10137">item::update_clothing_mod_val()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="item_8cpp_source.html#l10145">item::update_clothing_mod_val()</a>.</p>
 
 </div>
 </div>
@@ -327,7 +327,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceclothing__mods.html">clothing_mods</a></li>
-    <li class="footer">Generated on Sun Mar 5 2023 13:51:20 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Apr 7 2023 11:54:59 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

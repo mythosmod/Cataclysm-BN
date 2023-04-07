@@ -162,7 +162,8 @@ var namespaces_dup =
     [ "anonymous_namespace{martialarts.cpp}", "namespaceanonymous__namespace_02martialarts_8cpp_03.html", [
       [ "ma_buffs", "namespaceanonymous__namespace_02martialarts_8cpp_03.html#ad4fb4a84fae57a9c40c693ca2701b45c", null ],
       [ "ma_techniques", "namespaceanonymous__namespace_02martialarts_8cpp_03.html#aae3f3de3b7baac697dfacb78ad4a80ea", null ],
-      [ "martialarts", "namespaceanonymous__namespace_02martialarts_8cpp_03.html#adf8fd9cfd1bea36da26edfc99075b372", null ]
+      [ "martialarts", "namespaceanonymous__namespace_02martialarts_8cpp_03.html#adf8fd9cfd1bea36da26edfc99075b372", null ],
+      [ "weapon_category_factory", "namespaceanonymous__namespace_02martialarts_8cpp_03.html#a47e8666a1e458f8836fd4beb7c2e00b7", null ]
     ] ],
     [ "anonymous_namespace{material.cpp}", "namespaceanonymous__namespace_02material_8cpp_03.html", [
       [ "material_data", "namespaceanonymous__namespace_02material_8cpp_03.html#a7ca756e3448d6202a95086c3d2fa0005", null ]
@@ -248,8 +249,8 @@ var namespaces_dup =
       [ "fire_turret_manual", "namespaceavatar__action.html#a00b91d17ef44b22858cab0b9dc798301", null ],
       [ "fire_wielded_weapon", "namespaceavatar__action.html#a66522a5f8e132e3db71c514ca8767b0f", null ],
       [ "mend", "namespaceavatar__action.html#af2c58da1638b239e9df99d2a4611cde8", null ],
-      [ "move", "namespaceavatar__action.html#a27b98a9164601ec7d6b4d233ffc19e66", null ],
       [ "move", "namespaceavatar__action.html#a76ba74774376a08222b8cdcce08f7304", null ],
+      [ "move", "namespaceavatar__action.html#a4180afe5f02be501278dca2dcfda87c3", null ],
       [ "plthrow", "namespaceavatar__action.html#a88a027e47bb814ff61be3e15bd0b8777", null ],
       [ "ramp_move", "namespaceavatar__action.html#abadb3333d387007017d11836c606f1e5", null ],
       [ "reload", "namespaceavatar__action.html#a03cf09d521b2df8ec4e14523b73804b4", null ],
@@ -313,8 +314,8 @@ var namespaces_dup =
     [ "cata_variant_detail", "namespacecata__variant__detail.html", "namespacecata__variant__detail" ],
     [ "catacurses", "namespacecatacurses.html", "namespacecatacurses" ],
     [ "CellularAutomata", "namespaceCellularAutomata.html", [
-      [ "generate_cellular_automaton", "namespaceCellularAutomata.html#a7cad9f62c294f80ca741010f4b9b6f7b", null ],
-      [ "neighbor_count", "namespaceCellularAutomata.html#a0e75d0a4380996da33f3200f42f35e46", null ]
+      [ "generate_cellular_automaton", "namespaceCellularAutomata.html#a4c29382ca123e486076190e1266ac2c0", null ],
+      [ "neighbor_count", "namespaceCellularAutomata.html#a32e295db5ab5a34d5fbe65d7fb0924e0", null ]
     ] ],
     [ "char_creation", "namespacechar__creation.html", [
       [ "description_selector", "namespacechar__creation.html#a9ba8fcc12acdec7ace3940a82223d9a6", [
@@ -811,6 +812,7 @@ var namespaces_dup =
       [ "meth", "namespaceiuse.html#a1c55d9f8022241b470d2d2e3f26ccbb3", null ],
       [ "mind_splicer", "namespaceiuse.html#a18ded3f37f4b03f690f1d23e5b4f0a50", null ],
       [ "mininuke", "namespaceiuse.html#a21c8e65ced80f9b26011bc78dfa450a6", null ],
+      [ "modify_grid_connections", "namespaceiuse.html#a4a2c4912356e6a153420d74fdd6c36c5", null ],
       [ "molotov_lit", "namespaceiuse.html#ada78e14562e559ac1a3cc6f84f4c1604", null ],
       [ "mop", "namespaceiuse.html#a8f16cb027c9e2d876a8a6617c6b62463", null ],
       [ "mp3", "namespaceiuse.html#ae84247499c1f9c3996f54bb5e849ffe5", null ],
@@ -990,7 +992,7 @@ var namespaces_dup =
       [ "mx_shrubbery", "namespaceMapExtras.html#a7d1c8eaa2688dcd59193e585e71bc0f6", null ],
       [ "mx_spider", "namespaceMapExtras.html#a1caac5b7408bb99894c73256625604a3", null ],
       [ "mx_supplydrop", "namespaceMapExtras.html#a63a632a4de744db6d8997bfefefc6172", null ],
-      [ "place_fumarole", "namespaceMapExtras.html#abbf5ec4c4ffcbf9a850735dfd9c623c4", null ],
+      [ "place_fumarole", "namespaceMapExtras.html#a704105cd733d55698ae55723d25e778a", null ],
       [ "reset", "namespaceMapExtras.html#abcc7ff03f78ad0890e4e19ae2fe62dea", null ],
       [ "all_function_names", "namespaceMapExtras.html#a161969430a2960b3408db9567fb55d0c", null ],
       [ "builtin_functions", "namespaceMapExtras.html#a98f5385324714fff39e9ce79212dfff5", null ]
@@ -1317,8 +1319,8 @@ var namespaces_dup =
       [ "name", "namespaceom__direction.html#a8ba958ccfad28c0a5572a04dd1428f32", null ],
       [ "opposite", "namespaceom__direction.html#a744200df724ee18bb82152e165e7b694", null ],
       [ "random", "namespaceom__direction.html#a0fdbb3cc8e25454026b9ab57f9b91c69", null ],
-      [ "rotate", "namespaceom__direction.html#a81218991d18ce76097c769d5c3f185c2", null ],
       [ "rotate", "namespaceom__direction.html#a0c2e6833cb139b3a28e7bfe7df5f3892", null ],
+      [ "rotate", "namespaceom__direction.html#a61583b9687e31a24425e57ce443c31d5", null ],
       [ "rotate_symbol", "namespaceom__direction.html#a1a2e4f8ffd98ed611f555d655bb018ae", null ],
       [ "turn_left", "namespaceom__direction.html#a55a436b570f79ab5500b918150742a8e", null ],
       [ "turn_random", "namespaceom__direction.html#ab3d71532342ed72a0e77b239d0d0dac9", null ],

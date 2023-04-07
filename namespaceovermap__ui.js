@@ -17,7 +17,7 @@ var namespaceovermap__ui =
     [ "draw_camp_labels", "namespaceovermap__ui.html#a7ac1244230d855fdd4299bc989d81317", null ],
     [ "draw_city_labels", "namespaceovermap__ui.html#ab7f43df94d3fa37fb53eec9d2e0975c4", null ],
     [ "draw_om_sidebar", "namespaceovermap__ui.html#a3ddd3354486513edb257520a2dec8c17", null ],
-    [ "draw_overmap_chunk", "namespaceovermap__ui.html#a37d0b9bb160674dc0bbc582369d92851", null ],
+    [ "draw_overmap_chunk", "namespaceovermap__ui.html#ab7ad1426d5b3660c6739b39aae49ac75", null ],
     [ "fmt_omt_coords", "namespaceovermap__ui.html#a63c515eee1d82de3388b7dcb821b49fa", null ],
     [ "get_note_display_info", "namespaceovermap__ui.html#a489ad7a3dbcaa340feb37082beaa6d4a", null ],
     [ "get_overmap_neighbors", "namespaceovermap__ui.html#a3167d5016c349a84b9472caf6450a01f", null ],

@@ -198,6 +198,7 @@ var hierarchy =
     [ "calendar_config", "classcalendar__config.html", null ],
     [ "camp_reference", "structcamp__reference.html", null ],
     [ "capture_debugmsg", "classcapture__debugmsg.html", null ],
+    [ "cat_order", "structcat__order.html", null ],
     [ "cata_ifstream", "structcata__ifstream.html", null ],
     [ "cata_ofstream", "structcata__ofstream.html", null ],
     [ "cata_tiles", "classcata__tiles.html", null ],
@@ -911,7 +912,8 @@ var hierarchy =
       [ "selection_column_preset", "classselection__column__preset.html", null ],
       [ "weapon_inventory_preset", "classweapon__inventory__preset.html", [
         [ "holster_inventory_preset", "classholster__inventory__preset.html", null ],
-        [ "saw_barrel_inventory_preset", "classsaw__barrel__inventory__preset.html", null ]
+        [ "saw_barrel_inventory_preset", "classsaw__barrel__inventory__preset.html", null ],
+        [ "saw_stock_inventory_preset", "classsaw__stock__inventory__preset.html", null ]
       ] ]
     ] ],
     [ "invlet_favorites", "classinvlet__favorites.html", null ],
@@ -1025,6 +1027,7 @@ var hierarchy =
       [ "reveal_map_actor", "classreveal__map__actor.html", null ],
       [ "salvage_actor", "classsalvage__actor.html", null ],
       [ "saw_barrel_actor", "classsaw__barrel__actor.html", null ],
+      [ "saw_stock_actor", "classsaw__stock__actor.html", null ],
       [ "sew_advanced_actor", "classsew__advanced__actor.html", null ],
       [ "unfold_vehicle_iuse", "classunfold__vehicle__iuse.html", null ],
       [ "unpack_actor", "classunpack__actor.html", null ],
@@ -1636,6 +1639,7 @@ var hierarchy =
     [ "string_id< VehicleGroup >", "classstring__id.html", null ],
     [ "string_id< vitamin >", "classstring__id.html", null ],
     [ "string_id< vpart_info >", "classstring__id.html", null ],
+    [ "string_id< weapon_category >", "classstring__id.html", null ],
     [ "string_id< weather_type >", "classstring__id.html", null ],
     [ "string_id< zone_type >", "classstring__id.html", null ],
     [ "string_id_params< T >", "structstring__id__params.html", null ],
@@ -1713,7 +1717,7 @@ var hierarchy =
       [ "detail::is_output_iterator< It, T, void_t< typename std::iterator_traits< It >::iterator_category, decltype(*std::declval< It >()=std::declval< T >()) > >", "structdetail_1_1is__output__iterator_3_01It_00_01T_00_01void__t_3_01typename_01std_1_1iterator__c6c92fb2cbbf10ce92436c9976fda4bf.html", null ],
       [ "detail::is_reference_wrapper< std::reference_wrapper< T > >", "structdetail_1_1is__reference__wrapper_3_01std_1_1reference__wrapper_3_01T_01_4_01_4.html", null ],
       [ "has_enum_traits< E, enum_traits_detail::last_type< E > >", "structhas__enum__traits_3_01E_00_01enum__traits__detail_1_1last__type_3_01E_01_4_01_4.html", null ],
-      [ "has_src_member< T, cata::void_t< decltype(std::declval< T & >().src.emplace_back(std::declval< T & >().id, mod_id()))> >", "structhas__src__member_3_01T_00_01cata_1_1void__t_3_01decltype_07std_1_1declval_3_01T_01_6_01_4_4e4a02a40440211e97410229b7faa76f.html", null ],
+      [ "has_src_member< T, std::void_t< decltype(std::declval< T & >().src.emplace_back(std::declval< T & >().id, mod_id()))> >", "structhas__src__member_3_01T_00_01std_1_1void__t_3_01decltype_07std_1_1declval_3_01T_01_6_01_4_008f265368982ec699844890d5cd1ff0d.html", null ],
       [ "io::detail::has_archive_tag< T, typename enable_if_type< typename T::archive_type_tag >::type >", "structio_1_1detail_1_1has__archive__tag_3_01T_00_01typename_01enable__if__type_3_01typename_01T_f020189a2c34814894bce8b62ed27d09.html", null ],
       [ "is_char< char >", "structis__char_3_01char_01_4.html", null ],
       [ "is_char< char16_t >", "structis__char_3_01char16__t_01_4.html", null ],
@@ -1724,8 +1728,8 @@ var hierarchy =
       [ "is_contiguous< std::basic_string< Char > >", "structis__contiguous_3_01std_1_1basic__string_3_01Char_01_4_01_4.html", null ],
       [ "is_pimpl_helper< pimpl< T > >", "classis__pimpl__helper_3_01pimpl_3_01T_01_4_01_4.html", null ],
       [ "is_std_array_helper< std::array< T, N > >", "classis__std__array__helper_3_01std_1_1array_3_01T_00_01N_01_4_01_4.html", null ],
-      [ "supports_proportional< T, cata::void_t< decltype(std::declval< T & >() *=std::declval< float >())> >", "structsupports__proportional_3_01T_00_01cata_1_1void__t_3_01decltype_07std_1_1declval_3_01T_01_65a900226014ad1185c6b766ea4e24245.html", null ],
-      [ "supports_relative< T, cata::void_t< decltype(std::declval< T & >()+=std::declval< T & >())> >", "structsupports__relative_3_01T_00_01cata_1_1void__t_3_01decltype_07std_1_1declval_3_01T_01_6_01_50ce8d93c8242fc4603fa58eb9774b45.html", null ]
+      [ "supports_proportional< T, std::void_t< decltype(std::declval< T & >() *=std::declval< float >())> >", "structsupports__proportional_3_01T_00_01std_1_1void__t_3_01decltype_07std_1_1declval_3_01T_01_6_feffb41c6ab1ef1da38e3c6e8b927d83.html", null ],
+      [ "supports_relative< T, std::void_t< decltype(std::declval< T & >()+=std::declval< T & >())> >", "structsupports__relative_3_01T_00_01std_1_1void__t_3_01decltype_07std_1_1declval_3_01T_01_6_01_49ed6ff7dcf760d5705b050c877ee4fe5.html", null ]
     ] ],
     [ "detail::truncating_iterator< OutputIt, Enable >", "classdetail_1_1truncating__iterator.html", null ],
     [ "detail::truncating_iterator_base< OutputIt >", "classdetail_1_1truncating__iterator__base.html", [
@@ -1754,6 +1758,7 @@ var hierarchy =
       [ "overmap_ui::map_notes_callback", "classovermap__ui_1_1map__notes__callback.html", null ],
       [ "pointmenu_cb", "classpointmenu__cb.html", null ],
       [ "query_destination_callback", "classquery__destination__callback.html", null ],
+      [ "sound_on_move_uilist_callback", "classsound__on__move__uilist__callback.html", null ],
       [ "spellbook_callback", "classspellbook__callback.html", null ],
       [ "spellcasting_callback", "classspellcasting__callback.html", null ],
       [ "teleporter_callback", "classteleporter__callback.html", null ],
@@ -1859,6 +1864,7 @@ var hierarchy =
     [ "washing_requirements", "structwashing__requirements.html", null ],
     [ "watcher_set< Watcher >", "classwatcher__set.html", null ],
     [ "Creature_tracker::weak_ptr_comparator", "classCreature__tracker_1_1weak__ptr__comparator.html", null ],
+    [ "weapon_category", "classweapon__category.html", null ],
     [ "weather_animation_t", "structweather__animation__t.html", null ],
     [ "weather_gen_common", "structweather__gen__common.html", null ],
     [ "weather_generator", "classweather__generator.html", null ],

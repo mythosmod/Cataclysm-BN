@@ -323,16 +323,16 @@ Private Attributes</h2></td></tr>
 
 <p>Adds the entered martial art to the player's list. </p>
 
-<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l01207">1207</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01208" name="l01208"></a><span class="lineno"> 1208</span>{</div>
-<div class="line"><a id="l01209" name="l01209"></a><span class="lineno"> 1209</span>    <span class="keywordflow">if</span>( <a class="code hl_function" href="classcharacter__martial__arts.html#aa66c509f7482761a44436cfe8f6ece83">has_martialart</a>( ma_id ) ) {</div>
-<div class="line"><a id="l01210" name="l01210"></a><span class="lineno"> 1210</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l01211" name="l01211"></a><span class="lineno"> 1211</span>    }</div>
-<div class="line"><a id="l01212" name="l01212"></a><span class="lineno"> 1212</span>    <a class="code hl_variable" href="classcharacter__martial__arts.html#ac1d2713f3b9ffdf4da1223d8444e030a">ma_styles</a>.emplace_back( ma_id );</div>
-<div class="line"><a id="l01213" name="l01213"></a><span class="lineno"> 1213</span>}</div>
-<div class="ttc" id="aclasscharacter__martial__arts_html_aa66c509f7482761a44436cfe8f6ece83"><div class="ttname"><a href="classcharacter__martial__arts.html#aa66c509f7482761a44436cfe8f6ece83">character_martial_arts::has_martialart</a></div><div class="ttdeci">bool has_martialart(const matype_id &amp;ma_id) const</div><div class="ttdoc">Returns true if the player has access to the entered martial art.</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8cpp_source.html#l01202">martialarts.cpp:1202</a></div></div>
+<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l01252">1252</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01253" name="l01253"></a><span class="lineno"> 1253</span>{</div>
+<div class="line"><a id="l01254" name="l01254"></a><span class="lineno"> 1254</span>    <span class="keywordflow">if</span>( <a class="code hl_function" href="classcharacter__martial__arts.html#aa66c509f7482761a44436cfe8f6ece83">has_martialart</a>( ma_id ) ) {</div>
+<div class="line"><a id="l01255" name="l01255"></a><span class="lineno"> 1255</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l01256" name="l01256"></a><span class="lineno"> 1256</span>    }</div>
+<div class="line"><a id="l01257" name="l01257"></a><span class="lineno"> 1257</span>    <a class="code hl_variable" href="classcharacter__martial__arts.html#ac1d2713f3b9ffdf4da1223d8444e030a">ma_styles</a>.emplace_back( ma_id );</div>
+<div class="line"><a id="l01258" name="l01258"></a><span class="lineno"> 1258</span>}</div>
+<div class="ttc" id="aclasscharacter__martial__arts_html_aa66c509f7482761a44436cfe8f6ece83"><div class="ttname"><a href="classcharacter__martial__arts.html#aa66c509f7482761a44436cfe8f6ece83">character_martial_arts::has_martialart</a></div><div class="ttdeci">bool has_martialart(const matype_id &amp;ma_id) const</div><div class="ttdoc">Returns true if the player has access to the entered martial art.</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8cpp_source.html#l01247">martialarts.cpp:1247</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="martialarts_8cpp_source.html#l01202">has_martialart()</a>, and <a class="el" href="character__martial__arts_8h_source.html#l00020">ma_styles</a>.</p>
+<p class="reference">References <a class="el" href="martialarts_8cpp_source.html#l01247">has_martialart()</a>, and <a class="el" href="character__martial__arts_8h_source.html#l00020">ma_styles</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="character__martial__arts_8cpp_source.html#l00062">learn_current_style_CQB()</a>, and <a class="el" href="character__martial__arts_8cpp_source.html#l00071">learn_style()</a>.</p>
 
@@ -356,41 +356,41 @@ Private Attributes</h2></td></tr>
 
 <p>Returns true if the player has the arm block technique available. </p>
 Unarmed increases ability to perform arm block 
-<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l00973">973</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00974" name="l00974"></a><span class="lineno">  974</span>{</div>
-<div class="line"><a id="l00975" name="l00975"></a><span class="lineno">  975</span>    <span class="keyword">const</span> <a class="code hl_class" href="classmartialart.html">martialart</a> &amp;ma = <a class="code hl_variable" href="classcharacter__martial__arts.html#a6e5e356f65e94363420b0f8d0a3736ac">style_selected</a>.<a class="code hl_function" href="classstring__id.html#a4796245d3cd6e0283670698a98d46ae9">obj</a>();<span class="comment"></span></div>
-<div class="line"><a id="l00976" name="l00976"></a><span class="lineno">  976</span><span class="comment">    ///\EFFECT_UNARMED increases ability to perform arm block</span></div>
-<div class="line"><a id="l00977" name="l00977"></a><span class="lineno">  977</span><span class="comment"></span>    <span class="keywordtype">int</span> unarmed_skill = owner.<a class="code hl_function" href="classCharacter.html#af9c7419575e23d52745c94009929fafb">has_active_bionic</a>( <a class="code hl_variable" href="martialarts_8cpp.html#a018a5823d7e1524b702156d66788c335">bio_cqb</a> ) ? 5 : owner.<a class="code hl_function" href="classCharacter.html#afa95fe499ca6b55ab97f1b442a4c95c5">get_skill_level</a>(</div>
-<div class="line"><a id="l00978" name="l00978"></a><span class="lineno">  978</span>                            <a class="code hl_variable" href="martialarts_8cpp.html#ad22b82ceedf236ed05df55e661444c76">skill_unarmed</a> );</div>
-<div class="line"><a id="l00979" name="l00979"></a><span class="lineno">  979</span> </div>
-<div class="line"><a id="l00980" name="l00980"></a><span class="lineno">  980</span>    <span class="comment">// Success conditions.</span></div>
-<div class="line"><a id="l00981" name="l00981"></a><span class="lineno">  981</span>    <span class="keywordflow">if</span>( !owner.<a class="code hl_function" href="classCharacter.html#ac2245aed6c7279986f42ef9208e816c0">is_limb_broken</a>( <a class="code hl_class" href="classint__id.html">bodypart_id</a>( <span class="stringliteral">&quot;arm_l&quot;</span> ) ) ||</div>
-<div class="line"><a id="l00982" name="l00982"></a><span class="lineno">  982</span>        !owner.<a class="code hl_function" href="classCharacter.html#ac2245aed6c7279986f42ef9208e816c0">is_limb_broken</a>( <a class="code hl_class" href="classint__id.html">bodypart_id</a>( <span class="stringliteral">&quot;arm_r&quot;</span> ) ) ) {</div>
-<div class="line"><a id="l00983" name="l00983"></a><span class="lineno">  983</span>        <span class="keywordflow">if</span>( unarmed_skill &gt;= ma.<a class="code hl_variable" href="classmartialart.html#a6a12342a5d390acb73685cd9576e54be">arm_block</a> ) {</div>
-<div class="line"><a id="l00984" name="l00984"></a><span class="lineno">  984</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00985" name="l00985"></a><span class="lineno">  985</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( ma.<a class="code hl_variable" href="classmartialart.html#ab6027952f40123e8e12587bf74183052">arm_block_with_bio_armor_arms</a> &amp;&amp; owner.<a class="code hl_function" href="classCharacter.html#a5751b689e5a4ecd43b6de5c3e2d31541">has_bionic</a>( <a class="code hl_variable" href="martialarts_8cpp.html#a4f7c3de213e2505c0cc47fafdd2567d0">bio_armor_arms</a> ) ) {</div>
-<div class="line"><a id="l00986" name="l00986"></a><span class="lineno">  986</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00987" name="l00987"></a><span class="lineno">  987</span>        }</div>
-<div class="line"><a id="l00988" name="l00988"></a><span class="lineno">  988</span>    }</div>
-<div class="line"><a id="l00989" name="l00989"></a><span class="lineno">  989</span>    <span class="comment">// if not above, can&#39;t block.</span></div>
-<div class="line"><a id="l00990" name="l00990"></a><span class="lineno">  990</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00991" name="l00991"></a><span class="lineno">  991</span>}</div>
+<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l01018">1018</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01019" name="l01019"></a><span class="lineno"> 1019</span>{</div>
+<div class="line"><a id="l01020" name="l01020"></a><span class="lineno"> 1020</span>    <span class="keyword">const</span> <a class="code hl_class" href="classmartialart.html">martialart</a> &amp;ma = <a class="code hl_variable" href="classcharacter__martial__arts.html#a6e5e356f65e94363420b0f8d0a3736ac">style_selected</a>.<a class="code hl_function" href="classstring__id.html#a4796245d3cd6e0283670698a98d46ae9">obj</a>();<span class="comment"></span></div>
+<div class="line"><a id="l01021" name="l01021"></a><span class="lineno"> 1021</span><span class="comment">    ///\EFFECT_UNARMED increases ability to perform arm block</span></div>
+<div class="line"><a id="l01022" name="l01022"></a><span class="lineno"> 1022</span><span class="comment"></span>    <span class="keywordtype">int</span> unarmed_skill = owner.<a class="code hl_function" href="classCharacter.html#af9c7419575e23d52745c94009929fafb">has_active_bionic</a>( <a class="code hl_variable" href="martialarts_8cpp.html#a018a5823d7e1524b702156d66788c335">bio_cqb</a> ) ? 5 : owner.<a class="code hl_function" href="classCharacter.html#afa95fe499ca6b55ab97f1b442a4c95c5">get_skill_level</a>(</div>
+<div class="line"><a id="l01023" name="l01023"></a><span class="lineno"> 1023</span>                            <a class="code hl_variable" href="martialarts_8cpp.html#ad22b82ceedf236ed05df55e661444c76">skill_unarmed</a> );</div>
+<div class="line"><a id="l01024" name="l01024"></a><span class="lineno"> 1024</span> </div>
+<div class="line"><a id="l01025" name="l01025"></a><span class="lineno"> 1025</span>    <span class="comment">// Success conditions.</span></div>
+<div class="line"><a id="l01026" name="l01026"></a><span class="lineno"> 1026</span>    <span class="keywordflow">if</span>( !owner.<a class="code hl_function" href="classCharacter.html#ac2245aed6c7279986f42ef9208e816c0">is_limb_broken</a>( <a class="code hl_class" href="classint__id.html">bodypart_id</a>( <span class="stringliteral">&quot;arm_l&quot;</span> ) ) ||</div>
+<div class="line"><a id="l01027" name="l01027"></a><span class="lineno"> 1027</span>        !owner.<a class="code hl_function" href="classCharacter.html#ac2245aed6c7279986f42ef9208e816c0">is_limb_broken</a>( <a class="code hl_class" href="classint__id.html">bodypart_id</a>( <span class="stringliteral">&quot;arm_r&quot;</span> ) ) ) {</div>
+<div class="line"><a id="l01028" name="l01028"></a><span class="lineno"> 1028</span>        <span class="keywordflow">if</span>( unarmed_skill &gt;= ma.<a class="code hl_variable" href="classmartialart.html#a6a12342a5d390acb73685cd9576e54be">arm_block</a> ) {</div>
+<div class="line"><a id="l01029" name="l01029"></a><span class="lineno"> 1029</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l01030" name="l01030"></a><span class="lineno"> 1030</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( ma.<a class="code hl_variable" href="classmartialart.html#ab6027952f40123e8e12587bf74183052">arm_block_with_bio_armor_arms</a> &amp;&amp; owner.<a class="code hl_function" href="classCharacter.html#a5751b689e5a4ecd43b6de5c3e2d31541">has_bionic</a>( <a class="code hl_variable" href="martialarts_8cpp.html#a4f7c3de213e2505c0cc47fafdd2567d0">bio_armor_arms</a> ) ) {</div>
+<div class="line"><a id="l01031" name="l01031"></a><span class="lineno"> 1031</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l01032" name="l01032"></a><span class="lineno"> 1032</span>        }</div>
+<div class="line"><a id="l01033" name="l01033"></a><span class="lineno"> 1033</span>    }</div>
+<div class="line"><a id="l01034" name="l01034"></a><span class="lineno"> 1034</span>    <span class="comment">// if not above, can&#39;t block.</span></div>
+<div class="line"><a id="l01035" name="l01035"></a><span class="lineno"> 1035</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l01036" name="l01036"></a><span class="lineno"> 1036</span>}</div>
 <div class="ttc" id="aclassCharacter_html_a5751b689e5a4ecd43b6de5c3e2d31541"><div class="ttname"><a href="classCharacter.html#a5751b689e5a4ecd43b6de5c3e2d31541">Character::has_bionic</a></div><div class="ttdeci">bool has_bionic(const bionic_id &amp;b) const</div><div class="ttdoc">Returns true if the player has the entered bionic id.</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l01795">character.cpp:1795</a></div></div>
 <div class="ttc" id="aclassCharacter_html_ac2245aed6c7279986f42ef9208e816c0"><div class="ttname"><a href="classCharacter.html#ac2245aed6c7279986f42ef9208e816c0">Character::is_limb_broken</a></div><div class="ttdeci">bool is_limb_broken(const bodypart_id &amp;limb) const</div><div class="ttdoc">Returns true if the limb is broken.</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l01245">character.cpp:1245</a></div></div>
 <div class="ttc" id="aclassCharacter_html_af9c7419575e23d52745c94009929fafb"><div class="ttname"><a href="classCharacter.html#af9c7419575e23d52745c94009929fafb">Character::has_active_bionic</a></div><div class="ttdeci">bool has_active_bionic(const bionic_id &amp;b) const</div><div class="ttdoc">Returns true if the player has the entered bionic id and it is powered on.</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l01805">character.cpp:1805</a></div></div>
 <div class="ttc" id="aclassCharacter_html_afa95fe499ca6b55ab97f1b442a4c95c5"><div class="ttname"><a href="classCharacter.html#afa95fe499ca6b55ab97f1b442a4c95c5">Character::get_skill_level</a></div><div class="ttdeci">int get_skill_level(const skill_id &amp;ident) const</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l03317">character.cpp:3317</a></div></div>
 <div class="ttc" id="aclassint__id_html"><div class="ttname"><a href="classint__id.html">int_id</a></div><div class="ttdoc">Just like the string_id, this is a wrapper for int based identifiers.</div><div class="ttdef"><b>Definition:</b> <a href="int__id_8h_source.html#l00019">int_id.h:20</a></div></div>
-<div class="ttc" id="aclassmartialart_html"><div class="ttname"><a href="classmartialart.html">martialart</a></div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8h_source.html#l00200">martialarts.h:201</a></div></div>
-<div class="ttc" id="aclassmartialart_html_a6a12342a5d390acb73685cd9576e54be"><div class="ttname"><a href="classmartialart.html#a6a12342a5d390acb73685cd9576e54be">martialart::arm_block</a></div><div class="ttdeci">int arm_block</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8h_source.html#l00249">martialarts.h:249</a></div></div>
-<div class="ttc" id="aclassmartialart_html_ab6027952f40123e8e12587bf74183052"><div class="ttname"><a href="classmartialart.html#ab6027952f40123e8e12587bf74183052">martialart::arm_block_with_bio_armor_arms</a></div><div class="ttdeci">bool arm_block_with_bio_armor_arms</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8h_source.html#l00251">martialarts.h:251</a></div></div>
+<div class="ttc" id="aclassmartialart_html"><div class="ttname"><a href="classmartialart.html">martialart</a></div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8h_source.html#l00227">martialarts.h:228</a></div></div>
+<div class="ttc" id="aclassmartialart_html_a6a12342a5d390acb73685cd9576e54be"><div class="ttname"><a href="classmartialart.html#a6a12342a5d390acb73685cd9576e54be">martialart::arm_block</a></div><div class="ttdeci">int arm_block</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8h_source.html#l00276">martialarts.h:276</a></div></div>
+<div class="ttc" id="aclassmartialart_html_ab6027952f40123e8e12587bf74183052"><div class="ttname"><a href="classmartialart.html#ab6027952f40123e8e12587bf74183052">martialart::arm_block_with_bio_armor_arms</a></div><div class="ttdeci">bool arm_block_with_bio_armor_arms</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8h_source.html#l00278">martialarts.h:278</a></div></div>
 <div class="ttc" id="aclassstring__id_html_a4796245d3cd6e0283670698a98d46ae9"><div class="ttname"><a href="classstring__id.html#a4796245d3cd6e0283670698a98d46ae9">string_id::obj</a></div><div class="ttdeci">const T &amp; obj() const</div><div class="ttdoc">Returns the actual object this id refers to.</div><div class="ttdef"><b>Definition:</b> <a href="achievement_8cpp_source.html#l00058">achievement.cpp:58</a></div></div>
 <div class="ttc" id="amartialarts_8cpp_html_a018a5823d7e1524b702156d66788c335"><div class="ttname"><a href="martialarts_8cpp.html#a018a5823d7e1524b702156d66788c335">bio_cqb</a></div><div class="ttdeci">static const bionic_id bio_cqb(&quot;bio_cqb&quot;)</div></div>
 <div class="ttc" id="amartialarts_8cpp_html_a4f7c3de213e2505c0cc47fafdd2567d0"><div class="ttname"><a href="martialarts_8cpp.html#a4f7c3de213e2505c0cc47fafdd2567d0">bio_armor_arms</a></div><div class="ttdeci">static const bionic_id bio_armor_arms(&quot;bio_armor_arms&quot;)</div></div>
 <div class="ttc" id="amartialarts_8cpp_html_ad22b82ceedf236ed05df55e661444c76"><div class="ttname"><a href="martialarts_8cpp.html#ad22b82ceedf236ed05df55e661444c76">skill_unarmed</a></div><div class="ttdeci">static const skill_id skill_unarmed(&quot;unarmed&quot;)</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="martialarts_8h_source.html#l00249">martialart::arm_block</a>, <a class="el" href="martialarts_8h_source.html#l00251">martialart::arm_block_with_bio_armor_arms</a>, <a class="el" href="martialarts_8cpp.html#a4f7c3de213e2505c0cc47fafdd2567d0">bio_armor_arms</a>, <a class="el" href="martialarts_8cpp.html#a018a5823d7e1524b702156d66788c335">bio_cqb</a>, <a class="el" href="character_8cpp_source.html#l03317">Character::get_skill_level()</a>, <a class="el" href="character_8cpp_source.html#l01805">Character::has_active_bionic()</a>, <a class="el" href="character_8cpp_source.html#l01795">Character::has_bionic()</a>, <a class="el" href="character_8cpp_source.html#l01245">Character::is_limb_broken()</a>, <a class="el" href="achievement_8cpp_source.html#l00058">string_id&lt; T &gt;::obj()</a>, <a class="el" href="martialarts_8cpp.html#ad22b82ceedf236ed05df55e661444c76">skill_unarmed</a>, and <a class="el" href="character__martial__arts_8h_source.html#l00021">style_selected</a>.</p>
+<p class="reference">References <a class="el" href="martialarts_8h_source.html#l00276">martialart::arm_block</a>, <a class="el" href="martialarts_8h_source.html#l00278">martialart::arm_block_with_bio_armor_arms</a>, <a class="el" href="martialarts_8cpp.html#a4f7c3de213e2505c0cc47fafdd2567d0">bio_armor_arms</a>, <a class="el" href="martialarts_8cpp.html#a018a5823d7e1524b702156d66788c335">bio_cqb</a>, <a class="el" href="character_8cpp_source.html#l03317">Character::get_skill_level()</a>, <a class="el" href="character_8cpp_source.html#l01805">Character::has_active_bionic()</a>, <a class="el" href="character_8cpp_source.html#l01795">Character::has_bionic()</a>, <a class="el" href="character_8cpp_source.html#l01245">Character::is_limb_broken()</a>, <a class="el" href="achievement_8cpp_source.html#l00058">string_id&lt; T &gt;::obj()</a>, <a class="el" href="martialarts_8cpp.html#ad22b82ceedf236ed05df55e661444c76">skill_unarmed</a>, and <a class="el" href="character__martial__arts_8h_source.html#l00021">style_selected</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="martialarts_8cpp_source.html#l00993">can_limb_block()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="martialarts_8cpp_source.html#l01038">can_limb_block()</a>.</p>
 
 </div>
 </div>
@@ -412,32 +412,32 @@ Unarmed increases ability to perform arm block
 
 <p>Returns true if the player has the leg block technique available. </p>
 Unarmed increases ability to perform leg block 
-<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l00954">954</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00955" name="l00955"></a><span class="lineno">  955</span>{</div>
-<div class="line"><a id="l00956" name="l00956"></a><span class="lineno">  956</span>    <span class="keyword">const</span> <a class="code hl_class" href="classmartialart.html">martialart</a> &amp;ma = <a class="code hl_variable" href="classcharacter__martial__arts.html#a6e5e356f65e94363420b0f8d0a3736ac">style_selected</a>.<a class="code hl_function" href="classstring__id.html#a4796245d3cd6e0283670698a98d46ae9">obj</a>();<span class="comment"></span></div>
-<div class="line"><a id="l00957" name="l00957"></a><span class="lineno">  957</span><span class="comment">    ///\EFFECT_UNARMED increases ability to perform leg block</span></div>
-<div class="line"><a id="l00958" name="l00958"></a><span class="lineno">  958</span><span class="comment"></span>    <span class="keywordtype">int</span> unarmed_skill = owner.<a class="code hl_function" href="classCharacter.html#af9c7419575e23d52745c94009929fafb">has_active_bionic</a>( <a class="code hl_variable" href="martialarts_8cpp.html#a018a5823d7e1524b702156d66788c335">bio_cqb</a> ) ? 5 : owner.<a class="code hl_function" href="classCharacter.html#afa95fe499ca6b55ab97f1b442a4c95c5">get_skill_level</a>(</div>
-<div class="line"><a id="l00959" name="l00959"></a><span class="lineno">  959</span>                            <a class="code hl_variable" href="martialarts_8cpp.html#ad22b82ceedf236ed05df55e661444c76">skill_unarmed</a> );</div>
-<div class="line"><a id="l00960" name="l00960"></a><span class="lineno">  960</span> </div>
-<div class="line"><a id="l00961" name="l00961"></a><span class="lineno">  961</span>    <span class="comment">// Success conditions.</span></div>
-<div class="line"><a id="l00962" name="l00962"></a><span class="lineno">  962</span>    <span class="keywordflow">if</span>( owner.<a class="code hl_function" href="classCharacter.html#a263014a43f6feb8ef0666f1de36e2853">get_working_leg_count</a>() &gt;= 1 ) {</div>
-<div class="line"><a id="l00963" name="l00963"></a><span class="lineno">  963</span>        <span class="keywordflow">if</span>( unarmed_skill &gt;= ma.<a class="code hl_variable" href="classmartialart.html#a6ae340820f186977e7b3fe84424c5eef">leg_block</a> ) {</div>
-<div class="line"><a id="l00964" name="l00964"></a><span class="lineno">  964</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00965" name="l00965"></a><span class="lineno">  965</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( ma.<a class="code hl_variable" href="classmartialart.html#a9d45e1694d02ec78513d87181bed368a">leg_block_with_bio_armor_legs</a> &amp;&amp; owner.<a class="code hl_function" href="classCharacter.html#a5751b689e5a4ecd43b6de5c3e2d31541">has_bionic</a>( <a class="code hl_variable" href="martialarts_8cpp.html#a587ef2648b0f57c82429af975597f155">bio_armor_legs</a> ) ) {</div>
-<div class="line"><a id="l00966" name="l00966"></a><span class="lineno">  966</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00967" name="l00967"></a><span class="lineno">  967</span>        }</div>
-<div class="line"><a id="l00968" name="l00968"></a><span class="lineno">  968</span>    }</div>
-<div class="line"><a id="l00969" name="l00969"></a><span class="lineno">  969</span>    <span class="comment">// if not above, can&#39;t block.</span></div>
-<div class="line"><a id="l00970" name="l00970"></a><span class="lineno">  970</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00971" name="l00971"></a><span class="lineno">  971</span>}</div>
+<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l00999">999</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01000" name="l01000"></a><span class="lineno"> 1000</span>{</div>
+<div class="line"><a id="l01001" name="l01001"></a><span class="lineno"> 1001</span>    <span class="keyword">const</span> <a class="code hl_class" href="classmartialart.html">martialart</a> &amp;ma = <a class="code hl_variable" href="classcharacter__martial__arts.html#a6e5e356f65e94363420b0f8d0a3736ac">style_selected</a>.<a class="code hl_function" href="classstring__id.html#a4796245d3cd6e0283670698a98d46ae9">obj</a>();<span class="comment"></span></div>
+<div class="line"><a id="l01002" name="l01002"></a><span class="lineno"> 1002</span><span class="comment">    ///\EFFECT_UNARMED increases ability to perform leg block</span></div>
+<div class="line"><a id="l01003" name="l01003"></a><span class="lineno"> 1003</span><span class="comment"></span>    <span class="keywordtype">int</span> unarmed_skill = owner.<a class="code hl_function" href="classCharacter.html#af9c7419575e23d52745c94009929fafb">has_active_bionic</a>( <a class="code hl_variable" href="martialarts_8cpp.html#a018a5823d7e1524b702156d66788c335">bio_cqb</a> ) ? 5 : owner.<a class="code hl_function" href="classCharacter.html#afa95fe499ca6b55ab97f1b442a4c95c5">get_skill_level</a>(</div>
+<div class="line"><a id="l01004" name="l01004"></a><span class="lineno"> 1004</span>                            <a class="code hl_variable" href="martialarts_8cpp.html#ad22b82ceedf236ed05df55e661444c76">skill_unarmed</a> );</div>
+<div class="line"><a id="l01005" name="l01005"></a><span class="lineno"> 1005</span> </div>
+<div class="line"><a id="l01006" name="l01006"></a><span class="lineno"> 1006</span>    <span class="comment">// Success conditions.</span></div>
+<div class="line"><a id="l01007" name="l01007"></a><span class="lineno"> 1007</span>    <span class="keywordflow">if</span>( owner.<a class="code hl_function" href="classCharacter.html#a263014a43f6feb8ef0666f1de36e2853">get_working_leg_count</a>() &gt;= 1 ) {</div>
+<div class="line"><a id="l01008" name="l01008"></a><span class="lineno"> 1008</span>        <span class="keywordflow">if</span>( unarmed_skill &gt;= ma.<a class="code hl_variable" href="classmartialart.html#a6ae340820f186977e7b3fe84424c5eef">leg_block</a> ) {</div>
+<div class="line"><a id="l01009" name="l01009"></a><span class="lineno"> 1009</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l01010" name="l01010"></a><span class="lineno"> 1010</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( ma.<a class="code hl_variable" href="classmartialart.html#a9d45e1694d02ec78513d87181bed368a">leg_block_with_bio_armor_legs</a> &amp;&amp; owner.<a class="code hl_function" href="classCharacter.html#a5751b689e5a4ecd43b6de5c3e2d31541">has_bionic</a>( <a class="code hl_variable" href="martialarts_8cpp.html#a587ef2648b0f57c82429af975597f155">bio_armor_legs</a> ) ) {</div>
+<div class="line"><a id="l01011" name="l01011"></a><span class="lineno"> 1011</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l01012" name="l01012"></a><span class="lineno"> 1012</span>        }</div>
+<div class="line"><a id="l01013" name="l01013"></a><span class="lineno"> 1013</span>    }</div>
+<div class="line"><a id="l01014" name="l01014"></a><span class="lineno"> 1014</span>    <span class="comment">// if not above, can&#39;t block.</span></div>
+<div class="line"><a id="l01015" name="l01015"></a><span class="lineno"> 1015</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l01016" name="l01016"></a><span class="lineno"> 1016</span>}</div>
 <div class="ttc" id="aclassCharacter_html_a263014a43f6feb8ef0666f1de36e2853"><div class="ttname"><a href="classCharacter.html#a263014a43f6feb8ef0666f1de36e2853">Character::get_working_leg_count</a></div><div class="ttdeci">int get_working_leg_count() const</div><div class="ttdoc">Returns the number of functioning legs.</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l01226">character.cpp:1226</a></div></div>
-<div class="ttc" id="aclassmartialart_html_a6ae340820f186977e7b3fe84424c5eef"><div class="ttname"><a href="classmartialart.html#a6ae340820f186977e7b3fe84424c5eef">martialart::leg_block</a></div><div class="ttdeci">int leg_block</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8h_source.html#l00250">martialarts.h:250</a></div></div>
-<div class="ttc" id="aclassmartialart_html_a9d45e1694d02ec78513d87181bed368a"><div class="ttname"><a href="classmartialart.html#a9d45e1694d02ec78513d87181bed368a">martialart::leg_block_with_bio_armor_legs</a></div><div class="ttdeci">bool leg_block_with_bio_armor_legs</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8h_source.html#l00252">martialarts.h:252</a></div></div>
+<div class="ttc" id="aclassmartialart_html_a6ae340820f186977e7b3fe84424c5eef"><div class="ttname"><a href="classmartialart.html#a6ae340820f186977e7b3fe84424c5eef">martialart::leg_block</a></div><div class="ttdeci">int leg_block</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8h_source.html#l00277">martialarts.h:277</a></div></div>
+<div class="ttc" id="aclassmartialart_html_a9d45e1694d02ec78513d87181bed368a"><div class="ttname"><a href="classmartialart.html#a9d45e1694d02ec78513d87181bed368a">martialart::leg_block_with_bio_armor_legs</a></div><div class="ttdeci">bool leg_block_with_bio_armor_legs</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8h_source.html#l00279">martialarts.h:279</a></div></div>
 <div class="ttc" id="amartialarts_8cpp_html_a587ef2648b0f57c82429af975597f155"><div class="ttname"><a href="martialarts_8cpp.html#a587ef2648b0f57c82429af975597f155">bio_armor_legs</a></div><div class="ttdeci">static const bionic_id bio_armor_legs(&quot;bio_armor_legs&quot;)</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="martialarts_8cpp.html#a587ef2648b0f57c82429af975597f155">bio_armor_legs</a>, <a class="el" href="martialarts_8cpp.html#a018a5823d7e1524b702156d66788c335">bio_cqb</a>, <a class="el" href="character_8cpp_source.html#l03317">Character::get_skill_level()</a>, <a class="el" href="character_8cpp_source.html#l01226">Character::get_working_leg_count()</a>, <a class="el" href="character_8cpp_source.html#l01805">Character::has_active_bionic()</a>, <a class="el" href="character_8cpp_source.html#l01795">Character::has_bionic()</a>, <a class="el" href="martialarts_8h_source.html#l00250">martialart::leg_block</a>, <a class="el" href="martialarts_8h_source.html#l00252">martialart::leg_block_with_bio_armor_legs</a>, <a class="el" href="achievement_8cpp_source.html#l00058">string_id&lt; T &gt;::obj()</a>, <a class="el" href="martialarts_8cpp.html#ad22b82ceedf236ed05df55e661444c76">skill_unarmed</a>, and <a class="el" href="character__martial__arts_8h_source.html#l00021">style_selected</a>.</p>
+<p class="reference">References <a class="el" href="martialarts_8cpp.html#a587ef2648b0f57c82429af975597f155">bio_armor_legs</a>, <a class="el" href="martialarts_8cpp.html#a018a5823d7e1524b702156d66788c335">bio_cqb</a>, <a class="el" href="character_8cpp_source.html#l03317">Character::get_skill_level()</a>, <a class="el" href="character_8cpp_source.html#l01226">Character::get_working_leg_count()</a>, <a class="el" href="character_8cpp_source.html#l01805">Character::has_active_bionic()</a>, <a class="el" href="character_8cpp_source.html#l01795">Character::has_bionic()</a>, <a class="el" href="martialarts_8h_source.html#l00277">martialart::leg_block</a>, <a class="el" href="martialarts_8h_source.html#l00279">martialart::leg_block_with_bio_armor_legs</a>, <a class="el" href="achievement_8cpp_source.html#l00058">string_id&lt; T &gt;::obj()</a>, <a class="el" href="martialarts_8cpp.html#ad22b82ceedf236ed05df55e661444c76">skill_unarmed</a>, and <a class="el" href="character__martial__arts_8h_source.html#l00021">style_selected</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="martialarts_8cpp_source.html#l00993">can_limb_block()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="martialarts_8cpp_source.html#l01038">can_limb_block()</a>.</p>
 
 </div>
 </div>
@@ -459,14 +459,14 @@ Unarmed increases ability to perform leg block
 
 <p>Returns true if either <a class="el" href="classcharacter__martial__arts.html#a18dc74d1c488a7f8d578353d1f2a9af6" title="Returns true if the player has the leg block technique available.">can_leg_block()</a> or <a class="el" href="classcharacter__martial__arts.html#ac10c2f98775b0c6da563eccbc10da15f" title="Returns true if the player has the arm block technique available.">can_arm_block()</a> returns true. </p>
 
-<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l00993">993</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00994" name="l00994"></a><span class="lineno">  994</span>{</div>
-<div class="line"><a id="l00995" name="l00995"></a><span class="lineno">  995</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classcharacter__martial__arts.html#ac10c2f98775b0c6da563eccbc10da15f">can_arm_block</a>( owner ) || <a class="code hl_function" href="classcharacter__martial__arts.html#a18dc74d1c488a7f8d578353d1f2a9af6">can_leg_block</a>( owner );</div>
-<div class="line"><a id="l00996" name="l00996"></a><span class="lineno">  996</span>}</div>
-<div class="ttc" id="aclasscharacter__martial__arts_html_a18dc74d1c488a7f8d578353d1f2a9af6"><div class="ttname"><a href="classcharacter__martial__arts.html#a18dc74d1c488a7f8d578353d1f2a9af6">character_martial_arts::can_leg_block</a></div><div class="ttdeci">bool can_leg_block(const Character &amp;owner) const</div><div class="ttdoc">Returns true if the player has the leg block technique available.</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8cpp_source.html#l00954">martialarts.cpp:954</a></div></div>
-<div class="ttc" id="aclasscharacter__martial__arts_html_ac10c2f98775b0c6da563eccbc10da15f"><div class="ttname"><a href="classcharacter__martial__arts.html#ac10c2f98775b0c6da563eccbc10da15f">character_martial_arts::can_arm_block</a></div><div class="ttdeci">bool can_arm_block(const Character &amp;owner) const</div><div class="ttdoc">Returns true if the player has the arm block technique available.</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8cpp_source.html#l00973">martialarts.cpp:973</a></div></div>
+<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l01038">1038</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01039" name="l01039"></a><span class="lineno"> 1039</span>{</div>
+<div class="line"><a id="l01040" name="l01040"></a><span class="lineno"> 1040</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classcharacter__martial__arts.html#ac10c2f98775b0c6da563eccbc10da15f">can_arm_block</a>( owner ) || <a class="code hl_function" href="classcharacter__martial__arts.html#a18dc74d1c488a7f8d578353d1f2a9af6">can_leg_block</a>( owner );</div>
+<div class="line"><a id="l01041" name="l01041"></a><span class="lineno"> 1041</span>}</div>
+<div class="ttc" id="aclasscharacter__martial__arts_html_a18dc74d1c488a7f8d578353d1f2a9af6"><div class="ttname"><a href="classcharacter__martial__arts.html#a18dc74d1c488a7f8d578353d1f2a9af6">character_martial_arts::can_leg_block</a></div><div class="ttdeci">bool can_leg_block(const Character &amp;owner) const</div><div class="ttdoc">Returns true if the player has the leg block technique available.</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8cpp_source.html#l00999">martialarts.cpp:999</a></div></div>
+<div class="ttc" id="aclasscharacter__martial__arts_html_ac10c2f98775b0c6da563eccbc10da15f"><div class="ttname"><a href="classcharacter__martial__arts.html#ac10c2f98775b0c6da563eccbc10da15f">character_martial_arts::can_arm_block</a></div><div class="ttdeci">bool can_arm_block(const Character &amp;owner) const</div><div class="ttdoc">Returns true if the player has the arm block technique available.</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8cpp_source.html#l01018">martialarts.cpp:1018</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="martialarts_8cpp_source.html#l00973">can_arm_block()</a>, and <a class="el" href="martialarts_8cpp_source.html#l00954">can_leg_block()</a>.</p>
+<p class="reference">References <a class="el" href="martialarts_8cpp_source.html#l01018">can_arm_block()</a>, and <a class="el" href="martialarts_8cpp_source.html#l00999">can_leg_block()</a>.</p>
 
 </div>
 </div>
@@ -525,9 +525,9 @@ Unarmed increases ability to perform leg block
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    } );</div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>}</div>
 <div class="ttc" id="aclassstring__id_html"><div class="ttname"><a href="classstring__id.html">string_id&lt; martialart &gt;</a></div></div>
-<div class="ttc" id="aoutput_8h_html_abc4022ff920f936d2ee400cedc458733"><div class="ttname"><a href="output_8h.html#abc4022ff920f936d2ee400cedc458733">enumerate_as_string</a></div><div class="ttdeci">std::string enumerate_as_string(const _Container &amp;values, enumeration_conjunction conj=enumeration_conjunction::and_)</div><div class="ttdef"><b>Definition:</b> <a href="output_8h_source.html#l00680">output.h:680</a></div></div>
+<div class="ttc" id="aoutput_8h_html_abc4022ff920f936d2ee400cedc458733"><div class="ttname"><a href="output_8h.html#abc4022ff920f936d2ee400cedc458733">enumerate_as_string</a></div><div class="ttdeci">std::string enumerate_as_string(const _Container &amp;values, enumeration_conjunction conj=enumeration_conjunction::and_)</div><div class="ttdef"><b>Definition:</b> <a href="output_8h_source.html#l00637">output.h:637</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="output_8h_source.html#l00680">enumerate_as_string()</a>, and <a class="el" href="character__martial__arts_8h_source.html#l00020">ma_styles</a>.</p>
+<p class="reference">References <a class="el" href="output_8h_source.html#l00637">enumerate_as_string()</a>, and <a class="el" href="character__martial__arts_8h_source.html#l00020">ma_styles</a>.</p>
 
 </div>
 </div>
@@ -547,23 +547,23 @@ Unarmed increases ability to perform leg block
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l00872">872</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00873" name="l00873"></a><span class="lineno">  873</span>{</div>
-<div class="line"><a id="l00874" name="l00874"></a><span class="lineno">  874</span>    std::vector&lt;matec_id&gt; tecs;</div>
-<div class="line"><a id="l00875" name="l00875"></a><span class="lineno">  875</span>    <span class="comment">// Grab individual item techniques</span></div>
-<div class="line"><a id="l00876" name="l00876"></a><span class="lineno">  876</span>    <span class="keyword">const</span> <span class="keyword">auto</span> &amp;weapon_techs = weap.<a class="code hl_function" href="classitem.html#a26022bd0e72f14c5abf2fa5edf806c81">get_techniques</a>();</div>
-<div class="line"><a id="l00877" name="l00877"></a><span class="lineno">  877</span>    tecs.insert( tecs.end(), weapon_techs.begin(), weapon_techs.end() );</div>
-<div class="line"><a id="l00878" name="l00878"></a><span class="lineno">  878</span>    <span class="comment">// and martial art techniques</span></div>
-<div class="line"><a id="l00879" name="l00879"></a><span class="lineno">  879</span>    <span class="keyword">const</span> <span class="keyword">auto</span> &amp;style = <a class="code hl_variable" href="classcharacter__martial__arts.html#a6e5e356f65e94363420b0f8d0a3736ac">style_selected</a>.<a class="code hl_function" href="classstring__id.html#a4796245d3cd6e0283670698a98d46ae9">obj</a>();</div>
-<div class="line"><a id="l00880" name="l00880"></a><span class="lineno">  880</span>    tecs.insert( tecs.end(), style.techniques.begin(), style.techniques.end() );</div>
-<div class="line"><a id="l00881" name="l00881"></a><span class="lineno">  881</span> </div>
-<div class="line"><a id="l00882" name="l00882"></a><span class="lineno">  882</span>    <span class="keywordflow">return</span> tecs;</div>
-<div class="line"><a id="l00883" name="l00883"></a><span class="lineno">  883</span>}</div>
-<div class="ttc" id="aclassitem_html_a26022bd0e72f14c5abf2fa5edf806c81"><div class="ttname"><a href="classitem.html#a26022bd0e72f14c5abf2fa5edf806c81">item::get_techniques</a></div><div class="ttdeci">std::set&lt; matec_id &gt; get_techniques() const</div><div class="ttdoc">Returns all the martial art techniques that this items supports.</div><div class="ttdef"><b>Definition:</b> <a href="item_8cpp_source.html#l05467">item.cpp:5467</a></div></div>
+<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l00917">917</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00918" name="l00918"></a><span class="lineno">  918</span>{</div>
+<div class="line"><a id="l00919" name="l00919"></a><span class="lineno">  919</span>    std::vector&lt;matec_id&gt; tecs;</div>
+<div class="line"><a id="l00920" name="l00920"></a><span class="lineno">  920</span>    <span class="comment">// Grab individual item techniques</span></div>
+<div class="line"><a id="l00921" name="l00921"></a><span class="lineno">  921</span>    <span class="keyword">const</span> <span class="keyword">auto</span> &amp;weapon_techs = weap.<a class="code hl_function" href="classitem.html#a26022bd0e72f14c5abf2fa5edf806c81">get_techniques</a>();</div>
+<div class="line"><a id="l00922" name="l00922"></a><span class="lineno">  922</span>    tecs.insert( tecs.end(), weapon_techs.begin(), weapon_techs.end() );</div>
+<div class="line"><a id="l00923" name="l00923"></a><span class="lineno">  923</span>    <span class="comment">// and martial art techniques</span></div>
+<div class="line"><a id="l00924" name="l00924"></a><span class="lineno">  924</span>    <span class="keyword">const</span> <span class="keyword">auto</span> &amp;style = <a class="code hl_variable" href="classcharacter__martial__arts.html#a6e5e356f65e94363420b0f8d0a3736ac">style_selected</a>.<a class="code hl_function" href="classstring__id.html#a4796245d3cd6e0283670698a98d46ae9">obj</a>();</div>
+<div class="line"><a id="l00925" name="l00925"></a><span class="lineno">  925</span>    tecs.insert( tecs.end(), style.techniques.begin(), style.techniques.end() );</div>
+<div class="line"><a id="l00926" name="l00926"></a><span class="lineno">  926</span> </div>
+<div class="line"><a id="l00927" name="l00927"></a><span class="lineno">  927</span>    <span class="keywordflow">return</span> tecs;</div>
+<div class="line"><a id="l00928" name="l00928"></a><span class="lineno">  928</span>}</div>
+<div class="ttc" id="aclassitem_html_a26022bd0e72f14c5abf2fa5edf806c81"><div class="ttname"><a href="classitem.html#a26022bd0e72f14c5abf2fa5edf806c81">item::get_techniques</a></div><div class="ttdeci">std::set&lt; matec_id &gt; get_techniques() const</div><div class="ttdoc">Returns all the martial art techniques that this items supports.</div><div class="ttdef"><b>Definition:</b> <a href="item_8cpp_source.html#l05475">item.cpp:5475</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="item_8cpp_source.html#l05467">item::get_techniques()</a>, <a class="el" href="achievement_8cpp_source.html#l00058">string_id&lt; T &gt;::obj()</a>, and <a class="el" href="character__martial__arts_8h_source.html#l00021">style_selected</a>.</p>
+<p class="reference">References <a class="el" href="item_8cpp_source.html#l05475">item::get_techniques()</a>, <a class="el" href="achievement_8cpp_source.html#l00058">string_id&lt; T &gt;::obj()</a>, and <a class="el" href="character__martial__arts_8h_source.html#l00021">style_selected</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="martialarts_8cpp_source.html#l00920">get_grab_break_tec()</a>, <a class="el" href="martialarts_8cpp_source.html#l00896">get_miss_recovery_tec()</a>, <a class="el" href="martialarts_8cpp_source.html#l00910">has_grab_break_tec()</a>, and <a class="el" href="martialarts_8cpp_source.html#l00886">has_miss_recovery_tec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="martialarts_8cpp_source.html#l00965">get_grab_break_tec()</a>, <a class="el" href="martialarts_8cpp_source.html#l00941">get_miss_recovery_tec()</a>, <a class="el" href="martialarts_8cpp_source.html#l00955">has_grab_break_tec()</a>, and <a class="el" href="martialarts_8cpp_source.html#l00931">has_miss_recovery_tec()</a>.</p>
 
 </div>
 </div>
@@ -585,21 +585,21 @@ Unarmed increases ability to perform leg block
 
 <p>Returns the grab breaking technique if available. </p>
 
-<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l00920">920</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00921" name="l00921"></a><span class="lineno">  921</span>{</div>
-<div class="line"><a id="l00922" name="l00922"></a><span class="lineno">  922</span>    <a class="code hl_class" href="classma__technique.html">ma_technique</a> tec;</div>
-<div class="line"><a id="l00923" name="l00923"></a><span class="lineno">  923</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_class" href="classstring__id.html">matec_id</a> &amp;technique : <a class="code hl_function" href="classcharacter__martial__arts.html#a9ccd8b60006158633ee0bf61997910ab">get_all_techniques</a>( weap ) ) {</div>
-<div class="line"><a id="l00924" name="l00924"></a><span class="lineno">  924</span>        <span class="keywordflow">if</span>( technique-&gt;grab_break ) {</div>
-<div class="line"><a id="l00925" name="l00925"></a><span class="lineno">  925</span>            tec = technique.obj();</div>
-<div class="line"><a id="l00926" name="l00926"></a><span class="lineno">  926</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00927" name="l00927"></a><span class="lineno">  927</span>        }</div>
-<div class="line"><a id="l00928" name="l00928"></a><span class="lineno">  928</span>    }</div>
-<div class="line"><a id="l00929" name="l00929"></a><span class="lineno">  929</span>    <span class="keywordflow">return</span> tec;</div>
-<div class="line"><a id="l00930" name="l00930"></a><span class="lineno">  930</span>}</div>
-<div class="ttc" id="aclasscharacter__martial__arts_html_a9ccd8b60006158633ee0bf61997910ab"><div class="ttname"><a href="classcharacter__martial__arts.html#a9ccd8b60006158633ee0bf61997910ab">character_martial_arts::get_all_techniques</a></div><div class="ttdeci">std::vector&lt; matec_id &gt; get_all_techniques(const item &amp;weap) const</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8cpp_source.html#l00872">martialarts.cpp:872</a></div></div>
-<div class="ttc" id="aclassma__technique_html"><div class="ttname"><a href="classma__technique.html">ma_technique</a></div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8h_source.html#l00063">martialarts.h:64</a></div></div>
+<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l00965">965</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00966" name="l00966"></a><span class="lineno">  966</span>{</div>
+<div class="line"><a id="l00967" name="l00967"></a><span class="lineno">  967</span>    <a class="code hl_class" href="classma__technique.html">ma_technique</a> tec;</div>
+<div class="line"><a id="l00968" name="l00968"></a><span class="lineno">  968</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_class" href="classstring__id.html">matec_id</a> &amp;technique : <a class="code hl_function" href="classcharacter__martial__arts.html#a9ccd8b60006158633ee0bf61997910ab">get_all_techniques</a>( weap ) ) {</div>
+<div class="line"><a id="l00969" name="l00969"></a><span class="lineno">  969</span>        <span class="keywordflow">if</span>( technique-&gt;grab_break ) {</div>
+<div class="line"><a id="l00970" name="l00970"></a><span class="lineno">  970</span>            tec = technique.obj();</div>
+<div class="line"><a id="l00971" name="l00971"></a><span class="lineno">  971</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00972" name="l00972"></a><span class="lineno">  972</span>        }</div>
+<div class="line"><a id="l00973" name="l00973"></a><span class="lineno">  973</span>    }</div>
+<div class="line"><a id="l00974" name="l00974"></a><span class="lineno">  974</span>    <span class="keywordflow">return</span> tec;</div>
+<div class="line"><a id="l00975" name="l00975"></a><span class="lineno">  975</span>}</div>
+<div class="ttc" id="aclasscharacter__martial__arts_html_a9ccd8b60006158633ee0bf61997910ab"><div class="ttname"><a href="classcharacter__martial__arts.html#a9ccd8b60006158633ee0bf61997910ab">character_martial_arts::get_all_techniques</a></div><div class="ttdeci">std::vector&lt; matec_id &gt; get_all_techniques(const item &amp;weap) const</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8cpp_source.html#l00917">martialarts.cpp:917</a></div></div>
+<div class="ttc" id="aclassma__technique_html"><div class="ttname"><a href="classma__technique.html">ma_technique</a></div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8h_source.html#l00090">martialarts.h:91</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="martialarts_8cpp_source.html#l00872">get_all_techniques()</a>.</p>
+<p class="reference">References <a class="el" href="martialarts_8cpp_source.html#l00917">get_all_techniques()</a>.</p>
 
 </div>
 </div>
@@ -645,20 +645,20 @@ Unarmed increases ability to perform leg block
 
 <p>Returns the technique used for miss recovery. </p>
 
-<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l00896">896</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00897" name="l00897"></a><span class="lineno">  897</span>{</div>
-<div class="line"><a id="l00898" name="l00898"></a><span class="lineno">  898</span>    <a class="code hl_class" href="classma__technique.html">ma_technique</a> tech;</div>
-<div class="line"><a id="l00899" name="l00899"></a><span class="lineno">  899</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_class" href="classstring__id.html">matec_id</a> &amp;technique : <a class="code hl_function" href="classcharacter__martial__arts.html#a9ccd8b60006158633ee0bf61997910ab">get_all_techniques</a>( weap ) ) {</div>
-<div class="line"><a id="l00900" name="l00900"></a><span class="lineno">  900</span>        <span class="keywordflow">if</span>( technique-&gt;miss_recovery ) {</div>
-<div class="line"><a id="l00901" name="l00901"></a><span class="lineno">  901</span>            tech = technique.obj();</div>
-<div class="line"><a id="l00902" name="l00902"></a><span class="lineno">  902</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00903" name="l00903"></a><span class="lineno">  903</span>        }</div>
-<div class="line"><a id="l00904" name="l00904"></a><span class="lineno">  904</span>    }</div>
-<div class="line"><a id="l00905" name="l00905"></a><span class="lineno">  905</span> </div>
-<div class="line"><a id="l00906" name="l00906"></a><span class="lineno">  906</span>    <span class="keywordflow">return</span> tech;</div>
-<div class="line"><a id="l00907" name="l00907"></a><span class="lineno">  907</span>}</div>
+<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l00941">941</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00942" name="l00942"></a><span class="lineno">  942</span>{</div>
+<div class="line"><a id="l00943" name="l00943"></a><span class="lineno">  943</span>    <a class="code hl_class" href="classma__technique.html">ma_technique</a> tech;</div>
+<div class="line"><a id="l00944" name="l00944"></a><span class="lineno">  944</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_class" href="classstring__id.html">matec_id</a> &amp;technique : <a class="code hl_function" href="classcharacter__martial__arts.html#a9ccd8b60006158633ee0bf61997910ab">get_all_techniques</a>( weap ) ) {</div>
+<div class="line"><a id="l00945" name="l00945"></a><span class="lineno">  945</span>        <span class="keywordflow">if</span>( technique-&gt;miss_recovery ) {</div>
+<div class="line"><a id="l00946" name="l00946"></a><span class="lineno">  946</span>            tech = technique.obj();</div>
+<div class="line"><a id="l00947" name="l00947"></a><span class="lineno">  947</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00948" name="l00948"></a><span class="lineno">  948</span>        }</div>
+<div class="line"><a id="l00949" name="l00949"></a><span class="lineno">  949</span>    }</div>
+<div class="line"><a id="l00950" name="l00950"></a><span class="lineno">  950</span> </div>
+<div class="line"><a id="l00951" name="l00951"></a><span class="lineno">  951</span>    <span class="keywordflow">return</span> tech;</div>
+<div class="line"><a id="l00952" name="l00952"></a><span class="lineno">  952</span>}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="martialarts_8cpp_source.html#l00872">get_all_techniques()</a>.</p>
+<p class="reference">References <a class="el" href="martialarts_8cpp_source.html#l00917">get_all_techniques()</a>.</p>
 
 </div>
 </div>
@@ -690,7 +690,7 @@ Unarmed increases ability to perform leg block
 <div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>}</div>
 <div class="ttc" id="anamespacecata_1_1hash64__detail_html_a5ca825db6fd06946302c60daa97333e4"><div class="ttname"><a href="namespacecata_1_1hash64__detail.html#a5ca825db6fd06946302c60daa97333e4">cata::hash64_detail::ret</a></div><div class="ttdeci">T ret</div><div class="ttdef"><b>Definition:</b> <a href="hash__utils_8h_source.html#l00097">hash_utils.h:97</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="martialarts_8cpp_source.html#l01202">has_martialart()</a>, <a class="el" href="character__martial__arts_8h_source.html#l00020">ma_styles</a>, and <a class="el" href="hash__utils_8h_source.html#l00097">cata::hash64_detail::ret</a>.</p>
+<p class="reference">References <a class="el" href="martialarts_8cpp_source.html#l01247">has_martialart()</a>, <a class="el" href="character__martial__arts_8h_source.html#l00020">ma_styles</a>, and <a class="el" href="hash__utils_8h_source.html#l00097">cata::hash64_detail::ret</a>.</p>
 
 </div>
 </div>
@@ -711,18 +711,18 @@ Unarmed increases ability to perform leg block
 
 <p>Returns true if the player has a grab breaking technique available. </p>
 
-<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l00910">910</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00911" name="l00911"></a><span class="lineno">  911</span>{</div>
-<div class="line"><a id="l00912" name="l00912"></a><span class="lineno">  912</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_class" href="classstring__id.html">matec_id</a> &amp;technique : <a class="code hl_function" href="classcharacter__martial__arts.html#a9ccd8b60006158633ee0bf61997910ab">get_all_techniques</a>( <a class="code hl_class" href="classitem.html">item</a>() ) ) {</div>
-<div class="line"><a id="l00913" name="l00913"></a><span class="lineno">  913</span>        <span class="keywordflow">if</span>( technique-&gt;grab_break ) {</div>
-<div class="line"><a id="l00914" name="l00914"></a><span class="lineno">  914</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00915" name="l00915"></a><span class="lineno">  915</span>        }</div>
-<div class="line"><a id="l00916" name="l00916"></a><span class="lineno">  916</span>    }</div>
-<div class="line"><a id="l00917" name="l00917"></a><span class="lineno">  917</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00918" name="l00918"></a><span class="lineno">  918</span>}</div>
+<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l00955">955</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00956" name="l00956"></a><span class="lineno">  956</span>{</div>
+<div class="line"><a id="l00957" name="l00957"></a><span class="lineno">  957</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_class" href="classstring__id.html">matec_id</a> &amp;technique : <a class="code hl_function" href="classcharacter__martial__arts.html#a9ccd8b60006158633ee0bf61997910ab">get_all_techniques</a>( <a class="code hl_class" href="classitem.html">item</a>() ) ) {</div>
+<div class="line"><a id="l00958" name="l00958"></a><span class="lineno">  958</span>        <span class="keywordflow">if</span>( technique-&gt;grab_break ) {</div>
+<div class="line"><a id="l00959" name="l00959"></a><span class="lineno">  959</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00960" name="l00960"></a><span class="lineno">  960</span>        }</div>
+<div class="line"><a id="l00961" name="l00961"></a><span class="lineno">  961</span>    }</div>
+<div class="line"><a id="l00962" name="l00962"></a><span class="lineno">  962</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00963" name="l00963"></a><span class="lineno">  963</span>}</div>
 <div class="ttc" id="aclassitem_html"><div class="ttname"><a href="classitem.html">item</a></div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l00210">item.h:211</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="martialarts_8cpp_source.html#l00872">get_all_techniques()</a>.</p>
+<p class="reference">References <a class="el" href="martialarts_8cpp_source.html#l00917">get_all_techniques()</a>.</p>
 
 </div>
 </div>
@@ -744,15 +744,15 @@ Unarmed increases ability to perform leg block
 
 <p>Returns true if the player has access to the entered martial art. </p>
 
-<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l01202">1202</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01203" name="l01203"></a><span class="lineno"> 1203</span>{</div>
-<div class="line"><a id="l01204" name="l01204"></a><span class="lineno"> 1204</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="namespacedetail.html#ad06b74f7502b63cbab323bba1ca3f72b">std::find</a>( <a class="code hl_variable" href="classcharacter__martial__arts.html#ac1d2713f3b9ffdf4da1223d8444e030a">ma_styles</a>.begin(), <a class="code hl_variable" href="classcharacter__martial__arts.html#ac1d2713f3b9ffdf4da1223d8444e030a">ma_styles</a>.end(), ma ) != <a class="code hl_variable" href="classcharacter__martial__arts.html#ac1d2713f3b9ffdf4da1223d8444e030a">ma_styles</a>.end();</div>
-<div class="line"><a id="l01205" name="l01205"></a><span class="lineno"> 1205</span>}</div>
+<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l01247">1247</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01248" name="l01248"></a><span class="lineno"> 1248</span>{</div>
+<div class="line"><a id="l01249" name="l01249"></a><span class="lineno"> 1249</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="namespacedetail.html#ad06b74f7502b63cbab323bba1ca3f72b">std::find</a>( <a class="code hl_variable" href="classcharacter__martial__arts.html#ac1d2713f3b9ffdf4da1223d8444e030a">ma_styles</a>.begin(), <a class="code hl_variable" href="classcharacter__martial__arts.html#ac1d2713f3b9ffdf4da1223d8444e030a">ma_styles</a>.end(), ma ) != <a class="code hl_variable" href="classcharacter__martial__arts.html#ac1d2713f3b9ffdf4da1223d8444e030a">ma_styles</a>.end();</div>
+<div class="line"><a id="l01250" name="l01250"></a><span class="lineno"> 1250</span>}</div>
 <div class="ttc" id="anamespacedetail_html_ad06b74f7502b63cbab323bba1ca3f72b"><div class="ttname"><a href="namespacedetail.html#ad06b74f7502b63cbab323bba1ca3f72b">detail::find</a></div><div class="ttdeci">FMT_CONSTEXPR bool find(Ptr first, Ptr last, T value, Ptr &amp;out)</div><div class="ttdef"><b>Definition:</b> <a href="fmtlib__format_8h_source.html#l03355">fmtlib_format.h:3355</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="fmtlib__format_8h_source.html#l03355">detail::find()</a>, and <a class="el" href="character__martial__arts_8h_source.html#l00020">ma_styles</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="martialarts_8cpp_source.html#l01207">add_martialart()</a>, <a class="el" href="character__martial__arts_8cpp_source.html#l00130">get_unknown_styles()</a>, <a class="el" href="character__martial__arts_8cpp_source.html#l00052">knows_selected_style()</a>, and <a class="el" href="character__martial__arts_8cpp_source.html#l00083">set_style()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="martialarts_8cpp_source.html#l01252">add_martialart()</a>, <a class="el" href="character__martial__arts_8cpp_source.html#l00130">get_unknown_styles()</a>, <a class="el" href="character__martial__arts_8cpp_source.html#l00052">knows_selected_style()</a>, and <a class="el" href="character__martial__arts_8cpp_source.html#l00083">set_style()</a>.</p>
 
 </div>
 </div>
@@ -774,17 +774,17 @@ Unarmed increases ability to perform leg block
 
 <p>Returns true if the player has technique-based miss recovery. </p>
 
-<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l00886">886</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00887" name="l00887"></a><span class="lineno">  887</span>{</div>
-<div class="line"><a id="l00888" name="l00888"></a><span class="lineno">  888</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_class" href="classstring__id.html">matec_id</a> &amp;technique : <a class="code hl_function" href="classcharacter__martial__arts.html#a9ccd8b60006158633ee0bf61997910ab">get_all_techniques</a>( weap ) ) {</div>
-<div class="line"><a id="l00889" name="l00889"></a><span class="lineno">  889</span>        <span class="keywordflow">if</span>( technique-&gt;miss_recovery ) {</div>
-<div class="line"><a id="l00890" name="l00890"></a><span class="lineno">  890</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00891" name="l00891"></a><span class="lineno">  891</span>        }</div>
-<div class="line"><a id="l00892" name="l00892"></a><span class="lineno">  892</span>    }</div>
-<div class="line"><a id="l00893" name="l00893"></a><span class="lineno">  893</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00894" name="l00894"></a><span class="lineno">  894</span>}</div>
+<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l00931">931</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00932" name="l00932"></a><span class="lineno">  932</span>{</div>
+<div class="line"><a id="l00933" name="l00933"></a><span class="lineno">  933</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_class" href="classstring__id.html">matec_id</a> &amp;technique : <a class="code hl_function" href="classcharacter__martial__arts.html#a9ccd8b60006158633ee0bf61997910ab">get_all_techniques</a>( weap ) ) {</div>
+<div class="line"><a id="l00934" name="l00934"></a><span class="lineno">  934</span>        <span class="keywordflow">if</span>( technique-&gt;miss_recovery ) {</div>
+<div class="line"><a id="l00935" name="l00935"></a><span class="lineno">  935</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00936" name="l00936"></a><span class="lineno">  936</span>        }</div>
+<div class="line"><a id="l00937" name="l00937"></a><span class="lineno">  937</span>    }</div>
+<div class="line"><a id="l00938" name="l00938"></a><span class="lineno">  938</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00939" name="l00939"></a><span class="lineno">  939</span>}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="martialarts_8cpp_source.html#l00872">get_all_techniques()</a>.</p>
+<p class="reference">References <a class="el" href="martialarts_8cpp_source.html#l00917">get_all_techniques()</a>.</p>
 
 </div>
 </div>
@@ -827,10 +827,10 @@ Unarmed increases ability to perform leg block
 <div class="line"><a id="l01336" name="l01336"></a><span class="lineno"> 1336</span>    <span class="keywordflow">return</span> weap.<a class="code hl_function" href="classitem.html#ab842b7c3aaa4d813575035be37cd3714">has_technique</a>( <span class="keywordtype">id</span> ) ||</div>
 <div class="line"><a id="l01337" name="l01337"></a><span class="lineno"> 1337</span>           <a class="code hl_variable" href="classcharacter__martial__arts.html#a6e5e356f65e94363420b0f8d0a3736ac">style_selected</a>-&gt;<a class="code hl_function" href="classmartialart.html#ae6ce014c7a88b8d3f238329ef9935d3d">has_technique</a>( guy, <span class="keywordtype">id</span> );</div>
 <div class="line"><a id="l01338" name="l01338"></a><span class="lineno"> 1338</span>}</div>
-<div class="ttc" id="aclassitem_html_ab842b7c3aaa4d813575035be37cd3714"><div class="ttname"><a href="classitem.html#ab842b7c3aaa4d813575035be37cd3714">item::has_technique</a></div><div class="ttdeci">bool has_technique(const matec_id &amp;tech) const</div><div class="ttdoc">Whether the item supports a specific martial art technique (either through its type,...</div><div class="ttdef"><b>Definition:</b> <a href="item_8cpp_source.html#l05431">item.cpp:5431</a></div></div>
-<div class="ttc" id="aclassmartialart_html_ae6ce014c7a88b8d3f238329ef9935d3d"><div class="ttname"><a href="classmartialart.html#ae6ce014c7a88b8d3f238329ef9935d3d">martialart::has_technique</a></div><div class="ttdeci">bool has_technique(const Character &amp;u, const matec_id &amp;tec_id) const</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8cpp_source.html#l00823">martialarts.cpp:823</a></div></div>
+<div class="ttc" id="aclassitem_html_ab842b7c3aaa4d813575035be37cd3714"><div class="ttname"><a href="classitem.html#ab842b7c3aaa4d813575035be37cd3714">item::has_technique</a></div><div class="ttdeci">bool has_technique(const matec_id &amp;tech) const</div><div class="ttdoc">Whether the item supports a specific martial art technique (either through its type,...</div><div class="ttdef"><b>Definition:</b> <a href="item_8cpp_source.html#l05439">item.cpp:5439</a></div></div>
+<div class="ttc" id="aclassmartialart_html_ae6ce014c7a88b8d3f238329ef9935d3d"><div class="ttname"><a href="classmartialart.html#ae6ce014c7a88b8d3f238329ef9935d3d">martialart::has_technique</a></div><div class="ttdeci">bool has_technique(const Character &amp;u, const matec_id &amp;tec_id) const</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8cpp_source.html#l00864">martialarts.cpp:864</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="martialarts_8cpp_source.html#l00823">martialart::has_technique()</a>, <a class="el" href="item_8cpp_source.html#l05431">item::has_technique()</a>, and <a class="el" href="character__martial__arts_8h_source.html#l00021">style_selected</a>.</p>
+<p class="reference">References <a class="el" href="martialarts_8cpp_source.html#l00864">martialart::has_technique()</a>, <a class="el" href="item_8cpp_source.html#l05439">item::has_technique()</a>, and <a class="el" href="character__martial__arts_8h_source.html#l00021">style_selected</a>.</p>
 
 </div>
 </div>
@@ -851,13 +851,13 @@ Unarmed increases ability to perform leg block
 
 <p>Returns true if the current style forces unarmed attack techniques. </p>
 
-<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l00998">998</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00999" name="l00999"></a><span class="lineno">  999</span>{</div>
-<div class="line"><a id="l01000" name="l01000"></a><span class="lineno"> 1000</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classcharacter__martial__arts.html#a6e5e356f65e94363420b0f8d0a3736ac">style_selected</a>-&gt;<a class="code hl_variable" href="classmartialart.html#a9a5cacca0f58d1a5709c2da3d16d4d56">force_unarmed</a>;</div>
-<div class="line"><a id="l01001" name="l01001"></a><span class="lineno"> 1001</span>}</div>
-<div class="ttc" id="aclassmartialart_html_a9a5cacca0f58d1a5709c2da3d16d4d56"><div class="ttname"><a href="classmartialart.html#a9a5cacca0f58d1a5709c2da3d16d4d56">martialart::force_unarmed</a></div><div class="ttdeci">bool force_unarmed</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8h_source.html#l00258">martialarts.h:258</a></div></div>
+<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l01043">1043</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01044" name="l01044"></a><span class="lineno"> 1044</span>{</div>
+<div class="line"><a id="l01045" name="l01045"></a><span class="lineno"> 1045</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classcharacter__martial__arts.html#a6e5e356f65e94363420b0f8d0a3736ac">style_selected</a>-&gt;<a class="code hl_variable" href="classmartialart.html#a9a5cacca0f58d1a5709c2da3d16d4d56">force_unarmed</a>;</div>
+<div class="line"><a id="l01046" name="l01046"></a><span class="lineno"> 1046</span>}</div>
+<div class="ttc" id="aclassmartialart_html_a9a5cacca0f58d1a5709c2da3d16d4d56"><div class="ttname"><a href="classmartialart.html#a9a5cacca0f58d1a5709c2da3d16d4d56">martialart::force_unarmed</a></div><div class="ttdeci">bool force_unarmed</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8h_source.html#l00286">martialarts.h:286</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="martialarts_8h_source.html#l00258">martialart::force_unarmed</a>, and <a class="el" href="character__martial__arts_8h_source.html#l00021">style_selected</a>.</p>
+<p class="reference">References <a class="el" href="martialarts_8h_source.html#l00286">martialart::force_unarmed</a>, and <a class="el" href="character__martial__arts_8h_source.html#l00021">style_selected</a>.</p>
 
 </div>
 </div>
@@ -881,7 +881,7 @@ Unarmed increases ability to perform leg block
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classcharacter__martial__arts.html#aa66c509f7482761a44436cfe8f6ece83">has_martialart</a>( <a class="code hl_variable" href="classcharacter__martial__arts.html#a6e5e356f65e94363420b0f8d0a3736ac">style_selected</a> );</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="martialarts_8cpp_source.html#l01202">has_martialart()</a>, and <a class="el" href="character__martial__arts_8h_source.html#l00021">style_selected</a>.</p>
+<p class="reference">References <a class="el" href="martialarts_8cpp_source.html#l01247">has_martialart()</a>, and <a class="el" href="character__martial__arts_8h_source.html#l00021">style_selected</a>.</p>
 
 </div>
 </div>
@@ -909,13 +909,13 @@ Unarmed increases ability to perform leg block
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                 <a class="code hl_variable" href="classcharacter__martial__arts.html#a6e5e356f65e94363420b0f8d0a3736ac">style_selected</a>-&gt;<a class="code hl_variable" href="classmartialart.html#a755de10d91b0292258efb0ab55b80cbc">name</a> );</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    }</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>}</div>
-<div class="ttc" id="aclasscharacter__martial__arts_html_a54753c167ae232b47005973d68de2ea3"><div class="ttname"><a href="classcharacter__martial__arts.html#a54753c167ae232b47005973d68de2ea3">character_martial_arts::add_martialart</a></div><div class="ttdeci">void add_martialart(const matype_id &amp;ma_id)</div><div class="ttdoc">Adds the entered martial art to the player's list.</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8cpp_source.html#l01207">martialarts.cpp:1207</a></div></div>
-<div class="ttc" id="aclassmartialart_html_a755de10d91b0292258efb0ab55b80cbc"><div class="ttname"><a href="classmartialart.html#a755de10d91b0292258efb0ab55b80cbc">martialart::name</a></div><div class="ttdeci">translation name</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8h_source.html#l00243">martialarts.h:243</a></div></div>
+<div class="ttc" id="aclasscharacter__martial__arts_html_a54753c167ae232b47005973d68de2ea3"><div class="ttname"><a href="classcharacter__martial__arts.html#a54753c167ae232b47005973d68de2ea3">character_martial_arts::add_martialart</a></div><div class="ttdeci">void add_martialart(const matype_id &amp;ma_id)</div><div class="ttdoc">Adds the entered martial art to the player's list.</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8cpp_source.html#l01252">martialarts.cpp:1252</a></div></div>
+<div class="ttc" id="aclassmartialart_html_a755de10d91b0292258efb0ab55b80cbc"><div class="ttname"><a href="classmartialart.html#a755de10d91b0292258efb0ab55b80cbc">martialart::name</a></div><div class="ttdeci">translation name</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8h_source.html#l00270">martialarts.h:270</a></div></div>
 <div class="ttc" id="aenums_8h_html_a3baf36d700701401b6baf94db93d096ea2f644bab8f796b847285eab073040f10"><div class="ttname"><a href="enums_8h.html#a3baf36d700701401b6baf94db93d096ea2f644bab8f796b847285eab073040f10">m_good</a></div><div class="ttdeci">@ m_good</div><div class="ttdef"><b>Definition:</b> <a href="enums_8h_source.html#l00260">enums.h:260</a></div></div>
 <div class="ttc" id="amessages_8cpp_html_a54489326fc37823819c5105addfa27f2"><div class="ttname"><a href="messages_8cpp.html#a54489326fc37823819c5105addfa27f2">add_msg</a></div><div class="ttdeci">void add_msg(std::string msg)</div><div class="ttdef"><b>Definition:</b> <a href="messages_8cpp_source.html#l00884">messages.cpp:884</a></div></div>
 <div class="ttc" id="atranslations_8h_html_aa829053017e23ef22d44dccecba63a34"><div class="ttname"><a href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a></div><div class="ttdeci">#define _(msg)</div><div class="ttdef"><b>Definition:</b> <a href="translations_8h_source.html#l00116">translations.h:116</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="martialarts_8cpp_source.html#l01207">add_martialart()</a>, <a class="el" href="messages_8cpp_source.html#l00884">add_msg()</a>, <a class="el" href="enums_8h_source.html#l00260">m_good</a>, <a class="el" href="martialarts_8h_source.html#l00243">martialart::name</a>, and <a class="el" href="character__martial__arts_8h_source.html#l00021">style_selected</a>.</p>
+<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="martialarts_8cpp_source.html#l01252">add_martialart()</a>, <a class="el" href="messages_8cpp_source.html#l00884">add_msg()</a>, <a class="el" href="enums_8h_source.html#l00260">m_good</a>, <a class="el" href="martialarts_8h_source.html#l00270">martialart::name</a>, and <a class="el" href="character__martial__arts_8h_source.html#l00021">style_selected</a>.</p>
 
 </div>
 </div>
@@ -960,7 +960,7 @@ Unarmed increases ability to perform leg block
 <div class="ttc" id="aaction_8h_html_a14769f0512c139a614db195c6477c667a2ce5c6469db36992876bf8e954cead4d"><div class="ttname"><a href="action_8h.html#a14769f0512c139a614db195c6477c667a2ce5c6469db36992876bf8e954cead4d">ACTION_PICK_STYLE</a></div><div class="ttdeci">@ ACTION_PICK_STYLE</div><div class="ttdoc">Open the martial-arts style menu.</div><div class="ttdef"><b>Definition:</b> <a href="action_8h_source.html#l00157">action.h:157</a></div></div>
 <div class="ttc" id="aenums_8h_html_a3baf36d700701401b6baf94db93d096ea5d3734a51686ceb1848704dd277dfc7f"><div class="ttname"><a href="enums_8h.html#a3baf36d700701401b6baf94db93d096ea5d3734a51686ceb1848704dd277dfc7f">m_info</a></div><div class="ttdeci">@ m_info</div><div class="ttdef"><b>Definition:</b> <a href="enums_8h_source.html#l00265">enums.h:265</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="action_8h_source.html#l00157">ACTION_PICK_STYLE</a>, <a class="el" href="martialarts_8cpp_source.html#l01207">add_martialart()</a>, <a class="el" href="messages_8cpp_source.html#l00884">add_msg()</a>, <a class="el" href="enums_8h_source.html#l00260">m_good</a>, <a class="el" href="enums_8h_source.html#l00265">m_info</a>, <a class="el" href="martialarts_8h_source.html#l00243">martialart::name</a>, and <a class="el" href="action_8cpp_source.html#l00457">press_x()</a>.</p>
+<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="action_8h_source.html#l00157">ACTION_PICK_STYLE</a>, <a class="el" href="martialarts_8cpp_source.html#l01252">add_martialart()</a>, <a class="el" href="messages_8cpp_source.html#l00884">add_msg()</a>, <a class="el" href="enums_8h_source.html#l00260">m_good</a>, <a class="el" href="enums_8h_source.html#l00265">m_info</a>, <a class="el" href="martialarts_8h_source.html#l00270">martialart::name</a>, and <a class="el" href="action_8cpp_source.html#l00457">press_x()</a>.</p>
 
 </div>
 </div>
@@ -982,13 +982,13 @@ Unarmed increases ability to perform leg block
 
 <p>Fires all attack-triggered martial arts events. </p>
 
-<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l01020">1020</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01021" name="l01021"></a><span class="lineno"> 1021</span>{</div>
-<div class="line"><a id="l01022" name="l01022"></a><span class="lineno"> 1022</span>    <a class="code hl_variable" href="classcharacter__martial__arts.html#a6e5e356f65e94363420b0f8d0a3736ac">style_selected</a>-&gt;<a class="code hl_function" href="classmartialart.html#a808c68c973677d36e053067960972fc5">apply_onattack_buffs</a>( owner );</div>
-<div class="line"><a id="l01023" name="l01023"></a><span class="lineno"> 1023</span>}</div>
-<div class="ttc" id="aclassmartialart_html_a808c68c973677d36e053067960972fc5"><div class="ttname"><a href="classmartialart.html#a808c68c973677d36e053067960972fc5">martialart::apply_onattack_buffs</a></div><div class="ttdeci">void apply_onattack_buffs(Character &amp;u) const</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8cpp_source.html#l00788">martialarts.cpp:788</a></div></div>
+<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l01065">1065</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01066" name="l01066"></a><span class="lineno"> 1066</span>{</div>
+<div class="line"><a id="l01067" name="l01067"></a><span class="lineno"> 1067</span>    <a class="code hl_variable" href="classcharacter__martial__arts.html#a6e5e356f65e94363420b0f8d0a3736ac">style_selected</a>-&gt;<a class="code hl_function" href="classmartialart.html#a808c68c973677d36e053067960972fc5">apply_onattack_buffs</a>( owner );</div>
+<div class="line"><a id="l01068" name="l01068"></a><span class="lineno"> 1068</span>}</div>
+<div class="ttc" id="aclassmartialart_html_a808c68c973677d36e053067960972fc5"><div class="ttname"><a href="classmartialart.html#a808c68c973677d36e053067960972fc5">martialart::apply_onattack_buffs</a></div><div class="ttdeci">void apply_onattack_buffs(Character &amp;u) const</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8cpp_source.html#l00829">martialarts.cpp:829</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="martialarts_8cpp_source.html#l00788">martialart::apply_onattack_buffs()</a>, and <a class="el" href="character__martial__arts_8h_source.html#l00021">style_selected</a>.</p>
+<p class="reference">References <a class="el" href="martialarts_8cpp_source.html#l00829">martialart::apply_onattack_buffs()</a>, and <a class="el" href="character__martial__arts_8h_source.html#l00021">style_selected</a>.</p>
 
 </div>
 </div>
@@ -1010,13 +1010,13 @@ Unarmed increases ability to perform leg block
 
 <p>Fires all block-triggered martial arts events. </p>
 
-<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l01028">1028</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01029" name="l01029"></a><span class="lineno"> 1029</span>{</div>
-<div class="line"><a id="l01030" name="l01030"></a><span class="lineno"> 1030</span>    <a class="code hl_variable" href="classcharacter__martial__arts.html#a6e5e356f65e94363420b0f8d0a3736ac">style_selected</a>-&gt;<a class="code hl_function" href="classmartialart.html#abcd7debb92c31968733816f7044946b3">apply_onblock_buffs</a>( owner );</div>
-<div class="line"><a id="l01031" name="l01031"></a><span class="lineno"> 1031</span>}</div>
-<div class="ttc" id="aclassmartialart_html_abcd7debb92c31968733816f7044946b3"><div class="ttname"><a href="classmartialart.html#abcd7debb92c31968733816f7044946b3">martialart::apply_onblock_buffs</a></div><div class="ttdeci">void apply_onblock_buffs(Character &amp;u) const</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8cpp_source.html#l00798">martialarts.cpp:798</a></div></div>
+<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l01073">1073</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01074" name="l01074"></a><span class="lineno"> 1074</span>{</div>
+<div class="line"><a id="l01075" name="l01075"></a><span class="lineno"> 1075</span>    <a class="code hl_variable" href="classcharacter__martial__arts.html#a6e5e356f65e94363420b0f8d0a3736ac">style_selected</a>-&gt;<a class="code hl_function" href="classmartialart.html#abcd7debb92c31968733816f7044946b3">apply_onblock_buffs</a>( owner );</div>
+<div class="line"><a id="l01076" name="l01076"></a><span class="lineno"> 1076</span>}</div>
+<div class="ttc" id="aclassmartialart_html_abcd7debb92c31968733816f7044946b3"><div class="ttname"><a href="classmartialart.html#abcd7debb92c31968733816f7044946b3">martialart::apply_onblock_buffs</a></div><div class="ttdeci">void apply_onblock_buffs(Character &amp;u) const</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8cpp_source.html#l00839">martialarts.cpp:839</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="martialarts_8cpp_source.html#l00798">martialart::apply_onblock_buffs()</a>, and <a class="el" href="character__martial__arts_8h_source.html#l00021">style_selected</a>.</p>
+<p class="reference">References <a class="el" href="martialarts_8cpp_source.html#l00839">martialart::apply_onblock_buffs()</a>, and <a class="el" href="character__martial__arts_8h_source.html#l00021">style_selected</a>.</p>
 
 </div>
 </div>
@@ -1038,13 +1038,13 @@ Unarmed increases ability to perform leg block
 
 <p>Fires all crit-triggered martial arts events. </p>
 
-<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l01040">1040</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01041" name="l01041"></a><span class="lineno"> 1041</span>{</div>
-<div class="line"><a id="l01042" name="l01042"></a><span class="lineno"> 1042</span>    <a class="code hl_variable" href="classcharacter__martial__arts.html#a6e5e356f65e94363420b0f8d0a3736ac">style_selected</a>-&gt;<a class="code hl_function" href="classmartialart.html#aaea9edbb6031403fad7299a424c618e7">apply_oncrit_buffs</a>( owner );</div>
-<div class="line"><a id="l01043" name="l01043"></a><span class="lineno"> 1043</span>}</div>
-<div class="ttc" id="aclassmartialart_html_aaea9edbb6031403fad7299a424c618e7"><div class="ttname"><a href="classmartialart.html#aaea9edbb6031403fad7299a424c618e7">martialart::apply_oncrit_buffs</a></div><div class="ttdeci">void apply_oncrit_buffs(Character &amp;u) const</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8cpp_source.html#l00813">martialarts.cpp:813</a></div></div>
+<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l01085">1085</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01086" name="l01086"></a><span class="lineno"> 1086</span>{</div>
+<div class="line"><a id="l01087" name="l01087"></a><span class="lineno"> 1087</span>    <a class="code hl_variable" href="classcharacter__martial__arts.html#a6e5e356f65e94363420b0f8d0a3736ac">style_selected</a>-&gt;<a class="code hl_function" href="classmartialart.html#aaea9edbb6031403fad7299a424c618e7">apply_oncrit_buffs</a>( owner );</div>
+<div class="line"><a id="l01088" name="l01088"></a><span class="lineno"> 1088</span>}</div>
+<div class="ttc" id="aclassmartialart_html_aaea9edbb6031403fad7299a424c618e7"><div class="ttname"><a href="classmartialart.html#aaea9edbb6031403fad7299a424c618e7">martialart::apply_oncrit_buffs</a></div><div class="ttdeci">void apply_oncrit_buffs(Character &amp;u) const</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8cpp_source.html#l00854">martialarts.cpp:854</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="martialarts_8cpp_source.html#l00813">martialart::apply_oncrit_buffs()</a>, and <a class="el" href="character__martial__arts_8h_source.html#l00021">style_selected</a>.</p>
+<p class="reference">References <a class="el" href="martialarts_8cpp_source.html#l00854">martialart::apply_oncrit_buffs()</a>, and <a class="el" href="character__martial__arts_8h_source.html#l00021">style_selected</a>.</p>
 
 </div>
 </div>
@@ -1066,13 +1066,13 @@ Unarmed increases ability to perform leg block
 
 <p>Fires all dodge-triggered martial arts events. </p>
 
-<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l01024">1024</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01025" name="l01025"></a><span class="lineno"> 1025</span>{</div>
-<div class="line"><a id="l01026" name="l01026"></a><span class="lineno"> 1026</span>    <a class="code hl_variable" href="classcharacter__martial__arts.html#a6e5e356f65e94363420b0f8d0a3736ac">style_selected</a>-&gt;<a class="code hl_function" href="classmartialart.html#ad1e84ffc1fabe75507d52b349fe9ac30">apply_ondodge_buffs</a>( owner );</div>
-<div class="line"><a id="l01027" name="l01027"></a><span class="lineno"> 1027</span>}</div>
-<div class="ttc" id="aclassmartialart_html_ad1e84ffc1fabe75507d52b349fe9ac30"><div class="ttname"><a href="classmartialart.html#ad1e84ffc1fabe75507d52b349fe9ac30">martialart::apply_ondodge_buffs</a></div><div class="ttdeci">void apply_ondodge_buffs(Character &amp;u) const</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8cpp_source.html#l00793">martialarts.cpp:793</a></div></div>
+<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l01069">1069</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01070" name="l01070"></a><span class="lineno"> 1070</span>{</div>
+<div class="line"><a id="l01071" name="l01071"></a><span class="lineno"> 1071</span>    <a class="code hl_variable" href="classcharacter__martial__arts.html#a6e5e356f65e94363420b0f8d0a3736ac">style_selected</a>-&gt;<a class="code hl_function" href="classmartialart.html#ad1e84ffc1fabe75507d52b349fe9ac30">apply_ondodge_buffs</a>( owner );</div>
+<div class="line"><a id="l01072" name="l01072"></a><span class="lineno"> 1072</span>}</div>
+<div class="ttc" id="aclassmartialart_html_ad1e84ffc1fabe75507d52b349fe9ac30"><div class="ttname"><a href="classmartialart.html#ad1e84ffc1fabe75507d52b349fe9ac30">martialart::apply_ondodge_buffs</a></div><div class="ttdeci">void apply_ondodge_buffs(Character &amp;u) const</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8cpp_source.html#l00834">martialarts.cpp:834</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="martialarts_8cpp_source.html#l00793">martialart::apply_ondodge_buffs()</a>, and <a class="el" href="character__martial__arts_8h_source.html#l00021">style_selected</a>.</p>
+<p class="reference">References <a class="el" href="martialarts_8cpp_source.html#l00834">martialart::apply_ondodge_buffs()</a>, and <a class="el" href="character__martial__arts_8h_source.html#l00021">style_selected</a>.</p>
 
 </div>
 </div>
@@ -1094,13 +1094,13 @@ Unarmed increases ability to perform leg block
 
 <p>Fires all get hit-triggered martial arts events. </p>
 
-<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l01032">1032</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01033" name="l01033"></a><span class="lineno"> 1033</span>{</div>
-<div class="line"><a id="l01034" name="l01034"></a><span class="lineno"> 1034</span>    <a class="code hl_variable" href="classcharacter__martial__arts.html#a6e5e356f65e94363420b0f8d0a3736ac">style_selected</a>-&gt;<a class="code hl_function" href="classmartialart.html#a13c8a3a70202d456eb2d0f1b9cfe9071">apply_ongethit_buffs</a>( owner );</div>
-<div class="line"><a id="l01035" name="l01035"></a><span class="lineno"> 1035</span>}</div>
-<div class="ttc" id="aclassmartialart_html_a13c8a3a70202d456eb2d0f1b9cfe9071"><div class="ttname"><a href="classmartialart.html#a13c8a3a70202d456eb2d0f1b9cfe9071">martialart::apply_ongethit_buffs</a></div><div class="ttdeci">void apply_ongethit_buffs(Character &amp;u) const</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8cpp_source.html#l00803">martialarts.cpp:803</a></div></div>
+<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l01077">1077</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01078" name="l01078"></a><span class="lineno"> 1078</span>{</div>
+<div class="line"><a id="l01079" name="l01079"></a><span class="lineno"> 1079</span>    <a class="code hl_variable" href="classcharacter__martial__arts.html#a6e5e356f65e94363420b0f8d0a3736ac">style_selected</a>-&gt;<a class="code hl_function" href="classmartialart.html#a13c8a3a70202d456eb2d0f1b9cfe9071">apply_ongethit_buffs</a>( owner );</div>
+<div class="line"><a id="l01080" name="l01080"></a><span class="lineno"> 1080</span>}</div>
+<div class="ttc" id="aclassmartialart_html_a13c8a3a70202d456eb2d0f1b9cfe9071"><div class="ttname"><a href="classmartialart.html#a13c8a3a70202d456eb2d0f1b9cfe9071">martialart::apply_ongethit_buffs</a></div><div class="ttdeci">void apply_ongethit_buffs(Character &amp;u) const</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8cpp_source.html#l00844">martialarts.cpp:844</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="martialarts_8cpp_source.html#l00803">martialart::apply_ongethit_buffs()</a>, and <a class="el" href="character__martial__arts_8h_source.html#l00021">style_selected</a>.</p>
+<p class="reference">References <a class="el" href="martialarts_8cpp_source.html#l00844">martialart::apply_ongethit_buffs()</a>, and <a class="el" href="character__martial__arts_8h_source.html#l00021">style_selected</a>.</p>
 
 </div>
 </div>
@@ -1122,13 +1122,13 @@ Unarmed increases ability to perform leg block
 
 <p>Fires all hit-triggered martial arts events. </p>
 
-<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l01016">1016</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01017" name="l01017"></a><span class="lineno"> 1017</span>{</div>
-<div class="line"><a id="l01018" name="l01018"></a><span class="lineno"> 1018</span>    <a class="code hl_variable" href="classcharacter__martial__arts.html#a6e5e356f65e94363420b0f8d0a3736ac">style_selected</a>-&gt;<a class="code hl_function" href="classmartialart.html#aad05446cb62cfcf28bef13435dd9b61e">apply_onhit_buffs</a>( owner );</div>
-<div class="line"><a id="l01019" name="l01019"></a><span class="lineno"> 1019</span>}</div>
-<div class="ttc" id="aclassmartialart_html_aad05446cb62cfcf28bef13435dd9b61e"><div class="ttname"><a href="classmartialart.html#aad05446cb62cfcf28bef13435dd9b61e">martialart::apply_onhit_buffs</a></div><div class="ttdeci">void apply_onhit_buffs(Character &amp;u) const</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8cpp_source.html#l00783">martialarts.cpp:783</a></div></div>
+<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l01061">1061</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01062" name="l01062"></a><span class="lineno"> 1062</span>{</div>
+<div class="line"><a id="l01063" name="l01063"></a><span class="lineno"> 1063</span>    <a class="code hl_variable" href="classcharacter__martial__arts.html#a6e5e356f65e94363420b0f8d0a3736ac">style_selected</a>-&gt;<a class="code hl_function" href="classmartialart.html#aad05446cb62cfcf28bef13435dd9b61e">apply_onhit_buffs</a>( owner );</div>
+<div class="line"><a id="l01064" name="l01064"></a><span class="lineno"> 1064</span>}</div>
+<div class="ttc" id="aclassmartialart_html_aad05446cb62cfcf28bef13435dd9b61e"><div class="ttname"><a href="classmartialart.html#aad05446cb62cfcf28bef13435dd9b61e">martialart::apply_onhit_buffs</a></div><div class="ttdeci">void apply_onhit_buffs(Character &amp;u) const</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8cpp_source.html#l00824">martialarts.cpp:824</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="martialarts_8cpp_source.html#l00783">martialart::apply_onhit_buffs()</a>, and <a class="el" href="character__martial__arts_8h_source.html#l00021">style_selected</a>.</p>
+<p class="reference">References <a class="el" href="martialarts_8cpp_source.html#l00824">martialart::apply_onhit_buffs()</a>, and <a class="el" href="character__martial__arts_8h_source.html#l00021">style_selected</a>.</p>
 
 </div>
 </div>
@@ -1150,13 +1150,13 @@ Unarmed increases ability to perform leg block
 
 <p>Fires all kill-triggered martial arts events. </p>
 
-<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l01044">1044</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01045" name="l01045"></a><span class="lineno"> 1045</span>{</div>
-<div class="line"><a id="l01046" name="l01046"></a><span class="lineno"> 1046</span>    <a class="code hl_variable" href="classcharacter__martial__arts.html#a6e5e356f65e94363420b0f8d0a3736ac">style_selected</a>-&gt;<a class="code hl_function" href="classmartialart.html#a60ee938571aee37d4064ebb80dda23ae">apply_onkill_buffs</a>( owner );</div>
-<div class="line"><a id="l01047" name="l01047"></a><span class="lineno"> 1047</span>}</div>
-<div class="ttc" id="aclassmartialart_html_a60ee938571aee37d4064ebb80dda23ae"><div class="ttname"><a href="classmartialart.html#a60ee938571aee37d4064ebb80dda23ae">martialart::apply_onkill_buffs</a></div><div class="ttdeci">void apply_onkill_buffs(Character &amp;u) const</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8cpp_source.html#l00818">martialarts.cpp:818</a></div></div>
+<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l01089">1089</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01090" name="l01090"></a><span class="lineno"> 1090</span>{</div>
+<div class="line"><a id="l01091" name="l01091"></a><span class="lineno"> 1091</span>    <a class="code hl_variable" href="classcharacter__martial__arts.html#a6e5e356f65e94363420b0f8d0a3736ac">style_selected</a>-&gt;<a class="code hl_function" href="classmartialart.html#a60ee938571aee37d4064ebb80dda23ae">apply_onkill_buffs</a>( owner );</div>
+<div class="line"><a id="l01092" name="l01092"></a><span class="lineno"> 1092</span>}</div>
+<div class="ttc" id="aclassmartialart_html_a60ee938571aee37d4064ebb80dda23ae"><div class="ttname"><a href="classmartialart.html#a60ee938571aee37d4064ebb80dda23ae">martialart::apply_onkill_buffs</a></div><div class="ttdeci">void apply_onkill_buffs(Character &amp;u) const</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8cpp_source.html#l00859">martialarts.cpp:859</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="martialarts_8cpp_source.html#l00818">martialart::apply_onkill_buffs()</a>, and <a class="el" href="character__martial__arts_8h_source.html#l00021">style_selected</a>.</p>
+<p class="reference">References <a class="el" href="martialarts_8cpp_source.html#l00859">martialart::apply_onkill_buffs()</a>, and <a class="el" href="character__martial__arts_8h_source.html#l00021">style_selected</a>.</p>
 
 </div>
 </div>
@@ -1178,13 +1178,13 @@ Unarmed increases ability to perform leg block
 
 <p>Fires all miss-triggered martial arts events. </p>
 
-<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l01036">1036</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01037" name="l01037"></a><span class="lineno"> 1037</span>{</div>
-<div class="line"><a id="l01038" name="l01038"></a><span class="lineno"> 1038</span>    <a class="code hl_variable" href="classcharacter__martial__arts.html#a6e5e356f65e94363420b0f8d0a3736ac">style_selected</a>-&gt;<a class="code hl_function" href="classmartialart.html#ac4b8fd88e1dc475aa9ecca5b8d1c9f9a">apply_onmiss_buffs</a>( owner );</div>
-<div class="line"><a id="l01039" name="l01039"></a><span class="lineno"> 1039</span>}</div>
-<div class="ttc" id="aclassmartialart_html_ac4b8fd88e1dc475aa9ecca5b8d1c9f9a"><div class="ttname"><a href="classmartialart.html#ac4b8fd88e1dc475aa9ecca5b8d1c9f9a">martialart::apply_onmiss_buffs</a></div><div class="ttdeci">void apply_onmiss_buffs(Character &amp;u) const</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8cpp_source.html#l00808">martialarts.cpp:808</a></div></div>
+<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l01081">1081</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01082" name="l01082"></a><span class="lineno"> 1082</span>{</div>
+<div class="line"><a id="l01083" name="l01083"></a><span class="lineno"> 1083</span>    <a class="code hl_variable" href="classcharacter__martial__arts.html#a6e5e356f65e94363420b0f8d0a3736ac">style_selected</a>-&gt;<a class="code hl_function" href="classmartialart.html#ac4b8fd88e1dc475aa9ecca5b8d1c9f9a">apply_onmiss_buffs</a>( owner );</div>
+<div class="line"><a id="l01084" name="l01084"></a><span class="lineno"> 1084</span>}</div>
+<div class="ttc" id="aclassmartialart_html_ac4b8fd88e1dc475aa9ecca5b8d1c9f9a"><div class="ttname"><a href="classmartialart.html#ac4b8fd88e1dc475aa9ecca5b8d1c9f9a">martialart::apply_onmiss_buffs</a></div><div class="ttdeci">void apply_onmiss_buffs(Character &amp;u) const</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8cpp_source.html#l00849">martialarts.cpp:849</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="martialarts_8cpp_source.html#l00808">martialart::apply_onmiss_buffs()</a>, and <a class="el" href="character__martial__arts_8h_source.html#l00021">style_selected</a>.</p>
+<p class="reference">References <a class="el" href="martialarts_8cpp_source.html#l00849">martialart::apply_onmiss_buffs()</a>, and <a class="el" href="character__martial__arts_8h_source.html#l00021">style_selected</a>.</p>
 
 </div>
 </div>
@@ -1206,13 +1206,13 @@ Unarmed increases ability to perform leg block
 
 <p>Fires all move-triggered martial arts events. </p>
 
-<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l01008">1008</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01009" name="l01009"></a><span class="lineno"> 1009</span>{</div>
-<div class="line"><a id="l01010" name="l01010"></a><span class="lineno"> 1010</span>    <a class="code hl_variable" href="classcharacter__martial__arts.html#a6e5e356f65e94363420b0f8d0a3736ac">style_selected</a>-&gt;<a class="code hl_function" href="classmartialart.html#aaa2466fcbc8cfac40f3d3eeaf51d388c">apply_onmove_buffs</a>( owner );</div>
-<div class="line"><a id="l01011" name="l01011"></a><span class="lineno"> 1011</span>}</div>
-<div class="ttc" id="aclassmartialart_html_aaa2466fcbc8cfac40f3d3eeaf51d388c"><div class="ttname"><a href="classmartialart.html#aaa2466fcbc8cfac40f3d3eeaf51d388c">martialart::apply_onmove_buffs</a></div><div class="ttdeci">void apply_onmove_buffs(Character &amp;u) const</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8cpp_source.html#l00773">martialarts.cpp:773</a></div></div>
+<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l01053">1053</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01054" name="l01054"></a><span class="lineno"> 1054</span>{</div>
+<div class="line"><a id="l01055" name="l01055"></a><span class="lineno"> 1055</span>    <a class="code hl_variable" href="classcharacter__martial__arts.html#a6e5e356f65e94363420b0f8d0a3736ac">style_selected</a>-&gt;<a class="code hl_function" href="classmartialart.html#aaa2466fcbc8cfac40f3d3eeaf51d388c">apply_onmove_buffs</a>( owner );</div>
+<div class="line"><a id="l01056" name="l01056"></a><span class="lineno"> 1056</span>}</div>
+<div class="ttc" id="aclassmartialart_html_aaa2466fcbc8cfac40f3d3eeaf51d388c"><div class="ttname"><a href="classmartialart.html#aaa2466fcbc8cfac40f3d3eeaf51d388c">martialart::apply_onmove_buffs</a></div><div class="ttdeci">void apply_onmove_buffs(Character &amp;u) const</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8cpp_source.html#l00814">martialarts.cpp:814</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="martialarts_8cpp_source.html#l00773">martialart::apply_onmove_buffs()</a>, and <a class="el" href="character__martial__arts_8h_source.html#l00021">style_selected</a>.</p>
+<p class="reference">References <a class="el" href="martialarts_8cpp_source.html#l00814">martialart::apply_onmove_buffs()</a>, and <a class="el" href="character__martial__arts_8h_source.html#l00021">style_selected</a>.</p>
 
 </div>
 </div>
@@ -1234,13 +1234,13 @@ Unarmed increases ability to perform leg block
 
 <p>Fires all pause-triggered martial arts events. </p>
 
-<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l01012">1012</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01013" name="l01013"></a><span class="lineno"> 1013</span>{</div>
-<div class="line"><a id="l01014" name="l01014"></a><span class="lineno"> 1014</span>    <a class="code hl_variable" href="classcharacter__martial__arts.html#a6e5e356f65e94363420b0f8d0a3736ac">style_selected</a>-&gt;<a class="code hl_function" href="classmartialart.html#adc8e1ff8d310ee1de0b3623fe14df0dd">apply_onpause_buffs</a>( owner );</div>
-<div class="line"><a id="l01015" name="l01015"></a><span class="lineno"> 1015</span>}</div>
-<div class="ttc" id="aclassmartialart_html_adc8e1ff8d310ee1de0b3623fe14df0dd"><div class="ttname"><a href="classmartialart.html#adc8e1ff8d310ee1de0b3623fe14df0dd">martialart::apply_onpause_buffs</a></div><div class="ttdeci">void apply_onpause_buffs(Character &amp;u) const</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8cpp_source.html#l00778">martialarts.cpp:778</a></div></div>
+<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l01057">1057</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01058" name="l01058"></a><span class="lineno"> 1058</span>{</div>
+<div class="line"><a id="l01059" name="l01059"></a><span class="lineno"> 1059</span>    <a class="code hl_variable" href="classcharacter__martial__arts.html#a6e5e356f65e94363420b0f8d0a3736ac">style_selected</a>-&gt;<a class="code hl_function" href="classmartialart.html#adc8e1ff8d310ee1de0b3623fe14df0dd">apply_onpause_buffs</a>( owner );</div>
+<div class="line"><a id="l01060" name="l01060"></a><span class="lineno"> 1060</span>}</div>
+<div class="ttc" id="aclassmartialart_html_adc8e1ff8d310ee1de0b3623fe14df0dd"><div class="ttname"><a href="classmartialart.html#adc8e1ff8d310ee1de0b3623fe14df0dd">martialart::apply_onpause_buffs</a></div><div class="ttdeci">void apply_onpause_buffs(Character &amp;u) const</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8cpp_source.html#l00819">martialarts.cpp:819</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="martialarts_8cpp_source.html#l00778">martialart::apply_onpause_buffs()</a>, and <a class="el" href="character__martial__arts_8h_source.html#l00021">style_selected</a>.</p>
+<p class="reference">References <a class="el" href="martialarts_8cpp_source.html#l00819">martialart::apply_onpause_buffs()</a>, and <a class="el" href="character__martial__arts_8h_source.html#l00021">style_selected</a>.</p>
 
 </div>
 </div>
@@ -1262,13 +1262,13 @@ Unarmed increases ability to perform leg block
 
 <p>Fires all non-triggered martial arts events. </p>
 
-<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l01004">1004</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01005" name="l01005"></a><span class="lineno"> 1005</span>{</div>
-<div class="line"><a id="l01006" name="l01006"></a><span class="lineno"> 1006</span>    <a class="code hl_variable" href="classcharacter__martial__arts.html#a6e5e356f65e94363420b0f8d0a3736ac">style_selected</a>-&gt;<a class="code hl_function" href="classmartialart.html#a03e91575265b89169040218a6141cbfa">apply_static_buffs</a>( owner );</div>
-<div class="line"><a id="l01007" name="l01007"></a><span class="lineno"> 1007</span>}</div>
-<div class="ttc" id="aclassmartialart_html_a03e91575265b89169040218a6141cbfa"><div class="ttname"><a href="classmartialart.html#a03e91575265b89169040218a6141cbfa">martialart::apply_static_buffs</a></div><div class="ttdeci">void apply_static_buffs(Character &amp;u) const</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8cpp_source.html#l00768">martialarts.cpp:768</a></div></div>
+<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l01049">1049</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01050" name="l01050"></a><span class="lineno"> 1050</span>{</div>
+<div class="line"><a id="l01051" name="l01051"></a><span class="lineno"> 1051</span>    <a class="code hl_variable" href="classcharacter__martial__arts.html#a6e5e356f65e94363420b0f8d0a3736ac">style_selected</a>-&gt;<a class="code hl_function" href="classmartialart.html#a03e91575265b89169040218a6141cbfa">apply_static_buffs</a>( owner );</div>
+<div class="line"><a id="l01052" name="l01052"></a><span class="lineno"> 1052</span>}</div>
+<div class="ttc" id="aclassmartialart_html_a03e91575265b89169040218a6141cbfa"><div class="ttname"><a href="classmartialart.html#a03e91575265b89169040218a6141cbfa">martialart::apply_static_buffs</a></div><div class="ttdeci">void apply_static_buffs(Character &amp;u) const</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8cpp_source.html#l00809">martialarts.cpp:809</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="martialarts_8cpp_source.html#l00768">martialart::apply_static_buffs()</a>, and <a class="el" href="character__martial__arts_8h_source.html#l00021">style_selected</a>.</p>
+<p class="reference">References <a class="el" href="martialarts_8cpp_source.html#l00809">martialart::apply_static_buffs()</a>, and <a class="el" href="character__martial__arts_8h_source.html#l00021">style_selected</a>.</p>
 
 </div>
 </div>
@@ -1290,31 +1290,31 @@ Unarmed increases ability to perform leg block
 
 <p>Displays a message if the player can or cannot use the martial art. </p>
 
-<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l01233">1233</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01234" name="l01234"></a><span class="lineno"> 1234</span>{</div>
-<div class="line"><a id="l01235" name="l01235"></a><span class="lineno"> 1235</span>    <a class="code hl_class" href="classmartialart.html">martialart</a> ma = <a class="code hl_variable" href="classcharacter__martial__arts.html#a6e5e356f65e94363420b0f8d0a3736ac">style_selected</a>.<a class="code hl_function" href="classstring__id.html#a4796245d3cd6e0283670698a98d46ae9">obj</a>();</div>
-<div class="line"><a id="l01236" name="l01236"></a><span class="lineno"> 1236</span>    <span class="keywordflow">if</span>( ma.<a class="code hl_variable" href="classmartialart.html#a9a5cacca0f58d1a5709c2da3d16d4d56">force_unarmed</a> || ma.<a class="code hl_function" href="classmartialart.html#a5f9c99c39eb6d21dbd34f2718c17f83a">weapon_valid</a>( owner.<a class="code hl_variable" href="classCharacter.html#ae68b7a6565646ba662e448bded8b6599">weapon</a> ) ) {</div>
-<div class="line"><a id="l01237" name="l01237"></a><span class="lineno"> 1237</span>        owner.<a class="code hl_function" href="classCreature.html#a91dc4715c36eef7d116f944be9a4d435">add_msg_if_player</a>( <a class="code hl_enumvalue" href="enums_8h.html#a3baf36d700701401b6baf94db93d096ea5d3734a51686ceb1848704dd277dfc7f">m_info</a>, <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( ma.<a class="code hl_function" href="classmartialart.html#a120c13908a74f20ea88405675b1089f7">get_initiate_avatar_message</a>() ) );</div>
-<div class="line"><a id="l01238" name="l01238"></a><span class="lineno"> 1238</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( ma.<a class="code hl_variable" href="classmartialart.html#a1bc8c2326eb0f6ff5b4c2f4af09d9973">strictly_melee</a> &amp;&amp; !owner.<a class="code hl_function" href="classCharacter.html#ad79464264cb8a2061f5888d092f5cd86">is_armed</a>() ) {</div>
-<div class="line"><a id="l01239" name="l01239"></a><span class="lineno"> 1239</span>        owner.<a class="code hl_function" href="classCreature.html#a91dc4715c36eef7d116f944be9a4d435">add_msg_if_player</a>( <a class="code hl_enumvalue" href="enums_8h.html#a3baf36d700701401b6baf94db93d096ea72e7b82d57a6df0d4263c2043139b1b1">m_bad</a>, <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;%s cannot be used unarmed.&quot;</span> ), ma.<a class="code hl_variable" href="classmartialart.html#a755de10d91b0292258efb0ab55b80cbc">name</a> );</div>
-<div class="line"><a id="l01240" name="l01240"></a><span class="lineno"> 1240</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( ma.<a class="code hl_variable" href="classmartialart.html#a273c4c599ed375e20cba8e29411767a3">strictly_unarmed</a> &amp;&amp; owner.<a class="code hl_function" href="classCharacter.html#ad79464264cb8a2061f5888d092f5cd86">is_armed</a>() ) {</div>
-<div class="line"><a id="l01241" name="l01241"></a><span class="lineno"> 1241</span>        owner.<a class="code hl_function" href="classCreature.html#a91dc4715c36eef7d116f944be9a4d435">add_msg_if_player</a>( <a class="code hl_enumvalue" href="enums_8h.html#a3baf36d700701401b6baf94db93d096ea72e7b82d57a6df0d4263c2043139b1b1">m_bad</a>, <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;%s cannot be used with weapons.&quot;</span> ), ma.<a class="code hl_variable" href="classmartialart.html#a755de10d91b0292258efb0ab55b80cbc">name</a> );</div>
-<div class="line"><a id="l01242" name="l01242"></a><span class="lineno"> 1242</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l01243" name="l01243"></a><span class="lineno"> 1243</span>        owner.<a class="code hl_function" href="classCreature.html#a91dc4715c36eef7d116f944be9a4d435">add_msg_if_player</a>( <a class="code hl_enumvalue" href="enums_8h.html#a3baf36d700701401b6baf94db93d096ea72e7b82d57a6df0d4263c2043139b1b1">m_bad</a>, <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;The %1$s is not a valid %2$s weapon.&quot;</span> ), owner.<a class="code hl_variable" href="classCharacter.html#ae68b7a6565646ba662e448bded8b6599">weapon</a>.<a class="code hl_function" href="classitem.html#a7e78e26dcf9b357cda769c3ca2938eda">tname</a>( 1,</div>
-<div class="line"><a id="l01244" name="l01244"></a><span class="lineno"> 1244</span>                                 <span class="keyword">false</span> ), ma.<a class="code hl_variable" href="classmartialart.html#a755de10d91b0292258efb0ab55b80cbc">name</a> );</div>
-<div class="line"><a id="l01245" name="l01245"></a><span class="lineno"> 1245</span>    }</div>
-<div class="line"><a id="l01246" name="l01246"></a><span class="lineno"> 1246</span>}</div>
+<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l01278">1278</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01279" name="l01279"></a><span class="lineno"> 1279</span>{</div>
+<div class="line"><a id="l01280" name="l01280"></a><span class="lineno"> 1280</span>    <a class="code hl_class" href="classmartialart.html">martialart</a> ma = <a class="code hl_variable" href="classcharacter__martial__arts.html#a6e5e356f65e94363420b0f8d0a3736ac">style_selected</a>.<a class="code hl_function" href="classstring__id.html#a4796245d3cd6e0283670698a98d46ae9">obj</a>();</div>
+<div class="line"><a id="l01281" name="l01281"></a><span class="lineno"> 1281</span>    <span class="keywordflow">if</span>( ma.<a class="code hl_variable" href="classmartialart.html#a9a5cacca0f58d1a5709c2da3d16d4d56">force_unarmed</a> || ma.<a class="code hl_function" href="classmartialart.html#a5f9c99c39eb6d21dbd34f2718c17f83a">weapon_valid</a>( owner.<a class="code hl_variable" href="classCharacter.html#ae68b7a6565646ba662e448bded8b6599">weapon</a> ) ) {</div>
+<div class="line"><a id="l01282" name="l01282"></a><span class="lineno"> 1282</span>        owner.<a class="code hl_function" href="classCreature.html#a91dc4715c36eef7d116f944be9a4d435">add_msg_if_player</a>( <a class="code hl_enumvalue" href="enums_8h.html#a3baf36d700701401b6baf94db93d096ea5d3734a51686ceb1848704dd277dfc7f">m_info</a>, <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( ma.<a class="code hl_function" href="classmartialart.html#a120c13908a74f20ea88405675b1089f7">get_initiate_avatar_message</a>() ) );</div>
+<div class="line"><a id="l01283" name="l01283"></a><span class="lineno"> 1283</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( ma.<a class="code hl_variable" href="classmartialart.html#a1bc8c2326eb0f6ff5b4c2f4af09d9973">strictly_melee</a> &amp;&amp; !owner.<a class="code hl_function" href="classCharacter.html#ad79464264cb8a2061f5888d092f5cd86">is_armed</a>() ) {</div>
+<div class="line"><a id="l01284" name="l01284"></a><span class="lineno"> 1284</span>        owner.<a class="code hl_function" href="classCreature.html#a91dc4715c36eef7d116f944be9a4d435">add_msg_if_player</a>( <a class="code hl_enumvalue" href="enums_8h.html#a3baf36d700701401b6baf94db93d096ea72e7b82d57a6df0d4263c2043139b1b1">m_bad</a>, <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;%s cannot be used unarmed.&quot;</span> ), ma.<a class="code hl_variable" href="classmartialart.html#a755de10d91b0292258efb0ab55b80cbc">name</a> );</div>
+<div class="line"><a id="l01285" name="l01285"></a><span class="lineno"> 1285</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( ma.<a class="code hl_variable" href="classmartialart.html#a273c4c599ed375e20cba8e29411767a3">strictly_unarmed</a> &amp;&amp; owner.<a class="code hl_function" href="classCharacter.html#ad79464264cb8a2061f5888d092f5cd86">is_armed</a>() ) {</div>
+<div class="line"><a id="l01286" name="l01286"></a><span class="lineno"> 1286</span>        owner.<a class="code hl_function" href="classCreature.html#a91dc4715c36eef7d116f944be9a4d435">add_msg_if_player</a>( <a class="code hl_enumvalue" href="enums_8h.html#a3baf36d700701401b6baf94db93d096ea72e7b82d57a6df0d4263c2043139b1b1">m_bad</a>, <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;%s cannot be used with weapons.&quot;</span> ), ma.<a class="code hl_variable" href="classmartialart.html#a755de10d91b0292258efb0ab55b80cbc">name</a> );</div>
+<div class="line"><a id="l01287" name="l01287"></a><span class="lineno"> 1287</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l01288" name="l01288"></a><span class="lineno"> 1288</span>        owner.<a class="code hl_function" href="classCreature.html#a91dc4715c36eef7d116f944be9a4d435">add_msg_if_player</a>( <a class="code hl_enumvalue" href="enums_8h.html#a3baf36d700701401b6baf94db93d096ea72e7b82d57a6df0d4263c2043139b1b1">m_bad</a>, <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;The %1$s is not a valid %2$s weapon.&quot;</span> ), owner.<a class="code hl_variable" href="classCharacter.html#ae68b7a6565646ba662e448bded8b6599">weapon</a>.<a class="code hl_function" href="classitem.html#a7e78e26dcf9b357cda769c3ca2938eda">tname</a>( 1,</div>
+<div class="line"><a id="l01289" name="l01289"></a><span class="lineno"> 1289</span>                                 <span class="keyword">false</span> ), ma.<a class="code hl_variable" href="classmartialart.html#a755de10d91b0292258efb0ab55b80cbc">name</a> );</div>
+<div class="line"><a id="l01290" name="l01290"></a><span class="lineno"> 1290</span>    }</div>
+<div class="line"><a id="l01291" name="l01291"></a><span class="lineno"> 1291</span>}</div>
 <div class="ttc" id="aclassCharacter_html_ad79464264cb8a2061f5888d092f5cd86"><div class="ttname"><a href="classCharacter.html#ad79464264cb8a2061f5888d092f5cd86">Character::is_armed</a></div><div class="ttdeci">bool is_armed() const</div><div class="ttdoc">Returns true if the character is wielding something.</div><div class="ttdef"><b>Definition:</b> <a href="melee_8cpp_source.html#l00148">melee.cpp:148</a></div></div>
 <div class="ttc" id="aclassCharacter_html_ae68b7a6565646ba662e448bded8b6599"><div class="ttname"><a href="classCharacter.html#ae68b7a6565646ba662e448bded8b6599">Character::weapon</a></div><div class="ttdeci">item weapon</div><div class="ttdef"><b>Definition:</b> <a href="character_8h_source.html#l01546">character.h:1546</a></div></div>
 <div class="ttc" id="aclassCreature_html_a91dc4715c36eef7d116f944be9a4d435"><div class="ttname"><a href="classCreature.html#a91dc4715c36eef7d116f944be9a4d435">Creature::add_msg_if_player</a></div><div class="ttdeci">virtual void add_msg_if_player(const std::string &amp;) const</div><div class="ttdef"><b>Definition:</b> <a href="creature_8h_source.html#l00597">creature.h:597</a></div></div>
-<div class="ttc" id="aclassitem_html_a7e78e26dcf9b357cda769c3ca2938eda"><div class="ttname"><a href="classitem.html#a7e78e26dcf9b357cda769c3ca2938eda">item::tname</a></div><div class="ttdeci">std::string tname(unsigned int quantity=1, bool with_prefix=true, unsigned int truncate=0) const</div><div class="ttdoc">Return the (translated) item name.</div><div class="ttdef"><b>Definition:</b> <a href="item_8cpp_source.html#l04532">item.cpp:4532</a></div></div>
-<div class="ttc" id="aclassmartialart_html_a120c13908a74f20ea88405675b1089f7"><div class="ttname"><a href="classmartialart.html#a120c13908a74f20ea88405675b1089f7">martialart::get_initiate_avatar_message</a></div><div class="ttdeci">std::string get_initiate_avatar_message() const</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8cpp_source.html#l00860">martialarts.cpp:860</a></div></div>
-<div class="ttc" id="aclassmartialart_html_a1bc8c2326eb0f6ff5b4c2f4af09d9973"><div class="ttname"><a href="classmartialart.html#a1bc8c2326eb0f6ff5b4c2f4af09d9973">martialart::strictly_melee</a></div><div class="ttdeci">bool strictly_melee</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8h_source.html#l00256">martialarts.h:256</a></div></div>
-<div class="ttc" id="aclassmartialart_html_a273c4c599ed375e20cba8e29411767a3"><div class="ttname"><a href="classmartialart.html#a273c4c599ed375e20cba8e29411767a3">martialart::strictly_unarmed</a></div><div class="ttdeci">bool strictly_unarmed</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8h_source.html#l00255">martialarts.h:255</a></div></div>
-<div class="ttc" id="aclassmartialart_html_a5f9c99c39eb6d21dbd34f2718c17f83a"><div class="ttname"><a href="classmartialart.html#a5f9c99c39eb6d21dbd34f2718c17f83a">martialart::weapon_valid</a></div><div class="ttdeci">bool weapon_valid(const item &amp;it) const</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8cpp_source.html#l00839">martialarts.cpp:839</a></div></div>
+<div class="ttc" id="aclassitem_html_a7e78e26dcf9b357cda769c3ca2938eda"><div class="ttname"><a href="classitem.html#a7e78e26dcf9b357cda769c3ca2938eda">item::tname</a></div><div class="ttdeci">std::string tname(unsigned int quantity=1, bool with_prefix=true, unsigned int truncate=0) const</div><div class="ttdoc">Return the (translated) item name.</div><div class="ttdef"><b>Definition:</b> <a href="item_8cpp_source.html#l04554">item.cpp:4554</a></div></div>
+<div class="ttc" id="aclassmartialart_html_a120c13908a74f20ea88405675b1089f7"><div class="ttname"><a href="classmartialart.html#a120c13908a74f20ea88405675b1089f7">martialart::get_initiate_avatar_message</a></div><div class="ttdeci">std::string get_initiate_avatar_message() const</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8cpp_source.html#l00905">martialarts.cpp:905</a></div></div>
+<div class="ttc" id="aclassmartialart_html_a1bc8c2326eb0f6ff5b4c2f4af09d9973"><div class="ttname"><a href="classmartialart.html#a1bc8c2326eb0f6ff5b4c2f4af09d9973">martialart::strictly_melee</a></div><div class="ttdeci">bool strictly_melee</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8h_source.html#l00284">martialarts.h:284</a></div></div>
+<div class="ttc" id="aclassmartialart_html_a273c4c599ed375e20cba8e29411767a3"><div class="ttname"><a href="classmartialart.html#a273c4c599ed375e20cba8e29411767a3">martialart::strictly_unarmed</a></div><div class="ttdeci">bool strictly_unarmed</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8h_source.html#l00283">martialarts.h:283</a></div></div>
+<div class="ttc" id="aclassmartialart_html_a5f9c99c39eb6d21dbd34f2718c17f83a"><div class="ttname"><a href="classmartialart.html#a5f9c99c39eb6d21dbd34f2718c17f83a">martialart::weapon_valid</a></div><div class="ttdeci">bool weapon_valid(const item &amp;it) const</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8cpp_source.html#l00884">martialarts.cpp:884</a></div></div>
 <div class="ttc" id="aenums_8h_html_a3baf36d700701401b6baf94db93d096ea72e7b82d57a6df0d4263c2043139b1b1"><div class="ttname"><a href="enums_8h.html#a3baf36d700701401b6baf94db93d096ea72e7b82d57a6df0d4263c2043139b1b1">m_bad</a></div><div class="ttdeci">@ m_bad</div><div class="ttdef"><b>Definition:</b> <a href="enums_8h_source.html#l00261">enums.h:261</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="creature_8h_source.html#l00597">Creature::add_msg_if_player()</a>, <a class="el" href="martialarts_8h_source.html#l00258">martialart::force_unarmed</a>, <a class="el" href="martialarts_8cpp_source.html#l00860">martialart::get_initiate_avatar_message()</a>, <a class="el" href="melee_8cpp_source.html#l00148">Character::is_armed()</a>, <a class="el" href="enums_8h_source.html#l00261">m_bad</a>, <a class="el" href="enums_8h_source.html#l00265">m_info</a>, <a class="el" href="martialarts_8h_source.html#l00243">martialart::name</a>, <a class="el" href="achievement_8cpp_source.html#l00058">string_id&lt; T &gt;::obj()</a>, <a class="el" href="martialarts_8h_source.html#l00256">martialart::strictly_melee</a>, <a class="el" href="martialarts_8h_source.html#l00255">martialart::strictly_unarmed</a>, <a class="el" href="character__martial__arts_8h_source.html#l00021">style_selected</a>, <a class="el" href="item_8cpp_source.html#l04532">item::tname()</a>, <a class="el" href="character_8h_source.html#l01546">Character::weapon</a>, and <a class="el" href="martialarts_8cpp_source.html#l00839">martialart::weapon_valid()</a>.</p>
+<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="creature_8h_source.html#l00597">Creature::add_msg_if_player()</a>, <a class="el" href="martialarts_8h_source.html#l00286">martialart::force_unarmed</a>, <a class="el" href="martialarts_8cpp_source.html#l00905">martialart::get_initiate_avatar_message()</a>, <a class="el" href="melee_8cpp_source.html#l00148">Character::is_armed()</a>, <a class="el" href="enums_8h_source.html#l00261">m_bad</a>, <a class="el" href="enums_8h_source.html#l00265">m_info</a>, <a class="el" href="martialarts_8h_source.html#l00270">martialart::name</a>, <a class="el" href="achievement_8cpp_source.html#l00058">string_id&lt; T &gt;::obj()</a>, <a class="el" href="martialarts_8h_source.html#l00284">martialart::strictly_melee</a>, <a class="el" href="martialarts_8h_source.html#l00283">martialart::strictly_unarmed</a>, <a class="el" href="character__martial__arts_8h_source.html#l00021">style_selected</a>, <a class="el" href="item_8cpp_source.html#l04554">item::tname()</a>, <a class="el" href="character_8h_source.html#l01546">Character::weapon</a>, and <a class="el" href="martialarts_8cpp_source.html#l00884">martialart::weapon_valid()</a>.</p>
 
 </div>
 </div>
@@ -1403,9 +1403,9 @@ Unarmed increases ability to perform leg block
 <div class="ttc" id="aclassCharacter_html_a588d5cc1d729490552fe03b006685ae5"><div class="ttname"><a href="classCharacter.html#a588d5cc1d729490552fe03b006685ae5">Character::get_int</a></div><div class="ttdeci">virtual int get_int() const</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l04064">character.cpp:4064</a></div></div>
 <div class="ttc" id="aclassCharacter_html_a5aba683ccf77cb560a0a932308289bd9"><div class="ttname"><a href="classCharacter.html#a5aba683ccf77cb560a0a932308289bd9">Character::get_str</a></div><div class="ttdeci">virtual int get_str() const</div><div class="ttdoc">Getters for stats exclusive to characters.</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l04052">character.cpp:4052</a></div></div>
 <div class="ttc" id="aclassCharacter_html_abb0a1847902e6db0bd3c923ee8187702"><div class="ttname"><a href="classCharacter.html#abb0a1847902e6db0bd3c923ee8187702">Character::get_per</a></div><div class="ttdeci">virtual int get_per() const</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l04060">character.cpp:4060</a></div></div>
-<div class="ttc" id="aclasscharacter__martial__arts_html_a1be4710ecf5e526e4ee4fcec0e553a25"><div class="ttname"><a href="classcharacter__martial__arts.html#a1be4710ecf5e526e4ee4fcec0e553a25">character_martial_arts::martialart_use_message</a></div><div class="ttdeci">void martialart_use_message(const Character &amp;owner) const</div><div class="ttdoc">Displays a message if the player can or cannot use the martial art.</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8cpp_source.html#l01233">martialarts.cpp:1233</a></div></div>
+<div class="ttc" id="aclasscharacter__martial__arts_html_a1be4710ecf5e526e4ee4fcec0e553a25"><div class="ttname"><a href="classcharacter__martial__arts.html#a1be4710ecf5e526e4ee4fcec0e553a25">character_martial_arts::martialart_use_message</a></div><div class="ttdeci">void martialart_use_message(const Character &amp;owner) const</div><div class="ttdoc">Displays a message if the player can or cannot use the martial art.</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8cpp_source.html#l01278">martialarts.cpp:1278</a></div></div>
 <div class="ttc" id="aclassinput__context_html"><div class="ttname"><a href="classinput__context.html">input_context</a></div><div class="ttdoc">Represents a context in which a set of actions can be performed.</div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00385">input.h:386</a></div></div>
-<div class="ttc" id="aclassma__style__callback_html"><div class="ttname"><a href="classma__style__callback.html">ma_style_callback</a></div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8h_source.html#l00272">martialarts.h:273</a></div></div>
+<div class="ttc" id="aclassma__style__callback_html"><div class="ttname"><a href="classma__style__callback.html">ma_style_callback</a></div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8h_source.html#l00300">martialarts.h:301</a></div></div>
 <div class="ttc" id="aclasstranslation_html"><div class="ttname"><a href="classtranslation.html">translation</a></div><div class="ttdoc">Class for storing translation context and raw string for deferred translation.</div><div class="ttdef"><b>Definition:</b> <a href="translations_8h_source.html#l00151">translations.h:152</a></div></div>
 <div class="ttc" id="aclassuilist_html"><div class="ttname"><a href="classuilist.html">uilist</a></div><div class="ttdoc">uilist: scrolling vertical list menu</div><div class="ttdef"><b>Definition:</b> <a href="ui_8h_source.html#l00186">ui.h:187</a></div></div>
 <div class="ttc" id="aclassuilist_html_a0baa34622db6972a59d47d478bfd21d6"><div class="ttname"><a href="classuilist.html#a0baa34622db6972a59d47d478bfd21d6">uilist::ret</a></div><div class="ttdeci">int ret</div><div class="ttdef"><b>Definition:</b> <a href="ui_8h_source.html#l00412">ui.h:412</a></div></div>
@@ -1472,9 +1472,9 @@ Unarmed increases ability to perform leg block
 <div class="fragment"><div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>{</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classcharacter__martial__arts.html#a6e5e356f65e94363420b0f8d0a3736ac">style_selected</a>-&gt;<a class="code hl_variable" href="classmartialart.html#ae92f1e27a9de5406cf99cf67c1054bfe">allow_melee</a>;</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>}</div>
-<div class="ttc" id="aclassmartialart_html_ae92f1e27a9de5406cf99cf67c1054bfe"><div class="ttname"><a href="classmartialart.html#ae92f1e27a9de5406cf99cf67c1054bfe">martialart::allow_melee</a></div><div class="ttdeci">bool allow_melee</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8h_source.html#l00257">martialarts.h:257</a></div></div>
+<div class="ttc" id="aclassmartialart_html_ae92f1e27a9de5406cf99cf67c1054bfe"><div class="ttname"><a href="classmartialart.html#ae92f1e27a9de5406cf99cf67c1054bfe">martialart::allow_melee</a></div><div class="ttdeci">bool allow_melee</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8h_source.html#l00285">martialarts.h:285</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="martialarts_8h_source.html#l00257">martialart::allow_melee</a>, and <a class="el" href="character__martial__arts_8h_source.html#l00021">style_selected</a>.</p>
+<p class="reference">References <a class="el" href="martialarts_8h_source.html#l00285">martialart::allow_melee</a>, and <a class="el" href="character__martial__arts_8h_source.html#l00021">style_selected</a>.</p>
 
 </div>
 </div>
@@ -1498,7 +1498,7 @@ Unarmed increases ability to perform leg block
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classcharacter__martial__arts.html#a6e5e356f65e94363420b0f8d0a3736ac">style_selected</a>-&gt;<a class="code hl_variable" href="classmartialart.html#a9a5cacca0f58d1a5709c2da3d16d4d56">force_unarmed</a>;</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="martialarts_8h_source.html#l00258">martialart::force_unarmed</a>, and <a class="el" href="character__martial__arts_8h_source.html#l00021">style_selected</a>.</p>
+<p class="reference">References <a class="el" href="martialarts_8h_source.html#l00286">martialart::force_unarmed</a>, and <a class="el" href="character__martial__arts_8h_source.html#l00021">style_selected</a>.</p>
 
 </div>
 </div>
@@ -1522,9 +1522,9 @@ Unarmed increases ability to perform leg block
 <div class="fragment"><div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>{</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classcharacter__martial__arts.html#a6e5e356f65e94363420b0f8d0a3736ac">style_selected</a>-&gt;<a class="code hl_function" href="classmartialart.html#a9b5367962e0686434398b1d9733bbf88">has_weapon</a>( weap );</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>}</div>
-<div class="ttc" id="aclassmartialart_html_a9b5367962e0686434398b1d9733bbf88"><div class="ttname"><a href="classmartialart.html#a9b5367962e0686434398b1d9733bbf88">martialart::has_weapon</a></div><div class="ttdeci">bool has_weapon(const itype_id &amp;) const</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8cpp_source.html#l00834">martialarts.cpp:834</a></div></div>
+<div class="ttc" id="aclassmartialart_html_a9b5367962e0686434398b1d9733bbf88"><div class="ttname"><a href="classmartialart.html#a9b5367962e0686434398b1d9733bbf88">martialart::has_weapon</a></div><div class="ttdeci">bool has_weapon(const itype_id &amp;) const</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8cpp_source.html#l00875">martialarts.cpp:875</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="martialarts_8cpp_source.html#l00834">martialart::has_weapon()</a>, and <a class="el" href="character__martial__arts_8h_source.html#l00021">style_selected</a>.</p>
+<p class="reference">References <a class="el" href="martialarts_8cpp_source.html#l00875">martialart::has_weapon()</a>, and <a class="el" href="character__martial__arts_8h_source.html#l00021">style_selected</a>.</p>
 
 </div>
 </div>
@@ -1572,7 +1572,7 @@ Unarmed increases ability to perform leg block
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classcharacter__martial__arts.html#a6e5e356f65e94363420b0f8d0a3736ac">style_selected</a>-&gt;<a class="code hl_variable" href="classmartialart.html#a1bc8c2326eb0f6ff5b4c2f4af09d9973">strictly_melee</a>;</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="martialarts_8h_source.html#l00256">martialart::strictly_melee</a>, and <a class="el" href="character__martial__arts_8h_source.html#l00021">style_selected</a>.</p>
+<p class="reference">References <a class="el" href="martialarts_8h_source.html#l00284">martialart::strictly_melee</a>, and <a class="el" href="character__martial__arts_8h_source.html#l00021">style_selected</a>.</p>
 
 </div>
 </div>
@@ -1640,7 +1640,7 @@ Unarmed increases ability to perform leg block
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>}</div>
 <div class="ttc" id="aclasstranslation_html_a30b5b9d586c786942c2321701a53e572"><div class="ttname"><a href="classtranslation.html#a30b5b9d586c786942c2321701a53e572">translation::translated</a></div><div class="ttdeci">std::string translated(int num=1) const</div><div class="ttdoc">Returns raw string if no translation is needed, otherwise returns the translated string.</div><div class="ttdef"><b>Definition:</b> <a href="translations_8cpp_source.html#l00309">translations.cpp:309</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="martialarts_8h_source.html#l00258">martialart::force_unarmed</a>, <a class="el" href="melee_8cpp_source.html#l00148">Character::is_armed()</a>, <a class="el" href="martialarts_8h_source.html#l00243">martialart::name</a>, <a class="el" href="character__martial__arts_8h_source.html#l00021">style_selected</a>, <a class="el" href="translations_8cpp_source.html#l00309">translation::translated()</a>, <a class="el" href="character_8h_source.html#l01546">Character::weapon</a>, and <a class="el" href="martialarts_8cpp_source.html#l00839">martialart::weapon_valid()</a>.</p>
+<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="martialarts_8h_source.html#l00286">martialart::force_unarmed</a>, <a class="el" href="melee_8cpp_source.html#l00148">Character::is_armed()</a>, <a class="el" href="martialarts_8h_source.html#l00270">martialart::name</a>, <a class="el" href="character__martial__arts_8h_source.html#l00021">style_selected</a>, <a class="el" href="translations_8cpp_source.html#l00309">translation::translated()</a>, <a class="el" href="character_8h_source.html#l01546">Character::weapon</a>, and <a class="el" href="martialarts_8cpp_source.html#l00884">martialart::weapon_valid()</a>.</p>
 
 </div>
 </div>
@@ -1709,7 +1709,7 @@ Unarmed increases ability to perform leg block
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    }</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="martialarts_8cpp_source.html#l01202">has_martialart()</a>, and <a class="el" href="character__martial__arts_8h_source.html#l00021">style_selected</a>.</p>
+<p class="reference">References <a class="el" href="martialarts_8cpp_source.html#l01247">has_martialart()</a>, and <a class="el" href="character__martial__arts_8h_source.html#l00021">style_selected</a>.</p>
 
 </div>
 </div>
@@ -1762,7 +1762,7 @@ Unarmed increases ability to perform leg block
 
 <p class="definition">Definition at line <a class="el" href="character__martial__arts_8h_source.html#l00020">20</a> of file <a class="el" href="character__martial__arts_8h_source.html">character_martial_arts.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="martialarts_8cpp_source.html#l01207">add_martialart()</a>, <a class="el" href="character__martial__arts_8cpp_source.html#l00019">character_martial_arts()</a>, <a class="el" href="character__martial__arts_8cpp_source.html#l00156">deserialize()</a>, <a class="el" href="character__martial__arts_8cpp_source.html#l00111">enumerate_known_styles()</a>, <a class="el" href="character__martial__arts_8cpp_source.html#l00142">get_known_styles()</a>, <a class="el" href="character__martial__arts_8cpp_source.html#l00130">get_unknown_styles()</a>, <a class="el" href="martialarts_8cpp_source.html#l01202">has_martialart()</a>, <a class="el" href="player_8cpp_source.html#l00214">pick_style()</a>, <a class="el" href="character__martial__arts_8cpp_source.html#l00095">selected_style_check()</a>, and <a class="el" href="character__martial__arts_8cpp_source.html#l00147">serialize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="martialarts_8cpp_source.html#l01252">add_martialart()</a>, <a class="el" href="character__martial__arts_8cpp_source.html#l00019">character_martial_arts()</a>, <a class="el" href="character__martial__arts_8cpp_source.html#l00156">deserialize()</a>, <a class="el" href="character__martial__arts_8cpp_source.html#l00111">enumerate_known_styles()</a>, <a class="el" href="character__martial__arts_8cpp_source.html#l00142">get_known_styles()</a>, <a class="el" href="character__martial__arts_8cpp_source.html#l00130">get_unknown_styles()</a>, <a class="el" href="martialarts_8cpp_source.html#l01247">has_martialart()</a>, <a class="el" href="player_8cpp_source.html#l00214">pick_style()</a>, <a class="el" href="character__martial__arts_8cpp_source.html#l00095">selected_style_check()</a>, and <a class="el" href="character__martial__arts_8cpp_source.html#l00147">serialize()</a>.</p>
 
 </div>
 </div>
@@ -1788,7 +1788,7 @@ Unarmed increases ability to perform leg block
 
 <p class="definition">Definition at line <a class="el" href="character__martial__arts_8h_source.html#l00021">21</a> of file <a class="el" href="character__martial__arts_8h_source.html">character_martial_arts.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="player_8cpp_source.html#l00391">npc::add_msg_if_player()</a>, <a class="el" href="martialarts_8cpp_source.html#l00973">can_arm_block()</a>, <a class="el" href="martialarts_8cpp_source.html#l00954">can_leg_block()</a>, <a class="el" href="character__martial__arts_8cpp_source.html#l00019">character_martial_arts()</a>, <a class="el" href="character__martial__arts_8cpp_source.html#l00156">deserialize()</a>, <a class="el" href="martialarts_8cpp_source.html#l00872">get_all_techniques()</a>, <a class="el" href="melee_8cpp_source.html#l01333">has_technique()</a>, <a class="el" href="martialarts_8cpp_source.html#l00998">is_force_unarmed()</a>, <a class="el" href="character__martial__arts_8cpp_source.html#l00052">knows_selected_style()</a>, <a class="el" href="character__martial__arts_8cpp_source.html#l00062">learn_current_style_CQB()</a>, <a class="el" href="martialarts_8cpp_source.html#l01020">ma_onattack_effects()</a>, <a class="el" href="martialarts_8cpp_source.html#l01028">ma_onblock_effects()</a>, <a class="el" href="martialarts_8cpp_source.html#l01040">ma_oncrit_effects()</a>, <a class="el" href="martialarts_8cpp_source.html#l01024">ma_ondodge_effects()</a>, <a class="el" href="martialarts_8cpp_source.html#l01032">ma_ongethit_effects()</a>, <a class="el" href="martialarts_8cpp_source.html#l01016">ma_onhit_effects()</a>, <a class="el" href="martialarts_8cpp_source.html#l01044">ma_onkill_effects()</a>, <a class="el" href="martialarts_8cpp_source.html#l01036">ma_onmiss_effects()</a>, <a class="el" href="martialarts_8cpp_source.html#l01008">ma_onmove_effects()</a>, <a class="el" href="martialarts_8cpp_source.html#l01012">ma_onpause_effects()</a>, <a class="el" href="martialarts_8cpp_source.html#l01004">ma_static_effects()</a>, <a class="el" href="martialarts_8cpp_source.html#l01233">martialart_use_message()</a>, <a class="el" href="player_8cpp_source.html#l00214">pick_style()</a>, <a class="el" href="character__martial__arts_8cpp_source.html#l00090">reset_style()</a>, <a class="el" href="character__martial__arts_8cpp_source.html#l00032">selected_allow_melee()</a>, <a class="el" href="character__martial__arts_8cpp_source.html#l00047">selected_force_unarmed()</a>, <a class="el" href="character__martial__arts_8cpp_source.html#l00042">selected_has_weapon()</a>, <a class="el" href="character__martial__arts_8cpp_source.html#l00057">selected_is_none()</a>, <a class="el" href="character__martial__arts_8cpp_source.html#l00037">selected_strictly_melee()</a>, <a class="el" href="character__martial__arts_8cpp_source.html#l00095">selected_style_check()</a>, <a class="el" href="character__martial__arts_8cpp_source.html#l00119">selected_style_name()</a>, <a class="el" href="character__martial__arts_8cpp_source.html#l00147">serialize()</a>, and <a class="el" href="character__martial__arts_8cpp_source.html#l00083">set_style()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="player_8cpp_source.html#l00391">npc::add_msg_if_player()</a>, <a class="el" href="martialarts_8cpp_source.html#l01018">can_arm_block()</a>, <a class="el" href="martialarts_8cpp_source.html#l00999">can_leg_block()</a>, <a class="el" href="character__martial__arts_8cpp_source.html#l00019">character_martial_arts()</a>, <a class="el" href="character__martial__arts_8cpp_source.html#l00156">deserialize()</a>, <a class="el" href="martialarts_8cpp_source.html#l00917">get_all_techniques()</a>, <a class="el" href="melee_8cpp_source.html#l01333">has_technique()</a>, <a class="el" href="martialarts_8cpp_source.html#l01043">is_force_unarmed()</a>, <a class="el" href="character__martial__arts_8cpp_source.html#l00052">knows_selected_style()</a>, <a class="el" href="character__martial__arts_8cpp_source.html#l00062">learn_current_style_CQB()</a>, <a class="el" href="martialarts_8cpp_source.html#l01065">ma_onattack_effects()</a>, <a class="el" href="martialarts_8cpp_source.html#l01073">ma_onblock_effects()</a>, <a class="el" href="martialarts_8cpp_source.html#l01085">ma_oncrit_effects()</a>, <a class="el" href="martialarts_8cpp_source.html#l01069">ma_ondodge_effects()</a>, <a class="el" href="martialarts_8cpp_source.html#l01077">ma_ongethit_effects()</a>, <a class="el" href="martialarts_8cpp_source.html#l01061">ma_onhit_effects()</a>, <a class="el" href="martialarts_8cpp_source.html#l01089">ma_onkill_effects()</a>, <a class="el" href="martialarts_8cpp_source.html#l01081">ma_onmiss_effects()</a>, <a class="el" href="martialarts_8cpp_source.html#l01053">ma_onmove_effects()</a>, <a class="el" href="martialarts_8cpp_source.html#l01057">ma_onpause_effects()</a>, <a class="el" href="martialarts_8cpp_source.html#l01049">ma_static_effects()</a>, <a class="el" href="martialarts_8cpp_source.html#l01278">martialart_use_message()</a>, <a class="el" href="player_8cpp_source.html#l00214">pick_style()</a>, <a class="el" href="character__martial__arts_8cpp_source.html#l00090">reset_style()</a>, <a class="el" href="character__martial__arts_8cpp_source.html#l00032">selected_allow_melee()</a>, <a class="el" href="character__martial__arts_8cpp_source.html#l00047">selected_force_unarmed()</a>, <a class="el" href="character__martial__arts_8cpp_source.html#l00042">selected_has_weapon()</a>, <a class="el" href="character__martial__arts_8cpp_source.html#l00057">selected_is_none()</a>, <a class="el" href="character__martial__arts_8cpp_source.html#l00037">selected_strictly_melee()</a>, <a class="el" href="character__martial__arts_8cpp_source.html#l00095">selected_style_check()</a>, <a class="el" href="character__martial__arts_8cpp_source.html#l00119">selected_style_name()</a>, <a class="el" href="character__martial__arts_8cpp_source.html#l00147">serialize()</a>, and <a class="el" href="character__martial__arts_8cpp_source.html#l00083">set_style()</a>.</p>
 
 </div>
 </div>
@@ -1805,7 +1805,7 @@ Unarmed increases ability to perform leg block
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classcharacter__martial__arts.html">character_martial_arts</a></li>
-    <li class="footer">Generated on Sun Mar 5 2023 13:51:00 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Apr 7 2023 11:54:38 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

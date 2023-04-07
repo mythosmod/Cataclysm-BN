@@ -15,6 +15,7 @@ var game__inventory_8cpp =
     [ "weapon_inventory_preset", "classweapon__inventory__preset.html", "classweapon__inventory__preset" ],
     [ "holster_inventory_preset", "classholster__inventory__preset.html", "classholster__inventory__preset" ],
     [ "saw_barrel_inventory_preset", "classsaw__barrel__inventory__preset.html", "classsaw__barrel__inventory__preset" ],
+    [ "saw_stock_inventory_preset", "classsaw__stock__inventory__preset.html", "classsaw__stock__inventory__preset" ],
     [ "salvage_inventory_preset", "classsalvage__inventory__preset.html", "classsalvage__inventory__preset" ],
     [ "repair_inventory_preset", "classrepair__inventory__preset.html", "classrepair__inventory__preset" ],
     [ "bionic_install_preset", "classbionic__install__preset.html", "classbionic__install__preset" ],

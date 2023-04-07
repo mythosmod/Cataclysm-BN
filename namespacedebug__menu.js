@@ -94,6 +94,7 @@ var namespacedebug__menu =
     [ "teleport_short", "namespacedebug__menu.html#a0a27cbe8edce9d4282791fcda2d3c6d2", null ],
     [ "teleport_uilist", "namespacedebug__menu.html#a122441291d948a1adacb559bdcc19ffe", null ],
     [ "vehicle_uilist", "namespacedebug__menu.html#a1210a07bc50f6d9b05121b6b3d36ced6", null ],
+    [ "wishbionics", "namespacedebug__menu.html#a7ef7b4a54ffab1064ea54225ca4320ad", null ],
     [ "wishitem", "namespacedebug__menu.html#a50b303065b4f4d68e35243048390e4e4", null ],
     [ "wishitem", "namespacedebug__menu.html#ab88e02906e27d769939acdbe9a8b7a91", null ],
     [ "wishmonster", "namespacedebug__menu.html#aabb3e6bfde09e4a05bce3511eab1ba22", null ],

@@ -1,7 +1,7 @@
 var classtileray =
 [
     [ "tileray", "classtileray.html#a1456a0b3b99f95f5582ff102a51c6eb5", null ],
-    [ "tileray", "classtileray.html#a0d5aed36df5528efc17cb8bc7d402007", null ],
+    [ "tileray", "classtileray.html#aa91826a79628e215a3b319d13b10406c", null ],
     [ "tileray", "classtileray.html#a9247df22f1dc4072e2d4afcf534ddb18", null ],
     [ "advance", "classtileray.html#a283722bbdbde0af59bbda1a26adc5b88", null ],
     [ "clear_advance", "classtileray.html#ab861edc40fc347de814326140d8cc10a", null ],
@@ -12,7 +12,7 @@ var classtileray =
     [ "dx", "classtileray.html#aefd7fd88fdbfecf5731bbff553a7aab8", null ],
     [ "dy", "classtileray.html#a27e3f200a89812a3d2fbc2e0e5710722", null ],
     [ "get_steps", "classtileray.html#a9da6e7e500fc5e5eef7d228190e9180c", null ],
-    [ "init", "classtileray.html#ab643ca3c50332c73009031331e7c8026", null ],
+    [ "init", "classtileray.html#a4b1fb10136c0d482b40386b8cd88d44c", null ],
     [ "init", "classtileray.html#a33e743a3b0b48cc63ce06a505ba28963", null ],
     [ "mostly_vertical", "classtileray.html#a0b50b27051704f7bacb40e9fcedb36d4", null ],
     [ "ortho_dx", "classtileray.html#a742ab385f1a8e40d040d03fe24575613", null ],

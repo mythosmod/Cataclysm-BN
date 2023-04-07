@@ -124,7 +124,7 @@ Friends</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="output_8h_source.html#l00401">401</a> of file <a class="el" href="output_8h_source.html">output.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="output_8h_source.html#l00358">358</a> of file <a class="el" href="output_8h_source.html">output.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a050e2fbb51257ea197c9af20f91a31be" name="a050e2fbb51257ea197c9af20f91a31be"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a050e2fbb51257ea197c9af20f91a31be">&#9670;&nbsp;</a></span>add_border()</h2>
@@ -146,10 +146,10 @@ Friends</h2></td></tr>
 <div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span>    <a class="code hl_variable" href="classborder__helper.html#aa0e6c08d18381645d1266fa7f66b7174">border_info_list</a>.emplace_front( <a class="code hl_friend" href="classborder__helper.html#ab04d763dd2421769c0e7d7d16186441c">border_info</a>( *<span class="keyword">this</span> ) );</div>
 <div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classborder__helper.html#aa0e6c08d18381645d1266fa7f66b7174">border_info_list</a>.front();</div>
 <div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span>}</div>
-<div class="ttc" id="aclassborder__helper_html_aa0e6c08d18381645d1266fa7f66b7174"><div class="ttname"><a href="classborder__helper.html#aa0e6c08d18381645d1266fa7f66b7174">border_helper::border_info_list</a></div><div class="ttdeci">std::forward_list&lt; border_info &gt; border_info_list</div><div class="ttdef"><b>Definition:</b> <a href="output_8h_source.html#l00439">output.h:439</a></div></div>
-<div class="ttc" id="aclassborder__helper_html_ab04d763dd2421769c0e7d7d16186441c"><div class="ttname"><a href="classborder__helper.html#ab04d763dd2421769c0e7d7d16186441c">border_helper::border_info</a></div><div class="ttdeci">friend class border_info</div><div class="ttdef"><b>Definition:</b> <a href="output_8h_source.html#l00427">output.h:427</a></div></div>
+<div class="ttc" id="aclassborder__helper_html_aa0e6c08d18381645d1266fa7f66b7174"><div class="ttname"><a href="classborder__helper.html#aa0e6c08d18381645d1266fa7f66b7174">border_helper::border_info_list</a></div><div class="ttdeci">std::forward_list&lt; border_info &gt; border_info_list</div><div class="ttdef"><b>Definition:</b> <a href="output_8h_source.html#l00396">output.h:396</a></div></div>
+<div class="ttc" id="aclassborder__helper_html_ab04d763dd2421769c0e7d7d16186441c"><div class="ttname"><a href="classborder__helper.html#ab04d763dd2421769c0e7d7d16186441c">border_helper::border_info</a></div><div class="ttdeci">friend class border_info</div><div class="ttdef"><b>Definition:</b> <a href="output_8h_source.html#l00384">output.h:384</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="output_8h_source.html#l00427">border_info</a>, and <a class="el" href="output_8h_source.html#l00439">border_info_list</a>.</p>
+<p class="reference">References <a class="el" href="output_8h_source.html#l00384">border_info</a>, and <a class="el" href="output_8h_source.html#l00396">border_info_list</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="character__display_8cpp_source.html#l01063">character_display::disp_info()</a>.</p>
 
@@ -209,22 +209,22 @@ Friends</h2></td></tr>
 <div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> std::pair&lt;const point, border_connection&gt; &amp;conn : <a class="code hl_variable" href="classborder__helper.html#a066fd259b44cee581d38b515e5dc5e17">border_connection_map</a>.value() ) {</div>
 <div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span>        <span class="keywordflow">if</span>( conn.first.x &gt;= win_beg.x &amp;&amp; conn.first.x &lt; win_end.<a class="code hl_variable" href="structpoint.html#ad679b07fb69d55f5ad454d0f1f2891d5">x</a> &amp;&amp;</div>
 <div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span>            conn.first.y &gt;= win_beg.y &amp;&amp; conn.first.y &lt; win_end.<a class="code hl_variable" href="structpoint.html#a9a82ca9504acabb1e30569f89c805471">y</a> ) {</div>
-<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span>            <a class="code hl_function" href="output_8cpp.html#afb5597c87a5847c7d64b878ab3a77d5b">mvwputch</a>( win, conn.first - win_beg, <a class="code hl_define" href="output_8h.html#a966901ace2cf6cba3fc9cec310150860">BORDER_COLOR</a>, conn.second.as_curses_line() );</div>
+<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span>            <a class="code hl_function" href="output_8cpp.html#ab6fabf52c2dd7100db72c1f5279d1666">mvwputch</a>( win, conn.first - win_beg, <a class="code hl_define" href="output_8h.html#a966901ace2cf6cba3fc9cec310150860">BORDER_COLOR</a>, conn.second.as_curses_line() );</div>
 <div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span>        }</div>
 <div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span>    }</div>
 <div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span>}</div>
-<div class="ttc" id="aclassborder__helper_html_a066fd259b44cee581d38b515e5dc5e17"><div class="ttname"><a href="classborder__helper.html#a066fd259b44cee581d38b515e5dc5e17">border_helper::border_connection_map</a></div><div class="ttdeci">cata::optional&lt; std::map&lt; point, border_connection &gt; &gt; border_connection_map</div><div class="ttdef"><b>Definition:</b> <a href="output_8h_source.html#l00437">output.h:437</a></div></div>
+<div class="ttc" id="aclassborder__helper_html_a066fd259b44cee581d38b515e5dc5e17"><div class="ttname"><a href="classborder__helper.html#a066fd259b44cee581d38b515e5dc5e17">border_helper::border_connection_map</a></div><div class="ttdeci">cata::optional&lt; std::map&lt; point, border_connection &gt; &gt; border_connection_map</div><div class="ttdef"><b>Definition:</b> <a href="output_8h_source.html#l00394">output.h:394</a></div></div>
 <div class="ttc" id="anamespacecatacurses_html_a3e3320f426a1343cb1effcaf648d2d1a"><div class="ttname"><a href="namespacecatacurses.html#a3e3320f426a1343cb1effcaf648d2d1a">catacurses::getbegx</a></div><div class="ttdeci">int getbegx(const window &amp;win)</div><div class="ttdef"><b>Definition:</b> <a href="ncurses__def_8cpp_source.html#l00068">ncurses_def.cpp:68</a></div></div>
 <div class="ttc" id="anamespacecatacurses_html_a929fe85d472028f52d8a5cdfc0d35017"><div class="ttname"><a href="namespacecatacurses.html#a929fe85d472028f52d8a5cdfc0d35017">catacurses::getmaxx</a></div><div class="ttdeci">int getmaxx(const window &amp;win)</div><div class="ttdef"><b>Definition:</b> <a href="ncurses__def_8cpp_source.html#l00058">ncurses_def.cpp:58</a></div></div>
 <div class="ttc" id="anamespacecatacurses_html_aa2debb3330f9739012d1d11db8db31d2"><div class="ttname"><a href="namespacecatacurses.html#aa2debb3330f9739012d1d11db8db31d2">catacurses::getbegy</a></div><div class="ttdeci">int getbegy(const window &amp;win)</div><div class="ttdef"><b>Definition:</b> <a href="ncurses__def_8cpp_source.html#l00073">ncurses_def.cpp:73</a></div></div>
 <div class="ttc" id="anamespacecatacurses_html_adc81ca40445dc062af12fb6d7a4793d0"><div class="ttname"><a href="namespacecatacurses.html#adc81ca40445dc062af12fb6d7a4793d0">catacurses::getmaxy</a></div><div class="ttdeci">int getmaxy(const window &amp;win)</div><div class="ttdef"><b>Definition:</b> <a href="ncurses__def_8cpp_source.html#l00063">ncurses_def.cpp:63</a></div></div>
-<div class="ttc" id="aoutput_8cpp_html_afb5597c87a5847c7d64b878ab3a77d5b"><div class="ttname"><a href="output_8cpp.html#afb5597c87a5847c7d64b878ab3a77d5b">mvwputch</a></div><div class="ttdeci">void mvwputch(const catacurses::window &amp;w, const point &amp;p, nc_color FG, int ch)</div><div class="ttdef"><b>Definition:</b> <a href="output_8cpp_source.html#l00477">output.cpp:477</a></div></div>
-<div class="ttc" id="aoutput_8h_html_a966901ace2cf6cba3fc9cec310150860"><div class="ttname"><a href="output_8h.html#a966901ace2cf6cba3fc9cec310150860">BORDER_COLOR</a></div><div class="ttdeci">#define BORDER_COLOR</div><div class="ttdef"><b>Definition:</b> <a href="output_8h_source.html#l00135">output.h:135</a></div></div>
+<div class="ttc" id="aoutput_8cpp_html_ab6fabf52c2dd7100db72c1f5279d1666"><div class="ttname"><a href="output_8cpp.html#ab6fabf52c2dd7100db72c1f5279d1666">mvwputch</a></div><div class="ttdeci">void mvwputch(const catacurses::window &amp;w, point p, nc_color FG, int ch)</div><div class="ttdef"><b>Definition:</b> <a href="output_8cpp_source.html#l00477">output.cpp:477</a></div></div>
+<div class="ttc" id="aoutput_8h_html_a966901ace2cf6cba3fc9cec310150860"><div class="ttname"><a href="output_8h.html#a966901ace2cf6cba3fc9cec310150860">BORDER_COLOR</a></div><div class="ttdeci">#define BORDER_COLOR</div><div class="ttdef"><b>Definition:</b> <a href="output_8h_source.html#l00092">output.h:92</a></div></div>
 <div class="ttc" id="astructpoint_html"><div class="ttname"><a href="structpoint.html">point</a></div><div class="ttdef"><b>Definition:</b> <a href="point_8h_source.html#l00035">point.h:35</a></div></div>
 <div class="ttc" id="astructpoint_html_a9a82ca9504acabb1e30569f89c805471"><div class="ttname"><a href="structpoint.html#a9a82ca9504acabb1e30569f89c805471">point::y</a></div><div class="ttdeci">int y</div><div class="ttdef"><b>Definition:</b> <a href="point_8h_source.html#l00039">point.h:39</a></div></div>
 <div class="ttc" id="astructpoint_html_ad679b07fb69d55f5ad454d0f1f2891d5"><div class="ttname"><a href="structpoint.html#ad679b07fb69d55f5ad454d0f1f2891d5">point::x</a></div><div class="ttdeci">int x</div><div class="ttdef"><b>Definition:</b> <a href="point_8h_source.html#l00038">point.h:38</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="output_8h_source.html#l00135">BORDER_COLOR</a>, <a class="el" href="output_8h_source.html#l00437">border_connection_map</a>, <a class="el" href="output_8h_source.html#l00439">border_info_list</a>, <a class="el" href="ncurses__def_8cpp_source.html#l00068">catacurses::getbegx()</a>, <a class="el" href="ncurses__def_8cpp_source.html#l00073">catacurses::getbegy()</a>, <a class="el" href="ncurses__def_8cpp_source.html#l00058">catacurses::getmaxx()</a>, <a class="el" href="ncurses__def_8cpp_source.html#l00063">catacurses::getmaxy()</a>, <a class="el" href="output_8cpp_source.html#l00477">mvwputch()</a>, <a class="el" href="point_8h_source.html#l00038">point::x</a>, and <a class="el" href="point_8h_source.html#l00039">point::y</a>.</p>
+<p class="reference">References <a class="el" href="output_8h_source.html#l00092">BORDER_COLOR</a>, <a class="el" href="output_8h_source.html#l00394">border_connection_map</a>, <a class="el" href="output_8h_source.html#l00396">border_info_list</a>, <a class="el" href="ncurses__def_8cpp_source.html#l00068">catacurses::getbegx()</a>, <a class="el" href="ncurses__def_8cpp_source.html#l00073">catacurses::getbegy()</a>, <a class="el" href="ncurses__def_8cpp_source.html#l00058">catacurses::getmaxx()</a>, <a class="el" href="ncurses__def_8cpp_source.html#l00063">catacurses::getmaxy()</a>, <a class="el" href="output_8cpp_source.html#l00477">mvwputch()</a>, <a class="el" href="point_8h_source.html#l00038">point::x</a>, and <a class="el" href="point_8h_source.html#l00039">point::y</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="character__display_8cpp_source.html#l01063">character_display::disp_info()</a>.</p>
 
@@ -251,7 +251,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="output_8h_source.html#l00427">427</a> of file <a class="el" href="output_8h_source.html">output.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="output_8h_source.html#l00384">384</a> of file <a class="el" href="output_8h_source.html">output.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="output_8cpp_source.html#l00614">add_border()</a>.</p>
 
@@ -278,7 +278,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="output_8h_source.html#l00437">437</a> of file <a class="el" href="output_8h_source.html">output.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="output_8h_source.html#l00394">394</a> of file <a class="el" href="output_8h_source.html">output.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="output_8cpp_source.html#l00620">draw_border()</a>.</p>
 
@@ -304,7 +304,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="output_8h_source.html#l00439">439</a> of file <a class="el" href="output_8h_source.html">output.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="output_8h_source.html#l00396">396</a> of file <a class="el" href="output_8h_source.html">output.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="output_8cpp_source.html#l00614">add_border()</a>, and <a class="el" href="output_8cpp_source.html#l00620">draw_border()</a>.</p>
 
@@ -320,7 +320,7 @@ Friends</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classborder__helper.html">border_helper</a></li>
-    <li class="footer">Generated on Sun Mar 5 2023 13:50:58 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Apr 7 2023 11:54:35 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -73,6 +73,7 @@ var type__id_8h =
     [ "vitamin_id", "type__id_8h.html#a62798cd4a1ea702e8d25b8c0f17a4834", null ],
     [ "vpart_id", "type__id_8h.html#a01bb48ae3e1e67dbfa6a3a9679dc1b13", null ],
     [ "vproto_id", "type__id_8h.html#a64efc8ab51816a59711440d464136eda", null ],
+    [ "weapon_category_id", "type__id_8h.html#a43d17565ed408d81743469840019a73f", null ],
     [ "weather_type_id", "type__id_8h.html#a79fd281fb076d9bba9d0606e3acd5a76", null ],
     [ "zone_type_id", "type__id_8h.html#a4ec2337d992ab8b0115c2bd7ff30902a", null ]
 ];

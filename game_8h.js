@@ -37,7 +37,7 @@ var game_8h =
     [ "get_convection_temperature", "game_8h.html#a58c14933d94a161c5ab89203559897ff", null ],
     [ "get_default_mode_input_context", "game_8h.html#acb162e62f3cff7dd076ea0f8a506202c", null ],
     [ "get_heat_radiation", "game_8h.html#a2924321647561aca9977ca98b57874b5", null ],
-    [ "is_valid_in_w_terrain", "game_8h.html#a541d90b15c3e7b433927c44e01e5a48f", null ],
+    [ "is_valid_in_w_terrain", "game_8h.html#ae6b3cb74ff09b7b8d1281ea60b8b30ab", null ],
     [ "SAVE_ARTIFACTS", "game_8h.html#a04997c692910bdcf84c867d71ba3b13d", null ],
     [ "SAVE_EXTENSION", "game_8h.html#a1e4ef91348db09c07428b1d0229b91a9", null ],
     [ "SAVE_EXTENSION_LOG", "game_8h.html#a9b7271c309ba7c6c06c7ea972389a5ac", null ],

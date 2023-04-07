@@ -2,6 +2,7 @@ var cached__options_8cpp =
 [
     [ "debug_mode", "cached__options_8cpp.html#aa021995764a0c77f628e3411497239cc", null ],
     [ "display_mod_source", "cached__options_8cpp.html#aeb7313fa4939ef646c982eb924bb756a", null ],
+    [ "display_object_ids", "cached__options_8cpp.html#a61d5a960e9059023302a764d534d2d13", null ],
     [ "fov_3d", "cached__options_8cpp.html#a1eedced6e405cd87cabd19fdd193de43", null ],
     [ "fov_3d_z_range", "cached__options_8cpp.html#a0cb65464a3fa34c1ed5474f5d2d853a7", null ],
     [ "json_report_strict", "cached__options_8cpp.html#a16e6bc0b3300c5fb311e7f3571fb67c7", null ],

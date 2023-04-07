@@ -105,34 +105,34 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:ga277f1fbd99ec2e54165e923cafd31ff8"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ga277f1fbd99ec2e54165e923cafd31ff8"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__string__formatter__convert.html#ga277f1fbd99ec2e54165e923cafd31ff8">cata::is_numeric</a> = typename std::conditional&lt; std::is_arithmetic&lt; typename std::decay&lt; T &gt;::<a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a> &gt;::value &amp;&amp;!std::is_same&lt; typename std::decay&lt; T &gt;::<a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a>, bool &gt;::value, std::true_type, std::false_type &gt;::<a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a></td></tr>
+<tr class="memitem:ga277f1fbd99ec2e54165e923cafd31ff8"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__string__formatter__convert.html#ga277f1fbd99ec2e54165e923cafd31ff8">cata::is_numeric</a> = typename std::conditional&lt; std::is_arithmetic&lt; typename std::decay&lt; T &gt;::type &gt;::value &amp;&amp;!std::is_same&lt; typename std::decay&lt; T &gt;::type, bool &gt;::value, std::true_type, std::false_type &gt;::type</td></tr>
 <tr class="separator:ga277f1fbd99ec2e54165e923cafd31ff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab464afa94d3369ea56f197d6cb10d904"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:gab464afa94d3369ea56f197d6cb10d904"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__string__formatter__convert.html#gab464afa94d3369ea56f197d6cb10d904">cata::is_integer</a> = typename std::conditional&lt; <a class="el" href="group__string__formatter__convert.html#ga277f1fbd99ec2e54165e923cafd31ff8">is_numeric</a>&lt; T &gt;::value &amp;&amp;!std::is_floating_point&lt; typename std::decay&lt; T &gt;::<a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a> &gt;::value, std::true_type, std::false_type &gt;::<a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a></td></tr>
+<tr class="memitem:gab464afa94d3369ea56f197d6cb10d904"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__string__formatter__convert.html#gab464afa94d3369ea56f197d6cb10d904">cata::is_integer</a> = typename std::conditional&lt; <a class="el" href="group__string__formatter__convert.html#ga277f1fbd99ec2e54165e923cafd31ff8">is_numeric</a>&lt; T &gt;::value &amp;&amp;!std::is_floating_point&lt; typename std::decay&lt; T &gt;::type &gt;::value, std::true_type, std::false_type &gt;::type</td></tr>
 <tr class="separator:gab464afa94d3369ea56f197d6cb10d904"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga25875027383644a3c3a1b552432a2bc6"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ga25875027383644a3c3a1b552432a2bc6"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__string__formatter__convert.html#ga25875027383644a3c3a1b552432a2bc6">cata::is_char</a> = typename std::conditional&lt; std::is_same&lt; typename std::decay&lt; T &gt;::<a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a>, char &gt;::value, std::true_type, std::false_type &gt;::<a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a></td></tr>
+<tr class="memitem:ga25875027383644a3c3a1b552432a2bc6"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__string__formatter__convert.html#ga25875027383644a3c3a1b552432a2bc6">cata::is_char</a> = typename std::conditional&lt; std::is_same&lt; typename std::decay&lt; T &gt;::type, char &gt;::value, std::true_type, std::false_type &gt;::type</td></tr>
 <tr class="separator:ga25875027383644a3c3a1b552432a2bc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacd2fd4252d04eca90963530d6ad98ea3"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:gacd2fd4252d04eca90963530d6ad98ea3"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__string__formatter__convert.html#gacd2fd4252d04eca90963530d6ad98ea3">cata::is_string</a> = typename std::conditional&lt; std::is_same&lt; typename std::decay&lt; T &gt;::<a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a>, std::string &gt;::value, std::true_type, std::false_type &gt;::<a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a></td></tr>
+<tr class="memitem:gacd2fd4252d04eca90963530d6ad98ea3"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__string__formatter__convert.html#gacd2fd4252d04eca90963530d6ad98ea3">cata::is_string</a> = typename std::conditional&lt; std::is_same&lt; typename std::decay&lt; T &gt;::type, std::string &gt;::value, std::true_type, std::false_type &gt;::type</td></tr>
 <tr class="separator:gacd2fd4252d04eca90963530d6ad98ea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac891c0dc2a272c2c3c35f143a9d9a912"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:gac891c0dc2a272c2c3c35f143a9d9a912"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__string__formatter__convert.html#gac891c0dc2a272c2c3c35f143a9d9a912">cata::is_string_view</a> = typename std::conditional&lt; std::is_same&lt; typename std::decay&lt; T &gt;::<a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a>, <a class="el" href="fmtlib__core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> &gt;::value, std::true_type, std::false_type &gt;::<a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a></td></tr>
+<tr class="memitem:gac891c0dc2a272c2c3c35f143a9d9a912"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__string__formatter__convert.html#gac891c0dc2a272c2c3c35f143a9d9a912">cata::is_string_view</a> = typename std::conditional&lt; std::is_same&lt; typename std::decay&lt; T &gt;::type, <a class="el" href="fmtlib__core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> &gt;::value, std::true_type, std::false_type &gt;::type</td></tr>
 <tr class="separator:gac891c0dc2a272c2c3c35f143a9d9a912"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2925d0309772141398aa2e199b7c841f"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ga2925d0309772141398aa2e199b7c841f"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__string__formatter__convert.html#ga2925d0309772141398aa2e199b7c841f">cata::is_cstring</a> = typename std::conditional&lt; std::is_same&lt; typename std::decay&lt; T &gt;::<a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a>, const char * &gt;::value||std::is_same&lt; typename std::decay&lt; T &gt;::<a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a>, char * &gt;::value, std::true_type, std::false_type &gt;::<a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a></td></tr>
+<tr class="memitem:ga2925d0309772141398aa2e199b7c841f"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__string__formatter__convert.html#ga2925d0309772141398aa2e199b7c841f">cata::is_cstring</a> = typename std::conditional&lt; std::is_same&lt; typename std::decay&lt; T &gt;::type, const char * &gt;::value||std::is_same&lt; typename std::decay&lt; T &gt;::type, char * &gt;::value, std::true_type, std::false_type &gt;::type</td></tr>
 <tr class="separator:ga2925d0309772141398aa2e199b7c841f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad2c98dadf755c324b57ef7c8172f47dd"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:gad2c98dadf755c324b57ef7c8172f47dd"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__string__formatter__convert.html#gad2c98dadf755c324b57ef7c8172f47dd">cata::is_translation</a> = typename std::conditional&lt; std::is_same&lt; typename std::decay&lt; T &gt;::<a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a>, <a class="el" href="classtranslation.html">translation</a> &gt;::value, std::true_type, std::false_type &gt;::<a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a></td></tr>
+<tr class="memitem:gad2c98dadf755c324b57ef7c8172f47dd"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__string__formatter__convert.html#gad2c98dadf755c324b57ef7c8172f47dd">cata::is_translation</a> = typename std::conditional&lt; std::is_same&lt; typename std::decay&lt; T &gt;::type, <a class="el" href="classtranslation.html">translation</a> &gt;::value, std::true_type, std::false_type &gt;::type</td></tr>
 <tr class="separator:gad2c98dadf755c324b57ef7c8172f47dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafe5f603f964000474f39cd1a455755ca"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:gafe5f603f964000474f39cd1a455755ca"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__string__formatter__convert.html#gafe5f603f964000474f39cd1a455755ca">cata::is_string_id</a> = typename std::conditional&lt; <a class="el" href="structcata_1_1is__instance__of.html">is_instance_of</a>&lt; typename std::decay&lt; T &gt;::<a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a>, <a class="el" href="classstring__id.html">string_id</a> &gt;::value, std::true_type, std::false_type &gt;::<a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a></td></tr>
+<tr class="memitem:gafe5f603f964000474f39cd1a455755ca"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__string__formatter__convert.html#gafe5f603f964000474f39cd1a455755ca">cata::is_string_id</a> = typename std::conditional&lt; <a class="el" href="structcata_1_1is__instance__of.html">is_instance_of</a>&lt; typename std::decay&lt; T &gt;::type, <a class="el" href="classstring__id.html">string_id</a> &gt;::value, std::true_type, std::false_type &gt;::type</td></tr>
 <tr class="separator:gafe5f603f964000474f39cd1a455755ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:gaf6c1b09e9154ca0f0018624028929df5"><td class="memTemplParams" colspan="2">template&lt;typename RT , typename T &gt; </td></tr>
-<tr class="memitem:gaf6c1b09e9154ca0f0018624028929df5"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; <a class="el" href="group__string__formatter__convert.html#gab464afa94d3369ea56f197d6cb10d904">is_integer</a>&lt; RT &gt;::value &amp;&amp;<a class="el" href="group__string__formatter__convert.html#gab464afa94d3369ea56f197d6cb10d904">is_integer</a>&lt; T &gt;::value, RT &gt;::<a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__string__formatter__convert.html#gaf6c1b09e9154ca0f0018624028929df5">cata::convert</a> (RT *, const <a class="el" href="classcata_1_1string__formatter.html">string_formatter</a> &amp;, T &amp;&amp;value, int)</td></tr>
+<tr class="memitem:gaf6c1b09e9154ca0f0018624028929df5"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; <a class="el" href="group__string__formatter__convert.html#gab464afa94d3369ea56f197d6cb10d904">is_integer</a>&lt; RT &gt;::value &amp;&amp;<a class="el" href="group__string__formatter__convert.html#gab464afa94d3369ea56f197d6cb10d904">is_integer</a>&lt; T &gt;::value, RT &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__string__formatter__convert.html#gaf6c1b09e9154ca0f0018624028929df5">cata::convert</a> (RT *, const <a class="el" href="classcata_1_1string__formatter.html">string_formatter</a> &amp;, T &amp;&amp;value, int)</td></tr>
 <tr class="separator:gaf6c1b09e9154ca0f0018624028929df5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaace1cbacaca902342c79d69583e726af"><td class="memTemplParams" colspan="2">template&lt;typename RT , typename T &gt; </td></tr>
 <tr class="memitem:gaace1cbacaca902342c79d69583e726af"><td class="memTemplItemLeft" align="right" valign="top">RT&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__string__formatter__convert.html#gaace1cbacaca902342c79d69583e726af">cata::convert</a> (RT *, const <a class="el" href="classcata_1_1string__formatter.html">string_formatter</a> &amp;sf, T &amp;&amp;,...)</td></tr>
@@ -158,7 +158,7 @@ Functions</h2></td></tr>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="group__string__formatter__convert.html#ga25875027383644a3c3a1b552432a2bc6">cata::is_char</a> = typedef typename std::conditional&lt;std::is_same&lt;typename std::decay&lt;T&gt;::<a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a>, char&gt;::value, std::true_type, std::false_type&gt;::<a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a></td>
+          <td class="memname">using <a class="el" href="group__string__formatter__convert.html#ga25875027383644a3c3a1b552432a2bc6">cata::is_char</a> = typedef typename std::conditional&lt;std::is_same&lt;typename std::decay&lt;T&gt;::type, char&gt;::value, std::true_type, std::false_type&gt;::type</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -176,7 +176,7 @@ template&lt;typename T &gt; </div>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="group__string__formatter__convert.html#ga2925d0309772141398aa2e199b7c841f">cata::is_cstring</a> = typedef typename std::conditional &lt; std::is_same&lt;typename std::decay&lt;T&gt;::<a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a>, const char *&gt;::value || std::is_same&lt;typename std::decay&lt;T&gt;::<a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a>, char *&gt;::value, std::true_type, std::false_type &gt;::<a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a></td>
+          <td class="memname">using <a class="el" href="group__string__formatter__convert.html#ga2925d0309772141398aa2e199b7c841f">cata::is_cstring</a> = typedef typename std::conditional &lt; std::is_same&lt;typename std::decay&lt;T&gt;::type, const char *&gt;::value || std::is_same&lt;typename std::decay&lt;T&gt;::type, char *&gt;::value, std::true_type, std::false_type &gt;::type</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -194,7 +194,7 @@ template&lt;typename T &gt; </div>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="group__string__formatter__convert.html#gab464afa94d3369ea56f197d6cb10d904">cata::is_integer</a> = typedef typename std::conditional &lt; <a class="el" href="group__string__formatter__convert.html#ga277f1fbd99ec2e54165e923cafd31ff8">is_numeric</a>&lt;T&gt;::value &amp;&amp; !std::is_floating_point&lt;typename std::decay&lt;T&gt;::<a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a>&gt;::value, std::true_type, std::false_type &gt;::<a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a></td>
+          <td class="memname">using <a class="el" href="group__string__formatter__convert.html#gab464afa94d3369ea56f197d6cb10d904">cata::is_integer</a> = typedef typename std::conditional &lt; <a class="el" href="group__string__formatter__convert.html#ga277f1fbd99ec2e54165e923cafd31ff8">is_numeric</a>&lt;T&gt;::value &amp;&amp; !std::is_floating_point&lt;typename std::decay&lt;T&gt;::type&gt;::value, std::true_type, std::false_type &gt;::type</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -212,7 +212,7 @@ template&lt;typename T &gt; </div>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="group__string__formatter__convert.html#ga277f1fbd99ec2e54165e923cafd31ff8">cata::is_numeric</a> = typedef typename std::conditional &lt; std::is_arithmetic&lt;typename std::decay&lt;T&gt;::<a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a>&gt;::value &amp;&amp; !std::is_same&lt;typename std::decay&lt;T&gt;::<a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a>, bool&gt;::value, std::true_type, std::false_type &gt;::<a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a></td>
+          <td class="memname">using <a class="el" href="group__string__formatter__convert.html#ga277f1fbd99ec2e54165e923cafd31ff8">cata::is_numeric</a> = typedef typename std::conditional &lt; std::is_arithmetic&lt;typename std::decay&lt;T&gt;::type&gt;::value &amp;&amp; !std::is_same&lt;typename std::decay&lt;T&gt;::type, bool&gt;::value, std::true_type, std::false_type &gt;::type</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -230,7 +230,7 @@ template&lt;typename T &gt; </div>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="group__string__formatter__convert.html#gacd2fd4252d04eca90963530d6ad98ea3">cata::is_string</a> = typedef typename std::conditional&lt;std::is_same&lt;typename std::decay&lt;T&gt;::<a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a>, std::string&gt;::value, std::true_type, std::false_type&gt;::<a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a></td>
+          <td class="memname">using <a class="el" href="group__string__formatter__convert.html#gacd2fd4252d04eca90963530d6ad98ea3">cata::is_string</a> = typedef typename std::conditional&lt;std::is_same&lt;typename std::decay&lt;T&gt;::type, std::string&gt;::value, std::true_type, std::false_type&gt;::type</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -248,7 +248,7 @@ template&lt;typename T &gt; </div>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="group__string__formatter__convert.html#gafe5f603f964000474f39cd1a455755ca">cata::is_string_id</a> = typedef typename std::conditional &lt; <a class="el" href="structcata_1_1is__instance__of.html">is_instance_of</a>&lt;typename std::decay&lt;T&gt;::<a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a>, <a class="el" href="classstring__id.html">string_id</a>&gt;::value, std::true_type, std::false_type &gt;::<a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a></td>
+          <td class="memname">using <a class="el" href="group__string__formatter__convert.html#gafe5f603f964000474f39cd1a455755ca">cata::is_string_id</a> = typedef typename std::conditional &lt; <a class="el" href="structcata_1_1is__instance__of.html">is_instance_of</a>&lt;typename std::decay&lt;T&gt;::type, <a class="el" href="classstring__id.html">string_id</a>&gt;::value, std::true_type, std::false_type &gt;::type</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -266,7 +266,7 @@ template&lt;typename T &gt; </div>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="group__string__formatter__convert.html#gac891c0dc2a272c2c3c35f143a9d9a912">cata::is_string_view</a> = typedef typename std::conditional&lt;std::is_same&lt;typename std::decay&lt;T&gt;::<a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a>, <a class="el" href="fmtlib__core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&gt;::value, std::true_type, std::false_type&gt;::<a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a></td>
+          <td class="memname">using <a class="el" href="group__string__formatter__convert.html#gac891c0dc2a272c2c3c35f143a9d9a912">cata::is_string_view</a> = typedef typename std::conditional&lt;std::is_same&lt;typename std::decay&lt;T&gt;::type, <a class="el" href="fmtlib__core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&gt;::value, std::true_type, std::false_type&gt;::type</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -284,7 +284,7 @@ template&lt;typename T &gt; </div>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="group__string__formatter__convert.html#gad2c98dadf755c324b57ef7c8172f47dd">cata::is_translation</a> = typedef typename std::conditional &lt; std::is_same&lt;typename std::decay&lt;T&gt;::<a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a>, <a class="el" href="classtranslation.html">translation</a>&gt;::value, std::true_type, std::false_type &gt;::<a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a></td>
+          <td class="memname">using <a class="el" href="group__string__formatter__convert.html#gad2c98dadf755c324b57ef7c8172f47dd">cata::is_translation</a> = typedef typename std::conditional &lt; std::is_same&lt;typename std::decay&lt;T&gt;::type, <a class="el" href="classtranslation.html">translation</a>&gt;::value, std::true_type, std::false_type &gt;::type</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -306,7 +306,7 @@ template&lt;typename RT , typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::enable_if&lt; <a class="el" href="group__string__formatter__convert.html#gab464afa94d3369ea56f197d6cb10d904">is_integer</a>&lt; RT &gt;::value &amp;&amp;<a class="el" href="group__string__formatter__convert.html#gab464afa94d3369ea56f197d6cb10d904">is_integer</a>&lt; T &gt;::value, RT &gt;::<a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a> cata::convert </td>
+          <td class="memname">std::enable_if&lt; <a class="el" href="group__string__formatter__convert.html#gab464afa94d3369ea56f197d6cb10d904">is_integer</a>&lt; RT &gt;::value &amp;&amp;<a class="el" href="group__string__formatter__convert.html#gab464afa94d3369ea56f197d6cb10d904">is_integer</a>&lt; T &gt;::value, RT &gt;::type cata::convert </td>
           <td>(</td>
           <td class="paramtype">RT *&#160;</td>
           <td class="paramname">, </td>
@@ -347,7 +347,7 @@ template&lt;typename RT , typename T &gt; </div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="keywordflow">return</span> value;</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>}</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="savegame_8cpp_source.html#l00356">overmap::convert_terrain()</a>, <a class="el" href="string__formatter_8h_source.html#l00284">cata::string_formatter::get_nth_arg_as()</a>, and <a class="el" href="item_8cpp_source.html#l08688">iteminfo::iteminfo()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="savegame_8cpp_source.html#l00356">overmap::convert_terrain()</a>, <a class="el" href="string__formatter_8h_source.html#l00284">cata::string_formatter::get_nth_arg_as()</a>, and <a class="el" href="item_8cpp_source.html#l08696">iteminfo::iteminfo()</a>.</p>
 
 </div>
 </div>
@@ -401,12 +401,12 @@ template&lt;typename RT , typename T &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="string__formatter_8h_source.html#l00175">175</a> of file <a class="el" href="string__formatter_8h_source.html">string_formatter.h</a>.</p>
 <div class="fragment"><div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>{</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    <span class="keyword">static_assert</span>( <a class="code hl_enumvalue" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">std::is_pointer&lt;typename std::decay&lt;T&gt;::type</a>&gt;::value ||</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    <span class="keyword">static_assert</span>( std::is_pointer&lt;typename std::decay&lt;T&gt;::type&gt;::value ||</div>
 <div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>                   is_numeric&lt;T&gt;::value ||</div>
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>                   is_string&lt;T&gt;::value ||</div>
 <div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>                   is_string_view&lt;T&gt;::value ||</div>
 <div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>                   <a class="code hl_struct" href="structis__char.html">is_char&lt;T&gt;::value</a> ||</div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>                   <a class="code hl_enumvalue" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">std::is_enum&lt;typename std::decay&lt;T&gt;::type</a>&gt;::value ||</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>                   std::is_enum&lt;typename std::decay&lt;T&gt;::type&gt;::value ||</div>
 <div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>                   is_cstring&lt;T&gt;::value ||</div>
 <div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>                   is_translation&lt;T&gt;::value ||</div>
 <div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>                   is_string_id&lt;T&gt;::value,</div>
@@ -415,12 +415,11 @@ template&lt;typename RT , typename T &gt; </div>
 <div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>                 std::string( <span class="keyword">typeid</span>( T ).<a class="code hl_function" href="namespaceom__direction.html#a8ba958ccfad28c0a5572a04dd1428f32">name</a>() ) + <span class="stringliteral">&quot; to &quot;</span> +</div>
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>                 std::string( <span class="keyword">typeid</span>( RT ).<a class="code hl_function" href="namespaceom__direction.html#a8ba958ccfad28c0a5572a04dd1428f32">name</a>() ) + <span class="stringliteral">&quot;, which is not possible&quot;</span> );</div>
 <div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>}</div>
-<div class="ttc" id="aenums_8h_html_ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab"><div class="ttname"><a href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a></div><div class="ttdeci">@ type</div><div class="ttdef"><b>Definition:</b> <a href="enums_8h_source.html#l00075">enums.h:75</a></div></div>
 <div class="ttc" id="anamespacecata_html_a559fbd43812662730f11cb3ee13a9774"><div class="ttname"><a href="namespacecata.html#a559fbd43812662730f11cb3ee13a9774">cata::throw_error</a></div><div class="ttdeci">void throw_error(const string_formatter &amp;, const std::string &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="string__formatter_8h_source.html#l00257">string_formatter.h:257</a></div></div>
 <div class="ttc" id="anamespaceom__direction_html_a8ba958ccfad28c0a5572a04dd1428f32"><div class="ttname"><a href="namespaceom__direction.html#a8ba958ccfad28c0a5572a04dd1428f32">om_direction::name</a></div><div class="ttdeci">std::string name(type dir)</div><div class="ttdoc">Get Human readable name of a direction.</div><div class="ttdef"><b>Definition:</b> <a href="overmap_8cpp_source.html#l04127">overmap.cpp:4127</a></div></div>
 <div class="ttc" id="astructis__char_html"><div class="ttname"><a href="structis__char.html">is_char</a></div><div class="ttdoc">Specifies if T is a character type.</div><div class="ttdef"><b>Definition:</b> <a href="fmtlib__core_8h_source.html#l00469">fmtlib_core.h:469</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="string__formatter_8h_source.html#l00257">cata::throw_error()</a>, and <a class="el" href="enums_8h_source.html#l00075">type</a>.</p>
+<p class="reference">References <a class="el" href="string__formatter_8h_source.html#l00257">cata::throw_error()</a>.</p>
 
 </div>
 </div>
@@ -429,7 +428,7 @@ template&lt;typename RT , typename T &gt; </div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Mar 5 2023 13:50:56 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Apr 7 2023 11:54:34 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

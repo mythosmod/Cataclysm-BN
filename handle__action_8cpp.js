@@ -19,7 +19,7 @@ var handle__action_8cpp =
     [ "open_movement_mode_menu", "handle__action_8cpp.html#a0df6a962489a44c8c25a5b9335dcf6f7", null ],
     [ "pldrive", "handle__action_8cpp.html#a8d3be8fd29700b6f8025c80895f297dc", null ],
     [ "pldrive", "handle__action_8cpp.html#a000a138c0ce27f17db52510fed5f5830", null ],
-    [ "rcdrive", "handle__action_8cpp.html#a799b7d603a5f7ae74f54ee6eb5254122", null ],
+    [ "rcdrive", "handle__action_8cpp.html#a409011fce07c7d2412d250b6b129fe24", null ],
     [ "reach_attack", "handle__action_8cpp.html#a79740c0fa9cbd4075be0053c1f1c070d", null ],
     [ "read", "handle__action_8cpp.html#a5b42e5a7a4bffaafe84f4370d6939c2b", null ],
     [ "sleep", "handle__action_8cpp.html#add2293e03cf2f1491fb81aa473d0f5b5", null ],

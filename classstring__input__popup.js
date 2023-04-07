@@ -35,7 +35,7 @@ var classstring__input__popup =
     [ "underscore_color", "classstring__input__popup.html#a52d08bc07c74a868d44b18d3532ef84d", null ],
     [ "update_input_history", "classstring__input__popup.html#a49a931f677f609a9888945d219f7ba46", null ],
     [ "width", "classstring__input__popup.html#acc88b6636bee68b1ee4f4dffc533d611", null ],
-    [ "window", "classstring__input__popup.html#aeaceebbc8ff206aaa1f9e9e6891aafad", null ],
+    [ "window", "classstring__input__popup.html#a07a09f456181b8cb864dd4880603bebb", null ],
     [ "_canceled", "classstring__input__popup.html#a05112396e8f2c8fefa56fb29c6ccdd67", null ],
     [ "_confirmed", "classstring__input__popup.html#a0dd74040ba710b1d19c1aec3c45b6254", null ],
     [ "_cursor_color", "classstring__input__popup.html#ad59e388ef3faf2bc4b149b48e08265bd", null ],

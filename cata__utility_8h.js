@@ -13,6 +13,7 @@ var cata__utility_8h =
     [ "divide_round_up", "cata__utility_8h.html#a9312e12ba19546023c021438a29b8830", null ],
     [ "erase_if", "cata__utility_8h.html#ad7f4be1b8ffc52a0be18e72d041241af", null ],
     [ "fast_floor", "cata__utility_8h.html#a9ac61d2d90ee98566572b241750e8246", null ],
+    [ "get_holiday_from_time", "cata__utility_8h.html#a31aabb59d1a4a9771394b9b7902265be", null ],
     [ "isBetween", "cata__utility_8h.html#aacdf27156d98b65ffe95503a510df4f5", null ],
     [ "lerp", "cata__utility_8h.html#ae9132dc8c0ea42f2d015053c30730de1", null ],
     [ "lerp_clamped", "cata__utility_8h.html#a0f6310f33fb6c6c666dca553b8395c7c", null ],

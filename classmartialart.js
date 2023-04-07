@@ -46,5 +46,6 @@ var classmartialart =
     [ "strictly_unarmed", "classmartialart.html#a273c4c599ed375e20cba8e29411767a3", null ],
     [ "techniques", "classmartialart.html#ad38aa56457ab2cf5759a9bfb5590c7b9", null ],
     [ "was_loaded", "classmartialart.html#ab9fc0eba7c8c2258a31fc8eea6e458f8", null ],
+    [ "weapon_category", "classmartialart.html#ad36a2a5c715a98747cf10eb53913f5ad", null ],
     [ "weapons", "classmartialart.html#a0561695454e62eac8800a68a26a34856", null ]
 ];

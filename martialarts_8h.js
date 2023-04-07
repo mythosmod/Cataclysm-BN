@@ -1,5 +1,6 @@
 var martialarts_8h =
 [
+    [ "weapon_category", "classweapon__category.html", "classweapon__category" ],
     [ "ma_requirements", "structma__requirements.html", "structma__requirements" ],
     [ "ma_technique", "classma__technique.html", "classma__technique" ],
     [ "ma_buff", "classma__buff.html", "classma__buff" ],

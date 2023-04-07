@@ -1,13 +1,13 @@
 var structjmapgen__objects =
 [
     [ "jmapgen_obj", "structjmapgen__objects.html#a573a70a619220b128f5221b14b0eb948", null ],
-    [ "jmapgen_objects", "structjmapgen__objects.html#a083714f6ad0f083f8cea837108917654", null ],
+    [ "jmapgen_objects", "structjmapgen__objects.html#a5b82c2a877f6cafb5597ea70bcd73937", null ],
     [ "add", "structjmapgen__objects.html#a1d888afd71c7da7fde36d5ec8f31bccc", null ],
     [ "apply", "structjmapgen__objects.html#a62ae5d57b54ce9e5f734d08802ca790f", null ],
-    [ "apply", "structjmapgen__objects.html#af39ceb4ba6856190c2d7643afe7e2b6a", null ],
+    [ "apply", "structjmapgen__objects.html#a416f0749d991b022d8698b373da28d5f", null ],
     [ "check", "structjmapgen__objects.html#a34299f1b045ec198d9dab61602fac6bf", null ],
     [ "check_bounds", "structjmapgen__objects.html#a41c55acb74b0b002b642ba0f25c76984", null ],
-    [ "has_vehicle_collision", "structjmapgen__objects.html#a0d2247b936d9d6ad95db00845d7f82d3", null ],
+    [ "has_vehicle_collision", "structjmapgen__objects.html#a7b78391b7f53b9ec2cd9eeed941b0b0f", null ],
     [ "load_objects", "structjmapgen__objects.html#a42d3ea727e2b1226f75b975b49c21be1", null ],
     [ "load_objects", "structjmapgen__objects.html#afe1542ffa787563dbab9ddbef0b94c40", null ],
     [ "load_objects", "structjmapgen__objects.html#a6b6077258686207a5fca782fe173ac7d", null ],

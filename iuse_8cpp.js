@@ -245,6 +245,7 @@ var iuse_8cpp =
     [ "qual_AXE", "iuse_8cpp.html#a5a11f34784499ed2f6b7b5c4d6c31c5d", null ],
     [ "qual_DIG", "iuse_8cpp.html#a73439c0a480cbe825af2284e8134349c", null ],
     [ "RADIO_PER_TURN", "iuse_8cpp.html#a972adda40bd181c749a1db633d405669", null ],
+    [ "requirement_add_grid_connection", "iuse_8cpp.html#ac423586c3071a3bac332b217b69fb049", null ],
     [ "ROBOT", "iuse_8cpp.html#a135e6e9db2959a942d96fb4c338fa696", null ],
     [ "skill_computer", "iuse_8cpp.html#a55717f512921183ce304b4024c20015c", null ],
     [ "skill_cooking", "iuse_8cpp.html#ad0e39d29af45ea0a03f280197b35ca72", null ],

@@ -1,7 +1,7 @@
 var generic__readers_8h =
 [
     [ "supports_relative< T, typename >", "structsupports__relative.html", null ],
-    [ "supports_relative< T, cata::void_t< decltype(std::declval< T & >()+=std::declval< T & >())> >", "structsupports__relative_3_01T_00_01cata_1_1void__t_3_01decltype_07std_1_1declval_3_01T_01_6_01_50ce8d93c8242fc4603fa58eb9774b45.html", null ],
+    [ "supports_relative< T, std::void_t< decltype(std::declval< T & >()+=std::declval< T & >())> >", "structsupports__relative_3_01T_00_01std_1_1void__t_3_01decltype_07std_1_1declval_3_01T_01_6_01_49ed6ff7dcf760d5705b050c877ee4fe5.html", null ],
     [ "supports_relative< bool >", "structsupports__relative_3_01bool_01_4.html", null ],
     [ "supports_relative< std::string >", "structsupports__relative_3_01std_1_1string_01_4.html", null ],
     [ "reader_detail::handler< T >", "structreader__detail_1_1handler.html", "structreader__detail_1_1handler" ],

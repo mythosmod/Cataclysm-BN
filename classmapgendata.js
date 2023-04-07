@@ -20,7 +20,7 @@ var classmapgendata =
     [ "seast", "classmapgendata.html#a65e29e1787a5bfe87b6de8750738ff27", null ],
     [ "set_dir", "classmapgendata.html#a33c63b0fb340b4d849e1680e1317e2f3", null ],
     [ "south", "classmapgendata.html#a73b5d3b66852b0462cfa734ee51cdee9", null ],
-    [ "square_groundcover", "classmapgendata.html#a1447f9b09cd5f686b607a4a6b21d55f6", null ],
+    [ "square_groundcover", "classmapgendata.html#a65f2777009db7cc96d3bc56b895effd6", null ],
     [ "swest", "classmapgendata.html#a7c8749f6d088f7e22413b4349fe6dd6e", null ],
     [ "terrain_type", "classmapgendata.html#a1d798cf19f17b3ba0e583e8794c12eff", null ],
     [ "west", "classmapgendata.html#a642e1f88a375fbace75d91cdfc1ad8b2", null ],

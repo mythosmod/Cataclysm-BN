@@ -12,7 +12,7 @@ var searchData=
   ['sleep_5fdeprivation_5flevels_9',['sleep_deprivation_levels',['../character_8h.html#aa7bb0ad73714bdf6b22d11b5b4e2633f',1,'character.h']]],
   ['sort_5fmode_5ft_10',['sort_mode_t',['../namespaceovermap__ui.html#a5cd0d32854b59999d3a728288bc7daaa',1,'overmap_ui']]],
   ['sound_5ft_11',['sound_t',['../namespacesounds.html#af6b3d144906d9ccfda6824fb87e46aa3',1,'sounds']]],
-  ['special_5fgame_5fid_12',['special_game_id',['../enums_8h.html#a118d644b670026ee446a0163e9b7bba3',1,'enums.h']]],
+  ['special_5fgame_5ftype_12',['special_game_type',['../enums_8h.html#ace4a265a663117b0e316e492302dce8d',1,'enums.h']]],
   ['special_5fitem_5ftype_13',['special_item_type',['../active__item__cache_8h.html#acc683dc9a32f0cb3fb0032b41c6e17b5',1,'active_item_cache.h']]],
   ['spell_5fflag_14',['spell_flag',['../magic_8h.html#a5322019703a7521b2c3e0ae4a038d0d9',1,'magic.h']]],
   ['stacking_5ftype_15',['stacking_type',['../namespacefields.html#af8bc739ca8fbe535a44afc02da973280',1,'fields']]],

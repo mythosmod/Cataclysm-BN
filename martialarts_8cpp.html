@@ -113,6 +113,7 @@ $(document).ready(function(){initNavTree('martialarts_8cpp.html',''); initResiza
 <code>#include &quot;<a class="el" href="generic__factory_8h_source.html">generic_factory.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="input_8h_source.html">input.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="item_8h_source.html">item.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="item__factory_8h_source.html">item_factory.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="itype_8h_source.html">itype.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="json_8h_source.html">json.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="map_8h_source.html">map.h</a>&quot;</code><br />
@@ -142,6 +143,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classma__buff__effect__type.html">ma_buff_effect_type</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a wrapper class to get access to the protected members of <a class="el" href="classeffect__type.html">effect_type</a>, it creates the <a class="el" href="classeffect__type.html">effect_type</a> that is used to store a <a class="el" href="classma__buff.html">ma_buff</a> in the creatures effect map.  <a href="classma__buff__effect__type.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcat__order.html">cat_order</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -152,7 +155,7 @@ Namespaces</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a434816d565bbc690c9c91f01fc57fa11"><td class="memItemLeft" align="right" valign="top">static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="martialarts_8cpp.html#a434816d565bbc690c9c91f01fc57fa11">flag_UNARMED_WEAPON</a> (&quot;UNARMED_WEAPON&quot;)</td></tr>
 <tr class="separator:a434816d565bbc690c9c91f01fc57fa11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad99254fef8817d713c1577c9f7021eb0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="type__id_8h.html#ad6390cfa5598a169e10ca7ae1a3f6aaf">matype_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="martialarts_8cpp.html#ad99254fef8817d713c1577c9f7021eb0">martial_art_learned_from</a> (const <a class="el" href="structitype.html">itype</a> &amp;<a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a>)</td></tr>
+<tr class="memitem:ad99254fef8817d713c1577c9f7021eb0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="type__id_8h.html#ad6390cfa5598a169e10ca7ae1a3f6aaf">matype_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="martialarts_8cpp.html#ad99254fef8817d713c1577c9f7021eb0">martial_art_learned_from</a> (const <a class="el" href="structitype.html">itype</a> &amp;type)</td></tr>
 <tr class="separator:ad99254fef8817d713c1577c9f7021eb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada6265ea818e97e5c2d1ec55c371c5d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="martialarts_8cpp.html#ada6265ea818e97e5c2d1ec55c371c5d9">load_technique</a> (const <a class="el" href="classJsonObject.html">JsonObject</a> &amp;jo, const std::string &amp;src)</td></tr>
 <tr class="separator:ada6265ea818e97e5c2d1ec55c371c5d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -197,6 +200,8 @@ Variables</h2></td></tr>
 <tr class="separator:a587ef2648b0f57c82429af975597f155"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a018a5823d7e1524b702156d66788c335"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="npc_8h.html#a136007e1e0b77eaf7dc4be58f6f42f87">bionic_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="martialarts_8cpp.html#a018a5823d7e1524b702156d66788c335">bio_cqb</a> (&quot;bio_cqb&quot;)</td></tr>
 <tr class="separator:a018a5823d7e1524b702156d66788c335"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47e8666a1e458f8836fd4beb7c2e00b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgeneric__factory.html">generic_factory</a>&lt; <a class="el" href="classweapon__category.html">weapon_category</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02martialarts_8cpp_03.html#a47e8666a1e458f8836fd4beb7c2e00b7">anonymous_namespace{martialarts.cpp}::weapon_category_factory</a> (&quot;weapon category&quot;)</td></tr>
+<tr class="separator:a47e8666a1e458f8836fd4beb7c2e00b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae3f3de3b7baac697dfacb78ad4a80ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgeneric__factory.html">generic_factory</a>&lt; <a class="el" href="classma__technique.html">ma_technique</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02martialarts_8cpp_03.html#aae3f3de3b7baac697dfacb78ad4a80ea">anonymous_namespace{martialarts.cpp}::ma_techniques</a> (&quot;martial art technique&quot;)</td></tr>
 <tr class="separator:aae3f3de3b7baac697dfacb78ad4a80ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf8fd9cfd1bea36da26edfc99075b372"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgeneric__factory.html">generic_factory</a>&lt; <a class="el" href="classmartialart.html">martialart</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02martialarts_8cpp_03.html#adf8fd9cfd1bea36da26edfc99075b372">anonymous_namespace{martialarts.cpp}::martialarts</a> (&quot;martial art style&quot;)</td></tr>
@@ -241,27 +246,27 @@ template&lt;typename C , typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l01050">1050</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01051" name="l01051"></a><span class="lineno"> 1051</span>{</div>
-<div class="line"><a id="l01052" name="l01052"></a><span class="lineno"> 1052</span>    <span class="keywordflow">for</span>( <span class="keyword">auto</span> &amp;elem : container ) {</div>
-<div class="line"><a id="l01053" name="l01053"></a><span class="lineno"> 1053</span>        <span class="keywordflow">for</span>( <span class="keyword">auto</span> &amp;eff : elem.second ) {</div>
-<div class="line"><a id="l01054" name="l01054"></a><span class="lineno"> 1054</span>            <span class="keyword">const</span> <a class="code hl_class" href="classeffect.html">effect</a> &amp;e = eff.second;</div>
-<div class="line"><a id="l01055" name="l01055"></a><span class="lineno"> 1055</span>            <span class="keywordflow">if</span>( e.<a class="code hl_function" href="classeffect.html#ac81ceea6d6ac76d8f11449e5da401021">is_removed</a>() ) {</div>
-<div class="line"><a id="l01056" name="l01056"></a><span class="lineno"> 1056</span>                <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l01057" name="l01057"></a><span class="lineno"> 1057</span>            }</div>
-<div class="line"><a id="l01058" name="l01058"></a><span class="lineno"> 1058</span>            <span class="keywordflow">if</span>( <span class="keyword">auto</span> buff = <a class="code hl_function" href="classma__buff.html#ad7bbaede3e8d56ef0f3f39a89d2b55c3">ma_buff::from_effect</a>( e ) ) {</div>
-<div class="line"><a id="l01059" name="l01059"></a><span class="lineno"> 1059</span>                f( *buff, e );</div>
-<div class="line"><a id="l01060" name="l01060"></a><span class="lineno"> 1060</span>            }</div>
-<div class="line"><a id="l01061" name="l01061"></a><span class="lineno"> 1061</span>        }</div>
-<div class="line"><a id="l01062" name="l01062"></a><span class="lineno"> 1062</span>    }</div>
-<div class="line"><a id="l01063" name="l01063"></a><span class="lineno"> 1063</span>}</div>
+<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l01095">1095</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01096" name="l01096"></a><span class="lineno"> 1096</span>{</div>
+<div class="line"><a id="l01097" name="l01097"></a><span class="lineno"> 1097</span>    <span class="keywordflow">for</span>( <span class="keyword">auto</span> &amp;elem : container ) {</div>
+<div class="line"><a id="l01098" name="l01098"></a><span class="lineno"> 1098</span>        <span class="keywordflow">for</span>( <span class="keyword">auto</span> &amp;eff : elem.second ) {</div>
+<div class="line"><a id="l01099" name="l01099"></a><span class="lineno"> 1099</span>            <span class="keyword">const</span> <a class="code hl_class" href="classeffect.html">effect</a> &amp;e = eff.second;</div>
+<div class="line"><a id="l01100" name="l01100"></a><span class="lineno"> 1100</span>            <span class="keywordflow">if</span>( e.<a class="code hl_function" href="classeffect.html#ac81ceea6d6ac76d8f11449e5da401021">is_removed</a>() ) {</div>
+<div class="line"><a id="l01101" name="l01101"></a><span class="lineno"> 1101</span>                <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l01102" name="l01102"></a><span class="lineno"> 1102</span>            }</div>
+<div class="line"><a id="l01103" name="l01103"></a><span class="lineno"> 1103</span>            <span class="keywordflow">if</span>( <span class="keyword">auto</span> buff = <a class="code hl_function" href="classma__buff.html#ad7bbaede3e8d56ef0f3f39a89d2b55c3">ma_buff::from_effect</a>( e ) ) {</div>
+<div class="line"><a id="l01104" name="l01104"></a><span class="lineno"> 1104</span>                f( *buff, e );</div>
+<div class="line"><a id="l01105" name="l01105"></a><span class="lineno"> 1105</span>            }</div>
+<div class="line"><a id="l01106" name="l01106"></a><span class="lineno"> 1106</span>        }</div>
+<div class="line"><a id="l01107" name="l01107"></a><span class="lineno"> 1107</span>    }</div>
+<div class="line"><a id="l01108" name="l01108"></a><span class="lineno"> 1108</span>}</div>
 <div class="ttc" id="aclasseffect_html"><div class="ttname"><a href="classeffect.html">effect</a></div><div class="ttdef"><b>Definition:</b> <a href="effect_8h_source.html#l00160">effect.h:161</a></div></div>
 <div class="ttc" id="aclasseffect_html_ac81ceea6d6ac76d8f11449e5da401021"><div class="ttname"><a href="classeffect.html#ac81ceea6d6ac76d8f11449e5da401021">effect::is_removed</a></div><div class="ttdeci">bool is_removed() const</div><div class="ttdoc">Returns if the effect is disabled and set up for removal.</div><div class="ttdef"><b>Definition:</b> <a href="effect_8h_source.html#l00246">effect.h:246</a></div></div>
-<div class="ttc" id="aclassma__buff_html_ad7bbaede3e8d56ef0f3f39a89d2b55c3"><div class="ttname"><a href="classma__buff.html#ad7bbaede3e8d56ef0f3f39a89d2b55c3">ma_buff::from_effect</a></div><div class="ttdeci">static const ma_buff * from_effect(const effect &amp;eff)</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8cpp_source.html#l00624">martialarts.cpp:624</a></div></div>
+<div class="ttc" id="aclassma__buff_html_ad7bbaede3e8d56ef0f3f39a89d2b55c3"><div class="ttname"><a href="classma__buff.html#ad7bbaede3e8d56ef0f3f39a89d2b55c3">ma_buff::from_effect</a></div><div class="ttdeci">static const ma_buff * from_effect(const effect &amp;eff)</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8cpp_source.html#l00665">martialarts.cpp:665</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="martialarts_8cpp_source.html#l00624">ma_buff::from_effect()</a>, and <a class="el" href="effect_8h_source.html#l00246">effect::is_removed()</a>.</p>
+<p class="reference">References <a class="el" href="martialarts_8cpp_source.html#l00665">ma_buff::from_effect()</a>, and <a class="el" href="effect_8h_source.html#l00246">effect::is_removed()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="martialarts_8cpp_source.html#l01125">Character::mabuff_armor_bonus()</a>, <a class="el" href="martialarts_8cpp_source.html#l01117">Character::mabuff_arpen_bonus()</a>, <a class="el" href="martialarts_8cpp_source.html#l01159">Character::mabuff_attack_cost_mult()</a>, <a class="el" href="martialarts_8cpp_source.html#l01151">Character::mabuff_attack_cost_penalty()</a>, <a class="el" href="martialarts_8cpp_source.html#l01101">Character::mabuff_block_bonus()</a>, <a class="el" href="martialarts_8cpp_source.html#l01143">Character::mabuff_damage_bonus()</a>, <a class="el" href="martialarts_8cpp_source.html#l01133">Character::mabuff_damage_mult()</a>, <a class="el" href="martialarts_8cpp_source.html#l01093">Character::mabuff_dodge_bonus()</a>, <a class="el" href="martialarts_8cpp_source.html#l01109">Character::mabuff_speed_bonus()</a>, and <a class="el" href="martialarts_8cpp_source.html#l01085">Character::mabuff_tohit_bonus()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="martialarts_8cpp_source.html#l01170">Character::mabuff_armor_bonus()</a>, <a class="el" href="martialarts_8cpp_source.html#l01162">Character::mabuff_arpen_bonus()</a>, <a class="el" href="martialarts_8cpp_source.html#l01204">Character::mabuff_attack_cost_mult()</a>, <a class="el" href="martialarts_8cpp_source.html#l01196">Character::mabuff_attack_cost_penalty()</a>, <a class="el" href="martialarts_8cpp_source.html#l01146">Character::mabuff_block_bonus()</a>, <a class="el" href="martialarts_8cpp_source.html#l01188">Character::mabuff_damage_bonus()</a>, <a class="el" href="martialarts_8cpp_source.html#l01178">Character::mabuff_damage_mult()</a>, <a class="el" href="martialarts_8cpp_source.html#l01138">Character::mabuff_dodge_bonus()</a>, <a class="el" href="martialarts_8cpp_source.html#l01154">Character::mabuff_speed_bonus()</a>, and <a class="el" href="martialarts_8cpp_source.html#l01130">Character::mabuff_tohit_bonus()</a>.</p>
 
 </div>
 </div>
@@ -311,16 +316,16 @@ template&lt;typename Container &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l00077">77</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>{</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keywordflow">if</span>( jo.<a class="code hl_function" href="classJsonObject.html#a887d230c6a42ef2a6cf72c0e040cd4e3">has_member</a>( json_key ) ) {</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <a class="code hl_function" href="generic__factory_8h.html#a0a177c754c5ba89ac6c543656b0652cc">mandatory</a>( jo, was_loaded, json_key, cont[<span class="keywordtype">id</span>] );</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    }</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>}</div>
+<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l00112">112</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>{</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    <span class="keywordflow">if</span>( jo.<a class="code hl_function" href="classJsonObject.html#a887d230c6a42ef2a6cf72c0e040cd4e3">has_member</a>( json_key ) ) {</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        <a class="code hl_function" href="generic__factory_8h.html#a0a177c754c5ba89ac6c543656b0652cc">mandatory</a>( jo, was_loaded, json_key, cont[<span class="keywordtype">id</span>] );</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    }</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>}</div>
 <div class="ttc" id="aclassJsonObject_html_a887d230c6a42ef2a6cf72c0e040cd4e3"><div class="ttname"><a href="classJsonObject.html#a887d230c6a42ef2a6cf72c0e040cd4e3">JsonObject::has_member</a></div><div class="ttdeci">bool has_member(const std::string &amp;name) const</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l00181">json.cpp:181</a></div></div>
-<div class="ttc" id="ageneric__factory_8h_html_a0a177c754c5ba89ac6c543656b0652cc"><div class="ttname"><a href="generic__factory_8h.html#a0a177c754c5ba89ac6c543656b0652cc">mandatory</a></div><div class="ttdeci">void mandatory(const JsonObject &amp;jo, const bool was_loaded, const std::string &amp;name, MemberType &amp;member)</div><div class="ttdef"><b>Definition:</b> <a href="generic__factory_8h_source.html#l00611">generic_factory.h:611</a></div></div>
+<div class="ttc" id="ageneric__factory_8h_html_a0a177c754c5ba89ac6c543656b0652cc"><div class="ttname"><a href="generic__factory_8h.html#a0a177c754c5ba89ac6c543656b0652cc">mandatory</a></div><div class="ttdeci">void mandatory(const JsonObject &amp;jo, const bool was_loaded, const std::string &amp;name, MemberType &amp;member)</div><div class="ttdef"><b>Definition:</b> <a href="generic__factory_8h_source.html#l00610">generic_factory.h:610</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="json_8cpp_source.html#l00181">JsonObject::has_member()</a>, and <a class="el" href="generic__factory_8h_source.html#l00611">mandatory()</a>.</p>
+<p class="reference">References <a class="el" href="json_8cpp_source.html#l00181">JsonObject::has_member()</a>, and <a class="el" href="generic__factory_8h_source.html#l00610">mandatory()</a>.</p>
 
 </div>
 </div>
@@ -339,14 +344,14 @@ template&lt;typename Container &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l00320">320</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>{</div>
-<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>    std::vector&lt;matype_id&gt; <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>;</div>
-<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <span class="keyword">auto</span> &amp;ma : <a class="code hl_variable" href="namespaceanonymous__namespace_02martialarts_8cpp_03.html#adf8fd9cfd1bea36da26edfc99075b372">martialarts</a>.get_all() ) {</div>
-<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>        <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>.push_back( ma.id );</div>
-<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>    }</div>
-<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>    <span class="keywordflow">return</span> <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>;</div>
-<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>}</div>
+<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l00356">356</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>{</div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>    std::vector&lt;matype_id&gt; <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>;</div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <span class="keyword">auto</span> &amp;ma : <a class="code hl_variable" href="namespaceanonymous__namespace_02martialarts_8cpp_03.html#adf8fd9cfd1bea36da26edfc99075b372">martialarts</a>.get_all() ) {</div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>        <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>.push_back( ma.id );</div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>    }</div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>    <span class="keywordflow">return</span> <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>;</div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>}</div>
 <div class="ttc" id="anamespaceanonymous__namespace_02martialarts_8cpp_03_html_adf8fd9cfd1bea36da26edfc99075b372"><div class="ttname"><a href="namespaceanonymous__namespace_02martialarts_8cpp_03.html#adf8fd9cfd1bea36da26edfc99075b372">anonymous_namespace{martialarts.cpp}::martialarts</a></div><div class="ttdeci">generic_factory&lt; martialart &gt; martialarts(&quot;martial art style&quot;)</div></div>
 <div class="ttc" id="anamespacedetail_1_1digits_html_aad69d2373aa047bdd9e81494bf3da5ae"><div class="ttname"><a href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">detail::digits::result</a></div><div class="ttdeci">result</div><div class="ttdef"><b>Definition:</b> <a href="fmtlib__format-inl_8h_source.html#l01626">fmtlib_format-inl.h:1626</a></div></div>
 </div><!-- fragment -->
@@ -371,21 +376,21 @@ template&lt;typename Container &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l00329">329</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>{</div>
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>    std::vector&lt;matype_id&gt; <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>;</div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <span class="keyword">auto</span> &amp;ma : <a class="code hl_variable" href="namespaceanonymous__namespace_02martialarts_8cpp_03.html#adf8fd9cfd1bea36da26edfc99075b372">martialarts</a>.get_all() ) {</div>
-<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>        <span class="keywordflow">if</span>( ma.autolearn_skills.empty() ) {</div>
-<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>            <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>        }</div>
-<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>        <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>.push_back( ma.id );</div>
-<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>    }</div>
-<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>    <span class="keywordflow">return</span> <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>;</div>
-<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>}</div>
+<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l00365">365</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>{</div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>    std::vector&lt;matype_id&gt; <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>;</div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <span class="keyword">auto</span> &amp;ma : <a class="code hl_variable" href="namespaceanonymous__namespace_02martialarts_8cpp_03.html#adf8fd9cfd1bea36da26edfc99075b372">martialarts</a>.get_all() ) {</div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>        <span class="keywordflow">if</span>( ma.autolearn_skills.empty() ) {</div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>        }</div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>        <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>.push_back( ma.id );</div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>    }</div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>    <span class="keywordflow">return</span> <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>;</div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="namespaceanonymous__namespace_02martialarts_8cpp_03.html#adf8fd9cfd1bea36da26edfc99075b372">anonymous_namespace{martialarts.cpp}::martialarts</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="character__turn_8cpp_source.html#l00165">Character::process_turn()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="character__turn_8cpp_source.html#l00164">Character::process_turn()</a>.</p>
 
 </div>
 </div>
@@ -417,31 +422,31 @@ template&lt;typename Container &gt; </div>
 
 <p>Returns true if the character can learn the entered martial art. </p>
 
-<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l01215">1215</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01216" name="l01216"></a><span class="lineno"> 1216</span>{</div>
-<div class="line"><a id="l01217" name="l01217"></a><span class="lineno"> 1217</span>    <span class="keywordflow">if</span>( ma_id.<a class="code hl_function" href="classstring__id.html#a4796245d3cd6e0283670698a98d46ae9">obj</a>().<a class="code hl_variable" href="classmartialart.html#af2f0e8cbb960e7f93cd8cc20fef9f96e">autolearn_skills</a>.empty() ) {</div>
-<div class="line"><a id="l01218" name="l01218"></a><span class="lineno"> 1218</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l01219" name="l01219"></a><span class="lineno"> 1219</span>    }</div>
-<div class="line"><a id="l01220" name="l01220"></a><span class="lineno"> 1220</span> </div>
-<div class="line"><a id="l01221" name="l01221"></a><span class="lineno"> 1221</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> std::pair&lt;std::string, int&gt; &amp;elem : ma_id.<a class="code hl_function" href="classstring__id.html#a4796245d3cd6e0283670698a98d46ae9">obj</a>().<a class="code hl_variable" href="classmartialart.html#af2f0e8cbb960e7f93cd8cc20fef9f96e">autolearn_skills</a> ) {</div>
-<div class="line"><a id="l01222" name="l01222"></a><span class="lineno"> 1222</span>        <span class="keyword">const</span> <a class="code hl_class" href="classstring__id.html">skill_id</a> skill_req( elem.first );</div>
-<div class="line"><a id="l01223" name="l01223"></a><span class="lineno"> 1223</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> required_level = elem.second;</div>
-<div class="line"><a id="l01224" name="l01224"></a><span class="lineno"> 1224</span> </div>
-<div class="line"><a id="l01225" name="l01225"></a><span class="lineno"> 1225</span>        <span class="keywordflow">if</span>( required_level &gt; who.<a class="code hl_function" href="classCharacter.html#afa95fe499ca6b55ab97f1b442a4c95c5">get_skill_level</a>( skill_req ) ) {</div>
-<div class="line"><a id="l01226" name="l01226"></a><span class="lineno"> 1226</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l01227" name="l01227"></a><span class="lineno"> 1227</span>        }</div>
-<div class="line"><a id="l01228" name="l01228"></a><span class="lineno"> 1228</span>    }</div>
-<div class="line"><a id="l01229" name="l01229"></a><span class="lineno"> 1229</span> </div>
-<div class="line"><a id="l01230" name="l01230"></a><span class="lineno"> 1230</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l01231" name="l01231"></a><span class="lineno"> 1231</span>}</div>
+<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l01260">1260</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01261" name="l01261"></a><span class="lineno"> 1261</span>{</div>
+<div class="line"><a id="l01262" name="l01262"></a><span class="lineno"> 1262</span>    <span class="keywordflow">if</span>( ma_id.<a class="code hl_function" href="classstring__id.html#a4796245d3cd6e0283670698a98d46ae9">obj</a>().<a class="code hl_variable" href="classmartialart.html#af2f0e8cbb960e7f93cd8cc20fef9f96e">autolearn_skills</a>.empty() ) {</div>
+<div class="line"><a id="l01263" name="l01263"></a><span class="lineno"> 1263</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l01264" name="l01264"></a><span class="lineno"> 1264</span>    }</div>
+<div class="line"><a id="l01265" name="l01265"></a><span class="lineno"> 1265</span> </div>
+<div class="line"><a id="l01266" name="l01266"></a><span class="lineno"> 1266</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> std::pair&lt;std::string, int&gt; &amp;elem : ma_id.<a class="code hl_function" href="classstring__id.html#a4796245d3cd6e0283670698a98d46ae9">obj</a>().<a class="code hl_variable" href="classmartialart.html#af2f0e8cbb960e7f93cd8cc20fef9f96e">autolearn_skills</a> ) {</div>
+<div class="line"><a id="l01267" name="l01267"></a><span class="lineno"> 1267</span>        <span class="keyword">const</span> <a class="code hl_class" href="classstring__id.html">skill_id</a> skill_req( elem.first );</div>
+<div class="line"><a id="l01268" name="l01268"></a><span class="lineno"> 1268</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> required_level = elem.second;</div>
+<div class="line"><a id="l01269" name="l01269"></a><span class="lineno"> 1269</span> </div>
+<div class="line"><a id="l01270" name="l01270"></a><span class="lineno"> 1270</span>        <span class="keywordflow">if</span>( required_level &gt; who.<a class="code hl_function" href="classCharacter.html#afa95fe499ca6b55ab97f1b442a4c95c5">get_skill_level</a>( skill_req ) ) {</div>
+<div class="line"><a id="l01271" name="l01271"></a><span class="lineno"> 1271</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l01272" name="l01272"></a><span class="lineno"> 1272</span>        }</div>
+<div class="line"><a id="l01273" name="l01273"></a><span class="lineno"> 1273</span>    }</div>
+<div class="line"><a id="l01274" name="l01274"></a><span class="lineno"> 1274</span> </div>
+<div class="line"><a id="l01275" name="l01275"></a><span class="lineno"> 1275</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l01276" name="l01276"></a><span class="lineno"> 1276</span>}</div>
 <div class="ttc" id="aclassCharacter_html_afa95fe499ca6b55ab97f1b442a4c95c5"><div class="ttname"><a href="classCharacter.html#afa95fe499ca6b55ab97f1b442a4c95c5">Character::get_skill_level</a></div><div class="ttdeci">int get_skill_level(const skill_id &amp;ident) const</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l03317">character.cpp:3317</a></div></div>
-<div class="ttc" id="aclassmartialart_html_af2f0e8cbb960e7f93cd8cc20fef9f96e"><div class="ttname"><a href="classmartialart.html#af2f0e8cbb960e7f93cd8cc20fef9f96e">martialart::autolearn_skills</a></div><div class="ttdeci">std::vector&lt; std::pair&lt; std::string, int &gt; &gt; autolearn_skills</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8h_source.html#l00246">martialarts.h:246</a></div></div>
+<div class="ttc" id="aclassmartialart_html_af2f0e8cbb960e7f93cd8cc20fef9f96e"><div class="ttname"><a href="classmartialart.html#af2f0e8cbb960e7f93cd8cc20fef9f96e">martialart::autolearn_skills</a></div><div class="ttdeci">std::vector&lt; std::pair&lt; std::string, int &gt; &gt; autolearn_skills</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8h_source.html#l00273">martialarts.h:273</a></div></div>
 <div class="ttc" id="aclassstring__id_html"><div class="ttname"><a href="classstring__id.html">string_id&lt; Skill &gt;</a></div></div>
 <div class="ttc" id="aclassstring__id_html_a4796245d3cd6e0283670698a98d46ae9"><div class="ttname"><a href="classstring__id.html#a4796245d3cd6e0283670698a98d46ae9">string_id::obj</a></div><div class="ttdeci">const T &amp; obj() const</div><div class="ttdoc">Returns the actual object this id refers to.</div><div class="ttdef"><b>Definition:</b> <a href="achievement_8cpp_source.html#l00058">achievement.cpp:58</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="martialarts_8h_source.html#l00246">martialart::autolearn_skills</a>, <a class="el" href="character_8cpp_source.html#l03317">Character::get_skill_level()</a>, and <a class="el" href="achievement_8cpp_source.html#l00058">string_id&lt; T &gt;::obj()</a>.</p>
+<p class="reference">References <a class="el" href="martialarts_8h_source.html#l00273">martialart::autolearn_skills</a>, <a class="el" href="character_8cpp_source.html#l03317">Character::get_skill_level()</a>, and <a class="el" href="achievement_8cpp_source.html#l00058">string_id&lt; T &gt;::obj()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="character__turn_8cpp_source.html#l00165">Character::process_turn()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="character__turn_8cpp_source.html#l00164">Character::process_turn()</a>.</p>
 
 </div>
 </div>
@@ -479,20 +484,20 @@ template&lt;typename Container &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l00341">341</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>{</div>
-<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>    <span class="keywordflow">for</span>( <span class="keyword">auto</span> &amp;r : req.<a class="code hl_variable" href="structma__requirements.html#ade3006278e614f8956f2c03fb53d98c1">req_buffs</a> ) {</div>
-<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>        <span class="keywordflow">if</span>( !r.is_valid() ) {</div>
-<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>            <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;ma buff %s of %s does not exist&quot;</span>, r.c_str(), display_text );</div>
-<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>        }</div>
-<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>    }</div>
-<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>}</div>
+<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l00377">377</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>{</div>
+<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>    <span class="keywordflow">for</span>( <span class="keyword">auto</span> &amp;r : req.<a class="code hl_variable" href="structma__requirements.html#ade3006278e614f8956f2c03fb53d98c1">req_buffs</a> ) {</div>
+<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>        <span class="keywordflow">if</span>( !r.is_valid() ) {</div>
+<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>            <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;ma buff %s of %s does not exist&quot;</span>, r.c_str(), display_text );</div>
+<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>        }</div>
+<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>    }</div>
+<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>}</div>
 <div class="ttc" id="adebug_8h_html_a87e509562277a7ada3a75330d00cb445"><div class="ttname"><a href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a></div><div class="ttdeci">#define debugmsg(...)</div><div class="ttdoc">Debug message of level DL::Error and class DC::DebugMsg, also includes the source file name and line,...</div><div class="ttdef"><b>Definition:</b> <a href="debug_8h_source.html#l00074">debug.h:74</a></div></div>
-<div class="ttc" id="astructma__requirements_html_ade3006278e614f8956f2c03fb53d98c1"><div class="ttname"><a href="structma__requirements.html#ade3006278e614f8956f2c03fb53d98c1">ma_requirements::req_buffs</a></div><div class="ttdeci">std::set&lt; mabuff_id &gt; req_buffs</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8h_source.html#l00044">martialarts.h:44</a></div></div>
+<div class="ttc" id="astructma__requirements_html_ade3006278e614f8956f2c03fb53d98c1"><div class="ttname"><a href="structma__requirements.html#ade3006278e614f8956f2c03fb53d98c1">ma_requirements::req_buffs</a></div><div class="ttdeci">std::set&lt; mabuff_id &gt; req_buffs</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8h_source.html#l00071">martialarts.h:71</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="debug_8h_source.html#l00074">debugmsg</a>, and <a class="el" href="martialarts_8h_source.html#l00044">ma_requirements::req_buffs</a>.</p>
+<p class="reference">References <a class="el" href="debug_8h_source.html#l00074">debugmsg</a>, and <a class="el" href="martialarts_8h_source.html#l00071">ma_requirements::req_buffs</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="martialarts_8cpp_source.html#l00350">check_martialarts()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="martialarts_8cpp_source.html#l00386">check_martialarts()</a>.</p>
 
 </div>
 </div>
@@ -511,39 +516,45 @@ template&lt;typename Container &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l00350">350</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>{</div>
-<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <span class="keyword">auto</span> &amp;ma : <a class="code hl_variable" href="namespaceanonymous__namespace_02martialarts_8cpp_03.html#adf8fd9cfd1bea36da26edfc99075b372">martialarts</a>.get_all() ) {</div>
-<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>        <span class="keywordflow">for</span>( <span class="keyword">auto</span> technique = ma.techniques.cbegin();</div>
-<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>             technique != ma.techniques.cend(); ++technique ) {</div>
-<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>            <span class="keywordflow">if</span>( !technique-&gt;is_valid() ) {</div>
-<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>                <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;Technique with id %s in style %s doesn&#39;t exist.&quot;</span>,</div>
-<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>                          technique-&gt;c_str(), ma.name );</div>
-<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>            }</div>
-<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>        }</div>
-<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>        <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_class" href="classstring__id.html">itype_id</a> &amp;weapon : ma.weapons ) {</div>
-<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>            <span class="keywordflow">if</span>( !weapon.<a class="code hl_function" href="classstring__id.html#a8ca0e76fa665125f1e50bd1ed8dbd213">is_valid</a>() ) {</div>
-<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>                <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;Weapon %s in style %s doesn&#39;t exist.&quot;</span>, weapon, ma.name );</div>
-<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>            }</div>
-<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>        }</div>
-<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>    }</div>
-<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <span class="keyword">auto</span> &amp;t : <a class="code hl_variable" href="namespaceanonymous__namespace_02martialarts_8cpp_03.html#aae3f3de3b7baac697dfacb78ad4a80ea">ma_techniques</a>.get_all() ) {</div>
-<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>        <a class="code hl_function" href="martialarts_8cpp.html#a614e20af50995a2d1c6e9710b61c0573">::check</a>( t.reqs, <a class="code hl_function" href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a>( <span class="stringliteral">&quot;technique %s&quot;</span>, t.id.c_str() ) );</div>
-<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>    }</div>
-<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <span class="keyword">auto</span> &amp;<a class="code hl_variable" href="magic_8cpp.html#aa93a189fb7bbbf87be54bcc7bd11bb6f">b</a> : <a class="code hl_variable" href="namespaceanonymous__namespace_02martialarts_8cpp_03.html#ad4fb4a84fae57a9c40c693ca2701b45c">ma_buffs</a>.get_all() ) {</div>
-<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>        <a class="code hl_function" href="martialarts_8cpp.html#a614e20af50995a2d1c6e9710b61c0573">::check</a>( <a class="code hl_variable" href="magic_8cpp.html#aa93a189fb7bbbf87be54bcc7bd11bb6f">b</a>.reqs, <a class="code hl_function" href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a>( <span class="stringliteral">&quot;buff %s&quot;</span>, <a class="code hl_variable" href="magic_8cpp.html#aa93a189fb7bbbf87be54bcc7bd11bb6f">b</a>.id.c_str() ) );</div>
-<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>    }</div>
-<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>}</div>
+<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l00386">386</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>{</div>
+<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <span class="keyword">auto</span> &amp;ma : <a class="code hl_variable" href="namespaceanonymous__namespace_02martialarts_8cpp_03.html#adf8fd9cfd1bea36da26edfc99075b372">martialarts</a>.get_all() ) {</div>
+<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>        <span class="keywordflow">for</span>( <span class="keyword">auto</span> technique = ma.techniques.cbegin();</div>
+<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>             technique != ma.techniques.cend(); ++technique ) {</div>
+<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>            <span class="keywordflow">if</span>( !technique-&gt;is_valid() ) {</div>
+<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>                <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;Technique with id %s in style %s doesn&#39;t exist.&quot;</span>,</div>
+<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>                          technique-&gt;c_str(), ma.name );</div>
+<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>            }</div>
+<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>        }</div>
+<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>        <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_class" href="classstring__id.html">itype_id</a> &amp;weapon : ma.weapons ) {</div>
+<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>            <span class="keywordflow">if</span>( !weapon.<a class="code hl_function" href="classstring__id.html#a8ca0e76fa665125f1e50bd1ed8dbd213">is_valid</a>() ) {</div>
+<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>                <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;Weapon %s in style %s doesn&#39;t exist.&quot;</span>, weapon, ma.name );</div>
+<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>            }</div>
+<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>        }</div>
+<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>        <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_class" href="classstring__id.html">weapon_category_id</a> &amp;weap_cat : ma.weapon_category ) {</div>
+<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span>            <span class="keywordflow">if</span>( !weap_cat.<a class="code hl_function" href="classstring__id.html#a8ca0e76fa665125f1e50bd1ed8dbd213">is_valid</a>() ) {</div>
+<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span>                <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;Weapon category %s in style %s is invalid.&quot;</span>, weap_cat.<a class="code hl_function" href="classstring__id.html#a19aea01aa4a1f53aac09acc978f67cf8">c_str</a>(), ma.name );</div>
+<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span>            }</div>
+<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>        }</div>
+<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span>    }</div>
+<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <span class="keyword">auto</span> &amp;t : <a class="code hl_variable" href="namespaceanonymous__namespace_02martialarts_8cpp_03.html#aae3f3de3b7baac697dfacb78ad4a80ea">ma_techniques</a>.get_all() ) {</div>
+<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>        <a class="code hl_function" href="martialarts_8cpp.html#a614e20af50995a2d1c6e9710b61c0573">::check</a>( t.reqs, <a class="code hl_function" href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a>( <span class="stringliteral">&quot;technique %s&quot;</span>, t.id.c_str() ) );</div>
+<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>    }</div>
+<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <span class="keyword">auto</span> &amp;<a class="code hl_variable" href="magic_8cpp.html#aa93a189fb7bbbf87be54bcc7bd11bb6f">b</a> : <a class="code hl_variable" href="namespaceanonymous__namespace_02martialarts_8cpp_03.html#ad4fb4a84fae57a9c40c693ca2701b45c">ma_buffs</a>.get_all() ) {</div>
+<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>        <a class="code hl_function" href="martialarts_8cpp.html#a614e20af50995a2d1c6e9710b61c0573">::check</a>( <a class="code hl_variable" href="magic_8cpp.html#aa93a189fb7bbbf87be54bcc7bd11bb6f">b</a>.reqs, <a class="code hl_function" href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a>( <span class="stringliteral">&quot;buff %s&quot;</span>, <a class="code hl_variable" href="magic_8cpp.html#aa93a189fb7bbbf87be54bcc7bd11bb6f">b</a>.id.c_str() ) );</div>
+<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>    }</div>
+<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>}</div>
+<div class="ttc" id="aclassstring__id_html_a19aea01aa4a1f53aac09acc978f67cf8"><div class="ttname"><a href="classstring__id.html#a19aea01aa4a1f53aac09acc978f67cf8">string_id::c_str</a></div><div class="ttdeci">const char * c_str() const</div><div class="ttdoc">Interface to the plain C-string of the id.</div><div class="ttdef"><b>Definition:</b> <a href="string__id_8h_source.html#l00247">string_id.h:247</a></div></div>
 <div class="ttc" id="aclassstring__id_html_a8ca0e76fa665125f1e50bd1ed8dbd213"><div class="ttname"><a href="classstring__id.html#a8ca0e76fa665125f1e50bd1ed8dbd213">string_id::is_valid</a></div><div class="ttdeci">bool is_valid() const</div><div class="ttdoc">Returns whether this id is valid, that means whether it refers to an existing object.</div><div class="ttdef"><b>Definition:</b> <a href="achievement_8cpp_source.html#l00065">achievement.cpp:65</a></div></div>
 <div class="ttc" id="amagic_8cpp_html_aa93a189fb7bbbf87be54bcc7bd11bb6f"><div class="ttname"><a href="magic_8cpp.html#aa93a189fb7bbbf87be54bcc7bd11bb6f">b</a></div><div class="ttdeci">constexpr double b</div><div class="ttdef"><b>Definition:</b> <a href="magic_8cpp_source.html#l01031">magic.cpp:1031</a></div></div>
-<div class="ttc" id="amartialarts_8cpp_html_a614e20af50995a2d1c6e9710b61c0573"><div class="ttname"><a href="martialarts_8cpp.html#a614e20af50995a2d1c6e9710b61c0573">check</a></div><div class="ttdeci">static void check(const ma_requirements &amp;req, const std::string &amp;display_text)</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8cpp_source.html#l00341">martialarts.cpp:341</a></div></div>
+<div class="ttc" id="amartialarts_8cpp_html_a614e20af50995a2d1c6e9710b61c0573"><div class="ttname"><a href="martialarts_8cpp.html#a614e20af50995a2d1c6e9710b61c0573">check</a></div><div class="ttdeci">static void check(const ma_requirements &amp;req, const std::string &amp;display_text)</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8cpp_source.html#l00377">martialarts.cpp:377</a></div></div>
 <div class="ttc" id="anamespaceanonymous__namespace_02martialarts_8cpp_03_html_aae3f3de3b7baac697dfacb78ad4a80ea"><div class="ttname"><a href="namespaceanonymous__namespace_02martialarts_8cpp_03.html#aae3f3de3b7baac697dfacb78ad4a80ea">anonymous_namespace{martialarts.cpp}::ma_techniques</a></div><div class="ttdeci">generic_factory&lt; ma_technique &gt; ma_techniques(&quot;martial art technique&quot;)</div></div>
 <div class="ttc" id="anamespaceanonymous__namespace_02martialarts_8cpp_03_html_ad4fb4a84fae57a9c40c693ca2701b45c"><div class="ttname"><a href="namespaceanonymous__namespace_02martialarts_8cpp_03.html#ad4fb4a84fae57a9c40c693ca2701b45c">anonymous_namespace{martialarts.cpp}::ma_buffs</a></div><div class="ttdeci">generic_factory&lt; ma_buff &gt; ma_buffs(&quot;martial art buff&quot;)</div></div>
 <div class="ttc" id="astring__formatter_8h_html_a8964099387da2f95396c67566bafce3d"><div class="ttname"><a href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a></div><div class="ttdeci">std::string string_format(std::string_view format, Args &amp;&amp;...args)</div><div class="ttdoc">Simple wrapper over string_formatter::parse.</div><div class="ttdef"><b>Definition:</b> <a href="string__formatter_8h_source.html#l00431">string_formatter.h:431</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="magic_8cpp_source.html#l01031">b</a>, <a class="el" href="martialarts_8cpp_source.html#l00341">check()</a>, <a class="el" href="debug_8h_source.html#l00074">debugmsg</a>, <a class="el" href="achievement_8cpp_source.html#l00065">string_id&lt; T &gt;::is_valid()</a>, <a class="el" href="namespaceanonymous__namespace_02martialarts_8cpp_03.html#ad4fb4a84fae57a9c40c693ca2701b45c">anonymous_namespace{martialarts.cpp}::ma_buffs</a>, <a class="el" href="namespaceanonymous__namespace_02martialarts_8cpp_03.html#aae3f3de3b7baac697dfacb78ad4a80ea">anonymous_namespace{martialarts.cpp}::ma_techniques</a>, <a class="el" href="namespaceanonymous__namespace_02martialarts_8cpp_03.html#adf8fd9cfd1bea36da26edfc99075b372">anonymous_namespace{martialarts.cpp}::martialarts</a>, and <a class="el" href="string__formatter_8h_source.html#l00431">string_format()</a>.</p>
+<p class="reference">References <a class="el" href="magic_8cpp_source.html#l01031">b</a>, <a class="el" href="string__id_8h_source.html#l00247">string_id&lt; T &gt;::c_str()</a>, <a class="el" href="martialarts_8cpp_source.html#l00377">check()</a>, <a class="el" href="debug_8h_source.html#l00074">debugmsg</a>, <a class="el" href="achievement_8cpp_source.html#l00065">string_id&lt; T &gt;::is_valid()</a>, <a class="el" href="namespaceanonymous__namespace_02martialarts_8cpp_03.html#ad4fb4a84fae57a9c40c693ca2701b45c">anonymous_namespace{martialarts.cpp}::ma_buffs</a>, <a class="el" href="namespaceanonymous__namespace_02martialarts_8cpp_03.html#aae3f3de3b7baac697dfacb78ad4a80ea">anonymous_namespace{martialarts.cpp}::ma_techniques</a>, <a class="el" href="namespaceanonymous__namespace_02martialarts_8cpp_03.html#adf8fd9cfd1bea36da26edfc99075b372">anonymous_namespace{martialarts.cpp}::martialarts</a>, and <a class="el" href="string__formatter_8h_source.html#l00431">string_format()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8cpp_source.html#l00721">DynamicDataLoader::check_consistency()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8cpp_source.html#l00723">DynamicDataLoader::check_consistency()</a>.</p>
 
 </div>
 </div>
@@ -562,16 +573,16 @@ template&lt;typename Container &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l00431">431</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span>{</div>
-<div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span>    <a class="code hl_variable" href="namespaceanonymous__namespace_02martialarts_8cpp_03.html#adf8fd9cfd1bea36da26edfc99075b372">martialarts</a>.reset();</div>
-<div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span>    <a class="code hl_variable" href="namespaceanonymous__namespace_02martialarts_8cpp_03.html#ad4fb4a84fae57a9c40c693ca2701b45c">ma_buffs</a>.reset();</div>
-<div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span>    <a class="code hl_variable" href="namespaceanonymous__namespace_02martialarts_8cpp_03.html#aae3f3de3b7baac697dfacb78ad4a80ea">ma_techniques</a>.reset();</div>
-<div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span>}</div>
+<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l00472">472</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00473" name="l00473"></a><span class="lineno">  473</span>{</div>
+<div class="line"><a id="l00474" name="l00474"></a><span class="lineno">  474</span>    <a class="code hl_variable" href="namespaceanonymous__namespace_02martialarts_8cpp_03.html#adf8fd9cfd1bea36da26edfc99075b372">martialarts</a>.reset();</div>
+<div class="line"><a id="l00475" name="l00475"></a><span class="lineno">  475</span>    <a class="code hl_variable" href="namespaceanonymous__namespace_02martialarts_8cpp_03.html#ad4fb4a84fae57a9c40c693ca2701b45c">ma_buffs</a>.reset();</div>
+<div class="line"><a id="l00476" name="l00476"></a><span class="lineno">  476</span>    <a class="code hl_variable" href="namespaceanonymous__namespace_02martialarts_8cpp_03.html#aae3f3de3b7baac697dfacb78ad4a80ea">ma_techniques</a>.reset();</div>
+<div class="line"><a id="l00477" name="l00477"></a><span class="lineno">  477</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="namespaceanonymous__namespace_02martialarts_8cpp_03.html#ad4fb4a84fae57a9c40c693ca2701b45c">anonymous_namespace{martialarts.cpp}::ma_buffs</a>, <a class="el" href="namespaceanonymous__namespace_02martialarts_8cpp_03.html#aae3f3de3b7baac697dfacb78ad4a80ea">anonymous_namespace{martialarts.cpp}::ma_techniques</a>, and <a class="el" href="namespaceanonymous__namespace_02martialarts_8cpp_03.html#adf8fd9cfd1bea36da26edfc99075b372">anonymous_namespace{martialarts.cpp}::martialarts</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8cpp_source.html#l00536">DynamicDataLoader::unload_data()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8cpp_source.html#l00537">DynamicDataLoader::unload_data()</a>.</p>
 
 </div>
 </div>
@@ -590,23 +601,23 @@ template&lt;typename Container &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l00402">402</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span>{</div>
-<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span>    <span class="comment">// This adds an effect type for each ma_buff, so we can later refer to it and don&#39;t need a</span></div>
-<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>    <span class="comment">// redundant definition of those effects in json.</span></div>
-<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <span class="keyword">auto</span> &amp;buff : <a class="code hl_variable" href="namespaceanonymous__namespace_02martialarts_8cpp_03.html#ad4fb4a84fae57a9c40c693ca2701b45c">ma_buffs</a>.get_all() ) {</div>
-<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span>        <span class="keyword">const</span> <a class="code hl_class" href="classma__buff__effect__type.html">ma_buff_effect_type</a> new_eff( buff );</div>
-<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>        <span class="comment">// Note the slicing here: new_eff is converted to a plain effect_type, but this doesn&#39;t</span></div>
-<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>        <span class="comment">// bother us because ma_buff_effect_type does not have any members that can be sliced.</span></div>
-<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>        <a class="code hl_function" href="classeffect__type.html#ab6f4c339219e57e51f3be6ff9f0dfece">effect_type::register_ma_buff_effect</a>( new_eff );</div>
-<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>    }</div>
-<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>}</div>
+<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l00443">443</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00444" name="l00444"></a><span class="lineno">  444</span>{</div>
+<div class="line"><a id="l00445" name="l00445"></a><span class="lineno">  445</span>    <span class="comment">// This adds an effect type for each ma_buff, so we can later refer to it and don&#39;t need a</span></div>
+<div class="line"><a id="l00446" name="l00446"></a><span class="lineno">  446</span>    <span class="comment">// redundant definition of those effects in json.</span></div>
+<div class="line"><a id="l00447" name="l00447"></a><span class="lineno">  447</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <span class="keyword">auto</span> &amp;buff : <a class="code hl_variable" href="namespaceanonymous__namespace_02martialarts_8cpp_03.html#ad4fb4a84fae57a9c40c693ca2701b45c">ma_buffs</a>.get_all() ) {</div>
+<div class="line"><a id="l00448" name="l00448"></a><span class="lineno">  448</span>        <span class="keyword">const</span> <a class="code hl_class" href="classma__buff__effect__type.html">ma_buff_effect_type</a> new_eff( buff );</div>
+<div class="line"><a id="l00449" name="l00449"></a><span class="lineno">  449</span>        <span class="comment">// Note the slicing here: new_eff is converted to a plain effect_type, but this doesn&#39;t</span></div>
+<div class="line"><a id="l00450" name="l00450"></a><span class="lineno">  450</span>        <span class="comment">// bother us because ma_buff_effect_type does not have any members that can be sliced.</span></div>
+<div class="line"><a id="l00451" name="l00451"></a><span class="lineno">  451</span>        <a class="code hl_function" href="classeffect__type.html#ab6f4c339219e57e51f3be6ff9f0dfece">effect_type::register_ma_buff_effect</a>( new_eff );</div>
+<div class="line"><a id="l00452" name="l00452"></a><span class="lineno">  452</span>    }</div>
+<div class="line"><a id="l00453" name="l00453"></a><span class="lineno">  453</span>}</div>
 <div class="ttc" id="aclasseffect__type_html_ab6f4c339219e57e51f3be6ff9f0dfece"><div class="ttname"><a href="classeffect__type.html#ab6f4c339219e57e51f3be6ff9f0dfece">effect_type::register_ma_buff_effect</a></div><div class="ttdeci">static void register_ma_buff_effect(const effect_type &amp;eff)</div><div class="ttdoc">Registers the effect in the global map.</div><div class="ttdef"><b>Definition:</b> <a href="effect_8cpp_source.html#l01420">effect.cpp:1420</a></div></div>
-<div class="ttc" id="aclassma__buff__effect__type_html"><div class="ttname"><a href="classma__buff__effect__type.html">ma_buff_effect_type</a></div><div class="ttdoc">This is a wrapper class to get access to the protected members of effect_type, it creates the effect_...</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8cpp_source.html#l00380">martialarts.cpp:381</a></div></div>
+<div class="ttc" id="aclassma__buff__effect__type_html"><div class="ttname"><a href="classma__buff__effect__type.html">ma_buff_effect_type</a></div><div class="ttdoc">This is a wrapper class to get access to the protected members of effect_type, it creates the effect_...</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8cpp_source.html#l00421">martialarts.cpp:422</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="namespaceanonymous__namespace_02martialarts_8cpp_03.html#ad4fb4a84fae57a9c40c693ca2701b45c">anonymous_namespace{martialarts.cpp}::ma_buffs</a>, and <a class="el" href="effect_8cpp_source.html#l01420">effect_type::register_ma_buff_effect()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8cpp_source.html#l00633">DynamicDataLoader::finalize_loaded_data()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="init_8cpp_source.html#l00635">DynamicDataLoader::finalize_loaded_data()</a>.</p>
 
 </div>
 </div>
@@ -634,7 +645,7 @@ template&lt;typename Container &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="martialarts_8cpp_source.html#l00438">ma_requirements::is_valid_character()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="martialarts_8cpp_source.html#l00479">ma_requirements::is_valid_character()</a>.</p>
 
 </div>
 </div>
@@ -664,10 +675,10 @@ template&lt;typename Container &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l00243">243</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>{</div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>    <a class="code hl_variable" href="namespaceanonymous__namespace_02martialarts_8cpp_03.html#adf8fd9cfd1bea36da26edfc99075b372">martialarts</a>.load( jo, src );</div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>}</div>
+<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l00278">278</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>{</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>    <a class="code hl_variable" href="namespaceanonymous__namespace_02martialarts_8cpp_03.html#adf8fd9cfd1bea36da26edfc99075b372">martialarts</a>.load( jo, src );</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="namespaceanonymous__namespace_02martialarts_8cpp_03.html#adf8fd9cfd1bea36da26edfc99075b372">anonymous_namespace{martialarts.cpp}::martialarts</a>.</p>
 
@@ -701,10 +712,10 @@ template&lt;typename Container &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l00070">70</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>{</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <a class="code hl_variable" href="namespaceanonymous__namespace_02martialarts_8cpp_03.html#aae3f3de3b7baac697dfacb78ad4a80ea">ma_techniques</a>.load( jo, src );</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>}</div>
+<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l00105">105</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>{</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <a class="code hl_variable" href="namespaceanonymous__namespace_02martialarts_8cpp_03.html#aae3f3de3b7baac697dfacb78ad4a80ea">ma_techniques</a>.load( jo, src );</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="namespaceanonymous__namespace_02martialarts_8cpp_03.html#aae3f3de3b7baac697dfacb78ad4a80ea">anonymous_namespace{martialarts.cpp}::ma_techniques</a>.</p>
 
@@ -728,25 +739,25 @@ template&lt;typename Container &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l00055">55</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>{</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordflow">if</span>( !<a class="code hl_enumvalue" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a>.can_use( <span class="stringliteral">&quot;MA_MANUAL&quot;</span> ) ) {</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <span class="keywordflow">return</span> {};</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    }</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordflow">if</span>( !<a class="code hl_enumvalue" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a>.book || <a class="code hl_enumvalue" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a>.book-&gt;martial_art.is_null() ) {</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;Item &#39;%s&#39; which claims to teach a martial art is missing martial_art&quot;</span>,</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                  <a class="code hl_enumvalue" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a>.get_id().str() );</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <span class="keywordflow">return</span> {};</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    }</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a>.book-&gt;martial_art;</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>}</div>
-<div class="ttc" id="aenums_8h_html_ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab"><div class="ttname"><a href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40af3725cafa78eb43cc647b405bb6ecfab">type</a></div><div class="ttdeci">@ type</div><div class="ttdef"><b>Definition:</b> <a href="enums_8h_source.html#l00075">enums.h:75</a></div></div>
+<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l00090">90</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>{</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keywordflow">if</span>( !<a class="code hl_enumeration" href="namespacedetail.html#ad46d232fb6116de4dac0c43dbde8e7a9">type</a>.can_use( <span class="stringliteral">&quot;MA_MANUAL&quot;</span> ) ) {</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        <span class="keywordflow">return</span> {};</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    }</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keywordflow">if</span>( !<a class="code hl_enumeration" href="namespacedetail.html#ad46d232fb6116de4dac0c43dbde8e7a9">type</a>.book || <a class="code hl_enumeration" href="namespacedetail.html#ad46d232fb6116de4dac0c43dbde8e7a9">type</a>.book-&gt;martial_art.is_null() ) {</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;Item &#39;%s&#39; which claims to teach a martial art is missing martial_art&quot;</span>,</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                  <a class="code hl_enumeration" href="namespacedetail.html#ad46d232fb6116de4dac0c43dbde8e7a9">type</a>.get_id().str() );</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        <span class="keywordflow">return</span> {};</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    }</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="keywordflow">return</span> <a class="code hl_enumeration" href="namespacedetail.html#ad46d232fb6116de4dac0c43dbde8e7a9">type</a>.book-&gt;martial_art;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>}</div>
+<div class="ttc" id="anamespacedetail_html_ad46d232fb6116de4dac0c43dbde8e7a9"><div class="ttname"><a href="namespacedetail.html#ad46d232fb6116de4dac0c43dbde8e7a9">detail::type</a></div><div class="ttdeci">type</div><div class="ttdef"><b>Definition:</b> <a href="fmtlib__core_8h_source.html#l01087">fmtlib_core.h:1087</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="debug_8h_source.html#l00074">debugmsg</a>, and <a class="el" href="enums_8h_source.html#l00075">type</a>.</p>
+<p class="reference">References <a class="el" href="debug_8h_source.html#l00074">debugmsg</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="item_8cpp_source.html#l02885">item::book_info()</a>, <a class="el" href="item_8cpp_source.html#l04110">item::color_in_inventory()</a>, <a class="el" href="avatar_8cpp_source.html#l00742">avatar::do_read()</a>, <a class="el" href="iuse_8cpp_source.html#l02345">iuse::ma_manual()</a>, <a class="el" href="avatar_8cpp_source.html#l00387">avatar::read()</a>, and <a class="el" href="avatar_8cpp_source.html#l00677">skim_book_msg()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="item_8cpp_source.html#l02897">item::book_info()</a>, <a class="el" href="item_8cpp_source.html#l04132">item::color_in_inventory()</a>, <a class="el" href="avatar_8cpp_source.html#l00742">avatar::do_read()</a>, <a class="el" href="iuse_8cpp_source.html#l02349">iuse::ma_manual()</a>, <a class="el" href="avatar_8cpp_source.html#l00387">avatar::read()</a>, and <a class="el" href="avatar_8cpp_source.html#l00677">skim_book_msg()</a>.</p>
 
 </div>
 </div>
@@ -766,28 +777,28 @@ template&lt;typename Container &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l00414">414</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>{</div>
-<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>    std::string diff;</div>
-<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>    <span class="keywordflow">if</span>( mstyle-&gt;<a class="code hl_variable" href="classmartialart.html#a71ee6f7ce4f0e05398fc234174670485">learn_difficulty</a> &lt;= 2 ) {</div>
-<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>        diff = <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;easy&quot;</span> );</div>
-<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( mstyle-&gt;<a class="code hl_variable" href="classmartialart.html#a71ee6f7ce4f0e05398fc234174670485">learn_difficulty</a> &lt;= 4 ) {</div>
-<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>        diff = <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;moderately hard&quot;</span> );</div>
-<div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( mstyle-&gt;<a class="code hl_variable" href="classmartialart.html#a71ee6f7ce4f0e05398fc234174670485">learn_difficulty</a> &lt;= 6 ) {</div>
-<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span>        diff = <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;hard&quot;</span> );</div>
-<div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( mstyle-&gt;<a class="code hl_variable" href="classmartialart.html#a71ee6f7ce4f0e05398fc234174670485">learn_difficulty</a> &lt;= 8 ) {</div>
-<div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span>        diff = <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;very hard&quot;</span> );</div>
-<div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span>        diff = <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;extremely hard&quot;</span> );</div>
-<div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span>    }</div>
-<div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span>    <span class="keywordflow">return</span> diff;</div>
-<div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span>}</div>
-<div class="ttc" id="aclassmartialart_html_a71ee6f7ce4f0e05398fc234174670485"><div class="ttname"><a href="classmartialart.html#a71ee6f7ce4f0e05398fc234174670485">martialart::learn_difficulty</a></div><div class="ttdeci">int learn_difficulty</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8h_source.html#l00248">martialarts.h:248</a></div></div>
+<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l00455">455</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00456" name="l00456"></a><span class="lineno">  456</span>{</div>
+<div class="line"><a id="l00457" name="l00457"></a><span class="lineno">  457</span>    std::string diff;</div>
+<div class="line"><a id="l00458" name="l00458"></a><span class="lineno">  458</span>    <span class="keywordflow">if</span>( mstyle-&gt;<a class="code hl_variable" href="classmartialart.html#a71ee6f7ce4f0e05398fc234174670485">learn_difficulty</a> &lt;= 2 ) {</div>
+<div class="line"><a id="l00459" name="l00459"></a><span class="lineno">  459</span>        diff = <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;easy&quot;</span> );</div>
+<div class="line"><a id="l00460" name="l00460"></a><span class="lineno">  460</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( mstyle-&gt;<a class="code hl_variable" href="classmartialart.html#a71ee6f7ce4f0e05398fc234174670485">learn_difficulty</a> &lt;= 4 ) {</div>
+<div class="line"><a id="l00461" name="l00461"></a><span class="lineno">  461</span>        diff = <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;moderately hard&quot;</span> );</div>
+<div class="line"><a id="l00462" name="l00462"></a><span class="lineno">  462</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( mstyle-&gt;<a class="code hl_variable" href="classmartialart.html#a71ee6f7ce4f0e05398fc234174670485">learn_difficulty</a> &lt;= 6 ) {</div>
+<div class="line"><a id="l00463" name="l00463"></a><span class="lineno">  463</span>        diff = <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;hard&quot;</span> );</div>
+<div class="line"><a id="l00464" name="l00464"></a><span class="lineno">  464</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( mstyle-&gt;<a class="code hl_variable" href="classmartialart.html#a71ee6f7ce4f0e05398fc234174670485">learn_difficulty</a> &lt;= 8 ) {</div>
+<div class="line"><a id="l00465" name="l00465"></a><span class="lineno">  465</span>        diff = <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;very hard&quot;</span> );</div>
+<div class="line"><a id="l00466" name="l00466"></a><span class="lineno">  466</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00467" name="l00467"></a><span class="lineno">  467</span>        diff = <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;extremely hard&quot;</span> );</div>
+<div class="line"><a id="l00468" name="l00468"></a><span class="lineno">  468</span>    }</div>
+<div class="line"><a id="l00469" name="l00469"></a><span class="lineno">  469</span>    <span class="keywordflow">return</span> diff;</div>
+<div class="line"><a id="l00470" name="l00470"></a><span class="lineno">  470</span>}</div>
+<div class="ttc" id="aclassmartialart_html_a71ee6f7ce4f0e05398fc234174670485"><div class="ttname"><a href="classmartialart.html#a71ee6f7ce4f0e05398fc234174670485">martialart::learn_difficulty</a></div><div class="ttdeci">int learn_difficulty</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8h_source.html#l00275">martialarts.h:275</a></div></div>
 <div class="ttc" id="atranslations_8h_html_aa829053017e23ef22d44dccecba63a34"><div class="ttname"><a href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a></div><div class="ttdeci">#define _(msg)</div><div class="ttdef"><b>Definition:</b> <a href="translations_8h_source.html#l00116">translations.h:116</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, and <a class="el" href="martialarts_8h_source.html#l00248">martialart::learn_difficulty</a>.</p>
+<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, and <a class="el" href="martialarts_8h_source.html#l00275">martialart::learn_difficulty</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="item_8cpp_source.html#l02885">item::book_info()</a>, and <a class="el" href="avatar_8cpp_source.html#l00677">skim_book_msg()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="item_8cpp_source.html#l02897">item::book_info()</a>, and <a class="el" href="avatar_8cpp_source.html#l00677">skim_book_msg()</a>.</p>
 
 </div>
 </div>
@@ -827,27 +838,27 @@ template&lt;typename C , typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l01066">1066</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01067" name="l01067"></a><span class="lineno"> 1067</span>{</div>
-<div class="line"><a id="l01068" name="l01068"></a><span class="lineno"> 1068</span>    <span class="keywordflow">for</span>( <span class="keyword">auto</span> &amp;elem : container ) {</div>
-<div class="line"><a id="l01069" name="l01069"></a><span class="lineno"> 1069</span>        <span class="keywordflow">for</span>( <span class="keyword">auto</span> &amp;eff : elem.second ) {</div>
-<div class="line"><a id="l01070" name="l01070"></a><span class="lineno"> 1070</span>            <span class="keyword">const</span> <a class="code hl_class" href="classeffect.html">effect</a> &amp;e = eff.second;</div>
-<div class="line"><a id="l01071" name="l01071"></a><span class="lineno"> 1071</span>            <span class="keywordflow">if</span>( e.<a class="code hl_function" href="classeffect.html#ac81ceea6d6ac76d8f11449e5da401021">is_removed</a>() ) {</div>
-<div class="line"><a id="l01072" name="l01072"></a><span class="lineno"> 1072</span>                <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l01073" name="l01073"></a><span class="lineno"> 1073</span>            }</div>
-<div class="line"><a id="l01074" name="l01074"></a><span class="lineno"> 1074</span>            <span class="keywordflow">if</span>( <span class="keyword">auto</span> buff = <a class="code hl_function" href="classma__buff.html#ad7bbaede3e8d56ef0f3f39a89d2b55c3">ma_buff::from_effect</a>( e ) ) {</div>
-<div class="line"><a id="l01075" name="l01075"></a><span class="lineno"> 1075</span>                <span class="keywordflow">if</span>( f( *buff, e ) ) {</div>
-<div class="line"><a id="l01076" name="l01076"></a><span class="lineno"> 1076</span>                    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l01077" name="l01077"></a><span class="lineno"> 1077</span>                }</div>
-<div class="line"><a id="l01078" name="l01078"></a><span class="lineno"> 1078</span>            }</div>
-<div class="line"><a id="l01079" name="l01079"></a><span class="lineno"> 1079</span>        }</div>
-<div class="line"><a id="l01080" name="l01080"></a><span class="lineno"> 1080</span>    }</div>
-<div class="line"><a id="l01081" name="l01081"></a><span class="lineno"> 1081</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l01082" name="l01082"></a><span class="lineno"> 1082</span>}</div>
+<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l01111">1111</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01112" name="l01112"></a><span class="lineno"> 1112</span>{</div>
+<div class="line"><a id="l01113" name="l01113"></a><span class="lineno"> 1113</span>    <span class="keywordflow">for</span>( <span class="keyword">auto</span> &amp;elem : container ) {</div>
+<div class="line"><a id="l01114" name="l01114"></a><span class="lineno"> 1114</span>        <span class="keywordflow">for</span>( <span class="keyword">auto</span> &amp;eff : elem.second ) {</div>
+<div class="line"><a id="l01115" name="l01115"></a><span class="lineno"> 1115</span>            <span class="keyword">const</span> <a class="code hl_class" href="classeffect.html">effect</a> &amp;e = eff.second;</div>
+<div class="line"><a id="l01116" name="l01116"></a><span class="lineno"> 1116</span>            <span class="keywordflow">if</span>( e.<a class="code hl_function" href="classeffect.html#ac81ceea6d6ac76d8f11449e5da401021">is_removed</a>() ) {</div>
+<div class="line"><a id="l01117" name="l01117"></a><span class="lineno"> 1117</span>                <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l01118" name="l01118"></a><span class="lineno"> 1118</span>            }</div>
+<div class="line"><a id="l01119" name="l01119"></a><span class="lineno"> 1119</span>            <span class="keywordflow">if</span>( <span class="keyword">auto</span> buff = <a class="code hl_function" href="classma__buff.html#ad7bbaede3e8d56ef0f3f39a89d2b55c3">ma_buff::from_effect</a>( e ) ) {</div>
+<div class="line"><a id="l01120" name="l01120"></a><span class="lineno"> 1120</span>                <span class="keywordflow">if</span>( f( *buff, e ) ) {</div>
+<div class="line"><a id="l01121" name="l01121"></a><span class="lineno"> 1121</span>                    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l01122" name="l01122"></a><span class="lineno"> 1122</span>                }</div>
+<div class="line"><a id="l01123" name="l01123"></a><span class="lineno"> 1123</span>            }</div>
+<div class="line"><a id="l01124" name="l01124"></a><span class="lineno"> 1124</span>        }</div>
+<div class="line"><a id="l01125" name="l01125"></a><span class="lineno"> 1125</span>    }</div>
+<div class="line"><a id="l01126" name="l01126"></a><span class="lineno"> 1126</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l01127" name="l01127"></a><span class="lineno"> 1127</span>}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="martialarts_8cpp_source.html#l00624">ma_buff::from_effect()</a>, and <a class="el" href="effect_8h_source.html#l00246">effect::is_removed()</a>.</p>
+<p class="reference">References <a class="el" href="martialarts_8cpp_source.html#l00665">ma_buff::from_effect()</a>, and <a class="el" href="effect_8h_source.html#l00246">effect::is_removed()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="martialarts_8cpp_source.html#l01190">Character::has_mabuff()</a>, <a class="el" href="martialarts_8cpp_source.html#l01177">Character::is_quiet()</a>, <a class="el" href="martialarts_8cpp_source.html#l01183">Character::is_stealthy()</a>, and <a class="el" href="martialarts_8cpp_source.html#l01171">Character::is_throw_immune()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="martialarts_8cpp_source.html#l01235">Character::has_mabuff()</a>, <a class="el" href="martialarts_8cpp_source.html#l01222">Character::is_quiet()</a>, <a class="el" href="martialarts_8cpp_source.html#l01228">Character::is_stealthy()</a>, and <a class="el" href="martialarts_8cpp_source.html#l01216">Character::is_throw_immune()</a>.</p>
 
 </div>
 </div>
@@ -885,26 +896,26 @@ template&lt;typename C , typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l00754">754</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span>{</div>
-<div class="line"><a id="l00756" name="l00756"></a><span class="lineno">  756</span>    std::vector&lt;const ma_buff *&gt; buffer; <span class="comment">// hey get it because it&#39;s for buffs????</span></div>
-<div class="line"><a id="l00757" name="l00757"></a><span class="lineno">  757</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_class" href="classstring__id.html">mabuff_id</a> &amp;buffid : buffs ) {</div>
-<div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span>        <span class="keyword">const</span> <a class="code hl_class" href="classma__buff.html">ma_buff</a> &amp;buff = buffid.obj();</div>
-<div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span>        <span class="keywordflow">if</span>( buff.<a class="code hl_function" href="classma__buff.html#a7347764339bb9408f88c5508124472ff">is_valid_character</a>( u ) ) {</div>
-<div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span>            buffer.push_back( &amp;buff );</div>
-<div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span>        }</div>
-<div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span>    }</div>
-<div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span>    <span class="keywordflow">for</span>( <span class="keyword">auto</span> &amp;elem : buffer ) {</div>
-<div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span>        elem-&gt;<a class="code hl_function" href="classma__buff.html#a6bdd44c384089949991b79cdc00ec4bf">apply_buff</a>( u );</div>
-<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span>    }</div>
-<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span>}</div>
-<div class="ttc" id="aclassma__buff_html"><div class="ttname"><a href="classma__buff.html">ma_buff</a></div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8h_source.html#l00131">martialarts.h:132</a></div></div>
-<div class="ttc" id="aclassma__buff_html_a6bdd44c384089949991b79cdc00ec4bf"><div class="ttname"><a href="classma__buff.html#a6bdd44c384089949991b79cdc00ec4bf">ma_buff::apply_buff</a></div><div class="ttdeci">void apply_buff(Character &amp;u) const</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8cpp_source.html#l00634">martialarts.cpp:634</a></div></div>
-<div class="ttc" id="aclassma__buff_html_a7347764339bb9408f88c5508124472ff"><div class="ttname"><a href="classma__buff.html#a7347764339bb9408f88c5508124472ff">ma_buff::is_valid_character</a></div><div class="ttdeci">bool is_valid_character(const Character &amp;u) const</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8cpp_source.html#l00639">martialarts.cpp:639</a></div></div>
+<p class="definition">Definition at line <a class="el" href="martialarts_8cpp_source.html#l00795">795</a> of file <a class="el" href="martialarts_8cpp_source.html">martialarts.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00796" name="l00796"></a><span class="lineno">  796</span>{</div>
+<div class="line"><a id="l00797" name="l00797"></a><span class="lineno">  797</span>    std::vector&lt;const ma_buff *&gt; buffer; <span class="comment">// hey get it because it&#39;s for buffs????</span></div>
+<div class="line"><a id="l00798" name="l00798"></a><span class="lineno">  798</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_class" href="classstring__id.html">mabuff_id</a> &amp;buffid : buffs ) {</div>
+<div class="line"><a id="l00799" name="l00799"></a><span class="lineno">  799</span>        <span class="keyword">const</span> <a class="code hl_class" href="classma__buff.html">ma_buff</a> &amp;buff = buffid.obj();</div>
+<div class="line"><a id="l00800" name="l00800"></a><span class="lineno">  800</span>        <span class="keywordflow">if</span>( buff.<a class="code hl_function" href="classma__buff.html#a7347764339bb9408f88c5508124472ff">is_valid_character</a>( u ) ) {</div>
+<div class="line"><a id="l00801" name="l00801"></a><span class="lineno">  801</span>            buffer.push_back( &amp;buff );</div>
+<div class="line"><a id="l00802" name="l00802"></a><span class="lineno">  802</span>        }</div>
+<div class="line"><a id="l00803" name="l00803"></a><span class="lineno">  803</span>    }</div>
+<div class="line"><a id="l00804" name="l00804"></a><span class="lineno">  804</span>    <span class="keywordflow">for</span>( <span class="keyword">auto</span> &amp;elem : buffer ) {</div>
+<div class="line"><a id="l00805" name="l00805"></a><span class="lineno">  805</span>        elem-&gt;<a class="code hl_function" href="classma__buff.html#a6bdd44c384089949991b79cdc00ec4bf">apply_buff</a>( u );</div>
+<div class="line"><a id="l00806" name="l00806"></a><span class="lineno">  806</span>    }</div>
+<div class="line"><a id="l00807" name="l00807"></a><span class="lineno">  807</span>}</div>
+<div class="ttc" id="aclassma__buff_html"><div class="ttname"><a href="classma__buff.html">ma_buff</a></div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8h_source.html#l00158">martialarts.h:159</a></div></div>
+<div class="ttc" id="aclassma__buff_html_a6bdd44c384089949991b79cdc00ec4bf"><div class="ttname"><a href="classma__buff.html#a6bdd44c384089949991b79cdc00ec4bf">ma_buff::apply_buff</a></div><div class="ttdeci">void apply_buff(Character &amp;u) const</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8cpp_source.html#l00675">martialarts.cpp:675</a></div></div>
+<div class="ttc" id="aclassma__buff_html_a7347764339bb9408f88c5508124472ff"><div class="ttname"><a href="classma__buff.html#a7347764339bb9408f88c5508124472ff">ma_buff::is_valid_character</a></div><div class="ttdeci">bool is_valid_character(const Character &amp;u) const</div><div class="ttdef"><b>Definition:</b> <a href="martialarts_8cpp_source.html#l00680">martialarts.cpp:680</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="martialarts_8cpp_source.html#l00634">ma_buff::apply_buff()</a>, and <a class="el" href="martialarts_8cpp_source.html#l00639">ma_buff::is_valid_character()</a>.</p>
+<p class="reference">References <a class="el" href="martialarts_8cpp_source.html#l00675">ma_buff::apply_buff()</a>, and <a class="el" href="martialarts_8cpp_source.html#l00680">ma_buff::is_valid_character()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="martialarts_8cpp_source.html#l00788">martialart::apply_onattack_buffs()</a>, <a class="el" href="martialarts_8cpp_source.html#l00798">martialart::apply_onblock_buffs()</a>, <a class="el" href="martialarts_8cpp_source.html#l00813">martialart::apply_oncrit_buffs()</a>, <a class="el" href="martialarts_8cpp_source.html#l00793">martialart::apply_ondodge_buffs()</a>, <a class="el" href="martialarts_8cpp_source.html#l00803">martialart::apply_ongethit_buffs()</a>, <a class="el" href="martialarts_8cpp_source.html#l00783">martialart::apply_onhit_buffs()</a>, <a class="el" href="martialarts_8cpp_source.html#l00818">martialart::apply_onkill_buffs()</a>, <a class="el" href="martialarts_8cpp_source.html#l00808">martialart::apply_onmiss_buffs()</a>, <a class="el" href="martialarts_8cpp_source.html#l00773">martialart::apply_onmove_buffs()</a>, <a class="el" href="martialarts_8cpp_source.html#l00778">martialart::apply_onpause_buffs()</a>, and <a class="el" href="martialarts_8cpp_source.html#l00768">martialart::apply_static_buffs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="martialarts_8cpp_source.html#l00829">martialart::apply_onattack_buffs()</a>, <a class="el" href="martialarts_8cpp_source.html#l00839">martialart::apply_onblock_buffs()</a>, <a class="el" href="martialarts_8cpp_source.html#l00854">martialart::apply_oncrit_buffs()</a>, <a class="el" href="martialarts_8cpp_source.html#l00834">martialart::apply_ondodge_buffs()</a>, <a class="el" href="martialarts_8cpp_source.html#l00844">martialart::apply_ongethit_buffs()</a>, <a class="el" href="martialarts_8cpp_source.html#l00824">martialart::apply_onhit_buffs()</a>, <a class="el" href="martialarts_8cpp_source.html#l00859">martialart::apply_onkill_buffs()</a>, <a class="el" href="martialarts_8cpp_source.html#l00849">martialart::apply_onmiss_buffs()</a>, <a class="el" href="martialarts_8cpp_source.html#l00814">martialart::apply_onmove_buffs()</a>, <a class="el" href="martialarts_8cpp_source.html#l00819">martialart::apply_onpause_buffs()</a>, and <a class="el" href="martialarts_8cpp_source.html#l00809">martialart::apply_static_buffs()</a>.</p>
 
 </div>
 </div>
@@ -933,7 +944,7 @@ template&lt;typename C , typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="martialarts_8cpp_source.html#l00973">character_martial_arts::can_arm_block()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="martialarts_8cpp_source.html#l01018">character_martial_arts::can_arm_block()</a>.</p>
 
 </div>
 </div>
@@ -961,7 +972,7 @@ template&lt;typename C , typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="martialarts_8cpp_source.html#l00954">character_martial_arts::can_leg_block()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="martialarts_8cpp_source.html#l00999">character_martial_arts::can_leg_block()</a>.</p>
 
 </div>
 </div>
@@ -989,7 +1000,7 @@ template&lt;typename C , typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="martialarts_8cpp_source.html#l00973">character_martial_arts::can_arm_block()</a>, <a class="el" href="martialarts_8cpp_source.html#l00954">character_martial_arts::can_leg_block()</a>, <a class="el" href="martialarts_8cpp_source.html#l00438">ma_requirements::is_valid_character()</a>, and <a class="el" href="martialarts_8cpp_source.html#l01400">ma_style_callback::key()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="martialarts_8cpp_source.html#l01018">character_martial_arts::can_arm_block()</a>, <a class="el" href="martialarts_8cpp_source.html#l00999">character_martial_arts::can_leg_block()</a>, <a class="el" href="martialarts_8cpp_source.html#l00479">ma_requirements::is_valid_character()</a>, and <a class="el" href="martialarts_8cpp_source.html#l01451">ma_style_callback::key()</a>.</p>
 
 </div>
 </div>
@@ -1017,7 +1028,7 @@ template&lt;typename C , typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="martialarts_8cpp_source.html#l00973">character_martial_arts::can_arm_block()</a>, <a class="el" href="martialarts_8cpp_source.html#l00954">character_martial_arts::can_leg_block()</a>, and <a class="el" href="martialarts_8cpp_source.html#l01400">ma_style_callback::key()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="martialarts_8cpp_source.html#l01018">character_martial_arts::can_arm_block()</a>, <a class="el" href="martialarts_8cpp_source.html#l00999">character_martial_arts::can_leg_block()</a>, and <a class="el" href="martialarts_8cpp_source.html#l01451">ma_style_callback::key()</a>.</p>
 
 </div>
 </div>
@@ -1027,7 +1038,7 @@ template&lt;typename C , typename F &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="martialarts_8cpp.html">martialarts.cpp</a></li>
-    <li class="footer">Generated on Sun Mar 5 2023 13:50:54 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Apr 7 2023 11:54:31 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

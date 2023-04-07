@@ -194,9 +194,6 @@ template&lt;typename T &gt; </div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">scent_block::scent_block </td>
@@ -216,24 +213,20 @@ template&lt;typename T &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scent__block_8h_source.html#l00032">32</a> of file <a class="el" href="scent__block_8h_source.html">scent_block.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        : <a class="code hl_variable" href="structscent__block.html#ab2483e6a5e9b290e20d9150c47de4a88">origin</a>( <a class="code hl_function" href="coordinate__conversions_8cpp.html#a1d4d395199c6d078e5d1deca53b5b912">sm_to_ms_copy</a>( sub ) + <a class="code hl_struct" href="structpoint.html">point</a>( -1, -1 ) )</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        , <a class="code hl_variable" href="structscent__block.html#a904633220a313c9c293e33f1be2374b9">scents</a>( <a class="code hl_variable" href="structscent__block.html#a904633220a313c9c293e33f1be2374b9">scents</a> )</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        , <a class="code hl_variable" href="structscent__block.html#a005e07a2d9c81f4b8721a21f741ed343">modification_count</a>( 0 ) {</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keywordflow">for</span>( <span class="keywordtype">int</span> x = 0; x &lt; <a class="code hl_variable" href="game__constants_8h.html#a39fd8a829e3dc412646663066dbdb54c">SEEX</a> + 2; ++x ) {</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            <span class="keywordflow">for</span>( <span class="keywordtype">int</span> y = 0; y &lt; <a class="code hl_variable" href="game__constants_8h.html#a4cfa35de359af17f7bc6c2a424339eb5">SEEY</a> + 2; ++y ) {</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                <a class="code hl_variable" href="structscent__block.html#a0ce1e2a28cf9d62bca2e98ffa95ac49d">assignment</a>[x][y] = { <a class="code hl_enumvalue" href="structscent__block.html#a76e4b99138c0c9f741f342b28804613ba04c45f1fa827a66f36aa2c0ed898df31">NONE</a>, 0 };</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            }</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        }</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    }</div>
-<div class="ttc" id="acoordinate__conversions_8cpp_html_a1d4d395199c6d078e5d1deca53b5b912"><div class="ttname"><a href="coordinate__conversions_8cpp.html#a1d4d395199c6d078e5d1deca53b5b912">sm_to_ms_copy</a></div><div class="ttdeci">point sm_to_ms_copy(const point &amp;p)</div><div class="ttdef"><b>Definition:</b> <a href="coordinate__conversions_8cpp_source.html#l00146">coordinate_conversions.cpp:146</a></div></div>
+<p class="definition">Definition at line <a class="el" href="scent__block_8cpp_source.html#l00003">3</a> of file <a class="el" href="scent__block_8cpp_source.html">scent_block.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>    : <a class="code hl_variable" href="structscent__block.html#ab2483e6a5e9b290e20d9150c47de4a88">origin</a>( <a class="code hl_function" href="coordinate__conversions_8cpp.html#a573d447f57f176524f9b409222f14fb6">sm_to_ms_copy</a>( sub ) + <a class="code hl_struct" href="structpoint.html">point</a>( -1, -1 ) )</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    , <a class="code hl_variable" href="structscent__block.html#a904633220a313c9c293e33f1be2374b9">scents</a>( <a class="code hl_variable" href="structscent__block.html#a904633220a313c9c293e33f1be2374b9">scents</a> )</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    , <a class="code hl_variable" href="structscent__block.html#a005e07a2d9c81f4b8721a21f741ed343">modification_count</a>( 0 )</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>{</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keywordflow">for</span>( <span class="keywordtype">int</span> x = 0; x &lt; <a class="code hl_variable" href="game__constants_8h.html#a39fd8a829e3dc412646663066dbdb54c">SEEX</a> + 2; ++x ) {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>        <span class="keywordflow">for</span>( <span class="keywordtype">int</span> y = 0; y &lt; <a class="code hl_variable" href="game__constants_8h.html#a4cfa35de359af17f7bc6c2a424339eb5">SEEY</a> + 2; ++y ) {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>            <a class="code hl_variable" href="structscent__block.html#a0ce1e2a28cf9d62bca2e98ffa95ac49d">assignment</a>[x][y] = { <a class="code hl_enumvalue" href="structscent__block.html#a76e4b99138c0c9f741f342b28804613ba04c45f1fa827a66f36aa2c0ed898df31">NONE</a>, 0 };</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        }</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    }</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>}</div>
+<div class="ttc" id="acoordinate__conversions_8cpp_html_a573d447f57f176524f9b409222f14fb6"><div class="ttname"><a href="coordinate__conversions_8cpp.html#a573d447f57f176524f9b409222f14fb6">sm_to_ms_copy</a></div><div class="ttdeci">point sm_to_ms_copy(point p)</div><div class="ttdef"><b>Definition:</b> <a href="coordinate__conversions_8cpp_source.html#l00146">coordinate_conversions.cpp:146</a></div></div>
 <div class="ttc" id="agame__constants_8h_html_a39fd8a829e3dc412646663066dbdb54c"><div class="ttname"><a href="game__constants_8h.html#a39fd8a829e3dc412646663066dbdb54c">SEEX</a></div><div class="ttdeci">static constexpr int SEEX</div><div class="ttdef"><b>Definition:</b> <a href="game__constants_8h_source.html#l00035">game_constants.h:35</a></div></div>
 <div class="ttc" id="agame__constants_8h_html_a4cfa35de359af17f7bc6c2a424339eb5"><div class="ttname"><a href="game__constants_8h.html#a4cfa35de359af17f7bc6c2a424339eb5">SEEY</a></div><div class="ttdeci">static constexpr int SEEY</div><div class="ttdef"><b>Definition:</b> <a href="game__constants_8h_source.html#l00036">game_constants.h:36</a></div></div>
 <div class="ttc" id="astructpoint_html"><div class="ttname"><a href="structpoint.html">point</a></div><div class="ttdef"><b>Definition:</b> <a href="point_8h_source.html#l00035">point.h:35</a></div></div>
@@ -252,9 +245,6 @@ template&lt;typename T &gt; </div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void scent_block::apply_gas </td>
@@ -274,25 +264,20 @@ template&lt;typename T &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scent__block_8h_source.html#l00077">77</a> of file <a class="el" href="scent__block_8h_source.html">scent_block.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                                                                  {</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        <span class="keyword">const</span> <a class="code hl_struct" href="structpoint.html">point</a> ndx = <a class="code hl_function" href="structscent__block.html#a7e9c907af1da54c72a82299d94a82885">index</a>( p );</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <a class="code hl_variable" href="structscent__block.html#a0ce1e2a28cf9d62bca2e98ffa95ac49d">assignment</a>[ndx.<a class="code hl_variable" href="structpoint.html#ad679b07fb69d55f5ad454d0f1f2891d5">x</a>][ndx.<a class="code hl_variable" href="structpoint.html#a9a82ca9504acabb1e30569f89c805471">y</a>].mode = <a class="code hl_enumvalue" href="structscent__block.html#a76e4b99138c0c9f741f342b28804613ba63db79a5cbe211861b2b20cdec665c95">SET</a>;</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <a class="code hl_variable" href="structscent__block.html#a0ce1e2a28cf9d62bca2e98ffa95ac49d">assignment</a>[ndx.<a class="code hl_variable" href="structpoint.html#ad679b07fb69d55f5ad454d0f1f2891d5">x</a>][ndx.<a class="code hl_variable" href="structpoint.html#a9a82ca9504acabb1e30569f89c805471">y</a>].intensity = std::max( 0, <a class="code hl_variable" href="structscent__block.html#a0ce1e2a28cf9d62bca2e98ffa95ac49d">assignment</a>[ndx.<a class="code hl_variable" href="structpoint.html#ad679b07fb69d55f5ad454d0f1f2891d5">x</a>][ndx.<a class="code hl_variable" href="structpoint.html#a9a82ca9504acabb1e30569f89c805471">y</a>].intensity - nintensity );</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        ++<a class="code hl_variable" href="structscent__block.html#a005e07a2d9c81f4b8721a21f741ed343">modification_count</a>;</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="scent__block_8cpp_source.html#l00045">45</a> of file <a class="el" href="scent__block_8cpp_source.html">scent_block.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>{</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">const</span> <a class="code hl_struct" href="structpoint.html">point</a> ndx = <a class="code hl_function" href="structscent__block.html#a7e9c907af1da54c72a82299d94a82885">index</a>( p );</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <a class="code hl_variable" href="structscent__block.html#a0ce1e2a28cf9d62bca2e98ffa95ac49d">assignment</a>[ndx.<a class="code hl_variable" href="structpoint.html#ad679b07fb69d55f5ad454d0f1f2891d5">x</a>][ndx.<a class="code hl_variable" href="structpoint.html#a9a82ca9504acabb1e30569f89c805471">y</a>].mode = <a class="code hl_enumvalue" href="structscent__block.html#a76e4b99138c0c9f741f342b28804613ba63db79a5cbe211861b2b20cdec665c95">SET</a>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <a class="code hl_variable" href="structscent__block.html#a0ce1e2a28cf9d62bca2e98ffa95ac49d">assignment</a>[ndx.<a class="code hl_variable" href="structpoint.html#ad679b07fb69d55f5ad454d0f1f2891d5">x</a>][ndx.<a class="code hl_variable" href="structpoint.html#a9a82ca9504acabb1e30569f89c805471">y</a>].intensity = std::max( 0, <a class="code hl_variable" href="structscent__block.html#a0ce1e2a28cf9d62bca2e98ffa95ac49d">assignment</a>[ndx.<a class="code hl_variable" href="structpoint.html#ad679b07fb69d55f5ad454d0f1f2891d5">x</a>][ndx.<a class="code hl_variable" href="structpoint.html#a9a82ca9504acabb1e30569f89c805471">y</a>].intensity - nintensity );</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    ++<a class="code hl_variable" href="structscent__block.html#a005e07a2d9c81f4b8721a21f741ed343">modification_count</a>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>}</div>
 <div class="ttc" id="astructpoint_html_a9a82ca9504acabb1e30569f89c805471"><div class="ttname"><a href="structpoint.html#a9a82ca9504acabb1e30569f89c805471">point::y</a></div><div class="ttdeci">int y</div><div class="ttdef"><b>Definition:</b> <a href="point_8h_source.html#l00039">point.h:39</a></div></div>
 <div class="ttc" id="astructpoint_html_ad679b07fb69d55f5ad454d0f1f2891d5"><div class="ttname"><a href="structpoint.html#ad679b07fb69d55f5ad454d0f1f2891d5">point::x</a></div><div class="ttdeci">int x</div><div class="ttdef"><b>Definition:</b> <a href="point_8h_source.html#l00038">point.h:38</a></div></div>
-<div class="ttc" id="astructscent__block_html_a7e9c907af1da54c72a82299d94a82885"><div class="ttname"><a href="structscent__block.html#a7e9c907af1da54c72a82299d94a82885">scent_block::index</a></div><div class="ttdeci">point index(const tripoint &amp;p) const</div><div class="ttdef"><b>Definition:</b> <a href="scent__block_8h_source.html#l00072">scent_block.h:72</a></div></div>
+<div class="ttc" id="astructscent__block_html_a7e9c907af1da54c72a82299d94a82885"><div class="ttname"><a href="structscent__block.html#a7e9c907af1da54c72a82299d94a82885">scent_block::index</a></div><div class="ttdeci">point index(const tripoint &amp;p) const</div><div class="ttdef"><b>Definition:</b> <a href="scent__block_8h_source.html#l00036">scent_block.h:36</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="scent__block_8h_source.html#l00026">assignment</a>, <a class="el" href="scent__block_8h_source.html#l00072">index()</a>, <a class="el" href="scent__block_8h_source.html#l00030">modification_count</a>, <a class="el" href="scent__block_8h_source.html#l00018">SET</a>, <a class="el" href="point_8h_source.html#l00038">point::x</a>, and <a class="el" href="point_8h_source.html#l00039">point::y</a>.</p>
+<p class="reference">References <a class="el" href="scent__block_8h_source.html#l00026">assignment</a>, <a class="el" href="scent__block_8h_source.html#l00036">index()</a>, <a class="el" href="scent__block_8h_source.html#l00030">modification_count</a>, <a class="el" href="scent__block_8h_source.html#l00018">SET</a>, <a class="el" href="point_8h_source.html#l00038">point::x</a>, and <a class="el" href="point_8h_source.html#l00039">point::y</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="map__field_8cpp_source.html#l00251">map::spread_gas()</a>.</p>
 
@@ -303,9 +288,6 @@ template&lt;typename T &gt; </div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void scent_block::apply_slime </td>
@@ -325,41 +307,36 @@ template&lt;typename T &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scent__block_8h_source.html#l00083">83</a> of file <a class="el" href="scent__block_8h_source.html">scent_block.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                                                         {</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <span class="keyword">const</span> <a class="code hl_struct" href="structpoint.html">point</a> ndx = <a class="code hl_function" href="structscent__block.html#a7e9c907af1da54c72a82299d94a82885">index</a>( p );</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        datum &amp;dat = <a class="code hl_variable" href="structscent__block.html#a0ce1e2a28cf9d62bca2e98ffa95ac49d">assignment</a>[ndx.<a class="code hl_variable" href="structpoint.html#ad679b07fb69d55f5ad454d0f1f2891d5">x</a>][ndx.<a class="code hl_variable" href="structpoint.html#a9a82ca9504acabb1e30569f89c805471">y</a>];</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <span class="keywordflow">switch</span>( dat.mode ) {</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="structscent__block.html#a76e4b99138c0c9f741f342b28804613ba04c45f1fa827a66f36aa2c0ed898df31">NONE</a>: {</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                <span class="comment">// we don&#39;t know what the current intensity is, so we must do a max operation</span></div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                dat.mode = <a class="code hl_enumvalue" href="structscent__block.html#a76e4b99138c0c9f741f342b28804613bac728758a623bbc714dd00d2d08bd5715">MAX</a>;</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                dat.intensity = <a class="code hl_enumvalue" href="namespacefields.html#af8bc739ca8fbe535a44afc02da973280a04bb0ec2d0e931c59f606510558e55a1">intensity</a>;</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            }</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="structscent__block.html#a76e4b99138c0c9f741f342b28804613ba63db79a5cbe211861b2b20cdec665c95">SET</a>: {</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                <span class="comment">// new intensity is going to be dat.intensity, so we just need to make it larger</span></div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>                <span class="comment">// but cannot change</span></div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                dat.intensity = std::max( dat.intensity, intensity );</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            }</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="structscent__block.html#a76e4b99138c0c9f741f342b28804613bac728758a623bbc714dd00d2d08bd5715">MAX</a>: {</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                <span class="comment">// Already max for some reason, shouldn&#39;t occur. If it does we want to grow if possible</span></div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>                dat.intensity = std::max( dat.intensity, intensity );</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            }</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        }</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        ++<a class="code hl_variable" href="structscent__block.html#a005e07a2d9c81f4b8721a21f741ed343">modification_count</a>;</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="scent__block_8cpp_source.html#l00053">53</a> of file <a class="el" href="scent__block_8cpp_source.html">scent_block.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>{</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keyword">const</span> <a class="code hl_struct" href="structpoint.html">point</a> ndx = <a class="code hl_function" href="structscent__block.html#a7e9c907af1da54c72a82299d94a82885">index</a>( p );</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    datum &amp;dat = <a class="code hl_variable" href="structscent__block.html#a0ce1e2a28cf9d62bca2e98ffa95ac49d">assignment</a>[ndx.<a class="code hl_variable" href="structpoint.html#ad679b07fb69d55f5ad454d0f1f2891d5">x</a>][ndx.<a class="code hl_variable" href="structpoint.html#a9a82ca9504acabb1e30569f89c805471">y</a>];</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordflow">switch</span>( dat.mode ) {</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="structscent__block.html#a76e4b99138c0c9f741f342b28804613ba04c45f1fa827a66f36aa2c0ed898df31">NONE</a>: {</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            <span class="comment">// we don&#39;t know what the current intensity is, so we must do a max operation</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            dat.mode = <a class="code hl_enumvalue" href="structscent__block.html#a76e4b99138c0c9f741f342b28804613bac728758a623bbc714dd00d2d08bd5715">MAX</a>;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            dat.intensity = <a class="code hl_enumvalue" href="namespacefields.html#af8bc739ca8fbe535a44afc02da973280a04bb0ec2d0e931c59f606510558e55a1">intensity</a>;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        }</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="structscent__block.html#a76e4b99138c0c9f741f342b28804613ba63db79a5cbe211861b2b20cdec665c95">SET</a>: {</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            <span class="comment">// new intensity is going to be dat.intensity, so we just need to make it larger</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            <span class="comment">// but cannot change</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            dat.intensity = std::max( dat.intensity, intensity );</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        }</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="structscent__block.html#a76e4b99138c0c9f741f342b28804613bac728758a623bbc714dd00d2d08bd5715">MAX</a>: {</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            <span class="comment">// Already max for some reason, shouldn&#39;t occur. If it does we want to grow if possible</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            dat.intensity = std::max( dat.intensity, intensity );</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        }</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    }</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    ++<a class="code hl_variable" href="structscent__block.html#a005e07a2d9c81f4b8721a21f741ed343">modification_count</a>;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>}</div>
 <div class="ttc" id="anamespacefields_html_af8bc739ca8fbe535a44afc02da973280a04bb0ec2d0e931c59f606510558e55a1"><div class="ttname"><a href="namespacefields.html#af8bc739ca8fbe535a44afc02da973280a04bb0ec2d0e931c59f606510558e55a1">fields::stacking_type::intensity</a></div><div class="ttdeci">@ intensity</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="scent__block_8h_source.html#l00026">assignment</a>, <a class="el" href="scent__block_8h_source.html#l00072">index()</a>, <a class="el" href="scent__block_8h_source.html#l00024">scent_block::datum::intensity</a>, <a class="el" href="scent__block_8h_source.html#l00019">MAX</a>, <a class="el" href="scent__block_8h_source.html#l00023">scent_block::datum::mode</a>, <a class="el" href="scent__block_8h_source.html#l00030">modification_count</a>, <a class="el" href="scent__block_8h_source.html#l00017">NONE</a>, <a class="el" href="scent__block_8h_source.html#l00018">SET</a>, <a class="el" href="point_8h_source.html#l00038">point::x</a>, and <a class="el" href="point_8h_source.html#l00039">point::y</a>.</p>
+<p class="reference">References <a class="el" href="scent__block_8h_source.html#l00026">assignment</a>, <a class="el" href="scent__block_8h_source.html#l00036">index()</a>, <a class="el" href="scent__block_8h_source.html#l00024">scent_block::datum::intensity</a>, <a class="el" href="scent__block_8h_source.html#l00019">MAX</a>, <a class="el" href="scent__block_8h_source.html#l00023">scent_block::datum::mode</a>, <a class="el" href="scent__block_8h_source.html#l00030">modification_count</a>, <a class="el" href="scent__block_8h_source.html#l00017">NONE</a>, <a class="el" href="scent__block_8h_source.html#l00018">SET</a>, <a class="el" href="point_8h_source.html#l00038">point::x</a>, and <a class="el" href="point_8h_source.html#l00039">point::y</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="map__field_8cpp_source.html#l00396">map::process_fields_in_submap()</a>.</p>
 
@@ -370,9 +347,6 @@ template&lt;typename T &gt; </div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void scent_block::commit_modifications </td>
@@ -381,45 +355,40 @@ template&lt;typename T &gt; </div>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scent__block_8h_source.html#l00044">44</a> of file <a class="el" href="scent__block_8h_source.html">scent_block.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                                {</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <span class="keywordflow">if</span>( <a class="code hl_variable" href="structscent__block.html#a005e07a2d9c81f4b8721a21f741ed343">modification_count</a> == 0 ) {</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        }</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keywordflow">for</span>( <span class="keywordtype">int</span> x = 0; x &lt; <a class="code hl_variable" href="game__constants_8h.html#a39fd8a829e3dc412646663066dbdb54c">SEEX</a> + 2; ++x ) {</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            <span class="keywordflow">for</span>( <span class="keywordtype">int</span> y = 0; y &lt; <a class="code hl_variable" href="game__constants_8h.html#a4cfa35de359af17f7bc6c2a424339eb5">SEEY</a> + 2; ++y ) {</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                <span class="keywordflow">switch</span>( <a class="code hl_variable" href="structscent__block.html#a0ce1e2a28cf9d62bca2e98ffa95ac49d">assignment</a>[x][y].mode ) {</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="structscent__block.html#a76e4b99138c0c9f741f342b28804613ba04c45f1fa827a66f36aa2c0ed898df31">NONE</a>:</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="structscent__block.html#a76e4b99138c0c9f741f342b28804613ba63db79a5cbe211861b2b20cdec665c95">SET</a>: {</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                        <a class="code hl_struct" href="structtripoint.html">tripoint</a> p = <a class="code hl_variable" href="structscent__block.html#ab2483e6a5e9b290e20d9150c47de4a88">origin</a> + <a class="code hl_struct" href="structtripoint.html">tripoint</a>( x, y, 0 );</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                        <span class="keywordflow">if</span>( <a class="code hl_variable" href="structscent__block.html#a904633220a313c9c293e33f1be2374b9">scents</a>.<a class="code hl_function" href="classscent__map.html#af8194e788fb41147bd4c95dbf09b95fb">inbounds</a>( p ) ) {</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                            <a class="code hl_variable" href="structscent__block.html#a904633220a313c9c293e33f1be2374b9">scents</a>.<a class="code hl_function" href="classscent__map.html#a0621dec1a9455fab8379273596c56bf5">set_unsafe</a>( p, <a class="code hl_variable" href="structscent__block.html#a0ce1e2a28cf9d62bca2e98ffa95ac49d">assignment</a>[x][y].intensity );</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                        }</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                    }</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="structscent__block.html#a76e4b99138c0c9f741f342b28804613bac728758a623bbc714dd00d2d08bd5715">MAX</a>: {</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                        <a class="code hl_struct" href="structtripoint.html">tripoint</a> p = <a class="code hl_variable" href="structscent__block.html#ab2483e6a5e9b290e20d9150c47de4a88">origin</a> + <a class="code hl_struct" href="structtripoint.html">tripoint</a>( x, y, 0 );</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                        <span class="keywordflow">if</span>( <a class="code hl_variable" href="structscent__block.html#a904633220a313c9c293e33f1be2374b9">scents</a>.<a class="code hl_function" href="classscent__map.html#af8194e788fb41147bd4c95dbf09b95fb">inbounds</a>( p ) ) {</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                            <a class="code hl_variable" href="structscent__block.html#a904633220a313c9c293e33f1be2374b9">scents</a>.<a class="code hl_function" href="classscent__map.html#a0621dec1a9455fab8379273596c56bf5">set_unsafe</a>( p, std::max( <a class="code hl_variable" href="structscent__block.html#a0ce1e2a28cf9d62bca2e98ffa95ac49d">assignment</a>[x][y].intensity, <a class="code hl_variable" href="structscent__block.html#a904633220a313c9c293e33f1be2374b9">scents</a>.<a class="code hl_function" href="classscent__map.html#a55c51947e481f387010888565ec7ba7c">get_unsafe</a>( p ) ) );</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                        }</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                    }</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                }</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            }</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        }</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="scent__block_8cpp_source.html#l00016">16</a> of file <a class="el" href="scent__block_8cpp_source.html">scent_block.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>{</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordflow">if</span>( <a class="code hl_variable" href="structscent__block.html#a005e07a2d9c81f4b8721a21f741ed343">modification_count</a> == 0 ) {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    }</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordflow">for</span>( <span class="keywordtype">int</span> x = 0; x &lt; <a class="code hl_variable" href="game__constants_8h.html#a39fd8a829e3dc412646663066dbdb54c">SEEX</a> + 2; ++x ) {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <span class="keywordflow">for</span>( <span class="keywordtype">int</span> y = 0; y &lt; <a class="code hl_variable" href="game__constants_8h.html#a4cfa35de359af17f7bc6c2a424339eb5">SEEY</a> + 2; ++y ) {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            <span class="keywordflow">switch</span>( <a class="code hl_variable" href="structscent__block.html#a0ce1e2a28cf9d62bca2e98ffa95ac49d">assignment</a>[x][y].mode ) {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>                <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="structscent__block.html#a76e4b99138c0c9f741f342b28804613ba04c45f1fa827a66f36aa2c0ed898df31">NONE</a>:</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="structscent__block.html#a76e4b99138c0c9f741f342b28804613ba63db79a5cbe211861b2b20cdec665c95">SET</a>: {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                    <a class="code hl_struct" href="structtripoint.html">tripoint</a> p = <a class="code hl_variable" href="structscent__block.html#ab2483e6a5e9b290e20d9150c47de4a88">origin</a> + <a class="code hl_struct" href="structtripoint.html">tripoint</a>( x, y, 0 );</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                    <span class="keywordflow">if</span>( <a class="code hl_variable" href="structscent__block.html#a904633220a313c9c293e33f1be2374b9">scents</a>.<a class="code hl_function" href="classscent__map.html#af8194e788fb41147bd4c95dbf09b95fb">inbounds</a>( p ) ) {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                        <a class="code hl_variable" href="structscent__block.html#a904633220a313c9c293e33f1be2374b9">scents</a>.<a class="code hl_function" href="classscent__map.html#a0621dec1a9455fab8379273596c56bf5">set_unsafe</a>( p, <a class="code hl_variable" href="structscent__block.html#a0ce1e2a28cf9d62bca2e98ffa95ac49d">assignment</a>[x][y].intensity );</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                    }</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                }</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="structscent__block.html#a76e4b99138c0c9f741f342b28804613bac728758a623bbc714dd00d2d08bd5715">MAX</a>: {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                    <a class="code hl_struct" href="structtripoint.html">tripoint</a> p = <a class="code hl_variable" href="structscent__block.html#ab2483e6a5e9b290e20d9150c47de4a88">origin</a> + <a class="code hl_struct" href="structtripoint.html">tripoint</a>( x, y, 0 );</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                    <span class="keywordflow">if</span>( <a class="code hl_variable" href="structscent__block.html#a904633220a313c9c293e33f1be2374b9">scents</a>.<a class="code hl_function" href="classscent__map.html#af8194e788fb41147bd4c95dbf09b95fb">inbounds</a>( p ) ) {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                        <a class="code hl_variable" href="structscent__block.html#a904633220a313c9c293e33f1be2374b9">scents</a>.<a class="code hl_function" href="classscent__map.html#a0621dec1a9455fab8379273596c56bf5">set_unsafe</a>( p, std::max( <a class="code hl_variable" href="structscent__block.html#a0ce1e2a28cf9d62bca2e98ffa95ac49d">assignment</a>[x][y].intensity, <a class="code hl_variable" href="structscent__block.html#a904633220a313c9c293e33f1be2374b9">scents</a>.<a class="code hl_function" href="classscent__map.html#a55c51947e481f387010888565ec7ba7c">get_unsafe</a>( p ) ) );</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                    }</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                }</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            }</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        }</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    }</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>}</div>
 <div class="ttc" id="aclassscent__map_html_a0621dec1a9455fab8379273596c56bf5"><div class="ttname"><a href="classscent__map.html#a0621dec1a9455fab8379273596c56bf5">scent_map::set_unsafe</a></div><div class="ttdeci">void set_unsafe(const tripoint &amp;p, int value, const scenttype_id &amp;type=scenttype_id())</div><div class="ttdef"><b>Definition:</b> <a href="scent__map_8cpp_source.html#l00109">scent_map.cpp:109</a></div></div>
 <div class="ttc" id="aclassscent__map_html_a55c51947e481f387010888565ec7ba7c"><div class="ttname"><a href="classscent__map.html#a55c51947e481f387010888565ec7ba7c">scent_map::get_unsafe</a></div><div class="ttdeci">int get_unsafe(const tripoint &amp;p) const</div><div class="ttdef"><b>Definition:</b> <a href="scent__map_8cpp_source.html#l00116">scent_map.cpp:116</a></div></div>
 <div class="ttc" id="aclassscent__map_html_af8194e788fb41147bd4c95dbf09b95fb"><div class="ttname"><a href="classscent__map.html#af8194e788fb41147bd4c95dbf09b95fb">scent_map::inbounds</a></div><div class="ttdeci">bool inbounds(const tripoint &amp;p) const</div><div class="ttdef"><b>Definition:</b> <a href="scent__map_8cpp_source.html#l00130">scent_map.cpp:130</a></div></div>
-<div class="ttc" id="astructtripoint_html"><div class="ttname"><a href="structtripoint.html">tripoint</a></div><div class="ttdef"><b>Definition:</b> <a href="point_8h_source.html#l00147">point.h:147</a></div></div>
+<div class="ttc" id="astructtripoint_html"><div class="ttname"><a href="structtripoint.html">tripoint</a></div><div class="ttdef"><b>Definition:</b> <a href="point_8h_source.html#l00133">point.h:133</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="scent__block_8h_source.html#l00026">assignment</a>, <a class="el" href="scent__map_8cpp_source.html#l00116">scent_map::get_unsafe()</a>, <a class="el" href="scent__map_8cpp_source.html#l00130">scent_map::inbounds()</a>, <a class="el" href="scent__block_8h_source.html#l00019">MAX</a>, <a class="el" href="scent__block_8h_source.html#l00030">modification_count</a>, <a class="el" href="scent__block_8h_source.html#l00017">NONE</a>, <a class="el" href="scent__block_8h_source.html#l00028">origin</a>, <a class="el" href="scent__block_8h_source.html#l00029">scents</a>, <a class="el" href="game__constants_8h_source.html#l00035">SEEX</a>, <a class="el" href="game__constants_8h_source.html#l00036">SEEY</a>, <a class="el" href="scent__block_8h_source.html#l00018">SET</a>, and <a class="el" href="scent__map_8cpp_source.html#l00109">scent_map::set_unsafe()</a>.</p>
 
@@ -451,15 +420,15 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scent__block_8h_source.html#l00072">72</a> of file <a class="el" href="scent__block_8h_source.html">scent_block.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                                           {</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keywordflow">return</span> -<a class="code hl_variable" href="structscent__block.html#ab2483e6a5e9b290e20d9150c47de4a88">origin</a>.<a class="code hl_function" href="structtripoint.html#accc0725c936dbebb2486f969f39e2e5f">xy</a>() + p.<a class="code hl_function" href="structtripoint.html#accc0725c936dbebb2486f969f39e2e5f">xy</a>();</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    }</div>
-<div class="ttc" id="astructtripoint_html_accc0725c936dbebb2486f969f39e2e5f"><div class="ttname"><a href="structtripoint.html#accc0725c936dbebb2486f969f39e2e5f">tripoint::xy</a></div><div class="ttdeci">constexpr point xy() const</div><div class="ttdef"><b>Definition:</b> <a href="point_8h_source.html#l00220">point.h:220</a></div></div>
+<p class="definition">Definition at line <a class="el" href="scent__block_8h_source.html#l00036">36</a> of file <a class="el" href="scent__block_8h_source.html">scent_block.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                                           {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keywordflow">return</span> -<a class="code hl_variable" href="structscent__block.html#ab2483e6a5e9b290e20d9150c47de4a88">origin</a>.<a class="code hl_function" href="structtripoint.html#accc0725c936dbebb2486f969f39e2e5f">xy</a>() + p.<a class="code hl_function" href="structtripoint.html#accc0725c936dbebb2486f969f39e2e5f">xy</a>();</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    }</div>
+<div class="ttc" id="astructtripoint_html_accc0725c936dbebb2486f969f39e2e5f"><div class="ttname"><a href="structtripoint.html#accc0725c936dbebb2486f969f39e2e5f">tripoint::xy</a></div><div class="ttdeci">constexpr point xy() const</div><div class="ttdef"><b>Definition:</b> <a href="point_8h_source.html#l00206">point.h:206</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="scent__block_8h_source.html#l00028">origin</a>, and <a class="el" href="point_8h_source.html#l00220">tripoint::xy()</a>.</p>
+<p class="reference">References <a class="el" href="scent__block_8h_source.html#l00028">origin</a>, and <a class="el" href="point_8h_source.html#l00206">tripoint::xy()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="scent__block_8h_source.html#l00077">apply_gas()</a>, and <a class="el" href="scent__block_8h_source.html#l00083">apply_slime()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="scent__block_8cpp_source.html#l00045">apply_gas()</a>, and <a class="el" href="scent__block_8cpp_source.html#l00053">apply_slime()</a>.</p>
 
 </div>
 </div>
@@ -478,7 +447,7 @@ template&lt;typename T &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="scent__block_8h_source.html#l00026">26</a> of file <a class="el" href="scent__block_8h_source.html">scent_block.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="scent__block_8h_source.html#l00077">apply_gas()</a>, <a class="el" href="scent__block_8h_source.html#l00083">apply_slime()</a>, <a class="el" href="scent__block_8h_source.html#l00044">commit_modifications()</a>, and <a class="el" href="scent__block_8h_source.html#l00032">scent_block()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="scent__block_8cpp_source.html#l00045">apply_gas()</a>, <a class="el" href="scent__block_8cpp_source.html#l00053">apply_slime()</a>, <a class="el" href="scent__block_8cpp_source.html#l00016">commit_modifications()</a>, and <a class="el" href="scent__block_8cpp_source.html#l00003">scent_block()</a>.</p>
 
 </div>
 </div>
@@ -496,7 +465,7 @@ template&lt;typename T &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="scent__block_8h_source.html#l00030">30</a> of file <a class="el" href="scent__block_8h_source.html">scent_block.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="scent__block_8h_source.html#l00077">apply_gas()</a>, <a class="el" href="scent__block_8h_source.html#l00083">apply_slime()</a>, and <a class="el" href="scent__block_8h_source.html#l00044">commit_modifications()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="scent__block_8cpp_source.html#l00045">apply_gas()</a>, <a class="el" href="scent__block_8cpp_source.html#l00053">apply_slime()</a>, and <a class="el" href="scent__block_8cpp_source.html#l00016">commit_modifications()</a>.</p>
 
 </div>
 </div>
@@ -514,7 +483,7 @@ template&lt;typename T &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="scent__block_8h_source.html#l00028">28</a> of file <a class="el" href="scent__block_8h_source.html">scent_block.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="scent__block_8h_source.html#l00044">commit_modifications()</a>, and <a class="el" href="scent__block_8h_source.html#l00072">index()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="scent__block_8cpp_source.html#l00016">commit_modifications()</a>, and <a class="el" href="scent__block_8h_source.html#l00036">index()</a>.</p>
 
 </div>
 </div>
@@ -532,12 +501,13 @@ template&lt;typename T &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="scent__block_8h_source.html#l00029">29</a> of file <a class="el" href="scent__block_8h_source.html">scent_block.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="scent__block_8h_source.html#l00044">commit_modifications()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="scent__block_8cpp_source.html#l00016">commit_modifications()</a>.</p>
 
 </div>
 </div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+<hr/>The documentation for this struct was generated from the following files:<ul>
 <li>src/<a class="el" href="scent__block_8h_source.html">scent_block.h</a></li>
+<li>src/<a class="el" href="scent__block_8cpp_source.html">scent_block.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -545,7 +515,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structscent__block.html">scent_block</a></li>
-    <li class="footer">Generated on Sun Mar 5 2023 13:51:14 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Apr 7 2023 11:54:52 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

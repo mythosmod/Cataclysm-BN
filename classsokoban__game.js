@@ -4,7 +4,7 @@ var classsokoban__game =
     [ "sokoban_game", "classsokoban__game.html#af6dd524b9fae5ec55b6f93818f590125", null ],
     [ "check_win", "classsokoban__game.html#a042c801807af706825bd2c82db077a37", null ],
     [ "draw_level", "classsokoban__game.html#a257a23ddc454c50bbdcc2bcd2e602c29", null ],
-    [ "get_wall_connection", "classsokoban__game.html#a25c289be2fa90b2ffefe80aea90cfb40", null ],
+    [ "get_wall_connection", "classsokoban__game.html#a5298b76b9e6f5a9361c370bbd4186892", null ],
     [ "parse_level", "classsokoban__game.html#a03512ceeecd782234c8ef3228c8cf626", null ],
     [ "print_score", "classsokoban__game.html#a6669505fc57cb71ff16bf6771deebf85", null ],
     [ "start_game", "classsokoban__game.html#aa137323ee2b21e5606c0dffae9b09347", null ],

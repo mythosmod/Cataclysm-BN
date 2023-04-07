@@ -113,7 +113,7 @@ Private Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename T&gt;<br />
 class restore_on_out_of_scope&lt; T &gt;</div>
-<p class="definition">Definition at line <a class="el" href="cata__utility_8h_source.html#l00270">270</a> of file <a class="el" href="cata__utility_8h_source.html">cata_utility.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cata__utility_8h_source.html#l00274">274</a> of file <a class="el" href="cata__utility_8h_source.html">cata_utility.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab331a99cdc4e16484230a62d4158f5c3" name="ab331a99cdc4e16484230a62d4158f5c3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab331a99cdc4e16484230a62d4158f5c3">&#9670;&nbsp;</a></span>restore_on_out_of_scope() <span class="overload">[1/2]</span></h2>
@@ -141,16 +141,16 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cata__utility_8h_source.html#l00278">278</a> of file <a class="el" href="cata__utility_8h_source.html">cata_utility.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>                                           : <a class="code hl_variable" href="classrestore__on__out__of__scope.html#a793f88cdade7210214d49d349c04983f">t</a>( t_in ), <a class="code hl_variable" href="classrestore__on__out__of__scope.html#a8cc3c6d43fcd14591eb91eb89a46f65c">orig_t</a>( t_in ),</div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>            <a class="code hl_variable" href="classrestore__on__out__of__scope.html#ad597d609a7978a55913f46f7f8cddbec">impl</a>( [<span class="keyword">this</span>]() { <a class="code hl_variable" href="classrestore__on__out__of__scope.html#a793f88cdade7210214d49d349c04983f">t</a> = <a class="code hl_function" href="namespaceavatar__action.html#a76ba74774376a08222b8cdcce08f7304">std::move</a>( <a class="code hl_variable" href="classrestore__on__out__of__scope.html#a8cc3c6d43fcd14591eb91eb89a46f65c">orig_t</a> ); } ) {</div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>        }</div>
-<div class="ttc" id="aclassrestore__on__out__of__scope_html_a793f88cdade7210214d49d349c04983f"><div class="ttname"><a href="classrestore__on__out__of__scope.html#a793f88cdade7210214d49d349c04983f">restore_on_out_of_scope::t</a></div><div class="ttdeci">T &amp; t</div><div class="ttdef"><b>Definition:</b> <a href="cata__utility_8h_source.html#l00273">cata_utility.h:273</a></div></div>
-<div class="ttc" id="aclassrestore__on__out__of__scope_html_a8cc3c6d43fcd14591eb91eb89a46f65c"><div class="ttname"><a href="classrestore__on__out__of__scope.html#a8cc3c6d43fcd14591eb91eb89a46f65c">restore_on_out_of_scope::orig_t</a></div><div class="ttdeci">T orig_t</div><div class="ttdef"><b>Definition:</b> <a href="cata__utility_8h_source.html#l00274">cata_utility.h:274</a></div></div>
-<div class="ttc" id="aclassrestore__on__out__of__scope_html_ad597d609a7978a55913f46f7f8cddbec"><div class="ttname"><a href="classrestore__on__out__of__scope.html#ad597d609a7978a55913f46f7f8cddbec">restore_on_out_of_scope::impl</a></div><div class="ttdeci">on_out_of_scope impl</div><div class="ttdef"><b>Definition:</b> <a href="cata__utility_8h_source.html#l00275">cata_utility.h:275</a></div></div>
+<p class="definition">Definition at line <a class="el" href="cata__utility_8h_source.html#l00282">282</a> of file <a class="el" href="cata__utility_8h_source.html">cata_utility.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>                                           : <a class="code hl_variable" href="classrestore__on__out__of__scope.html#a793f88cdade7210214d49d349c04983f">t</a>( t_in ), <a class="code hl_variable" href="classrestore__on__out__of__scope.html#a8cc3c6d43fcd14591eb91eb89a46f65c">orig_t</a>( t_in ),</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>            <a class="code hl_variable" href="classrestore__on__out__of__scope.html#ad597d609a7978a55913f46f7f8cddbec">impl</a>( [<span class="keyword">this</span>]() { <a class="code hl_variable" href="classrestore__on__out__of__scope.html#a793f88cdade7210214d49d349c04983f">t</a> = <a class="code hl_function" href="namespaceavatar__action.html#a76ba74774376a08222b8cdcce08f7304">std::move</a>( <a class="code hl_variable" href="classrestore__on__out__of__scope.html#a8cc3c6d43fcd14591eb91eb89a46f65c">orig_t</a> ); } ) {</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>        }</div>
+<div class="ttc" id="aclassrestore__on__out__of__scope_html_a793f88cdade7210214d49d349c04983f"><div class="ttname"><a href="classrestore__on__out__of__scope.html#a793f88cdade7210214d49d349c04983f">restore_on_out_of_scope::t</a></div><div class="ttdeci">T &amp; t</div><div class="ttdef"><b>Definition:</b> <a href="cata__utility_8h_source.html#l00277">cata_utility.h:277</a></div></div>
+<div class="ttc" id="aclassrestore__on__out__of__scope_html_a8cc3c6d43fcd14591eb91eb89a46f65c"><div class="ttname"><a href="classrestore__on__out__of__scope.html#a8cc3c6d43fcd14591eb91eb89a46f65c">restore_on_out_of_scope::orig_t</a></div><div class="ttdeci">T orig_t</div><div class="ttdef"><b>Definition:</b> <a href="cata__utility_8h_source.html#l00278">cata_utility.h:278</a></div></div>
+<div class="ttc" id="aclassrestore__on__out__of__scope_html_ad597d609a7978a55913f46f7f8cddbec"><div class="ttname"><a href="classrestore__on__out__of__scope.html#ad597d609a7978a55913f46f7f8cddbec">restore_on_out_of_scope::impl</a></div><div class="ttdeci">on_out_of_scope impl</div><div class="ttdef"><b>Definition:</b> <a href="cata__utility_8h_source.html#l00279">cata_utility.h:279</a></div></div>
 <div class="ttc" id="anamespaceavatar__action_html_a76ba74774376a08222b8cdcce08f7304"><div class="ttname"><a href="namespaceavatar__action.html#a76ba74774376a08222b8cdcce08f7304">avatar_action::move</a></div><div class="ttdeci">bool move(avatar &amp;you, map &amp;m, const tripoint &amp;d)</div><div class="ttdef"><b>Definition:</b> <a href="avatar__action_8cpp_source.html#l00096">avatar_action.cpp:96</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="avatar__action_8cpp_source.html#l00096">avatar_action::move()</a>, <a class="el" href="cata__utility_8h_source.html#l00274">restore_on_out_of_scope&lt; T &gt;::orig_t</a>, and <a class="el" href="cata__utility_8h_source.html#l00273">restore_on_out_of_scope&lt; T &gt;::t</a>.</p>
+<p class="reference">References <a class="el" href="avatar__action_8cpp_source.html#l00096">avatar_action::move()</a>, <a class="el" href="cata__utility_8h_source.html#l00278">restore_on_out_of_scope&lt; T &gt;::orig_t</a>, and <a class="el" href="cata__utility_8h_source.html#l00277">restore_on_out_of_scope&lt; T &gt;::t</a>.</p>
 
 </div>
 </div>
@@ -180,12 +180,12 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cata__utility_8h_source.html#l00282">282</a> of file <a class="el" href="cata__utility_8h_source.html">cata_utility.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>                                            : <a class="code hl_variable" href="classrestore__on__out__of__scope.html#a793f88cdade7210214d49d349c04983f">t</a>( t_in ), <a class="code hl_variable" href="classrestore__on__out__of__scope.html#a8cc3c6d43fcd14591eb91eb89a46f65c">orig_t</a>( <a class="code hl_function" href="namespaceavatar__action.html#a76ba74774376a08222b8cdcce08f7304">std::move</a>( t_in ) ),</div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>            <a class="code hl_variable" href="classrestore__on__out__of__scope.html#ad597d609a7978a55913f46f7f8cddbec">impl</a>( [<span class="keyword">this</span>]() { <a class="code hl_variable" href="classrestore__on__out__of__scope.html#a793f88cdade7210214d49d349c04983f">t</a> = <a class="code hl_function" href="namespaceavatar__action.html#a76ba74774376a08222b8cdcce08f7304">std::move</a>( <a class="code hl_variable" href="classrestore__on__out__of__scope.html#a8cc3c6d43fcd14591eb91eb89a46f65c">orig_t</a> ); } ) {</div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>        }</div>
+<p class="definition">Definition at line <a class="el" href="cata__utility_8h_source.html#l00286">286</a> of file <a class="el" href="cata__utility_8h_source.html">cata_utility.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>                                            : <a class="code hl_variable" href="classrestore__on__out__of__scope.html#a793f88cdade7210214d49d349c04983f">t</a>( t_in ), <a class="code hl_variable" href="classrestore__on__out__of__scope.html#a8cc3c6d43fcd14591eb91eb89a46f65c">orig_t</a>( <a class="code hl_function" href="namespaceavatar__action.html#a76ba74774376a08222b8cdcce08f7304">std::move</a>( t_in ) ),</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>            <a class="code hl_variable" href="classrestore__on__out__of__scope.html#ad597d609a7978a55913f46f7f8cddbec">impl</a>( [<span class="keyword">this</span>]() { <a class="code hl_variable" href="classrestore__on__out__of__scope.html#a793f88cdade7210214d49d349c04983f">t</a> = <a class="code hl_function" href="namespaceavatar__action.html#a76ba74774376a08222b8cdcce08f7304">std::move</a>( <a class="code hl_variable" href="classrestore__on__out__of__scope.html#a8cc3c6d43fcd14591eb91eb89a46f65c">orig_t</a> ); } ) {</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>        }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="avatar__action_8cpp_source.html#l00096">avatar_action::move()</a>, <a class="el" href="cata__utility_8h_source.html#l00274">restore_on_out_of_scope&lt; T &gt;::orig_t</a>, and <a class="el" href="cata__utility_8h_source.html#l00273">restore_on_out_of_scope&lt; T &gt;::t</a>.</p>
+<p class="reference">References <a class="el" href="avatar__action_8cpp_source.html#l00096">avatar_action::move()</a>, <a class="el" href="cata__utility_8h_source.html#l00278">restore_on_out_of_scope&lt; T &gt;::orig_t</a>, and <a class="el" href="cata__utility_8h_source.html#l00277">restore_on_out_of_scope&lt; T &gt;::t</a>.</p>
 
 </div>
 </div>
@@ -212,7 +212,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cata__utility_8h_source.html#l00275">275</a> of file <a class="el" href="cata__utility_8h_source.html">cata_utility.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cata__utility_8h_source.html#l00279">279</a> of file <a class="el" href="cata__utility_8h_source.html">cata_utility.h</a>.</p>
 
 </div>
 </div>
@@ -238,9 +238,9 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cata__utility_8h_source.html#l00274">274</a> of file <a class="el" href="cata__utility_8h_source.html">cata_utility.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cata__utility_8h_source.html#l00278">278</a> of file <a class="el" href="cata__utility_8h_source.html">cata_utility.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="cata__utility_8h_source.html#l00278">restore_on_out_of_scope&lt; T &gt;::restore_on_out_of_scope()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="cata__utility_8h_source.html#l00282">restore_on_out_of_scope&lt; T &gt;::restore_on_out_of_scope()</a>.</p>
 
 </div>
 </div>
@@ -266,9 +266,9 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cata__utility_8h_source.html#l00273">273</a> of file <a class="el" href="cata__utility_8h_source.html">cata_utility.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cata__utility_8h_source.html#l00277">277</a> of file <a class="el" href="cata__utility_8h_source.html">cata_utility.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="cata__utility_8h_source.html#l00278">restore_on_out_of_scope&lt; T &gt;::restore_on_out_of_scope()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="cata__utility_8h_source.html#l00282">restore_on_out_of_scope&lt; T &gt;::restore_on_out_of_scope()</a>.</p>
 
 </div>
 </div>
@@ -281,7 +281,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classrestore__on__out__of__scope.html">restore_on_out_of_scope</a></li>
-    <li class="footer">Generated on Sun Mar 5 2023 13:51:14 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Apr 7 2023 11:54:52 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

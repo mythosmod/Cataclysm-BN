@@ -14,6 +14,7 @@ var debug__menu_8h =
     [ "teleport_long", "debug__menu_8h.html#ad36c14af028b1ed09fd929c2ddbe72eb", null ],
     [ "teleport_overmap", "debug__menu_8h.html#a831952bf86e67914a8f0234cc7badabf", null ],
     [ "teleport_short", "debug__menu_8h.html#a0a27cbe8edce9d4282791fcda2d3c6d2", null ],
+    [ "wishbionics", "debug__menu_8h.html#a7ef7b4a54ffab1064ea54225ca4320ad", null ],
     [ "wishitem", "debug__menu_8h.html#a50b303065b4f4d68e35243048390e4e4", null ],
     [ "wishitem", "debug__menu_8h.html#ab88e02906e27d769939acdbe9a8b7a91", null ],
     [ "wishmonster", "debug__menu_8h.html#aabb3e6bfde09e4a05bce3511eab1ba22", null ],

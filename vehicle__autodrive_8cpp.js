@@ -43,7 +43,7 @@ var vehicle__autodrive_8cpp =
     [ "signum", "vehicle__autodrive_8cpp.html#aa2c67b81922eb1586f30dc940782f57b", null ],
     [ "to_angle", "vehicle__autodrive_8cpp.html#a540bb567dbc83a29576ef04b6ca5fd62", null ],
     [ "to_orientation", "vehicle__autodrive_8cpp.html#ad379756baf633e6a2c8c5b9c808401bf", null ],
-    [ "to_quad_rotation", "vehicle__autodrive_8cpp.html#a0b5c45b84a2c71f04a39818fe6be4ced", null ],
+    [ "to_quad_rotation", "vehicle__autodrive_8cpp.html#a86a4b4c20cb83f6dc4b11e11e8f39cf3", null ],
     [ "to_string", "vehicle__autodrive_8cpp.html#a4c1fb3a0da47bc44487e0b5f5e5beaf4", null ],
     [ "MAX_SPEED_TPS", "vehicle__autodrive_8cpp.html#aa35b0b8b941330ef6908814b88c04a62", null ],
     [ "MIN_SPEED_TPS", "vehicle__autodrive_8cpp.html#add390f13daf60db9d02dc77fbcdf213d", null ],

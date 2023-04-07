@@ -3,7 +3,7 @@ var structdefense__game =
     [ "defense_game", "structdefense__game.html#a65f2959f0ee12fa5e2353750e09d9114", null ],
     [ "caravan", "structdefense__game.html#ab1907e93e8eee801ab7ed719c400d63a", null ],
     [ "game_over", "structdefense__game.html#a76e81408660f9430405cdd6c9a0eb7c4", null ],
-    [ "id", "structdefense__game.html#a735cfcf928a67a7492d5596eb1397f96", null ],
+    [ "id", "structdefense__game.html#a79ffdaa7e17dd2be0e48e92187ec30ba", null ],
     [ "init", "structdefense__game.html#a218f525a03c97ca81343a0a29ac66122", null ],
     [ "init_constructions", "structdefense__game.html#ac7c43373213c8609aa02642349762bf0", null ],
     [ "init_map", "structdefense__game.html#ab4af52a79a97055e75cb6ce54c28dd98", null ],

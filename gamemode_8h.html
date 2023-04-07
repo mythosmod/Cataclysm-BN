@@ -109,10 +109,10 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a625534b4175833889d3bb36c0d42379c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gamemode_8h.html#a625534b4175833889d3bb36c0d42379c">special_game_name</a> (<a class="el" href="enums_8h.html#a118d644b670026ee446a0163e9b7bba3">special_game_id</a> <a class="el" href="classint__id.html#a09d4f824b2540da7e682d10cdf324081">id</a>)</td></tr>
-<tr class="separator:a625534b4175833889d3bb36c0d42379c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5082fd36d38b8fd9bf5cc9502bd5be4e"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="structspecial__game.html">special_game</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gamemode_8h.html#a5082fd36d38b8fd9bf5cc9502bd5be4e">get_special_game</a> (<a class="el" href="enums_8h.html#a118d644b670026ee446a0163e9b7bba3">special_game_id</a> <a class="el" href="classint__id.html#a09d4f824b2540da7e682d10cdf324081">id</a>)</td></tr>
-<tr class="separator:a5082fd36d38b8fd9bf5cc9502bd5be4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7139984ad7e00adb763a686fc40f0e86"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gamemode_8h.html#a7139984ad7e00adb763a686fc40f0e86">special_game_name</a> (<a class="el" href="enums_8h.html#ace4a265a663117b0e316e492302dce8d">special_game_type</a> <a class="el" href="classint__id.html#a09d4f824b2540da7e682d10cdf324081">id</a>)</td></tr>
+<tr class="separator:a7139984ad7e00adb763a686fc40f0e86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9281004a98a5c752b307f5e550487d5"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="structspecial__game.html">special_game</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gamemode_8h.html#ae9281004a98a5c752b307f5e550487d5">get_special_game</a> (<a class="el" href="enums_8h.html#ace4a265a663117b0e316e492302dce8d">special_game_type</a> <a class="el" href="classint__id.html#a09d4f824b2540da7e682d10cdf324081">id</a>)</td></tr>
+<tr class="separator:ae9281004a98a5c752b307f5e550487d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a51b38a533056091477c6212f4efe15ee" name="a51b38a533056091477c6212f4efe15ee"></a>
@@ -132,8 +132,8 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a5082fd36d38b8fd9bf5cc9502bd5be4e" name="a5082fd36d38b8fd9bf5cc9502bd5be4e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5082fd36d38b8fd9bf5cc9502bd5be4e">&#9670;&nbsp;</a></span>get_special_game()</h2>
+<a id="ae9281004a98a5c752b307f5e550487d5" name="ae9281004a98a5c752b307f5e550487d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9281004a98a5c752b307f5e550487d5">&#9670;&nbsp;</a></span>get_special_game()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -141,7 +141,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">std::unique_ptr&lt; <a class="el" href="structspecial__game.html">special_game</a> &gt; get_special_game </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="enums_8h.html#a118d644b670026ee446a0163e9b7bba3">special_game_id</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="enums_8h.html#ace4a265a663117b0e316e492302dce8d">special_game_type</a>&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
           <td></td>
         </tr>
@@ -152,13 +152,13 @@ Functions</h2></td></tr>
 <div class="fragment"><div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>{</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    std::unique_ptr&lt;special_game&gt; <a class="code hl_variable" href="namespacecata_1_1hash64__detail.html#a5ca825db6fd06946302c60daa97333e4">ret</a>;</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordflow">switch</span>( <span class="keywordtype">id</span> ) {</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="enums_8h.html#a118d644b670026ee446a0163e9b7bba3a163ee9f2adfc062e1c3d26fa4b92efdd">SGAME_NULL</a>:</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="enums_8h.html#ace4a265a663117b0e316e492302dce8dab50339a10e1de285ac99d4c3990b8693">special_game_type::NONE</a>:</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            <a class="code hl_variable" href="namespacecata_1_1hash64__detail.html#a5ca825db6fd06946302c60daa97333e4">ret</a> = std::make_unique&lt;special_game&gt;();</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="enums_8h.html#a118d644b670026ee446a0163e9b7bba3ab6ecb5988b8f11d51680674be085dd78">SGAME_TUTORIAL</a>:</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="enums_8h.html#ace4a265a663117b0e316e492302dce8dab8e2e6f28d96c901009d75312887a6da">special_game_type::TUTORIAL</a>:</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            <a class="code hl_variable" href="namespacecata_1_1hash64__detail.html#a5ca825db6fd06946302c60daa97333e4">ret</a> = std::make_unique&lt;tutorial_game&gt;();</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="enums_8h.html#a118d644b670026ee446a0163e9b7bba3a794c9b86c96a94be93c2e04fdb89b052">SGAME_DEFENSE</a>:</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="enums_8h.html#ace4a265a663117b0e316e492302dce8da97f380976e65f683a02ec855289ebfc0">special_game_type::DEFENSE</a>:</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            <a class="code hl_variable" href="namespacecata_1_1hash64__detail.html#a5ca825db6fd06946302c60daa97333e4">ret</a> = std::make_unique&lt;defense_game&gt;();</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <span class="keywordflow">default</span>:</div>
@@ -170,19 +170,19 @@ Functions</h2></td></tr>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="namespacecata_1_1hash64__detail.html#a5ca825db6fd06946302c60daa97333e4">ret</a>;</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>}</div>
 <div class="ttc" id="adebug_8h_html_a87e509562277a7ada3a75330d00cb445"><div class="ttname"><a href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a></div><div class="ttdeci">#define debugmsg(...)</div><div class="ttdoc">Debug message of level DL::Error and class DC::DebugMsg, also includes the source file name and line,...</div><div class="ttdef"><b>Definition:</b> <a href="debug_8h_source.html#l00074">debug.h:74</a></div></div>
-<div class="ttc" id="aenums_8h_html_a118d644b670026ee446a0163e9b7bba3a163ee9f2adfc062e1c3d26fa4b92efdd"><div class="ttname"><a href="enums_8h.html#a118d644b670026ee446a0163e9b7bba3a163ee9f2adfc062e1c3d26fa4b92efdd">SGAME_NULL</a></div><div class="ttdeci">@ SGAME_NULL</div><div class="ttdef"><b>Definition:</b> <a href="enums_8h_source.html#l00093">enums.h:93</a></div></div>
-<div class="ttc" id="aenums_8h_html_a118d644b670026ee446a0163e9b7bba3a794c9b86c96a94be93c2e04fdb89b052"><div class="ttname"><a href="enums_8h.html#a118d644b670026ee446a0163e9b7bba3a794c9b86c96a94be93c2e04fdb89b052">SGAME_DEFENSE</a></div><div class="ttdeci">@ SGAME_DEFENSE</div><div class="ttdef"><b>Definition:</b> <a href="enums_8h_source.html#l00095">enums.h:95</a></div></div>
-<div class="ttc" id="aenums_8h_html_a118d644b670026ee446a0163e9b7bba3ab6ecb5988b8f11d51680674be085dd78"><div class="ttname"><a href="enums_8h.html#a118d644b670026ee446a0163e9b7bba3ab6ecb5988b8f11d51680674be085dd78">SGAME_TUTORIAL</a></div><div class="ttdeci">@ SGAME_TUTORIAL</div><div class="ttdef"><b>Definition:</b> <a href="enums_8h_source.html#l00094">enums.h:94</a></div></div>
+<div class="ttc" id="aenums_8h_html_ace4a265a663117b0e316e492302dce8da97f380976e65f683a02ec855289ebfc0"><div class="ttname"><a href="enums_8h.html#ace4a265a663117b0e316e492302dce8da97f380976e65f683a02ec855289ebfc0">special_game_type::DEFENSE</a></div><div class="ttdeci">@ DEFENSE</div></div>
+<div class="ttc" id="aenums_8h_html_ace4a265a663117b0e316e492302dce8dab50339a10e1de285ac99d4c3990b8693"><div class="ttname"><a href="enums_8h.html#ace4a265a663117b0e316e492302dce8dab50339a10e1de285ac99d4c3990b8693">special_game_type::NONE</a></div><div class="ttdeci">@ NONE</div></div>
+<div class="ttc" id="aenums_8h_html_ace4a265a663117b0e316e492302dce8dab8e2e6f28d96c901009d75312887a6da"><div class="ttname"><a href="enums_8h.html#ace4a265a663117b0e316e492302dce8dab8e2e6f28d96c901009d75312887a6da">special_game_type::TUTORIAL</a></div><div class="ttdeci">@ TUTORIAL</div></div>
 <div class="ttc" id="anamespacecata_1_1hash64__detail_html_a5ca825db6fd06946302c60daa97333e4"><div class="ttname"><a href="namespacecata_1_1hash64__detail.html#a5ca825db6fd06946302c60daa97333e4">cata::hash64_detail::ret</a></div><div class="ttdeci">T ret</div><div class="ttdef"><b>Definition:</b> <a href="hash__utils_8h_source.html#l00097">hash_utils.h:97</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="debug_8h_source.html#l00074">debugmsg</a>, <a class="el" href="hash__utils_8h_source.html#l00097">cata::hash64_detail::ret</a>, <a class="el" href="enums_8h_source.html#l00095">SGAME_DEFENSE</a>, <a class="el" href="enums_8h_source.html#l00093">SGAME_NULL</a>, and <a class="el" href="enums_8h_source.html#l00094">SGAME_TUTORIAL</a>.</p>
+<p class="reference">References <a class="el" href="debug_8h_source.html#l00074">debugmsg</a>, <a class="el" href="enums_8h.html#ace4a265a663117b0e316e492302dce8da97f380976e65f683a02ec855289ebfc0">DEFENSE</a>, <a class="el" href="enums_8h.html#ace4a265a663117b0e316e492302dce8dab50339a10e1de285ac99d4c3990b8693">NONE</a>, <a class="el" href="hash__utils_8h_source.html#l00097">cata::hash64_detail::ret</a>, and <a class="el" href="enums_8h.html#ace4a265a663117b0e316e492302dce8dab8e2e6f28d96c901009d75312887a6da">TUTORIAL</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="main__menu_8cpp_source.html#l00447">main_menu::opening_screen()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="main__menu_8cpp_source.html#l00812">main_menu::new_character_tab()</a>.</p>
 
 </div>
 </div>
-<a id="a625534b4175833889d3bb36c0d42379c" name="a625534b4175833889d3bb36c0d42379c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a625534b4175833889d3bb36c0d42379c">&#9670;&nbsp;</a></span>special_game_name()</h2>
+<a id="a7139984ad7e00adb763a686fc40f0e86" name="a7139984ad7e00adb763a686fc40f0e86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7139984ad7e00adb763a686fc40f0e86">&#9670;&nbsp;</a></span>special_game_name()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -190,7 +190,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">std::string special_game_name </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="enums_8h.html#a118d644b670026ee446a0163e9b7bba3">special_game_id</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="enums_8h.html#ace4a265a663117b0e316e492302dce8d">special_game_type</a>&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
           <td></td>
         </tr>
@@ -200,23 +200,21 @@ Functions</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="gamemode_8cpp_source.html#l00008">8</a> of file <a class="el" href="gamemode_8cpp_source.html">gamemode.cpp</a>.</p>
 <div class="fragment"><div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>{</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keywordflow">switch</span>( <span class="keywordtype">id</span> ) {</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="enums_8h.html#a118d644b670026ee446a0163e9b7bba3a163ee9f2adfc062e1c3d26fa4b92efdd">SGAME_NULL</a>:</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="enums_8h.html#a118d644b670026ee446a0163e9b7bba3a7c40d7fb736f500a02846a5a5c3f74cf">NUM_SPECIAL_GAMES</a>:</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="enums_8h.html#ace4a265a663117b0e316e492302dce8dab50339a10e1de285ac99d4c3990b8693">special_game_type::NONE</a>:</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="enums_8h.html#ace4a265a663117b0e316e492302dce8daaa68899f1652dc0e75a144fd0f1d434f">special_game_type::NUM_SPECIAL_GAME_TYPES</a>:</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>            <span class="keywordflow">return</span> <span class="stringliteral">&quot;Bug (gamemode.cpp:special_game_name)&quot;</span>;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="enums_8h.html#a118d644b670026ee446a0163e9b7bba3ab6ecb5988b8f11d51680674be085dd78">SGAME_TUTORIAL</a>:</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="enums_8h.html#ace4a265a663117b0e316e492302dce8dab8e2e6f28d96c901009d75312887a6da">special_game_type::TUTORIAL</a>:</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>            <span class="keywordflow">return</span> <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;Tutorial&quot;</span> );</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="enums_8h.html#a118d644b670026ee446a0163e9b7bba3a794c9b86c96a94be93c2e04fdb89b052">SGAME_DEFENSE</a>:</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="enums_8h.html#ace4a265a663117b0e316e492302dce8da97f380976e65f683a02ec855289ebfc0">special_game_type::DEFENSE</a>:</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>            <span class="keywordflow">return</span> <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;Defense&quot;</span> );</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keywordflow">default</span>:</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            <span class="keywordflow">return</span> <span class="stringliteral">&quot;Uncoded (gamemode.cpp:special_game_name)&quot;</span>;</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    }</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>}</div>
-<div class="ttc" id="aenums_8h_html_a118d644b670026ee446a0163e9b7bba3a7c40d7fb736f500a02846a5a5c3f74cf"><div class="ttname"><a href="enums_8h.html#a118d644b670026ee446a0163e9b7bba3a7c40d7fb736f500a02846a5a5c3f74cf">NUM_SPECIAL_GAMES</a></div><div class="ttdeci">@ NUM_SPECIAL_GAMES</div><div class="ttdef"><b>Definition:</b> <a href="enums_8h_source.html#l00097">enums.h:96</a></div></div>
+<div class="ttc" id="aenums_8h_html_ace4a265a663117b0e316e492302dce8daaa68899f1652dc0e75a144fd0f1d434f"><div class="ttname"><a href="enums_8h.html#ace4a265a663117b0e316e492302dce8daaa68899f1652dc0e75a144fd0f1d434f">special_game_type::NUM_SPECIAL_GAME_TYPES</a></div><div class="ttdeci">@ NUM_SPECIAL_GAME_TYPES</div></div>
 <div class="ttc" id="atranslations_8h_html_aa829053017e23ef22d44dccecba63a34"><div class="ttname"><a href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a></div><div class="ttdeci">#define _(msg)</div><div class="ttdef"><b>Definition:</b> <a href="translations_8h_source.html#l00116">translations.h:116</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="enums_8h_source.html#l00096">NUM_SPECIAL_GAMES</a>, <a class="el" href="enums_8h_source.html#l00095">SGAME_DEFENSE</a>, <a class="el" href="enums_8h_source.html#l00093">SGAME_NULL</a>, and <a class="el" href="enums_8h_source.html#l00094">SGAME_TUTORIAL</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="main__menu_8cpp_source.html#l00447">main_menu::opening_screen()</a>.</p>
+<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="enums_8h.html#ace4a265a663117b0e316e492302dce8da97f380976e65f683a02ec855289ebfc0">DEFENSE</a>, <a class="el" href="enums_8h.html#ace4a265a663117b0e316e492302dce8dab50339a10e1de285ac99d4c3990b8693">NONE</a>, <a class="el" href="enums_8h.html#ace4a265a663117b0e316e492302dce8daaa68899f1652dc0e75a144fd0f1d434f">NUM_SPECIAL_GAME_TYPES</a>, and <a class="el" href="enums_8h.html#ace4a265a663117b0e316e492302dce8dab8e2e6f28d96c901009d75312887a6da">TUTORIAL</a>.</p>
 
 </div>
 </div>
@@ -226,7 +224,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="gamemode_8h.html">gamemode.h</a></li>
-    <li class="footer">Generated on Sun Mar 5 2023 13:50:52 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Apr 7 2023 11:54:30 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -4,6 +4,7 @@ var martialarts_8cpp =
     [ "ma_weapon_damage_reader", "classma__weapon__damage__reader.html", "classma__weapon__damage__reader" ],
     [ "ma_buff_reader", "classma__buff__reader.html", "classma__buff__reader" ],
     [ "ma_buff_effect_type", "classma__buff__effect__type.html", "classma__buff__effect__type" ],
+    [ "cat_order", "structcat__order.html", "structcat__order" ],
     [ "accumulate_ma_buff_effects", "martialarts_8cpp.html#ada91ca2cf8f9e185b2d2e6b0e1d88e32", null ],
     [ "add_if_exists", "martialarts_8cpp.html#a753a9aea9c41572680b66b8a8f7fc259", null ],
     [ "all_martialart_types", "martialarts_8cpp.html#a863b5e05d6e9a301dbcddd6bbb61ab28", null ],
@@ -26,5 +27,6 @@ var martialarts_8cpp =
     [ "ma_buffs", "martialarts_8cpp.html#ad4fb4a84fae57a9c40c693ca2701b45c", null ],
     [ "ma_techniques", "martialarts_8cpp.html#aae3f3de3b7baac697dfacb78ad4a80ea", null ],
     [ "martialarts", "martialarts_8cpp.html#adf8fd9cfd1bea36da26edfc99075b372", null ],
-    [ "skill_unarmed", "martialarts_8cpp.html#ad22b82ceedf236ed05df55e661444c76", null ]
+    [ "skill_unarmed", "martialarts_8cpp.html#ad22b82ceedf236ed05df55e661444c76", null ],
+    [ "weapon_category_factory", "martialarts_8cpp.html#a47e8666a1e458f8836fd4beb7c2e00b7", null ]
 ];

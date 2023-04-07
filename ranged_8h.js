@@ -17,7 +17,7 @@ var ranged_8h =
     [ "effective_dispersion", "ranged_8h.html#a77dfe116a20cfa50c55a3c2073408e63", null ],
     [ "execute_shaped_attack", "ranged_8h.html#ade9b38890f46ab6cbe94e1004f0ea5f1", null ],
     [ "expected_coverage", "ranged_8h.html#a7b4da33d1d9391123845f299f1f156dc", null ],
-    [ "fire_gun", "ranged_8h.html#ad38c286e96d65ab218906f3120b01e8a", null ],
+    [ "fire_gun", "ranged_8h.html#ae09161f6a90d6bc3282a1e0f50c439b2", null ],
     [ "fire_gun", "ranged_8h.html#a0bb67d4debaf06355d3b7c8234fda44e", null ],
     [ "get_aim_types", "ranged_8h.html#a751a40c271349c3ea821c5badd49e42f", null ],
     [ "get_fastest_sight", "ranged_8h.html#a3dbef919e3efee8967ddbcba998a55f3", null ],

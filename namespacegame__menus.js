@@ -21,6 +21,7 @@ var namespacegame__menus =
       [ "repair", "namespacegame__menus_1_1inv.html#af8902d51ff7c825b3c669a19ab466e7e", null ],
       [ "salvage", "namespacegame__menus_1_1inv.html#a93d8349d9f7cabac276865c0b4db267c", null ],
       [ "saw_barrel", "namespacegame__menus_1_1inv.html#ad63bc52f7850b19adbd24bd6870fb8e6", null ],
+      [ "saw_stock", "namespacegame__menus_1_1inv.html#a996163dd9d6adce781fa28b83e921ac3", null ],
       [ "steal", "namespacegame__menus_1_1inv.html#a51f32de30b709ad3ba55254a21af6a1b", null ],
       [ "sterilize_cbm", "namespacegame__menus_1_1inv.html#a6dabf421ed20a9ded65c0e3b7e9088b4", null ],
       [ "swap_letters", "namespacegame__menus_1_1inv.html#a995b039037beeb8ea9583bbbb4d66a70", null ],

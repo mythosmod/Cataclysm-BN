@@ -7,7 +7,7 @@ var structconstruction =
     [ "get_time_string", "structconstruction.html#ab277019211fcf8e122cd9ba0f011568d", null ],
     [ "is_blacklisted", "structconstruction.html#a17663684acb47ca560525ba24639d800", null ],
     [ "load", "structconstruction.html#a0d2ad3723b79737cac74f7c96e150f12", null ],
-    [ "print_time", "structconstruction.html#afebcbd46e4ba11350e29da4bd1b06038", null ],
+    [ "print_time", "structconstruction.html#a9c201168ab8b7b3b9edbda8a732d2018", null ],
     [ "time_scale", "structconstruction.html#ad7c75ab4b42d656e538ee720801aa96b", null ],
     [ "byproduct_item_group", "structconstruction.html#a70c13acb194736b73200b8d6c08366dc", null ],
     [ "category", "structconstruction.html#a3c03a03f38a58394d4334720c81dd40e", null ],

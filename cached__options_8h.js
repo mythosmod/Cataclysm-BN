@@ -3,6 +3,7 @@ var cached__options_8h =
     [ "CATA_SRC_CACHED_OPTIONS_H", "cached__options_8h.html#aad702af430d3011c0da0ce8f0377677a", null ],
     [ "debug_mode", "cached__options_8h.html#aa021995764a0c77f628e3411497239cc", null ],
     [ "display_mod_source", "cached__options_8h.html#aeb7313fa4939ef646c982eb924bb756a", null ],
+    [ "display_object_ids", "cached__options_8h.html#a61d5a960e9059023302a764d534d2d13", null ],
     [ "dont_debugmsg", "cached__options_8h.html#abde66c8b93b424d63cccb7ab103e2f2d", null ],
     [ "fov_3d", "cached__options_8h.html#a1eedced6e405cd87cabd19fdd193de43", null ],
     [ "fov_3d_z_range", "cached__options_8h.html#a0cb65464a3fa34c1ed5474f5d2d853a7", null ],

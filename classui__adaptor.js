@@ -18,7 +18,7 @@ var classui__adaptor =
     [ "on_screen_resize", "classui__adaptor.html#abf55c7afc0d78d45a35788575f4c3cd5", null ],
     [ "operator=", "classui__adaptor.html#aa1d79249ed1b2362f94bc49fd7289dc4", null ],
     [ "operator=", "classui__adaptor.html#a221de22783c1755162ddc7a64982982f", null ],
-    [ "position", "classui__adaptor.html#af6aa8e52d6fe399f60da61e428f1f721", null ],
+    [ "position", "classui__adaptor.html#a3b03e4f9b6c3e7b180ec85cc0d7b4bf8", null ],
     [ "position_from_window", "classui__adaptor.html#aae52e80c928fa76affccc3b60d415982", null ],
     [ "redraw", "classui__adaptor.html#a98ddfbd09f2eb50e4a729dc37d10e9b7", null ],
     [ "redraw_invalidated", "classui__adaptor.html#a615ac8ceeec858bec210c4d4de5503cb", null ],
