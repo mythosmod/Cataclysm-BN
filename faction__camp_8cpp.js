@@ -16,7 +16,7 @@ var faction__camp_8cpp =
     [ "farm_valid_seed", "faction__camp_8cpp.html#a12793d27142dd7815b08870f835c4377", null ],
     [ "flag_PLOWABLE", "faction__camp_8cpp.html#aaa9613ea825773a0d74eaba7663a5dbf", null ],
     [ "flag_TREE", "faction__camp_8cpp.html#a966b4e9f56cb4b350b288257241a9e46", null ],
-    [ "get_basecamp", "faction__camp_8cpp.html#af6412126ef6c6a82636b95d06e43f99e", null ],
+    [ "get_basecamp", "faction__camp_8cpp.html#aeeafcbb3ccf13d4fd10280393bb6c552", null ],
     [ "get_mission_action_string", "faction__camp_8cpp.html#a048e4bec7b38bab00449263af474938b", null ],
     [ "om_carry_weight_to_trips", "faction__camp_8cpp.html#a52abcaa8194cf02904b0add9808f121a", null ],
     [ "om_carry_weight_to_trips", "faction__camp_8cpp.html#a8301ad1a7c78d814020cd09c3cbd81c3", null ],

@@ -18,6 +18,7 @@ var classheal__actor =
     [ "disinfectant_power", "classheal__actor.html#a5547a16e9b0ed73e697cbcb1e0c4c831", null ],
     [ "disinfectant_scaling", "classheal__actor.html#a22cb8bef235e8a189d526b4103337f23", null ],
     [ "effects", "classheal__actor.html#ae7f388c8c48b5d55bb044394272f5e36", null ],
+    [ "essential_value", "classheal__actor.html#ad180581fb7b3dffce65bc00462474abc", null ],
     [ "head_power", "classheal__actor.html#a3252c09cf5218037f4fc339b1e2e3db6", null ],
     [ "head_scaling", "classheal__actor.html#a4d5da703871f215938758af76793c98e", null ],
     [ "infect", "classheal__actor.html#a3a74e133dd8b348d8fd6fe3494533ef3", null ],

@@ -128,8 +128,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:acebbfee806f70b8adc1805a0f67a1521"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca9454d12f69909144802d499d7ffad2"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVehicleFunction__json.html#aca9454d12f69909144802d499d7ffad2">placement</a></td></tr>
 <tr class="separator:aca9454d12f69909144802d499d7ffad2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9850c680a7bcff50778cb4f27b840594"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcata_1_1optional.html">cata::optional</a>&lt; <a class="el" href="structVehicleLocation.html">VehicleLocation</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVehicleFunction__json.html#a9850c680a7bcff50778cb4f27b840594">location</a></td></tr>
-<tr class="separator:a9850c680a7bcff50778cb4f27b840594"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ecdace58ce7500555e64ff44ee12167"><td class="memItemLeft" align="right" valign="top"><a class="el" href="generic__factory_8h.html#a1159dbaba81931271dbfe5b9c7f041b3">std::optional</a>&lt; <a class="el" href="structVehicleLocation.html">VehicleLocation</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVehicleFunction__json.html#a3ecdace58ce7500555e64ff44ee12167">location</a></td></tr>
+<tr class="separator:a3ecdace58ce7500555e64ff44ee12167"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -161,14 +161,14 @@ Private Attributes</h2></td></tr>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        <a class="code hl_variable" href="classVehicleFunction__json.html#aca9454d12f69909144802d499d7ffad2">placement</a> = jo.<a class="code hl_function" href="classJsonObject.html#a96b6d1b9cf7bda4fc9cd177a99e0631c">get_string</a>( <span class="stringliteral">&quot;placement&quot;</span> );</div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        <a class="code hl_struct" href="structVehicleFacings.html">VehicleFacings</a> facings( jo, <span class="stringliteral">&quot;facing&quot;</span> );</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        <a class="code hl_variable" href="classVehicleFunction__json.html#a9850c680a7bcff50778cb4f27b840594">location</a>.emplace( <a class="code hl_struct" href="structjmapgen__int.html">jmapgen_int</a>( jo, <span class="stringliteral">&quot;x&quot;</span> ), <a class="code hl_struct" href="structjmapgen__int.html">jmapgen_int</a>( jo, <span class="stringliteral">&quot;y&quot;</span> ), facings );</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        <a class="code hl_variable" href="classVehicleFunction__json.html#a3ecdace58ce7500555e64ff44ee12167">location</a>.emplace( <a class="code hl_struct" href="structjmapgen__int.html">jmapgen_int</a>( jo, <span class="stringliteral">&quot;x&quot;</span> ), <a class="code hl_struct" href="structjmapgen__int.html">jmapgen_int</a>( jo, <span class="stringliteral">&quot;y&quot;</span> ), facings );</div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    }</div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>}</div>
-<div class="ttc" id="aclassJsonObject_html_a19d83d03e3d5cc6905bcb850d80a1f05"><div class="ttname"><a href="classJsonObject.html#a19d83d03e3d5cc6905bcb850d80a1f05">JsonObject::has_string</a></div><div class="ttdeci">bool has_string(const std::string &amp;name) const</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l00472">json.cpp:472</a></div></div>
-<div class="ttc" id="aclassJsonObject_html_a96b6d1b9cf7bda4fc9cd177a99e0631c"><div class="ttname"><a href="classJsonObject.html#a96b6d1b9cf7bda4fc9cd177a99e0631c">JsonObject::get_string</a></div><div class="ttdeci">std::string get_string(const std::string &amp;name) const</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l00381">json.cpp:381</a></div></div>
-<div class="ttc" id="aclassJsonObject_html_a99e64f59bc5e72e7572125064b68da29"><div class="ttname"><a href="classJsonObject.html#a99e64f59bc5e72e7572125064b68da29">JsonObject::get_int</a></div><div class="ttdeci">int get_int(const std::string &amp;name) const</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l00349">json.cpp:349</a></div></div>
+<div class="ttc" id="aclassJsonObject_html_a19d83d03e3d5cc6905bcb850d80a1f05"><div class="ttname"><a href="classJsonObject.html#a19d83d03e3d5cc6905bcb850d80a1f05">JsonObject::has_string</a></div><div class="ttdeci">bool has_string(const std::string &amp;name) const</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l00473">json.cpp:473</a></div></div>
+<div class="ttc" id="aclassJsonObject_html_a96b6d1b9cf7bda4fc9cd177a99e0631c"><div class="ttname"><a href="classJsonObject.html#a96b6d1b9cf7bda4fc9cd177a99e0631c">JsonObject::get_string</a></div><div class="ttdeci">std::string get_string(const std::string &amp;name) const</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l00382">json.cpp:382</a></div></div>
+<div class="ttc" id="aclassJsonObject_html_a99e64f59bc5e72e7572125064b68da29"><div class="ttname"><a href="classJsonObject.html#a99e64f59bc5e72e7572125064b68da29">JsonObject::get_int</a></div><div class="ttdeci">int get_int(const std::string &amp;name) const</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l00350">json.cpp:350</a></div></div>
 <div class="ttc" id="aclassVehicleFunction__json_html_a0b6d2d62ece3eaea3d0b511b8e6d7c0e"><div class="ttname"><a href="classVehicleFunction__json.html#a0b6d2d62ece3eaea3d0b511b8e6d7c0e">VehicleFunction_json::number</a></div><div class="ttdeci">jmapgen_int number</div><div class="ttdef"><b>Definition:</b> <a href="vehicle__group_8h_source.html#l00144">vehicle_group.h:144</a></div></div>
-<div class="ttc" id="aclassVehicleFunction__json_html_a9850c680a7bcff50778cb4f27b840594"><div class="ttname"><a href="classVehicleFunction__json.html#a9850c680a7bcff50778cb4f27b840594">VehicleFunction_json::location</a></div><div class="ttdeci">cata::optional&lt; VehicleLocation &gt; location</div><div class="ttdef"><b>Definition:</b> <a href="vehicle__group_8h_source.html#l00149">vehicle_group.h:149</a></div></div>
+<div class="ttc" id="aclassVehicleFunction__json_html_a3ecdace58ce7500555e64ff44ee12167"><div class="ttname"><a href="classVehicleFunction__json.html#a3ecdace58ce7500555e64ff44ee12167">VehicleFunction_json::location</a></div><div class="ttdeci">std::optional&lt; VehicleLocation &gt; location</div><div class="ttdef"><b>Definition:</b> <a href="vehicle__group_8h_source.html#l00149">vehicle_group.h:149</a></div></div>
 <div class="ttc" id="aclassVehicleFunction__json_html_a994d8bfaf08a5b5f43c6f477b1e68fe1"><div class="ttname"><a href="classVehicleFunction__json.html#a994d8bfaf08a5b5f43c6f477b1e68fe1">VehicleFunction_json::vehicle</a></div><div class="ttdeci">vgroup_id vehicle</div><div class="ttdef"><b>Definition:</b> <a href="vehicle__group_8h_source.html#l00143">vehicle_group.h:143</a></div></div>
 <div class="ttc" id="aclassVehicleFunction__json_html_aa07c2eed13fd83b815dfc7e228b9cdc5"><div class="ttname"><a href="classVehicleFunction__json.html#aa07c2eed13fd83b815dfc7e228b9cdc5">VehicleFunction_json::fuel</a></div><div class="ttdeci">int fuel</div><div class="ttdef"><b>Definition:</b> <a href="vehicle__group_8h_source.html#l00145">vehicle_group.h:145</a></div></div>
 <div class="ttc" id="aclassVehicleFunction__json_html_aca9454d12f69909144802d499d7ffad2"><div class="ttname"><a href="classVehicleFunction__json.html#aca9454d12f69909144802d499d7ffad2">VehicleFunction_json::placement</a></div><div class="ttdeci">std::string placement</div><div class="ttdef"><b>Definition:</b> <a href="vehicle__group_8h_source.html#l00148">vehicle_group.h:148</a></div></div>
@@ -176,7 +176,7 @@ Private Attributes</h2></td></tr>
 <div class="ttc" id="astructVehicleFacings_html"><div class="ttname"><a href="structVehicleFacings.html">VehicleFacings</a></div><div class="ttdoc">The location and facing data needed to place a vehicle onto the map.</div><div class="ttdef"><b>Definition:</b> <a href="vehicle__group_8h_source.html#l00054">vehicle_group.h:54</a></div></div>
 <div class="ttc" id="astructjmapgen__int_html"><div class="ttname"><a href="structjmapgen__int.html">jmapgen_int</a></div><div class="ttdef"><b>Definition:</b> <a href="mapgen_8h_source.html#l00062">mapgen.h:62</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="json_8cpp_source.html#l00381">JsonObject::get_string()</a>, <a class="el" href="json_8cpp_source.html#l00472">JsonObject::has_string()</a>, <a class="el" href="vehicle__group_8h_source.html#l00149">location</a>, and <a class="el" href="vehicle__group_8h_source.html#l00148">placement</a>.</p>
+<p class="reference">References <a class="el" href="json_8cpp_source.html#l00382">JsonObject::get_string()</a>, <a class="el" href="json_8cpp_source.html#l00473">JsonObject::has_string()</a>, <a class="el" href="vehicle__group_8h_source.html#l00149">location</a>, and <a class="el" href="vehicle__group_8h_source.html#l00148">placement</a>.</p>
 
 </div>
 </div>
@@ -254,7 +254,7 @@ Private Attributes</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="vehicle__group_8cpp_source.html#l00136">136</a> of file <a class="el" href="vehicle__group_8cpp_source.html">vehicle_group.cpp</a>.</p>
 <div class="fragment"><div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>{</div>
 <div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    <span class="keywordflow">for</span>( <span class="keyword">auto</span> i = <a class="code hl_variable" href="classVehicleFunction__json.html#a0b6d2d62ece3eaea3d0b511b8e6d7c0e">number</a>.<a class="code hl_function" href="structjmapgen__int.html#af91db998b4c873453177d97ad575d138">get</a>(); i &gt; 0; i-- ) {</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>        <span class="keywordflow">if</span>( !<a class="code hl_variable" href="classVehicleFunction__json.html#a9850c680a7bcff50778cb4f27b840594">location</a> ) {</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>        <span class="keywordflow">if</span>( !<a class="code hl_variable" href="classVehicleFunction__json.html#a3ecdace58ce7500555e64ff44ee12167">location</a> ) {</div>
 <div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>            <span class="keyword">const</span> <span class="keywordtype">size_t</span> replace = <a class="code hl_variable" href="classVehicleFunction__json.html#aca9454d12f69909144802d499d7ffad2">placement</a>.find( <span class="stringliteral">&quot;%t&quot;</span> );</div>
 <div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>            <span class="keyword">const</span> <a class="code hl_struct" href="structVehicleLocation.html">VehicleLocation</a> *loc = <a class="code hl_typedef" href="vehicle__group_8cpp.html#afcd71f287dfca44f11be446cc349e71f">vplacement_id</a>( replace != std::string::npos ?</div>
 <div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>                                         <a class="code hl_variable" href="classVehicleFunction__json.html#aca9454d12f69909144802d499d7ffad2">placement</a>.substr( 0, replace ) + terrain_name +</div>
@@ -267,7 +267,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>            }</div>
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>            m.<a class="code hl_function" href="classmap.html#ae66fa55ab500d718db02445344a2ae8e">add_vehicle</a>( <a class="code hl_class" href="classvehicle.html">vehicle</a>, loc-&gt;<a class="code hl_function" href="structVehicleLocation.html#aac94aaf5d962ad01cfff270de4f6db40">pick_point</a>(), loc-&gt;<a class="code hl_function" href="structVehicleLocation.html#a1c0577cc25df5ad9d11a078a4cc50757">pick_facing</a>(), <a class="code hl_variable" href="classVehicleFunction__json.html#aa07c2eed13fd83b815dfc7e228b9cdc5">fuel</a>, <a class="code hl_variable" href="classVehicleFunction__json.html#acebbfee806f70b8adc1805a0f67a1521">status</a> );</div>
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>            m.<a class="code hl_function" href="classmap.html#ae66fa55ab500d718db02445344a2ae8e">add_vehicle</a>( <a class="code hl_class" href="classvehicle.html">vehicle</a>, <a class="code hl_variable" href="classVehicleFunction__json.html#a9850c680a7bcff50778cb4f27b840594">location</a>-&gt;pick_point(), <a class="code hl_variable" href="classVehicleFunction__json.html#a9850c680a7bcff50778cb4f27b840594">location</a>-&gt;pick_facing(), <a class="code hl_variable" href="classVehicleFunction__json.html#aa07c2eed13fd83b815dfc7e228b9cdc5">fuel</a>, <a class="code hl_variable" href="classVehicleFunction__json.html#acebbfee806f70b8adc1805a0f67a1521">status</a> );</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>            m.<a class="code hl_function" href="classmap.html#ae66fa55ab500d718db02445344a2ae8e">add_vehicle</a>( <a class="code hl_class" href="classvehicle.html">vehicle</a>, <a class="code hl_variable" href="classVehicleFunction__json.html#a3ecdace58ce7500555e64ff44ee12167">location</a>-&gt;pick_point(), <a class="code hl_variable" href="classVehicleFunction__json.html#a3ecdace58ce7500555e64ff44ee12167">location</a>-&gt;pick_facing(), <a class="code hl_variable" href="classVehicleFunction__json.html#aa07c2eed13fd83b815dfc7e228b9cdc5">fuel</a>, <a class="code hl_variable" href="classVehicleFunction__json.html#acebbfee806f70b8adc1805a0f67a1521">status</a> );</div>
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>        }</div>
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    }</div>
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>}</div>
@@ -311,8 +311,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a9850c680a7bcff50778cb4f27b840594" name="a9850c680a7bcff50778cb4f27b840594"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9850c680a7bcff50778cb4f27b840594">&#9670;&nbsp;</a></span>location</h2>
+<a id="a3ecdace58ce7500555e64ff44ee12167" name="a3ecdace58ce7500555e64ff44ee12167"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ecdace58ce7500555e64ff44ee12167">&#9670;&nbsp;</a></span>location</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -321,7 +321,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classcata_1_1optional.html">cata::optional</a>&lt;<a class="el" href="structVehicleLocation.html">VehicleLocation</a>&gt; VehicleFunction_json::location</td>
+          <td class="memname"><a class="el" href="generic__factory_8h.html#a1159dbaba81931271dbfe5b9c7f041b3">std::optional</a>&lt;<a class="el" href="structVehicleLocation.html">VehicleLocation</a>&gt; VehicleFunction_json::location</td>
         </tr>
       </table>
   </td>
@@ -449,7 +449,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classVehicleFunction__json.html">VehicleFunction_json</a></li>
-    <li class="footer">Generated on Fri Apr 7 2023 11:54:56 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Apr 30 2023 06:48:25 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

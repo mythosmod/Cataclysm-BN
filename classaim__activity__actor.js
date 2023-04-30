@@ -23,7 +23,7 @@ var classaim__activity__actor =
     [ "aif_duration", "classaim__activity__actor.html#a5e4630c6a7a1630c7d93714d221ed78e", null ],
     [ "aiming_at_critter", "classaim__activity__actor.html#a8f9b4001d182a0fc1ab4fdd8bd5b1507", null ],
     [ "bp_cost_per_shot", "classaim__activity__actor.html#abff5df380fe0c09c79d78bf6e1e18e83", null ],
-    [ "fake_weapon", "classaim__activity__actor.html#acbebb7238187b2d00cf4c16581f91046", null ],
+    [ "fake_weapon", "classaim__activity__actor.html#a652d27c7724e4682cfa2397015c6b25e", null ],
     [ "fin_trajectory", "classaim__activity__actor.html#a8b6cc625e5670655553876fda52c40f4", null ],
     [ "initial_view_offset", "classaim__activity__actor.html#a46353c2a5ae341c7b133fc232b72fdf3", null ],
     [ "loaded_RAS_weapon", "classaim__activity__actor.html#ab984cbfdbe534695d0b536cad108da58", null ],

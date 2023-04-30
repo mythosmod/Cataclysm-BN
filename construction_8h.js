@@ -6,7 +6,7 @@ var construction_8h =
     [ "can_construct", "construction_8h.html#a8685d4149ae57a95a1687aca5985dad5", null ],
     [ "check_consistency", "construction_8h.html#a012e345f9cc8d1b1caaeee08acbea958", null ],
     [ "complete_construction", "construction_8h.html#a9ceb130d0b7cd2782627a407a08c1c37", null ],
-    [ "construction_menu", "construction_8h.html#a8d5013d7500ba15959a353e4896dbb53", null ],
+    [ "construction_menu", "construction_8h.html#aa7b80840549337507efe1a1fd9a7eef8", null ],
     [ "finalize", "construction_8h.html#aff7bc057c801d3b2deef09e83cf3e7d7", null ],
     [ "get_all_sorted", "construction_8h.html#ac95b3bf969c90f634ef207f68584fda3", null ],
     [ "get_build_reqs_for_furn_ter_ids", "construction_8h.html#a60540a92efeb71056973938bd5a40b95", null ],

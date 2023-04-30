@@ -20,8 +20,8 @@ var classweather__manager =
     [ "weather_id", "classweather__manager.html#ae3a0fada13f5c0e5d8fbe1a33b0fbc33", null ],
     [ "weather_override", "classweather__manager.html#a7900f28733571347e2e3ba0266a314dc", null ],
     [ "weather_precise", "classweather__manager.html#a20b58912df8bc95a26a6ec888dc3a0c1", null ],
-    [ "wind_direction_override", "classweather__manager.html#a4a79346fba27c98905cff470522847b2", null ],
+    [ "wind_direction_override", "classweather__manager.html#aedfd9ff7feb773f8b3eafdb030ca9739", null ],
     [ "winddirection", "classweather__manager.html#a410734bb787ca2653905ca7a1c704b88", null ],
     [ "windspeed", "classweather__manager.html#ae21ca8b6895d5b684f224a35590e54a5", null ],
-    [ "windspeed_override", "classweather__manager.html#a546872ab4b9b5f2832ec19bc39f886d9", null ]
+    [ "windspeed_override", "classweather__manager.html#a64a0d2b454774d6c5da3fff2bd28ca41", null ]
 ];

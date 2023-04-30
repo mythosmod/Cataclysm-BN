@@ -94,9 +94,9 @@ $(document).ready(function(){initNavTree('ranged_8h.html',''); initResizable(); 
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;map&gt;</code><br />
+<code>#include &lt;optional&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &quot;<a class="el" href="game__constants_8h_source.html">game_constants.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="optional_8h_source.html">optional.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="type__id_8h_source.html">type_id.h</a>&quot;</code><br />
 </div>
 <p><a href="ranged_8h_source.html">Go to the source code of this file.</a></p>
@@ -236,9 +236,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ae09161f6a90d6bc3282a1e0f50c439b2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceranged.html#ae09161f6a90d6bc3282a1e0f50c439b2">ranged::fire_gun</a> (<a class="el" href="classCharacter.html">Character</a> &amp;who, const <a class="el" href="structtripoint.html">tripoint</a> &amp;target, int shots, <a class="el" href="classitem.html">item</a> &amp;gun, <a class="el" href="classitem__location.html">item_location</a> ammo)</td></tr>
 <tr class="memdesc:ae09161f6a90d6bc3282a1e0f50c439b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fire a gun or auxiliary gunmod (ignoring any current mode)  <a href="namespaceranged.html#ae09161f6a90d6bc3282a1e0f50c439b2">More...</a><br /></td></tr>
 <tr class="separator:ae09161f6a90d6bc3282a1e0f50c439b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a0f866a4bec031e85ccbb05148319b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdealt__projectile__attack.html">dealt_projectile_attack</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceranged.html#a3a0f866a4bec031e85ccbb05148319b5">ranged::throw_item</a> (<a class="el" href="classCharacter.html">Character</a> &amp;who, const <a class="el" href="structtripoint.html">tripoint</a> &amp;target, const <a class="el" href="classitem.html">item</a> &amp;to_throw, <a class="el" href="classcata_1_1optional.html">cata::optional</a>&lt; <a class="el" href="structtripoint.html">tripoint</a> &gt; blind_throw_from_pos)</td></tr>
-<tr class="memdesc:a3a0f866a4bec031e85ccbb05148319b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute a throw.  <a href="namespaceranged.html#a3a0f866a4bec031e85ccbb05148319b5">More...</a><br /></td></tr>
-<tr class="separator:a3a0f866a4bec031e85ccbb05148319b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaa4e309fe9b7ad615954c9f7524ddce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdealt__projectile__attack.html">dealt_projectile_attack</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceranged.html#aaaa4e309fe9b7ad615954c9f7524ddce">ranged::throw_item</a> (<a class="el" href="classCharacter.html">Character</a> &amp;who, const <a class="el" href="structtripoint.html">tripoint</a> &amp;target, const <a class="el" href="classitem.html">item</a> &amp;to_throw, <a class="el" href="generic__factory_8h.html#a1159dbaba81931271dbfe5b9c7f041b3">std::optional</a>&lt; <a class="el" href="structtripoint.html">tripoint</a> &gt; blind_throw_from_pos)</td></tr>
+<tr class="memdesc:aaaa4e309fe9b7ad615954c9f7524ddce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute a throw.  <a href="namespaceranged.html#aaaa4e309fe9b7ad615954c9f7524ddce">More...</a><br /></td></tr>
+<tr class="separator:aaaa4e309fe9b7ad615954c9f7524ddce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a6b4c3a2a360b378de261413fbb7d84f0" name="a6b4c3a2a360b378de261413fbb7d84f0"></a>
@@ -267,12 +267,12 @@ Functions</h2></td></tr>
 <div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>    }</div>
 <div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span>    <span class="keywordflow">return</span> even_chance_range;</div>
 <div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span>}</div>
-<div class="ttc" id="aclassCreature_html_a73b9cb6320e4447addaec375887e7861"><div class="ttname"><a href="classCreature.html#a73b9cb6320e4447addaec375887e7861">Creature::dispersion_for_even_chance_of_good_hit</a></div><div class="ttdeci">static std::vector&lt; int &gt; dispersion_for_even_chance_of_good_hit</div><div class="ttdef"><b>Definition:</b> <a href="creature_8h_source.html#l00852">creature.h:852</a></div></div>
+<div class="ttc" id="aclassCreature_html_a73b9cb6320e4447addaec375887e7861"><div class="ttname"><a href="classCreature.html#a73b9cb6320e4447addaec375887e7861">Creature::dispersion_for_even_chance_of_good_hit</a></div><div class="ttdeci">static std::vector&lt; int &gt; dispersion_for_even_chance_of_good_hit</div><div class="ttdef"><b>Definition:</b> <a href="creature_8h_source.html#l00857">creature.h:857</a></div></div>
 <div class="ttc" id="anamespaceom__direction_html_af97f9dbddaa758278662da3478826c61"><div class="ttname"><a href="namespaceom__direction.html#af97f9dbddaa758278662da3478826c61">om_direction::size</a></div><div class="ttdeci">const size_t size</div><div class="ttdef"><b>Definition:</b> <a href="om__direction_8h_source.html#l00027">om_direction.h:27</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="creature_8h_source.html#l00852">Creature::dispersion_for_even_chance_of_good_hit</a>, and <a class="el" href="om__direction_8h_source.html#l00027">om_direction::size</a>.</p>
+<p class="reference">References <a class="el" href="creature_8h_source.html#l00857">Creature::dispersion_for_even_chance_of_good_hit</a>, and <a class="el" href="om__direction_8h_source.html#l00027">om_direction::size</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="npcmove_8cpp_source.html#l02044">npc::confident_gun_mode_range()</a>, and <a class="el" href="item_8cpp_source.html#l02017">item::gun_info()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="npcmove_8cpp_source.html#l02030">npc::confident_gun_mode_range()</a>, and <a class="el" href="item_8cpp_source.html#l02017">item::gun_info()</a>.</p>
 
 </div>
 </div>
@@ -282,7 +282,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="ranged_8h.html">ranged.h</a></li>
-    <li class="footer">Generated on Fri Apr 7 2023 11:54:33 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Apr 30 2023 06:47:57 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

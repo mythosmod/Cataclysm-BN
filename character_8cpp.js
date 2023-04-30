@@ -46,7 +46,7 @@ var character_8cpp =
     [ "from_clothing", "character_8cpp.html#aded8b30269da0d4119f07b696e27ceb8", null ],
     [ "from_effects", "character_8cpp.html#ab3da63b8c7b9e6d10df9605a7e0708eb", null ],
     [ "get_player_character", "character_8cpp.html#a2fcb25d686f4a35fca374c6f71280311", null ],
-    [ "get_speedydex_bonus", "character_8cpp.html#acd8074a2353e1244722bbbabb4f0c3cf", null ],
+    [ "get_speedydex_bonus", "character_8cpp.html#a53ddf9114e0180fde5e1eb7f15cf3d05", null ],
     [ "get_stat_name", "character_8cpp.html#a035c78e847a263690eaab59f16c23b88", null ],
     [ "has_psy_protection", "character_8cpp.html#ad9592dafb578bdbac6e6945f9dffda42", null ],
     [ "item_armor_enchantment_adjust", "character_8cpp.html#aa78451da6531882df80ad13ed9a62e6c", null ],

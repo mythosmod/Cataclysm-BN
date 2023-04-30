@@ -4,6 +4,6 @@ var structact__progress__message =
     [ "make_extra_info", "structact__progress__message.html#a55d459f715124a306f2e8ebb26ca3950", null ],
     [ "make_full", "structact__progress__message.html#a38562e99a8761e8d1b57cb5ff8720287", null ],
     [ "implemented", "structact__progress__message.html#a5fb758afbe2339b265e1a44917c1ad08", null ],
-    [ "msg_extra_info", "structact__progress__message.html#a0c30f43d7f5bc8d94b73d4efd4e9e5bd", null ],
-    [ "msg_full", "structact__progress__message.html#a33a5507412488997b5a99d0c75940ac5", null ]
+    [ "msg_extra_info", "structact__progress__message.html#aed345f3dbdb93bda7d5003287043c6c4", null ],
+    [ "msg_full", "structact__progress__message.html#aa7bad582eed60da82c002a0f58f430d7", null ]
 ];

@@ -95,6 +95,7 @@ $(document).ready(function(){initNavTree('input_8cpp.html',''); initResizable();
 <code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;cctype&gt;</code><br />
 <code>#include &lt;fstream&gt;</code><br />
+<code>#include &lt;optional&gt;</code><br />
 <code>#include &lt;sstream&gt;</code><br />
 <code>#include &lt;stdexcept&gt;</code><br />
 <code>#include &lt;array&gt;</code><br />
@@ -113,7 +114,6 @@ $(document).ready(function(){initNavTree('input_8cpp.html',''); initResizable();
 <code>#include &quot;<a class="el" href="help_8h_source.html">help.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ime_8h_source.html">ime.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="json_8h_source.html">json.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="optional_8h_source.html">optional.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="options_8h_source.html">options.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="output_8h_source.html">output.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="path__info_8h_source.html">path_info.h</a>&quot;</code><br />
@@ -197,7 +197,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="input_8cpp_source.html#l00604">input_context::clear_conflicting_keybindings()</a>, <a class="el" href="input_8cpp_source.html#l00999">input_context::display_menu()</a>, <a class="el" href="input_8cpp_source.html#l00479">input_manager::get_action_attributes()</a>, <a class="el" href="input_8cpp_source.html#l01361">input_context::get_action_name()</a>, <a class="el" href="input_8cpp_source.html#l00516">input_manager::get_default_action_name()</a>, <a class="el" href="input_8cpp_source.html#l00111">input_manager::init()</a>, and <a class="el" href="input_8cpp_source.html#l00187">input_manager::load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="input_8cpp_source.html#l00600">input_context::clear_conflicting_keybindings()</a>, <a class="el" href="input_8cpp_source.html#l00993">input_context::display_menu()</a>, <a class="el" href="input_8cpp_source.html#l00475">input_manager::get_action_attributes()</a>, <a class="el" href="input_8cpp_source.html#l01355">input_context::get_action_name()</a>, <a class="el" href="input_8cpp_source.html#l00512">input_manager::get_default_action_name()</a>, <a class="el" href="input_8cpp_source.html#l00111">input_manager::init()</a>, and <a class="el" href="input_8cpp_source.html#l00182">input_manager::load()</a>.</p>
 
 </div>
 </div>
@@ -219,12 +219,12 @@ Variables</h2></td></tr>
 <p>Check whether a gamepad is plugged in/available. </p>
 <p >Always false in non-SDL versions. </p>
 
-<p class="definition">Definition at line <a class="el" href="input_8cpp_source.html#l01333">1333</a> of file <a class="el" href="input_8cpp_source.html">input.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01334" name="l01334"></a><span class="lineno"> 1334</span>{</div>
-<div class="line"><a id="l01335" name="l01335"></a><span class="lineno"> 1335</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l01336" name="l01336"></a><span class="lineno"> 1336</span>}</div>
+<p class="definition">Definition at line <a class="el" href="input_8cpp_source.html#l01327">1327</a> of file <a class="el" href="input_8cpp_source.html">input.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01328" name="l01328"></a><span class="lineno"> 1328</span>{</div>
+<div class="line"><a id="l01329" name="l01329"></a><span class="lineno"> 1329</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l01330" name="l01330"></a><span class="lineno"> 1330</span>}</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="input_8cpp_source.html#l00756">input_context::get_desc()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="input_8cpp_source.html#l00750">input_context::get_desc()</a>.</p>
 
 </div>
 </div>
@@ -301,7 +301,7 @@ Variables</h2></td></tr>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keywordflow">return</span> buffer.str();</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>}</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="input_8cpp_source.html#l00415">input_manager::get_keyname()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="input_8cpp_source.html#l00410">input_manager::get_keyname()</a>.</p>
 
 </div>
 </div>
@@ -329,7 +329,7 @@ Variables</h2></td></tr>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>}</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="ranged_8cpp_source.html#l03369">target_ui::draw_controls_list()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ranged_8cpp_source.html#l03376">target_ui::draw_controls_list()</a>.</p>
 
 </div>
 </div>
@@ -359,25 +359,25 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="input_8cpp_source.html#l00943">943</a> of file <a class="el" href="input_8cpp_source.html">input.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00944" name="l00944"></a><span class="lineno">  944</span>{</div>
-<div class="line"><a id="l00945" name="l00945"></a><span class="lineno">  945</span>    <span class="comment">// convert to</span></div>
-<div class="line"><a id="l00946" name="l00946"></a><span class="lineno">  946</span>    <span class="comment">// 0 1 2</span></div>
-<div class="line"><a id="l00947" name="l00947"></a><span class="lineno">  947</span>    <span class="comment">// 3 4 5</span></div>
-<div class="line"><a id="l00948" name="l00948"></a><span class="lineno">  948</span>    <span class="comment">// 6 7 8</span></div>
-<div class="line"><a id="l00949" name="l00949"></a><span class="lineno">  949</span>    <span class="keywordtype">int</span> dir_num = ( dy + 1 ) * 3 + dx + 1;</div>
-<div class="line"><a id="l00950" name="l00950"></a><span class="lineno">  950</span>    <span class="comment">// rotate to</span></div>
-<div class="line"><a id="l00951" name="l00951"></a><span class="lineno">  951</span>    <span class="comment">// 1 2 5</span></div>
-<div class="line"><a id="l00952" name="l00952"></a><span class="lineno">  952</span>    <span class="comment">// 0 4 8</span></div>
-<div class="line"><a id="l00953" name="l00953"></a><span class="lineno">  953</span>    <span class="comment">// 3 6 7</span></div>
-<div class="line"><a id="l00954" name="l00954"></a><span class="lineno">  954</span>    <span class="keyword">static</span> <span class="keyword">const</span> std::array&lt;int, 9&gt; rotate_direction_vec = {{ 1, 2, 5, 0, 4, 8, 3, 6, 7 }};</div>
-<div class="line"><a id="l00955" name="l00955"></a><span class="lineno">  955</span>    dir_num = rotate_direction_vec[dir_num];</div>
-<div class="line"><a id="l00956" name="l00956"></a><span class="lineno">  956</span>    <span class="comment">// convert back to -1,0,+1</span></div>
-<div class="line"><a id="l00957" name="l00957"></a><span class="lineno">  957</span>    dx = dir_num % 3 - 1;</div>
-<div class="line"><a id="l00958" name="l00958"></a><span class="lineno">  958</span>    dy = dir_num / 3 - 1;</div>
-<div class="line"><a id="l00959" name="l00959"></a><span class="lineno">  959</span>}</div>
+<p class="definition">Definition at line <a class="el" href="input_8cpp_source.html#l00937">937</a> of file <a class="el" href="input_8cpp_source.html">input.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00938" name="l00938"></a><span class="lineno">  938</span>{</div>
+<div class="line"><a id="l00939" name="l00939"></a><span class="lineno">  939</span>    <span class="comment">// convert to</span></div>
+<div class="line"><a id="l00940" name="l00940"></a><span class="lineno">  940</span>    <span class="comment">// 0 1 2</span></div>
+<div class="line"><a id="l00941" name="l00941"></a><span class="lineno">  941</span>    <span class="comment">// 3 4 5</span></div>
+<div class="line"><a id="l00942" name="l00942"></a><span class="lineno">  942</span>    <span class="comment">// 6 7 8</span></div>
+<div class="line"><a id="l00943" name="l00943"></a><span class="lineno">  943</span>    <span class="keywordtype">int</span> dir_num = ( dy + 1 ) * 3 + dx + 1;</div>
+<div class="line"><a id="l00944" name="l00944"></a><span class="lineno">  944</span>    <span class="comment">// rotate to</span></div>
+<div class="line"><a id="l00945" name="l00945"></a><span class="lineno">  945</span>    <span class="comment">// 1 2 5</span></div>
+<div class="line"><a id="l00946" name="l00946"></a><span class="lineno">  946</span>    <span class="comment">// 0 4 8</span></div>
+<div class="line"><a id="l00947" name="l00947"></a><span class="lineno">  947</span>    <span class="comment">// 3 6 7</span></div>
+<div class="line"><a id="l00948" name="l00948"></a><span class="lineno">  948</span>    <span class="keyword">static</span> <span class="keyword">const</span> std::array&lt;int, 9&gt; rotate_direction_vec = {{ 1, 2, 5, 0, 4, 8, 3, 6, 7 }};</div>
+<div class="line"><a id="l00949" name="l00949"></a><span class="lineno">  949</span>    dir_num = rotate_direction_vec[dir_num];</div>
+<div class="line"><a id="l00950" name="l00950"></a><span class="lineno">  950</span>    <span class="comment">// convert back to -1,0,+1</span></div>
+<div class="line"><a id="l00951" name="l00951"></a><span class="lineno">  951</span>    dx = dir_num % 3 - 1;</div>
+<div class="line"><a id="l00952" name="l00952"></a><span class="lineno">  952</span>    dy = dir_num / 3 - 1;</div>
+<div class="line"><a id="l00953" name="l00953"></a><span class="lineno">  953</span>}</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="input_8cpp_source.html#l00961">input_context::get_direction()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="input_8cpp_source.html#l00955">input_context::get_direction()</a>.</p>
 
 </div>
 </div>
@@ -416,7 +416,7 @@ Variables</h2></td></tr>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}</div>
 <div class="ttc" id="anamespacedetail_1_1digits_html_aad69d2373aa047bdd9e81494bf3da5ae"><div class="ttname"><a href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">detail::digits::result</a></div><div class="ttdeci">result</div><div class="ttdef"><b>Definition:</b> <a href="fmtlib__format-inl_8h_source.html#l01626">fmtlib_format-inl.h:1626</a></div></div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="input_8cpp_source.html#l00402">input_manager::get_keycode()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="input_8cpp_source.html#l00397">input_manager::get_keycode()</a>.</p>
 
 </div>
 </div>
@@ -433,9 +433,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="input_8cpp_source.html#l00629">629</a> of file <a class="el" href="input_8cpp_source.html">input.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="input_8cpp_source.html#l00625">625</a> of file <a class="el" href="input_8cpp_source.html">input.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="input_8cpp_source.html#l00859">input_context::handle_input()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="input_8cpp_source.html#l00853">input_context::handle_input()</a>.</p>
 
 </div>
 </div>
@@ -451,9 +451,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="input_8cpp_source.html#l00628">628</a> of file <a class="el" href="input_8cpp_source.html">input.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="input_8cpp_source.html#l00624">624</a> of file <a class="el" href="input_8cpp_source.html">input.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="input_8cpp_source.html#l00859">input_context::handle_input()</a>, and <a class="el" href="input_8cpp_source.html#l00634">input_context::input_to_action()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="input_8cpp_source.html#l00853">input_context::handle_input()</a>, and <a class="el" href="input_8cpp_source.html#l00630">input_context::input_to_action()</a>.</p>
 
 </div>
 </div>
@@ -477,9 +477,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="input_8cpp_source.html#l00342">342</a> of file <a class="el" href="input_8cpp_source.html">input.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="input_8cpp_source.html#l00337">337</a> of file <a class="el" href="input_8cpp_source.html">input.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="input_8cpp_source.html#l00415">input_manager::get_keyname()</a>, and <a class="el" href="input_8cpp_source.html#l00345">input_manager::init_keycode_mapping()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="input_8cpp_source.html#l00410">input_manager::get_keyname()</a>, and <a class="el" href="input_8cpp_source.html#l00340">input_manager::init_keycode_mapping()</a>.</p>
 
 </div>
 </div>
@@ -503,9 +503,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="input_8cpp_source.html#l00343">343</a> of file <a class="el" href="input_8cpp_source.html">input.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="input_8cpp_source.html#l00338">338</a> of file <a class="el" href="input_8cpp_source.html">input.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="input_8cpp_source.html#l00415">input_manager::get_keyname()</a>, and <a class="el" href="input_8cpp_source.html#l00345">input_manager::init_keycode_mapping()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="input_8cpp_source.html#l00410">input_manager::get_keyname()</a>, and <a class="el" href="input_8cpp_source.html#l00340">input_manager::init_keycode_mapping()</a>.</p>
 
 </div>
 </div>
@@ -521,7 +521,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="input_8cpp_source.html#l00631">631</a> of file <a class="el" href="input_8cpp_source.html">input.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="input_8cpp_source.html#l00627">627</a> of file <a class="el" href="input_8cpp_source.html">input.cpp</a>.</p>
 
 </div>
 </div>
@@ -539,9 +539,9 @@ Variables</h2></td></tr>
 <b>Initial value:</b><div class="fragment"><div class="line">=</div>
 <div class="line">    <span class="stringliteral">&quot;abcdefghijkpqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789:;&#39;\&quot;,/&lt;&gt;?!@#$%^&amp;*()_[]\\{}|`~&quot;</span></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="input_8cpp_source.html#l00996">996</a> of file <a class="el" href="input_8cpp_source.html">input.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="input_8cpp_source.html#l00990">990</a> of file <a class="el" href="input_8cpp_source.html">input.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="input_8cpp_source.html#l00999">input_context::display_menu()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="input_8cpp_source.html#l00993">input_context::display_menu()</a>.</p>
 
 </div>
 </div>
@@ -557,9 +557,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="input_8cpp_source.html#l00630">630</a> of file <a class="el" href="input_8cpp_source.html">input.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="input_8cpp_source.html#l00626">626</a> of file <a class="el" href="input_8cpp_source.html">input.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="input_8cpp_source.html#l00859">input_context::handle_input()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="input_8cpp_source.html#l00853">input_context::handle_input()</a>.</p>
 
 </div>
 </div>
@@ -577,7 +577,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="input_8cpp_source.html#l00109">109</a> of file <a class="el" href="input_8cpp_source.html">input.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="input_8cpp_source.html#l00589">input_context::action_uses_input()</a>, <a class="el" href="debug__menu_8cpp_source.html#l01296">debug_menu::benchmark()</a>, <a class="el" href="mapgen_8cpp_source.html#l00367">calculate_mapgen_weights()</a>, <a class="el" href="item__factory_8cpp_source.html#l01117">Item_factory::check_definitions()</a>, <a class="el" href="input_8cpp_source.html#l00604">input_context::clear_conflicting_keybindings()</a>, <a class="el" href="debug__menu_8cpp_source.html#l01366">debug_menu::debug()</a>, <a class="el" href="debug_8cpp_source.html#l00163">debug_error_prompt()</a>, <a class="el" href="input_8cpp_source.html#l00999">input_context::display_menu()</a>, <a class="el" href="game_8cpp_source.html#l11087">game::display_scent()</a>, <a class="el" href="construction_8cpp_source.html#l00223">constructions::finalize()</a>, <a class="el" href="recipe__dictionary_8cpp_source.html#l00360">recipe_dictionary::finalize_internal()</a>, <a class="el" href="game_8cpp_source.html#l09720">game::fling_creature()</a>, <a class="el" href="input_8cpp_source.html#l01361">input_context::get_action_name()</a>, <a class="el" href="input_8cpp_source.html#l00721">input_context::get_available_single_char_hotkeys()</a>, <a class="el" href="input_8cpp_source.html#l00756">input_context::get_desc()</a>, <a class="el" href="handle__action_8cpp_source.html#l01520">game::handle_action()</a>, <a class="el" href="input_8cpp_source.html#l00859">input_context::handle_input()</a>, <a class="el" href="player__hardcoded__effects_8cpp_source.html#l00472">Character::hardcoded_effects()</a>, <a class="el" href="animation_8cpp_source.html#l00529">anonymous_namespace{animation.cpp}::hit_animation()</a>, <a class="el" href="gamemode__defense_8cpp_source.html#l00224">defense_game::init_map()</a>, <a class="el" href="input_8cpp_source.html#l00634">input_context::input_to_action()</a>, <a class="el" href="input_8cpp_source.html#l00695">input_context::keys_bound_to()</a>, <a class="el" href="map_8cpp_source.html#l06652">map::load()</a>, <a class="el" href="init_8cpp_source.html#l00508">DynamicDataLoader::load_all_from_json()</a>, <a class="el" href="init_8cpp_source.html#l00158">DynamicDataLoader::load_deferred()</a>, <a class="el" href="game_8cpp_source.html#l00336">game::load_static_data()</a>, <a class="el" href="map_8cpp_source.html#l00578">map::move_vehicle()</a>, <a class="el" href="npctalk_8cpp_source.html#l01739">dialogue::opt()</a>, <a class="el" href="input_8cpp_source.html#l01402">input_context::press_x()</a>, <a class="el" href="iuse__software__kitten_8cpp_source.html#l00418">robot_finds_kitten::process_input()</a>, <a class="el" href="animation_8cpp_source.html#l00060">anonymous_namespace{animation.cpp}::basic_animation::progress()</a>, <a class="el" href="computer__session_8cpp_source.html#l01532">computer_session::query_any()</a>, <a class="el" href="monattack_8cpp_source.html#l02592">mattack::ranged_pull()</a>, <a class="el" href="mapbuffer_8cpp_source.html#l00098">mapbuffer::save()</a>, <a class="el" href="mapgen_8cpp_source.html#l00314">mapgen_factory::setup()</a>, <a class="el" href="loading__ui_8cpp_source.html#l00076">loading_ui::show()</a>, <a class="el" href="main_8cpp_source.html#l00119">signal_handler()</a>, <a class="el" href="savegame_8cpp_source.html#l00167">game::unserialize()</a>, and <a class="el" href="input_8cpp_source.html#l01309">input_manager::wait_for_any_key()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="input_8cpp_source.html#l00585">input_context::action_uses_input()</a>, <a class="el" href="debug__menu_8cpp_source.html#l01302">debug_menu::benchmark()</a>, <a class="el" href="mapgen_8cpp_source.html#l00367">calculate_mapgen_weights()</a>, <a class="el" href="item__factory_8cpp_source.html#l01117">Item_factory::check_definitions()</a>, <a class="el" href="input_8cpp_source.html#l00600">input_context::clear_conflicting_keybindings()</a>, <a class="el" href="debug__menu_8cpp_source.html#l01372">debug_menu::debug()</a>, <a class="el" href="debug_8cpp_source.html#l00164">debug_error_prompt()</a>, <a class="el" href="input_8cpp_source.html#l00993">input_context::display_menu()</a>, <a class="el" href="game_8cpp_source.html#l11117">game::display_scent()</a>, <a class="el" href="construction_8cpp_source.html#l00223">constructions::finalize()</a>, <a class="el" href="recipe__dictionary_8cpp_source.html#l00360">recipe_dictionary::finalize_internal()</a>, <a class="el" href="game_8cpp_source.html#l09751">game::fling_creature()</a>, <a class="el" href="input_8cpp_source.html#l01355">input_context::get_action_name()</a>, <a class="el" href="input_8cpp_source.html#l00717">input_context::get_available_single_char_hotkeys()</a>, <a class="el" href="input_8cpp_source.html#l00750">input_context::get_desc()</a>, <a class="el" href="handle__action_8cpp_source.html#l01521">game::handle_action()</a>, <a class="el" href="input_8cpp_source.html#l00853">input_context::handle_input()</a>, <a class="el" href="player__hardcoded__effects_8cpp_source.html#l00472">Character::hardcoded_effects()</a>, <a class="el" href="animation_8cpp_source.html#l00589">anonymous_namespace{animation.cpp}::hit_animation()</a>, <a class="el" href="gamemode__defense_8cpp_source.html#l00224">defense_game::init_map()</a>, <a class="el" href="input_8cpp_source.html#l00630">input_context::input_to_action()</a>, <a class="el" href="input_8cpp_source.html#l00691">input_context::keys_bound_to()</a>, <a class="el" href="map_8cpp_source.html#l06715">map::load()</a>, <a class="el" href="init_8cpp_source.html#l00508">DynamicDataLoader::load_all_from_json()</a>, <a class="el" href="init_8cpp_source.html#l00158">DynamicDataLoader::load_deferred()</a>, <a class="el" href="game_8cpp_source.html#l00336">game::load_static_data()</a>, <a class="el" href="map_8cpp_source.html#l00579">map::move_vehicle()</a>, <a class="el" href="npctalk_8cpp_source.html#l01739">dialogue::opt()</a>, <a class="el" href="input_8cpp_source.html#l01396">input_context::press_x()</a>, <a class="el" href="iuse__software__kitten_8cpp_source.html#l00418">robot_finds_kitten::process_input()</a>, <a class="el" href="animation_8cpp_source.html#l00061">anonymous_namespace{animation.cpp}::basic_animation::progress()</a>, <a class="el" href="computer__session_8cpp_source.html#l01532">computer_session::query_any()</a>, <a class="el" href="monattack_8cpp_source.html#l02592">mattack::ranged_pull()</a>, <a class="el" href="mapbuffer_8cpp_source.html#l00098">mapbuffer::save()</a>, <a class="el" href="mapgen_8cpp_source.html#l00314">mapgen_factory::setup()</a>, <a class="el" href="loading__ui_8cpp_source.html#l00076">loading_ui::show()</a>, <a class="el" href="main_8cpp_source.html#l00119">signal_handler()</a>, <a class="el" href="savegame_8cpp_source.html#l00167">game::unserialize()</a>, and <a class="el" href="input_8cpp_source.html#l01303">input_manager::wait_for_any_key()</a>.</p>
 
 </div>
 </div>
@@ -593,9 +593,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="input_8cpp_source.html#l00632">632</a> of file <a class="el" href="input_8cpp_source.html">input.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="input_8cpp_source.html#l00628">628</a> of file <a class="el" href="input_8cpp_source.html">input.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="input_8cpp_source.html#l00859">input_context::handle_input()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="input_8cpp_source.html#l00853">input_context::handle_input()</a>.</p>
 
 </div>
 </div>
@@ -605,7 +605,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="input_8cpp.html">input.cpp</a></li>
-    <li class="footer">Generated on Fri Apr 7 2023 11:54:30 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Apr 30 2023 06:47:54 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

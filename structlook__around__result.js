@@ -1,5 +1,5 @@
 var structlook__around__result =
 [
-    [ "peek_action", "structlook__around__result.html#a930a52f70b696a60fcee0694e8ce428b", null ],
-    [ "position", "structlook__around__result.html#a0b0b74bb40518cbb4db71097deb7aac8", null ]
+    [ "peek_action", "structlook__around__result.html#aed005d95a261f0e6baf922bdd7d420d2", null ],
+    [ "position", "structlook__around__result.html#a447a653e2e1b24bc44862150307789c8", null ]
 ];

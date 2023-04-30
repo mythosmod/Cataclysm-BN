@@ -159,12 +159,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="explosion_8cpp_source.html#l01309">1309</a> of file <a class="el" href="explosion_8cpp_source.html">explosion.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01311" name="l01311"></a><span class="lineno"> 1311</span>{</div>
-<div class="line"><a id="l01312" name="l01312"></a><span class="lineno"> 1312</span>    <span class="keywordflow">return</span> std::max( cumulative_obstacle, current_obstacle ) + 1;</div>
-<div class="line"><a id="l01313" name="l01313"></a><span class="lineno"> 1313</span>}</div>
+<p class="definition">Definition at line <a class="el" href="explosion_8cpp_source.html#l01967">1967</a> of file <a class="el" href="explosion_8cpp_source.html">explosion.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01969" name="l01969"></a><span class="lineno"> 1969</span>{</div>
+<div class="line"><a id="l01970" name="l01970"></a><span class="lineno"> 1970</span>    <span class="keywordflow">return</span> std::max( cumulative_obstacle, current_obstacle ) + 1;</div>
+<div class="line"><a id="l01971" name="l01971"></a><span class="lineno"> 1971</span>}</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="explosion_8cpp_source.html#l00611">explosion_handler::shrapnel()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="explosion_8cpp_source.html#l01103">explosion_handler::legacy_shrapnel()</a>.</p>
 
 </div>
 </div>
@@ -200,13 +200,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="explosion_8cpp_source.html#l01294">1294</a> of file <a class="el" href="explosion_8cpp_source.html">explosion.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01295" name="l01295"></a><span class="lineno"> 1295</span>{</div>
-<div class="line"><a id="l01296" name="l01296"></a><span class="lineno"> 1296</span>    <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="namespacefields.html#af8bc739ca8fbe535a44afc02da973280a04bb0ec2d0e931c59f606510558e55a1">intensity</a> - last_obstacle;</div>
-<div class="line"><a id="l01297" name="l01297"></a><span class="lineno"> 1297</span>}</div>
+<p class="definition">Definition at line <a class="el" href="explosion_8cpp_source.html#l01952">1952</a> of file <a class="el" href="explosion_8cpp_source.html">explosion.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01953" name="l01953"></a><span class="lineno"> 1953</span>{</div>
+<div class="line"><a id="l01954" name="l01954"></a><span class="lineno"> 1954</span>    <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="namespacefields.html#af8bc739ca8fbe535a44afc02da973280a04bb0ec2d0e931c59f606510558e55a1">intensity</a> - last_obstacle;</div>
+<div class="line"><a id="l01955" name="l01955"></a><span class="lineno"> 1955</span>}</div>
 <div class="ttc" id="anamespacefields_html_af8bc739ca8fbe535a44afc02da973280a04bb0ec2d0e931c59f606510558e55a1"><div class="ttname"><a href="namespacefields.html#af8bc739ca8fbe535a44afc02da973280a04bb0ec2d0e931c59f606510558e55a1">fields::stacking_type::intensity</a></div><div class="ttdeci">@ intensity</div></div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="explosion_8cpp_source.html#l00611">explosion_handler::shrapnel()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="explosion_8cpp_source.html#l01103">explosion_handler::legacy_shrapnel()</a>.</p>
 
 </div>
 </div>
@@ -236,12 +236,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="explosion_8cpp_source.html#l01299">1299</a> of file <a class="el" href="explosion_8cpp_source.html">explosion.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01300" name="l01300"></a><span class="lineno"> 1300</span>{</div>
-<div class="line"><a id="l01301" name="l01301"></a><span class="lineno"> 1301</span>    <span class="keywordflow">return</span> last_intensity - obstacle &gt; 0.0f;</div>
-<div class="line"><a id="l01302" name="l01302"></a><span class="lineno"> 1302</span>}</div>
+<p class="definition">Definition at line <a class="el" href="explosion_8cpp_source.html#l01957">1957</a> of file <a class="el" href="explosion_8cpp_source.html">explosion.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01958" name="l01958"></a><span class="lineno"> 1958</span>{</div>
+<div class="line"><a id="l01959" name="l01959"></a><span class="lineno"> 1959</span>    <span class="keywordflow">return</span> last_intensity - obstacle &gt; 0.0f;</div>
+<div class="line"><a id="l01960" name="l01960"></a><span class="lineno"> 1960</span>}</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="explosion_8cpp_source.html#l00611">explosion_handler::shrapnel()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="explosion_8cpp_source.html#l01103">explosion_handler::legacy_shrapnel()</a>.</p>
 
 </div>
 </div>
@@ -277,12 +277,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="explosion_8cpp_source.html#l01304">1304</a> of file <a class="el" href="explosion_8cpp_source.html">explosion.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01305" name="l01305"></a><span class="lineno"> 1305</span>{</div>
-<div class="line"><a id="l01306" name="l01306"></a><span class="lineno"> 1306</span>    output = std::max( output, new_intensity );</div>
-<div class="line"><a id="l01307" name="l01307"></a><span class="lineno"> 1307</span>}</div>
+<p class="definition">Definition at line <a class="el" href="explosion_8cpp_source.html#l01962">1962</a> of file <a class="el" href="explosion_8cpp_source.html">explosion.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01963" name="l01963"></a><span class="lineno"> 1963</span>{</div>
+<div class="line"><a id="l01964" name="l01964"></a><span class="lineno"> 1964</span>    output = std::max( output, new_intensity );</div>
+<div class="line"><a id="l01965" name="l01965"></a><span class="lineno"> 1965</span>}</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="explosion_8cpp_source.html#l00611">explosion_handler::shrapnel()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="explosion_8cpp_source.html#l01103">explosion_handler::legacy_shrapnel()</a>.</p>
 
 </div>
 </div>
@@ -292,7 +292,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="fragment__cloud_8h.html">fragment_cloud.h</a></li>
-    <li class="footer">Generated on Fri Apr 7 2023 11:54:29 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Apr 30 2023 06:47:53 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -4,7 +4,7 @@ var mapdata_8cpp =
     [ "check_decon_items", "mapdata_8cpp.html#afa022d8e6376ebd2bce3a15008c75172", null ],
     [ "check_furniture_and_terrain", "mapdata_8cpp.html#ab6e5c738b58d552ac3a95a1f2b6c1b9c", null ],
     [ "check_pry_items", "mapdata_8cpp.html#af9018b6d952a8728de565e4fdf1c518e", null ],
-    [ "correct_if_magic", "mapdata_8cpp.html#abca6508920922682bfcff25dd51a5403", null ],
+    [ "correct_if_magic", "mapdata_8cpp.html#a235d06d9507bdb943b2abc39eabdaf07", null ],
     [ "enum_to_string< season_type >", "mapdata_8cpp.html#a1902c443c184bdce020db68dcc32c8d9", null ],
     [ "finalize_furn", "mapdata_8cpp.html#a6891e6394818c5c0290f081bb3a6fa18", null ],
     [ "flag_DIGGABLE", "mapdata_8cpp.html#a278a837249e42af97e0732cd82a9df7b", null ],

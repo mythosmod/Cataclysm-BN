@@ -10,7 +10,7 @@ var namespacepickup =
       [ "from_ground", "namespacepickup.html#a03a2e6f98be01a67be0ad42cb7aa4c61a1119d052d90f503b8132a5a75b545a7b", null ],
       [ "prompt", "namespacepickup.html#a03a2e6f98be01a67be0ad42cb7aa4c61a29ea7ce63137484da296feacfa4f021c", null ]
     ] ],
-    [ "calculate_parents", "namespacepickup.html#a5d474eb4abd948ccfc06e01de9ebab8b", null ],
+    [ "calculate_parents", "namespacepickup.html#a4d4caa4e92f3fac01f0eb0922f602abb", null ],
     [ "cost_to_move_item", "namespacepickup.html#ad0504cbefee6dae79de2a504b355840d", null ],
     [ "do_pickup", "namespacepickup.html#a4a554552d66cb17d2fe8a97734377168", null ],
     [ "flatten", "namespacepickup.html#aeb2d3214070659aea65d01402917f834", null ],

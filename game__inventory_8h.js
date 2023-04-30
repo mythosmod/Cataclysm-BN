@@ -4,7 +4,7 @@ var game__inventory_8h =
     [ "item_filter", "game__inventory_8h.html#a9d57d8b3629bbabfd3361d727d55da09", null ],
     [ "common", "game__inventory_8h.html#a19c7cbf1d16b6047663babee50f9dad4", null ],
     [ "compare", "game__inventory_8h.html#a5b4325e0da28fac4ddc96a109c2912df", null ],
-    [ "compare", "game__inventory_8h.html#a19584da88b2dd326b414ecbbaf291bd8", null ],
+    [ "compare", "game__inventory_8h.html#a2f7fcf1ccb723a601d2ae4cf29a8ad3d", null ],
     [ "consume", "game__inventory_8h.html#a4f9083bc5b84c895d3827baf95c6b5e5", null ],
     [ "consume_drink", "game__inventory_8h.html#a8fcc756029af224e6e49284fadf3b409", null ],
     [ "consume_food", "game__inventory_8h.html#ad6927d270b2c7b9c9d1bf0fd5b286932", null ],

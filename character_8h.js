@@ -74,6 +74,7 @@ var character_8h =
     [ "from_clothing", "character_8h.html#aded8b30269da0d4119f07b696e27ceb8", null ],
     [ "from_effects", "character_8h.html#ab3da63b8c7b9e6d10df9605a7e0708eb", null ],
     [ "get_player_character", "character_8h.html#a2fcb25d686f4a35fca374c6f71280311", null ],
+    [ "get_speedydex_bonus", "character_8h.html#a53ddf9114e0180fde5e1eb7f15cf3d05", null ],
     [ "has_psy_protection", "character_8h.html#ad9592dafb578bdbac6e6945f9dffda42", null ],
     [ "nv_range_from_eye_encumbrance", "character_8h.html#ac9e992a7dff11772e270108ad424e4ab", null ],
     [ "nv_range_from_per", "character_8h.html#a05a8ace4b281f390ac9ee3de19c61a78", null ],

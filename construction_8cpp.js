@@ -16,7 +16,7 @@ var construction_8cpp =
     [ "check_up_OK", "construction_8cpp.html#a8a0e7836daca0326f3833f371a5ccb4b", null ],
     [ "complete_construction", "construction_8cpp.html#a9ceb130d0b7cd2782627a407a08c1c37", null ],
     [ "construction_color", "construction_8cpp.html#a26e7df7bc0db66642842b6aaaec657b2", null ],
-    [ "construction_menu", "construction_8cpp.html#ac03ce881fc4289e5dcf9c666eca9fc4e", null ],
+    [ "construction_menu", "construction_8cpp.html#a0d06f1c3dd1edce0bf24c587c56fbd76", null ],
     [ "constructions_by_group", "construction_8cpp.html#a8b9b2cd3c1fe505f9be0885174785b99", null ],
     [ "done_deconstruct", "construction_8cpp.html#abe358a124d19d6d896a0847a0d144b8a", null ],
     [ "done_dig_stair", "construction_8cpp.html#a99e528edd32dbe81c6e1ee6020e999f9", null ],

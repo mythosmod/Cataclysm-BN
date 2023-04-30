@@ -132,8 +132,8 @@ Functions</h2></td></tr>
 <tr class="separator:af276d9c0371fe03e732e53d4654a54ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aecf71e23a35d1b0fbf2b28e6b4700a70"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mutation__ui_8cpp.html#aecf71e23a35d1b0fbf2b28e6b4700a70">show_mutations_titlebar</a> (const <a class="el" href="classcatacurses_1_1window.html">catacurses::window</a> &amp;window, const <a class="el" href="mutation__ui_8cpp.html#afaa5795d732cc701e687f01178799df1">mutation_menu_mode</a> menu_mode, const <a class="el" href="classinput__context.html">input_context</a> &amp;ctxt)</td></tr>
 <tr class="separator:aecf71e23a35d1b0fbf2b28e6b4700a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e42c3b78fc76d4d6514b58f7796e1d9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classcata_1_1optional.html">cata::optional</a>&lt; <a class="el" href="type__id_8h.html#a44aa01c09faf1c1723400eb9075a1f4d">trait_id</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mutation__ui_8cpp.html#a7e42c3b78fc76d4d6514b58f7796e1d9">trait_by_invlet</a> (const <a class="el" href="structmutation__collection.html">mutation_collection</a> &amp;mutations, int ch)</td></tr>
-<tr class="separator:a7e42c3b78fc76d4d6514b58f7796e1d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a068118d7d26bbbed6e2d040d5d4592f9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="generic__factory_8h.html#a1159dbaba81931271dbfe5b9c7f041b3">std::optional</a>&lt; <a class="el" href="type__id_8h.html#a44aa01c09faf1c1723400eb9075a1f4d">trait_id</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mutation__ui_8cpp.html#a068118d7d26bbbed6e2d040d5d4592f9">trait_by_invlet</a> (const <a class="el" href="structmutation__collection.html">mutation_collection</a> &amp;mutations, int ch)</td></tr>
+<tr class="separator:a068118d7d26bbbed6e2d040d5d4592f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16105a4267cae734d8da271799d8540d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mutation__ui_8cpp.html#a16105a4267cae734d8da271799d8540d">show_mutations_ui</a> (<a class="el" href="classCharacter.html">Character</a> &amp;who)</td></tr>
 <tr class="separator:a16105a4267cae734d8da271799d8540d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -407,7 +407,7 @@ Variables</h2></td></tr>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <a class="code hl_function" href="output_8cpp.html#a8fe6897b9287a349d2eb4159b864afe8">fold_and_print</a>( window, <a class="code hl_struct" href="structpoint.html">point</a>( 1, 0 ), <a class="code hl_function" href="namespacecatacurses.html#a929fe85d472028f52d8a5cdfc0d35017">getmaxx</a>( window ) - 1, <a class="code hl_define" href="color_8h.html#a0d06dc49b9761bbc54607397213728bb">c_white</a>, desc );</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <a class="code hl_function" href="namespacecatacurses.html#aa9823d249c21fa50daf277957fabb175">wnoutrefresh</a>( window );</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>}</div>
-<div class="ttc" id="aclassinput__context_html_abe76d2c284f2a277cbd2f367963fa9ab"><div class="ttname"><a href="classinput__context.html#abe76d2c284f2a277cbd2f367963fa9ab">input_context::get_desc</a></div><div class="ttdeci">std::string get_desc(const std::string &amp;action_descriptor, unsigned int max_limit=0, const input_event_filter &amp;evt_filter=allow_all_keys) const</div><div class="ttdoc">Get a description text for the key/other input method associated with the given action.</div><div class="ttdef"><b>Definition:</b> <a href="input_8cpp_source.html#l00756">input.cpp:756</a></div></div>
+<div class="ttc" id="aclassinput__context_html_abe76d2c284f2a277cbd2f367963fa9ab"><div class="ttname"><a href="classinput__context.html#abe76d2c284f2a277cbd2f367963fa9ab">input_context::get_desc</a></div><div class="ttdeci">std::string get_desc(const std::string &amp;action_descriptor, unsigned int max_limit=0, const input_event_filter &amp;evt_filter=allow_all_keys) const</div><div class="ttdoc">Get a description text for the key/other input method associated with the given action.</div><div class="ttdef"><b>Definition:</b> <a href="input_8cpp_source.html#l00750">input.cpp:750</a></div></div>
 <div class="ttc" id="acolor_8cpp_html_a0f25678be1fc95cb81381a004493a4cc"><div class="ttname"><a href="color_8cpp.html#a0f25678be1fc95cb81381a004493a4cc">colorize</a></div><div class="ttdeci">std::string colorize(const std::string &amp;text, const nc_color &amp;color)</div><div class="ttdef"><b>Definition:</b> <a href="color_8cpp_source.html#l00669">color.cpp:669</a></div></div>
 <div class="ttc" id="acolor_8h_html_a0d06dc49b9761bbc54607397213728bb"><div class="ttname"><a href="color_8h.html#a0d06dc49b9761bbc54607397213728bb">c_white</a></div><div class="ttdeci">#define c_white</div><div class="ttdef"><b>Definition:</b> <a href="color_8h_source.html#l00018">color.h:18</a></div></div>
 <div class="ttc" id="acolor_8h_html_a1cb87e74156596960610fd0a9ace766d"><div class="ttname"><a href="color_8h.html#a1cb87e74156596960610fd0a9ace766d">c_green</a></div><div class="ttdeci">#define c_green</div><div class="ttdef"><b>Definition:</b> <a href="color_8h_source.html#l00022">color.h:22</a></div></div>
@@ -418,7 +418,7 @@ Variables</h2></td></tr>
 <div class="ttc" id="aoutput_8cpp_html_a8fe6897b9287a349d2eb4159b864afe8"><div class="ttname"><a href="output_8cpp.html#a8fe6897b9287a349d2eb4159b864afe8">fold_and_print</a></div><div class="ttdeci">int fold_and_print(const catacurses::window &amp;w, point begin, int width, const nc_color &amp;base_color, const std::string &amp;text, const char split)</div><div class="ttdoc">Fold and print text in the given window.</div><div class="ttdef"><b>Definition:</b> <a href="output_8cpp_source.html#l00299">output.cpp:299</a></div></div>
 <div class="ttc" id="atranslations_8h_html_aa829053017e23ef22d44dccecba63a34"><div class="ttname"><a href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a></div><div class="ttdeci">#define _(msg)</div><div class="ttdef"><b>Definition:</b> <a href="translations_8h_source.html#l00116">translations.h:116</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="mutation__ui_8cpp.html#afaa5795d732cc701e687f01178799df1a948eea612456562bf255d3a9c59c40a3">activating</a>, <a class="el" href="color_8h_source.html#l00022">c_green</a>, <a class="el" href="color_8h_source.html#l00029">c_light_blue</a>, <a class="el" href="color_8h_source.html#l00018">c_white</a>, <a class="el" href="color_8cpp_source.html#l00669">colorize()</a>, <a class="el" href="mutation__ui_8cpp.html#afaa5795d732cc701e687f01178799df1a1fe0ff1bbfd7ca5705dcadfeb6cd3d15">examining</a>, <a class="el" href="output_8cpp_source.html#l00299">fold_and_print()</a>, <a class="el" href="input_8cpp_source.html#l00756">input_context::get_desc()</a>, <a class="el" href="ncurses__def_8cpp_source.html#l00058">catacurses::getmaxx()</a>, <a class="el" href="mutation__ui_8cpp.html#afaa5795d732cc701e687f01178799df1ac71a14a0fff89b7d853a6c70c6ac612c">reassigning</a>, <a class="el" href="mutation__ui_8cpp_source.html#l00033">shortcut_desc</a>, <a class="el" href="ncurses__def_8cpp_source.html#l00053">catacurses::werase()</a>, and <a class="el" href="ncurses__def_8cpp_source.html#l00043">catacurses::wnoutrefresh()</a>.</p>
+<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="mutation__ui_8cpp.html#afaa5795d732cc701e687f01178799df1a948eea612456562bf255d3a9c59c40a3">activating</a>, <a class="el" href="color_8h_source.html#l00022">c_green</a>, <a class="el" href="color_8h_source.html#l00029">c_light_blue</a>, <a class="el" href="color_8h_source.html#l00018">c_white</a>, <a class="el" href="color_8cpp_source.html#l00669">colorize()</a>, <a class="el" href="mutation__ui_8cpp.html#afaa5795d732cc701e687f01178799df1a1fe0ff1bbfd7ca5705dcadfeb6cd3d15">examining</a>, <a class="el" href="output_8cpp_source.html#l00299">fold_and_print()</a>, <a class="el" href="input_8cpp_source.html#l00750">input_context::get_desc()</a>, <a class="el" href="ncurses__def_8cpp_source.html#l00058">catacurses::getmaxx()</a>, <a class="el" href="mutation__ui_8cpp.html#afaa5795d732cc701e687f01178799df1ac71a14a0fff89b7d853a6c70c6ac612c">reassigning</a>, <a class="el" href="mutation__ui_8cpp_source.html#l00033">shortcut_desc</a>, <a class="el" href="ncurses__def_8cpp_source.html#l00053">catacurses::werase()</a>, and <a class="el" href="ncurses__def_8cpp_source.html#l00043">catacurses::wnoutrefresh()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mutation__ui_8cpp_source.html#l00124">detail::show_mutations_ui_internal()</a>.</p>
 
@@ -476,12 +476,12 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="namespacedetail.html#a89a6ead77427b27fdb713df77aa556e5ad4ee0fbbeb7ffd4fd7a7d477a7ecd922">detail::activate</a>, <a class="el" href="mutation_8cpp_source.html#l00468">Character::activate_mutation()</a>, <a class="el" href="mutation__ui_8h_source.html#l00018">detail::mutations_ui_result::cmd</a>, <a class="el" href="namespacedetail.html#a89a6ead77427b27fdb713df77aa556e5a822509d77d8e4544ec4701e7474f262e">detail::deactivate</a>, <a class="el" href="mutation_8cpp_source.html#l00595">Character::deactivate_mutation()</a>, <a class="el" href="namespacedetail.html#a89a6ead77427b27fdb713df77aa556e5af24f62eeb789199b9b2e467df3b1876b">detail::exit</a>, <a class="el" href="creature_8h_source.html#l00095">Creature::is_avatar()</a>, <a class="el" href="mutation__ui_8h_source.html#l00019">detail::mutations_ui_result::mut</a>, and <a class="el" href="mutation__ui_8cpp_source.html#l00124">detail::show_mutations_ui_internal()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="handle__action_8cpp_source.html#l01520">game::handle_action()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="handle__action_8cpp_source.html#l01521">game::handle_action()</a>.</p>
 
 </div>
 </div>
-<a id="a7e42c3b78fc76d4d6514b58f7796e1d9" name="a7e42c3b78fc76d4d6514b58f7796e1d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e42c3b78fc76d4d6514b58f7796e1d9">&#9670;&nbsp;</a></span>trait_by_invlet()</h2>
+<a id="a068118d7d26bbbed6e2d040d5d4592f9" name="a068118d7d26bbbed6e2d040d5d4592f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a068118d7d26bbbed6e2d040d5d4592f9">&#9670;&nbsp;</a></span>trait_by_invlet()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -490,7 +490,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="classcata_1_1optional.html">cata::optional</a>&lt; <a class="el" href="type__id_8h.html#a44aa01c09faf1c1723400eb9075a1f4d">trait_id</a> &gt; trait_by_invlet </td>
+          <td class="memname">static <a class="el" href="generic__factory_8h.html#a1159dbaba81931271dbfe5b9c7f041b3">std::optional</a>&lt; <a class="el" href="type__id_8h.html#a44aa01c09faf1c1723400eb9075a1f4d">trait_id</a> &gt; trait_by_invlet </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structmutation__collection.html">mutation_collection</a> &amp;&#160;</td>
           <td class="paramname"><em>mutations</em>, </td>
@@ -521,12 +521,9 @@ Variables</h2></td></tr>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            <span class="keywordflow">return</span> mut.first;</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        }</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    }</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="namespacecata.html#ad05314667ac5d05f984aeeef26b9a87f">cata::nullopt</a>;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keywordflow">return</span> std::nullopt;</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>}</div>
-<div class="ttc" id="anamespacecata_html_ad05314667ac5d05f984aeeef26b9a87f"><div class="ttname"><a href="namespacecata.html#ad05314667ac5d05f984aeeef26b9a87f">cata::nullopt</a></div><div class="ttdeci">static constexpr nullopt_t nullopt</div><div class="ttdef"><b>Definition:</b> <a href="optional_8h_source.html#l00022">optional.h:22</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="optional_8h_source.html#l00022">cata::nullopt</a>.</p>
-
 <p class="reference">Referenced by <a class="el" href="mutation__ui_8cpp_source.html#l00124">detail::show_mutations_ui_internal()</a>.</p>
 
 </div>
@@ -567,7 +564,7 @@ Variables</h2></td></tr>
 <div class="line">{</div>
 <div class="line">    <span class="keywordflow">return</span> <a class="code hl_function" href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a>( comment, <a class="code hl_function" href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a>( <span class="stringliteral">&quot;[&lt;color_yellow&gt;%s&lt;/color&gt;]&quot;</span>, keys ) );</div>
 <div class="line">}</div>
-<div class="ttc" id="astring__formatter_8h_html_a8964099387da2f95396c67566bafce3d"><div class="ttname"><a href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a></div><div class="ttdeci">std::string string_format(std::string_view format, Args &amp;&amp;...args)</div><div class="ttdoc">Simple wrapper over string_formatter::parse.</div><div class="ttdef"><b>Definition:</b> <a href="string__formatter_8h_source.html#l00431">string_formatter.h:431</a></div></div>
+<div class="ttc" id="astring__formatter_8h_html_a8964099387da2f95396c67566bafce3d"><div class="ttname"><a href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a></div><div class="ttdeci">std::string string_format(std::string_view format, Args &amp;&amp;...args)</div><div class="ttdoc">Simple wrapper over string_formatter::parse.</div><div class="ttdef"><b>Definition:</b> <a href="string__formatter_8h_source.html#l00430">string_formatter.h:430</a></div></div>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="mutation__ui_8cpp_source.html#l00033">33</a> of file <a class="el" href="mutation__ui_8cpp_source.html">mutation_ui.cpp</a>.</p>
 
@@ -581,7 +578,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="mutation__ui_8cpp.html">mutation_ui.cpp</a></li>
-    <li class="footer">Generated on Fri Apr 7 2023 11:54:32 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Apr 30 2023 06:47:56 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

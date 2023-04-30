@@ -36,6 +36,8 @@ var classuistatedata =
     [ "list_item_priority", "classuistatedata.html#a33307860a5819648bbe1e4276ee8b246", null ],
     [ "list_item_priority_active", "classuistatedata.html#adba8c770127b93c3559b7a9e8af82947", null ],
     [ "list_item_sort", "classuistatedata.html#a6abc0882dccb499eaad30a5910f9577b", null ],
+    [ "msg_window_full_height_display", "classuistatedata.html#ac9ec01a8a7e0535f1fea25347eee514d", null ],
+    [ "msg_window_wide_display", "classuistatedata.html#aa6d8ff384a0ba89846ce774cec8c6653", null ],
     [ "omedit_rotation", "classuistatedata.html#ae701b895ac6f22ce2abffbfff8e6c10f", null ],
     [ "overmap_blinking", "classuistatedata.html#a8f4352b686cf6a32a279a41ed70f0d5a", null ],
     [ "overmap_debug_mongroup", "classuistatedata.html#ad07ed84a135b0adcfe3c6d726dbc2a49", null ],

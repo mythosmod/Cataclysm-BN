@@ -12,8 +12,8 @@ var mod__manager_8h =
     [ "get_mod_list_categories", "mod__manager_8h.html#a5611e874a3a4a30a7fc75975558e8067", null ],
     [ "get_mod_list_tabs", "mod__manager_8h.html#a8e49c24c41ae458f8d1408683b227470", null ],
     [ "load_mod_info", "mod__manager_8h.html#a5041a8497495347e6999ac3e88261cf5", null ],
-    [ "load_mod_list", "mod__manager_8h.html#a2327609c6925917f9a52fb4a54a0a661", null ],
-    [ "load_modfile", "mod__manager_8h.html#a19b5c0c2b1726de2895bb31d75953a75", null ],
+    [ "load_mod_list", "mod__manager_8h.html#a503fd19acbf51f6b1b2b408195d5ce1e", null ],
+    [ "load_modfile", "mod__manager_8h.html#ae1568fab20321c23f4ff2aead0461808", null ],
     [ "load_mods_from", "mod__manager_8h.html#af1e05b6a2dcdf896a4334923f1bd38e2", null ],
     [ "save_mod_list", "mod__manager_8h.html#ab0596e4d8d100d3661b175b2868b1e60", null ]
 ];

@@ -95,6 +95,7 @@ $(document).ready(function(){initNavTree('mission_8h.html',''); initResizable();
 <div class="contents">
 <div class="textblock"><code>#include &lt;functional&gt;</code><br />
 <code>#include &lt;map&gt;</code><br />
+<code>#include &lt;optional&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;utility&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
@@ -103,7 +104,6 @@ $(document).ready(function(){initNavTree('mission_8h.html',''); initResizable();
 <code>#include &quot;<a class="el" href="enums_8h_source.html">enums.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="game__constants_8h_source.html">game_constants.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="npc__favor_8h_source.html">npc_favor.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="optional_8h_source.html">optional.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="overmap_8h_source.html">overmap.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="point_8h_source.html">point.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="translations_8h_source.html">translations.h</a>&quot;</code><br />
@@ -211,8 +211,8 @@ Functions</h2></td></tr>
 <tr class="separator:a908d36ad9e3510300f50dfd6a2d0f82a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17fa3f1df097e6dc1fef503cb5a90f0b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmission__target__params.html">mission_target_params</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemission__util.html#a17fa3f1df097e6dc1fef503cb5a90f0b">mission_util::parse_mission_om_target</a> (const <a class="el" href="classJsonObject.html">JsonObject</a> &amp;jo)</td></tr>
 <tr class="separator:a17fa3f1df097e6dc1fef503cb5a90f0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7d7475da2334157683138fb90ffe60d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcata_1_1optional.html">cata::optional</a>&lt; <a class="el" href="coordinates_8h.html#a383a8345c0282c087ef788e4421c3ded">tripoint_abs_omt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemission__util.html#ac7d7475da2334157683138fb90ffe60d">mission_util::assign_mission_target</a> (const <a class="el" href="structmission__target__params.html">mission_target_params</a> &amp;params)</td></tr>
-<tr class="separator:ac7d7475da2334157683138fb90ffe60d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab332d2750152f7d9853554d0b8a25107"><td class="memItemLeft" align="right" valign="top"><a class="el" href="generic__factory_8h.html#a1159dbaba81931271dbfe5b9c7f041b3">std::optional</a>&lt; <a class="el" href="coordinates_8h.html#a383a8345c0282c087ef788e4421c3ded">tripoint_abs_omt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemission__util.html#ab332d2750152f7d9853554d0b8a25107">mission_util::assign_mission_target</a> (const <a class="el" href="structmission__target__params.html">mission_target_params</a> &amp;params)</td></tr>
+<tr class="separator:ab332d2750152f7d9853554d0b8a25107"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afae4bdb979b73cdbe3b7209bb4bb2fe0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="coordinates_8h.html#a383a8345c0282c087ef788e4421c3ded">tripoint_abs_omt</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemission__util.html#afae4bdb979b73cdbe3b7209bb4bb2fe0">mission_util::get_om_terrain_pos</a> (const <a class="el" href="structmission__target__params.html">mission_target_params</a> &amp;params)</td></tr>
 <tr class="separator:afae4bdb979b73cdbe3b7209bb4bb2fe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8125e1d3fb809e6ef10b814fce7958c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemission__util.html#a8125e1d3fb809e6ef10b814fce7958c9">mission_util::set_assign_om_target</a> (const <a class="el" href="classJsonObject.html">JsonObject</a> &amp;jo, std::vector&lt; std::function&lt; void(<a class="el" href="classmission.html">mission</a> *miss)&gt; &gt; &amp;funcs)</td></tr>
@@ -361,7 +361,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="mission_8h.html">mission.h</a></li>
-    <li class="footer">Generated on Fri Apr 7 2023 11:54:32 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Apr 30 2023 06:47:56 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

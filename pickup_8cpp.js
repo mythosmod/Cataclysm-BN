@@ -14,7 +14,7 @@ var pickup_8cpp =
       [ "STASH", "pickup_8cpp.html#a777d97e4e0b5f526a83ac7c820cb92e1ae3947b7ec73b9b7ef32249ea80aec67f", null ],
       [ "NUM_ANSWERS", "pickup_8cpp.html#a777d97e4e0b5f526a83ac7c820cb92e1a37e5e1ac1cb8d085e53c84e8ed6514e9", null ]
     ] ],
-    [ "calculate_parents", "pickup_8cpp.html#a5d474eb4abd948ccfc06e01de9ebab8b", null ],
+    [ "calculate_parents", "pickup_8cpp.html#a4d4caa4e92f3fac01f0eb0922f602abb", null ],
     [ "do_pickup", "pickup_8cpp.html#a4a554552d66cb17d2fe8a97734377168", null ],
     [ "flatten", "pickup_8cpp.html#aeb2d3214070659aea65d01402917f834", null ],
     [ "handle_problematic_pickup", "pickup_8cpp.html#a20e8880d7ef528f172f8edd95d943233", null ],

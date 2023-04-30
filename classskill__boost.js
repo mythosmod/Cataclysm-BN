@@ -2,7 +2,7 @@ var classskill__boost =
 [
     [ "skill_boost", "classskill__boost.html#af3835fadb24e25bf5b5b5b3c36fbbeae", null ],
     [ "calc_bonus", "classskill__boost.html#a395d74a2475d5e321b3452993c5d8603", null ],
-    [ "get", "classskill__boost.html#a831a9bd8231e0a23fa7e78e349784998", null ],
+    [ "get", "classskill__boost.html#a7441ebca57c2e4252915c807ec9194f0", null ],
     [ "get_all", "classskill__boost.html#ae09e246c6b11837d90a1dcfe9a03f085", null ],
     [ "load", "classskill__boost.html#adbeb6ec6725fab946a181820288d35d3", null ],
     [ "load_boost", "classskill__boost.html#a7473aa9e75fb343fc52bd840931609dc", null ],

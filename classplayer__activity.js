@@ -11,7 +11,7 @@ var classplayer__activity =
     [ "canceled", "classplayer__activity.html#a547e7433a50fe7dab19faa1a110c9ac0", null ],
     [ "deserialize", "classplayer__activity.html#adce4e86f744d9f801b41b1becdf257e5", null ],
     [ "do_turn", "classplayer__activity.html#aa7b51e8b4196e8b098f1c55c06c6e197", null ],
-    [ "get_progress_message", "classplayer__activity.html#a3fbe0c1782ea56191fd7a02fb6bc8738", null ],
+    [ "get_progress_message", "classplayer__activity.html#abdf6c56838ec753586dbec644ee0143f", null ],
     [ "get_stop_phrase", "classplayer__activity.html#a0f57b22b4b9af424c55ef8d2610c76aa", null ],
     [ "get_str_value", "classplayer__activity.html#aab3f4af03e8a3be4f8c97af561e8ffeb", null ],
     [ "get_value", "classplayer__activity.html#ad71857a82b50cc853a4084a44aef5e96", null ],

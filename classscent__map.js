@@ -19,6 +19,6 @@ var classscent__map =
     [ "gm", "classscent__map.html#a48681fc613df14b83ba832b4301c4212", null ],
     [ "grscent", "classscent__map.html#aef8ec1c29840e5f9ec6972d462d83450", null ],
     [ "player_last_moved", "classscent__map.html#a52a49bf388a152806b8c9f43ca6a24a9", null ],
-    [ "player_last_position", "classscent__map.html#a635ebc3e4dfba8afd8a42540c1f4d31a", null ],
+    [ "player_last_position", "classscent__map.html#add25deef4f30b6f5db04431d243cf503", null ],
     [ "typescent", "classscent__map.html#a420aa219bedc00068fd6d5641f35fcac", null ]
 ];

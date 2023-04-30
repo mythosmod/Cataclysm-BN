@@ -95,6 +95,7 @@ $(document).ready(function(){initNavTree('recipe_8cpp.html',''); initResizable()
 <code>#include &lt;cmath&gt;</code><br />
 <code>#include &lt;iterator&gt;</code><br />
 <code>#include &lt;numeric&gt;</code><br />
+<code>#include &lt;optional&gt;</code><br />
 <code>#include &lt;sstream&gt;</code><br />
 <code>#include &quot;<a class="el" href="assign_8h_source.html">assign.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="cached__options_8h_source.html">cached_options.h</a>&quot;</code><br />
@@ -109,7 +110,6 @@ $(document).ready(function(){initNavTree('recipe_8cpp.html',''); initResizable()
 <code>#include &quot;<a class="el" href="itype_8h_source.html">itype.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="json_8h_source.html">json.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mapgen__functions_8h_source.html">mapgen_functions.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="optional_8h_source.html">optional.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="output_8h_source.html">output.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="player_8h_source.html">player.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="skill_8h_source.html">skill.h</a>&quot;</code><br />
@@ -221,14 +221,14 @@ Variables</h2></td></tr>
 <div class="line"><a id="l00752" name="l00752"></a><span class="lineno">  752</span>    <span class="keywordflow">return</span> os.str();</div>
 <div class="line"><a id="l00753" name="l00753"></a><span class="lineno">  753</span>}</div>
 <div class="ttc" id="aactivity__item__handling_8cpp_html_a0572000ec0976f2d095ae0cd9d20e78b"><div class="ttname"><a href="activity__item__handling_8cpp.html#a0572000ec0976f2d095ae0cd9d20e78b">move_cost</a></div><div class="ttdeci">static int move_cost(const item &amp;it, const tripoint &amp;src, const tripoint &amp;dest)</div><div class="ttdef"><b>Definition:</b> <a href="activity__item__handling_8cpp_source.html#l00899">activity_item_handling.cpp:899</a></div></div>
-<div class="ttc" id="aclassJsonOut_html"><div class="ttname"><a href="classJsonOut.html">JsonOut</a></div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00575">json.h:576</a></div></div>
+<div class="ttc" id="aclassJsonOut_html"><div class="ttname"><a href="classJsonOut.html">JsonOut</a></div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00574">json.h:575</a></div></div>
 <div class="ttc" id="aclasstime__duration_html_a0f7145f4fc4c09defbaf25f468e4e54a"><div class="ttname"><a href="classtime__duration.html#a0f7145f4fc4c09defbaf25f468e4e54a">time_duration::from_turns</a></div><div class="ttdeci">static constexpr time_duration from_turns(const T t)</div><div class="ttdoc">Named constructors to get a duration representing a multiple of the named time units.</div><div class="ttdef"><b>Definition:</b> <a href="calendar_8h_source.html#l00204">calendar.h:204</a></div></div>
 <div class="ttc" id="aclasstime__duration_html_a4694c27b90feb607344d0605cfa50db8"><div class="ttname"><a href="classtime__duration.html#a4694c27b90feb607344d0605cfa50db8">time_duration::units</a></div><div class="ttdeci">static const std::vector&lt; std::pair&lt; std::string, time_duration &gt; &gt; units</div><div class="ttdef"><b>Definition:</b> <a href="calendar_8h_source.html#l00335">calendar.h:335</a></div></div>
 <div class="ttc" id="anamespaceanonymous__namespace_02character__display_8cpp_03_html_a5960c87973f8859f2e6997206a97fb09aa658279f9b983958149f31e4d8487673"><div class="ttname"><a href="namespaceanonymous__namespace_02character__display_8cpp_03.html#a5960c87973f8859f2e6997206a97fb09aa658279f9b983958149f31e4d8487673">anonymous_namespace{character_display.cpp}::player_display_tab::skills</a></div><div class="ttdeci">@ skills</div></div>
 <div class="ttc" id="astructrequirement__data_html_a8aad340720d64703c6646af321455d3d"><div class="ttname"><a href="structrequirement__data.html#a8aad340720d64703c6646af321455d3d">requirement_data::dump</a></div><div class="ttdeci">void dump(JsonOut &amp;jsout) const</div><div class="ttdoc">Dump to json in inline requirements format.</div><div class="ttdef"><b>Definition:</b> <a href="requirements_8cpp_source.html#l01313">requirements.cpp:1313</a></div></div>
 <div class="ttc" id="aunits__serde_8h_html_ae683b34d11038e5cb5e8af875b106fd6"><div class="ttname"><a href="units__serde_8h.html#ae683b34d11038e5cb5e8af875b106fd6">dump_to_json_string</a></div><div class="ttdeci">void dump_to_json_string(T t, JsonOut &amp;jsout, const std::vector&lt; std::pair&lt; std::string, T &gt; &gt; &amp;units)</div><div class="ttdef"><b>Definition:</b> <a href="units__serde_8h_source.html#l00071">units_serde.h:71</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="requirements_8cpp_source.html#l01313">requirement_data::dump()</a>, <a class="el" href="units__serde_8h_source.html#l00071">dump_to_json_string()</a>, <a class="el" href="json_8cpp_source.html#l02028">JsonOut::end_array()</a>, <a class="el" href="json_8cpp_source.html#l02009">JsonOut::end_object()</a>, <a class="el" href="calendar_8h_source.html#l00204">time_duration::from_turns()</a>, <a class="el" href="json_8cpp_source.html#l02113">JsonOut::member()</a>, <a class="el" href="activity__item__handling_8cpp_source.html#l00899">move_cost()</a>, <a class="el" href="json_8cpp_source.html#l02017">JsonOut::start_array()</a>, <a class="el" href="json_8cpp_source.html#l01998">JsonOut::start_object()</a>, <a class="el" href="calendar_8h_source.html#l00335">time_duration::units</a>, and <a class="el" href="json_8h_source.html#l00616">JsonOut::write()</a>.</p>
+<p class="reference">References <a class="el" href="requirements_8cpp_source.html#l01313">requirement_data::dump()</a>, <a class="el" href="units__serde_8h_source.html#l00071">dump_to_json_string()</a>, <a class="el" href="json_8cpp_source.html#l02150">JsonOut::end_array()</a>, <a class="el" href="json_8cpp_source.html#l02131">JsonOut::end_object()</a>, <a class="el" href="calendar_8h_source.html#l00204">time_duration::from_turns()</a>, <a class="el" href="json_8cpp_source.html#l02235">JsonOut::member()</a>, <a class="el" href="activity__item__handling_8cpp_source.html#l00899">move_cost()</a>, <a class="el" href="json_8cpp_source.html#l02139">JsonOut::start_array()</a>, <a class="el" href="json_8cpp_source.html#l02120">JsonOut::start_object()</a>, <a class="el" href="calendar_8h_source.html#l00335">time_duration::units</a>, and <a class="el" href="json_8h_source.html#l00615">JsonOut::write()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="recipe_8cpp_source.html#l00755">recipe::check_blueprint_requirements()</a>.</p>
 
@@ -359,11 +359,11 @@ template&lt;typename Iter &gt; </div>
 <div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span>    } );</div>
 <div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span>}</div>
 <div class="ttc" id="aoutput_8h_html_abc4022ff920f936d2ee400cedc458733"><div class="ttname"><a href="output_8h.html#abc4022ff920f936d2ee400cedc458733">enumerate_as_string</a></div><div class="ttdeci">std::string enumerate_as_string(const _Container &amp;values, enumeration_conjunction conj=enumeration_conjunction::and_)</div><div class="ttdef"><b>Definition:</b> <a href="output_8h_source.html#l00637">output.h:637</a></div></div>
-<div class="ttc" id="astring__formatter_8h_html_a8964099387da2f95396c67566bafce3d"><div class="ttname"><a href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a></div><div class="ttdeci">std::string string_format(std::string_view format, Args &amp;&amp;...args)</div><div class="ttdoc">Simple wrapper over string_formatter::parse.</div><div class="ttdef"><b>Definition:</b> <a href="string__formatter_8h_source.html#l00431">string_formatter.h:431</a></div></div>
+<div class="ttc" id="astring__formatter_8h_html_a8964099387da2f95396c67566bafce3d"><div class="ttname"><a href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a></div><div class="ttdeci">std::string string_format(std::string_view format, Args &amp;&amp;...args)</div><div class="ttdoc">Simple wrapper over string_formatter::parse.</div><div class="ttdef"><b>Definition:</b> <a href="string__formatter_8h_source.html#l00430">string_formatter.h:430</a></div></div>
 <div class="ttc" id="atranslations_8h_html_aa829053017e23ef22d44dccecba63a34"><div class="ttname"><a href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a></div><div class="ttdeci">#define _(msg)</div><div class="ttdef"><b>Definition:</b> <a href="translations_8h_source.html#l00116">translations.h:116</a></div></div>
 <div class="ttc" id="aweather__type_8h_html_a72d839b22172d982273f161206458e25aa1a074a72eb46dfdde53e589d946ab98"><div class="ttname"><a href="weather__type_8h.html#a72d839b22172d982273f161206458e25aa1a074a72eb46dfdde53e589d946ab98">last</a></div><div class="ttdeci">@ last</div><div class="ttdef"><b>Definition:</b> <a href="weather__type_8h_source.html#l00064">weather_type.h:63</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="output_8h_source.html#l00637">enumerate_as_string()</a>, <a class="el" href="weather__type_8h_source.html#l00063">last</a>, and <a class="el" href="string__formatter_8h_source.html#l00431">string_format()</a>.</p>
+<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="output_8h_source.html#l00637">enumerate_as_string()</a>, <a class="el" href="weather__type_8h_source.html#l00063">last</a>, and <a class="el" href="string__formatter_8h_source.html#l00430">string_format()</a>.</p>
 
 </div>
 </div>
@@ -426,7 +426,7 @@ template&lt;typename Iter &gt; </div>
 <div class="ttc" id="acalendar_8cpp_html_aeb989652ea2bf7fd03b07a74fd30bd7a"><div class="ttname"><a href="calendar_8cpp.html#aeb989652ea2bf7fd03b07a74fd30bd7a">to_string</a></div><div class="ttdeci">std::string to_string(const time_duration &amp;d)</div><div class="ttdoc">Returns a string showing a duration.</div><div class="ttdef"><b>Definition:</b> <a href="calendar_8cpp_source.html#l00327">calendar.cpp:327</a></div></div>
 <div class="ttc" id="amagic_8cpp_html_a6753ecfe87da659675b18c2f81d6ec12"><div class="ttname"><a href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a></div><div class="ttdeci">constexpr double c</div><div class="ttdef"><b>Definition:</b> <a href="magic_8cpp_source.html#l01032">magic.cpp:1032</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="magic_8cpp_source.html#l01032">c</a>, <a class="el" href="output_8h_source.html#l00637">enumerate_as_string()</a>, <a class="el" href="weather__type_8h_source.html#l00063">last</a>, <a class="el" href="string__formatter_8h_source.html#l00431">string_format()</a>, and <a class="el" href="calendar_8cpp_source.html#l00327">to_string()</a>.</p>
+<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="magic_8cpp_source.html#l01032">c</a>, <a class="el" href="output_8h_source.html#l00637">enumerate_as_string()</a>, <a class="el" href="weather__type_8h_source.html#l00063">last</a>, <a class="el" href="string__formatter_8h_source.html#l00430">string_format()</a>, and <a class="el" href="calendar_8cpp_source.html#l00327">to_string()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="recipe_8cpp_source.html#l00572">recipe::primary_skill_string()</a>, <a class="el" href="recipe_8cpp_source.html#l00595">recipe::required_all_skills_string()</a>, and <a class="el" href="recipe_8cpp_source.html#l00583">recipe::required_skills_string()</a>.</p>
 
@@ -467,7 +467,7 @@ template&lt;typename Iter &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="recipe_8cpp.html">recipe.cpp</a></li>
-    <li class="footer">Generated on Fri Apr 7 2023 11:54:33 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Apr 30 2023 06:47:57 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

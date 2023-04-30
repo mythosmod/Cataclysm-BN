@@ -3,7 +3,7 @@ var namespacegame__menus =
     [ "inv", "namespacegame__menus_1_1inv.html", [
       [ "common", "namespacegame__menus_1_1inv.html#a19c7cbf1d16b6047663babee50f9dad4", null ],
       [ "compare", "namespacegame__menus_1_1inv.html#a5b4325e0da28fac4ddc96a109c2912df", null ],
-      [ "compare", "namespacegame__menus_1_1inv.html#a19584da88b2dd326b414ecbbaf291bd8", null ],
+      [ "compare", "namespacegame__menus_1_1inv.html#a2f7fcf1ccb723a601d2ae4cf29a8ad3d", null ],
       [ "consume", "namespacegame__menus_1_1inv.html#a4f9083bc5b84c895d3827baf95c6b5e5", null ],
       [ "consume_drink", "namespacegame__menus_1_1inv.html#a8fcc756029af224e6e49284fadf3b409", null ],
       [ "consume_food", "namespacegame__menus_1_1inv.html#ad6927d270b2c7b9c9d1bf0fd5b286932", null ],

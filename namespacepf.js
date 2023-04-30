@@ -7,8 +7,8 @@ var namespacepf =
     [ "omt_score", "structpf_1_1omt__score.html", "structpf_1_1omt__score" ],
     [ "simple_path", "structpf_1_1simple__path.html", "structpf_1_1simple__path" ],
     [ "omt_scoring_fn", "namespacepf.html#a21fea0f310cb84db892b52e393aa7976", null ],
-    [ "two_node_scoring_fn", "namespacepf.html#a049eccf54dd8305d85f562c73285f182", null ],
-    [ "find_overmap_path", "namespacepf.html#af9522754a6de06d3734399c3b198854b", null ],
+    [ "two_node_scoring_fn", "namespacepf.html#ace51f151a24d141018dda09409535ed0", null ],
+    [ "find_overmap_path", "namespacepf.html#aa2df47c1365ddacd8ab4ab969089ef64", null ],
     [ "greedy_path", "namespacepf.html#adedfead83061a84d7be004b71c57fe09", null ],
     [ "greedy_path", "namespacepf.html#a45e4d3da5c89dcb1e59d772cbbbd59a6", null ]
 ];

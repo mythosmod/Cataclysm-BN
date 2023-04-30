@@ -17,7 +17,7 @@ var json_8h =
     [ "JsonDeserializer", "classJsonDeserializer.html", "classJsonDeserializer" ],
     [ "CATA_SRC_JSON_H", "json_8h.html#ab69ff3f8e9226aa45ff718dd3886146d", null ],
     [ "add_array_to_set", "json_8h.html#a763cbd3c41db83d7d7f5f652b5095a12", null ],
-    [ "deserialize", "json_8h.html#ab379e70156a7eeb9e0be50054d341185", null ],
+    [ "deserialize", "json_8h.html#a9609d7db23f346aac87893f62236c653", null ],
     [ "operator<<", "json_8h.html#a949c7e95ff84837601c7d6ada2288fc3", null ],
-    [ "serialize", "json_8h.html#a1caf400f1d2fc3f920b0840a3a1ab6e9", null ]
+    [ "serialize", "json_8h.html#a693d2b1c76c9d320a5fef1eaae7d9512", null ]
 ];

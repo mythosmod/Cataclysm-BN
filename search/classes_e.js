@@ -44,9 +44,8 @@ var searchData=
   ['null_5fhandler_41',['null_handler',['../structdynamic__formatter_1_1null__handler.html',1,'dynamic_formatter']]],
   ['null_5ftile_5fdata_42',['null_tile_data',['../classnull__tile__data.html',1,'']]],
   ['nullbuf_43',['NullBuf',['../structNullBuf.html',1,'']]],
-  ['nullopt_5ft_44',['nullopt_t',['../structcata_1_1nullopt__t.html',1,'cata']]],
-  ['number_5fsci_5fnotation_45',['number_sci_notation',['../structnumber__sci__notation.html',1,'']]],
-  ['numeric_5finterval_46',['numeric_interval',['../structnumeric__interval.html',1,'']]],
-  ['numeric_5fspecs_5fchecker_47',['numeric_specs_checker',['../classdetail_1_1numeric__specs__checker.html',1,'detail']]],
-  ['nutrients_48',['nutrients',['../structnutrients.html',1,'']]]
+  ['number_5fsci_5fnotation_44',['number_sci_notation',['../structnumber__sci__notation.html',1,'']]],
+  ['numeric_5finterval_45',['numeric_interval',['../structnumeric__interval.html',1,'']]],
+  ['numeric_5fspecs_5fchecker_46',['numeric_specs_checker',['../classdetail_1_1numeric__specs__checker.html',1,'detail']]],
+  ['nutrients_47',['nutrients',['../structnutrients.html',1,'']]]
 ];

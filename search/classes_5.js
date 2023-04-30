@@ -175,5 +175,7 @@ var searchData=
   ['explosion_5fiuse_172',['explosion_iuse',['../classexplosion__iuse.html',1,'']]],
   ['explosion_5fqueue_173',['explosion_queue',['../classexplosion__handler_1_1explosion__queue.html',1,'explosion_handler']]],
   ['explosion_5ftile_174',['explosion_tile',['../structexplosion__tile.html',1,'']]],
-  ['extended_5fphoto_5fdef_175',['extended_photo_def',['../structextended__photo__def.html',1,'']]]
+  ['explosionevent_175',['ExplosionEvent',['../classexplosion__handler_1_1ExplosionEvent.html',1,'explosion_handler']]],
+  ['explosionprocess_176',['ExplosionProcess',['../classexplosion__handler_1_1ExplosionProcess.html',1,'explosion_handler']]],
+  ['extended_5fphoto_5fdef_177',['extended_photo_def',['../structextended__photo__def.html',1,'']]]
 ];

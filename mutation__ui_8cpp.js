@@ -14,7 +14,7 @@ var mutation__ui_8cpp =
     [ "GetTrait", "mutation__ui_8cpp.html#af276d9c0371fe03e732e53d4654a54ee", null ],
     [ "show_mutations_titlebar", "mutation__ui_8cpp.html#aecf71e23a35d1b0fbf2b28e6b4700a70", null ],
     [ "show_mutations_ui", "mutation__ui_8cpp.html#a16105a4267cae734d8da271799d8540d", null ],
-    [ "trait_by_invlet", "mutation__ui_8cpp.html#a7e42c3b78fc76d4d6514b58f7796e1d9", null ],
+    [ "trait_by_invlet", "mutation__ui_8cpp.html#a068118d7d26bbbed6e2d040d5d4592f9", null ],
     [ "mutation_chars", "mutation__ui_8cpp.html#ad3e13a302fd3dee9054bc059deb0e268", null ],
     [ "shortcut_desc", "mutation__ui_8cpp.html#a68d6b61b863a0f57d6f18db334f330a3", null ]
 ];

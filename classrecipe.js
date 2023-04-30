@@ -53,7 +53,7 @@ var classrecipe =
     [ "bp_resources", "classrecipe.html#a1b7458090e8814b97c5faff0f7ed3d2e", null ],
     [ "byproducts", "classrecipe.html#ab2e645b839d27c9e037764715ce10612", null ],
     [ "category", "classrecipe.html#a7c22888c560df7aa0f06a071bb4b4f05", null ],
-    [ "charges", "classrecipe.html#a5ae960ab8b79e63245ee0068d7e098a9", null ],
+    [ "charges", "classrecipe.html#a58d36fa8d7ff05bd0ee8dce919d43a77", null ],
     [ "check_blueprint_needs", "classrecipe.html#a72de7bccd627230462097c65fa74353b", null ],
     [ "contained", "classrecipe.html#a263da793fbec87a1d4c1c0f589037e93", null ],
     [ "container", "classrecipe.html#ad5ca20850287651ea64cb1a69bd7fdfd", null ],

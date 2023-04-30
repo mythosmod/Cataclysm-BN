@@ -66,7 +66,7 @@ var classplayer =
     [ "last_batch", "classplayer.html#a01a997f2f36602a5adff48c8df16a357", null ],
     [ "last_craft", "classplayer.html#a771107232106a2afa16d80907365ef1f", null ],
     [ "last_target", "classplayer.html#ab679d40f5584e38a6af33bcd7e3c102d", null ],
-    [ "last_target_pos", "classplayer.html#a9aac4afb832dc4762430b0b3545cbfea", null ],
+    [ "last_target_pos", "classplayer.html#ad8110d027c3f75af41656a8caf171b9f", null ],
     [ "lastconsumed", "classplayer.html#af5812ab4dd02135ef80a99a81fc5b64d", null ],
     [ "lastrecipe", "classplayer.html#a58c783354e25fb7e52ceaedef7114c8d", null ],
     [ "manual_examine", "classplayer.html#a473d0cec0851e4e60ce5f93ed24895b8", null ],

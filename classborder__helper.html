@@ -112,8 +112,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a066fd259b44cee581d38b515e5dc5e17"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcata_1_1optional.html">cata::optional</a>&lt; std::map&lt; <a class="el" href="structpoint.html">point</a>, <a class="el" href="structborder__helper_1_1border__connection.html">border_connection</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classborder__helper.html#a066fd259b44cee581d38b515e5dc5e17">border_connection_map</a></td></tr>
-<tr class="separator:a066fd259b44cee581d38b515e5dc5e17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fe60ea6e625e6e4c015d85e3b12f645"><td class="memItemLeft" align="right" valign="top"><a class="el" href="generic__factory_8h.html#a1159dbaba81931271dbfe5b9c7f041b3">std::optional</a>&lt; std::map&lt; <a class="el" href="structpoint.html">point</a>, <a class="el" href="structborder__helper_1_1border__connection.html">border_connection</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classborder__helper.html#a8fe60ea6e625e6e4c015d85e3b12f645">border_connection_map</a></td></tr>
+<tr class="separator:a8fe60ea6e625e6e4c015d85e3b12f645"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0e6c08d18381645d1266fa7f66b7174"><td class="memItemLeft" align="right" valign="top">std::forward_list&lt; <a class="el" href="classborder__helper_1_1border__info.html">border_info</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classborder__helper.html#aa0e6c08d18381645d1266fa7f66b7174">border_info_list</a></td></tr>
 <tr class="separator:aa0e6c08d18381645d1266fa7f66b7174"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -151,7 +151,7 @@ Friends</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="output_8h_source.html#l00384">border_info</a>, and <a class="el" href="output_8h_source.html#l00396">border_info_list</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="character__display_8cpp_source.html#l01063">character_display::disp_info()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="character__display_8cpp_source.html#l01068">character_display::disp_info()</a>.</p>
 
 </div>
 </div>
@@ -173,8 +173,8 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="output_8cpp_source.html#l00620">620</a> of file <a class="el" href="output_8cpp_source.html">output.cpp</a>.</p>
 <div class="fragment"><div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span>{</div>
-<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span>    <span class="keywordflow">if</span>( !<a class="code hl_variable" href="classborder__helper.html#a066fd259b44cee581d38b515e5dc5e17">border_connection_map</a>.has_value() ) {</div>
-<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>        <a class="code hl_variable" href="classborder__helper.html#a066fd259b44cee581d38b515e5dc5e17">border_connection_map</a>.emplace();</div>
+<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span>    <span class="keywordflow">if</span>( !<a class="code hl_variable" href="classborder__helper.html#a8fe60ea6e625e6e4c015d85e3b12f645">border_connection_map</a>.has_value() ) {</div>
+<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>        <a class="code hl_variable" href="classborder__helper.html#a8fe60ea6e625e6e4c015d85e3b12f645">border_connection_map</a>.emplace();</div>
 <div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span>        <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_friend" href="classborder__helper.html#ab04d763dd2421769c0e7d7d16186441c">border_info</a> &amp;info : <a class="code hl_variable" href="classborder__helper.html#aa0e6c08d18381645d1266fa7f66b7174">border_info_list</a> ) {</div>
 <div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span>            <span class="keyword">const</span> <a class="code hl_struct" href="structpoint.html">point</a> beg = info.pos;</div>
 <div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span>            <span class="keyword">const</span> <a class="code hl_struct" href="structpoint.html">point</a> end = info.pos + info.size;</div>
@@ -182,38 +182,38 @@ Friends</h2></td></tr>
 <div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span>                <span class="keyword">const</span> <a class="code hl_struct" href="structpoint.html">point</a> ptop( x, beg.<a class="code hl_variable" href="structpoint.html#a9a82ca9504acabb1e30569f89c805471">y</a> );</div>
 <div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span>                <span class="keyword">const</span> <a class="code hl_struct" href="structpoint.html">point</a> pbottom( x, end.<a class="code hl_variable" href="structpoint.html#a9a82ca9504acabb1e30569f89c805471">y</a> - 1 );</div>
 <div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span>                <span class="keywordflow">if</span>( x &gt; beg.<a class="code hl_variable" href="structpoint.html#ad679b07fb69d55f5ad454d0f1f2891d5">x</a> ) {</div>
-<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span>                    <a class="code hl_variable" href="classborder__helper.html#a066fd259b44cee581d38b515e5dc5e17">border_connection_map</a>.value()[ptop].left =</div>
-<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span>                        <a class="code hl_variable" href="classborder__helper.html#a066fd259b44cee581d38b515e5dc5e17">border_connection_map</a>.value()[pbottom].left = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span>                    <a class="code hl_variable" href="classborder__helper.html#a8fe60ea6e625e6e4c015d85e3b12f645">border_connection_map</a>.value()[ptop].left =</div>
+<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span>                        <a class="code hl_variable" href="classborder__helper.html#a8fe60ea6e625e6e4c015d85e3b12f645">border_connection_map</a>.value()[pbottom].left = <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span>                }</div>
 <div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span>                <span class="keywordflow">if</span>( x &lt; end.<a class="code hl_variable" href="structpoint.html#ad679b07fb69d55f5ad454d0f1f2891d5">x</a> - 1 ) {</div>
-<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>                    <a class="code hl_variable" href="classborder__helper.html#a066fd259b44cee581d38b515e5dc5e17">border_connection_map</a>.value()[ptop].right =</div>
-<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span>                        <a class="code hl_variable" href="classborder__helper.html#a066fd259b44cee581d38b515e5dc5e17">border_connection_map</a>.value()[pbottom].right = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>                    <a class="code hl_variable" href="classborder__helper.html#a8fe60ea6e625e6e4c015d85e3b12f645">border_connection_map</a>.value()[ptop].right =</div>
+<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span>                        <a class="code hl_variable" href="classborder__helper.html#a8fe60ea6e625e6e4c015d85e3b12f645">border_connection_map</a>.value()[pbottom].right = <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>                }</div>
 <div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span>            }</div>
 <div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span>            <span class="keywordflow">for</span>( <span class="keywordtype">int</span> y = beg.<a class="code hl_variable" href="structpoint.html#a9a82ca9504acabb1e30569f89c805471">y</a>; y &lt; end.<a class="code hl_variable" href="structpoint.html#a9a82ca9504acabb1e30569f89c805471">y</a>; ++y ) {</div>
 <div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span>                <span class="keyword">const</span> <a class="code hl_struct" href="structpoint.html">point</a> pleft( beg.<a class="code hl_variable" href="structpoint.html#ad679b07fb69d55f5ad454d0f1f2891d5">x</a>, y );</div>
 <div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>                <span class="keyword">const</span> <a class="code hl_struct" href="structpoint.html">point</a> pright( end.<a class="code hl_variable" href="structpoint.html#ad679b07fb69d55f5ad454d0f1f2891d5">x</a> - 1, y );</div>
 <div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span>                <span class="keywordflow">if</span>( y &gt; beg.<a class="code hl_variable" href="structpoint.html#a9a82ca9504acabb1e30569f89c805471">y</a> ) {</div>
-<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span>                    <a class="code hl_variable" href="classborder__helper.html#a066fd259b44cee581d38b515e5dc5e17">border_connection_map</a>.value()[pleft].top =</div>
-<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span>                        <a class="code hl_variable" href="classborder__helper.html#a066fd259b44cee581d38b515e5dc5e17">border_connection_map</a>.value()[pright].top = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span>                    <a class="code hl_variable" href="classborder__helper.html#a8fe60ea6e625e6e4c015d85e3b12f645">border_connection_map</a>.value()[pleft].top =</div>
+<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span>                        <a class="code hl_variable" href="classborder__helper.html#a8fe60ea6e625e6e4c015d85e3b12f645">border_connection_map</a>.value()[pright].top = <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span>                }</div>
 <div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span>                <span class="keywordflow">if</span>( y &lt; end.<a class="code hl_variable" href="structpoint.html#a9a82ca9504acabb1e30569f89c805471">y</a> - 1 ) {</div>
-<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span>                    <a class="code hl_variable" href="classborder__helper.html#a066fd259b44cee581d38b515e5dc5e17">border_connection_map</a>.value()[pleft].bottom =</div>
-<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span>                        <a class="code hl_variable" href="classborder__helper.html#a066fd259b44cee581d38b515e5dc5e17">border_connection_map</a>.value()[pright].bottom = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span>                    <a class="code hl_variable" href="classborder__helper.html#a8fe60ea6e625e6e4c015d85e3b12f645">border_connection_map</a>.value()[pleft].bottom =</div>
+<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span>                        <a class="code hl_variable" href="classborder__helper.html#a8fe60ea6e625e6e4c015d85e3b12f645">border_connection_map</a>.value()[pright].bottom = <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span>                }</div>
 <div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span>            }</div>
 <div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span>        }</div>
 <div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span>    }</div>
 <div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span>    <span class="keyword">const</span> <a class="code hl_struct" href="structpoint.html">point</a> win_beg( <a class="code hl_function" href="namespacecatacurses.html#a3e3320f426a1343cb1effcaf648d2d1a">getbegx</a>( win ), <a class="code hl_function" href="namespacecatacurses.html#aa2debb3330f9739012d1d11db8db31d2">getbegy</a>( win ) );</div>
 <div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span>    <span class="keyword">const</span> <a class="code hl_struct" href="structpoint.html">point</a> win_end = win_beg + <a class="code hl_struct" href="structpoint.html">point</a>( <a class="code hl_function" href="namespacecatacurses.html#a929fe85d472028f52d8a5cdfc0d35017">getmaxx</a>( win ), <a class="code hl_function" href="namespacecatacurses.html#adc81ca40445dc062af12fb6d7a4793d0">getmaxy</a>( win ) );</div>
-<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> std::pair&lt;const point, border_connection&gt; &amp;conn : <a class="code hl_variable" href="classborder__helper.html#a066fd259b44cee581d38b515e5dc5e17">border_connection_map</a>.value() ) {</div>
+<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> std::pair&lt;const point, border_connection&gt; &amp;conn : <a class="code hl_variable" href="classborder__helper.html#a8fe60ea6e625e6e4c015d85e3b12f645">border_connection_map</a>.value() ) {</div>
 <div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span>        <span class="keywordflow">if</span>( conn.first.x &gt;= win_beg.x &amp;&amp; conn.first.x &lt; win_end.<a class="code hl_variable" href="structpoint.html#ad679b07fb69d55f5ad454d0f1f2891d5">x</a> &amp;&amp;</div>
 <div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span>            conn.first.y &gt;= win_beg.y &amp;&amp; conn.first.y &lt; win_end.<a class="code hl_variable" href="structpoint.html#a9a82ca9504acabb1e30569f89c805471">y</a> ) {</div>
 <div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span>            <a class="code hl_function" href="output_8cpp.html#ab6fabf52c2dd7100db72c1f5279d1666">mvwputch</a>( win, conn.first - win_beg, <a class="code hl_define" href="output_8h.html#a966901ace2cf6cba3fc9cec310150860">BORDER_COLOR</a>, conn.second.as_curses_line() );</div>
 <div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span>        }</div>
 <div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span>    }</div>
 <div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span>}</div>
-<div class="ttc" id="aclassborder__helper_html_a066fd259b44cee581d38b515e5dc5e17"><div class="ttname"><a href="classborder__helper.html#a066fd259b44cee581d38b515e5dc5e17">border_helper::border_connection_map</a></div><div class="ttdeci">cata::optional&lt; std::map&lt; point, border_connection &gt; &gt; border_connection_map</div><div class="ttdef"><b>Definition:</b> <a href="output_8h_source.html#l00394">output.h:394</a></div></div>
+<div class="ttc" id="aclassborder__helper_html_a8fe60ea6e625e6e4c015d85e3b12f645"><div class="ttname"><a href="classborder__helper.html#a8fe60ea6e625e6e4c015d85e3b12f645">border_helper::border_connection_map</a></div><div class="ttdeci">std::optional&lt; std::map&lt; point, border_connection &gt; &gt; border_connection_map</div><div class="ttdef"><b>Definition:</b> <a href="output_8h_source.html#l00394">output.h:394</a></div></div>
 <div class="ttc" id="anamespacecatacurses_html_a3e3320f426a1343cb1effcaf648d2d1a"><div class="ttname"><a href="namespacecatacurses.html#a3e3320f426a1343cb1effcaf648d2d1a">catacurses::getbegx</a></div><div class="ttdeci">int getbegx(const window &amp;win)</div><div class="ttdef"><b>Definition:</b> <a href="ncurses__def_8cpp_source.html#l00068">ncurses_def.cpp:68</a></div></div>
 <div class="ttc" id="anamespacecatacurses_html_a929fe85d472028f52d8a5cdfc0d35017"><div class="ttname"><a href="namespacecatacurses.html#a929fe85d472028f52d8a5cdfc0d35017">catacurses::getmaxx</a></div><div class="ttdeci">int getmaxx(const window &amp;win)</div><div class="ttdef"><b>Definition:</b> <a href="ncurses__def_8cpp_source.html#l00058">ncurses_def.cpp:58</a></div></div>
 <div class="ttc" id="anamespacecatacurses_html_aa2debb3330f9739012d1d11db8db31d2"><div class="ttname"><a href="namespacecatacurses.html#aa2debb3330f9739012d1d11db8db31d2">catacurses::getbegy</a></div><div class="ttdeci">int getbegy(const window &amp;win)</div><div class="ttdef"><b>Definition:</b> <a href="ncurses__def_8cpp_source.html#l00073">ncurses_def.cpp:73</a></div></div>
@@ -226,7 +226,7 @@ Friends</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="output_8h_source.html#l00092">BORDER_COLOR</a>, <a class="el" href="output_8h_source.html#l00394">border_connection_map</a>, <a class="el" href="output_8h_source.html#l00396">border_info_list</a>, <a class="el" href="ncurses__def_8cpp_source.html#l00068">catacurses::getbegx()</a>, <a class="el" href="ncurses__def_8cpp_source.html#l00073">catacurses::getbegy()</a>, <a class="el" href="ncurses__def_8cpp_source.html#l00058">catacurses::getmaxx()</a>, <a class="el" href="ncurses__def_8cpp_source.html#l00063">catacurses::getmaxy()</a>, <a class="el" href="output_8cpp_source.html#l00477">mvwputch()</a>, <a class="el" href="point_8h_source.html#l00038">point::x</a>, and <a class="el" href="point_8h_source.html#l00039">point::y</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="character__display_8cpp_source.html#l01063">character_display::disp_info()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="character__display_8cpp_source.html#l01068">character_display::disp_info()</a>.</p>
 
 </div>
 </div>
@@ -258,8 +258,8 @@ Friends</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a066fd259b44cee581d38b515e5dc5e17" name="a066fd259b44cee581d38b515e5dc5e17"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a066fd259b44cee581d38b515e5dc5e17">&#9670;&nbsp;</a></span>border_connection_map</h2>
+<a id="a8fe60ea6e625e6e4c015d85e3b12f645" name="a8fe60ea6e625e6e4c015d85e3b12f645"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fe60ea6e625e6e4c015d85e3b12f645">&#9670;&nbsp;</a></span>border_connection_map</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -268,7 +268,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classcata_1_1optional.html">cata::optional</a>&lt;std::map&lt;<a class="el" href="structpoint.html">point</a>, <a class="el" href="structborder__helper_1_1border__connection.html">border_connection</a>&gt; &gt; border_helper::border_connection_map</td>
+          <td class="memname"><a class="el" href="generic__factory_8h.html#a1159dbaba81931271dbfe5b9c7f041b3">std::optional</a>&lt;std::map&lt;<a class="el" href="structpoint.html">point</a>, <a class="el" href="structborder__helper_1_1border__connection.html">border_connection</a>&gt; &gt; border_helper::border_connection_map</td>
         </tr>
       </table>
   </td>
@@ -320,7 +320,7 @@ Friends</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classborder__helper.html">border_helper</a></li>
-    <li class="footer">Generated on Fri Apr 7 2023 11:54:35 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Apr 30 2023 06:48:00 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

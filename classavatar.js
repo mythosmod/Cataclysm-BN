@@ -46,7 +46,7 @@ var classavatar =
     [ "is_avatar", "classavatar.html#a307d119b86042c59a7d72ad3807e1f34", null ],
     [ "is_hallucination", "classavatar.html#a621d90eb0133fd89ca099e0ad75b31ad", null ],
     [ "kill_xp", "classavatar.html#a0135d98dc093e782429c6f1a08a78f38", null ],
-    [ "kill_xp_for_next_point", "classavatar.html#a953d369d61963924274fce043af1a61a", null ],
+    [ "kill_xp_for_next_point", "classavatar.html#a1cac6ac6489896e9db8752cae15bb2ae", null ],
     [ "load", "classavatar.html#a57c40f9a4bb6a99c6d572f014b510cbe", null ],
     [ "load_map_memory", "classavatar.html#a7d4c908c964c354d7dd9c24892065bf5", null ],
     [ "load_template", "classavatar.html#a36a280fcc3553b2ecd54d25fc3a857aa", null ],

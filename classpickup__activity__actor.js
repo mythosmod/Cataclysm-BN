@@ -1,6 +1,6 @@
 var classpickup__activity__actor =
 [
-    [ "pickup_activity_actor", "classpickup__activity__actor.html#a7380924cf65b962cef2fdc1894fceddc", null ],
+    [ "pickup_activity_actor", "classpickup__activity__actor.html#ad0a7e1e7496cf619b31241c8cc498fdc", null ],
     [ "clone", "classpickup__activity__actor.html#ac05b1358a9b90f1c9dd01381748d490a", null ],
     [ "deserialize", "classpickup__activity__actor.html#a42bd13cd52d37e897c11f979855dfc73", null ],
     [ "do_turn", "classpickup__activity__actor.html#aa60301f81b9a744e95249b85807262e1", null ],
@@ -8,6 +8,6 @@ var classpickup__activity__actor =
     [ "get_type", "classpickup__activity__actor.html#a1c6a4a7d94a352a33c2e9085cf49630d", null ],
     [ "serialize", "classpickup__activity__actor.html#a2e8c93a57330871434f0828c873ba36c", null ],
     [ "start", "classpickup__activity__actor.html#a02984df17f45276863b7c5b89e5e178b", null ],
-    [ "starting_pos", "classpickup__activity__actor.html#a6afea683f4d8f77e40db4d0e4762b2e5", null ],
+    [ "starting_pos", "classpickup__activity__actor.html#aad422be3227b52882177ebee8a333bfe", null ],
     [ "target_items", "classpickup__activity__actor.html#a858d58cf744548c5dea176dc69a2536e", null ]
 ];

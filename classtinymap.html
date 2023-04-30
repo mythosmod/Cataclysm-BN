@@ -577,6 +577,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aca0dcb78a357fd6ecd55de98dc9a97fb inherit pub_methods_classmap"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap.html#aca0dcb78a357fd6ecd55de98dc9a97fb">is_suspension_valid</a> (const <a class="el" href="structtripoint.html">tripoint</a> &amp;<a class="el" href="structpoint.html">point</a>)</td></tr>
 <tr class="memdesc:aca0dcb78a357fd6ecd55de98dc9a97fb inherit pub_methods_classmap"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks the four orientations in which a suspended tile could be valid, and returns if the tile is valid.  <a href="classmap.html#aca0dcb78a357fd6ecd55de98dc9a97fb">More...</a><br /></td></tr>
 <tr class="separator:aca0dcb78a357fd6ecd55de98dc9a97fb inherit pub_methods_classmap"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29a8b3fb362cffc27c1e40d6092641b8 inherit pub_methods_classmap"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap.html#a29a8b3fb362cffc27c1e40d6092641b8">smash_trap</a> (const <a class="el" href="structtripoint.html">tripoint</a> &amp;p, const int power, const std::string &amp;cause_message)</td></tr>
+<tr class="memdesc:a29a8b3fb362cffc27c1e40d6092641b8 inherit pub_methods_classmap"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to smash the trap at the given tripoint.  <a href="classmap.html#a29a8b3fb362cffc27c1e40d6092641b8">More...</a><br /></td></tr>
+<tr class="separator:a29a8b3fb362cffc27c1e40d6092641b8 inherit pub_methods_classmap"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a369e57962e2c38b17464c405b6d7184b inherit pub_methods_classmap"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap.html#a369e57962e2c38b17464c405b6d7184b">smash_items</a> (const <a class="el" href="structtripoint.html">tripoint</a> &amp;p, int power, const std::string &amp;cause_message, bool do_destroy)</td></tr>
 <tr class="memdesc:a369e57962e2c38b17464c405b6d7184b inherit pub_methods_classmap"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to smash the items at the given tripoint.  <a href="classmap.html#a369e57962e2c38b17464c405b6d7184b">More...</a><br /></td></tr>
 <tr class="separator:a369e57962e2c38b17464c405b6d7184b inherit pub_methods_classmap"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -810,6 +813,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa0e6e89f8f4989c540fefe7bbacfd8ce inherit pub_methods_classmap"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad11eaa007e285dcfe4c6ffb6f1ce46d3 inherit pub_methods_classmap"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap.html#ad11eaa007e285dcfe4c6ffb6f1ce46d3">has_floor</a> (const <a class="el" href="structtripoint.html">tripoint</a> &amp;p) const</td></tr>
 <tr class="separator:ad11eaa007e285dcfe4c6ffb6f1ce46d3 inherit pub_methods_classmap"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acac0871dcfba18c12bb6090d2189a274 inherit pub_methods_classmap"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap.html#acac0871dcfba18c12bb6090d2189a274">floor_between</a> (const <a class="el" href="structtripoint.html">tripoint</a> &amp;first, const <a class="el" href="structtripoint.html">tripoint</a> &amp;<a class="el" href="calendar_8h.html#a5db9490f8316b22d7c367c5a563a2f00aa9f0e61a137d86aa9db53465e0801612">second</a>) const</td></tr>
+<tr class="memdesc:acac0871dcfba18c12bb6090d2189a274 inherit pub_methods_classmap"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if there's a floor between the two tiles.  <a href="classmap.html#acac0871dcfba18c12bb6090d2189a274">More...</a><br /></td></tr>
+<tr class="separator:acac0871dcfba18c12bb6090d2189a274 inherit pub_methods_classmap"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3779768673ad08004a999b1ac440421c inherit pub_methods_classmap"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap.html#a3779768673ad08004a999b1ac440421c">supports_above</a> (const <a class="el" href="structtripoint.html">tripoint</a> &amp;p) const</td></tr>
 <tr class="memdesc:a3779768673ad08004a999b1ac440421c inherit pub_methods_classmap"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does this tile support vehicles and furniture above it.  <a href="classmap.html#a3779768673ad08004a999b1ac440421c">More...</a><br /></td></tr>
 <tr class="separator:a3779768673ad08004a999b1ac440421c inherit pub_methods_classmap"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1093,7 +1099,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l02047">2047</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l02055">2055</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a54bdc4c7c29d62cbebc4f81383b9424b" name="a54bdc4c7c29d62cbebc4f81383b9424b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a54bdc4c7c29d62cbebc4f81383b9424b">&#9670;&nbsp;</a></span>tinymap()</h2>
@@ -1121,12 +1127,12 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8cpp_source.html#l08378">8378</a> of file <a class="el" href="map_8cpp_source.html">map.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l08379" name="l08379"></a><span class="lineno"> 8379</span>    : <a class="code hl_function" href="classmap.html#aa3646717fd2a2a35fa554503ff4918f8">map</a>( mapsize, <a class="code hl_variable" href="classmap.html#a87a151868377cb4b2843de06991c97da">zlevels</a> )</div>
-<div class="line"><a id="l08380" name="l08380"></a><span class="lineno"> 8380</span>{</div>
-<div class="line"><a id="l08381" name="l08381"></a><span class="lineno"> 8381</span>}</div>
-<div class="ttc" id="aclassmap_html_a87a151868377cb4b2843de06991c97da"><div class="ttname"><a href="classmap.html#a87a151868377cb4b2843de06991c97da">map::zlevels</a></div><div class="ttdeci">bool zlevels</div><div class="ttdef"><b>Definition:</b> <a href="map_8h_source.html#l01770">map.h:1770</a></div></div>
-<div class="ttc" id="aclassmap_html_aa3646717fd2a2a35fa554503ff4918f8"><div class="ttname"><a href="classmap.html#aa3646717fd2a2a35fa554503ff4918f8">map::map</a></div><div class="ttdeci">map(int mapsize=MAPSIZE, bool zlev=false)</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l00174">map.cpp:174</a></div></div>
+<p class="definition">Definition at line <a class="el" href="map_8cpp_source.html#l08441">8441</a> of file <a class="el" href="map_8cpp_source.html">map.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l08442" name="l08442"></a><span class="lineno"> 8442</span>    : <a class="code hl_function" href="classmap.html#aa3646717fd2a2a35fa554503ff4918f8">map</a>( mapsize, <a class="code hl_variable" href="classmap.html#a87a151868377cb4b2843de06991c97da">zlevels</a> )</div>
+<div class="line"><a id="l08443" name="l08443"></a><span class="lineno"> 8443</span>{</div>
+<div class="line"><a id="l08444" name="l08444"></a><span class="lineno"> 8444</span>}</div>
+<div class="ttc" id="aclassmap_html_a87a151868377cb4b2843de06991c97da"><div class="ttname"><a href="classmap.html#a87a151868377cb4b2843de06991c97da">map::zlevels</a></div><div class="ttdeci">bool zlevels</div><div class="ttdef"><b>Definition:</b> <a href="map_8h_source.html#l01778">map.h:1778</a></div></div>
+<div class="ttc" id="aclassmap_html_aa3646717fd2a2a35fa554503ff4918f8"><div class="ttname"><a href="classmap.html#aa3646717fd2a2a35fa554503ff4918f8">map::map</a></div><div class="ttdeci">map(int mapsize=MAPSIZE, bool zlev=false)</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l00175">map.cpp:175</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1157,15 +1163,15 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classmap.html#a46608709f68358365d0734b1063fed73">map</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="map_8cpp_source.html#l07811">7811</a> of file <a class="el" href="map_8cpp_source.html">map.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l07812" name="l07812"></a><span class="lineno"> 7812</span>{</div>
-<div class="line"><a id="l07813" name="l07813"></a><span class="lineno"> 7813</span>    <span class="keyword">constexpr</span> <a class="code hl_struct" href="structtripoint.html">tripoint</a> map_boundary_min( 0, 0, -<a class="code hl_variable" href="game__constants_8h.html#aad0eacfa516a8f7e005674027d7640fe">OVERMAP_DEPTH</a> );</div>
-<div class="line"><a id="l07814" name="l07814"></a><span class="lineno"> 7814</span>    <span class="keyword">constexpr</span> <a class="code hl_struct" href="structtripoint.html">tripoint</a> map_boundary_max( <a class="code hl_variable" href="game__constants_8h.html#a4cfa35de359af17f7bc6c2a424339eb5">SEEY</a> * 2, <a class="code hl_variable" href="game__constants_8h.html#a39fd8a829e3dc412646663066dbdb54c">SEEX</a> * 2, <a class="code hl_variable" href="game__constants_8h.html#a3984a9476d1edc78e4e7b886a08d4d4b">OVERMAP_HEIGHT</a> + 1 );</div>
-<div class="line"><a id="l07815" name="l07815"></a><span class="lineno"> 7815</span> </div>
-<div class="line"><a id="l07816" name="l07816"></a><span class="lineno"> 7816</span>    <span class="keyword">constexpr</span> <a class="code hl_struct" href="structhalf__open__cuboid.html">half_open_cuboid&lt;tripoint&gt;</a> map_boundaries( map_boundary_min, map_boundary_max );</div>
-<div class="line"><a id="l07817" name="l07817"></a><span class="lineno"> 7817</span> </div>
-<div class="line"><a id="l07818" name="l07818"></a><span class="lineno"> 7818</span>    <span class="keywordflow">return</span> map_boundaries.contains( p );</div>
-<div class="line"><a id="l07819" name="l07819"></a><span class="lineno"> 7819</span>}</div>
+<p class="definition">Definition at line <a class="el" href="map_8cpp_source.html#l07874">7874</a> of file <a class="el" href="map_8cpp_source.html">map.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l07875" name="l07875"></a><span class="lineno"> 7875</span>{</div>
+<div class="line"><a id="l07876" name="l07876"></a><span class="lineno"> 7876</span>    <span class="keyword">constexpr</span> <a class="code hl_struct" href="structtripoint.html">tripoint</a> map_boundary_min( 0, 0, -<a class="code hl_variable" href="game__constants_8h.html#aad0eacfa516a8f7e005674027d7640fe">OVERMAP_DEPTH</a> );</div>
+<div class="line"><a id="l07877" name="l07877"></a><span class="lineno"> 7877</span>    <span class="keyword">constexpr</span> <a class="code hl_struct" href="structtripoint.html">tripoint</a> map_boundary_max( <a class="code hl_variable" href="game__constants_8h.html#a4cfa35de359af17f7bc6c2a424339eb5">SEEY</a> * 2, <a class="code hl_variable" href="game__constants_8h.html#a39fd8a829e3dc412646663066dbdb54c">SEEX</a> * 2, <a class="code hl_variable" href="game__constants_8h.html#a3984a9476d1edc78e4e7b886a08d4d4b">OVERMAP_HEIGHT</a> + 1 );</div>
+<div class="line"><a id="l07878" name="l07878"></a><span class="lineno"> 7878</span> </div>
+<div class="line"><a id="l07879" name="l07879"></a><span class="lineno"> 7879</span>    <span class="keyword">constexpr</span> <a class="code hl_struct" href="structhalf__open__cuboid.html">half_open_cuboid&lt;tripoint&gt;</a> map_boundaries( map_boundary_min, map_boundary_max );</div>
+<div class="line"><a id="l07880" name="l07880"></a><span class="lineno"> 7880</span> </div>
+<div class="line"><a id="l07881" name="l07881"></a><span class="lineno"> 7881</span>    <span class="keywordflow">return</span> map_boundaries.contains( p );</div>
+<div class="line"><a id="l07882" name="l07882"></a><span class="lineno"> 7882</span>}</div>
 <div class="ttc" id="agame__constants_8h_html_a3984a9476d1edc78e4e7b886a08d4d4b"><div class="ttname"><a href="game__constants_8h.html#a3984a9476d1edc78e4e7b886a08d4d4b">OVERMAP_HEIGHT</a></div><div class="ttdeci">static constexpr int OVERMAP_HEIGHT</div><div class="ttdef"><b>Definition:</b> <a href="game__constants_8h_source.html#l00062">game_constants.h:62</a></div></div>
 <div class="ttc" id="agame__constants_8h_html_a39fd8a829e3dc412646663066dbdb54c"><div class="ttname"><a href="game__constants_8h.html#a39fd8a829e3dc412646663066dbdb54c">SEEX</a></div><div class="ttdeci">static constexpr int SEEX</div><div class="ttdef"><b>Definition:</b> <a href="game__constants_8h_source.html#l00035">game_constants.h:35</a></div></div>
 <div class="ttc" id="agame__constants_8h_html_a4cfa35de359af17f7bc6c2a424339eb5"><div class="ttname"><a href="game__constants_8h.html#a4cfa35de359af17f7bc6c2a424339eb5">SEEY</a></div><div class="ttdeci">static constexpr int SEEY</div><div class="ttdef"><b>Definition:</b> <a href="game__constants_8h_source.html#l00036">game_constants.h:36</a></div></div>
@@ -1198,7 +1204,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l02049">2049</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l02057">2057</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
 </div>
 </div>
@@ -1212,7 +1218,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classtinymap.html">tinymap</a></li>
-    <li class="footer">Generated on Fri Apr 7 2023 11:54:54 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Apr 30 2023 06:48:22 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

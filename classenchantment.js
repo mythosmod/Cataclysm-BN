@@ -37,7 +37,7 @@ var classenchantment =
     [ "serialize", "classenchantment.html#a84233536de4777e3e717d986b235e0b9", null ],
     [ "stacks_with", "classenchantment.html#aaea2b54ca493eabed191fc20b1a1035a", null ],
     [ "active_conditions", "classenchantment.html#a1af94b451edb1877227ee3dadf734591", null ],
-    [ "emitter", "classenchantment.html#a9111bd6ef52fd8aa938dbd512174c416", null ],
+    [ "emitter", "classenchantment.html#a0c44ad8212bd3fcc40f6709509da4d7f", null ],
     [ "ench_effects", "classenchantment.html#af170334db3b7292032690ecae36c7778", null ],
     [ "hit_me_effect", "classenchantment.html#a5000340e1ab1593aaabf1d56db4e2565", null ],
     [ "hit_you_effect", "classenchantment.html#a17e265982bf8d302fbadb1ddf1eeb0d3", null ],

@@ -131,7 +131,7 @@ Public Attributes</h2></td></tr>
 <div class="textblock"><p >An instance of an input, like a keypress etc. </p>
 <p >Gamepad, mouse and keyboard keypresses will be represented as <code>int</code>. Whether a gamepad, mouse or keyboard was used can be checked using the <code>type</code> member. </p>
 
-<p class="definition">Definition at line <a class="el" href="input_8h_source.html#l00095">95</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="input_8h_source.html#l00091">91</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aaaf37ea03b4ba43260ab86b588f17026" name="aaaf37ea03b4ba43260ab86b588f17026"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaaf37ea03b4ba43260ab86b588f17026">&#9670;&nbsp;</a></span>input_event() <span class="overload">[1/2]</span></h2>
@@ -156,18 +156,18 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="input_8h_source.html#l00118">118</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>                  : <a class="code hl_variable" href="structinput__event.html#a072ede13d38b1e1c3cd0c14a2fe92a62">edit_refresh</a>( <span class="keyword">false</span> ) {</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        <a class="code hl_variable" href="structinput__event.html#afa9e110af2c2ac3eefd1ffa4e8c8d469">type</a> = <a class="code hl_enumvalue" href="input_8h.html#a7714eed017e41648533818b7ed636974a9493b2f19022b0a377f839377423d0de">CATA_INPUT_ERROR</a>;</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="preprocessor">#if defined(__ANDROID__)</span></div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        shortcut_last_used_action_counter = 0;</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    }</div>
-<div class="ttc" id="ainput_8h_html_a7714eed017e41648533818b7ed636974a9493b2f19022b0a377f839377423d0de"><div class="ttname"><a href="input_8h.html#a7714eed017e41648533818b7ed636974a9493b2f19022b0a377f839377423d0de">CATA_INPUT_ERROR</a></div><div class="ttdeci">@ CATA_INPUT_ERROR</div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00080">input.h:80</a></div></div>
-<div class="ttc" id="astructinput__event_html_a072ede13d38b1e1c3cd0c14a2fe92a62"><div class="ttname"><a href="structinput__event.html#a072ede13d38b1e1c3cd0c14a2fe92a62">input_event::edit_refresh</a></div><div class="ttdeci">bool edit_refresh</div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00111">input.h:111</a></div></div>
-<div class="ttc" id="astructinput__event_html_afa9e110af2c2ac3eefd1ffa4e8c8d469"><div class="ttname"><a href="structinput__event.html#afa9e110af2c2ac3eefd1ffa4e8c8d469">input_event::type</a></div><div class="ttdeci">input_event_t type</div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00096">input.h:96</a></div></div>
+<p class="definition">Definition at line <a class="el" href="input_8h_source.html#l00114">114</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>                  : <a class="code hl_variable" href="structinput__event.html#a072ede13d38b1e1c3cd0c14a2fe92a62">edit_refresh</a>( <span class="keyword">false</span> ) {</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        <a class="code hl_variable" href="structinput__event.html#afa9e110af2c2ac3eefd1ffa4e8c8d469">type</a> = <a class="code hl_enumvalue" href="input_8h.html#a7714eed017e41648533818b7ed636974a9493b2f19022b0a377f839377423d0de">CATA_INPUT_ERROR</a>;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="preprocessor">#if defined(__ANDROID__)</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        shortcut_last_used_action_counter = 0;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    }</div>
+<div class="ttc" id="ainput_8h_html_a7714eed017e41648533818b7ed636974a9493b2f19022b0a377f839377423d0de"><div class="ttname"><a href="input_8h.html#a7714eed017e41648533818b7ed636974a9493b2f19022b0a377f839377423d0de">CATA_INPUT_ERROR</a></div><div class="ttdeci">@ CATA_INPUT_ERROR</div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00076">input.h:76</a></div></div>
+<div class="ttc" id="astructinput__event_html_a072ede13d38b1e1c3cd0c14a2fe92a62"><div class="ttname"><a href="structinput__event.html#a072ede13d38b1e1c3cd0c14a2fe92a62">input_event::edit_refresh</a></div><div class="ttdeci">bool edit_refresh</div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00107">input.h:107</a></div></div>
+<div class="ttc" id="astructinput__event_html_afa9e110af2c2ac3eefd1ffa4e8c8d469"><div class="ttname"><a href="structinput__event.html#afa9e110af2c2ac3eefd1ffa4e8c8d469">input_event::type</a></div><div class="ttdeci">input_event_t type</div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00092">input.h:92</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="input_8h_source.html#l00080">CATA_INPUT_ERROR</a>, and <a class="el" href="input_8h_source.html#l00096">type</a>.</p>
+<p class="reference">References <a class="el" href="input_8h_source.html#l00076">CATA_INPUT_ERROR</a>, and <a class="el" href="input_8h_source.html#l00092">type</a>.</p>
 
 </div>
 </div>
@@ -205,16 +205,16 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="input_8h_source.html#l00124">124</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        : <a class="code hl_variable" href="structinput__event.html#afa9e110af2c2ac3eefd1ffa4e8c8d469">type</a>( t ), <a class="code hl_variable" href="structinput__event.html#a072ede13d38b1e1c3cd0c14a2fe92a62">edit_refresh</a>( <span class="keyword">false</span> ) {</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        <a class="code hl_variable" href="structinput__event.html#a343e2146133dfc743895676f122f7ae1">sequence</a>.push_back( s );</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="preprocessor">#if defined(__ANDROID__)</span></div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        shortcut_last_used_action_counter = 0;</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    }</div>
-<div class="ttc" id="astructinput__event_html_a343e2146133dfc743895676f122f7ae1"><div class="ttname"><a href="structinput__event.html#a343e2146133dfc743895676f122f7ae1">input_event::sequence</a></div><div class="ttdeci">std::vector&lt; int &gt; sequence</div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00101">input.h:101</a></div></div>
+<p class="definition">Definition at line <a class="el" href="input_8h_source.html#l00120">120</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        : <a class="code hl_variable" href="structinput__event.html#afa9e110af2c2ac3eefd1ffa4e8c8d469">type</a>( t ), <a class="code hl_variable" href="structinput__event.html#a072ede13d38b1e1c3cd0c14a2fe92a62">edit_refresh</a>( <span class="keyword">false</span> ) {</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        <a class="code hl_variable" href="structinput__event.html#a343e2146133dfc743895676f122f7ae1">sequence</a>.push_back( s );</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="preprocessor">#if defined(__ANDROID__)</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        shortcut_last_used_action_counter = 0;</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    }</div>
+<div class="ttc" id="astructinput__event_html_a343e2146133dfc743895676f122f7ae1"><div class="ttname"><a href="structinput__event.html#a343e2146133dfc743895676f122f7ae1">input_event::sequence</a></div><div class="ttdeci">std::vector&lt; int &gt; sequence</div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00097">input.h:97</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="input_8h_source.html#l00101">sequence</a>.</p>
+<p class="reference">References <a class="el" href="input_8h_source.html#l00097">sequence</a>.</p>
 
 </div>
 </div>
@@ -243,12 +243,12 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="input_8h_source.html#l00134">134</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>                                      {</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        <a class="code hl_variable" href="structinput__event.html#a343e2146133dfc743895676f122f7ae1">sequence</a>.push_back( input );</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="input_8h_source.html#l00130">130</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>                                      {</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        <a class="code hl_variable" href="structinput__event.html#a343e2146133dfc743895676f122f7ae1">sequence</a>.push_back( input );</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="input_8h_source.html#l00101">sequence</a>.</p>
+<p class="reference">References <a class="el" href="input_8h_source.html#l00097">sequence</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ncurses__def_8cpp_source.html#l00277">input_manager::get_input_event()</a>.</p>
 
@@ -279,9 +279,9 @@ Public Attributes</h2></td></tr>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>}</div>
 <div class="ttc" id="acatacharset_8h_html_a87e4d06df10657ae54780a7b95378480"><div class="ttname"><a href="catacharset_8h.html#a87e4d06df10657ae54780a7b95378480">UNKNOWN_UNICODE</a></div><div class="ttdeci">#define UNKNOWN_UNICODE</div><div class="ttdef"><b>Definition:</b> <a href="catacharset_8h_source.html#l00013">catacharset.h:13</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="input_8h_source.html#l00101">sequence</a>, and <a class="el" href="catacharset_8h_source.html#l00013">UNKNOWN_UNICODE</a>.</p>
+<p class="reference">References <a class="el" href="input_8h_source.html#l00097">sequence</a>, and <a class="el" href="catacharset_8h_source.html#l00013">UNKNOWN_UNICODE</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="debug_8cpp_source.html#l00163">debug_error_prompt()</a>, <a class="el" href="input_8cpp_source.html#l00999">input_context::display_menu()</a>, <a class="el" href="inventory__ui_8cpp_source.html#l01732">inventory_selector::get_input()</a>, <a class="el" href="handle__action_8cpp_source.html#l01520">game::handle_action()</a>, <a class="el" href="magic_8cpp_source.html#l01532">spellcasting_callback::key()</a>, <a class="el" href="wish_8cpp_source.html#l00064">wish_mutate_callback::key()</a>, <a class="el" href="wish_8cpp_source.html#l00456">wish_monster_callback::key()</a>, <a class="el" href="wish_8cpp_source.html#l00595">wish_item_callback::key()</a>, <a class="el" href="npctalk_8cpp_source.html#l01739">dialogue::opt()</a>, <a class="el" href="veh__interact_8cpp_source.html#l01645">veh_interact::overview()</a>, <a class="el" href="npctrade_8cpp_source.html#l00500">trading_window::perform_trade()</a>, <a class="el" href="output_8cpp_source.html#l00764">popup()</a>, <a class="el" href="popup_8cpp_source.html#l00263">query_popup::query_once()</a>, <a class="el" href="string__editor__window_8cpp_source.html#l00307">string_editor_window::query_string()</a>, <a class="el" href="string__input__popup_8cpp_source.html#l00291">string_input_popup::query_string()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00533">show_bionics_ui()</a>, <a class="el" href="npctrade_8cpp_source.html#l00407">trading_window::show_item_data()</a>, <a class="el" href="mutation__ui_8cpp_source.html#l00124">detail::show_mutations_ui_internal()</a>, and <a class="el" href="worldfactory_8cpp_source.html#l01322">worldfactory::show_worldgen_tab_confirm()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="debug_8cpp_source.html#l00164">debug_error_prompt()</a>, <a class="el" href="input_8cpp_source.html#l00993">input_context::display_menu()</a>, <a class="el" href="inventory__ui_8cpp_source.html#l01732">inventory_selector::get_input()</a>, <a class="el" href="handle__action_8cpp_source.html#l01521">game::handle_action()</a>, <a class="el" href="magic_8cpp_source.html#l01532">spellcasting_callback::key()</a>, <a class="el" href="wish_8cpp_source.html#l00064">wish_mutate_callback::key()</a>, <a class="el" href="wish_8cpp_source.html#l00456">wish_monster_callback::key()</a>, <a class="el" href="wish_8cpp_source.html#l00595">wish_item_callback::key()</a>, <a class="el" href="npctalk_8cpp_source.html#l01739">dialogue::opt()</a>, <a class="el" href="veh__interact_8cpp_source.html#l01645">veh_interact::overview()</a>, <a class="el" href="npctrade_8cpp_source.html#l00500">trading_window::perform_trade()</a>, <a class="el" href="output_8cpp_source.html#l00764">popup()</a>, <a class="el" href="popup_8cpp_source.html#l00263">query_popup::query_once()</a>, <a class="el" href="string__editor__window_8cpp_source.html#l00307">string_editor_window::query_string()</a>, <a class="el" href="string__input__popup_8cpp_source.html#l00291">string_input_popup::query_string()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00537">show_bionics_ui()</a>, <a class="el" href="npctrade_8cpp_source.html#l00407">trading_window::show_item_data()</a>, <a class="el" href="mutation__ui_8cpp_source.html#l00124">detail::show_mutations_ui_internal()</a>, and <a class="el" href="worldfactory_8cpp_source.html#l01322">worldfactory::show_worldgen_tab_confirm()</a>.</p>
 
 </div>
 </div>
@@ -309,36 +309,36 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="input_8h_source.html#l00150">150</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>                                                      {</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        <span class="keywordflow">if</span>( <a class="code hl_variable" href="structinput__event.html#afa9e110af2c2ac3eefd1ffa4e8c8d469">type</a> != <a class="code hl_enumvalue" href="character_8h.html#a70a4eaaf64bcd7658f91bfb500492f5aa795f3202b17cb6bc3d4b771d8c6c9eaf">other</a>.type ) {</div>
+<p class="definition">Definition at line <a class="el" href="input_8h_source.html#l00146">146</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>                                                      {</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>        <span class="keywordflow">if</span>( <a class="code hl_variable" href="structinput__event.html#afa9e110af2c2ac3eefd1ffa4e8c8d469">type</a> != <a class="code hl_enumvalue" href="character_8h.html#a70a4eaaf64bcd7658f91bfb500492f5aa795f3202b17cb6bc3d4b771d8c6c9eaf">other</a>.type ) {</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>        }</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> </div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        <span class="keywordflow">if</span>( <a class="code hl_variable" href="structinput__event.html#a343e2146133dfc743895676f122f7ae1">sequence</a>.size() != <a class="code hl_enumvalue" href="character_8h.html#a70a4eaaf64bcd7658f91bfb500492f5aa795f3202b17cb6bc3d4b771d8c6c9eaf">other</a>.sequence.size() ) {</div>
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>        }</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>        <span class="keywordflow">if</span>( <a class="code hl_variable" href="structinput__event.html#a343e2146133dfc743895676f122f7ae1">sequence</a>.size() != <a class="code hl_enumvalue" href="character_8h.html#a70a4eaaf64bcd7658f91bfb500492f5aa795f3202b17cb6bc3d4b771d8c6c9eaf">other</a>.sequence.size() ) {</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        }</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        <span class="keywordflow">for</span>( <span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="structinput__event.html#a343e2146133dfc743895676f122f7ae1">sequence</a>.size(); ++i ) {</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>            <span class="keywordflow">if</span>( <a class="code hl_variable" href="structinput__event.html#a343e2146133dfc743895676f122f7ae1">sequence</a>[i] != <a class="code hl_enumvalue" href="character_8h.html#a70a4eaaf64bcd7658f91bfb500492f5aa795f3202b17cb6bc3d4b771d8c6c9eaf">other</a>.sequence[i] ) {</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>            }</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>        <span class="keywordflow">for</span>( <span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="structinput__event.html#a343e2146133dfc743895676f122f7ae1">sequence</a>.size(); ++i ) {</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>            <span class="keywordflow">if</span>( <a class="code hl_variable" href="structinput__event.html#a343e2146133dfc743895676f122f7ae1">sequence</a>[i] != <a class="code hl_enumvalue" href="character_8h.html#a70a4eaaf64bcd7658f91bfb500492f5aa795f3202b17cb6bc3d4b771d8c6c9eaf">other</a>.sequence[i] ) {</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>            }</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        }</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        <span class="keywordflow">if</span>( <a class="code hl_variable" href="structinput__event.html#a29f1bff09229d780aae8f967353818e5">modifiers</a>.size() != <a class="code hl_enumvalue" href="character_8h.html#a70a4eaaf64bcd7658f91bfb500492f5aa795f3202b17cb6bc3d4b771d8c6c9eaf">other</a>.modifiers.size() ) {</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        }</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>        <span class="keywordflow">if</span>( <a class="code hl_variable" href="structinput__event.html#a29f1bff09229d780aae8f967353818e5">modifiers</a>.size() != <a class="code hl_enumvalue" href="character_8h.html#a70a4eaaf64bcd7658f91bfb500492f5aa795f3202b17cb6bc3d4b771d8c6c9eaf">other</a>.modifiers.size() ) {</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>        }</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>        <span class="keywordflow">for</span>( <span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="structinput__event.html#a29f1bff09229d780aae8f967353818e5">modifiers</a>.size(); ++i ) {</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>            <span class="keywordflow">if</span>( <a class="code hl_variable" href="structinput__event.html#a29f1bff09229d780aae8f967353818e5">modifiers</a>[i] != <a class="code hl_enumvalue" href="character_8h.html#a70a4eaaf64bcd7658f91bfb500492f5aa795f3202b17cb6bc3d4b771d8c6c9eaf">other</a>.modifiers[i] ) {</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>            }</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        }</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span> </div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    }</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>        <span class="keywordflow">for</span>( <span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="structinput__event.html#a29f1bff09229d780aae8f967353818e5">modifiers</a>.size(); ++i ) {</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>            <span class="keywordflow">if</span>( <a class="code hl_variable" href="structinput__event.html#a29f1bff09229d780aae8f967353818e5">modifiers</a>[i] != <a class="code hl_enumvalue" href="character_8h.html#a70a4eaaf64bcd7658f91bfb500492f5aa795f3202b17cb6bc3d4b771d8c6c9eaf">other</a>.modifiers[i] ) {</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>            }</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>        }</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    }</div>
 <div class="ttc" id="acharacter_8h_html_a70a4eaaf64bcd7658f91bfb500492f5aa795f3202b17cb6bc3d4b771d8c6c9eaf"><div class="ttname"><a href="character_8h.html#a70a4eaaf64bcd7658f91bfb500492f5aa795f3202b17cb6bc3d4b771d8c6c9eaf">rechargeable_cbm::other</a></div><div class="ttdeci">@ other</div></div>
-<div class="ttc" id="astructinput__event_html_a29f1bff09229d780aae8f967353818e5"><div class="ttname"><a href="structinput__event.html#a29f1bff09229d780aae8f967353818e5">input_event::modifiers</a></div><div class="ttdeci">std::vector&lt; int &gt; modifiers</div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00098">input.h:98</a></div></div>
+<div class="ttc" id="astructinput__event_html_a29f1bff09229d780aae8f967353818e5"><div class="ttname"><a href="structinput__event.html#a29f1bff09229d780aae8f967353818e5">input_event::modifiers</a></div><div class="ttdeci">std::vector&lt; int &gt; modifiers</div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00094">input.h:94</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="input_8h_source.html#l00098">modifiers</a>, <a class="el" href="character_8h.html#a70a4eaaf64bcd7658f91bfb500492f5aa795f3202b17cb6bc3d4b771d8c6c9eaf">other</a>, <a class="el" href="input_8h_source.html#l00101">sequence</a>, and <a class="el" href="input_8h_source.html#l00096">type</a>.</p>
+<p class="reference">References <a class="el" href="input_8h_source.html#l00094">modifiers</a>, <a class="el" href="character_8h.html#a70a4eaaf64bcd7658f91bfb500492f5aa795f3202b17cb6bc3d4b771d8c6c9eaf">other</a>, <a class="el" href="input_8h_source.html#l00097">sequence</a>, and <a class="el" href="input_8h_source.html#l00092">type</a>.</p>
 
 </div>
 </div>
@@ -355,7 +355,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="input_8h_source.html#l00110">110</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="input_8h_source.html#l00106">106</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="string__editor__window_8cpp_source.html#l00307">string_editor_window::query_string()</a>, and <a class="el" href="string__input__popup_8cpp_source.html#l00291">string_input_popup::query_string()</a>.</p>
 
@@ -373,7 +373,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="input_8h_source.html#l00111">111</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="input_8h_source.html#l00107">107</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="string__editor__window_8cpp_source.html#l00307">string_editor_window::query_string()</a>, and <a class="el" href="string__input__popup_8cpp_source.html#l00291">string_input_popup::query_string()</a>.</p>
 
@@ -391,9 +391,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="input_8h_source.html#l00098">98</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="input_8h_source.html#l00094">94</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="input_8h_source.html#l00150">operator==()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="input_8h_source.html#l00146">operator==()</a>.</p>
 
 </div>
 </div>
@@ -409,9 +409,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="input_8h_source.html#l00105">105</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="input_8h_source.html#l00101">101</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ncurses__def_8cpp_source.html#l00277">input_manager::get_input_event()</a>, and <a class="el" href="input_8cpp_source.html#l00859">input_context::handle_input()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ncurses__def_8cpp_source.html#l00277">input_manager::get_input_event()</a>, and <a class="el" href="input_8cpp_source.html#l00853">input_context::handle_input()</a>.</p>
 
 </div>
 </div>
@@ -427,9 +427,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="input_8h_source.html#l00101">101</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="input_8h_source.html#l00097">97</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="input_8h_source.html#l00134">add_input()</a>, <a class="el" href="output_8cpp_source.html#l00951">draw_item_info()</a>, <a class="el" href="input_8cpp_source.html#l00100">get_first_input()</a>, <a class="el" href="handle__action_8cpp_source.html#l01520">game::handle_action()</a>, <a class="el" href="input_8h_source.html#l00124">input_event()</a>, <a class="el" href="input_8cpp_source.html#l00187">input_manager::load()</a>, <a class="el" href="input_8h_source.html#l00150">operator==()</a>, <a class="el" href="npctrade_8cpp_source.html#l00500">trading_window::perform_trade()</a>, <a class="el" href="iuse__software__kitten_8cpp_source.html#l00418">robot_finds_kitten::process_input()</a>, <a class="el" href="popup_8cpp_source.html#l00263">query_popup::query_once()</a>, <a class="el" href="npctrade_8cpp_source.html#l00407">trading_window::show_item_data()</a>, <a class="el" href="mutation__ui_8cpp_source.html#l00124">detail::show_mutations_ui_internal()</a>, and <a class="el" href="input_8cpp_source.html#l01309">input_manager::wait_for_any_key()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="input_8h_source.html#l00130">add_input()</a>, <a class="el" href="output_8cpp_source.html#l00951">draw_item_info()</a>, <a class="el" href="input_8cpp_source.html#l00100">get_first_input()</a>, <a class="el" href="handle__action_8cpp_source.html#l01521">game::handle_action()</a>, <a class="el" href="input_8h_source.html#l00120">input_event()</a>, <a class="el" href="input_8cpp_source.html#l00182">input_manager::load()</a>, <a class="el" href="input_8h_source.html#l00146">operator==()</a>, <a class="el" href="npctrade_8cpp_source.html#l00500">trading_window::perform_trade()</a>, <a class="el" href="iuse__software__kitten_8cpp_source.html#l00418">robot_finds_kitten::process_input()</a>, <a class="el" href="popup_8cpp_source.html#l00263">query_popup::query_once()</a>, <a class="el" href="npctrade_8cpp_source.html#l00407">trading_window::show_item_data()</a>, <a class="el" href="mutation__ui_8cpp_source.html#l00124">detail::show_mutations_ui_internal()</a>, and <a class="el" href="input_8cpp_source.html#l01303">input_manager::wait_for_any_key()</a>.</p>
 
 </div>
 </div>
@@ -445,7 +445,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="input_8h_source.html#l00109">109</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="input_8h_source.html#l00105">105</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="help_8cpp_source.html#l00140">help::display_help()</a>, <a class="el" href="ncurses__def_8cpp_source.html#l00277">input_manager::get_input_event()</a>, <a class="el" href="main__menu_8cpp_source.html#l00554">main_menu::opening_screen()</a>, <a class="el" href="string__editor__window_8cpp_source.html#l00307">string_editor_window::query_string()</a>, <a class="el" href="string__input__popup_8cpp_source.html#l00291">string_input_popup::query_string()</a>, and <a class="el" href="worldfactory_8cpp_source.html#l01322">worldfactory::show_worldgen_tab_confirm()</a>.</p>
 
@@ -463,9 +463,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="input_8h_source.html#l00096">96</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="input_8h_source.html#l00092">92</a> of file <a class="el" href="input_8h_source.html">input.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ncurses__def_8cpp_source.html#l00277">input_manager::get_input_event()</a>, <a class="el" href="handle__action_8cpp_source.html#l01520">game::handle_action()</a>, <a class="el" href="input_8cpp_source.html#l00859">input_context::handle_input()</a>, <a class="el" href="input_8h_source.html#l00118">input_event()</a>, <a class="el" href="input_8cpp_source.html#l00187">input_manager::load()</a>, <a class="el" href="input_8h_source.html#l00150">operator==()</a>, <a class="el" href="npctrade_8cpp_source.html#l00500">trading_window::perform_trade()</a>, <a class="el" href="popup_8cpp_source.html#l00263">query_popup::query_once()</a>, <a class="el" href="string__editor__window_8cpp_source.html#l00307">string_editor_window::query_string()</a>, <a class="el" href="string__input__popup_8cpp_source.html#l00291">string_input_popup::query_string()</a>, <a class="el" href="npctrade_8cpp_source.html#l00407">trading_window::show_item_data()</a>, <a class="el" href="mutation__ui_8cpp_source.html#l00124">detail::show_mutations_ui_internal()</a>, and <a class="el" href="input_8cpp_source.html#l01309">input_manager::wait_for_any_key()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ncurses__def_8cpp_source.html#l00277">input_manager::get_input_event()</a>, <a class="el" href="handle__action_8cpp_source.html#l01521">game::handle_action()</a>, <a class="el" href="input_8cpp_source.html#l00853">input_context::handle_input()</a>, <a class="el" href="input_8h_source.html#l00114">input_event()</a>, <a class="el" href="input_8cpp_source.html#l00182">input_manager::load()</a>, <a class="el" href="input_8h_source.html#l00146">operator==()</a>, <a class="el" href="npctrade_8cpp_source.html#l00500">trading_window::perform_trade()</a>, <a class="el" href="popup_8cpp_source.html#l00263">query_popup::query_once()</a>, <a class="el" href="string__editor__window_8cpp_source.html#l00307">string_editor_window::query_string()</a>, <a class="el" href="string__input__popup_8cpp_source.html#l00291">string_input_popup::query_string()</a>, <a class="el" href="npctrade_8cpp_source.html#l00407">trading_window::show_item_data()</a>, <a class="el" href="mutation__ui_8cpp_source.html#l00124">detail::show_mutations_ui_internal()</a>, and <a class="el" href="input_8cpp_source.html#l01303">input_manager::wait_for_any_key()</a>.</p>
 
 </div>
 </div>
@@ -479,7 +479,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structinput__event.html">input_event</a></li>
-    <li class="footer">Generated on Fri Apr 7 2023 11:54:42 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Apr 30 2023 06:48:08 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

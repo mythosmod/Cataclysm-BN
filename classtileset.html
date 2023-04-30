@@ -128,9 +128,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:acbca1b6ba95ac6ac3d1dd68ab41d40a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a987d87f052d926dc20f479e67ee7bd8d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structtile__type.html">tile_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtileset.html#a987d87f052d926dc20f479e67ee7bd8d">find_tile_type</a> (const std::string &amp;id) const</td></tr>
 <tr class="separator:a987d87f052d926dc20f479e67ee7bd8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a858759b86e8b8b4e53ddc3ed26512f6d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcata_1_1optional.html">cata::optional</a>&lt; <a class="el" href="classtile__lookup__res.html">tile_lookup_res</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtileset.html#a858759b86e8b8b4e53ddc3ed26512f6d">find_tile_type_by_season</a> (const std::string &amp;id, <a class="el" href="calendar_8h.html#a5ac915753729cd68b608506d3c63ad1b">season_type</a> <a class="el" href="calendar_8h.html#a5db9490f8316b22d7c367c5a563a2f00a3f1b0333a44fd5f611d3429887eba4a8">season</a>) const</td></tr>
-<tr class="memdesc:a858759b86e8b8b4e53ddc3ed26512f6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Looks up tile by id + season suffix AND just raw id Example: if id == "t_tree_apple" and season == SPRING will first look up "t_tree_apple_season_spring" if not found, will look up "t_tree_apple" if still nothing is found, will return <a class="el" href="namespacecata.html#ad05314667ac5d05f984aeeef26b9a87f">cata::nullopt</a>.  <a href="classtileset.html#a858759b86e8b8b4e53ddc3ed26512f6d">More...</a><br /></td></tr>
-<tr class="separator:a858759b86e8b8b4e53ddc3ed26512f6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d0b3d2f933a3e144f0c1733465806f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="generic__factory_8h.html#a1159dbaba81931271dbfe5b9c7f041b3">std::optional</a>&lt; <a class="el" href="classtile__lookup__res.html">tile_lookup_res</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtileset.html#a5d0b3d2f933a3e144f0c1733465806f2">find_tile_type_by_season</a> (const std::string &amp;id, <a class="el" href="calendar_8h.html#a5ac915753729cd68b608506d3c63ad1b">season_type</a> <a class="el" href="calendar_8h.html#a5db9490f8316b22d7c367c5a563a2f00a3f1b0333a44fd5f611d3429887eba4a8">season</a>) const</td></tr>
+<tr class="memdesc:a5d0b3d2f933a3e144f0c1733465806f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Looks up tile by id + season suffix AND just raw id Example: if id == "t_tree_apple" and season == SPRING will first look up "t_tree_apple_season_spring" if not found, will look up "t_tree_apple" if still nothing is found, will return std::nullopt.  <a href="classtileset.html#a5d0b3d2f933a3e144f0c1733465806f2">More...</a><br /></td></tr>
+<tr class="separator:a5d0b3d2f933a3e144f0c1733465806f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
 Static Private Member Functions</h2></td></tr>
@@ -219,14 +219,14 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a858759b86e8b8b4e53ddc3ed26512f6d" name="a858759b86e8b8b4e53ddc3ed26512f6d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a858759b86e8b8b4e53ddc3ed26512f6d">&#9670;&nbsp;</a></span>find_tile_type_by_season()</h2>
+<a id="a5d0b3d2f933a3e144f0c1733465806f2" name="a5d0b3d2f933a3e144f0c1733465806f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d0b3d2f933a3e144f0c1733465806f2">&#9670;&nbsp;</a></span>find_tile_type_by_season()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classcata_1_1optional.html">cata::optional</a>&lt; <a class="el" href="classtile__lookup__res.html">tile_lookup_res</a> &gt; tileset::find_tile_type_by_season </td>
+          <td class="memname"><a class="el" href="generic__factory_8h.html#a1159dbaba81931271dbfe5b9c7f041b3">std::optional</a>&lt; <a class="el" href="classtile__lookup__res.html">tile_lookup_res</a> &gt; tileset::find_tile_type_by_season </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>id</em>, </td>
@@ -245,7 +245,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Looks up tile by id + season suffix AND just raw id Example: if id == "t_tree_apple" and season == SPRING will first look up "t_tree_apple_season_spring" if not found, will look up "t_tree_apple" if still nothing is found, will return <a class="el" href="namespacecata.html#ad05314667ac5d05f984aeeef26b9a87f">cata::nullopt</a>. </p>
+<p>Looks up tile by id + season suffix AND just raw id Example: if id == "t_tree_apple" and season == SPRING will first look up "t_tree_apple_season_spring" if not found, will look up "t_tree_apple" if still nothing is found, will return std::nullopt. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">id</td><td>: "raw" tile id (without season suffix) </td></tr>
@@ -253,7 +253,7 @@ Friends</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespacecata.html#ad05314667ac5d05f984aeeef26b9a87f">cata::nullopt</a> if no tile is found, <a class="el" href="classcata_1_1optional.html">cata::optional</a> with found id (e.g. "t_tree_apple_season_spring" or "t_tree_apple) and found tile.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>std::nullopt if no tile is found, std::optional with found id (e.g. "t_tree_apple_season_spring" or "t_tree_apple) and found tile.</dd></dl>
 <p>Note: this method is guaranteed to return pointers to the keys and values stored inside the <code><a class="el" href="classtileset.html#aca2eb129c686bec0d2a46abb946f9b0e">tileset::tile_ids</a></code> collection. I.e. result of this method call is invalidated when the corresponding <code>tileset</code> is invalidated. </p>
 
 </div>
@@ -982,7 +982,7 @@ Friends</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classtileset.html">tileset</a></li>
-    <li class="footer">Generated on Fri Apr 7 2023 11:54:54 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Apr 30 2023 06:48:22 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

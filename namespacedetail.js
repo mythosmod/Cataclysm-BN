@@ -74,7 +74,7 @@ var namespacedetail =
     [ "is_named_arg", "structdetail_1_1is__named__arg.html", null ],
     [ "is_named_arg< named_arg< Char, T > >", "structdetail_1_1is__named__arg_3_01named__arg_3_01Char_00_01T_01_4_01_4.html", null ],
     [ "is_optional_helper", "classdetail_1_1is__optional__helper.html", null ],
-    [ "is_optional_helper< cata::optional< T > >", "classdetail_1_1is__optional__helper_3_01cata_1_1optional_3_01T_01_4_01_4.html", null ],
+    [ "is_optional_helper< std::optional< T > >", "classdetail_1_1is__optional__helper_3_01std_1_1optional_3_01T_01_4_01_4.html", null ],
     [ "is_output_iterator", "structdetail_1_1is__output__iterator.html", null ],
     [ "is_output_iterator< It, T, void_t< typename std::iterator_traits< It >::iterator_category, decltype(*std::declval< It >()=std::declval< T >()) > >", "structdetail_1_1is__output__iterator_3_01It_00_01T_00_01void__t_3_01typename_01std_1_1iterator__c6c92fb2cbbf10ce92436c9976fda4bf.html", null ],
     [ "is_reference_wrapper", "structdetail_1_1is__reference__wrapper.html", null ],

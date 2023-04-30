@@ -67,5 +67,6 @@ var searchData=
   ['project_5fto_5fimpl_3c_20scaleup_2c_200_2c_20resultscale_20_3e_64',['project_to_impl&lt; ScaleUp, 0, ResultScale &gt;',['../structcoords_1_1project__to__impl_3_01ScaleUp_00_010_00_01ResultScale_01_4.html',1,'coords']]],
   ['projectile_65',['projectile',['../structprojectile.html',1,'']]],
   ['projectile_5fattack_5faim_66',['projectile_attack_aim',['../structprojectile__attack__aim.html',1,'']]],
-  ['pry_5fresult_67',['pry_result',['../structpry__result.html',1,'']]]
+  ['propelledentity_67',['PropelledEntity',['../structexplosion__handler_1_1ExplosionEvent_1_1PropelledEntity.html',1,'explosion_handler::ExplosionEvent']]],
+  ['pry_5fresult_68',['pry_result',['../structpry__result.html',1,'']]]
 ];

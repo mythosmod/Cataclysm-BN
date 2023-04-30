@@ -32,7 +32,7 @@ var character__functions_8h =
     [ "is_fun_to_read", "character__functions_8h.html#a862df11441bba358b82fa47ce88ebe85", null ],
     [ "list_ammo", "character__functions_8h.html#ae7bfa36ae343bba14f1630cc9350f2d9", null ],
     [ "normalize", "character__functions_8h.html#a84ed0deeee8eeb3cd6d3339fefd86e30", null ],
-    [ "pick_safe_adjacent_tile", "character__functions_8h.html#a13637305f9b6578e07749ae4ab8e784d", null ],
+    [ "pick_safe_adjacent_tile", "character__functions_8h.html#ac54c5e58bb5d9b9fc888ca8e85d3b1a5", null ],
     [ "rate_sleep_spot", "character__functions_8h.html#a392d1b99006a4f1f16c773e38762043d", null ],
     [ "roll_can_sleep", "character__functions_8h.html#a16d62ac71c344a9b0482777456bb7b74", null ],
     [ "select_ammo", "character__functions_8h.html#a8b4188451961979984887e12b54e27c3", null ],

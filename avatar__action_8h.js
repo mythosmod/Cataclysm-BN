@@ -13,7 +13,7 @@ var avatar__action_8h =
     [ "mend", "avatar__action_8h.html#af2c58da1638b239e9df99d2a4611cde8", null ],
     [ "move", "avatar__action_8h.html#a76ba74774376a08222b8cdcce08f7304", null ],
     [ "move", "avatar__action_8h.html#a4180afe5f02be501278dca2dcfda87c3", null ],
-    [ "plthrow", "avatar__action_8h.html#a88a027e47bb814ff61be3e15bd0b8777", null ],
+    [ "plthrow", "avatar__action_8h.html#a2ff3ea3901fd1f5e85513178133c03f5", null ],
     [ "ramp_move", "avatar__action_8h.html#abadb3333d387007017d11836c606f1e5", null ],
     [ "reload", "avatar__action_8h.html#a03cf09d521b2df8ec4e14523b73804b4", null ],
     [ "reload_item", "avatar__action_8h.html#a074ed32b4d421de7f0749e9aef6fe0c9", null ],

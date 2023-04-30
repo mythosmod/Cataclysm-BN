@@ -9,7 +9,7 @@ var classrelic__recharge =
     [ "intensity_max", "classrelic__recharge.html#a6fda886d61d3fa93b6dd33a76ad7e4c2", null ],
     [ "intensity_min", "classrelic__recharge.html#a817c2df8538388bea5fa5c0dfd2c9e95", null ],
     [ "interval", "classrelic__recharge.html#a67871c4ade750804dfb3909fe62f1550", null ],
-    [ "message", "classrelic__recharge.html#a8609adf856a9f4b84e661a15e70662d1", null ],
+    [ "message", "classrelic__recharge.html#a33a49de281a8302c18eb9874ce7a537c", null ],
     [ "rate", "classrelic__recharge.html#a1cab0891be5fcc11b14462e6ccd4b686", null ],
     [ "req", "classrelic__recharge.html#ade6a8b91b371c11b7c1d71d173988191", null ],
     [ "src_loc", "classrelic__recharge.html#afac57ac1c95a8f80a473e441dfcc1e34", null ],

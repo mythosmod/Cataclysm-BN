@@ -92,12 +92,12 @@ $(document).ready(function(){initNavTree('ui__manager_8cpp_source.html',''); ini
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;algorithm&gt;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;iterator&gt;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="cached__options_8h.html">cached_options.h</a>&quot;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="cursesdef_8h.html">cursesdef.h</a>&quot;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="game__ui_8h.html">game_ui.h</a>&quot;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="optional_8h.html">optional.h</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;optional&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="cached__options_8h.html">cached_options.h</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="cursesdef_8h.html">cursesdef.h</a>&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="game__ui_8h.html">game_ui.h</a>&quot;</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="point_8h.html">point.h</a>&quot;</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="sdltiles_8h.html">sdltiles.h</a>&quot;</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
@@ -107,7 +107,7 @@ $(document).ready(function(){initNavTree('ui__manager_8cpp_source.html',''); ini
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="ui__manager_8cpp.html#abba7b6d7c2497114477cbe0357917eed">   18</a></span><span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="ui__manager_8cpp.html#abba7b6d7c2497114477cbe0357917eed">showing_debug_message</a> = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="ui__manager_8cpp.html#a2bfb07946b9342f4c79f55b8aa814a46">   19</a></span><span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="ui__manager_8cpp.html#a2bfb07946b9342f4c79f55b8aa814a46">restart_redrawing</a> = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#if defined( TILES )</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">static</span> <a class="code hl_class" href="classcata_1_1optional.html">cata::optional&lt;SDL_Rect&gt;</a> prev_clip_rect;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">static</span> std::optional&lt;SDL_Rect&gt; prev_clip_rect;</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="ui__manager_8cpp.html#ab3a3f30ed70140333f4af693ff0a4e9c">   23</a></span><span class="keyword">static</span> <a class="code hl_typedef" href="ui__manager_8cpp.html#a98331ede1d20b7da301097c5869051d8">ui_stack_t</a> <a class="code hl_variable" href="ui__manager_8cpp.html#ab3a3f30ed70140333f4af693ff0a4e9c">ui_stack</a>;</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
@@ -142,10 +142,10 @@ $(document).ready(function(){initNavTree('ui__manager_8cpp_source.html',''); ini
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">const</span> SDL_Renderer_Ptr &amp;renderer = get_sdl_renderer();</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordflow">if</span>( SDL_RenderIsClipEnabled( renderer.get() ) ) {</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        prev_clip_rect = SDL_Rect();</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        SDL_RenderGetClipRect( renderer.get(), &amp;prev_clip_rect.<a class="code hl_function" href="classcata_1_1optional.html#aeb8e2c36d85751ab0ddd296a2496b78c">value</a>() );</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        SDL_RenderGetClipRect( renderer.get(), &amp;prev_clip_rect.value() );</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        SDL_RenderSetClipRect( renderer.get(), <span class="keyword">nullptr</span> );</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        prev_clip_rect = <a class="code hl_variable" href="namespacecata.html#ad05314667ac5d05f984aeeef26b9a87f">cata::nullopt</a>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        prev_clip_rect = std::nullopt;</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    }</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="comment">// The debug message might be shown during a normal UI&#39;s redraw callback,</span></div>
@@ -162,9 +162,9 @@ $(document).ready(function(){initNavTree('ui__manager_8cpp_source.html',''); ini
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <a class="code hl_variable" href="ui__manager_8cpp.html#abba7b6d7c2497114477cbe0357917eed">showing_debug_message</a> = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="preprocessor">#if defined( TILES )</span></div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <span class="comment">// See ui_adaptor( debug_message_ui )</span></div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="keywordflow">if</span>( prev_clip_rect.<a class="code hl_function" href="classcata_1_1optional.html#ad5b847e0e2f1db1387a10bac3751ccf4">has_value</a>() ) {</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="keywordflow">if</span>( prev_clip_rect.has_value() ) {</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            <span class="keyword">const</span> SDL_Renderer_Ptr &amp;renderer = get_sdl_renderer();</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            SDL_RenderSetClipRect( renderer.get(), &amp;prev_clip_rect.<a class="code hl_function" href="classcata_1_1optional.html#aeb8e2c36d85751ab0ddd296a2496b78c">value</a>() );</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            SDL_RenderSetClipRect( renderer.get(), &amp;prev_clip_rect.value() );</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        }</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    }</div>
@@ -494,9 +494,6 @@ $(document).ready(function(){initNavTree('ui__manager_8cpp_source.html',''); ini
 <div class="ttc" id="acached__options_8cpp_html_a07c66893ce868671f9998dad80094cb1"><div class="ttname"><a href="cached__options_8cpp.html#a07c66893ce868671f9998dad80094cb1">test_mode</a></div><div class="ttdeci">bool test_mode</div><div class="ttdoc">Set to true when running in test mode (e.g.</div><div class="ttdef"><b>Definition:</b> <a href="cached__options_8cpp_source.html#l00003">cached_options.cpp:3</a></div></div>
 <div class="ttc" id="acached__options_8h_html"><div class="ttname"><a href="cached__options_8h.html">cached_options.h</a></div></div>
 <div class="ttc" id="aclassbackground__pane_html_a434a315d55bc173bdec418b56a072718"><div class="ttname"><a href="classbackground__pane.html#a434a315d55bc173bdec418b56a072718">background_pane::background_pane</a></div><div class="ttdeci">background_pane()</div><div class="ttdef"><b>Definition:</b> <a href="ui__manager_8cpp_source.html#l00369">ui_manager.cpp:369</a></div></div>
-<div class="ttc" id="aclasscata_1_1optional_html"><div class="ttname"><a href="classcata_1_1optional.html">cata::optional</a></div><div class="ttdef"><b>Definition:</b> <a href="optional_8h_source.html#l00030">optional.h:31</a></div></div>
-<div class="ttc" id="aclasscata_1_1optional_html_ad5b847e0e2f1db1387a10bac3751ccf4"><div class="ttname"><a href="classcata_1_1optional.html#ad5b847e0e2f1db1387a10bac3751ccf4">cata::optional::has_value</a></div><div class="ttdeci">constexpr bool has_value() const noexcept</div><div class="ttdef"><b>Definition:</b> <a href="optional_8h_source.html#l00123">optional.h:123</a></div></div>
-<div class="ttc" id="aclasscata_1_1optional_html_aeb8e2c36d85751ab0ddd296a2496b78c"><div class="ttname"><a href="classcata_1_1optional.html#aeb8e2c36d85751ab0ddd296a2496b78c">cata::optional::value</a></div><div class="ttdeci">T &amp; value()</div><div class="ttdef"><b>Definition:</b> <a href="optional_8h_source.html#l00127">optional.h:127</a></div></div>
 <div class="ttc" id="aclasscatacurses_1_1window_html"><div class="ttname"><a href="classcatacurses_1_1window.html">catacurses::window</a></div><div class="ttdoc">A wrapper over a pointer to a curses window.</div><div class="ttdef"><b>Definition:</b> <a href="cursesdef_8h_source.html#l00054">cursesdef.h:55</a></div></div>
 <div class="ttc" id="aclassrestore__on__out__of__scope_html"><div class="ttname"><a href="classrestore__on__out__of__scope.html">restore_on_out_of_scope</a></div><div class="ttdef"><b>Definition:</b> <a href="cata__utility_8h_source.html#l00274">cata_utility.h:275</a></div></div>
 <div class="ttc" id="aclassui__adaptor_html"><div class="ttname"><a href="classui__adaptor.html">ui_adaptor</a></div><div class="ttdoc">Adaptor between UI code and the UI management system.</div><div class="ttdef"><b>Definition:</b> <a href="ui__manager_8h_source.html#l00064">ui_manager.h:65</a></div></div>
@@ -527,7 +524,6 @@ $(document).ready(function(){initNavTree('ui__manager_8cpp_source.html',''); ini
 <div class="ttc" id="aenums_8h_html_ac7c2392f800a8be2feb093ef5fe48d40a857af22f119fefbfa24769ed2ad6d5e7"><div class="ttname"><a href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40a857af22f119fefbfa24769ed2ad6d5e7">ot_match_type::contains</a></div><div class="ttdeci">@ contains</div></div>
 <div class="ttc" id="agame__ui_8cpp_html_ad75a1116fce8f061299267e20268ca48"><div class="ttname"><a href="game__ui_8cpp.html#ad75a1116fce8f061299267e20268ca48">reinitialize_framebuffer</a></div><div class="ttdeci">void reinitialize_framebuffer(const bool)</div><div class="ttdef"><b>Definition:</b> <a href="game__ui_8cpp_source.html#l00005">game_ui.cpp:5</a></div></div>
 <div class="ttc" id="agame__ui_8h_html"><div class="ttname"><a href="game__ui_8h.html">game_ui.h</a></div></div>
-<div class="ttc" id="anamespacecata_html_ad05314667ac5d05f984aeeef26b9a87f"><div class="ttname"><a href="namespacecata.html#ad05314667ac5d05f984aeeef26b9a87f">cata::nullopt</a></div><div class="ttdeci">static constexpr nullopt_t nullopt</div><div class="ttdef"><b>Definition:</b> <a href="optional_8h_source.html#l00022">optional.h:22</a></div></div>
 <div class="ttc" id="anamespacecatacurses_html_a3e3320f426a1343cb1effcaf648d2d1a"><div class="ttname"><a href="namespacecatacurses.html#a3e3320f426a1343cb1effcaf648d2d1a">catacurses::getbegx</a></div><div class="ttdeci">int getbegx(const window &amp;win)</div><div class="ttdef"><b>Definition:</b> <a href="ncurses__def_8cpp_source.html#l00068">ncurses_def.cpp:68</a></div></div>
 <div class="ttc" id="anamespacecatacurses_html_a51707e12b1a95f6c69b1e128c4ba2601"><div class="ttname"><a href="namespacecatacurses.html#a51707e12b1a95f6c69b1e128c4ba2601">catacurses::stdscr</a></div><div class="ttdeci">window stdscr</div><div class="ttdef"><b>Definition:</b> <a href="ncurses__def_8cpp_source.html#l00215">ncurses_def.cpp:215</a></div></div>
 <div class="ttc" id="anamespacecatacurses_html_a929fe85d472028f52d8a5cdfc0d35017"><div class="ttname"><a href="namespacecatacurses.html#a929fe85d472028f52d8a5cdfc0d35017">catacurses::getmaxx</a></div><div class="ttdeci">int getmaxx(const window &amp;win)</div><div class="ttdef"><b>Definition:</b> <a href="ncurses__def_8cpp_source.html#l00058">ncurses_def.cpp:58</a></div></div>
@@ -543,7 +539,6 @@ $(document).ready(function(){initNavTree('ui__manager_8cpp_source.html',''); ini
 <div class="ttc" id="anamespaceui__manager_html_aaa801bfcb6ef4eb737e70c793df08da9"><div class="ttname"><a href="namespaceui__manager.html#aaa801bfcb6ef4eb737e70c793df08da9">ui_manager::screen_resized</a></div><div class="ttdeci">void screen_resized()</div><div class="ttdoc">Handle resize of the game window.</div><div class="ttdef"><b>Definition:</b> <a href="ui__manager_8cpp_source.html#l00399">ui_manager.cpp:399</a></div></div>
 <div class="ttc" id="anamespaceui__manager_html_ae38f3a918052ef286ee60daac47f52d4"><div class="ttname"><a href="namespaceui__manager.html#ae38f3a918052ef286ee60daac47f52d4">ui_manager::redraw</a></div><div class="ttdeci">void redraw()</div><div class="ttdoc">Invalidate the top window and redraw all invalidated windows.</div><div class="ttdef"><b>Definition:</b> <a href="ui__manager_8cpp_source.html#l00389">ui_manager.cpp:389</a></div></div>
 <div class="ttc" id="anamespaceui_html"><div class="ttname"><a href="namespaceui.html">ui</a></div><div class="ttdef"><b>Definition:</b> <a href="overmap__ui_8h_source.html#l00016">overmap_ui.h:17</a></div></div>
-<div class="ttc" id="aoptional_8h_html"><div class="ttname"><a href="optional_8h.html">optional.h</a></div></div>
 <div class="ttc" id="apoint_8h_html"><div class="ttname"><a href="point_8h.html">point.h</a></div></div>
 <div class="ttc" id="apoint_8h_html_a0ee2195dcb488ae55fbf4316f5011172"><div class="ttname"><a href="point_8h.html#a0ee2195dcb488ae55fbf4316f5011172">point_zero</a></div><div class="ttdeci">static constexpr point point_zero</div><div class="ttdef"><b>Definition:</b> <a href="point_8h_source.html#l00260">point.h:260</a></div></div>
 <div class="ttc" id="asdltiles_8h_html"><div class="ttname"><a href="sdltiles_8h.html">sdltiles.h</a></div></div>
@@ -567,7 +562,7 @@ $(document).ready(function(){initNavTree('ui__manager_8cpp_source.html',''); ini
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="ui__manager_8cpp.html">ui_manager.cpp</a></li>
-    <li class="footer">Generated on Fri Apr 7 2023 11:54:26 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Apr 30 2023 06:47:49 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

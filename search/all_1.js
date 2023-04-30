@@ -98,7 +98,7 @@ var searchData=
   ['_5freinforces_95',['_reinforces',['../classmaterial__type.html#a608aea7aa21aaf6fe0ffd7be8f7cdf5d',1,'material_type']]],
   ['_5frepaired_5fwith_96',['_repaired_with',['../classmaterial__type.html#a54612384f0cef32b77bd22db2c4d31ee',1,'material_type']]],
   ['_5frotting_97',['_rotting',['../classmaterial__type.html#a82e8868e3c9e2f30f480cd0fa65b7d72',1,'material_type']]],
-  ['_5fsalvaged_5finto_98',['_salvaged_into',['../classmaterial__type.html#ac97509ac7b46e395e92592112df7e807',1,'material_type']]],
+  ['_5fsalvaged_5finto_98',['_salvaged_into',['../classmaterial__type.html#affc9d12eb046d1bbcddf8dbbd58e91fc',1,'material_type']]],
   ['_5fselected_99',['_selected',['../classovermap__ui_1_1map__notes__callback.html#a9f4413397f36068235928ebe672a6dd9',1,'overmap_ui::map_notes_callback']]],
   ['_5fsession_5fstr_5fentered_100',['_session_str_entered',['../classstring__input__popup.html#a1b8eb642f0cb533c0cb89b956ab94103',1,'string_input_popup']]],
   ['_5fskills_101',['_skills',['../classCharacter.html#a173170e7cdceddff68d980d8ced2c6f8',1,'Character::_skills()'],['../classskill__boost.html#adb5fd724879fcecdb317ca596943bfed',1,'skill_boost::_skills()']]],
@@ -144,6 +144,6 @@ var searchData=
   ['_5fwdirent_141',['_wdirent',['../wdirent_8h.html#a7083dcfe4c262f51d7b4e065df46ebc5',1,'_wdirent():&#160;wdirent.h'],['../struct__wdirent.html',1,'_wdirent']]],
   ['_5fwidth_142',['_width',['../classstring__input__popup.html#aa1ad38a714e333be3adc8497c3b391a4',1,'string_input_popup']]],
   ['_5fwin_143',['_win',['../classstring__editor__window.html#adbcf3adf7ef94578330e7d5992c0818b',1,'string_editor_window']]],
-  ['_5fwind_5fresist_144',['_wind_resist',['../classmaterial__type.html#a0ace10ed93f221ad1880c12c90d968b3',1,'material_type']]],
+  ['_5fwind_5fresist_144',['_wind_resist',['../classmaterial__type.html#ac067488e2acf59573042f549adf22cdb',1,'material_type']]],
   ['_5fwopendir_145',['_wopendir',['../wdirent_8h.html#a930234a4d128076584ce384e7807c22e',1,'wdirent.h']]]
 ];

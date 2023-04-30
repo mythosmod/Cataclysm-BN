@@ -51,7 +51,7 @@ var newcharacter_8cpp =
     [ "has_lower_trait", "newcharacter_8cpp.html#accf415a065ef7ba53e81374dce115e0d", null ],
     [ "has_same_type_trait", "newcharacter_8cpp.html#afb61e70aaafdc82eaa9f84a4afda5609", null ],
     [ "learn_spells", "newcharacter_8cpp.html#a3e94197e111e580dcb30f555dbc1b575", null ],
-    [ "query_for_template_name", "newcharacter_8cpp.html#ac9fd44e067a314f4c67519b33ca69d77", null ],
+    [ "query_for_template_name", "newcharacter_8cpp.html#aa7e7cb3769c4df515700c4a3bb050b1e", null ],
     [ "reset_scenario", "newcharacter_8cpp.html#ae693b39515e9db3eef95557bfb57c6a3", null ],
     [ "set_description", "newcharacter_8cpp.html#ac2d8c6376956543cb27f6399fdeae973", null ],
     [ "set_points", "newcharacter_8cpp.html#a41b8f0b326ad29711f8044866617dd58", null ],

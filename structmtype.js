@@ -48,7 +48,7 @@ var structmtype =
     [ "baby_egg", "structmtype.html#a3a13c9cf426dc128a044ac158b505ccd", null ],
     [ "baby_flags", "structmtype.html#a9636bf314611b06345f1a78b4e88e8ae", null ],
     [ "baby_monster", "structmtype.html#ac3d685da5268a2d00d8b8bd14eea54c2", null ],
-    [ "baby_timer", "structmtype.html#abfeb83f234f3eebe6ce21d29cbfb6028", null ],
+    [ "baby_timer", "structmtype.html#a65f2b779578b589c2f85c0047f86b7bf", null ],
     [ "bash_skill", "structmtype.html#acd6bef5de9f343c6677cc8ae2b48e6fe", null ],
     [ "bodytype", "structmtype.html#a541f9bf8c2e84856ea34db43f88991b3", null ],
     [ "burn_into", "structmtype.html#a09b3dab7e8a40d991242870bf1bf160e", null ],

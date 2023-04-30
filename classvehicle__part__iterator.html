@@ -128,8 +128,8 @@ Private Member Functions</h2></td></tr>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a36edb9425815552f2013b2d14f467664"><td class="memItemLeft" align="right" valign="top">std::reference_wrapper&lt; const range_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvehicle__part__iterator.html#a36edb9425815552f2013b2d14f467664">range_</a></td></tr>
 <tr class="separator:a36edb9425815552f2013b2d14f467664"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d0034586394ed346226f8e91926b3ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcata_1_1optional.html">cata::optional</a>&lt; <a class="el" href="classvpart__reference.html">vpart_reference</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvehicle__part__iterator.html#a1d0034586394ed346226f8e91926b3ae">vp_</a></td></tr>
-<tr class="separator:a1d0034586394ed346226f8e91926b3ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5810f08110375c0ae8e79497bccd103f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="generic__factory_8h.html#a1159dbaba81931271dbfe5b9c7f041b3">std::optional</a>&lt; <a class="el" href="classvpart__reference.html">vpart_reference</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvehicle__part__iterator.html#a5810f08110375c0ae8e79497bccd103f">vp_</a></td></tr>
+<tr class="separator:a5810f08110375c0ae8e79497bccd103f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename range_type&gt;<br />
@@ -282,10 +282,10 @@ template&lt;typename range_type &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="vpart__range_8h_source.html#l00054">54</a> of file <a class="el" href="vpart__range_8h_source.html">vpart_range.h</a>.</p>
 <div class="fragment"><div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                                                 {</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            assert( <a class="code hl_variable" href="classvehicle__part__iterator.html#a1d0034586394ed346226f8e91926b3ae">vp_</a> );</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <span class="keywordflow">return</span> *<a class="code hl_variable" href="classvehicle__part__iterator.html#a1d0034586394ed346226f8e91926b3ae">vp_</a>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            assert( <a class="code hl_variable" href="classvehicle__part__iterator.html#a5810f08110375c0ae8e79497bccd103f">vp_</a> );</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <span class="keywordflow">return</span> *<a class="code hl_variable" href="classvehicle__part__iterator.html#a5810f08110375c0ae8e79497bccd103f">vp_</a>;</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        }</div>
-<div class="ttc" id="aclassvehicle__part__iterator_html_a1d0034586394ed346226f8e91926b3ae"><div class="ttname"><a href="classvehicle__part__iterator.html#a1d0034586394ed346226f8e91926b3ae">vehicle_part_iterator::vp_</a></div><div class="ttdeci">cata::optional&lt; vpart_reference &gt; vp_</div><div class="ttdef"><b>Definition:</b> <a href="vpart__range_8h_source.html#l00029">vpart_range.h:29</a></div></div>
+<div class="ttc" id="aclassvehicle__part__iterator_html_a5810f08110375c0ae8e79497bccd103f"><div class="ttname"><a href="classvehicle__part__iterator.html#a5810f08110375c0ae8e79497bccd103f">vehicle_part_iterator::vp_</a></div><div class="ttdeci">std::optional&lt; vpart_reference &gt; vp_</div><div class="ttdef"><b>Definition:</b> <a href="vpart__range_8h_source.html#l00029">vpart_range.h:29</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="vpart__range_8h_source.html#l00029">vehicle_part_iterator&lt; range_type &gt;::vp_</a>.</p>
 
@@ -318,8 +318,8 @@ template&lt;typename range_type &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="vpart__range_8h_source.html#l00063">63</a> of file <a class="el" href="vpart__range_8h_source.html">vpart_range.h</a>.</p>
 <div class="fragment"><div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                                            {</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            assert( <a class="code hl_variable" href="classvehicle__part__iterator.html#a1d0034586394ed346226f8e91926b3ae">vp_</a> );</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            <a class="code hl_function" href="classvehicle__part__iterator.html#a841bf75363ab1fea2a11a7d3432feeb8">skip_to_next_valid</a>( <a class="code hl_variable" href="classvehicle__part__iterator.html#a1d0034586394ed346226f8e91926b3ae">vp_</a>-&gt;part_index() + 1 );</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            assert( <a class="code hl_variable" href="classvehicle__part__iterator.html#a5810f08110375c0ae8e79497bccd103f">vp_</a> );</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            <a class="code hl_function" href="classvehicle__part__iterator.html#a841bf75363ab1fea2a11a7d3432feeb8">skip_to_next_valid</a>( <a class="code hl_variable" href="classvehicle__part__iterator.html#a5810f08110375c0ae8e79497bccd103f">vp_</a>-&gt;part_index() + 1 );</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        }</div>
 </div><!-- fragment -->
@@ -354,8 +354,8 @@ template&lt;typename range_type &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="vpart__range_8h_source.html#l00058">58</a> of file <a class="el" href="vpart__range_8h_source.html">vpart_range.h</a>.</p>
 <div class="fragment"><div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                                                  {</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            assert( <a class="code hl_variable" href="classvehicle__part__iterator.html#a1d0034586394ed346226f8e91926b3ae">vp_</a> );</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            <span class="keywordflow">return</span> &amp;*<a class="code hl_variable" href="classvehicle__part__iterator.html#a1d0034586394ed346226f8e91926b3ae">vp_</a>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            assert( <a class="code hl_variable" href="classvehicle__part__iterator.html#a5810f08110375c0ae8e79497bccd103f">vp_</a> );</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            <span class="keywordflow">return</span> &amp;*<a class="code hl_variable" href="classvehicle__part__iterator.html#a5810f08110375c0ae8e79497bccd103f">vp_</a>;</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        }</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="vpart__range_8h_source.html#l00029">vehicle_part_iterator&lt; range_type &gt;::vp_</a>.</p>
@@ -418,16 +418,16 @@ template&lt;typename range_type &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="vpart__range_8h_source.html#l00069">69</a> of file <a class="el" href="vpart__range_8h_source.html">vpart_range.h</a>.</p>
 <div class="fragment"><div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                                                                  {</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            <span class="keywordflow">if</span>( <a class="code hl_variable" href="classvehicle__part__iterator.html#a1d0034586394ed346226f8e91926b3ae">vp_</a>.has_value() != rhs.<a class="code hl_variable" href="classvehicle__part__iterator.html#a1d0034586394ed346226f8e91926b3ae">vp_</a>.has_value() ) {</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            <span class="keywordflow">if</span>( <a class="code hl_variable" href="classvehicle__part__iterator.html#a5810f08110375c0ae8e79497bccd103f">vp_</a>.has_value() != rhs.<a class="code hl_variable" href="classvehicle__part__iterator.html#a5810f08110375c0ae8e79497bccd103f">vp_</a>.has_value() ) {</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            }</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            <span class="keywordflow">if</span>( !<a class="code hl_variable" href="classvehicle__part__iterator.html#a1d0034586394ed346226f8e91926b3ae">vp_</a>.has_value() ) {</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            <span class="keywordflow">if</span>( !<a class="code hl_variable" href="classvehicle__part__iterator.html#a5810f08110375c0ae8e79497bccd103f">vp_</a>.has_value() ) {</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            }</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            <span class="keywordflow">return</span> &amp;<a class="code hl_variable" href="classvehicle__part__iterator.html#a1d0034586394ed346226f8e91926b3ae">vp_</a>-&gt;vehicle() == &amp;rhs.<a class="code hl_variable" href="classvehicle__part__iterator.html#a1d0034586394ed346226f8e91926b3ae">vp_</a>-&gt;vehicle() &amp;&amp; <a class="code hl_variable" href="classvehicle__part__iterator.html#a1d0034586394ed346226f8e91926b3ae">vp_</a>-&gt;part_index() == rhs.<a class="code hl_variable" href="classvehicle__part__iterator.html#a1d0034586394ed346226f8e91926b3ae">vp_</a>-&gt;part_index();</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            <span class="keywordflow">return</span> &amp;<a class="code hl_variable" href="classvehicle__part__iterator.html#a5810f08110375c0ae8e79497bccd103f">vp_</a>-&gt;vehicle() == &amp;rhs.<a class="code hl_variable" href="classvehicle__part__iterator.html#a5810f08110375c0ae8e79497bccd103f">vp_</a>-&gt;vehicle() &amp;&amp; <a class="code hl_variable" href="classvehicle__part__iterator.html#a5810f08110375c0ae8e79497bccd103f">vp_</a>-&gt;part_index() == rhs.<a class="code hl_variable" href="classvehicle__part__iterator.html#a5810f08110375c0ae8e79497bccd103f">vp_</a>-&gt;part_index();</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="optional_8h_source.html#l00123">cata::optional&lt; T &gt;::has_value()</a>, and <a class="el" href="vpart__range_8h_source.html#l00029">vehicle_part_iterator&lt; range_type &gt;::vp_</a>.</p>
+<p class="reference">References <a class="el" href="vpart__range_8h_source.html#l00029">vehicle_part_iterator&lt; range_type &gt;::vp_</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="vpart__range_8h_source.html#l00078">vehicle_part_iterator&lt; range_type &gt;::operator!=()</a>.</p>
 
@@ -500,14 +500,14 @@ template&lt;typename range_type &gt; </div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                ++i;</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            }</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            <span class="keywordflow">if</span>( i &lt; <a class="code hl_function" href="classvehicle__part__iterator.html#aeaef57f8aeed58bcd80916f9781b7aae">range</a>().part_count() ) {</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                <a class="code hl_variable" href="classvehicle__part__iterator.html#a1d0034586394ed346226f8e91926b3ae">vp_</a>.emplace( <a class="code hl_function" href="classvehicle__part__iterator.html#aeaef57f8aeed58bcd80916f9781b7aae">range</a>().<a class="code hl_enumvalue" href="crafting_8h.html#aa5f7f30378264d4adcf8b4a0ceb3b207a5a76e813d6a0a40548b91acc11557bd2">vehicle</a>(), i );</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                <a class="code hl_variable" href="classvehicle__part__iterator.html#a5810f08110375c0ae8e79497bccd103f">vp_</a>.emplace( <a class="code hl_function" href="classvehicle__part__iterator.html#aeaef57f8aeed58bcd80916f9781b7aae">range</a>().<a class="code hl_enumvalue" href="crafting_8h.html#aa5f7f30378264d4adcf8b4a0ceb3b207a5a76e813d6a0a40548b91acc11557bd2">vehicle</a>(), i );</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                <a class="code hl_variable" href="classvehicle__part__iterator.html#a1d0034586394ed346226f8e91926b3ae">vp_</a>.reset();</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                <a class="code hl_variable" href="classvehicle__part__iterator.html#a5810f08110375c0ae8e79497bccd103f">vp_</a>.reset();</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            }</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        }</div>
 <div class="ttc" id="acrafting_8h_html_aa5f7f30378264d4adcf8b4a0ceb3b207a5a76e813d6a0a40548b91acc11557bd2"><div class="ttname"><a href="crafting_8h.html#aa5f7f30378264d4adcf8b4a0ceb3b207a5a76e813d6a0a40548b91acc11557bd2">bench_type::vehicle</a></div><div class="ttdeci">@ vehicle</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="optional_8h_source.html#l00146">cata::optional&lt; T &gt;::emplace()</a>, <a class="el" href="vpart__range_8h_source.html#l00031">vehicle_part_iterator&lt; range_type &gt;::range()</a>, <a class="el" href="optional_8h_source.html#l00158">cata::optional&lt; T &gt;::reset()</a>, and <a class="el" href="crafting_8h.html#aa5f7f30378264d4adcf8b4a0ceb3b207a5a76e813d6a0a40548b91acc11557bd2">vehicle</a>.</p>
+<p class="reference">References <a class="el" href="vpart__range_8h_source.html#l00031">vehicle_part_iterator&lt; range_type &gt;::range()</a>, and <a class="el" href="crafting_8h.html#aa5f7f30378264d4adcf8b4a0ceb3b207a5a76e813d6a0a40548b91acc11557bd2">vehicle</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="vpart__range_8h_source.html#l00063">vehicle_part_iterator&lt; range_type &gt;::operator++()</a>, and <a class="el" href="vpart__range_8h_source.html#l00047">vehicle_part_iterator&lt; range_type &gt;::vehicle_part_iterator()</a>.</p>
 
@@ -540,8 +540,8 @@ template&lt;typename range_type &gt; </div>
 
 </div>
 </div>
-<a id="a1d0034586394ed346226f8e91926b3ae" name="a1d0034586394ed346226f8e91926b3ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d0034586394ed346226f8e91926b3ae">&#9670;&nbsp;</a></span>vp_</h2>
+<a id="a5810f08110375c0ae8e79497bccd103f" name="a5810f08110375c0ae8e79497bccd103f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5810f08110375c0ae8e79497bccd103f">&#9670;&nbsp;</a></span>vp_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -552,7 +552,7 @@ template&lt;typename range_type &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classcata_1_1optional.html">cata::optional</a>&lt;<a class="el" href="classvpart__reference.html">vpart_reference</a>&gt; <a class="el" href="classvehicle__part__iterator.html">vehicle_part_iterator</a>&lt; range_type &gt;::vp_</td>
+          <td class="memname"><a class="el" href="generic__factory_8h.html#a1159dbaba81931271dbfe5b9c7f041b3">std::optional</a>&lt;<a class="el" href="classvpart__reference.html">vpart_reference</a>&gt; <a class="el" href="classvehicle__part__iterator.html">vehicle_part_iterator</a>&lt; range_type &gt;::vp_</td>
         </tr>
       </table>
   </td>
@@ -577,7 +577,7 @@ template&lt;typename range_type &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classvehicle__part__iterator.html">vehicle_part_iterator</a></li>
-    <li class="footer">Generated on Fri Apr 7 2023 11:54:56 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Apr 30 2023 06:48:24 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

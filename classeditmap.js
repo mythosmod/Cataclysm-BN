@@ -8,7 +8,7 @@ var classeditmap =
     [ "do_ui_invalidation", "classeditmap.html#ab679e2c348e5393aca26b9bbd0b8d828", null ],
     [ "draw_cb_container", "classeditmap.html#a70c7d79b0d659e6acaa5d25c3ab69db2", null ],
     [ "draw_main_ui_overlay", "classeditmap.html#a24004b5514f96186cfc53185affe734f", null ],
-    [ "edit", "classeditmap.html#a5af487b0dc4d8be7220dc2ec5b939fdf", null ],
+    [ "edit", "classeditmap.html#a7475e2bd09ded1a58ce1a05ff7c08bed", null ],
     [ "edit_critter", "classeditmap.html#ad4f0f3e1c87d89e3c3102cde34fa51c2", null ],
     [ "edit_feature", "classeditmap.html#a369a3697efa930d789cea2a7e88a32ff", null ],
     [ "edit_fld", "classeditmap.html#a94393be40467c840b994f314feaf4837", null ],

@@ -5,7 +5,7 @@ var searchData=
   ['zapback_2',['zapback',['../namespacemdefense.html#ab6cedba84e8aed8494aa011c914895af',1,'mdefense']]],
   ['zlevel_3',['zlevel',['../classmapgendata.html#a8b23644fccfcc73e7f06a6fc3cb61d3f',1,'mapgendata']]],
   ['zombie_5ffuse_4',['zombie_fuse',['../namespacemattack.html#a0ff528d847e1c9012c2646531a1423f6',1,'mattack']]],
-  ['zone_5',['zone',['../classitem__category.html#a9b2fb652d19f3e3965704f3bc3bec8ab',1,'item_category']]],
+  ['zone_5',['zone',['../classitem__category.html#a8ade46f19642f68e128dbf93e4a03346',1,'item_category']]],
   ['zone_5fdata_6',['zone_data',['../classzone__data.html#abc440a0794ead9a4d978547d3b68ab29',1,'zone_data::zone_data()'],['../classzone__data.html#ab21c9b5762578b046c9ee9c96c5c60fa',1,'zone_data::zone_data(const std::string &amp;_name, const zone_type_id &amp;_type, const faction_id &amp;_faction, bool _invert, const bool _enabled, const tripoint &amp;_start, const tripoint &amp;_end, shared_ptr_fast&lt; zone_options &gt; _options=nullptr)']]],
   ['zone_5fedited_7',['zone_edited',['../classzone__manager.html#adad793b272c1a554e3b96eb98b2ef181',1,'zone_manager']]],
   ['zone_5fmanager_8',['zone_manager',['../classzone__manager.html#a0e20f1974c4a4bf71af104edcdfcda1a',1,'zone_manager::zone_manager()'],['../classzone__manager.html#a3e1e7997e0bd85174bb2e3d752129d26',1,'zone_manager::zone_manager(const zone_manager &amp;)=default'],['../classzone__manager.html#addfb311cb3c29075b18322a1ab5478eb',1,'zone_manager::zone_manager(zone_manager &amp;&amp;)=default']]],

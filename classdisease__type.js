@@ -6,7 +6,7 @@ var classdisease__type =
     [ "load_disease_type", "classdisease__type.html#a49b460a25f2a1ed7e7725be42d986b0b", null ],
     [ "reset", "classdisease__type.html#a93e650d00215b9769597be72b9078276", null ],
     [ "affected_bodyparts", "classdisease__type.html#adecde288794cf6e428a2d8a938578437", null ],
-    [ "health_threshold", "classdisease__type.html#a4d7b59567157e42dae68a7bf046d5beb", null ],
+    [ "health_threshold", "classdisease__type.html#a30bc5b7548d48754afce5fe549a52e16", null ],
     [ "id", "classdisease__type.html#a226293b56572ac8e4805ca8df30e88d6", null ],
     [ "max_duration", "classdisease__type.html#aea8bb466f30e397e0b5e166eb24ca859", null ],
     [ "max_intensity", "classdisease__type.html#a8c5fb49d3f135c9debdb1447b5c5881b", null ],

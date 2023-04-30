@@ -50,9 +50,10 @@ var searchData=
   ['hp_5fpart_47',['hp_part',['../cata__variant_8h.html#adfe42687fffdd05d233096b4e7dac2f4a7b0a5fa5318493158ac31e22bbb71ec8',1,'cata_variant.h']]],
   ['hp_5ftorso_48',['hp_torso',['../pldata_8h.html#a51c99b582921c7fe956e6cb62a7b8fe0a1530d96d2195142af603d0e2f4bddd4c',1,'pldata.h']]],
   ['html_49',['HTML',['../game_8h.html#aaf40533ef05b721e6065fed091b6e94ca4c4ad5fca2e7a3f74dbb1ced00381aa4',1,'game.h']]],
-  ['human_5fsized_5fbig_5fchar_50',['human_sized_big_char',['../classitem.html#a952452b603e34038ff8dff7ed9422a9ca7cd492c10e5f2b8c6203c9a3e0bd5d26',1,'item']]],
-  ['human_5fsized_5fhuman_5fchar_51',['human_sized_human_char',['../classitem.html#a952452b603e34038ff8dff7ed9422a9ca781d038afb4ccd0fb1b2085adfefd1c3',1,'item']]],
-  ['human_5fsized_5fsmall_5fchar_52',['human_sized_small_char',['../classitem.html#a952452b603e34038ff8dff7ed9422a9cae3ebeb4f4fd83a4bed91e489ff90eafa',1,'item']]],
-  ['hurt_53',['HURT',['../mtype_8h.html#a3bf0d3734009dbabe39a0d9fad3a5913a0f1484d199a29e1d494be6d0cdd42864',1,'mtype.h']]],
-  ['hydrated_54',['hydrated',['../character_8h.html#a2e6af65e94e820564fb484840378cf4aa5b31e60a65dd734481bc3a21565482ef',1,'character.h']]]
+  ['human_5freadable_50',['human_readable',['../cached__options_8h.html#a58a0eafd56e45aee1e382703e7afc79ea9bf1ec580e038dcf0874c7e061a16d86',1,'cached_options.h']]],
+  ['human_5fsized_5fbig_5fchar_51',['human_sized_big_char',['../classitem.html#a952452b603e34038ff8dff7ed9422a9ca7cd492c10e5f2b8c6203c9a3e0bd5d26',1,'item']]],
+  ['human_5fsized_5fhuman_5fchar_52',['human_sized_human_char',['../classitem.html#a952452b603e34038ff8dff7ed9422a9ca781d038afb4ccd0fb1b2085adfefd1c3',1,'item']]],
+  ['human_5fsized_5fsmall_5fchar_53',['human_sized_small_char',['../classitem.html#a952452b603e34038ff8dff7ed9422a9cae3ebeb4f4fd83a4bed91e489ff90eafa',1,'item']]],
+  ['hurt_54',['HURT',['../mtype_8h.html#a3bf0d3734009dbabe39a0d9fad3a5913a0f1484d199a29e1d494be6d0cdd42864',1,'mtype.h']]],
+  ['hydrated_55',['hydrated',['../character_8h.html#a2e6af65e94e820564fb484840378cf4aa5b31e60a65dd734481bc3a21565482ef',1,'character.h']]]
 ];

@@ -61,7 +61,7 @@ var classspell =
     [ "min_leveled_damage", "classspell.html#a0059e240134491be16a37e53d812532e", null ],
     [ "min_leveled_duration", "classspell.html#aec62ddad87599e98738007e8b9a4c34c", null ],
     [ "name", "classspell.html#abdf34d5415c3fdafcd84fe3a7101bddb", null ],
-    [ "random_valid_target", "classspell.html#ac0bb50aceecb61db6fb9f549b0c92e19", null ],
+    [ "random_valid_target", "classspell.html#a7a62c6ffd858fa8baeeb225aba2f06ac", null ],
     [ "range", "classspell.html#a805518bf44455e4652d16db9922945f5", null ],
     [ "set_exp", "classspell.html#add2c742d2996e6c81ab5b70b081544d9", null ],
     [ "set_level", "classspell.html#ad5c78c1f299ae3435bbac30f1664f45d", null ],

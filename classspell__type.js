@@ -25,7 +25,7 @@ var classspell__type =
     [ "effect_targets", "classspell__type.html#a6bbe078f2050f36b6a939d4cc3ea9f67", null ],
     [ "energy_increment", "classspell__type.html#a68c5cf79d70abd2ef100741669d5a21e", null ],
     [ "energy_source", "classspell__type.html#acbaed288a0edfa25f89667ce93bc3c5c", null ],
-    [ "field", "classspell__type.html#acbc3f75e52130bc90357b0e64ef7557d", null ],
+    [ "field", "classspell__type.html#aa5f6b0b99d9ffd592376016d6162359b", null ],
     [ "field_chance", "classspell__type.html#a3ce2556b130419d7bc6cbb1b69e9ae87", null ],
     [ "field_intensity_increment", "classspell__type.html#a1b82daa80ed40f12101cf3c769a15cca", null ],
     [ "field_intensity_variance", "classspell__type.html#a7436c8ae9f9a5aa472e2792ee781e091", null ],

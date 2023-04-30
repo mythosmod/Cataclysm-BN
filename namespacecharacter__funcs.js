@@ -33,7 +33,7 @@ var namespacecharacter__funcs =
     [ "is_fun_to_read", "namespacecharacter__funcs.html#a862df11441bba358b82fa47ce88ebe85", null ],
     [ "list_ammo", "namespacecharacter__funcs.html#ae7bfa36ae343bba14f1630cc9350f2d9", null ],
     [ "normalize", "namespacecharacter__funcs.html#a84ed0deeee8eeb3cd6d3339fefd86e30", null ],
-    [ "pick_safe_adjacent_tile", "namespacecharacter__funcs.html#a13637305f9b6578e07749ae4ab8e784d", null ],
+    [ "pick_safe_adjacent_tile", "namespacecharacter__funcs.html#ac54c5e58bb5d9b9fc888ca8e85d3b1a5", null ],
     [ "rate_sleep_spot", "namespacecharacter__funcs.html#a392d1b99006a4f1f16c773e38762043d", null ],
     [ "roll_can_sleep", "namespacecharacter__funcs.html#a16d62ac71c344a9b0482777456bb7b74", null ],
     [ "search_surroundings", "namespacecharacter__funcs.html#a53b7fa49a536bb361b3a6b2ef669bea4", null ],

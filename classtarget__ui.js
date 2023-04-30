@@ -83,7 +83,7 @@ var classtarget__ui =
     [ "range", "classtarget__ui.html#aa3c8602522a1638d3af42b10f1750e26", null ],
     [ "relevant", "classtarget__ui.html#a190a8193e6454bb636bc8f5288b4a27b", null ],
     [ "shape_coverage", "classtarget__ui.html#a6f2c970f904d7b8c06e403dbc4560f4d", null ],
-    [ "shape_gen", "classtarget__ui.html#a2f93a66a18420fd252e275a9c6f536d4", null ],
+    [ "shape_gen", "classtarget__ui.html#a919fee41b17818def69831a80be9b3f8", null ],
     [ "shifting_view", "classtarget__ui.html#a122323ec4c1e72c291e76643ccfd3fde", null ],
     [ "sight_dispersion", "classtarget__ui.html#a2e6f4c9c827b91ce215a1a7b32a4affb", null ],
     [ "snap_to_target", "classtarget__ui.html#a270f72c5bfef55a533d3cd9b3cf57ea0", null ],

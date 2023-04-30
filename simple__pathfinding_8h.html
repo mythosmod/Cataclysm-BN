@@ -94,11 +94,11 @@ $(document).ready(function(){initNavTree('simple__pathfinding_8h.html',''); init
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;functional&gt;</code><br />
+<code>#include &lt;optional&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &quot;<a class="el" href="coordinates_8h_source.html">coordinates.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="enums_8h_source.html">enums.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="om__direction_8h_source.html">om_direction.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="optional_8h_source.html">optional.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="point_8h_source.html">point.h</a>&quot;</code><br />
 </div>
 <p><a href="simple__pathfinding_8h_source.html">Go to the source code of this file.</a></p>
@@ -128,9 +128,9 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a049eccf54dd8305d85f562c73285f182"><td class="memTemplParams" colspan="2">template&lt;typename Point &gt; </td></tr>
-<tr class="memitem:a049eccf54dd8305d85f562c73285f182"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacepf.html#a049eccf54dd8305d85f562c73285f182">pf::two_node_scoring_fn</a> = std::function&lt; node_score(directed_node&lt; Point &gt;, <a class="el" href="classcata_1_1optional.html">cata::optional</a>&lt; directed_node&lt; Point &gt; &gt;)&gt;</td></tr>
-<tr class="separator:a049eccf54dd8305d85f562c73285f182"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace51f151a24d141018dda09409535ed0"><td class="memTemplParams" colspan="2">template&lt;typename Point &gt; </td></tr>
+<tr class="memitem:ace51f151a24d141018dda09409535ed0"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacepf.html#ace51f151a24d141018dda09409535ed0">pf::two_node_scoring_fn</a> = std::function&lt; node_score(directed_node&lt; Point &gt;, <a class="el" href="generic__factory_8h.html#a1159dbaba81931271dbfe5b9c7f041b3">std::optional</a>&lt; directed_node&lt; Point &gt; &gt;)&gt;</td></tr>
+<tr class="separator:ace51f151a24d141018dda09409535ed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21fea0f310cb84db892b52e393aa7976"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepf.html#a21fea0f310cb84db892b52e393aa7976">pf::omt_scoring_fn</a> = std::function&lt; omt_score(<a class="el" href="coordinates_8h.html#a383a8345c0282c087ef788e4421c3ded">tripoint_abs_omt</a>)&gt;</td></tr>
 <tr class="separator:a21fea0f310cb84db892b52e393aa7976"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -142,9 +142,9 @@ Functions</h2></td></tr>
 <tr class="memitem:adedfead83061a84d7be004b71c57fe09"><td class="memTemplItemLeft" align="right" valign="top">directed_path&lt; Point &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacepf.html#adedfead83061a84d7be004b71c57fe09">pf::greedy_path</a> (const Point &amp;source, const Point &amp;dest, const Point &amp;max, two_node_scoring_fn&lt; Point &gt; scorer)</td></tr>
 <tr class="memdesc:adedfead83061a84d7be004b71c57fe09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uses Greedy Best-First-Search to find a short path from source to destination [2D only].  <a href="namespacepf.html#adedfead83061a84d7be004b71c57fe09">More...</a><br /></td></tr>
 <tr class="separator:adedfead83061a84d7be004b71c57fe09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9522754a6de06d3734399c3b198854b"><td class="memItemLeft" align="right" valign="top">simple_path&lt; <a class="el" href="coordinates_8h.html#a383a8345c0282c087ef788e4421c3ded">tripoint_abs_omt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepf.html#af9522754a6de06d3734399c3b198854b">pf::find_overmap_path</a> (const <a class="el" href="coordinates_8h.html#a383a8345c0282c087ef788e4421c3ded">tripoint_abs_omt</a> &amp;source, const <a class="el" href="coordinates_8h.html#a383a8345c0282c087ef788e4421c3ded">tripoint_abs_omt</a> &amp;dest, int radius, omt_scoring_fn scorer, <a class="el" href="classcata_1_1optional.html">cata::optional</a>&lt; int &gt; max_cost=<a class="el" href="namespacecata.html#ad05314667ac5d05f984aeeef26b9a87f">cata::nullopt</a>)</td></tr>
-<tr class="memdesc:af9522754a6de06d3734399c3b198854b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uses A* to find an approximately-cheapest path from source to destination (in 3D).  <a href="namespacepf.html#af9522754a6de06d3734399c3b198854b">More...</a><br /></td></tr>
-<tr class="separator:af9522754a6de06d3734399c3b198854b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2df47c1365ddacd8ab4ab969089ef64"><td class="memItemLeft" align="right" valign="top">simple_path&lt; <a class="el" href="coordinates_8h.html#a383a8345c0282c087ef788e4421c3ded">tripoint_abs_omt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepf.html#aa2df47c1365ddacd8ab4ab969089ef64">pf::find_overmap_path</a> (const <a class="el" href="coordinates_8h.html#a383a8345c0282c087ef788e4421c3ded">tripoint_abs_omt</a> &amp;source, const <a class="el" href="coordinates_8h.html#a383a8345c0282c087ef788e4421c3ded">tripoint_abs_omt</a> &amp;dest, int radius, omt_scoring_fn scorer, <a class="el" href="generic__factory_8h.html#a1159dbaba81931271dbfe5b9c7f041b3">std::optional</a>&lt; int &gt; max_cost=std::nullopt)</td></tr>
+<tr class="memdesc:aa2df47c1365ddacd8ab4ab969089ef64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uses A* to find an approximately-cheapest path from source to destination (in 3D).  <a href="namespacepf.html#aa2df47c1365ddacd8ab4ab969089ef64">More...</a><br /></td></tr>
+<tr class="separator:aa2df47c1365ddacd8ab4ab969089ef64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a91d31c9fc8b3bbc7dfdb4450145a7413" name="a91d31c9fc8b3bbc7dfdb4450145a7413"></a>
@@ -169,7 +169,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="simple__pathfinding_8h.html">simple_pathfinding.h</a></li>
-    <li class="footer">Generated on Fri Apr 7 2023 11:54:33 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Apr 30 2023 06:47:58 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

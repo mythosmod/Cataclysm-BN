@@ -10,13 +10,13 @@ var classitem__category =
     [ "operator!=", "classitem__category.html#af3af82bcb7be5f546b348c43cc6b1ec7", null ],
     [ "operator<", "classitem__category.html#a7f40b99f11dd3608fab6727ef922030e", null ],
     [ "operator==", "classitem__category.html#aea8d01c6bad809454633a397fc6158b4", null ],
-    [ "priority_zone", "classitem__category.html#a540269900181e0f87884e40dbd52de23", null ],
+    [ "priority_zone", "classitem__category.html#a420ecb39f7b692c5197ba97491d56c1d", null ],
     [ "sort_rank", "classitem__category.html#a5500b224cb48c78f3eef0bc50a09746d", null ],
-    [ "zone", "classitem__category.html#a9b2fb652d19f3e3965704f3bc3bec8ab", null ],
+    [ "zone", "classitem__category.html#a8ade46f19642f68e128dbf93e4a03346", null ],
     [ "id", "classitem__category.html#a5c37c8230f0eea1de063a9bf3e884dc1", null ],
     [ "name_", "classitem__category.html#a3346ef29c5ff624b9eed7faebb9f0683", null ],
     [ "sort_rank_", "classitem__category.html#a08dfa59f3da7486f4e7b1871b341179a", null ],
     [ "was_loaded", "classitem__category.html#a82f71c0a954484ce8b9c48038b4814f5", null ],
-    [ "zone_", "classitem__category.html#a887c0f298b8d234217127268b12d3d5e", null ],
+    [ "zone_", "classitem__category.html#a1ea85f5664503f22c7184a09bbb70435", null ],
     [ "zone_priority_", "classitem__category.html#af553cbe6d88b20efde0731abc9cd2cfb", null ]
 ];

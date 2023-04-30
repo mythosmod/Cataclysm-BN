@@ -470,7 +470,6 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "numeric_interval.h", "numeric__interval_8h.html", "numeric__interval_8h" ],
     [ "om_direction.h", "om__direction_8h.html", "om__direction_8h" ],
     [ "omdata.h", "omdata_8h.html", "omdata_8h" ],
-    [ "optional.h", "optional_8h.html", "optional_8h" ],
     [ "options.cpp", "options_8cpp.html", "options_8cpp" ],
     [ "options.h", "options_8h.html", "options_8h" ],
     [ "output.cpp", "output_8cpp.html", "output_8cpp" ],

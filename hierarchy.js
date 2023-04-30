@@ -608,9 +608,6 @@ var hierarchy =
     ] ],
     [ "event_transformation", "classevent__transformation.html", null ],
     [ "std::exception", null, [
-      [ "std::logic_error", null, [
-        [ "cata::bad_optional_access", "classcata_1_1bad__optional__access.html", null ]
-      ] ],
       [ "std::runtime_error", null, [
         [ "JsonError", "classJsonError.html", null ],
         [ "format_error", "classformat__error.html", null ],
@@ -622,6 +619,8 @@ var hierarchy =
     [ "explosion_data", "structexplosion__data.html", null ],
     [ "explosion_handler::explosion_queue", "classexplosion__handler_1_1explosion__queue.html", null ],
     [ "explosion_tile", "structexplosion__tile.html", null ],
+    [ "explosion_handler::ExplosionEvent", "classexplosion__handler_1_1ExplosionEvent.html", null ],
+    [ "explosion_handler::ExplosionProcess", "classexplosion__handler_1_1ExplosionProcess.html", null ],
     [ "faction_manager", "classfaction__manager.html", null ],
     [ "faction_template", "classfaction__template.html", [
       [ "faction", "classfaction.html", null ]
@@ -670,6 +669,7 @@ var hierarchy =
     [ "field_entry", "classfield__entry.html", null ],
     [ "field_intensity_level", "structfield__intensity__level.html", null ],
     [ "field_type", "structfield__type.html", null ],
+    [ "explosion_handler::ExplosionEvent::FieldToAdd", "structexplosion__handler_1_1ExplosionEvent_1_1FieldToAdd.html", null ],
     [ "detail::fill_t< Char >", "structdetail_1_1fill__t.html", null ],
     [ "fire_data", "structfire__data.html", null ],
     [ "detail::fixed_buffer_traits", "classdetail_1_1fixed__buffer__traits.html", null ],
@@ -848,7 +848,6 @@ var hierarchy =
     ] ],
     [ "cata::tuple_hash_detail::Impl< Tuple, 0 >", "structcata_1_1tuple__hash__detail_1_1Impl_3_01Tuple_00_010_01_4.html", null ],
     [ "pointmenu_cb::impl_t", "structpointmenu__cb_1_1impl__t.html", null ],
-    [ "cata::in_place_t", "structcata_1_1in__place__t.html", null ],
     [ "json_item_substitution::substitution::info", "structjson__item__substitution_1_1substitution_1_1info.html", null ],
     [ "input_context", "classinput__context.html", null ],
     [ "input_event", "structinput__event.html", null ],
@@ -1310,7 +1309,6 @@ var hierarchy =
     [ "npc_template", "classnpc__template.html", null ],
     [ "detail::null< T >", "structdetail_1_1null.html", null ],
     [ "null_deleter", "structnull__deleter.html", null ],
-    [ "cata::nullopt_t", "structcata_1_1nullopt__t.html", null ],
     [ "number_sci_notation", "structnumber__sci__notation.html", null ],
     [ "numeric_interval< T, typename >", "structnumeric__interval.html", null ],
     [ "detail::numeric_specs_checker< ErrorHandler >", "classdetail_1_1numeric__specs__checker.html", null ],
@@ -1331,8 +1329,7 @@ var hierarchy =
     [ "omt_route_params", "structomt__route__params.html", null ],
     [ "pf::omt_score", "structpf_1_1omt__score.html", null ],
     [ "on_out_of_scope", "classon__out__of__scope.html", null ],
-    [ "cata::optional< T >", "classcata_1_1optional.html", null ],
-    [ "cata::optional< vpart_position >", "classcata_1_1optional.html", [
+    [ "std::optional", null, [
       [ "optional_vpart_position", "classoptional__vpart__position.html", null ]
     ] ],
     [ "options_manager", "classoptions__manager.html", null ],
@@ -1424,6 +1421,7 @@ var hierarchy =
     [ "coords::project_to_impl< ScaleUp, 0, ResultScale >", "structcoords_1_1project__to__impl_3_01ScaleUp_00_010_00_01ResultScale_01_4.html", null ],
     [ "projectile", "structprojectile.html", null ],
     [ "projectile_attack_aim", "structprojectile__attack__aim.html", null ],
+    [ "explosion_handler::ExplosionEvent::PropelledEntity", "structexplosion__handler_1_1ExplosionEvent_1_1PropelledEntity.html", null ],
     [ "pry_result", "structpry__result.html", null ],
     [ "quality", "structquality.html", null ],
     [ "quality_requirement", "structquality__requirement.html", null ],
@@ -1697,6 +1695,7 @@ var hierarchy =
     [ "transform_terrain_data", "structtransform__terrain__data.html", null ],
     [ "translatable_mod_info", "structtranslatable__mod__info.html", null ],
     [ "translation", "classtranslation.html", null ],
+    [ "transparency_exp_lookup< n >", "structtransparency__exp__lookup.html", null ],
     [ "cata::transparent_less_than", "structcata_1_1transparent__less__than.html", [
       [ "cata::flat_set< std::string >", "classcata_1_1flat__set.html", null ],
       [ "cata::flat_set< T, Compare, Data >", "classcata_1_1flat__set.html", null ]
@@ -1713,7 +1712,7 @@ var hierarchy =
       [ "detail::is_integral< int128_t >", "structdetail_1_1is__integral_3_01int128__t_01_4.html", null ],
       [ "detail::is_integral< uint128_t >", "structdetail_1_1is__integral_3_01uint128__t_01_4.html", null ],
       [ "detail::is_named_arg< named_arg< Char, T > >", "structdetail_1_1is__named__arg_3_01named__arg_3_01Char_00_01T_01_4_01_4.html", null ],
-      [ "detail::is_optional_helper< cata::optional< T > >", "classdetail_1_1is__optional__helper_3_01cata_1_1optional_3_01T_01_4_01_4.html", null ],
+      [ "detail::is_optional_helper< std::optional< T > >", "classdetail_1_1is__optional__helper_3_01std_1_1optional_3_01T_01_4_01_4.html", null ],
       [ "detail::is_output_iterator< It, T, void_t< typename std::iterator_traits< It >::iterator_category, decltype(*std::declval< It >()=std::declval< T >()) > >", "structdetail_1_1is__output__iterator_3_01It_00_01T_00_01void__t_3_01typename_01std_1_1iterator__c6c92fb2cbbf10ce92436c9976fda4bf.html", null ],
       [ "detail::is_reference_wrapper< std::reference_wrapper< T > >", "structdetail_1_1is__reference__wrapper_3_01std_1_1reference__wrapper_3_01T_01_4_01_4.html", null ],
       [ "has_enum_traits< E, enum_traits_detail::last_type< E > >", "structhas__enum__traits_3_01E_00_01enum__traits__detail_1_1last__type_3_01E_01_4_01_4.html", null ],

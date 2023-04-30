@@ -14,6 +14,7 @@ var structbody__part__type =
     [ "bionic_slots_", "structbody__part__type.html#a8e3e23c793bde4a887d365d1895e334c", null ],
     [ "cold_morale_mod", "structbody__part__type.html#adf75db3d992ee796f36dc0e1f3350047", null ],
     [ "encumb_text", "structbody__part__type.html#a7f3d6302693914a8bdca94c71f5cfe00", null ],
+    [ "essential", "structbody__part__type.html#add7a6c954d3cdabf514e1293960d7fd0", null ],
     [ "hit_difficulty", "structbody__part__type.html#afed3ff0e4bc9caa4b3cfb5ebc373ab0d", null ],
     [ "hit_size", "structbody__part__type.html#ad09cff4f647251242cee63b9347c105f", null ],
     [ "hit_size_relative", "structbody__part__type.html#a852bb832d10ed20dae1a482be1f9a99f", null ],

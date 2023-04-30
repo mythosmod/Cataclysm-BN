@@ -100,6 +100,7 @@ $(document).ready(function(){initNavTree('vehicle__move_8cpp.html',''); initResi
 <code>#include &lt;cmath&gt;</code><br />
 <code>#include &lt;cstdlib&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;optional&gt;</code><br />
 <code>#include &lt;ostream&gt;</code><br />
 <code>#include &lt;set&gt;</code><br />
 <code>#include &quot;<a class="el" href="avatar_8h_source.html">avatar.h</a>&quot;</code><br />
@@ -119,7 +120,6 @@ $(document).ready(function(){initNavTree('vehicle__move_8cpp.html',''); initResi
 <code>#include &quot;<a class="el" href="math__defines_8h_source.html">math_defines.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="messages_8h_source.html">messages.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="monster_8h_source.html">monster.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="optional_8h_source.html">optional.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="options_8h_source.html">options.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="player_8h_source.html">player.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="point__float_8h_source.html">point_float.h</a>&quot;</code><br />
@@ -320,7 +320,7 @@ Variables</h2></td></tr>
 <div class="line"><a id="l01261" name="l01261"></a><span class="lineno"> 1261</span>    }</div>
 <div class="line"><a id="l01262" name="l01262"></a><span class="lineno"> 1262</span>}</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="map_8cpp_source.html#l00820">map::vehicle_vehicle_collision()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="map_8cpp_source.html#l00821">map::vehicle_vehicle_collision()</a>.</p>
 
 </div>
 </div>
@@ -443,12 +443,12 @@ Variables</h2></td></tr>
 <div class="line"><a id="l00468" name="l00468"></a><span class="lineno">  468</span>    density = bash_min;</div>
 <div class="line"><a id="l00469" name="l00469"></a><span class="lineno">  469</span>}</div>
 <div class="ttc" id="aclassmap_html"><div class="ttname"><a href="classmap.html">map</a></div><div class="ttdoc">Manage and cache data about a part of the map.</div><div class="ttdef"><b>Definition:</b> <a href="map_8h_source.html#l00383">map.h:384</a></div></div>
-<div class="ttc" id="aclassmap_html_a0b83bb9cbf7265f78eaad06dc1f7b8c3"><div class="ttname"><a href="classmap.html#a0b83bb9cbf7265f78eaad06dc1f7b8c3">map::bash_strength</a></div><div class="ttdeci">int bash_strength(const tripoint &amp;p, bool allow_floor=false) const</div><div class="ttdoc">Returns max_str of the furniture or terrain at p.</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l02518">map.cpp:2518</a></div></div>
-<div class="ttc" id="aclassmap_html_adfb4f21d749696fdd25c7b37ba2b7b21"><div class="ttname"><a href="classmap.html#adfb4f21d749696fdd25c7b37ba2b7b21">map::bash_resistance</a></div><div class="ttdeci">int bash_resistance(const tripoint &amp;p, bool allow_floor=false) const</div><div class="ttdoc">Returns min_str of the furniture or terrain at p.</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l02532">map.cpp:2532</a></div></div>
-<div class="ttc" id="amap_8cpp_html_acb0b34be6e497bdd2f9f40ae6929d562"><div class="ttname"><a href="map_8cpp.html#acb0b34be6e497bdd2f9f40ae6929d562">get_map</a></div><div class="ttdeci">map &amp; get_map()</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l00146">map.cpp:146</a></div></div>
+<div class="ttc" id="aclassmap_html_a0b83bb9cbf7265f78eaad06dc1f7b8c3"><div class="ttname"><a href="classmap.html#a0b83bb9cbf7265f78eaad06dc1f7b8c3">map::bash_strength</a></div><div class="ttdeci">int bash_strength(const tripoint &amp;p, bool allow_floor=false) const</div><div class="ttdoc">Returns max_str of the furniture or terrain at p.</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l02536">map.cpp:2536</a></div></div>
+<div class="ttc" id="aclassmap_html_adfb4f21d749696fdd25c7b37ba2b7b21"><div class="ttname"><a href="classmap.html#adfb4f21d749696fdd25c7b37ba2b7b21">map::bash_resistance</a></div><div class="ttdeci">int bash_resistance(const tripoint &amp;p, bool allow_floor=false) const</div><div class="ttdoc">Returns min_str of the furniture or terrain at p.</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l02550">map.cpp:2550</a></div></div>
+<div class="ttc" id="amap_8cpp_html_acb0b34be6e497bdd2f9f40ae6929d562"><div class="ttname"><a href="map_8cpp.html#acb0b34be6e497bdd2f9f40ae6929d562">get_map</a></div><div class="ttdeci">map &amp; get_map()</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l00147">map.cpp:147</a></div></div>
 <div class="ttc" id="anamespaceunits_html_af4f3159f510e2b4372187d8fb4746e23"><div class="ttname"><a href="namespaceunits.html#af4f3159f510e2b4372187d8fb4746e23">units::mass</a></div><div class="ttdeci">quantity&lt; std::int64_t, mass_in_milligram_tag &gt; mass</div><div class="ttdef"><b>Definition:</b> <a href="units__mass_8h_source.html#l00022">units_mass.h:22</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="map_8cpp_source.html#l02532">map::bash_resistance()</a>, <a class="el" href="map_8cpp_source.html#l02518">map::bash_strength()</a>, and <a class="el" href="map_8cpp_source.html#l00146">get_map()</a>.</p>
+<p class="reference">References <a class="el" href="map_8cpp_source.html#l02550">map::bash_resistance()</a>, <a class="el" href="map_8cpp_source.html#l02536">map::bash_strength()</a>, and <a class="el" href="map_8cpp_source.html#l00147">get_map()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="vehicle__move_8cpp_source.html#l00471">vehicle::part_collision()</a>.</p>
 
@@ -789,7 +789,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="vehicle__move_8cpp.html">vehicle_move.cpp</a></li>
-    <li class="footer">Generated on Fri Apr 7 2023 11:54:34 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Apr 30 2023 06:47:58 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

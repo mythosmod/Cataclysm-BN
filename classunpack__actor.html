@@ -248,15 +248,15 @@ Additional Inherited Members</h2></td></tr>
 <div class="line">        <span class="keywordflow">return</span> std::make_unique&lt;my_iuse_actor&gt;( *<span class="keyword">this</span> );</div>
 <div class="line">    }</div>
 <div class="line">};</div>
-<div class="ttc" id="aclassunpack__actor_html_a04edef4d11f1d7278e954c66ac510f30"><div class="ttname"><a href="classunpack__actor.html#a04edef4d11f1d7278e954c66ac510f30">unpack_actor::clone</a></div><div class="ttdeci">std::unique_ptr&lt; iuse_actor &gt; clone() const override</div><div class="ttdoc">Returns a deep copy of this object.</div><div class="ttdef"><b>Definition:</b> <a href="iuse__actor_8cpp_source.html#l00379">iuse_actor.cpp:379</a></div></div>
+<div class="ttc" id="aclassunpack__actor_html_a04edef4d11f1d7278e954c66ac510f30"><div class="ttname"><a href="classunpack__actor.html#a04edef4d11f1d7278e954c66ac510f30">unpack_actor::clone</a></div><div class="ttdeci">std::unique_ptr&lt; iuse_actor &gt; clone() const override</div><div class="ttdoc">Returns a deep copy of this object.</div><div class="ttdef"><b>Definition:</b> <a href="iuse__actor_8cpp_source.html#l00380">iuse_actor.cpp:380</a></div></div>
 </div><!-- fragment --><p> The returned value should behave like the original item and must have the same type. </p>
 
 <p>Implements <a class="el" href="classiuse__actor.html#a79a3e229ab9a4f5433d061cc1faec42d">iuse_actor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l00379">379</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>{</div>
-<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>    <span class="keywordflow">return</span> std::make_unique&lt;unpack_actor&gt;( *<span class="keyword">this</span> );</div>
-<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>}</div>
+<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l00380">380</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>{</div>
+<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>    <span class="keywordflow">return</span> std::make_unique&lt;unpack_actor&gt;( *<span class="keyword">this</span> );</div>
+<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -296,11 +296,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classiuse__actor.html#aa0955326b251f45c76a7a16e84b6b9e6">iuse_actor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l00425">425</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span>{</div>
-<div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span>    dump.emplace_back( <span class="stringliteral">&quot;DESCRIPTION&quot;</span>,</div>
-<div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span>                       <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;This item could be unpacked to receive something.&quot;</span> ) );</div>
-<div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span>}</div>
+<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l00426">426</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span>{</div>
+<div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span>    dump.emplace_back( <span class="stringliteral">&quot;DESCRIPTION&quot;</span>,</div>
+<div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span>                       <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;This item could be unpacked to receive something.&quot;</span> ) );</div>
+<div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span>}</div>
 <div class="ttc" id="atranslations_8h_html_aa829053017e23ef22d44dccecba63a34"><div class="ttname"><a href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a></div><div class="ttdeci">#define _(msg)</div><div class="ttdef"><b>Definition:</b> <a href="translations_8h_source.html#l00116">translations.h:116</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>.</p>
@@ -333,19 +333,19 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classiuse__actor.html#aa93b616e6f6e450b098209ad19ae78c4">iuse_actor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l00384">384</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>{</div>
-<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>    obj.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;group&quot;</span>, <a class="code hl_variable" href="classunpack__actor.html#a6bc353a90c3cc3383c55306ce1d1ea49">unpack_group</a> );</div>
-<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>    obj.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;items_fit&quot;</span>, <a class="code hl_variable" href="classunpack__actor.html#ac7cf81052366e3a7d20ce5780034c031">items_fit</a> );</div>
-<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>    <a class="code hl_function" href="assign_8cpp.html#ab5bcf0475efcfec70e83348a7bb79794">assign</a>( obj, <span class="stringliteral">&quot;filthy_volume_threshold&quot;</span>, <a class="code hl_variable" href="classunpack__actor.html#acbf033d5d0cb8f773b523f3f578b6508">filthy_vol_threshold</a> );</div>
-<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>}</div>
+<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l00385">385</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>{</div>
+<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>    obj.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;group&quot;</span>, <a class="code hl_variable" href="classunpack__actor.html#a6bc353a90c3cc3383c55306ce1d1ea49">unpack_group</a> );</div>
+<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>    obj.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;items_fit&quot;</span>, <a class="code hl_variable" href="classunpack__actor.html#ac7cf81052366e3a7d20ce5780034c031">items_fit</a> );</div>
+<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>    <a class="code hl_function" href="assign_8cpp.html#ab5bcf0475efcfec70e83348a7bb79794">assign</a>( obj, <span class="stringliteral">&quot;filthy_volume_threshold&quot;</span>, <a class="code hl_variable" href="classunpack__actor.html#acbf033d5d0cb8f773b523f3f578b6508">filthy_vol_threshold</a> );</div>
+<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>}</div>
 <div class="ttc" id="aassign_8cpp_html_ab5bcf0475efcfec70e83348a7bb79794"><div class="ttname"><a href="assign_8cpp.html#ab5bcf0475efcfec70e83348a7bb79794">assign</a></div><div class="ttdeci">bool assign(const JsonObject &amp;jo, const std::string &amp;name, bool &amp;val, bool strict)</div><div class="ttdef"><b>Definition:</b> <a href="assign_8cpp_source.html#l00016">assign.cpp:16</a></div></div>
-<div class="ttc" id="aclassJsonObject_html_ae66d47f9cb4993dfaf79819ec2aff2f8"><div class="ttname"><a href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">JsonObject::read</a></div><div class="ttdeci">bool read(const std::string &amp;name, T &amp;t, bool throw_on_error=true) const</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00942">json.h:942</a></div></div>
+<div class="ttc" id="aclassJsonObject_html_ae66d47f9cb4993dfaf79819ec2aff2f8"><div class="ttname"><a href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">JsonObject::read</a></div><div class="ttdeci">bool read(const std::string &amp;name, T &amp;t, bool throw_on_error=true) const</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00941">json.h:941</a></div></div>
 <div class="ttc" id="aclassunpack__actor_html_a6bc353a90c3cc3383c55306ce1d1ea49"><div class="ttname"><a href="classunpack__actor.html#a6bc353a90c3cc3383c55306ce1d1ea49">unpack_actor::unpack_group</a></div><div class="ttdeci">item_group_id unpack_group</div><div class="ttdoc">The itemgroup from which we unpack items from.</div><div class="ttdef"><b>Definition:</b> <a href="iuse__actor_8h_source.html#l00120">iuse_actor.h:120</a></div></div>
 <div class="ttc" id="aclassunpack__actor_html_ac7cf81052366e3a7d20ce5780034c031"><div class="ttname"><a href="classunpack__actor.html#ac7cf81052366e3a7d20ce5780034c031">unpack_actor::items_fit</a></div><div class="ttdeci">bool items_fit</div><div class="ttdoc">Whether or not the items from the group should spawn fitting.</div><div class="ttdef"><b>Definition:</b> <a href="iuse__actor_8h_source.html#l00123">iuse_actor.h:123</a></div></div>
 <div class="ttc" id="aclassunpack__actor_html_acbf033d5d0cb8f773b523f3f578b6508"><div class="ttname"><a href="classunpack__actor.html#acbf033d5d0cb8f773b523f3f578b6508">unpack_actor::filthy_vol_threshold</a></div><div class="ttdeci">units::volume filthy_vol_threshold</div><div class="ttdoc">If the item is filthy, at what volume (held) threshold should the items unpacked be made filthy.</div><div class="ttdef"><b>Definition:</b> <a href="iuse__actor_8h_source.html#l00129">iuse_actor.h:129</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="assign_8cpp_source.html#l00016">assign()</a>, <a class="el" href="iuse__actor_8h_source.html#l00129">filthy_vol_threshold</a>, <a class="el" href="iuse__actor_8h_source.html#l00123">items_fit</a>, <a class="el" href="json_8h_source.html#l00942">JsonObject::read()</a>, and <a class="el" href="iuse__actor_8h_source.html#l00120">unpack_group</a>.</p>
+<p class="reference">References <a class="el" href="assign_8cpp_source.html#l00016">assign()</a>, <a class="el" href="iuse__actor_8h_source.html#l00129">filthy_vol_threshold</a>, <a class="el" href="iuse__actor_8h_source.html#l00123">items_fit</a>, <a class="el" href="json_8h_source.html#l00941">JsonObject::read()</a>, and <a class="el" href="iuse__actor_8h_source.html#l00120">unpack_group</a>.</p>
 
 </div>
 </div>
@@ -397,54 +397,54 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classiuse__actor.html#aa7ab08413d05764e42ae4471799fd6b0">iuse_actor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l00391">391</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>{</div>
-<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>    std::vector&lt;item&gt; items = <a class="code hl_function" href="namespaceitem__group.html#ad15629f772f27e1d19c90fe9de23ae99">item_group::items_from</a>( <a class="code hl_variable" href="classunpack__actor.html#a6bc353a90c3cc3383c55306ce1d1ea49">unpack_group</a>, <a class="code hl_variable" href="namespacecalendar.html#ae15fcbf1c971589eb49c1a657fb6a580">calendar::turn</a> );</div>
-<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>    <a class="code hl_class" href="classitem.html">item</a> last_armor;</div>
-<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span> </div>
-<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>    p.<a class="code hl_function" href="classplayer.html#ae7009d849f19a4f5ebe877cbe463c459">add_msg_if_player</a>( <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;You unpack the %s.&quot;</span> ), it.<a class="code hl_function" href="classitem.html#a7e78e26dcf9b357cda769c3ca2938eda">tname</a>() );</div>
-<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span> </div>
-<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>    <a class="code hl_class" href="classmap.html">map</a> &amp;here = <a class="code hl_function" href="map_8cpp.html#acb0b34be6e497bdd2f9f40ae6929d562">get_map</a>();</div>
-<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>    <span class="keywordflow">for</span>( <a class="code hl_class" href="classitem.html">item</a> &amp;content : items ) {</div>
-<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>        <span class="keywordflow">if</span>( content.is_armor() ) {</div>
-<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>            <span class="keywordflow">if</span>( <a class="code hl_variable" href="classunpack__actor.html#ac7cf81052366e3a7d20ce5780034c031">items_fit</a> ) {</div>
-<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span>                content.set_flag( <span class="stringliteral">&quot;FIT&quot;</span> );</div>
-<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( content.typeId() == last_armor.<a class="code hl_function" href="classitem.html#aa79dad64e1ef6347219be2f8666e2752">typeId</a>() ) {</div>
-<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span>                <span class="keywordflow">if</span>( last_armor.<a class="code hl_function" href="classitem.html#aaa5aeb6f838927babb10ede535cf2a73">has_flag</a>( <span class="stringliteral">&quot;FIT&quot;</span> ) ) {</div>
-<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>                    content.set_flag( <span class="stringliteral">&quot;FIT&quot;</span> );</div>
-<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span>                } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( !last_armor.<a class="code hl_function" href="classitem.html#aaa5aeb6f838927babb10ede535cf2a73">has_flag</a>( <span class="stringliteral">&quot;FIT&quot;</span> ) ) {</div>
-<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span>                    content.unset_flag( <span class="stringliteral">&quot;FIT&quot;</span> );</div>
-<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>                }</div>
-<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>            }</div>
-<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>            last_armor = content;</div>
-<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>        }</div>
-<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span> </div>
-<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>        <span class="keywordflow">if</span>( content.get_storage() &gt;= <a class="code hl_variable" href="classunpack__actor.html#acbf033d5d0cb8f773b523f3f578b6508">filthy_vol_threshold</a> &amp;&amp; it.<a class="code hl_function" href="classitem.html#aaa5aeb6f838927babb10ede535cf2a73">has_flag</a>( <span class="stringliteral">&quot;FILTHY&quot;</span> ) ) {</div>
-<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>            content.<a class="code hl_function" href="classitem.html#aaf0e79cb1bc190daa4804cfd62f279c4">set_flag</a>( <span class="stringliteral">&quot;FILTHY&quot;</span> );</div>
-<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>        }</div>
-<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span> </div>
-<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>        here.<a class="code hl_function" href="classmap.html#a5579e13088b4ccd9c5a75458919d528a">add_item_or_charges</a>( p.<a class="code hl_function" href="classCharacter.html#ad24859164517ed6e392e21df69527199">pos</a>(), content );</div>
-<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>    }</div>
-<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span> </div>
-<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>    p.<a class="code hl_function" href="classCharacter.html#a35f89e2e6eb1144b623be5281f4f221b">i_rem</a>( &amp;it );</div>
-<div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span> </div>
-<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span>}</div>
-<div class="ttc" id="aclassCharacter_html_a35f89e2e6eb1144b623be5281f4f221b"><div class="ttname"><a href="classCharacter.html#a35f89e2e6eb1144b623be5281f4f221b">Character::i_rem</a></div><div class="ttdeci">item i_rem(int pos)</div><div class="ttdoc">Remove a specific item from player possession.</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l02342">character.cpp:2342</a></div></div>
-<div class="ttc" id="aclassCharacter_html_ad24859164517ed6e392e21df69527199"><div class="ttname"><a href="classCharacter.html#ad24859164517ed6e392e21df69527199">Character::pos</a></div><div class="ttdeci">const tripoint &amp; pos() const override</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l00587">character.cpp:587</a></div></div>
+<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l00392">392</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>{</div>
+<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>    std::vector&lt;item&gt; items = <a class="code hl_function" href="namespaceitem__group.html#ad15629f772f27e1d19c90fe9de23ae99">item_group::items_from</a>( <a class="code hl_variable" href="classunpack__actor.html#a6bc353a90c3cc3383c55306ce1d1ea49">unpack_group</a>, <a class="code hl_variable" href="namespacecalendar.html#ae15fcbf1c971589eb49c1a657fb6a580">calendar::turn</a> );</div>
+<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>    <a class="code hl_class" href="classitem.html">item</a> last_armor;</div>
+<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span> </div>
+<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>    p.<a class="code hl_function" href="classplayer.html#ae7009d849f19a4f5ebe877cbe463c459">add_msg_if_player</a>( <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;You unpack the %s.&quot;</span> ), it.<a class="code hl_function" href="classitem.html#a7e78e26dcf9b357cda769c3ca2938eda">tname</a>() );</div>
+<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span> </div>
+<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>    <a class="code hl_class" href="classmap.html">map</a> &amp;here = <a class="code hl_function" href="map_8cpp.html#acb0b34be6e497bdd2f9f40ae6929d562">get_map</a>();</div>
+<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>    <span class="keywordflow">for</span>( <a class="code hl_class" href="classitem.html">item</a> &amp;content : items ) {</div>
+<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>        <span class="keywordflow">if</span>( content.is_armor() ) {</div>
+<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span>            <span class="keywordflow">if</span>( <a class="code hl_variable" href="classunpack__actor.html#ac7cf81052366e3a7d20ce5780034c031">items_fit</a> ) {</div>
+<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span>                content.set_flag( <span class="stringliteral">&quot;FIT&quot;</span> );</div>
+<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( content.typeId() == last_armor.<a class="code hl_function" href="classitem.html#aa79dad64e1ef6347219be2f8666e2752">typeId</a>() ) {</div>
+<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>                <span class="keywordflow">if</span>( last_armor.<a class="code hl_function" href="classitem.html#aaa5aeb6f838927babb10ede535cf2a73">has_flag</a>( <span class="stringliteral">&quot;FIT&quot;</span> ) ) {</div>
+<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span>                    content.set_flag( <span class="stringliteral">&quot;FIT&quot;</span> );</div>
+<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span>                } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( !last_armor.<a class="code hl_function" href="classitem.html#aaa5aeb6f838927babb10ede535cf2a73">has_flag</a>( <span class="stringliteral">&quot;FIT&quot;</span> ) ) {</div>
+<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>                    content.unset_flag( <span class="stringliteral">&quot;FIT&quot;</span> );</div>
+<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>                }</div>
+<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>            }</div>
+<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>            last_armor = content;</div>
+<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>        }</div>
+<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span> </div>
+<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>        <span class="keywordflow">if</span>( content.get_storage() &gt;= <a class="code hl_variable" href="classunpack__actor.html#acbf033d5d0cb8f773b523f3f578b6508">filthy_vol_threshold</a> &amp;&amp; it.<a class="code hl_function" href="classitem.html#aaa5aeb6f838927babb10ede535cf2a73">has_flag</a>( <span class="stringliteral">&quot;FILTHY&quot;</span> ) ) {</div>
+<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>            content.<a class="code hl_function" href="classitem.html#aaf0e79cb1bc190daa4804cfd62f279c4">set_flag</a>( <span class="stringliteral">&quot;FILTHY&quot;</span> );</div>
+<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>        }</div>
+<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span> </div>
+<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>        here.<a class="code hl_function" href="classmap.html#a5579e13088b4ccd9c5a75458919d528a">add_item_or_charges</a>( p.<a class="code hl_function" href="classCharacter.html#ad24859164517ed6e392e21df69527199">pos</a>(), content );</div>
+<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>    }</div>
+<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span> </div>
+<div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span>    p.<a class="code hl_function" href="classCharacter.html#a35f89e2e6eb1144b623be5281f4f221b">i_rem</a>( &amp;it );</div>
+<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span> </div>
+<div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span>}</div>
+<div class="ttc" id="aclassCharacter_html_a35f89e2e6eb1144b623be5281f4f221b"><div class="ttname"><a href="classCharacter.html#a35f89e2e6eb1144b623be5281f4f221b">Character::i_rem</a></div><div class="ttdeci">item i_rem(int pos)</div><div class="ttdoc">Remove a specific item from player possession.</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l02354">character.cpp:2354</a></div></div>
+<div class="ttc" id="aclassCharacter_html_ad24859164517ed6e392e21df69527199"><div class="ttname"><a href="classCharacter.html#ad24859164517ed6e392e21df69527199">Character::pos</a></div><div class="ttdeci">const tripoint &amp; pos() const override</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l00590">character.cpp:590</a></div></div>
 <div class="ttc" id="aclassitem_html"><div class="ttname"><a href="classitem.html">item</a></div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l00210">item.h:211</a></div></div>
 <div class="ttc" id="aclassitem_html_a7e78e26dcf9b357cda769c3ca2938eda"><div class="ttname"><a href="classitem.html#a7e78e26dcf9b357cda769c3ca2938eda">item::tname</a></div><div class="ttdeci">std::string tname(unsigned int quantity=1, bool with_prefix=true, unsigned int truncate=0) const</div><div class="ttdoc">Return the (translated) item name.</div><div class="ttdef"><b>Definition:</b> <a href="item_8cpp_source.html#l04554">item.cpp:4554</a></div></div>
 <div class="ttc" id="aclassitem_html_aa79dad64e1ef6347219be2f8666e2752"><div class="ttname"><a href="classitem.html#aa79dad64e1ef6347219be2f8666e2752">item::typeId</a></div><div class="ttdeci">const itype_id &amp; typeId() const</div><div class="ttdoc">return the unique identifier of the items underlying type</div><div class="ttdef"><b>Definition:</b> <a href="item_8cpp_source.html#l08353">item.cpp:8353</a></div></div>
 <div class="ttc" id="aclassitem_html_aaa5aeb6f838927babb10ede535cf2a73"><div class="ttname"><a href="classitem.html#aaa5aeb6f838927babb10ede535cf2a73">item::has_flag</a></div><div class="ttdeci">bool has_flag(const std::string &amp;flag) const</div><div class="ttdef"><b>Definition:</b> <a href="item_8cpp_source.html#l05303">item.cpp:5303</a></div></div>
 <div class="ttc" id="aclassitem_html_aaf0e79cb1bc190daa4804cfd62f279c4"><div class="ttname"><a href="classitem.html#aaf0e79cb1bc190daa4804cfd62f279c4">item::set_flag</a></div><div class="ttdeci">item &amp; set_flag(const std::string &amp;flag)</div><div class="ttdoc">Idempotent filter setting an item specific flag.</div><div class="ttdef"><b>Definition:</b> <a href="item_8cpp_source.html#l05332">item.cpp:5332</a></div></div>
 <div class="ttc" id="aclassmap_html"><div class="ttname"><a href="classmap.html">map</a></div><div class="ttdoc">Manage and cache data about a part of the map.</div><div class="ttdef"><b>Definition:</b> <a href="map_8h_source.html#l00383">map.h:384</a></div></div>
-<div class="ttc" id="aclassmap_html_a5579e13088b4ccd9c5a75458919d528a"><div class="ttname"><a href="classmap.html#a5579e13088b4ccd9c5a75458919d528a">map::add_item_or_charges</a></div><div class="ttdeci">item &amp; add_item_or_charges(const tripoint &amp;pos, item obj, bool overflow=true)</div><div class="ttdoc">Adds an item to map tile or stacks charges.</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l04263">map.cpp:4263</a></div></div>
+<div class="ttc" id="aclassmap_html_a5579e13088b4ccd9c5a75458919d528a"><div class="ttname"><a href="classmap.html#a5579e13088b4ccd9c5a75458919d528a">map::add_item_or_charges</a></div><div class="ttdeci">item &amp; add_item_or_charges(const tripoint &amp;pos, item obj, bool overflow=true)</div><div class="ttdoc">Adds an item to map tile or stacks charges.</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l04327">map.cpp:4327</a></div></div>
 <div class="ttc" id="aclassplayer_html_ae7009d849f19a4f5ebe877cbe463c459"><div class="ttname"><a href="classplayer.html#ae7009d849f19a4f5ebe877cbe463c459">player::add_msg_if_player</a></div><div class="ttdeci">void add_msg_if_player(const std::string &amp;msg) const override</div><div class="ttdef"><b>Definition:</b> <a href="player_8cpp_source.html#l00380">player.cpp:380</a></div></div>
-<div class="ttc" id="amap_8cpp_html_acb0b34be6e497bdd2f9f40ae6929d562"><div class="ttname"><a href="map_8cpp.html#acb0b34be6e497bdd2f9f40ae6929d562">get_map</a></div><div class="ttdeci">map &amp; get_map()</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l00146">map.cpp:146</a></div></div>
+<div class="ttc" id="amap_8cpp_html_acb0b34be6e497bdd2f9f40ae6929d562"><div class="ttname"><a href="map_8cpp.html#acb0b34be6e497bdd2f9f40ae6929d562">get_map</a></div><div class="ttdeci">map &amp; get_map()</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l00147">map.cpp:147</a></div></div>
 <div class="ttc" id="anamespacecalendar_html_ae15fcbf1c971589eb49c1a657fb6a580"><div class="ttname"><a href="namespacecalendar.html#ae15fcbf1c971589eb49c1a657fb6a580">calendar::turn</a></div><div class="ttdeci">time_point turn</div><div class="ttdef"><b>Definition:</b> <a href="calendar_8cpp_source.html#l00036">calendar.cpp:36</a></div></div>
 <div class="ttc" id="anamespaceitem__group_html_ad15629f772f27e1d19c90fe9de23ae99"><div class="ttname"><a href="namespaceitem__group.html#ad15629f772f27e1d19c90fe9de23ae99">item_group::items_from</a></div><div class="ttdeci">ItemList items_from(const item_group_id &amp;group_id, const time_point &amp;birthday)</div><div class="ttdoc">Create items from the given group.</div><div class="ttdef"><b>Definition:</b> <a href="item__group_8cpp_source.html#l00574">item_group.cpp:574</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="map_8cpp_source.html#l04263">map::add_item_or_charges()</a>, <a class="el" href="player_8cpp_source.html#l00380">player::add_msg_if_player()</a>, <a class="el" href="iuse__actor_8h_source.html#l00129">filthy_vol_threshold</a>, <a class="el" href="map_8cpp_source.html#l00146">get_map()</a>, <a class="el" href="item_8cpp_source.html#l05303">item::has_flag()</a>, <a class="el" href="character_8cpp_source.html#l02342">Character::i_rem()</a>, <a class="el" href="iuse__actor_8h_source.html#l00123">items_fit</a>, <a class="el" href="item__group_8cpp_source.html#l00574">item_group::items_from()</a>, <a class="el" href="character_8cpp_source.html#l00587">Character::pos()</a>, <a class="el" href="item_8cpp_source.html#l05332">item::set_flag()</a>, <a class="el" href="item_8cpp_source.html#l04554">item::tname()</a>, <a class="el" href="calendar_8cpp_source.html#l00036">calendar::turn</a>, <a class="el" href="item_8cpp_source.html#l08353">item::typeId()</a>, and <a class="el" href="iuse__actor_8h_source.html#l00120">unpack_group</a>.</p>
+<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="map_8cpp_source.html#l04327">map::add_item_or_charges()</a>, <a class="el" href="player_8cpp_source.html#l00380">player::add_msg_if_player()</a>, <a class="el" href="iuse__actor_8h_source.html#l00129">filthy_vol_threshold</a>, <a class="el" href="map_8cpp_source.html#l00147">get_map()</a>, <a class="el" href="item_8cpp_source.html#l05303">item::has_flag()</a>, <a class="el" href="character_8cpp_source.html#l02354">Character::i_rem()</a>, <a class="el" href="iuse__actor_8h_source.html#l00123">items_fit</a>, <a class="el" href="item__group_8cpp_source.html#l00574">item_group::items_from()</a>, <a class="el" href="character_8cpp_source.html#l00590">Character::pos()</a>, <a class="el" href="item_8cpp_source.html#l05332">item::set_flag()</a>, <a class="el" href="item_8cpp_source.html#l04554">item::tname()</a>, <a class="el" href="calendar_8cpp_source.html#l00036">calendar::turn</a>, <a class="el" href="item_8cpp_source.html#l08353">item::typeId()</a>, and <a class="el" href="iuse__actor_8h_source.html#l00120">unpack_group</a>.</p>
 
 </div>
 </div>
@@ -465,7 +465,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="iuse__actor_8h_source.html#l00129">129</a> of file <a class="el" href="iuse__actor_8h_source.html">iuse_actor.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l00384">load()</a>, and <a class="el" href="iuse__actor_8cpp_source.html#l00391">use()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l00385">load()</a>, and <a class="el" href="iuse__actor_8cpp_source.html#l00392">use()</a>.</p>
 
 </div>
 </div>
@@ -485,7 +485,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="iuse__actor_8h_source.html#l00123">123</a> of file <a class="el" href="iuse__actor_8h_source.html">iuse_actor.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l00384">load()</a>, and <a class="el" href="iuse__actor_8cpp_source.html#l00391">use()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l00385">load()</a>, and <a class="el" href="iuse__actor_8cpp_source.html#l00392">use()</a>.</p>
 
 </div>
 </div>
@@ -505,7 +505,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="iuse__actor_8h_source.html#l00120">120</a> of file <a class="el" href="iuse__actor_8h_source.html">iuse_actor.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l00384">load()</a>, and <a class="el" href="iuse__actor_8cpp_source.html#l00391">use()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l00385">load()</a>, and <a class="el" href="iuse__actor_8cpp_source.html#l00392">use()</a>.</p>
 
 </div>
 </div>
@@ -519,7 +519,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classunpack__actor.html">unpack_actor</a></li>
-    <li class="footer">Generated on Fri Apr 7 2023 11:54:54 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Apr 30 2023 06:48:23 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

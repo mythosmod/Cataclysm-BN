@@ -25,6 +25,7 @@ var map_8cpp =
     [ "use_charges_from_stack", "map_8cpp.html#a4c9a8b5ab9823d12c54ff686e7a38bc4", null ],
     [ "vehicle_caching_internal", "map_8cpp.html#aa6e8d19c5e7b309a63aa4dfaa4cc3acd", null ],
     [ "vehicle_caching_internal_above", "map_8cpp.html#a595daf14dd79fec2169c1548ba605f0a", null ],
+    [ "will_explode_on_impact", "map_8cpp.html#ab5171be90c3858394fb4ed14ef8d1ef0", null ],
     [ "ammo_effect_INCENDIARY", "map_8cpp.html#a506fc166f774a4ac78c54dd998286ef1", null ],
     [ "ammo_effect_LASER", "map_8cpp.html#a4823a8b924c5e1c83c8e1e1a316e1ae7", null ],
     [ "ammo_effect_LIGHTNING", "map_8cpp.html#a17d7acb18d1ef9119106898d678fac76", null ],

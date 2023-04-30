@@ -41,7 +41,7 @@ var mission_8h =
       [ "ORIGIN_COMPUTER", "mission_8h.html#ae243cf9069d522378856d5c6ab930beca5a1cc37f70183180885cda5817a109eb", null ],
       [ "NUM_ORIGIN", "mission_8h.html#ae243cf9069d522378856d5c6ab930becaaf43cf4a96f752ec6594a9321aec5025", null ]
     ] ],
-    [ "assign_mission_target", "mission_8h.html#ac7d7475da2334157683138fb90ffe60d", null ],
+    [ "assign_mission_target", "mission_8h.html#ab332d2750152f7d9853554d0b8a25107", null ],
     [ "get_om_terrain_pos", "mission_8h.html#afae4bdb979b73cdbe3b7209bb4bb2fe0", null ],
     [ "load_funcs", "mission_8h.html#a7c1dc5479a7502980f56103b4e865a8c", null ],
     [ "parse_mission_om_target", "mission_8h.html#a17fa3f1df097e6dc1fef503cb5a90f0b", null ],

@@ -63,7 +63,7 @@ var activity__handlers_8cpp =
     [ "flag_TREE", "activity__handlers_8cpp.html#a966b4e9f56cb4b350b288257241a9e46", null ],
     [ "flag_USE_UPS", "activity__handlers_8cpp.html#a621b1b54a8fa92c5d21f1b94aa6a0a68", null ],
     [ "get_fake_tool", "activity__handlers_8cpp.html#a9bedd3414ab410b6b4107bc7738b9759", null ],
-    [ "get_hack_type", "activity__handlers_8cpp.html#a10e3cb6ed82908ba872da0b52968ef42", null ],
+    [ "get_hack_type", "activity__handlers_8cpp.html#a643f13808456144621ebc885bd4b5b62", null ],
     [ "get_position", "activity__handlers_8cpp.html#ad991118ba95531cae09dff23e30c5ef6", null ],
     [ "get_sorted_tiles_by_distance", "activity__handlers_8cpp.html#ad56bc2a183ef33fafef613435a366c27", null ],
     [ "magic_train", "activity__handlers_8cpp.html#a5b4804c11bb4b74c781ae87301708de5", null ],

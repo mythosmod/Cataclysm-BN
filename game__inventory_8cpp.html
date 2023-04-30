@@ -100,6 +100,8 @@ $(document).ready(function(){initNavTree('game__inventory_8cpp.html',''); initRe
 <code>#include &lt;functional&gt;</code><br />
 <code>#include &lt;map&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;numeric&gt;</code><br />
+<code>#include &lt;optional&gt;</code><br />
 <code>#include &lt;set&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
@@ -129,7 +131,6 @@ $(document).ready(function(){initNavTree('game__inventory_8cpp.html',''); initRe
 <code>#include &quot;<a class="el" href="iuse__actor_8h_source.html">iuse_actor.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="map_8h_source.html">map.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="npc_8h_source.html">npc.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="optional_8h_source.html">optional.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="options_8h_source.html">options.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="output_8h_source.html">output.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="player_8h_source.html">player.h</a>&quot;</code><br />
@@ -275,6 +276,8 @@ Variables</h2></td></tr>
 <tr class="separator:af4487f6f0e0eb0e3a671f5053fe2c219"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92fc92f8871feb56f05a24b582966275"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="type__id_8h.html#a44aa01c09faf1c1723400eb9075a1f4d">trait_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="game__inventory_8cpp.html#a92fc92f8871feb56f05a24b582966275">trait_SAPROVORE</a> (&quot;SAPROVORE&quot;)</td></tr>
 <tr class="separator:a92fc92f8871feb56f05a24b582966275"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a638e7eb4b8c8bdd2727763a767bd5617"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="type__id_8h.html#a44aa01c09faf1c1723400eb9075a1f4d">trait_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="game__inventory_8cpp.html#a638e7eb4b8c8bdd2727763a767bd5617">trait_INFRESIST</a> (&quot;INFRESIST&quot;)</td></tr>
+<tr class="separator:a638e7eb4b8c8bdd2727763a767bd5617"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f00ac4bfbf8730ef99a96a55cab197e"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="type__id_8h.html#a0083caca181e3d6b8888ff104cec2170">flag_str_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="game__inventory_8cpp.html#a4f00ac4bfbf8730ef99a96a55cab197e">flag_BIONIC_NPC_USABLE</a> (&quot;BIONIC_NPC_USABLE&quot;)</td></tr>
 <tr class="separator:a4f00ac4bfbf8730ef99a96a55cab197e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -291,7 +294,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="game__inventory_8cpp_source.html#l00091">91</a> of file <a class="el" href="game__inventory_8cpp_source.html">game_inventory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="game__inventory_8cpp_source.html#l00093">93</a> of file <a class="el" href="game__inventory_8cpp_source.html">game_inventory.cpp</a>.</p>
 
 </div>
 </div>
@@ -307,7 +310,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="game__inventory_8cpp_source.html#l00092">92</a> of file <a class="el" href="game__inventory_8cpp_source.html">game_inventory.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="game__inventory_8cpp_source.html#l00094">94</a> of file <a class="el" href="game__inventory_8cpp_source.html">game_inventory.cpp</a>.</p>
 
 </div>
 </div>
@@ -352,38 +355,38 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="game__inventory_8cpp_source.html#l02162">2162</a> of file <a class="el" href="game__inventory_8cpp_source.html">game_inventory.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l02165" name="l02165"></a><span class="lineno"> 2165</span>{</div>
-<div class="line"><a id="l02166" name="l02166"></a><span class="lineno"> 2166</span>    <a class="code hl_class" href="classinventory__pick__selector.html">inventory_pick_selector</a> inv_s( u, preset );</div>
-<div class="line"><a id="l02167" name="l02167"></a><span class="lineno"> 2167</span>    inv_s.set_title( <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;Sterilization&quot;</span> ) );</div>
-<div class="line"><a id="l02168" name="l02168"></a><span class="lineno"> 2168</span>    inv_s.set_hint( <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;&lt;color_yellow&gt;Select one CBM to sterilize&lt;/color&gt;&quot;</span> ) );</div>
-<div class="line"><a id="l02169" name="l02169"></a><span class="lineno"> 2169</span>    inv_s.set_display_stats( <span class="keyword">false</span> );</div>
-<div class="line"><a id="l02170" name="l02170"></a><span class="lineno"> 2170</span> </div>
-<div class="line"><a id="l02171" name="l02171"></a><span class="lineno"> 2171</span>    <span class="keywordflow">do</span> {</div>
-<div class="line"><a id="l02172" name="l02172"></a><span class="lineno"> 2172</span>        u.<a class="code hl_variable" href="classCharacter.html#a3d69eddc0a03b21378fc68cc08d32c7f">inv</a>.<a class="code hl_function" href="classinventory.html#a02827fc3d19c675083f0ddee201a1549">restack</a>( u );</div>
-<div class="line"><a id="l02173" name="l02173"></a><span class="lineno"> 2173</span> </div>
-<div class="line"><a id="l02174" name="l02174"></a><span class="lineno"> 2174</span>        inv_s.clear_items();</div>
-<div class="line"><a id="l02175" name="l02175"></a><span class="lineno"> 2175</span>        inv_s.add_character_items( u );</div>
-<div class="line"><a id="l02176" name="l02176"></a><span class="lineno"> 2176</span>        inv_s.add_nearby_items( radius );</div>
-<div class="line"><a id="l02177" name="l02177"></a><span class="lineno"> 2177</span> </div>
-<div class="line"><a id="l02178" name="l02178"></a><span class="lineno"> 2178</span>        <span class="keywordflow">if</span>( inv_s.empty() ) {</div>
-<div class="line"><a id="l02179" name="l02179"></a><span class="lineno"> 2179</span>            <a class="code hl_function" href="output_8cpp.html#a1e645471d321d71b235fb285da5c08ff">popup</a>( <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;You don&#39;t have any CBM to sterilize.&quot;</span> ), <a class="code hl_enumvalue" href="output_8h.html#ab214b85345aeab978acdcea0250f27f5ad0065579023647501fcb0f076a1c5240">PF_GET_KEY</a> );</div>
-<div class="line"><a id="l02180" name="l02180"></a><span class="lineno"> 2180</span>            <span class="keywordflow">return</span> <a class="code hl_class" href="classitem__location.html">item_location</a>();</div>
-<div class="line"><a id="l02181" name="l02181"></a><span class="lineno"> 2181</span>        }</div>
+<p class="definition">Definition at line <a class="el" href="game__inventory_8cpp_source.html#l02160">2160</a> of file <a class="el" href="game__inventory_8cpp_source.html">game_inventory.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l02163" name="l02163"></a><span class="lineno"> 2163</span>{</div>
+<div class="line"><a id="l02164" name="l02164"></a><span class="lineno"> 2164</span>    <a class="code hl_class" href="classinventory__pick__selector.html">inventory_pick_selector</a> inv_s( u, preset );</div>
+<div class="line"><a id="l02165" name="l02165"></a><span class="lineno"> 2165</span>    inv_s.set_title( <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;Sterilization&quot;</span> ) );</div>
+<div class="line"><a id="l02166" name="l02166"></a><span class="lineno"> 2166</span>    inv_s.set_hint( <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;&lt;color_yellow&gt;Select one CBM to sterilize&lt;/color&gt;&quot;</span> ) );</div>
+<div class="line"><a id="l02167" name="l02167"></a><span class="lineno"> 2167</span>    inv_s.set_display_stats( <span class="keyword">false</span> );</div>
+<div class="line"><a id="l02168" name="l02168"></a><span class="lineno"> 2168</span> </div>
+<div class="line"><a id="l02169" name="l02169"></a><span class="lineno"> 2169</span>    <span class="keywordflow">do</span> {</div>
+<div class="line"><a id="l02170" name="l02170"></a><span class="lineno"> 2170</span>        u.<a class="code hl_variable" href="classCharacter.html#a3d69eddc0a03b21378fc68cc08d32c7f">inv</a>.<a class="code hl_function" href="classinventory.html#a02827fc3d19c675083f0ddee201a1549">restack</a>( u );</div>
+<div class="line"><a id="l02171" name="l02171"></a><span class="lineno"> 2171</span> </div>
+<div class="line"><a id="l02172" name="l02172"></a><span class="lineno"> 2172</span>        inv_s.clear_items();</div>
+<div class="line"><a id="l02173" name="l02173"></a><span class="lineno"> 2173</span>        inv_s.add_character_items( u );</div>
+<div class="line"><a id="l02174" name="l02174"></a><span class="lineno"> 2174</span>        inv_s.add_nearby_items( radius );</div>
+<div class="line"><a id="l02175" name="l02175"></a><span class="lineno"> 2175</span> </div>
+<div class="line"><a id="l02176" name="l02176"></a><span class="lineno"> 2176</span>        <span class="keywordflow">if</span>( inv_s.empty() ) {</div>
+<div class="line"><a id="l02177" name="l02177"></a><span class="lineno"> 2177</span>            <a class="code hl_function" href="output_8cpp.html#a1e645471d321d71b235fb285da5c08ff">popup</a>( <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;You don&#39;t have any CBM to sterilize.&quot;</span> ), <a class="code hl_enumvalue" href="output_8h.html#ab214b85345aeab978acdcea0250f27f5ad0065579023647501fcb0f076a1c5240">PF_GET_KEY</a> );</div>
+<div class="line"><a id="l02178" name="l02178"></a><span class="lineno"> 2178</span>            <span class="keywordflow">return</span> <a class="code hl_class" href="classitem__location.html">item_location</a>();</div>
+<div class="line"><a id="l02179" name="l02179"></a><span class="lineno"> 2179</span>        }</div>
+<div class="line"><a id="l02180" name="l02180"></a><span class="lineno"> 2180</span> </div>
+<div class="line"><a id="l02181" name="l02181"></a><span class="lineno"> 2181</span>        <a class="code hl_class" href="classitem__location.html">item_location</a> location = inv_s.execute();</div>
 <div class="line"><a id="l02182" name="l02182"></a><span class="lineno"> 2182</span> </div>
-<div class="line"><a id="l02183" name="l02183"></a><span class="lineno"> 2183</span>        <a class="code hl_class" href="classitem__location.html">item_location</a> location = inv_s.execute();</div>
-<div class="line"><a id="l02184" name="l02184"></a><span class="lineno"> 2184</span> </div>
-<div class="line"><a id="l02185" name="l02185"></a><span class="lineno"> 2185</span>        <span class="keywordflow">if</span>( inv_s.keep_open ) {</div>
-<div class="line"><a id="l02186" name="l02186"></a><span class="lineno"> 2186</span>            inv_s.keep_open = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l02187" name="l02187"></a><span class="lineno"> 2187</span>            <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l02188" name="l02188"></a><span class="lineno"> 2188</span>        }</div>
+<div class="line"><a id="l02183" name="l02183"></a><span class="lineno"> 2183</span>        <span class="keywordflow">if</span>( inv_s.keep_open ) {</div>
+<div class="line"><a id="l02184" name="l02184"></a><span class="lineno"> 2184</span>            inv_s.keep_open = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l02185" name="l02185"></a><span class="lineno"> 2185</span>            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l02186" name="l02186"></a><span class="lineno"> 2186</span>        }</div>
+<div class="line"><a id="l02187" name="l02187"></a><span class="lineno"> 2187</span> </div>
+<div class="line"><a id="l02188" name="l02188"></a><span class="lineno"> 2188</span>        <span class="keywordflow">return</span> location;</div>
 <div class="line"><a id="l02189" name="l02189"></a><span class="lineno"> 2189</span> </div>
-<div class="line"><a id="l02190" name="l02190"></a><span class="lineno"> 2190</span>        <span class="keywordflow">return</span> location;</div>
+<div class="line"><a id="l02190" name="l02190"></a><span class="lineno"> 2190</span>    } <span class="keywordflow">while</span>( <span class="keyword">true</span> );</div>
 <div class="line"><a id="l02191" name="l02191"></a><span class="lineno"> 2191</span> </div>
-<div class="line"><a id="l02192" name="l02192"></a><span class="lineno"> 2192</span>    } <span class="keywordflow">while</span>( <span class="keyword">true</span> );</div>
-<div class="line"><a id="l02193" name="l02193"></a><span class="lineno"> 2193</span> </div>
-<div class="line"><a id="l02194" name="l02194"></a><span class="lineno"> 2194</span>}</div>
-<div class="ttc" id="aclassCharacter_html_a3d69eddc0a03b21378fc68cc08d32c7f"><div class="ttname"><a href="classCharacter.html#a3d69eddc0a03b21378fc68cc08d32c7f">Character::inv</a></div><div class="ttdeci">inventory inv</div><div class="ttdef"><b>Definition:</b> <a href="character_8h_source.html#l01544">character.h:1544</a></div></div>
+<div class="line"><a id="l02192" name="l02192"></a><span class="lineno"> 2192</span>}</div>
+<div class="ttc" id="aclassCharacter_html_a3d69eddc0a03b21378fc68cc08d32c7f"><div class="ttname"><a href="classCharacter.html#a3d69eddc0a03b21378fc68cc08d32c7f">Character::inv</a></div><div class="ttdeci">inventory inv</div><div class="ttdef"><b>Definition:</b> <a href="character_8h_source.html#l01546">character.h:1546</a></div></div>
 <div class="ttc" id="aclassinventory__pick__selector_html"><div class="ttname"><a href="classinventory__pick__selector.html">inventory_pick_selector</a></div><div class="ttdef"><b>Definition:</b> <a href="inventory__ui_8h_source.html#l00654">inventory_ui.h:655</a></div></div>
 <div class="ttc" id="aclassinventory_html_a02827fc3d19c675083f0ddee201a1549"><div class="ttname"><a href="classinventory.html#a02827fc3d19c675083f0ddee201a1549">inventory::restack</a></div><div class="ttdeci">void restack(player &amp;p)</div><div class="ttdef"><b>Definition:</b> <a href="inventory_8cpp_source.html#l00399">inventory.cpp:399</a></div></div>
 <div class="ttc" id="aclassitem__location_html"><div class="ttname"><a href="classitem__location.html">item_location</a></div><div class="ttdoc">A lightweight handle to an item independent of it's location Unlike a raw pointer can be (de-)seriali...</div><div class="ttdef"><b>Definition:</b> <a href="item__location_8h_source.html#l00022">item_location.h:23</a></div></div>
@@ -391,9 +394,9 @@ Variables</h2></td></tr>
 <div class="ttc" id="aoutput_8h_html_ab214b85345aeab978acdcea0250f27f5ad0065579023647501fcb0f076a1c5240"><div class="ttname"><a href="output_8h.html#ab214b85345aeab978acdcea0250f27f5ad0065579023647501fcb0f076a1c5240">PF_GET_KEY</a></div><div class="ttdeci">@ PF_GET_KEY</div><div class="ttdef"><b>Definition:</b> <a href="output_8h_source.html#l00451">output.h:451</a></div></div>
 <div class="ttc" id="atranslations_8h_html_aa829053017e23ef22d44dccecba63a34"><div class="ttname"><a href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a></div><div class="ttdeci">#define _(msg)</div><div class="ttdef"><b>Definition:</b> <a href="translations_8h_source.html#l00116">translations.h:116</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="inventory__ui_8cpp_source.html#l01190">inventory_selector::add_character_items()</a>, <a class="el" href="inventory__ui_8cpp_source.html#l01242">inventory_selector::add_nearby_items()</a>, <a class="el" href="inventory__ui_8cpp_source.html#l01256">inventory_selector::clear_items()</a>, <a class="el" href="inventory__ui_8cpp_source.html#l01720">inventory_selector::empty()</a>, <a class="el" href="inventory__ui_8cpp_source.html#l01904">inventory_pick_selector::execute()</a>, <a class="el" href="character_8h_source.html#l01544">Character::inv</a>, <a class="el" href="inventory__ui_8h_source.html#l00476">inventory_selector::keep_open</a>, <a class="el" href="output_8h_source.html#l00451">PF_GET_KEY</a>, <a class="el" href="output_8cpp_source.html#l00764">popup()</a>, <a class="el" href="inventory_8cpp_source.html#l00399">inventory::restack()</a>, <a class="el" href="inventory__ui_8h_source.html#l00459">inventory_selector::set_display_stats()</a>, <a class="el" href="inventory__ui_8h_source.html#l00455">inventory_selector::set_hint()</a>, and <a class="el" href="inventory__ui_8h_source.html#l00451">inventory_selector::set_title()</a>.</p>
+<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="inventory__ui_8cpp_source.html#l01190">inventory_selector::add_character_items()</a>, <a class="el" href="inventory__ui_8cpp_source.html#l01242">inventory_selector::add_nearby_items()</a>, <a class="el" href="inventory__ui_8cpp_source.html#l01256">inventory_selector::clear_items()</a>, <a class="el" href="inventory__ui_8cpp_source.html#l01720">inventory_selector::empty()</a>, <a class="el" href="inventory__ui_8cpp_source.html#l01904">inventory_pick_selector::execute()</a>, <a class="el" href="character_8h_source.html#l01546">Character::inv</a>, <a class="el" href="inventory__ui_8h_source.html#l00476">inventory_selector::keep_open</a>, <a class="el" href="output_8h_source.html#l00451">PF_GET_KEY</a>, <a class="el" href="output_8cpp_source.html#l00764">popup()</a>, <a class="el" href="inventory_8cpp_source.html#l00399">inventory::restack()</a>, <a class="el" href="inventory__ui_8h_source.html#l00459">inventory_selector::set_display_stats()</a>, <a class="el" href="inventory__ui_8h_source.html#l00455">inventory_selector::set_hint()</a>, and <a class="el" href="inventory__ui_8h_source.html#l00451">inventory_selector::set_title()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="game__inventory_8cpp_source.html#l02195">game_menus::inv::sterilize_cbm()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game__inventory_8cpp_source.html#l02193">game_menus::inv::sterilize_cbm()</a>.</p>
 
 </div>
 </div>
@@ -455,27 +458,25 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="game__inventory_8cpp_source.html#l01788">1788</a> of file <a class="el" href="game__inventory_8cpp_source.html">game_inventory.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01791" name="l01791"></a><span class="lineno"> 1791</span>{</div>
-<div class="line"><a id="l01792" name="l01792"></a><span class="lineno"> 1792</span>    <a class="code hl_class" href="classinventory__pick__selector.html">inventory_pick_selector</a> inv_s( u, preset );</div>
-<div class="line"><a id="l01793" name="l01793"></a><span class="lineno"> 1793</span>    std::string hint;</div>
-<div class="line"><a id="l01794" name="l01794"></a><span class="lineno"> 1794</span>    <span class="keywordtype">int</span> drug_count = 0;</div>
-<div class="line"><a id="l01795" name="l01795"></a><span class="lineno"> 1795</span> </div>
-<div class="line"><a id="l01796" name="l01796"></a><span class="lineno"> 1796</span>    <span class="keywordflow">if</span>( !surgeon ) {<span class="comment">//surgeon use their own anesthetic, player just need money</span></div>
-<div class="line"><a id="l01797" name="l01797"></a><span class="lineno"> 1797</span>        <span class="keywordflow">if</span>( patient.<a class="code hl_function" href="classCharacter.html#af06dd97724f4f05df782e7a4b4f9cfe1">has_trait</a>( <a class="code hl_variable" href="game__inventory_8cpp.html#af20cb84a6e8ccc0ed66c352edf29143b">trait_NOPAIN</a> ) ) {</div>
-<div class="line"><a id="l01798" name="l01798"></a><span class="lineno"> 1798</span>            hint = <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;&lt;color_yellow&gt;Patient has Deadened nerves.  Anesthesia unneeded.&lt;/color&gt;&quot;</span> );</div>
-<div class="line"><a id="l01799" name="l01799"></a><span class="lineno"> 1799</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( patient.<a class="code hl_function" href="classCharacter.html#a5751b689e5a4ecd43b6de5c3e2d31541">has_bionic</a>( <a class="code hl_variable" href="game__inventory_8cpp.html#a15450ecf5b34a615affe959125bf1626">bio_painkiller</a> ) ) {</div>
-<div class="line"><a id="l01800" name="l01800"></a><span class="lineno"> 1800</span>            hint = <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;&lt;color_yellow&gt;Patient has Sensory Dulling CBM installed.  Anesthesia unneeded.&lt;/color&gt;&quot;</span> );</div>
-<div class="line"><a id="l01801" name="l01801"></a><span class="lineno"> 1801</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l01802" name="l01802"></a><span class="lineno"> 1802</span>            <span class="keyword">const</span> <a class="code hl_class" href="classinventory.html">inventory</a> &amp;crafting_inv = u.<a class="code hl_function" href="classCharacter.html#abd358c7a7757575b70b1613dbcce40a7">crafting_inventory</a>();</div>
-<div class="line"><a id="l01803" name="l01803"></a><span class="lineno"> 1803</span>            std::vector&lt;const item *&gt; a_filter = crafting_inv.<a class="code hl_function" href="classvisitable.html#a5b3c37fbe8209cab68aa26d3cc7f4300">items_with</a>( []( <span class="keyword">const</span> <a class="code hl_class" href="classitem.html">item</a> &amp; it ) {</div>
-<div class="line"><a id="l01804" name="l01804"></a><span class="lineno"> 1804</span>                <span class="keywordflow">return</span> it.<a class="code hl_function" href="classvisitable.html#a62ad0b8f7866ec171a709c56e4a25ff2">has_quality</a>( <a class="code hl_variable" href="game__inventory_8cpp.html#a42ac34659f1b9fc5662b2f849fd96dab">qual_ANESTHESIA</a> );</div>
-<div class="line"><a id="l01805" name="l01805"></a><span class="lineno"> 1805</span>            } );</div>
-<div class="line"><a id="l01806" name="l01806"></a><span class="lineno"> 1806</span>            <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_class" href="classitem.html">item</a> *anesthesia_item : a_filter ) {</div>
-<div class="line"><a id="l01807" name="l01807"></a><span class="lineno"> 1807</span>                <span class="keywordflow">if</span>( anesthesia_item-&gt;ammo_remaining() &gt;= 1 ) {</div>
-<div class="line"><a id="l01808" name="l01808"></a><span class="lineno"> 1808</span>                    drug_count += anesthesia_item-&gt;ammo_remaining();</div>
-<div class="line"><a id="l01809" name="l01809"></a><span class="lineno"> 1809</span>                }</div>
-<div class="line"><a id="l01810" name="l01810"></a><span class="lineno"> 1810</span>            }</div>
+<p class="definition">Definition at line <a class="el" href="game__inventory_8cpp_source.html#l01790">1790</a> of file <a class="el" href="game__inventory_8cpp_source.html">game_inventory.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01793" name="l01793"></a><span class="lineno"> 1793</span>{</div>
+<div class="line"><a id="l01794" name="l01794"></a><span class="lineno"> 1794</span>    <a class="code hl_class" href="classinventory__pick__selector.html">inventory_pick_selector</a> inv_s( u, preset );</div>
+<div class="line"><a id="l01795" name="l01795"></a><span class="lineno"> 1795</span>    std::string hint;</div>
+<div class="line"><a id="l01796" name="l01796"></a><span class="lineno"> 1796</span> </div>
+<div class="line"><a id="l01797" name="l01797"></a><span class="lineno"> 1797</span>    <span class="keywordflow">if</span>( !surgeon ) {<span class="comment">//surgeon use their own anesthetic, player just need money</span></div>
+<div class="line"><a id="l01798" name="l01798"></a><span class="lineno"> 1798</span>        <span class="keywordflow">if</span>( patient.<a class="code hl_function" href="classCharacter.html#af06dd97724f4f05df782e7a4b4f9cfe1">has_trait</a>( <a class="code hl_variable" href="game__inventory_8cpp.html#af20cb84a6e8ccc0ed66c352edf29143b">trait_NOPAIN</a> ) ) {</div>
+<div class="line"><a id="l01799" name="l01799"></a><span class="lineno"> 1799</span>            hint = <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;&lt;color_yellow&gt;Patient has Deadened nerves.  Anesthesia unneeded.&lt;/color&gt;&quot;</span> );</div>
+<div class="line"><a id="l01800" name="l01800"></a><span class="lineno"> 1800</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( patient.<a class="code hl_function" href="classCharacter.html#a5751b689e5a4ecd43b6de5c3e2d31541">has_bionic</a>( <a class="code hl_variable" href="game__inventory_8cpp.html#a15450ecf5b34a615affe959125bf1626">bio_painkiller</a> ) ) {</div>
+<div class="line"><a id="l01801" name="l01801"></a><span class="lineno"> 1801</span>            hint = <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;&lt;color_yellow&gt;Patient has Sensory Dulling CBM installed.  Anesthesia unneeded.&lt;/color&gt;&quot;</span> );</div>
+<div class="line"><a id="l01802" name="l01802"></a><span class="lineno"> 1802</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l01803" name="l01803"></a><span class="lineno"> 1803</span>            <span class="keyword">const</span> <a class="code hl_class" href="classinventory.html">inventory</a> &amp;crafting_inv = u.<a class="code hl_function" href="classCharacter.html#abd358c7a7757575b70b1613dbcce40a7">crafting_inventory</a>();</div>
+<div class="line"><a id="l01804" name="l01804"></a><span class="lineno"> 1804</span>            std::vector&lt;const item *&gt; a_filter = crafting_inv.<a class="code hl_function" href="classvisitable.html#a5b3c37fbe8209cab68aa26d3cc7f4300">items_with</a>( []( <span class="keyword">const</span> <a class="code hl_class" href="classitem.html">item</a> &amp; it ) {</div>
+<div class="line"><a id="l01805" name="l01805"></a><span class="lineno"> 1805</span>                <span class="keywordflow">return</span> it.<a class="code hl_function" href="classvisitable.html#a62ad0b8f7866ec171a709c56e4a25ff2">has_quality</a>( <a class="code hl_variable" href="game__inventory_8cpp.html#a42ac34659f1b9fc5662b2f849fd96dab">qual_ANESTHESIA</a> );</div>
+<div class="line"><a id="l01806" name="l01806"></a><span class="lineno"> 1806</span>            } );</div>
+<div class="line"><a id="l01807" name="l01807"></a><span class="lineno"> 1807</span>            <span class="keyword">const</span> <span class="keywordtype">int</span> drug_count = std::accumulate( a_filter.begin(), a_filter.end(), 0,</div>
+<div class="line"><a id="l01808" name="l01808"></a><span class="lineno"> 1808</span>            []( <span class="keywordtype">int</span> sum, <span class="keyword">const</span> <a class="code hl_class" href="classitem.html">item</a> * it ) {</div>
+<div class="line"><a id="l01809" name="l01809"></a><span class="lineno"> 1809</span>                return sum + it-&gt;ammo_remaining();</div>
+<div class="line"><a id="l01810" name="l01810"></a><span class="lineno"> 1810</span>            } );</div>
 <div class="line"><a id="l01811" name="l01811"></a><span class="lineno"> 1811</span>            hint = <a class="code hl_function" href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a>( <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;&lt;color_yellow&gt;Available anesthetic: %i mL&lt;/color&gt;&quot;</span> ), drug_count );</div>
 <div class="line"><a id="l01812" name="l01812"></a><span class="lineno"> 1812</span>        }</div>
 <div class="line"><a id="l01813" name="l01813"></a><span class="lineno"> 1813</span>    }</div>
@@ -488,41 +489,39 @@ Variables</h2></td></tr>
 <div class="line"><a id="l01820" name="l01820"></a><span class="lineno"> 1820</span>                    <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;\n&lt;color_light_green&gt;Found bionic installation data.  Affected CBMs are marked with an asterisk.&lt;/color&gt;&quot;</span> ) );</div>
 <div class="line"><a id="l01821" name="l01821"></a><span class="lineno"> 1821</span>    }</div>
 <div class="line"><a id="l01822" name="l01822"></a><span class="lineno"> 1822</span> </div>
-<div class="line"><a id="l01823" name="l01823"></a><span class="lineno"> 1823</span>    <span class="keywordflow">if</span>( uninstall ) {</div>
-<div class="line"><a id="l01824" name="l01824"></a><span class="lineno"> 1824</span>        inv_s.set_title( <a class="code hl_function" href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a>( <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;Bionic removal patient: %s&quot;</span> ), patient.<a class="code hl_function" href="classCharacter.html#ae47514f140700c67ea21ccbadf66d106">get_name</a>() ) );</div>
-<div class="line"><a id="l01825" name="l01825"></a><span class="lineno"> 1825</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l01826" name="l01826"></a><span class="lineno"> 1826</span>        inv_s.set_title( <a class="code hl_function" href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a>( <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;Bionic installation patient: %s&quot;</span> ), patient.<a class="code hl_function" href="classCharacter.html#ae47514f140700c67ea21ccbadf66d106">get_name</a>() ) );</div>
-<div class="line"><a id="l01827" name="l01827"></a><span class="lineno"> 1827</span>    }</div>
-<div class="line"><a id="l01828" name="l01828"></a><span class="lineno"> 1828</span> </div>
-<div class="line"><a id="l01829" name="l01829"></a><span class="lineno"> 1829</span>    inv_s.set_hint( hint );</div>
-<div class="line"><a id="l01830" name="l01830"></a><span class="lineno"> 1830</span>    inv_s.set_display_stats( <span class="keyword">false</span> );</div>
-<div class="line"><a id="l01831" name="l01831"></a><span class="lineno"> 1831</span> </div>
-<div class="line"><a id="l01832" name="l01832"></a><span class="lineno"> 1832</span>    <span class="keywordflow">do</span> {</div>
-<div class="line"><a id="l01833" name="l01833"></a><span class="lineno"> 1833</span>        u.<a class="code hl_variable" href="classCharacter.html#a3d69eddc0a03b21378fc68cc08d32c7f">inv</a>.<a class="code hl_function" href="classinventory.html#a02827fc3d19c675083f0ddee201a1549">restack</a>( u );</div>
-<div class="line"><a id="l01834" name="l01834"></a><span class="lineno"> 1834</span> </div>
-<div class="line"><a id="l01835" name="l01835"></a><span class="lineno"> 1835</span>        inv_s.clear_items();</div>
-<div class="line"><a id="l01836" name="l01836"></a><span class="lineno"> 1836</span>        inv_s.add_character_items( u );</div>
-<div class="line"><a id="l01837" name="l01837"></a><span class="lineno"> 1837</span>        inv_s.add_nearby_items( radius );</div>
-<div class="line"><a id="l01838" name="l01838"></a><span class="lineno"> 1838</span> </div>
-<div class="line"><a id="l01839" name="l01839"></a><span class="lineno"> 1839</span>        <span class="keywordflow">if</span>( inv_s.empty() ) {</div>
-<div class="line"><a id="l01840" name="l01840"></a><span class="lineno"> 1840</span>            <a class="code hl_function" href="output_8cpp.html#a1e645471d321d71b235fb285da5c08ff">popup</a>( <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;You don&#39;t have any bionics to install.&quot;</span> ), <a class="code hl_enumvalue" href="output_8h.html#ab214b85345aeab978acdcea0250f27f5ad0065579023647501fcb0f076a1c5240">PF_GET_KEY</a> );</div>
-<div class="line"><a id="l01841" name="l01841"></a><span class="lineno"> 1841</span>            <span class="keywordflow">return</span> <a class="code hl_class" href="classitem__location.html">item_location</a>();</div>
-<div class="line"><a id="l01842" name="l01842"></a><span class="lineno"> 1842</span>        }</div>
+<div class="line"><a id="l01823" name="l01823"></a><span class="lineno"> 1823</span>    <span class="keyword">const</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespacePATH__INFO.html#af9a3ed879d4c10c8494ba4934c8ec678">title</a> = uninstall</div>
+<div class="line"><a id="l01824" name="l01824"></a><span class="lineno"> 1824</span>                       ? <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;Bionic removal patient: %s&quot;</span> ) : <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;Bionic installation patient: %s&quot;</span> );</div>
+<div class="line"><a id="l01825" name="l01825"></a><span class="lineno"> 1825</span>    inv_s.set_title( <a class="code hl_function" href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a>( <a class="code hl_function" href="namespacePATH__INFO.html#af9a3ed879d4c10c8494ba4934c8ec678">title</a>, patient.<a class="code hl_function" href="classCharacter.html#ae47514f140700c67ea21ccbadf66d106">get_name</a>() ) );</div>
+<div class="line"><a id="l01826" name="l01826"></a><span class="lineno"> 1826</span> </div>
+<div class="line"><a id="l01827" name="l01827"></a><span class="lineno"> 1827</span>    inv_s.set_hint( hint );</div>
+<div class="line"><a id="l01828" name="l01828"></a><span class="lineno"> 1828</span>    inv_s.set_display_stats( <span class="keyword">false</span> );</div>
+<div class="line"><a id="l01829" name="l01829"></a><span class="lineno"> 1829</span> </div>
+<div class="line"><a id="l01830" name="l01830"></a><span class="lineno"> 1830</span>    <span class="keywordflow">do</span> {</div>
+<div class="line"><a id="l01831" name="l01831"></a><span class="lineno"> 1831</span>        u.<a class="code hl_variable" href="classCharacter.html#a3d69eddc0a03b21378fc68cc08d32c7f">inv</a>.<a class="code hl_function" href="classinventory.html#a02827fc3d19c675083f0ddee201a1549">restack</a>( u );</div>
+<div class="line"><a id="l01832" name="l01832"></a><span class="lineno"> 1832</span> </div>
+<div class="line"><a id="l01833" name="l01833"></a><span class="lineno"> 1833</span>        inv_s.clear_items();</div>
+<div class="line"><a id="l01834" name="l01834"></a><span class="lineno"> 1834</span>        inv_s.add_character_items( u );</div>
+<div class="line"><a id="l01835" name="l01835"></a><span class="lineno"> 1835</span>        inv_s.add_nearby_items( radius );</div>
+<div class="line"><a id="l01836" name="l01836"></a><span class="lineno"> 1836</span> </div>
+<div class="line"><a id="l01837" name="l01837"></a><span class="lineno"> 1837</span>        <span class="keywordflow">if</span>( inv_s.empty() ) {</div>
+<div class="line"><a id="l01838" name="l01838"></a><span class="lineno"> 1838</span>            <a class="code hl_function" href="output_8cpp.html#a1e645471d321d71b235fb285da5c08ff">popup</a>( <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;You don&#39;t have any bionics to install.&quot;</span> ), <a class="code hl_enumvalue" href="output_8h.html#ab214b85345aeab978acdcea0250f27f5ad0065579023647501fcb0f076a1c5240">PF_GET_KEY</a> );</div>
+<div class="line"><a id="l01839" name="l01839"></a><span class="lineno"> 1839</span>            <span class="keywordflow">return</span> <a class="code hl_class" href="classitem__location.html">item_location</a>();</div>
+<div class="line"><a id="l01840" name="l01840"></a><span class="lineno"> 1840</span>        }</div>
+<div class="line"><a id="l01841" name="l01841"></a><span class="lineno"> 1841</span> </div>
+<div class="line"><a id="l01842" name="l01842"></a><span class="lineno"> 1842</span>        <a class="code hl_class" href="classitem__location.html">item_location</a> location = inv_s.execute();</div>
 <div class="line"><a id="l01843" name="l01843"></a><span class="lineno"> 1843</span> </div>
-<div class="line"><a id="l01844" name="l01844"></a><span class="lineno"> 1844</span>        <a class="code hl_class" href="classitem__location.html">item_location</a> location = inv_s.execute();</div>
-<div class="line"><a id="l01845" name="l01845"></a><span class="lineno"> 1845</span> </div>
-<div class="line"><a id="l01846" name="l01846"></a><span class="lineno"> 1846</span>        <span class="keywordflow">if</span>( inv_s.keep_open ) {</div>
-<div class="line"><a id="l01847" name="l01847"></a><span class="lineno"> 1847</span>            inv_s.keep_open = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l01848" name="l01848"></a><span class="lineno"> 1848</span>            <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l01849" name="l01849"></a><span class="lineno"> 1849</span>        }</div>
+<div class="line"><a id="l01844" name="l01844"></a><span class="lineno"> 1844</span>        <span class="keywordflow">if</span>( inv_s.keep_open ) {</div>
+<div class="line"><a id="l01845" name="l01845"></a><span class="lineno"> 1845</span>            inv_s.keep_open = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l01846" name="l01846"></a><span class="lineno"> 1846</span>            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l01847" name="l01847"></a><span class="lineno"> 1847</span>        }</div>
+<div class="line"><a id="l01848" name="l01848"></a><span class="lineno"> 1848</span> </div>
+<div class="line"><a id="l01849" name="l01849"></a><span class="lineno"> 1849</span>        <span class="keywordflow">return</span> location;</div>
 <div class="line"><a id="l01850" name="l01850"></a><span class="lineno"> 1850</span> </div>
-<div class="line"><a id="l01851" name="l01851"></a><span class="lineno"> 1851</span>        <span class="keywordflow">return</span> location;</div>
-<div class="line"><a id="l01852" name="l01852"></a><span class="lineno"> 1852</span> </div>
-<div class="line"><a id="l01853" name="l01853"></a><span class="lineno"> 1853</span>    } <span class="keywordflow">while</span>( <span class="keyword">true</span> );</div>
-<div class="line"><a id="l01854" name="l01854"></a><span class="lineno"> 1854</span>}</div>
-<div class="ttc" id="aclassCharacter_html_a5751b689e5a4ecd43b6de5c3e2d31541"><div class="ttname"><a href="classCharacter.html#a5751b689e5a4ecd43b6de5c3e2d31541">Character::has_bionic</a></div><div class="ttdeci">bool has_bionic(const bionic_id &amp;b) const</div><div class="ttdoc">Returns true if the player has the entered bionic id.</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l01795">character.cpp:1795</a></div></div>
+<div class="line"><a id="l01851" name="l01851"></a><span class="lineno"> 1851</span>    } <span class="keywordflow">while</span>( <span class="keyword">true</span> );</div>
+<div class="line"><a id="l01852" name="l01852"></a><span class="lineno"> 1852</span>}</div>
+<div class="ttc" id="aclassCharacter_html_a5751b689e5a4ecd43b6de5c3e2d31541"><div class="ttname"><a href="classCharacter.html#a5751b689e5a4ecd43b6de5c3e2d31541">Character::has_bionic</a></div><div class="ttdeci">bool has_bionic(const bionic_id &amp;b) const</div><div class="ttdoc">Returns true if the player has the entered bionic id.</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l01798">character.cpp:1798</a></div></div>
 <div class="ttc" id="aclassCharacter_html_abd358c7a7757575b70b1613dbcce40a7"><div class="ttname"><a href="classCharacter.html#abd358c7a7757575b70b1613dbcce40a7">Character::crafting_inventory</a></div><div class="ttdeci">const inventory &amp; crafting_inventory(bool clear_path)</div><div class="ttdef"><b>Definition:</b> <a href="crafting_8cpp_source.html#l00554">crafting.cpp:554</a></div></div>
-<div class="ttc" id="aclassCharacter_html_ae47514f140700c67ea21ccbadf66d106"><div class="ttname"><a href="classCharacter.html#ae47514f140700c67ea21ccbadf66d106">Character::get_name</a></div><div class="ttdeci">std::string get_name() const override</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l05960">character.cpp:5960</a></div></div>
+<div class="ttc" id="aclassCharacter_html_ae47514f140700c67ea21ccbadf66d106"><div class="ttname"><a href="classCharacter.html#ae47514f140700c67ea21ccbadf66d106">Character::get_name</a></div><div class="ttdeci">std::string get_name() const override</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l05974">character.cpp:5974</a></div></div>
 <div class="ttc" id="aclassCharacter_html_af06dd97724f4f05df782e7a4b4f9cfe1"><div class="ttname"><a href="classCharacter.html#af06dd97724f4f05df782e7a4b4f9cfe1">Character::has_trait</a></div><div class="ttdeci">bool has_trait(const trait_id &amp;b) const override</div><div class="ttdoc">Returns true if the player has the entered trait.</div><div class="ttdef"><b>Definition:</b> <a href="mutation_8cpp_source.html#l00101">mutation.cpp:101</a></div></div>
 <div class="ttc" id="aclassinventory_html"><div class="ttname"><a href="classinventory.html">inventory</a></div><div class="ttdef"><b>Definition:</b> <a href="inventory_8h_source.html#l00089">inventory.h:90</a></div></div>
 <div class="ttc" id="aclassitem_html"><div class="ttname"><a href="classitem.html">item</a></div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l00210">item.h:211</a></div></div>
@@ -532,11 +531,12 @@ Variables</h2></td></tr>
 <div class="ttc" id="agame__inventory_8cpp_html_a15450ecf5b34a615affe959125bf1626"><div class="ttname"><a href="game__inventory_8cpp.html#a15450ecf5b34a615affe959125bf1626">bio_painkiller</a></div><div class="ttdeci">static const bionic_id bio_painkiller(&quot;bio_painkiller&quot;)</div></div>
 <div class="ttc" id="agame__inventory_8cpp_html_a42ac34659f1b9fc5662b2f849fd96dab"><div class="ttname"><a href="game__inventory_8cpp.html#a42ac34659f1b9fc5662b2f849fd96dab">qual_ANESTHESIA</a></div><div class="ttdeci">static const quality_id qual_ANESTHESIA(&quot;ANESTHESIA&quot;)</div></div>
 <div class="ttc" id="agame__inventory_8cpp_html_af20cb84a6e8ccc0ed66c352edf29143b"><div class="ttname"><a href="game__inventory_8cpp.html#af20cb84a6e8ccc0ed66c352edf29143b">trait_NOPAIN</a></div><div class="ttdeci">static const trait_id trait_NOPAIN(&quot;NOPAIN&quot;)</div></div>
-<div class="ttc" id="astring__formatter_8h_html_a8964099387da2f95396c67566bafce3d"><div class="ttname"><a href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a></div><div class="ttdeci">std::string string_format(std::string_view format, Args &amp;&amp;...args)</div><div class="ttdoc">Simple wrapper over string_formatter::parse.</div><div class="ttdef"><b>Definition:</b> <a href="string__formatter_8h_source.html#l00431">string_formatter.h:431</a></div></div>
+<div class="ttc" id="anamespacePATH__INFO_html_af9a3ed879d4c10c8494ba4934c8ec678"><div class="ttname"><a href="namespacePATH__INFO.html#af9a3ed879d4c10c8494ba4934c8ec678">PATH_INFO::title</a></div><div class="ttdeci">std::string title(holiday current_holiday)</div><div class="ttdef"><b>Definition:</b> <a href="path__info_8cpp_source.html#l00326">path_info.cpp:326</a></div></div>
+<div class="ttc" id="astring__formatter_8h_html_a8964099387da2f95396c67566bafce3d"><div class="ttname"><a href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a></div><div class="ttdeci">std::string string_format(std::string_view format, Args &amp;&amp;...args)</div><div class="ttdoc">Simple wrapper over string_formatter::parse.</div><div class="ttdef"><b>Definition:</b> <a href="string__formatter_8h_source.html#l00430">string_formatter.h:430</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="inventory__ui_8cpp_source.html#l01190">inventory_selector::add_character_items()</a>, <a class="el" href="inventory__ui_8cpp_source.html#l01242">inventory_selector::add_nearby_items()</a>, <a class="el" href="game__inventory_8cpp.html#a15450ecf5b34a615affe959125bf1626">bio_painkiller</a>, <a class="el" href="inventory__ui_8cpp_source.html#l01256">inventory_selector::clear_items()</a>, <a class="el" href="crafting_8cpp_source.html#l00554">Character::crafting_inventory()</a>, <a class="el" href="inventory__ui_8cpp_source.html#l01720">inventory_selector::empty()</a>, <a class="el" href="inventory__ui_8cpp_source.html#l01904">inventory_pick_selector::execute()</a>, <a class="el" href="character_8cpp_source.html#l05960">Character::get_name()</a>, <a class="el" href="character_8cpp_source.html#l01795">Character::has_bionic()</a>, <a class="el" href="item_8cpp_source.html#l05303">item::has_flag()</a>, <a class="el" href="visitable_8cpp_source.html#l00169">visitable&lt; T &gt;::has_quality()</a>, <a class="el" href="mutation_8cpp_source.html#l00101">Character::has_trait()</a>, <a class="el" href="character_8h_source.html#l01544">Character::inv</a>, <a class="el" href="visitable_8cpp_source.html#l00324">visitable&lt; T &gt;::items_with()</a>, <a class="el" href="inventory__ui_8h_source.html#l00476">inventory_selector::keep_open</a>, <a class="el" href="output_8h_source.html#l00451">PF_GET_KEY</a>, <a class="el" href="output_8cpp_source.html#l00764">popup()</a>, <a class="el" href="game__inventory_8cpp.html#a42ac34659f1b9fc5662b2f849fd96dab">qual_ANESTHESIA</a>, <a class="el" href="inventory_8cpp_source.html#l00399">inventory::restack()</a>, <a class="el" href="inventory__ui_8h_source.html#l00459">inventory_selector::set_display_stats()</a>, <a class="el" href="inventory__ui_8h_source.html#l00455">inventory_selector::set_hint()</a>, <a class="el" href="inventory__ui_8h_source.html#l00451">inventory_selector::set_title()</a>, <a class="el" href="string__formatter_8h_source.html#l00431">string_format()</a>, and <a class="el" href="game__inventory_8cpp.html#af20cb84a6e8ccc0ed66c352edf29143b">trait_NOPAIN</a>.</p>
+<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="inventory__ui_8cpp_source.html#l01190">inventory_selector::add_character_items()</a>, <a class="el" href="inventory__ui_8cpp_source.html#l01242">inventory_selector::add_nearby_items()</a>, <a class="el" href="game__inventory_8cpp.html#a15450ecf5b34a615affe959125bf1626">bio_painkiller</a>, <a class="el" href="inventory__ui_8cpp_source.html#l01256">inventory_selector::clear_items()</a>, <a class="el" href="crafting_8cpp_source.html#l00554">Character::crafting_inventory()</a>, <a class="el" href="inventory__ui_8cpp_source.html#l01720">inventory_selector::empty()</a>, <a class="el" href="inventory__ui_8cpp_source.html#l01904">inventory_pick_selector::execute()</a>, <a class="el" href="character_8cpp_source.html#l05974">Character::get_name()</a>, <a class="el" href="character_8cpp_source.html#l01798">Character::has_bionic()</a>, <a class="el" href="item_8cpp_source.html#l05303">item::has_flag()</a>, <a class="el" href="visitable_8cpp_source.html#l00169">visitable&lt; T &gt;::has_quality()</a>, <a class="el" href="mutation_8cpp_source.html#l00101">Character::has_trait()</a>, <a class="el" href="character_8h_source.html#l01546">Character::inv</a>, <a class="el" href="visitable_8cpp_source.html#l00324">visitable&lt; T &gt;::items_with()</a>, <a class="el" href="inventory__ui_8h_source.html#l00476">inventory_selector::keep_open</a>, <a class="el" href="output_8h_source.html#l00451">PF_GET_KEY</a>, <a class="el" href="output_8cpp_source.html#l00764">popup()</a>, <a class="el" href="game__inventory_8cpp.html#a42ac34659f1b9fc5662b2f849fd96dab">qual_ANESTHESIA</a>, <a class="el" href="inventory_8cpp_source.html#l00399">inventory::restack()</a>, <a class="el" href="inventory__ui_8h_source.html#l00459">inventory_selector::set_display_stats()</a>, <a class="el" href="inventory__ui_8h_source.html#l00455">inventory_selector::set_hint()</a>, <a class="el" href="inventory__ui_8h_source.html#l00451">inventory_selector::set_title()</a>, <a class="el" href="string__formatter_8h_source.html#l00430">string_format()</a>, <a class="el" href="path__info_8cpp_source.html#l00326">PATH_INFO::title()</a>, and <a class="el" href="game__inventory_8cpp.html#af20cb84a6e8ccc0ed66c352edf29143b">trait_NOPAIN</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="game__inventory_8cpp_source.html#l02047">game_menus::inv::install_bionic()</a>, and <a class="el" href="game__inventory_8cpp_source.html#l02133">game_menus::inv::uninstall_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game__inventory_8cpp_source.html#l02045">game_menus::inv::install_bionic()</a>, and <a class="el" href="game__inventory_8cpp_source.html#l02131">game_menus::inv::uninstall_bionic()</a>.</p>
 
 </div>
 </div>
@@ -564,14 +564,14 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="game__inventory_8cpp_source.html#l00149">149</a> of file <a class="el" href="game__inventory_8cpp_source.html">game_inventory.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>{</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    <span class="keywordflow">return</span> [ &amp;filter ]( <span class="keyword">const</span> <a class="code hl_class" href="classitem__location.html">item_location</a> &amp; loc ) {</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        <span class="keywordflow">return</span> filter( *loc );</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    };</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>}</div>
+<p class="definition">Definition at line <a class="el" href="game__inventory_8cpp_source.html#l00151">151</a> of file <a class="el" href="game__inventory_8cpp_source.html">game_inventory.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>{</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    <span class="keywordflow">return</span> [ &amp;filter ]( <span class="keyword">const</span> <a class="code hl_class" href="classitem__location.html">item_location</a> &amp; loc ) {</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>        <span class="keywordflow">return</span> filter( *loc );</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    };</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>}</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="game__inventory_8cpp_source.html#l00398">game::inv_map_splice()</a>, and <a class="el" href="game__inventory_8cpp_source.html#l00271">game_menus::inv::titled_filter_menu()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game__inventory_8cpp_source.html#l00400">game::inv_map_splice()</a>, and <a class="el" href="game__inventory_8cpp_source.html#l00273">game_menus::inv::titled_filter_menu()</a>.</p>
 
 </div>
 </div>
@@ -599,7 +599,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="game__inventory_8cpp_source.html#l00851">activatable_inventory_preset::get_denial()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game__inventory_8cpp_source.html#l00853">activatable_inventory_preset::get_denial()</a>.</p>
 
 </div>
 </div>
@@ -627,7 +627,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="game__inventory_8cpp_source.html#l02150">bionic_sterilize_preset::get_denial()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game__inventory_8cpp_source.html#l02148">bionic_sterilize_preset::get_denial()</a>.</p>
 
 </div>
 </div>
@@ -655,7 +655,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="game__inventory_8cpp_source.html#l02076">bionic_uninstall_preset::is_shown()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game__inventory_8cpp_source.html#l02074">bionic_uninstall_preset::is_shown()</a>.</p>
 
 </div>
 </div>
@@ -683,7 +683,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="game__inventory_8cpp_source.html#l00617">comestible_inventory_preset::get_denial()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game__inventory_8cpp_source.html#l00619">comestible_inventory_preset::get_denial()</a>.</p>
 
 </div>
 </div>
@@ -711,7 +711,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="game__inventory_8cpp_source.html#l00508">comestible_inventory_preset::comestible_inventory_preset()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game__inventory_8cpp_source.html#l00510">comestible_inventory_preset::comestible_inventory_preset()</a>.</p>
 
 </div>
 </div>
@@ -739,7 +739,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="game__inventory_8cpp_source.html#l00801">game_menus::inv::consume_drink()</a>, and <a class="el" href="game__inventory_8cpp_source.html#l00786">game_menus::inv::consume_food()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game__inventory_8cpp_source.html#l00803">game_menus::inv::consume_drink()</a>, and <a class="el" href="game__inventory_8cpp_source.html#l00788">game_menus::inv::consume_food()</a>.</p>
 
 </div>
 </div>
@@ -767,32 +767,32 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="game__inventory_8cpp_source.html#l00742">742</a> of file <a class="el" href="game__inventory_8cpp_source.html">game_inventory.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00743" name="l00743"></a><span class="lineno">  743</span>{</div>
-<div class="line"><a id="l00744" name="l00744"></a><span class="lineno">  744</span>    <span class="keyword">auto</span> hint = std::string();</div>
-<div class="line"><a id="l00745" name="l00745"></a><span class="lineno">  745</span>    <span class="keyword">auto</span> desc = p.<a class="code hl_function" href="classCharacter.html#aac762e6f1b7cf77c273d9e5beabfe5b5">get_hunger_description</a>();</div>
-<div class="line"><a id="l00746" name="l00746"></a><span class="lineno">  746</span>    hint.append( <a class="code hl_function" href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a>( <span class="stringliteral">&quot;%s %s&quot;</span>, <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;Food :&quot;</span> ), <a class="code hl_function" href="color_8cpp.html#a0f25678be1fc95cb81381a004493a4cc">colorize</a>( desc.first, desc.second ) ) );</div>
-<div class="line"><a id="l00747" name="l00747"></a><span class="lineno">  747</span>    hint.append( <a class="code hl_function" href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a>( <span class="stringliteral">&quot; %s &quot;</span>, <a class="code hl_define" href="output_8h.html#a14f6a09d375f684e448ba23bbbaecf78">LINE_XOXO_S</a> ) );</div>
-<div class="line"><a id="l00748" name="l00748"></a><span class="lineno">  748</span>    desc = p.<a class="code hl_function" href="classCharacter.html#a54a8931c87903f988cb882aa3526923d">get_thirst_description</a>();</div>
-<div class="line"><a id="l00749" name="l00749"></a><span class="lineno">  749</span>    hint.append( <a class="code hl_function" href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a>( <span class="stringliteral">&quot;%s %s&quot;</span>, <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;Drink:&quot;</span> ), <a class="code hl_function" href="color_8cpp.html#a0f25678be1fc95cb81381a004493a4cc">colorize</a>( desc.first, desc.second ) ) );</div>
-<div class="line"><a id="l00750" name="l00750"></a><span class="lineno">  750</span>    hint.append( <a class="code hl_function" href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a>( <span class="stringliteral">&quot; %s &quot;</span>, <a class="code hl_define" href="output_8h.html#a14f6a09d375f684e448ba23bbbaecf78">LINE_XOXO_S</a> ) );</div>
-<div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span>    desc = p.<a class="code hl_function" href="classCharacter.html#a87859e8312ccd742229e234cde3f9d6e">get_pain_description</a>();</div>
-<div class="line"><a id="l00752" name="l00752"></a><span class="lineno">  752</span>    hint.append( <a class="code hl_function" href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a>( <span class="stringliteral">&quot;%s %s&quot;</span>, <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;Pain :&quot;</span> ), <a class="code hl_function" href="color_8cpp.html#a0f25678be1fc95cb81381a004493a4cc">colorize</a>( desc.first, desc.second ) ) );</div>
-<div class="line"><a id="l00753" name="l00753"></a><span class="lineno">  753</span>    hint.append( <a class="code hl_function" href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a>( <span class="stringliteral">&quot; %s &quot;</span>, <a class="code hl_define" href="output_8h.html#a14f6a09d375f684e448ba23bbbaecf78">LINE_XOXO_S</a> ) );</div>
-<div class="line"><a id="l00754" name="l00754"></a><span class="lineno">  754</span>    desc = p.<a class="code hl_function" href="classCharacter.html#aae1dd80beb520669c1c14fb95f011e7d">get_fatigue_description</a>();</div>
-<div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span>    hint.append( <a class="code hl_function" href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a>( <span class="stringliteral">&quot;%s %s&quot;</span>, <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;Rest :&quot;</span> ), <a class="code hl_function" href="color_8cpp.html#a0f25678be1fc95cb81381a004493a4cc">colorize</a>( desc.first, desc.second ) ) );</div>
-<div class="line"><a id="l00756" name="l00756"></a><span class="lineno">  756</span>    <span class="keywordflow">return</span> hint;</div>
-<div class="line"><a id="l00757" name="l00757"></a><span class="lineno">  757</span>}</div>
-<div class="ttc" id="aclassCharacter_html_a54a8931c87903f988cb882aa3526923d"><div class="ttname"><a href="classCharacter.html#a54a8931c87903f988cb882aa3526923d">Character::get_thirst_description</a></div><div class="ttdeci">std::pair&lt; std::string, nc_color &gt; get_thirst_description() const</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l04320">character.cpp:4320</a></div></div>
-<div class="ttc" id="aclassCharacter_html_a87859e8312ccd742229e234cde3f9d6e"><div class="ttname"><a href="classCharacter.html#a87859e8312ccd742229e234cde3f9d6e">Character::get_pain_description</a></div><div class="ttdeci">std::pair&lt; std::string, nc_color &gt; get_pain_description() const override</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l04453">character.cpp:4453</a></div></div>
-<div class="ttc" id="aclassCharacter_html_aac762e6f1b7cf77c273d9e5beabfe5b5"><div class="ttname"><a href="classCharacter.html#aac762e6f1b7cf77c273d9e5beabfe5b5">Character::get_hunger_description</a></div><div class="ttdeci">std::pair&lt; std::string, nc_color &gt; get_hunger_description() const</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l04349">character.cpp:4349</a></div></div>
-<div class="ttc" id="aclassCharacter_html_aae1dd80beb520669c1c14fb95f011e7d"><div class="ttname"><a href="classCharacter.html#aae1dd80beb520669c1c14fb95f011e7d">Character::get_fatigue_description</a></div><div class="ttdeci">std::pair&lt; std::string, nc_color &gt; get_fatigue_description() const</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l04384">character.cpp:4384</a></div></div>
+<p class="definition">Definition at line <a class="el" href="game__inventory_8cpp_source.html#l00744">744</a> of file <a class="el" href="game__inventory_8cpp_source.html">game_inventory.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00745" name="l00745"></a><span class="lineno">  745</span>{</div>
+<div class="line"><a id="l00746" name="l00746"></a><span class="lineno">  746</span>    <span class="keyword">auto</span> hint = std::string();</div>
+<div class="line"><a id="l00747" name="l00747"></a><span class="lineno">  747</span>    <span class="keyword">auto</span> desc = p.<a class="code hl_function" href="classCharacter.html#aac762e6f1b7cf77c273d9e5beabfe5b5">get_hunger_description</a>();</div>
+<div class="line"><a id="l00748" name="l00748"></a><span class="lineno">  748</span>    hint.append( <a class="code hl_function" href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a>( <span class="stringliteral">&quot;%s %s&quot;</span>, <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;Food :&quot;</span> ), <a class="code hl_function" href="color_8cpp.html#a0f25678be1fc95cb81381a004493a4cc">colorize</a>( desc.first, desc.second ) ) );</div>
+<div class="line"><a id="l00749" name="l00749"></a><span class="lineno">  749</span>    hint.append( <a class="code hl_function" href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a>( <span class="stringliteral">&quot; %s &quot;</span>, <a class="code hl_define" href="output_8h.html#a14f6a09d375f684e448ba23bbbaecf78">LINE_XOXO_S</a> ) );</div>
+<div class="line"><a id="l00750" name="l00750"></a><span class="lineno">  750</span>    desc = p.<a class="code hl_function" href="classCharacter.html#a54a8931c87903f988cb882aa3526923d">get_thirst_description</a>();</div>
+<div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span>    hint.append( <a class="code hl_function" href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a>( <span class="stringliteral">&quot;%s %s&quot;</span>, <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;Drink:&quot;</span> ), <a class="code hl_function" href="color_8cpp.html#a0f25678be1fc95cb81381a004493a4cc">colorize</a>( desc.first, desc.second ) ) );</div>
+<div class="line"><a id="l00752" name="l00752"></a><span class="lineno">  752</span>    hint.append( <a class="code hl_function" href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a>( <span class="stringliteral">&quot; %s &quot;</span>, <a class="code hl_define" href="output_8h.html#a14f6a09d375f684e448ba23bbbaecf78">LINE_XOXO_S</a> ) );</div>
+<div class="line"><a id="l00753" name="l00753"></a><span class="lineno">  753</span>    desc = p.<a class="code hl_function" href="classCharacter.html#a87859e8312ccd742229e234cde3f9d6e">get_pain_description</a>();</div>
+<div class="line"><a id="l00754" name="l00754"></a><span class="lineno">  754</span>    hint.append( <a class="code hl_function" href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a>( <span class="stringliteral">&quot;%s %s&quot;</span>, <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;Pain :&quot;</span> ), <a class="code hl_function" href="color_8cpp.html#a0f25678be1fc95cb81381a004493a4cc">colorize</a>( desc.first, desc.second ) ) );</div>
+<div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span>    hint.append( <a class="code hl_function" href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a>( <span class="stringliteral">&quot; %s &quot;</span>, <a class="code hl_define" href="output_8h.html#a14f6a09d375f684e448ba23bbbaecf78">LINE_XOXO_S</a> ) );</div>
+<div class="line"><a id="l00756" name="l00756"></a><span class="lineno">  756</span>    desc = p.<a class="code hl_function" href="classCharacter.html#aae1dd80beb520669c1c14fb95f011e7d">get_fatigue_description</a>();</div>
+<div class="line"><a id="l00757" name="l00757"></a><span class="lineno">  757</span>    hint.append( <a class="code hl_function" href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a>( <span class="stringliteral">&quot;%s %s&quot;</span>, <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;Rest :&quot;</span> ), <a class="code hl_function" href="color_8cpp.html#a0f25678be1fc95cb81381a004493a4cc">colorize</a>( desc.first, desc.second ) ) );</div>
+<div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span>    <span class="keywordflow">return</span> hint;</div>
+<div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span>}</div>
+<div class="ttc" id="aclassCharacter_html_a54a8931c87903f988cb882aa3526923d"><div class="ttname"><a href="classCharacter.html#a54a8931c87903f988cb882aa3526923d">Character::get_thirst_description</a></div><div class="ttdeci">std::pair&lt; std::string, nc_color &gt; get_thirst_description() const</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l04335">character.cpp:4335</a></div></div>
+<div class="ttc" id="aclassCharacter_html_a87859e8312ccd742229e234cde3f9d6e"><div class="ttname"><a href="classCharacter.html#a87859e8312ccd742229e234cde3f9d6e">Character::get_pain_description</a></div><div class="ttdeci">std::pair&lt; std::string, nc_color &gt; get_pain_description() const override</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l04468">character.cpp:4468</a></div></div>
+<div class="ttc" id="aclassCharacter_html_aac762e6f1b7cf77c273d9e5beabfe5b5"><div class="ttname"><a href="classCharacter.html#aac762e6f1b7cf77c273d9e5beabfe5b5">Character::get_hunger_description</a></div><div class="ttdeci">std::pair&lt; std::string, nc_color &gt; get_hunger_description() const</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l04364">character.cpp:4364</a></div></div>
+<div class="ttc" id="aclassCharacter_html_aae1dd80beb520669c1c14fb95f011e7d"><div class="ttname"><a href="classCharacter.html#aae1dd80beb520669c1c14fb95f011e7d">Character::get_fatigue_description</a></div><div class="ttdeci">std::pair&lt; std::string, nc_color &gt; get_fatigue_description() const</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l04399">character.cpp:4399</a></div></div>
 <div class="ttc" id="acolor_8cpp_html_a0f25678be1fc95cb81381a004493a4cc"><div class="ttname"><a href="color_8cpp.html#a0f25678be1fc95cb81381a004493a4cc">colorize</a></div><div class="ttdeci">std::string colorize(const std::string &amp;text, const nc_color &amp;color)</div><div class="ttdef"><b>Definition:</b> <a href="color_8cpp_source.html#l00669">color.cpp:669</a></div></div>
 <div class="ttc" id="aoutput_8h_html_a14f6a09d375f684e448ba23bbbaecf78"><div class="ttname"><a href="output_8h.html#a14f6a09d375f684e448ba23bbbaecf78">LINE_XOXO_S</a></div><div class="ttdeci">#define LINE_XOXO_S</div><div class="ttdef"><b>Definition:</b> <a href="output_8h_source.html#l00063">output.h:63</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="color_8cpp_source.html#l00669">colorize()</a>, <a class="el" href="character_8cpp_source.html#l04384">Character::get_fatigue_description()</a>, <a class="el" href="character_8cpp_source.html#l04349">Character::get_hunger_description()</a>, <a class="el" href="character_8cpp_source.html#l04453">Character::get_pain_description()</a>, <a class="el" href="character_8cpp_source.html#l04320">Character::get_thirst_description()</a>, <a class="el" href="output_8h_source.html#l00063">LINE_XOXO_S</a>, and <a class="el" href="string__formatter_8h_source.html#l00431">string_format()</a>.</p>
+<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="color_8cpp_source.html#l00669">colorize()</a>, <a class="el" href="character_8cpp_source.html#l04399">Character::get_fatigue_description()</a>, <a class="el" href="character_8cpp_source.html#l04364">Character::get_hunger_description()</a>, <a class="el" href="character_8cpp_source.html#l04468">Character::get_pain_description()</a>, <a class="el" href="character_8cpp_source.html#l04335">Character::get_thirst_description()</a>, <a class="el" href="output_8h_source.html#l00063">LINE_XOXO_S</a>, and <a class="el" href="string__formatter_8h_source.html#l00430">string_format()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="game__inventory_8cpp_source.html#l00759">game_menus::inv::consume()</a>, <a class="el" href="game__inventory_8cpp_source.html#l00801">game_menus::inv::consume_drink()</a>, <a class="el" href="game__inventory_8cpp_source.html#l00786">game_menus::inv::consume_food()</a>, and <a class="el" href="game__inventory_8cpp_source.html#l00816">game_menus::inv::consume_meds()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game__inventory_8cpp_source.html#l00761">game_menus::inv::consume()</a>, <a class="el" href="game__inventory_8cpp_source.html#l00803">game_menus::inv::consume_drink()</a>, <a class="el" href="game__inventory_8cpp_source.html#l00788">game_menus::inv::consume_food()</a>, and <a class="el" href="game__inventory_8cpp_source.html#l00818">game_menus::inv::consume_meds()</a>.</p>
 
 </div>
 </div>
@@ -854,94 +854,93 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="game__inventory_8cpp_source.html#l00156">156</a> of file <a class="el" href="game__inventory_8cpp_source.html">game_inventory.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>{</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    <a class="code hl_class" href="classinventory__pick__selector.html">inventory_pick_selector</a> inv_s( u, preset );</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    inv_s.set_title( <a class="code hl_function" href="namespacePATH__INFO.html#af9a3ed879d4c10c8494ba4934c8ec678">title</a> );</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    inv_s.set_hint( hint );</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    inv_s.set_display_stats( <span class="keyword">false</span> );</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    std::pair&lt;size_t, size_t&gt; <a class="code hl_function" href="namespacecatacurses.html#a6e9a783e2fdee22a75e15b2588c683f8">init_pair</a>;</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    <span class="keywordtype">bool</span> init_selection = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    std::string init_filter;</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    <span class="keywordtype">bool</span> has_init_filter = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span> </div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    <span class="keyword">const</span> std::vector&lt;activity_id&gt; consuming {</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>        <a class="code hl_variable" href="game__inventory_8cpp.html#a30e10debf4a47a91c371902258fed73a">ACT_EAT_MENU</a>,</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>        <a class="code hl_variable" href="game__inventory_8cpp.html#a8973b0775af5a2963a2b210fb11bae8c">ACT_CONSUME_FOOD_MENU</a>,</div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>        <a class="code hl_variable" href="game__inventory_8cpp.html#a4945fbf5d80aefdaa1c16e17f3d8c108">ACT_CONSUME_DRINK_MENU</a>,</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>        <a class="code hl_variable" href="game__inventory_8cpp.html#a80bc871a0f1eba80630d6f98d61eb77a">ACT_CONSUME_MEDS_MENU</a> };</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span> </div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    <span class="keywordflow">if</span>( u.<a class="code hl_function" href="classCharacter.html#a6186c819cc348b5a060e140b5bab8226">has_activity</a>( consuming ) &amp;&amp; u.<a class="code hl_variable" href="classCharacter.html#a20839520f569c4f05876a55e89f67361">activity</a>.<a class="code hl_variable" href="classplayer__activity.html#aca09f19b9a36866a33a46cf0c8ee484d">values</a>.size() &gt;= 2 ) {</div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>        <a class="code hl_function" href="namespacecatacurses.html#a6e9a783e2fdee22a75e15b2588c683f8">init_pair</a>.first = u.<a class="code hl_variable" href="classCharacter.html#a20839520f569c4f05876a55e89f67361">activity</a>.<a class="code hl_variable" href="classplayer__activity.html#aca09f19b9a36866a33a46cf0c8ee484d">values</a>[0];</div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>        <a class="code hl_function" href="namespacecatacurses.html#a6e9a783e2fdee22a75e15b2588c683f8">init_pair</a>.second = u.<a class="code hl_variable" href="classCharacter.html#a20839520f569c4f05876a55e89f67361">activity</a>.<a class="code hl_variable" href="classplayer__activity.html#aca09f19b9a36866a33a46cf0c8ee484d">values</a>[1];</div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>        init_selection = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    }</div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>    <span class="keywordflow">if</span>( u.<a class="code hl_function" href="classCharacter.html#a6186c819cc348b5a060e140b5bab8226">has_activity</a>( consuming ) &amp;&amp; !u.<a class="code hl_variable" href="classCharacter.html#a20839520f569c4f05876a55e89f67361">activity</a>.<a class="code hl_variable" href="classplayer__activity.html#a1b2c5a44b184330e2384906fe0727210">str_values</a>.empty() ) {</div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>        init_filter = u.<a class="code hl_variable" href="classCharacter.html#a20839520f569c4f05876a55e89f67361">activity</a>.<a class="code hl_variable" href="classplayer__activity.html#a1b2c5a44b184330e2384906fe0727210">str_values</a>[0];</div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>        has_init_filter = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    }</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span> </div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    <span class="keywordflow">do</span> {</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>        u.<a class="code hl_variable" href="classCharacter.html#a3d69eddc0a03b21378fc68cc08d32c7f">inv</a>.<a class="code hl_function" href="classinventory.html#a02827fc3d19c675083f0ddee201a1549">restack</a>( u );</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span> </div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>        inv_s.clear_items();</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>        inv_s.add_character_items( u );</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>        inv_s.add_nearby_items( radius );</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span> </div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>        <span class="keywordflow">if</span>( has_init_filter ) {</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>            inv_s.set_filter( init_filter );</div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>            has_init_filter = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>        }</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>        <span class="comment">// Set position after filter to keep cursor at the right position</span></div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>        <span class="keywordflow">if</span>( init_selection ) {</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>            inv_s.select_position( <a class="code hl_function" href="namespacecatacurses.html#a6e9a783e2fdee22a75e15b2588c683f8">init_pair</a> );</div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>            init_selection = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>        }</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span> </div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>        <span class="keywordflow">if</span>( inv_s.empty() ) {</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>            <span class="keyword">const</span> std::string msg = none_message.empty()</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>                                    ? <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;You don&#39;t have the necessary item at hand.&quot;</span> )</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>                                    : none_message;</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>            <a class="code hl_function" href="output_8cpp.html#a1e645471d321d71b235fb285da5c08ff">popup</a>( msg, <a class="code hl_enumvalue" href="output_8h.html#ab214b85345aeab978acdcea0250f27f5ad0065579023647501fcb0f076a1c5240">PF_GET_KEY</a> );</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>            <span class="keywordflow">return</span> <a class="code hl_class" href="classitem__location.html">item_location</a>();</div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>        }</div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span> </div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>        <a class="code hl_class" href="classitem__location.html">item_location</a> location = inv_s.execute();</div>
+<p class="definition">Definition at line <a class="el" href="game__inventory_8cpp_source.html#l00158">158</a> of file <a class="el" href="game__inventory_8cpp_source.html">game_inventory.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>{</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    <a class="code hl_class" href="classinventory__pick__selector.html">inventory_pick_selector</a> inv_s( u, preset );</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> </div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    inv_s.set_title( <a class="code hl_function" href="namespacePATH__INFO.html#af9a3ed879d4c10c8494ba4934c8ec678">title</a> );</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    inv_s.set_hint( hint );</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    inv_s.set_display_stats( <span class="keyword">false</span> );</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    std::pair&lt;size_t, size_t&gt; <a class="code hl_function" href="namespacecatacurses.html#a6e9a783e2fdee22a75e15b2588c683f8">init_pair</a>;</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    <span class="keywordtype">bool</span> init_selection = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    std::string init_filter;</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    <span class="keywordtype">bool</span> has_init_filter = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span> </div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    <span class="keyword">const</span> std::vector&lt;activity_id&gt; consuming {</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>        <a class="code hl_variable" href="game__inventory_8cpp.html#a30e10debf4a47a91c371902258fed73a">ACT_EAT_MENU</a>,</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>        <a class="code hl_variable" href="game__inventory_8cpp.html#a8973b0775af5a2963a2b210fb11bae8c">ACT_CONSUME_FOOD_MENU</a>,</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>        <a class="code hl_variable" href="game__inventory_8cpp.html#a4945fbf5d80aefdaa1c16e17f3d8c108">ACT_CONSUME_DRINK_MENU</a>,</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>        <a class="code hl_variable" href="game__inventory_8cpp.html#a80bc871a0f1eba80630d6f98d61eb77a">ACT_CONSUME_MEDS_MENU</a> };</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span> </div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    <span class="keywordflow">if</span>( u.<a class="code hl_function" href="classCharacter.html#a6186c819cc348b5a060e140b5bab8226">has_activity</a>( consuming ) &amp;&amp; u.<a class="code hl_variable" href="classCharacter.html#a20839520f569c4f05876a55e89f67361">activity</a>.<a class="code hl_variable" href="classplayer__activity.html#aca09f19b9a36866a33a46cf0c8ee484d">values</a>.size() &gt;= 2 ) {</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>        <a class="code hl_function" href="namespacecatacurses.html#a6e9a783e2fdee22a75e15b2588c683f8">init_pair</a>.first = u.<a class="code hl_variable" href="classCharacter.html#a20839520f569c4f05876a55e89f67361">activity</a>.<a class="code hl_variable" href="classplayer__activity.html#aca09f19b9a36866a33a46cf0c8ee484d">values</a>[0];</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>        <a class="code hl_function" href="namespacecatacurses.html#a6e9a783e2fdee22a75e15b2588c683f8">init_pair</a>.second = u.<a class="code hl_variable" href="classCharacter.html#a20839520f569c4f05876a55e89f67361">activity</a>.<a class="code hl_variable" href="classplayer__activity.html#aca09f19b9a36866a33a46cf0c8ee484d">values</a>[1];</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>        init_selection = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    }</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>    <span class="keywordflow">if</span>( u.<a class="code hl_function" href="classCharacter.html#a6186c819cc348b5a060e140b5bab8226">has_activity</a>( consuming ) &amp;&amp; !u.<a class="code hl_variable" href="classCharacter.html#a20839520f569c4f05876a55e89f67361">activity</a>.<a class="code hl_variable" href="classplayer__activity.html#a1b2c5a44b184330e2384906fe0727210">str_values</a>.empty() ) {</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>        init_filter = u.<a class="code hl_variable" href="classCharacter.html#a20839520f569c4f05876a55e89f67361">activity</a>.<a class="code hl_variable" href="classplayer__activity.html#a1b2c5a44b184330e2384906fe0727210">str_values</a>[0];</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>        has_init_filter = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    }</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    <span class="keywordflow">do</span> {</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>        u.<a class="code hl_variable" href="classCharacter.html#a3d69eddc0a03b21378fc68cc08d32c7f">inv</a>.<a class="code hl_function" href="classinventory.html#a02827fc3d19c675083f0ddee201a1549">restack</a>( u );</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span> </div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>        inv_s.clear_items();</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>        inv_s.add_character_items( u );</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>        inv_s.add_nearby_items( radius );</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>        <span class="keywordflow">if</span>( has_init_filter ) {</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>            inv_s.set_filter( init_filter );</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>            has_init_filter = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>        }</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>        <span class="comment">// Set position after filter to keep cursor at the right position</span></div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>        <span class="keywordflow">if</span>( init_selection ) {</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>            inv_s.select_position( <a class="code hl_function" href="namespacecatacurses.html#a6e9a783e2fdee22a75e15b2588c683f8">init_pair</a> );</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>            init_selection = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>        }</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span> </div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>        <span class="keywordflow">if</span>( inv_s.empty() ) {</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>            <span class="keyword">const</span> std::string msg = none_message.empty()</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>                                    ? <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;You don&#39;t have the necessary item at hand.&quot;</span> )</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>                                    : none_message;</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>            <a class="code hl_function" href="output_8cpp.html#a1e645471d321d71b235fb285da5c08ff">popup</a>( msg, <a class="code hl_enumvalue" href="output_8h.html#ab214b85345aeab978acdcea0250f27f5ad0065579023647501fcb0f076a1c5240">PF_GET_KEY</a> );</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>            <span class="keywordflow">return</span> <a class="code hl_class" href="classitem__location.html">item_location</a>();</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>        }</div>
 <div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span> </div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>        <span class="keywordflow">if</span>( inv_s.keep_open ) {</div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>            inv_s.keep_open = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>            <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>        }</div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span> </div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>        <span class="keywordflow">if</span>( u.<a class="code hl_function" href="classCharacter.html#a6186c819cc348b5a060e140b5bab8226">has_activity</a>( consuming ) ) {</div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>            u.<a class="code hl_variable" href="classCharacter.html#a20839520f569c4f05876a55e89f67361">activity</a>.<a class="code hl_variable" href="classplayer__activity.html#aca09f19b9a36866a33a46cf0c8ee484d">values</a>.clear();</div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>            <a class="code hl_function" href="namespacecatacurses.html#a6e9a783e2fdee22a75e15b2588c683f8">init_pair</a> = inv_s.get_selection_position();</div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>            u.<a class="code hl_variable" href="classCharacter.html#a20839520f569c4f05876a55e89f67361">activity</a>.<a class="code hl_variable" href="classplayer__activity.html#aca09f19b9a36866a33a46cf0c8ee484d">values</a>.push_back( <a class="code hl_function" href="namespacecatacurses.html#a6e9a783e2fdee22a75e15b2588c683f8">init_pair</a>.first );</div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>            u.<a class="code hl_variable" href="classCharacter.html#a20839520f569c4f05876a55e89f67361">activity</a>.<a class="code hl_variable" href="classplayer__activity.html#aca09f19b9a36866a33a46cf0c8ee484d">values</a>.push_back( <a class="code hl_function" href="namespacecatacurses.html#a6e9a783e2fdee22a75e15b2588c683f8">init_pair</a>.second );</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>            u.<a class="code hl_variable" href="classCharacter.html#a20839520f569c4f05876a55e89f67361">activity</a>.<a class="code hl_variable" href="classplayer__activity.html#a1b2c5a44b184330e2384906fe0727210">str_values</a>.clear();</div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>            u.<a class="code hl_variable" href="classCharacter.html#a20839520f569c4f05876a55e89f67361">activity</a>.<a class="code hl_variable" href="classplayer__activity.html#a1b2c5a44b184330e2384906fe0727210">str_values</a>.emplace_back( inv_s.get_filter() );</div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>        }</div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span> </div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>        <span class="keywordflow">return</span> location;</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>        <a class="code hl_class" href="classitem__location.html">item_location</a> location = inv_s.execute();</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span> </div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>        <span class="keywordflow">if</span>( inv_s.keep_open ) {</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>            inv_s.keep_open = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>        }</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span> </div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>        <span class="keywordflow">if</span>( u.<a class="code hl_function" href="classCharacter.html#a6186c819cc348b5a060e140b5bab8226">has_activity</a>( consuming ) ) {</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>            u.<a class="code hl_variable" href="classCharacter.html#a20839520f569c4f05876a55e89f67361">activity</a>.<a class="code hl_variable" href="classplayer__activity.html#aca09f19b9a36866a33a46cf0c8ee484d">values</a>.clear();</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>            <a class="code hl_function" href="namespacecatacurses.html#a6e9a783e2fdee22a75e15b2588c683f8">init_pair</a> = inv_s.get_selection_position();</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>            u.<a class="code hl_variable" href="classCharacter.html#a20839520f569c4f05876a55e89f67361">activity</a>.<a class="code hl_variable" href="classplayer__activity.html#aca09f19b9a36866a33a46cf0c8ee484d">values</a>.push_back( <a class="code hl_function" href="namespacecatacurses.html#a6e9a783e2fdee22a75e15b2588c683f8">init_pair</a>.first );</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>            u.<a class="code hl_variable" href="classCharacter.html#a20839520f569c4f05876a55e89f67361">activity</a>.<a class="code hl_variable" href="classplayer__activity.html#aca09f19b9a36866a33a46cf0c8ee484d">values</a>.push_back( <a class="code hl_function" href="namespacecatacurses.html#a6e9a783e2fdee22a75e15b2588c683f8">init_pair</a>.second );</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>            u.<a class="code hl_variable" href="classCharacter.html#a20839520f569c4f05876a55e89f67361">activity</a>.<a class="code hl_variable" href="classplayer__activity.html#a1b2c5a44b184330e2384906fe0727210">str_values</a>.clear();</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>            u.<a class="code hl_variable" href="classCharacter.html#a20839520f569c4f05876a55e89f67361">activity</a>.<a class="code hl_variable" href="classplayer__activity.html#a1b2c5a44b184330e2384906fe0727210">str_values</a>.emplace_back( inv_s.get_filter() );</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>        }</div>
 <div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span> </div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>    } <span class="keywordflow">while</span>( <span class="keyword">true</span> );</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>}</div>
-<div class="ttc" id="aclassCharacter_html_a20839520f569c4f05876a55e89f67361"><div class="ttname"><a href="classCharacter.html#a20839520f569c4f05876a55e89f67361">Character::activity</a></div><div class="ttdeci">player_activity activity</div><div class="ttdef"><b>Definition:</b> <a href="character_8h_source.html#l01541">character.h:1541</a></div></div>
-<div class="ttc" id="aclassCharacter_html_a6186c819cc348b5a060e140b5bab8226"><div class="ttname"><a href="classCharacter.html#a6186c819cc348b5a060e140b5bab8226">Character::has_activity</a></div><div class="ttdeci">bool has_activity(const activity_id &amp;type) const</div><div class="ttdoc">Check if player currently has a given activity.</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l09178">character.cpp:9178</a></div></div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>        <span class="keywordflow">return</span> location;</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span> </div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>    } <span class="keywordflow">while</span>( <span class="keyword">true</span> );</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>}</div>
+<div class="ttc" id="aclassCharacter_html_a20839520f569c4f05876a55e89f67361"><div class="ttname"><a href="classCharacter.html#a20839520f569c4f05876a55e89f67361">Character::activity</a></div><div class="ttdeci">player_activity activity</div><div class="ttdef"><b>Definition:</b> <a href="character_8h_source.html#l01543">character.h:1543</a></div></div>
+<div class="ttc" id="aclassCharacter_html_a6186c819cc348b5a060e140b5bab8226"><div class="ttname"><a href="classCharacter.html#a6186c819cc348b5a060e140b5bab8226">Character::has_activity</a></div><div class="ttdeci">bool has_activity(const activity_id &amp;type) const</div><div class="ttdoc">Check if player currently has a given activity.</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l09192">character.cpp:9192</a></div></div>
 <div class="ttc" id="aclassplayer__activity_html_a1b2c5a44b184330e2384906fe0727210"><div class="ttname"><a href="classplayer__activity.html#a1b2c5a44b184330e2384906fe0727210">player_activity::str_values</a></div><div class="ttdeci">std::vector&lt; std::string &gt; str_values</div><div class="ttdef"><b>Definition:</b> <a href="player__activity_8h_source.html#l00058">player_activity.h:58</a></div></div>
 <div class="ttc" id="aclassplayer__activity_html_aca09f19b9a36866a33a46cf0c8ee484d"><div class="ttname"><a href="classplayer__activity.html#aca09f19b9a36866a33a46cf0c8ee484d">player_activity::values</a></div><div class="ttdeci">std::vector&lt; int &gt; values</div><div class="ttdef"><b>Definition:</b> <a href="player__activity_8h_source.html#l00057">player_activity.h:57</a></div></div>
 <div class="ttc" id="agame__inventory_8cpp_html_a30e10debf4a47a91c371902258fed73a"><div class="ttname"><a href="game__inventory_8cpp.html#a30e10debf4a47a91c371902258fed73a">ACT_EAT_MENU</a></div><div class="ttdeci">static const activity_id ACT_EAT_MENU(&quot;ACT_EAT_MENU&quot;)</div></div>
 <div class="ttc" id="agame__inventory_8cpp_html_a4945fbf5d80aefdaa1c16e17f3d8c108"><div class="ttname"><a href="game__inventory_8cpp.html#a4945fbf5d80aefdaa1c16e17f3d8c108">ACT_CONSUME_DRINK_MENU</a></div><div class="ttdeci">static const activity_id ACT_CONSUME_DRINK_MENU(&quot;ACT_CONSUME_DRINK_MENU&quot;)</div></div>
 <div class="ttc" id="agame__inventory_8cpp_html_a80bc871a0f1eba80630d6f98d61eb77a"><div class="ttname"><a href="game__inventory_8cpp.html#a80bc871a0f1eba80630d6f98d61eb77a">ACT_CONSUME_MEDS_MENU</a></div><div class="ttdeci">static const activity_id ACT_CONSUME_MEDS_MENU(&quot;ACT_CONSUME_MEDS_MENU&quot;)</div></div>
 <div class="ttc" id="agame__inventory_8cpp_html_a8973b0775af5a2963a2b210fb11bae8c"><div class="ttname"><a href="game__inventory_8cpp.html#a8973b0775af5a2963a2b210fb11bae8c">ACT_CONSUME_FOOD_MENU</a></div><div class="ttdeci">static const activity_id ACT_CONSUME_FOOD_MENU(&quot;ACT_CONSUME_FOOD_MENU&quot;)</div></div>
-<div class="ttc" id="anamespacePATH__INFO_html_af9a3ed879d4c10c8494ba4934c8ec678"><div class="ttname"><a href="namespacePATH__INFO.html#af9a3ed879d4c10c8494ba4934c8ec678">PATH_INFO::title</a></div><div class="ttdeci">std::string title(holiday current_holiday)</div><div class="ttdef"><b>Definition:</b> <a href="path__info_8cpp_source.html#l00334">path_info.cpp:334</a></div></div>
 <div class="ttc" id="anamespacecatacurses_html_a6e9a783e2fdee22a75e15b2588c683f8"><div class="ttname"><a href="namespacecatacurses.html#a6e9a783e2fdee22a75e15b2588c683f8">catacurses::init_pair</a></div><div class="ttdeci">void init_pair(short pair, base_color f, base_color b)</div><div class="ttdef"><b>Definition:</b> <a href="ncurses__def_8cpp_source.html#l00209">ncurses_def.cpp:209</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="game__inventory_8cpp.html#a4945fbf5d80aefdaa1c16e17f3d8c108">ACT_CONSUME_DRINK_MENU</a>, <a class="el" href="game__inventory_8cpp.html#a8973b0775af5a2963a2b210fb11bae8c">ACT_CONSUME_FOOD_MENU</a>, <a class="el" href="game__inventory_8cpp.html#a80bc871a0f1eba80630d6f98d61eb77a">ACT_CONSUME_MEDS_MENU</a>, <a class="el" href="game__inventory_8cpp.html#a30e10debf4a47a91c371902258fed73a">ACT_EAT_MENU</a>, <a class="el" href="character_8h_source.html#l01541">Character::activity</a>, <a class="el" href="inventory__ui_8cpp_source.html#l01190">inventory_selector::add_character_items()</a>, <a class="el" href="inventory__ui_8cpp_source.html#l01242">inventory_selector::add_nearby_items()</a>, <a class="el" href="inventory__ui_8cpp_source.html#l01256">inventory_selector::clear_items()</a>, <a class="el" href="inventory__ui_8cpp_source.html#l01720">inventory_selector::empty()</a>, <a class="el" href="inventory__ui_8cpp_source.html#l01904">inventory_pick_selector::execute()</a>, <a class="el" href="inventory__ui_8cpp_source.html#l01589">inventory_selector::get_filter()</a>, <a class="el" href="inventory__ui_8h_source.html#l00576">inventory_selector::get_selection_position()</a>, <a class="el" href="character_8cpp_source.html#l09178">Character::has_activity()</a>, <a class="el" href="ncurses__def_8cpp_source.html#l00209">catacurses::init_pair()</a>, <a class="el" href="character_8h_source.html#l01544">Character::inv</a>, <a class="el" href="inventory__ui_8h_source.html#l00476">inventory_selector::keep_open</a>, <a class="el" href="output_8h_source.html#l00451">PF_GET_KEY</a>, <a class="el" href="output_8cpp_source.html#l00764">popup()</a>, <a class="el" href="inventory_8cpp_source.html#l00399">inventory::restack()</a>, <a class="el" href="inventory__ui_8h_source.html#l00570">inventory_selector::select_position()</a>, <a class="el" href="inventory__ui_8h_source.html#l00459">inventory_selector::set_display_stats()</a>, <a class="el" href="inventory__ui_8cpp_source.html#l01576">inventory_selector::set_filter()</a>, <a class="el" href="inventory__ui_8h_source.html#l00455">inventory_selector::set_hint()</a>, <a class="el" href="inventory__ui_8h_source.html#l00451">inventory_selector::set_title()</a>, <a class="el" href="player__activity_8h_source.html#l00058">player_activity::str_values</a>, <a class="el" href="path__info_8cpp_source.html#l00334">PATH_INFO::title()</a>, and <a class="el" href="player__activity_8h_source.html#l00057">player_activity::values</a>.</p>
+<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="game__inventory_8cpp.html#a4945fbf5d80aefdaa1c16e17f3d8c108">ACT_CONSUME_DRINK_MENU</a>, <a class="el" href="game__inventory_8cpp.html#a8973b0775af5a2963a2b210fb11bae8c">ACT_CONSUME_FOOD_MENU</a>, <a class="el" href="game__inventory_8cpp.html#a80bc871a0f1eba80630d6f98d61eb77a">ACT_CONSUME_MEDS_MENU</a>, <a class="el" href="game__inventory_8cpp.html#a30e10debf4a47a91c371902258fed73a">ACT_EAT_MENU</a>, <a class="el" href="character_8h_source.html#l01543">Character::activity</a>, <a class="el" href="inventory__ui_8cpp_source.html#l01190">inventory_selector::add_character_items()</a>, <a class="el" href="inventory__ui_8cpp_source.html#l01242">inventory_selector::add_nearby_items()</a>, <a class="el" href="inventory__ui_8cpp_source.html#l01256">inventory_selector::clear_items()</a>, <a class="el" href="inventory__ui_8cpp_source.html#l01720">inventory_selector::empty()</a>, <a class="el" href="inventory__ui_8cpp_source.html#l01904">inventory_pick_selector::execute()</a>, <a class="el" href="inventory__ui_8cpp_source.html#l01589">inventory_selector::get_filter()</a>, <a class="el" href="inventory__ui_8h_source.html#l00576">inventory_selector::get_selection_position()</a>, <a class="el" href="character_8cpp_source.html#l09192">Character::has_activity()</a>, <a class="el" href="ncurses__def_8cpp_source.html#l00209">catacurses::init_pair()</a>, <a class="el" href="character_8h_source.html#l01546">Character::inv</a>, <a class="el" href="inventory__ui_8h_source.html#l00476">inventory_selector::keep_open</a>, <a class="el" href="output_8h_source.html#l00451">PF_GET_KEY</a>, <a class="el" href="output_8cpp_source.html#l00764">popup()</a>, <a class="el" href="inventory_8cpp_source.html#l00399">inventory::restack()</a>, <a class="el" href="inventory__ui_8h_source.html#l00570">inventory_selector::select_position()</a>, <a class="el" href="inventory__ui_8h_source.html#l00459">inventory_selector::set_display_stats()</a>, <a class="el" href="inventory__ui_8cpp_source.html#l01576">inventory_selector::set_filter()</a>, <a class="el" href="inventory__ui_8h_source.html#l00455">inventory_selector::set_hint()</a>, <a class="el" href="inventory__ui_8h_source.html#l00451">inventory_selector::set_title()</a>, <a class="el" href="player__activity_8h_source.html#l00058">player_activity::str_values</a>, <a class="el" href="path__info_8cpp_source.html#l00326">PATH_INFO::title()</a>, and <a class="el" href="player__activity_8h_source.html#l00057">player_activity::values</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="game__inventory_8cpp_source.html#l00759">game_menus::inv::consume()</a>, <a class="el" href="game__inventory_8cpp_source.html#l00801">game_menus::inv::consume_drink()</a>, <a class="el" href="game__inventory_8cpp_source.html#l00786">game_menus::inv::consume_food()</a>, <a class="el" href="game__inventory_8cpp_source.html#l00816">game_menus::inv::consume_meds()</a>, <a class="el" href="game__inventory_8cpp_source.html#l00405">game_menus::inv::container_for()</a>, <a class="el" href="game__inventory_8cpp_source.html#l00498">game_menus::inv::disassemble()</a>, <a class="el" href="game__inventory_8cpp_source.html#l00969">game_menus::inv::gun_to_modify()</a>, <a class="el" href="game__inventory_8cpp_source.html#l01357">game_menus::inv::holster()</a>, <a class="el" href="game__inventory_8cpp_source.html#l00398">game::inv_map_splice()</a>, <a class="el" href="game__inventory_8cpp_source.html#l01222">game_menus::inv::read()</a>, <a class="el" href="game__inventory_8cpp_source.html#l01480">game_menus::inv::repair()</a>, <a class="el" href="game__inventory_8cpp_source.html#l01456">game_menus::inv::salvage()</a>, <a class="el" href="game__inventory_8cpp_source.html#l01489">game_menus::inv::saw_barrel()</a>, <a class="el" href="game__inventory_8cpp_source.html#l01508">game_menus::inv::saw_stock()</a>, <a class="el" href="game__inventory_8cpp_source.html#l01243">game_menus::inv::steal()</a>, <a class="el" href="game__inventory_8cpp_source.html#l00392">game_menus::inv::take_off()</a>, <a class="el" href="game__inventory_8cpp_source.html#l00271">game_menus::inv::titled_filter_menu()</a>, <a class="el" href="game__inventory_8cpp_source.html#l00278">game_menus::inv::titled_menu()</a>, <a class="el" href="game__inventory_8cpp_source.html#l00898">game_menus::inv::use()</a>, <a class="el" href="game__inventory_8cpp_source.html#l00364">game_menus::inv::wear()</a>, and <a class="el" href="game__inventory_8cpp_source.html#l01336">game_menus::inv::wield()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game__inventory_8cpp_source.html#l00761">game_menus::inv::consume()</a>, <a class="el" href="game__inventory_8cpp_source.html#l00803">game_menus::inv::consume_drink()</a>, <a class="el" href="game__inventory_8cpp_source.html#l00788">game_menus::inv::consume_food()</a>, <a class="el" href="game__inventory_8cpp_source.html#l00818">game_menus::inv::consume_meds()</a>, <a class="el" href="game__inventory_8cpp_source.html#l00407">game_menus::inv::container_for()</a>, <a class="el" href="game__inventory_8cpp_source.html#l00500">game_menus::inv::disassemble()</a>, <a class="el" href="game__inventory_8cpp_source.html#l00971">game_menus::inv::gun_to_modify()</a>, <a class="el" href="game__inventory_8cpp_source.html#l01359">game_menus::inv::holster()</a>, <a class="el" href="game__inventory_8cpp_source.html#l00400">game::inv_map_splice()</a>, <a class="el" href="game__inventory_8cpp_source.html#l01224">game_menus::inv::read()</a>, <a class="el" href="game__inventory_8cpp_source.html#l01482">game_menus::inv::repair()</a>, <a class="el" href="game__inventory_8cpp_source.html#l01458">game_menus::inv::salvage()</a>, <a class="el" href="game__inventory_8cpp_source.html#l01491">game_menus::inv::saw_barrel()</a>, <a class="el" href="game__inventory_8cpp_source.html#l01510">game_menus::inv::saw_stock()</a>, <a class="el" href="game__inventory_8cpp_source.html#l01245">game_menus::inv::steal()</a>, <a class="el" href="game__inventory_8cpp_source.html#l00394">game_menus::inv::take_off()</a>, <a class="el" href="game__inventory_8cpp_source.html#l00273">game_menus::inv::titled_filter_menu()</a>, <a class="el" href="game__inventory_8cpp_source.html#l00280">game_menus::inv::titled_menu()</a>, <a class="el" href="game__inventory_8cpp_source.html#l00900">game_menus::inv::use()</a>, <a class="el" href="game__inventory_8cpp_source.html#l00366">game_menus::inv::wear()</a>, and <a class="el" href="game__inventory_8cpp_source.html#l01338">game_menus::inv::wield()</a>.</p>
 
 </div>
 </div>
@@ -970,7 +969,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="game__inventory_8cpp_source.html#l00801">game_menus::inv::consume_drink()</a>, and <a class="el" href="game__inventory_8cpp_source.html#l00156">inv_internal()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game__inventory_8cpp_source.html#l00803">game_menus::inv::consume_drink()</a>, and <a class="el" href="game__inventory_8cpp_source.html#l00158">inv_internal()</a>.</p>
 
 </div>
 </div>
@@ -998,7 +997,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="game__inventory_8cpp_source.html#l00786">game_menus::inv::consume_food()</a>, and <a class="el" href="game__inventory_8cpp_source.html#l00156">inv_internal()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game__inventory_8cpp_source.html#l00788">game_menus::inv::consume_food()</a>, and <a class="el" href="game__inventory_8cpp_source.html#l00158">inv_internal()</a>.</p>
 
 </div>
 </div>
@@ -1026,7 +1025,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="game__inventory_8cpp_source.html#l00816">game_menus::inv::consume_meds()</a>, and <a class="el" href="game__inventory_8cpp_source.html#l00156">inv_internal()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game__inventory_8cpp_source.html#l00818">game_menus::inv::consume_meds()</a>, and <a class="el" href="game__inventory_8cpp_source.html#l00158">inv_internal()</a>.</p>
 
 </div>
 </div>
@@ -1054,7 +1053,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="game__inventory_8cpp_source.html#l00759">game_menus::inv::consume()</a>, and <a class="el" href="game__inventory_8cpp_source.html#l00156">inv_internal()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game__inventory_8cpp_source.html#l00761">game_menus::inv::consume()</a>, and <a class="el" href="game__inventory_8cpp_source.html#l00158">inv_internal()</a>.</p>
 
 </div>
 </div>
@@ -1082,7 +1081,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="game__inventory_8cpp_source.html#l01788">autodoc_internal()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game__inventory_8cpp_source.html#l01790">autodoc_internal()</a>.</p>
 
 </div>
 </div>
@@ -1110,7 +1109,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="game__inventory_8cpp_source.html#l00508">comestible_inventory_preset::comestible_inventory_preset()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game__inventory_8cpp_source.html#l00510">comestible_inventory_preset::comestible_inventory_preset()</a>.</p>
 
 </div>
 </div>
@@ -1138,7 +1137,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="game__inventory_8cpp_source.html#l01879">bionic_install_preset::get_denial()</a>, <a class="el" href="game__inventory_8cpp_source.html#l01983">bionic_install_surgeon_preset::get_denial()</a>, and <a class="el" href="game__inventory_8cpp_source.html#l02146">bionic_sterilize_preset::is_shown()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game__inventory_8cpp_source.html#l01877">bionic_install_preset::get_denial()</a>, <a class="el" href="game__inventory_8cpp_source.html#l01981">bionic_install_surgeon_preset::get_denial()</a>, and <a class="el" href="game__inventory_8cpp_source.html#l02144">bionic_sterilize_preset::is_shown()</a>.</p>
 
 </div>
 </div>
@@ -1166,7 +1165,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="game__inventory_8cpp_source.html#l01879">bionic_install_preset::get_denial()</a>, and <a class="el" href="game__inventory_8cpp_source.html#l01983">bionic_install_surgeon_preset::get_denial()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game__inventory_8cpp_source.html#l01877">bionic_install_preset::get_denial()</a>, and <a class="el" href="game__inventory_8cpp_source.html#l01981">bionic_install_surgeon_preset::get_denial()</a>.</p>
 
 </div>
 </div>
@@ -1194,7 +1193,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="game__inventory_8cpp_source.html#l01788">autodoc_internal()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game__inventory_8cpp_source.html#l01790">autodoc_internal()</a>.</p>
 
 </div>
 </div>
@@ -1222,7 +1221,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="game__inventory_8cpp_source.html#l01926">bionic_install_preset::get_failure_chance()</a>, <a class="el" href="game__inventory_8cpp_source.html#l02021">bionic_install_surgeon_preset::get_failure_chance()</a>, and <a class="el" href="game__inventory_8cpp_source.html#l02105">bionic_uninstall_preset::get_failure_chance()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game__inventory_8cpp_source.html#l01924">bionic_install_preset::get_failure_chance()</a>, <a class="el" href="game__inventory_8cpp_source.html#l02019">bionic_install_surgeon_preset::get_failure_chance()</a>, and <a class="el" href="game__inventory_8cpp_source.html#l02103">bionic_uninstall_preset::get_failure_chance()</a>.</p>
 
 </div>
 </div>
@@ -1250,7 +1249,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="game__inventory_8cpp_source.html#l01926">bionic_install_preset::get_failure_chance()</a>, <a class="el" href="game__inventory_8cpp_source.html#l02021">bionic_install_surgeon_preset::get_failure_chance()</a>, and <a class="el" href="game__inventory_8cpp_source.html#l02105">bionic_uninstall_preset::get_failure_chance()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game__inventory_8cpp_source.html#l01924">bionic_install_preset::get_failure_chance()</a>, <a class="el" href="game__inventory_8cpp_source.html#l02019">bionic_install_surgeon_preset::get_failure_chance()</a>, and <a class="el" href="game__inventory_8cpp_source.html#l02103">bionic_uninstall_preset::get_failure_chance()</a>.</p>
 
 </div>
 </div>
@@ -1278,7 +1277,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="game__inventory_8cpp_source.html#l01926">bionic_install_preset::get_failure_chance()</a>, <a class="el" href="game__inventory_8cpp_source.html#l02021">bionic_install_surgeon_preset::get_failure_chance()</a>, and <a class="el" href="game__inventory_8cpp_source.html#l02105">bionic_uninstall_preset::get_failure_chance()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game__inventory_8cpp_source.html#l01924">bionic_install_preset::get_failure_chance()</a>, <a class="el" href="game__inventory_8cpp_source.html#l02019">bionic_install_surgeon_preset::get_failure_chance()</a>, and <a class="el" href="game__inventory_8cpp_source.html#l02103">bionic_uninstall_preset::get_failure_chance()</a>.</p>
 
 </div>
 </div>
@@ -1306,7 +1305,35 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="game__inventory_8cpp_source.html#l01926">bionic_install_preset::get_failure_chance()</a>, <a class="el" href="game__inventory_8cpp_source.html#l02021">bionic_install_surgeon_preset::get_failure_chance()</a>, and <a class="el" href="game__inventory_8cpp_source.html#l02105">bionic_uninstall_preset::get_failure_chance()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game__inventory_8cpp_source.html#l01924">bionic_install_preset::get_failure_chance()</a>, <a class="el" href="game__inventory_8cpp_source.html#l02019">bionic_install_surgeon_preset::get_failure_chance()</a>, and <a class="el" href="game__inventory_8cpp_source.html#l02103">bionic_uninstall_preset::get_failure_chance()</a>.</p>
+
+</div>
+</div>
+<a id="a638e7eb4b8c8bdd2727763a767bd5617" name="a638e7eb4b8c8bdd2727763a767bd5617"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a638e7eb4b8c8bdd2727763a767bd5617">&#9670;&nbsp;</a></span>trait_INFRESIST</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="type__id_8h.html#a44aa01c09faf1c1723400eb9075a1f4d">trait_id</a> trait_INFRESIST(&quot;INFRESIST&quot;) </td>
+          <td>(</td>
+          <td class="paramtype">&quot;INFRESIST&quot;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="game__inventory_8cpp_source.html#l01877">bionic_install_preset::get_denial()</a>.</p>
 
 </div>
 </div>
@@ -1334,7 +1361,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="game__inventory_8cpp_source.html#l01788">autodoc_internal()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game__inventory_8cpp_source.html#l01790">autodoc_internal()</a>.</p>
 
 </div>
 </div>
@@ -1362,7 +1389,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="game__inventory_8cpp_source.html#l00655">comestible_inventory_preset::get_order()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game__inventory_8cpp_source.html#l00657">comestible_inventory_preset::get_order()</a>.</p>
 
 </div>
 </div>
@@ -1390,7 +1417,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="game__inventory_8cpp_source.html#l00655">comestible_inventory_preset::get_order()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game__inventory_8cpp_source.html#l00657">comestible_inventory_preset::get_order()</a>.</p>
 
 </div>
 </div>
@@ -1400,7 +1427,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="game__inventory_8cpp.html">game_inventory.cpp</a></li>
-    <li class="footer">Generated on Fri Apr 7 2023 11:54:30 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Apr 30 2023 06:47:53 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

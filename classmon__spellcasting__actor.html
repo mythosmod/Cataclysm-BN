@@ -226,42 +226,42 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classmattack__actor.html#a5108830c17584c3c8db75dc6bfa1430c">mattack_actor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="mattack__actors_8cpp_source.html#l00185">185</a> of file <a class="el" href="mattack__actors_8cpp_source.html">mattack_actors.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>{</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    <span class="keywordflow">if</span>( !mon.<a class="code hl_function" href="classmonster.html#a0f83a7ee7bd8d96efc80200c5a5caf5b">can_act</a>() ) {</div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>    }</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span> </div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    <span class="keywordflow">if</span>( !mon.<a class="code hl_function" href="classmonster.html#a3414f60cd7b63132b8ab605f6949edf4">attack_target</a>() ) {</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>        <span class="comment">// this is an attack. there is no reason to attack if there isn&#39;t a real target.</span></div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    }</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>    <span class="keyword">const</span> <a class="code hl_struct" href="structtripoint.html">tripoint</a> target = <span class="keyword">self</span> ? mon.<a class="code hl_function" href="classmonster.html#a55d95177d49525c0da7649f135a6306d">pos</a>() : mon.<a class="code hl_function" href="classmonster.html#a3414f60cd7b63132b8ab605f6949edf4">attack_target</a>()-&gt;<a class="code hl_function" href="classCreature.html#a45926a7ba63ccc9be744f87a4d540b7d">pos</a>();</div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    std::string fx = <a class="code hl_variable" href="classmon__spellcasting__actor.html#a73ff0fd6d0ee6a7366c8ed2ed5a97d5e">spell_data</a>.<a class="code hl_function" href="classspell.html#aa34fc8ebf8b820ac055f4b4dd9d78c35">effect</a>();</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>    <span class="comment">// is the spell an attack that needs to hit the target?</span></div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    <span class="comment">// examples of spells that don&#39;t: summons, teleport self</span></div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    <span class="keyword">const</span> <span class="keywordtype">bool</span> targeted_attack = fx == <span class="stringliteral">&quot;target_attack&quot;</span> || fx == <span class="stringliteral">&quot;projectile_attack&quot;</span> ||</div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>                                 fx == <span class="stringliteral">&quot;cone_attack&quot;</span> || fx == <span class="stringliteral">&quot;line_attack&quot;</span>;</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span> </div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    <span class="keywordflow">if</span>( targeted_attack &amp;&amp; <a class="code hl_function" href="coordinates_8h.html#a47953b33a873caa0861b12222842a5ec">rl_dist</a>( mon.<a class="code hl_function" href="classmonster.html#a55d95177d49525c0da7649f135a6306d">pos</a>(), target ) &gt; <a class="code hl_variable" href="classmon__spellcasting__actor.html#a73ff0fd6d0ee6a7366c8ed2ed5a97d5e">spell_data</a>.<a class="code hl_function" href="classspell.html#a805518bf44455e4652d16db9922945f5">range</a>() ) {</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    }</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span> </div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>    std::string target_name;</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>    <span class="keywordflow">if</span>( <span class="keyword">const</span> <a class="code hl_class" href="classCreature.html">Creature</a> *target_monster = <a class="code hl_variable" href="game_8cpp.html#abeb98e93502d73818b4a73fabe191bc1">g</a>-&gt;critter_at( target ) ) {</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>        target_name = target_monster-&gt;disp_name();</div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>    }</div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span> </div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>    <span class="keywordflow">if</span>( <a class="code hl_variable" href="game_8cpp.html#abeb98e93502d73818b4a73fabe191bc1">g</a>-&gt;u.sees( target ) ) {</div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>        <a class="code hl_function" href="messages_8cpp.html#a54489326fc37823819c5105addfa27f2">add_msg</a>( <a class="code hl_variable" href="classmon__spellcasting__actor.html#a73ff0fd6d0ee6a7366c8ed2ed5a97d5e">spell_data</a>.<a class="code hl_function" href="classspell.html#ac4826c2795f1db1547ef57ccd408f8cf">message</a>(), mon.<a class="code hl_function" href="classmonster.html#af3444e4763b1dd53e75c5ea50fd8ba9f">disp_name</a>(), <a class="code hl_variable" href="classmon__spellcasting__actor.html#a73ff0fd6d0ee6a7366c8ed2ed5a97d5e">spell_data</a>.<a class="code hl_function" href="classspell.html#abdf34d5415c3fdafcd84fe3a7101bddb">name</a>(), target_name );</div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>    }</div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span> </div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>    <a class="code hl_variable" href="classmon__spellcasting__actor.html#a73ff0fd6d0ee6a7366c8ed2ed5a97d5e">spell_data</a>.<a class="code hl_function" href="classspell.html#a0752e28bd2c982a681521d2012eec12d">cast_all_effects</a>( mon, target );</div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span> </div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>}</div>
+<p class="definition">Definition at line <a class="el" href="mattack__actors_8cpp_source.html#l00186">186</a> of file <a class="el" href="mattack__actors_8cpp_source.html">mattack_actors.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>{</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    <span class="keywordflow">if</span>( !mon.<a class="code hl_function" href="classmonster.html#a0f83a7ee7bd8d96efc80200c5a5caf5b">can_act</a>() ) {</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    }</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span> </div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    <span class="keywordflow">if</span>( !mon.<a class="code hl_function" href="classmonster.html#a3414f60cd7b63132b8ab605f6949edf4">attack_target</a>() ) {</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>        <span class="comment">// this is an attack. there is no reason to attack if there isn&#39;t a real target.</span></div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>    }</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>    <span class="keyword">const</span> <a class="code hl_struct" href="structtripoint.html">tripoint</a> target = <span class="keyword">self</span> ? mon.<a class="code hl_function" href="classmonster.html#a55d95177d49525c0da7649f135a6306d">pos</a>() : mon.<a class="code hl_function" href="classmonster.html#a3414f60cd7b63132b8ab605f6949edf4">attack_target</a>()-&gt;<a class="code hl_function" href="classCreature.html#a45926a7ba63ccc9be744f87a4d540b7d">pos</a>();</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span> </div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>    std::string fx = <a class="code hl_variable" href="classmon__spellcasting__actor.html#a73ff0fd6d0ee6a7366c8ed2ed5a97d5e">spell_data</a>.<a class="code hl_function" href="classspell.html#aa34fc8ebf8b820ac055f4b4dd9d78c35">effect</a>();</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    <span class="comment">// is the spell an attack that needs to hit the target?</span></div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    <span class="comment">// examples of spells that don&#39;t: summons, teleport self</span></div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    <span class="keyword">const</span> <span class="keywordtype">bool</span> targeted_attack = fx == <span class="stringliteral">&quot;target_attack&quot;</span> || fx == <span class="stringliteral">&quot;projectile_attack&quot;</span> ||</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>                                 fx == <span class="stringliteral">&quot;cone_attack&quot;</span> || fx == <span class="stringliteral">&quot;line_attack&quot;</span>;</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span> </div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    <span class="keywordflow">if</span>( targeted_attack &amp;&amp; <a class="code hl_function" href="coordinates_8h.html#a47953b33a873caa0861b12222842a5ec">rl_dist</a>( mon.<a class="code hl_function" href="classmonster.html#a55d95177d49525c0da7649f135a6306d">pos</a>(), target ) &gt; <a class="code hl_variable" href="classmon__spellcasting__actor.html#a73ff0fd6d0ee6a7366c8ed2ed5a97d5e">spell_data</a>.<a class="code hl_function" href="classspell.html#a805518bf44455e4652d16db9922945f5">range</a>() ) {</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    }</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span> </div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>    std::string target_name;</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>    <span class="keywordflow">if</span>( <span class="keyword">const</span> <a class="code hl_class" href="classCreature.html">Creature</a> *target_monster = <a class="code hl_variable" href="game_8cpp.html#abeb98e93502d73818b4a73fabe191bc1">g</a>-&gt;critter_at( target ) ) {</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>        target_name = target_monster-&gt;disp_name();</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>    }</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span> </div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>    <span class="keywordflow">if</span>( <a class="code hl_variable" href="game_8cpp.html#abeb98e93502d73818b4a73fabe191bc1">g</a>-&gt;u.sees( target ) ) {</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>        <a class="code hl_function" href="messages_8cpp.html#a54489326fc37823819c5105addfa27f2">add_msg</a>( <a class="code hl_variable" href="classmon__spellcasting__actor.html#a73ff0fd6d0ee6a7366c8ed2ed5a97d5e">spell_data</a>.<a class="code hl_function" href="classspell.html#ac4826c2795f1db1547ef57ccd408f8cf">message</a>(), mon.<a class="code hl_function" href="classmonster.html#af3444e4763b1dd53e75c5ea50fd8ba9f">disp_name</a>(), <a class="code hl_variable" href="classmon__spellcasting__actor.html#a73ff0fd6d0ee6a7366c8ed2ed5a97d5e">spell_data</a>.<a class="code hl_function" href="classspell.html#abdf34d5415c3fdafcd84fe3a7101bddb">name</a>(), target_name );</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>    }</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span> </div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>    <a class="code hl_variable" href="classmon__spellcasting__actor.html#a73ff0fd6d0ee6a7366c8ed2ed5a97d5e">spell_data</a>.<a class="code hl_function" href="classspell.html#a0752e28bd2c982a681521d2012eec12d">cast_all_effects</a>( mon, target );</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span> </div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>}</div>
 <div class="ttc" id="aclassCreature_html"><div class="ttname"><a href="classCreature.html">Creature</a></div><div class="ttdef"><b>Definition:</b> <a href="creature_8h_source.html#l00077">creature.h:78</a></div></div>
 <div class="ttc" id="aclassCreature_html_a45926a7ba63ccc9be744f87a4d540b7d"><div class="ttname"><a href="classCreature.html#a45926a7ba63ccc9be744f87a4d540b7d">Creature::pos</a></div><div class="ttdeci">virtual const tripoint &amp; pos() const =0</div></div>
 <div class="ttc" id="aclassmon__spellcasting__actor_html_a73ff0fd6d0ee6a7366c8ed2ed5a97d5e"><div class="ttname"><a href="classmon__spellcasting__actor.html#a73ff0fd6d0ee6a7366c8ed2ed5a97d5e">mon_spellcasting_actor::spell_data</a></div><div class="ttdeci">spell spell_data</div><div class="ttdef"><b>Definition:</b> <a href="mattack__actors_8h_source.html#l00052">mattack_actors.h:52</a></div></div>
@@ -276,10 +276,10 @@ Additional Inherited Members</h2></td></tr>
 <div class="ttc" id="aclassspell_html_ac4826c2795f1db1547ef57ccd408f8cf"><div class="ttname"><a href="classspell.html#ac4826c2795f1db1547ef57ccd408f8cf">spell::message</a></div><div class="ttdeci">std::string message() const</div><div class="ttdef"><b>Definition:</b> <a href="magic_8cpp_source.html#l00734">magic.cpp:734</a></div></div>
 <div class="ttc" id="acoordinates_8h_html_a47953b33a873caa0861b12222842a5ec"><div class="ttname"><a href="coordinates_8h.html#a47953b33a873caa0861b12222842a5ec">rl_dist</a></div><div class="ttdeci">int rl_dist(const coords::coord_point&lt; Point, Origin, Scale &gt; &amp;loc1, const coords::coord_point&lt; Point, Origin, Scale &gt; &amp;loc2)</div><div class="ttdef"><b>Definition:</b> <a href="coordinates_8h_source.html#l00519">coordinates.h:519</a></div></div>
 <div class="ttc" id="agame_8cpp_html_abeb98e93502d73818b4a73fabe191bc1"><div class="ttname"><a href="game_8cpp.html#abeb98e93502d73818b4a73fabe191bc1">g</a></div><div class="ttdeci">std::unique_ptr&lt; game &gt; g</div><div class="ttdef"><b>Definition:</b> <a href="game_8cpp_source.html#l00281">game.cpp:281</a></div></div>
-<div class="ttc" id="amessages_8cpp_html_a54489326fc37823819c5105addfa27f2"><div class="ttname"><a href="messages_8cpp.html#a54489326fc37823819c5105addfa27f2">add_msg</a></div><div class="ttdeci">void add_msg(std::string msg)</div><div class="ttdef"><b>Definition:</b> <a href="messages_8cpp_source.html#l00884">messages.cpp:884</a></div></div>
+<div class="ttc" id="amessages_8cpp_html_a54489326fc37823819c5105addfa27f2"><div class="ttname"><a href="messages_8cpp.html#a54489326fc37823819c5105addfa27f2">add_msg</a></div><div class="ttdeci">void add_msg(std::string msg)</div><div class="ttdef"><b>Definition:</b> <a href="messages_8cpp_source.html#l00910">messages.cpp:910</a></div></div>
 <div class="ttc" id="astructtripoint_html"><div class="ttname"><a href="structtripoint.html">tripoint</a></div><div class="ttdef"><b>Definition:</b> <a href="point_8h_source.html#l00133">point.h:133</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="messages_8cpp_source.html#l00884">add_msg()</a>, <a class="el" href="monster_8cpp_source.html#l01022">monster::attack_target()</a>, <a class="el" href="monster_8cpp_source.html#l00960">monster::can_act()</a>, <a class="el" href="magic_8cpp_source.html#l01181">spell::cast_all_effects()</a>, <a class="el" href="monster_8cpp_source.html#l00537">monster::disp_name()</a>, <a class="el" href="magic_8cpp_source.html#l00935">spell::effect()</a>, <a class="el" href="game_8cpp_source.html#l00281">g</a>, <a class="el" href="magic_8cpp_source.html#l00734">spell::message()</a>, <a class="el" href="magic_8cpp_source.html#l00729">spell::name()</a>, <a class="el" href="classCreature.html#a45926a7ba63ccc9be744f87a4d540b7d">Creature::pos()</a>, <a class="el" href="monster_8cpp_source.html#l00256">monster::pos()</a>, <a class="el" href="magic_8cpp_source.html#l00551">spell::range()</a>, <a class="el" href="coordinates_8h_source.html#l00519">rl_dist()</a>, and <a class="el" href="mattack__actors_8h_source.html#l00052">spell_data</a>.</p>
+<p class="reference">References <a class="el" href="messages_8cpp_source.html#l00910">add_msg()</a>, <a class="el" href="monster_8cpp_source.html#l01022">monster::attack_target()</a>, <a class="el" href="monster_8cpp_source.html#l00960">monster::can_act()</a>, <a class="el" href="magic_8cpp_source.html#l01181">spell::cast_all_effects()</a>, <a class="el" href="monster_8cpp_source.html#l00537">monster::disp_name()</a>, <a class="el" href="magic_8cpp_source.html#l00935">spell::effect()</a>, <a class="el" href="game_8cpp_source.html#l00281">g</a>, <a class="el" href="magic_8cpp_source.html#l00734">spell::message()</a>, <a class="el" href="magic_8cpp_source.html#l00729">spell::name()</a>, <a class="el" href="classCreature.html#a45926a7ba63ccc9be744f87a4d540b7d">Creature::pos()</a>, <a class="el" href="monster_8cpp_source.html#l00256">monster::pos()</a>, <a class="el" href="magic_8cpp_source.html#l00551">spell::range()</a>, <a class="el" href="coordinates_8h_source.html#l00519">rl_dist()</a>, and <a class="el" href="mattack__actors_8h_source.html#l00052">spell_data</a>.</p>
 
 </div>
 </div>
@@ -308,10 +308,10 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classmattack__actor.html#a6158be310803a9edf8a3e3c1908cd544">mattack_actor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="mattack__actors_8cpp_source.html#l00164">164</a> of file <a class="el" href="mattack__actors_8cpp_source.html">mattack_actors.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>{</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    <span class="keywordflow">return</span> std::make_unique&lt;mon_spellcasting_actor&gt;( *<span class="keyword">this</span> );</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>}</div>
+<p class="definition">Definition at line <a class="el" href="mattack__actors_8cpp_source.html#l00165">165</a> of file <a class="el" href="mattack__actors_8cpp_source.html">mattack_actors.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>{</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    <span class="keywordflow">return</span> std::make_unique&lt;mon_spellcasting_actor&gt;( *<span class="keyword">this</span> );</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -351,21 +351,21 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classmattack__actor.html#af40f5c491c93fbef9bb797faa469546f">mattack_actor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="mattack__actors_8cpp_source.html#l00169">169</a> of file <a class="el" href="mattack__actors_8cpp_source.html">mattack_actors.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>{</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    std::string sp_id;</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    <a class="code hl_struct" href="structfake__spell.html">fake_spell</a> intermediate;</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    <a class="code hl_function" href="generic__factory_8h.html#a0a177c754c5ba89ac6c543656b0652cc">mandatory</a>( obj, <a class="code hl_variable" href="classmattack__actor.html#add2fafdd49c323f64a4dc2d8b997b4b4">was_loaded</a>, <span class="stringliteral">&quot;spell_data&quot;</span>, intermediate );</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    <span class="keyword">self</span> = intermediate.<a class="code hl_variable" href="structfake__spell.html#afa2a4b38d223f38100fb8148d92fca2a">self</a>;</div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    <a class="code hl_class" href="classtranslation.html">translation</a> monster_message;</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    <a class="code hl_function" href="generic__factory_8h.html#a6bc35b9738f0a0a68ccc6b4cfc7918f1">optional</a>( obj, <a class="code hl_variable" href="classmattack__actor.html#add2fafdd49c323f64a4dc2d8b997b4b4">was_loaded</a>, <span class="stringliteral">&quot;monster_message&quot;</span>, monster_message,</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>              <span class="comment">//~ &quot;&lt;Monster Display name&gt; cast &lt;Spell Name&gt; on &lt;Target name&gt;!&quot;</span></div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>              <a class="code hl_function" href="translations_8cpp.html#a176e288c640c6506a86330cb10fbe13a">to_translation</a>( <span class="stringliteral">&quot;%1$s casts %2$s at %3$s!&quot;</span> ) );</div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    <a class="code hl_variable" href="classmon__spellcasting__actor.html#a73ff0fd6d0ee6a7366c8ed2ed5a97d5e">spell_data</a> = intermediate.<a class="code hl_function" href="structfake__spell.html#a82fc59858e378e029bd130fbeb39fefc">get_spell</a>();</div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    <a class="code hl_variable" href="classmon__spellcasting__actor.html#a73ff0fd6d0ee6a7366c8ed2ed5a97d5e">spell_data</a>.<a class="code hl_function" href="classspell.html#a59e8773eaa3a6236182746cbc3930d07">set_message</a>( monster_message );</div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    <a class="code hl_class" href="classavatar.html">avatar</a> fake_player;</div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    <a class="code hl_variable" href="classmon__spellcasting__actor.html#ad249bc3559a4500370e7fab9fb22c96b">move_cost</a> = <a class="code hl_variable" href="classmon__spellcasting__actor.html#a73ff0fd6d0ee6a7366c8ed2ed5a97d5e">spell_data</a>.<a class="code hl_function" href="classspell.html#a59921f3bbd01c84df98ff023bbabd3f9">casting_time</a>( fake_player );</div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>}</div>
+<p class="definition">Definition at line <a class="el" href="mattack__actors_8cpp_source.html#l00170">170</a> of file <a class="el" href="mattack__actors_8cpp_source.html">mattack_actors.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>{</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    std::string sp_id;</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    <a class="code hl_struct" href="structfake__spell.html">fake_spell</a> intermediate;</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    <a class="code hl_function" href="generic__factory_8h.html#a0a177c754c5ba89ac6c543656b0652cc">mandatory</a>( obj, <a class="code hl_variable" href="classmattack__actor.html#add2fafdd49c323f64a4dc2d8b997b4b4">was_loaded</a>, <span class="stringliteral">&quot;spell_data&quot;</span>, intermediate );</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    <span class="keyword">self</span> = intermediate.<a class="code hl_variable" href="structfake__spell.html#afa2a4b38d223f38100fb8148d92fca2a">self</a>;</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    <a class="code hl_class" href="classtranslation.html">translation</a> monster_message;</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    <a class="code hl_function" href="generic__factory_8h.html#a6bc35b9738f0a0a68ccc6b4cfc7918f1">optional</a>( obj, <a class="code hl_variable" href="classmattack__actor.html#add2fafdd49c323f64a4dc2d8b997b4b4">was_loaded</a>, <span class="stringliteral">&quot;monster_message&quot;</span>, monster_message,</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>              <span class="comment">//~ &quot;&lt;Monster Display name&gt; cast &lt;Spell Name&gt; on &lt;Target name&gt;!&quot;</span></div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>              <a class="code hl_function" href="translations_8cpp.html#a176e288c640c6506a86330cb10fbe13a">to_translation</a>( <span class="stringliteral">&quot;%1$s casts %2$s at %3$s!&quot;</span> ) );</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    <a class="code hl_variable" href="classmon__spellcasting__actor.html#a73ff0fd6d0ee6a7366c8ed2ed5a97d5e">spell_data</a> = intermediate.<a class="code hl_function" href="structfake__spell.html#a82fc59858e378e029bd130fbeb39fefc">get_spell</a>();</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    <a class="code hl_variable" href="classmon__spellcasting__actor.html#a73ff0fd6d0ee6a7366c8ed2ed5a97d5e">spell_data</a>.<a class="code hl_function" href="classspell.html#a59e8773eaa3a6236182746cbc3930d07">set_message</a>( monster_message );</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    <a class="code hl_class" href="classavatar.html">avatar</a> fake_player;</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>    <a class="code hl_variable" href="classmon__spellcasting__actor.html#ad249bc3559a4500370e7fab9fb22c96b">move_cost</a> = <a class="code hl_variable" href="classmon__spellcasting__actor.html#a73ff0fd6d0ee6a7366c8ed2ed5a97d5e">spell_data</a>.<a class="code hl_function" href="classspell.html#a59921f3bbd01c84df98ff023bbabd3f9">casting_time</a>( fake_player );</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>}</div>
 <div class="ttc" id="aclassavatar_html"><div class="ttname"><a href="classavatar.html">avatar</a></div><div class="ttdef"><b>Definition:</b> <a href="avatar_8h_source.html#l00054">avatar.h:55</a></div></div>
 <div class="ttc" id="aclassmattack__actor_html_add2fafdd49c323f64a4dc2d8b997b4b4"><div class="ttname"><a href="classmattack__actor.html#add2fafdd49c323f64a4dc2d8b997b4b4">mattack_actor::was_loaded</a></div><div class="ttdeci">bool was_loaded</div><div class="ttdef"><b>Definition:</b> <a href="mattack__common_8h_source.html#l00025">mattack_common.h:25</a></div></div>
 <div class="ttc" id="aclassmon__spellcasting__actor_html_ad249bc3559a4500370e7fab9fb22c96b"><div class="ttname"><a href="classmon__spellcasting__actor.html#ad249bc3559a4500370e7fab9fb22c96b">mon_spellcasting_actor::move_cost</a></div><div class="ttdeci">int move_cost</div><div class="ttdef"><b>Definition:</b> <a href="mattack__actors_8h_source.html#l00053">mattack_actors.h:53</a></div></div>
@@ -398,7 +398,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="mattack__actors_8h_source.html#l00053">53</a> of file <a class="el" href="mattack__actors_8h_source.html">mattack_actors.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mattack__actors_8cpp_source.html#l00169">load_internal()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mattack__actors_8cpp_source.html#l00170">load_internal()</a>.</p>
 
 </div>
 </div>
@@ -432,7 +432,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="mattack__actors_8h_source.html#l00052">52</a> of file <a class="el" href="mattack__actors_8h_source.html">mattack_actors.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mattack__actors_8cpp_source.html#l00185">call()</a>, and <a class="el" href="mattack__actors_8cpp_source.html#l00169">load_internal()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mattack__actors_8cpp_source.html#l00186">call()</a>, and <a class="el" href="mattack__actors_8cpp_source.html#l00170">load_internal()</a>.</p>
 
 </div>
 </div>
@@ -446,7 +446,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classmon__spellcasting__actor.html">mon_spellcasting_actor</a></li>
-    <li class="footer">Generated on Fri Apr 7 2023 11:54:48 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Apr 30 2023 06:48:15 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

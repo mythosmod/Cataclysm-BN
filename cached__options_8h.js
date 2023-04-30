@@ -1,10 +1,15 @@
 var cached__options_8h =
 [
     [ "CATA_SRC_CACHED_OPTIONS_H", "cached__options_8h.html#aad702af430d3011c0da0ce8f0377677a", null ],
+    [ "error_log_format_t", "cached__options_8h.html#a58a0eafd56e45aee1e382703e7afc79e", [
+      [ "human_readable", "cached__options_8h.html#a58a0eafd56e45aee1e382703e7afc79ea9bf1ec580e038dcf0874c7e061a16d86", null ],
+      [ "github_action", "cached__options_8h.html#a58a0eafd56e45aee1e382703e7afc79ea23f52ba416831d105f2c2a5c9551438f", null ]
+    ] ],
     [ "debug_mode", "cached__options_8h.html#aa021995764a0c77f628e3411497239cc", null ],
     [ "display_mod_source", "cached__options_8h.html#aeb7313fa4939ef646c982eb924bb756a", null ],
     [ "display_object_ids", "cached__options_8h.html#a61d5a960e9059023302a764d534d2d13", null ],
     [ "dont_debugmsg", "cached__options_8h.html#abde66c8b93b424d63cccb7ab103e2f2d", null ],
+    [ "error_log_format", "cached__options_8h.html#a8cded3d0eee4911104f8f07bb2634e24", null ],
     [ "fov_3d", "cached__options_8h.html#a1eedced6e405cd87cabd19fdd193de43", null ],
     [ "fov_3d_z_range", "cached__options_8h.html#a0cb65464a3fa34c1ed5474f5d2d853a7", null ],
     [ "json_report_strict", "cached__options_8h.html#a16e6bc0b3300c5fb311e7f3571fb67c7", null ],

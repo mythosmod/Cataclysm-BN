@@ -64,5 +64,5 @@ var classoptions__manager =
     [ "options", "classoptions__manager.html#acb79978617abe29c635878fcb746fcd6", null ],
     [ "pages_", "classoptions__manager.html#ac9ba1372655072c64223811072210b2f", null ],
     [ "post_json_verify", "classoptions__manager.html#aa4f26c0a7421bbbe21b635beaab0c7a5", null ],
-    [ "world_options", "classoptions__manager.html#a601eaac7501286ddd1feb6c29f95a207", null ]
+    [ "world_options", "classoptions__manager.html#ad7d9f5871889a7cee6d6608b80795e24", null ]
 ];

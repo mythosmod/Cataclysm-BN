@@ -3,7 +3,7 @@ var classtileset =
     [ "season_tile_value", "structtileset_1_1season__tile__value.html", "structtileset_1_1season__tile__value" ],
     [ "create_tile_type", "classtileset.html#acbca1b6ba95ac6ac3d1dd68ab41d40a1", null ],
     [ "find_tile_type", "classtileset.html#a987d87f052d926dc20f479e67ee7bd8d", null ],
-    [ "find_tile_type_by_season", "classtileset.html#a858759b86e8b8b4e53ddc3ed26512f6d", null ],
+    [ "find_tile_type_by_season", "classtileset.html#a5d0b3d2f933a3e144f0c1733465806f2", null ],
     [ "get_if_available", "classtileset.html#a9869b70b4ddb126d66d2a9de986fe7fc", null ],
     [ "get_memory_tile", "classtileset.html#a46c723f8e1c56808f5f93f5aa0969620", null ],
     [ "get_night_tile", "classtileset.html#a09010c679e630be4206b33494f7549e0", null ],

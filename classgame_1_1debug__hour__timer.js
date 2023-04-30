@@ -4,5 +4,5 @@ var classgame_1_1debug__hour__timer =
     [ "print_time", "classgame_1_1debug__hour__timer.html#aea4b7723c442a563c5c0e3966fb408be", null ],
     [ "toggle", "classgame_1_1debug__hour__timer.html#a65edcca589b6cfc44d8952f0e80ea4df", null ],
     [ "enabled", "classgame_1_1debug__hour__timer.html#a5688fa1d4fbf286957168dc6854294ed", null ],
-    [ "start_time", "classgame_1_1debug__hour__timer.html#a0ba7c88b05b18425742214bef4e71bd1", null ]
+    [ "start_time", "classgame_1_1debug__hour__timer.html#a8a91c913df7581663f55ccb2dfa61ba2", null ]
 ];

@@ -7,5 +7,5 @@ var structranged__bash__info =
     [ "destroy_threshold", "structranged__bash__info.html#a4b693c194a739f4f0b503febf03edcf0", null ],
     [ "flammable", "structranged__bash__info.html#a04f3ee5fa66cd734617514c11023c869", null ],
     [ "reduction", "structranged__bash__info.html#a1d95d8facec433eae40961cff4a445ee", null ],
-    [ "reduction_laser", "structranged__bash__info.html#a49ece9ab0ee22d48f608b4d81ddbc83b", null ]
+    [ "reduction_laser", "structranged__bash__info.html#ad32a4ce6c109553ea7bc1e6d562d7617", null ]
 ];

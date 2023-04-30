@@ -91,10 +91,10 @@ $(document).ready(function(){initNavTree('skill__boost_8h_source.html',''); init
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#ifndef CATA_SRC_SKILL_BOOST_H</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno"><a class="line" href="skill__boost_8h.html#a37097ee5868319c2afec781d8c5a1844">    3</a></span><span class="preprocessor">#define CATA_SRC_SKILL_BOOST_H</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="optional_8h.html">optional.h</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;optional&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="string__id_8h.html">string_id.h</a>&quot;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">class </span><a class="code hl_class" href="classJsonObject.html">JsonObject</a>;</div>
@@ -114,7 +114,7 @@ $(document).ready(function(){initNavTree('skill__boost_8h_source.html',''); init
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classskill__boost.html#ac67c01c4d4987b674663d96c8419eb2c">reset</a>();</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keyword">static</span> <span class="keyword">const</span> std::vector&lt;skill_boost&gt; &amp;<a class="code hl_function" href="classskill__boost.html#ae09e246c6b11837d90a1dcfe9a03f085">get_all</a>();</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classskill__boost.html#ac4a6a211f4a4b5a4521dcd4181ef1edc">   28</a></span>        <span class="keyword">static</span> <a class="code hl_class" href="classcata_1_1optional.html">cata::optional&lt;skill_boost&gt;</a> <a class="code hl_function" href="classskill__boost.html#a831a9bd8231e0a23fa7e78e349784998">get</a>( <span class="keyword">const</span> std::string &amp;stat_str );</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classskill__boost.html#ac4a6a211f4a4b5a4521dcd4181ef1edc">   28</a></span>        <span class="keyword">static</span> std::optional&lt;skill_boost&gt; <a class="code hl_function" href="classskill__boost.html#a7441ebca57c2e4252915c807ec9194f0">get</a>( <span class="keyword">const</span> std::string &amp;stat_str );</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keyword">private</span>:</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="classgeneric__factory.html">generic_factory</a>&lt;<a class="code hl_class" href="classskill__boost.html">skill_boost</a>&gt;;</div>
@@ -128,13 +128,12 @@ $(document).ready(function(){initNavTree('skill__boost_8h_source.html',''); init
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>};</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#endif </span><span class="comment">// CATA_SRC_SKILL_BOOST_H</span></div>
-<div class="ttc" id="aclassJsonObject_html"><div class="ttname"><a href="classJsonObject.html">JsonObject</a></div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00827">json.h:828</a></div></div>
-<div class="ttc" id="aclasscata_1_1optional_html"><div class="ttname"><a href="classcata_1_1optional.html">cata::optional</a></div><div class="ttdef"><b>Definition:</b> <a href="optional_8h_source.html#l00030">optional.h:31</a></div></div>
+<div class="ttc" id="aclassJsonObject_html"><div class="ttname"><a href="classJsonObject.html">JsonObject</a></div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00826">json.h:827</a></div></div>
 <div class="ttc" id="aclassgeneric__factory_html"><div class="ttname"><a href="classgeneric__factory.html">generic_factory</a></div><div class="ttdef"><b>Definition:</b> <a href="generic__factory_8h_source.html#l00118">generic_factory.h:119</a></div></div>
 <div class="ttc" id="aclassskill__boost_html"><div class="ttname"><a href="classskill__boost.html">skill_boost</a></div><div class="ttdef"><b>Definition:</b> <a href="skill__boost_8h_source.html#l00015">skill_boost.h:16</a></div></div>
 <div class="ttc" id="aclassskill__boost_html_a395d74a2475d5e321b3452993c5d8603"><div class="ttname"><a href="classskill__boost.html#a395d74a2475d5e321b3452993c5d8603">skill_boost::calc_bonus</a></div><div class="ttdeci">float calc_bonus(int skill_total) const</div><div class="ttdef"><b>Definition:</b> <a href="skill__boost_8cpp_source.html#l00057">skill_boost.cpp:57</a></div></div>
+<div class="ttc" id="aclassskill__boost_html_a7441ebca57c2e4252915c807ec9194f0"><div class="ttname"><a href="classskill__boost.html#a7441ebca57c2e4252915c807ec9194f0">skill_boost::get</a></div><div class="ttdeci">static std::optional&lt; skill_boost &gt; get(const std::string &amp;stat_str)</div><div class="ttdef"><b>Definition:</b> <a href="skill__boost_8cpp_source.html#l00020">skill_boost.cpp:20</a></div></div>
 <div class="ttc" id="aclassskill__boost_html_a7473aa9e75fb343fc52bd840931609dc"><div class="ttname"><a href="classskill__boost.html#a7473aa9e75fb343fc52bd840931609dc">skill_boost::load_boost</a></div><div class="ttdeci">static void load_boost(const JsonObject &amp;jo, const std::string &amp;src)</div><div class="ttdef"><b>Definition:</b> <a href="skill__boost_8cpp_source.html#l00030">skill_boost.cpp:30</a></div></div>
-<div class="ttc" id="aclassskill__boost_html_a831a9bd8231e0a23fa7e78e349784998"><div class="ttname"><a href="classskill__boost.html#a831a9bd8231e0a23fa7e78e349784998">skill_boost::get</a></div><div class="ttdeci">static cata::optional&lt; skill_boost &gt; get(const std::string &amp;stat_str)</div><div class="ttdef"><b>Definition:</b> <a href="skill__boost_8cpp_source.html#l00020">skill_boost.cpp:20</a></div></div>
 <div class="ttc" id="aclassskill__boost_html_a838f443d532bceef52cc45d9c719cd6d"><div class="ttname"><a href="classskill__boost.html#a838f443d532bceef52cc45d9c719cd6d">skill_boost::_power</a></div><div class="ttdeci">float _power</div><div class="ttdef"><b>Definition:</b> <a href="skill__boost_8h_source.html#l00036">skill_boost.h:36</a></div></div>
 <div class="ttc" id="aclassskill__boost_html_a8b68f9ba732de5c7d7beef1db75f11dc"><div class="ttname"><a href="classskill__boost.html#a8b68f9ba732de5c7d7beef1db75f11dc">skill_boost::_offset</a></div><div class="ttdeci">int _offset</div><div class="ttdef"><b>Definition:</b> <a href="skill__boost_8h_source.html#l00035">skill_boost.h:35</a></div></div>
 <div class="ttc" id="aclassskill__boost_html_a9b37be141c332694e5416995ead6f56a"><div class="ttname"><a href="classskill__boost.html#a9b37be141c332694e5416995ead6f56a">skill_boost::was_loaded</a></div><div class="ttdeci">bool was_loaded</div><div class="ttdef"><b>Definition:</b> <a href="skill__boost_8h_source.html#l00033">skill_boost.h:33</a></div></div>
@@ -147,7 +146,6 @@ $(document).ready(function(){initNavTree('skill__boost_8h_source.html',''); init
 <div class="ttc" id="aclassskill__boost_html_aeebc276174271634aa637844d5c18e4b"><div class="ttname"><a href="classskill__boost.html#aeebc276174271634aa637844d5c18e4b">skill_boost::skills</a></div><div class="ttdeci">const std::vector&lt; std::string &gt; &amp; skills() const</div><div class="ttdef"><b>Definition:</b> <a href="skill__boost_8cpp_source.html#l00052">skill_boost.cpp:52</a></div></div>
 <div class="ttc" id="aclassskill__boost_html_af3835fadb24e25bf5b5b5b3c36fbbeae"><div class="ttname"><a href="classskill__boost.html#af3835fadb24e25bf5b5b5b3c36fbbeae">skill_boost::skill_boost</a></div><div class="ttdeci">skill_boost()=default</div></div>
 <div class="ttc" id="aclassstring__id_html"><div class="ttname"><a href="classstring__id.html">string_id</a></div><div class="ttdef"><b>Definition:</b> <a href="string__id_8h_source.html#l00196">string_id.h:197</a></div></div>
-<div class="ttc" id="aoptional_8h_html"><div class="ttname"><a href="optional_8h.html">optional.h</a></div></div>
 <div class="ttc" id="astring__id_8h_html"><div class="ttname"><a href="string__id_8h.html">string_id.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -155,7 +153,7 @@ $(document).ready(function(){initNavTree('skill__boost_8h_source.html',''); init
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="skill__boost_8h.html">skill_boost.h</a></li>
-    <li class="footer">Generated on Fri Apr 7 2023 11:54:25 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Apr 30 2023 06:47:48 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

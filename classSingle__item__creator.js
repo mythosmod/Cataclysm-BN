@@ -16,6 +16,6 @@ var classSingle__item__creator =
     [ "remove_item", "classSingle__item__creator.html#a633fd8a88ca029af0059090172ce7666", null ],
     [ "replace_item", "classSingle__item__creator.html#af4a6d3effeb8851dae88eb173e3e8853", null ],
     [ "id", "classSingle__item__creator.html#af400370037987b08cd9240db20f617b7", null ],
-    [ "modifier", "classSingle__item__creator.html#af48885b005cd3ff48c4dba9ca67dce3d", null ],
+    [ "modifier", "classSingle__item__creator.html#a856d82923a33d3127056a304994cb36b", null ],
     [ "type", "classSingle__item__creator.html#a2d77575b034425ad8539dff35cb33377", null ]
 ];

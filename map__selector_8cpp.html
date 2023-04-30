@@ -93,12 +93,12 @@ $(document).ready(function(){initNavTree('map__selector_8cpp.html',''); initResi
 <code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;functional&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;optional&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &quot;<a class="el" href="game_8h_source.html">game.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="game__constants_8h_source.html">game_constants.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="map_8h_source.html">map.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="map__iterator_8h_source.html">map_iterator.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="optional_8h_source.html">optional.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="rng_8h_source.html">rng.h</a>&quot;</code><br />
 </div>
 <p><a href="map__selector_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -108,12 +108,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ac7a8a4d281a5f4cc03fff7cb32fb2b8f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtripoint__range.html">tripoint_range</a>&lt; <a class="el" href="structtripoint.html">tripoint</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__selector_8cpp.html#ac7a8a4d281a5f4cc03fff7cb32fb2b8f">points_in_range</a> (const <a class="el" href="classmap.html">map</a> &amp;m)</td></tr>
 <tr class="memdesc:ac7a8a4d281a5f4cc03fff7cb32fb2b8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a range enclosing all valid points of the map.  <a href="map__selector_8cpp.html#ac7a8a4d281a5f4cc03fff7cb32fb2b8f">More...</a><br /></td></tr>
 <tr class="separator:ac7a8a4d281a5f4cc03fff7cb32fb2b8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a995bfedf09618adec57011caf2463947"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcata_1_1optional.html">cata::optional</a>&lt; <a class="el" href="structtripoint.html">tripoint</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__selector_8cpp.html#a995bfedf09618adec57011caf2463947">random_point</a> (const <a class="el" href="classmap.html">map</a> &amp;m, const std::function&lt; bool(const <a class="el" href="structtripoint.html">tripoint</a> &amp;)&gt; &amp;predicate)</td></tr>
-<tr class="memdesc:a995bfedf09618adec57011caf2463947"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as other random_point with a range enclosing all valid points of the map.  <a href="map__selector_8cpp.html#a995bfedf09618adec57011caf2463947">More...</a><br /></td></tr>
-<tr class="separator:a995bfedf09618adec57011caf2463947"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7065e7cf3b4500cfa951f2540b8c0932"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcata_1_1optional.html">cata::optional</a>&lt; <a class="el" href="structtripoint.html">tripoint</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__selector_8cpp.html#a7065e7cf3b4500cfa951f2540b8c0932">random_point</a> (const <a class="el" href="classtripoint__range.html">tripoint_range</a>&lt; <a class="el" href="structtripoint.html">tripoint</a> &gt; &amp;range, const std::function&lt; bool(const <a class="el" href="structtripoint.html">tripoint</a> &amp;)&gt; &amp;predicate)</td></tr>
-<tr class="memdesc:a7065e7cf3b4500cfa951f2540b8c0932"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a random point in the given range that satisfies the given predicate ( if any ).  <a href="map__selector_8cpp.html#a7065e7cf3b4500cfa951f2540b8c0932">More...</a><br /></td></tr>
-<tr class="separator:a7065e7cf3b4500cfa951f2540b8c0932"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81cbca972d3dd7a4532f804ad1bb90d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="generic__factory_8h.html#a1159dbaba81931271dbfe5b9c7f041b3">std::optional</a>&lt; <a class="el" href="structtripoint.html">tripoint</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__selector_8cpp.html#a81cbca972d3dd7a4532f804ad1bb90d7">random_point</a> (const <a class="el" href="classmap.html">map</a> &amp;m, const std::function&lt; bool(const <a class="el" href="structtripoint.html">tripoint</a> &amp;)&gt; &amp;predicate)</td></tr>
+<tr class="memdesc:a81cbca972d3dd7a4532f804ad1bb90d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as other random_point with a range enclosing all valid points of the map.  <a href="map__selector_8cpp.html#a81cbca972d3dd7a4532f804ad1bb90d7">More...</a><br /></td></tr>
+<tr class="separator:a81cbca972d3dd7a4532f804ad1bb90d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43634a1cf5184542f46b6b36da36ffdd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="generic__factory_8h.html#a1159dbaba81931271dbfe5b9c7f041b3">std::optional</a>&lt; <a class="el" href="structtripoint.html">tripoint</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__selector_8cpp.html#a43634a1cf5184542f46b6b36da36ffdd">random_point</a> (const <a class="el" href="classtripoint__range.html">tripoint_range</a>&lt; <a class="el" href="structtripoint.html">tripoint</a> &gt; &amp;range, const std::function&lt; bool(const <a class="el" href="structtripoint.html">tripoint</a> &amp;)&gt; &amp;predicate)</td></tr>
+<tr class="memdesc:a43634a1cf5184542f46b6b36da36ffdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a random point in the given range that satisfies the given predicate ( if any ).  <a href="map__selector_8cpp.html#a43634a1cf5184542f46b6b36da36ffdd">More...</a><br /></td></tr>
+<tr class="separator:a43634a1cf5184542f46b6b36da36ffdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ac7a8a4d281a5f4cc03fff7cb32fb2b8f" name="ac7a8a4d281a5f4cc03fff7cb32fb2b8f"></a>
@@ -142,9 +142,9 @@ Functions</h2></td></tr>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>               <a class="code hl_struct" href="structtripoint.html">tripoint</a>( 0, 0, hasz ? -<a class="code hl_variable" href="game__constants_8h.html#aad0eacfa516a8f7e005674027d7640fe">OVERMAP_DEPTH</a> : z ),</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>               <a class="code hl_struct" href="structtripoint.html">tripoint</a>( <a class="code hl_variable" href="game__constants_8h.html#a39fd8a829e3dc412646663066dbdb54c">SEEX</a> * m.<a class="code hl_function" href="classmap.html#af402a7273ea8f54a9fa0947e0d37f88b">getmapsize</a>() - 1, <a class="code hl_variable" href="game__constants_8h.html#a4cfa35de359af17f7bc6c2a424339eb5">SEEY</a> * m.<a class="code hl_function" href="classmap.html#af402a7273ea8f54a9fa0947e0d37f88b">getmapsize</a>() - 1, hasz ? <a class="code hl_variable" href="game__constants_8h.html#a3984a9476d1edc78e4e7b886a08d4d4b">OVERMAP_HEIGHT</a> : z ) );</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>}</div>
-<div class="ttc" id="aclassmap_html_a3eae9d2a9abf1a4489aec6b3facf4364"><div class="ttname"><a href="classmap.html#a3eae9d2a9abf1a4489aec6b3facf4364">map::get_abs_sub</a></div><div class="ttdeci">tripoint get_abs_sub() const</div><div class="ttdoc">return abs_sub</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l08319">map.cpp:8319</a></div></div>
-<div class="ttc" id="aclassmap_html_abff2fded83a8e96e5e20084c3cb59579"><div class="ttname"><a href="classmap.html#abff2fded83a8e96e5e20084c3cb59579">map::has_zlevels</a></div><div class="ttdeci">bool has_zlevels() const</div><div class="ttdef"><b>Definition:</b> <a href="map_8h_source.html#l01623">map.h:1623</a></div></div>
-<div class="ttc" id="aclassmap_html_af402a7273ea8f54a9fa0947e0d37f88b"><div class="ttname"><a href="classmap.html#af402a7273ea8f54a9fa0947e0d37f88b">map::getmapsize</a></div><div class="ttdeci">int getmapsize() const</div><div class="ttdef"><b>Definition:</b> <a href="map_8h_source.html#l01620">map.h:1620</a></div></div>
+<div class="ttc" id="aclassmap_html_a3eae9d2a9abf1a4489aec6b3facf4364"><div class="ttname"><a href="classmap.html#a3eae9d2a9abf1a4489aec6b3facf4364">map::get_abs_sub</a></div><div class="ttdeci">tripoint get_abs_sub() const</div><div class="ttdoc">return abs_sub</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l08382">map.cpp:8382</a></div></div>
+<div class="ttc" id="aclassmap_html_abff2fded83a8e96e5e20084c3cb59579"><div class="ttname"><a href="classmap.html#abff2fded83a8e96e5e20084c3cb59579">map::has_zlevels</a></div><div class="ttdeci">bool has_zlevels() const</div><div class="ttdef"><b>Definition:</b> <a href="map_8h_source.html#l01631">map.h:1631</a></div></div>
+<div class="ttc" id="aclassmap_html_af402a7273ea8f54a9fa0947e0d37f88b"><div class="ttname"><a href="classmap.html#af402a7273ea8f54a9fa0947e0d37f88b">map::getmapsize</a></div><div class="ttdeci">int getmapsize() const</div><div class="ttdef"><b>Definition:</b> <a href="map_8h_source.html#l01628">map.h:1628</a></div></div>
 <div class="ttc" id="aclasstripoint__range_html"><div class="ttname"><a href="classtripoint__range.html">tripoint_range</a></div><div class="ttdef"><b>Definition:</b> <a href="map__iterator_8h_source.html#l00012">map_iterator.h:13</a></div></div>
 <div class="ttc" id="agame__constants_8h_html_a3984a9476d1edc78e4e7b886a08d4d4b"><div class="ttname"><a href="game__constants_8h.html#a3984a9476d1edc78e4e7b886a08d4d4b">OVERMAP_HEIGHT</a></div><div class="ttdeci">static constexpr int OVERMAP_HEIGHT</div><div class="ttdef"><b>Definition:</b> <a href="game__constants_8h_source.html#l00062">game_constants.h:62</a></div></div>
 <div class="ttc" id="agame__constants_8h_html_a39fd8a829e3dc412646663066dbdb54c"><div class="ttname"><a href="game__constants_8h.html#a39fd8a829e3dc412646663066dbdb54c">SEEX</a></div><div class="ttdeci">static constexpr int SEEX</div><div class="ttdef"><b>Definition:</b> <a href="game__constants_8h_source.html#l00035">game_constants.h:35</a></div></div>
@@ -153,20 +153,20 @@ Functions</h2></td></tr>
 <div class="ttc" id="astructtripoint_html"><div class="ttname"><a href="structtripoint.html">tripoint</a></div><div class="ttdef"><b>Definition:</b> <a href="point_8h_source.html#l00133">point.h:133</a></div></div>
 <div class="ttc" id="astructtripoint_html_ac944c0e329b5eba2602f7a52f66bbbb9"><div class="ttname"><a href="structtripoint.html#ac944c0e329b5eba2602f7a52f66bbbb9">tripoint::z</a></div><div class="ttdeci">int z</div><div class="ttdef"><b>Definition:</b> <a href="point_8h_source.html#l00138">point.h:138</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="map_8cpp_source.html#l08319">map::get_abs_sub()</a>, <a class="el" href="map_8h_source.html#l01620">map::getmapsize()</a>, <a class="el" href="map_8h_source.html#l01623">map::has_zlevels()</a>, <a class="el" href="game__constants_8h_source.html#l00060">OVERMAP_DEPTH</a>, <a class="el" href="game__constants_8h_source.html#l00062">OVERMAP_HEIGHT</a>, <a class="el" href="game__constants_8h_source.html#l00035">SEEX</a>, <a class="el" href="game__constants_8h_source.html#l00036">SEEY</a>, and <a class="el" href="point_8h_source.html#l00138">tripoint::z</a>.</p>
+<p class="reference">References <a class="el" href="map_8cpp_source.html#l08382">map::get_abs_sub()</a>, <a class="el" href="map_8h_source.html#l01628">map::getmapsize()</a>, <a class="el" href="map_8h_source.html#l01631">map::has_zlevels()</a>, <a class="el" href="game__constants_8h_source.html#l00060">OVERMAP_DEPTH</a>, <a class="el" href="game__constants_8h_source.html#l00062">OVERMAP_HEIGHT</a>, <a class="el" href="game__constants_8h_source.html#l00035">SEEX</a>, <a class="el" href="game__constants_8h_source.html#l00036">SEEY</a>, and <a class="el" href="point_8h_source.html#l00138">tripoint::z</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="map__selector_8cpp_source.html#l00033">random_point()</a>.</p>
 
 </div>
 </div>
-<a id="a995bfedf09618adec57011caf2463947" name="a995bfedf09618adec57011caf2463947"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a995bfedf09618adec57011caf2463947">&#9670;&nbsp;</a></span>random_point() <span class="overload">[1/2]</span></h2>
+<a id="a81cbca972d3dd7a4532f804ad1bb90d7" name="a81cbca972d3dd7a4532f804ad1bb90d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81cbca972d3dd7a4532f804ad1bb90d7">&#9670;&nbsp;</a></span>random_point() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classcata_1_1optional.html">cata::optional</a>&lt; <a class="el" href="structtripoint.html">tripoint</a> &gt; random_point </td>
+          <td class="memname"><a class="el" href="generic__factory_8h.html#a1159dbaba81931271dbfe5b9c7f041b3">std::optional</a>&lt; <a class="el" href="structtripoint.html">tripoint</a> &gt; random_point </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classmap.html">map</a> &amp;&#160;</td>
           <td class="paramname"><em>m</em>, </td>
@@ -189,25 +189,25 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="map__selector_8cpp_source.html#l00033">33</a> of file <a class="el" href="map__selector_8cpp_source.html">map_selector.cpp</a>.</p>
 <div class="fragment"><div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>{</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="map__selector_8cpp.html#a995bfedf09618adec57011caf2463947">random_point</a>( <a class="code hl_function" href="map__selector_8cpp.html#ac7a8a4d281a5f4cc03fff7cb32fb2b8f">points_in_range</a>( m ), predicate );</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="map__selector_8cpp.html#a81cbca972d3dd7a4532f804ad1bb90d7">random_point</a>( <a class="code hl_function" href="map__selector_8cpp.html#ac7a8a4d281a5f4cc03fff7cb32fb2b8f">points_in_range</a>( m ), predicate );</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>}</div>
-<div class="ttc" id="amap__selector_8cpp_html_a995bfedf09618adec57011caf2463947"><div class="ttname"><a href="map__selector_8cpp.html#a995bfedf09618adec57011caf2463947">random_point</a></div><div class="ttdeci">cata::optional&lt; tripoint &gt; random_point(const map &amp;m, const std::function&lt; bool(const tripoint &amp;)&gt; &amp;predicate)</div><div class="ttdoc">Same as other random_point with a range enclosing all valid points of the map.</div><div class="ttdef"><b>Definition:</b> <a href="map__selector_8cpp_source.html#l00033">map_selector.cpp:33</a></div></div>
+<div class="ttc" id="amap__selector_8cpp_html_a81cbca972d3dd7a4532f804ad1bb90d7"><div class="ttname"><a href="map__selector_8cpp.html#a81cbca972d3dd7a4532f804ad1bb90d7">random_point</a></div><div class="ttdeci">std::optional&lt; tripoint &gt; random_point(const map &amp;m, const std::function&lt; bool(const tripoint &amp;)&gt; &amp;predicate)</div><div class="ttdoc">Same as other random_point with a range enclosing all valid points of the map.</div><div class="ttdef"><b>Definition:</b> <a href="map__selector_8cpp_source.html#l00033">map_selector.cpp:33</a></div></div>
 <div class="ttc" id="amap__selector_8cpp_html_ac7a8a4d281a5f4cc03fff7cb32fb2b8f"><div class="ttname"><a href="map__selector_8cpp.html#ac7a8a4d281a5f4cc03fff7cb32fb2b8f">points_in_range</a></div><div class="ttdeci">tripoint_range&lt; tripoint &gt; points_in_range(const map &amp;m)</div><div class="ttdoc">Returns a range enclosing all valid points of the map.</div><div class="ttdef"><b>Definition:</b> <a href="map__selector_8cpp_source.html#l00024">map_selector.cpp:24</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="map__selector_8cpp_source.html#l00024">points_in_range()</a>, and <a class="el" href="map__selector_8cpp_source.html#l00033">random_point()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l04606">choose_where_to_place_monster()</a>, <a class="el" href="mapgen_8cpp_source.html#l05269">map::draw_connections()</a>, <a class="el" href="mapgen_8cpp_source.html#l03544">map::draw_lab()</a>, <a class="el" href="mapgen_8cpp_source.html#l04791">map::draw_mine()</a>, <a class="el" href="game_8cpp_source.html#l04966">game::forced_door_closing()</a>, <a class="el" href="mapgen_8cpp_source.html#l00107">map::generate()</a>, <a class="el" href="map__extras_8cpp_source.html#l00569">MapExtras::mx_collegekids()</a>, <a class="el" href="map__extras_8cpp_source.html#l02757">MapExtras::mx_looters()</a>, <a class="el" href="map__extras_8cpp_source.html#l00768">MapExtras::mx_marloss_pilgrimage()</a>, <a class="el" href="map__extras_8cpp_source.html#l00508">MapExtras::mx_military()</a>, <a class="el" href="map__extras_8cpp_source.html#l01014">MapExtras::mx_portal()</a>, <a class="el" href="map__extras_8cpp_source.html#l00604">MapExtras::mx_roadblock()</a>, <a class="el" href="map__extras_8cpp_source.html#l00543">MapExtras::mx_science()</a>, <a class="el" href="map__extras_8cpp_source.html#l00968">MapExtras::mx_supplydrop()</a>, <a class="el" href="overmap_8cpp_source.html#l02429">overmap::place_forest_trails()</a>, <a class="el" href="map__field_8cpp_source.html#l00396">map::process_fields_in_submap()</a>, <a class="el" href="map__selector_8cpp_source.html#l00033">random_point()</a>, <a class="el" href="map_8cpp_source.html#l07694">map::spawn_monsters_submap()</a>, and <a class="el" href="iuse__actor_8cpp_source.html#l01112">place_npc_iuse::use()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l04637">choose_where_to_place_monster()</a>, <a class="el" href="mapgen_8cpp_source.html#l05269">map::draw_connections()</a>, <a class="el" href="mapgen_8cpp_source.html#l03544">map::draw_lab()</a>, <a class="el" href="mapgen_8cpp_source.html#l04791">map::draw_mine()</a>, <a class="el" href="game_8cpp_source.html#l04997">game::forced_door_closing()</a>, <a class="el" href="mapgen_8cpp_source.html#l00107">map::generate()</a>, <a class="el" href="map__extras_8cpp_source.html#l00569">MapExtras::mx_collegekids()</a>, <a class="el" href="map__extras_8cpp_source.html#l02757">MapExtras::mx_looters()</a>, <a class="el" href="map__extras_8cpp_source.html#l00768">MapExtras::mx_marloss_pilgrimage()</a>, <a class="el" href="map__extras_8cpp_source.html#l00508">MapExtras::mx_military()</a>, <a class="el" href="map__extras_8cpp_source.html#l01014">MapExtras::mx_portal()</a>, <a class="el" href="map__extras_8cpp_source.html#l00604">MapExtras::mx_roadblock()</a>, <a class="el" href="map__extras_8cpp_source.html#l00543">MapExtras::mx_science()</a>, <a class="el" href="map__extras_8cpp_source.html#l00968">MapExtras::mx_supplydrop()</a>, <a class="el" href="overmap_8cpp_source.html#l02429">overmap::place_forest_trails()</a>, <a class="el" href="map__field_8cpp_source.html#l00396">map::process_fields_in_submap()</a>, <a class="el" href="map__selector_8cpp_source.html#l00033">random_point()</a>, <a class="el" href="map_8cpp_source.html#l07757">map::spawn_monsters_submap()</a>, and <a class="el" href="iuse__actor_8cpp_source.html#l01113">place_npc_iuse::use()</a>.</p>
 
 </div>
 </div>
-<a id="a7065e7cf3b4500cfa951f2540b8c0932" name="a7065e7cf3b4500cfa951f2540b8c0932"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7065e7cf3b4500cfa951f2540b8c0932">&#9670;&nbsp;</a></span>random_point() <span class="overload">[2/2]</span></h2>
+<a id="a43634a1cf5184542f46b6b36da36ffdd" name="a43634a1cf5184542f46b6b36da36ffdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43634a1cf5184542f46b6b36da36ffdd">&#9670;&nbsp;</a></span>random_point() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classcata_1_1optional.html">cata::optional</a>&lt; <a class="el" href="structtripoint.html">tripoint</a> &gt; random_point </td>
+          <td class="memname"><a class="el" href="generic__factory_8h.html#a1159dbaba81931271dbfe5b9c7f041b3">std::optional</a>&lt; <a class="el" href="structtripoint.html">tripoint</a> &gt; random_point </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classtripoint__range.html">tripoint_range</a>&lt; <a class="el" href="structtripoint.html">tripoint</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>range</em>, </td>
@@ -266,7 +266,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="map__selector_8cpp.html">map_selector.cpp</a></li>
-    <li class="footer">Generated on Fri Apr 7 2023 11:54:31 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Apr 30 2023 06:47:55 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

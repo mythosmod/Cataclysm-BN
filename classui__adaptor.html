@@ -234,7 +234,7 @@ Private Attributes</h2></td></tr>
 <div class="line">    }</div>
 <div class="line">}</div>
 <div class="ttc" id="aclasscatacurses_1_1window_html"><div class="ttname"><a href="classcatacurses_1_1window.html">catacurses::window</a></div><div class="ttdoc">A wrapper over a pointer to a curses window.</div><div class="ttdef"><b>Definition:</b> <a href="cursesdef_8h_source.html#l00054">cursesdef.h:55</a></div></div>
-<div class="ttc" id="aclassinput__context_html"><div class="ttname"><a href="classinput__context.html">input_context</a></div><div class="ttdoc">Represents a context in which a set of actions can be performed.</div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00385">input.h:386</a></div></div>
+<div class="ttc" id="aclassinput__context_html"><div class="ttname"><a href="classinput__context.html">input_context</a></div><div class="ttdoc">Represents a context in which a set of actions can be performed.</div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00381">input.h:382</a></div></div>
 <div class="ttc" id="aclassui__adaptor_html"><div class="ttname"><a href="classui__adaptor.html">ui_adaptor</a></div><div class="ttdoc">Adaptor between UI code and the UI management system.</div><div class="ttdef"><b>Definition:</b> <a href="ui__manager_8h_source.html#l00064">ui_manager.h:65</a></div></div>
 <div class="ttc" id="adialogue_8h_html_abfef6960b077f40e23bc00055370cc71a0639a24a99be1d60fe688dd938b7eca8"><div class="ttname"><a href="dialogue_8h.html#abfef6960b077f40e23bc00055370cc71a0639a24a99be1d60fe688dd938b7eca8">action</a></div><div class="ttdeci">@ action</div><div class="ttdef"><b>Definition:</b> <a href="dialogue_8h_source.html#l00037">dialogue.h:36</a></div></div>
 <div class="ttc" id="anamespacecatacurses_html_a46f283ad0553e1f25b069e41c3a6bd3f"><div class="ttname"><a href="namespacecatacurses.html#a46f283ad0553e1f25b069e41c3a6bd3f">catacurses::newwin</a></div><div class="ttdeci">window newwin(int nlines, int ncols, point begin)</div><div class="ttdef"><b>Definition:</b> <a href="ncurses__def_8cpp_source.html#l00034">ncurses_def.cpp:34</a></div></div>
@@ -405,7 +405,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        SDL_RenderGetClipRect( renderer.get(), &amp;prev_clip_rect.value() );</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        SDL_RenderSetClipRect( renderer.get(), <span class="keyword">nullptr</span> );</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        prev_clip_rect = <a class="code hl_variable" href="namespacecata.html#ad05314667ac5d05f984aeeef26b9a87f">cata::nullopt</a>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        prev_clip_rect = std::nullopt;</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    }</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="comment">// The debug message might be shown during a normal UI&#39;s redraw callback,</span></div>
@@ -415,12 +415,11 @@ Private Attributes</h2></td></tr>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <a class="code hl_variable" href="ui__manager_8cpp.html#ab3a3f30ed70140333f4af693ff0a4e9c">ui_stack</a>.emplace_back( *<span class="keyword">this</span> );</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>}</div>
 <div class="ttc" id="agame__ui_8cpp_html_ad75a1116fce8f061299267e20268ca48"><div class="ttname"><a href="game__ui_8cpp.html#ad75a1116fce8f061299267e20268ca48">reinitialize_framebuffer</a></div><div class="ttdeci">void reinitialize_framebuffer(const bool)</div><div class="ttdef"><b>Definition:</b> <a href="game__ui_8cpp_source.html#l00005">game_ui.cpp:5</a></div></div>
-<div class="ttc" id="anamespacecata_html_ad05314667ac5d05f984aeeef26b9a87f"><div class="ttname"><a href="namespacecata.html#ad05314667ac5d05f984aeeef26b9a87f">cata::nullopt</a></div><div class="ttdeci">static constexpr nullopt_t nullopt</div><div class="ttdef"><b>Definition:</b> <a href="optional_8h_source.html#l00022">optional.h:22</a></div></div>
 <div class="ttc" id="aui__manager_8cpp_html_a2bfb07946b9342f4c79f55b8aa814a46"><div class="ttname"><a href="ui__manager_8cpp.html#a2bfb07946b9342f4c79f55b8aa814a46">restart_redrawing</a></div><div class="ttdeci">static bool restart_redrawing</div><div class="ttdef"><b>Definition:</b> <a href="ui__manager_8cpp_source.html#l00019">ui_manager.cpp:19</a></div></div>
 <div class="ttc" id="aui__manager_8cpp_html_ab48bfb4852ebbd86bb0dbb3c99d4edef"><div class="ttname"><a href="ui__manager_8cpp.html#ab48bfb4852ebbd86bb0dbb3c99d4edef">redraw_in_progress</a></div><div class="ttdeci">static bool redraw_in_progress</div><div class="ttdef"><b>Definition:</b> <a href="ui__manager_8cpp_source.html#l00017">ui_manager.cpp:17</a></div></div>
 <div class="ttc" id="aui__manager_8cpp_html_abba7b6d7c2497114477cbe0357917eed"><div class="ttname"><a href="ui__manager_8cpp.html#abba7b6d7c2497114477cbe0357917eed">showing_debug_message</a></div><div class="ttdeci">static bool showing_debug_message</div><div class="ttdef"><b>Definition:</b> <a href="ui__manager_8cpp_source.html#l00018">ui_manager.cpp:18</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="optional_8h_source.html#l00022">cata::nullopt</a>, <a class="el" href="ui__manager_8cpp_source.html#l00017">redraw_in_progress</a>, <a class="el" href="game__ui_8cpp_source.html#l00005">reinitialize_framebuffer()</a>, <a class="el" href="ui__manager_8cpp_source.html#l00019">restart_redrawing</a>, <a class="el" href="ui__manager_8cpp_source.html#l00018">showing_debug_message</a>, <a class="el" href="ui__manager_8cpp_source.html#l00023">ui_stack</a>, and <a class="el" href="optional_8h_source.html#l00127">cata::optional&lt; T &gt;::value()</a>.</p>
+<p class="reference">References <a class="el" href="ui__manager_8cpp_source.html#l00017">redraw_in_progress</a>, <a class="el" href="game__ui_8cpp_source.html#l00005">reinitialize_framebuffer()</a>, <a class="el" href="ui__manager_8cpp_source.html#l00019">restart_redrawing</a>, <a class="el" href="ui__manager_8cpp_source.html#l00018">showing_debug_message</a>, and <a class="el" href="ui__manager_8cpp_source.html#l00023">ui_stack</a>.</p>
 
 </div>
 </div>
@@ -516,7 +515,7 @@ Private Attributes</h2></td></tr>
 <div class="ttc" id="aclassui__adaptor_html_ae983b5ab574c4215b081fbca9dc5a622"><div class="ttname"><a href="classui__adaptor.html#ae983b5ab574c4215b081fbca9dc5a622">ui_adaptor::dimensions</a></div><div class="ttdeci">rectangle&lt; point &gt; dimensions</div><div class="ttdef"><b>Definition:</b> <a href="ui__manager_8h_source.html#l00177">ui_manager.h:177</a></div></div>
 <div class="ttc" id="anamespaceui__manager_html_a93b4bb0f95c5d3a9be3b28ba09878fcc"><div class="ttname"><a href="namespaceui__manager.html#a93b4bb0f95c5d3a9be3b28ba09878fcc">ui_manager::invalidate</a></div><div class="ttdeci">void invalidate(const rectangle&lt; point &gt; &amp;rect, const bool reenable_uis_below)</div><div class="ttdoc">Invalidate a portion of the screen when a UI is resized, closed, etc.</div><div class="ttdef"><b>Definition:</b> <a href="ui__manager_8cpp_source.html#l00384">ui_manager.cpp:384</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="ui__manager_8h_source.html#l00177">dimensions</a>, <a class="el" href="ui__manager_8h_source.html#l00181">disabling_uis_below</a>, <a class="el" href="optional_8h_source.html#l00123">cata::optional&lt; T &gt;::has_value()</a>, <a class="el" href="ui__manager_8cpp_source.html#l00384">ui_manager::invalidate()</a>, <a class="el" href="ui__manager_8h_source.html#l00182">is_debug_message_ui</a>, <a class="el" href="ui__manager_8cpp_source.html#l00018">showing_debug_message</a>, <a class="el" href="ui__manager_8cpp_source.html#l00023">ui_stack</a>, and <a class="el" href="optional_8h_source.html#l00127">cata::optional&lt; T &gt;::value()</a>.</p>
+<p class="reference">References <a class="el" href="ui__manager_8h_source.html#l00177">dimensions</a>, <a class="el" href="ui__manager_8h_source.html#l00181">disabling_uis_below</a>, <a class="el" href="ui__manager_8cpp_source.html#l00384">ui_manager::invalidate()</a>, <a class="el" href="ui__manager_8h_source.html#l00182">is_debug_message_ui</a>, <a class="el" href="ui__manager_8cpp_source.html#l00018">showing_debug_message</a>, and <a class="el" href="ui__manager_8cpp_source.html#l00023">ui_stack</a>.</p>
 
 </div>
 </div>
@@ -634,7 +633,7 @@ Private Attributes</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40a857af22f119fefbfa24769ed2ad6d5e7">contains</a>, <a class="el" href="ui__manager_8h_source.html#l00177">dimensions</a>, <a class="el" href="ui__manager_8h_source.html#l00184">invalidated</a>, <a class="el" href="ui__manager_8cpp_source.html#l00161">invalidation_consistency_and_optimization()</a>, and <a class="el" href="ui__manager_8cpp_source.html#l00023">ui_stack</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="character__display_8cpp_source.html#l00925">handle_player_display_action()</a>, <a class="el" href="overmap__ui_8cpp_source.html#l01689">overmap_ui::place_ter_or_special()</a>, <a class="el" href="overmap__ui_8cpp_source.html#l01554">overmap_ui::search()</a>, and <a class="el" href="diary__ui_8cpp_source.html#l00164">diary::show_diary_ui()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="character__display_8cpp_source.html#l00930">handle_player_display_action()</a>, <a class="el" href="overmap__ui_8cpp_source.html#l01689">overmap_ui::place_ter_or_special()</a>, <a class="el" href="overmap__ui_8cpp_source.html#l01554">overmap_ui::search()</a>, and <a class="el" href="diary__ui_8cpp_source.html#l00164">diary::show_diary_ui()</a>.</p>
 
 </div>
 </div>
@@ -730,7 +729,7 @@ Private Attributes</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="ui__manager_8h_source.html#l00185">deferred_resize</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="veh__interact_8cpp_source.html#l00344">veh_interact::create_or_get_ui_adaptor()</a>, <a class="el" href="character__display_8cpp_source.html#l01063">character_display::disp_info()</a>, and <a class="el" href="diary__ui_8cpp_source.html#l00164">diary::show_diary_ui()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="veh__interact_8cpp_source.html#l00344">veh_interact::create_or_get_ui_adaptor()</a>, <a class="el" href="character__display_8cpp_source.html#l01068">character_display::disp_info()</a>, and <a class="el" href="diary__ui_8cpp_source.html#l00164">diary::show_diary_ui()</a>.</p>
 
 </div>
 </div>
@@ -770,7 +769,7 @@ Private Attributes</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="ui__manager_8h_source.html#l00178">redraw_cb</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="veh__interact_8cpp_source.html#l00344">veh_interact::create_or_get_ui_adaptor()</a>, <a class="el" href="character__display_8cpp_source.html#l01063">character_display::disp_info()</a>, <a class="el" href="ui__manager_8cpp_source.html#l00226">reset()</a>, <a class="el" href="auto__pickup_8cpp_source.html#l00044">auto_pickup::user_interface::show()</a>, <a class="el" href="safemode__ui_8cpp_source.html#l00050">safemode::show()</a>, and <a class="el" href="diary__ui_8cpp_source.html#l00164">diary::show_diary_ui()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="veh__interact_8cpp_source.html#l00344">veh_interact::create_or_get_ui_adaptor()</a>, <a class="el" href="character__display_8cpp_source.html#l01068">character_display::disp_info()</a>, <a class="el" href="ui__manager_8cpp_source.html#l00226">reset()</a>, <a class="el" href="auto__pickup_8cpp_source.html#l00044">auto_pickup::user_interface::show()</a>, <a class="el" href="safemode__ui_8cpp_source.html#l00050">safemode::show()</a>, and <a class="el" href="diary__ui_8cpp_source.html#l00164">diary::show_diary_ui()</a>.</p>
 
 </div>
 </div>
@@ -798,7 +797,7 @@ Private Attributes</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="ui__manager_8h_source.html#l00179">screen_resized_cb</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="character__display_8cpp_source.html#l01063">character_display::disp_info()</a>, <a class="el" href="ui__manager_8cpp_source.html#l00226">reset()</a>, <a class="el" href="auto__pickup_8cpp_source.html#l00044">auto_pickup::user_interface::show()</a>, <a class="el" href="safemode__ui_8cpp_source.html#l00050">safemode::show()</a>, and <a class="el" href="diary__ui_8cpp_source.html#l00164">diary::show_diary_ui()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="character__display_8cpp_source.html#l01068">character_display::disp_info()</a>, <a class="el" href="ui__manager_8cpp_source.html#l00226">reset()</a>, <a class="el" href="auto__pickup_8cpp_source.html#l00044">auto_pickup::user_interface::show()</a>, <a class="el" href="safemode__ui_8cpp_source.html#l00050">safemode::show()</a>, and <a class="el" href="diary__ui_8cpp_source.html#l00164">diary::show_diary_ui()</a>.</p>
 
 </div>
 </div>
@@ -953,7 +952,7 @@ Private Attributes</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="ui__manager_8h_source.html#l00177">dimensions</a>, <a class="el" href="ncurses__def_8cpp_source.html#l00068">catacurses::getbegx()</a>, <a class="el" href="ncurses__def_8cpp_source.html#l00073">catacurses::getbegy()</a>, <a class="el" href="ncurses__def_8cpp_source.html#l00058">catacurses::getmaxx()</a>, <a class="el" href="ncurses__def_8cpp_source.html#l00063">catacurses::getmaxy()</a>, <a class="el" href="ui__manager_8cpp_source.html#l00384">ui_manager::invalidate()</a>, <a class="el" href="ui__manager_8h_source.html#l00184">invalidated</a>, <a class="el" href="point_8h_source.html#l00260">point_zero</a>, and <a class="el" href="ui__manager_8cpp_source.html#l00112">position()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="veh__interact_8cpp_source.html#l00344">veh_interact::create_or_get_ui_adaptor()</a>, <a class="el" href="character__display_8cpp_source.html#l01063">character_display::disp_info()</a>, <a class="el" href="auto__pickup_8cpp_source.html#l00044">auto_pickup::user_interface::show()</a>, and <a class="el" href="safemode__ui_8cpp_source.html#l00050">safemode::show()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="veh__interact_8cpp_source.html#l00344">veh_interact::create_or_get_ui_adaptor()</a>, <a class="el" href="character__display_8cpp_source.html#l01068">character_display::disp_info()</a>, <a class="el" href="auto__pickup_8cpp_source.html#l00044">auto_pickup::user_interface::show()</a>, and <a class="el" href="safemode__ui_8cpp_source.html#l00050">safemode::show()</a>.</p>
 
 </div>
 </div>
@@ -1388,7 +1387,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classui__adaptor.html">ui_adaptor</a></li>
-    <li class="footer">Generated on Fri Apr 7 2023 11:54:54 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Apr 30 2023 06:48:23 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

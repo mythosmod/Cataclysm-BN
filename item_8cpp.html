@@ -105,6 +105,7 @@ $(document).ready(function(){initNavTree('item_8cpp.html',''); initResizable(); 
 <code>#include &lt;limits&gt;</code><br />
 <code>#include &lt;locale&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;optional&gt;</code><br />
 <code>#include &lt;set&gt;</code><br />
 <code>#include &lt;sstream&gt;</code><br />
 <code>#include &lt;tuple&gt;</code><br />
@@ -163,7 +164,6 @@ $(document).ready(function(){initNavTree('item_8cpp.html',''); initResizable(); 
 <code>#include &quot;<a class="el" href="monster_8h_source.html">monster.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mtype_8h_source.html">mtype.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="npc_8h_source.html">npc.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="optional_8h_source.html">optional.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="options_8h_source.html">options.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="output_8h_source.html">output.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="overmap_8h_source.html">overmap.h</a>&quot;</code><br />
@@ -4035,17 +4035,17 @@ template&lt;typename Item &gt; </div>
 <div class="line"><a id="l01175" name="l01175"></a><span class="lineno"> 1175</span>}</div>
 <div class="ttc" id="aavatar_8cpp_html_a2eddae690431cd32ce7a091217d68a3a"><div class="ttname"><a href="avatar_8cpp.html#a2eddae690431cd32ce7a091217d68a3a">get_avatar</a></div><div class="ttdeci">avatar &amp; get_avatar()</div><div class="ttdef"><b>Definition:</b> <a href="avatar_8cpp_source.html#l00104">avatar.cpp:104</a></div></div>
 <div class="ttc" id="acalendar_8cpp_html_a3cbd6a4aa555daec83ee03cc90dd7715"><div class="ttname"><a href="calendar_8cpp.html#a3cbd6a4aa555daec83ee03cc90dd7715">to_string_approx</a></div><div class="ttdeci">std::string to_string_approx(const time_duration &amp;dur, const bool verbose)</div><div class="ttdoc">Returns approximate duration.</div><div class="ttdef"><b>Definition:</b> <a href="calendar_8cpp_source.html#l00361">calendar.cpp:361</a></div></div>
-<div class="ttc" id="aclassCharacter_html_a5903c5bd493f4300e949d8452eb04835"><div class="ttname"><a href="classCharacter.html#a5903c5bd493f4300e949d8452eb04835">Character::can_estimate_rot</a></div><div class="ttdeci">bool can_estimate_rot() const</div><div class="ttdoc">True if the character has enough skill (in cooking or survival) to estimate time to rot.</div><div class="ttdef"><b>Definition:</b> <a href="consumption_8cpp_source.html#l01484">consumption.cpp:1484</a></div></div>
+<div class="ttc" id="aclassCharacter_html_a5903c5bd493f4300e949d8452eb04835"><div class="ttname"><a href="classCharacter.html#a5903c5bd493f4300e949d8452eb04835">Character::can_estimate_rot</a></div><div class="ttdeci">bool can_estimate_rot() const</div><div class="ttdoc">True if the character has enough skill (in cooking or survival) to estimate time to rot.</div><div class="ttdef"><b>Definition:</b> <a href="consumption_8cpp_source.html#l01435">consumption.cpp:1435</a></div></div>
 <div class="ttc" id="aclassavatar_html"><div class="ttname"><a href="classavatar.html">avatar</a></div><div class="ttdef"><b>Definition:</b> <a href="avatar_8h_source.html#l00054">avatar.h:55</a></div></div>
 <div class="ttc" id="aclassitem_html_a4661d733113e53ee370d5aa83e31137b"><div class="ttname"><a href="classitem.html#a4661d733113e53ee370d5aa83e31137b">item::is_going_bad</a></div><div class="ttdeci">bool is_going_bad() const</div><div class="ttdoc">an item is about to become rotten when shelf life has nearly elapsed</div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l00843">item.h:843</a></div></div>
 <div class="ttc" id="aclassitem_html_aad1afe56872327f37ee02011e3a5fb8b"><div class="ttname"><a href="classitem.html#aad1afe56872327f37ee02011e3a5fb8b">item::get_shelf_life</a></div><div class="ttdeci">time_duration get_shelf_life() const</div><div class="ttdoc">Get the shelf life of the item.</div><div class="ttdef"><b>Definition:</b> <a href="item_8cpp_source.html#l05519">item.cpp:5519</a></div></div>
 <div class="ttc" id="aclassitem_html_ac3898605336bf9c45ee3ce37d41d5ead"><div class="ttname"><a href="classitem.html#ac3898605336bf9c45ee3ce37d41d5ead">item::is_fresh</a></div><div class="ttdeci">bool is_fresh() const</div><div class="ttdoc">an item is fresh if it is capable of rotting but still has a long shelf life remaining</div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l00838">item.h:838</a></div></div>
 <div class="ttc" id="aclassitem_html_adfb5ddb3d50f317c79eb7a1a26a63905"><div class="ttname"><a href="classitem.html#adfb5ddb3d50f317c79eb7a1a26a63905">item::get_relative_rot</a></div><div class="ttdeci">double get_relative_rot() const</div><div class="ttdoc">Get rot value relative to shelf life (or 0 if item does not spoil)</div><div class="ttdef"><b>Definition:</b> <a href="item_8cpp_source.html#l05531">item.cpp:5531</a></div></div>
 <div class="ttc" id="aclasstime__duration_html"><div class="ttname"><a href="classtime__duration.html">time_duration</a></div><div class="ttdoc">A duration defined as a number of specific time units.</div><div class="ttdef"><b>Definition:</b> <a href="calendar_8h_source.html#l00179">calendar.h:180</a></div></div>
-<div class="ttc" id="astring__formatter_8h_html_a8964099387da2f95396c67566bafce3d"><div class="ttname"><a href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a></div><div class="ttdeci">std::string string_format(std::string_view format, Args &amp;&amp;...args)</div><div class="ttdoc">Simple wrapper over string_formatter::parse.</div><div class="ttdef"><b>Definition:</b> <a href="string__formatter_8h_source.html#l00431">string_formatter.h:431</a></div></div>
+<div class="ttc" id="astring__formatter_8h_html_a8964099387da2f95396c67566bafce3d"><div class="ttname"><a href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a></div><div class="ttdeci">std::string string_format(std::string_view format, Args &amp;&amp;...args)</div><div class="ttdoc">Simple wrapper over string_formatter::parse.</div><div class="ttdef"><b>Definition:</b> <a href="string__formatter_8h_source.html#l00430">string_formatter.h:430</a></div></div>
 <div class="ttc" id="atranslations_8h_html_aa829053017e23ef22d44dccecba63a34"><div class="ttname"><a href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a></div><div class="ttdeci">#define _(msg)</div><div class="ttdef"><b>Definition:</b> <a href="translations_8h_source.html#l00116">translations.h:116</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="consumption_8cpp_source.html#l01484">Character::can_estimate_rot()</a>, <a class="el" href="avatar_8cpp_source.html#l00104">get_avatar()</a>, <a class="el" href="item_8cpp_source.html#l05531">item::get_relative_rot()</a>, <a class="el" href="item_8cpp_source.html#l05519">item::get_shelf_life()</a>, <a class="el" href="item_8h_source.html#l00838">item::is_fresh()</a>, <a class="el" href="item_8h_source.html#l00843">item::is_going_bad()</a>, <a class="el" href="string__formatter_8h_source.html#l00431">string_format()</a>, and <a class="el" href="calendar_8cpp_source.html#l00361">to_string_approx()</a>.</p>
+<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="consumption_8cpp_source.html#l01435">Character::can_estimate_rot()</a>, <a class="el" href="avatar_8cpp_source.html#l00104">get_avatar()</a>, <a class="el" href="item_8cpp_source.html#l05531">item::get_relative_rot()</a>, <a class="el" href="item_8cpp_source.html#l05519">item::get_shelf_life()</a>, <a class="el" href="item_8h_source.html#l00838">item::is_fresh()</a>, <a class="el" href="item_8h_source.html#l00843">item::is_going_bad()</a>, <a class="el" href="string__formatter_8h_source.html#l00430">string_format()</a>, and <a class="el" href="calendar_8cpp_source.html#l00361">to_string_approx()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="item_8cpp_source.html#l01670">item::food_info()</a>.</p>
 
@@ -4173,7 +4173,7 @@ template&lt;typename Item &gt; </div>
 <div class="line"><a id="l01105" name="l01105"></a><span class="lineno"> 1105</span> </div>
 <div class="line"><a id="l01106" name="l01106"></a><span class="lineno"> 1106</span>    <span class="keywordflow">return</span> <a class="code hl_namespace" href="namespaceranged.html">ranged</a>.damage.damage_units.front().res_mult;</div>
 <div class="line"><a id="l01107" name="l01107"></a><span class="lineno"> 1107</span>}</div>
-<div class="ttc" id="anamespaceranged_html"><div class="ttname"><a href="namespaceranged.html">ranged</a></div><div class="ttdef"><b>Definition:</b> <a href="animation_8cpp_source.html#l01082">animation.cpp:1083</a></div></div>
+<div class="ttc" id="anamespaceranged_html"><div class="ttname"><a href="namespaceranged.html">ranged</a></div><div class="ttdef"><b>Definition:</b> <a href="animation_8cpp_source.html#l01142">animation.cpp:1143</a></div></div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="item_8cpp_source.html#l01904">item::ammo_info()</a>.</p>
 
@@ -4416,7 +4416,7 @@ template&lt;typename Item &gt; </div>
 <div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>}</div>
 <div class="ttc" id="anamespacedetail_1_1digits_html_aad69d2373aa047bdd9e81494bf3da5ae"><div class="ttname"><a href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">detail::digits::result</a></div><div class="ttdeci">result</div><div class="ttdef"><b>Definition:</b> <a href="fmtlib__format-inl_8h_source.html#l01626">fmtlib_format-inl.h:1626</a></div></div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="ranged_8cpp_source.html#l03145">target_ui::action_aim_and_shoot()</a>, <a class="el" href="map_8cpp_source.html#l04363">map::add_item()</a>, <a class="el" href="map_8cpp_source.html#l04263">map::add_item_or_charges()</a>, <a class="el" href="melee_8cpp_source.html#l01546">Character::best_shield()</a>, <a class="el" href="inventory_8cpp_source.html#l00800">inventory::find_item()</a>, <a class="el" href="npcmove_8cpp_source.html#l01487">npc::find_reloadable()</a>, <a class="el" href="item_8cpp_source.html#l07046">item::get_contained()</a>, <a class="el" href="npc_8cpp_source.html#l01910">npc::get_healing_item()</a>, <a class="el" href="npcmove_8cpp_source.html#l03695">npc::heal_self()</a>, <a class="el" href="character_8cpp_source.html#l09965">Character::item_with_best_of_quality()</a>, <a class="el" href="inventory_8cpp_source.html#l00943">inventory::most_appropriate_painkiller()</a>, <a class="el" href="item__stack_8cpp_source.html#l00083">item_stack::only_item()</a>, <a class="el" href="crafting_8cpp_source.html#l00655">set_item_map()</a>, <a class="el" href="map_8cpp_source.html#l04173">map::spawn_an_item()</a>, <a class="el" href="melee_8cpp_source.html#l00138">Character::used_weapon()</a>, and <a class="el" href="npcmove_8cpp_source.html#l03392">npc::wield_better_weapon()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ranged_8cpp_source.html#l03152">target_ui::action_aim_and_shoot()</a>, <a class="el" href="map_8cpp_source.html#l04427">map::add_item()</a>, <a class="el" href="map_8cpp_source.html#l04327">map::add_item_or_charges()</a>, <a class="el" href="melee_8cpp_source.html#l01546">Character::best_shield()</a>, <a class="el" href="inventory_8cpp_source.html#l00800">inventory::find_item()</a>, <a class="el" href="npcmove_8cpp_source.html#l01485">npc::find_reloadable()</a>, <a class="el" href="item_8cpp_source.html#l07046">item::get_contained()</a>, <a class="el" href="npc_8cpp_source.html#l01910">npc::get_healing_item()</a>, <a class="el" href="npcmove_8cpp_source.html#l03681">npc::heal_self()</a>, <a class="el" href="character_8cpp_source.html#l09979">Character::item_with_best_of_quality()</a>, <a class="el" href="inventory_8cpp_source.html#l00943">inventory::most_appropriate_painkiller()</a>, <a class="el" href="item__stack_8cpp_source.html#l00083">item_stack::only_item()</a>, <a class="el" href="crafting_8cpp_source.html#l00655">set_item_map()</a>, <a class="el" href="map_8cpp_source.html#l04237">map::spawn_an_item()</a>, <a class="el" href="melee_8cpp_source.html#l00138">Character::used_weapon()</a>, and <a class="el" href="npcmove_8cpp_source.html#l03378">npc::wield_better_weapon()</a>.</p>
 
 </div>
 </div>
@@ -4497,7 +4497,7 @@ template&lt;typename Item &gt; </div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="relic_8h.html#a4beeee7f54b2b6d8a7f559714d979139a340f7c2dcaedeae68e4a62c281c7350b">rad</a>, <a class="el" href="translations_8cpp_source.html#l00384">to_translation()</a>, and <a class="el" href="translations_8cpp_source.html#l00309">translation::translated()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="item_8cpp_source.html#l02740">item::armor_fit_info()</a>, and <a class="el" href="suffer_8cpp_source.html#l01536">Character::irradiate()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="item_8cpp_source.html#l02740">item::armor_fit_info()</a>, and <a class="el" href="suffer_8cpp_source.html#l01506">Character::irradiate()</a>.</p>
 
 </div>
 </div>
@@ -5752,7 +5752,7 @@ template&lt;typename Item &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="item_8cpp_source.html#l00312">312</a> of file <a class="el" href="item_8cpp_source.html">item.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="savegame__json_8cpp_source.html#l02162">item::io()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="savegame__json_8cpp_source.html#l02168">item::io()</a>.</p>
 
 </div>
 </div>
@@ -6126,7 +6126,7 @@ template&lt;typename Item &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="item_8cpp.html">item.cpp</a></li>
-    <li class="footer">Generated on Fri Apr 7 2023 11:54:30 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Apr 30 2023 06:47:54 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

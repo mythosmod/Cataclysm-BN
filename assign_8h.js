@@ -1,13 +1,13 @@
 var assign_8h =
 [
     [ "detail::is_optional_helper< T >", "classdetail_1_1is__optional__helper.html", null ],
-    [ "detail::is_optional_helper< cata::optional< T > >", "classdetail_1_1is__optional__helper_3_01cata_1_1optional_3_01T_01_4_01_4.html", null ],
+    [ "detail::is_optional_helper< std::optional< T > >", "classdetail_1_1is__optional__helper_3_01std_1_1optional_3_01T_01_4_01_4.html", null ],
     [ "is_optional< T >", "classis__optional.html", null ],
     [ "CATA_SRC_ASSIGN_H", "assign_8h.html#ad5b2b0b0bcb624bfa72ce2f36cdc445b", null ],
     [ "assign", "assign_8h.html#aaa2d6a2e0094c6ccf155e48e1989335d", null ],
-    [ "assign", "assign_8h.html#a550fb7f18e9a8792944dc0f8c4a6e39b", null ],
     [ "assign", "assign_8h.html#a81c3fa305256213a9d9fe4b57dde7f12", null ],
     [ "assign", "assign_8h.html#aa2d2605fb8c68ccfbe22b9f7b1c97c7a", null ],
+    [ "assign", "assign_8h.html#a33f69af478292651c93702be05e67908", null ],
     [ "assign", "assign_8h.html#ac76ad9c7152e649459765eb937e4b0f2", null ],
     [ "assign", "assign_8h.html#aad32fefec6a29cf22dfebf2ddf2af7af", null ],
     [ "assign", "assign_8h.html#a686c9293f0cebc1089d37ce6a1e7d8c5", null ],

@@ -43,7 +43,7 @@ var structitype =
     [ "damage_max_", "structitype.html#ad473e287663d24df88e80b82a0d55b31", null ],
     [ "damage_min_", "structitype.html#a77df14c96eca8142e97b00a9e43f56cb", null ],
     [ "damage_scale", "structitype.html#acbc6974858332fd6933f71a304312d7f", null ],
-    [ "default_container", "structitype.html#a732c87e006a38b7dc35850450d588595", null ],
+    [ "default_container", "structitype.html#aaf325d340c06130e2fd994e54400a012", null ],
     [ "description", "structitype.html#a71434072aef9916ba0a62b7baa59a2b5", null ],
     [ "drop_action", "structitype.html#a9d0d50c14b184fceddd1a13ee279a6fc", null ],
     [ "emits", "structitype.html#ac93d9775de15087ba59da8d48e89cb6f", null ],

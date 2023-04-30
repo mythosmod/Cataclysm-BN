@@ -53,6 +53,7 @@ var iuse__actor_8cpp =
     [ "skill_survival", "iuse__actor_8cpp.html#ac038c6319122de04af85fb88e6618601", null ],
     [ "trait_CENOBITE", "iuse__actor_8cpp.html#a9c5c38ebc99fa84cc6fa6cea24213099", null ],
     [ "trait_DEBUG_BIONICS", "iuse__actor_8cpp.html#a17e20a34f5837e50de3264fa93af7d0a", null ],
+    [ "trait_INFRESIST", "iuse__actor_8cpp.html#a638e7eb4b8c8bdd2727763a767bd5617", null ],
     [ "trait_LIGHTWEIGHT", "iuse__actor_8cpp.html#a513ee3dfdb798f83e30d99f697f2fa5b", null ],
     [ "trait_MASOCHIST", "iuse__actor_8cpp.html#afdcb594d54e2337364aeaddeada1da47", null ],
     [ "trait_MASOCHIST_MED", "iuse__actor_8cpp.html#a5961100b2e7ed63c10b71b32858e6792", null ],

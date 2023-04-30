@@ -17,7 +17,7 @@ var debug__menu_8h =
     [ "wishbionics", "debug__menu_8h.html#a7ef7b4a54ffab1064ea54225ca4320ad", null ],
     [ "wishitem", "debug__menu_8h.html#a50b303065b4f4d68e35243048390e4e4", null ],
     [ "wishitem", "debug__menu_8h.html#ab88e02906e27d769939acdbe9a8b7a91", null ],
-    [ "wishmonster", "debug__menu_8h.html#aabb3e6bfde09e4a05bce3511eab1ba22", null ],
+    [ "wishmonster", "debug__menu_8h.html#a325cd0dde9a0b3bdf532592c710db21f", null ],
     [ "wishmutate", "debug__menu_8h.html#a354dd71d540c6a9228eed7c1c681d1b9", null ],
     [ "wishskill", "debug__menu_8h.html#a5dc4d9bb3df433a7371c7d9ae874e547", null ]
 ];
