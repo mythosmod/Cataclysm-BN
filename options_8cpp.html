@@ -179,6 +179,16 @@ Variables</h2></td></tr>
 <tr class="separator:a031b0d1a47acae590a315c72df6b2052"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae39c0b4da325d9397e161c030b27d0f"><td class="memItemLeft" align="right" valign="top">static const std::vector&lt; <a class="el" href="structdebug__log__class.html">debug_log_class</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="options_8cpp.html#aae39c0b4da325d9397e161c030b27d0f">debug_log_classes</a></td></tr>
 <tr class="separator:aae39c0b4da325d9397e161c030b27d0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a78e133b11ee97ef59737e003372ae2"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="options_8cpp.html#a5a78e133b11ee97ef59737e003372ae2">general</a> = &quot;general&quot;</td></tr>
+<tr class="separator:a5a78e133b11ee97ef59737e003372ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5deebfb8f4c3bbc19e32d9d198eeefa"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="options_8cpp.html#ab5deebfb8f4c3bbc19e32d9d198eeefa">interface</a> = &quot;interface&quot;</td></tr>
+<tr class="separator:ab5deebfb8f4c3bbc19e32d9d198eeefa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7164e2e83d139e076202f61f46e1729c"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="options_8cpp.html#a7164e2e83d139e076202f61f46e1729c">graphics</a> = &quot;graphics&quot;</td></tr>
+<tr class="separator:a7164e2e83d139e076202f61f46e1729c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c743c45580b30cceac05bb780272f33"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="options_8cpp.html#a2c743c45580b30cceac05bb780272f33">world_default</a> = &quot;world_default&quot;</td></tr>
+<tr class="separator:a2c743c45580b30cceac05bb780272f33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a428529aed2ef4a0263de7bad476c749e"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="options_8cpp.html#a428529aed2ef4a0263de7bad476c749e">debug</a> = &quot;debug&quot;</td></tr>
+<tr class="separator:a428529aed2ef4a0263de7bad476c749e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a4af03695c821f01da0be3860fc2c389c" name="a4af03695c821f01da0be3860fc2c389c"></a>
@@ -215,7 +225,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="options_8cpp_source.html#l00177">options_manager::add_retry()</a>, and <a class="el" href="options_8cpp_source.html#l00172">options_manager::enable_json()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="options_8cpp_source.html#l00186">options_manager::add_retry()</a>, and <a class="el" href="options_8cpp_source.html#l00181">options_manager::enable_json()</a>.</p>
 
 </div>
 </div>
@@ -268,52 +278,52 @@ Variables</h2></td></tr>
 <p>Fill a mapping with values. </p>
 <p >Scans all directories in <code>dirname</code> directory for a file named <code>filename</code>. All found values added to resource_option as name, resource_dir. Furthermore, it builds possible values list for cOpt class. </p>
 
-<p class="definition">Definition at line <a class="el" href="options_8cpp_source.html#l01018">1018</a> of file <a class="el" href="options_8cpp_source.html">options.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01021" name="l01021"></a><span class="lineno"> 1021</span>{</div>
-<div class="line"><a id="l01022" name="l01022"></a><span class="lineno"> 1022</span>    std::vector&lt;options_manager::id_and_option&gt; resource_names;</div>
-<div class="line"><a id="l01023" name="l01023"></a><span class="lineno"> 1023</span> </div>
-<div class="line"><a id="l01024" name="l01024"></a><span class="lineno"> 1024</span>    resource_option.clear();</div>
-<div class="line"><a id="l01025" name="l01025"></a><span class="lineno"> 1025</span>    <span class="keyword">const</span> <span class="keyword">auto</span> resource_dirs = <a class="code hl_function" href="filesystem_8cpp.html#afb4b76f2228e2156706fa82f3404593e">get_directories_with</a>( filename, dirname, <span class="keyword">true</span> );</div>
-<div class="line"><a id="l01026" name="l01026"></a><span class="lineno"> 1026</span> </div>
-<div class="line"><a id="l01027" name="l01027"></a><span class="lineno"> 1027</span>    <span class="keywordflow">for</span>( <span class="keyword">auto</span> &amp;resource_dir : resource_dirs ) {</div>
-<div class="line"><a id="l01028" name="l01028"></a><span class="lineno"> 1028</span>        <a class="code hl_function" href="cata__utility_8cpp.html#a996629d79715bd5b44fb507d0d368476">read_from_file</a>( resource_dir + <span class="stringliteral">&quot;/&quot;</span> + filename, [&amp;]( std::istream &amp; fin ) {</div>
-<div class="line"><a id="l01029" name="l01029"></a><span class="lineno"> 1029</span>            std::string resource_name;</div>
-<div class="line"><a id="l01030" name="l01030"></a><span class="lineno"> 1030</span>            std::string view_name;</div>
-<div class="line"><a id="l01031" name="l01031"></a><span class="lineno"> 1031</span>            <span class="comment">// should only have 2 values inside it, otherwise is going to only load the last 2 values</span></div>
-<div class="line"><a id="l01032" name="l01032"></a><span class="lineno"> 1032</span>            <span class="keywordflow">while</span>( !fin.eof() ) {</div>
-<div class="line"><a id="l01033" name="l01033"></a><span class="lineno"> 1033</span>                std::string sOption;</div>
-<div class="line"><a id="l01034" name="l01034"></a><span class="lineno"> 1034</span>                fin &gt;&gt; sOption;</div>
+<p class="definition">Definition at line <a class="el" href="options_8cpp_source.html#l01027">1027</a> of file <a class="el" href="options_8cpp_source.html">options.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01030" name="l01030"></a><span class="lineno"> 1030</span>{</div>
+<div class="line"><a id="l01031" name="l01031"></a><span class="lineno"> 1031</span>    std::vector&lt;options_manager::id_and_option&gt; resource_names;</div>
+<div class="line"><a id="l01032" name="l01032"></a><span class="lineno"> 1032</span> </div>
+<div class="line"><a id="l01033" name="l01033"></a><span class="lineno"> 1033</span>    resource_option.clear();</div>
+<div class="line"><a id="l01034" name="l01034"></a><span class="lineno"> 1034</span>    <span class="keyword">const</span> <span class="keyword">auto</span> resource_dirs = <a class="code hl_function" href="filesystem_8cpp.html#afb4b76f2228e2156706fa82f3404593e">get_directories_with</a>( filename, dirname, <span class="keyword">true</span> );</div>
 <div class="line"><a id="l01035" name="l01035"></a><span class="lineno"> 1035</span> </div>
-<div class="line"><a id="l01036" name="l01036"></a><span class="lineno"> 1036</span>                if( sOption.empty() ) {</div>
-<div class="line"><a id="l01037" name="l01037"></a><span class="lineno"> 1037</span>                    getline( fin, sOption );    <span class="comment">// Empty line, chomp it</span></div>
-<div class="line"><a id="l01038" name="l01038"></a><span class="lineno"> 1038</span>                } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( sOption[0] == <span class="charliteral">&#39;#&#39;</span> ) { <span class="comment">// # indicates a comment</span></div>
-<div class="line"><a id="l01039" name="l01039"></a><span class="lineno"> 1039</span>                    getline( fin, sOption );</div>
-<div class="line"><a id="l01040" name="l01040"></a><span class="lineno"> 1040</span>                } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l01041" name="l01041"></a><span class="lineno"> 1041</span>                    if( sOption.find( <span class="stringliteral">&quot;NAME&quot;</span> ) != std::string::npos ) {</div>
-<div class="line"><a id="l01042" name="l01042"></a><span class="lineno"> 1042</span>                        resource_name.clear();</div>
-<div class="line"><a id="l01043" name="l01043"></a><span class="lineno"> 1043</span>                        getline( fin, resource_name );</div>
-<div class="line"><a id="l01044" name="l01044"></a><span class="lineno"> 1044</span>                        resource_name = trim( resource_name );</div>
-<div class="line"><a id="l01045" name="l01045"></a><span class="lineno"> 1045</span>                    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( sOption.find( <span class="stringliteral">&quot;VIEW&quot;</span> ) != std::string::npos ) {</div>
-<div class="line"><a id="l01046" name="l01046"></a><span class="lineno"> 1046</span>                        view_name.clear();</div>
-<div class="line"><a id="l01047" name="l01047"></a><span class="lineno"> 1047</span>                        getline( fin, view_name );</div>
-<div class="line"><a id="l01048" name="l01048"></a><span class="lineno"> 1048</span>                        view_name = trim( view_name );</div>
-<div class="line"><a id="l01049" name="l01049"></a><span class="lineno"> 1049</span>                        break;</div>
-<div class="line"><a id="l01050" name="l01050"></a><span class="lineno"> 1050</span>                    }</div>
-<div class="line"><a id="l01051" name="l01051"></a><span class="lineno"> 1051</span>                }</div>
-<div class="line"><a id="l01052" name="l01052"></a><span class="lineno"> 1052</span>            }</div>
-<div class="line"><a id="l01053" name="l01053"></a><span class="lineno"> 1053</span>            resource_names.emplace_back( resource_name,</div>
-<div class="line"><a id="l01054" name="l01054"></a><span class="lineno"> 1054</span>                                         view_name.empty() ? <a class="code hl_function" href="translations_8cpp.html#a7afa19f8e1a45d955fc6fbaa420a6760">no_translation</a>( resource_name ) : <a class="code hl_function" href="translations_8cpp.html#a176e288c640c6506a86330cb10fbe13a">to_translation</a>( view_name ) );</div>
-<div class="line"><a id="l01055" name="l01055"></a><span class="lineno"> 1055</span>            <span class="keywordflow">if</span>( resource_option.count( resource_name ) != 0 ) {</div>
-<div class="line"><a id="l01056" name="l01056"></a><span class="lineno"> 1056</span>                debugmsg( <span class="stringliteral">&quot;Found \&quot;%s\&quot; duplicate with name \&quot;%s\&quot; (new definition will be ignored)&quot;</span>,</div>
-<div class="line"><a id="l01057" name="l01057"></a><span class="lineno"> 1057</span>                          operation_name, resource_name );</div>
-<div class="line"><a id="l01058" name="l01058"></a><span class="lineno"> 1058</span>            } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l01059" name="l01059"></a><span class="lineno"> 1059</span>                resource_option.insert( std::pair&lt;std::string, std::string&gt;( resource_name, resource_dir ) );</div>
-<div class="line"><a id="l01060" name="l01060"></a><span class="lineno"> 1060</span>            }</div>
-<div class="line"><a id="l01061" name="l01061"></a><span class="lineno"> 1061</span>        } );</div>
-<div class="line"><a id="l01062" name="l01062"></a><span class="lineno"> 1062</span>    }</div>
-<div class="line"><a id="l01063" name="l01063"></a><span class="lineno"> 1063</span> </div>
-<div class="line"><a id="l01064" name="l01064"></a><span class="lineno"> 1064</span>    <span class="keywordflow">return</span> resource_names;</div>
-<div class="line"><a id="l01065" name="l01065"></a><span class="lineno"> 1065</span>}</div>
+<div class="line"><a id="l01036" name="l01036"></a><span class="lineno"> 1036</span>    <span class="keywordflow">for</span>( <span class="keyword">auto</span> &amp;resource_dir : resource_dirs ) {</div>
+<div class="line"><a id="l01037" name="l01037"></a><span class="lineno"> 1037</span>        <a class="code hl_function" href="cata__utility_8cpp.html#a996629d79715bd5b44fb507d0d368476">read_from_file</a>( resource_dir + <span class="stringliteral">&quot;/&quot;</span> + filename, [&amp;]( std::istream &amp; fin ) {</div>
+<div class="line"><a id="l01038" name="l01038"></a><span class="lineno"> 1038</span>            std::string resource_name;</div>
+<div class="line"><a id="l01039" name="l01039"></a><span class="lineno"> 1039</span>            std::string view_name;</div>
+<div class="line"><a id="l01040" name="l01040"></a><span class="lineno"> 1040</span>            <span class="comment">// should only have 2 values inside it, otherwise is going to only load the last 2 values</span></div>
+<div class="line"><a id="l01041" name="l01041"></a><span class="lineno"> 1041</span>            <span class="keywordflow">while</span>( !fin.eof() ) {</div>
+<div class="line"><a id="l01042" name="l01042"></a><span class="lineno"> 1042</span>                std::string sOption;</div>
+<div class="line"><a id="l01043" name="l01043"></a><span class="lineno"> 1043</span>                fin &gt;&gt; sOption;</div>
+<div class="line"><a id="l01044" name="l01044"></a><span class="lineno"> 1044</span> </div>
+<div class="line"><a id="l01045" name="l01045"></a><span class="lineno"> 1045</span>                if( sOption.empty() ) {</div>
+<div class="line"><a id="l01046" name="l01046"></a><span class="lineno"> 1046</span>                    getline( fin, sOption );    <span class="comment">// Empty line, chomp it</span></div>
+<div class="line"><a id="l01047" name="l01047"></a><span class="lineno"> 1047</span>                } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( sOption[0] == <span class="charliteral">&#39;#&#39;</span> ) { <span class="comment">// # indicates a comment</span></div>
+<div class="line"><a id="l01048" name="l01048"></a><span class="lineno"> 1048</span>                    getline( fin, sOption );</div>
+<div class="line"><a id="l01049" name="l01049"></a><span class="lineno"> 1049</span>                } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l01050" name="l01050"></a><span class="lineno"> 1050</span>                    if( sOption.find( <span class="stringliteral">&quot;NAME&quot;</span> ) != std::string::npos ) {</div>
+<div class="line"><a id="l01051" name="l01051"></a><span class="lineno"> 1051</span>                        resource_name.clear();</div>
+<div class="line"><a id="l01052" name="l01052"></a><span class="lineno"> 1052</span>                        getline( fin, resource_name );</div>
+<div class="line"><a id="l01053" name="l01053"></a><span class="lineno"> 1053</span>                        resource_name = trim( resource_name );</div>
+<div class="line"><a id="l01054" name="l01054"></a><span class="lineno"> 1054</span>                    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( sOption.find( <span class="stringliteral">&quot;VIEW&quot;</span> ) != std::string::npos ) {</div>
+<div class="line"><a id="l01055" name="l01055"></a><span class="lineno"> 1055</span>                        view_name.clear();</div>
+<div class="line"><a id="l01056" name="l01056"></a><span class="lineno"> 1056</span>                        getline( fin, view_name );</div>
+<div class="line"><a id="l01057" name="l01057"></a><span class="lineno"> 1057</span>                        view_name = trim( view_name );</div>
+<div class="line"><a id="l01058" name="l01058"></a><span class="lineno"> 1058</span>                        break;</div>
+<div class="line"><a id="l01059" name="l01059"></a><span class="lineno"> 1059</span>                    }</div>
+<div class="line"><a id="l01060" name="l01060"></a><span class="lineno"> 1060</span>                }</div>
+<div class="line"><a id="l01061" name="l01061"></a><span class="lineno"> 1061</span>            }</div>
+<div class="line"><a id="l01062" name="l01062"></a><span class="lineno"> 1062</span>            resource_names.emplace_back( resource_name,</div>
+<div class="line"><a id="l01063" name="l01063"></a><span class="lineno"> 1063</span>                                         view_name.empty() ? <a class="code hl_function" href="translations_8cpp.html#a7afa19f8e1a45d955fc6fbaa420a6760">no_translation</a>( resource_name ) : <a class="code hl_function" href="translations_8cpp.html#a176e288c640c6506a86330cb10fbe13a">to_translation</a>( view_name ) );</div>
+<div class="line"><a id="l01064" name="l01064"></a><span class="lineno"> 1064</span>            <span class="keywordflow">if</span>( resource_option.count( resource_name ) != 0 ) {</div>
+<div class="line"><a id="l01065" name="l01065"></a><span class="lineno"> 1065</span>                debugmsg( <span class="stringliteral">&quot;Found \&quot;%s\&quot; duplicate with name \&quot;%s\&quot; (new definition will be ignored)&quot;</span>,</div>
+<div class="line"><a id="l01066" name="l01066"></a><span class="lineno"> 1066</span>                          operation_name, resource_name );</div>
+<div class="line"><a id="l01067" name="l01067"></a><span class="lineno"> 1067</span>            } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l01068" name="l01068"></a><span class="lineno"> 1068</span>                resource_option.insert( std::pair&lt;std::string, std::string&gt;( resource_name, resource_dir ) );</div>
+<div class="line"><a id="l01069" name="l01069"></a><span class="lineno"> 1069</span>            }</div>
+<div class="line"><a id="l01070" name="l01070"></a><span class="lineno"> 1070</span>        } );</div>
+<div class="line"><a id="l01071" name="l01071"></a><span class="lineno"> 1071</span>    }</div>
+<div class="line"><a id="l01072" name="l01072"></a><span class="lineno"> 1072</span> </div>
+<div class="line"><a id="l01073" name="l01073"></a><span class="lineno"> 1073</span>    <span class="keywordflow">return</span> resource_names;</div>
+<div class="line"><a id="l01074" name="l01074"></a><span class="lineno"> 1074</span>}</div>
 <div class="ttc" id="acata__utility_8cpp_html_a996629d79715bd5b44fb507d0d368476"><div class="ttname"><a href="cata__utility_8cpp.html#a996629d79715bd5b44fb507d0d368476">read_from_file</a></div><div class="ttdeci">bool read_from_file(const std::string &amp;path, const std::function&lt; void(std::istream &amp;)&gt; &amp;reader)</div><div class="ttdoc">Try to open and read from given file using the given callback.</div><div class="ttdef"><b>Definition:</b> <a href="cata__utility_8cpp_source.html#l00520">cata_utility.cpp:520</a></div></div>
 <div class="ttc" id="afilesystem_8cpp_html_afb4b76f2228e2156706fa82f3404593e"><div class="ttname"><a href="filesystem_8cpp.html#afb4b76f2228e2156706fa82f3404593e">get_directories_with</a></div><div class="ttdeci">std::vector&lt; std::string &gt; get_directories_with(const std::string &amp;pattern, const std::string &amp;root_path, const bool recursive_search)</div><div class="ttdoc">Find directories which containing pattern.</div><div class="ttdef"><b>Definition:</b> <a href="filesystem_8cpp_source.html#l00381">filesystem.cpp:381</a></div></div>
 <div class="ttc" id="atranslations_8cpp_html_a176e288c640c6506a86330cb10fbe13a"><div class="ttname"><a href="translations_8cpp.html#a176e288c640c6506a86330cb10fbe13a">to_translation</a></div><div class="ttdeci">translation to_translation(const std::string &amp;raw)</div><div class="ttdoc">Shorthands for translation::to_translation.</div><div class="ttdef"><b>Definition:</b> <a href="translations_8cpp_source.html#l00384">translations.cpp:384</a></div></div>
@@ -321,7 +331,7 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="filesystem_8cpp_source.html#l00381">get_directories_with()</a>, <a class="el" href="translations_8cpp_source.html#l00405">no_translation()</a>, <a class="el" href="cata__utility_8cpp_source.html#l00520">read_from_file()</a>, and <a class="el" href="translations_8cpp_source.html#l00384">to_translation()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="options_8cpp_source.html#l01109">options_manager::load_soundpack_from()</a>, and <a class="el" href="options_8cpp_source.html#l01067">options_manager::load_tilesets_from()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="options_8cpp_source.html#l01118">options_manager::load_soundpack_from()</a>, and <a class="el" href="options_8cpp_source.html#l01076">options_manager::load_tilesets_from()</a>.</p>
 
 </div>
 </div>
@@ -371,19 +381,19 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="options_8cpp_source.html#l02694">2694</a> of file <a class="el" href="options_8cpp_source.html">options.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l02697" name="l02697"></a><span class="lineno"> 2697</span>{</div>
-<div class="line"><a id="l02698" name="l02698"></a><span class="lineno"> 2698</span>    <span class="keywordflow">if</span>( !world_options_only ) {</div>
-<div class="line"><a id="l02699" name="l02699"></a><span class="lineno"> 2699</span>        <a class="code hl_function" href="output_8cpp.html#afea9968fcee47ebca0e45d27099d1c22">draw_border</a>( w, <a class="code hl_define" href="output_8h.html#a966901ace2cf6cba3fc9cec310150860">BORDER_COLOR</a>, <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot; OPTIONS &quot;</span> ) );</div>
-<div class="line"><a id="l02700" name="l02700"></a><span class="lineno"> 2700</span>    }</div>
-<div class="line"><a id="l02701" name="l02701"></a><span class="lineno"> 2701</span>    <span class="comment">// intersections</span></div>
-<div class="line"><a id="l02702" name="l02702"></a><span class="lineno"> 2702</span>    <a class="code hl_function" href="output_8cpp.html#ab6fabf52c2dd7100db72c1f5279d1666">mvwputch</a>( w, <a class="code hl_struct" href="structpoint.html">point</a>( 0, horizontal_level ), <a class="code hl_define" href="output_8h.html#a966901ace2cf6cba3fc9cec310150860">BORDER_COLOR</a>, <a class="code hl_define" href="output_8h.html#a4b80f0039259ebe61dc2e58ca4b31043">LINE_XXXO</a> ); <span class="comment">// |-</span></div>
-<div class="line"><a id="l02703" name="l02703"></a><span class="lineno"> 2703</span>    <a class="code hl_function" href="output_8cpp.html#ab6fabf52c2dd7100db72c1f5279d1666">mvwputch</a>( w, <a class="code hl_struct" href="structpoint.html">point</a>( <a class="code hl_function" href="namespacecatacurses.html#a929fe85d472028f52d8a5cdfc0d35017">getmaxx</a>( w ) - 1, horizontal_level ), <a class="code hl_define" href="output_8h.html#a966901ace2cf6cba3fc9cec310150860">BORDER_COLOR</a>, <a class="code hl_define" href="output_8h.html#a0803e4570f3cd69d38952bc2b4555c24">LINE_XOXX</a> ); <span class="comment">// -|</span></div>
-<div class="line"><a id="l02704" name="l02704"></a><span class="lineno"> 2704</span>    <span class="keywordflow">for</span>( <span class="keyword">auto</span> &amp;x : vert_lines ) {</div>
-<div class="line"><a id="l02705" name="l02705"></a><span class="lineno"> 2705</span>        <a class="code hl_function" href="output_8cpp.html#ab6fabf52c2dd7100db72c1f5279d1666">mvwputch</a>( w, <a class="code hl_struct" href="structpoint.html">point</a>( x + 1, <a class="code hl_function" href="namespacecatacurses.html#adc81ca40445dc062af12fb6d7a4793d0">getmaxy</a>( w ) - 1 ), <a class="code hl_define" href="output_8h.html#a966901ace2cf6cba3fc9cec310150860">BORDER_COLOR</a>, <a class="code hl_define" href="output_8h.html#a612d0d0728e93276b2b7de1fc57b096b">LINE_XXOX</a> ); <span class="comment">// _|_</span></div>
-<div class="line"><a id="l02706" name="l02706"></a><span class="lineno"> 2706</span>    }</div>
-<div class="line"><a id="l02707" name="l02707"></a><span class="lineno"> 2707</span>    <a class="code hl_function" href="namespacecatacurses.html#aa9823d249c21fa50daf277957fabb175">wnoutrefresh</a>( w );</div>
-<div class="line"><a id="l02708" name="l02708"></a><span class="lineno"> 2708</span>}</div>
+<p class="definition">Definition at line <a class="el" href="options_8cpp_source.html#l02675">2675</a> of file <a class="el" href="options_8cpp_source.html">options.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l02678" name="l02678"></a><span class="lineno"> 2678</span>{</div>
+<div class="line"><a id="l02679" name="l02679"></a><span class="lineno"> 2679</span>    <span class="keywordflow">if</span>( !world_options_only ) {</div>
+<div class="line"><a id="l02680" name="l02680"></a><span class="lineno"> 2680</span>        <a class="code hl_function" href="output_8cpp.html#afea9968fcee47ebca0e45d27099d1c22">draw_border</a>( w, <a class="code hl_define" href="output_8h.html#a966901ace2cf6cba3fc9cec310150860">BORDER_COLOR</a>, <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot; OPTIONS &quot;</span> ) );</div>
+<div class="line"><a id="l02681" name="l02681"></a><span class="lineno"> 2681</span>    }</div>
+<div class="line"><a id="l02682" name="l02682"></a><span class="lineno"> 2682</span>    <span class="comment">// intersections</span></div>
+<div class="line"><a id="l02683" name="l02683"></a><span class="lineno"> 2683</span>    <a class="code hl_function" href="output_8cpp.html#ab6fabf52c2dd7100db72c1f5279d1666">mvwputch</a>( w, <a class="code hl_struct" href="structpoint.html">point</a>( 0, horizontal_level ), <a class="code hl_define" href="output_8h.html#a966901ace2cf6cba3fc9cec310150860">BORDER_COLOR</a>, <a class="code hl_define" href="output_8h.html#a4b80f0039259ebe61dc2e58ca4b31043">LINE_XXXO</a> ); <span class="comment">// |-</span></div>
+<div class="line"><a id="l02684" name="l02684"></a><span class="lineno"> 2684</span>    <a class="code hl_function" href="output_8cpp.html#ab6fabf52c2dd7100db72c1f5279d1666">mvwputch</a>( w, <a class="code hl_struct" href="structpoint.html">point</a>( <a class="code hl_function" href="namespacecatacurses.html#a929fe85d472028f52d8a5cdfc0d35017">getmaxx</a>( w ) - 1, horizontal_level ), <a class="code hl_define" href="output_8h.html#a966901ace2cf6cba3fc9cec310150860">BORDER_COLOR</a>, <a class="code hl_define" href="output_8h.html#a0803e4570f3cd69d38952bc2b4555c24">LINE_XOXX</a> ); <span class="comment">// -|</span></div>
+<div class="line"><a id="l02685" name="l02685"></a><span class="lineno"> 2685</span>    <span class="keywordflow">for</span>( <span class="keyword">auto</span> &amp;x : vert_lines ) {</div>
+<div class="line"><a id="l02686" name="l02686"></a><span class="lineno"> 2686</span>        <a class="code hl_function" href="output_8cpp.html#ab6fabf52c2dd7100db72c1f5279d1666">mvwputch</a>( w, <a class="code hl_struct" href="structpoint.html">point</a>( x + 1, <a class="code hl_function" href="namespacecatacurses.html#adc81ca40445dc062af12fb6d7a4793d0">getmaxy</a>( w ) - 1 ), <a class="code hl_define" href="output_8h.html#a966901ace2cf6cba3fc9cec310150860">BORDER_COLOR</a>, <a class="code hl_define" href="output_8h.html#a612d0d0728e93276b2b7de1fc57b096b">LINE_XXOX</a> ); <span class="comment">// _|_</span></div>
+<div class="line"><a id="l02687" name="l02687"></a><span class="lineno"> 2687</span>    }</div>
+<div class="line"><a id="l02688" name="l02688"></a><span class="lineno"> 2688</span>    <a class="code hl_function" href="namespacecatacurses.html#aa9823d249c21fa50daf277957fabb175">wnoutrefresh</a>( w );</div>
+<div class="line"><a id="l02689" name="l02689"></a><span class="lineno"> 2689</span>}</div>
 <div class="ttc" id="anamespacecatacurses_html_a929fe85d472028f52d8a5cdfc0d35017"><div class="ttname"><a href="namespacecatacurses.html#a929fe85d472028f52d8a5cdfc0d35017">catacurses::getmaxx</a></div><div class="ttdeci">int getmaxx(const window &amp;win)</div><div class="ttdef"><b>Definition:</b> <a href="ncurses__def_8cpp_source.html#l00058">ncurses_def.cpp:58</a></div></div>
 <div class="ttc" id="anamespacecatacurses_html_aa9823d249c21fa50daf277957fabb175"><div class="ttname"><a href="namespacecatacurses.html#aa9823d249c21fa50daf277957fabb175">catacurses::wnoutrefresh</a></div><div class="ttdeci">void wnoutrefresh(const window &amp;win)</div><div class="ttdef"><b>Definition:</b> <a href="ncurses__def_8cpp_source.html#l00043">ncurses_def.cpp:43</a></div></div>
 <div class="ttc" id="anamespacecatacurses_html_adc81ca40445dc062af12fb6d7a4793d0"><div class="ttname"><a href="namespacecatacurses.html#adc81ca40445dc062af12fb6d7a4793d0">catacurses::getmaxy</a></div><div class="ttdeci">int getmaxy(const window &amp;win)</div><div class="ttdef"><b>Definition:</b> <a href="ncurses__def_8cpp_source.html#l00063">ncurses_def.cpp:63</a></div></div>
@@ -398,7 +408,7 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="output_8h_source.html#l00092">BORDER_COLOR</a>, <a class="el" href="output_8cpp_source.html#l00575">draw_border()</a>, <a class="el" href="ncurses__def_8cpp_source.html#l00058">catacurses::getmaxx()</a>, <a class="el" href="ncurses__def_8cpp_source.html#l00063">catacurses::getmaxy()</a>, <a class="el" href="output_8h_source.html#l00047">LINE_XOXX</a>, <a class="el" href="output_8h_source.html#l00046">LINE_XXOX</a>, <a class="el" href="output_8h_source.html#l00045">LINE_XXXO</a>, <a class="el" href="output_8cpp_source.html#l00477">mvwputch()</a>, and <a class="el" href="ncurses__def_8cpp_source.html#l00043">catacurses::wnoutrefresh()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="options_8cpp_source.html#l02777">options_manager::show()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="options_8cpp_source.html#l02758">options_manager::show()</a>.</p>
 
 </div>
 </div>
@@ -436,25 +446,25 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="options_8cpp_source.html#l02710">2710</a> of file <a class="el" href="options_8cpp_source.html">options.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l02711" name="l02711"></a><span class="lineno"> 2711</span>{</div>
-<div class="line"><a id="l02712" name="l02712"></a><span class="lineno"> 2712</span>    <span class="keywordflow">for</span>( <span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_function" href="namespacecatacurses.html#a929fe85d472028f52d8a5cdfc0d35017">getmaxx</a>( w ); ++i ) {</div>
-<div class="line"><a id="l02713" name="l02713"></a><span class="lineno"> 2713</span>        <span class="keywordflow">if</span>( vert_lines.count( i ) != 0 ) {</div>
-<div class="line"><a id="l02714" name="l02714"></a><span class="lineno"> 2714</span>            <span class="comment">// intersection</span></div>
-<div class="line"><a id="l02715" name="l02715"></a><span class="lineno"> 2715</span>            <a class="code hl_function" href="output_8cpp.html#ab6fabf52c2dd7100db72c1f5279d1666">mvwputch</a>( w, <a class="code hl_struct" href="structpoint.html">point</a>( i, 0 ), <a class="code hl_define" href="output_8h.html#a966901ace2cf6cba3fc9cec310150860">BORDER_COLOR</a>, <a class="code hl_define" href="output_8h.html#a4a3bfadbe7ec0abb14ff53e5e2f8983e">LINE_OXXX</a> );</div>
-<div class="line"><a id="l02716" name="l02716"></a><span class="lineno"> 2716</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l02717" name="l02717"></a><span class="lineno"> 2717</span>            <span class="comment">// regular line</span></div>
-<div class="line"><a id="l02718" name="l02718"></a><span class="lineno"> 2718</span>            <a class="code hl_function" href="output_8cpp.html#ab6fabf52c2dd7100db72c1f5279d1666">mvwputch</a>( w, <a class="code hl_struct" href="structpoint.html">point</a>( i, 0 ), <a class="code hl_define" href="output_8h.html#a966901ace2cf6cba3fc9cec310150860">BORDER_COLOR</a>, <a class="code hl_define" href="output_8h.html#a435355aeca1be3844e79fc4db8e691e1">LINE_OXOX</a> );</div>
-<div class="line"><a id="l02719" name="l02719"></a><span class="lineno"> 2719</span>        }</div>
-<div class="line"><a id="l02720" name="l02720"></a><span class="lineno"> 2720</span>    }</div>
-<div class="line"><a id="l02721" name="l02721"></a><span class="lineno"> 2721</span>    <a class="code hl_function" href="namespacecatacurses.html#aa9823d249c21fa50daf277957fabb175">wnoutrefresh</a>( w );</div>
-<div class="line"><a id="l02722" name="l02722"></a><span class="lineno"> 2722</span>}</div>
+<p class="definition">Definition at line <a class="el" href="options_8cpp_source.html#l02691">2691</a> of file <a class="el" href="options_8cpp_source.html">options.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l02692" name="l02692"></a><span class="lineno"> 2692</span>{</div>
+<div class="line"><a id="l02693" name="l02693"></a><span class="lineno"> 2693</span>    <span class="keywordflow">for</span>( <span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_function" href="namespacecatacurses.html#a929fe85d472028f52d8a5cdfc0d35017">getmaxx</a>( w ); ++i ) {</div>
+<div class="line"><a id="l02694" name="l02694"></a><span class="lineno"> 2694</span>        <span class="keywordflow">if</span>( vert_lines.count( i ) != 0 ) {</div>
+<div class="line"><a id="l02695" name="l02695"></a><span class="lineno"> 2695</span>            <span class="comment">// intersection</span></div>
+<div class="line"><a id="l02696" name="l02696"></a><span class="lineno"> 2696</span>            <a class="code hl_function" href="output_8cpp.html#ab6fabf52c2dd7100db72c1f5279d1666">mvwputch</a>( w, <a class="code hl_struct" href="structpoint.html">point</a>( i, 0 ), <a class="code hl_define" href="output_8h.html#a966901ace2cf6cba3fc9cec310150860">BORDER_COLOR</a>, <a class="code hl_define" href="output_8h.html#a4a3bfadbe7ec0abb14ff53e5e2f8983e">LINE_OXXX</a> );</div>
+<div class="line"><a id="l02697" name="l02697"></a><span class="lineno"> 2697</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l02698" name="l02698"></a><span class="lineno"> 2698</span>            <span class="comment">// regular line</span></div>
+<div class="line"><a id="l02699" name="l02699"></a><span class="lineno"> 2699</span>            <a class="code hl_function" href="output_8cpp.html#ab6fabf52c2dd7100db72c1f5279d1666">mvwputch</a>( w, <a class="code hl_struct" href="structpoint.html">point</a>( i, 0 ), <a class="code hl_define" href="output_8h.html#a966901ace2cf6cba3fc9cec310150860">BORDER_COLOR</a>, <a class="code hl_define" href="output_8h.html#a435355aeca1be3844e79fc4db8e691e1">LINE_OXOX</a> );</div>
+<div class="line"><a id="l02700" name="l02700"></a><span class="lineno"> 2700</span>        }</div>
+<div class="line"><a id="l02701" name="l02701"></a><span class="lineno"> 2701</span>    }</div>
+<div class="line"><a id="l02702" name="l02702"></a><span class="lineno"> 2702</span>    <a class="code hl_function" href="namespacecatacurses.html#aa9823d249c21fa50daf277957fabb175">wnoutrefresh</a>( w );</div>
+<div class="line"><a id="l02703" name="l02703"></a><span class="lineno"> 2703</span>}</div>
 <div class="ttc" id="aoutput_8h_html_a435355aeca1be3844e79fc4db8e691e1"><div class="ttname"><a href="output_8h.html#a435355aeca1be3844e79fc4db8e691e1">LINE_OXOX</a></div><div class="ttdeci">#define LINE_OXOX</div><div class="ttdef"><b>Definition:</b> <a href="output_8h_source.html#l00040">output.h:40</a></div></div>
 <div class="ttc" id="aoutput_8h_html_a4a3bfadbe7ec0abb14ff53e5e2f8983e"><div class="ttname"><a href="output_8h.html#a4a3bfadbe7ec0abb14ff53e5e2f8983e">LINE_OXXX</a></div><div class="ttdeci">#define LINE_OXXX</div><div class="ttdef"><b>Definition:</b> <a href="output_8h_source.html#l00048">output.h:48</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="output_8h_source.html#l00092">BORDER_COLOR</a>, <a class="el" href="ncurses__def_8cpp_source.html#l00058">catacurses::getmaxx()</a>, <a class="el" href="output_8h_source.html#l00040">LINE_OXOX</a>, <a class="el" href="output_8h_source.html#l00048">LINE_OXXX</a>, <a class="el" href="output_8cpp_source.html#l00477">mvwputch()</a>, and <a class="el" href="ncurses__def_8cpp_source.html#l00043">catacurses::wnoutrefresh()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="options_8cpp_source.html#l02777">options_manager::show()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="options_8cpp_source.html#l02758">options_manager::show()</a>.</p>
 
 </div>
 </div>
@@ -508,29 +518,29 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="options_8cpp_source.html#l00232">232</a> of file <a class="el" href="options_8cpp_source.html">options.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>{</div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    <span class="keyword">using</span> CVT = <a class="code hl_enumeration" href="classoptions__manager_1_1cOpt.html#aabaf5e6ae3fea113b4059cb2853586d6">options_manager::cOpt::COPT_VALUE_TYPE</a>;</div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span> </div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>    <span class="keyword">static</span> std::unordered_map&lt;std::string, CVT&gt; vt_map = {</div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>        { <span class="stringliteral">&quot;float&quot;</span>, CVT::CVT_FLOAT },</div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>        { <span class="stringliteral">&quot;bool&quot;</span>, CVT::CVT_BOOL },</div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>        { <span class="stringliteral">&quot;int&quot;</span>, CVT::CVT_INT },</div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>        { <span class="stringliteral">&quot;int_map&quot;</span>, CVT::CVT_INT },</div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>        { <span class="stringliteral">&quot;string_select&quot;</span>, CVT::CVT_STRING },</div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>        { <span class="stringliteral">&quot;string_input&quot;</span>, CVT::CVT_STRING },</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>        { <span class="stringliteral">&quot;VOID&quot;</span>, CVT::CVT_VOID }</div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>    };</div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>    <span class="keyword">auto</span> <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a> = vt_map.find( sType );</div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>    <span class="keywordflow">return</span> <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a> != vt_map.end() ? <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>-&gt;second : <a class="code hl_enumvalue" href="classoptions__manager_1_1cOpt.html#aabaf5e6ae3fea113b4059cb2853586d6affee9c48e1835731814c85ddce93dd35">options_manager::cOpt::CVT_UNKNOWN</a>;</div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>}</div>
+<p class="definition">Definition at line <a class="el" href="options_8cpp_source.html#l00241">241</a> of file <a class="el" href="options_8cpp_source.html">options.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>{</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    <span class="keyword">using</span> CVT = <a class="code hl_enumeration" href="classoptions__manager_1_1cOpt.html#aabaf5e6ae3fea113b4059cb2853586d6">options_manager::cOpt::COPT_VALUE_TYPE</a>;</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span> </div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>    <span class="keyword">static</span> std::unordered_map&lt;std::string, CVT&gt; vt_map = {</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>        { <span class="stringliteral">&quot;float&quot;</span>, CVT::CVT_FLOAT },</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>        { <span class="stringliteral">&quot;bool&quot;</span>, CVT::CVT_BOOL },</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>        { <span class="stringliteral">&quot;int&quot;</span>, CVT::CVT_INT },</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>        { <span class="stringliteral">&quot;int_map&quot;</span>, CVT::CVT_INT },</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>        { <span class="stringliteral">&quot;string_select&quot;</span>, CVT::CVT_STRING },</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>        { <span class="stringliteral">&quot;string_input&quot;</span>, CVT::CVT_STRING },</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>        { <span class="stringliteral">&quot;VOID&quot;</span>, CVT::CVT_VOID }</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>    };</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>    <span class="keyword">auto</span> <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a> = vt_map.find( sType );</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>    <span class="keywordflow">return</span> <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a> != vt_map.end() ? <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>-&gt;second : <a class="code hl_enumvalue" href="classoptions__manager_1_1cOpt.html#aabaf5e6ae3fea113b4059cb2853586d6affee9c48e1835731814c85ddce93dd35">options_manager::cOpt::CVT_UNKNOWN</a>;</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>}</div>
 <div class="ttc" id="aclassoptions__manager_1_1cOpt_html_aabaf5e6ae3fea113b4059cb2853586d6"><div class="ttname"><a href="classoptions__manager_1_1cOpt.html#aabaf5e6ae3fea113b4059cb2853586d6">options_manager::cOpt::COPT_VALUE_TYPE</a></div><div class="ttdeci">COPT_VALUE_TYPE</div><div class="ttdef"><b>Definition:</b> <a href="options_8h_source.html#l00131">options.h:131</a></div></div>
 <div class="ttc" id="aclassoptions__manager_1_1cOpt_html_aabaf5e6ae3fea113b4059cb2853586d6affee9c48e1835731814c85ddce93dd35"><div class="ttname"><a href="classoptions__manager_1_1cOpt.html#aabaf5e6ae3fea113b4059cb2853586d6affee9c48e1835731814c85ddce93dd35">options_manager::cOpt::CVT_UNKNOWN</a></div><div class="ttdeci">@ CVT_UNKNOWN</div><div class="ttdef"><b>Definition:</b> <a href="options_8h_source.html#l00132">options.h:132</a></div></div>
 <div class="ttc" id="anamespacedetail_1_1digits_html_aad69d2373aa047bdd9e81494bf3da5ae"><div class="ttname"><a href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">detail::digits::result</a></div><div class="ttdeci">result</div><div class="ttdef"><b>Definition:</b> <a href="fmtlib__format-inl_8h_source.html#l01626">fmtlib_format-inl.h:1626</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="options_8h_source.html#l00132">options_manager::cOpt::CVT_UNKNOWN</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="options_8cpp_source.html#l00295">options_manager::add()</a>, and <a class="el" href="options_8cpp_source.html#l00250">options_manager::add_external()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="options_8cpp_source.html#l00304">options_manager::add()</a>, and <a class="el" href="options_8cpp_source.html#l00259">options_manager::add_external()</a>.</p>
 
 </div>
 </div>
@@ -551,13 +561,13 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="options_8cpp_source.html#l00713">713</a> of file <a class="el" href="options_8cpp_source.html">options.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00714" name="l00714"></a><span class="lineno">  714</span>{</div>
-<div class="line"><a id="l00715" name="l00715"></a><span class="lineno">  715</span>    <span class="keywordflow">if</span>( eType != CVT_STRING ) {</div>
-<div class="line"><a id="l00716" name="l00716"></a><span class="lineno">  716</span>        <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;%s tried to get string value from option of type %s&quot;</span>, sName, sType );</div>
-<div class="line"><a id="l00717" name="l00717"></a><span class="lineno">  717</span>    }</div>
-<div class="line"><a id="l00718" name="l00718"></a><span class="lineno">  718</span>    <span class="keywordflow">return</span> sSet;</div>
-<div class="line"><a id="l00719" name="l00719"></a><span class="lineno">  719</span>}</div>
+<p class="definition">Definition at line <a class="el" href="options_8cpp_source.html#l00722">722</a> of file <a class="el" href="options_8cpp_source.html">options.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00723" name="l00723"></a><span class="lineno">  723</span>{</div>
+<div class="line"><a id="l00724" name="l00724"></a><span class="lineno">  724</span>    <span class="keywordflow">if</span>( eType != CVT_STRING ) {</div>
+<div class="line"><a id="l00725" name="l00725"></a><span class="lineno">  725</span>        <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;%s tried to get string value from option of type %s&quot;</span>, sName, sType );</div>
+<div class="line"><a id="l00726" name="l00726"></a><span class="lineno">  726</span>    }</div>
+<div class="line"><a id="l00727" name="l00727"></a><span class="lineno">  727</span>    <span class="keywordflow">return</span> sSet;</div>
+<div class="line"><a id="l00728" name="l00728"></a><span class="lineno">  728</span>}</div>
 <div class="ttc" id="adebug_8h_html_a87e509562277a7ada3a75330d00cb445"><div class="ttname"><a href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a></div><div class="ttdeci">#define debugmsg(...)</div><div class="ttdoc">Debug message of level DL::Error and class DC::DebugMsg, also includes the source file name and line,...</div><div class="ttdef"><b>Definition:</b> <a href="debug_8h_source.html#l00074">debug.h:74</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="debug_8h_source.html#l00074">debugmsg</a>.</p>
@@ -610,15 +620,41 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="options_8cpp_source.html#l02689">2689</a> of file <a class="el" href="options_8cpp_source.html">options.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l02690" name="l02690"></a><span class="lineno"> 2690</span>{</div>
-<div class="line"><a id="l02691" name="l02691"></a><span class="lineno"> 2691</span>}</div>
+<p class="definition">Definition at line <a class="el" href="options_8cpp_source.html#l02670">2670</a> of file <a class="el" href="options_8cpp_source.html">options.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l02671" name="l02671"></a><span class="lineno"> 2671</span>{</div>
+<div class="line"><a id="l02672" name="l02672"></a><span class="lineno"> 2672</span>}</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="options_8cpp_source.html#l02777">options_manager::show()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="options_8cpp_source.html#l02758">options_manager::show()</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a id="a428529aed2ef4a0263de7bad476c749e" name="a428529aed2ef4a0263de7bad476c749e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a428529aed2ef4a0263de7bad476c749e">&#9670;&nbsp;</a></span>debug</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto debug = &quot;debug&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="options_8cpp_source.html#l00151">151</a> of file <a class="el" href="options_8cpp_source.html">options.cpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="options_8cpp_source.html#l02074">options_manager::add_options_debug()</a>, <a class="el" href="item_8cpp_source.html#l02715">item::animal_armor_info()</a>, <a class="el" href="item_8cpp_source.html#l02532">item::armor_info()</a>, <a class="el" href="item_8cpp_source.html#l01458">item::basic_info()</a>, <a class="el" href="item_8cpp_source.html#l03626">item::final_info()</a>, <a class="el" href="item_8cpp_source.html#l01670">item::food_info()</a>, and <a class="el" href="item_8cpp_source.html#l03986">item::info()</a>.</p>
+
+</div>
+</div>
 <a id="aae39c0b4da325d9397e161c030b27d0f" name="aae39c0b4da325d9397e161c030b27d0f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aae39c0b4da325d9397e161c030b27d0f">&#9670;&nbsp;</a></span>debug_log_classes</h2>
 
@@ -641,7 +677,7 @@ template&lt;&gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="options_8cpp_source.html#l00095">95</a> of file <a class="el" href="options_8cpp_source.html">options.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="options_8cpp_source.html#l02092">options_manager::add_options_debug()</a>, and <a class="el" href="options_8cpp_source.html#l03335">options_manager::cache_to_globals()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="options_8cpp_source.html#l02074">options_manager::add_options_debug()</a>, and <a class="el" href="options_8cpp_source.html#l03316">options_manager::cache_to_globals()</a>.</p>
 
 </div>
 </div>
@@ -689,7 +725,85 @@ template&lt;&gt; </div>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="options_8cpp_source.html#l00075">75</a> of file <a class="el" href="options_8cpp_source.html">options.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="options_8cpp_source.html#l02092">options_manager::add_options_debug()</a>, and <a class="el" href="options_8cpp_source.html#l03335">options_manager::cache_to_globals()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="options_8cpp_source.html#l02074">options_manager::add_options_debug()</a>, and <a class="el" href="options_8cpp_source.html#l03316">options_manager::cache_to_globals()</a>.</p>
+
+</div>
+</div>
+<a id="a5a78e133b11ee97ef59737e003372ae2" name="a5a78e133b11ee97ef59737e003372ae2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a78e133b11ee97ef59737e003372ae2">&#9670;&nbsp;</a></span>general</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto general = &quot;general&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="options_8cpp_source.html#l00147">147</a> of file <a class="el" href="options_8cpp_source.html">options.cpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="options_8cpp_source.html#l01212">options_manager::add_options_general()</a>, <a class="el" href="options_8cpp_source.html#l00156">options_manager::options_manager()</a>, and <a class="el" href="fmtlib__format_8h_source.html#l02056">detail::write_float()</a>.</p>
+
+</div>
+</div>
+<a id="a7164e2e83d139e076202f61f46e1729c" name="a7164e2e83d139e076202f61f46e1729c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7164e2e83d139e076202f61f46e1729c">&#9670;&nbsp;</a></span>graphics</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto graphics = &quot;graphics&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="options_8cpp_source.html#l00149">149</a> of file <a class="el" href="options_8cpp_source.html">options.cpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="options_8cpp_source.html#l01784">options_manager::add_options_graphics()</a>, and <a class="el" href="options_8cpp_source.html#l00156">options_manager::options_manager()</a>.</p>
+
+</div>
+</div>
+<a id="ab5deebfb8f4c3bbc19e32d9d198eeefa" name="ab5deebfb8f4c3bbc19e32d9d198eeefa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5deebfb8f4c3bbc19e32d9d198eeefa">&#9670;&nbsp;</a></span>interface</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto interface = &quot;interface&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="options_8cpp_source.html#l00148">148</a> of file <a class="el" href="options_8cpp_source.html">options.cpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="options_8cpp_source.html#l01459">options_manager::add_options_interface()</a>, and <a class="el" href="options_8cpp_source.html#l00156">options_manager::options_manager()</a>.</p>
 
 </div>
 </div>
@@ -710,7 +824,7 @@ template&lt;&gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="options_8cpp_source.html#l00056">56</a> of file <a class="el" href="options_8cpp_source.html">options.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="options_8cpp_source.html#l01124">options_manager::build_soundpacks_list()</a>, and <a class="el" href="options_8cpp_source.html#l01109">options_manager::load_soundpack_from()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="options_8cpp_source.html#l01133">options_manager::build_soundpacks_list()</a>, and <a class="el" href="options_8cpp_source.html#l01118">options_manager::load_soundpack_from()</a>.</p>
 
 </div>
 </div>
@@ -731,7 +845,33 @@ template&lt;&gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="options_8cpp_source.html#l00055">55</a> of file <a class="el" href="options_8cpp_source.html">options.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="options_8cpp_source.html#l01081">options_manager::build_tilesets_list()</a>, and <a class="el" href="options_8cpp_source.html#l01067">options_manager::load_tilesets_from()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="options_8cpp_source.html#l01090">options_manager::build_tilesets_list()</a>, and <a class="el" href="options_8cpp_source.html#l01076">options_manager::load_tilesets_from()</a>.</p>
+
+</div>
+</div>
+<a id="a2c743c45580b30cceac05bb780272f33" name="a2c743c45580b30cceac05bb780272f33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c743c45580b30cceac05bb780272f33">&#9670;&nbsp;</a></span>world_default</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto world_default = &quot;world_default&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="options_8cpp_source.html#l00150">150</a> of file <a class="el" href="options_8cpp_source.html">options.cpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="options_8cpp_source.html#l02208">options_manager::add_options_world_default()</a>, <a class="el" href="options_8cpp_source.html#l03381">options_manager::get_option()</a>, <a class="el" href="options_8cpp_source.html#l03403">options_manager::get_world_defaults()</a>, <a class="el" href="options_8cpp_source.html#l00156">options_manager::options_manager()</a>, and <a class="el" href="options_8cpp_source.html#l02758">options_manager::show()</a>.</p>
 
 </div>
 </div>
@@ -741,7 +881,7 @@ template&lt;&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="options_8cpp.html">options.cpp</a></li>
-    <li class="footer">Generated on Sun Apr 30 2023 06:47:56 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Mon May 1 2023 19:46:07 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

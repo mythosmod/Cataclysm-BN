@@ -49,16 +49,12 @@ var npcmove_8cpp =
     [ "avoidance_vehicles_radius", "npcmove_8cpp.html#a14108754d46e7a886364e08c7817615b", null ],
     [ "bio_ads", "npcmove_8cpp.html#a99bde006d277d411e266b003163d9f05", null ],
     [ "bio_advreactor", "npcmove_8cpp.html#af240157d33eeab40ef36bc04dd472e75", null ],
-    [ "bio_blade", "npcmove_8cpp.html#a2ab46842d379637d4d5711e46f5333b6", null ],
-    [ "bio_claws", "npcmove_8cpp.html#a9875fb4a0c27055032f55b2fb787a183", null ],
     [ "bio_faraday", "npcmove_8cpp.html#aa420c555e4d3d6c14ef7fcc8c1ab76a7", null ],
     [ "bio_furnace", "npcmove_8cpp.html#a5f686344fc356a766b2eeb5fd27d56a3", null ],
     [ "bio_heat_absorb", "npcmove_8cpp.html#a97652b813a5499a1076967dbc4bd892f", null ],
     [ "bio_heatsink", "npcmove_8cpp.html#af198a4e5b75aadbc020ee447fd31226b", null ],
     [ "bio_hydraulics", "npcmove_8cpp.html#a4424b509877ff458aa661c2b49a99dda", null ],
-    [ "bio_laser", "npcmove_8cpp.html#a91c01a2c4b936068b288514db0a639b5", null ],
     [ "bio_leukocyte", "npcmove_8cpp.html#a9c88573bcf0c9acc70c79864f6b0e433", null ],
-    [ "bio_lightning", "npcmove_8cpp.html#a7b0917968257c40deb57043e9a611fb2", null ],
     [ "bio_nanobots", "npcmove_8cpp.html#a3bfe78dbc0d8cfc6819f0f24c7729adc", null ],
     [ "bio_ods", "npcmove_8cpp.html#a765cb5e0b9669d9f0c218356ed53bfea", null ],
     [ "bio_painkiller", "npcmove_8cpp.html#a15450ecf5b34a615affe959125bf1626", null ],
@@ -86,6 +82,7 @@ var npcmove_8cpp =
     [ "effect_npc_run_away", "npcmove_8cpp.html#ad877460e5d6752cbcf4a1698032c702b", null ],
     [ "effect_onfire", "npcmove_8cpp.html#afcfa82c36c0dc2d76cd19d622c2b6ab4", null ],
     [ "effect_stunned", "npcmove_8cpp.html#ad1df0ca2944a94c3ad796e8baada33ae", null ],
+    [ "flag_NO_UNWIELD", "npcmove_8cpp.html#a395155cc3756d4057512881d8ecd672d", null ],
     [ "health_cbms", "npcmove_8cpp.html#a4ebf7d016fe3acf5365eb4bb84abf223", null ],
     [ "itype_battery", "npcmove_8cpp.html#ab5f267c571dc194e5b7e0b10b5136a33", null ],
     [ "itype_chem_ethanol", "npcmove_8cpp.html#aabaf3e1d1d6ab55568643d2db9c23f11", null ],
@@ -101,6 +98,5 @@ var npcmove_8cpp =
     [ "NPC_DANGER_MAX", "npcmove_8cpp.html#abae238303ff06fd609e53825ccedf1bc", null ],
     [ "NPC_DANGER_VERY_LOW", "npcmove_8cpp.html#a4bf0df99f8f4c40b1aa6efeb3030ddbb", null ],
     [ "power_cbms", "npcmove_8cpp.html#a20140414ec15ffd3281ee969ad2df035", null ],
-    [ "skill_firstaid", "npcmove_8cpp.html#aaf598d0fedebd89ec20f768da3b5fd8a", null ],
-    [ "weapon_cbms", "npcmove_8cpp.html#a8ac361f76a60d142bb729e731f1f99d7", null ]
+    [ "skill_firstaid", "npcmove_8cpp.html#aaf598d0fedebd89ec20f768da3b5fd8a", null ]
 ];

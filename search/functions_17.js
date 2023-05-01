@@ -50,7 +50,7 @@ var searchData=
   ['weak_5fptr_47',['weak_ptr',['../classcatacurses_1_1window.html#a54ddd79d27421b1da357757c3a5fa8a8',1,'catacurses::window']]],
   ['weapon_5finventory_5fpreset_48',['weapon_inventory_preset',['../classweapon__inventory__preset.html#a82be64d75382b04dd6e44d61ce51d297',1,'weapon_inventory_preset']]],
   ['weapon_5fvalid_49',['weapon_valid',['../classmartialart.html#a5f9c99c39eb6d21dbd34f2718c17f83a',1,'martialart']]],
-  ['weapon_5fvalue_50',['weapon_value',['../namespacenpc__ai.html#a14d62aa6c1fc78bcfe3c3bb845d913cd',1,'npc_ai']]],
+  ['weapon_5fvalue_50',['weapon_value',['../namespacenpc__ai.html#a690893653e3fda1bcbc29448fd9478cf',1,'npc_ai']]],
   ['wear_51',['wear',['../namespacegame__menus_1_1inv.html#af2bce96088c12c8ef1fe5b7037ce4710',1,'game_menus::inv::wear()'],['../handle__action_8cpp.html#a7c044fd2d2a6b673097559db64c82d1c',1,'wear():&#160;handle_action.cpp']]],
   ['wear_5fdo_5fturn_52',['wear_do_turn',['../namespaceactivity__handlers.html#a976fd6dde2612b1574ecba5c1c265c1c',1,'activity_handlers']]],
   ['wear_5fif_5fwanted_53',['wear_if_wanted',['../classnpc.html#a631f833b1311bf7d5001929f4e71048f',1,'npc']]],

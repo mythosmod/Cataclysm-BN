@@ -3,6 +3,8 @@ var bionics_8cpp =
     [ "attempt_recharge", "bionics_8cpp.html#a2c1f5d03d2a02123d0a534b6702907e7", null ],
     [ "bionic_manip_cos", "bionics_8cpp.html#a14d07e3b4ca686b31c01f22c10928a66", null ],
     [ "bionics_cancelling_trait", "bionics_8cpp.html#a3ee31a647470c08125715efb557df15d", null ],
+    [ "deactivate_weapon_cbm", "bionics_8cpp.html#a0a78ff14e5d2046d2db00b309401e023", null ],
+    [ "find_reloadable_cbms", "bionics_8cpp.html#ad50085a053feb206d2b5e6c5577b4308", null ],
     [ "flag_ALLOWS_NATURAL_ATTACKS", "bionics_8cpp.html#a855893baedca01113e99a1a469c0eb45", null ],
     [ "flag_AURA", "bionics_8cpp.html#ab0e722b4d6c8fdcebccff1bc1c5ffea4", null ],
     [ "flag_CABLE_SPOOL", "bionics_8cpp.html#a68830a6f6e2ae651a7eac6450ce4d4a8", null ],

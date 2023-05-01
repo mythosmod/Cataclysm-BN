@@ -1,5 +1,12 @@
 var NAVTREEINDEX49 =
 {
+"classjson__dynamic__line__effect.html#a43ac1fc8fa433aeaa078aff847af09e8":[36,0,528,4],
+"classjson__dynamic__line__effect.html#a8cafdd878f3e9f3bff40acf342d80a07":[36,0,528,3],
+"classjson__flag.html":[36,0,529],
+"classjson__flag.html#a068b6113a6f3395b18cd79ba2b93ecbc":[36,0,529,20],
+"classjson__flag.html#a0719cc30160e32741d71930bdd349a22":[36,0,529,24],
+"classjson__flag.html#a116550b9bcfefea576120c23a1aeccde":[36,0,529,22],
+"classjson__flag.html#a21f85c344cc0383ae72fba25ab63061a":[36,0,529,14],
 "classjson__flag.html#a37e3a357317b99a0548b5dbbc927bde7":[36,0,529,12],
 "classjson__flag.html#a38eb62fbd05cc7f91a0ed202dda2914a":[36,0,529,0],
 "classjson__flag.html#a3a982be6c6fc73b71260b68c663ea136":[36,0,529,21],
@@ -242,12 +249,5 @@ var NAVTREEINDEX49 =
 "classma__buff.html#ad7733186f9ee5a7cdb33854a11aa400b":[36,0,571,4],
 "classma__buff.html#ad7bbaede3e8d56ef0f3f39a89d2b55c3":[36,0,571,9],
 "classma__buff.html#ae9390e1bcf227978e2f38791d176f274":[36,0,571,17],
-"classma__buff.html#af8ebe109ed80d8cae2f1dc8edd859267":[36,0,571,10],
-"classma__buff__effect__type.html":[36,0,572],
-"classma__buff__effect__type.html#a488224e0c3267905d4123ab7f8be5246":[36,0,572,0],
-"classma__buff__reader.html":[36,0,573],
-"classma__buff__reader.html#a6aa85ecc2421d35f23e0bd22bd44527f":[36,0,573,0],
-"classma__skill__reader.html":[36,0,575],
-"classma__skill__reader.html#a68202df346a7647994239981403df28d":[36,0,575,0],
-"classma__skill__reader.html#ae4358bcb6df81676ca9d6ac4a15a04cf":[36,0,575,1]
+"classma__buff.html#af8ebe109ed80d8cae2f1dc8edd859267":[36,0,571,10]
 };

@@ -153,7 +153,7 @@ var searchData=
   ['not_5fready_5fmsg_150',['not_ready_msg',['../classdelayed__transform__iuse.html#a857cb2e90db822e9d1bd788720c6c1c1',1,'delayed_transform_iuse']]],
   ['notes_151',['notes',['../structmap__layer.html#a739c32af252c890d66a721aad3209caf',1,'map_layer']]],
   ['nowhere_152',['nowhere',['../classitem__location.html#ac32191753a11cc2f4aa2ad6d50e6405b',1,'item_location']]],
-  ['npc_5fai_5finfo_5fcache_153',['npc_ai_info_cache',['../classCharacter.html#ac2bc2fd0150f8d0190f660661710e383',1,'Character']]],
+  ['npc_5fai_5finfo_5fcache_153',['npc_ai_info_cache',['../classCharacter.html#ad7a8fd569c8dab6d81dc558209454f41',1,'Character']]],
   ['npc_5fcharges_154',['npc_charges',['../classitem__pricing.html#a2ec295e16b7a5d5806bbf1e700726170',1,'item_pricing']]],
   ['npc_5fclass_155',['npc_class',['../classjmapgen__npc.html#a58bf6ce68d1627369f316dbef3833adf',1,'jmapgen_npc']]],
   ['npc_5fclass_5ffactory_156',['npc_class_factory',['../npc__class_8cpp.html#a3b69631a240ad5312a77e3f1623a1108',1,'npc_class.cpp']]],

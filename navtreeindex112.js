@@ -1,5 +1,17 @@
 var NAVTREEINDEX112 =
 {
+"namespacePATH__INFO.html#ae96f1d3572e1ac1b702daf916cf9e6df":[35,0,156,2],
+"namespacePATH__INFO.html#aed7976a35d3c8ec4d7436086f2815927":[35,0,156,35],
+"namespacePATH__INFO.html#aef55dae862a3cbaf08e09e205d333494":[35,0,156,51],
+"namespacePATH__INFO.html#af352fe3c2b908781b39ecebf41074433":[35,0,156,9],
+"namespacePATH__INFO.html#af9a3ed879d4c10c8494ba4934c8ec678":[35,0,156,50],
+"namespaceVehicleSpawnFunction.html":[35,0,186],
+"namespaceVehicleSpawnFunction.html#a09d845243b777c9286f582282a8eb779":[35,0,186,5],
+"namespaceVehicleSpawnFunction.html#a8f1f6e863558020f4dca1f6a30c2b0d1":[35,0,186,3],
+"namespaceVehicleSpawnFunction.html#aa0b6e80246fa5e3c6a7e1af730d67ed7":[35,0,186,0],
+"namespaceVehicleSpawnFunction.html#abc7e345285cb068e45df6862876ba140":[35,0,186,1],
+"namespaceVehicleSpawnFunction.html#acbc63a9295a538a51ae103e57ae5768f":[35,0,186,4],
+"namespaceVehicleSpawnFunction.html#ad19da351196135d64975f9100c16453d":[35,0,186,2],
 "namespaceactive__tiles.html":[35,0,0],
 "namespaceactive__tiles.html#a6b0d010a1354252227d36ca8bff5a660":[35,0,0,4],
 "namespaceactive__tiles.html#a8c34b5fd8ca11186e004b4aec8f2aa13":[35,0,0,2],
@@ -237,17 +249,5 @@ var NAVTREEINDEX112 =
 "namespaceanonymous__namespace_02debug_8cpp_03.html":[35,0,23],
 "namespaceanonymous__namespace_02debug_8cpp_03.html#aac5ec8bb66a16096a2fd9ae0e87fcdf6":[35,0,23,0],
 "namespaceanonymous__namespace_02diary__ui_8cpp_03.html":[35,0,24],
-"namespaceanonymous__namespace_02diary__ui_8cpp_03.html#a1b180c4ee1a5c9686d1b8550352aeb13":[35,0,24,3],
-"namespaceanonymous__namespace_02diary__ui_8cpp_03.html#a1ff440bd0de20275e0a526e10e2e7c1f":[35,0,24,4],
-"namespaceanonymous__namespace_02diary__ui_8cpp_03.html#a3598f2825ba29afbf6095658102fad6a":[35,0,24,0],
-"namespaceanonymous__namespace_02diary__ui_8cpp_03.html#a6f54bfdce622c97184f917f36e4887cc":[35,0,24,2],
-"namespaceanonymous__namespace_02diary__ui_8cpp_03.html#a89704e9a29605ed7a423f422907ee24e":[35,0,24,5],
-"namespaceanonymous__namespace_02diary__ui_8cpp_03.html#aa17d599fa720185e7f8e114bb5d956a6":[35,0,24,1],
-"namespaceanonymous__namespace_02disease_8cpp_03.html":[35,0,25],
-"namespaceanonymous__namespace_02disease_8cpp_03.html#a75cb92ba312ed17a7aa44cdadee9f354":[35,0,25,0],
-"namespaceanonymous__namespace_02effect_8cpp_03.html":[35,0,26],
-"namespaceanonymous__namespace_02effect_8cpp_03.html#a75793a94926b8584aca04f3fe489f7ec":[35,0,26,0],
-"namespaceanonymous__namespace_02event__statistics_8cpp_03.html":[35,0,27],
-"namespaceanonymous__namespace_02event__statistics_8cpp_03.html#a1f9b49c0f228e182794d60944d9ec39e":[35,0,27,1],
-"namespaceanonymous__namespace_02event__statistics_8cpp_03.html#ac25f63ad31c384f5726d655446d0b125":[35,0,27,0]
+"namespaceanonymous__namespace_02diary__ui_8cpp_03.html#a1b180c4ee1a5c9686d1b8550352aeb13":[35,0,24,3]
 };

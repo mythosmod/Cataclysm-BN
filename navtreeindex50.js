@@ -1,5 +1,12 @@
 var NAVTREEINDEX50 =
 {
+"classma__buff__effect__type.html":[36,0,572],
+"classma__buff__effect__type.html#a488224e0c3267905d4123ab7f8be5246":[36,0,572,0],
+"classma__buff__reader.html":[36,0,573],
+"classma__buff__reader.html#a6aa85ecc2421d35f23e0bd22bd44527f":[36,0,573,0],
+"classma__skill__reader.html":[36,0,575],
+"classma__skill__reader.html#a68202df346a7647994239981403df28d":[36,0,575,0],
+"classma__skill__reader.html#ae4358bcb6df81676ca9d6ac4a15a04cf":[36,0,575,1],
 "classma__style__callback.html":[36,0,576],
 "classma__style__callback.html#a4f46fdd43625c234f64ac7001ef7ca14":[36,0,576,1],
 "classma__style__callback.html#a53c99759e84b8cac3ed46cc004cf774e":[36,0,576,4],
@@ -242,12 +249,5 @@ var NAVTREEINDEX50 =
 "classmap.html#a354aefad19d6e0086aa6160a1f45bb1d":[36,0,581,278],
 "classmap.html#a35d1fae9a4e36858c4317f4fbd997272":[36,0,581,323],
 "classmap.html#a35eade30d5f7bafb57f686dba2d8df4b":[36,0,581,135],
-"classmap.html#a369e57962e2c38b17464c405b6d7184b":[36,0,581,412],
-"classmap.html#a372326780a5cc8eefd08d0cf223164b0":[36,0,581,476],
-"classmap.html#a37268cf3dfc2a32e85a40c2a7266dfc9":[36,0,581,376],
-"classmap.html#a3749fea4df26a1261eacecf94a58f199":[36,0,581,63],
-"classmap.html#a3779768673ad08004a999b1ac440421c":[36,0,581,430],
-"classmap.html#a3900980bbee1853f6230b94736b2e86b":[36,0,581,115],
-"classmap.html#a395a729a4b954692cf08d13e1d32f73e":[36,0,581,160],
-"classmap.html#a39dd1d3502a954fc87a4ac08132b6984":[36,0,581,207]
+"classmap.html#a369e57962e2c38b17464c405b6d7184b":[36,0,581,412]
 };

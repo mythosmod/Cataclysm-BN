@@ -1,5 +1,14 @@
 var NAVTREEINDEX64 =
 {
+"classscent__map.html#a0621dec1a9455fab8379273596c56bf5":[36,0,825,13],
+"classscent__map.html#a0b54ac580c15ad895d82416c35246c85":[36,0,825,6],
+"classscent__map.html#a3be2ea4f358c2af6261627b0b21aad52":[36,0,825,3],
+"classscent__map.html#a3c56e87e6a637e2f9749ce79f6be6a07":[36,0,825,2],
+"classscent__map.html#a420aa219bedc00068fd6d5641f35fcac":[36,0,825,20],
+"classscent__map.html#a48681fc613df14b83ba832b4301c4212":[36,0,825,16],
+"classscent__map.html#a52a49bf388a152806b8c9f43ca6a24a9":[36,0,825,18],
+"classscent__map.html#a55c51947e481f387010888565ec7ba7c":[36,0,825,7],
+"classscent__map.html#a82b4bf9afaf3b7fe6fee9db534f47564":[36,0,825,10],
 "classscent__map.html#a8ec282a1b79c0360adee9305bc9f38ca":[36,0,825,1],
 "classscent__map.html#a99aff3e6d8963d7f34618216a8448c8c":[36,0,825,5],
 "classscent__map.html#ab2b3dc27d29d9512b110f22cc345c739":[36,0,825,4],
@@ -240,14 +249,5 @@ var NAVTREEINDEX64 =
 "classsnippet__library.html#a685c0168b039e17ca677a61e21900fe1":[36,0,856,11],
 "classsnippet__library.html#a83f839ecb01f2d078ac5b075d7ce30ce":[36,0,856,14],
 "classsnippet__library.html#aa4628a72254a2d3548b472078a77f1c9":[36,0,856,6],
-"classsnippet__library.html#ab0e270ac99d472054be52471a02ad48d":[36,0,856,15],
-"classsnippet__library.html#ab54d86a48c6c49bf0a4b6d881bb52a3a":[36,0,856,5],
-"classsnippet__library.html#ac09e30d518cb9b0a7d6904c27d37f5c0":[36,0,856,9],
-"classsnippet__library.html#ac60917e4982bf750054e6a3d5f8770dd":[36,0,856,10],
-"classsnippet__library.html#ac95d52c7f23d13cbf2882164d81e0662":[36,0,856,12],
-"classsnippet__library.html#af2445197cd872aac751100ea5b609243":[36,0,856,3],
-"classsnippet__library.html#aff12dd426e9f0340f5e861ddd291cea3":[36,0,856,13],
-"classsokoban__game.html":[36,0,858],
-"classsokoban__game.html#a03512ceeecd782234c8ef3228c8cf626":[36,0,858,5],
-"classsokoban__game.html#a042c801807af706825bd2c82db077a37":[36,0,858,2]
+"classsnippet__library.html#ab0e270ac99d472054be52471a02ad48d":[36,0,856,15]
 };

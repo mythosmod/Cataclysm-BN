@@ -179,8 +179,7 @@ var namespaces_dup =
       [ "avoidance_vehicles_radius", "namespaceanonymous__namespace_02npcmove_8cpp_03.html#a14108754d46e7a886364e08c7817615b", null ],
       [ "defense_cbms", "namespaceanonymous__namespace_02npcmove_8cpp_03.html#a21c4e6ec47c5c917485f57ab35c5f0b1", null ],
       [ "health_cbms", "namespaceanonymous__namespace_02npcmove_8cpp_03.html#a4ebf7d016fe3acf5365eb4bb84abf223", null ],
-      [ "power_cbms", "namespaceanonymous__namespace_02npcmove_8cpp_03.html#a20140414ec15ffd3281ee969ad2df035", null ],
-      [ "weapon_cbms", "namespaceanonymous__namespace_02npcmove_8cpp_03.html#a8ac361f76a60d142bb729e731f1f99d7", null ]
+      [ "power_cbms", "namespaceanonymous__namespace_02npcmove_8cpp_03.html#a20140414ec15ffd3281ee969ad2df035", null ]
     ] ],
     [ "anonymous_namespace{overmap.cpp}", "namespaceanonymous__namespace_02overmap_8cpp_03.html", [
       [ "land_use_codes", "namespaceanonymous__namespace_02overmap_8cpp_03.html#aa149a1553a392b8ec618f79d31b13ab0", null ],
@@ -700,7 +699,8 @@ var namespaces_dup =
     ] ],
     [ "io", "namespaceio.html", "namespaceio" ],
     [ "item_funcs", "namespaceitem__funcs.html", [
-      [ "can_be_unloaded", "namespaceitem__funcs.html#a59e0738ff81bbd95e725baecf3e23545", null ]
+      [ "can_be_unloaded", "namespaceitem__funcs.html#a59e0738ff81bbd95e725baecf3e23545", null ],
+      [ "shots_remaining", "namespaceitem__funcs.html#a04f6aa7c848c842a119f6e07e0dd7c6b", null ]
     ] ],
     [ "item_group", "namespaceitem__group.html", [
       [ "ItemList", "namespaceitem__group.html#a1756cb07c624c3169988316a8615ff69", null ],
@@ -1286,10 +1286,10 @@ var namespaces_dup =
       [ "random_good_trait", "namespacenewcharacter.html#af26bc6eecdfca795bacbc3ac398f4578", null ]
     ] ],
     [ "npc_ai", "namespacenpc__ai.html", [
-      [ "gun_value", "namespacenpc__ai.html#a9019036bc8d7314e1bb9fb1624afb429", null ],
+      [ "gun_value", "namespacenpc__ai.html#a5c5459430d6784750802cae43cd87732", null ],
       [ "melee_value", "namespacenpc__ai.html#a15c5ded877137a648d04762228055b66", null ],
       [ "unarmed_value", "namespacenpc__ai.html#a64daf871b45496787e445f932f4381d3", null ],
-      [ "weapon_value", "namespacenpc__ai.html#a14d62aa6c1fc78bcfe3c3bb845d913cd", null ]
+      [ "weapon_value", "namespacenpc__ai.html#a690893653e3fda1bcbc29448fd9478cf", null ]
     ] ],
     [ "npc_factions", "namespacenpc__factions.html", [
       [ "relationship", "namespacenpc__factions.html#af09ec48d0dc133795062d1424c486686", [

@@ -11,8 +11,13 @@ var options_8cpp =
     [ "get_value_type", "options_8cpp.html#ac6420f57d1bc2ccadee1e87b9c9a3155", null ],
     [ "options_manager::cOpt::value_as< std::string >", "options_8cpp.html#adb970be4a18c7c72aa4180377fe77d13", null ],
     [ "refresh_tiles", "options_8cpp.html#a8600ac715df3f79d8221e0438f85c0ee", null ],
+    [ "debug", "options_8cpp.html#a428529aed2ef4a0263de7bad476c749e", null ],
     [ "debug_log_classes", "options_8cpp.html#aae39c0b4da325d9397e161c030b27d0f", null ],
     [ "debug_log_levels", "options_8cpp.html#a031b0d1a47acae590a315c72df6b2052", null ],
+    [ "general", "options_8cpp.html#a5a78e133b11ee97ef59737e003372ae2", null ],
+    [ "graphics", "options_8cpp.html#a7164e2e83d139e076202f61f46e1729c", null ],
+    [ "interface", "options_8cpp.html#ab5deebfb8f4c3bbc19e32d9d198eeefa", null ],
     [ "SOUNDPACKS", "options_8cpp.html#a28c374585686e3c68f7015ebec764881", null ],
-    [ "TILESETS", "options_8cpp.html#ac39afaf9ef469fafa207489dbbd67233", null ]
+    [ "TILESETS", "options_8cpp.html#ac39afaf9ef469fafa207489dbbd67233", null ],
+    [ "world_default", "options_8cpp.html#a2c743c45580b30cceac05bb780272f33", null ]
 ];

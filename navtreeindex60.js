@@ -1,5 +1,14 @@
 var NAVTREEINDEX60 =
 {
+"classpick__lock__actor.html#ac33258398ce1c3eed6c30f42e35103ca":[36,0,743,5],
+"classpickup__activity__actor.html":[36,0,744],
+"classpickup__activity__actor.html#a02984df17f45276863b7c5b89e5e178b":[36,0,744,7],
+"classpickup__activity__actor.html#a1c6a4a7d94a352a33c2e9085cf49630d":[36,0,744,5],
+"classpickup__activity__actor.html#a2e8c93a57330871434f0828c873ba36c":[36,0,744,6],
+"classpickup__activity__actor.html#a42bd13cd52d37e897c11f979855dfc73":[36,0,744,2],
+"classpickup__activity__actor.html#a7d655c618e1132865afec7e0524bb911":[36,0,744,4],
+"classpickup__activity__actor.html#a858d58cf744548c5dea176dc69a2536e":[36,0,744,9],
+"classpickup__activity__actor.html#aa60301f81b9a744e95249b85807262e1":[36,0,744,3],
 "classpickup__activity__actor.html#aad422be3227b52882177ebee8a333bfe":[36,0,744,8],
 "classpickup__activity__actor.html#ac05b1358a9b90f1c9dd01381748d490a":[36,0,744,1],
 "classpickup__activity__actor.html#ad0a7e1e7496cf619b31241c8cc498fdc":[36,0,744,0],
@@ -240,14 +249,5 @@ var NAVTREEINDEX60 =
 "classplayer__activity.html#adb747c5138ba09209de359e85ce3ec45":[36,0,758,26],
 "classplayer__activity.html#adce4e86f744d9f801b41b1becdf257e5":[36,0,758,9],
 "classplayer__activity.html#ae44b657c59940e256aeb15e73bf2be1d":[36,0,758,20],
-"classplayer__activity.html#ae7eb73e1613215c4508b0345de0303f7":[36,0,758,17],
-"classplayer__activity.html#af40e3a7e2719460248e8c7d4661b9fa8":[36,0,758,36],
-"classplayer__morale.html":[36,0,759],
-"classplayer__morale.html#a0974d1b5faca8295ddc5ed84edf9aa02":[36,0,759,42],
-"classplayer__morale.html#a0a721ca1c9917b62b4308c2ef6bc7052":[36,0,759,28],
-"classplayer__morale.html#a1056cd7d4a7291b62742feb18f03d933":[36,0,759,15],
-"classplayer__morale.html#a1091e8c83f77b530086c4b7e23602409":[36,0,759,52],
-"classplayer__morale.html#a12b55f0aea0b8c2c649c38a8618d758b":[36,0,759,46],
-"classplayer__morale.html#a249e230423d8372b142af029d1a77bbf":[36,0,759,37],
-"classplayer__morale.html#a2ee4eebede11ebcd696ae5d2ae41f7dc":[36,0,759,59]
+"classplayer__activity.html#ae7eb73e1613215c4508b0345de0303f7":[36,0,758,17]
 };

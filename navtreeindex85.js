@@ -1,5 +1,14 @@
 var NAVTREEINDEX85 =
 {
+"fmtlib__core_8h.html#a9cf169523b7f3d488ab255226c1453a8":[37,0,1,226,138],
+"fmtlib__core_8h.html#a9cfcf5302ffb694882756683888ff323":[37,0,1,226,158],
+"fmtlib__core_8h.html#a9dc55254a0b651b00ec7a0390b8c35bf":[37,0,1,226,119],
+"fmtlib__core_8h.html#a9f9490d451c4924aa03541038a7a4470":[37,0,1,226,139],
+"fmtlib__core_8h.html#a9fd1b91954c13d1c4a303d4910aea815":[37,0,1,226,147],
+"fmtlib__core_8h.html#aa614c17d10a1daed9ec84b7c311ee209":[37,0,1,226,140],
+"fmtlib__core_8h.html#aa61f29da2cb464fd4302793d3a5785d4":[37,0,1,226,197],
+"fmtlib__core_8h.html#aa62d290f1ebdec389e706cd0a9db66af":[37,0,1,226,74],
+"fmtlib__core_8h.html#aa6fb16e152f89e4b8c9dd079366c1ecb":[37,0,1,226,188],
 "fmtlib__core_8h.html#aa956023c6364cbb231d36c8541aebbff":[37,0,1,226,189],
 "fmtlib__core_8h.html#aaaef905b4cc5da6969d9ee839d668406":[37,0,1,226,113],
 "fmtlib__core_8h.html#aab2baac64e189c608046d0765e72fe31":[37,0,1,226,168],
@@ -240,14 +249,5 @@ var NAVTREEINDEX85 =
 "fmtlib__format_8h.html#a77e4aa8e9249fd0df52b4a4e1c33ac4f":[37,0,1,229,132],
 "fmtlib__format_8h.html#a78e9830dd634d2646e5a921c60149c77":[37,0,1,229,190],
 "fmtlib__format_8h.html#a7a85d465692b45b9af30753d76da60d7":[37,0,1,229,257],
-"fmtlib__format_8h.html#a7b4522c976f6f620d10458b37b758bc8":[37,0,1,229,176],
-"fmtlib__format_8h.html#a7ba81d8c36707ecb4901aac327ae62ec":[37,0,1,229,128],
-"fmtlib__format_8h.html#a7c29e7b4a54045f13bd664979804998d":[37,0,1,229,88],
-"fmtlib__format_8h.html#a7d077c38e51f789fb79986dde9d44bac":[37,0,1,229,116],
-"fmtlib__format_8h.html#a7e254ccdf22d61c7324995c779219770":[37,0,1,229,194],
-"fmtlib__format_8h.html#a7fd3ca03244f6d2d1a395713bf1b0cff":[37,0,1,229,85],
-"fmtlib__format_8h.html#a8166396eed8ddec154aadead90a0b905":[37,0,1,229,192],
-"fmtlib__format_8h.html#a8203062b4f39bf7a6ac670c5fcb276d2":[37,0,1,229,174],
-"fmtlib__format_8h.html#a83eda50a4c0e162189989320ed505b09":[37,0,1,229,256],
-"fmtlib__format_8h.html#a845bc12c504fe6624ed9c4874b7cf68f":[37,0,1,229,263]
+"fmtlib__format_8h.html#a7b4522c976f6f620d10458b37b758bc8":[37,0,1,229,176]
 };

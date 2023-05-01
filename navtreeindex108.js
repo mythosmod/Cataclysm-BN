@@ -1,5 +1,17 @@
 var NAVTREEINDEX108 =
 {
+"monattack_8h.html#af898b53c59cc6e85f7f66010f6fd9634":[37,0,1,418,22],
+"monattack_8h.html#afb8251435c3c334d088110546b95400c":[37,0,1,418,96],
+"monattack_8h.html#afdd93ef287e68dc77f88740411dcfb83":[37,0,1,418,18],
+"monattack_8h_source.html":[37,0,1,418],
+"mondeath_8cpp.html":[37,0,1,419],
+"mondeath_8cpp.html#a039c3acd23099e1631feefe7748f49ac":[37,0,1,419,14],
+"mondeath_8cpp.html#a041e74f49f2eab98904a956d5d5e473a":[37,0,1,419,19],
+"mondeath_8cpp.html#a0781c8bcbb6f6f615b022a1b308a21f7":[37,0,1,419,24],
+"mondeath_8cpp.html#a0e701368604950da9eae27352af9044b":[37,0,1,419,9],
+"mondeath_8cpp.html#a1274db01551e337ca6c69d003d280e98":[37,0,1,419,21],
+"mondeath_8cpp.html#a1318a41f2960032c7f2043f0e9c9b951":[37,0,1,419,23],
+"mondeath_8cpp.html#a1ce9db8f1e355ba884db835013d78b41":[37,0,1,419,26],
 "mondeath_8cpp.html#a3a701004a797f5511860423764151aa2":[37,0,1,419,16],
 "mondeath_8cpp.html#a468a4ea99d05230e46c7e014a68270a7":[37,0,1,419,6],
 "mondeath_8cpp.html#a4e2730248c54d4d07fa7e215efb35d1a":[37,0,1,419,30],
@@ -237,17 +249,5 @@ var NAVTREEINDEX108 =
 "monster_8cpp.html#aa1ed3999ebde4696ff3c3930f8ddf424":[37,0,1,430,50],
 "monster_8cpp.html#aa222d693ccc29efba86a3bb9f18add4e":[37,0,1,430,34],
 "monster_8cpp.html#aa3320a370fe1f7f1cf6e14918ca20358":[37,0,1,430,11],
-"monster_8cpp.html#ab3491c327a32b31ea6eeb4550e3b1c3b":[37,0,1,430,40],
-"monster_8cpp.html#abeca1e9d9723c5bbc93f59a05d779ba9":[37,0,1,430,45],
-"monster_8cpp.html#ac6bddea0c05309bc6d54e962a7dff763":[37,0,1,430,8],
-"monster_8cpp.html#ac6e489d07c26a18493630574cf6de5c9":[37,0,1,430,46],
-"monster_8cpp.html#ace42425e1e703ebbe953ade0f6110b7c":[37,0,1,430,28],
-"monster_8cpp.html#ad1df0ca2944a94c3ad796e8baada33ae":[37,0,1,430,31],
-"monster_8cpp.html#ad6ab53abeb2f3ee43a7a05f378f58952":[37,0,1,430,21],
-"monster_8cpp.html#adc9256a8239cdb71c406fc31369d80dc":[37,0,1,430,54],
-"monster_8cpp.html#ae326c5e4da7f23bc429d04d215dd7c9d":[37,0,1,430,17],
-"monster_8cpp.html#ae940cd81463820c5f0fc145179c7c386":[37,0,1,430,19],
-"monster_8cpp.html#af079f6d5681dabcbc1c4ee804c0ba556":[37,0,1,430,24],
-"monster_8cpp.html#af825514d87d2ddd622cdfab1842bbc61":[37,0,1,430,49],
-"monster_8cpp.html#afcfa82c36c0dc2d76cd19d622c2b6ab4":[37,0,1,430,25]
+"monster_8cpp.html#ab3491c327a32b31ea6eeb4550e3b1c3b":[37,0,1,430,40]
 };
