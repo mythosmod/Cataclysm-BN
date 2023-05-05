@@ -181,18 +181,18 @@ Public Attributes</h2></td></tr>
 <p>Add a new mission to the available missions (<a class="el" href="structnpc__chatbin.html#a99b51df0b9772ea2166968a03d1d4317">missions</a>). </p>
 <p >For compatibility it silently ignores null pointers passed to it. </p>
 
-<p class="definition">Definition at line <a class="el" href="npc_8cpp_source.html#l02750">2750</a> of file <a class="el" href="npc_8cpp_source.html">npc.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l02751" name="l02751"></a><span class="lineno"> 2751</span>{</div>
-<div class="line"><a id="l02752" name="l02752"></a><span class="lineno"> 2752</span>    <span class="keywordflow">if</span>( miss == <span class="keyword">nullptr</span> ) {</div>
-<div class="line"><a id="l02753" name="l02753"></a><span class="lineno"> 2753</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l02754" name="l02754"></a><span class="lineno"> 2754</span>    }</div>
-<div class="line"><a id="l02755" name="l02755"></a><span class="lineno"> 2755</span>    <a class="code hl_variable" href="structnpc__chatbin.html#a99b51df0b9772ea2166968a03d1d4317">missions</a>.push_back( miss );</div>
-<div class="line"><a id="l02756" name="l02756"></a><span class="lineno"> 2756</span>}</div>
+<p class="definition">Definition at line <a class="el" href="npc_8cpp_source.html#l02752">2752</a> of file <a class="el" href="npc_8cpp_source.html">npc.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l02753" name="l02753"></a><span class="lineno"> 2753</span>{</div>
+<div class="line"><a id="l02754" name="l02754"></a><span class="lineno"> 2754</span>    <span class="keywordflow">if</span>( miss == <span class="keyword">nullptr</span> ) {</div>
+<div class="line"><a id="l02755" name="l02755"></a><span class="lineno"> 2755</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l02756" name="l02756"></a><span class="lineno"> 2756</span>    }</div>
+<div class="line"><a id="l02757" name="l02757"></a><span class="lineno"> 2757</span>    <a class="code hl_variable" href="structnpc__chatbin.html#a99b51df0b9772ea2166968a03d1d4317">missions</a>.push_back( miss );</div>
+<div class="line"><a id="l02758" name="l02758"></a><span class="lineno"> 2758</span>}</div>
 <div class="ttc" id="astructnpc__chatbin_html_a99b51df0b9772ea2166968a03d1d4317"><div class="ttname"><a href="structnpc__chatbin.html#a99b51df0b9772ea2166968a03d1d4317">npc_chatbin::missions</a></div><div class="ttdeci">std::vector&lt; mission * &gt; missions</div><div class="ttdoc">Missions that the NPC can give out.</div><div class="ttdef"><b>Definition:</b> <a href="npc_8h_source.html#l00711">npc.h:711</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="npc_8h_source.html#l00711">missions</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="npc_8cpp_source.html#l02660">npc::add_new_mission()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="npc_8cpp_source.html#l02662">npc::add_new_mission()</a>.</p>
 
 </div>
 </div>
@@ -214,23 +214,23 @@ Public Attributes</h2></td></tr>
 <p>Check that assigned missions are still assigned if not move them back to the unassigned vector. </p>
 <p >This is called directly before talking. </p>
 
-<p class="definition">Definition at line <a class="el" href="npctalk_8cpp_source.html#l00722">722</a> of file <a class="el" href="npctalk_8cpp_source.html">npctalk.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00723" name="l00723"></a><span class="lineno">  723</span>{</div>
-<div class="line"><a id="l00724" name="l00724"></a><span class="lineno">  724</span>    <span class="comment">// TODO: or simply fail them? Some missions might only need to be reported.</span></div>
-<div class="line"><a id="l00725" name="l00725"></a><span class="lineno">  725</span>    <span class="keyword">auto</span> &amp;ma = <a class="code hl_variable" href="structnpc__chatbin.html#a639940a9d29a697bec5c09acc2a8da39">missions_assigned</a>;</div>
-<div class="line"><a id="l00726" name="l00726"></a><span class="lineno">  726</span>    <span class="keyword">const</span> <span class="keyword">auto</span> <a class="code hl_enumvalue" href="achievement_8h.html#a4c2771ccaad822c94aee3786288bb112a98bd1c45684cf587ac2347a92dd7bb51">last</a> = std::remove_if( ma.begin(), ma.end(), []( <span class="keyword">class</span> <a class="code hl_class" href="classmission.html">mission</a> <span class="keyword">const</span> * m ) {</div>
-<div class="line"><a id="l00727" name="l00727"></a><span class="lineno">  727</span>        return !m-&gt;is_assigned();</div>
-<div class="line"><a id="l00728" name="l00728"></a><span class="lineno">  728</span>    } );</div>
-<div class="line"><a id="l00729" name="l00729"></a><span class="lineno">  729</span>    std::copy( <a class="code hl_enumvalue" href="achievement_8h.html#a4c2771ccaad822c94aee3786288bb112a98bd1c45684cf587ac2347a92dd7bb51">last</a>, ma.end(), std::back_inserter( <a class="code hl_variable" href="structnpc__chatbin.html#a99b51df0b9772ea2166968a03d1d4317">missions</a> ) );</div>
-<div class="line"><a id="l00730" name="l00730"></a><span class="lineno">  730</span>    ma.erase( <a class="code hl_enumvalue" href="achievement_8h.html#a4c2771ccaad822c94aee3786288bb112a98bd1c45684cf587ac2347a92dd7bb51">last</a>, ma.end() );</div>
-<div class="line"><a id="l00731" name="l00731"></a><span class="lineno">  731</span>}</div>
+<p class="definition">Definition at line <a class="el" href="npctalk_8cpp_source.html#l00757">757</a> of file <a class="el" href="npctalk_8cpp_source.html">npctalk.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span>{</div>
+<div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span>    <span class="comment">// TODO: or simply fail them? Some missions might only need to be reported.</span></div>
+<div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span>    <span class="keyword">auto</span> &amp;ma = <a class="code hl_variable" href="structnpc__chatbin.html#a639940a9d29a697bec5c09acc2a8da39">missions_assigned</a>;</div>
+<div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span>    <span class="keyword">const</span> <span class="keyword">auto</span> <a class="code hl_enumvalue" href="achievement_8h.html#a4c2771ccaad822c94aee3786288bb112a98bd1c45684cf587ac2347a92dd7bb51">last</a> = std::remove_if( ma.begin(), ma.end(), []( <span class="keyword">class</span> <a class="code hl_class" href="classmission.html">mission</a> <span class="keyword">const</span> * m ) {</div>
+<div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span>        return !m-&gt;is_assigned();</div>
+<div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span>    } );</div>
+<div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span>    std::copy( <a class="code hl_enumvalue" href="achievement_8h.html#a4c2771ccaad822c94aee3786288bb112a98bd1c45684cf587ac2347a92dd7bb51">last</a>, ma.end(), std::back_inserter( <a class="code hl_variable" href="structnpc__chatbin.html#a99b51df0b9772ea2166968a03d1d4317">missions</a> ) );</div>
+<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span>    ma.erase( <a class="code hl_enumvalue" href="achievement_8h.html#a4c2771ccaad822c94aee3786288bb112a98bd1c45684cf587ac2347a92dd7bb51">last</a>, ma.end() );</div>
+<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span>}</div>
 <div class="ttc" id="aachievement_8h_html_a4c2771ccaad822c94aee3786288bb112a98bd1c45684cf587ac2347a92dd7bb51"><div class="ttname"><a href="achievement_8h.html#a4c2771ccaad822c94aee3786288bb112a98bd1c45684cf587ac2347a92dd7bb51">achievement_comparison::last</a></div><div class="ttdeci">@ last</div></div>
 <div class="ttc" id="aclassmission_html"><div class="ttname"><a href="classmission.html">mission</a></div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00289">mission.h:290</a></div></div>
 <div class="ttc" id="astructnpc__chatbin_html_a639940a9d29a697bec5c09acc2a8da39"><div class="ttname"><a href="structnpc__chatbin.html#a639940a9d29a697bec5c09acc2a8da39">npc_chatbin::missions_assigned</a></div><div class="ttdeci">std::vector&lt; mission * &gt; missions_assigned</div><div class="ttdoc">Mission that have been assigned by this NPC to a player character.</div><div class="ttdef"><b>Definition:</b> <a href="npc_8h_source.html#l00715">npc.h:715</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="achievement_8h.html#a4c2771ccaad822c94aee3786288bb112a98bd1c45684cf587ac2347a92dd7bb51">last</a>, <a class="el" href="npc_8h_source.html#l00711">missions</a>, and <a class="el" href="npc_8h_source.html#l00715">missions_assigned</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="npctalk_8cpp_source.html#l00733">npc::talk_to_u()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="npctalk_8cpp_source.html#l00768">npc::talk_to_u()</a>.</p>
 
 </div>
 </div>
@@ -362,7 +362,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="npc_8h_source.html#l00732">732</a> of file <a class="el" href="npc_8h_source.html">npc.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="npctalk_8cpp_source.html#l01739">dialogue::opt()</a>, and <a class="el" href="npctalk__funcs_8cpp_source.html#l00902">talk_function::start_training()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="npctalk_8cpp_source.html#l01774">dialogue::opt()</a>, and <a class="el" href="npctalk__funcs_8cpp_source.html#l00902">talk_function::start_training()</a>.</p>
 
 </div>
 </div>
@@ -380,7 +380,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="npc_8h_source.html#l00733">733</a> of file <a class="el" href="npc_8h_source.html">npc.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="npctalk__funcs_8cpp_source.html#l00379">talk_function::assign_camp()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00353">talk_function::assign_guard()</a>, <a class="el" href="savegame__json_8cpp_source.html#l01277">deserialize()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00439">talk_function::end_conversation()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00298">talk_function::goto_location()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00445">talk_function::insult_combat()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00791">talk_function::leave()</a>, <a class="el" href="npc_8cpp_source.html#l00216">npc_template::load()</a>, <a class="el" href="npc_8cpp_source.html#l00289">npc::load_npc_template()</a>, <a class="el" href="npc_8cpp_source.html#l01349">npc::mutiny()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l01011">talk_function::npc_thankful()</a>, <a class="el" href="savegame__json_8cpp_source.html#l01263">serialize()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00398">talk_function::stop_guard()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00824">talk_function::stranger_neutral()</a>, and <a class="el" href="npctalk_8cpp_source.html#l00733">npc::talk_to_u()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="npctalk__funcs_8cpp_source.html#l00379">talk_function::assign_camp()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00353">talk_function::assign_guard()</a>, <a class="el" href="savegame__json_8cpp_source.html#l01277">deserialize()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00439">talk_function::end_conversation()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00298">talk_function::goto_location()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00445">talk_function::insult_combat()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00791">talk_function::leave()</a>, <a class="el" href="npc_8cpp_source.html#l00217">npc_template::load()</a>, <a class="el" href="npc_8cpp_source.html#l00290">npc::load_npc_template()</a>, <a class="el" href="npc_8cpp_source.html#l01351">npc::mutiny()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l01011">talk_function::npc_thankful()</a>, <a class="el" href="savegame__json_8cpp_source.html#l01263">serialize()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00398">talk_function::stop_guard()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00824">talk_function::stranger_neutral()</a>, and <a class="el" href="npctalk_8cpp_source.html#l00768">npc::talk_to_u()</a>.</p>
 
 </div>
 </div>
@@ -401,7 +401,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="npc_8h_source.html#l00720">720</a> of file <a class="el" href="npc_8h_source.html">npc.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="npctalk_8cpp_source.html#l02482">talk_effect_t::apply()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00099">talk_function::assign_mission()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00145">talk_function::clear_mission()</a>, <a class="el" href="savegame__json_8cpp_source.html#l01277">deserialize()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00133">talk_function::mission_failure()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00172">talk_function::mission_reward()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00112">talk_function::mission_success()</a>, <a class="el" href="npctalk_8cpp_source.html#l01739">dialogue::opt()</a>, <a class="el" href="game_8cpp_source.html#l02631">game::reset_npc_dispositions()</a>, <a class="el" href="savegame__json_8cpp_source.html#l01263">serialize()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00902">talk_function::start_training()</a>, and <a class="el" href="npctalk_8cpp_source.html#l00733">npc::talk_to_u()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="npctalk_8cpp_source.html#l02517">talk_effect_t::apply()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00099">talk_function::assign_mission()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00145">talk_function::clear_mission()</a>, <a class="el" href="savegame__json_8cpp_source.html#l01277">deserialize()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00133">talk_function::mission_failure()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00172">talk_function::mission_reward()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00112">talk_function::mission_success()</a>, <a class="el" href="npctalk_8cpp_source.html#l01774">dialogue::opt()</a>, <a class="el" href="game_8cpp_source.html#l02631">game::reset_npc_dispositions()</a>, <a class="el" href="savegame__json_8cpp_source.html#l01263">serialize()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00902">talk_function::start_training()</a>, and <a class="el" href="npctalk_8cpp_source.html#l00768">npc::talk_to_u()</a>.</p>
 
 </div>
 </div>
@@ -422,7 +422,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="npc_8h_source.html#l00711">711</a> of file <a class="el" href="npc_8h_source.html">npc.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="npc_8cpp_source.html#l02750">add_new_mission()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00099">talk_function::assign_mission()</a>, <a class="el" href="npctalk_8cpp_source.html#l00722">check_missions()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00145">talk_function::clear_mission()</a>, <a class="el" href="savegame__json_8cpp_source.html#l01277">deserialize()</a>, <a class="el" href="debug__menu_8cpp_source.html#l01178">debug_menu::mission_debug::edit_npc()</a>, <a class="el" href="game_8cpp_source.html#l02631">game::reset_npc_dispositions()</a>, <a class="el" href="savegame__json_8cpp_source.html#l01263">serialize()</a>, and <a class="el" href="npctalk_8cpp_source.html#l00733">npc::talk_to_u()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="npc_8cpp_source.html#l02752">add_new_mission()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00099">talk_function::assign_mission()</a>, <a class="el" href="npctalk_8cpp_source.html#l00757">check_missions()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00145">talk_function::clear_mission()</a>, <a class="el" href="savegame__json_8cpp_source.html#l01277">deserialize()</a>, <a class="el" href="debug__menu_8cpp_source.html#l01178">debug_menu::mission_debug::edit_npc()</a>, <a class="el" href="game_8cpp_source.html#l02631">game::reset_npc_dispositions()</a>, <a class="el" href="savegame__json_8cpp_source.html#l01263">serialize()</a>, and <a class="el" href="npctalk_8cpp_source.html#l00768">npc::talk_to_u()</a>.</p>
 
 </div>
 </div>
@@ -442,7 +442,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="npc_8h_source.html#l00715">715</a> of file <a class="el" href="npc_8h_source.html">npc.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="npctalk_8cpp_source.html#l02482">talk_effect_t::apply()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00099">talk_function::assign_mission()</a>, <a class="el" href="npc_8cpp_source.html#l01468">npc::assigned_missions_value()</a>, <a class="el" href="npctalk_8cpp_source.html#l00722">check_missions()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00145">talk_function::clear_mission()</a>, <a class="el" href="savegame__json_8cpp_source.html#l01277">deserialize()</a>, <a class="el" href="debug__menu_8cpp_source.html#l01178">debug_menu::mission_debug::edit_npc()</a>, <a class="el" href="mission_8cpp_source.html#l00345">mission::is_complete()</a>, <a class="el" href="npcmove_8cpp_source.html#l00648">npc::regen_ai_cache()</a>, <a class="el" href="game_8cpp_source.html#l02631">game::reset_npc_dispositions()</a>, <a class="el" href="savegame__json_8cpp_source.html#l01263">serialize()</a>, <a class="el" href="npctalk_8cpp_source.html#l02374">talk_effect_fun_t::set_add_mission()</a>, and <a class="el" href="npctalk_8cpp_source.html#l00733">npc::talk_to_u()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="npctalk_8cpp_source.html#l02517">talk_effect_t::apply()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00099">talk_function::assign_mission()</a>, <a class="el" href="npc_8cpp_source.html#l01470">npc::assigned_missions_value()</a>, <a class="el" href="npctalk_8cpp_source.html#l00757">check_missions()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00145">talk_function::clear_mission()</a>, <a class="el" href="savegame__json_8cpp_source.html#l01277">deserialize()</a>, <a class="el" href="debug__menu_8cpp_source.html#l01178">debug_menu::mission_debug::edit_npc()</a>, <a class="el" href="mission_8cpp_source.html#l00345">mission::is_complete()</a>, <a class="el" href="npcmove_8cpp_source.html#l00651">npc::regen_ai_cache()</a>, <a class="el" href="game_8cpp_source.html#l02631">game::reset_npc_dispositions()</a>, <a class="el" href="savegame__json_8cpp_source.html#l01263">serialize()</a>, <a class="el" href="npctalk_8cpp_source.html#l02409">talk_effect_fun_t::set_add_mission()</a>, and <a class="el" href="npctalk_8cpp_source.html#l00768">npc::talk_to_u()</a>.</p>
 
 </div>
 </div>
@@ -462,7 +462,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="npc_8h_source.html#l00724">724</a> of file <a class="el" href="npc_8h_source.html">npc.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="savegame__json_8cpp_source.html#l01277">deserialize()</a>, <a class="el" href="npctalk_8cpp_source.html#l01739">dialogue::opt()</a>, <a class="el" href="savegame__json_8cpp_source.html#l01263">serialize()</a>, and <a class="el" href="npctalk__funcs_8cpp_source.html#l00902">talk_function::start_training()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="savegame__json_8cpp_source.html#l01277">deserialize()</a>, <a class="el" href="npctalk_8cpp_source.html#l01774">dialogue::opt()</a>, <a class="el" href="savegame__json_8cpp_source.html#l01263">serialize()</a>, and <a class="el" href="npctalk__funcs_8cpp_source.html#l00902">talk_function::start_training()</a>.</p>
 
 </div>
 </div>
@@ -482,7 +482,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="npc_8h_source.html#l00728">728</a> of file <a class="el" href="npc_8h_source.html">npc.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="savegame__json_8cpp_source.html#l01277">deserialize()</a>, <a class="el" href="npctalk_8cpp_source.html#l01739">dialogue::opt()</a>, <a class="el" href="savegame__json_8cpp_source.html#l01263">serialize()</a>, and <a class="el" href="npctalk__funcs_8cpp_source.html#l00902">talk_function::start_training()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="savegame__json_8cpp_source.html#l01277">deserialize()</a>, <a class="el" href="npctalk_8cpp_source.html#l01774">dialogue::opt()</a>, <a class="el" href="savegame__json_8cpp_source.html#l01263">serialize()</a>, and <a class="el" href="npctalk__funcs_8cpp_source.html#l00902">talk_function::start_training()</a>.</p>
 
 </div>
 </div>
@@ -498,7 +498,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structnpc__chatbin.html">npc_chatbin</a></li>
-    <li class="footer">Generated on Mon May 1 2023 19:46:24 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri May 5 2023 15:06:14 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

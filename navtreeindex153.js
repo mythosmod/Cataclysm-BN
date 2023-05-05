@@ -1,5 +1,9 @@
 var NAVTREEINDEX153 =
 {
+"structmutation__branch.html#a2d094be9349b4d041b898caa0c55920f":[36,0,670,57],
+"structmutation__branch.html#a30668e4aa9d24a2c4abd1b73872f87cf":[36,0,670,120],
+"structmutation__branch.html#a31a2a99c9769f331a1dcac80f4c0091c":[36,0,670,92],
+"structmutation__branch.html#a327647c43604890e8c911ddc3bfc1b9e":[36,0,670,84],
 "structmutation__branch.html#a333b9003068ab6c868a05a4f22948352":[36,0,670,31],
 "structmutation__branch.html#a35c5078b89339f6298622069062ea54d":[36,0,670,3],
 "structmutation__branch.html#a35eb3d4284f1507eb4a7d7ba109c8043":[36,0,670,73],
@@ -245,9 +249,5 @@ var NAVTREEINDEX153 =
 "structnpc__follower__rules.html#ad18222c3175298f3468ec4805775a374":[36,0,691,22],
 "structnpc__follower__rules.html#ad7640dd1f35a94964cb6bb5cc97a9f3b":[36,0,691,8],
 "structnpc__follower__rules.html#ada7e2b4584005bd57b2f2a54c8adf7dd":[36,0,691,13],
-"structnpc__follower__rules.html#aec3d578e145e0c7c6aaf2712ff638f1a":[36,0,691,1],
-"structnpc__follower__rules.html#af611f5a5762fd4e173e69363a4471f2a":[36,0,691,5],
-"structnpc__follower__rules.html#af7f57605c02d48aba09224adee9d260f":[36,0,691,19],
-"structnpc__follower__rules.html#af929f56ad23d6e4e653359fd31425f5e":[36,0,691,21],
-"structnpc__follower__rules.html#afe9d1e91d4b55d09c98b60a279d24b7d":[36,0,691,15]
+"structnpc__follower__rules.html#aec3d578e145e0c7c6aaf2712ff638f1a":[36,0,691,1]
 };

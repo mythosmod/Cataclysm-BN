@@ -1,6 +1,7 @@
 var npc_8cpp =
 [
     [ "flag_NPC_SAFE", "npc_8cpp.html#a5b7b7ed02b359195ca3f4d392bb53f65", null ],
+    [ "flag_SPLINT", "npc_8cpp.html#ac515c71f173b6c81dbc78f60ce2b89d2", null ],
     [ "get_clothing_item", "npc_8cpp.html#ad16f112d2b04ef5d0aae5fee81d0b1c4", null ],
     [ "maybe_shift", "npc_8cpp.html#abd51c077ce6d869ed80795d2afb14ffe", null ],
     [ "maybe_shift", "npc_8cpp.html#affdaf613b6750271bd05132644f66e1f", null ],

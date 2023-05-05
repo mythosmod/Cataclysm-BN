@@ -257,6 +257,7 @@ var character_8cpp =
     [ "trait_PYROMANIA", "character_8cpp.html#a512959ad2b35ea057f2fed5445fc23c4", null ],
     [ "trait_QUILLS", "character_8cpp.html#a444102b4297414117db15957ce171fb6", null ],
     [ "trait_RADIOGENIC", "character_8cpp.html#aed539cd1d527bf5d7c66b636415e90ed", null ],
+    [ "trait_REGEN_LIZ", "character_8cpp.html#aa3da8ff614f792fca48c877acc0ff880", null ],
     [ "trait_ROOTS2", "character_8cpp.html#a274598613975233d47fea947150a5f2a", null ],
     [ "trait_ROOTS3", "character_8cpp.html#af4ab011c7d44ca72f54db17f5b6c4ff4", null ],
     [ "trait_SAVANT", "character_8cpp.html#a510aede332c4a05b18d61c20e2efbf4d", null ],

@@ -1,5 +1,13 @@
 var NAVTREEINDEX88 =
 {
+"game__constants_8h.html#a6ac4b0413305dd75769d62227081d8b1":[37,0,1,240,17],
+"game__constants_8h.html#a6fe2961d424ef5406871b8ee32764330":[37,0,1,240,16],
+"game__constants_8h.html#a7311a37fb53f5348e56313b9c1dcefed":[37,0,1,240,73],
+"game__constants_8h.html#a745392436b19cce3012d4d8dc0fe422c":[37,0,1,240,40],
+"game__constants_8h.html#a75b0c4b24e523cce5ca6d4699370c985":[37,0,1,240,74],
+"game__constants_8h.html#a76c20caf52716b964b13acb64ac492cb":[37,0,1,240,33],
+"game__constants_8h.html#a76d1381ae078717aa7a3737d19df1a01":[37,0,1,240,2],
+"game__constants_8h.html#a7ca773657c862460eb9f4fb2daf33335":[37,0,1,240,41],
 "game__constants_8h.html#a7f19032f99d37a39826a1e3cecb549be":[37,0,1,240,29],
 "game__constants_8h.html#a8226e8a134603e5bc06df05efd13d8d1":[37,0,1,240,37],
 "game__constants_8h.html#a844f35e5f9891ae54a591cd74bc45675":[37,0,1,240,47],
@@ -241,13 +249,5 @@ var NAVTREEINDEX88 =
 "gamemode__tutorial_8h.html#a543ad4708a13f830fca96aa55b64d9eead5fd4ce8f0351b17d0c28f0254082f95":[37,0,1,250,4,25],
 "gamemode__tutorial_8h.html#a543ad4708a13f830fca96aa55b64d9eead9306a877449e338e44196ee0f704327":[37,0,1,250,4,31],
 "gamemode__tutorial_8h.html#a543ad4708a13f830fca96aa55b64d9eeadcbbf524cb3a23e19f7c85dd9e2f08f2":[37,0,1,250,4,9],
-"gamemode__tutorial_8h.html#a543ad4708a13f830fca96aa55b64d9eeade8b392e896fce21b8c8dc5597afd7dc":[37,0,1,250,4,26],
-"gamemode__tutorial_8h.html#a543ad4708a13f830fca96aa55b64d9eeae7d91c2c0d59290fea57eb1f8772901a":[37,0,1,250,4,11],
-"gamemode__tutorial_8h.html#a543ad4708a13f830fca96aa55b64d9eeaeccc724511f828129ff00e9a879c6285":[37,0,1,250,4,6],
-"gamemode__tutorial_8h.html#a543ad4708a13f830fca96aa55b64d9eeaf8e5813f38f15241a5b013cd46bc0aa4":[37,0,1,250,4,29],
-"gamemode__tutorial_8h.html#a543ad4708a13f830fca96aa55b64d9eeafaa6677bcae171f9184b31bab264b1db":[37,0,1,250,4,24],
-"gamemode__tutorial_8h_source.html":[37,0,1,250],
-"gates_8cpp.html":[37,0,1,251],
-"gates_8cpp.html#a0b0ef71c59e4f2574505a15e0d02853d":[37,0,1,251,2],
-"gates_8cpp.html#a62213fe2f53bd7076df7272451a41e1d":[37,0,1,251,3]
+"gamemode__tutorial_8h.html#a543ad4708a13f830fca96aa55b64d9eeade8b392e896fce21b8c8dc5597afd7dc":[37,0,1,250,4,26]
 };

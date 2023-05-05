@@ -1,5 +1,13 @@
 var NAVTREEINDEX109 =
 {
+"monster_8cpp.html#a9214a432a847a27280784b22256fc5d1":[37,0,1,430,4],
+"monster_8cpp.html#a924fe96bf3dd9ac954c9925fdd5b6901":[37,0,1,430,14],
+"monster_8cpp.html#a92d95019a8d6d822439d2358b9614f4d":[37,0,1,430,16],
+"monster_8cpp.html#a97f784c7aff9be3b45ec2614d570c338":[37,0,1,430,47],
+"monster_8cpp.html#aa1ed3999ebde4696ff3c3930f8ddf424":[37,0,1,430,50],
+"monster_8cpp.html#aa222d693ccc29efba86a3bb9f18add4e":[37,0,1,430,34],
+"monster_8cpp.html#aa3320a370fe1f7f1cf6e14918ca20358":[37,0,1,430,11],
+"monster_8cpp.html#ab3491c327a32b31ea6eeb4550e3b1c3b":[37,0,1,430,40],
 "monster_8cpp.html#abeca1e9d9723c5bbc93f59a05d779ba9":[37,0,1,430,45],
 "monster_8cpp.html#ac6bddea0c05309bc6d54e962a7dff763":[37,0,1,430,8],
 "monster_8cpp.html#ac6e489d07c26a18493630574cf6de5c9":[37,0,1,430,46],
@@ -241,13 +249,5 @@ var NAVTREEINDEX109 =
 "morale__types_8h.html#acfc2d4ff149427674f90ade635cf1d68":[37,0,1,439,10],
 "morale__types_8h.html#ad676cf81d4478b9b73ad49bd9b89c028":[37,0,1,439,36],
 "morale__types_8h.html#addd851cac206a40462e42d5fd7639e31":[37,0,1,439,13],
-"morale__types_8h.html#ae2075becc3927fd6bd36bc5602db4d7c":[37,0,1,439,44],
-"morale__types_8h.html#ae33c04a9fc703bf7d68cc5010c26006b":[37,0,1,439,8],
-"morale__types_8h.html#ae3d9d22a529faa7c5858e6c401eb1dee":[37,0,1,439,74],
-"morale__types_8h.html#ae5c58ab766debbc419905ff313527ce4":[37,0,1,439,19],
-"morale__types_8h.html#ae5f540bb078fbbbab8afd8c5baa410e8":[37,0,1,439,39],
-"morale__types_8h.html#ae6e9323b4efd76a2118aefb85621b332":[37,0,1,439,70],
-"morale__types_8h.html#ae80a41f91848ad3e7d61426f0a63beca":[37,0,1,439,56],
-"morale__types_8h.html#aeaa927cec49cf2d6153e3feda34523ed":[37,0,1,439,73],
-"morale__types_8h.html#aef19dbbc73fad5ce9a57086d60318b37":[37,0,1,439,23]
+"morale__types_8h.html#ae2075becc3927fd6bd36bc5602db4d7c":[37,0,1,439,44]
 };

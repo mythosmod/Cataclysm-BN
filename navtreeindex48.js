@@ -1,5 +1,7 @@
 var NAVTREEINDEX48 =
 {
+"classiuse__actor.html":[36,0,491],
+"classiuse__actor.html#a012da399f97dd64e29a78e477a202b8e":[36,0,491,7],
 "classiuse__actor.html#a2dad7b4ac740759a1db73515af5f7f99":[36,0,491,1],
 "classiuse__actor.html#a3e13735b7baa2c93610ccb78abda2d09":[36,0,491,0],
 "classiuse__actor.html#a46803e26f384386f9f8061044c7373ff":[36,0,491,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX48 =
 "classjob__data.html#ac45b217f018f9da1f7992a494a8bb2ac":[36,0,527,1],
 "classjob__data.html#aca3077a1f027955aadf8c2139c278e04":[36,0,527,0],
 "classjson__dynamic__line__effect.html":[36,0,528],
-"classjson__dynamic__line__effect.html#a110d936cc5c8f49edb74f12b2a654564":[36,0,528,0],
-"classjson__dynamic__line__effect.html#a17f3120314d73db5bc4033ad817315cc":[36,0,528,2],
-"classjson__dynamic__line__effect.html#a244bf07edf0a1cf44d1dbc7421a3dae2":[36,0,528,1]
+"classjson__dynamic__line__effect.html#a110d936cc5c8f49edb74f12b2a654564":[36,0,528,0]
 };

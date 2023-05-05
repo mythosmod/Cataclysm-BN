@@ -4,6 +4,7 @@ var suffer_8cpp =
     [ "flag_BLIND", "suffer_8cpp.html#a793e5f81d379bb1ed507e0b3ad166382", null ],
     [ "flag_PLOWABLE", "suffer_8cpp.html#aaa9613ea825773a0d74eaba7663a5dbf", null ],
     [ "flag_RAD_RESIST", "suffer_8cpp.html#a4e269d5100303d27c1fe13b7fb1b42d5", null ],
+    [ "flag_SPLINT", "suffer_8cpp.html#ac515c71f173b6c81dbc78f60ce2b89d2", null ],
     [ "flag_SUN_GLASSES", "suffer_8cpp.html#aa94108fad7ac28c25678804703bc5568", null ],
     [ "bio_advreactor", "suffer_8cpp.html#af240157d33eeab40ef36bc04dd472e75", null ],
     [ "bio_dis_acid", "suffer_8cpp.html#a782060914f3f4d368a92b05f1094c667", null ],
