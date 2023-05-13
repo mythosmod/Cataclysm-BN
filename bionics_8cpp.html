@@ -501,25 +501,25 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>indicates whether we successfully charged the bionic. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="bionics_8cpp_source.html#l01580">1580</a> of file <a class="el" href="bionics_8cpp_source.html">bionics.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01582" name="l01582"></a><span class="lineno"> 1582</span>{</div>
-<div class="line"><a id="l01583" name="l01583"></a><span class="lineno"> 1583</span>    <span class="keyword">const</span> <a class="code hl_struct" href="structbionic__data.html">bionic_data</a> &amp;info = bio.<a class="code hl_function" href="structbionic.html#a66fc20bc3ee64b64edce99959aedd453">info</a>();</div>
-<div class="line"><a id="l01584" name="l01584"></a><span class="lineno"> 1584</span>    <a class="code hl_class" href="classunits_1_1quantity.html">units::energy</a> power_cost = info.<a class="code hl_variable" href="structbionic__data.html#a549c82c85814902632e177babf76104c">power_over_time</a> * factor;</div>
-<div class="line"><a id="l01585" name="l01585"></a><span class="lineno"> 1585</span>    <span class="keywordtype">bool</span> recharged = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l01586" name="l01586"></a><span class="lineno"> 1586</span> </div>
-<div class="line"><a id="l01587" name="l01587"></a><span class="lineno"> 1587</span>    <span class="keywordflow">if</span>( power_cost &gt; 0_kJ ) {</div>
-<div class="line"><a id="l01588" name="l01588"></a><span class="lineno"> 1588</span>        <span class="keywordflow">if</span>( p.<a class="code hl_function" href="classCharacter.html#add22510ff2fa20a662868b4dd86e030e">get_power_level</a>() &gt;= power_cost ) {</div>
-<div class="line"><a id="l01589" name="l01589"></a><span class="lineno"> 1589</span>            <span class="comment">// Set the recharging cost and charge the bionic.</span></div>
-<div class="line"><a id="l01590" name="l01590"></a><span class="lineno"> 1590</span>            amount = power_cost;</div>
-<div class="line"><a id="l01591" name="l01591"></a><span class="lineno"> 1591</span>            <span class="comment">// This is our first turn of charging, so subtract a turn from the recharge delay.</span></div>
-<div class="line"><a id="l01592" name="l01592"></a><span class="lineno"> 1592</span>            bio.<a class="code hl_variable" href="structbionic.html#a9ba6a347620bc748a13a909909effd3e">charge_timer</a> = info.<a class="code hl_variable" href="structbionic__data.html#a92d5d99933b7daf27c6d312914fedd6a">charge_time</a> - rate;</div>
-<div class="line"><a id="l01593" name="l01593"></a><span class="lineno"> 1593</span>            recharged = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l01594" name="l01594"></a><span class="lineno"> 1594</span>        }</div>
-<div class="line"><a id="l01595" name="l01595"></a><span class="lineno"> 1595</span>    }</div>
-<div class="line"><a id="l01596" name="l01596"></a><span class="lineno"> 1596</span> </div>
-<div class="line"><a id="l01597" name="l01597"></a><span class="lineno"> 1597</span>    <span class="keywordflow">return</span> recharged;</div>
-<div class="line"><a id="l01598" name="l01598"></a><span class="lineno"> 1598</span>}</div>
-<div class="ttc" id="aclassCharacter_html_add22510ff2fa20a662868b4dd86e030e"><div class="ttname"><a href="classCharacter.html#add22510ff2fa20a662868b4dd86e030e">Character::get_power_level</a></div><div class="ttdeci">units::energy get_power_level() const</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l01890">character.cpp:1890</a></div></div>
+<p class="definition">Definition at line <a class="el" href="bionics_8cpp_source.html#l01582">1582</a> of file <a class="el" href="bionics_8cpp_source.html">bionics.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01584" name="l01584"></a><span class="lineno"> 1584</span>{</div>
+<div class="line"><a id="l01585" name="l01585"></a><span class="lineno"> 1585</span>    <span class="keyword">const</span> <a class="code hl_struct" href="structbionic__data.html">bionic_data</a> &amp;info = bio.<a class="code hl_function" href="structbionic.html#a66fc20bc3ee64b64edce99959aedd453">info</a>();</div>
+<div class="line"><a id="l01586" name="l01586"></a><span class="lineno"> 1586</span>    <a class="code hl_class" href="classunits_1_1quantity.html">units::energy</a> power_cost = info.<a class="code hl_variable" href="structbionic__data.html#a549c82c85814902632e177babf76104c">power_over_time</a> * factor;</div>
+<div class="line"><a id="l01587" name="l01587"></a><span class="lineno"> 1587</span>    <span class="keywordtype">bool</span> recharged = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l01588" name="l01588"></a><span class="lineno"> 1588</span> </div>
+<div class="line"><a id="l01589" name="l01589"></a><span class="lineno"> 1589</span>    <span class="keywordflow">if</span>( power_cost &gt; 0_kJ ) {</div>
+<div class="line"><a id="l01590" name="l01590"></a><span class="lineno"> 1590</span>        <span class="keywordflow">if</span>( p.<a class="code hl_function" href="classCharacter.html#add22510ff2fa20a662868b4dd86e030e">get_power_level</a>() &gt;= power_cost ) {</div>
+<div class="line"><a id="l01591" name="l01591"></a><span class="lineno"> 1591</span>            <span class="comment">// Set the recharging cost and charge the bionic.</span></div>
+<div class="line"><a id="l01592" name="l01592"></a><span class="lineno"> 1592</span>            amount = power_cost;</div>
+<div class="line"><a id="l01593" name="l01593"></a><span class="lineno"> 1593</span>            <span class="comment">// This is our first turn of charging, so subtract a turn from the recharge delay.</span></div>
+<div class="line"><a id="l01594" name="l01594"></a><span class="lineno"> 1594</span>            bio.<a class="code hl_variable" href="structbionic.html#a9ba6a347620bc748a13a909909effd3e">charge_timer</a> = info.<a class="code hl_variable" href="structbionic__data.html#a92d5d99933b7daf27c6d312914fedd6a">charge_time</a> - rate;</div>
+<div class="line"><a id="l01595" name="l01595"></a><span class="lineno"> 1595</span>            recharged = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l01596" name="l01596"></a><span class="lineno"> 1596</span>        }</div>
+<div class="line"><a id="l01597" name="l01597"></a><span class="lineno"> 1597</span>    }</div>
+<div class="line"><a id="l01598" name="l01598"></a><span class="lineno"> 1598</span> </div>
+<div class="line"><a id="l01599" name="l01599"></a><span class="lineno"> 1599</span>    <span class="keywordflow">return</span> recharged;</div>
+<div class="line"><a id="l01600" name="l01600"></a><span class="lineno"> 1600</span>}</div>
+<div class="ttc" id="aclassCharacter_html_add22510ff2fa20a662868b4dd86e030e"><div class="ttname"><a href="classCharacter.html#add22510ff2fa20a662868b4dd86e030e">Character::get_power_level</a></div><div class="ttdeci">units::energy get_power_level() const</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l01893">character.cpp:1893</a></div></div>
 <div class="ttc" id="aclassunits_1_1quantity_html"><div class="ttname"><a href="classunits_1_1quantity.html">units::quantity</a></div><div class="ttdef"><b>Definition:</b> <a href="units__def_8h_source.html#l00014">units_def.h:15</a></div></div>
 <div class="ttc" id="astructbionic__data_html"><div class="ttname"><a href="structbionic__data.html">bionic_data</a></div><div class="ttdef"><b>Definition:</b> <a href="bionics_8h_source.html#l00028">bionics.h:28</a></div></div>
 <div class="ttc" id="astructbionic__data_html_a549c82c85814902632e177babf76104c"><div class="ttname"><a href="structbionic__data.html#a549c82c85814902632e177babf76104c">bionic_data::power_over_time</a></div><div class="ttdeci">units::energy power_over_time</div><div class="ttdoc">Power cost over time, does nothing without a non-zero charge_time.</div><div class="ttdef"><b>Definition:</b> <a href="bionics_8h_source.html#l00041">bionics.h:41</a></div></div>
@@ -527,9 +527,9 @@ Variables</h2></td></tr>
 <div class="ttc" id="astructbionic_html_a66fc20bc3ee64b64edce99959aedd453"><div class="ttname"><a href="structbionic.html#a66fc20bc3ee64b64edce99959aedd453">bionic::info</a></div><div class="ttdeci">const bionic_data &amp; info() const</div><div class="ttdef"><b>Definition:</b> <a href="bionics_8h_source.html#l00174">bionics.h:174</a></div></div>
 <div class="ttc" id="astructbionic_html_a9ba6a347620bc748a13a909909effd3e"><div class="ttname"><a href="structbionic.html#a9ba6a347620bc748a13a909909effd3e">bionic::charge_timer</a></div><div class="ttdeci">int charge_timer</div><div class="ttdef"><b>Definition:</b> <a href="bionics_8h_source.html#l00157">bionics.h:157</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="bionics_8h_source.html#l00047">bionic_data::charge_time</a>, <a class="el" href="bionics_8h_source.html#l00157">bionic::charge_timer</a>, <a class="el" href="character_8cpp_source.html#l01890">Character::get_power_level()</a>, <a class="el" href="bionics_8h_source.html#l00174">bionic::info()</a>, and <a class="el" href="bionics_8h_source.html#l00041">bionic_data::power_over_time</a>.</p>
+<p class="reference">References <a class="el" href="bionics_8h_source.html#l00047">bionic_data::charge_time</a>, <a class="el" href="bionics_8h_source.html#l00157">bionic::charge_timer</a>, <a class="el" href="character_8cpp_source.html#l01893">Character::get_power_level()</a>, <a class="el" href="bionics_8h_source.html#l00174">bionic::info()</a>, and <a class="el" href="bionics_8h_source.html#l00041">bionic_data::power_over_time</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01600">Character::process_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01602">Character::process_bionic()</a>.</p>
 
 </div>
 </div>
@@ -559,32 +559,32 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bionics_8cpp_source.html#l01996">1996</a> of file <a class="el" href="bionics_8cpp_source.html">bionics.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01997" name="l01997"></a><span class="lineno"> 1997</span>{</div>
-<div class="line"><a id="l01998" name="l01998"></a><span class="lineno"> 1998</span>    <span class="keywordflow">if</span>( <a class="code hl_variable" href="game_8cpp.html#abeb98e93502d73818b4a73fabe191bc1">g</a>-&gt;u.has_trait( <a class="code hl_variable" href="bionics_8cpp.html#a17e20a34f5837e50de3264fa93af7d0a">trait_DEBUG_BIONICS</a> ) ) {</div>
-<div class="line"><a id="l01999" name="l01999"></a><span class="lineno"> 1999</span>        <span class="keywordflow">return</span> 100;</div>
-<div class="line"><a id="l02000" name="l02000"></a><span class="lineno"> 2000</span>    }</div>
-<div class="line"><a id="l02001" name="l02001"></a><span class="lineno"> 2001</span> </div>
-<div class="line"><a id="l02002" name="l02002"></a><span class="lineno"> 2002</span>    <span class="keywordtype">int</span> chance_of_success = 0;</div>
-<div class="line"><a id="l02003" name="l02003"></a><span class="lineno"> 2003</span>    <span class="comment">// we will base chance_of_success on a ratio of skill and difficulty</span></div>
-<div class="line"><a id="l02004" name="l02004"></a><span class="lineno"> 2004</span>    <span class="comment">// when skill=difficulty, this gives us 1.  skill &lt; difficulty gives a fraction.</span></div>
-<div class="line"><a id="l02005" name="l02005"></a><span class="lineno"> 2005</span>    <span class="keywordtype">float</span> skill_difficulty_parameter = <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>( adjusted_skill /</div>
-<div class="line"><a id="l02006" name="l02006"></a><span class="lineno"> 2006</span>                                       ( 4.0 * bionic_difficulty ) );</div>
-<div class="line"><a id="l02007" name="l02007"></a><span class="lineno"> 2007</span> </div>
-<div class="line"><a id="l02008" name="l02008"></a><span class="lineno"> 2008</span>    <span class="comment">// when skill == difficulty, chance_of_success is 50%. Chance of success drops quickly below that</span></div>
-<div class="line"><a id="l02009" name="l02009"></a><span class="lineno"> 2009</span>    <span class="comment">// to reserve bionics for characters with the appropriate skill.  For more difficult bionics, the</span></div>
-<div class="line"><a id="l02010" name="l02010"></a><span class="lineno"> 2010</span>    <span class="comment">// curve flattens out just above 80%</span></div>
-<div class="line"><a id="l02011" name="l02011"></a><span class="lineno"> 2011</span>    chance_of_success = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>( ( 100 * skill_difficulty_parameter ) /</div>
-<div class="line"><a id="l02012" name="l02012"></a><span class="lineno"> 2012</span>                                          ( skill_difficulty_parameter + std::sqrt( 1 / skill_difficulty_parameter ) ) );</div>
-<div class="line"><a id="l02013" name="l02013"></a><span class="lineno"> 2013</span> </div>
-<div class="line"><a id="l02014" name="l02014"></a><span class="lineno"> 2014</span>    <span class="keywordflow">return</span> chance_of_success;</div>
-<div class="line"><a id="l02015" name="l02015"></a><span class="lineno"> 2015</span>}</div>
+<p class="definition">Definition at line <a class="el" href="bionics_8cpp_source.html#l01998">1998</a> of file <a class="el" href="bionics_8cpp_source.html">bionics.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01999" name="l01999"></a><span class="lineno"> 1999</span>{</div>
+<div class="line"><a id="l02000" name="l02000"></a><span class="lineno"> 2000</span>    <span class="keywordflow">if</span>( <a class="code hl_variable" href="game_8cpp.html#abeb98e93502d73818b4a73fabe191bc1">g</a>-&gt;u.has_trait( <a class="code hl_variable" href="bionics_8cpp.html#a17e20a34f5837e50de3264fa93af7d0a">trait_DEBUG_BIONICS</a> ) ) {</div>
+<div class="line"><a id="l02001" name="l02001"></a><span class="lineno"> 2001</span>        <span class="keywordflow">return</span> 100;</div>
+<div class="line"><a id="l02002" name="l02002"></a><span class="lineno"> 2002</span>    }</div>
+<div class="line"><a id="l02003" name="l02003"></a><span class="lineno"> 2003</span> </div>
+<div class="line"><a id="l02004" name="l02004"></a><span class="lineno"> 2004</span>    <span class="keywordtype">int</span> chance_of_success = 0;</div>
+<div class="line"><a id="l02005" name="l02005"></a><span class="lineno"> 2005</span>    <span class="comment">// we will base chance_of_success on a ratio of skill and difficulty</span></div>
+<div class="line"><a id="l02006" name="l02006"></a><span class="lineno"> 2006</span>    <span class="comment">// when skill=difficulty, this gives us 1.  skill &lt; difficulty gives a fraction.</span></div>
+<div class="line"><a id="l02007" name="l02007"></a><span class="lineno"> 2007</span>    <span class="keywordtype">float</span> skill_difficulty_parameter = <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>( adjusted_skill /</div>
+<div class="line"><a id="l02008" name="l02008"></a><span class="lineno"> 2008</span>                                       ( 4.0 * bionic_difficulty ) );</div>
+<div class="line"><a id="l02009" name="l02009"></a><span class="lineno"> 2009</span> </div>
+<div class="line"><a id="l02010" name="l02010"></a><span class="lineno"> 2010</span>    <span class="comment">// when skill == difficulty, chance_of_success is 50%. Chance of success drops quickly below that</span></div>
+<div class="line"><a id="l02011" name="l02011"></a><span class="lineno"> 2011</span>    <span class="comment">// to reserve bionics for characters with the appropriate skill.  For more difficult bionics, the</span></div>
+<div class="line"><a id="l02012" name="l02012"></a><span class="lineno"> 2012</span>    <span class="comment">// curve flattens out just above 80%</span></div>
+<div class="line"><a id="l02013" name="l02013"></a><span class="lineno"> 2013</span>    chance_of_success = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>( ( 100 * skill_difficulty_parameter ) /</div>
+<div class="line"><a id="l02014" name="l02014"></a><span class="lineno"> 2014</span>                                          ( skill_difficulty_parameter + std::sqrt( 1 / skill_difficulty_parameter ) ) );</div>
+<div class="line"><a id="l02015" name="l02015"></a><span class="lineno"> 2015</span> </div>
+<div class="line"><a id="l02016" name="l02016"></a><span class="lineno"> 2016</span>    <span class="keywordflow">return</span> chance_of_success;</div>
+<div class="line"><a id="l02017" name="l02017"></a><span class="lineno"> 2017</span>}</div>
 <div class="ttc" id="abionics_8cpp_html_a17e20a34f5837e50de3264fa93af7d0a"><div class="ttname"><a href="bionics_8cpp.html#a17e20a34f5837e50de3264fa93af7d0a">trait_DEBUG_BIONICS</a></div><div class="ttdeci">static const trait_id trait_DEBUG_BIONICS(&quot;DEBUG_BIONICS&quot;)</div></div>
 <div class="ttc" id="agame_8cpp_html_abeb98e93502d73818b4a73fabe191bc1"><div class="ttname"><a href="game_8cpp.html#abeb98e93502d73818b4a73fabe191bc1">g</a></div><div class="ttdeci">std::unique_ptr&lt; game &gt; g</div><div class="ttdef"><b>Definition:</b> <a href="game_8cpp_source.html#l00281">game.cpp:281</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="game_8cpp_source.html#l00281">g</a>, and <a class="el" href="bionics_8cpp.html#a17e20a34f5837e50de3264fa93af7d0a">trait_DEBUG_BIONICS</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="iexamine_8cpp_source.html#l04808">best_installer()</a>, <a class="el" href="bionics_8cpp_source.html#l02258">Character::can_install_bionics()</a>, <a class="el" href="bionics_8cpp_source.html#l02017">Character::can_uninstall_bionic()</a>, <a class="el" href="game__inventory_8cpp_source.html#l01924">bionic_install_preset::get_failure_chance()</a>, <a class="el" href="game__inventory_8cpp_source.html#l02019">bionic_install_surgeon_preset::get_failure_chance()</a>, <a class="el" href="game__inventory_8cpp_source.html#l02103">bionic_uninstall_preset::get_failure_chance()</a>, <a class="el" href="bionics_8cpp_source.html#l02351">Character::install_bionics()</a>, <a class="el" href="game_8cpp_source.html#l04908">game::save_cyborg()</a>, and <a class="el" href="bionics_8cpp_source.html#l02087">Character::uninstall_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iexamine_8cpp_source.html#l04808">best_installer()</a>, <a class="el" href="bionics_8cpp_source.html#l02260">Character::can_install_bionics()</a>, <a class="el" href="bionics_8cpp_source.html#l02019">Character::can_uninstall_bionic()</a>, <a class="el" href="game__inventory_8cpp_source.html#l01924">bionic_install_preset::get_failure_chance()</a>, <a class="el" href="game__inventory_8cpp_source.html#l02019">bionic_install_surgeon_preset::get_failure_chance()</a>, <a class="el" href="game__inventory_8cpp_source.html#l02103">bionic_uninstall_preset::get_failure_chance()</a>, <a class="el" href="bionics_8cpp_source.html#l02353">Character::install_bionics()</a>, <a class="el" href="game_8cpp_source.html#l04908">game::save_cyborg()</a>, and <a class="el" href="bionics_8cpp_source.html#l02089">Character::uninstall_bionic()</a>.</p>
 
 </div>
 </div>
@@ -614,22 +614,22 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bionics_8cpp_source.html#l02919">2919</a> of file <a class="el" href="bionics_8cpp_source.html">bionics.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l02921" name="l02921"></a><span class="lineno"> 2921</span>{</div>
-<div class="line"><a id="l02922" name="l02922"></a><span class="lineno"> 2922</span>    <span class="comment">// Vector of bionics to return</span></div>
-<div class="line"><a id="l02923" name="l02923"></a><span class="lineno"> 2923</span>    std::vector&lt;bionic_id&gt; bionics_cancelling;</div>
-<div class="line"><a id="l02924" name="l02924"></a><span class="lineno"> 2924</span> </div>
-<div class="line"><a id="l02925" name="l02925"></a><span class="lineno"> 2925</span>    <span class="comment">// Search through the vector of of bionics, and see if the trait is cancelled by one of them</span></div>
-<div class="line"><a id="l02926" name="l02926"></a><span class="lineno"> 2926</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_class" href="classstring__id.html">bionic_id</a> &amp;bid : bios ) {</div>
-<div class="line"><a id="l02927" name="l02927"></a><span class="lineno"> 2927</span>        <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_class" href="classstring__id.html">trait_id</a> &amp;trait : bid-&gt;canceled_mutations ) {</div>
-<div class="line"><a id="l02928" name="l02928"></a><span class="lineno"> 2928</span>            <span class="keywordflow">if</span>( trait == tid ) {</div>
-<div class="line"><a id="l02929" name="l02929"></a><span class="lineno"> 2929</span>                bionics_cancelling.emplace_back( bid );</div>
-<div class="line"><a id="l02930" name="l02930"></a><span class="lineno"> 2930</span>            }</div>
-<div class="line"><a id="l02931" name="l02931"></a><span class="lineno"> 2931</span>        }</div>
-<div class="line"><a id="l02932" name="l02932"></a><span class="lineno"> 2932</span>    }</div>
-<div class="line"><a id="l02933" name="l02933"></a><span class="lineno"> 2933</span> </div>
-<div class="line"><a id="l02934" name="l02934"></a><span class="lineno"> 2934</span>    <span class="keywordflow">return</span> bionics_cancelling;</div>
-<div class="line"><a id="l02935" name="l02935"></a><span class="lineno"> 2935</span>}</div>
+<p class="definition">Definition at line <a class="el" href="bionics_8cpp_source.html#l02921">2921</a> of file <a class="el" href="bionics_8cpp_source.html">bionics.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l02923" name="l02923"></a><span class="lineno"> 2923</span>{</div>
+<div class="line"><a id="l02924" name="l02924"></a><span class="lineno"> 2924</span>    <span class="comment">// Vector of bionics to return</span></div>
+<div class="line"><a id="l02925" name="l02925"></a><span class="lineno"> 2925</span>    std::vector&lt;bionic_id&gt; bionics_cancelling;</div>
+<div class="line"><a id="l02926" name="l02926"></a><span class="lineno"> 2926</span> </div>
+<div class="line"><a id="l02927" name="l02927"></a><span class="lineno"> 2927</span>    <span class="comment">// Search through the vector of of bionics, and see if the trait is cancelled by one of them</span></div>
+<div class="line"><a id="l02928" name="l02928"></a><span class="lineno"> 2928</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_class" href="classstring__id.html">bionic_id</a> &amp;bid : bios ) {</div>
+<div class="line"><a id="l02929" name="l02929"></a><span class="lineno"> 2929</span>        <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_class" href="classstring__id.html">trait_id</a> &amp;trait : bid-&gt;canceled_mutations ) {</div>
+<div class="line"><a id="l02930" name="l02930"></a><span class="lineno"> 2930</span>            <span class="keywordflow">if</span>( trait == tid ) {</div>
+<div class="line"><a id="l02931" name="l02931"></a><span class="lineno"> 2931</span>                bionics_cancelling.emplace_back( bid );</div>
+<div class="line"><a id="l02932" name="l02932"></a><span class="lineno"> 2932</span>            }</div>
+<div class="line"><a id="l02933" name="l02933"></a><span class="lineno"> 2933</span>        }</div>
+<div class="line"><a id="l02934" name="l02934"></a><span class="lineno"> 2934</span>    }</div>
+<div class="line"><a id="l02935" name="l02935"></a><span class="lineno"> 2935</span> </div>
+<div class="line"><a id="l02936" name="l02936"></a><span class="lineno"> 2936</span>    <span class="keywordflow">return</span> bionics_cancelling;</div>
+<div class="line"><a id="l02937" name="l02937"></a><span class="lineno"> 2937</span>}</div>
 <div class="ttc" id="aclassstring__id_html"><div class="ttname"><a href="classstring__id.html">string_id&lt; bionic_data &gt;</a></div></div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="newcharacter_8cpp_source.html#l01026">set_traits()</a>.</p>
@@ -665,16 +665,16 @@ Variables</h2></td></tr>
 <div class="ttc" id="abionics_8cpp_html_a004743abe8b867ae1932a1a3df99770d"><div class="ttname"><a href="bionics_8cpp.html#a004743abe8b867ae1932a1a3df99770d">flag_BIONIC_WEAPON</a></div><div class="ttdeci">static const flag_str_id flag_BIONIC_WEAPON(&quot;BIONIC_WEAPON&quot;)</div></div>
 <div class="ttc" id="acharacter_8h_html_addab86bfe6fd0bf8c22ec43df3ec051da5795b0d5637a6bb0691323c64d3eb6bd"><div class="ttname"><a href="character_8h.html#addab86bfe6fd0bf8c22ec43df3ec051da5795b0d5637a6bb0691323c64d3eb6bd">weapon_value</a></div><div class="ttdeci">@ weapon_value</div><div class="ttdef"><b>Definition:</b> <a href="character_8h_source.html#l00101">character.h:101</a></div></div>
 <div class="ttc" id="acharacter_8h_html_addab86bfe6fd0bf8c22ec43df3ec051da6c1d5de20741d1572a1638942c179e99"><div class="ttname"><a href="character_8h.html#addab86bfe6fd0bf8c22ec43df3ec051da6c1d5de20741d1572a1638942c179e99">ideal_weapon_value</a></div><div class="ttdeci">@ ideal_weapon_value</div><div class="ttdef"><b>Definition:</b> <a href="character_8h_source.html#l00102">character.h:102</a></div></div>
-<div class="ttc" id="aclassCharacter_html_a388bca3ef975bd265c67df45bb280bee"><div class="ttname"><a href="classCharacter.html#a388bca3ef975bd265c67df45bb280bee">Character::my_bionics</a></div><div class="ttdeci">pimpl&lt; bionic_collection &gt; my_bionics</div><div class="ttdef"><b>Definition:</b> <a href="character_8h_source.html#l01559">character.h:1559</a></div></div>
-<div class="ttc" id="aclassCharacter_html_a7b668f5ad07c65387e576210fe30539a"><div class="ttname"><a href="classCharacter.html#a7b668f5ad07c65387e576210fe30539a">Character::clear_npc_ai_info_cache</a></div><div class="ttdeci">void clear_npc_ai_info_cache(npc_ai_info key) const</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l10600">character.cpp:10600</a></div></div>
-<div class="ttc" id="aclassCharacter_html_ae0f7eba286e1cd07e6a3be58443aaca3"><div class="ttname"><a href="classCharacter.html#ae0f7eba286e1cd07e6a3be58443aaca3">Character::deactivate_bionic</a></div><div class="ttdeci">bool deactivate_bionic(bionic &amp;bio, bool eff_only=false)</div><div class="ttdoc">Handles bionic deactivation effects of the entered bionic, returns if anything deactivated.</div><div class="ttdef"><b>Definition:</b> <a href="bionics_8cpp_source.html#l01142">bionics.cpp:1142</a></div></div>
+<div class="ttc" id="aclassCharacter_html_a388bca3ef975bd265c67df45bb280bee"><div class="ttname"><a href="classCharacter.html#a388bca3ef975bd265c67df45bb280bee">Character::my_bionics</a></div><div class="ttdeci">pimpl&lt; bionic_collection &gt; my_bionics</div><div class="ttdef"><b>Definition:</b> <a href="character_8h_source.html#l01580">character.h:1580</a></div></div>
+<div class="ttc" id="aclassCharacter_html_a7b668f5ad07c65387e576210fe30539a"><div class="ttname"><a href="classCharacter.html#a7b668f5ad07c65387e576210fe30539a">Character::clear_npc_ai_info_cache</a></div><div class="ttdeci">void clear_npc_ai_info_cache(npc_ai_info key) const</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l10603">character.cpp:10603</a></div></div>
+<div class="ttc" id="aclassCharacter_html_ae0f7eba286e1cd07e6a3be58443aaca3"><div class="ttname"><a href="classCharacter.html#ae0f7eba286e1cd07e6a3be58443aaca3">Character::deactivate_bionic</a></div><div class="ttdeci">bool deactivate_bionic(bionic &amp;bio, bool eff_only=false)</div><div class="ttdoc">Handles bionic deactivation effects of the entered bionic, returns if anything deactivated.</div><div class="ttdef"><b>Definition:</b> <a href="bionics_8cpp_source.html#l01143">bionics.cpp:1143</a></div></div>
 <div class="ttc" id="astructbionic__data_html_af3fe0a3a6b49875c43cb5e332e4c2696"><div class="ttname"><a href="structbionic__data.html#af3fe0a3a6b49875c43cb5e332e4c2696">bionic_data::has_flag</a></div><div class="ttdeci">bool has_flag(const flag_str_id &amp;flag) const</div><div class="ttdef"><b>Definition:</b> <a href="bionics_8cpp_source.html#l00244">bionics.cpp:244</a></div></div>
 <div class="ttc" id="astructbionic_html"><div class="ttname"><a href="structbionic.html">bionic</a></div><div class="ttdef"><b>Definition:</b> <a href="bionics_8h_source.html#l00155">bionics.h:155</a></div></div>
 <div class="ttc" id="astructbionic_html_addbda67a07e927ca959d4a77ecd5a593"><div class="ttname"><a href="structbionic.html#addbda67a07e927ca959d4a77ecd5a593">bionic::powered</a></div><div class="ttdeci">bool powered</div><div class="ttdef"><b>Definition:</b> <a href="bionics_8h_source.html#l00159">bionics.h:159</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="character_8cpp_source.html#l10600">Character::clear_npc_ai_info_cache()</a>, <a class="el" href="bionics_8cpp_source.html#l01142">Character::deactivate_bionic()</a>, <a class="el" href="bionics_8cpp.html#a004743abe8b867ae1932a1a3df99770d">flag_BIONIC_WEAPON</a>, <a class="el" href="bionics_8cpp_source.html#l00244">bionic_data::has_flag()</a>, <a class="el" href="character_8h_source.html#l00102">ideal_weapon_value</a>, <a class="el" href="bionics_8h_source.html#l00174">bionic::info()</a>, <a class="el" href="character_8h_source.html#l01559">Character::my_bionics</a>, <a class="el" href="bionics_8h_source.html#l00159">bionic::powered</a>, and <a class="el" href="character_8h_source.html#l00101">weapon_value</a>.</p>
+<p class="reference">References <a class="el" href="character_8cpp_source.html#l10603">Character::clear_npc_ai_info_cache()</a>, <a class="el" href="bionics_8cpp_source.html#l01143">Character::deactivate_bionic()</a>, <a class="el" href="bionics_8cpp.html#a004743abe8b867ae1932a1a3df99770d">flag_BIONIC_WEAPON</a>, <a class="el" href="bionics_8cpp_source.html#l00244">bionic_data::has_flag()</a>, <a class="el" href="character_8h_source.html#l00102">ideal_weapon_value</a>, <a class="el" href="bionics_8h_source.html#l00174">bionic::info()</a>, <a class="el" href="character_8h_source.html#l01580">Character::my_bionics</a>, <a class="el" href="bionics_8h_source.html#l00159">bionic::powered</a>, and <a class="el" href="character_8h_source.html#l00101">weapon_value</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="npcmove_8cpp_source.html#l01616">npc::deactivate_combat_cbms()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="npcmove_8cpp_source.html#l01619">npc::deactivate_combat_cbms()</a>.</p>
 
 </div>
 </div>
@@ -716,16 +716,16 @@ Variables</h2></td></tr>
 <div class="line"><a id="l00496" name="l00496"></a><span class="lineno">  496</span>    <span class="keywordflow">return</span> cbm_list;</div>
 <div class="line"><a id="l00497" name="l00497"></a><span class="lineno">  497</span>}</div>
 <div class="ttc" id="aclassitem_html"><div class="ttname"><a href="classitem.html">item</a></div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l00210">item.h:211</a></div></div>
-<div class="ttc" id="aclassitem_html_a5d89f04a2a08245ec865db0865e8a6c1"><div class="ttname"><a href="classitem.html#a5d89f04a2a08245ec865db0865e8a6c1">item::ammo_capacity</a></div><div class="ttdeci">int ammo_capacity() const</div><div class="ttdoc">Maximum quantity of ammunition loadable for tool, gun or auxiliary gunmod.</div><div class="ttdef"><b>Definition:</b> <a href="item_8cpp_source.html#l07409">item.cpp:7409</a></div></div>
+<div class="ttc" id="aclassitem_html_a5d89f04a2a08245ec865db0865e8a6c1"><div class="ttname"><a href="classitem.html#a5d89f04a2a08245ec865db0865e8a6c1">item::ammo_capacity</a></div><div class="ttdeci">int ammo_capacity() const</div><div class="ttdoc">Maximum quantity of ammunition loadable for tool, gun or auxiliary gunmod.</div><div class="ttdef"><b>Definition:</b> <a href="item_8cpp_source.html#l07414">item.cpp:7414</a></div></div>
 <div class="ttc" id="aclassitem_html_a6a3f16444c412bce4b75a7d600d6a3fe"><div class="ttname"><a href="classitem.html#a6a3f16444c412bce4b75a7d600d6a3fe">item::ammo_set</a></div><div class="ttdeci">item &amp; ammo_set(const itype_id &amp;ammo, int qty=-1)</div><div class="ttdoc">Filter setting the ammo for this instance Any existing ammo is removed.</div><div class="ttdef"><b>Definition:</b> <a href="item_8cpp_source.html#l00590">item.cpp:590</a></div></div>
 <div class="ttc" id="astructbionic__data_html_a68bb3382f49361cf9b05f81dfe96834e"><div class="ttname"><a href="structbionic__data.html#a68bb3382f49361cf9b05f81dfe96834e">bionic_data::fake_item</a></div><div class="ttdeci">itype_id fake_item</div><div class="ttdoc">Fake item created for crafting with this bionic available.</div><div class="ttdef"><b>Definition:</b> <a href="bionics_8h_source.html#l00105">bionics.h:105</a></div></div>
 <div class="ttc" id="astructbionic_html_a2482b51bc0abb3a60102dbbbb354e068"><div class="ttname"><a href="structbionic.html#a2482b51bc0abb3a60102dbbbb354e068">bionic::ammo_loaded</a></div><div class="ttdeci">itype_id ammo_loaded</div><div class="ttdef"><b>Definition:</b> <a href="bionics_8h_source.html#l00161">bionics.h:161</a></div></div>
 <div class="ttc" id="astructbionic_html_a69c27d34e4a5014ae73135e80dd304b0"><div class="ttname"><a href="structbionic.html#a69c27d34e4a5014ae73135e80dd304b0">bionic::id</a></div><div class="ttdeci">bionic_id id</div><div class="ttdef"><b>Definition:</b> <a href="bionics_8h_source.html#l00156">bionics.h:156</a></div></div>
 <div class="ttc" id="astructbionic_html_ac16ebda23bfb0c4be0fd93f80cc9d8f5"><div class="ttname"><a href="structbionic.html#ac16ebda23bfb0c4be0fd93f80cc9d8f5">bionic::ammo_count</a></div><div class="ttdeci">unsigned int ammo_count</div><div class="ttdef"><b>Definition:</b> <a href="bionics_8h_source.html#l00163">bionics.h:163</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="item_8cpp_source.html#l07409">item::ammo_capacity()</a>, <a class="el" href="bionics_8h_source.html#l00163">bionic::ammo_count</a>, <a class="el" href="bionics_8h_source.html#l00161">bionic::ammo_loaded</a>, <a class="el" href="item_8cpp_source.html#l00590">item::ammo_set()</a>, <a class="el" href="bionics_8h_source.html#l00105">bionic_data::fake_item</a>, <a class="el" href="bionics_8cpp.html#a004743abe8b867ae1932a1a3df99770d">flag_BIONIC_WEAPON</a>, <a class="el" href="bionics_8cpp_source.html#l00244">bionic_data::has_flag()</a>, <a class="el" href="bionics_8h_source.html#l00156">bionic::id</a>, <a class="el" href="bionics_8h_source.html#l00174">bionic::info()</a>, and <a class="el" href="character_8h_source.html#l01559">Character::my_bionics</a>.</p>
+<p class="reference">References <a class="el" href="item_8cpp_source.html#l07414">item::ammo_capacity()</a>, <a class="el" href="bionics_8h_source.html#l00163">bionic::ammo_count</a>, <a class="el" href="bionics_8h_source.html#l00161">bionic::ammo_loaded</a>, <a class="el" href="item_8cpp_source.html#l00590">item::ammo_set()</a>, <a class="el" href="bionics_8h_source.html#l00105">bionic_data::fake_item</a>, <a class="el" href="bionics_8cpp.html#a004743abe8b867ae1932a1a3df99770d">flag_BIONIC_WEAPON</a>, <a class="el" href="bionics_8cpp_source.html#l00244">bionic_data::has_flag()</a>, <a class="el" href="bionics_8h_source.html#l00156">bionic::id</a>, <a class="el" href="bionics_8h_source.html#l00174">bionic::info()</a>, and <a class="el" href="character_8h_source.html#l01580">Character::my_bionics</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="npcmove_8cpp_source.html#l01502">npc::check_or_reload_cbm()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="npcmove_8cpp_source.html#l01505">npc::check_or_reload_cbm()</a>.</p>
 
 </div>
 </div>
@@ -753,7 +753,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01549">Character::get_effective_efficiency()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01551">Character::get_effective_efficiency()</a>.</p>
 
 </div>
 </div>
@@ -781,7 +781,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01549">Character::get_effective_efficiency()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01551">Character::get_effective_efficiency()</a>.</p>
 
 </div>
 </div>
@@ -809,7 +809,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00624">Character::activate_bionic()</a>, <a class="el" href="bionics_8cpp_source.html#l01486">Character::consume_remote_fuel()</a>, and <a class="el" href="bionics_8cpp_source.html#l01432">Character::find_remote_fuel()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00625">Character::activate_bionic()</a>, <a class="el" href="bionics_8cpp_source.html#l01488">Character::consume_remote_fuel()</a>, and <a class="el" href="bionics_8cpp_source.html#l01434">Character::find_remote_fuel()</a>.</p>
 
 </div>
 </div>
@@ -837,7 +837,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00624">Character::activate_bionic()</a>, and <a class="el" href="bionics_8cpp_source.html#l00499">npc::check_or_use_weapon_cbm()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00625">Character::activate_bionic()</a>, and <a class="el" href="bionics_8cpp_source.html#l00499">npc::check_or_use_weapon_cbm()</a>.</p>
 
 </div>
 </div>
@@ -865,7 +865,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01230">Character::burn_fuel()</a>, <a class="el" href="bionics_8cpp_source.html#l01388">Character::passive_power_gen()</a>, and <a class="el" href="bionics_8cpp_source.html#l01600">Character::process_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01232">Character::burn_fuel()</a>, <a class="el" href="bionics_8cpp_source.html#l01390">Character::passive_power_gen()</a>, and <a class="el" href="bionics_8cpp_source.html#l01602">Character::process_bionic()</a>.</p>
 
 </div>
 </div>
@@ -893,7 +893,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01549">Character::get_effective_efficiency()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01551">Character::get_effective_efficiency()</a>.</p>
 
 </div>
 </div>
@@ -921,7 +921,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01230">Character::burn_fuel()</a>, and <a class="el" href="bionics_8cpp_source.html#l02797">bionic::toggle_safe_fuel_mod()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01232">Character::burn_fuel()</a>, and <a class="el" href="bionics_8cpp_source.html#l02799">bionic::toggle_safe_fuel_mod()</a>.</p>
 
 </div>
 </div>
@@ -949,7 +949,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00624">Character::activate_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00625">Character::activate_bionic()</a>.</p>
 
 </div>
 </div>
@@ -977,7 +977,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01549">Character::get_effective_efficiency()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01551">Character::get_effective_efficiency()</a>.</p>
 
 </div>
 </div>
@@ -1005,7 +1005,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01600">Character::process_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01602">Character::process_bionic()</a>.</p>
 
 </div>
 </div>
@@ -1049,7 +1049,7 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="effect_8cpp_source.html#l00797">effect::get_duration()</a>, <a class="el" href="effect_8cpp_source.html#l01240">effect::get_effect_type()</a>, <a class="el" href="effect_8cpp_source.html#l01207">effect::get_int_dur_factor()</a>, <a class="el" href="effect_8cpp_source.html#l00553">effect::is_null()</a>, and <a class="el" href="effect_8cpp_source.html#l00805">effect::set_duration()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00624">Character::activate_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00625">Character::activate_bionic()</a>.</p>
 
 </div>
 </div>
@@ -1121,21 +1121,21 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bionics_8cpp_source.html#l02577">2577</a> of file <a class="el" href="bionics_8cpp_source.html">bionics.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l02579" name="l02579"></a><span class="lineno"> 2579</span>{</div>
-<div class="line"><a id="l02580" name="l02580"></a><span class="lineno"> 2580</span>    <span class="keywordflow">if</span>( bio_id-&gt;<a class="code hl_variable" href="structbionic__data.html#ae9faf505571841d8ef97496eb3a26607">occupied_bodyparts</a>.empty() ) {</div>
-<div class="line"><a id="l02581" name="l02581"></a><span class="lineno"> 2581</span>        <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a id="l02582" name="l02582"></a><span class="lineno"> 2582</span>    }</div>
-<div class="line"><a id="l02583" name="l02583"></a><span class="lineno"> 2583</span>    std::string desc = intro;</div>
-<div class="line"><a id="l02584" name="l02584"></a><span class="lineno"> 2584</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> std::pair&lt;const bodypart_str_id, int&gt; &amp;elem : bio_id-&gt;<a class="code hl_variable" href="structbionic__data.html#ae9faf505571841d8ef97496eb3a26607">occupied_bodyparts</a> ) {</div>
-<div class="line"><a id="l02585" name="l02585"></a><span class="lineno"> 2585</span>        desc += ( each_bp_on_new_line ? <span class="stringliteral">&quot;\n&quot;</span> : <span class="stringliteral">&quot; &quot;</span> );</div>
-<div class="line"><a id="l02586" name="l02586"></a><span class="lineno"> 2586</span>        <span class="comment">//~ &lt;Bodypart name&gt; (&lt;number of occupied slots&gt; slots);</span></div>
-<div class="line"><a id="l02587" name="l02587"></a><span class="lineno"> 2587</span>        desc += <a class="code hl_function" href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a>( <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;%s (%i slots);&quot;</span> ),</div>
-<div class="line"><a id="l02588" name="l02588"></a><span class="lineno"> 2588</span>                               <a class="code hl_function" href="bodypart_8cpp.html#aeadf2675d36776a1f685d1d2dfa06e78">body_part_name_as_heading</a>( elem.first-&gt;token, 1 ),</div>
-<div class="line"><a id="l02589" name="l02589"></a><span class="lineno"> 2589</span>                               elem.second );</div>
-<div class="line"><a id="l02590" name="l02590"></a><span class="lineno"> 2590</span>    }</div>
-<div class="line"><a id="l02591" name="l02591"></a><span class="lineno"> 2591</span>    <span class="keywordflow">return</span> desc;</div>
-<div class="line"><a id="l02592" name="l02592"></a><span class="lineno"> 2592</span>}</div>
+<p class="definition">Definition at line <a class="el" href="bionics_8cpp_source.html#l02579">2579</a> of file <a class="el" href="bionics_8cpp_source.html">bionics.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l02581" name="l02581"></a><span class="lineno"> 2581</span>{</div>
+<div class="line"><a id="l02582" name="l02582"></a><span class="lineno"> 2582</span>    <span class="keywordflow">if</span>( bio_id-&gt;<a class="code hl_variable" href="structbionic__data.html#ae9faf505571841d8ef97496eb3a26607">occupied_bodyparts</a>.empty() ) {</div>
+<div class="line"><a id="l02583" name="l02583"></a><span class="lineno"> 2583</span>        <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a id="l02584" name="l02584"></a><span class="lineno"> 2584</span>    }</div>
+<div class="line"><a id="l02585" name="l02585"></a><span class="lineno"> 2585</span>    std::string desc = intro;</div>
+<div class="line"><a id="l02586" name="l02586"></a><span class="lineno"> 2586</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> std::pair&lt;const bodypart_str_id, int&gt; &amp;elem : bio_id-&gt;<a class="code hl_variable" href="structbionic__data.html#ae9faf505571841d8ef97496eb3a26607">occupied_bodyparts</a> ) {</div>
+<div class="line"><a id="l02587" name="l02587"></a><span class="lineno"> 2587</span>        desc += ( each_bp_on_new_line ? <span class="stringliteral">&quot;\n&quot;</span> : <span class="stringliteral">&quot; &quot;</span> );</div>
+<div class="line"><a id="l02588" name="l02588"></a><span class="lineno"> 2588</span>        <span class="comment">//~ &lt;Bodypart name&gt; (&lt;number of occupied slots&gt; slots);</span></div>
+<div class="line"><a id="l02589" name="l02589"></a><span class="lineno"> 2589</span>        desc += <a class="code hl_function" href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a>( <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;%s (%i slots);&quot;</span> ),</div>
+<div class="line"><a id="l02590" name="l02590"></a><span class="lineno"> 2590</span>                               <a class="code hl_function" href="bodypart_8cpp.html#aeadf2675d36776a1f685d1d2dfa06e78">body_part_name_as_heading</a>( elem.first-&gt;token, 1 ),</div>
+<div class="line"><a id="l02591" name="l02591"></a><span class="lineno"> 2591</span>                               elem.second );</div>
+<div class="line"><a id="l02592" name="l02592"></a><span class="lineno"> 2592</span>    }</div>
+<div class="line"><a id="l02593" name="l02593"></a><span class="lineno"> 2593</span>    <span class="keywordflow">return</span> desc;</div>
+<div class="line"><a id="l02594" name="l02594"></a><span class="lineno"> 2594</span>}</div>
 <div class="ttc" id="abodypart_8cpp_html_aeadf2675d36776a1f685d1d2dfa06e78"><div class="ttname"><a href="bodypart_8cpp.html#aeadf2675d36776a1f685d1d2dfa06e78">body_part_name_as_heading</a></div><div class="ttdeci">std::string body_part_name_as_heading(body_part bp, int number)</div><div class="ttdoc">Returns the name of the body parts in a context where the name is used as a heading or title e....</div><div class="ttdef"><b>Definition:</b> <a href="bodypart_8cpp_source.html#l00343">bodypart.cpp:343</a></div></div>
 <div class="ttc" id="astring__formatter_8h_html_a8964099387da2f95396c67566bafce3d"><div class="ttname"><a href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a></div><div class="ttdeci">std::string string_format(std::string_view format, Args &amp;&amp;...args)</div><div class="ttdoc">Simple wrapper over string_formatter::parse.</div><div class="ttdef"><b>Definition:</b> <a href="string__formatter_8h_source.html#l00430">string_formatter.h:430</a></div></div>
 <div class="ttc" id="atranslations_8h_html_aa829053017e23ef22d44dccecba63a34"><div class="ttname"><a href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a></div><div class="ttdeci">#define _(msg)</div><div class="ttdef"><b>Definition:</b> <a href="translations_8h_source.html#l00116">translations.h:116</a></div></div>
@@ -1171,7 +1171,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02351">Character::install_bionics()</a>, and <a class="el" href="bionics_8cpp_source.html#l02087">Character::uninstall_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02353">Character::install_bionics()</a>, and <a class="el" href="bionics_8cpp_source.html#l02089">Character::uninstall_bionic()</a>.</p>
 
 </div>
 </div>
@@ -1199,7 +1199,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01600">Character::process_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01602">Character::process_bionic()</a>.</p>
 
 </div>
 </div>
@@ -1227,7 +1227,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00624">Character::activate_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00625">Character::activate_bionic()</a>.</p>
 
 </div>
 </div>
@@ -1255,7 +1255,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01142">Character::deactivate_bionic()</a>, and <a class="el" href="bionics_8cpp_source.html#l01600">Character::process_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01143">Character::deactivate_bionic()</a>, and <a class="el" href="bionics_8cpp_source.html#l01602">Character::process_bionic()</a>.</p>
 
 </div>
 </div>
@@ -1283,7 +1283,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02017">Character::can_uninstall_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02019">Character::can_uninstall_bionic()</a>.</p>
 
 </div>
 </div>
@@ -1311,7 +1311,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00624">Character::activate_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00625">Character::activate_bionic()</a>.</p>
 
 </div>
 </div>
@@ -1339,7 +1339,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00624">Character::activate_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00625">Character::activate_bionic()</a>.</p>
 
 </div>
 </div>
@@ -1367,7 +1367,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00624">Character::activate_bionic()</a>, and <a class="el" href="bionics_8cpp_source.html#l01142">Character::deactivate_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00625">Character::activate_bionic()</a>, and <a class="el" href="bionics_8cpp_source.html#l01143">Character::deactivate_bionic()</a>.</p>
 
 </div>
 </div>
@@ -1395,7 +1395,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00624">Character::activate_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00625">Character::activate_bionic()</a>.</p>
 
 </div>
 </div>
@@ -1423,7 +1423,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00624">Character::activate_bionic()</a>, and <a class="el" href="bionics_8cpp_source.html#l02632">Character::add_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00625">Character::activate_bionic()</a>, and <a class="el" href="bionics_8cpp_source.html#l02634">Character::add_bionic()</a>.</p>
 
 </div>
 </div>
@@ -1451,7 +1451,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00624">Character::activate_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00625">Character::activate_bionic()</a>.</p>
 
 </div>
 </div>
@@ -1479,7 +1479,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00624">Character::activate_bionic()</a>, and <a class="el" href="bionics_8cpp_source.html#l01600">Character::process_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00625">Character::activate_bionic()</a>, and <a class="el" href="bionics_8cpp_source.html#l01602">Character::process_bionic()</a>.</p>
 
 </div>
 </div>
@@ -1507,7 +1507,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02017">Character::can_uninstall_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02019">Character::can_uninstall_bionic()</a>.</p>
 
 </div>
 </div>
@@ -1535,7 +1535,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00624">Character::activate_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00625">Character::activate_bionic()</a>.</p>
 
 </div>
 </div>
@@ -1563,7 +1563,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00624">Character::activate_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00625">Character::activate_bionic()</a>.</p>
 
 </div>
 </div>
@@ -1591,7 +1591,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01600">Character::process_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01602">Character::process_bionic()</a>.</p>
 
 </div>
 </div>
@@ -1619,7 +1619,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00624">Character::activate_bionic()</a>, and <a class="el" href="bionics_8cpp_source.html#l01600">Character::process_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00625">Character::activate_bionic()</a>, and <a class="el" href="bionics_8cpp_source.html#l01602">Character::process_bionic()</a>.</p>
 
 </div>
 </div>
@@ -1647,7 +1647,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00624">Character::activate_bionic()</a>, and <a class="el" href="game_8cpp_source.html#l09709">game::on_move_effects()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00625">Character::activate_bionic()</a>, and <a class="el" href="game_8cpp_source.html#l09710">game::on_move_effects()</a>.</p>
 
 </div>
 </div>
@@ -1675,7 +1675,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00624">Character::activate_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00625">Character::activate_bionic()</a>.</p>
 
 </div>
 </div>
@@ -1703,7 +1703,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00624">Character::activate_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00625">Character::activate_bionic()</a>.</p>
 
 </div>
 </div>
@@ -1731,7 +1731,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00624">Character::activate_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00625">Character::activate_bionic()</a>.</p>
 
 </div>
 </div>
@@ -1759,7 +1759,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00624">Character::activate_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00625">Character::activate_bionic()</a>.</p>
 
 </div>
 </div>
@@ -1787,7 +1787,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01600">Character::process_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01602">Character::process_bionic()</a>.</p>
 
 </div>
 </div>
@@ -1815,7 +1815,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01933">Character::has_enough_anesth()</a>, and <a class="el" href="bionics_8cpp_source.html#l01600">Character::process_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01935">Character::has_enough_anesth()</a>, and <a class="el" href="bionics_8cpp_source.html#l01602">Character::process_bionic()</a>.</p>
 
 </div>
 </div>
@@ -1843,7 +1843,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02632">Character::add_bionic()</a>, and <a class="el" href="bionics_8cpp_source.html#l02728">Character::amount_of_storage_bionics()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02634">Character::add_bionic()</a>, and <a class="el" href="bionics_8cpp_source.html#l02730">Character::amount_of_storage_bionics()</a>.</p>
 
 </div>
 </div>
@@ -1871,7 +1871,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02632">Character::add_bionic()</a>, and <a class="el" href="bionics_8cpp_source.html#l02728">Character::amount_of_storage_bionics()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02634">Character::add_bionic()</a>, and <a class="el" href="bionics_8cpp_source.html#l02730">Character::amount_of_storage_bionics()</a>.</p>
 
 </div>
 </div>
@@ -1899,7 +1899,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00624">Character::activate_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00625">Character::activate_bionic()</a>.</p>
 
 </div>
 </div>
@@ -1927,7 +1927,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01600">Character::process_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01602">Character::process_bionic()</a>.</p>
 
 </div>
 </div>
@@ -1955,7 +1955,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02017">Character::can_uninstall_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02019">Character::can_uninstall_bionic()</a>.</p>
 
 </div>
 </div>
@@ -1983,7 +1983,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00624">Character::activate_bionic()</a>, <a class="el" href="bionics_8cpp_source.html#l01142">Character::deactivate_bionic()</a>, and <a class="el" href="bionics_8cpp_source.html#l01600">Character::process_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00625">Character::activate_bionic()</a>, <a class="el" href="bionics_8cpp_source.html#l01143">Character::deactivate_bionic()</a>, and <a class="el" href="bionics_8cpp_source.html#l01602">Character::process_bionic()</a>.</p>
 
 </div>
 </div>
@@ -2011,7 +2011,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00624">Character::activate_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00625">Character::activate_bionic()</a>.</p>
 
 </div>
 </div>
@@ -2039,7 +2039,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00624">Character::activate_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00625">Character::activate_bionic()</a>.</p>
 
 </div>
 </div>
@@ -2067,7 +2067,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00624">Character::activate_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00625">Character::activate_bionic()</a>.</p>
 
 </div>
 </div>
@@ -2095,7 +2095,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00624">Character::activate_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00625">Character::activate_bionic()</a>.</p>
 
 </div>
 </div>
@@ -2123,7 +2123,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00624">Character::activate_bionic()</a>, <a class="el" href="bionics_8cpp_source.html#l02632">Character::add_bionic()</a>, and <a class="el" href="bionics_8cpp_source.html#l01142">Character::deactivate_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00625">Character::activate_bionic()</a>, <a class="el" href="bionics_8cpp_source.html#l02634">Character::add_bionic()</a>, and <a class="el" href="bionics_8cpp_source.html#l01143">Character::deactivate_bionic()</a>.</p>
 
 </div>
 </div>
@@ -2151,7 +2151,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00624">Character::activate_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00625">Character::activate_bionic()</a>.</p>
 
 </div>
 </div>
@@ -2179,7 +2179,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00624">Character::activate_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00625">Character::activate_bionic()</a>.</p>
 
 </div>
 </div>
@@ -2205,7 +2205,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="bionics_8cpp_source.html#l00211">211</a> of file <a class="el" href="bionics_8cpp_source.html">bionics.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02017">Character::can_uninstall_bionic()</a>, and <a class="el" href="bionics_8cpp_source.html#l02087">Character::uninstall_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02019">Character::can_uninstall_bionic()</a>, and <a class="el" href="bionics_8cpp_source.html#l02089">Character::uninstall_bionic()</a>.</p>
 
 </div>
 </div>
@@ -2233,7 +2233,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01142">Character::deactivate_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01143">Character::deactivate_bionic()</a>.</p>
 
 </div>
 </div>
@@ -2261,7 +2261,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00624">Character::activate_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00625">Character::activate_bionic()</a>.</p>
 
 </div>
 </div>
@@ -2289,7 +2289,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01953">Character::bionics_adjusted_skill()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01955">Character::bionics_adjusted_skill()</a>.</p>
 
 </div>
 </div>
@@ -2317,7 +2317,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01600">Character::process_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01602">Character::process_bionic()</a>.</p>
 
 </div>
 </div>
@@ -2345,7 +2345,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00624">Character::activate_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00625">Character::activate_bionic()</a>.</p>
 
 </div>
 </div>
@@ -2373,7 +2373,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01600">Character::process_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01602">Character::process_bionic()</a>.</p>
 
 </div>
 </div>
@@ -2401,7 +2401,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00624">Character::activate_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00625">Character::activate_bionic()</a>.</p>
 
 </div>
 </div>
@@ -2429,7 +2429,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00624">Character::activate_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00625">Character::activate_bionic()</a>.</p>
 
 </div>
 </div>
@@ -2457,7 +2457,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00624">Character::activate_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00625">Character::activate_bionic()</a>.</p>
 
 </div>
 </div>
@@ -2485,7 +2485,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00624">Character::activate_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00625">Character::activate_bionic()</a>.</p>
 
 </div>
 </div>
@@ -2513,7 +2513,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00624">Character::activate_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00625">Character::activate_bionic()</a>.</p>
 
 </div>
 </div>
@@ -2541,7 +2541,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00624">Character::activate_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00625">Character::activate_bionic()</a>.</p>
 
 </div>
 </div>
@@ -2569,7 +2569,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00624">Character::activate_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00625">Character::activate_bionic()</a>.</p>
 
 </div>
 </div>
@@ -2597,7 +2597,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00624">Character::activate_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00625">Character::activate_bionic()</a>.</p>
 
 </div>
 </div>
@@ -2625,7 +2625,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01529">Character::heat_emission()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01531">Character::heat_emission()</a>.</p>
 
 </div>
 </div>
@@ -2653,7 +2653,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02460">Character::do_damage_for_bionic_failure()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02462">Character::do_damage_for_bionic_failure()</a>.</p>
 
 </div>
 </div>
@@ -2681,7 +2681,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00624">Character::activate_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00625">Character::activate_bionic()</a>.</p>
 
 </div>
 </div>
@@ -2709,7 +2709,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="panels_8cpp_source.html#l00764">draw_limb_health()</a>, and <a class="el" href="bionics_8cpp_source.html#l01600">Character::process_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="panels_8cpp_source.html#l00764">draw_limb_health()</a>, and <a class="el" href="bionics_8cpp_source.html#l01602">Character::process_bionic()</a>.</p>
 
 </div>
 </div>
@@ -2737,7 +2737,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00624">Character::activate_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00625">Character::activate_bionic()</a>.</p>
 
 </div>
 </div>
@@ -2765,7 +2765,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02937">Character::introduce_into_anesthesia()</a>, and <a class="el" href="bionics_8cpp_source.html#l02191">Character::uninstall_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02939">Character::introduce_into_anesthesia()</a>, and <a class="el" href="bionics_8cpp_source.html#l02193">Character::uninstall_bionic()</a>.</p>
 
 </div>
 </div>
@@ -2793,7 +2793,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02191">Character::uninstall_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02193">Character::uninstall_bionic()</a>.</p>
 
 </div>
 </div>
@@ -2821,7 +2821,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00624">Character::activate_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00625">Character::activate_bionic()</a>.</p>
 
 </div>
 </div>
@@ -2849,7 +2849,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00624">Character::activate_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00625">Character::activate_bionic()</a>.</p>
 
 </div>
 </div>
@@ -2877,7 +2877,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00624">Character::activate_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00625">Character::activate_bionic()</a>.</p>
 
 </div>
 </div>
@@ -2905,7 +2905,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00624">Character::activate_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00625">Character::activate_bionic()</a>.</p>
 
 </div>
 </div>
@@ -2933,7 +2933,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00624">Character::activate_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00625">Character::activate_bionic()</a>.</p>
 
 </div>
 </div>
@@ -2961,7 +2961,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00624">Character::activate_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00625">Character::activate_bionic()</a>.</p>
 
 </div>
 </div>
@@ -2989,7 +2989,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02191">Character::uninstall_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02193">Character::uninstall_bionic()</a>.</p>
 
 </div>
 </div>
@@ -3017,7 +3017,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00624">Character::activate_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00625">Character::activate_bionic()</a>.</p>
 
 </div>
 </div>
@@ -3045,7 +3045,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00624">Character::activate_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00625">Character::activate_bionic()</a>.</p>
 
 </div>
 </div>
@@ -3073,7 +3073,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00624">Character::activate_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00625">Character::activate_bionic()</a>.</p>
 
 </div>
 </div>
@@ -3101,7 +3101,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00624">Character::activate_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00625">Character::activate_bionic()</a>.</p>
 
 </div>
 </div>
@@ -3129,7 +3129,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00624">Character::activate_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00625">Character::activate_bionic()</a>.</p>
 
 </div>
 </div>
@@ -3157,7 +3157,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00624">Character::activate_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00625">Character::activate_bionic()</a>.</p>
 
 </div>
 </div>
@@ -3185,7 +3185,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02460">Character::do_damage_for_bionic_failure()</a>, <a class="el" href="bionics_8cpp_source.html#l02351">Character::install_bionics()</a>, and <a class="el" href="bionics_8cpp_source.html#l02087">Character::uninstall_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02462">Character::do_damage_for_bionic_failure()</a>, <a class="el" href="bionics_8cpp_source.html#l02353">Character::install_bionics()</a>, and <a class="el" href="bionics_8cpp_source.html#l02089">Character::uninstall_bionic()</a>.</p>
 
 </div>
 </div>
@@ -3213,7 +3213,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00624">Character::activate_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00625">Character::activate_bionic()</a>.</p>
 
 </div>
 </div>
@@ -3241,7 +3241,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00624">Character::activate_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00625">Character::activate_bionic()</a>.</p>
 
 </div>
 </div>
@@ -3269,7 +3269,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02157">Character::perform_uninstall()</a>, and <a class="el" href="bionics_8cpp_source.html#l02191">Character::uninstall_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02159">Character::perform_uninstall()</a>, and <a class="el" href="bionics_8cpp_source.html#l02193">Character::uninstall_bionic()</a>.</p>
 
 </div>
 </div>
@@ -3297,7 +3297,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00624">Character::activate_bionic()</a>, <a class="el" href="bionics_8cpp_source.html#l00338">bionic_data::check()</a>, and <a class="el" href="bionics_8cpp_source.html#l00499">npc::check_or_use_weapon_cbm()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00625">Character::activate_bionic()</a>, <a class="el" href="bionics_8cpp_source.html#l00338">bionic_data::check()</a>, and <a class="el" href="bionics_8cpp_source.html#l00499">npc::check_or_use_weapon_cbm()</a>.</p>
 
 </div>
 </div>
@@ -3325,7 +3325,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00624">Character::activate_bionic()</a>, <a class="el" href="bionics_8cpp_source.html#l01142">Character::deactivate_bionic()</a>, and <a class="el" href="bionics_8cpp_source.html#l00284">bionic_data::load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00625">Character::activate_bionic()</a>, <a class="el" href="bionics_8cpp_source.html#l01143">Character::deactivate_bionic()</a>, and <a class="el" href="bionics_8cpp_source.html#l00284">bionic_data::load()</a>.</p>
 
 </div>
 </div>
@@ -3353,7 +3353,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00624">Character::activate_bionic()</a>, <a class="el" href="bionics_8cpp_source.html#l00338">bionic_data::check()</a>, <a class="el" href="bionics_8cpp_source.html#l00499">npc::check_or_use_weapon_cbm()</a>, <a class="el" href="bionics_8cpp_source.html#l01142">Character::deactivate_bionic()</a>, <a class="el" href="bionics_8cpp_source.html#l00466">deactivate_weapon_cbm()</a>, <a class="el" href="bionics_8cpp_source.html#l00477">find_reloadable_cbms()</a>, and <a class="el" href="bionics_8cpp_source.html#l02087">Character::uninstall_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00625">Character::activate_bionic()</a>, <a class="el" href="bionics_8cpp_source.html#l00338">bionic_data::check()</a>, <a class="el" href="bionics_8cpp_source.html#l00499">npc::check_or_use_weapon_cbm()</a>, <a class="el" href="bionics_8cpp_source.html#l01143">Character::deactivate_bionic()</a>, <a class="el" href="bionics_8cpp_source.html#l00466">deactivate_weapon_cbm()</a>, <a class="el" href="bionics_8cpp_source.html#l00477">find_reloadable_cbms()</a>, and <a class="el" href="bionics_8cpp_source.html#l02089">Character::uninstall_bionic()</a>.</p>
 
 </div>
 </div>
@@ -3381,7 +3381,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01432">Character::find_remote_fuel()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01434">Character::find_remote_fuel()</a>.</p>
 
 </div>
 </div>
@@ -3409,7 +3409,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01230">Character::burn_fuel()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01232">Character::burn_fuel()</a>.</p>
 
 </div>
 </div>
@@ -3437,7 +3437,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01230">Character::burn_fuel()</a>, and <a class="el" href="bionics_8cpp_source.html#l01388">Character::passive_power_gen()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01232">Character::burn_fuel()</a>, and <a class="el" href="bionics_8cpp_source.html#l01390">Character::passive_power_gen()</a>.</p>
 
 </div>
 </div>
@@ -3465,7 +3465,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01230">Character::burn_fuel()</a>, <a class="el" href="bionics_8cpp_source.html#l01432">Character::find_remote_fuel()</a>, <a class="el" href="bionics_8cpp_source.html#l01388">Character::passive_power_gen()</a>, and <a class="el" href="bionics_8cpp_source.html#l01521">Character::reset_remote_fuel()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01232">Character::burn_fuel()</a>, <a class="el" href="bionics_8cpp_source.html#l01434">Character::find_remote_fuel()</a>, <a class="el" href="bionics_8cpp_source.html#l01390">Character::passive_power_gen()</a>, and <a class="el" href="bionics_8cpp_source.html#l01523">Character::reset_remote_fuel()</a>.</p>
 
 </div>
 </div>
@@ -3493,7 +3493,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01230">Character::burn_fuel()</a>, and <a class="el" href="bionics_8cpp_source.html#l01388">Character::passive_power_gen()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01232">Character::burn_fuel()</a>, and <a class="el" href="bionics_8cpp_source.html#l01390">Character::passive_power_gen()</a>.</p>
 
 </div>
 </div>
@@ -3521,7 +3521,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01486">Character::consume_remote_fuel()</a>, and <a class="el" href="bionics_8cpp_source.html#l01432">Character::find_remote_fuel()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01488">Character::consume_remote_fuel()</a>, and <a class="el" href="bionics_8cpp_source.html#l01434">Character::find_remote_fuel()</a>.</p>
 
 </div>
 </div>
@@ -3549,7 +3549,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02191">Character::uninstall_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02193">Character::uninstall_bionic()</a>.</p>
 
 </div>
 </div>
@@ -3577,7 +3577,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02157">Character::perform_uninstall()</a>, and <a class="el" href="bionics_8cpp_source.html#l02191">Character::uninstall_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02159">Character::perform_uninstall()</a>, and <a class="el" href="bionics_8cpp_source.html#l02193">Character::uninstall_bionic()</a>.</p>
 
 </div>
 </div>
@@ -3605,7 +3605,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01142">Character::deactivate_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01143">Character::deactivate_bionic()</a>.</p>
 
 </div>
 </div>
@@ -3633,7 +3633,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01142">Character::deactivate_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01143">Character::deactivate_bionic()</a>.</p>
 
 </div>
 </div>
@@ -3661,7 +3661,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01486">Character::consume_remote_fuel()</a>, and <a class="el" href="bionics_8cpp_source.html#l01432">Character::find_remote_fuel()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01488">Character::consume_remote_fuel()</a>, and <a class="el" href="bionics_8cpp_source.html#l01434">Character::find_remote_fuel()</a>.</p>
 
 </div>
 </div>
@@ -3689,7 +3689,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00624">Character::activate_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00625">Character::activate_bionic()</a>.</p>
 
 </div>
 </div>
@@ -3717,7 +3717,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02258">Character::can_install_bionics()</a>, <a class="el" href="bionics_8cpp_source.html#l02017">Character::can_uninstall_bionic()</a>, <a class="el" href="bionics_8cpp_source.html#l02351">Character::install_bionics()</a>, and <a class="el" href="bionics_8cpp_source.html#l02087">Character::uninstall_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02260">Character::can_install_bionics()</a>, <a class="el" href="bionics_8cpp_source.html#l02019">Character::can_uninstall_bionic()</a>, <a class="el" href="bionics_8cpp_source.html#l02353">Character::install_bionics()</a>, and <a class="el" href="bionics_8cpp_source.html#l02089">Character::uninstall_bionic()</a>.</p>
 
 </div>
 </div>
@@ -3745,7 +3745,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02258">Character::can_install_bionics()</a>, <a class="el" href="bionics_8cpp_source.html#l02017">Character::can_uninstall_bionic()</a>, <a class="el" href="bionics_8cpp_source.html#l02351">Character::install_bionics()</a>, and <a class="el" href="bionics_8cpp_source.html#l02087">Character::uninstall_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02260">Character::can_install_bionics()</a>, <a class="el" href="bionics_8cpp_source.html#l02019">Character::can_uninstall_bionic()</a>, <a class="el" href="bionics_8cpp_source.html#l02353">Character::install_bionics()</a>, and <a class="el" href="bionics_8cpp_source.html#l02089">Character::uninstall_bionic()</a>.</p>
 
 </div>
 </div>
@@ -3773,7 +3773,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02258">Character::can_install_bionics()</a>, <a class="el" href="bionics_8cpp_source.html#l02017">Character::can_uninstall_bionic()</a>, <a class="el" href="bionics_8cpp_source.html#l02351">Character::install_bionics()</a>, and <a class="el" href="bionics_8cpp_source.html#l02087">Character::uninstall_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02260">Character::can_install_bionics()</a>, <a class="el" href="bionics_8cpp_source.html#l02019">Character::can_uninstall_bionic()</a>, <a class="el" href="bionics_8cpp_source.html#l02353">Character::install_bionics()</a>, and <a class="el" href="bionics_8cpp_source.html#l02089">Character::uninstall_bionic()</a>.</p>
 
 </div>
 </div>
@@ -3801,7 +3801,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02258">Character::can_install_bionics()</a>, <a class="el" href="bionics_8cpp_source.html#l02017">Character::can_uninstall_bionic()</a>, <a class="el" href="bionics_8cpp_source.html#l02351">Character::install_bionics()</a>, and <a class="el" href="bionics_8cpp_source.html#l02087">Character::uninstall_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02260">Character::can_install_bionics()</a>, <a class="el" href="bionics_8cpp_source.html#l02019">Character::can_uninstall_bionic()</a>, <a class="el" href="bionics_8cpp_source.html#l02353">Character::install_bionics()</a>, and <a class="el" href="bionics_8cpp_source.html#l02089">Character::uninstall_bionic()</a>.</p>
 
 </div>
 </div>
@@ -3829,7 +3829,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02937">Character::introduce_into_anesthesia()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02939">Character::introduce_into_anesthesia()</a>.</p>
 
 </div>
 </div>
@@ -3857,7 +3857,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01996">bionic_manip_cos()</a>, <a class="el" href="bionics_8cpp_source.html#l01933">Character::has_enough_anesth()</a>, <a class="el" href="bionics_8cpp_source.html#l02351">Character::install_bionics()</a>, <a class="el" href="bionics_8cpp_source.html#l02937">Character::introduce_into_anesthesia()</a>, and <a class="el" href="bionics_8cpp_source.html#l02087">Character::uninstall_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01998">bionic_manip_cos()</a>, <a class="el" href="bionics_8cpp_source.html#l01935">Character::has_enough_anesth()</a>, <a class="el" href="bionics_8cpp_source.html#l02353">Character::install_bionics()</a>, <a class="el" href="bionics_8cpp_source.html#l02939">Character::introduce_into_anesthesia()</a>, and <a class="el" href="bionics_8cpp_source.html#l02089">Character::uninstall_bionic()</a>.</p>
 
 </div>
 </div>
@@ -3885,7 +3885,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02937">Character::introduce_into_anesthesia()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02939">Character::introduce_into_anesthesia()</a>.</p>
 
 </div>
 </div>
@@ -3913,7 +3913,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02937">Character::introduce_into_anesthesia()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02939">Character::introduce_into_anesthesia()</a>.</p>
 
 </div>
 </div>
@@ -3941,7 +3941,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01933">Character::has_enough_anesth()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01935">Character::has_enough_anesth()</a>.</p>
 
 </div>
 </div>
@@ -3969,7 +3969,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01968">Character::bionics_pl_skill()</a>, and <a class="el" href="bionics_8cpp_source.html#l02351">Character::install_bionics()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01970">Character::bionics_pl_skill()</a>, and <a class="el" href="bionics_8cpp_source.html#l02353">Character::install_bionics()</a>.</p>
 
 </div>
 </div>
@@ -3997,7 +3997,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01968">Character::bionics_pl_skill()</a>, and <a class="el" href="bionics_8cpp_source.html#l02351">Character::install_bionics()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01970">Character::bionics_pl_skill()</a>, and <a class="el" href="bionics_8cpp_source.html#l02353">Character::install_bionics()</a>.</p>
 
 </div>
 </div>
@@ -4025,7 +4025,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01600">Character::process_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01602">Character::process_bionic()</a>.</p>
 
 </div>
 </div>
@@ -4053,7 +4053,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02937">Character::introduce_into_anesthesia()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02939">Character::introduce_into_anesthesia()</a>.</p>
 
 </div>
 </div>
@@ -4063,7 +4063,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="bionics_8cpp.html">bionics.cpp</a></li>
-    <li class="footer">Generated on Mon May 8 2023 08:25:56 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat May 13 2023 17:03:38 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

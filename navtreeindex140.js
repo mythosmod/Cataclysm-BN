@@ -1,5 +1,6 @@
 var NAVTREEINDEX140 =
 {
+"structcity.html":[36,0,149],
 "structcity.html#a431de6762e8e0d96b6e0e95341ee608e":[36,0,149,4],
 "structcity.html#a4ca5744f3bcef5d822a129364a34c5d0":[36,0,149,1],
 "structcity.html#a567919f8c123cb4c259d66a8bf1b9db4":[36,0,149,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX140 =
 "structconsumption__event.html#a8e5361088a7d19ed12e74854b241c6c0":[36,0,179,2],
 "structconsumption__event.html#aae31d9467bd78265b298659dc808b612":[36,0,179,1],
 "structconsumption__event.html#ae8ccb6bd97c295530db359ef8a9cf19e":[36,0,179,6],
-"structconsumption__event.html#af25f2a22ce1b57d634dfdab388d08f5d":[36,0,179,0],
-"structconsumption__history__t.html":[36,0,180]
+"structconsumption__event.html#af25f2a22ce1b57d634dfdab388d08f5d":[36,0,179,0]
 };

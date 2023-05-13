@@ -1,5 +1,7 @@
 var NAVTREEINDEX69 =
 {
+"classturret__data.html":[36,0,954],
+"classturret__data.html#a022fc6dcc3b43aa8b2e1d6445f5c664a":[36,0,954,14],
 "classturret__data.html#a21fc6c32651797ffe152775d1b51687b":[36,0,954,11],
 "classturret__data.html#a274252309f9ebbf308b1c4de5043e7b9":[36,0,954,3],
 "classturret__data.html#a2c4277b95ea9dd532a525a3794c48a91":[36,0,954,27],
@@ -219,10 +221,10 @@ var NAVTREEINDEX69 =
 "classunit__reader.html#a35e22f30519d00526f8114b289b2230a":[36,0,964,1],
 "classunit__reader.html#a6b05cc934a21810c1443ee3dd1b4224d":[36,0,964,3],
 "classunit__reader.html#af1f853adf992273f49107a383b3e891c":[36,0,964,2],
-"classunits_1_1angle__in__radians__tag.html":[36,0,38,0],
 "classunits_1_1angle__in__radians__tag.html":[35,0,182,0],
-"classunits_1_1energy__in__joule__tag.html":[36,0,38,1],
+"classunits_1_1angle__in__radians__tag.html":[36,0,38,0],
 "classunits_1_1energy__in__joule__tag.html":[35,0,182,1],
+"classunits_1_1energy__in__joule__tag.html":[36,0,38,1],
 "classunits_1_1mass__in__milligram__tag.html":[35,0,182,2],
 "classunits_1_1mass__in__milligram__tag.html":[36,0,38,2],
 "classunits_1_1money__in__cent__tag.html":[35,0,182,3],
@@ -231,14 +233,14 @@ var NAVTREEINDEX69 =
 "classunits_1_1probability__in__one__in__million__tag.html":[36,0,38,4],
 "classunits_1_1quantity.html":[35,0,182,5],
 "classunits_1_1quantity.html":[36,0,38,5],
-"classunits_1_1quantity.html#a0043f0ce711dea4eac5acf2bff8e442d":[35,0,182,5,6],
 "classunits_1_1quantity.html#a0043f0ce711dea4eac5acf2bff8e442d":[36,0,38,5,6],
-"classunits_1_1quantity.html#a079961d44b428be1e32eeaed5bea1ca0":[36,0,38,5,11],
+"classunits_1_1quantity.html#a0043f0ce711dea4eac5acf2bff8e442d":[35,0,182,5,6],
 "classunits_1_1quantity.html#a079961d44b428be1e32eeaed5bea1ca0":[35,0,182,5,11],
-"classunits_1_1quantity.html#a101621839a0c03d7a8c5495ad3ae95bc":[36,0,38,5,5],
+"classunits_1_1quantity.html#a079961d44b428be1e32eeaed5bea1ca0":[36,0,38,5,11],
 "classunits_1_1quantity.html#a101621839a0c03d7a8c5495ad3ae95bc":[35,0,182,5,5],
-"classunits_1_1quantity.html#a12595b2be0bef0f0b0fb15eff7475bf6":[36,0,38,5,14],
+"classunits_1_1quantity.html#a101621839a0c03d7a8c5495ad3ae95bc":[36,0,38,5,5],
 "classunits_1_1quantity.html#a12595b2be0bef0f0b0fb15eff7475bf6":[35,0,182,5,14],
+"classunits_1_1quantity.html#a12595b2be0bef0f0b0fb15eff7475bf6":[36,0,38,5,14],
 "classunits_1_1quantity.html#a239e9b238064a23fab11ff2094537958":[35,0,182,5,19],
 "classunits_1_1quantity.html#a239e9b238064a23fab11ff2094537958":[36,0,38,5,19],
 "classunits_1_1quantity.html#a2fd75420c945ac7d6de389f7670eba60":[35,0,182,5,8],
@@ -247,7 +249,5 @@ var NAVTREEINDEX69 =
 "classunits_1_1quantity.html#a3564c3eeb59619e429beebad9e6b82f9":[36,0,38,5,15],
 "classunits_1_1quantity.html#a4ffebc3b2a9ba9d457b05d110cdd86de":[36,0,38,5,12],
 "classunits_1_1quantity.html#a4ffebc3b2a9ba9d457b05d110cdd86de":[35,0,182,5,12],
-"classunits_1_1quantity.html#a522542b764e952eae679f27c4d7c9e5f":[35,0,182,5,20],
-"classunits_1_1quantity.html#a522542b764e952eae679f27c4d7c9e5f":[36,0,38,5,20],
-"classunits_1_1quantity.html#a5862b45342f57dd10c54f59faf0cfb36":[35,0,182,5,2]
+"classunits_1_1quantity.html#a522542b764e952eae679f27c4d7c9e5f":[36,0,38,5,20]
 };

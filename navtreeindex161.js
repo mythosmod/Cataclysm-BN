@@ -1,5 +1,6 @@
 var NAVTREEINDEX161 =
 {
+"structw__point.html#aaf1ed8088df29634ce5259faca54f3d5":[36,0,1006,2],
 "structwashing__requirements.html":[36,0,1008],
 "structwashing__requirements.html#aae40e45233f2f31576a80aa01618d48e":[36,0,1008,0],
 "structwashing__requirements.html#ad9736bdc37ee3fba815318a196d3fcc2":[36,0,1008,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX161 =
 "suffer_8cpp.html#afb030039372cbf3daafe91d1e1bc6765":[37,0,1,612,65],
 "suffer_8cpp.html#afcfa82c36c0dc2d76cd19d622c2b6ab4":[37,0,1,612,45],
 "suffer_8cpp_source.html":[37,0,1,612],
-"teleport_8cpp.html":[37,0,1,613],
-"teleport_8cpp.html#a0c073c8608c88bb092d72f27944a7df1":[37,0,1,613,1]
+"teleport_8cpp.html":[37,0,1,613]
 };

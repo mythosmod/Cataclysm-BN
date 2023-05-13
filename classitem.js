@@ -79,6 +79,7 @@ var classitem =
     [ "can_contain", "classitem.html#af731711530a7d869e07bfb9cb4f380d8", null ],
     [ "can_contain", "classitem.html#a754699dc5d14f040334c5e442914c024", null ],
     [ "can_holster", "classitem.html#a76165a9e0121b48e5df59d0fcabc1728", null ],
+    [ "can_reload_with", "classitem.html#a64f0ee7f8a0f5894a6e43e3b5becafb1", null ],
     [ "can_reload_with", "classitem.html#ace13716223c28fcc8d8ad3de3b0469a5", null ],
     [ "can_revive", "classitem.html#ab000493eba0ddea5a6d0e4e9587a5f83", null ],
     [ "can_unload_liquid", "classitem.html#a54fe4917d343209ae2fdb9b163bd967a", null ],

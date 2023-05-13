@@ -1,5 +1,6 @@
 var NAVTREEINDEX145 =
 {
+"structdiary__page.html#a72dc8545b196b6f00ddb5cec974eb735":[36,0,214,15],
 "structdiary__page.html#a75918244b5570a92f5a13deca32bb360":[36,0,214,16],
 "structdiary__page.html#a84e30f2b2061a10da06b66eebc6d7090":[36,0,214,11],
 "structdiary__page.html#a94b59c08a10f94cdee82cc5bcccb76e2":[36,0,214,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX145 =
 "structenum__traits_3_01valid__target_01_4.html#ae57f494b751b5d462616be048c06d06c":[36,0,304,0],
 "structenum__traits_3_01vitamin__type_01_4.html":[36,0,305],
 "structenum__traits_3_01vitamin__type_01_4.html#ad44ce8c2b5713f1b4e6a0f3f526d92a6":[36,0,305,0],
-"structenum__traits_3_01weather__sound__category_01_4.html":[36,0,306],
-"structenum__traits_3_01weather__sound__category_01_4.html#ae3ea31ede8f12e2e2898a7924a0ae4dd":[36,0,306,0]
+"structenum__traits_3_01weather__sound__category_01_4.html":[36,0,306]
 };

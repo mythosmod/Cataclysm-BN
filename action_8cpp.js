@@ -1,7 +1,5 @@
 var action_8cpp =
 [
-    [ "REGISTER_ACTION", "action_8cpp.html#a8bfd2c645e953fc4f5accc02f82a9e05", null ],
-    [ "REGISTER_CATEGORY", "action_8cpp.html#a68e1ffb11047a72cadc588ec53fea6e3", null ],
     [ "action_from_key", "action_8cpp.html#aa68902ad0ebf2424ae714a0a2d16aa36", null ],
     [ "action_ident", "action_8cpp.html#a8b95de586fbd8f9ba7bb17f244a83689", null ],
     [ "can_action_change_worldstate", "action_8cpp.html#a6b536ce164cb7c39bc19c8e51f40a112", null ],
@@ -12,7 +10,7 @@ var action_8cpp =
     [ "can_pickup_at", "action_8cpp.html#aebd6405fe06ca4045a90445089eace77", null ],
     [ "choose_adjacent", "action_8cpp.html#a7fcc286331cea5f2a9330739a4df0eec", null ],
     [ "choose_adjacent_highlight", "action_8cpp.html#ac1abf1e85f1f3295aaf9de5c7159722c", null ],
-    [ "choose_adjacent_highlight", "action_8cpp.html#a9faa2a6d504c2a60ab881ee918f0fa91", null ],
+    [ "choose_adjacent_highlight", "action_8cpp.html#adbe6ea1e898296af70e89298b6a2cdd9", null ],
     [ "choose_direction", "action_8cpp.html#a13344acacfa6a60516922ba3994bafe4", null ],
     [ "flag_CONSOLE", "action_8cpp.html#a79b02d2fad0a1fa8a156f5a764bc3995", null ],
     [ "flag_FLOTATION", "action_8cpp.html#a2461f5cfa25addb4bfc22223fe3fcd36", null ],
@@ -27,6 +25,8 @@ var action_8cpp =
     [ "hotkey_for_action", "action_8cpp.html#aa1b82adafb4d73ce9309a89178b058f9", null ],
     [ "keys_bound_to", "action_8cpp.html#addea6ed92081b6b2089e76862e6719b1", null ],
     [ "look_up_action", "action_8cpp.html#a8ce112e9e132af4908cbfd51dd5f2f56", null ],
+    [ "make_register_actions", "action_8cpp.html#af623e6ace80365d1e9b0225278de2a49", null ],
+    [ "make_register_categories", "action_8cpp.html#aaa3db743f2118665537b4c559b17bc07", null ],
     [ "press_x", "action_8cpp.html#a91aa34292a1156bb83b17379bbf41933", null ],
     [ "press_x", "action_8cpp.html#aac9c64f5d4bf2f4806bbab0c45464631", null ],
     [ "press_x", "action_8cpp.html#a84601324bda30723a85f9b5c7ca238d4", null ],

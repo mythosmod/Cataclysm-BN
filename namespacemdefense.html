@@ -152,7 +152,7 @@ Functions</h2></td></tr>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        }</div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        <span class="keywordflow">if</span>( <span class="keyword">const</span> <a class="code hl_class" href="classplayer.html">player</a> *<span class="keyword">const</span> foe = <span class="keyword">dynamic_cast&lt;</span><a class="code hl_class" href="classplayer.html">player</a> *<span class="keyword">&gt;</span>( source ) ) {</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>            <span class="keywordflow">if</span>( foe-&gt;weapon.is_melee( <a class="code hl_enumvalue" href="damage_8h.html#ae63a2cf8429f9edf77b547d34ffe4e7aa8ff698c0509e78ff65c7c7ec899b4f51">DT_CUT</a> ) || foe-&gt;weapon.is_melee( <a class="code hl_enumvalue" href="damage_8h.html#ae63a2cf8429f9edf77b547d34ffe4e7aa12e559f29e023db673e9251b9337d8dd">DT_STAB</a> ) ) {</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>            <span class="keywordflow">if</span>( foe-&gt;primary_weapon().is_melee( <a class="code hl_enumvalue" href="damage_8h.html#ae63a2cf8429f9edf77b547d34ffe4e7aa8ff698c0509e78ff65c7c7ec899b4f51">DT_CUT</a> ) || foe-&gt;primary_weapon().is_melee( <a class="code hl_enumvalue" href="damage_8h.html#ae63a2cf8429f9edf77b547d34ffe4e7aa12e559f29e023db673e9251b9337d8dd">DT_STAB</a> ) ) {</div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>                num_drops += <a class="code hl_function" href="artifact_8cpp.html#a70800e95389f34dd34186fafaea2a840">rng</a>( 3, 4 );</div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>            }</div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>            <span class="keywordflow">if</span>( foe-&gt;unarmed_attack() ) {</div>
@@ -422,11 +422,11 @@ Functions</h2></td></tr>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            }</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        }</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <span class="comment">// Players/NPCs can avoid the shock by using non-conductive weapons</span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        <span class="keywordflow">if</span>( !foe-&gt;weapon.conductive() ) {</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        <span class="keywordflow">if</span>( !foe-&gt;primary_weapon().conductive() ) {</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            <span class="keywordflow">if</span>( foe-&gt;reach_attacking ) {</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            }</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            <span class="keywordflow">if</span>( !foe-&gt;used_weapon().is_null() ) {</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            <span class="keywordflow">if</span>( !foe-&gt;primary_weapon().is_null() ) {</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            }</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        }</div>
@@ -465,7 +465,7 @@ Functions</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="messages_8cpp_source.html#l00910">add_msg()</a>, <a class="el" href="bodypart_8h_source.html#l00046">bp_hand_l</a>, <a class="el" href="bodypart_8h_source.html#l00047">bp_hand_r</a>, <a class="el" href="creature_8cpp_source.html#l01872">Creature::check_dead_state()</a>, <a class="el" href="item_8cpp_source.html#l06478">item::conductive()</a>, <a class="el" href="item_8cpp_source.html#l00743">item::covers()</a>, <a class="el" href="creature_8cpp_source.html#l00881">Creature::deal_damage()</a>, <a class="el" href="classCreature.html#a26b7c431f85f0b99b888db69318ebdc5">Creature::disp_name()</a>, <a class="el" href="damage_8h_source.html#l00030">DT_ELECTRIC</a>, <a class="el" href="avatar_8cpp_source.html#l00104">get_avatar()</a>, <a class="el" href="item_8cpp_source.html#l05900">item::get_coverage()</a>, <a class="el" href="classCreature.html#a8c833068edbe464c195c15084ab544f0">Creature::is_elec_immune()</a>, <a class="el" href="enums_8h_source.html#l00261">m_bad</a>, <a class="el" href="enums_8h_source.html#l00265">m_info</a>, <a class="el" href="monster_8cpp_source.html#l00493">monster::name()</a>, <a class="el" href="classCreature.html#a45926a7ba63ccc9be744f87a4d540b7d">Creature::pos()</a>, and <a class="el" href="artifact_8cpp_source.html#l00032">rng()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="monstergenerator_8cpp_source.html#l00620">MonsterGenerator::init_defense()</a>, <a class="el" href="monster_8cpp_source.html#l01345">monster::is_immune_damage()</a>, and <a class="el" href="monattack_8cpp_source.html#l04674">mattack::thrown_by_judo()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="monstergenerator_8cpp_source.html#l00620">MonsterGenerator::init_defense()</a>, <a class="el" href="monster_8cpp_source.html#l01345">monster::is_immune_damage()</a>, and <a class="el" href="monattack_8cpp_source.html#l04678">mattack::thrown_by_judo()</a>.</p>
 
 </div>
 </div>
@@ -475,7 +475,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacemdefense.html">mdefense</a></li>
-    <li class="footer">Generated on Mon May 8 2023 08:26:39 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat May 13 2023 17:04:24 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

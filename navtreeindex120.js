@@ -1,5 +1,6 @@
 var NAVTREEINDEX120 =
 {
+"namespacemembers_s.html":[35,1,0,19],
 "namespacemembers_t.html":[35,1,0,20],
 "namespacemembers_type.html":[35,1,3],
 "namespacemembers_u.html":[35,1,0,21],
@@ -248,6 +249,5 @@ var NAVTREEINDEX120 =
 "namespacepf_1_1anonymous__namespace_02simple__pathfinding_8cpp_03.html#a6e3091cce260b1c3821827e9dde921e9":[35,0,157,0,3],
 "namespacepf_1_1anonymous__namespace_02simple__pathfinding_8cpp_03.html#aa1c49846f7751d9fa02c273867180a7e":[35,0,157,0,5],
 "namespacepickup.html":[35,0,158],
-"namespacepickup.html#a03a2e6f98be01a67be0ad42cb7aa4c61":[35,0,158,5],
-"namespacepickup.html#a03a2e6f98be01a67be0ad42cb7aa4c61a1119d052d90f503b8132a5a75b545a7b":[35,0,158,5,1]
+"namespacepickup.html#a03a2e6f98be01a67be0ad42cb7aa4c61":[35,0,158,5]
 };

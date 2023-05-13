@@ -1,5 +1,6 @@
 var NAVTREEINDEX125 =
 {
+"npc__class_8cpp.html#aa2b36003604de48ce48f4c526c26f97b":[37,0,1,456,22],
 "npc__class_8cpp.html#aa3e4df3b4def836446103696bea42917":[37,0,1,456,19],
 "npc__class_8cpp.html#aab6b781032a73c774f33f4dc5a0a681c":[37,0,1,456,5],
 "npc__class_8cpp.html#ab1639ff9d281a6b39983981cedcaec36":[37,0,1,456,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX125 =
 "npctalk_8h.html#a44d76663c4cf964a010f6de6fa179039":[37,0,1,461,20],
 "npctalk_8h.html#a46b09e234a465e109a5e56174b4c3010":[37,0,1,461,34],
 "npctalk_8h.html#a47d9a133f28d4cad70e1d19494ae62a7":[37,0,1,461,25],
-"npctalk_8h.html#a5287c6a0ad46ce2194b2e1155aa2c418":[37,0,1,461,43],
-"npctalk_8h.html#a5602f97d5b73b159c42d8ab5562f1a4a":[37,0,1,461,0]
+"npctalk_8h.html#a5287c6a0ad46ce2194b2e1155aa2c418":[37,0,1,461,43]
 };
