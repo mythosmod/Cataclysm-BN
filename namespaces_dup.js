@@ -24,6 +24,10 @@ var namespaces_dup =
     [ "anonymous_namespace{achievement.cpp}", "namespaceanonymous__namespace_02achievement_8cpp_03.html", [
       [ "achievement_factory", "namespaceanonymous__namespace_02achievement_8cpp_03.html#a32c1d3d3a3b3027955df478045239b5a", null ]
     ] ],
+    [ "anonymous_namespace{action.cpp}", "namespaceanonymous__namespace_02action_8cpp_03.html", [
+      [ "make_register_actions", "namespaceanonymous__namespace_02action_8cpp_03.html#ae38efca4bfa981d31097109516f6f18d", null ],
+      [ "make_register_categories", "namespaceanonymous__namespace_02action_8cpp_03.html#a6ae518ba19482502c7499a86503c5ef0", null ]
+    ] ],
     [ "anonymous_namespace{ammo.cpp}", "namespaceanonymous__namespace_02ammo_8cpp_03.html", [
       [ "ammo_map_t", "namespaceanonymous__namespace_02ammo_8cpp_03.html#a1d064e67562b19b60f871ed2dd6a3d23", null ],
       [ "all_ammunition_types", "namespaceanonymous__namespace_02ammo_8cpp_03.html#ad976e077c2d7a7af5b9a939495ae395c", null ]
