@@ -184,11 +184,11 @@ Functions</h2></td></tr>
 <tr class="separator:a793e5f81d379bb1ed507e0b3ad166382"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a303cca0e9a1727ae331e6538757e89a2"><td class="memItemLeft" align="right" valign="top">static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="explosion_8cpp.html#a303cca0e9a1727ae331e6538757e89a2">flag_FLASH_PROTECTION</a> (&quot;FLASH_PROTECTION&quot;)</td></tr>
 <tr class="separator:a303cca0e9a1727ae331e6538757e89a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12d7e870728f76ec22e228688e03f34f"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="explosion_8cpp.html#a12d7e870728f76ec22e228688e03f34f">obstacle_blast_percentage</a> (float range, float distance)</td></tr>
+<tr class="memitem:a12d7e870728f76ec22e228688e03f34f"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="explosion_8cpp.html#a12d7e870728f76ec22e228688e03f34f">obstacle_blast_percentage</a> (float <a class="el" href="character_8h.html#addab86bfe6fd0bf8c22ec43df3ec051da1c21724609ac70f1573fd4b755c64ddb">range</a>, float distance)</td></tr>
 <tr class="separator:a12d7e870728f76ec22e228688e03f34f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a612bfe93633431291aad0d70800b070f"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="explosion_8cpp.html#a612bfe93633431291aad0d70800b070f">critter_blast_percentage</a> (<a class="el" href="classCreature.html">Creature</a> *<a class="el" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a>, float range, float distance)</td></tr>
+<tr class="memitem:a612bfe93633431291aad0d70800b070f"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="explosion_8cpp.html#a612bfe93633431291aad0d70800b070f">critter_blast_percentage</a> (<a class="el" href="classCreature.html">Creature</a> *<a class="el" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a>, float <a class="el" href="character_8h.html#addab86bfe6fd0bf8c22ec43df3ec051da1c21724609ac70f1573fd4b755c64ddb">range</a>, float distance)</td></tr>
 <tr class="separator:a612bfe93633431291aad0d70800b070f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7f5bc32c87fb8cc1613b439ef7a9bd8"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="explosion_8cpp.html#ae7f5bc32c87fb8cc1613b439ef7a9bd8">item_blast_percentage</a> (float range, float distance)</td></tr>
+<tr class="memitem:ae7f5bc32c87fb8cc1613b439ef7a9bd8"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="explosion_8cpp.html#ae7f5bc32c87fb8cc1613b439ef7a9bd8">item_blast_percentage</a> (float <a class="el" href="character_8h.html#addab86bfe6fd0bf8c22ec43df3ec051da1c21724609ac70f1573fd4b755c64ddb">range</a>, float distance)</td></tr>
 <tr class="separator:ae7f5bc32c87fb8cc1613b439ef7a9bd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8a73ef7725c30dd1cd66ed921df48d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structexplosion__data.html">explosion_data</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="explosion_8cpp.html#ab8a73ef7725c30dd1cd66ed921df48d8">load_explosion_data</a> (const <a class="el" href="classJsonObject.html">JsonObject</a> &amp;jo)</td></tr>
 <tr class="separator:ab8a73ef7725c30dd1cd66ed921df48d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -376,7 +376,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="explosion_8cpp_source.html#l00099">99</a> of file <a class="el" href="explosion_8cpp_source.html">explosion.cpp</a>.</p>
 <div class="fragment"><div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>{</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> radius_reduction = <a class="code hl_enumvalue" href="namespaceovermap__ui.html#a5cd0d32854b59999d3a728288bc7daaaaa74ec9c5b6882f79e32a8fbd8da90c1b">distance</a> &gt; range ? 0.0f : <a class="code hl_enumvalue" href="namespaceovermap__ui.html#a5cd0d32854b59999d3a728288bc7daaaaa74ec9c5b6882f79e32a8fbd8da90c1b">distance</a> &gt; range / 2 ? 0.5f : 1.0f;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> radius_reduction = <a class="code hl_enumvalue" href="namespaceovermap__ui.html#a5cd0d32854b59999d3a728288bc7daaaaa74ec9c5b6882f79e32a8fbd8da90c1b">distance</a> &gt; <a class="code hl_enumvalue" href="character_8h.html#addab86bfe6fd0bf8c22ec43df3ec051da1c21724609ac70f1573fd4b755c64ddb">range</a> ? 0.0f : <a class="code hl_enumvalue" href="namespaceovermap__ui.html#a5cd0d32854b59999d3a728288bc7daaaaa74ec9c5b6882f79e32a8fbd8da90c1b">distance</a> &gt; <a class="code hl_enumvalue" href="character_8h.html#addab86bfe6fd0bf8c22ec43df3ec051da1c21724609ac70f1573fd4b755c64ddb">range</a> / 2 ? 0.5f : 1.0f;</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="keywordflow">switch</span>( <a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a>-&gt;get_size() ) {</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        <span class="keywordflow">case</span>( <a class="code hl_enumvalue" href="creature_8h.html#a94151e401c177b20ea9b8bcadf74f592a07b6bf6678272622a1fb127d59cf0614">m_size::MS_TINY</a> ):</div>
@@ -393,6 +393,7 @@ Variables</h2></td></tr>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>            <span class="keywordflow">return</span> 1.0 * radius_reduction;</div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    }</div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>}</div>
+<div class="ttc" id="acharacter_8h_html_addab86bfe6fd0bf8c22ec43df3ec051da1c21724609ac70f1573fd4b755c64ddb"><div class="ttname"><a href="character_8h.html#addab86bfe6fd0bf8c22ec43df3ec051da1c21724609ac70f1573fd4b755c64ddb">range</a></div><div class="ttdeci">@ range</div><div class="ttdef"><b>Definition:</b> <a href="character_8h_source.html#l00104">character.h:104</a></div></div>
 <div class="ttc" id="acreature_8h_html_a94151e401c177b20ea9b8bcadf74f592a07b6bf6678272622a1fb127d59cf0614"><div class="ttname"><a href="creature_8h.html#a94151e401c177b20ea9b8bcadf74f592a07b6bf6678272622a1fb127d59cf0614">MS_TINY</a></div><div class="ttdeci">@ MS_TINY</div><div class="ttdef"><b>Definition:</b> <a href="creature_8h_source.html#l00058">creature.h:58</a></div></div>
 <div class="ttc" id="acreature_8h_html_a94151e401c177b20ea9b8bcadf74f592a50d9f673ed0348953b2715fa33683791"><div class="ttname"><a href="creature_8h.html#a94151e401c177b20ea9b8bcadf74f592a50d9f673ed0348953b2715fa33683791">MS_LARGE</a></div><div class="ttdeci">@ MS_LARGE</div><div class="ttdef"><b>Definition:</b> <a href="creature_8h_source.html#l00061">creature.h:61</a></div></div>
 <div class="ttc" id="acreature_8h_html_a94151e401c177b20ea9b8bcadf74f592a6a1920ba558cd6584b689f53519e9e96"><div class="ttname"><a href="creature_8h.html#a94151e401c177b20ea9b8bcadf74f592a6a1920ba558cd6584b689f53519e9e96">MS_SMALL</a></div><div class="ttdeci">@ MS_SMALL</div><div class="ttdef"><b>Definition:</b> <a href="creature_8h_source.html#l00059">creature.h:59</a></div></div>
@@ -401,7 +402,7 @@ Variables</h2></td></tr>
 <div class="ttc" id="amagic_8cpp_html_a6753ecfe87da659675b18c2f81d6ec12"><div class="ttname"><a href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a></div><div class="ttdeci">constexpr double c</div><div class="ttdef"><b>Definition:</b> <a href="magic_8cpp_source.html#l01032">magic.cpp:1032</a></div></div>
 <div class="ttc" id="anamespaceovermap__ui_html_a5cd0d32854b59999d3a728288bc7daaaaa74ec9c5b6882f79e32a8fbd8da90c1b"><div class="ttname"><a href="namespaceovermap__ui.html#a5cd0d32854b59999d3a728288bc7daaaaa74ec9c5b6882f79e32a8fbd8da90c1b">overmap_ui::sort_mode_t::distance</a></div><div class="ttdeci">@ distance</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="magic_8cpp_source.html#l01032">c</a>, <a class="el" href="creature_8h_source.html#l00062">MS_HUGE</a>, <a class="el" href="creature_8h_source.html#l00061">MS_LARGE</a>, <a class="el" href="creature_8h_source.html#l00060">MS_MEDIUM</a>, <a class="el" href="creature_8h_source.html#l00059">MS_SMALL</a>, and <a class="el" href="creature_8h_source.html#l00058">MS_TINY</a>.</p>
+<p class="reference">References <a class="el" href="magic_8cpp_source.html#l01032">c</a>, <a class="el" href="creature_8h_source.html#l00062">MS_HUGE</a>, <a class="el" href="creature_8h_source.html#l00061">MS_LARGE</a>, <a class="el" href="creature_8h_source.html#l00060">MS_MEDIUM</a>, <a class="el" href="creature_8h_source.html#l00059">MS_SMALL</a>, <a class="el" href="creature_8h_source.html#l00058">MS_TINY</a>, and <a class="el" href="character_8h_source.html#l00104">range</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="explosion_8cpp_source.html#l00657">explosion_handler::ExplosionProcess::blast_tile()</a>.</p>
 
@@ -499,10 +500,12 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="explosion_8cpp_source.html#l00119">119</a> of file <a class="el" href="explosion_8cpp_source.html">explosion.cpp</a>.</p>
 <div class="fragment"><div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>{</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> radius_reduction = 1.0f - <a class="code hl_enumvalue" href="namespaceovermap__ui.html#a5cd0d32854b59999d3a728288bc7daaaaa74ec9c5b6882f79e32a8fbd8da90c1b">distance</a> / range;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> radius_reduction = 1.0f - <a class="code hl_enumvalue" href="namespaceovermap__ui.html#a5cd0d32854b59999d3a728288bc7daaaaa74ec9c5b6882f79e32a8fbd8da90c1b">distance</a> / <a class="code hl_enumvalue" href="character_8h.html#addab86bfe6fd0bf8c22ec43df3ec051da1c21724609ac70f1573fd4b755c64ddb">range</a>;</div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <span class="keywordflow">return</span> radius_reduction;</div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>}</div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="character_8h_source.html#l00104">range</a>.</p>
+
 <p class="reference">Referenced by <a class="el" href="explosion_8cpp_source.html#l00657">explosion_handler::ExplosionProcess::blast_tile()</a>.</p>
 
 </div>
@@ -613,9 +616,11 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="explosion_8cpp_source.html#l00095">95</a> of file <a class="el" href="explosion_8cpp_source.html">explosion.cpp</a>.</p>
 <div class="fragment"><div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>{</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="namespaceovermap__ui.html#a5cd0d32854b59999d3a728288bc7daaaaa74ec9c5b6882f79e32a8fbd8da90c1b">distance</a> &gt; range ? 0.0f : <a class="code hl_enumvalue" href="namespaceovermap__ui.html#a5cd0d32854b59999d3a728288bc7daaaaa74ec9c5b6882f79e32a8fbd8da90c1b">distance</a> &gt; range / 2 ? 0.5f : 1.0f;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="namespaceovermap__ui.html#a5cd0d32854b59999d3a728288bc7daaaaa74ec9c5b6882f79e32a8fbd8da90c1b">distance</a> &gt; <a class="code hl_enumvalue" href="character_8h.html#addab86bfe6fd0bf8c22ec43df3ec051da1c21724609ac70f1573fd4b755c64ddb">range</a> ? 0.0f : <a class="code hl_enumvalue" href="namespaceovermap__ui.html#a5cd0d32854b59999d3a728288bc7daaaaa74ec9c5b6882f79e32a8fbd8da90c1b">distance</a> &gt; <a class="code hl_enumvalue" href="character_8h.html#addab86bfe6fd0bf8c22ec43df3ec051da1c21724609ac70f1573fd4b755c64ddb">range</a> / 2 ? 0.5f : 1.0f;</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>}</div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="character_8h_source.html#l00104">range</a>.</p>
+
 <p class="reference">Referenced by <a class="el" href="explosion_8cpp_source.html#l00657">explosion_handler::ExplosionProcess::blast_tile()</a>, and <a class="el" href="explosion_8cpp_source.html#l01277">explosion_handler::legacy_blast()</a>.</p>
 
 </div>
@@ -1193,7 +1198,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="explosion_8cpp.html">explosion.cpp</a></li>
-    <li class="footer">Generated on Thu May 18 2023 19:32:26 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri May 26 2023 20:28:57 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -46,7 +46,7 @@ var npcmove_8cpp =
     [ "rate_food", "npcmove_8cpp.html#a42653f931f94e236c64920609e0b0279", null ],
     [ "too_close", "npcmove_8cpp.html#a32365a2b41e9af647ec05fbdea50ba90", null ],
     [ "wants_to_reload", "npcmove_8cpp.html#ae13383d17599d8687f2e570bf75bbac9", null ],
-    [ "wants_to_reload_with", "npcmove_8cpp.html#abb15a2e894a280b84a6cb51ea9761fa6", null ],
+    [ "wants_to_reload_with", "npcmove_8cpp.html#aad54d728f1384d3792d01359404c5dc0", null ],
     [ "ACT_PULP", "npcmove_8cpp.html#aa93f72dcd6663590417f2f8fd001d032", null ],
     [ "avoidance_vehicles_radius", "npcmove_8cpp.html#a14108754d46e7a886364e08c7817615b", null ],
     [ "bio_ads", "npcmove_8cpp.html#a99bde006d277d411e266b003163d9f05", null ],

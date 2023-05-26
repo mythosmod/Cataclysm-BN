@@ -34,10 +34,10 @@ var character_8h =
       [ "massive", "character_8h.html#abf088072c9ca5b676f7f7545bac9a137a7ab3f388bbf5200ebf5e501260ecddcc", null ]
     ] ],
     [ "npc_ai_info", "character_8h.html#addab86bfe6fd0bf8c22ec43df3ec051d", [
-      [ "weapon_value", "character_8h.html#addab86bfe6fd0bf8c22ec43df3ec051da5795b0d5637a6bb0691323c64d3eb6bd", null ],
       [ "ideal_weapon_value", "character_8h.html#addab86bfe6fd0bf8c22ec43df3ec051da6c1d5de20741d1572a1638942c179e99", null ],
       [ "reloadables", "character_8h.html#addab86bfe6fd0bf8c22ec43df3ec051dab91c4c8a749a85ab33d1efd8ed599078", null ],
       [ "reloadable_cbms", "character_8h.html#addab86bfe6fd0bf8c22ec43df3ec051dad246d6598f2387698643855cb158a952", null ],
+      [ "range", "character_8h.html#addab86bfe6fd0bf8c22ec43df3ec051da1c21724609ac70f1573fd4b755c64ddb", null ],
       [ "num_npc_ai_info", "character_8h.html#addab86bfe6fd0bf8c22ec43df3ec051dad787eaa09702636f57611c4caff3a620", null ]
     ] ],
     [ "rechargeable_cbm", "character_8h.html#a70a4eaaf64bcd7658f91bfb500492f5a", [

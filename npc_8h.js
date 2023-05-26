@@ -263,6 +263,7 @@ var npc_8h =
       [ "TALK_OPINION", "npc_8h.html#ac8243858aef483b83981202d916ec68aac2c217f02ee5273f39549f83d9d9bc12", null ],
       [ "NUM_TALK_TOPICS", "npc_8h.html#ac8243858aef483b83981202d916ec68aa14ac8194274ca3d454f82fa1738d8051", null ]
     ] ],
+    [ "best_mode_for_range", "npc_8h.html#a0e953b9c8d447ec25fc27c06a6e3d55c", null ],
     [ "convert_talk_topic", "npc_8h.html#a44edcea0eb4426e7592722cfd516b384", null ],
     [ "deactivate_weapon_cbm", "npc_8h.html#a0a78ff14e5d2046d2db00b309401e023", null ],
     [ "find_reloadable_cbms", "npc_8h.html#ad50085a053feb206d2b5e6c5577b4308", null ],
@@ -277,7 +278,7 @@ var npc_8h =
     [ "pick_follower", "npc_8h.html#ad977602826da7ddf9f680b18647ea6b9", null ],
     [ "unarmed_value", "npc_8h.html#a64daf871b45496787e445f932f4381d3", null ],
     [ "weapon_value", "npc_8h.html#a6fa541a904a63a5b95b20ce9000254d8", null ],
-    [ "wielded_value", "npc_8h.html#a9faf14aeb5366ab3ab7efb40e267907d", null ],
+    [ "wielded_value", "npc_8h.html#a03081587a4844207a7386844f8a31cd5", null ],
     [ "aim_rule_strs", "npc_8h.html#ae96069e86d39e19cbbac565be3419ea5", null ],
     [ "ally_rule_strs", "npc_8h.html#aa27862ea88c73b61be0521ec94a4a3ac", null ],
     [ "cbm_recharge_strs", "npc_8h.html#ae92dafc799ce898955aa8993b77e51b1", null ],

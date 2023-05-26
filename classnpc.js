@@ -50,6 +50,7 @@ var classnpc =
     [ "character_danger", "classnpc.html#a70806f0dc6c657978fe793a69abbf7af", null ],
     [ "check_or_reload_cbm", "classnpc.html#a03e04db3b52df6b43d616c0ed0f0e619", null ],
     [ "check_or_use_weapon_cbm", "classnpc.html#aee407b249797de25fb4c3086a9c904f1", null ],
+    [ "check_toggle_cbm", "classnpc.html#a7cf2b087970e2d88a57a6dca64b3e1a9", null ],
     [ "complain", "classnpc.html#a305f1416efd6a05654042edb9d23f2da", null ],
     [ "complain_about", "classnpc.html#ab2805d6e7e3cfd83a2993115a7c710d8", null ],
     [ "confidence_mult", "classnpc.html#a037349e70b7f5c207424db299ac6d5af", null ],

@@ -62,6 +62,7 @@ var classCharacter =
     [ "bionics_uninstall_failure", "classCharacter.html#abc31ad25011c75268610817c3ec06142", null ],
     [ "bionics_weight", "classCharacter.html#ad430c5cf95ffb086932c014e53431fd6", null ],
     [ "block_hit", "classCharacter.html#ae4a8c6a5f6aeb5b005aed8534a46cc82", null ],
+    [ "block_ranged_hit", "classCharacter.html#af9e31364ae300bcd6f9a8436ada07690", null ],
     [ "blood_loss", "classCharacter.html#a9ef1bfb00d4a8d9b1ff9078eae2a9103", null ],
     [ "bloodType", "classCharacter.html#a0673cf3c18511cb38c23f2f02b4641f8", null ],
     [ "blossoms", "classCharacter.html#a9f314857ab98e4958b7d2b74c07ff545", null ],

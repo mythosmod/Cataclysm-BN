@@ -74,6 +74,7 @@ var classCreature =
     [ "basic_symbol_color", "classCreature.html#ae5454f0e4db71d31ab3c1331e5103a4b", null ],
     [ "bleed", "classCreature.html#a303fcc58869f10f44be1d598ed1aa26f", null ],
     [ "block_hit", "classCreature.html#af7c8ef39a61456810a5581a61d297b80", null ],
+    [ "block_ranged_hit", "classCreature.html#a2fece13ad3ba80537981c4aee20e9224", null ],
     [ "bloodType", "classCreature.html#a5c6d320a21d767c65c807fe563c4b2c9", null ],
     [ "check_dead_state", "classCreature.html#a36dcf5a04ddc0cf9fa29c08b7b099158", null ],
     [ "clear_effects", "classCreature.html#ade25d295e89504f92aff453b05cd2bbe", null ],

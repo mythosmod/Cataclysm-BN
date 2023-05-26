@@ -258,6 +258,7 @@ var classitem =
     [ "has_tools_to_continue", "classitem.html#a3e46e5d8e0848d74bfb7ab606125cbbe", null ],
     [ "has_use", "classitem.html#afe000c27bcec09d0f4aa4cc84e3c3978", null ],
     [ "has_var", "classitem.html#a478ecf81e48540e1ba39de33df968c43", null ],
+    [ "ideal_ranged_dps", "classitem.html#aa91e9e381f2d96ad24f93b1344fd6276", null ],
     [ "in_container", "classitem.html#afa416d2d74b4ca417c936261d761c53a", null ],
     [ "in_its_container", "classitem.html#a56c6b4634fb5e178dc16c83d381e894f", null ],
     [ "inc_damage", "classitem.html#a6dc463a17ae0cac2850b6d1bc8b34fa7", null ],

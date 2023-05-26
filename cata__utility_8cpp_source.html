@@ -180,8 +180,8 @@ $(document).ready(function(){initNavTree('cata__utility_8cpp_source.html',''); i
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    }</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="comment">// Normalize the pos to [0,1]</span></div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keywordtype">double</span> range = max - min;</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="keywordtype">double</span> unit_pos = ( pos - min ) / range;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keywordtype">double</span> <a class="code hl_enumvalue" href="character_8h.html#addab86bfe6fd0bf8c22ec43df3ec051da1c21724609ac70f1573fd4b755c64ddb">range</a> = max - min;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="keywordtype">double</span> unit_pos = ( pos - min ) / <a class="code hl_enumvalue" href="character_8h.html#addab86bfe6fd0bf8c22ec43df3ec051da1c21724609ac70f1573fd4b755c64ddb">range</a>;</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="comment">// Scale and flip it to [+LOGI_CUTOFF,-LOGI_CUTOFF]</span></div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="keywordtype">double</span> scaled_pos = LOGI_CUTOFF - 2 * LOGI_CUTOFF * unit_pos;</div>
@@ -891,6 +891,7 @@ $(document).ready(function(){initNavTree('cata__utility_8cpp_source.html',''); i
 <div class="ttc" id="acatacharset_8cpp_html_a3120d20c82d79bda9e9c74dabeec2e99"><div class="ttname"><a href="catacharset_8cpp.html#a3120d20c82d79bda9e9c74dabeec2e99">utf8_to_wstr</a></div><div class="ttdeci">std::wstring utf8_to_wstr(const std::string &amp;str)</div><div class="ttdef"><b>Definition:</b> <a href="catacharset_8cpp_source.html#l00383">catacharset.cpp:383</a></div></div>
 <div class="ttc" id="acatacharset_8cpp_html_a62f23c35aca0971caf148e4c35ee152c"><div class="ttname"><a href="catacharset_8cpp.html#a62f23c35aca0971caf148e4c35ee152c">wstr_to_utf8</a></div><div class="ttdeci">std::string wstr_to_utf8(const std::wstring &amp;wstr)</div><div class="ttdef"><b>Definition:</b> <a href="catacharset_8cpp_source.html#l00400">catacharset.cpp:400</a></div></div>
 <div class="ttc" id="acatacharset_8cpp_html_a7616a48a4b48437c60b6683439a8f3e2"><div class="ttname"><a href="catacharset_8cpp.html#a7616a48a4b48437c60b6683439a8f3e2">utf8_width</a></div><div class="ttdeci">int utf8_width(const char *s, const bool ignore_tags)</div><div class="ttdef"><b>Definition:</b> <a href="catacharset_8cpp_source.html#l00142">catacharset.cpp:142</a></div></div>
+<div class="ttc" id="acharacter_8h_html_addab86bfe6fd0bf8c22ec43df3ec051da1c21724609ac70f1573fd4b755c64ddb"><div class="ttname"><a href="character_8h.html#addab86bfe6fd0bf8c22ec43df3ec051da1c21724609ac70f1573fd4b755c64ddb">range</a></div><div class="ttdeci">@ range</div><div class="ttdef"><b>Definition:</b> <a href="character_8h_source.html#l00104">character.h:104</a></div></div>
 <div class="ttc" id="aclassJsonDeserializer_html"><div class="ttname"><a href="classJsonDeserializer.html">JsonDeserializer</a></div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l01413">json.h:1414</a></div></div>
 <div class="ttc" id="aclassJsonDeserializer_html_a3583f1e3cbe7cad440828d461b22ac22"><div class="ttname"><a href="classJsonDeserializer.html#a3583f1e3cbe7cad440828d461b22ac22">JsonDeserializer::deserialize</a></div><div class="ttdeci">virtual void deserialize(JsonIn &amp;jsin)=0</div></div>
 <div class="ttc" id="aclassJsonIn_html"><div class="ttname"><a href="classJsonIn.html">JsonIn</a></div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00171">json.h:172</a></div></div>
@@ -979,7 +980,7 @@ $(document).ready(function(){initNavTree('cata__utility_8cpp_source.html',''); i
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="cata__utility_8cpp.html">cata_utility.cpp</a></li>
-    <li class="footer">Generated on Thu May 18 2023 19:32:09 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri May 26 2023 20:28:40 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>
