@@ -46,7 +46,7 @@ var consumption_8cpp =
     [ "flag_URSINE_HONEY", "consumption_8cpp.html#a590a72c763f8f716dbd0a2da2fdf0d4b", null ],
     [ "flag_USE_EAT_VERB", "consumption_8cpp.html#a8048758dc914b63455fd2c2a422579bf", null ],
     [ "herbivore_blacklist", "consumption_8cpp.html#a7971bf13ca2d151e46e6a0689b4ae544", null ],
-    [ "query_consume_ownership", "consumption_8cpp.html#afe92f92e13fd7403ae41c156ff5e08be", null ],
+    [ "query_consume_ownership", "consumption_8cpp.html#aac08741712a8c206a0cb74130f7517d5", null ],
     [ "bio_digestion", "consumption_8cpp.html#a36f9b5f5d763f2c224b59b75af340c6c", null ],
     [ "bio_furnace", "consumption_8cpp.html#a5f686344fc356a766b2eeb5fd27d56a3", null ],
     [ "bio_syringe", "consumption_8cpp.html#a0378c4d7c8bedb3b625c06e488f25dd9", null ],

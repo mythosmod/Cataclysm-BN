@@ -47,6 +47,7 @@ var npc_8cpp =
     [ "trait_HALLUCINATION", "npc_8cpp.html#a4181c72465d202fa60004a18c55fb29a", null ],
     [ "trait_HYPEROPIC", "npc_8cpp.html#a83835dcd301781ff63080d4b0fc72a18", null ],
     [ "trait_ILLITERATE", "npc_8cpp.html#a357572465dfb7a0a417d86e1be77af49", null ],
+    [ "trait_KILLER", "npc_8cpp.html#a79d0578dfe3d1e27332b119e515f47fb", null ],
     [ "trait_MUTE", "npc_8cpp.html#a8f1aa22c897a0644823f6da1863de4c8", null ],
     [ "trait_PROF_DICEMASTER", "npc_8cpp.html#abe59975b0f897b05b7572b71af1a2ca7", null ],
     [ "trait_PSYCHOPATH", "npc_8cpp.html#a9bbf692360c0fe96f9fccf41db5756be", null ],

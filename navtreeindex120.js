@@ -1,5 +1,8 @@
 var NAVTREEINDEX120 =
 {
+"namespacemelee.html#a037bbc3757ef2973e9d84c68ebbad9a9":[35,0,138,3],
+"namespacemelee.html#a33b60e27938b5580314106c628ec5f06":[35,0,138,1],
+"namespacemelee.html#a5ed3b88ed3376694a321005bc94214b7":[35,0,138,2],
 "namespacemelee.html#aa17d019b7ecb851f167fabc75b2362f9":[35,0,138,0],
 "namespacemembers.html":[35,1,0],
 "namespacemembers.html":[35,1,0,0],
@@ -56,8 +59,8 @@ var NAVTREEINDEX120 =
 "namespacemembers_type.html":[35,1,3],
 "namespacemembers_u.html":[35,1,0,21],
 "namespacemembers_v.html":[35,1,0,22],
-"namespacemembers_vars.html":[35,1,2,0],
 "namespacemembers_vars.html":[35,1,2],
+"namespacemembers_vars.html":[35,1,2,0],
 "namespacemembers_vars_b.html":[35,1,2,1],
 "namespacemembers_vars_c.html":[35,1,2,2],
 "namespacemembers_vars_d.html":[35,1,2,3],
@@ -246,8 +249,5 @@ var NAVTREEINDEX120 =
 "namespaceovermap__locations.html#a5f636a6218bbbc63b04bf8f2d98454f1":[35,0,155,3],
 "namespaceovermap__locations.html#a9c114fe0e1fa07209d641929aff9e942":[35,0,155,1],
 "namespaceovermap__locations.html#ae30daf181fd7d85d46bc3b8048539e21":[35,0,155,0],
-"namespaceovermap__specials.html":[35,0,156],
-"namespaceovermap__specials.html#a096b23bd59893411f0333358fbc6b0ab":[35,0,156,6],
-"namespaceovermap__specials.html#a2939ccd0213e323b8a8c10f764f206eb":[35,0,156,2],
-"namespaceovermap__specials.html#a5b049e59ea1caba25c44c785e08210c8":[35,0,156,0]
+"namespaceovermap__specials.html":[35,0,156]
 };

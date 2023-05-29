@@ -1,5 +1,8 @@
 var NAVTREEINDEX116 =
 {
+"namespacedetail.html#a2cf212f7cb695256ac8c1cee8e3406b5":[35,0,99,130],
+"namespacedetail.html#a3051eb18ec32a280d7212f15e759934e":[35,0,99,185],
+"namespacedetail.html#a311631b3d21238e5c40807202a06f24a":[35,0,99,299],
 "namespacedetail.html#a3207ea3698d0bffb39947541a13c3f32":[35,0,99,259],
 "namespacedetail.html#a325a2ee4cf71f5c11e578161f5da87a2":[35,0,99,338],
 "namespacedetail.html#a32ad17838b93fd4237478dec63c747e8":[35,0,99,177],
@@ -246,8 +249,5 @@ var NAVTREEINDEX116 =
 "namespacedetail_1_1dragonbox.html#aea4d94d12d156aee5f78fedc4c0e4d21":[35,0,99,1,13],
 "namespacedetail_1_1dragonbox.html#aecc0ed5b70ed0ad80b4a22ca20c80c0d":[35,0,99,1,17],
 "namespacedetail_1_1dragonbox.html#aed1753aee6b82ab996e82328acce3a8b":[35,0,99,1,22],
-"namespacedialogue__data.html":[35,0,100],
-"namespacedialogue__data.html#a26e681c79153a7820fdeaa96e9223aa3":[35,0,100,0],
-"namespacedialogue__data.html#a6fed24978753ef5c62bb51fd50f30071":[35,0,100,1],
-"namespacedistraction__manager.html":[35,0,101]
+"namespacedialogue__data.html":[35,0,100]
 };
