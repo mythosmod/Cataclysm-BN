@@ -1,5 +1,6 @@
 var NAVTREEINDEX64 =
 {
+"classscenario.html#a846232014273b565c0f623b73106172c":[36,0,823,0],
 "classscenario.html#a86b084b291d66cb28b9035749f350d43":[36,0,823,51],
 "classscenario.html#a883030bc21326603f56faee3de1d2b56":[36,0,823,9],
 "classscenario.html#a9042d4c43ae372cad4cfbb879c94581e":[36,0,823,28],
@@ -248,6 +249,5 @@ var NAVTREEINDEX64 =
 "classskill__boost.html":[36,0,850],
 "classskill__boost.html#a395d74a2475d5e321b3452993c5d8603":[36,0,850,1],
 "classskill__boost.html#a7441ebca57c2e4252915c807ec9194f0":[36,0,850,2],
-"classskill__boost.html#a7473aa9e75fb343fc52bd840931609dc":[36,0,850,5],
-"classskill__boost.html#a838f443d532bceef52cc45d9c719cd6d":[36,0,850,11]
+"classskill__boost.html#a7473aa9e75fb343fc52bd840931609dc":[36,0,850,5]
 };

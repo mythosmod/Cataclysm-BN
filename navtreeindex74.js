@@ -1,5 +1,6 @@
 var NAVTREEINDEX74 =
 {
+"classweather__generator.html#a6c0ba4e897f29b3a9e907ad5ed38396d":[36,0,1015,6],
 "classweather__generator.html#a8bb595162b04237688d2d4d8b396da51":[36,0,1015,8],
 "classweather__generator.html#a937cfd8913597bb89b82a0434a0cfe4e":[36,0,1015,13],
 "classweather__generator.html#aa48c863c065b9b03e1dc394ed36c5f51":[36,0,1015,15],
@@ -248,6 +249,5 @@ var NAVTREEINDEX74 =
 "clothing__mod_8h.html":[37,0,1,111],
 "clothing__mod_8h.html#a023ea871de42d32d9280eb48dcccb561":[37,0,1,111,8],
 "clothing__mod_8h.html#a25d4127250cb9f6dbe2aee52e5e3c0ee":[37,0,1,111,7],
-"clothing__mod_8h.html#a4fd18878a9f18248ba28ec311118222a":[37,0,1,111,3],
-"clothing__mod_8h.html#a5bf63dd4b0368188aa71cfa230cfa989":[37,0,1,111,9]
+"clothing__mod_8h.html#a4fd18878a9f18248ba28ec311118222a":[37,0,1,111,3]
 };

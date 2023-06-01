@@ -1,5 +1,6 @@
 var NAVTREEINDEX73 =
 {
+"classvehicle__selector.html#a8e70f137716ca5a104d5e49980313a8d":[36,0,984,20],
 "classvehicle__selector.html#aa2e5961c4093a23291f3e458b62c673e":[36,0,984,10],
 "classvehicle__selector.html#aa746d2a6cd2b2502143f04be4f0b0e77":[36,0,984,2],
 "classvehicle__selector.html#aa8cc44d2ed8ea12c1feda0e2a23194f8":[36,0,984,17],
@@ -248,6 +249,5 @@ var NAVTREEINDEX73 =
 "classweather__generator.html#a5eb2854b50dc560bc89f19ba9c5ad6b0":[36,0,1015,20],
 "classweather__generator.html#a63c5993e80556af46e40859dc4dcba98":[36,0,1015,2],
 "classweather__generator.html#a66b0441a13bb5aaac31eaa12c26328e9":[36,0,1015,14],
-"classweather__generator.html#a670cb2c4f99da7329c67d5c50f53cb4a":[36,0,1015,18],
-"classweather__generator.html#a6c0ba4e897f29b3a9e907ad5ed38396d":[36,0,1015,6]
+"classweather__generator.html#a670cb2c4f99da7329c67d5c50f53cb4a":[36,0,1015,18]
 };

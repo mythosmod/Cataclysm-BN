@@ -654,6 +654,7 @@ var classCharacter =
     [ "stop_hauling", "classCharacter.html#af41b2402ff6f402c399454156f152ef2", null ],
     [ "store", "classCharacter.html#ac41a59a1ff1d8efa22a615a5432a6243", null ],
     [ "suffer", "classCharacter.html#ac3066aafc3a5ffe9ee8058e062e177a7", null ],
+    [ "suffer_feral_kill_withdrawl", "classCharacter.html#a24e90d8444482db9d24d3d66673509ff", null ],
     [ "suffer_from_addictions", "classCharacter.html#a28ea278a5647207335fa608aebb66cc4", null ],
     [ "suffer_from_artifacts", "classCharacter.html#a14e11c9677623fb68adcccbaf4929ae5", null ],
     [ "suffer_from_asthma", "classCharacter.html#af8db3c67288490af095973cef97ae5a3", null ],

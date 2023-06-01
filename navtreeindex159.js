@@ -1,5 +1,13 @@
 var NAVTREEINDEX159 =
 {
+"structstring__id__params_3_01Item__spawn__data_01_4.html#a04a5f3967d1d2e6c3a5107fe215f5ce6":[36,0,889,0],
+"structstring__id__params_3_01Trait__group_01_4.html":[36,0,890],
+"structstring__id__params_3_01Trait__group_01_4.html#aa76036d81927d9236e48037620eaaed4":[36,0,890,0],
+"structsubmap_1_1cosmetic__t.html":[36,0,895,0],
+"structsubmap_1_1cosmetic__t.html#a1ae10ddd1d4c1b5a3f1df4fe9f6211f5":[36,0,895,0,2],
+"structsubmap_1_1cosmetic__t.html#a441c59ad980d00c525b7e9e56cdf69cd":[36,0,895,0,0],
+"structsubmap_1_1cosmetic__t.html#af0b43b5998946b56b5251c12fc843084":[36,0,895,0,1],
+"structsupports__proportional.html":[36,0,896],
 "structsupports__proportional_3_01T_00_01std_1_1void__t_3_01decltype_07std_1_1declval_3_01T_01_6_feffb41c6ab1ef1da38e3c6e8b927d83.html":[36,0,898],
 "structsupports__proportional_3_01bool_01_4.html":[36,0,897],
 "structsupports__relative.html":[36,0,899],
@@ -241,13 +249,5 @@ var NAVTREEINDEX159 =
 "structtrap.html#aafab5c450397fa7ea6430a9334c2859c":[36,0,950,11],
 "structtrap.html#ab2767aee5179ad23b3ad0b6b4b2415af":[36,0,950,34],
 "structtrap.html#aba1617730ea581913a51524df89e1142":[36,0,950,7],
-"structtrap.html#abbf38effe374d03f39b3647a27e3c3a7":[36,0,950,30],
-"structtrap.html#abdb4b9b037b1554a9bbf01b9db1f8387":[36,0,950,29],
-"structtrap.html#abeb5ff27f9f78475035f22aabdcfe834":[36,0,950,0],
-"structtrap.html#acb2a07bb5d6fc8cccf2e2eb3efb45102":[36,0,950,15],
-"structtrap.html#ad3c0ca32b5c9badd2668fd9b5c7c91fc":[36,0,950,1],
-"structtrap.html#adc8f59b97597d373f7cb0bbcf061e794":[36,0,950,12],
-"structtrap.html#af4ff2a16113fc1dd7c53285c0f91c126":[36,0,950,33],
-"structtrap.html#af528369ecffbd6666b411fbbb466bc4e":[36,0,950,24],
-"structtrap.html#afefc8440f9684bc6694c3c14dc59a727":[36,0,950,3]
+"structtrap.html#abbf38effe374d03f39b3647a27e3c3a7":[36,0,950,30]
 };

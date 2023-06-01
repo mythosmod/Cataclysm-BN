@@ -1,5 +1,6 @@
 var NAVTREEINDEX69 =
 {
+"classtripoint__range.html#a58acf226a48bf7c78a70cd83b20c10f1":[36,0,953,5],
 "classtripoint__range.html#a6f2df3c80dc3fd1556aafc065d817082":[36,0,953,14],
 "classtripoint__range.html#a79fece0b8b6e62d60f4a961c8a7f7a83":[36,0,953,15],
 "classtripoint__range.html#a831e07af944fa6a47e9866677962e923":[36,0,953,16],
@@ -246,8 +247,7 @@ var NAVTREEINDEX69 =
 "classunits_1_1angle__in__radians__tag.html":[36,0,38,0],
 "classunits_1_1energy__in__joule__tag.html":[36,0,38,1],
 "classunits_1_1energy__in__joule__tag.html":[35,0,185,1],
-"classunits_1_1mass__in__milligram__tag.html":[36,0,38,2],
 "classunits_1_1mass__in__milligram__tag.html":[35,0,185,2],
-"classunits_1_1money__in__cent__tag.html":[36,0,38,3],
+"classunits_1_1mass__in__milligram__tag.html":[36,0,38,2],
 "classunits_1_1money__in__cent__tag.html":[35,0,185,3]
 };

@@ -1,5 +1,15 @@
 var NAVTREEINDEX167 =
 {
+"weather__type_8h.html#ae8decd3daf4ed96986e06992ea70d17daf6cb3e816496528d4187db53bc66567f":[37,0,1,686,12,2],
+"weather__type_8h_source.html":[37,0,1,686],
+"weighted__list_8h.html":[37,0,1,687],
+"weighted__list_8h.html#a52e13c36ee8ac4fb6d04799f3353edab":[37,0,1,687,5],
+"weighted__list_8h.html#ad503e15b20b63d86d22ccd8792d91850":[37,0,1,687,4],
+"weighted__list_8h_source.html":[37,0,1,687],
+"wincurse_8cpp.html":[37,0,1,688],
+"wincurse_8cpp_source.html":[37,0,1,688],
+"wish_8cpp.html":[37,0,1,689],
+"wish_8cpp_source.html":[37,0,1,689],
 "wisheffect_8cpp.html":[37,0,1,690],
 "wisheffect_8cpp.html#a00a9942266d028e31fc9aef9b913e821":[37,0,1,690,6],
 "wisheffect_8cpp.html#a0f151817b5b43d1a69a23423f3a320b8":[37,0,1,690,9],
