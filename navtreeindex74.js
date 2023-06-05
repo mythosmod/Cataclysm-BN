@@ -1,5 +1,8 @@
 var NAVTREEINDEX74 =
 {
+"classweather__generator.html#a63c5993e80556af46e40859dc4dcba98":[36,0,1015,2],
+"classweather__generator.html#a66b0441a13bb5aaac31eaa12c26328e9":[36,0,1015,14],
+"classweather__generator.html#a670cb2c4f99da7329c67d5c50f53cb4a":[36,0,1015,18],
 "classweather__generator.html#a6c0ba4e897f29b3a9e907ad5ed38396d":[36,0,1015,6],
 "classweather__generator.html#a8bb595162b04237688d2d4d8b396da51":[36,0,1015,8],
 "classweather__generator.html#a937cfd8913597bb89b82a0434a0cfe4e":[36,0,1015,13],
@@ -246,8 +249,5 @@ var NAVTREEINDEX74 =
 "clothing__mod_8cpp.html#a5f31d58dfc5fbaa8a5da0103182a3e81":[37,0,1,110,1],
 "clothing__mod_8cpp.html#aea9f5397c36437173351b5088c1d8f8b":[37,0,1,110,0],
 "clothing__mod_8cpp_source.html":[37,0,1,110],
-"clothing__mod_8h.html":[37,0,1,111],
-"clothing__mod_8h.html#a023ea871de42d32d9280eb48dcccb561":[37,0,1,111,8],
-"clothing__mod_8h.html#a25d4127250cb9f6dbe2aee52e5e3c0ee":[37,0,1,111,7],
-"clothing__mod_8h.html#a4fd18878a9f18248ba28ec311118222a":[37,0,1,111,3]
+"clothing__mod_8h.html":[37,0,1,111]
 };

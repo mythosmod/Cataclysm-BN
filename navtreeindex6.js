@@ -1,5 +1,8 @@
 var NAVTREEINDEX6 =
 {
+"bionics_8cpp.html#a004743abe8b867ae1932a1a3df99770d":[37,0,1,63,98],
+"bionics_8cpp.html#a018a5823d7e1524b702156d66788c335":[37,0,1,63,25],
+"bionics_8cpp.html#a0299103032df4a0375bddc6d09acf0af":[37,0,1,63,16],
 "bionics_8cpp.html#a02ed1ef06d6f12fde82b64232c55a749":[37,0,1,63,91],
 "bionics_8cpp.html#a04039c76ddb52d1bf7b03d23b46c6a03":[37,0,1,63,32],
 "bionics_8cpp.html#a04c0f30be5943072fbaecacc8a0cf848":[37,0,1,63,110],
@@ -246,8 +249,5 @@ var NAVTREEINDEX6 =
 "bodypart_8h.html#af618290c4c2de42aab87977ac7311980ac094b1c6f96ebbd604928cfd2fad0ab7":[37,0,1,68,8,11],
 "bodypart_8h.html#af618290c4c2de42aab87977ac7311980ac09d37dac773806a42c13041ba254700":[37,0,1,68,8,12],
 "bodypart_8h.html#af618290c4c2de42aab87977ac7311980ae5f21c7494ad730a0c6abf6957976cb3":[37,0,1,68,8,5],
-"bodypart_8h.html#afb2603a7303d5ed3bb17aa35ed2b2165":[37,0,1,68,22],
-"bodypart_8h.html#afd8bbe90714363f51584e69e0eaf7f72":[37,0,1,68,34],
-"bodypart_8h_source.html":[37,0,1,68],
-"bonuses_8cpp.html":[37,0,1,69]
+"bodypart_8h.html#afb2603a7303d5ed3bb17aa35ed2b2165":[37,0,1,68,22]
 };

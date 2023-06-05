@@ -2830,21 +2830,21 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="overmap_8cpp_source.html#l04991">4991</a> of file <a class="el" href="overmap_8cpp_source.html">overmap.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l04992" name="l04992"></a><span class="lineno"> 4992</span>{</div>
-<div class="line"><a id="l04993" name="l04993"></a><span class="lineno"> 4993</span>    <span class="keywordflow">switch</span>( data ) {</div>
-<div class="line"><a id="l04994" name="l04994"></a><span class="lineno"> 4994</span>        <span class="comment">// *INDENT-OFF*</span></div>
-<div class="line"><a id="l04995" name="l04995"></a><span class="lineno"> 4995</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40a3b7efa09444a31c5d58596e5bbf87d47">ot_match_type::exact</a>: <span class="keywordflow">return</span> <span class="stringliteral">&quot;EXACT&quot;</span>;</div>
-<div class="line"><a id="l04996" name="l04996"></a><span class="lineno"> 4996</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40a599dcce2998a6b40b1e38e8c6006cb0a">ot_match_type::type</a>: <span class="keywordflow">return</span> <span class="stringliteral">&quot;TYPE&quot;</span>;</div>
-<div class="line"><a id="l04997" name="l04997"></a><span class="lineno"> 4997</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40a851f5ac9941d720844d143ed9cfcf60a">ot_match_type::prefix</a>: <span class="keywordflow">return</span> <span class="stringliteral">&quot;PREFIX&quot;</span>;</div>
-<div class="line"><a id="l04998" name="l04998"></a><span class="lineno"> 4998</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40a857af22f119fefbfa24769ed2ad6d5e7">ot_match_type::contains</a>: <span class="keywordflow">return</span> <span class="stringliteral">&quot;CONTAINS&quot;</span>;</div>
-<div class="line"><a id="l04999" name="l04999"></a><span class="lineno"> 4999</span>        <span class="comment">// *INDENT-ON*</span></div>
-<div class="line"><a id="l05000" name="l05000"></a><span class="lineno"> 5000</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40a0cefc8799f07717e8c3358c8a37d9501">ot_match_type::num_ot_match_type</a>:</div>
-<div class="line"><a id="l05001" name="l05001"></a><span class="lineno"> 5001</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l05002" name="l05002"></a><span class="lineno"> 5002</span>    }</div>
-<div class="line"><a id="l05003" name="l05003"></a><span class="lineno"> 5003</span>    <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;Invalid ot_match_type&quot;</span> );</div>
-<div class="line"><a id="l05004" name="l05004"></a><span class="lineno"> 5004</span>    <a class="code hl_enumvalue" href="vehicle_8h.html#a120e32a2f241b5f666c5189a2f405eeaa5bb94a1c12413a2e5d14deabab29f2aa">abort</a>();</div>
-<div class="line"><a id="l05005" name="l05005"></a><span class="lineno"> 5005</span>}</div>
+<p class="definition">Definition at line <a class="el" href="overmap_8cpp_source.html#l04993">4993</a> of file <a class="el" href="overmap_8cpp_source.html">overmap.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l04994" name="l04994"></a><span class="lineno"> 4994</span>{</div>
+<div class="line"><a id="l04995" name="l04995"></a><span class="lineno"> 4995</span>    <span class="keywordflow">switch</span>( data ) {</div>
+<div class="line"><a id="l04996" name="l04996"></a><span class="lineno"> 4996</span>        <span class="comment">// *INDENT-OFF*</span></div>
+<div class="line"><a id="l04997" name="l04997"></a><span class="lineno"> 4997</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40a3b7efa09444a31c5d58596e5bbf87d47">ot_match_type::exact</a>: <span class="keywordflow">return</span> <span class="stringliteral">&quot;EXACT&quot;</span>;</div>
+<div class="line"><a id="l04998" name="l04998"></a><span class="lineno"> 4998</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40a599dcce2998a6b40b1e38e8c6006cb0a">ot_match_type::type</a>: <span class="keywordflow">return</span> <span class="stringliteral">&quot;TYPE&quot;</span>;</div>
+<div class="line"><a id="l04999" name="l04999"></a><span class="lineno"> 4999</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40a851f5ac9941d720844d143ed9cfcf60a">ot_match_type::prefix</a>: <span class="keywordflow">return</span> <span class="stringliteral">&quot;PREFIX&quot;</span>;</div>
+<div class="line"><a id="l05000" name="l05000"></a><span class="lineno"> 5000</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40a857af22f119fefbfa24769ed2ad6d5e7">ot_match_type::contains</a>: <span class="keywordflow">return</span> <span class="stringliteral">&quot;CONTAINS&quot;</span>;</div>
+<div class="line"><a id="l05001" name="l05001"></a><span class="lineno"> 5001</span>        <span class="comment">// *INDENT-ON*</span></div>
+<div class="line"><a id="l05002" name="l05002"></a><span class="lineno"> 5002</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40a0cefc8799f07717e8c3358c8a37d9501">ot_match_type::num_ot_match_type</a>:</div>
+<div class="line"><a id="l05003" name="l05003"></a><span class="lineno"> 5003</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l05004" name="l05004"></a><span class="lineno"> 5004</span>    }</div>
+<div class="line"><a id="l05005" name="l05005"></a><span class="lineno"> 5005</span>    <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;Invalid ot_match_type&quot;</span> );</div>
+<div class="line"><a id="l05006" name="l05006"></a><span class="lineno"> 5006</span>    <a class="code hl_enumvalue" href="vehicle_8h.html#a120e32a2f241b5f666c5189a2f405eeaa5bb94a1c12413a2e5d14deabab29f2aa">abort</a>();</div>
+<div class="line"><a id="l05007" name="l05007"></a><span class="lineno"> 5007</span>}</div>
 <div class="ttc" id="aenums_8h_html_ac7c2392f800a8be2feb093ef5fe48d40a0cefc8799f07717e8c3358c8a37d9501"><div class="ttname"><a href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40a0cefc8799f07717e8c3358c8a37d9501">ot_match_type::num_ot_match_type</a></div><div class="ttdeci">@ num_ot_match_type</div></div>
 <div class="ttc" id="aenums_8h_html_ac7c2392f800a8be2feb093ef5fe48d40a3b7efa09444a31c5d58596e5bbf87d47"><div class="ttname"><a href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40a3b7efa09444a31c5d58596e5bbf87d47">ot_match_type::exact</a></div><div class="ttdeci">@ exact</div></div>
 <div class="ttc" id="aenums_8h_html_ac7c2392f800a8be2feb093ef5fe48d40a599dcce2998a6b40b1e38e8c6006cb0a"><div class="ttname"><a href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40a599dcce2998a6b40b1e38e8c6006cb0a">ot_match_type::type</a></div><div class="ttdeci">@ type</div></div>
@@ -3739,7 +3739,7 @@ template&lt;typename C , typename E  = typename C::mapped_type&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceio.html">io</a></li>
-    <li class="footer">Generated on Sun Jun 4 2023 20:42:23 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Mon Jun 5 2023 07:04:17 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>
