@@ -1337,6 +1337,10 @@ var namespaces_dup =
       [ "all_templates", "namespacenpc__factions.html#a0cfe595c2dd834c99b01b9b883177f93", null ],
       [ "relation_strs", "namespacenpc__factions.html#abc290a7ac3e44667ef68d4371334b535", null ]
     ] ],
+    [ "npc_overmap", "namespacenpc__overmap.html", [
+      [ "spawn_chance_in_hour", "namespacenpc__overmap.html#a80ffb65eecf888d8d81c8ef5a306dab5", null ],
+      [ "density_search_radius", "namespacenpc__overmap.html#ac0b9c7d41702806f258eff73b1c8fc8d", null ]
+    ] ],
     [ "npc_trading", "namespacenpc__trading.html", [
       [ "cash_to_favor", "namespacenpc__trading.html#a501e43e4b4136a85e2773fbc89f19e69", null ],
       [ "init_buying", "namespacenpc__trading.html#a454c80bb5b4ca14591ff5ec7d595111a", null ],

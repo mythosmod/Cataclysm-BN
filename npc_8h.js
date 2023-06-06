@@ -276,6 +276,7 @@ var npc_8h =
     [ "operator<<", "npc_8h.html#ac5eadabb56ab217914a8c640805b3f89", null ],
     [ "parse_tags", "npc_8h.html#aee50a2d29c2194e6df726113b025e55b", null ],
     [ "pick_follower", "npc_8h.html#ad977602826da7ddf9f680b18647ea6b9", null ],
+    [ "spawn_chance_in_hour", "npc_8h.html#a80ffb65eecf888d8d81c8ef5a306dab5", null ],
     [ "unarmed_value", "npc_8h.html#a64daf871b45496787e445f932f4381d3", null ],
     [ "weapon_value", "npc_8h.html#a6fa541a904a63a5b95b20ce9000254d8", null ],
     [ "wielded_value", "npc_8h.html#a03081587a4844207a7386844f8a31cd5", null ],
@@ -284,5 +285,6 @@ var npc_8h =
     [ "cbm_recharge_strs", "npc_8h.html#ae92dafc799ce898955aa8993b77e51b1", null ],
     [ "cbm_reserve_strs", "npc_8h.html#a9c8560e2c2b6525f4fcef177d828ecf2", null ],
     [ "combat_engagement_strs", "npc_8h.html#a223b9944e91a22dd388d4fdcdf5be0b6", null ],
+    [ "density_search_radius", "npc_8h.html#ac0b9c7d41702806f258eff73b1c8fc8d", null ],
     [ "npc_threat_dir", "npc_8h.html#ac64d88b423e19a44c664d1974d33b0d0", null ]
 ];
