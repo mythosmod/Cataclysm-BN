@@ -1,5 +1,6 @@
 var NAVTREEINDEX129 =
 {
+"overmap__ui_8h.html#ae7bd063b100bbac7c7cfde182f63f1ee":[37,0,1,485,1],
 "overmap__ui_8h_source.html":[37,0,1,485],
 "overmapbuffer_8cpp.html":[37,0,1,486],
 "overmapbuffer_8cpp.html#a2699a538f243d11c578e0b161387db39":[37,0,1,486,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX129 =
 "pickup_8cpp.html#a4d4caa4e92f3fac01f0eb0922f602abb":[37,0,1,496,6],
 "pickup_8cpp.html#a63a2d8446a101a6b77a1a2efbfa24391":[37,0,1,496,11],
 "pickup_8cpp.html#a777d97e4e0b5f526a83ac7c820cb92e1":[37,0,1,496,5],
-"pickup_8cpp.html#a777d97e4e0b5f526a83ac7c820cb92e1a2f0d18fc0d0fa4a6cd92dc328501874d":[37,0,1,496,5,4],
-"pickup_8cpp.html#a777d97e4e0b5f526a83ac7c820cb92e1a37e5e1ac1cb8d085e53c84e8ed6514e9":[37,0,1,496,5,6]
+"pickup_8cpp.html#a777d97e4e0b5f526a83ac7c820cb92e1a2f0d18fc0d0fa4a6cd92dc328501874d":[37,0,1,496,5,4]
 };

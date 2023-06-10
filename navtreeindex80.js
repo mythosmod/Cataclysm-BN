@@ -1,5 +1,6 @@
 var NAVTREEINDEX80 =
 {
+"damage_8h.html#ae63a2cf8429f9edf77b547d34ffe4e7a":[37,0,1,157,5],
 "damage_8h.html#ae63a2cf8429f9edf77b547d34ffe4e7aa12e559f29e023db673e9251b9337d8dd":[37,0,1,157,5,6],
 "damage_8h.html#ae63a2cf8429f9edf77b547d34ffe4e7aa1d827b8c2d8d7d5008cb94273dd20517":[37,0,1,157,5,8],
 "damage_8h.html#ae63a2cf8429f9edf77b547d34ffe4e7aa31df3b2996d2d10b2ca3e275899fdddb":[37,0,1,157,5,9],
@@ -248,6 +249,5 @@ var NAVTREEINDEX80 =
 "dialogue__win_8cpp_source.html":[37,0,1,166],
 "dialogue__win_8h.html":[37,0,1,167],
 "dialogue__win_8h.html#a9a80e8134ac6483dd4c576b3c5193d06":[37,0,1,167,2],
-"dialogue__win_8h_source.html":[37,0,1,167],
-"diary_8cpp.html":[37,0,1,168]
+"dialogue__win_8h_source.html":[37,0,1,167]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX70 =
 {
+"classunits_1_1energy__in__joule__tag.html":[36,0,38,1],
 "classunits_1_1mass__in__milligram__tag.html":[35,0,186,2],
 "classunits_1_1mass__in__milligram__tag.html":[36,0,38,2],
 "classunits_1_1money__in__cent__tag.html":[36,0,38,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX70 =
 "classvehicle.html#a190ccc33782a28e26089122eec15f767":[36,0,973,223],
 "classvehicle.html#a197b7a92e0fe24d69d2b3368df720059":[36,0,973,206],
 "classvehicle.html#a1994ca720f9bd60f9fc14e9cf27e0381":[36,0,973,327],
-"classvehicle.html#a19f605eaa54a2acce16ecab0b0df596e":[36,0,973,41],
-"classvehicle.html#a1a55c996486f67a46b7978f13cd1d0e1":[36,0,973,432]
+"classvehicle.html#a19f605eaa54a2acce16ecab0b0df596e":[36,0,973,41]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX139 =
 {
+"structcata_1_1list_1_1group.html#a5304a212587c64d22e6d839fa38f3145":[36,0,14,11,7,9],
 "structcata_1_1list_1_1group.html#a63f046f7c130b6226b8613e8a25d1c24":[36,0,14,11,7,0],
 "structcata_1_1list_1_1group.html#a63f046f7c130b6226b8613e8a25d1c24":[35,0,76,12,7,0],
 "structcata_1_1list_1_1group.html#a7431b92fe2b04639e211d22725f853e1":[36,0,14,11,7,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX139 =
 "structcata__variant__detail_1_1convert_3_01cata__variant__type_1_1matype__id_01_4.html":[35,0,80,11],
 "structcata__variant__detail_1_1convert_3_01cata__variant__type_1_1matype__id_01_4.html":[36,0,16,11],
 "structcata__variant__detail_1_1convert_3_01cata__variant__type_1_1mtype__id_01_4.html":[35,0,80,12],
-"structcata__variant__detail_1_1convert_3_01cata__variant__type_1_1mtype__id_01_4.html":[36,0,16,12],
-"structcata__variant__detail_1_1convert_3_01cata__variant__type_1_1mutagen__technique_01_4.html":[35,0,80,13]
+"structcata__variant__detail_1_1convert_3_01cata__variant__type_1_1mtype__id_01_4.html":[36,0,16,12]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX145 =
 {
+"structdetail_1_1uint128__wrapper.html#a82aaae34184928e8119e77b6340d6ae1":[36,0,21,107,2],
 "structdetail_1_1uint128__wrapper.html#ab6711e88022a76035685c6cd8cfe7eff":[35,0,99,108,5],
 "structdetail_1_1uint128__wrapper.html#ab6711e88022a76035685c6cd8cfe7eff":[36,0,21,107,5],
 "structdetail_1_1uint128__wrapper.html#af7508058fe07fe8cba7b1dbc43e0fa83":[36,0,21,107,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX145 =
 "structenum__traits_3_01character__movemode_01_4.html#a68447aa5ab83cb0fbf6bd38c16266a55":[36,0,264,0],
 "structenum__traits_3_01character__stat_01_4.html":[36,0,265],
 "structenum__traits_3_01character__stat_01_4.html#abeb70c3440ea7fa6758957885c688b22":[36,0,265,0],
-"structenum__traits_3_01clothing__mod__type_01_4.html":[36,0,266],
-"structenum__traits_3_01clothing__mod__type_01_4.html#a1882085c74d2e96760d04075aaabe41e":[36,0,266,0]
+"structenum__traits_3_01clothing__mod__type_01_4.html":[36,0,266]
 };

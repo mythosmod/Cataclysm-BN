@@ -1,5 +1,6 @@
 var NAVTREEINDEX159 =
 {
+"structstomach__digest__rates.html#ac4b13d5d5a70949cc49d29fbdc9c4f68":[36,0,884,1],
 "structstring__col.html":[36,0,885],
 "structstring__col.html#a680469260fae389342891555c58ae962":[36,0,885,1],
 "structstring__col.html#a70876fbffff2cdb5a2c8d96c20092752":[36,0,885,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX159 =
 "structtrap.html#a7cde54061e737d7f81c0a605cce70f0e":[36,0,950,4],
 "structtrap.html#a7dd8117e839b760a9ffa187d3670f4ed":[36,0,950,25],
 "structtrap.html#a8342e2f67509ba3c791ff104126f47e4":[36,0,950,9],
-"structtrap.html#a834b75772b7d0c5a3b7dab107053580c":[36,0,950,36],
-"structtrap.html#a92373743ed980b356de173c228c79499":[36,0,950,27]
+"structtrap.html#a834b75772b7d0c5a3b7dab107053580c":[36,0,950,36]
 };

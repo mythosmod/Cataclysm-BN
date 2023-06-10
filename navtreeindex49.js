@@ -1,5 +1,6 @@
 var NAVTREEINDEX49 =
 {
+"classjmapgen__vehicle.html#a63ce8ee6cdb7ca4ee58469fb828672b0":[36,0,524,6],
 "classjmapgen__vehicle.html#a8a1790013d7e02ecbc0f72b88183be9a":[36,0,524,1],
 "classjmapgen__vehicle.html#af17122e21a0486829aff715d2f89b259":[36,0,524,5],
 "classjmapgen__vending__machine.html":[36,0,525],
@@ -248,6 +249,5 @@ var NAVTREEINDEX49 =
 "classma__buff.html#a18a99687fe368099d0651e497a959369":[36,0,571,24],
 "classma__buff.html#a18f92931fcf450ac8dd278f2086d4793":[36,0,571,6],
 "classma__buff.html#a195274137fc388c7f14b9282dcd5be01":[36,0,571,2],
-"classma__buff.html#a19f95bb8b3d5330f5008a3bd3ed7696b":[36,0,571,29],
-"classma__buff.html#a1da651bde74a641607ce6317254c24ef":[36,0,571,22]
+"classma__buff.html#a19f95bb8b3d5330f5008a3bd3ed7696b":[36,0,571,29]
 };

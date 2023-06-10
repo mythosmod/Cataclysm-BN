@@ -1,5 +1,6 @@
 var NAVTREEINDEX81 =
 {
+"diary_8cpp.html":[37,0,1,168],
 "diary_8cpp_source.html":[37,0,1,168],
 "diary_8h.html":[37,0,1,169],
 "diary_8h.html#a9195b6e132c8e40255f686bfc2f040c4":[37,0,1,169,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX81 =
 "enums_8h.html#a59ef860501e978fb156671fba76286bc":[37,0,1,194,28],
 "enums_8h.html#a5f18231241dd5fb662d1c5313636ec5d":[37,0,1,194,26],
 "enums_8h.html#a5f18231241dd5fb662d1c5313636ec5da485a07b934a4c717af6dd180aadcb207":[37,0,1,194,26,4],
-"enums_8h.html#a5f18231241dd5fb662d1c5313636ec5da6d106a78eac33e56fc089873c46de0dd":[37,0,1,194,26,1],
-"enums_8h.html#a5f18231241dd5fb662d1c5313636ec5da97a8a8356c8e6ec71bc071918368ab20":[37,0,1,194,26,0]
+"enums_8h.html#a5f18231241dd5fb662d1c5313636ec5da6d106a78eac33e56fc089873c46de0dd":[37,0,1,194,26,1]
 };

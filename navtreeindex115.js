@@ -1,5 +1,6 @@
 var NAVTREEINDEX115 =
 {
+"namespaceclothing__mods.html#a023ea871de42d32d9280eb48dcccb561":[35,0,90,3],
 "namespaceclothing__mods.html#a25d4127250cb9f6dbe2aee52e5e3c0ee":[35,0,90,2],
 "namespaceclothing__mods.html#a5bf63dd4b0368188aa71cfa230cfa989":[35,0,90,4],
 "namespaceclothing__mods.html#a76b8b8dcfd6c0d1af778f5722bbb3bdb":[35,0,90,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX115 =
 "namespacedetail.html#a208b54c1c61a9bce9df4531a657a0c64":[35,0,99,141],
 "namespacedetail.html#a228d20c6f5177f877c9a3178a55c8732":[35,0,99,295],
 "namespacedetail.html#a23167f2a05309fdd698029e5c73282b3":[35,0,99,285],
-"namespacedetail.html#a2376bae6f57f47643a9cead082df1f37":[35,0,99,151],
-"namespacedetail.html#a23e8738bd890a2f6a9e4a7632489cd25":[35,0,99,261]
+"namespacedetail.html#a2376bae6f57f47643a9cead082df1f37":[35,0,99,151]
 };

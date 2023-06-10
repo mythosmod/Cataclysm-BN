@@ -1,5 +1,6 @@
 var NAVTREEINDEX137 =
 {
+"structbash__results.html#a7b4071c6742fab2f9aa93c9275c26b92":[36,0,98,2],
 "structbash__results.html#aca607ab5e6884fe03b2119ffecd88419":[36,0,98,6],
 "structbash__results.html#afe659e698646174add3359fbb95e9309":[36,0,98,3],
 "structbasic__format__specs.html":[36,0,103],
@@ -248,6 +249,5 @@ var NAVTREEINDEX137 =
 "structcata_1_1event__detail_1_1event__spec_3_01event__type_1_1activates__artifact_01_4.html":[35,0,76,0,1],
 "structcata_1_1event__detail_1_1event__spec_3_01event__type_1_1activates__artifact_01_4.html#ae723bf7d0556ab9ca6562ff3059e48c8":[35,0,76,0,1,0],
 "structcata_1_1event__detail_1_1event__spec_3_01event__type_1_1activates__artifact_01_4.html#ae723bf7d0556ab9ca6562ff3059e48c8":[36,0,14,0,1,0],
-"structcata_1_1event__detail_1_1event__spec_3_01event__type_1_1activates__mininuke_01_4.html":[35,0,76,0,2],
-"structcata_1_1event__detail_1_1event__spec_3_01event__type_1_1activates__mininuke_01_4.html":[36,0,14,0,2]
+"structcata_1_1event__detail_1_1event__spec_3_01event__type_1_1activates__mininuke_01_4.html":[35,0,76,0,2]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX146 =
 {
+"structenum__traits_3_01clothing__mod__type_01_4.html#a1882085c74d2e96760d04075aaabe41e":[36,0,266,0],
 "structenum__traits_3_01computer__action_01_4.html":[36,0,267],
 "structenum__traits_3_01computer__action_01_4.html#ac4d419f753c9d84064eb01f239844f4d":[36,0,267,0],
 "structenum__traits_3_01computer__failure__type_01_4.html":[36,0,268],
@@ -248,6 +249,5 @@ var NAVTREEINDEX146 =
 "structexplosion__handler_1_1ExplosionEvent_1_1PropelledEntity.html#a3209ecca07d30340be6dbc14473d87b6":[35,0,109,2,1,1],
 "structexplosion__handler_1_1ExplosionEvent_1_1PropelledEntity.html#a38f7a4cf68fe41a27c6cc08d2be27b94":[35,0,109,2,1,4],
 "structexplosion__handler_1_1ExplosionEvent_1_1PropelledEntity.html#a38f7a4cf68fe41a27c6cc08d2be27b94":[36,0,24,1,1,4],
-"structexplosion__handler_1_1ExplosionEvent_1_1PropelledEntity.html#a7b4d70a4672acef234e40913f3bb163b":[36,0,24,1,1,3],
-"structexplosion__handler_1_1ExplosionEvent_1_1PropelledEntity.html#a7b4d70a4672acef234e40913f3bb163b":[35,0,109,2,1,3]
+"structexplosion__handler_1_1ExplosionEvent_1_1PropelledEntity.html#a7b4d70a4672acef234e40913f3bb163b":[36,0,24,1,1,3]
 };

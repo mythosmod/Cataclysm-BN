@@ -1,5 +1,6 @@
 var NAVTREEINDEX138 =
 {
+"structcata_1_1event__detail_1_1event__spec_3_01event__type_1_1activates__mininuke_01_4.html":[36,0,14,0,2],
 "structcata_1_1event__detail_1_1event__spec_3_01event__type_1_1administers__mutagen_01_4.html":[35,0,76,0,3],
 "structcata_1_1event__detail_1_1event__spec_3_01event__type_1_1administers__mutagen_01_4.html":[36,0,14,0,3],
 "structcata_1_1event__detail_1_1event__spec_3_01event__type_1_1administers__mutagen_01_4.html#a20e3fd5f343867cec236cd4eb24a5dfc":[35,0,76,0,3,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX138 =
 "structcata_1_1list_1_1eq__to.html#abb62785cef51545ae664a2083372687f":[35,0,76,12,6,1],
 "structcata_1_1list_1_1group.html":[36,0,14,11,7],
 "structcata_1_1list_1_1group.html":[35,0,76,12,7],
-"structcata_1_1list_1_1group.html#a5304a212587c64d22e6d839fa38f3145":[35,0,76,12,7,9],
-"structcata_1_1list_1_1group.html#a5304a212587c64d22e6d839fa38f3145":[36,0,14,11,7,9]
+"structcata_1_1list_1_1group.html#a5304a212587c64d22e6d839fa38f3145":[35,0,76,12,7,9]
 };

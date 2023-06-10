@@ -1,5 +1,6 @@
 var NAVTREEINDEX114 =
 {
+"namespacebase__camps.html#a7355c36e3472cb0ef0668630f341773fa818c49316b9403bc7a6a3d8ec75901df":[35,0,73,2,3],
 "namespacebase__camps.html#a7355c36e3472cb0ef0668630f341773fa9724074a463e0b317a69eafc0e616151":[35,0,73,2,4],
 "namespacebase__camps.html#a7355c36e3472cb0ef0668630f341773fae4e801d22eadca3f3ac30a9d27acc01a":[35,0,73,2,6],
 "namespacebase__camps.html#a7355c36e3472cb0ef0668630f341773faf5bfe44e49853d7b1270221eda45a0d6":[35,0,73,2,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX114 =
 "namespacecharge__removal__blacklist.html#aaeadabf202652885cbe0c4ee67c0b3d8":[35,0,88,2],
 "namespacecity__buildings.html":[35,0,89],
 "namespacecity__buildings.html#a6be0b7f7107b43f1a3e7a3f3b1939266":[35,0,89,0],
-"namespaceclothing__mods.html":[35,0,90],
-"namespaceclothing__mods.html#a023ea871de42d32d9280eb48dcccb561":[35,0,90,3]
+"namespaceclothing__mods.html":[35,0,90]
 };
