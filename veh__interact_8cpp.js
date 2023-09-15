@@ -3,6 +3,7 @@ var veh__interact_8cpp =
     [ "veh_interact::install_info_t", "structveh__interact_1_1install__info__t.html", "structveh__interact_1_1install__info__t" ],
     [ "act_vehicle_siphon", "veh__interact_8cpp.html#a87f9f872387ab68271fd6d3043163044", null ],
     [ "act_vehicle_unload_fuel", "veh__interact_8cpp.html#a42fd01b44f7cf84a261dc352dd4b1b69", null ],
+    [ "flag_MOUNTABLE", "veh__interact_8cpp.html#abca795246deac76d5cf0515c16bb75c8", null ],
     [ "health_color", "veh__interact_8cpp.html#ac36048805dfb9355812e81d1db8377e5", null ],
     [ "jack_quality", "veh__interact_8cpp.html#a16b51dc391ef4c2c4d881f16fa297f1c", null ],
     [ "sort_uilist_entries_by_line_drawing", "veh__interact_8cpp.html#a57b1e7fc0fbee16bf3e192bdc2589287", null ],

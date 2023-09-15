@@ -96,6 +96,7 @@ var bionics_8cpp =
     [ "effect_weed_high", "bionics_8cpp.html#a07c1990d0d8dd3b8a3305dca2429de8a", null ],
     [ "fault_bionic_nonsterile", "bionics_8cpp.html#a26ecdac9a64be27edf58e27505e8548b", null ],
     [ "faulty_bionics", "bionics_8cpp.html#a3edb6c10021e3a1c5cdcf90079134cd7", null ],
+    [ "flag_BIONIC_FAULTY", "bionics_8cpp.html#a122e53c5d428d1e806836bd10e2fc215", null ],
     [ "flag_BIONIC_GUN", "bionics_8cpp.html#a0772dcf38d686945c1abff3350197b2e", null ],
     [ "flag_BIONIC_TOGGLED", "bionics_8cpp.html#a9d0a087eadafeb7d0ad05d4a8620e0a8", null ],
     [ "flag_BIONIC_WEAPON", "bionics_8cpp.html#a004743abe8b867ae1932a1a3df99770d", null ],

@@ -108,6 +108,7 @@ $(document).ready(function(){initNavTree('main__menu_8cpp.html',''); initResizab
 <code>#include &quot;<a class="el" href="avatar_8h_source.html">avatar.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="cata__utility_8h_source.html">cata_utility.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="catacharset_8h_source.html">catacharset.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="catalua_8h_source.html">catalua.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="character__id_8h_source.html">character_id.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="color_8h_source.html">color.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="debug_8h_source.html">debug.h</a>&quot;</code><br />
@@ -208,17 +209,17 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="a576372e704f1d08ac6ef8dbc7d1adc87a5dfd352dd6b7a5d118237fcf1e19fcc1" name="a576372e704f1d08ac6ef8dbc7d1adc87a5dfd352dd6b7a5d118237fcf1e19fcc1"></a>QUIT&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="main__menu_8cpp_source.html#l00053">53</a> of file <a class="el" href="main__menu_8cpp_source.html">main_menu.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                          : <span class="keywordtype">int</span> {</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <a class="code hl_enumvalue" href="main__menu_8cpp.html#a576372e704f1d08ac6ef8dbc7d1adc87a531c7e580c353adb5d26377687285732">MOTD</a> = 0,</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <a class="code hl_enumvalue" href="main__menu_8cpp.html#a576372e704f1d08ac6ef8dbc7d1adc87aa1ff1993c9a166ab5ca3861c9036f20c">NEWCHAR</a> = 1,</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <a class="code hl_enumvalue" href="main__menu_8cpp.html#a576372e704f1d08ac6ef8dbc7d1adc87a8a06004da7f5b3fa84b4a7b177fe6986">LOADCHAR</a> = 2,</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <a class="code hl_struct" href="structWORLD.html">WORLD</a> = 3,</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <a class="code hl_enumvalue" href="main__menu_8cpp.html#a576372e704f1d08ac6ef8dbc7d1adc87aed6f7aca7887a927b9ed3d62aa347a86">SETTINGS</a> = 4,</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <a class="code hl_enumvalue" href="main__menu_8cpp.html#a576372e704f1d08ac6ef8dbc7d1adc87a4fc963e213bba362778f5c175eb4d5ff">HELP</a> = 5,</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <a class="code hl_enumvalue" href="main__menu_8cpp.html#a576372e704f1d08ac6ef8dbc7d1adc87ae5f53fee4717a20069da09aa7a0f614d">CREDITS</a> = 6,</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <a class="code hl_enumvalue" href="main__menu_8cpp.html#a576372e704f1d08ac6ef8dbc7d1adc87a5dfd352dd6b7a5d118237fcf1e19fcc1">QUIT</a> = 7</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>};</div>
+<p class="definition">Definition at line <a class="el" href="main__menu_8cpp_source.html#l00054">54</a> of file <a class="el" href="main__menu_8cpp_source.html">main_menu.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                          : <span class="keywordtype">int</span> {</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <a class="code hl_enumvalue" href="main__menu_8cpp.html#a576372e704f1d08ac6ef8dbc7d1adc87a531c7e580c353adb5d26377687285732">MOTD</a> = 0,</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <a class="code hl_enumvalue" href="main__menu_8cpp.html#a576372e704f1d08ac6ef8dbc7d1adc87aa1ff1993c9a166ab5ca3861c9036f20c">NEWCHAR</a> = 1,</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <a class="code hl_enumvalue" href="main__menu_8cpp.html#a576372e704f1d08ac6ef8dbc7d1adc87a8a06004da7f5b3fa84b4a7b177fe6986">LOADCHAR</a> = 2,</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <a class="code hl_struct" href="structWORLD.html">WORLD</a> = 3,</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <a class="code hl_enumvalue" href="main__menu_8cpp.html#a576372e704f1d08ac6ef8dbc7d1adc87aed6f7aca7887a927b9ed3d62aa347a86">SETTINGS</a> = 4,</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <a class="code hl_enumvalue" href="main__menu_8cpp.html#a576372e704f1d08ac6ef8dbc7d1adc87a4fc963e213bba362778f5c175eb4d5ff">HELP</a> = 5,</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <a class="code hl_enumvalue" href="main__menu_8cpp.html#a576372e704f1d08ac6ef8dbc7d1adc87ae5f53fee4717a20069da09aa7a0f614d">CREDITS</a> = 6,</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <a class="code hl_enumvalue" href="main__menu_8cpp.html#a576372e704f1d08ac6ef8dbc7d1adc87a5dfd352dd6b7a5d118237fcf1e19fcc1">QUIT</a> = 7</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>};</div>
 <div class="ttc" id="amain__menu_8cpp_html_a576372e704f1d08ac6ef8dbc7d1adc87a4fc963e213bba362778f5c175eb4d5ff"><div class="ttname"><a href="main__menu_8cpp.html#a576372e704f1d08ac6ef8dbc7d1adc87a4fc963e213bba362778f5c175eb4d5ff">main_menu_opts::HELP</a></div><div class="ttdeci">@ HELP</div></div>
 <div class="ttc" id="amain__menu_8cpp_html_a576372e704f1d08ac6ef8dbc7d1adc87a531c7e580c353adb5d26377687285732"><div class="ttname"><a href="main__menu_8cpp.html#a576372e704f1d08ac6ef8dbc7d1adc87a531c7e580c353adb5d26377687285732">main_menu_opts::MOTD</a></div><div class="ttdeci">@ MOTD</div></div>
 <div class="ttc" id="amain__menu_8cpp_html_a576372e704f1d08ac6ef8dbc7d1adc87a5dfd352dd6b7a5d118237fcf1e19fcc1"><div class="ttname"><a href="main__menu_8cpp.html#a576372e704f1d08ac6ef8dbc7d1adc87a5dfd352dd6b7a5d118237fcf1e19fcc1">main_menu_opts::QUIT</a></div><div class="ttdeci">@ QUIT</div></div>
@@ -255,12 +256,12 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="main__menu_8cpp_source.html#l00065">65</a> of file <a class="el" href="main__menu_8cpp_source.html">main_menu.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>{</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>( o );</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>}</div>
+<p class="definition">Definition at line <a class="el" href="main__menu_8cpp_source.html#l00066">66</a> of file <a class="el" href="main__menu_8cpp_source.html">main_menu.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>{</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>( o );</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>}</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="main__menu_8cpp_source.html#l00177">main_menu::display_sub_menu()</a>, <a class="el" href="main__menu_8cpp_source.html#l00554">main_menu::opening_screen()</a>, and <a class="el" href="main__menu_8cpp_source.html#l00260">main_menu::print_menu()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="main__menu_8cpp_source.html#l00178">main_menu::display_sub_menu()</a>, <a class="el" href="main__menu_8cpp_source.html#l00563">main_menu::opening_screen()</a>, and <a class="el" href="main__menu_8cpp_source.html#l00269">main_menu::print_menu()</a>.</p>
 
 </div>
 </div>
@@ -288,30 +289,30 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="main__menu_8cpp_source.html#l00100">100</a> of file <a class="el" href="main__menu_8cpp_source.html">main_menu.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>{</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="keywordtype">int</span> len = strlen( s );</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_function" href="fmtlib__format_8h.html#a36b7e236fa4242d8655b508bbebb697f">ptr</a> = s;</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <span class="keywordtype">int</span> w = 0;</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="keywordtype">bool</span> inside_tag = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="keywordflow">while</span>( len &gt; 0 ) {</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        uint32_t ch = <a class="code hl_function" href="catacharset_8cpp.html#a2227e8c0afd74ed174cbb4daf8e46ab2">UTF8_getch</a>( &amp;<a class="code hl_function" href="fmtlib__format_8h.html#a36b7e236fa4242d8655b508bbebb697f">ptr</a>, &amp;len );</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        <span class="keywordflow">if</span>( ch == <a class="code hl_define" href="catacharset_8h.html#a87e4d06df10657ae54780a7b95378480">UNKNOWN_UNICODE</a> ) {</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        }</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        <span class="keywordflow">if</span>( ch == <span class="charliteral">&#39;&lt;&#39;</span> ) {</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>            inside_tag = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( ch == <span class="charliteral">&#39;&gt;&#39;</span> ) {</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>            inside_tag = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>            <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        }</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        <span class="keywordflow">if</span>( inside_tag ) {</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>            <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        }</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        w += <a class="code hl_function" href="wcwidth_8cpp.html#aead942898baf7a1b82cd23e582f62a16">mk_wcwidth</a>( ch );</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    }</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <span class="keywordflow">return</span> w;</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>}</div>
+<p class="definition">Definition at line <a class="el" href="main__menu_8cpp_source.html#l00101">101</a> of file <a class="el" href="main__menu_8cpp_source.html">main_menu.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>{</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="keywordtype">int</span> len = strlen( s );</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_function" href="fmtlib__format_8h.html#a36b7e236fa4242d8655b508bbebb697f">ptr</a> = s;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="keywordtype">int</span> w = 0;</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="keywordtype">bool</span> inside_tag = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <span class="keywordflow">while</span>( len &gt; 0 ) {</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        uint32_t ch = <a class="code hl_function" href="catacharset_8cpp.html#a2227e8c0afd74ed174cbb4daf8e46ab2">UTF8_getch</a>( &amp;<a class="code hl_function" href="fmtlib__format_8h.html#a36b7e236fa4242d8655b508bbebb697f">ptr</a>, &amp;len );</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        <span class="keywordflow">if</span>( ch == <a class="code hl_define" href="catacharset_8h.html#a87e4d06df10657ae54780a7b95378480">UNKNOWN_UNICODE</a> ) {</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        }</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        <span class="keywordflow">if</span>( ch == <span class="charliteral">&#39;&lt;&#39;</span> ) {</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>            inside_tag = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( ch == <span class="charliteral">&#39;&gt;&#39;</span> ) {</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>            inside_tag = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        }</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        <span class="keywordflow">if</span>( inside_tag ) {</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        }</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        w += <a class="code hl_function" href="wcwidth_8cpp.html#aead942898baf7a1b82cd23e582f62a16">mk_wcwidth</a>( ch );</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    }</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <span class="keywordflow">return</span> w;</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>}</div>
 <div class="ttc" id="acatacharset_8cpp_html_a2227e8c0afd74ed174cbb4daf8e46ab2"><div class="ttname"><a href="catacharset_8cpp.html#a2227e8c0afd74ed174cbb4daf8e46ab2">UTF8_getch</a></div><div class="ttdeci">uint32_t UTF8_getch(const char **src, int *srclen)</div><div class="ttdef"><b>Definition:</b> <a href="catacharset_8cpp_source.html#l00018">catacharset.cpp:18</a></div></div>
 <div class="ttc" id="acatacharset_8h_html_a87e4d06df10657ae54780a7b95378480"><div class="ttname"><a href="catacharset_8h.html#a87e4d06df10657ae54780a7b95378480">UNKNOWN_UNICODE</a></div><div class="ttdeci">#define UNKNOWN_UNICODE</div><div class="ttdef"><b>Definition:</b> <a href="catacharset_8h_source.html#l00013">catacharset.h:13</a></div></div>
 <div class="ttc" id="afmtlib__format_8h_html_a36b7e236fa4242d8655b508bbebb697f"><div class="ttname"><a href="fmtlib__format_8h.html#a36b7e236fa4242d8655b508bbebb697f">ptr</a></div><div class="ttdeci">const void * ptr(const T *p)</div><div class="ttdoc">\rst Converts p to const void* for pointer formatting.</div><div class="ttdef"><b>Definition:</b> <a href="fmtlib__format_8h_source.html#l04100">fmtlib_format.h:4100</a></div></div>
@@ -319,7 +320,7 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="wcwidth_8cpp_source.html#l00094">mk_wcwidth()</a>, <a class="el" href="fmtlib__format_8h_source.html#l04100">ptr()</a>, <a class="el" href="catacharset_8h_source.html#l00013">UNKNOWN_UNICODE</a>, and <a class="el" href="catacharset_8cpp_source.html#l00018">UTF8_getch()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="main__menu_8cpp_source.html#l00260">main_menu::print_menu()</a>, and <a class="el" href="main__menu_8cpp_source.html#l00125">main_menu::print_menu_items()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="main__menu_8cpp_source.html#l00269">main_menu::print_menu()</a>, and <a class="el" href="main__menu_8cpp_source.html#l00126">main_menu::print_menu_items()</a>.</p>
 
 </div>
 </div>
@@ -344,9 +345,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="main__menu_8cpp_source.html#l00063">63</a> of file <a class="el" href="main__menu_8cpp_source.html">main_menu.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="main__menu_8cpp_source.html#l00064">64</a> of file <a class="el" href="main__menu_8cpp_source.html">main_menu.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="main__menu_8cpp_source.html#l00554">main_menu::opening_screen()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="main__menu_8cpp_source.html#l00563">main_menu::opening_screen()</a>.</p>
 
 </div>
 </div>
@@ -356,7 +357,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="main__menu_8cpp.html">main_menu.cpp</a></li>
-    <li class="footer">Generated on Sat Jun 10 2023 11:49:58 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Sep 15 2023 08:27:20 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

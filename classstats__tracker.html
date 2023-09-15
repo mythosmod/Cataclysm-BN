@@ -360,7 +360,7 @@ Private Attributes</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="stats__tracker_8h_source.html#l00183">data</a>, <a class="el" href="stats__tracker_8h_source.html#l00190">event_transformation_states</a>, <a class="el" href="stats__tracker_8h_source.html#l00194">initial_scores</a>, <a class="el" href="stats__tracker_8h_source.html#l00192">stat_states</a>, and <a class="el" href="stats__tracker_8cpp_source.html#l00256">unwatch_all()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l00477">game::setup()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l00478">game::setup()</a>.</p>
 
 </div>
 </div>
@@ -380,16 +380,16 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="savegame__json_8cpp_source.html#l03733">3733</a> of file <a class="el" href="savegame__json_8cpp_source.html">savegame_json.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l03734" name="l03734"></a><span class="lineno"> 3734</span>{</div>
-<div class="line"><a id="l03735" name="l03735"></a><span class="lineno"> 3735</span>    <a class="code hl_class" href="classJsonObject.html">JsonObject</a> jo = jsin.<a class="code hl_function" href="classJsonIn.html#af988f122efed0696d9d05f649e57c9b2">get_object</a>();</div>
-<div class="line"><a id="l03736" name="l03736"></a><span class="lineno"> 3736</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae00f195360e3783cf50527cf07344202">allow_omitted_members</a>();</div>
-<div class="line"><a id="l03737" name="l03737"></a><span class="lineno"> 3737</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;data&quot;</span>, <a class="code hl_variable" href="classstats__tracker.html#a3214c17b86bd56f7878e48ae60d414be">data</a> );</div>
-<div class="line"><a id="l03738" name="l03738"></a><span class="lineno"> 3738</span>    <span class="keywordflow">for</span>( std::pair&lt;const event_type, event_multiset&gt; &amp;d : <a class="code hl_variable" href="classstats__tracker.html#a3214c17b86bd56f7878e48ae60d414be">data</a> ) {</div>
-<div class="line"><a id="l03739" name="l03739"></a><span class="lineno"> 3739</span>        d.second.set_type( d.first );</div>
-<div class="line"><a id="l03740" name="l03740"></a><span class="lineno"> 3740</span>    }</div>
-<div class="line"><a id="l03741" name="l03741"></a><span class="lineno"> 3741</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;initial_scores&quot;</span>, <a class="code hl_variable" href="classstats__tracker.html#a6d5e17e3eb52396623472479af436fcc">initial_scores</a> );</div>
-<div class="line"><a id="l03742" name="l03742"></a><span class="lineno"> 3742</span>}</div>
+<p class="definition">Definition at line <a class="el" href="savegame__json_8cpp_source.html#l03734">3734</a> of file <a class="el" href="savegame__json_8cpp_source.html">savegame_json.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l03735" name="l03735"></a><span class="lineno"> 3735</span>{</div>
+<div class="line"><a id="l03736" name="l03736"></a><span class="lineno"> 3736</span>    <a class="code hl_class" href="classJsonObject.html">JsonObject</a> jo = jsin.<a class="code hl_function" href="classJsonIn.html#af988f122efed0696d9d05f649e57c9b2">get_object</a>();</div>
+<div class="line"><a id="l03737" name="l03737"></a><span class="lineno"> 3737</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae00f195360e3783cf50527cf07344202">allow_omitted_members</a>();</div>
+<div class="line"><a id="l03738" name="l03738"></a><span class="lineno"> 3738</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;data&quot;</span>, <a class="code hl_variable" href="classstats__tracker.html#a3214c17b86bd56f7878e48ae60d414be">data</a> );</div>
+<div class="line"><a id="l03739" name="l03739"></a><span class="lineno"> 3739</span>    <span class="keywordflow">for</span>( std::pair&lt;const event_type, event_multiset&gt; &amp;d : <a class="code hl_variable" href="classstats__tracker.html#a3214c17b86bd56f7878e48ae60d414be">data</a> ) {</div>
+<div class="line"><a id="l03740" name="l03740"></a><span class="lineno"> 3740</span>        d.second.set_type( d.first );</div>
+<div class="line"><a id="l03741" name="l03741"></a><span class="lineno"> 3741</span>    }</div>
+<div class="line"><a id="l03742" name="l03742"></a><span class="lineno"> 3742</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;initial_scores&quot;</span>, <a class="code hl_variable" href="classstats__tracker.html#a6d5e17e3eb52396623472479af436fcc">initial_scores</a> );</div>
+<div class="line"><a id="l03743" name="l03743"></a><span class="lineno"> 3743</span>}</div>
 <div class="ttc" id="aclassJsonIn_html_af988f122efed0696d9d05f649e57c9b2"><div class="ttname"><a href="classJsonIn.html#af988f122efed0696d9d05f649e57c9b2">JsonIn::get_object</a></div><div class="ttdeci">JsonObject get_object()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01432">json.cpp:1432</a></div></div>
 <div class="ttc" id="aclassJsonObject_html"><div class="ttname"><a href="classJsonObject.html">JsonObject</a></div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00826">json.h:827</a></div></div>
 <div class="ttc" id="aclassJsonObject_html_ae00f195360e3783cf50527cf07344202"><div class="ttname"><a href="classJsonObject.html#ae00f195360e3783cf50527cf07344202">JsonObject::allow_omitted_members</a></div><div class="ttdeci">void allow_omitted_members() const</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l00151">json.cpp:151</a></div></div>
@@ -522,13 +522,13 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="savegame__json_8cpp_source.html#l03725">3725</a> of file <a class="el" href="savegame__json_8cpp_source.html">savegame_json.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l03726" name="l03726"></a><span class="lineno"> 3726</span>{</div>
-<div class="line"><a id="l03727" name="l03727"></a><span class="lineno"> 3727</span>    jsout.<a class="code hl_function" href="classJsonOut.html#a4756f9a569adbfc60de127f7c335d82f">start_object</a>();</div>
-<div class="line"><a id="l03728" name="l03728"></a><span class="lineno"> 3728</span>    jsout.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;data&quot;</span>, <a class="code hl_variable" href="classstats__tracker.html#a3214c17b86bd56f7878e48ae60d414be">data</a> );</div>
-<div class="line"><a id="l03729" name="l03729"></a><span class="lineno"> 3729</span>    jsout.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;initial_scores&quot;</span>, <a class="code hl_variable" href="classstats__tracker.html#a6d5e17e3eb52396623472479af436fcc">initial_scores</a> );</div>
-<div class="line"><a id="l03730" name="l03730"></a><span class="lineno"> 3730</span>    jsout.<a class="code hl_function" href="classJsonOut.html#aa38d37840ed6ba168b78a43570e98681">end_object</a>();</div>
-<div class="line"><a id="l03731" name="l03731"></a><span class="lineno"> 3731</span>}</div>
+<p class="definition">Definition at line <a class="el" href="savegame__json_8cpp_source.html#l03726">3726</a> of file <a class="el" href="savegame__json_8cpp_source.html">savegame_json.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l03727" name="l03727"></a><span class="lineno"> 3727</span>{</div>
+<div class="line"><a id="l03728" name="l03728"></a><span class="lineno"> 3728</span>    jsout.<a class="code hl_function" href="classJsonOut.html#a4756f9a569adbfc60de127f7c335d82f">start_object</a>();</div>
+<div class="line"><a id="l03729" name="l03729"></a><span class="lineno"> 3729</span>    jsout.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;data&quot;</span>, <a class="code hl_variable" href="classstats__tracker.html#a3214c17b86bd56f7878e48ae60d414be">data</a> );</div>
+<div class="line"><a id="l03730" name="l03730"></a><span class="lineno"> 3730</span>    jsout.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;initial_scores&quot;</span>, <a class="code hl_variable" href="classstats__tracker.html#a6d5e17e3eb52396623472479af436fcc">initial_scores</a> );</div>
+<div class="line"><a id="l03731" name="l03731"></a><span class="lineno"> 3731</span>    jsout.<a class="code hl_function" href="classJsonOut.html#aa38d37840ed6ba168b78a43570e98681">end_object</a>();</div>
+<div class="line"><a id="l03732" name="l03732"></a><span class="lineno"> 3732</span>}</div>
 <div class="ttc" id="aclassJsonOut_html_a4756f9a569adbfc60de127f7c335d82f"><div class="ttname"><a href="classJsonOut.html#a4756f9a569adbfc60de127f7c335d82f">JsonOut::start_object</a></div><div class="ttdeci">void start_object(bool wrap=false)</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l02120">json.cpp:2120</a></div></div>
 <div class="ttc" id="aclassJsonOut_html_aa38d37840ed6ba168b78a43570e98681"><div class="ttname"><a href="classJsonOut.html#aa38d37840ed6ba168b78a43570e98681">JsonOut::end_object</a></div><div class="ttdeci">void end_object()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l02131">json.cpp:2131</a></div></div>
 <div class="ttc" id="aclassJsonOut_html_adb3c899f0ad7fc4f25cd3357c51a2c42"><div class="ttname"><a href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">JsonOut::member</a></div><div class="ttdeci">void member(const std::string &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l02235">json.cpp:2235</a></div></div>
@@ -675,8 +675,8 @@ Private Attributes</h2></td></tr>
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>    <span class="comment">// an index, but that seems over-complex.</span></div>
 <div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    <span class="keyword">auto</span> erase_from = [watcher]( <span class="keyword">auto</span> &amp; map_of_watcher_sets ) {</div>
 <div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>        <span class="keywordflow">for</span>( <span class="keyword">auto</span> &amp;p : map_of_watcher_sets ) {</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>            <span class="keyword">auto</span> &amp;set = p.second;</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>            <span class="keywordflow">if</span>( set.erase( watcher ) ) {</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>            <span class="keyword">auto</span> &amp;<a class="code hl_function" href="namespaceluna.html#a45210d4990f1595321805e787cae7096">set</a> = p.second;</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>            <span class="keywordflow">if</span>( <a class="code hl_function" href="namespaceluna.html#a45210d4990f1595321805e787cae7096">set</a>.erase( watcher ) ) {</div>
 <div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>            }</div>
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>        }</div>
@@ -691,9 +691,10 @@ Private Attributes</h2></td></tr>
 <div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    }</div>
 <div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;unwatch for a watcher not found&quot;</span> );</div>
 <div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>}</div>
-<div class="ttc" id="adebug_8h_html_a87e509562277a7ada3a75330d00cb445"><div class="ttname"><a href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a></div><div class="ttdeci">#define debugmsg(...)</div><div class="ttdoc">Debug message of level DL::Error and class DC::DebugMsg, also includes the source file name and line,...</div><div class="ttdef"><b>Definition:</b> <a href="debug_8h_source.html#l00074">debug.h:74</a></div></div>
+<div class="ttc" id="adebug_8h_html_a87e509562277a7ada3a75330d00cb445"><div class="ttname"><a href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a></div><div class="ttdeci">#define debugmsg(...)</div><div class="ttdoc">Debug message of level DL::Error and class DC::DebugMsg, also includes the source file name and line,...</div><div class="ttdef"><b>Definition:</b> <a href="debug_8h_source.html#l00075">debug.h:75</a></div></div>
+<div class="ttc" id="anamespaceluna_html_a45210d4990f1595321805e787cae7096"><div class="ttname"><a href="namespaceluna.html#a45210d4990f1595321805e787cae7096">luna::set</a></div><div class="ttdeci">void set(sol::usertype&lt; Class &gt; &amp;ut, Key &amp;&amp;key, Value &amp;&amp;value)</div><div class="ttdef"><b>Definition:</b> <a href="catalua__luna_8h_source.html#l00436">catalua_luna.h:436</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="debug_8h_source.html#l00074">debugmsg</a>, <a class="el" href="stats__tracker_8h_source.html#l00187">event_transformation_watchers</a>, <a class="el" href="stats__tracker_8h_source.html#l00185">event_type_watchers</a>, and <a class="el" href="stats__tracker_8h_source.html#l00188">stat_watchers</a>.</p>
+<p class="reference">References <a class="el" href="debug_8h_source.html#l00075">debugmsg</a>, <a class="el" href="stats__tracker_8h_source.html#l00187">event_transformation_watchers</a>, <a class="el" href="stats__tracker_8h_source.html#l00185">event_type_watchers</a>, <a class="el" href="catalua__luna_8h_source.html#l00436">luna::set()</a>, and <a class="el" href="stats__tracker_8h_source.html#l00188">stat_watchers</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="stats__tracker_8cpp_source.html#l00112">base_watcher::~base_watcher()</a>.</p>
 
@@ -726,8 +727,8 @@ Private Attributes</h2></td></tr>
 <div class="fragment"><div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>{</div>
 <div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>    <span class="keyword">auto</span> unsub_all = [&amp;]( <span class="keyword">auto</span> &amp; map_of_watcher_sets ) {</div>
 <div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>        <span class="keywordflow">for</span>( <span class="keyword">auto</span> <span class="keyword">const</span> &amp;p : map_of_watcher_sets ) {</div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>            <span class="keyword">const</span> <span class="keyword">auto</span> &amp;set = p.second;</div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>            set.send_to_all( &amp;<a class="code hl_function" href="classbase__watcher.html#af0a599759be381740ab735c96ea2ac09">base_watcher::on_unsubscribe</a>, <span class="keyword">this</span> );</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>            <span class="keyword">const</span> <span class="keyword">auto</span> &amp;<a class="code hl_function" href="namespaceluna.html#a45210d4990f1595321805e787cae7096">set</a> = p.second;</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>            <a class="code hl_function" href="namespaceluna.html#a45210d4990f1595321805e787cae7096">set</a>.send_to_all( &amp;<a class="code hl_function" href="classbase__watcher.html#af0a599759be381740ab735c96ea2ac09">base_watcher::on_unsubscribe</a>, <span class="keyword">this</span> );</div>
 <div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>        }</div>
 <div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>        map_of_watcher_sets.clear();</div>
 <div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>    };</div>
@@ -737,7 +738,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>}</div>
 <div class="ttc" id="aclassbase__watcher_html_af0a599759be381740ab735c96ea2ac09"><div class="ttname"><a href="classbase__watcher.html#af0a599759be381740ab735c96ea2ac09">base_watcher::on_unsubscribe</a></div><div class="ttdeci">void on_unsubscribe(stats_tracker *)</div><div class="ttdef"><b>Definition:</b> <a href="stats__tracker_8cpp_source.html#l00127">stats_tracker.cpp:127</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="stats__tracker_8h_source.html#l00187">event_transformation_watchers</a>, <a class="el" href="stats__tracker_8h_source.html#l00185">event_type_watchers</a>, <a class="el" href="stats__tracker_8cpp_source.html#l00127">base_watcher::on_unsubscribe()</a>, and <a class="el" href="stats__tracker_8h_source.html#l00188">stat_watchers</a>.</p>
+<p class="reference">References <a class="el" href="stats__tracker_8h_source.html#l00187">event_transformation_watchers</a>, <a class="el" href="stats__tracker_8h_source.html#l00185">event_type_watchers</a>, <a class="el" href="stats__tracker_8cpp_source.html#l00127">base_watcher::on_unsubscribe()</a>, <a class="el" href="catalua__luna_8h_source.html#l00436">luna::set()</a>, and <a class="el" href="stats__tracker_8h_source.html#l00188">stat_watchers</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="stats__tracker_8cpp_source.html#l00247">clear()</a>, and <a class="el" href="stats__tracker_8cpp_source.html#l00138">~stats_tracker()</a>.</p>
 
@@ -991,7 +992,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classstats__tracker.html">stats_tracker</a></li>
-    <li class="footer">Generated on Sat Jun 10 2023 11:50:20 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Sep 15 2023 08:27:49 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

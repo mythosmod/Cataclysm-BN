@@ -204,7 +204,7 @@ Friends</h2></td></tr>
 <div class="textblock"><p >Type-safe and undefined-behavior free wrapper over <code>sprintf</code>. </p>
 <p >See <a class="el" href="string__formatter_8h.html#a48ebbd8ae0c21f881da772afbf16531c">string_format</a> for usage. Basically it extracts the format specifiers and calls <code>sprintf</code> for each one separately and with proper conversion of the input type. For example <code>printf("%f", 7)</code> would yield undefined behavior as "%f" requires a <code>double</code> as argument. This class detects the format specifier and converts the input to <code>double</code> before calling <code>sprintf</code>. Similar for <code>printf("%d", "foo")</code> (yields UB again), but this class will just throw an exception. </p>
 
-<p class="definition">Definition at line <a class="el" href="string__formatter_8h_source.html#l00203">203</a> of file <a class="el" href="string__formatter_8h_source.html">string_formatter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="string__formatter_8h_source.html#l00204">204</a> of file <a class="el" href="string__formatter_8h_source.html">string_formatter.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a02a2081780065a9dca35523147628997" name="a02a2081780065a9dca35523147628997"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a02a2081780065a9dca35523147628997">&#9670;&nbsp;</a></span>string_formatter()</h2>
@@ -236,9 +236,9 @@ Friends</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="string__formatter_8h_source.html#l00361">361</a> of file <a class="el" href="string__formatter_8h_source.html">string_formatter.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>: <a class="code hl_variable" href="classcata_1_1string__formatter.html#abcbbf467868a5f54421d65a5d59cca6e">format</a>( <a class="code hl_variable" href="classcata_1_1string__formatter.html#abcbbf467868a5f54421d65a5d59cca6e">format</a> ) { }</div>
-<div class="ttc" id="aclasscata_1_1string__formatter_html_abcbbf467868a5f54421d65a5d59cca6e"><div class="ttname"><a href="classcata_1_1string__formatter.html#abcbbf467868a5f54421d65a5d59cca6e">cata::string_formatter::format</a></div><div class="ttdeci">const std::string_view format</div><div class="ttdoc">Complete format string, including all format specifiers (the string passed to printf).</div><div class="ttdef"><b>Definition:</b> <a href="string__formatter_8h_source.html#l00208">string_formatter.h:208</a></div></div>
+<p class="definition">Definition at line <a class="el" href="string__formatter_8h_source.html#l00362">362</a> of file <a class="el" href="string__formatter_8h_source.html">string_formatter.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>: <a class="code hl_variable" href="classcata_1_1string__formatter.html#abcbbf467868a5f54421d65a5d59cca6e">format</a>( <a class="code hl_variable" href="classcata_1_1string__formatter.html#abcbbf467868a5f54421d65a5d59cca6e">format</a> ) { }</div>
+<div class="ttc" id="aclasscata_1_1string__formatter_html_abcbbf467868a5f54421d65a5d59cca6e"><div class="ttname"><a href="classcata_1_1string__formatter.html#abcbbf467868a5f54421d65a5d59cca6e">cata::string_formatter::format</a></div><div class="ttdeci">const std::string_view format</div><div class="ttdoc">Complete format string, including all format specifiers (the string passed to printf).</div><div class="ttdef"><b>Definition:</b> <a href="string__formatter_8h_source.html#l00209">string_formatter.h:209</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -270,9 +270,9 @@ Friends</h2></td></tr>
 <div class="fragment"><div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>{</div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    <a class="code hl_variable" href="classcata_1_1string__formatter.html#a037f337a88103a56f362396c745aa3e2">current_format</a>.insert( <a class="code hl_variable" href="classcata_1_1string__formatter.html#a037f337a88103a56f362396c745aa3e2">current_format</a>.size() - 1, <span class="stringliteral">&quot;ll&quot;</span> );</div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>}</div>
-<div class="ttc" id="aclasscata_1_1string__formatter_html_a037f337a88103a56f362396c745aa3e2"><div class="ttname"><a href="classcata_1_1string__formatter.html#a037f337a88103a56f362396c745aa3e2">cata::string_formatter::current_format</a></div><div class="ttdeci">std::string current_format</div><div class="ttdoc">The *currently parsed format specifiers.</div><div class="ttdef"><b>Definition:</b> <a href="string__formatter_8h_source.html#l00218">string_formatter.h:218</a></div></div>
+<div class="ttc" id="aclasscata_1_1string__formatter_html_a037f337a88103a56f362396c745aa3e2"><div class="ttname"><a href="classcata_1_1string__formatter.html#a037f337a88103a56f362396c745aa3e2">cata::string_formatter::current_format</a></div><div class="ttdeci">std::string current_format</div><div class="ttdoc">The *currently parsed format specifiers.</div><div class="ttdef"><b>Definition:</b> <a href="string__formatter_8h_source.html#l00219">string_formatter.h:219</a></div></div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="string__formatter_8h_source.html#l00296">read_conversion()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="string__formatter_8h_source.html#l00297">read_conversion()</a>.</p>
 
 </div>
 </div>
@@ -306,11 +306,11 @@ Friends</h2></td></tr>
 <div class="fragment"><div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classcata_1_1string__formatter.html#afa6dcba821137490d0147b0a432dd9dc">current_index_in_format</a> &lt; <a class="code hl_variable" href="classcata_1_1string__formatter.html#abcbbf467868a5f54421d65a5d59cca6e">format</a>.size() ? <a class="code hl_variable" href="classcata_1_1string__formatter.html#abcbbf467868a5f54421d65a5d59cca6e">format</a>[<a class="code hl_variable" href="classcata_1_1string__formatter.html#afa6dcba821137490d0147b0a432dd9dc">current_index_in_format</a>++] : <span class="charliteral">&#39;\0&#39;</span>;</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>}</div>
-<div class="ttc" id="aclasscata_1_1string__formatter_html_afa6dcba821137490d0147b0a432dd9dc"><div class="ttname"><a href="classcata_1_1string__formatter.html#afa6dcba821137490d0147b0a432dd9dc">cata::string_formatter::current_index_in_format</a></div><div class="ttdeci">size_t current_index_in_format</div><div class="ttdoc">Used during parsing to denote the next character in format to be parsed.</div><div class="ttdef"><b>Definition:</b> <a href="string__formatter_8h_source.html#l00211">string_formatter.h:211</a></div></div>
+<div class="ttc" id="aclasscata_1_1string__formatter_html_afa6dcba821137490d0147b0a432dd9dc"><div class="ttname"><a href="classcata_1_1string__formatter.html#afa6dcba821137490d0147b0a432dd9dc">cata::string_formatter::current_index_in_format</a></div><div class="ttdeci">size_t current_index_in_format</div><div class="ttdoc">Used during parsing to denote the next character in format to be parsed.</div><div class="ttdef"><b>Definition:</b> <a href="string__formatter_8h_source.html#l00212">string_formatter.h:212</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="string__formatter_8h_source.html#l00211">current_index_in_format</a>, and <a class="el" href="string__formatter_8h_source.html#l00208">format</a>.</p>
+<p class="reference">References <a class="el" href="string__formatter_8h_source.html#l00212">current_index_in_format</a>, and <a class="el" href="string__formatter_8h_source.html#l00209">format</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="string__formatter_8h_source.html#l00370">parse()</a>, and <a class="el" href="string__formatter_8h_source.html#l00296">read_conversion()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="string__formatter_8h_source.html#l00371">parse()</a>, and <a class="el" href="string__formatter_8h_source.html#l00297">read_conversion()</a>.</p>
 
 </div>
 </div>
@@ -356,7 +356,7 @@ Friends</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="magic_8cpp_source.html#l01032">c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="string__formatter_8h_source.html#l00370">parse()</a>, and <a class="el" href="string__formatter_8h_source.html#l00296">read_conversion()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="string__formatter_8h_source.html#l00371">parse()</a>, and <a class="el" href="string__formatter_8h_source.html#l00297">read_conversion()</a>.</p>
 
 </div>
 </div>
@@ -392,7 +392,7 @@ Friends</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="magic_8cpp_source.html#l01032">c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="string__formatter_8h_source.html#l00296">read_conversion()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="string__formatter_8h_source.html#l00297">read_conversion()</a>.</p>
 
 </div>
 </div>
@@ -424,10 +424,10 @@ Friends</h2></td></tr>
 <div class="fragment"><div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>{</div>
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    <a class="code hl_variable" href="classcata_1_1string__formatter.html#a1ad445e8124a07b26056499bcfb9d011">output</a>.append( <a class="code hl_function" href="fmtlib__printf_8h.html#a726388a03fc2e30cc79d0d992b9f63af">fmt::sprintf</a>( <a class="code hl_variable" href="classcata_1_1string__formatter.html#a037f337a88103a56f362396c745aa3e2">current_format</a>, value ) );</div>
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>}</div>
-<div class="ttc" id="aclasscata_1_1string__formatter_html_a1ad445e8124a07b26056499bcfb9d011"><div class="ttname"><a href="classcata_1_1string__formatter.html#a1ad445e8124a07b26056499bcfb9d011">cata::string_formatter::output</a></div><div class="ttdeci">std::string output</div><div class="ttdoc">The formatted output string, filled during parsing of format, so it's only valid after the parsing ha...</div><div class="ttdef"><b>Definition:</b> <a href="string__formatter_8h_source.html#l00214">string_formatter.h:214</a></div></div>
+<div class="ttc" id="aclasscata_1_1string__formatter_html_a1ad445e8124a07b26056499bcfb9d011"><div class="ttname"><a href="classcata_1_1string__formatter.html#a1ad445e8124a07b26056499bcfb9d011">cata::string_formatter::output</a></div><div class="ttdeci">std::string output</div><div class="ttdoc">The formatted output string, filled during parsing of format, so it's only valid after the parsing ha...</div><div class="ttdef"><b>Definition:</b> <a href="string__formatter_8h_source.html#l00215">string_formatter.h:215</a></div></div>
 <div class="ttc" id="afmtlib__printf_8h_html_a726388a03fc2e30cc79d0d992b9f63af"><div class="ttname"><a href="fmtlib__printf_8h.html#a726388a03fc2e30cc79d0d992b9f63af">sprintf</a></div><div class="ttdeci">std::basic_string&lt; Char &gt; sprintf(const S &amp;format, const Args &amp;... args)</div><div class="ttdoc">\rst Formats arguments and returns the result as a string.</div><div class="ttdef"><b>Definition:</b> <a href="fmtlib__printf_8h_source.html#l00719">fmtlib_printf.h:719</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="string__formatter_8h_source.html#l00218">current_format</a>, <a class="el" href="string__formatter_8h_source.html#l00214">output</a>, and <a class="el" href="fmtlib__printf_8h_source.html#l00719">sprintf()</a>.</p>
+<p class="reference">References <a class="el" href="string__formatter_8h_source.html#l00219">current_format</a>, <a class="el" href="string__formatter_8h_source.html#l00215">output</a>, and <a class="el" href="fmtlib__printf_8h_source.html#l00719">sprintf()</a>.</p>
 
 </div>
 </div>
@@ -460,9 +460,9 @@ Friends</h2></td></tr>
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    <a class="code hl_variable" href="classcata_1_1string__formatter.html#a1ad445e8124a07b26056499bcfb9d011">output</a>.append( <a class="code hl_function" href="fmtlib__printf_8h.html#a726388a03fc2e30cc79d0d992b9f63af">fmt::sprintf</a>( <a class="code hl_variable" href="classcata_1_1string__formatter.html#a037f337a88103a56f362396c745aa3e2">current_format</a>, value ) );</div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="string__formatter_8h_source.html#l00218">current_format</a>, <a class="el" href="string__formatter_8h_source.html#l00214">output</a>, and <a class="el" href="fmtlib__printf_8h_source.html#l00719">sprintf()</a>.</p>
+<p class="reference">References <a class="el" href="string__formatter_8h_source.html#l00219">current_format</a>, <a class="el" href="string__formatter_8h_source.html#l00215">output</a>, and <a class="el" href="fmtlib__printf_8h_source.html#l00719">sprintf()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="string__formatter_8h_source.html#l00296">read_conversion()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="string__formatter_8h_source.html#l00297">read_conversion()</a>.</p>
 
 </div>
 </div>
@@ -495,7 +495,7 @@ Friends</h2></td></tr>
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    <a class="code hl_variable" href="classcata_1_1string__formatter.html#a1ad445e8124a07b26056499bcfb9d011">output</a>.append( <a class="code hl_function" href="fmtlib__printf_8h.html#a726388a03fc2e30cc79d0d992b9f63af">fmt::sprintf</a>( <a class="code hl_variable" href="classcata_1_1string__formatter.html#a037f337a88103a56f362396c745aa3e2">current_format</a>, value ) );</div>
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="string__formatter_8h_source.html#l00218">current_format</a>, <a class="el" href="string__formatter_8h_source.html#l00214">output</a>, and <a class="el" href="fmtlib__printf_8h_source.html#l00719">sprintf()</a>.</p>
+<p class="reference">References <a class="el" href="string__formatter_8h_source.html#l00219">current_format</a>, <a class="el" href="string__formatter_8h_source.html#l00215">output</a>, and <a class="el" href="fmtlib__printf_8h_source.html#l00719">sprintf()</a>.</p>
 
 </div>
 </div>
@@ -528,7 +528,7 @@ Friends</h2></td></tr>
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    <a class="code hl_variable" href="classcata_1_1string__formatter.html#a1ad445e8124a07b26056499bcfb9d011">output</a>.append( <a class="code hl_function" href="fmtlib__printf_8h.html#a726388a03fc2e30cc79d0d992b9f63af">fmt::sprintf</a>( <a class="code hl_variable" href="classcata_1_1string__formatter.html#a037f337a88103a56f362396c745aa3e2">current_format</a>, value ) );</div>
 <div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="string__formatter_8h_source.html#l00218">current_format</a>, <a class="el" href="string__formatter_8h_source.html#l00214">output</a>, and <a class="el" href="fmtlib__printf_8h_source.html#l00719">sprintf()</a>.</p>
+<p class="reference">References <a class="el" href="string__formatter_8h_source.html#l00219">current_format</a>, <a class="el" href="string__formatter_8h_source.html#l00215">output</a>, and <a class="el" href="fmtlib__printf_8h_source.html#l00719">sprintf()</a>.</p>
 
 </div>
 </div>
@@ -561,7 +561,7 @@ Friends</h2></td></tr>
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    <a class="code hl_variable" href="classcata_1_1string__formatter.html#a1ad445e8124a07b26056499bcfb9d011">output</a>.append( <a class="code hl_function" href="fmtlib__printf_8h.html#a726388a03fc2e30cc79d0d992b9f63af">fmt::sprintf</a>( <a class="code hl_variable" href="classcata_1_1string__formatter.html#a037f337a88103a56f362396c745aa3e2">current_format</a>, value ) );</div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="string__formatter_8h_source.html#l00218">current_format</a>, <a class="el" href="string__formatter_8h_source.html#l00214">output</a>, and <a class="el" href="fmtlib__printf_8h_source.html#l00719">sprintf()</a>.</p>
+<p class="reference">References <a class="el" href="string__formatter_8h_source.html#l00219">current_format</a>, <a class="el" href="string__formatter_8h_source.html#l00215">output</a>, and <a class="el" href="fmtlib__printf_8h_source.html#l00719">sprintf()</a>.</p>
 
 </div>
 </div>
@@ -594,7 +594,7 @@ Friends</h2></td></tr>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    <a class="code hl_variable" href="classcata_1_1string__formatter.html#a1ad445e8124a07b26056499bcfb9d011">output</a>.append( <a class="code hl_function" href="fmtlib__printf_8h.html#a726388a03fc2e30cc79d0d992b9f63af">fmt::sprintf</a>( <a class="code hl_variable" href="classcata_1_1string__formatter.html#a037f337a88103a56f362396c745aa3e2">current_format</a>, value ) );</div>
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="string__formatter_8h_source.html#l00218">current_format</a>, <a class="el" href="string__formatter_8h_source.html#l00214">output</a>, and <a class="el" href="fmtlib__printf_8h_source.html#l00719">sprintf()</a>.</p>
+<p class="reference">References <a class="el" href="string__formatter_8h_source.html#l00219">current_format</a>, <a class="el" href="string__formatter_8h_source.html#l00215">output</a>, and <a class="el" href="fmtlib__printf_8h_source.html#l00719">sprintf()</a>.</p>
 
 </div>
 </div>
@@ -673,12 +673,12 @@ template&lt;typename RT , unsigned int current_index&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="string__formatter_8h_source.html#l00277">277</a> of file <a class="el" href="string__formatter_8h_source.html">string_formatter.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>                                                                {</div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>            <a class="code hl_function" href="classcata_1_1string__formatter.html#a5762293330b783ea9469eff0e9ff37ac">throw_error</a>( <span class="stringliteral">&quot;Requested argument &quot;</span> + <a class="code hl_function" href="calendar_8cpp.html#aeb989652ea2bf7fd03b07a74fd30bd7a">std::to_string</a>( requested ) +</div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>                         <span class="stringliteral">&quot; but input has only &quot;</span> + <a class="code hl_function" href="calendar_8cpp.html#aeb989652ea2bf7fd03b07a74fd30bd7a">std::to_string</a>( current_index )</div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>                       );</div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>        }</div>
+<p class="definition">Definition at line <a class="el" href="string__formatter_8h_source.html#l00278">278</a> of file <a class="el" href="string__formatter_8h_source.html">string_formatter.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>                                                                {</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>            <a class="code hl_function" href="classcata_1_1string__formatter.html#a5762293330b783ea9469eff0e9ff37ac">throw_error</a>( <span class="stringliteral">&quot;Requested argument &quot;</span> + <a class="code hl_function" href="calendar_8cpp.html#aeb989652ea2bf7fd03b07a74fd30bd7a">std::to_string</a>( requested ) +</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>                         <span class="stringliteral">&quot; but input has only &quot;</span> + <a class="code hl_function" href="calendar_8cpp.html#aeb989652ea2bf7fd03b07a74fd30bd7a">std::to_string</a>( current_index )</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>                       );</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>        }</div>
 <div class="ttc" id="acalendar_8cpp_html_aeb989652ea2bf7fd03b07a74fd30bd7a"><div class="ttname"><a href="calendar_8cpp.html#aeb989652ea2bf7fd03b07a74fd30bd7a">to_string</a></div><div class="ttdeci">std::string to_string(const time_duration &amp;d)</div><div class="ttdoc">Returns a string showing a duration.</div><div class="ttdef"><b>Definition:</b> <a href="calendar_8cpp_source.html#l00327">calendar.cpp:327</a></div></div>
 <div class="ttc" id="aclasscata_1_1string__formatter_html_a5762293330b783ea9469eff0e9ff37ac"><div class="ttname"><a href="classcata_1_1string__formatter.html#a5762293330b783ea9469eff0e9ff37ac">cata::string_formatter::throw_error</a></div><div class="ttdeci">void throw_error(const std::string &amp;msg) const</div><div class="ttdoc">Throws an exception containing the given message and the format.</div><div class="ttdef"><b>Definition:</b> <a href="string__formatter_8cpp_source.html#l00106">string_formatter.cpp:106</a></div></div>
 </div><!-- fragment -->
@@ -728,17 +728,17 @@ template&lt;typename RT , unsigned int current_index, typename T , typename ... 
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="string__formatter_8h_source.html#l00283">283</a> of file <a class="el" href="string__formatter_8h_source.html">string_formatter.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>                                                                                           {</div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>            <span class="keywordflow">if</span>( requested &gt; current_index ) {</div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>                <span class="keywordflow">return</span> get_nth_arg_as &lt; RT, current_index + 1 &gt; ( requested, std::forward&lt;Args&gt;( args )... );</div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>            } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>                <span class="keywordflow">return</span> <a class="code hl_function" href="group__string__formatter__convert.html#gaf6c1b09e9154ca0f0018624028929df5">convert</a>( <span class="keyword">static_cast&lt;</span>RT *<span class="keyword">&gt;</span>( <span class="keyword">nullptr</span> ), *<span class="keyword">this</span>, std::forward&lt;T&gt;( head ), 0 );</div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>            }</div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>        }</div>
-<div class="ttc" id="agroup__string__formatter__convert_html_gaf6c1b09e9154ca0f0018624028929df5"><div class="ttname"><a href="group__string__formatter__convert.html#gaf6c1b09e9154ca0f0018624028929df5">cata::convert</a></div><div class="ttdeci">std::enable_if&lt; is_integer&lt; RT &gt;::value &amp;&amp;is_integer&lt; T &gt;::value, RT &gt;::type convert(RT *, const string_formatter &amp;, T &amp;&amp;value, int)</div><div class="ttdef"><b>Definition:</b> <a href="string__formatter_8h_source.html#l00097">string_formatter.h:97</a></div></div>
+<p class="definition">Definition at line <a class="el" href="string__formatter_8h_source.html#l00284">284</a> of file <a class="el" href="string__formatter_8h_source.html">string_formatter.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>                                                                                           {</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>            <span class="keywordflow">if</span>( requested &gt; current_index ) {</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>                <span class="keywordflow">return</span> get_nth_arg_as &lt; RT, current_index + 1 &gt; ( requested, std::forward&lt;Args&gt;( args )... );</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>            } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>                <span class="keywordflow">return</span> <a class="code hl_function" href="group__string__formatter__convert.html#gaf6c1b09e9154ca0f0018624028929df5">convert</a>( <span class="keyword">static_cast&lt;</span>RT *<span class="keyword">&gt;</span>( <span class="keyword">nullptr</span> ), *<span class="keyword">this</span>, std::forward&lt;T&gt;( head ), 0 );</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>            }</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>        }</div>
+<div class="ttc" id="agroup__string__formatter__convert_html_gaf6c1b09e9154ca0f0018624028929df5"><div class="ttname"><a href="group__string__formatter__convert.html#gaf6c1b09e9154ca0f0018624028929df5">cata::convert</a></div><div class="ttdeci">std::enable_if&lt; is_integer&lt; RT &gt;::value &amp;&amp;is_integer&lt; T &gt;::value, RT &gt;::type convert(RT *, const string_formatter &amp;, T &amp;&amp;value, int)</div><div class="ttdef"><b>Definition:</b> <a href="string__formatter_8h_source.html#l00098">string_formatter.h:98</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="string__formatter_8h_source.html#l00097">cata::convert()</a>.</p>
+<p class="reference">References <a class="el" href="string__formatter_8h_source.html#l00098">cata::convert()</a>.</p>
 
 </div>
 </div>
@@ -765,12 +765,12 @@ template&lt;typename RT , unsigned int current_index, typename T , typename ... 
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="string__formatter_8h_source.html#l00399">399</a> of file <a class="el" href="string__formatter_8h_source.html">string_formatter.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>                                     {</div>
-<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="classcata_1_1string__formatter.html#a1ad445e8124a07b26056499bcfb9d011">output</a>;</div>
-<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>        }</div>
+<p class="definition">Definition at line <a class="el" href="string__formatter_8h_source.html#l00400">400</a> of file <a class="el" href="string__formatter_8h_source.html">string_formatter.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>                                     {</div>
+<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="classcata_1_1string__formatter.html#a1ad445e8124a07b26056499bcfb9d011">output</a>;</div>
+<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span>        }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="string__formatter_8h_source.html#l00214">output</a>.</p>
+<p class="reference">References <a class="el" href="string__formatter_8h_source.html#l00215">output</a>.</p>
 
 </div>
 </div>
@@ -843,46 +843,46 @@ template&lt;typename ... Args&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="string__formatter_8h_source.html#l00370">370</a> of file <a class="el" href="string__formatter_8h_source.html">string_formatter.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>                                      {</div>
-<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>            <a class="code hl_variable" href="classcata_1_1string__formatter.html#a1ad445e8124a07b26056499bcfb9d011">output</a>.reserve( <a class="code hl_variable" href="classcata_1_1string__formatter.html#abcbbf467868a5f54421d65a5d59cca6e">format</a>.size() );</div>
-<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>            <a class="code hl_variable" href="classcata_1_1string__formatter.html#a1ad445e8124a07b26056499bcfb9d011">output</a>.resize( 0 );</div>
-<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>            <a class="code hl_variable" href="classcata_1_1string__formatter.html#afa6dcba821137490d0147b0a432dd9dc">current_index_in_format</a> = 0;</div>
-<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>            <a class="code hl_variable" href="classcata_1_1string__formatter.html#ad1e838e0cbe57d2cf182643c0a4264c7">current_argument_index</a> = 0;</div>
-<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>            <span class="keywordflow">while</span>( <span class="keyword">const</span> <span class="keywordtype">char</span> <a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a> = <a class="code hl_function" href="classcata_1_1string__formatter.html#a5ab8b365fc012a40fe814f2bf3969c58">consume_next_input</a>() ) {</div>
-<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>                <span class="keywordflow">if</span>( <a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a> != <span class="charliteral">&#39;%&#39;</span> ) {</div>
-<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>                    <a class="code hl_variable" href="classcata_1_1string__formatter.html#a1ad445e8124a07b26056499bcfb9d011">output</a>.push_back( <a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a> );</div>
-<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>                    <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>                }</div>
-<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>                <span class="keywordflow">if</span>( <a class="code hl_function" href="classcata_1_1string__formatter.html#a7ca7e5aa6fbcb3b048e27669d69af212">consume_next_input_if</a>( <span class="charliteral">&#39;%&#39;</span> ) ) {</div>
-<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>                    <a class="code hl_variable" href="classcata_1_1string__formatter.html#a1ad445e8124a07b26056499bcfb9d011">output</a>.push_back( <span class="charliteral">&#39;%&#39;</span> );</div>
-<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>                    <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>                }</div>
-<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>                <a class="code hl_variable" href="classcata_1_1string__formatter.html#a037f337a88103a56f362396c745aa3e2">current_format</a> = <span class="stringliteral">&quot;%&quot;</span>;</div>
-<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>                <span class="keyword">const</span> std::optional&lt;int&gt; format_arg_index = <a class="code hl_function" href="classcata_1_1string__formatter.html#a2cb9b9039a347270e8f58c850d2371e4">read_argument_index</a>();</div>
-<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>                <a class="code hl_function" href="classcata_1_1string__formatter.html#a5849afcb3ab0e0c95b31b5f0a62eb6be">read_flags</a>();</div>
-<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>                <span class="keywordflow">if</span>( <span class="keyword">const</span> std::optional&lt;int&gt; width_argument_index = <a class="code hl_function" href="classcata_1_1string__formatter.html#a96607e67bbfc504e444ed561e48d6628">read_width</a>() ) {</div>
-<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>                    <span class="keyword">const</span> <span class="keywordtype">int</span> w = get_nth_arg_as&lt;int, 0&gt;( *width_argument_index, std::forward&lt;Args&gt;( args )... );</div>
-<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>                    <a class="code hl_variable" href="classcata_1_1string__formatter.html#a037f337a88103a56f362396c745aa3e2">current_format</a> += <a class="code hl_function" href="calendar_8cpp.html#aeb989652ea2bf7fd03b07a74fd30bd7a">std::to_string</a>( w );</div>
-<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>                }</div>
-<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>                <span class="keywordflow">if</span>( <span class="keyword">const</span> std::optional&lt;int&gt; precision_argument_index = <a class="code hl_function" href="classcata_1_1string__formatter.html#a3d039d2d64ced3499586ce9f5372b9bb">read_precision</a>() ) {</div>
-<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>                    <span class="keyword">const</span> <span class="keywordtype">int</span> p = get_nth_arg_as&lt;int, 0&gt;( *precision_argument_index, std::forward&lt;Args&gt;( args )... );</div>
-<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>                    <a class="code hl_variable" href="classcata_1_1string__formatter.html#a037f337a88103a56f362396c745aa3e2">current_format</a> += <a class="code hl_function" href="calendar_8cpp.html#aeb989652ea2bf7fd03b07a74fd30bd7a">std::to_string</a>( p );</div>
-<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>                }</div>
-<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>                <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_function" href="fmtlib__core_8h.html#a654171af6def7abe5a92dec0ed1e1179">arg</a> = format_arg_index ? *format_arg_index : <a class="code hl_variable" href="classcata_1_1string__formatter.html#ad1e838e0cbe57d2cf182643c0a4264c7">current_argument_index</a>++;</div>
-<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>                <a class="code hl_function" href="classcata_1_1string__formatter.html#a30951abefaa8b810ea6e1d006f939317">read_conversion</a>( <a class="code hl_function" href="fmtlib__core_8h.html#a654171af6def7abe5a92dec0ed1e1179">arg</a>, std::forward&lt;Args&gt;( args )... );</div>
-<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>            }</div>
-<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>        }</div>
+<p class="definition">Definition at line <a class="el" href="string__formatter_8h_source.html#l00371">371</a> of file <a class="el" href="string__formatter_8h_source.html">string_formatter.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>                                      {</div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>            <a class="code hl_variable" href="classcata_1_1string__formatter.html#a1ad445e8124a07b26056499bcfb9d011">output</a>.reserve( <a class="code hl_variable" href="classcata_1_1string__formatter.html#abcbbf467868a5f54421d65a5d59cca6e">format</a>.size() );</div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>            <a class="code hl_variable" href="classcata_1_1string__formatter.html#a1ad445e8124a07b26056499bcfb9d011">output</a>.resize( 0 );</div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>            <a class="code hl_variable" href="classcata_1_1string__formatter.html#afa6dcba821137490d0147b0a432dd9dc">current_index_in_format</a> = 0;</div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>            <a class="code hl_variable" href="classcata_1_1string__formatter.html#ad1e838e0cbe57d2cf182643c0a4264c7">current_argument_index</a> = 0;</div>
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>            <span class="keywordflow">while</span>( <span class="keyword">const</span> <span class="keywordtype">char</span> <a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a> = <a class="code hl_function" href="classcata_1_1string__formatter.html#a5ab8b365fc012a40fe814f2bf3969c58">consume_next_input</a>() ) {</div>
+<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>                <span class="keywordflow">if</span>( <a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a> != <span class="charliteral">&#39;%&#39;</span> ) {</div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>                    <a class="code hl_variable" href="classcata_1_1string__formatter.html#a1ad445e8124a07b26056499bcfb9d011">output</a>.push_back( <a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a> );</div>
+<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>                    <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>                }</div>
+<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>                <span class="keywordflow">if</span>( <a class="code hl_function" href="classcata_1_1string__formatter.html#a7ca7e5aa6fbcb3b048e27669d69af212">consume_next_input_if</a>( <span class="charliteral">&#39;%&#39;</span> ) ) {</div>
+<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>                    <a class="code hl_variable" href="classcata_1_1string__formatter.html#a1ad445e8124a07b26056499bcfb9d011">output</a>.push_back( <span class="charliteral">&#39;%&#39;</span> );</div>
+<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>                    <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>                }</div>
+<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>                <a class="code hl_variable" href="classcata_1_1string__formatter.html#a037f337a88103a56f362396c745aa3e2">current_format</a> = <span class="stringliteral">&quot;%&quot;</span>;</div>
+<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>                <span class="keyword">const</span> std::optional&lt;int&gt; format_arg_index = <a class="code hl_function" href="classcata_1_1string__formatter.html#a2cb9b9039a347270e8f58c850d2371e4">read_argument_index</a>();</div>
+<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>                <a class="code hl_function" href="classcata_1_1string__formatter.html#a5849afcb3ab0e0c95b31b5f0a62eb6be">read_flags</a>();</div>
+<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>                <span class="keywordflow">if</span>( <span class="keyword">const</span> std::optional&lt;int&gt; width_argument_index = <a class="code hl_function" href="classcata_1_1string__formatter.html#a96607e67bbfc504e444ed561e48d6628">read_width</a>() ) {</div>
+<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>                    <span class="keyword">const</span> <span class="keywordtype">int</span> w = get_nth_arg_as&lt;int, 0&gt;( *width_argument_index, std::forward&lt;Args&gt;( args )... );</div>
+<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>                    <a class="code hl_variable" href="classcata_1_1string__formatter.html#a037f337a88103a56f362396c745aa3e2">current_format</a> += <a class="code hl_function" href="calendar_8cpp.html#aeb989652ea2bf7fd03b07a74fd30bd7a">std::to_string</a>( w );</div>
+<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>                }</div>
+<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>                <span class="keywordflow">if</span>( <span class="keyword">const</span> std::optional&lt;int&gt; precision_argument_index = <a class="code hl_function" href="classcata_1_1string__formatter.html#a3d039d2d64ced3499586ce9f5372b9bb">read_precision</a>() ) {</div>
+<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>                    <span class="keyword">const</span> <span class="keywordtype">int</span> p = get_nth_arg_as&lt;int, 0&gt;( *precision_argument_index, std::forward&lt;Args&gt;( args )... );</div>
+<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>                    <a class="code hl_variable" href="classcata_1_1string__formatter.html#a037f337a88103a56f362396c745aa3e2">current_format</a> += <a class="code hl_function" href="calendar_8cpp.html#aeb989652ea2bf7fd03b07a74fd30bd7a">std::to_string</a>( p );</div>
+<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>                }</div>
+<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>                <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_function" href="fmtlib__core_8h.html#a654171af6def7abe5a92dec0ed1e1179">arg</a> = format_arg_index ? *format_arg_index : <a class="code hl_variable" href="classcata_1_1string__formatter.html#ad1e838e0cbe57d2cf182643c0a4264c7">current_argument_index</a>++;</div>
+<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>                <a class="code hl_function" href="classcata_1_1string__formatter.html#a30951abefaa8b810ea6e1d006f939317">read_conversion</a>( <a class="code hl_function" href="fmtlib__core_8h.html#a654171af6def7abe5a92dec0ed1e1179">arg</a>, std::forward&lt;Args&gt;( args )... );</div>
+<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>            }</div>
+<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>        }</div>
 <div class="ttc" id="aclasscata_1_1string__formatter_html_a2cb9b9039a347270e8f58c850d2371e4"><div class="ttname"><a href="classcata_1_1string__formatter.html#a2cb9b9039a347270e8f58c850d2371e4">cata::string_formatter::read_argument_index</a></div><div class="ttdeci">std::optional&lt; int &gt; read_argument_index()</div><div class="ttdoc">Read and return the index of the printf-argument that is to be formatted.</div><div class="ttdef"><b>Definition:</b> <a href="string__formatter_8cpp_source.html#l00044">string_formatter.cpp:44</a></div></div>
-<div class="ttc" id="aclasscata_1_1string__formatter_html_a30951abefaa8b810ea6e1d006f939317"><div class="ttname"><a href="classcata_1_1string__formatter.html#a30951abefaa8b810ea6e1d006f939317">cata::string_formatter::read_conversion</a></div><div class="ttdeci">void read_conversion(const int format_arg_index, Args &amp;&amp;... args)</div><div class="ttdef"><b>Definition:</b> <a href="string__formatter_8h_source.html#l00296">string_formatter.h:296</a></div></div>
+<div class="ttc" id="aclasscata_1_1string__formatter_html_a30951abefaa8b810ea6e1d006f939317"><div class="ttname"><a href="classcata_1_1string__formatter.html#a30951abefaa8b810ea6e1d006f939317">cata::string_formatter::read_conversion</a></div><div class="ttdeci">void read_conversion(const int format_arg_index, Args &amp;&amp;... args)</div><div class="ttdef"><b>Definition:</b> <a href="string__formatter_8h_source.html#l00297">string_formatter.h:297</a></div></div>
 <div class="ttc" id="aclasscata_1_1string__formatter_html_a3d039d2d64ced3499586ce9f5372b9bb"><div class="ttname"><a href="classcata_1_1string__formatter.html#a3d039d2d64ced3499586ce9f5372b9bb">cata::string_formatter::read_precision</a></div><div class="ttdeci">std::optional&lt; int &gt; read_precision()</div><div class="ttdoc">See read_width. This does the same, but for the precision specifier.</div><div class="ttdef"><b>Definition:</b> <a href="string__formatter_8cpp_source.html#l00097">string_formatter.cpp:97</a></div></div>
 <div class="ttc" id="aclasscata_1_1string__formatter_html_a5849afcb3ab0e0c95b31b5f0a62eb6be"><div class="ttname"><a href="classcata_1_1string__formatter.html#a5849afcb3ab0e0c95b31b5f0a62eb6be">cata::string_formatter::read_flags</a></div><div class="ttdeci">void read_flags()</div><div class="ttdoc">Read and consume format flag characters and append them to current_format.</div><div class="ttdef"><b>Definition:</b> <a href="string__formatter_8cpp_source.html#l00030">string_formatter.cpp:30</a></div></div>
 <div class="ttc" id="aclasscata_1_1string__formatter_html_a7ca7e5aa6fbcb3b048e27669d69af212"><div class="ttname"><a href="classcata_1_1string__formatter.html#a7ca7e5aa6fbcb3b048e27669d69af212">cata::string_formatter::consume_next_input_if</a></div><div class="ttdeci">bool consume_next_input_if(char c)</div><div class="ttdoc">If the next character to read from format is the given character, consume it (like consume_next_input...</div><div class="ttdef"><b>Definition:</b> <a href="string__formatter_8cpp_source.html#l00020">string_formatter.cpp:20</a></div></div>
 <div class="ttc" id="aclasscata_1_1string__formatter_html_a96607e67bbfc504e444ed561e48d6628"><div class="ttname"><a href="classcata_1_1string__formatter.html#a96607e67bbfc504e444ed561e48d6628">cata::string_formatter::read_width</a></div><div class="ttdeci">std::optional&lt; int &gt; read_width()</div><div class="ttdoc">Read and forward to current_format any width specifier from format.</div><div class="ttdef"><b>Definition:</b> <a href="string__formatter_8cpp_source.html#l00092">string_formatter.cpp:92</a></div></div>
-<div class="ttc" id="aclasscata_1_1string__formatter_html_ad1e838e0cbe57d2cf182643c0a4264c7"><div class="ttname"><a href="classcata_1_1string__formatter.html#ad1e838e0cbe57d2cf182643c0a4264c7">cata::string_formatter::current_argument_index</a></div><div class="ttdeci">int current_argument_index</div><div class="ttdoc">The index (not number) of the next argument to be formatted via current_format.</div><div class="ttdef"><b>Definition:</b> <a href="string__formatter_8h_source.html#l00220">string_formatter.h:220</a></div></div>
+<div class="ttc" id="aclasscata_1_1string__formatter_html_ad1e838e0cbe57d2cf182643c0a4264c7"><div class="ttname"><a href="classcata_1_1string__formatter.html#ad1e838e0cbe57d2cf182643c0a4264c7">cata::string_formatter::current_argument_index</a></div><div class="ttdeci">int current_argument_index</div><div class="ttdoc">The index (not number) of the next argument to be formatted via current_format.</div><div class="ttdef"><b>Definition:</b> <a href="string__formatter_8h_source.html#l00221">string_formatter.h:221</a></div></div>
 <div class="ttc" id="afmtlib__core_8h_html_a654171af6def7abe5a92dec0ed1e1179"><div class="ttname"><a href="fmtlib__core_8h.html#a654171af6def7abe5a92dec0ed1e1179">arg</a></div><div class="ttdeci">detail::named_arg&lt; Char, T &gt; arg(const Char *name, const T &amp;arg)</div><div class="ttdoc">\rst Returns a named argument to be used in a formatting function.</div><div class="ttdef"><b>Definition:</b> <a href="fmtlib__core_8h_source.html#l01860">fmtlib_core.h:1860</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="fmtlib__core_8h_source.html#l01860">arg()</a>, <a class="el" href="magic_8cpp_source.html#l01032">c</a>, <a class="el" href="string__formatter_8cpp_source.html#l00010">consume_next_input()</a>, <a class="el" href="string__formatter_8cpp_source.html#l00020">consume_next_input_if()</a>, <a class="el" href="string__formatter_8h_source.html#l00220">current_argument_index</a>, <a class="el" href="string__formatter_8h_source.html#l00218">current_format</a>, <a class="el" href="string__formatter_8h_source.html#l00211">current_index_in_format</a>, <a class="el" href="string__formatter_8h_source.html#l00208">format</a>, <a class="el" href="string__formatter_8h_source.html#l00214">output</a>, <a class="el" href="string__formatter_8cpp_source.html#l00044">read_argument_index()</a>, <a class="el" href="string__formatter_8h_source.html#l00296">read_conversion()</a>, <a class="el" href="string__formatter_8cpp_source.html#l00030">read_flags()</a>, <a class="el" href="string__formatter_8cpp_source.html#l00097">read_precision()</a>, <a class="el" href="string__formatter_8cpp_source.html#l00092">read_width()</a>, and <a class="el" href="calendar_8cpp_source.html#l00327">to_string()</a>.</p>
+<p class="reference">References <a class="el" href="fmtlib__core_8h_source.html#l01860">arg()</a>, <a class="el" href="magic_8cpp_source.html#l01032">c</a>, <a class="el" href="string__formatter_8cpp_source.html#l00010">consume_next_input()</a>, <a class="el" href="string__formatter_8cpp_source.html#l00020">consume_next_input_if()</a>, <a class="el" href="string__formatter_8h_source.html#l00221">current_argument_index</a>, <a class="el" href="string__formatter_8h_source.html#l00219">current_format</a>, <a class="el" href="string__formatter_8h_source.html#l00212">current_index_in_format</a>, <a class="el" href="string__formatter_8h_source.html#l00209">format</a>, <a class="el" href="string__formatter_8h_source.html#l00215">output</a>, <a class="el" href="string__formatter_8cpp_source.html#l00044">read_argument_index()</a>, <a class="el" href="string__formatter_8h_source.html#l00297">read_conversion()</a>, <a class="el" href="string__formatter_8cpp_source.html#l00030">read_flags()</a>, <a class="el" href="string__formatter_8cpp_source.html#l00097">read_precision()</a>, <a class="el" href="string__formatter_8cpp_source.html#l00092">read_width()</a>, and <a class="el" href="calendar_8cpp_source.html#l00327">to_string()</a>.</p>
 
 </div>
 </div>
@@ -975,7 +975,7 @@ template&lt;typename ... Args&gt; </div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="magic_8cpp_source.html#l01032">c</a>, and <a class="el" href="fmtlib__core_8h_source.html#l02316">format()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="string__formatter_8h_source.html#l00370">parse()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="string__formatter_8h_source.html#l00371">parse()</a>.</p>
 
 </div>
 </div>
@@ -1015,69 +1015,69 @@ template&lt;typename ... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="string__formatter_8h_source.html#l00296">296</a> of file <a class="el" href="string__formatter_8h_source.html">string_formatter.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>                                                                            {</div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>            <span class="comment">// Removes the prefix &quot;ll&quot;, &quot;l&quot;, &quot;h&quot; and &quot;hh&quot;, &quot;z&quot;, and &quot;t&quot;.</span></div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>            <span class="comment">// We later add &quot;ll&quot; again and that</span></div>
-<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>            <span class="comment">// would interfere with the existing prefix. We convert *all* input to (un)signed</span></div>
-<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>            <span class="comment">// long long int and use the &quot;ll&quot; modifier all the time. This will print the</span></div>
-<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>            <span class="comment">// expected value all the time, even when the original modifier did not match.</span></div>
-<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>            <span class="keywordflow">if</span>( <a class="code hl_function" href="classcata_1_1string__formatter.html#a7ca7e5aa6fbcb3b048e27669d69af212">consume_next_input_if</a>( <span class="charliteral">&#39;l&#39;</span> ) ) {</div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>                <a class="code hl_function" href="classcata_1_1string__formatter.html#a7ca7e5aa6fbcb3b048e27669d69af212">consume_next_input_if</a>( <span class="charliteral">&#39;l&#39;</span> );</div>
-<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( <a class="code hl_function" href="classcata_1_1string__formatter.html#a7ca7e5aa6fbcb3b048e27669d69af212">consume_next_input_if</a>( <span class="charliteral">&#39;h&#39;</span> ) ) {</div>
-<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>                <a class="code hl_function" href="classcata_1_1string__formatter.html#a7ca7e5aa6fbcb3b048e27669d69af212">consume_next_input_if</a>( <span class="charliteral">&#39;h&#39;</span> );</div>
-<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( <a class="code hl_function" href="classcata_1_1string__formatter.html#a7ca7e5aa6fbcb3b048e27669d69af212">consume_next_input_if</a>( <span class="charliteral">&#39;z&#39;</span> ) ) {</div>
-<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>                <span class="comment">// done with it</span></div>
-<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( <a class="code hl_function" href="classcata_1_1string__formatter.html#a7ca7e5aa6fbcb3b048e27669d69af212">consume_next_input_if</a>( <span class="charliteral">&#39;t&#39;</span> ) ) {</div>
-<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>                <span class="comment">// done with it</span></div>
-<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>            }</div>
-<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>            <span class="keyword">const</span> <span class="keywordtype">char</span> <a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a> = <a class="code hl_function" href="classcata_1_1string__formatter.html#a5ab8b365fc012a40fe814f2bf3969c58">consume_next_input</a>();</div>
-<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>            <a class="code hl_variable" href="classcata_1_1string__formatter.html#a037f337a88103a56f362396c745aa3e2">current_format</a>.push_back( <a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a> );</div>
-<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>            <span class="keywordflow">switch</span>( <a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a> ) {</div>
-<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>                <span class="keywordflow">case</span> <span class="charliteral">&#39;c&#39;</span>:</div>
-<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>                    <span class="keywordflow">return</span> <a class="code hl_function" href="classcata_1_1string__formatter.html#a1931157c73efd6ec93588cb66018a7e4">do_formating</a>( get_nth_arg_as&lt;int, 0&gt;( format_arg_index, std::forward&lt;Args&gt;( args )... ) );</div>
-<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>                <span class="keywordflow">case</span> <span class="charliteral">&#39;d&#39;</span>:</div>
-<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>                <span class="keywordflow">case</span> <span class="charliteral">&#39;i&#39;</span>:</div>
-<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>                    <a class="code hl_function" href="classcata_1_1string__formatter.html#af56c4edc7dc206cdc651cc49f17c652b">add_long_long_length_modifier</a>();</div>
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>                    <span class="keywordflow">return</span> <a class="code hl_function" href="classcata_1_1string__formatter.html#a1931157c73efd6ec93588cb66018a7e4">do_formating</a>( get_nth_arg_as&lt;signed long long int, 0&gt;( format_arg_index,</div>
-<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>                                         std::forward&lt;Args&gt;( args )... ) );</div>
-<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>                <span class="keywordflow">case</span> <span class="charliteral">&#39;o&#39;</span>:</div>
-<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>                <span class="keywordflow">case</span> <span class="charliteral">&#39;x&#39;</span>:</div>
-<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>                <span class="keywordflow">case</span> <span class="charliteral">&#39;X&#39;</span>:</div>
-<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>                    <span class="comment">// Workaround for fmtlib prepending number with &#39; &#39;/&#39;+&#39;</span></div>
-<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>                    <span class="comment">// when formatting with &#39; &#39;/&#39;+&#39; flags and &#39;o&#39;/&#39;x&#39;/&#39;X&#39; specifiers</span></div>
-<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>                    <a class="code hl_function" href="classcata_1_1string__formatter.html#a71179ce3011f4e9312d532566ca578ae">discard_oct_hex_sign_flag</a>();</div>
-<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>                <span class="comment">// intentional fall-through</span></div>
-<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>                <span class="keywordflow">case</span> <span class="charliteral">&#39;u&#39;</span>:</div>
-<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>                    <a class="code hl_function" href="classcata_1_1string__formatter.html#af56c4edc7dc206cdc651cc49f17c652b">add_long_long_length_modifier</a>();</div>
-<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>                    <span class="keywordflow">return</span> <a class="code hl_function" href="classcata_1_1string__formatter.html#a1931157c73efd6ec93588cb66018a7e4">do_formating</a>( get_nth_arg_as&lt;unsigned long long int, 0&gt;( format_arg_index,</div>
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>                                         std::forward&lt;Args&gt;( args )... ) );</div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>                <span class="keywordflow">case</span> <span class="charliteral">&#39;a&#39;</span>:</div>
-<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>                <span class="keywordflow">case</span> <span class="charliteral">&#39;A&#39;</span>:</div>
-<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>                <span class="keywordflow">case</span> <span class="charliteral">&#39;g&#39;</span>:</div>
-<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>                <span class="keywordflow">case</span> <span class="charliteral">&#39;G&#39;</span>:</div>
-<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>                <span class="keywordflow">case</span> <span class="charliteral">&#39;f&#39;</span>:</div>
-<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>                <span class="keywordflow">case</span> <span class="charliteral">&#39;F&#39;</span>:</div>
-<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>                <span class="keywordflow">case</span> <span class="charliteral">&#39;e&#39;</span>:</div>
-<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>                <span class="keywordflow">case</span> <span class="charliteral">&#39;E&#39;</span>:</div>
-<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>                    <span class="keywordflow">return</span> <a class="code hl_function" href="classcata_1_1string__formatter.html#a1931157c73efd6ec93588cb66018a7e4">do_formating</a>( get_nth_arg_as&lt;double, 0&gt;( format_arg_index, std::forward&lt;Args&gt;( args )... ) );</div>
-<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>                <span class="keywordflow">case</span> <span class="charliteral">&#39;p&#39;</span>:</div>
-<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>                    <span class="keywordflow">return</span> <a class="code hl_function" href="classcata_1_1string__formatter.html#a1931157c73efd6ec93588cb66018a7e4">do_formating</a>( get_nth_arg_as&lt;void *, 0&gt;( format_arg_index,</div>
-<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>                                         std::forward&lt;Args&gt;( args )... ) );</div>
-<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>                <span class="keywordflow">case</span> <span class="charliteral">&#39;s&#39;</span>:</div>
-<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>                    <span class="keywordflow">return</span> <a class="code hl_function" href="classcata_1_1string__formatter.html#a1931157c73efd6ec93588cb66018a7e4">do_formating</a>( get_nth_arg_as&lt;std::string_view, 0&gt;( format_arg_index,</div>
-<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>                                         std::forward&lt;Args&gt;( args )... ) );</div>
-<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>                <span class="keywordflow">default</span>:</div>
-<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>                    <a class="code hl_function" href="classcata_1_1string__formatter.html#a5762293330b783ea9469eff0e9ff37ac">throw_error</a>( <span class="stringliteral">&quot;Unsupported format conversion: &quot;</span> + std::string( 1, <a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a> ) );</div>
-<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>            }</div>
-<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>        }</div>
+<p class="definition">Definition at line <a class="el" href="string__formatter_8h_source.html#l00297">297</a> of file <a class="el" href="string__formatter_8h_source.html">string_formatter.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>                                                                            {</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>            <span class="comment">// Removes the prefix &quot;ll&quot;, &quot;l&quot;, &quot;h&quot; and &quot;hh&quot;, &quot;z&quot;, and &quot;t&quot;.</span></div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>            <span class="comment">// We later add &quot;ll&quot; again and that</span></div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>            <span class="comment">// would interfere with the existing prefix. We convert *all* input to (un)signed</span></div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>            <span class="comment">// long long int and use the &quot;ll&quot; modifier all the time. This will print the</span></div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>            <span class="comment">// expected value all the time, even when the original modifier did not match.</span></div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>            <span class="keywordflow">if</span>( <a class="code hl_function" href="classcata_1_1string__formatter.html#a7ca7e5aa6fbcb3b048e27669d69af212">consume_next_input_if</a>( <span class="charliteral">&#39;l&#39;</span> ) ) {</div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>                <a class="code hl_function" href="classcata_1_1string__formatter.html#a7ca7e5aa6fbcb3b048e27669d69af212">consume_next_input_if</a>( <span class="charliteral">&#39;l&#39;</span> );</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( <a class="code hl_function" href="classcata_1_1string__formatter.html#a7ca7e5aa6fbcb3b048e27669d69af212">consume_next_input_if</a>( <span class="charliteral">&#39;h&#39;</span> ) ) {</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>                <a class="code hl_function" href="classcata_1_1string__formatter.html#a7ca7e5aa6fbcb3b048e27669d69af212">consume_next_input_if</a>( <span class="charliteral">&#39;h&#39;</span> );</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( <a class="code hl_function" href="classcata_1_1string__formatter.html#a7ca7e5aa6fbcb3b048e27669d69af212">consume_next_input_if</a>( <span class="charliteral">&#39;z&#39;</span> ) ) {</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>                <span class="comment">// done with it</span></div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( <a class="code hl_function" href="classcata_1_1string__formatter.html#a7ca7e5aa6fbcb3b048e27669d69af212">consume_next_input_if</a>( <span class="charliteral">&#39;t&#39;</span> ) ) {</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>                <span class="comment">// done with it</span></div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>            }</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>            <span class="keyword">const</span> <span class="keywordtype">char</span> <a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a> = <a class="code hl_function" href="classcata_1_1string__formatter.html#a5ab8b365fc012a40fe814f2bf3969c58">consume_next_input</a>();</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>            <a class="code hl_variable" href="classcata_1_1string__formatter.html#a037f337a88103a56f362396c745aa3e2">current_format</a>.push_back( <a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a> );</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>            <span class="keywordflow">switch</span>( <a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a> ) {</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>                <span class="keywordflow">case</span> <span class="charliteral">&#39;c&#39;</span>:</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>                    <span class="keywordflow">return</span> <a class="code hl_function" href="classcata_1_1string__formatter.html#a1931157c73efd6ec93588cb66018a7e4">do_formating</a>( get_nth_arg_as&lt;int, 0&gt;( format_arg_index, std::forward&lt;Args&gt;( args )... ) );</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>                <span class="keywordflow">case</span> <span class="charliteral">&#39;d&#39;</span>:</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>                <span class="keywordflow">case</span> <span class="charliteral">&#39;i&#39;</span>:</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>                    <a class="code hl_function" href="classcata_1_1string__formatter.html#af56c4edc7dc206cdc651cc49f17c652b">add_long_long_length_modifier</a>();</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>                    <span class="keywordflow">return</span> <a class="code hl_function" href="classcata_1_1string__formatter.html#a1931157c73efd6ec93588cb66018a7e4">do_formating</a>( get_nth_arg_as&lt;signed long long int, 0&gt;( format_arg_index,</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>                                         std::forward&lt;Args&gt;( args )... ) );</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>                <span class="keywordflow">case</span> <span class="charliteral">&#39;o&#39;</span>:</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>                <span class="keywordflow">case</span> <span class="charliteral">&#39;x&#39;</span>:</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>                <span class="keywordflow">case</span> <span class="charliteral">&#39;X&#39;</span>:</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>                    <span class="comment">// Workaround for fmtlib prepending number with &#39; &#39;/&#39;+&#39;</span></div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>                    <span class="comment">// when formatting with &#39; &#39;/&#39;+&#39; flags and &#39;o&#39;/&#39;x&#39;/&#39;X&#39; specifiers</span></div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>                    <a class="code hl_function" href="classcata_1_1string__formatter.html#a71179ce3011f4e9312d532566ca578ae">discard_oct_hex_sign_flag</a>();</div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>                <span class="comment">// intentional fall-through</span></div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>                <span class="keywordflow">case</span> <span class="charliteral">&#39;u&#39;</span>:</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>                    <a class="code hl_function" href="classcata_1_1string__formatter.html#af56c4edc7dc206cdc651cc49f17c652b">add_long_long_length_modifier</a>();</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>                    <span class="keywordflow">return</span> <a class="code hl_function" href="classcata_1_1string__formatter.html#a1931157c73efd6ec93588cb66018a7e4">do_formating</a>( get_nth_arg_as&lt;unsigned long long int, 0&gt;( format_arg_index,</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>                                         std::forward&lt;Args&gt;( args )... ) );</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>                <span class="keywordflow">case</span> <span class="charliteral">&#39;a&#39;</span>:</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>                <span class="keywordflow">case</span> <span class="charliteral">&#39;A&#39;</span>:</div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>                <span class="keywordflow">case</span> <span class="charliteral">&#39;g&#39;</span>:</div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>                <span class="keywordflow">case</span> <span class="charliteral">&#39;G&#39;</span>:</div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>                <span class="keywordflow">case</span> <span class="charliteral">&#39;f&#39;</span>:</div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>                <span class="keywordflow">case</span> <span class="charliteral">&#39;F&#39;</span>:</div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>                <span class="keywordflow">case</span> <span class="charliteral">&#39;e&#39;</span>:</div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>                <span class="keywordflow">case</span> <span class="charliteral">&#39;E&#39;</span>:</div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>                    <span class="keywordflow">return</span> <a class="code hl_function" href="classcata_1_1string__formatter.html#a1931157c73efd6ec93588cb66018a7e4">do_formating</a>( get_nth_arg_as&lt;double, 0&gt;( format_arg_index, std::forward&lt;Args&gt;( args )... ) );</div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>                <span class="keywordflow">case</span> <span class="charliteral">&#39;p&#39;</span>:</div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>                    <span class="keywordflow">return</span> <a class="code hl_function" href="classcata_1_1string__formatter.html#a1931157c73efd6ec93588cb66018a7e4">do_formating</a>( get_nth_arg_as&lt;void *, 0&gt;( format_arg_index,</div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>                                         std::forward&lt;Args&gt;( args )... ) );</div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>                <span class="keywordflow">case</span> <span class="charliteral">&#39;s&#39;</span>:</div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>                    <span class="keywordflow">return</span> <a class="code hl_function" href="classcata_1_1string__formatter.html#a1931157c73efd6ec93588cb66018a7e4">do_formating</a>( get_nth_arg_as&lt;std::string_view, 0&gt;( format_arg_index,</div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>                                         std::forward&lt;Args&gt;( args )... ) );</div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>                <span class="keywordflow">default</span>:</div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>                    <a class="code hl_function" href="classcata_1_1string__formatter.html#a5762293330b783ea9469eff0e9ff37ac">throw_error</a>( <span class="stringliteral">&quot;Unsupported format conversion: &quot;</span> + std::string( 1, <a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a> ) );</div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>            }</div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>        }</div>
 <div class="ttc" id="aclasscata_1_1string__formatter_html_a1931157c73efd6ec93588cb66018a7e4"><div class="ttname"><a href="classcata_1_1string__formatter.html#a1931157c73efd6ec93588cb66018a7e4">cata::string_formatter::do_formating</a></div><div class="ttdeci">void do_formating(int value)</div><div class="ttdef"><b>Definition:</b> <a href="string__formatter_8cpp_source.html#l00143">string_formatter.cpp:143</a></div></div>
 <div class="ttc" id="aclasscata_1_1string__formatter_html_a71179ce3011f4e9312d532566ca578ae"><div class="ttname"><a href="classcata_1_1string__formatter.html#a71179ce3011f4e9312d532566ca578ae">cata::string_formatter::discard_oct_hex_sign_flag</a></div><div class="ttdeci">void discard_oct_hex_sign_flag()</div><div class="ttdef"><b>Definition:</b> <a href="string__formatter_8cpp_source.html#l00134">string_formatter.cpp:134</a></div></div>
 <div class="ttc" id="aclasscata_1_1string__formatter_html_af56c4edc7dc206cdc651cc49f17c652b"><div class="ttname"><a href="classcata_1_1string__formatter.html#af56c4edc7dc206cdc651cc49f17c652b">cata::string_formatter::add_long_long_length_modifier</a></div><div class="ttdeci">void add_long_long_length_modifier()</div><div class="ttdef"><b>Definition:</b> <a href="string__formatter_8cpp_source.html#l00129">string_formatter.cpp:129</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="string__formatter_8cpp_source.html#l00129">add_long_long_length_modifier()</a>, <a class="el" href="magic_8cpp_source.html#l01032">c</a>, <a class="el" href="string__formatter_8cpp_source.html#l00010">consume_next_input()</a>, <a class="el" href="string__formatter_8cpp_source.html#l00020">consume_next_input_if()</a>, <a class="el" href="string__formatter_8h_source.html#l00218">current_format</a>, <a class="el" href="string__formatter_8cpp_source.html#l00134">discard_oct_hex_sign_flag()</a>, <a class="el" href="string__formatter_8cpp_source.html#l00143">do_formating()</a>, and <a class="el" href="string__formatter_8cpp_source.html#l00106">throw_error()</a>.</p>
+<p class="reference">References <a class="el" href="string__formatter_8cpp_source.html#l00129">add_long_long_length_modifier()</a>, <a class="el" href="magic_8cpp_source.html#l01032">c</a>, <a class="el" href="string__formatter_8cpp_source.html#l00010">consume_next_input()</a>, <a class="el" href="string__formatter_8cpp_source.html#l00020">consume_next_input_if()</a>, <a class="el" href="string__formatter_8h_source.html#l00219">current_format</a>, <a class="el" href="string__formatter_8cpp_source.html#l00134">discard_oct_hex_sign_flag()</a>, <a class="el" href="string__formatter_8cpp_source.html#l00143">do_formating()</a>, and <a class="el" href="string__formatter_8cpp_source.html#l00106">throw_error()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="string__formatter_8h_source.html#l00370">parse()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="string__formatter_8h_source.html#l00371">parse()</a>.</p>
 
 </div>
 </div>
@@ -1115,7 +1115,7 @@ template&lt;typename ... Args&gt; </div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    }</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>}</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="string__formatter_8h_source.html#l00370">parse()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="string__formatter_8h_source.html#l00371">parse()</a>.</p>
 
 </div>
 </div>
@@ -1161,7 +1161,7 @@ template&lt;typename ... Args&gt; </div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>}</div>
 <div class="ttc" id="anamespacedetail_html_ac4c79842ec549e8b02145d43a1fbc330a6a992d5529f459a44fee58c733255e86"><div class="ttname"><a href="namespacedetail.html#ac4c79842ec549e8b02145d43a1fbc330a6a992d5529f459a44fee58c733255e86">detail::arg_id_kind::index</a></div><div class="ttdeci">@ index</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="string__formatter_8h_source.html#l00256">cata::throw_error()</a>.</p>
+<p class="reference">References <a class="el" href="string__formatter_8h_source.html#l00257">cata::throw_error()</a>.</p>
 
 </div>
 </div>
@@ -1200,7 +1200,7 @@ template&lt;typename ... Args&gt; </div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>}</div>
 <div class="ttc" id="aclasscata_1_1string__formatter_html_aa30d542c99827272d4a1f77753414a5b"><div class="ttname"><a href="classcata_1_1string__formatter.html#aa30d542c99827272d4a1f77753414a5b">cata::string_formatter::read_number_or_argument_index</a></div><div class="ttdeci">std::optional&lt; int &gt; read_number_or_argument_index()</div><div class="ttdef"><b>Definition:</b> <a href="string__formatter_8cpp_source.html#l00074">string_formatter.cpp:74</a></div></div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="string__formatter_8h_source.html#l00370">parse()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="string__formatter_8h_source.html#l00371">parse()</a>.</p>
 
 </div>
 </div>
@@ -1235,7 +1235,7 @@ template&lt;typename ... Args&gt; </div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classcata_1_1string__formatter.html#aa30d542c99827272d4a1f77753414a5b">read_number_or_argument_index</a>();</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>}</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="string__formatter_8h_source.html#l00370">parse()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="string__formatter_8h_source.html#l00371">parse()</a>.</p>
 
 </div>
 </div>
@@ -1281,7 +1281,7 @@ template&lt;typename ... Args&gt; </div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="fmtlib__core_8h_source.html#l02316">format()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="string__formatter_8h_source.html#l00277">get_nth_arg_as()</a>, and <a class="el" href="string__formatter_8h_source.html#l00296">read_conversion()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="string__formatter_8h_source.html#l00278">get_nth_arg_as()</a>, and <a class="el" href="string__formatter_8h_source.html#l00297">read_conversion()</a>.</p>
 
 </div>
 </div>
@@ -1323,11 +1323,11 @@ template&lt;typename ... Args&gt; </div>
 <p>Stores the given text in <a class="el" href="classcata_1_1string__formatter.html#ad7d6971a75e6e014e7f813f22a3b7584">temp_buffer</a> and returns <code>c_str()</code> of it. </p>
 <p >This is used for printing non-strings through "%s". It <em>only</em> works because this prints each format specifier separately, so the content of <a class="el" href="classcata_1_1string__formatter.html#ad7d6971a75e6e014e7f813f22a3b7584">temp_buffer</a> is only used once. </p>
 
-<p class="definition">Definition at line <a class="el" href="string__formatter_8h_source.html#l00263">263</a> of file <a class="el" href="string__formatter_8h_source.html">string_formatter.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>                                      {</div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>            sf.temp_buffer = text;</div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>            <span class="keywordflow">return</span> <a class="code hl_typedef" href="fmtlib__core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>( sf.temp_buffer );</div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>        }</div>
+<p class="definition">Definition at line <a class="el" href="string__formatter_8h_source.html#l00264">264</a> of file <a class="el" href="string__formatter_8h_source.html">string_formatter.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>                                      {</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>            sf.temp_buffer = text;</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>            <span class="keywordflow">return</span> <a class="code hl_typedef" href="fmtlib__core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>( sf.temp_buffer );</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>        }</div>
 <div class="ttc" id="afmtlib__core_8h_html_a204ca715c2febee035464fa53dfc50c4"><div class="ttname"><a href="fmtlib__core_8h.html#a204ca715c2febee035464fa53dfc50c4">string_view</a></div><div class="ttdeci">basic_string_view&lt; char &gt; string_view</div><div class="ttdef"><b>Definition:</b> <a href="fmtlib__core_8h_source.html#l00465">fmtlib_core.h:465</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -1366,10 +1366,10 @@ template&lt;typename ... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="string__formatter_8h_source.html#l00256">256</a> of file <a class="el" href="string__formatter_8h_source.html">string_formatter.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>                                                                                    {</div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>            sf.throw_error( msg );</div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>        }</div>
+<p class="definition">Definition at line <a class="el" href="string__formatter_8h_source.html#l00257">257</a> of file <a class="el" href="string__formatter_8h_source.html">string_formatter.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>                                                                                    {</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>            sf.throw_error( msg );</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1396,9 +1396,9 @@ template&lt;typename ... Args&gt; </div>
 
 <p>The <em>index</em> (not number) of the next argument to be formatted via <a class="el" href="classcata_1_1string__formatter.html#a037f337a88103a56f362396c745aa3e2">current_format</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="string__formatter_8h_source.html#l00220">220</a> of file <a class="el" href="string__formatter_8h_source.html">string_formatter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="string__formatter_8h_source.html#l00221">221</a> of file <a class="el" href="string__formatter_8h_source.html">string_formatter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="string__formatter_8h_source.html#l00370">parse()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="string__formatter_8h_source.html#l00371">parse()</a>.</p>
 
 </div>
 </div>
@@ -1425,9 +1425,9 @@ template&lt;typename ... Args&gt; </div>
 <p>The *currently parsed format specifiers. </p>
 <p >This is extracted from <a class="el" href="classcata_1_1string__formatter.html#abcbbf467868a5f54421d65a5d59cca6e">format</a> during parsing and given to <a class="el" href="fmtlib__printf_8h.html#a726388a03fc2e30cc79d0d992b9f63af">sprintf</a> (along with the actual argument). It is filled and reset during parsing for each format specifier in <a class="el" href="classcata_1_1string__formatter.html#abcbbf467868a5f54421d65a5d59cca6e">format</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="string__formatter_8h_source.html#l00218">218</a> of file <a class="el" href="string__formatter_8h_source.html">string_formatter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="string__formatter_8h_source.html#l00219">219</a> of file <a class="el" href="string__formatter_8h_source.html">string_formatter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="string__formatter_8cpp_source.html#l00143">do_formating()</a>, <a class="el" href="string__formatter_8h_source.html#l00370">parse()</a>, and <a class="el" href="string__formatter_8h_source.html#l00296">read_conversion()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="string__formatter_8cpp_source.html#l00143">do_formating()</a>, <a class="el" href="string__formatter_8h_source.html#l00371">parse()</a>, and <a class="el" href="string__formatter_8h_source.html#l00297">read_conversion()</a>.</p>
 
 </div>
 </div>
@@ -1453,9 +1453,9 @@ template&lt;typename ... Args&gt; </div>
 
 <p>Used during parsing to denote the <em>next</em> character in <a class="el" href="classcata_1_1string__formatter.html#abcbbf467868a5f54421d65a5d59cca6e">format</a> to be parsed. </p>
 
-<p class="definition">Definition at line <a class="el" href="string__formatter_8h_source.html#l00211">211</a> of file <a class="el" href="string__formatter_8h_source.html">string_formatter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="string__formatter_8h_source.html#l00212">212</a> of file <a class="el" href="string__formatter_8h_source.html">string_formatter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="string__formatter_8cpp_source.html#l00010">consume_next_input()</a>, and <a class="el" href="string__formatter_8h_source.html#l00370">parse()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="string__formatter_8cpp_source.html#l00010">consume_next_input()</a>, and <a class="el" href="string__formatter_8h_source.html#l00371">parse()</a>.</p>
 
 </div>
 </div>
@@ -1481,9 +1481,9 @@ template&lt;typename ... Args&gt; </div>
 
 <p>Complete format string, including all format specifiers (the string passed to <a class="el" href="fmtlib__printf_8h.html#a92e0c0e210d2e42ba2eead7337db60b8">printf</a>). </p>
 
-<p class="definition">Definition at line <a class="el" href="string__formatter_8h_source.html#l00208">208</a> of file <a class="el" href="string__formatter_8h_source.html">string_formatter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="string__formatter_8h_source.html#l00209">209</a> of file <a class="el" href="string__formatter_8h_source.html">string_formatter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="string__formatter_8cpp_source.html#l00010">consume_next_input()</a>, and <a class="el" href="string__formatter_8h_source.html#l00370">parse()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="string__formatter_8cpp_source.html#l00010">consume_next_input()</a>, and <a class="el" href="string__formatter_8h_source.html#l00371">parse()</a>.</p>
 
 </div>
 </div>
@@ -1509,9 +1509,9 @@ template&lt;typename ... Args&gt; </div>
 
 <p>The formatted output string, filled during parsing of <a class="el" href="classcata_1_1string__formatter.html#abcbbf467868a5f54421d65a5d59cca6e">format</a>, so it's only valid after the parsing has completed. </p>
 
-<p class="definition">Definition at line <a class="el" href="string__formatter_8h_source.html#l00214">214</a> of file <a class="el" href="string__formatter_8h_source.html">string_formatter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="string__formatter_8h_source.html#l00215">215</a> of file <a class="el" href="string__formatter_8h_source.html">string_formatter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="string__formatter_8cpp_source.html#l00143">do_formating()</a>, <a class="el" href="string__formatter_8h_source.html#l00399">get_output()</a>, and <a class="el" href="string__formatter_8h_source.html#l00370">parse()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="string__formatter_8cpp_source.html#l00143">do_formating()</a>, <a class="el" href="string__formatter_8h_source.html#l00400">get_output()</a>, and <a class="el" href="string__formatter_8h_source.html#l00371">parse()</a>.</p>
 
 </div>
 </div>
@@ -1535,7 +1535,7 @@ template&lt;typename ... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="string__formatter_8h_source.html#l00259">259</a> of file <a class="el" href="string__formatter_8h_source.html">string_formatter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="string__formatter_8h_source.html#l00260">260</a> of file <a class="el" href="string__formatter_8h_source.html">string_formatter.h</a>.</p>
 
 </div>
 </div>
@@ -1549,7 +1549,7 @@ template&lt;typename ... Args&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacecata.html">cata</a></li><li class="navelem"><a class="el" href="classcata_1_1string__formatter.html">string_formatter</a></li>
-    <li class="footer">Generated on Sat Jun 10 2023 11:50:24 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Sep 15 2023 08:27:55 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

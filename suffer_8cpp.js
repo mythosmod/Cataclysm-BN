@@ -31,6 +31,7 @@ var suffer_8cpp =
     [ "effect_bleed", "suffer_8cpp.html#a151e6b162a8a2cdbdb11c407013076eb", null ],
     [ "effect_blind", "suffer_8cpp.html#a09e952ef4d27618e2f60ec737a8d1bae", null ],
     [ "effect_cig", "suffer_8cpp.html#aa6055e7b9d5b2cb3ecd4cce48a416d33", null ],
+    [ "effect_cough_aggravated_asthma", "suffer_8cpp.html#a6c351c6854f1a1b4a6b4dbe694a6e54f", null ],
     [ "effect_datura", "suffer_8cpp.html#a0a3de1e6679128988d176115710ddd03", null ],
     [ "effect_deaf", "suffer_8cpp.html#a6a9276a38bc155b134a121b137073fb7", null ],
     [ "effect_disabled", "suffer_8cpp.html#ae7bd492c95d3e74cac9385a8d4f9f093", null ],

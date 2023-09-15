@@ -21,6 +21,7 @@ var achievement_8h =
       [ "last", "achievement_8h.html#ac10c26c3d785b83f46854c5f05b41f93a98bd1c45684cf587ac2347a92dd7bb51", null ]
     ] ],
     [ "ach_compare", "achievement_8h.html#ae738ba8868ca4515eb0d16533d366bef", null ],
+    [ "kill_req_completed", "achievement_8h.html#aa484c08712ab0d89341864d428cf3458", null ],
     [ "skill_req_completed", "achievement_8h.html#a1d49821b677fa7b69ed72ecddc217543", null ],
     [ "time_req_completed", "achievement_8h.html#ad46bce69f8a83ef46372adcfa5e13d03", null ]
 ];

@@ -7,6 +7,7 @@ var structbody__part__type =
     [ "finalize_all", "structbody__part__type.html#a7a4e725921086d9716f525b0dfd55b85", null ],
     [ "load", "structbody__part__type.html#aa1a1e4bb370ff6f14ed5daa3bd991564", null ],
     [ "load_bp", "structbody__part__type.html#aced09a5212248c20b1e6ad204b08433f", null ],
+    [ "LUA_TYPE_OPS", "structbody__part__type.html#a053cba4d4529a55b56d5794ab06a7868", null ],
     [ "reset", "structbody__part__type.html#afc2e89a6f911cfb03a8bba8391807570", null ],
     [ "accusative", "structbody__part__type.html#a510a7491151d4bc382e3e9f683583dad", null ],
     [ "accusative_multiple", "structbody__part__type.html#a8acb05fb00626eefe0c1c32be43b0b4d", null ],

@@ -30,6 +30,7 @@ var structfield__type =
     [ "is_dangerous", "structfield__type.html#aa22b8a412ae89784b9e8a2a47816adca", null ],
     [ "is_transparent", "structfield__type.html#a4e868b758b406befa1c08723c4c56677", null ],
     [ "load", "structfield__type.html#a8bea02af94d3ee72bd480bbc5d500b87", null ],
+    [ "LUA_TYPE_OPS", "structfield__type.html#a33ed6ac4402eb6478d44bb5f68a11c22", null ],
     [ "accelerated_decay", "structfield__type.html#a07d0501165de40daaca70e96c881e2f1", null ],
     [ "apply_slime_factor", "structfield__type.html#ada24e211101baed318c9f0ec9fa040f9", null ],
     [ "bash_info", "structfield__type.html#a217944ee5229caeba3ee6098d7ca6ee2", null ],

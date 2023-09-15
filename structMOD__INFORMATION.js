@@ -9,6 +9,7 @@ var structMOD__INFORMATION =
     [ "core", "structMOD__INFORMATION.html#a2662151635e1bc4fa24bb41d287024ed", null ],
     [ "dependencies", "structMOD__INFORMATION.html#a9482f097e7b06322dcd79362e4740e37", null ],
     [ "ident", "structMOD__INFORMATION.html#ac94216b21b254ea82d4b9e75311ff3bd", null ],
+    [ "lua_api_version", "structMOD__INFORMATION.html#a6bd179b9827de80f58ef0a70c5fd718f", null ],
     [ "maintainers", "structMOD__INFORMATION.html#ac5f770c77500159b95edb93d1a211538", null ],
     [ "obsolete", "structMOD__INFORMATION.html#a9ef0c707ded35f7b8d3c2e1bc5a7ce31", null ],
     [ "path", "structMOD__INFORMATION.html#a47a878a06e86dfadb1d62f1fbff1105f", null ],

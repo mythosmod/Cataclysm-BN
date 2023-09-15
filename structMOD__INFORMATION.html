@@ -123,6 +123,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a0f471759dea81c58a1df0fd1cedd2f96"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMOD__INFORMATION.html#a0f471759dea81c58a1df0fd1cedd2f96">version</a></td></tr>
 <tr class="memdesc:a0f471759dea81c58a1df0fd1cedd2f96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Arbitrary string that should help maintainers in figuring out what version of the mod the error in a bugreport comes from.  <a href="structMOD__INFORMATION.html#a0f471759dea81c58a1df0fd1cedd2f96">More...</a><br /></td></tr>
 <tr class="separator:a0f471759dea81c58a1df0fd1cedd2f96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bd179b9827de80f58ef0a70c5fd718f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="generic__factory_8h.html#a1159dbaba81931271dbfe5b9c7f041b3">std::optional</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMOD__INFORMATION.html#a6bd179b9827de80f58ef0a70c5fd718f">lua_api_version</a></td></tr>
+<tr class="memdesc:a6bd179b9827de80f58ef0a70c5fd718f"><td class="mdescLeft">&#160;</td><td class="mdescRight">If mod uses Lua API, specifies version of the API being used.  <a href="structMOD__INFORMATION.html#a6bd179b9827de80f58ef0a70c5fd718f">More...</a><br /></td></tr>
+<tr class="separator:a6bd179b9827de80f58ef0a70c5fd718f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9482f097e7b06322dcd79362e4740e37"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="type__id_8h.html#aabcbcb9fb77661ba75c47b6287318e03">mod_id</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMOD__INFORMATION.html#a9482f097e7b06322dcd79362e4740e37">dependencies</a></td></tr>
 <tr class="memdesc:a9482f097e7b06322dcd79362e4740e37"><td class="mdescLeft">&#160;</td><td class="mdescRight">What other mods must be loaded prior to this one?  <a href="structMOD__INFORMATION.html#a9482f097e7b06322dcd79362e4740e37">More...</a><br /></td></tr>
 <tr class="separator:a9482f097e7b06322dcd79362e4740e37"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,7 +148,7 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="mod__manager_8h_source.html#l00043">43</a> of file <a class="el" href="mod__manager_8h_source.html">mod_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mod__manager_8h_source.html#l00044">44</a> of file <a class="el" href="mod__manager_8h_source.html">mod_manager.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="aec604f2cbec191d7678020fb1bcdaf2c" name="aec604f2cbec191d7678020fb1bcdaf2c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aec604f2cbec191d7678020fb1bcdaf2c">&#9670;&nbsp;</a></span>description()</h2>
@@ -166,10 +169,10 @@ Private Attributes</h2></td></tr>
 <div class="fragment"><div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>{</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="structMOD__INFORMATION.html#a5b77c9818dfd7484d9e4cf966f5f9176">translatable_info</a>.<a class="code hl_function" href="structtranslatable__mod__info.html#a59faca768a925ba9690c549b75099ae5">description</a>();</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>}</div>
-<div class="ttc" id="astructMOD__INFORMATION_html_a5b77c9818dfd7484d9e4cf966f5f9176"><div class="ttname"><a href="structMOD__INFORMATION.html#a5b77c9818dfd7484d9e4cf966f5f9176">MOD_INFORMATION::translatable_info</a></div><div class="ttdeci">translatable_mod_info translatable_info</div><div class="ttdef"><b>Definition:</b> <a href="mod__manager_8h_source.html#l00045">mod_manager.h:45</a></div></div>
-<div class="ttc" id="astructtranslatable__mod__info_html_a59faca768a925ba9690c549b75099ae5"><div class="ttname"><a href="structtranslatable__mod__info.html#a59faca768a925ba9690c549b75099ae5">translatable_mod_info::description</a></div><div class="ttdeci">std::string description()</div><div class="ttdef"><b>Definition:</b> <a href="mod__manager_8cpp_source.html#l00528">mod_manager.cpp:528</a></div></div>
+<div class="ttc" id="astructMOD__INFORMATION_html_a5b77c9818dfd7484d9e4cf966f5f9176"><div class="ttname"><a href="structMOD__INFORMATION.html#a5b77c9818dfd7484d9e4cf966f5f9176">MOD_INFORMATION::translatable_info</a></div><div class="ttdeci">translatable_mod_info translatable_info</div><div class="ttdef"><b>Definition:</b> <a href="mod__manager_8h_source.html#l00046">mod_manager.h:46</a></div></div>
+<div class="ttc" id="astructtranslatable__mod__info_html_a59faca768a925ba9690c549b75099ae5"><div class="ttname"><a href="structtranslatable__mod__info.html#a59faca768a925ba9690c549b75099ae5">translatable_mod_info::description</a></div><div class="ttdeci">std::string description()</div><div class="ttdef"><b>Definition:</b> <a href="mod__manager_8cpp_source.html#l00529">mod_manager.cpp:529</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="mod__manager_8cpp_source.html#l00528">translatable_mod_info::description()</a>, and <a class="el" href="mod__manager_8h_source.html#l00045">translatable_info</a>.</p>
+<p class="reference">References <a class="el" href="mod__manager_8cpp_source.html#l00529">translatable_mod_info::description()</a>, and <a class="el" href="mod__manager_8h_source.html#l00046">translatable_info</a>.</p>
 
 </div>
 </div>
@@ -198,15 +201,15 @@ Private Attributes</h2></td></tr>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="structMOD__INFORMATION.html#a5b77c9818dfd7484d9e4cf966f5f9176">translatable_info</a>.<a class="code hl_function" href="structtranslatable__mod__info.html#a5cbdef5b4a7aea0662d629deeefc1349">name</a>();</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    }</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>}</div>
-<div class="ttc" id="aclassstring__id_html_a19aea01aa4a1f53aac09acc978f67cf8"><div class="ttname"><a href="classstring__id.html#a19aea01aa4a1f53aac09acc978f67cf8">string_id::c_str</a></div><div class="ttdeci">const char * c_str() const</div><div class="ttdoc">Interface to the plain C-string of the id.</div><div class="ttdef"><b>Definition:</b> <a href="string__id_8h_source.html#l00247">string_id.h:247</a></div></div>
-<div class="ttc" id="astring__formatter_8h_html_a8964099387da2f95396c67566bafce3d"><div class="ttname"><a href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a></div><div class="ttdeci">std::string string_format(std::string_view format, Args &amp;&amp;...args)</div><div class="ttdoc">Simple wrapper over string_formatter::parse.</div><div class="ttdef"><b>Definition:</b> <a href="string__formatter_8h_source.html#l00430">string_formatter.h:430</a></div></div>
-<div class="ttc" id="astructMOD__INFORMATION_html_ac94216b21b254ea82d4b9e75311ff3bd"><div class="ttname"><a href="structMOD__INFORMATION.html#ac94216b21b254ea82d4b9e75311ff3bd">MOD_INFORMATION::ident</a></div><div class="ttdeci">mod_id ident</div><div class="ttdef"><b>Definition:</b> <a href="mod__manager_8h_source.html#l00055">mod_manager.h:55</a></div></div>
-<div class="ttc" id="astructtranslatable__mod__info_html_a5cbdef5b4a7aea0662d629deeefc1349"><div class="ttname"><a href="structtranslatable__mod__info.html#a5cbdef5b4a7aea0662d629deeefc1349">translatable_mod_info::name</a></div><div class="ttdeci">std::string name()</div><div class="ttdef"><b>Definition:</b> <a href="mod__manager_8cpp_source.html#l00517">mod_manager.cpp:517</a></div></div>
+<div class="ttc" id="aclassstring__id_html_a19aea01aa4a1f53aac09acc978f67cf8"><div class="ttname"><a href="classstring__id.html#a19aea01aa4a1f53aac09acc978f67cf8">string_id::c_str</a></div><div class="ttdeci">const char * c_str() const</div><div class="ttdoc">Interface to the plain C-string of the id.</div><div class="ttdef"><b>Definition:</b> <a href="string__id_8h_source.html#l00255">string_id.h:255</a></div></div>
+<div class="ttc" id="astring__formatter_8h_html_a8964099387da2f95396c67566bafce3d"><div class="ttname"><a href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a></div><div class="ttdeci">std::string string_format(std::string_view format, Args &amp;&amp;...args)</div><div class="ttdoc">Simple wrapper over string_formatter::parse.</div><div class="ttdef"><b>Definition:</b> <a href="string__formatter_8h_source.html#l00431">string_formatter.h:431</a></div></div>
+<div class="ttc" id="astructMOD__INFORMATION_html_ac94216b21b254ea82d4b9e75311ff3bd"><div class="ttname"><a href="structMOD__INFORMATION.html#ac94216b21b254ea82d4b9e75311ff3bd">MOD_INFORMATION::ident</a></div><div class="ttdeci">mod_id ident</div><div class="ttdef"><b>Definition:</b> <a href="mod__manager_8h_source.html#l00056">mod_manager.h:56</a></div></div>
+<div class="ttc" id="astructtranslatable__mod__info_html_a5cbdef5b4a7aea0662d629deeefc1349"><div class="ttname"><a href="structtranslatable__mod__info.html#a5cbdef5b4a7aea0662d629deeefc1349">translatable_mod_info::name</a></div><div class="ttdeci">std::string name()</div><div class="ttdef"><b>Definition:</b> <a href="mod__manager_8cpp_source.html#l00518">mod_manager.cpp:518</a></div></div>
 <div class="ttc" id="atranslations_8h_html_aa829053017e23ef22d44dccecba63a34"><div class="ttname"><a href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a></div><div class="ttdeci">#define _(msg)</div><div class="ttdef"><b>Definition:</b> <a href="translations_8h_source.html#l00116">translations.h:116</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="string__id_8h_source.html#l00247">string_id&lt; T &gt;::c_str()</a>, <a class="el" href="mod__manager_8h_source.html#l00055">ident</a>, <a class="el" href="mod__manager_8cpp_source.html#l00517">translatable_mod_info::name()</a>, <a class="el" href="string__formatter_8h_source.html#l00430">string_format()</a>, and <a class="el" href="mod__manager_8h_source.html#l00045">translatable_info</a>.</p>
+<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="string__id_8h_source.html#l00255">string_id&lt; T &gt;::c_str()</a>, <a class="el" href="mod__manager_8h_source.html#l00056">ident</a>, <a class="el" href="mod__manager_8cpp_source.html#l00518">translatable_mod_info::name()</a>, <a class="el" href="string__formatter_8h_source.html#l00431">string_format()</a>, and <a class="el" href="mod__manager_8h_source.html#l00046">translatable_info</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="worldfactory_8cpp_source.html#l00855">worldfactory::show_modselection_window()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="worldfactory_8cpp_source.html#l00883">worldfactory::show_modselection_window()</a>.</p>
 
 </div>
 </div>
@@ -234,13 +237,13 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mod__manager_8h_source.html#l00051">51</a> of file <a class="el" href="mod__manager_8h_source.html">mod_manager.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                                                                         {</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            <a class="code hl_variable" href="structMOD__INFORMATION.html#a5b77c9818dfd7484d9e4cf966f5f9176">translatable_info</a> = <a class="code hl_function" href="namespaceavatar__action.html#a76ba74774376a08222b8cdcce08f7304">std::move</a>( tmi );</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        }</div>
+<p class="definition">Definition at line <a class="el" href="mod__manager_8h_source.html#l00052">52</a> of file <a class="el" href="mod__manager_8h_source.html">mod_manager.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                                                                         {</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            <a class="code hl_variable" href="structMOD__INFORMATION.html#a5b77c9818dfd7484d9e4cf966f5f9176">translatable_info</a> = <a class="code hl_function" href="namespaceavatar__action.html#a76ba74774376a08222b8cdcce08f7304">std::move</a>( tmi );</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        }</div>
 <div class="ttc" id="anamespaceavatar__action_html_a76ba74774376a08222b8cdcce08f7304"><div class="ttname"><a href="namespaceavatar__action.html#a76ba74774376a08222b8cdcce08f7304">avatar_action::move</a></div><div class="ttdeci">bool move(avatar &amp;you, map &amp;m, const tripoint &amp;d)</div><div class="ttdef"><b>Definition:</b> <a href="avatar__action_8cpp_source.html#l00096">avatar_action.cpp:96</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="avatar__action_8cpp_source.html#l00096">avatar_action::move()</a>, and <a class="el" href="mod__manager_8h_source.html#l00045">translatable_info</a>.</p>
+<p class="reference">References <a class="el" href="avatar__action_8cpp_source.html#l00096">avatar_action::move()</a>, and <a class="el" href="mod__manager_8h_source.html#l00046">translatable_info</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mod__manager_8cpp_source.html#l00235">mod_management::load_modfile()</a>.</p>
 
@@ -261,7 +264,7 @@ Private Attributes</h2></td></tr>
 
 <p>All authors who have added content to the mod (excluding maintenance changes) </p>
 
-<p class="definition">Definition at line <a class="el" href="mod__manager_8h_source.html#l00064">64</a> of file <a class="el" href="mod__manager_8h_source.html">mod_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mod__manager_8h_source.html#l00065">65</a> of file <a class="el" href="mod__manager_8h_source.html">mod_manager.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mod__manager_8cpp_source.html#l00235">mod_management::load_modfile()</a>.</p>
 
@@ -279,7 +282,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mod__manager_8h_source.html#l00091">91</a> of file <a class="el" href="mod__manager_8h_source.html">mod_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mod__manager_8h_source.html#l00095">95</a> of file <a class="el" href="mod__manager_8h_source.html">mod_manager.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mod__manager_8cpp_source.html#l00235">mod_management::load_modfile()</a>.</p>
 
@@ -299,9 +302,9 @@ Private Attributes</h2></td></tr>
 
 <p>What mods cannot be loaded together with this one? </p>
 
-<p class="definition">Definition at line <a class="el" href="mod__manager_8h_source.html#l00083">83</a> of file <a class="el" href="mod__manager_8h_source.html">mod_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mod__manager_8h_source.html#l00087">87</a> of file <a class="el" href="mod__manager_8h_source.html">mod_manager.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mod__manager__ui_8cpp_source.html#l00116">check_conflict()</a>, and <a class="el" href="mod__manager_8cpp_source.html#l00235">mod_management::load_modfile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mod__manager__ui_8cpp_source.html#l00128">check_conflict()</a>, and <a class="el" href="mod__manager_8cpp_source.html#l00235">mod_management::load_modfile()</a>.</p>
 
 </div>
 </div>
@@ -319,9 +322,9 @@ Private Attributes</h2></td></tr>
 
 <p>Core mods are loaded before any other mods. </p>
 
-<p class="definition">Definition at line <a class="el" href="mod__manager_8h_source.html#l00086">86</a> of file <a class="el" href="mod__manager_8h_source.html">mod_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mod__manager_8h_source.html#l00090">90</a> of file <a class="el" href="mod__manager_8h_source.html">mod_manager.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mod__manager__ui_8cpp_source.html#l00306">mod_ui::can_shift_down()</a>, <a class="el" href="mod__manager__ui_8cpp_source.html#l00281">mod_ui::can_shift_up()</a>, and <a class="el" href="mod__manager_8cpp_source.html#l00235">mod_management::load_modfile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mod__manager__ui_8cpp_source.html#l00318">mod_ui::can_shift_down()</a>, <a class="el" href="mod__manager__ui_8cpp_source.html#l00293">mod_ui::can_shift_up()</a>, and <a class="el" href="mod__manager_8cpp_source.html#l00235">mod_management::load_modfile()</a>.</p>
 
 </div>
 </div>
@@ -339,7 +342,7 @@ Private Attributes</h2></td></tr>
 
 <p>What other mods must be loaded prior to this one? </p>
 
-<p class="definition">Definition at line <a class="el" href="mod__manager_8h_source.html#l00080">80</a> of file <a class="el" href="mod__manager_8h_source.html">mod_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mod__manager_8h_source.html#l00084">84</a> of file <a class="el" href="mod__manager_8h_source.html">mod_manager.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mod__manager_8cpp_source.html#l00235">mod_management::load_modfile()</a>.</p>
 
@@ -357,9 +360,29 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mod__manager_8h_source.html#l00055">55</a> of file <a class="el" href="mod__manager_8h_source.html">mod_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mod__manager_8h_source.html#l00056">56</a> of file <a class="el" href="mod__manager_8h_source.html">mod_manager.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mod__manager_8cpp_source.html#l00235">mod_management::load_modfile()</a>, and <a class="el" href="mod__manager_8cpp_source.html#l00043">name()</a>.</p>
+
+</div>
+</div>
+<a id="a6bd179b9827de80f58ef0a70c5fd718f" name="a6bd179b9827de80f58ef0a70c5fd718f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bd179b9827de80f58ef0a70c5fd718f">&#9670;&nbsp;</a></span>lua_api_version</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="generic__factory_8h.html#a1159dbaba81931271dbfe5b9c7f041b3">std::optional</a>&lt;int&gt; MOD_INFORMATION::lua_api_version</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If mod uses Lua API, specifies version of the API being used. </p>
+
+<p class="definition">Definition at line <a class="el" href="mod__manager_8h_source.html#l00081">81</a> of file <a class="el" href="mod__manager_8h_source.html">mod_manager.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="mod__manager_8cpp_source.html#l00235">mod_management::load_modfile()</a>.</p>
 
 </div>
 </div>
@@ -378,7 +401,7 @@ Private Attributes</h2></td></tr>
 <p>Assigned maintainers responsible for maintaining compatibility with core. </p>
 <dl class="section note"><dt>Note</dt><dd>these should be verbatim GH account names </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="mod__manager_8h_source.html#l00070">70</a> of file <a class="el" href="mod__manager_8h_source.html">mod_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mod__manager_8h_source.html#l00071">71</a> of file <a class="el" href="mod__manager_8h_source.html">mod_manager.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mod__manager_8cpp_source.html#l00235">mod_management::load_modfile()</a>.</p>
 
@@ -398,9 +421,9 @@ Private Attributes</h2></td></tr>
 
 <p>Obsolete mods are loaded for legacy saves but cannot be used when starting new worlds. </p>
 
-<p class="definition">Definition at line <a class="el" href="mod__manager_8h_source.html#l00089">89</a> of file <a class="el" href="mod__manager_8h_source.html">mod_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mod__manager_8h_source.html#l00093">93</a> of file <a class="el" href="mod__manager_8h_source.html">mod_manager.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="init_8cpp_source.html#l00909">init::check_mods_for_errors()</a>, and <a class="el" href="mod__manager_8cpp_source.html#l00235">mod_management::load_modfile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mod__manager_8cpp_source.html#l00235">mod_management::load_modfile()</a>.</p>
 
 </div>
 </div>
@@ -418,7 +441,7 @@ Private Attributes</h2></td></tr>
 
 <p>Directory to load JSON from relative to directory containing modinfo.json. </p>
 
-<p class="definition">Definition at line <a class="el" href="mod__manager_8h_source.html#l00058">58</a> of file <a class="el" href="mod__manager_8h_source.html">mod_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mod__manager_8h_source.html#l00059">59</a> of file <a class="el" href="mod__manager_8h_source.html">mod_manager.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mod__manager_8cpp_source.html#l00235">mod_management::load_modfile()</a>.</p>
 
@@ -438,7 +461,7 @@ Private Attributes</h2></td></tr>
 
 <p>Full path to modinfo.json, for debug purposes. </p>
 
-<p class="definition">Definition at line <a class="el" href="mod__manager_8h_source.html#l00061">61</a> of file <a class="el" href="mod__manager_8h_source.html">mod_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mod__manager_8h_source.html#l00062">62</a> of file <a class="el" href="mod__manager_8h_source.html">mod_manager.h</a>.</p>
 
 </div>
 </div>
@@ -462,9 +485,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mod__manager_8h_source.html#l00045">45</a> of file <a class="el" href="mod__manager_8h_source.html">mod_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mod__manager_8h_source.html#l00046">46</a> of file <a class="el" href="mod__manager_8h_source.html">mod_manager.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mod__manager_8cpp_source.html#l00054">description()</a>, <a class="el" href="mod__manager_8cpp_source.html#l00043">name()</a>, and <a class="el" href="mod__manager_8h_source.html#l00051">set_translatable_info()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mod__manager_8cpp_source.html#l00054">description()</a>, <a class="el" href="mod__manager_8cpp_source.html#l00043">name()</a>, and <a class="el" href="mod__manager_8h_source.html#l00052">set_translatable_info()</a>.</p>
 
 </div>
 </div>
@@ -483,7 +506,7 @@ Private Attributes</h2></td></tr>
 <p>Arbitrary string that should help maintainers in figuring out what version of the mod the error in a bugreport comes from. </p>
 <p >Recommended use is to set latest mod update date here. </p>
 
-<p class="definition">Definition at line <a class="el" href="mod__manager_8h_source.html#l00077">77</a> of file <a class="el" href="mod__manager_8h_source.html">mod_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mod__manager_8h_source.html#l00078">78</a> of file <a class="el" href="mod__manager_8h_source.html">mod_manager.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="mod__manager_8cpp_source.html#l00235">mod_management::load_modfile()</a>.</p>
 
@@ -499,7 +522,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structMOD__INFORMATION.html">MOD_INFORMATION</a></li>
-    <li class="footer">Generated on Sat Jun 10 2023 11:50:15 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Sep 15 2023 08:27:42 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -9,6 +9,7 @@ var structspecies__type =
     [ "flags", "structspecies__type.html#a8c5d10275e856c5a4b571eca73424b92", null ],
     [ "footsteps", "structspecies__type.html#a64dea933e534d35ad022b7278952b8b1", null ],
     [ "id", "structspecies__type.html#a98ad9e0372c7f94c6643ba963a13eedf", null ],
+    [ "name", "structspecies__type.html#a4865d6174a65ac1927469281a7822d85", null ],
     [ "placate", "structspecies__type.html#af4096ea2775095f505c20424796452f8", null ],
     [ "was_loaded", "structspecies__type.html#aac31f2bb0e6fc1a142dbc8371bec471e", null ]
 ];

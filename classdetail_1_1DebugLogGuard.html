@@ -117,7 +117,7 @@ Private Attributes</h2></td></tr>
 <div class="textblock"><p >Debug log guard. </p>
 <p >Appends newline and flushes the log when goes out of scope. Dereference to get the underlying stream. </p>
 
-<p class="definition">Definition at line <a class="el" href="debug_8h_source.html#l00252">252</a> of file <a class="el" href="debug_8h_source.html">debug.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="debug_8h_source.html#l00263">263</a> of file <a class="el" href="debug_8h_source.html">debug.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a0ef0d2bf63cf12d2487ffe603bd82e21" name="a0ef0d2bf63cf12d2487ffe603bd82e21"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0ef0d2bf63cf12d2487ffe603bd82e21">&#9670;&nbsp;</a></span>DebugLogGuard()</h2>
@@ -143,9 +143,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="debug_8h_source.html#l00256">256</a> of file <a class="el" href="debug_8h_source.html">debug.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>: <a class="code hl_variable" href="classdetail_1_1DebugLogGuard.html#aab29228156f38dd1d0220732205693de">s</a>( &amp;<a class="code hl_variable" href="classdetail_1_1DebugLogGuard.html#aab29228156f38dd1d0220732205693de">s</a> ) {}</div>
-<div class="ttc" id="aclassdetail_1_1DebugLogGuard_html_aab29228156f38dd1d0220732205693de"><div class="ttname"><a href="classdetail_1_1DebugLogGuard.html#aab29228156f38dd1d0220732205693de">detail::DebugLogGuard::s</a></div><div class="ttdeci">std::ostream * s</div><div class="ttdef"><b>Definition:</b> <a href="debug_8h_source.html#l00254">debug.h:254</a></div></div>
+<p class="definition">Definition at line <a class="el" href="debug_8h_source.html#l00267">267</a> of file <a class="el" href="debug_8h_source.html">debug.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>: <a class="code hl_variable" href="classdetail_1_1DebugLogGuard.html#aab29228156f38dd1d0220732205693de">s</a>( &amp;<a class="code hl_variable" href="classdetail_1_1DebugLogGuard.html#aab29228156f38dd1d0220732205693de">s</a> ) {}</div>
+<div class="ttc" id="aclassdetail_1_1DebugLogGuard_html_aab29228156f38dd1d0220732205693de"><div class="ttname"><a href="classdetail_1_1DebugLogGuard.html#aab29228156f38dd1d0220732205693de">detail::DebugLogGuard::s</a></div><div class="ttdeci">std::ostream * s</div><div class="ttdef"><b>Definition:</b> <a href="debug_8h_source.html#l00265">debug.h:265</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -164,12 +164,12 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="debug_8cpp_source.html#l01154">1154</a> of file <a class="el" href="debug_8cpp_source.html">debug.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01155" name="l01155"></a><span class="lineno"> 1155</span>{</div>
-<div class="line"><a id="l01156" name="l01156"></a><span class="lineno"> 1156</span>    *<a class="code hl_variable" href="classdetail_1_1DebugLogGuard.html#aab29228156f38dd1d0220732205693de">s</a> &lt;&lt; std::endl;</div>
-<div class="line"><a id="l01157" name="l01157"></a><span class="lineno"> 1157</span>}</div>
+<p class="definition">Definition at line <a class="el" href="debug_8cpp_source.html#l01371">1371</a> of file <a class="el" href="debug_8cpp_source.html">debug.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01372" name="l01372"></a><span class="lineno"> 1372</span>{</div>
+<div class="line"><a id="l01373" name="l01373"></a><span class="lineno"> 1373</span>    *<a class="code hl_variable" href="classdetail_1_1DebugLogGuard.html#aab29228156f38dd1d0220732205693de">s</a> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l01374" name="l01374"></a><span class="lineno"> 1374</span>}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="debug_8h_source.html#l00254">s</a>.</p>
+<p class="reference">References <a class="el" href="debug_8h_source.html#l00265">s</a>.</p>
 
 </div>
 </div>
@@ -197,12 +197,12 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="debug_8h_source.html#l00259">259</a> of file <a class="el" href="debug_8h_source.html">debug.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>                                {</div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>            <span class="keywordflow">return</span> *<a class="code hl_variable" href="classdetail_1_1DebugLogGuard.html#aab29228156f38dd1d0220732205693de">s</a>;</div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>        }</div>
+<p class="definition">Definition at line <a class="el" href="debug_8h_source.html#l00270">270</a> of file <a class="el" href="debug_8h_source.html">debug.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>                                {</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>            <span class="keywordflow">return</span> *<a class="code hl_variable" href="classdetail_1_1DebugLogGuard.html#aab29228156f38dd1d0220732205693de">s</a>;</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>        }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="debug_8h_source.html#l00254">s</a>.</p>
+<p class="reference">References <a class="el" href="debug_8h_source.html#l00265">s</a>.</p>
 
 </div>
 </div>
@@ -229,12 +229,12 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="debug_8h_source.html#l00262">262</a> of file <a class="el" href="debug_8h_source.html">debug.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>                                            {</div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>            <span class="keywordflow">return</span> *<a class="code hl_variable" href="classdetail_1_1DebugLogGuard.html#aab29228156f38dd1d0220732205693de">s</a>;</div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>        }</div>
+<p class="definition">Definition at line <a class="el" href="debug_8h_source.html#l00273">273</a> of file <a class="el" href="debug_8h_source.html">debug.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>                                            {</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>            <span class="keywordflow">return</span> *<a class="code hl_variable" href="classdetail_1_1DebugLogGuard.html#aab29228156f38dd1d0220732205693de">s</a>;</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>        }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="debug_8h_source.html#l00254">s</a>.</p>
+<p class="reference">References <a class="el" href="debug_8h_source.html#l00265">s</a>.</p>
 
 </div>
 </div>
@@ -259,9 +259,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="debug_8h_source.html#l00254">254</a> of file <a class="el" href="debug_8h_source.html">debug.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="debug_8h_source.html#l00265">265</a> of file <a class="el" href="debug_8h_source.html">debug.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="debug_8h_source.html#l00259">operator*()</a>, and <a class="el" href="debug_8cpp_source.html#l01154">~DebugLogGuard()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="debug_8h_source.html#l00270">operator*()</a>, and <a class="el" href="debug_8cpp_source.html#l01371">~DebugLogGuard()</a>.</p>
 
 </div>
 </div>
@@ -275,7 +275,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedetail.html">detail</a></li><li class="navelem"><a class="el" href="classdetail_1_1DebugLogGuard.html">DebugLogGuard</a></li>
-    <li class="footer">Generated on Sat Jun 10 2023 11:50:26 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Sep 15 2023 08:27:57 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

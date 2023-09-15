@@ -36,6 +36,7 @@ var game_8cpp =
     [ "is_valid_in_w_terrain", "game_8cpp.html#ae6b3cb74ff09b7b8d1281ea60b8b30ab", null ],
     [ "maptile_field_intensity", "game_8cpp.html#af68b5e3da8498b897da2fb01000d651d", null ],
     [ "point_selection_menu", "game_8cpp.html#a7d056b2d7ba1e95472b54f05b7ac7d83", null ],
+    [ "save_uistate_data", "game_8cpp.html#a615e39400b6d367631048e3dc72e9fdd", null ],
     [ "set_scenario", "game_8cpp.html#a9a8a128d64bcb9da0329221c1c37fe28", null ],
     [ "update_faction_api", "game_8cpp.html#a6eb37d378921cc922c2e747c40ae3c73", null ],
     [ "veh_lumi", "game_8cpp.html#a782af9771a32612719c4eafa7944410c", null ],

@@ -7,6 +7,7 @@ var structWORLD =
     [ "load_legacy_options", "structWORLD.html#a2b56a1bbdc50fe3c1ba9265a63e50b71", null ],
     [ "load_options", "structWORLD.html#aec15d4ac4680dfe8fcb9ac03e6292230", null ],
     [ "load_options", "structWORLD.html#aeb9779c41fbeff9285c3a1668796d9a1", null ],
+    [ "needs_lua", "structWORLD.html#a2018b5b4ebaa5e43b43ad9b72484e218", null ],
     [ "save", "structWORLD.html#a4d95679e329e87969816dbb1ba981654", null ],
     [ "save_exists", "structWORLD.html#a6d1cd9bc2df757ec135a10a1e807fdc7", null ],
     [ "active_mod_order", "structWORLD.html#ac0a6b5aa9181b4b72d32d0a6edaf7d2e", null ],

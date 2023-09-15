@@ -1,6 +1,14 @@
 var NAVTREEINDEX7 =
 {
-"bodypart_8h.html#afd8bbe90714363f51584e69e0eaf7f72":[37,0,1,68,34],
+"bodypart_8h.html#af618290c4c2de42aab87977ac7311980a54721306a0e05318b6d0440349c1a0fb":[37,0,1,68,9,7],
+"bodypart_8h.html#af618290c4c2de42aab87977ac7311980ab1635a97e6cc33a051cd378b60e48698":[37,0,1,68,9,1],
+"bodypart_8h.html#af618290c4c2de42aab87977ac7311980ab4b216482dcc0e468819f023c3aeddd1":[37,0,1,68,9,0],
+"bodypart_8h.html#af618290c4c2de42aab87977ac7311980abb7b120eb8dc7c137110446fe541baed":[37,0,1,68,9,3],
+"bodypart_8h.html#af618290c4c2de42aab87977ac7311980ac094b1c6f96ebbd604928cfd2fad0ab7":[37,0,1,68,9,11],
+"bodypart_8h.html#af618290c4c2de42aab87977ac7311980ac09d37dac773806a42c13041ba254700":[37,0,1,68,9,12],
+"bodypart_8h.html#af618290c4c2de42aab87977ac7311980ae5f21c7494ad730a0c6abf6957976cb3":[37,0,1,68,9,5],
+"bodypart_8h.html#afb2603a7303d5ed3bb17aa35ed2b2165":[37,0,1,68,23],
+"bodypart_8h.html#afd8bbe90714363f51584e69e0eaf7f72":[37,0,1,68,35],
 "bodypart_8h_source.html":[37,0,1,68],
 "bonuses_8cpp.html":[37,0,1,69],
 "bonuses_8cpp.html#a299f7957d469309d9fb386d5403b4371":[37,0,1,69,3],
@@ -241,13 +249,5 @@ var NAVTREEINDEX7 =
 "cata__libintl_8cpp.html#aece7c2663bd75a518b13255479dec108":[37,0,1,77,14],
 "cata__libintl_8cpp.html#af9a2f119ffd48b01ca09af65ca21db44":[37,0,1,77,9],
 "cata__libintl_8cpp_source.html":[37,0,1,77],
-"cata__libintl_8h.html":[37,0,1,78],
-"cata__libintl_8h.html#a129c1bc9b191720723867d480cd82b0f":[37,0,1,78,7],
-"cata__libintl_8h.html#a308284fcf94ddfe46273bd388610d5fe":[37,0,1,78,8],
-"cata__libintl_8h.html#a34ae0ba1bd744011ef3215150e8cf60a":[37,0,1,78,11],
-"cata__libintl_8h.html#a5b0c512bb9be61b5b42dee551a13f868":[37,0,1,78,9],
-"cata__libintl_8h.html#a878543575fc327e486d98e3ae2d3d674":[37,0,1,78,10],
-"cata__libintl_8h.html#a878543575fc327e486d98e3ae2d3d674a1cfdf0e8d0c87a228c1f40d9bee7888b":[37,0,1,78,10,6],
-"cata__libintl_8h.html#a878543575fc327e486d98e3ae2d3d674a360fb9e5a59a04c6f8158866f3cec852":[37,0,1,78,10,15],
-"cata__libintl_8h.html#a878543575fc327e486d98e3ae2d3d674a3718b5ecf60aa0dba49e150e96cb1fc3":[37,0,1,78,10,1]
+"cata__libintl_8h.html":[37,0,1,78]
 };

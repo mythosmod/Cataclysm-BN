@@ -114,7 +114,7 @@ struct string_id_params&lt; T &gt;</div><p >This represents an identifier (imple
 <div class="line"><span class="keyword">using</span> <a class="code hl_class" href="classstring__id.html">itype_id</a> = <a class="code hl_class" href="classstring__id.html">string_id&lt;itype&gt;</a>;</div>
 <div class="line"><span class="keyword">struct </span><a class="code hl_struct" href="structmtype.html">mtype</a>;</div>
 <div class="line"><span class="keyword">using</span> <a class="code hl_class" href="classstring__id.html">mtype_id</a> = <a class="code hl_class" href="classstring__id.html">string_id&lt;mtype&gt;</a>;</div>
-<div class="ttc" id="astructitype_html"><div class="ttname"><a href="structitype.html">itype</a></div><div class="ttdef"><b>Definition:</b> <a href="itype_8h_source.html#l00836">itype.h:836</a></div></div>
+<div class="ttc" id="astructitype_html"><div class="ttname"><a href="structitype.html">itype</a></div><div class="ttdef"><b>Definition:</b> <a href="itype_8h_source.html#l00805">itype.h:805</a></div></div>
 <div class="ttc" id="astructmtype_html"><div class="ttname"><a href="structmtype.html">mtype</a></div><div class="ttdef"><b>Definition:</b> <a href="mtype_8h_source.html#l00208">mtype.h:208</a></div></div>
 </div><!-- fragment --><p> The types mtype_id and itype_id declared here are separate, the compiler will not allow assignment / comparison of mtype_id and itype_id. Note that a forward declaration is sufficient for the template parameter type.</p>
 <p >If an id is used locally in just one header &amp; source file, then feel free to define it in those files. If it is used more widely (like mtype_id), then please define it in <a class="el" href="type__id_8h.html">type_id.h</a>, a central light-weight header that defines all ids people might want to use. This prevents duplicate definitions in many files.</p>
@@ -123,7 +123,7 @@ struct string_id_params&lt; T &gt;</div><p >This represents an identifier (imple
 <p ><code><a class="el" href="classstring__id.html">string_id</a></code> is a bit slower than <a class="el" href="classint__id.html" title="Just like the string_id, this is a wrapper for int based identifiers.">int_id</a>, but it's safe to use the same instance between game reloads. That means that <a class="el" href="classstring__id.html">string_id</a> can be static (and should be for maximal performance). Comparison of string ids is relatively slow (same as std::string comparison). for newly created <a class="el" href="classstring__id.html">string_id</a> (i.e. inline constant or local variable), first method invocation: <code><a class="el" href="classint__id.html#a09d4f824b2540da7e682d10cdf324081">id</a></code> call is relatively slow (string hash map lookup) <code><a class="el" href="classint__id.html#a315169d32cce4267b7c8dceff4b0d1d7">obj</a></code> lookup is slow (string hash map lookup + array read) note, after the first invocation, all subsequent calls on the same <a class="el" href="classstring__id.html">string_id</a> instance are fast for old (or static) <a class="el" href="classstring__id.html">string_id</a>, second and subsequent method invocations: conversion to <a class="el" href="classint__id.html" title="Just like the string_id, this is a wrapper for int based identifiers.">int_id</a> is extremely fast (just returns int field) <code><a class="el" href="classint__id.html#a315169d32cce4267b7c8dceff4b0d1d7">obj</a></code> call is relatively fast (array read by int index), a bit slower than on <a class="el" href="classint__id.html" title="Just like the string_id, this is a wrapper for int based identifiers.">int_id</a> Type marker that specifies whether string ids of a specific type are "static" (i.e. "interned", having a single pointer inside) or "dynamic" (non-interned, having std::string inside).</p>
 <p >By default all string ids are static/interned. To make a specific <a class="el" href="classstring__id.html">string_id</a> type dynamic, add the following specialization: template&lt;&gt; struct string_id_params&lt;T&gt; { static constexpr bool dynamic = true; }; Replace <code>T</code> above with concrete type of the string id (see below for examples) </p>
 
-<p class="definition">Definition at line <a class="el" href="string__id_8h_source.html#l00088">88</a> of file <a class="el" href="string__id_8h_source.html">string_id.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="string__id_8h_source.html#l00089">89</a> of file <a class="el" href="string__id_8h_source.html">string_id.h</a>.</p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
 <a id="a899acf1c9111d2bfbb567658616496f2" name="a899acf1c9111d2bfbb567658616496f2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a899acf1c9111d2bfbb567658616496f2">&#9670;&nbsp;</a></span>dynamic</h2>
@@ -147,7 +147,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="string__id_8h_source.html#l00089">89</a> of file <a class="el" href="string__id_8h_source.html">string_id.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="string__id_8h_source.html#l00090">90</a> of file <a class="el" href="string__id_8h_source.html">string_id.h</a>.</p>
 
 </div>
 </div>
@@ -160,7 +160,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structstring__id__params.html">string_id_params</a></li>
-    <li class="footer">Generated on Sat Jun 10 2023 11:50:20 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Sep 15 2023 08:27:49 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

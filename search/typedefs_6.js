@@ -22,5 +22,6 @@ var searchData=
   ['function_5ftype_19',['function_type',['../structevent__field__transformation.html#af4c9dd7e0f55e93bf45102338a3ace45',1,'event_field_transformation']]],
   ['functionmap_20',['FunctionMap',['../classVehicleSpawn.html#ad3d33c20d1bf4a128862792833d1a6cc',1,'VehicleSpawn::FunctionMap()'],['../namespaceMapExtras.html#a3d3cbcad4bf4e520fb37cb34f14df3c1',1,'MapExtras::FunctionMap()']]],
   ['furn_5fid_21',['furn_id',['../type__id_8h.html#a6bc1468ac54b6176b517879f5f77564e',1,'type_id.h']]],
-  ['furn_5fstr_5fid_22',['furn_str_id',['../type__id_8h.html#a13fd56b9ac506b2517d4889040e0ef66',1,'type_id.h']]]
+  ['furn_5fstr_5fid_22',['furn_str_id',['../type__id_8h.html#a13fd56b9ac506b2517d4889040e0ef66',1,'type_id.h']]],
+  ['fx_5ftraits_23',['fx_traits',['../namespaceluna_1_1detail.html#ae9cdc6a548e6e2a85d6b66086c858edd',1,'luna::detail']]]
 ];

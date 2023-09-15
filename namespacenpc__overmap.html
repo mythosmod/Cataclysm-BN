@@ -132,18 +132,18 @@ Variables</h2></td></tr>
 
 <p>Chance that a random NPC spawns somewhere on overmap. </p>
 
-<p class="definition">Definition at line <a class="el" href="game_8cpp_source.html#l11048">11048</a> of file <a class="el" href="game_8cpp_source.html">game.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l11049" name="l11049"></a><span class="lineno">11049</span>{</div>
-<div class="line"><a id="l11050" name="l11050"></a><span class="lineno">11050</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">int</span> days_in_year = 14 * 4;</div>
-<div class="line"><a id="l11051" name="l11051"></a><span class="lineno">11051</span>    <span class="keyword">const</span> <span class="keywordtype">double</span> expected_npc_count = days_in_year * density;</div>
-<div class="line"><a id="l11052" name="l11052"></a><span class="lineno">11052</span>    <span class="keyword">const</span> <span class="keywordtype">double</span> overcrowding_ratio = npc_num / expected_npc_count;</div>
-<div class="line"><a id="l11053" name="l11053"></a><span class="lineno">11053</span>    <span class="keywordflow">if</span>( overcrowding_ratio &lt; 1.0 ) {</div>
-<div class="line"><a id="l11054" name="l11054"></a><span class="lineno">11054</span>        <span class="keywordflow">return</span> std::min( 1.0, density / 24.0 );</div>
-<div class="line"><a id="l11055" name="l11055"></a><span class="lineno">11055</span>    }</div>
-<div class="line"><a id="l11056" name="l11056"></a><span class="lineno">11056</span>    <span class="keywordflow">return</span> ( 1.0 / 24.0 ) / overcrowding_ratio;</div>
-<div class="line"><a id="l11057" name="l11057"></a><span class="lineno">11057</span>}</div>
+<p class="definition">Definition at line <a class="el" href="game_8cpp_source.html#l11080">11080</a> of file <a class="el" href="game_8cpp_source.html">game.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l11081" name="l11081"></a><span class="lineno">11081</span>{</div>
+<div class="line"><a id="l11082" name="l11082"></a><span class="lineno">11082</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">int</span> days_in_year = 14 * 4;</div>
+<div class="line"><a id="l11083" name="l11083"></a><span class="lineno">11083</span>    <span class="keyword">const</span> <span class="keywordtype">double</span> expected_npc_count = days_in_year * density;</div>
+<div class="line"><a id="l11084" name="l11084"></a><span class="lineno">11084</span>    <span class="keyword">const</span> <span class="keywordtype">double</span> overcrowding_ratio = npc_num / expected_npc_count;</div>
+<div class="line"><a id="l11085" name="l11085"></a><span class="lineno">11085</span>    <span class="keywordflow">if</span>( overcrowding_ratio &lt; 1.0 ) {</div>
+<div class="line"><a id="l11086" name="l11086"></a><span class="lineno">11086</span>        <span class="keywordflow">return</span> std::min( 1.0, density / 24.0 );</div>
+<div class="line"><a id="l11087" name="l11087"></a><span class="lineno">11087</span>    }</div>
+<div class="line"><a id="l11088" name="l11088"></a><span class="lineno">11088</span>    <span class="keywordflow">return</span> ( 1.0 / 24.0 ) / overcrowding_ratio;</div>
+<div class="line"><a id="l11089" name="l11089"></a><span class="lineno">11089</span>}</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l11059">game::perhaps_add_random_npc()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l11091">game::perhaps_add_random_npc()</a>.</p>
 
 </div>
 </div>
@@ -172,7 +172,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="npc_8h_source.html#l01423">1423</a> of file <a class="el" href="npc_8h_source.html">npc.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l11059">game::perhaps_add_random_npc()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l11091">game::perhaps_add_random_npc()</a>.</p>
 
 </div>
 </div>
@@ -182,7 +182,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacenpc__overmap.html">npc_overmap</a></li>
-    <li class="footer">Generated on Sat Jun 10 2023 11:50:28 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Sep 15 2023 08:28:00 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

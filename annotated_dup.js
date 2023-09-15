@@ -147,6 +147,11 @@ var annotated_dup =
       [ "is_instance_of", "structcata_1_1is__instance__of.html", null ],
       [ "is_instance_of< TMPL< T >, TMPL >", "structcata_1_1is__instance__of_3_01TMPL_3_01T_01_4_00_01TMPL_01_4.html", null ],
       [ "list", "classcata_1_1list.html", "classcata_1_1list" ],
+      [ "lua_log_handler", "classcata_1_1lua__log__handler.html", "classcata_1_1lua__log__handler" ],
+      [ "lua_log_msg", "structcata_1_1lua__log__msg.html", "structcata_1_1lua__log__msg" ],
+      [ "lua_state", "structcata_1_1lua__state.html", "structcata_1_1lua__state" ],
+      [ "lua_state_deleter", "structcata_1_1lua__state__deleter.html", "structcata_1_1lua__state__deleter" ],
+      [ "on_every_x_hooks", "structcata_1_1on__every__x__hooks.html", "structcata_1_1on__every__x__hooks" ],
       [ "poly_serialized", "classcata_1_1poly__serialized.html", "classcata_1_1poly__serialized" ],
       [ "range_hash", "structcata_1_1range__hash.html", "structcata_1_1range__hash" ],
       [ "string_formatter", "classcata_1_1string__formatter.html", "classcata_1_1string__formatter" ],
@@ -374,6 +379,14 @@ var annotated_dup =
     [ "item_internal", "namespaceitem__internal.html", [
       [ "scoped_goes_bad_cache", "structitem__internal_1_1scoped__goes__bad__cache.html", "structitem__internal_1_1scoped__goes__bad__cache" ]
     ] ],
+    [ "luna", "namespaceluna.html", [
+      [ "detail", "namespaceluna_1_1detail.html", [
+        [ "luna_traits", "structluna_1_1detail_1_1luna__traits.html", "structluna_1_1detail_1_1luna__traits" ]
+      ] ],
+      [ "no_bases_t", "structluna_1_1no__bases__t.html", null ],
+      [ "userenum", "structluna_1_1userenum.html", "structluna_1_1userenum" ],
+      [ "userlib", "structluna_1_1userlib.html", "structluna_1_1userlib" ]
+    ] ],
     [ "mapf", "namespacemapf.html", [
       [ "format_effect", "classmapf_1_1format__effect.html", "classmapf_1_1format__effect" ]
     ] ],
@@ -433,7 +446,6 @@ var annotated_dup =
       [ "hash< coords::coord_point< Point, Origin, Scale > >", "structstd_1_1hash_3_01coords_1_1coord__point_3_01Point_00_01Origin_00_01Scale_01_4_01_4.html", "structstd_1_1hash_3_01coords_1_1coord__point_3_01Point_00_01Origin_00_01Scale_01_4_01_4" ],
       [ "hash< description_affix >", "structstd_1_1hash_3_01description__affix_01_4.html", "structstd_1_1hash_3_01description__affix_01_4" ],
       [ "hash< event_type >", "structstd_1_1hash_3_01event__type_01_4.html", "structstd_1_1hash_3_01event__type_01_4" ],
-      [ "hash< gun_type_type >", "structstd_1_1hash_3_01gun__type__type_01_4.html", "structstd_1_1hash_3_01gun__type__type_01_4" ],
       [ "hash< int_id< T > >", "structstd_1_1hash_3_01int__id_3_01T_01_4_01_4.html", "structstd_1_1hash_3_01int__id_3_01T_01_4_01_4" ],
       [ "hash< map_key >", "structstd_1_1hash_3_01map__key_01_4.html", "structstd_1_1hash_3_01map__key_01_4" ],
       [ "hash< nc_color >", "structstd_1_1hash_3_01nc__color_01_4.html", "structstd_1_1hash_3_01nc__color_01_4" ],
@@ -806,7 +818,6 @@ var annotated_dup =
     [ "gun_actor", "classgun__actor.html", "classgun__actor" ],
     [ "gun_mode", "classgun__mode.html", "classgun__mode" ],
     [ "gun_modifier_data", "classgun__modifier__data.html", "classgun__modifier__data" ],
-    [ "gun_type_type", "classgun__type__type.html", "classgun__type__type" ],
     [ "gunmod_inventory_preset", "classgunmod__inventory__preset.html", "classgunmod__inventory__preset" ],
     [ "gunmod_location", "classgunmod__location.html", "classgunmod__location" ],
     [ "hacking_activity_actor", "classhacking__activity__actor.html", "classhacking__activity__actor" ],
@@ -991,6 +1002,7 @@ var annotated_dup =
     [ "look_around_result", "structlook__around__result.html", "structlook__around__result" ],
     [ "loot_options", "classloot__options.html", "classloot__options" ],
     [ "lru_cache", "classlru__cache.html", "classlru__cache" ],
+    [ "lua_iuse_actor", "classlua__iuse__actor.html", "classlua__iuse__actor" ],
     [ "ma_buff", "classma__buff.html", "classma__buff" ],
     [ "ma_buff_effect_type", "classma__buff__effect__type.html", "classma__buff__effect__type" ],
     [ "ma_buff_reader", "classma__buff__reader.html", "classma__buff__reader" ],
@@ -1118,7 +1130,7 @@ var annotated_dup =
     [ "npc_template", "classnpc__template.html", "classnpc__template" ],
     [ "null_deleter", "structnull__deleter.html", "structnull__deleter" ],
     [ "null_tile_data", "classnull__tile__data.html", "classnull__tile__data" ],
-    [ "NullBuf", "structNullBuf.html", "structNullBuf" ],
+    [ "NullStream", "classNullStream.html", "classNullStream" ],
     [ "number_sci_notation", "structnumber__sci__notation.html", "structnumber__sci__notation" ],
     [ "numeric_interval", "structnumeric__interval.html", "structnumeric__interval" ],
     [ "nutrients", "structnutrients.html", "structnutrients" ],
@@ -1447,6 +1459,7 @@ var annotated_dup =
     [ "weighted_list", "structweighted__list.html", "structweighted__list" ],
     [ "weighted_object", "structweighted__object.html", "structweighted__object" ],
     [ "wformat_args", "structwformat__args.html", "structwformat__args" ],
+    [ "wield_status", "classwield__status.html", "classwield__status" ],
     [ "window_panel", "classwindow__panel.html", "classwindow__panel" ],
     [ "wish_item_callback", "classwish__item__callback.html", "classwish__item__callback" ],
     [ "wish_monster_callback", "classwish__monster__callback.html", "classwish__monster__callback" ],

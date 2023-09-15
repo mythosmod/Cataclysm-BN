@@ -5,6 +5,7 @@ var structter__t =
     [ "count", "structter__t.html#a353932a6b434023d88b9a6625b356cdb", null ],
     [ "get_all", "structter__t.html#aec6d84a377c27abfa03f0040d0467759", null ],
     [ "load", "structter__t.html#a9eaee3e1c564b61131ec51c1d497d2bf", null ],
+    [ "LUA_TYPE_OPS", "structter__t.html#a4d030597d0d00f130064cf6385de2762", null ],
     [ "close", "structter__t.html#abec3ff6b6de8dcffdd615d4c1a908d99", null ],
     [ "heat_radiation", "structter__t.html#aeb7bb548f17f7aa9d33f635baa9f1ab1", null ],
     [ "id", "structter__t.html#a876ecdb9de153e3d864ee221ed63bd45", null ],

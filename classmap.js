@@ -234,6 +234,7 @@ var classmap =
     [ "graffiti_at", "classmap.html#ae074b6e1e06913bee442d894f590131f", null ],
     [ "grow_plant", "classmap.html#abc43c98747739f2ab2c010e1408c9711", null ],
     [ "has_adjacent_furniture_with", "classmap.html#a40edb8b25c5e5b18d3a74912356f069a", null ],
+    [ "has_field_at", "classmap.html#aeaa734554c3ec9255aa273e90d295adf", null ],
     [ "has_flag", "classmap.html#a27e22f0999ea03eff18babc48643c568", null ],
     [ "has_flag", "classmap.html#ac684d1daa0db9471be3208afd49c7c0b", null ],
     [ "has_flag", "classmap.html#aa75dcd17be7ec93c02c5a5a77814b1a5", null ],

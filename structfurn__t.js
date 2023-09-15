@@ -8,6 +8,7 @@ var structfurn__t =
     [ "get_all", "structfurn__t.html#a3ec4b00f3a0f749acd421dc17ad73d9f", null ],
     [ "is_movable", "structfurn__t.html#a7ef46ed5fb8a03bb1487754eeb5fb7b7", null ],
     [ "load", "structfurn__t.html#a97c1b051006b0a53dc5c1a6966491119", null ],
+    [ "LUA_TYPE_OPS", "structfurn__t.html#a1d3959948b07e72c58e81b0de4d10159", null ],
     [ "active", "structfurn__t.html#ae1ea7e54c14dfb76dae56ed24907b91b", null ],
     [ "bonus_fire_warmth_feet", "structfurn__t.html#a2a302498c38fec203b8bb91beb564be8", null ],
     [ "close", "structfurn__t.html#ad07cbef4360c7ea581e988d3922fcfb5", null ],

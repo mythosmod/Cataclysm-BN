@@ -111,7 +111,7 @@ var classgame =
     [ "get_fishable_locations", "classgame.html#ac80f3b879e17a6bd48e5077412b0f0e8", null ],
     [ "get_fishable_monsters", "classgame.html#aa438db29792672f0f3edbb6af28bf62e", null ],
     [ "get_follower_list", "classgame.html#ac0f3110585f99a40d6a10e8b33d24bc5", null ],
-    [ "get_kill_tracker", "classgame.html#a83c13367dd746db98368e9279df92c4b", null ],
+    [ "get_kill_tracker", "classgame.html#af2bd2d9dba12210accf8f7ed1d0ad755", null ],
     [ "get_levx", "classgame.html#ac4ac9a5e0a313934e9095b38a1eb73c9", null ],
     [ "get_levy", "classgame.html#ab453a46e537aef2ea2ea37363687fd37", null ],
     [ "get_levz", "classgame.html#a1761d58262d9bf293c5f9b3a0f6b6719", null ],

@@ -8,6 +8,7 @@ var achievement_8cpp =
     [ "enum_to_string< achievement_comparison >", "achievement_8cpp.html#a8e3b57b1fb50a5dc30789c0945797fea", null ],
     [ "enum_to_string< achievement_completion >", "achievement_8cpp.html#a94a32f4d0c4e767f83205666cc254d37", null ],
     [ "epoch_to_time_point", "achievement_8cpp.html#af652568c592cdd98c4168e521dcee28c", null ],
+    [ "kill_req_completed", "achievement_8cpp.html#aa484c08712ab0d89341864d428cf3458", null ],
     [ "skill_req_completed", "achievement_8cpp.html#a1d49821b677fa7b69ed72ecddc217543", null ],
     [ "text_for_requirement", "achievement_8cpp.html#abadc69d287c0ef2458ce8c967616d8d8", null ],
     [ "time_req_completed", "achievement_8cpp.html#ad46bce69f8a83ef46372adcfa5e13d03", null ],

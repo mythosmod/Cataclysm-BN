@@ -21,6 +21,7 @@ var debug_8h =
       [ "MapMem", "debug_8h.html#ab427f07a11f49f7146d1db272592d700aeaf557ce2a2f2ef9694ca3150f756fa8", null ],
       [ "NPC", "debug_8h.html#ab427f07a11f49f7146d1db272592d700a2bda99597da06a11feafd8760b68aec6", null ],
       [ "SDL", "debug_8h.html#ab427f07a11f49f7146d1db272592d700aa203d5f2c811f85341bed32623f5bdf6", null ],
+      [ "Lua", "debug_8h.html#ab427f07a11f49f7146d1db272592d700a0ae9478a1db9d1e2c48efa49eac1c7c6", null ],
       [ "Num", "debug_8h.html#ab427f07a11f49f7146d1db272592d700ab3e3076d9b3c53bede50d468b647b109", null ]
     ] ],
     [ "DebugOutput", "debug_8h.html#ad23721f303b059caeb1d8a751a39562b", [
@@ -34,13 +35,15 @@ var debug_8h =
       [ "Error", "debug_8h.html#a157bb3f8cadfd404439ad477a19e8515a902b0d55fddef6f8d651fe1035b7d4bd", null ],
       [ "Num", "debug_8h.html#a157bb3f8cadfd404439ad477a19e8515ab3e3076d9b3c53bede50d468b647b109", null ]
     ] ],
-    [ "bitness", "debug_8h.html#a89e70b6c3190e6d2d5cd25d30388fd84", null ],
+    [ "bitness", "debug_8h.html#a346914292a97ce585747c5f07fa41027", null ],
+    [ "bitness_string", "debug_8h.html#acdbccaac41fc7f113ba5d011321557b4", null ],
     [ "capture_debugmsg_during", "debug_8h.html#a169b6ef1ad10061b6e22ea8b27daaead", null ],
     [ "debug_has_error_been_observed", "debug_8h.html#ab931617c912a2f051703995421195d1b", null ],
     [ "debug_reset_ignored_messages", "debug_8h.html#ac671a8a860711fc2844c16ad7eb0e15a", null ],
     [ "deinitDebug", "debug_8h.html#a33caf87f1ca91cc325a7f39c3f47c383", null ],
     [ "game_report", "debug_8h.html#a6e2841c65be4bf7f92290991465a9edb", null ],
     [ "game_version", "debug_8h.html#aee3ac3ce7ea3341cfcb88e84261ba800", null ],
+    [ "get_os_bitness", "debug_8h.html#ab6d59c0569db5bf701a728df339dac5d", null ],
     [ "graphics_version", "debug_8h.html#a61e6df366ab3796e27177f4e4d777dc0", null ],
     [ "mods_loaded", "debug_8h.html#a4fcd21034ffa98c5d11aa750c387d84e", null ],
     [ "operating_system", "debug_8h.html#ad1da05f81991af7cf61509ab86e94409", null ],

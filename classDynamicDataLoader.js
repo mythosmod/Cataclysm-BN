@@ -22,6 +22,7 @@ var classDynamicDataLoader =
     [ "load_object", "classDynamicDataLoader.html#a8b258226896350cca74914445feaec89", null ],
     [ "unload_data", "classDynamicDataLoader.html#ae04487ce53b25662607fac4b788a50c9", null ],
     [ "finalized", "classDynamicDataLoader.html#a0461a3e26cb53811d2517aa6394138c7", null ],
+    [ "lua", "classDynamicDataLoader.html#aacb35b3527920adc4e56166a4d8f730a", null ],
     [ "stream_cache", "classDynamicDataLoader.html#a3f893befa62966a494f7d3d3d014b104", null ],
     [ "type_function_map", "classDynamicDataLoader.html#a6212b3f40371c325291b41711781a943", null ]
 ];

@@ -179,32 +179,32 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bionics_8cpp_source.html#l01961">1961</a> of file <a class="el" href="bionics_8cpp_source.html">bionics.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01962" name="l01962"></a><span class="lineno"> 1962</span>{</div>
-<div class="line"><a id="l01963" name="l01963"></a><span class="lineno"> 1963</span>    <span class="keywordflow">if</span>( <a class="code hl_variable" href="game_8cpp.html#abeb98e93502d73818b4a73fabe191bc1">g</a>-&gt;u.has_trait( <a class="code hl_variable" href="bionics_8cpp.html#a17e20a34f5837e50de3264fa93af7d0a">trait_DEBUG_BIONICS</a> ) ) {</div>
-<div class="line"><a id="l01964" name="l01964"></a><span class="lineno"> 1964</span>        <span class="keywordflow">return</span> 100;</div>
-<div class="line"><a id="l01965" name="l01965"></a><span class="lineno"> 1965</span>    }</div>
-<div class="line"><a id="l01966" name="l01966"></a><span class="lineno"> 1966</span> </div>
-<div class="line"><a id="l01967" name="l01967"></a><span class="lineno"> 1967</span>    <span class="keywordtype">int</span> chance_of_success = 0;</div>
-<div class="line"><a id="l01968" name="l01968"></a><span class="lineno"> 1968</span>    <span class="comment">// we will base chance_of_success on a ratio of skill and difficulty</span></div>
-<div class="line"><a id="l01969" name="l01969"></a><span class="lineno"> 1969</span>    <span class="comment">// when skill=difficulty, this gives us 1.  skill &lt; difficulty gives a fraction.</span></div>
-<div class="line"><a id="l01970" name="l01970"></a><span class="lineno"> 1970</span>    <span class="keywordtype">float</span> skill_difficulty_parameter = <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>( adjusted_skill /</div>
-<div class="line"><a id="l01971" name="l01971"></a><span class="lineno"> 1971</span>                                       ( 4.0 * bionic_difficulty ) );</div>
-<div class="line"><a id="l01972" name="l01972"></a><span class="lineno"> 1972</span> </div>
-<div class="line"><a id="l01973" name="l01973"></a><span class="lineno"> 1973</span>    <span class="comment">// when skill == difficulty, chance_of_success is 50%. Chance of success drops quickly below that</span></div>
-<div class="line"><a id="l01974" name="l01974"></a><span class="lineno"> 1974</span>    <span class="comment">// to reserve bionics for characters with the appropriate skill.  For more difficult bionics, the</span></div>
-<div class="line"><a id="l01975" name="l01975"></a><span class="lineno"> 1975</span>    <span class="comment">// curve flattens out just above 80%</span></div>
-<div class="line"><a id="l01976" name="l01976"></a><span class="lineno"> 1976</span>    chance_of_success = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>( ( 100 * skill_difficulty_parameter ) /</div>
-<div class="line"><a id="l01977" name="l01977"></a><span class="lineno"> 1977</span>                                          ( skill_difficulty_parameter + std::sqrt( 1 / skill_difficulty_parameter ) ) );</div>
-<div class="line"><a id="l01978" name="l01978"></a><span class="lineno"> 1978</span> </div>
-<div class="line"><a id="l01979" name="l01979"></a><span class="lineno"> 1979</span>    <span class="keywordflow">return</span> chance_of_success;</div>
-<div class="line"><a id="l01980" name="l01980"></a><span class="lineno"> 1980</span>}</div>
+<p class="definition">Definition at line <a class="el" href="bionics_8cpp_source.html#l01964">1964</a> of file <a class="el" href="bionics_8cpp_source.html">bionics.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01965" name="l01965"></a><span class="lineno"> 1965</span>{</div>
+<div class="line"><a id="l01966" name="l01966"></a><span class="lineno"> 1966</span>    <span class="keywordflow">if</span>( <a class="code hl_variable" href="game_8cpp.html#abeb98e93502d73818b4a73fabe191bc1">g</a>-&gt;u.has_trait( <a class="code hl_variable" href="bionics_8cpp.html#a17e20a34f5837e50de3264fa93af7d0a">trait_DEBUG_BIONICS</a> ) ) {</div>
+<div class="line"><a id="l01967" name="l01967"></a><span class="lineno"> 1967</span>        <span class="keywordflow">return</span> 100;</div>
+<div class="line"><a id="l01968" name="l01968"></a><span class="lineno"> 1968</span>    }</div>
+<div class="line"><a id="l01969" name="l01969"></a><span class="lineno"> 1969</span> </div>
+<div class="line"><a id="l01970" name="l01970"></a><span class="lineno"> 1970</span>    <span class="keywordtype">int</span> chance_of_success = 0;</div>
+<div class="line"><a id="l01971" name="l01971"></a><span class="lineno"> 1971</span>    <span class="comment">// we will base chance_of_success on a ratio of skill and difficulty</span></div>
+<div class="line"><a id="l01972" name="l01972"></a><span class="lineno"> 1972</span>    <span class="comment">// when skill=difficulty, this gives us 1.  skill &lt; difficulty gives a fraction.</span></div>
+<div class="line"><a id="l01973" name="l01973"></a><span class="lineno"> 1973</span>    <span class="keywordtype">float</span> skill_difficulty_parameter = <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>( adjusted_skill /</div>
+<div class="line"><a id="l01974" name="l01974"></a><span class="lineno"> 1974</span>                                       ( 4.0 * bionic_difficulty ) );</div>
+<div class="line"><a id="l01975" name="l01975"></a><span class="lineno"> 1975</span> </div>
+<div class="line"><a id="l01976" name="l01976"></a><span class="lineno"> 1976</span>    <span class="comment">// when skill == difficulty, chance_of_success is 50%. Chance of success drops quickly below that</span></div>
+<div class="line"><a id="l01977" name="l01977"></a><span class="lineno"> 1977</span>    <span class="comment">// to reserve bionics for characters with the appropriate skill.  For more difficult bionics, the</span></div>
+<div class="line"><a id="l01978" name="l01978"></a><span class="lineno"> 1978</span>    <span class="comment">// curve flattens out just above 80%</span></div>
+<div class="line"><a id="l01979" name="l01979"></a><span class="lineno"> 1979</span>    chance_of_success = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>( ( 100 * skill_difficulty_parameter ) /</div>
+<div class="line"><a id="l01980" name="l01980"></a><span class="lineno"> 1980</span>                                          ( skill_difficulty_parameter + std::sqrt( 1 / skill_difficulty_parameter ) ) );</div>
+<div class="line"><a id="l01981" name="l01981"></a><span class="lineno"> 1981</span> </div>
+<div class="line"><a id="l01982" name="l01982"></a><span class="lineno"> 1982</span>    <span class="keywordflow">return</span> chance_of_success;</div>
+<div class="line"><a id="l01983" name="l01983"></a><span class="lineno"> 1983</span>}</div>
 <div class="ttc" id="abionics_8cpp_html_a17e20a34f5837e50de3264fa93af7d0a"><div class="ttname"><a href="bionics_8cpp.html#a17e20a34f5837e50de3264fa93af7d0a">trait_DEBUG_BIONICS</a></div><div class="ttdeci">static const trait_id trait_DEBUG_BIONICS(&quot;DEBUG_BIONICS&quot;)</div></div>
-<div class="ttc" id="agame_8cpp_html_abeb98e93502d73818b4a73fabe191bc1"><div class="ttname"><a href="game_8cpp.html#abeb98e93502d73818b4a73fabe191bc1">g</a></div><div class="ttdeci">std::unique_ptr&lt; game &gt; g</div><div class="ttdef"><b>Definition:</b> <a href="game_8cpp_source.html#l00283">game.cpp:283</a></div></div>
+<div class="ttc" id="agame_8cpp_html_abeb98e93502d73818b4a73fabe191bc1"><div class="ttname"><a href="game_8cpp.html#abeb98e93502d73818b4a73fabe191bc1">g</a></div><div class="ttdeci">std::unique_ptr&lt; game &gt; g</div><div class="ttdef"><b>Definition:</b> <a href="game_8cpp_source.html#l00284">game.cpp:284</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="game_8cpp_source.html#l00283">g</a>, and <a class="el" href="bionics_8cpp.html#a17e20a34f5837e50de3264fa93af7d0a">trait_DEBUG_BIONICS</a>.</p>
+<p class="reference">References <a class="el" href="game_8cpp_source.html#l00284">g</a>, and <a class="el" href="bionics_8cpp.html#a17e20a34f5837e50de3264fa93af7d0a">trait_DEBUG_BIONICS</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="iexamine_8cpp_source.html#l04810">best_installer()</a>, <a class="el" href="bionics_8cpp_source.html#l02223">Character::can_install_bionics()</a>, <a class="el" href="bionics_8cpp_source.html#l01982">Character::can_uninstall_bionic()</a>, <a class="el" href="game__inventory_8cpp_source.html#l01924">bionic_install_preset::get_failure_chance()</a>, <a class="el" href="game__inventory_8cpp_source.html#l02019">bionic_install_surgeon_preset::get_failure_chance()</a>, <a class="el" href="game__inventory_8cpp_source.html#l02103">bionic_uninstall_preset::get_failure_chance()</a>, <a class="el" href="bionics_8cpp_source.html#l02316">Character::install_bionics()</a>, <a class="el" href="game_8cpp_source.html#l04916">game::save_cyborg()</a>, and <a class="el" href="bionics_8cpp_source.html#l02052">Character::uninstall_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iexamine_8cpp_source.html#l04838">best_installer()</a>, <a class="el" href="bionics_8cpp_source.html#l02229">Character::can_install_bionics()</a>, <a class="el" href="bionics_8cpp_source.html#l01985">Character::can_uninstall_bionic()</a>, <a class="el" href="game__inventory_8cpp_source.html#l01924">bionic_install_preset::get_failure_chance()</a>, <a class="el" href="game__inventory_8cpp_source.html#l02019">bionic_install_surgeon_preset::get_failure_chance()</a>, <a class="el" href="game__inventory_8cpp_source.html#l02103">bionic_uninstall_preset::get_failure_chance()</a>, <a class="el" href="bionics_8cpp_source.html#l02322">Character::install_bionics()</a>, <a class="el" href="game_8cpp_source.html#l04925">game::save_cyborg()</a>, and <a class="el" href="bionics_8cpp_source.html#l02055">Character::uninstall_bionic()</a>.</p>
 
 </div>
 </div>
@@ -234,25 +234,25 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bionics_8cpp_source.html#l02884">2884</a> of file <a class="el" href="bionics_8cpp_source.html">bionics.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l02886" name="l02886"></a><span class="lineno"> 2886</span>{</div>
-<div class="line"><a id="l02887" name="l02887"></a><span class="lineno"> 2887</span>    <span class="comment">// Vector of bionics to return</span></div>
-<div class="line"><a id="l02888" name="l02888"></a><span class="lineno"> 2888</span>    std::vector&lt;bionic_id&gt; bionics_cancelling;</div>
-<div class="line"><a id="l02889" name="l02889"></a><span class="lineno"> 2889</span> </div>
-<div class="line"><a id="l02890" name="l02890"></a><span class="lineno"> 2890</span>    <span class="comment">// Search through the vector of of bionics, and see if the trait is cancelled by one of them</span></div>
-<div class="line"><a id="l02891" name="l02891"></a><span class="lineno"> 2891</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_class" href="classstring__id.html">bionic_id</a> &amp;bid : bios ) {</div>
-<div class="line"><a id="l02892" name="l02892"></a><span class="lineno"> 2892</span>        <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_class" href="classstring__id.html">trait_id</a> &amp;trait : bid-&gt;canceled_mutations ) {</div>
-<div class="line"><a id="l02893" name="l02893"></a><span class="lineno"> 2893</span>            <span class="keywordflow">if</span>( trait == tid ) {</div>
-<div class="line"><a id="l02894" name="l02894"></a><span class="lineno"> 2894</span>                bionics_cancelling.emplace_back( bid );</div>
-<div class="line"><a id="l02895" name="l02895"></a><span class="lineno"> 2895</span>            }</div>
-<div class="line"><a id="l02896" name="l02896"></a><span class="lineno"> 2896</span>        }</div>
-<div class="line"><a id="l02897" name="l02897"></a><span class="lineno"> 2897</span>    }</div>
-<div class="line"><a id="l02898" name="l02898"></a><span class="lineno"> 2898</span> </div>
-<div class="line"><a id="l02899" name="l02899"></a><span class="lineno"> 2899</span>    <span class="keywordflow">return</span> bionics_cancelling;</div>
-<div class="line"><a id="l02900" name="l02900"></a><span class="lineno"> 2900</span>}</div>
+<p class="definition">Definition at line <a class="el" href="bionics_8cpp_source.html#l02890">2890</a> of file <a class="el" href="bionics_8cpp_source.html">bionics.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l02892" name="l02892"></a><span class="lineno"> 2892</span>{</div>
+<div class="line"><a id="l02893" name="l02893"></a><span class="lineno"> 2893</span>    <span class="comment">// Vector of bionics to return</span></div>
+<div class="line"><a id="l02894" name="l02894"></a><span class="lineno"> 2894</span>    std::vector&lt;bionic_id&gt; bionics_cancelling;</div>
+<div class="line"><a id="l02895" name="l02895"></a><span class="lineno"> 2895</span> </div>
+<div class="line"><a id="l02896" name="l02896"></a><span class="lineno"> 2896</span>    <span class="comment">// Search through the vector of of bionics, and see if the trait is cancelled by one of them</span></div>
+<div class="line"><a id="l02897" name="l02897"></a><span class="lineno"> 2897</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_class" href="classstring__id.html">bionic_id</a> &amp;bid : bios ) {</div>
+<div class="line"><a id="l02898" name="l02898"></a><span class="lineno"> 2898</span>        <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_class" href="classstring__id.html">trait_id</a> &amp;trait : bid-&gt;canceled_mutations ) {</div>
+<div class="line"><a id="l02899" name="l02899"></a><span class="lineno"> 2899</span>            <span class="keywordflow">if</span>( trait == tid ) {</div>
+<div class="line"><a id="l02900" name="l02900"></a><span class="lineno"> 2900</span>                bionics_cancelling.emplace_back( bid );</div>
+<div class="line"><a id="l02901" name="l02901"></a><span class="lineno"> 2901</span>            }</div>
+<div class="line"><a id="l02902" name="l02902"></a><span class="lineno"> 2902</span>        }</div>
+<div class="line"><a id="l02903" name="l02903"></a><span class="lineno"> 2903</span>    }</div>
+<div class="line"><a id="l02904" name="l02904"></a><span class="lineno"> 2904</span> </div>
+<div class="line"><a id="l02905" name="l02905"></a><span class="lineno"> 2905</span>    <span class="keywordflow">return</span> bionics_cancelling;</div>
+<div class="line"><a id="l02906" name="l02906"></a><span class="lineno"> 2906</span>}</div>
 <div class="ttc" id="aclassstring__id_html"><div class="ttname"><a href="classstring__id.html">string_id&lt; bionic_data &gt;</a></div></div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="newcharacter_8cpp_source.html#l01026">set_traits()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="newcharacter_8cpp_source.html#l01029">set_traits()</a>.</p>
 
 </div>
 </div>
@@ -286,7 +286,7 @@ Functions</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="bionics__ui_8cpp_source.html#l00162">bionic_by_invlet()</a>, and <a class="el" href="bionics__ui_8cpp.html#a3530f45aaa927a6078e1e974525873be">bionic_chars</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02597">Character::add_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02603">Character::add_bionic()</a>.</p>
 
 </div>
 </div>
@@ -308,21 +308,21 @@ Functions</h2></td></tr>
 
 <p>List of bodyparts occupied by a bionic. </p>
 
-<p class="definition">Definition at line <a class="el" href="bionics_8cpp_source.html#l00233">233</a> of file <a class="el" href="bionics_8cpp_source.html">bionics.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>{</div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>    std::vector&lt;bodypart_id&gt; parts;</div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> std::pair&lt;const bodypart_str_id, int&gt; &amp;element : bid-&gt;<a class="code hl_variable" href="structbionic__data.html#ae9faf505571841d8ef97496eb3a26607">occupied_bodyparts</a> ) {</div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>        <span class="keywordflow">if</span>( element.second &gt; 0 ) {</div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>            parts.push_back( element.first.id() );</div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>        }</div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>    }</div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>    <span class="keywordflow">return</span> parts;</div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>}</div>
+<p class="definition">Definition at line <a class="el" href="bionics_8cpp_source.html#l00234">234</a> of file <a class="el" href="bionics_8cpp_source.html">bionics.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>{</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>    std::vector&lt;bodypart_id&gt; parts;</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> std::pair&lt;const bodypart_str_id, int&gt; &amp;element : bid-&gt;<a class="code hl_variable" href="structbionic__data.html#ae9faf505571841d8ef97496eb3a26607">occupied_bodyparts</a> ) {</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>        <span class="keywordflow">if</span>( element.second &gt; 0 ) {</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>            parts.push_back( element.first.id() );</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>        }</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>    }</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>    <span class="keywordflow">return</span> parts;</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>}</div>
 <div class="ttc" id="astructbionic__data_html_ae9faf505571841d8ef97496eb3a26607"><div class="ttname"><a href="structbionic__data.html#ae9faf505571841d8ef97496eb3a26607">bionic_data::occupied_bodyparts</a></div><div class="ttdeci">std::map&lt; bodypart_str_id, int &gt; occupied_bodyparts</div><div class="ttdoc">Body part slots used to install this bionic, mapped to the amount of space required.</div><div class="ttdef"><b>Definition:</b> <a href="bionics_8h_source.html#l00095">bionics.h:95</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="bionics_8h_source.html#l00095">bionic_data::occupied_bodyparts</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="game__inventory_8cpp_source.html#l01877">bionic_install_preset::get_denial()</a>, and <a class="el" href="activity__handlers_8cpp_source.html#l03531">activity_handlers::operation_do_turn()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game__inventory_8cpp_source.html#l01877">bionic_install_preset::get_denial()</a>, and <a class="el" href="activity__handlers_8cpp_source.html#l03547">activity_handlers::operation_do_turn()</a>.</p>
 
 </div>
 </div>
@@ -358,28 +358,28 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bionics_8cpp_source.html#l02542">2542</a> of file <a class="el" href="bionics_8cpp_source.html">bionics.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l02544" name="l02544"></a><span class="lineno"> 2544</span>{</div>
-<div class="line"><a id="l02545" name="l02545"></a><span class="lineno"> 2545</span>    <span class="keywordflow">if</span>( bio_id-&gt;<a class="code hl_variable" href="structbionic__data.html#ae9faf505571841d8ef97496eb3a26607">occupied_bodyparts</a>.empty() ) {</div>
-<div class="line"><a id="l02546" name="l02546"></a><span class="lineno"> 2546</span>        <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a id="l02547" name="l02547"></a><span class="lineno"> 2547</span>    }</div>
-<div class="line"><a id="l02548" name="l02548"></a><span class="lineno"> 2548</span>    std::string desc = intro;</div>
-<div class="line"><a id="l02549" name="l02549"></a><span class="lineno"> 2549</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> std::pair&lt;const bodypart_str_id, int&gt; &amp;elem : bio_id-&gt;<a class="code hl_variable" href="structbionic__data.html#ae9faf505571841d8ef97496eb3a26607">occupied_bodyparts</a> ) {</div>
-<div class="line"><a id="l02550" name="l02550"></a><span class="lineno"> 2550</span>        desc += ( each_bp_on_new_line ? <span class="stringliteral">&quot;\n&quot;</span> : <span class="stringliteral">&quot; &quot;</span> );</div>
-<div class="line"><a id="l02551" name="l02551"></a><span class="lineno"> 2551</span>        <span class="comment">//~ &lt;Bodypart name&gt; (&lt;number of occupied slots&gt; slots);</span></div>
-<div class="line"><a id="l02552" name="l02552"></a><span class="lineno"> 2552</span>        desc += <a class="code hl_function" href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a>( <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;%s (%i slots);&quot;</span> ),</div>
-<div class="line"><a id="l02553" name="l02553"></a><span class="lineno"> 2553</span>                               <a class="code hl_function" href="bodypart_8cpp.html#aeadf2675d36776a1f685d1d2dfa06e78">body_part_name_as_heading</a>( elem.first-&gt;token, 1 ),</div>
-<div class="line"><a id="l02554" name="l02554"></a><span class="lineno"> 2554</span>                               elem.second );</div>
-<div class="line"><a id="l02555" name="l02555"></a><span class="lineno"> 2555</span>    }</div>
-<div class="line"><a id="l02556" name="l02556"></a><span class="lineno"> 2556</span>    <span class="keywordflow">return</span> desc;</div>
-<div class="line"><a id="l02557" name="l02557"></a><span class="lineno"> 2557</span>}</div>
+<p class="definition">Definition at line <a class="el" href="bionics_8cpp_source.html#l02548">2548</a> of file <a class="el" href="bionics_8cpp_source.html">bionics.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l02550" name="l02550"></a><span class="lineno"> 2550</span>{</div>
+<div class="line"><a id="l02551" name="l02551"></a><span class="lineno"> 2551</span>    <span class="keywordflow">if</span>( bio_id-&gt;<a class="code hl_variable" href="structbionic__data.html#ae9faf505571841d8ef97496eb3a26607">occupied_bodyparts</a>.empty() ) {</div>
+<div class="line"><a id="l02552" name="l02552"></a><span class="lineno"> 2552</span>        <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a id="l02553" name="l02553"></a><span class="lineno"> 2553</span>    }</div>
+<div class="line"><a id="l02554" name="l02554"></a><span class="lineno"> 2554</span>    std::string desc = intro;</div>
+<div class="line"><a id="l02555" name="l02555"></a><span class="lineno"> 2555</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> std::pair&lt;const bodypart_str_id, int&gt; &amp;elem : bio_id-&gt;<a class="code hl_variable" href="structbionic__data.html#ae9faf505571841d8ef97496eb3a26607">occupied_bodyparts</a> ) {</div>
+<div class="line"><a id="l02556" name="l02556"></a><span class="lineno"> 2556</span>        desc += ( each_bp_on_new_line ? <span class="stringliteral">&quot;\n&quot;</span> : <span class="stringliteral">&quot; &quot;</span> );</div>
+<div class="line"><a id="l02557" name="l02557"></a><span class="lineno"> 2557</span>        <span class="comment">//~ &lt;Bodypart name&gt; (&lt;number of occupied slots&gt; slots);</span></div>
+<div class="line"><a id="l02558" name="l02558"></a><span class="lineno"> 2558</span>        desc += <a class="code hl_function" href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a>( <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;%s (%i slots);&quot;</span> ),</div>
+<div class="line"><a id="l02559" name="l02559"></a><span class="lineno"> 2559</span>                               <a class="code hl_function" href="bodypart_8cpp.html#aeadf2675d36776a1f685d1d2dfa06e78">body_part_name_as_heading</a>( elem.first-&gt;token, 1 ),</div>
+<div class="line"><a id="l02560" name="l02560"></a><span class="lineno"> 2560</span>                               elem.second );</div>
+<div class="line"><a id="l02561" name="l02561"></a><span class="lineno"> 2561</span>    }</div>
+<div class="line"><a id="l02562" name="l02562"></a><span class="lineno"> 2562</span>    <span class="keywordflow">return</span> desc;</div>
+<div class="line"><a id="l02563" name="l02563"></a><span class="lineno"> 2563</span>}</div>
 <div class="ttc" id="abodypart_8cpp_html_aeadf2675d36776a1f685d1d2dfa06e78"><div class="ttname"><a href="bodypart_8cpp.html#aeadf2675d36776a1f685d1d2dfa06e78">body_part_name_as_heading</a></div><div class="ttdeci">std::string body_part_name_as_heading(body_part bp, int number)</div><div class="ttdoc">Returns the name of the body parts in a context where the name is used as a heading or title e....</div><div class="ttdef"><b>Definition:</b> <a href="bodypart_8cpp_source.html#l00343">bodypart.cpp:343</a></div></div>
-<div class="ttc" id="astring__formatter_8h_html_a8964099387da2f95396c67566bafce3d"><div class="ttname"><a href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a></div><div class="ttdeci">std::string string_format(std::string_view format, Args &amp;&amp;...args)</div><div class="ttdoc">Simple wrapper over string_formatter::parse.</div><div class="ttdef"><b>Definition:</b> <a href="string__formatter_8h_source.html#l00430">string_formatter.h:430</a></div></div>
+<div class="ttc" id="astring__formatter_8h_html_a8964099387da2f95396c67566bafce3d"><div class="ttname"><a href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a></div><div class="ttdeci">std::string string_format(std::string_view format, Args &amp;&amp;...args)</div><div class="ttdoc">Simple wrapper over string_formatter::parse.</div><div class="ttdef"><b>Definition:</b> <a href="string__formatter_8h_source.html#l00431">string_formatter.h:431</a></div></div>
 <div class="ttc" id="atranslations_8h_html_aa829053017e23ef22d44dccecba63a34"><div class="ttname"><a href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a></div><div class="ttdeci">#define _(msg)</div><div class="ttdef"><b>Definition:</b> <a href="translations_8h_source.html#l00116">translations.h:116</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="bodypart_8cpp_source.html#l00343">body_part_name_as_heading()</a>, <a class="el" href="bionics_8h_source.html#l00095">bionic_data::occupied_bodyparts</a>, and <a class="el" href="string__formatter_8h_source.html#l00430">string_format()</a>.</p>
+<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="bodypart_8cpp_source.html#l00343">body_part_name_as_heading()</a>, <a class="el" href="bionics_8h_source.html#l00095">bionic_data::occupied_bodyparts</a>, and <a class="el" href="string__formatter_8h_source.html#l00431">string_format()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="item_8cpp_source.html#l03275">item::bionic_info()</a>, and <a class="el" href="bionics__ui_8cpp_source.html#l00372">draw_description()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="item_8cpp_source.html#l03295">item::bionic_info()</a>, and <a class="el" href="bionics__ui_8cpp_source.html#l00372">draw_description()</a>.</p>
 
 </div>
 </div>
@@ -389,7 +389,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="bionics_8h.html">bionics.h</a></li>
-    <li class="footer">Generated on Sat Jun 10 2023 11:49:56 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Sep 15 2023 08:27:17 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

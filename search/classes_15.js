@@ -20,6 +20,8 @@ var searchData=
   ['use_5ffunction_17',['use_function',['../structuse__function.html',1,'']]],
   ['user_5finterface_18',['user_interface',['../classauto__pickup_1_1user__interface.html',1,'auto_pickup']]],
   ['user_5fturn_19',['user_turn',['../classuser__turn.html',1,'']]],
-  ['utf8_5fto_5futf16_20',['utf8_to_utf16',['../classdetail_1_1utf8__to__utf16.html',1,'detail']]],
-  ['utf8_5fwrapper_21',['utf8_wrapper',['../classutf8__wrapper.html',1,'']]]
+  ['userenum_20',['userenum',['../structluna_1_1userenum.html',1,'luna']]],
+  ['userlib_21',['userlib',['../structluna_1_1userlib.html',1,'luna']]],
+  ['utf8_5fto_5futf16_22',['utf8_to_utf16',['../classdetail_1_1utf8__to__utf16.html',1,'detail']]],
+  ['utf8_5fwrapper_23',['utf8_wrapper',['../classutf8__wrapper.html',1,'']]]
 ];

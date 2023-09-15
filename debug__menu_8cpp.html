@@ -121,6 +121,7 @@ $(document).ready(function(){initNavTree('debug__menu_8cpp.html',''); initResiza
 <code>#include &quot;<a class="el" href="calendar_8h_source.html">calendar.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="cata__utility_8h_source.html">cata_utility.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="catacharset_8h_source.html">catacharset.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="catalua_8h_source.html">catalua.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="character_8h_source.html">character.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="character__display_8h_source.html">character_display.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="character__id_8h_source.html">character_id.h</a>&quot;</code><br />
@@ -143,6 +144,8 @@ $(document).ready(function(){initNavTree('debug__menu_8cpp.html',''); initResiza
 <code>#include &quot;<a class="el" href="item_8h_source.html">item.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="item__group_8h_source.html">item_group.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="item__location_8h_source.html">item_location.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="json_8h_source.html">json.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="json__export_8h_source.html">json_export.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="language_8h_source.html">language.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="magic_8h_source.html">magic.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="map_8h_source.html">map.h</a>&quot;</code><br />
@@ -267,28 +270,31 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacedebug__menu.html#a7457e58c3bc9fcf28b9c23cdab4df970a23f3d487fd434e63e784427a94fb75c8">debug_menu::DEBUG_PRINT_NPC_MAGIC</a>
 , <br />
 &#160;&#160;<a class="el" href="namespacedebug__menu.html#a7457e58c3bc9fcf28b9c23cdab4df970ad7dfbaf8e855b57e90b022bc0728470c">debug_menu::DEBUG_QUIT_NOSAVE</a>
+, <a class="el" href="namespacedebug__menu.html#a7457e58c3bc9fcf28b9c23cdab4df970af9190804b4d8780ffb90bf46ba401ccb">debug_menu::DEBUG_LUA_CONSOLE</a>
 , <a class="el" href="namespacedebug__menu.html#a7457e58c3bc9fcf28b9c23cdab4df970a98457336f30d07ea9d1f363610c62fd2">debug_menu::DEBUG_TEST_WEATHER</a>
 , <a class="el" href="namespacedebug__menu.html#a7457e58c3bc9fcf28b9c23cdab4df970af89c0ba34ced12aa3216085b8a0b4557">debug_menu::DEBUG_SAVE_SCREENSHOT</a>
-, <a class="el" href="namespacedebug__menu.html#a7457e58c3bc9fcf28b9c23cdab4df970a14c3e3bf15581326b080bd8a4a1ac06a">debug_menu::DEBUG_BUG_REPORT</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacedebug__menu.html#a7457e58c3bc9fcf28b9c23cdab4df970a4e0c1a7e62212a566f524ba4641a86fb">debug_menu::DEBUG_GAME_REPORT</a>
+&#160;&#160;<a class="el" href="namespacedebug__menu.html#a7457e58c3bc9fcf28b9c23cdab4df970a14c3e3bf15581326b080bd8a4a1ac06a">debug_menu::DEBUG_BUG_REPORT</a>
+, <a class="el" href="namespacedebug__menu.html#a7457e58c3bc9fcf28b9c23cdab4df970a4e0c1a7e62212a566f524ba4641a86fb">debug_menu::DEBUG_GAME_REPORT</a>
 , <a class="el" href="namespacedebug__menu.html#a7457e58c3bc9fcf28b9c23cdab4df970aca1ae4e2804eefd71b05275708f953a9">debug_menu::DEBUG_DISPLAY_SCENTS_LOCAL</a>
 , <a class="el" href="namespacedebug__menu.html#a7457e58c3bc9fcf28b9c23cdab4df970ac96808b20cd8c021c65353af8ce542dd">debug_menu::DEBUG_DISPLAY_SCENTS_TYPE_LOCAL</a>
-, <a class="el" href="namespacedebug__menu.html#a7457e58c3bc9fcf28b9c23cdab4df970a0f43f49068901c6285586d86f9bdd831">debug_menu::DEBUG_DISPLAY_TEMP</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacedebug__menu.html#a7457e58c3bc9fcf28b9c23cdab4df970aec768be94ee8edf68df12518436ddb22">debug_menu::DEBUG_DISPLAY_VEHICLE_AI</a>
+&#160;&#160;<a class="el" href="namespacedebug__menu.html#a7457e58c3bc9fcf28b9c23cdab4df970a0f43f49068901c6285586d86f9bdd831">debug_menu::DEBUG_DISPLAY_TEMP</a>
+, <a class="el" href="namespacedebug__menu.html#a7457e58c3bc9fcf28b9c23cdab4df970aec768be94ee8edf68df12518436ddb22">debug_menu::DEBUG_DISPLAY_VEHICLE_AI</a>
 , <a class="el" href="namespacedebug__menu.html#a7457e58c3bc9fcf28b9c23cdab4df970a4bf0d7c51f28433bfc3815ad67dc8eb3">debug_menu::DEBUG_DISPLAY_VISIBILITY</a>
 , <a class="el" href="namespacedebug__menu.html#a7457e58c3bc9fcf28b9c23cdab4df970a8c45614bb6860c6d0de2f65c7e173d11">debug_menu::DEBUG_DISPLAY_LIGHTING</a>
-, <a class="el" href="namespacedebug__menu.html#a7457e58c3bc9fcf28b9c23cdab4df970a881709a767ce5206916896e92b0cb3e2">debug_menu::DEBUG_DISPLAY_RADIATION</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacedebug__menu.html#a7457e58c3bc9fcf28b9c23cdab4df970a0020ada8342f9f33ccd522cf56b67831">debug_menu::DEBUG_DISPLAY_TRANSPARENCY</a>
+&#160;&#160;<a class="el" href="namespacedebug__menu.html#a7457e58c3bc9fcf28b9c23cdab4df970a881709a767ce5206916896e92b0cb3e2">debug_menu::DEBUG_DISPLAY_RADIATION</a>
+, <a class="el" href="namespacedebug__menu.html#a7457e58c3bc9fcf28b9c23cdab4df970a0020ada8342f9f33ccd522cf56b67831">debug_menu::DEBUG_DISPLAY_TRANSPARENCY</a>
 , <a class="el" href="namespacedebug__menu.html#a7457e58c3bc9fcf28b9c23cdab4df970abf7fecef72493133e8778386eb249c24">debug_menu::DEBUG_DISPLAY_SUBMAP_GRID</a>
 , <a class="el" href="namespacedebug__menu.html#a7457e58c3bc9fcf28b9c23cdab4df970a997eafac44d62e80ad301b8277d4aff2">debug_menu::DEBUG_TEST_MAP_EXTRA_DISTRIBUTION</a>
-, <a class="el" href="namespacedebug__menu.html#a7457e58c3bc9fcf28b9c23cdab4df970a25fea886bbf405d086665076ef67aeab">debug_menu::DEBUG_VEHICLE_BATTERY_CHARGE</a>
 , <br />
-&#160;&#160;<a class="el" href="namespacedebug__menu.html#a7457e58c3bc9fcf28b9c23cdab4df970a8121aae5201157c65682232a41069f32">debug_menu::DEBUG_HOUR_TIMER</a>
+&#160;&#160;<a class="el" href="namespacedebug__menu.html#a7457e58c3bc9fcf28b9c23cdab4df970a25fea886bbf405d086665076ef67aeab">debug_menu::DEBUG_VEHICLE_BATTERY_CHARGE</a>
+, <a class="el" href="namespacedebug__menu.html#a7457e58c3bc9fcf28b9c23cdab4df970a795b64ad598b1dfb13722fdee507f8de">debug_menu::DEBUG_VEHICLE_EXPORT_JSON</a>
+, <a class="el" href="namespacedebug__menu.html#a7457e58c3bc9fcf28b9c23cdab4df970a8121aae5201157c65682232a41069f32">debug_menu::DEBUG_HOUR_TIMER</a>
 , <a class="el" href="namespacedebug__menu.html#a7457e58c3bc9fcf28b9c23cdab4df970aa8a9ea29bed60dde8e5fb5a1b0bd0e71">debug_menu::DEBUG_NESTED_MAPGEN</a>
-, <a class="el" href="namespacedebug__menu.html#a7457e58c3bc9fcf28b9c23cdab4df970aabf69be8eaccd0f2b2a65abb90c826cf">debug_menu::DEBUG_RESET_IGNORED_MESSAGES</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacedebug__menu.html#a7457e58c3bc9fcf28b9c23cdab4df970aabf69be8eaccd0f2b2a65abb90c826cf">debug_menu::DEBUG_RESET_IGNORED_MESSAGES</a>
 , <a class="el" href="namespacedebug__menu.html#a7457e58c3bc9fcf28b9c23cdab4df970a3e935ab36e9171ab2f376e030ec4838e">debug_menu::DEBUG_RELOAD_TILES</a>
 <br />
  }</td></tr>
@@ -364,7 +370,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="debug__menu_8cpp_source.html#l01372">debug_menu::debug()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="debug__menu_8cpp_source.html#l01384">debug_menu::debug()</a>.</p>
 
 </div>
 </div>
@@ -388,9 +394,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mapgen_8cpp_source.html#l00361">361</a> of file <a class="el" href="mapgen_8cpp_source.html">mapgen.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mapgen_8cpp_source.html#l00369">369</a> of file <a class="el" href="mapgen_8cpp_source.html">mapgen.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mapgen_8cpp_source.html#l01858">jmapgen_nested::apply()</a>, <a class="el" href="mapgen_8cpp_source.html#l00367">calculate_mapgen_weights()</a>, <a class="el" href="mapgen_8cpp_source.html#l00386">check_mapgen_definitions()</a>, <a class="el" href="mapgen_8cpp_source.html#l01879">jmapgen_nested::has_vehicle_collision()</a>, <a class="el" href="mapgen_8cpp_source.html#l00463">load_nested_mapgen()</a>, <a class="el" href="mapgen_8cpp_source.html#l00549">reset_mapgens()</a>, and <a class="el" href="debug__menu_8cpp_source.html#l00433">debug_menu::spawn_nested_mapgen()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mapgen_8cpp_source.html#l01866">jmapgen_nested::apply()</a>, <a class="el" href="mapgen_8cpp_source.html#l00375">calculate_mapgen_weights()</a>, <a class="el" href="mapgen_8cpp_source.html#l00394">check_mapgen_definitions()</a>, <a class="el" href="mapgen_8cpp_source.html#l01887">jmapgen_nested::has_vehicle_collision()</a>, <a class="el" href="mapgen_8cpp_source.html#l00471">load_nested_mapgen()</a>, <a class="el" href="mapgen_8cpp_source.html#l00557">reset_mapgens()</a>, and <a class="el" href="debug__menu_8cpp_source.html#l00445">debug_menu::spawn_nested_mapgen()</a>.</p>
 
 </div>
 </div>
@@ -400,7 +406,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="debug__menu_8cpp.html">debug_menu.cpp</a></li>
-    <li class="footer">Generated on Sat Jun 10 2023 11:49:57 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Sep 15 2023 08:27:18 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -21,6 +21,7 @@ var structitype =
     [ "has_use", "structitype.html#a7ff45d94507fdbf7369ae269a0f1e52b", null ],
     [ "invoke", "structitype.html#a9df22ea5b5b6e19d18f730d4a8625cfa", null ],
     [ "invoke", "structitype.html#abc40aeb7a2a01ece2eebbf809af37737", null ],
+    [ "LUA_TYPE_OPS", "structitype.html#adb5be57c6be6f16b111619a32c41b6e3", null ],
     [ "maximum_charges", "structitype.html#af238865694d157c403d1c7d0b74106dc", null ],
     [ "nname", "structitype.html#ad35fbe0013544c1c396944b20b264421", null ],
     [ "tick", "structitype.html#a6f1a47a292aaf0d399e077b0a013498f", null ],

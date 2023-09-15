@@ -423,14 +423,14 @@ template&lt;typename Value , typename  = std::enable_if_t &lt;(                 
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="savegame__json_8cpp_source.html#l03699">3699</a> of file <a class="el" href="savegame__json_8cpp_source.html">savegame_json.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l03700" name="l03700"></a><span class="lineno"> 3700</span>{</div>
-<div class="line"><a id="l03701" name="l03701"></a><span class="lineno"> 3701</span>    jsin.<a class="code hl_function" href="classJsonIn.html#a70443f07b40c2a0ab1aee1e0418a1faf">start_array</a>();</div>
-<div class="line"><a id="l03702" name="l03702"></a><span class="lineno"> 3702</span>    <span class="keywordflow">if</span>( !( jsin.<a class="code hl_function" href="classJsonIn.html#aa8f42d396d9e62f0401b71ccf579c111">read</a>( <a class="code hl_variable" href="classcata__variant.html#a4c8cc76c2f8f6a1ffe967bf6bc7f2369">type_</a> ) &amp;&amp; jsin.<a class="code hl_function" href="classJsonIn.html#aa8f42d396d9e62f0401b71ccf579c111">read</a>( <a class="code hl_variable" href="classcata__variant.html#a71e6df3dddf57438428965894d9132f1">value_</a> ) ) ) {</div>
-<div class="line"><a id="l03703" name="l03703"></a><span class="lineno"> 3703</span>        jsin.<a class="code hl_function" href="classJsonIn.html#a7178372186175a21337660d591f2c858">error</a>( <span class="stringliteral">&quot;Failed to read cata_variant&quot;</span> );</div>
-<div class="line"><a id="l03704" name="l03704"></a><span class="lineno"> 3704</span>    }</div>
-<div class="line"><a id="l03705" name="l03705"></a><span class="lineno"> 3705</span>    jsin.<a class="code hl_function" href="classJsonIn.html#adb53515d72e6e0457ae3266ace12d5e5">end_array</a>();</div>
-<div class="line"><a id="l03706" name="l03706"></a><span class="lineno"> 3706</span>}</div>
+<p class="definition">Definition at line <a class="el" href="savegame__json_8cpp_source.html#l03700">3700</a> of file <a class="el" href="savegame__json_8cpp_source.html">savegame_json.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l03701" name="l03701"></a><span class="lineno"> 3701</span>{</div>
+<div class="line"><a id="l03702" name="l03702"></a><span class="lineno"> 3702</span>    jsin.<a class="code hl_function" href="classJsonIn.html#a70443f07b40c2a0ab1aee1e0418a1faf">start_array</a>();</div>
+<div class="line"><a id="l03703" name="l03703"></a><span class="lineno"> 3703</span>    <span class="keywordflow">if</span>( !( jsin.<a class="code hl_function" href="classJsonIn.html#aa8f42d396d9e62f0401b71ccf579c111">read</a>( <a class="code hl_variable" href="classcata__variant.html#a4c8cc76c2f8f6a1ffe967bf6bc7f2369">type_</a> ) &amp;&amp; jsin.<a class="code hl_function" href="classJsonIn.html#aa8f42d396d9e62f0401b71ccf579c111">read</a>( <a class="code hl_variable" href="classcata__variant.html#a71e6df3dddf57438428965894d9132f1">value_</a> ) ) ) {</div>
+<div class="line"><a id="l03704" name="l03704"></a><span class="lineno"> 3704</span>        jsin.<a class="code hl_function" href="classJsonIn.html#a7178372186175a21337660d591f2c858">error</a>( <span class="stringliteral">&quot;Failed to read cata_variant&quot;</span> );</div>
+<div class="line"><a id="l03705" name="l03705"></a><span class="lineno"> 3705</span>    }</div>
+<div class="line"><a id="l03706" name="l03706"></a><span class="lineno"> 3706</span>    jsin.<a class="code hl_function" href="classJsonIn.html#adb53515d72e6e0457ae3266ace12d5e5">end_array</a>();</div>
+<div class="line"><a id="l03707" name="l03707"></a><span class="lineno"> 3707</span>}</div>
 <div class="ttc" id="aclassJsonIn_html_a70443f07b40c2a0ab1aee1e0418a1faf"><div class="ttname"><a href="classJsonIn.html#a70443f07b40c2a0ab1aee1e0418a1faf">JsonIn::start_array</a></div><div class="ttdeci">void start_array()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01441">json.cpp:1441</a></div></div>
 <div class="ttc" id="aclassJsonIn_html_a7178372186175a21337660d591f2c858"><div class="ttname"><a href="classJsonIn.html#a7178372186175a21337660d591f2c858">JsonIn::error</a></div><div class="ttdeci">void error(const std::string &amp;message, int offset=0)</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01852">json.cpp:1852</a></div></div>
 <div class="ttc" id="aclassJsonIn_html_aa8f42d396d9e62f0401b71ccf579c111"><div class="ttname"><a href="classJsonIn.html#aa8f42d396d9e62f0401b71ccf579c111">JsonIn::read</a></div><div class="ttdeci">bool read(bool &amp;b, bool throw_on_error=false)</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01553">json.cpp:1553</a></div></div>
@@ -507,13 +507,13 @@ template&lt;<a class="el" href="cata__variant_8h.html#adfe42687fffdd05d233096b4e
 <div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>            }</div>
 <div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>            <span class="keywordflow">return</span> <a class="code hl_struct" href="structcata__variant__detail_1_1convert.html">cata_variant_detail::convert&lt;Type&gt;::from_string</a>( <a class="code hl_variable" href="classcata__variant.html#a71e6df3dddf57438428965894d9132f1">value_</a> );</div>
 <div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>        }</div>
-<div class="ttc" id="adebug_8h_html_a87e509562277a7ada3a75330d00cb445"><div class="ttname"><a href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a></div><div class="ttdeci">#define debugmsg(...)</div><div class="ttdoc">Debug message of level DL::Error and class DC::DebugMsg, also includes the source file name and line,...</div><div class="ttdef"><b>Definition:</b> <a href="debug_8h_source.html#l00074">debug.h:74</a></div></div>
+<div class="ttc" id="adebug_8h_html_a87e509562277a7ada3a75330d00cb445"><div class="ttname"><a href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a></div><div class="ttdeci">#define debugmsg(...)</div><div class="ttdoc">Debug message of level DL::Error and class DC::DebugMsg, also includes the source file name and line,...</div><div class="ttdef"><b>Definition:</b> <a href="debug_8h_source.html#l00075">debug.h:75</a></div></div>
 <div class="ttc" id="anamespaceio_html_aa8fa8545615e452e23e6bcc8a6a3a37a"><div class="ttname"><a href="namespaceio.html#aa8fa8545615e452e23e6bcc8a6a3a37a">io::enum_to_string</a></div><div class="ttdeci">std::string enum_to_string(E)</div></div>
 <div class="ttc" id="astructcata__variant__detail_1_1convert_html"><div class="ttname"><a href="structcata__variant__detail_1_1convert.html">cata_variant_detail::convert</a></div><div class="ttdef"><b>Definition:</b> <a href="cata__variant_8h_source.html#l00072">cata_variant.h:72</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="debug_8h_source.html#l00074">debugmsg</a>, <a class="el" href="namespaceio.html#aa8fa8545615e452e23e6bcc8a6a3a37a">io::enum_to_string()</a>, <a class="el" href="cata__variant_8h_source.html#l00336">type_</a>, and <a class="el" href="cata__variant_8h_source.html#l00337">value_</a>.</p>
+<p class="reference">References <a class="el" href="debug_8h_source.html#l00075">debugmsg</a>, <a class="el" href="namespaceio.html#aa8fa8545615e452e23e6bcc8a6a3a37a">io::enum_to_string()</a>, <a class="el" href="cata__variant_8h_source.html#l00336">type_</a>, and <a class="el" href="cata__variant_8h_source.html#l00337">value_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="event__statistics_8cpp_source.html#l01026">score::description()</a>, <a class="el" href="event__field__transformations_8cpp_source.html#l00011">flags_of_terrain()</a>, <a class="el" href="event_8h_source.html#l00588">cata::event::get()</a>, <a class="el" href="event__field__transformations_8cpp_source.html#l00022">is_mounted()</a>, <a class="el" href="event__field__transformations_8cpp_source.html#l00029">is_swimming_terrain()</a>, <a class="el" href="achievement_8cpp_source.html#l00164">achievement_requirement::satisifed_by()</a>, <a class="el" href="event__field__transformations_8cpp_source.html#l00038">species_of_monster()</a>, and <a class="el" href="achievement_8cpp_source.html#l00464">text_for_requirement()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="event__statistics_8cpp_source.html#l01026">score::description()</a>, <a class="el" href="event__field__transformations_8cpp_source.html#l00011">flags_of_terrain()</a>, <a class="el" href="event_8h_source.html#l00588">cata::event::get()</a>, <a class="el" href="event__field__transformations_8cpp_source.html#l00022">is_mounted()</a>, <a class="el" href="event__field__transformations_8cpp_source.html#l00029">is_swimming_terrain()</a>, <a class="el" href="achievement_8cpp_source.html#l00167">achievement_requirement::satisifed_by()</a>, <a class="el" href="event__field__transformations_8cpp_source.html#l00038">species_of_monster()</a>, and <a class="el" href="achievement_8cpp_source.html#l00739">text_for_requirement()</a>.</p>
 
 </div>
 </div>
@@ -607,13 +607,13 @@ template&lt;<a class="el" href="cata__variant_8h.html#adfe42687fffdd05d233096b4e
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="savegame__json_8cpp_source.html#l03691">3691</a> of file <a class="el" href="savegame__json_8cpp_source.html">savegame_json.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l03692" name="l03692"></a><span class="lineno"> 3692</span>{</div>
-<div class="line"><a id="l03693" name="l03693"></a><span class="lineno"> 3693</span>    jsout.<a class="code hl_function" href="classJsonOut.html#a4550e2036b904c4d4a90e440dd41c684">start_array</a>();</div>
-<div class="line"><a id="l03694" name="l03694"></a><span class="lineno"> 3694</span>    jsout.<a class="code hl_function" href="classJsonOut.html#a57a841c30e82540a073e8fb90f082ce2">write_as_string</a>( <a class="code hl_variable" href="classcata__variant.html#a4c8cc76c2f8f6a1ffe967bf6bc7f2369">type_</a> );</div>
-<div class="line"><a id="l03695" name="l03695"></a><span class="lineno"> 3695</span>    jsout.<a class="code hl_function" href="classJsonOut.html#a4b8c8e50e3be57e737ae971ecf2c3fd5">write</a>( <a class="code hl_variable" href="classcata__variant.html#a71e6df3dddf57438428965894d9132f1">value_</a> );</div>
-<div class="line"><a id="l03696" name="l03696"></a><span class="lineno"> 3696</span>    jsout.<a class="code hl_function" href="classJsonOut.html#a44cdd853d4c6913b37caa9f0131eeff2">end_array</a>();</div>
-<div class="line"><a id="l03697" name="l03697"></a><span class="lineno"> 3697</span>}</div>
+<p class="definition">Definition at line <a class="el" href="savegame__json_8cpp_source.html#l03692">3692</a> of file <a class="el" href="savegame__json_8cpp_source.html">savegame_json.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l03693" name="l03693"></a><span class="lineno"> 3693</span>{</div>
+<div class="line"><a id="l03694" name="l03694"></a><span class="lineno"> 3694</span>    jsout.<a class="code hl_function" href="classJsonOut.html#a4550e2036b904c4d4a90e440dd41c684">start_array</a>();</div>
+<div class="line"><a id="l03695" name="l03695"></a><span class="lineno"> 3695</span>    jsout.<a class="code hl_function" href="classJsonOut.html#a57a841c30e82540a073e8fb90f082ce2">write_as_string</a>( <a class="code hl_variable" href="classcata__variant.html#a4c8cc76c2f8f6a1ffe967bf6bc7f2369">type_</a> );</div>
+<div class="line"><a id="l03696" name="l03696"></a><span class="lineno"> 3696</span>    jsout.<a class="code hl_function" href="classJsonOut.html#a4b8c8e50e3be57e737ae971ecf2c3fd5">write</a>( <a class="code hl_variable" href="classcata__variant.html#a71e6df3dddf57438428965894d9132f1">value_</a> );</div>
+<div class="line"><a id="l03697" name="l03697"></a><span class="lineno"> 3697</span>    jsout.<a class="code hl_function" href="classJsonOut.html#a44cdd853d4c6913b37caa9f0131eeff2">end_array</a>();</div>
+<div class="line"><a id="l03698" name="l03698"></a><span class="lineno"> 3698</span>}</div>
 <div class="ttc" id="aclassJsonOut_html_a44cdd853d4c6913b37caa9f0131eeff2"><div class="ttname"><a href="classJsonOut.html#a44cdd853d4c6913b37caa9f0131eeff2">JsonOut::end_array</a></div><div class="ttdeci">void end_array()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l02150">json.cpp:2150</a></div></div>
 <div class="ttc" id="aclassJsonOut_html_a4550e2036b904c4d4a90e440dd41c684"><div class="ttname"><a href="classJsonOut.html#a4550e2036b904c4d4a90e440dd41c684">JsonOut::start_array</a></div><div class="ttdeci">void start_array(bool wrap=false)</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l02139">json.cpp:2139</a></div></div>
 <div class="ttc" id="aclassJsonOut_html_a4b8c8e50e3be57e737ae971ecf2c3fd5"><div class="ttname"><a href="classJsonOut.html#a4b8c8e50e3be57e737ae971ecf2c3fd5">JsonOut::write</a></div><div class="ttdeci">void write(T val)</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00615">json.h:615</a></div></div>
@@ -720,7 +720,7 @@ template&lt;<a class="el" href="cata__variant_8h.html#adfe42687fffdd05d233096b4e
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classcata__variant.html">cata_variant</a></li>
-    <li class="footer">Generated on Sat Jun 10 2023 11:50:03 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Sep 15 2023 08:27:26 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

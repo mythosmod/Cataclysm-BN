@@ -16,7 +16,7 @@ var classfaction__template =
     [ "known_by_u", "classfaction__template.html#a5e2a500660f3adf90c6940ecbe78ccee", null ],
     [ "likes_u", "classfaction__template.html#a8927427656119c2e4b1046b19c521313", null ],
     [ "lone_wolf_faction", "classfaction__template.html#acf90e328c0ba6ca7a194373a350b481a", null ],
-    [ "mon_faction", "classfaction__template.html#abb2d51aee2b30a988c76eef29a10096d", null ],
+    [ "mon_faction", "classfaction__template.html#a73b4960841f075bce8acb16a0eabeaa7", null ],
     [ "name", "classfaction__template.html#a9fa57ac248112fa09f2bbe19826f93fc", null ],
     [ "power", "classfaction__template.html#a7d31d07f4f9cf6d639be77e0a2fa201e", null ],
     [ "relations", "classfaction__template.html#a02a49a8831a9393a67713992ba559a26", null ],

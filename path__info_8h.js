@@ -27,6 +27,7 @@ var path__info_8h =
     [ "keybindingsdir", "path__info_8h.html#a1e9ba1a402f471d94423691877ec77f6", null ],
     [ "language_defs_file", "path__info_8h.html#a87c3bb74433855094b83a53bfdd92852", null ],
     [ "lastworld", "path__info_8h.html#a8c382696ff179ba28e1f06d7cfdd4436", null ],
+    [ "lua_doc_output", "path__info_8h.html#aea32d12cf2ae62096fb72de5cbeff1b3", null ],
     [ "main_menu_tips", "path__info_8h.html#aabcf66dffe7dc74841a1b92f729904d1", null ],
     [ "memorialdir", "path__info_8h.html#a182bc8dae734699bdf8e6942592366bc", null ],
     [ "moddir", "path__info_8h.html#a3b5e8898cb37116e2a8639b13b0079f9", null ],

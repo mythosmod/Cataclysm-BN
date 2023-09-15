@@ -6,6 +6,7 @@ var classstring__id =
     [ "value_type", "classstring__id.html#a7f7a52e4e8b2d80d4108f572b193ef29", null ],
     [ "string_id", "classstring__id.html#a8dd61bf14164020077bf4774fdd244bf", null ],
     [ "string_id", "classstring__id.html#a09a75ec7a3c4fcfee2e16429dfe6f862", null ],
+    [ "string_id", "classstring__id.html#a32c198bebbaaff7d7c993fafbe0e47b9", null ],
     [ "c_str", "classstring__id.html#a19aea01aa4a1f53aac09acc978f67cf8", null ],
     [ "id", "classstring__id.html#aa3cde2bfb58efa9621289c0a70d24c5a", null ],
     [ "id_or", "classstring__id.html#a7957eaf21d022ad7e3234e5de2aa4a06", null ],

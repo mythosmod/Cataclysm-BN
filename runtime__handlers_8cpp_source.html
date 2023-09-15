@@ -90,23 +90,28 @@ $(document).ready(function(){initNavTree('runtime__handlers_8cpp_source.html',''
 <a href="runtime__handlers_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="runtime__handlers_8h.html">runtime_handlers.h</a>&quot;</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="cursesdef_8h.html">cursesdef.h</a>&quot;</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="debug_8h.html">debug.h</a>&quot;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="game_8h.html">game.h</a>&quot;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>[[ noreturn ]]</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="runtime__handlers_8cpp.html#ae5e0269ebcfa43933d51865756e43c6e">    7</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="runtime__handlers_8cpp.html#ae5e0269ebcfa43933d51865756e43c6e">exit_handler</a>( <span class="keywordtype">int</span> status )</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>{</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <a class="code hl_function" href="debug_8cpp.html#a33caf87f1ca91cc325a7f39c3f47c383">deinitDebug</a>();</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <a class="code hl_variable" href="game_8cpp.html#abeb98e93502d73818b4a73fabe191bc1">g</a>.reset();</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <a class="code hl_function" href="namespacecatacurses.html#afa6ab6a4b5d9ec592a63954a98ae5d69">catacurses::endwin</a>();</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    exit( status );</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>}</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="init_8h.html">init.h</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="game_8h.html">game.h</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>[[ noreturn ]]</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="runtime__handlers_8cpp.html#ae5e0269ebcfa43933d51865756e43c6e">    8</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="runtime__handlers_8cpp.html#ae5e0269ebcfa43933d51865756e43c6e">exit_handler</a>( <span class="keywordtype">int</span> status )</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>{</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <a class="code hl_function" href="classDynamicDataLoader.html#adca1972b6d79ffd55d6d7ca1a0c329b9">DynamicDataLoader::get_instance</a>().<a class="code hl_function" href="classDynamicDataLoader.html#ae04487ce53b25662607fac4b788a50c9">unload_data</a>();</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <a class="code hl_function" href="debug_8cpp.html#a33caf87f1ca91cc325a7f39c3f47c383">deinitDebug</a>();</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <a class="code hl_variable" href="game_8cpp.html#abeb98e93502d73818b4a73fabe191bc1">g</a>.reset();</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <a class="code hl_function" href="namespacecatacurses.html#afa6ab6a4b5d9ec592a63954a98ae5d69">catacurses::endwin</a>();</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    exit( status );</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>}</div>
+<div class="ttc" id="aclassDynamicDataLoader_html_adca1972b6d79ffd55d6d7ca1a0c329b9"><div class="ttname"><a href="classDynamicDataLoader.html#adca1972b6d79ffd55d6d7ca1a0c329b9">DynamicDataLoader::get_instance</a></div><div class="ttdeci">static DynamicDataLoader &amp; get_instance()</div><div class="ttdoc">Returns the single instance of this class.</div><div class="ttdef"><b>Definition:</b> <a href="init_8cpp_source.html#l00120">init.cpp:120</a></div></div>
+<div class="ttc" id="aclassDynamicDataLoader_html_ae04487ce53b25662607fac4b788a50c9"><div class="ttname"><a href="classDynamicDataLoader.html#ae04487ce53b25662607fac4b788a50c9">DynamicDataLoader::unload_data</a></div><div class="ttdeci">void unload_data()</div><div class="ttdoc">Deletes and unloads all the data previously loaded with load_data_from_path.</div><div class="ttdef"><b>Definition:</b> <a href="init_8cpp_source.html#l00538">init.cpp:538</a></div></div>
 <div class="ttc" id="acursesdef_8h_html"><div class="ttname"><a href="cursesdef_8h.html">cursesdef.h</a></div></div>
-<div class="ttc" id="adebug_8cpp_html_a33caf87f1ca91cc325a7f39c3f47c383"><div class="ttname"><a href="debug_8cpp.html#a33caf87f1ca91cc325a7f39c3f47c383">deinitDebug</a></div><div class="ttdeci">void deinitDebug()</div><div class="ttdoc">Opposite of setupDebug, shuts the debugging system down.</div><div class="ttdef"><b>Definition:</b> <a href="debug_8cpp_source.html#l00641">debug.cpp:641</a></div></div>
+<div class="ttc" id="adebug_8cpp_html_a33caf87f1ca91cc325a7f39c3f47c383"><div class="ttname"><a href="debug_8cpp.html#a33caf87f1ca91cc325a7f39c3f47c383">deinitDebug</a></div><div class="ttdeci">void deinitDebug()</div><div class="ttdoc">Opposite of setupDebug, shuts the debugging system down.</div><div class="ttdef"><b>Definition:</b> <a href="debug_8cpp_source.html#l00717">debug.cpp:717</a></div></div>
 <div class="ttc" id="adebug_8h_html"><div class="ttname"><a href="debug_8h.html">debug.h</a></div></div>
-<div class="ttc" id="agame_8cpp_html_abeb98e93502d73818b4a73fabe191bc1"><div class="ttname"><a href="game_8cpp.html#abeb98e93502d73818b4a73fabe191bc1">g</a></div><div class="ttdeci">std::unique_ptr&lt; game &gt; g</div><div class="ttdef"><b>Definition:</b> <a href="game_8cpp_source.html#l00283">game.cpp:283</a></div></div>
+<div class="ttc" id="agame_8cpp_html_abeb98e93502d73818b4a73fabe191bc1"><div class="ttname"><a href="game_8cpp.html#abeb98e93502d73818b4a73fabe191bc1">g</a></div><div class="ttdeci">std::unique_ptr&lt; game &gt; g</div><div class="ttdef"><b>Definition:</b> <a href="game_8cpp_source.html#l00284">game.cpp:284</a></div></div>
 <div class="ttc" id="agame_8h_html"><div class="ttname"><a href="game_8h.html">game.h</a></div></div>
+<div class="ttc" id="ainit_8h_html"><div class="ttname"><a href="init_8h.html">init.h</a></div></div>
 <div class="ttc" id="anamespacecatacurses_html_afa6ab6a4b5d9ec592a63954a98ae5d69"><div class="ttname"><a href="namespacecatacurses.html#afa6ab6a4b5d9ec592a63954a98ae5d69">catacurses::endwin</a></div><div class="ttdeci">void endwin()</div><div class="ttdef"><b>Definition:</b> <a href="ncurses__def_8cpp_source.html#l00140">ncurses_def.cpp:140</a></div></div>
-<div class="ttc" id="aruntime__handlers_8cpp_html_ae5e0269ebcfa43933d51865756e43c6e"><div class="ttname"><a href="runtime__handlers_8cpp.html#ae5e0269ebcfa43933d51865756e43c6e">exit_handler</a></div><div class="ttdeci">void exit_handler(int status)</div><div class="ttdef"><b>Definition:</b> <a href="runtime__handlers_8cpp_source.html#l00007">runtime_handlers.cpp:7</a></div></div>
+<div class="ttc" id="aruntime__handlers_8cpp_html_ae5e0269ebcfa43933d51865756e43c6e"><div class="ttname"><a href="runtime__handlers_8cpp.html#ae5e0269ebcfa43933d51865756e43c6e">exit_handler</a></div><div class="ttdeci">void exit_handler(int status)</div><div class="ttdef"><b>Definition:</b> <a href="runtime__handlers_8cpp_source.html#l00008">runtime_handlers.cpp:8</a></div></div>
 <div class="ttc" id="aruntime__handlers_8h_html"><div class="ttname"><a href="runtime__handlers_8h.html">runtime_handlers.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -114,7 +119,7 @@ $(document).ready(function(){initNavTree('runtime__handlers_8cpp_source.html',''
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="runtime__handlers_8cpp.html">runtime_handlers.cpp</a></li>
-    <li class="footer">Generated on Sat Jun 10 2023 11:49:52 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Sep 15 2023 08:27:12 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

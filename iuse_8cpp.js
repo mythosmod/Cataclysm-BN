@@ -273,6 +273,7 @@ var iuse_8cpp =
     [ "trait_MYOPIC", "iuse_8cpp.html#a672afa3f6b579e99536696aa88ce9086", null ],
     [ "trait_NOPAIN", "iuse_8cpp.html#af20cb84a6e8ccc0ed66c352edf29143b", null ],
     [ "trait_POISRESIST", "iuse_8cpp.html#ae6a6e853460bbd7e5b9ba2adfe22a864", null ],
+    [ "trait_PROF_FERAL", "iuse_8cpp.html#a5d306b6d12363ab6be78977038dee4dd", null ],
     [ "trait_PSYCHOPATH", "iuse_8cpp.html#a9bbf692360c0fe96f9fccf41db5756be", null ],
     [ "trait_SAPROVORE", "iuse_8cpp.html#a92fc92f8871feb56f05a24b582966275", null ],
     [ "trait_SPIRITUAL", "iuse_8cpp.html#abf47c050c3a01d3496c3eb251fa9c517", null ],

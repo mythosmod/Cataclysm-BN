@@ -10,6 +10,7 @@ var classfaction =
     [ "food_supply_color", "classfaction.html#a39234cb4959e9cbb27dda8d896eb48b4", null ],
     [ "food_supply_text", "classfaction.html#a777873995c5a7f826d4c9c0558f73406", null ],
     [ "has_relationship", "classfaction.html#abc85591e6e5bfe39bda000b6be12957c", null ],
+    [ "LUA_TYPE_OPS", "classfaction.html#afc3561bffe364ba2c83f9035c5aa485c", null ],
     [ "remove_member", "classfaction.html#a288c06ab605ad19b0102a6c90246320f", null ],
     [ "serialize", "classfaction.html#a90c98bb6c56bf607fbd4004ac03fc83b", null ],
     [ "members", "classfaction.html#accb55556a4c073106a18042a219a7e7f", null ],

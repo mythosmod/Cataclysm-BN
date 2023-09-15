@@ -19,6 +19,7 @@ var classeffect__type =
     [ "load_miss_msgs", "classeffect__type.html#a837fb4b1ad6db335eb48eddd874c6eca", null ],
     [ "load_mod_data", "classeffect__type.html#a92bba1937320446d5d8b6eb77baf5999", null ],
     [ "lose_game_message_type", "classeffect__type.html#ab2ecf841fa9de40e29b7a4746a1ebc11", null ],
+    [ "LUA_TYPE_OPS", "classeffect__type.html#aabebd4a3556d0fbd3742093bb34d7f4e", null ],
     [ "register_ma_buff_effect", "classeffect__type.html#ab6f4c339219e57e51f3be6ff9f0dfece", null ],
     [ "use_desc_ints", "classeffect__type.html#aabf2aee06b20e5e8739f88cf9d9027a3", null ],
     [ "use_name_ints", "classeffect__type.html#a0212efeddc04dbe26362b136f012e101", null ],

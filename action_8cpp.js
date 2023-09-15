@@ -17,6 +17,7 @@ var action_8cpp =
     [ "flag_GOES_DOWN", "action_8cpp.html#a16fa31e667db6f2d4927b4413f1b82e0", null ],
     [ "flag_GOES_UP", "action_8cpp.html#a9661c2d6ba52b0d7a46db2f156c8d9ed", null ],
     [ "flag_REACH_ATTACK", "action_8cpp.html#aae5d9490c49c95e551245d7f1cf69cb5", null ],
+    [ "flag_SEALED", "action_8cpp.html#a90bacb8d8788e6013599506ca4c8d034", null ],
     [ "flag_SWIMMABLE", "action_8cpp.html#abe2fc5a03319b12f5fec303eb13687bb", null ],
     [ "get_delta_from_movement_action", "action_8cpp.html#ac69dd35fc40e22bfae4068bc3be93fdb", null ],
     [ "get_movement_action_from_delta", "action_8cpp.html#a0cd4e34187899d14209baf8321a88b83", null ],

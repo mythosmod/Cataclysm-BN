@@ -208,7 +208,7 @@ var classCharacter =
     [ "get_bionic_state", "classCharacter.html#a1dec3582c8fadd4a9e38c70dfbf468bf", null ],
     [ "get_bionics", "classCharacter.html#ae798c58ced01966f567d2c6fa6971eb8", null ],
     [ "get_cbm_rechargeable_with", "classCharacter.html#a0da9712d69a6d58b659622f9cdbeacd7", null ],
-    [ "get_check_encumbrance", "classCharacter.html#a165e76d3db9a1a8c6810b25c9b0ed42f", null ],
+    [ "get_check_encumbrance", "classCharacter.html#ae43f0438aaa62322ab6d33b7500bc905", null ],
     [ "get_consumable_from", "classCharacter.html#ad58bc3e4db2aa237a070695ca2746ee5", null ],
     [ "get_dependent_worn_items", "classCharacter.html#a591474485ef234f71c26b8e59adf57b0", null ],
     [ "get_destination_activity", "classCharacter.html#a54431751250b6e0b49e992f40ae6a728", null ],
@@ -619,6 +619,7 @@ var classCharacter =
     [ "set_painkiller", "classCharacter.html#a5f1a21ad76d22926f2688c1e49105311", null ],
     [ "set_per_bonus", "classCharacter.html#a6468665c416a0ff1f0099b586b37042e", null ],
     [ "set_power_level", "classCharacter.html#a5a0a0c4f206d907e7f05ffe7e2927f0f", null ],
+    [ "set_primary_weapon", "classCharacter.html#a970b3924c4970320ba645389817a77b1", null ],
     [ "set_rad", "classCharacter.html#ad06f0f9440098eb66fa9a6c46d033324", null ],
     [ "set_skill_level", "classCharacter.html#aac28618b387cf4ce36252e47699938d5", null ],
     [ "set_sleep_deprivation", "classCharacter.html#a2e658d88946cc7abba5333ad4cd3f153", null ],
@@ -851,6 +852,5 @@ var classCharacter =
     [ "type_of_scent", "classCharacter.html#a669b48905ce1869443c28c44361930f9", null ],
     [ "vision_mode_cache", "classCharacter.html#a325be099ee9d39deb2137435735e7eec", null ],
     [ "vitamin_levels", "classCharacter.html#a314c7e8043648ef9e6189ed8d9de0654", null ],
-    [ "weapon", "classCharacter.html#ae68b7a6565646ba662e448bded8b6599", null ],
     [ "worn", "classCharacter.html#a4c3defc0d53472077cb7577b30b1605f", null ]
 ];
