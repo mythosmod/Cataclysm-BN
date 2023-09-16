@@ -6,6 +6,7 @@ var avatar__action_8cpp =
     [ "favorite_ammo_or_select", "avatar__action_8cpp.html#a001c08d001600594e5161e1c2285faf9", null ],
     [ "flag_ALLOWS_REMOTE_USE", "avatar__action_8cpp.html#a3836b621d638fb875de3f98ef861c69e", null ],
     [ "flag_DIG_TOOL", "avatar__action_8cpp.html#a6b952da7b096645b7f40de782e66a3c0", null ],
+    [ "flag_LADDER", "avatar__action_8cpp.html#a236e76838732c69cd28cf5210dde6dcb", null ],
     [ "flag_NO_UNWIELD", "avatar__action_8cpp.html#a15b501504e4690e3d9c3b3a558ff0d0b", null ],
     [ "flag_RAMP_END", "avatar__action_8cpp.html#ad337ea6bedf10aeb1786c9be36401c2f", null ],
     [ "flag_SWIMMABLE", "avatar__action_8cpp.html#abe2fc5a03319b12f5fec303eb13687bb", null ],

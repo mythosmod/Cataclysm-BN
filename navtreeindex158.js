@@ -1,5 +1,6 @@
 var NAVTREEINDEX158 =
 {
+"structpathfinding__settings.html#ab8d46d403f59fc4e86ee1392c0a7b05a":[36,0,743,9],
 "structpathfinding__settings.html#acba070ceb6ae16b9c3991a1d2814d4c8":[36,0,743,8],
 "structpathfinding__settings.html#ad0b14e2ee3fc5bb59d985e98e2fa9504":[36,0,743,11],
 "structpathfinding__settings.html#ad6c8b466453d6bd53db004ce7ab625c4":[36,0,743,10],
@@ -248,6 +249,5 @@ var NAVTREEINDEX158 =
 "structprepared__item__consumption.html#a1a9799bd95e916f3a97c190620e4b408":[36,0,770,3],
 "structprepared__item__consumption.html#a44e53bf0b04863165d087329f724ff2f":[36,0,770,1],
 "structprepared__item__consumption.html#a4d3d155f6442938cb4cb7eba3a68553c":[36,0,770,0],
-"structprepared__item__consumption.html#a96d89b9e2577f72ba5d0f90a6811483d":[36,0,770,2],
-"structprintf__formatter.html":[36,0,772]
+"structprepared__item__consumption.html#a96d89b9e2577f72ba5d0f90a6811483d":[36,0,770,2]
 };

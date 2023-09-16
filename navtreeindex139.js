@@ -1,5 +1,6 @@
 var NAVTREEINDEX139 =
 {
+"structbash__results.html#afe659e698646174add3359fbb95e9309":[36,0,99,3],
 "structbasic__format__specs.html":[36,0,104],
 "structbasic__format__specs.html#a06daac73c25f7975686f9c1f5d39ef1b":[36,0,104,5],
 "structbasic__format__specs.html#a13916cccec89df957bd2ad7f21a9a856":[36,0,104,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX139 =
 "structcata_1_1event__detail_1_1event__spec_3_01event__type_1_1activates__artifact_01_4.html#ae723bf7d0556ab9ca6562ff3059e48c8":[36,0,14,0,1,0],
 "structcata_1_1event__detail_1_1event__spec_3_01event__type_1_1activates__artifact_01_4.html#ae723bf7d0556ab9ca6562ff3059e48c8":[35,0,78,1,1,0],
 "structcata_1_1event__detail_1_1event__spec_3_01event__type_1_1activates__mininuke_01_4.html":[35,0,78,1,2],
-"structcata_1_1event__detail_1_1event__spec_3_01event__type_1_1activates__mininuke_01_4.html":[36,0,14,0,2],
-"structcata_1_1event__detail_1_1event__spec_3_01event__type_1_1administers__mutagen_01_4.html":[35,0,78,1,3]
+"structcata_1_1event__detail_1_1event__spec_3_01event__type_1_1activates__mininuke_01_4.html":[36,0,14,0,2]
 };

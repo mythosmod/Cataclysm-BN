@@ -1,5 +1,6 @@
 var NAVTREEINDEX150 =
 {
+"structforest__trail__settings.html#a8803a3e034bbc23d57d01119259dfbb4":[36,0,356,0],
 "structforest__trail__settings.html#a8dea659bbc57867d2ec96303fd9e9d82":[36,0,356,12],
 "structforest__trail__settings.html#a95e73b07d1294f9f0d43a97b32b5e920":[36,0,356,3],
 "structforest__trail__settings.html#aa22929552c18812f9d65285811782211":[36,0,356,8],
@@ -248,6 +249,5 @@ var NAVTREEINDEX150 =
 "structis__compile__string.html":[36,0,437],
 "structis__contiguous.html":[36,0,438],
 "structis__contiguous_3_01basic__memory__buffer_3_01T_00_01SIZE_00_01Allocator_01_4_01_4.html":[36,0,439],
-"structis__contiguous_3_01std_1_1basic__string_3_01Char_01_4_01_4.html":[36,0,440],
-"structislot__ammo.html":[36,0,448]
+"structis__contiguous_3_01std_1_1basic__string_3_01Char_01_4_01_4.html":[36,0,440]
 };

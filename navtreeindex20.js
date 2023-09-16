@@ -1,5 +1,6 @@
 var NAVTREEINDEX20 =
 {
+"classRemovePartHandler.html#afba7974db989165244d598183a5000da":[36,0,798,6],
 "classSingle__item__creator.html":[36,0,848],
 "classSingle__item__creator.html#a0eac5ac05688366709050dce64975e80":[36,0,848,2],
 "classSingle__item__creator.html#a1e3335bb30eb2f8308435fea1e30ea86":[36,0,848,8],
@@ -248,6 +249,5 @@ var NAVTREEINDEX20 =
 "classachievement__tracker.html#a3d570cfd85fb2f585ba0a07e72ad134c":[36,0,46,8],
 "classachievement__tracker.html#a4e90499150d3706b1df1d59294d57db8":[36,0,46,7],
 "classachievement__tracker.html#a56085f8831d14facdbd7e441630cdc44":[36,0,46,4],
-"classachievement__tracker.html#a5ac3e8ec93feacdc74514dd7de41963f":[36,0,46,5],
-"classachievement__tracker.html#a68005b6f68c1d85766cd7a082a64687c":[36,0,46,6]
+"classachievement__tracker.html#a5ac3e8ec93feacdc74514dd7de41963f":[36,0,46,5]
 };

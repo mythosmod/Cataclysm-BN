@@ -1,5 +1,6 @@
 var NAVTREEINDEX31 =
 {
+"classcata__tiles.html#aaa823c1c203120e19e3015752faba522":[36,0,138,7],
 "classcata__tiles.html#aac64c3d79b950a0f647093673daf9bad":[36,0,138,130],
 "classcata__tiles.html#aaee523e7639558b0b04d9cc55fe68fc3":[36,0,138,144],
 "classcata__tiles.html#ab1e95d3b9eca15956336614de1624172":[36,0,138,128],
@@ -71,10 +72,10 @@ var NAVTREEINDEX31 =
 "classcata__variant.html#abe43f2152dfee4887fe7adf28abb5171":[36,0,139,16],
 "classcata__variant.html#ad8b9fc7b3aeda472279622a37431e056":[36,0,139,7],
 "classcata__variant.html#ade848ec7327ac791de557498299d0912":[36,0,139,8],
-"classcatacurses_1_1window.html":[35,0,83,0],
 "classcatacurses_1_1window.html":[36,0,17,0],
-"classcatacurses_1_1window.html#a0605d4950cc8eddacf1e93f4a0b79ec0":[36,0,17,0,2],
+"classcatacurses_1_1window.html":[35,0,83,0],
 "classcatacurses_1_1window.html#a0605d4950cc8eddacf1e93f4a0b79ec0":[35,0,83,0,2],
+"classcatacurses_1_1window.html#a0605d4950cc8eddacf1e93f4a0b79ec0":[36,0,17,0,2],
 "classcatacurses_1_1window.html#a37f2ca0cc9f7bf0852e76aba4ba99bb5":[35,0,83,0,3],
 "classcatacurses_1_1window.html#a37f2ca0cc9f7bf0852e76aba4ba99bb5":[36,0,17,0,3],
 "classcatacurses_1_1window.html#a54ddd79d27421b1da357757c3a5fa8a8":[36,0,17,0,5],
@@ -83,8 +84,8 @@ var NAVTREEINDEX31 =
 "classcatacurses_1_1window.html#a8afbd1925d293cb03e3a913075249887":[36,0,17,0,1],
 "classcatacurses_1_1window.html#a9411dcd946165d408ea51644b0fb3f99":[35,0,83,0,4],
 "classcatacurses_1_1window.html#a9411dcd946165d408ea51644b0fb3f99":[36,0,17,0,4],
-"classcatacurses_1_1window.html#ab399d7c205c8c6b31063b2b51be67b9b":[36,0,17,0,6],
 "classcatacurses_1_1window.html#ab399d7c205c8c6b31063b2b51be67b9b":[35,0,83,0,6],
+"classcatacurses_1_1window.html#ab399d7c205c8c6b31063b2b51be67b9b":[36,0,17,0,6],
 "classcatacurses_1_1window.html#ab4ebccdbbf950c1d41d68054e1903de6":[36,0,17,0,0],
 "classcatacurses_1_1window.html#ab4ebccdbbf950c1d41d68054e1903de6":[35,0,83,0,0],
 "classcauterize__actor.html":[36,0,140],
@@ -248,6 +249,5 @@ var NAVTREEINDEX31 =
 "classcomputer.html#a651593bdefeeb376abefd28e09410ba6":[36,0,164,6],
 "classcomputer.html#a77c0643d38a625973228535b631de0a1":[36,0,164,12],
 "classcomputer.html#a7e223d7585b48fc5fb6984d22fb24582":[36,0,164,15],
-"classcomputer.html#a817f6544381505a3c53882ab64357fe7":[36,0,164,13],
-"classcomputer.html#a863ead5e995fb8e9cf2ffeb782fa3b31":[36,0,164,18]
+"classcomputer.html#a817f6544381505a3c53882ab64357fe7":[36,0,164,13]
 };

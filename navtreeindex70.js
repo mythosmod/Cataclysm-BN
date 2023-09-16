@@ -1,5 +1,6 @@
 var NAVTREEINDEX70 =
 {
+"classtowing__data.html#aad5a9d3c2915f325ea2d2eda09d146dd":[36,0,939,6],
 "classtrading__window.html":[36,0,940],
 "classtrading__window.html#a1c6cc364f794683cdaf55116096babff":[36,0,940,7],
 "classtrading__window.html#a1fe556e2a05108cea96dca29e1080861":[36,0,940,15],
@@ -248,6 +249,5 @@ var NAVTREEINDEX70 =
 "classuistatedata.html#a432325cca49c585966b1aa07113586b1":[36,0,963,45],
 "classuistatedata.html#a5682c56c267d08f4ebdeeb8fd06b3037":[36,0,963,41],
 "classuistatedata.html#a6abc0882dccb499eaad30a5910f9577b":[36,0,963,31],
-"classuistatedata.html#a774d42bebc3686bbc8a086b3a3001fc2":[36,0,963,18],
-"classuistatedata.html#a7ca08226d5987e8873456b25f018fdd9":[36,0,963,8]
+"classuistatedata.html#a774d42bebc3686bbc8a086b3a3001fc2":[36,0,963,18]
 };

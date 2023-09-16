@@ -1,5 +1,6 @@
 var NAVTREEINDEX146 =
 {
+"structdetail_1_1error__handler.html#aed41cf74a601f67eb3e59a8cf4aa4601":[35,0,101,37,1],
 "structdetail_1_1error__handler.html#aed41cf74a601f67eb3e59a8cf4aa4601":[36,0,21,36,1],
 "structdetail_1_1fallback__formatter.html":[35,0,101,38],
 "structdetail_1_1fallback__formatter.html":[36,0,21,37],
@@ -248,6 +249,5 @@ var NAVTREEINDEX146 =
 "structdetail_1_1std__string__view.html":[36,0,21,97],
 "structdetail_1_1std__string__view.html":[35,0,101,98],
 "structdetail_1_1string__value.html":[36,0,21,98],
-"structdetail_1_1string__value.html":[35,0,101,99],
-"structdetail_1_1string__value.html#a5ae6352a7c087128b25c6e3361ab2d57":[36,0,21,98,0]
+"structdetail_1_1string__value.html":[35,0,101,99]
 };

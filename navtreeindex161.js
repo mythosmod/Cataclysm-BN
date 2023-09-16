@@ -1,5 +1,6 @@
 var NAVTREEINDEX161 =
 {
+"structstd_1_1hash_3_01coords_1_1coord__point_3_01Point_00_01Origin_00_01Scale_01_4_01_4.html#a18e71293269a7ee8ad6dd74b5ef44bd1":[35,0,180,3,0],
 "structstd_1_1hash_3_01description__affix_01_4.html":[36,0,38,3],
 "structstd_1_1hash_3_01description__affix_01_4.html":[35,0,180,4],
 "structstd_1_1hash_3_01description__affix_01_4.html#aace00dfc8dfab40122551a5bb8facceb":[36,0,38,3,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX161 =
 "structtool__comp.html#a86d2c21ea4ea5ca76bfb4c43138b72a4":[36,0,938,5],
 "structtool__comp.html#a91dee64abd1d07bd03ce668c5e1da965":[36,0,938,2],
 "structtool__comp.html#aaf196f34df00f9cf23b73d583b27e320":[36,0,938,1],
-"structtool__comp.html#aca3f9b5dfeecf1b298d8ddf2edd8ebec":[36,0,938,7],
-"structtool__comp.html#ae034dec1628cd575ac46f04e39e9ffbe":[36,0,938,8]
+"structtool__comp.html#aca3f9b5dfeecf1b298d8ddf2edd8ebec":[36,0,938,7]
 };

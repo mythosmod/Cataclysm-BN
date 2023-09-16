@@ -1,5 +1,6 @@
 var NAVTREEINDEX18 =
 {
+"classItem__modifier.html#af6eccdc3679a34aeaff69d2f3102ad0f":[36,0,481,15],
 "classItem__spawn__data.html":[36,0,486],
 "classItem__spawn__data.html#a04a4f18e618b2c4d206dec4ce754fe1f":[36,0,486,6],
 "classItem__spawn__data.html#a1553e24725a59a85e51bf4aa3d2148b3":[36,0,486,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX18 =
 "classJsonObject_1_1const__iterator.html#a12d66edf831aeec4957931d7f7945d90":[36,0,540,0,3],
 "classJsonObject_1_1const__iterator.html#a5ea66c5206a6d701dd3dcdad42e4cf35":[36,0,540,0,2],
 "classJsonObject_1_1const__iterator.html#a772a728ee48f5cb8904aaae842b0eb82":[36,0,540,0,4],
-"classJsonObject_1_1const__iterator.html#a8b6e4f275f45c0b0aab38987dd2137b0":[36,0,540,0,0],
-"classJsonObject_1_1const__iterator.html#abf1f2aae53c04c177b7a774071da4306":[36,0,540,0,1]
+"classJsonObject_1_1const__iterator.html#a8b6e4f275f45c0b0aab38987dd2137b0":[36,0,540,0,0]
 };

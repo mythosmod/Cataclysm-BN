@@ -1,5 +1,6 @@
 var NAVTREEINDEX151 =
 {
+"structislot__ammo.html":[36,0,448],
 "structislot__ammo.html#a067571acedb780b02faa4320ff0a7745":[36,0,448,9],
 "structislot__ammo.html#a3904c72b147fc5bb85bdf443dc61538d":[36,0,448,10],
 "structislot__ammo.html#a4e55e746a4e82e094d70ed42f1cf1ac1":[36,0,448,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX151 =
 "structitem__reference.html#aa5f61b515d64cb6b440911cd9f181518":[36,0,484,1],
 "structiteminfo.html":[36,0,488],
 "structiteminfo.html#a08df1fc0d74c7025b1b8d8417a7649d2":[36,0,488,5],
-"structiteminfo.html#a2ea894a0db6894975592baf5a3c8289b":[36,0,488,11],
-"structiteminfo.html#a3548ec5e2cad86363f4f81a23739f62b":[36,0,488,4]
+"structiteminfo.html#a2ea894a0db6894975592baf5a3c8289b":[36,0,488,11]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX144 =
 {
+"structdebug__menu_1_1anonymous__namespace_02wisheffect_8cpp_03_1_1entry__data.html#acf8db6bd89cfd29c8df31b3201b466ad":[35,0,100,0,0,2],
 "structdebug__menu_1_1anonymous__namespace_02wisheffect_8cpp_03_1_1entry__data.html#acf8db6bd89cfd29c8df31b3201b466ad":[36,0,20,0,0,2],
 "structdebug__menu__state.html":[36,0,198],
 "structdebug__menu__state.html#a00fde2ecf8179c320285f12706198d24":[36,0,198,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX144 =
 "structdetail_1_1basic__data.html#af6dd2b04d4a3b637005b4e3b7eb48a23":[35,0,101,11,17],
 "structdetail_1_1basic__data.html#af6dd2b04d4a3b637005b4e3b7eb48a23":[36,0,21,10,17],
 "structdetail_1_1basic__data.html#af7ab3c45acfd93300e3b3ae81974e407":[35,0,101,11,0],
-"structdetail_1_1basic__data.html#af7ab3c45acfd93300e3b3ae81974e407":[36,0,21,10,0],
-"structdetail_1_1basic__data.html#af96e9577860aafd41ab25b38dc2e2097":[36,0,21,10,14]
+"structdetail_1_1basic__data.html#af7ab3c45acfd93300e3b3ae81974e407":[36,0,21,10,0]
 };
