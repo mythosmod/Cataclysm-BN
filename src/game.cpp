@@ -295,6 +295,7 @@ static const efftype_id effect_flu( "flu" );
 static const efftype_id effect_infected( "infected" );
 static const efftype_id effect_laserlocked( "laserlocked" );
 static const efftype_id effect_lying_down( "lying_down" );
+static const efftype_id effect_monster_disarmed( "monster_disarmed" );
 static const efftype_id effect_no_sight( "no_sight" );
 static const efftype_id effect_npc_suspend( "npc_suspend" );
 static const efftype_id effect_onfire( "onfire" );
@@ -6231,6 +6232,9 @@ bool game::revive_corpse( const tripoint &p, item &it )
 
     critter.no_extra_death_drops = true;
     critter.add_effect( effect_downed, 5_turns );
+    if( critter.type->monster_weapon ) {
+        critter.add_effect( effect_monster_disarmed, 1_turns );
+    }
     for( detached_ptr<item> &component : it.remove_components() ) {
         critter.add_corpse_component( std::move( component ) );
     }
