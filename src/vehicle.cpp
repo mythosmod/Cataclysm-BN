@@ -72,6 +72,7 @@
 #include "translations.h"
 #include "units_utility.h"
 #include "veh_type.h"
+#include "vehicle_palette.h"
 #include "vehicle_functions.h"
 #include "weather.h"
 #include "ui.h"
@@ -404,8 +405,24 @@ vehicle::vehicle(
         // Copy the already made vehicle. The blueprint is created when the json data is loaded
         // and is guaranteed to be valid (has valid parts etc.).
         copy_static_from( *proto.blueprint );
-        for( vehicle_part &part : proto.blueprint->parts ) {
-            parts.emplace_back( part, this );
+        if( proto.color_palette.is_valid() ) {
+            std::vector<RGBColor> colors = proto.color_palette->pick_colors();
+            for( vehicle_part &part : proto.blueprint->parts ) {
+                parts.emplace_back( part, this );
+                auto &real_part = parts.back();
+                if( proto.color_match.contains( real_part.id.str() ) ) {
+                    const auto [old_bg, old_fg] = real_part.get_color( true );
+                    const auto c = colors.at( proto.color_match.at( real_part.id.str() ) );
+                    real_part.set_color(
+                        old_bg == RGBColor{} ? c : old_bg,
+                        old_fg == RGBColor{} ? c : old_fg
+                    );
+                }
+            }
+        } else {
+            for( vehicle_part &part : proto.blueprint->parts ) {
+                parts.emplace_back( part, this );
+            }
         }
         refresh_locations_hack();
         init_state( init_veh_fuel, init_veh_status, locked, has_keys );
@@ -2044,6 +2061,14 @@ int vehicle::install_part( point dp, vehicle_part &&new_part )
     pt.enabled = enable;
 
     pt.mount = dp;
+
+    if( pt.base->has_var( TINT_COLOR_VAR_NAME ) || pt.base->has_var( TINT_COLOR_FG_VAR_NAME ) ||
+        pt.base->has_var( TINT_COLOR_BG_VAR_NAME ) ) {
+        const auto c = pt.base->get_var<RGBColor>( TINT_COLOR_VAR_NAME, {} );
+        const auto bg = pt.base->get_var<RGBColor>( TINT_COLOR_FG_VAR_NAME, c );
+        const auto fg = pt.base->get_var<RGBColor>( TINT_COLOR_BG_VAR_NAME, c );
+        pt.part_color_ = {.bg = bg, .fg = fg };
+    }
 
     refresh();
     get_map().invalidate_lightmap_caches();

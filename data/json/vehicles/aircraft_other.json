@@ -1014,6 +1014,7 @@
       "  |b#      ",
       "  |(       "
     ],
+    "color_palette": "fighter_standard",
     "blueprint_origin": { "x": 8, "y": 3 },
     "palette": {
       "-": [ "xlframe_vertical", "carbon_halfboard_vertical" ],

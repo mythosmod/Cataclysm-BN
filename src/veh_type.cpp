@@ -11,12 +11,14 @@
 
 #include "ammo.h"
 #include "assign.h"
+#include "calendar.h"
 #include "cata_utility.h"
 #include "character_functions.h"
 #include "color.h"
 #include "debug.h"
 #include "flag.h"
 #include "game_constants.h"
+#include "hsv_color.h"
 #include "init.h"
 #include "item.h"
 #include "item_group.h"
@@ -35,8 +37,10 @@
 #include "units_utility.h"
 #include "value_ptr.h"
 #include "vehicle.h"
+#include "vehicle_palette.h"
 #include "vehicle_part.h"
 #include "vehicle_group.h"
+#include "weighted_list.h"
 
 class npc;
 
@@ -453,6 +457,7 @@ void vpart_info::load( const JsonObject &jo, const std::string &src )
     assign( jo, "comfort", def.comfort );
     assign( jo, "floor_bedding_warmth", def.floor_bedding_warmth );
     assign( jo, "bonus_fire_warmth_feet", def.bonus_fire_warmth_feet );
+    assign( jo, "default_color", def.default_color );
 
     if( jo.has_member( "transform_terrain" ) ) {
         JsonObject jttd = jo.get_object( "transform_terrain" );
@@ -1175,6 +1180,10 @@ void vehicle_prototype::load( const JsonObject &jo )
         vproto.flags = jo.get_tags<flag_id>( "flags" );
     }
 
+    if( jo.has_member( "color_palette" ) ) {
+        vproto.color_palette = vpalette_id( jo.get_string( "color_palette" ) );
+    }
+
     if( jo.has_member( "blueprint" ) ) {
         if( jo.has_member( "palette" ) ) {
             std::map< char, JsonArray > string_palette;
@@ -1302,6 +1311,12 @@ void vehicle_prototype::finalize()
 
         blueprint.suspend_refresh();
         for( auto &pt : proto.parts ) {
+            if( proto.color_palette.is_valid() && !proto.color_match.contains( pt.part.str() ) ) {
+                int index = proto.color_palette->fuzzy_to_index( pt.part );
+                if( index != -1 ) {
+                    proto.color_match[pt.part.str()] = index;
+                }
+            }
             const itype *base = &*pt.part->item;
 
             if( !pt.part.is_valid() ) {

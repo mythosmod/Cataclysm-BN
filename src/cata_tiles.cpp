@@ -1519,9 +1519,9 @@ texture_result tileset::get_or_default( const int sprite_index,
             case tileset_fx_type::overexposed: {
                 tint_config vfx_tint;
                 if( get_option<std::string>( "NIGHT_VISION_DEFAULT_COLOR" ) == "custom" ) {
-                    vfx_tint = tint_config{ rgb_from_hex_string( get_option<std::string>( "NIGHT_VISION_COLOR" ) ) };
+                    vfx_tint = tint_config{ RGBColor::try_parse( get_option<std::string>( "NIGHT_VISION_COLOR" ) ) };
                 } else {
-                    vfx_tint = tint_config{ rgb_from_hex_string( get_option<std::string>( "NIGHT_VISION_DEFAULT_COLOR" ) ) };
+                    vfx_tint = tint_config{ RGBColor::try_parse( get_option<std::string>( "NIGHT_VISION_DEFAULT_COLOR" ) ) };
                 }
                 vfx_tint.blend_mode = tint_blend_mode::tint;
                 vfx_tint.brightness = 1.25f;
@@ -1531,9 +1531,9 @@ texture_result tileset::get_or_default( const int sprite_index,
             case tileset_fx_type::night: {
                 tint_config vfx_tint;
                 if( get_option<std::string>( "NIGHT_VISION_DEFAULT_COLOR" ) == "custom" ) {
-                    vfx_tint = tint_config{ rgb_from_hex_string( get_option<std::string>( "NIGHT_VISION_COLOR" ) ) };
+                    vfx_tint = tint_config{ RGBColor::try_parse( get_option<std::string>( "NIGHT_VISION_COLOR" ) ) };
                 } else {
-                    vfx_tint = tint_config{ rgb_from_hex_string( get_option<std::string>( "NIGHT_VISION_DEFAULT_COLOR" ) ) };
+                    vfx_tint = tint_config{ RGBColor::try_parse( get_option<std::string>( "NIGHT_VISION_DEFAULT_COLOR" ) ) };
                 }
                 vfx_tint.blend_mode = tint_blend_mode::tint;
                 vfx_tint.brightness = 0.75f;
@@ -2320,17 +2320,21 @@ void tileset_loader::load_internal( const JsonObject &config, const std::string 
                         return { std::nullopt, std::nullopt };
                     }
                 }
-                if( hex_part.size() == 6 ) {
-                    // Standard #RRGGBB format
-                    return { static_cast<SDL_Color>( rgb_from_hex_string( color_str ) ), std::nullopt };
-                } else if( hex_part.size() == 8 ) {
-                    // Extended #RRGGBBMM format - 4th pair is brightness multiplier, NOT alpha
-                    // 0x00 = 0.0 brightness, 0x80 = 1.0 brightness, 0xFF ≈ 2.0 brightness
-                    const std::string rgb_str = "#" + hex_part.substr( 0, 6 );
-                    const uint8_t brightness_byte = std::stoul( hex_part.substr( 6, 2 ), nullptr, 16 );
-                    const float brightness = static_cast<float>( brightness_byte ) / 128.0f;
-                    return { static_cast<SDL_Color>( rgb_from_hex_string( rgb_str ) ), brightness };
+                const auto tmp_color = RGBColor::try_parse( color_str );
+                if( tmp_color.has_value() ) {
+                    if( hex_part.size() == 6 ) {
+                        // Standard #RRGGBB format
+                        return { .color = tmp_color, .brightness = std::nullopt };
+                    }
+                    if( hex_part.size() == 8 ) {
+                        // Extended #RRGGBBMM format - 4th pair is brightness multiplier, NOT alpha
+                        // 0x00 = 0.0 brightness, 0x80 = 1.0 brightness, 0xFF ≈ 2.0 brightness
+                        const float brightness = static_cast<float>( tmp_color->a ) / 128.0f;
+                        const auto color = RGBColor( tmp_color->r, tmp_color->g, tmp_color->b, 255 );
+                        return { .color = color, .brightness = brightness };
+                    }
                 }
+                return {std::nullopt, std::nullopt };
             }
             const nc_color curse_color = colors.name_to_color( color_str );
             if( curse_color == c_unset )
@@ -3429,46 +3433,6 @@ void cata_tiles::draw( point dest, const tripoint &center, int width, int height
             if( p.pos.z == z ) {
                 draw_terrain( p.pos, p.ll, p.height_3d, p.invisible, center.z - z );
 
-                if( z == center.z ) {
-                    const point screen_tl = player_to_screen( p.pos.xy() );
-                    const SDL_Rect tile_rect{ screen_tl.x, screen_tl.y, tile_width, tile_height };
-
-                    const bool in_selected_zone = has_selected_zone && p.pos.z == selected_z &&
-                                                  ( has_custom_selected_zone
-                                                    ? zone_point_lookup.contains( p.pos )
-                                                    : ( p.pos.x >= selected_min.x && p.pos.x <= selected_max.x &&
-                                                        p.pos.y >= selected_min.y && p.pos.y <= selected_max.y ) );
-
-                    bool selected_drawn = false;
-
-                    if( show_zones_overlay ) {
-                        for( const zone_render_data &zone : zones_to_draw ) {
-                            if( !zone.tiles.contains( p.pos.xy() ) ) {
-                                continue;
-                            }
-                            draw_zone_overlay( {
-                                .renderer = renderer,
-                                .rect = tile_rect,
-                                .color = zone.color,
-                                .overlay_strings = overlay_strings,
-                                .alpha = in_selected_zone ? 128 : 64,
-                                .draw_label = false
-                            } );
-                            selected_drawn = selected_drawn || in_selected_zone;
-                        }
-                    }
-                    if( in_selected_zone && !selected_drawn ) {
-                        draw_zone_overlay( {
-                            .renderer = renderer,
-                            .rect = tile_rect,
-                            .color = curses_color_to_SDL( c_light_green ),
-                            .overlay_strings = overlay_strings,
-                            .alpha = 128,
-                            .draw_label = false
-                        } );
-                    }
-                }
-
                 for( decltype( &cata_tiles::draw_furniture ) f : base_drawing_layers ) {
                     ( this->*f )( p.pos, p.ll, p.height_3d, p.invisible, center.z - z );
                 }
@@ -3503,6 +3467,49 @@ void cata_tiles::draw( point dest, const tripoint &center, int width, int height
     for( tile_render_info &p : draw_points ) {
         for( decltype( &cata_tiles::draw_furniture ) f : final_drawing_layers ) {
             ( this->*f )( p.pos, p.ll, p.height_3d, p.invisible, 0 );
+        }
+    }
+
+    // Draw zone overlays over all other stuff
+    for( const tile_render_info &p : draw_points ) {
+        if( p.pos.z == center.z ) {
+            const point screen_tl = player_to_screen( p.pos.xy() );
+            const SDL_Rect tile_rect{ screen_tl.x, screen_tl.y, tile_width, tile_height };
+
+            const bool in_selected_zone = has_selected_zone && p.pos.z == selected_z &&
+                                          ( has_custom_selected_zone
+                                            ? zone_point_lookup.contains( p.pos )
+                                            : ( p.pos.x >= selected_min.x && p.pos.x <= selected_max.x &&
+                                                p.pos.y >= selected_min.y && p.pos.y <= selected_max.y ) );
+
+            bool selected_drawn = false;
+
+            if( show_zones_overlay ) {
+                for( const zone_render_data &zone : zones_to_draw ) {
+                    if( !zone.tiles.contains( p.pos.xy() ) ) {
+                        continue;
+                    }
+                    draw_zone_overlay( {
+                        .renderer = renderer,
+                        .rect = tile_rect,
+                        .color = zone.color,
+                        .overlay_strings = overlay_strings,
+                        .alpha = in_selected_zone ? 128 : 64,
+                        .draw_label = false
+                    } );
+                    selected_drawn = selected_drawn || in_selected_zone;
+                }
+            }
+            if( in_selected_zone && !selected_drawn ) {
+                draw_zone_overlay( {
+                    .renderer = renderer,
+                    .rect = tile_rect,
+                    .color = curses_color_to_SDL( c_light_green ),
+                    .overlay_strings = overlay_strings,
+                    .alpha = 128,
+                    .draw_label = false
+                } );
+            }
         }
     }
 
@@ -5081,7 +5088,7 @@ bool cata_tiles::draw_vpart( const tripoint &p, lit_level ll, int &height_3d,
     // first memorize the actual vpart
     const optional_vpart_position vp = here.veh_at( p );
 
-    const auto [bgCol, fgCol] = get_vpart_color( vp, here, p );
+    auto [bgCol, fgCol] = get_vpart_color( vp, here, p );
 
     if( vp && !invisible[0] ) {
         const vehicle &veh = vp->vehicle();
@@ -5098,6 +5105,11 @@ bool cata_tiles::draw_vpart( const tripoint &p, lit_level ll, int &height_3d,
         // so search all parts at the position via part_with_feature.
         const bool has_obstacle_here = vp.part_with_feature( VPFLAG_OBSTACLE, false ).has_value();
         const bool use_roof_variant = z_drop > 0 && critter == nullptr && !has_obstacle_here;
+        if( use_roof_variant ) {
+            auto res = get_vpart_color( vp, here, p, true );
+            bgCol = res.first;
+            fgCol = res.second;
+        }
         const vpart_id &vp_id = veh.part_id_string( veh_part, use_roof_variant, part_mod );
         const int subtile = part_mod == 1 ? open_ : part_mod == 2 ? broken : 0;
         const int rotation = std::round( to_degrees( veh.face.dir() ) );
@@ -5162,6 +5174,11 @@ bool cata_tiles::draw_vpart( const tripoint &p, lit_level ll, int &height_3d,
             const Creature *critter = g->critter_at( p, true );
             const bool has_obstacle_here = vp.part_with_feature( VPFLAG_OBSTACLE, false ).has_value();
             const bool use_roof_variant = z_drop > 0 && critter == nullptr && !has_obstacle_here;
+            if( use_roof_variant ) {
+                auto res = get_vpart_color( vp, here, p, true );
+                bgCol = res.first;
+                fgCol = res.second;
+            }
             const vpart_id &vp_id = veh.part_id_string( veh_part, use_roof_variant, part_mod );
             const int subtile = part_mod == 1 ? open_ : part_mod == 2 ? broken : 0;
             const int rotation = std::round( to_degrees( veh.face.dir() ) );
