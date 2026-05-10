@@ -29,6 +29,7 @@ on:
 env:
   ZSTD_CLEVEL: 17
   VCPKG_BINARY_SOURCES: "default"
+  EMMYLUA_CHECK_VERSION: "0.22.0"
 
 jobs:
   builds:
@@ -296,9 +297,32 @@ jobs:
           buildPreset: ${{ matrix.tiles && 'dist-tiles' || 'dist-curses' }}
 
       - name: Setup Deno (Lua docs)
-        if: runner.os == 'Linux' && matrix.artifact == 'linux-tiles-x64' && inputs.version-label == 'experimental'
+        if: runner.os == 'Linux' && matrix.artifact == 'linux-tiles-x64'
         uses: denoland/setup-deno@v2
         with: { cache: true }
+
+      - name: Setup EmmyLua checker
+        if: runner.os == 'Linux' && matrix.artifact == 'linux-tiles-x64'
+        uses: scarf005/emmylua_check_action@v1.0.3
+        with:
+          version: ${{ env.EMMYLUA_CHECK_VERSION }}
+          token: ${{ github.token }}
+
+      - name: Generate Lua reference/annotations for typecheck
+        if: runner.os == 'Linux' && matrix.artifact == 'linux-tiles-x64'
+        id: lua-docs-typecheck
+        continue-on-error: true
+        env:
+          CATA_EXE: ./cataclysm-bn-tiles
+        run: |
+          ln -sf build/src/cataclysm-bn-tiles ./cataclysm-bn-tiles
+          deno task docs:gen
+
+      - name: Run EmmyLua check
+        if: runner.os == 'Linux' && matrix.artifact == 'linux-tiles-x64' && steps.lua-docs-typecheck.outcome == 'success'
+        id: emmylua-check
+        continue-on-error: true
+        run: emmylua_check .
 
       - name: Generate Lua reference/annotations
         if: runner.os == 'Linux' && matrix.artifact == 'linux-tiles-x64' && inputs.version-label == 'experimental'
