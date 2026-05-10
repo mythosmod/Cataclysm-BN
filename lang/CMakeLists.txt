@@ -28,7 +28,9 @@ if (LANGUAGES STREQUAL all)
     file(GLOB PO_FILES ${CMAKE_SOURCE_DIR}/lang/po/*.po)
     foreach (PO_FILE ${PO_FILES})
         get_filename_component(LANG ${PO_FILE} NAME_WE)
-        list(APPEND LANGUAGES ${LANG})
+        if (NOT LANG STREQUAL "placeholder")
+            list(APPEND LANGUAGES ${LANG})
+        endif ()
     endforeach ()
     list(REMOVE_DUPLICATES LANGUAGES)
     # End of special case
@@ -39,7 +41,9 @@ foreach (LANG ${LANGUAGES})
 endforeach ()
 message("\n")
 
-add_custom_target(translations_prepare WORKING_DIRECTORY ${CMAKE_SOURCE_DIR})
+add_custom_target(translations_prepare
+    COMMAND ${CMAKE_COMMAND} -E make_directory ${CMAKE_SOURCE_DIR}/lang/mo
+    WORKING_DIRECTORY ${CMAKE_SOURCE_DIR})
 
 # Auto-Compile translation on release builds only
 if (RELEASE)
@@ -70,7 +74,7 @@ foreach (LANG ${LANGUAGES})
     list(APPEND MO_FILES ${MO_OUTPUT})
 endforeach ()
 
-add_custom_target(translations ALL DEPENDS ${MO_FILES})
+add_custom_target(translations ALL DEPENDS translations_prepare ${MO_FILES})
 
 # Install translations
 if (RELEASE)
