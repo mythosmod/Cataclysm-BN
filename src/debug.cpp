@@ -296,7 +296,7 @@ static void debug_error_prompt(
     std::string backtrace_instructions =
         string_format(
             _( "See %s for a full stack backtrace" ),
-            PATH_INFO::debug()
+            PATH_INFO::debug().generic_string()
         );
 #endif
 
@@ -768,7 +768,7 @@ void setupDebug( DebugOutput output_mode )
 {
     setDebugLogLevels( enum_bitset<DL>().set( DL::Info ).set( DL::Warn ).set( DL::Error ), true );
     setDebugLogClasses( enum_bitset<DC>().set( DC::Main ).set( DC::DebugMsg ), true );
-    debugFile().init( output_mode, PATH_INFO::debug() );
+    debugFile().init( output_mode, PATH_INFO::debug().generic_string() );
 }
 
 void deinitDebug()

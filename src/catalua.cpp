@@ -49,9 +49,9 @@ std::string get_lapi_version_string()
 void startup_lua_test()
 {
     sol::state lua = make_lua_state();
-    std::string lua_startup_script = PATH_INFO::datadir() + "raw/on_game_start.lua";
+    const auto lua_startup_script = PATH_INFO::datadir() / "raw" / "on_game_start.lua";
     try {
-        run_lua_script( lua, lua_startup_script );
+        run_lua_script( lua, lua_startup_script.string() );
     } catch( std::runtime_error &e ) {
         debugmsg( "%s", e.what() );
     }
@@ -76,7 +76,8 @@ auto generate_lua_docs( const std::filesystem::path &script_path,
     };
     lua.globals()["package"]["path"] = string_format(
                                            "%1$s/?.lua;%1$s/?/init.lua;%2$s/?.lua;%2$s/?/init.lua",
-                                           PATH_INFO::datadir() + "/lua", PATH_INFO::datadir() + "/raw"
+                                           ( PATH_INFO::datadir() / "lua" ).generic_string(),
+                                           ( PATH_INFO::datadir() / "raw" ).generic_string()
                                        );
 
     try {
@@ -321,7 +322,7 @@ void set_mod_being_loaded( lua_state &state, const mod_id &mod )
     lua.globals()["package"]["path"] =
         string_format(
             "%1$s/?.lua;%1$s/?/init.lua;%2$s/?.lua;%2$s/?/init.lua",
-            PATH_INFO::datadir() + "/lua", mod->path
+            ( PATH_INFO::datadir() / "lua" ).generic_string(), mod->path
         );
 }
 
