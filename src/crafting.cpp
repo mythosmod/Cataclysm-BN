@@ -1632,11 +1632,27 @@ std::vector<detached_ptr<item>> Character::consume_items( map &m,
 {
     std::vector<detached_ptr<item>> ret;
 
+    item_comp selected_comp = is.comp;
+
     if( has_trait( trait_DEBUG_HS ) ) {
+        // Hammerspace: spawn the requested items so furniture-loading callers
+        // (smoker_load_food, mill_load_food) receive items to move instead of
+        // an empty vector.
+        const bool by_charges_hs = item::count_by_charges( selected_comp.type ) &&
+                                   selected_comp.count > 0;
+        const int real_count_hs = ( selected_comp.count > 0 ) ? selected_comp.count * batch :
+                                  std::abs( selected_comp.count );
+        if( by_charges_hs ) {
+            detached_ptr<item> spawned = item::spawn( selected_comp.type );
+            spawned->charges = real_count_hs;
+            ret.push_back( std::move( spawned ) );
+        } else {
+            for( int i = 0; i < real_count_hs; ++i ) {
+                ret.push_back( item::spawn( selected_comp.type ) );
+            }
+        }
         return ret;
     }
-
-    item_comp selected_comp = is.comp;
 
     const tripoint_bub_ms &loc = origin;
     const bool by_charges = item::count_by_charges( selected_comp.type ) && selected_comp.count > 0;
