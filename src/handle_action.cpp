@@ -17,6 +17,7 @@
 #include "armor_layers.h"
 #include "auto_note.h"
 #include "auto_pickup.h"
+#include "auto_foraging.h"
 #include "avatar.h"
 #include "avatar_action.h"
 #include "avatar_functions.h"
@@ -2632,6 +2633,10 @@ bool game::handle_action()
 
             case ACTION_AUTOPICKUP:
                 get_auto_pickup().show();
+                break;
+
+            case ACTION_AUTOFORAGING:
+                get_auto_foraging().show();
                 break;
 
             case ACTION_AUTONOTES:

@@ -15,7 +15,27 @@
 
 #include "action.h"
 #include "activity_actor.h"
+#include "auto_foraging.h"
 #include "activity_actor_definitions.h"
+
+namespace
+{
+bool g_in_silent_auto_forage = false;
+} // namespace
+
+iexamine::auto_forage_scope::auto_forage_scope()
+{
+    g_in_silent_auto_forage = true;
+}
+iexamine::auto_forage_scope::~auto_forage_scope()
+{
+    g_in_silent_auto_forage = false;
+}
+bool iexamine::is_silent_auto_forage()
+{
+    return g_in_silent_auto_forage;
+}
+
 // TODO (https://github.com/cataclysmbn/Cataclysm-BN/issues/1612):
 // Remove that include after repair_activity_actor.
 #include "activity_handlers.h"
@@ -121,6 +141,28 @@
 #include "dimension_info.h"
 #include "overmap.h"
 #include "veh_type.h"
+
+// Helper: in the silent auto-forage path, consult the rules against the tile
+// name. Shrub/marloss-tree foraging doesn't go through harvest_common so the
+// per-item filter never fires — we fall back to matching the terrain name.
+// Returns true if the tile is blacklisted and the caller must bail.
+static bool silent_auto_forage_tile_blacklisted( const tripoint_bub_ms &examp )
+{
+    if( !iexamine::is_silent_auto_forage() ) {
+        return false;
+    }
+    const std::string ter_name = get_map().tername( examp );
+    rule_state st = get_auto_foraging().check_item( ter_name );
+    if( st == RULE_NONE ) {
+        get_auto_foraging().create_rule( ter_name );
+        st = get_auto_foraging().check_item( ter_name );
+    }
+    DebugLog( DL::Info, DC::Main ) << "[auto_foraging] silent shrub/tree tile='"
+                                   << ter_name << "' rule="
+                                   << ( st == RULE_WHITELISTED ? "WHITELISTED" :
+                                        st == RULE_BLACKLISTED ? "BLACKLISTED" : "NONE" );
+    return st == RULE_BLACKLISTED;
+}
 
 static const activity_id ACT_ATM( "ACT_ATM" );
 static const activity_id ACT_CLEAR_RUBBLE( "ACT_CLEAR_RUBBLE" );
@@ -2363,7 +2405,31 @@ static bool harvest_common( player &p, const tripoint_bub_ms &examp, bool furn, 
 
     int lev = p.get_skill_level( skill_survival );
     bool got_anything = false;
+    int entries_filtered = 0;
+    int entries_total = 0;
+    // Auto-foraging rules apply only on the silent walk-by path. Manual `e`
+    // examine always force-harvests, regardless of rules.
+    const bool apply_forage_rules = auto_forage && iexamine::is_silent_auto_forage();
     for( const auto &entry : harvest ) {
+        entries_total++;
+        if( apply_forage_rules ) {
+            const std::string forage_name = item::nname( itype_id( entry.drop ), 1 );
+            rule_state st = get_auto_foraging().check_item( forage_name );
+            if( st == RULE_NONE ) {
+                // Late-bind so blacklist-only rules apply (mirrors pickup.cpp pattern)
+                get_auto_foraging().create_rule( forage_name );
+                st = get_auto_foraging().check_item( forage_name );
+            }
+            DebugLog( DL::Info, DC::Main ) << "[auto_foraging] harvest_common entry id='"
+                                           << entry.drop << "' name='" << forage_name
+                                           << "' rule="
+                                           << ( st == RULE_WHITELISTED ? "WHITELISTED" :
+                                                st == RULE_BLACKLISTED ? "BLACKLISTED" : "NONE" );
+            if( st == RULE_BLACKLISTED ) {
+                entries_filtered++;
+                continue;
+            }
+        }
         float min_num = entry.base_num.first + lev * entry.scale_num.first;
         float max_num = entry.base_num.second + lev * entry.scale_num.second;
         int roll = std::min<int>( entry.max, std::round( rng_float( min_num, max_num ) ) );
@@ -2373,6 +2439,15 @@ static bool harvest_common( player &p, const tripoint_bub_ms &examp, bool furn, 
                 handle_harvest( p, entry.drop, entry.no_auto_pickup );
             }
         }
+    }
+
+    // If every entry on this tile was filtered out by auto-foraging rules,
+    // bail out before consuming moves / transforming the tile — the player
+    // intended to ignore it entirely. Only the silent path can hit this.
+    if( apply_forage_rules && entries_total > 0 && entries_filtered == entries_total ) {
+        DebugLog( DL::Info, DC::Main ) << "[auto_foraging] all " << entries_total
+                                       << " entries filtered; skipping tile entirely";
+        return false;
     }
 
     if( !got_anything ) {
@@ -4422,6 +4497,9 @@ void iexamine::tree_maple_tapped( player &p, const tripoint_bub_ms &examp )
 
 void iexamine::shrub_marloss( player &p, const tripoint_bub_ms &examp )
 {
+    if( silent_auto_forage_tile_blacklisted( examp ) ) {
+        return;
+    }
     if( p.has_trait( trait_THRESH_MYCUS ) ) {
         pick_plant( p, examp, itype_mycus_fruit, t_shrub_fungal );
     } else if( p.has_trait( trait_THRESH_MARLOSS ) ) {
@@ -4436,6 +4514,9 @@ void iexamine::shrub_marloss( player &p, const tripoint_bub_ms &examp )
 
 void iexamine::tree_marloss( player &p, const tripoint_bub_ms &examp )
 {
+    if( silent_auto_forage_tile_blacklisted( examp ) ) {
+        return;
+    }
     map &here = get_map();
     if( p.has_trait( trait_THRESH_MYCUS ) ) {
         pick_plant( p, examp, itype_mycus_fruit, t_tree_fungal );
@@ -4457,6 +4538,9 @@ void iexamine::tree_marloss( player &p, const tripoint_bub_ms &examp )
 
 void iexamine::shrub_wildveggies( player &p, const tripoint_bub_ms &examp )
 {
+    if( silent_auto_forage_tile_blacklisted( examp ) ) {
+        return;
+    }
     map &here = get_map();
     // Ask if there's something possibly more interesting than this shrub here
     if( ( !here.i_at( examp ).empty() ||

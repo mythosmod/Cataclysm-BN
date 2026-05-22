@@ -270,6 +270,8 @@ enum action_id : int {
     ACTION_OPTIONS,
     /** Open autopickup manager */
     ACTION_AUTOPICKUP,
+    /** Open autoforaging manager */
+    ACTION_AUTOFORAGING,
     /** Open autonotes manager */
     ACTION_AUTONOTES,
     /** Open safemode manager */

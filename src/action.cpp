@@ -359,6 +359,8 @@ std::string action_ident( action_id act )
             return "open_options";
         case ACTION_AUTOPICKUP:
             return "open_autopickup";
+        case ACTION_AUTOFORAGING:
+            return "open_autoforaging";
         case ACTION_AUTONOTES:
             return "open_autonotes";
         case ACTION_SAFEMODE:
@@ -418,6 +420,7 @@ bool can_action_change_worldstate( const action_id act )
         case ACTION_KEYBINDINGS:
         case ACTION_OPTIONS:
         case ACTION_AUTOPICKUP:
+        case ACTION_AUTOFORAGING:
         case ACTION_AUTONOTES:
         case ACTION_SAFEMODE:
         case ACTION_COLOR:
@@ -1052,7 +1055,7 @@ action_id handle_main_menu()
     const auto register_actions = make_register_actions( entries, ctxt );
 
     register_actions( {
-        ACTION_OPEN_WIKI, ACTION_OPEN_HHG, ACTION_HELP, ACTION_KEYBINDINGS, ACTION_OPTIONS, ACTION_AUTOPICKUP, ACTION_AUTONOTES,
+        ACTION_OPEN_WIKI, ACTION_OPEN_HHG, ACTION_HELP, ACTION_KEYBINDINGS, ACTION_OPTIONS, ACTION_AUTOPICKUP, ACTION_AUTOFORAGING, ACTION_AUTONOTES,
         ACTION_SAFEMODE, ACTION_DISTRACTION_MANAGER, ACTION_COLOR, ACTION_WORLD_MODS,
         ACTION_ACTIONMENU, ACTION_QUICKSAVE, ACTION_SAVE, ACTION_DEBUG, ACTION_LUA_CONSOLE,
         ACTION_LUA_RELOAD

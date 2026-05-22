@@ -20,6 +20,20 @@ using seed_tuple = std::tuple<itype_id, std::string, int>;
 namespace iexamine
 {
 
+/**
+ * Scoped guard set by the auto-foraging closure in game.cpp::place_player so
+ * harvest_common can tell silent auto-forage attempts apart from manual `e`
+ * examines. Auto-foraging rules apply only when this is true; manual examine
+ * always force-harvests regardless of rules.
+ */
+class auto_forage_scope
+{
+    public:
+        auto_forage_scope();
+        ~auto_forage_scope();
+};
+bool is_silent_auto_forage();
+
 void egg_sack_generic( player &p, const tripoint_bub_ms &examp, const mtype_id &montype );
 
 void none( player &p, const tripoint_bub_ms &examp );

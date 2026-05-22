@@ -42,6 +42,7 @@
 #include "artifact.h"
 #include "auto_note.h"
 #include "auto_pickup.h"
+#include "auto_foraging.h"
 #include "avatar.h"
 #include "avatar_action.h"
 #include "avatar_functions.h"
@@ -452,6 +453,7 @@ void game::load_static_data()
     // be moved to game::load_mod
 
     get_auto_pickup().load_global();
+    get_auto_foraging().load_global();
     get_safemode().load_global();
     get_distraction_manager().load();
 }
@@ -853,6 +855,9 @@ bool game::start_game()
     safe_mode = ( get_option<bool>( "SAFEMODE" ) ? SAFE_MODE_ON : SAFE_MODE_OFF );
     mostseen = 0; // ...and mostseen is 0, we haven't seen any monsters yet.
     get_safemode().load_global();
+    // Reset per-character auto-foraging rules; new characters get a clean slate.
+    // The singleton retains state across new-game starts otherwise.
+    get_auto_foraging().load_character();
     get_distraction_manager().load();
 
     init_autosave();
@@ -3274,6 +3279,7 @@ bool game::load( const save_t &name )
 
     init_autosave();
     get_auto_pickup().load_character(); // Load character auto pickup rules
+    get_auto_foraging().load_character(); // Load character auto foraging rules
     get_auto_notes_settings().load();   // Load character auto notes settings
     get_safemode().load_character(); // Load character safemode rules
     zone_manager::get_manager().load_zones(); // Load character world zones
@@ -3496,6 +3502,7 @@ bool game::save( bool quitting )
             !save_maps() ||
             !save_player_data() ||
             !get_auto_pickup().save_character() ||
+            !get_auto_foraging().save_character() ||
             !get_auto_notes_settings().save() ||
             !get_safemode().save_character() ||
             !cata::save_world_lua_state( get_active_world(), "lua_state.json" ) ||
@@ -11680,6 +11687,9 @@ point_rel_sm game::place_player( const tripoint_bub_ms &dest_loc )
 
         const std::string forage_type = get_option<std::string>( "AUTO_FORAGING" );
         if( forage_type != "off" ) {
+            // Mark the auto-foraging closure scope so harvest_common's rule
+            // filter knows this is a silent walk-by, not a manual `e` examine.
+            iexamine::auto_forage_scope _silent_forage_scope;
             const auto forage = [&]( const tripoint_bub_ms & pos ) {
                 const auto &xter_t = m.ter( pos ).obj().examine;
                 const auto &xfurn_t = m.furn( pos ).obj().examine;

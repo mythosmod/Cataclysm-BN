@@ -36,6 +36,7 @@ static std::string datadir_value;
 static std::string base_path_value;
 static std::string savedir_value;
 static std::string autopickup_value;
+static std::string autoforaging_value;
 static std::string options_value;
 static std::string memorialdir_value;
 
@@ -151,6 +152,7 @@ void PATH_INFO::set_standard_filenames()
 #endif
     options_value = config_dir_value + "options.json";
     autopickup_value = config_dir_value + "auto_pickup.json";
+    autoforaging_value = config_dir_value + "auto_foraging.json";
 }
 
 std::string find_translated_file( const std::string &base_path, const std::string &extension,
@@ -171,6 +173,10 @@ std::string find_translated_file( const std::string &base_path, const std::strin
 std::string PATH_INFO::autopickup()
 {
     return autopickup_value;
+}
+std::string PATH_INFO::autoforaging()
+{
+    return autoforaging_value;
 }
 std::string PATH_INFO::base_colors()
 {
@@ -397,6 +403,7 @@ void PATH_INFO::set_config_dir( const std::string &config_dir )
     config_dir_value = config_dir;
     options_value = config_dir_value + "options.json";
     autopickup_value = config_dir_value + "auto_pickup.json";
+    autoforaging_value = config_dir_value + "auto_foraging.json";
 }
 
 void PATH_INFO::set_savedir( const std::string &savedir )
