@@ -641,6 +641,8 @@ void show_bionics_ui( Character &who )
     ctxt.register_action( "REASSIGN" );
     ctxt.register_action( "NEXT_TAB" );
     ctxt.register_action( "PREV_TAB" );
+    ctxt.register_action( "PAGE_UP", to_translation( "Page up" ) );
+    ctxt.register_action( "PAGE_DOWN", to_translation( "Page down" ) );
     ctxt.register_action( "CONFIRM" );
     ctxt.register_action( "QUIT" );
     ctxt.register_action( "HELP_KEYBINDINGS" );
@@ -777,6 +779,22 @@ void show_bionics_ui( Character &who )
                 scroll_position =
                     std::max( std::min<int>( current_bionic_list->size() - LIST_HEIGHT,
                                              cursor - half_list_view_location ), 0 );
+            }
+        } else if( action == "PAGE_DOWN" || action == "PAGE_UP" ) {
+            // Jump 10 entries at a time; wrap only when already at the extreme
+            // row (matches the cataclysmbn/cataclysm-DDA UI consistency spec
+            // discussed in DDA issue #44152). Page step kept smaller than a
+            // full screen so cursor context isn't lost on tall displays.
+            if( !current_bionic_list->empty() ) {
+                constexpr int page_step = 10;
+                const int last = static_cast<int>( current_bionic_list->size() ) - 1;
+                if( action == "PAGE_DOWN" ) {
+                    cursor = cursor == last ? 0 : std::min( last, cursor + page_step );
+                } else {
+                    cursor = cursor == 0 ? last : std::max( 0, cursor - page_step );
+                }
+                scroll_position = std::clamp( cursor - half_list_view_location,
+                                              0, max_scroll_position );
             }
         } else if( menu_mode == REASSIGNING ) {
             menu_mode = ACTIVATING;
