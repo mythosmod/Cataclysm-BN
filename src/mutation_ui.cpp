@@ -521,10 +521,13 @@ detail::mutations_ui_result detail::show_mutations_ui_internal( Character &who )
 
                 examine_id = GetTrait( active, passive, cursor, tab_mode );
             } else if( action == "PAGE_DOWN" || action == "PAGE_UP" ) {
-                // Jump the cursor by one visible-list page; wrap only when already
-                // at the extreme row so the cursor doesn't loop freely. Using
-                // list_height keeps the step proportional to the player's actual
-                // screen rather than a fixed constant.
+                // Advance the view by one full visible-list page. Because the
+                // cursor is re-centred on every redraw when MENU_SCROLL is on,
+                // a naive `cursor += list_height` step overlaps with the
+                // previous page on the first press from a clamped edge. Aim
+                // the cursor at `scroll_position + list_height +
+                // half_list_view_location` so the view truly shifts by one
+                // whole page (no overlap, no half-page).
                 int last;
                 if( tab_mode == mutation_tab_mode::passive ) {
                     last = static_cast<int>( passive.size() ) - 1;
@@ -536,11 +539,16 @@ detail::mutations_ui_result detail::show_mutations_ui_internal( Character &who )
                 if( last < 0 ) {
                     continue;
                 }
-                const int page_step = std::max( 1, list_height );
                 if( action == "PAGE_DOWN" ) {
-                    cursor = cursor == last ? 0 : std::min( last, cursor + page_step );
+                    cursor = cursor == last
+                             ? 0
+                             : std::min( last,
+                                         scroll_position + list_height + half_list_view_location );
                 } else {
-                    cursor = cursor == 0 ? last : std::max( 0, cursor - page_step );
+                    cursor = cursor == 0
+                             ? last
+                             : std::max( 0,
+                                         scroll_position - list_height + half_list_view_location );
                 }
                 scroll_position = std::clamp( cursor - half_list_view_location,
                                               0, std::max( 0, max_scroll_position ) );
