@@ -36,6 +36,8 @@ void game::list_missions()
     int entries_per_page = 0;
     input_context ctxt( "MISSIONS" );
     ctxt.register_cardinal();
+    ctxt.register_action( "PAGE_UP", to_translation( "Page up" ) );
+    ctxt.register_action( "PAGE_DOWN", to_translation( "Page down" ) );
     ctxt.register_action( "CONFIRM" );
     ctxt.register_action( "QUIT" );
     ctxt.register_action( "HELP_KEYBINDINGS" );
@@ -206,6 +208,18 @@ void game::list_missions()
                 selection = umissions.empty() ? 0 : umissions.size() - 1;
             } else {
                 selection--;
+            }
+        } else if( action == "PAGE_DOWN" || action == "PAGE_UP" ) {
+            // Jump the cursor by one visible-list page; wrap only when already
+            // at the extreme so the cursor doesn't loop freely.
+            if( !umissions.empty() ) {
+                const size_t last = umissions.size() - 1;
+                const size_t page_step = std::max( 1, entries_per_page );
+                if( action == "PAGE_DOWN" ) {
+                    selection = selection == last ? 0 : std::min( last, selection + page_step );
+                } else {
+                    selection = selection == 0 ? last : ( selection > page_step ? selection - page_step : 0 );
+                }
             }
         } else if( action == "CONFIRM" ) {
             if( tab == tab_mode::TAB_ACTIVE && selection < umissions.size() ) {
