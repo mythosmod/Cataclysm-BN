@@ -1277,6 +1277,8 @@ tab_direction set_traits( avatar &u, points_left &points )
 
     input_context ctxt( "NEW_CHAR_TRAITS" );
     ctxt.register_cardinal();
+    ctxt.register_action( "PAGE_UP", to_translation( "Page up" ) );
+    ctxt.register_action( "PAGE_DOWN", to_translation( "Page down" ) );
     ctxt.register_action( "CONFIRM" );
     ctxt.register_action( "PREV_TAB" );
     ctxt.register_action( "NEXT_TAB" );
@@ -1453,6 +1455,28 @@ tab_direction set_traits( avatar &u, points_left &points )
             iCurrentLine[iCurWorkingPage]++;
             if( static_cast<size_t>( iCurrentLine[iCurWorkingPage] ) >= traits_size[iCurWorkingPage] ) {
                 iCurrentLine[iCurWorkingPage] = 0;
+            }
+        } else if( action == "PAGE_DOWN" || action == "PAGE_UP" ) {
+            // Advance the visible trait list by one full page on the active
+            // column. Because calcStartPos re-centres the cursor on each
+            // redraw when MENU_SCROLL is on, anchor the target at the centre
+            // of the next page so the view truly shifts by iContentHeight.
+            const int col_size = static_cast<int>( traits_size[iCurWorkingPage] );
+            if( col_size > 0 ) {
+                const int last = col_size - 1;
+                const int start = iStartPos[iCurWorkingPage];
+                const int content_h = static_cast<int>( iContentHeight );
+                const int half = std::max( 0, ( content_h - 1 ) / 2 );
+                int &cur = iCurrentLine[iCurWorkingPage];
+                if( action == "PAGE_DOWN" ) {
+                    cur = cur == last
+                          ? 0
+                          : std::min( last, start + content_h + half );
+                } else {
+                    cur = cur == 0
+                          ? last
+                          : std::max( 0, start - content_h + half );
+                }
             }
         } else if( action == "RANDOMIZE" ) {
             iCurrentLine[iCurWorkingPage] = rng( 0, traits_size[iCurWorkingPage] - 1 );
@@ -1716,6 +1740,8 @@ tab_direction set_bionics( avatar &u, points_left &points )
 
     input_context ctxt( "NEW_CHAR_TRAITS" );
     ctxt.register_cardinal();
+    ctxt.register_action( "PAGE_UP", to_translation( "Page up" ) );
+    ctxt.register_action( "PAGE_DOWN", to_translation( "Page down" ) );
     ctxt.register_action( "CONFIRM" );
     ctxt.register_action( "PREV_TAB" );
     ctxt.register_action( "NEXT_TAB" );
@@ -1892,6 +1918,27 @@ tab_direction set_bionics( avatar &u, points_left &points )
             iCurrentLine[iCurWorkingPage]++;
             if( static_cast<size_t>( iCurrentLine[iCurWorkingPage] ) >= bionics_size[iCurWorkingPage] ) {
                 iCurrentLine[iCurWorkingPage] = 0;
+            }
+        } else if( action == "PAGE_DOWN" || action == "PAGE_UP" ) {
+            // Advance the visible bionic list by one full page on the active
+            // column. Anchor at the centre of the next page so the view
+            // truly shifts by iContentHeight even with calcStartPos centring.
+            const int col_size = static_cast<int>( bionics_size[iCurWorkingPage] );
+            if( col_size > 0 ) {
+                const int last = col_size - 1;
+                const int start = iStartPos[iCurWorkingPage];
+                const int content_h = static_cast<int>( iContentHeight );
+                const int half = std::max( 0, ( content_h - 1 ) / 2 );
+                int &cur = iCurrentLine[iCurWorkingPage];
+                if( action == "PAGE_DOWN" ) {
+                    cur = cur == last
+                          ? 0
+                          : std::min( last, start + content_h + half );
+                } else {
+                    cur = cur == 0
+                          ? last
+                          : std::max( 0, start - content_h + half );
+                }
             }
         } else if( action == "RANDOMIZE" ) {
             iCurrentLine[iCurWorkingPage] = rng( 0, bionics_size[iCurWorkingPage] - 1 );
@@ -2140,6 +2187,8 @@ tab_direction set_profession( avatar &u, points_left &points,
 
     input_context ctxt( "NEW_CHAR_PROFESSIONS" );
     ctxt.register_cardinal();
+    ctxt.register_action( "PAGE_UP", to_translation( "Page up" ) );
+    ctxt.register_action( "PAGE_DOWN", to_translation( "Page down" ) );
     ctxt.register_action( "CONFIRM" );
     ctxt.register_action( "CHANGE_GENDER" );
     ctxt.register_action( "PREV_TAB" );
@@ -2490,6 +2539,29 @@ tab_direction set_profession( avatar &u, points_left &points,
                 ui_manager::redraw();
             }
 #endif
+        } else if( action == "PAGE_DOWN" || action == "PAGE_UP" ) {
+            // Advance the visible profession list by one full page. Anchor
+            // at the centre of the next page so calcStartPos's recentring
+            // shifts the view by exactly iContentHeight.
+            if( profs_length > 0 ) {
+                const int last = profs_length - 1;
+                const int half = std::max( 0, ( iContentHeight - 1 ) / 2 );
+                if( action == "PAGE_DOWN" ) {
+                    cur_id = cur_id == last
+                             ? 0
+                             : std::min( last, iStartPos + iContentHeight + half );
+                } else {
+                    cur_id = cur_id == 0
+                             ? last
+                             : std::max( 0, iStartPos - iContentHeight + half );
+                }
+                desc_offset = 0;
+#if defined(TILES)
+                if( use_character_preview ) {
+                    ui_manager::redraw();
+                }
+#endif
+            }
         } else if( action == "LEFT" ) {
             if( desc_offset > 0 ) {
                 desc_offset--;
@@ -2858,6 +2930,8 @@ tab_direction set_scenario( avatar &u, points_left &points,
 
     input_context ctxt( "NEW_CHAR_SCENARIOS" );
     ctxt.register_cardinal();
+    ctxt.register_action( "PAGE_UP", to_translation( "Page up" ) );
+    ctxt.register_action( "PAGE_DOWN", to_translation( "Page down" ) );
     ctxt.register_action( "CONFIRM" );
     ctxt.register_action( "PREV_TAB" );
     ctxt.register_action( "NEXT_TAB" );
@@ -3132,6 +3206,23 @@ tab_direction set_scenario( avatar &u, points_left &points,
             cur_id--;
             if( cur_id < 0 ) {
                 cur_id = scens_length - 1;
+            }
+        } else if( action == "PAGE_DOWN" || action == "PAGE_UP" ) {
+            // Advance the visible scenario list by one full page. Anchor
+            // at the centre of the next page so calcStartPos's recentring
+            // shifts the view by exactly iContentHeight.
+            if( scens_length > 0 ) {
+                const int last = scens_length - 1;
+                const int half = std::max( 0, ( iContentHeight - 1 ) / 2 );
+                if( action == "PAGE_DOWN" ) {
+                    cur_id = cur_id == last
+                             ? 0
+                             : std::min( last, iStartPos + iContentHeight + half );
+                } else {
+                    cur_id = cur_id == 0
+                             ? last
+                             : std::max( 0, iStartPos - iContentHeight + half );
+                }
             }
         } else if( action == "RANDOMIZE" ) {
             cur_id = rng( 0, scens_length - 1 );
