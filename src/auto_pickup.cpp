@@ -189,6 +189,8 @@ void user_interface::show()
     bStuffChanged = false;
     input_context ctxt( "AUTO_PICKUP" );
     ctxt.register_cardinal();
+    ctxt.register_action( "PAGE_UP", to_translation( "Page up" ) );
+    ctxt.register_action( "PAGE_DOWN", to_translation( "Page down" ) );
     ctxt.register_action( "CONFIRM" );
     ctxt.register_action( "QUIT" );
     if( tabs.size() > 1 ) {
@@ -249,6 +251,27 @@ void user_interface::show()
             iColumn = 1;
             if( iLine < 0 ) {
                 iLine = cur_rules.size() - 1;
+            }
+        } else if( action == "PAGE_DOWN" || action == "PAGE_UP" ) {
+            // Advance the view by one full visible-list page. Because
+            // calcStartPos re-centres the cursor on each redraw when
+            // MENU_SCROLL is on, a naive `cursor += content_height` step
+            // overlaps with the previous view on the first press from a
+            // clamped edge. Aim the cursor at the centre of the *next*
+            // page so the view truly shifts by content_height.
+            if( !cur_rules.empty() ) {
+                const int last = static_cast<int>( cur_rules.size() ) - 1;
+                const int half = std::max( 0, ( iContentHeight - 1 ) / 2 );
+                iColumn = 1;
+                if( action == "PAGE_DOWN" ) {
+                    iLine = iLine == last
+                            ? 0
+                            : std::min( last, iStartPos + iContentHeight + half );
+                } else {
+                    iLine = iLine == 0
+                            ? last
+                            : std::max( 0, iStartPos - iContentHeight + half );
+                }
             }
         } else if( action == "REMOVE_RULE" && currentPageNonEmpty ) {
             bStuffChanged = true;
@@ -466,6 +489,8 @@ void rule::test_pattern() const
 
     input_context ctxt( "AUTO_PICKUP_TEST" );
     ctxt.register_updown();
+    ctxt.register_action( "PAGE_UP", to_translation( "Page up" ) );
+    ctxt.register_action( "PAGE_DOWN", to_translation( "Page down" ) );
     ctxt.register_action( "QUIT" );
     ctxt.register_action( "HELP_KEYBINDINGS" );
 
@@ -520,6 +545,24 @@ void rule::test_pattern() const
             iLine--;
             if( iLine < 0 ) {
                 iLine = vMatchingItems.size() - 1;
+            }
+        } else if( action == "PAGE_DOWN" || action == "PAGE_UP" ) {
+            // Advance the view by one full visible-list page. Because
+            // calcStartPos re-centres the cursor on each redraw when
+            // MENU_SCROLL is on, anchor the target cursor at the centre
+            // of the next page so the view truly shifts by content_height.
+            if( !vMatchingItems.empty() ) {
+                const int last = static_cast<int>( vMatchingItems.size() ) - 1;
+                const int half = std::max( 0, ( iContentHeight - 1 ) / 2 );
+                if( action == "PAGE_DOWN" ) {
+                    iLine = iLine == last
+                            ? 0
+                            : std::min( last, iStartPos + iContentHeight + half );
+                } else {
+                    iLine = iLine == 0
+                            ? last
+                            : std::max( 0, iStartPos - iContentHeight + half );
+                }
             }
         } else if( action == "QUIT" ) {
             break;
