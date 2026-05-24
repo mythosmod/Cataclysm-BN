@@ -3707,6 +3707,8 @@ std::string options_manager::show( bool ingame, const bool world_options_only,
 
     input_context ctxt( "OPTIONS" );
     ctxt.register_cardinal();
+    ctxt.register_action( "PAGE_UP", to_translation( "Page up" ) );
+    ctxt.register_action( "PAGE_DOWN", to_translation( "Page down" ) );
     ctxt.register_action( "QUIT" );
     ctxt.register_action( "NEXT_TAB" );
     ctxt.register_action( "PREV_TAB" );
@@ -4031,6 +4033,66 @@ std::string options_manager::show( bool ingame, const bool world_options_only,
                     iCurrentLine = page_items.size() - 1;
                 }
             } while( !is_selectable( iCurrentLine ) );
+        } else if( action == "PAGE_DOWN" || action == "PAGE_UP" ) {
+            // Mirror the redraw's "visible items" set (headers + items in
+            // expanded groups + blank lines in expanded groups) and step
+            // the cursor by `iContentHeight` rows in *that* visible space.
+            // This makes the perceived jump match one page height even
+            // when some groups are collapsed. Wraps at the visible
+            // extremes; skips non-selectable rows on landing.
+            const int total = static_cast<int>( page_items.size() );
+            const auto is_vis = [&]( int i ) -> bool {
+                const PageItem &it = page_items[i];
+                switch( it.type )
+                {
+                    case ItemType::GroupHeader:
+                        return true;
+                    case ItemType::BlankLine:
+                    case ItemType::Option:
+                        return groups_state[it.group];
+                    default:
+                        abort();
+                }
+            };
+            std::vector<int> visible;
+            visible.reserve( total );
+            int cur_vis = 0;
+            for( int i = 0; i < total; i++ ) {
+                if( is_vis( i ) ) {
+                    if( i == iCurrentLine ) {
+                        cur_vis = static_cast<int>( visible.size() );
+                    }
+                    visible.push_back( i );
+                }
+            }
+            if( !visible.empty() ) {
+                const int n_vis = static_cast<int>( visible.size() );
+                const int step = std::max( 1, iContentHeight );
+                int target_vis;
+                if( action == "PAGE_DOWN" ) {
+                    target_vis = cur_vis == n_vis - 1
+                                 ? 0
+                                 : std::min( n_vis - 1, cur_vis + step );
+                } else {
+                    target_vis = cur_vis == 0
+                                 ? n_vis - 1
+                                 : std::max( 0, cur_vis - step );
+                }
+                // Land on a selectable row — if the page-step put us on a
+                // blank line, walk in the same direction to the next one.
+                const int dir = action == "PAGE_DOWN" ? 1 : -1;
+                int probe = target_vis;
+                for( int i = 0; i < n_vis; i++ ) {
+                    if( is_selectable( visible[probe] ) ) {
+                        target_vis = probe;
+                        break;
+                    }
+                    probe = ( probe + dir + n_vis ) % n_vis;
+                }
+                if( is_selectable( visible[target_vis] ) ) {
+                    iCurrentLine = visible[target_vis];
+                }
+            }
         } else if( action == "NEXT_TAB" ) {
             iCurrentLine = 0;
             iStartPos = 0;
