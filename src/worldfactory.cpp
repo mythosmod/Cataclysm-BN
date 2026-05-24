@@ -801,6 +801,8 @@ int worldfactory::show_modselection_window( const catacurses::window &win,
     ctxt.register_updown();
     ctxt.register_action( "LEFT", to_translation( "Switch to other list" ) );
     ctxt.register_action( "RIGHT", to_translation( "Switch to other list" ) );
+    ctxt.register_action( "PAGE_UP", to_translation( "Page up" ) );
+    ctxt.register_action( "PAGE_DOWN", to_translation( "Page down" ) );
     ctxt.register_action( "HELP_KEYBINDINGS" );
     ctxt.register_action( "QUIT" );
     ctxt.register_action( "NEXT_CATEGORY_TAB" );
@@ -1146,6 +1148,29 @@ int worldfactory::show_modselection_window( const catacurses::window &win,
             active_header = next_header;
         } else if( action == "LEFT" ) {
             active_header = prev_header;
+        } else if( action == "PAGE_DOWN" || action == "PAGE_UP" ) {
+            const int content_h = std::max( 1,
+                                            getmaxy( active_header == 0 ? w_list : w_active ) );
+            const size_t list_size = active_header == 0
+                                     ? all_tabs[iCurrentTab].mods.size()
+                                     : active_mod_order.size();
+            if( list_size > 0 ) {
+                const int last = static_cast<int>( list_size ) - 1;
+                const int start = startsel[active_header];
+                const int cur = static_cast<int>( selection );
+                const int half = std::max( 0, ( content_h - 1 ) / 2 );
+                int target;
+                if( action == "PAGE_DOWN" ) {
+                    target = cur == last
+                             ? 0
+                             : std::min( last, start + content_h + half );
+                } else {
+                    target = cur == 0
+                             ? last
+                             : std::max( 0, start - content_h + half );
+                }
+                selection = static_cast<size_t>( target );
+            }
         } else if( action == "CONFIRM" ) {
             const std::vector<mod_id> &current_tab_mods = all_tabs[iCurrentTab].mods;
             if( active_header == 0 && !current_tab_mods.empty() ) {
