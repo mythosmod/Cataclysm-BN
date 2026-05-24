@@ -781,12 +781,12 @@ void show_bionics_ui( Character &who )
                                              cursor - half_list_view_location ), 0 );
             }
         } else if( action == "PAGE_DOWN" || action == "PAGE_UP" ) {
-            // Jump 10 entries at a time; wrap only when already at the extreme
-            // row (matches the cataclysmbn/cataclysm-DDA UI consistency spec
-            // discussed in DDA issue #44152). Page step kept smaller than a
-            // full screen so cursor context isn't lost on tall displays.
+            // Jump the cursor by one visible-list page; wrap only when already
+            // at the extreme row so the cursor doesn't loop freely. Using
+            // LIST_HEIGHT keeps the step proportional to the player's actual
+            // screen rather than a fixed constant.
             if( !current_bionic_list->empty() ) {
-                constexpr int page_step = 10;
+                const int page_step = std::max( 1, LIST_HEIGHT );
                 const int last = static_cast<int>( current_bionic_list->size() ) - 1;
                 if( action == "PAGE_DOWN" ) {
                     cursor = cursor == last ? 0 : std::min( last, cursor + page_step );
