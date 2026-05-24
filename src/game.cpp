@@ -8871,7 +8871,7 @@ std::vector<map_item_stack> game::find_nearby_items( int iRadius )
 
                 for( auto &elem : m.i_at( points_p_it ) ) {
                     const std::string name = elem->tname();
-                    const auto relative_pos = points_p_it - u.bub_pos().raw();
+                    const tripoint_rel_ms relative_pos = points_p_it - u.bub_pos();
 
                     if( std::find( item_order.begin(), item_order.end(), name ) == item_order.end() ) {
                         item_order.push_back( name );
@@ -9813,8 +9813,8 @@ game::vmenu_ret game::list_items( const std::vector<map_item_stack> &item_list )
                 }
                 mvwprintz( w_items, point( width_nob - right_padding, iNum - iStartPos ),
                            iNum == iActive ? c_light_green : c_light_gray,
-                           "%2d %s", rl_dist( point_bub_ms::zero(), p ),
-                           direction_name_short( direction_from( point_bub_ms::zero(), p ) ) );
+                           "%2d %s", rl_dist( point_rel_ms::zero(), p ),
+                           direction_name_short( direction_from( point_rel_ms::zero(), p ) ) );
                 ++iter;
             }
             iNum = 0;
@@ -10067,7 +10067,7 @@ game::vmenu_ret game::list_items( const std::vector<map_item_stack> &item_list )
                 }
             }
             if( iter != filtered_items.end() ) {
-                active_pos = iter->vIG[page_num].pos - u.bub_pos();
+                active_pos = iter->vIG[page_num].pos;
                 activeItem = &( *iter );
             }
         }
