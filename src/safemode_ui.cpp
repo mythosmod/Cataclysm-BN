@@ -103,6 +103,8 @@ void safemode::show( const std::string &custom_name_in, bool is_safemode_in )
     bool changes_made = false;
     input_context ctxt( "SAFEMODE" );
     ctxt.register_cardinal();
+    ctxt.register_action( "PAGE_UP", to_translation( "Page up" ) );
+    ctxt.register_action( "PAGE_DOWN", to_translation( "Page down" ) );
     ctxt.register_action( "CONFIRM" );
     ctxt.register_action( "QUIT" );
     ctxt.register_action( "NEXT_TAB" );
@@ -282,6 +284,24 @@ void safemode::show( const std::string &custom_name_in, bool is_safemode_in )
             line--;
             if( line < 0 ) {
                 line = current_tab.size() - 1;
+            }
+        } else if( action == "PAGE_DOWN" || action == "PAGE_UP" ) {
+            // Advance the view by one full visible-list page. Because
+            // calcStartPos re-centres the cursor on each redraw, we aim the
+            // cursor at the centre of the *next* page so the resulting view
+            // truly shifts by content_height (no overlap, no half-pages).
+            if( !current_tab.empty() ) {
+                const int last = static_cast<int>( current_tab.size() ) - 1;
+                const int half = std::max( 0, ( content_height - 1 ) / 2 );
+                if( action == "PAGE_DOWN" ) {
+                    line = line == last
+                           ? 0
+                           : std::min( last, start_pos + content_height + half );
+                } else {
+                    line = line == 0
+                           ? last
+                           : std::max( 0, start_pos - content_height + half );
+                }
             }
         } else if( action == "ADD_DEFAULT_RULESET" ) {
             changes_made = true;
@@ -541,6 +561,8 @@ void safemode::test_pattern( const int tab_in, const int row_in )
 
     input_context ctxt( "SAFEMODE_TEST" );
     ctxt.register_updown();
+    ctxt.register_action( "PAGE_UP", to_translation( "Page up" ) );
+    ctxt.register_action( "PAGE_DOWN", to_translation( "Page down" ) );
     ctxt.register_action( "QUIT" );
     ctxt.register_action( "HELP_KEYBINDINGS" );
 
@@ -592,6 +614,24 @@ void safemode::test_pattern( const int tab_in, const int row_in )
             line--;
             if( line < 0 ) {
                 line = creature_list.size() - 1;
+            }
+        } else if( action == "PAGE_DOWN" || action == "PAGE_UP" ) {
+            // Advance the view by one full visible-list page. Because
+            // calcStartPos re-centres the cursor on each redraw, we aim the
+            // cursor at the centre of the *next* page so the resulting view
+            // truly shifts by content_height (no overlap, no half-pages).
+            if( !creature_list.empty() ) {
+                const int last = static_cast<int>( creature_list.size() ) - 1;
+                const int half = std::max( 0, ( content_height - 1 ) / 2 );
+                if( action == "PAGE_DOWN" ) {
+                    line = line == last
+                           ? 0
+                           : std::min( last, start_pos + content_height + half );
+                } else {
+                    line = line == 0
+                           ? last
+                           : std::max( 0, start_pos - content_height + half );
+                }
             }
         } else if( action == "QUIT" ) {
             break;
