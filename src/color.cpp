@@ -792,6 +792,8 @@ void color_manager::show_gui()
     ctxt.register_action( "QUIT" );
     ctxt.register_action( "REMOVE_CUSTOM" );
     ctxt.register_action( "LOAD_TEMPLATE" );
+    ctxt.register_action( "PAGE_UP", to_translation( "Page up" ) );
+    ctxt.register_action( "PAGE_DOWN", to_translation( "Page down" ) );
     ctxt.register_action( "HELP_KEYBINDINGS" );
 
     std::map<std::string, color_struct> name_color_map;
@@ -885,6 +887,20 @@ void color_manager::show_gui()
             iCurrentLine++;
             if( iCurrentLine >= static_cast<int>( iMaxColors ) ) {
                 iCurrentLine = 0;
+            }
+        } else if( action == "PAGE_DOWN" || action == "PAGE_UP" ) {
+            if( iMaxColors > 0 ) {
+                const int last = static_cast<int>( iMaxColors ) - 1;
+                const int half = std::max( 0, ( iContentHeight - 1 ) / 2 );
+                if( action == "PAGE_DOWN" ) {
+                    iCurrentLine = iCurrentLine == last
+                                   ? 0
+                                   : std::min( last, iStartPos + iContentHeight + half );
+                } else {
+                    iCurrentLine = iCurrentLine == 0
+                                   ? last
+                                   : std::max( 0, iStartPos - iContentHeight + half );
+                }
             }
         } else if( action == "LEFT" ) {
             iCurrentCol--;
