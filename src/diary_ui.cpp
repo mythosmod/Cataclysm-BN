@@ -183,6 +183,8 @@ void diary::show_diary_ui( diary *c_diary )
 
     input_context ctxt( "DIARY" );
     ctxt.register_cardinal();
+    ctxt.register_action( "PAGE_UP", to_translation( "Page up" ) );
+    ctxt.register_action( "PAGE_DOWN", to_translation( "Page down" ) );
     ctxt.register_action( "CONFIRM" );
     ctxt.register_action( "QUIT" );
     ctxt.register_action( "NEW_PAGE" );
@@ -340,6 +342,42 @@ void diary::show_diary_ui( diary *c_diary )
                 selected[window_mode::PAGE_WIN] = c_diary->pages.empty() ? 0 : c_diary->pages.size() - 1;
             }
 
+        } else if( action == "PAGE_DOWN" || action == "PAGE_UP" ) {
+            int page_size = 1;
+            int list_size = 0;
+            switch( currwin ) {
+                case window_mode::PAGE_WIN:
+                    page_size = std::max( 1, getmaxy( w_pages ) - 2 );
+                    list_size = static_cast<int>( c_diary->get_pages_list().size() );
+                    break;
+                case window_mode::CHANGE_WIN:
+                    page_size = std::max( 1, getmaxy( w_changes ) );
+                    list_size = static_cast<int>( c_diary->get_head_text().size() +
+                                                  c_diary->get_change_list().size() );
+                    break;
+                case window_mode::TEXT_WIN:
+                    page_size = std::max( 1, getmaxy( w_text ) );
+                    list_size = static_cast<int>( foldstring( c_diary->get_page_text(),
+                                                  std::max( 1, getmaxx( w_text ) - 2 ) ).size() );
+                    break;
+                default:
+                    break;
+            }
+            if( list_size > 0 ) {
+                const int last = list_size - 1;
+                const int cur = selected[currwin];
+                int target;
+                if( action == "PAGE_DOWN" ) {
+                    target = cur == last
+                             ? 0
+                             : std::min( last, cur + page_size );
+                } else {
+                    target = cur == 0
+                             ? last
+                             : std::max( 0, cur - page_size );
+                }
+                selected[currwin] = target;
+            }
         } else if( action == "CONFIRM" ) {
             if( !c_diary->pages.empty() ) {
                 c_diary->edit_page_ui( [&]() {
