@@ -238,6 +238,8 @@ detail::mutations_ui_result detail::show_mutations_ui_internal( Character &who )
 
     input_context ctxt( "MUTATIONS" );
     ctxt.register_updown();
+    ctxt.register_action( "PAGE_UP", to_translation( "Page up" ) );
+    ctxt.register_action( "PAGE_DOWN", to_translation( "Page down" ) );
     ctxt.register_action( "ANY_INPUT" );
     ctxt.register_action( "TOGGLE_EXAMINE" );
     ctxt.register_action( "TOGGLE_SPRITE" );
@@ -517,6 +519,31 @@ detail::mutations_ui_result detail::show_mutations_ui_internal( Character &who )
                                                  cursor - half_list_view_location ), 0 );
                 }
 
+                examine_id = GetTrait( active, passive, cursor, tab_mode );
+            } else if( action == "PAGE_DOWN" || action == "PAGE_UP" ) {
+                // Jump the cursor by one visible-list page; wrap only when already
+                // at the extreme row so the cursor doesn't loop freely. Using
+                // list_height keeps the step proportional to the player's actual
+                // screen rather than a fixed constant.
+                int last;
+                if( tab_mode == mutation_tab_mode::passive ) {
+                    last = static_cast<int>( passive.size() ) - 1;
+                } else if( tab_mode == mutation_tab_mode::active ) {
+                    last = static_cast<int>( active.size() ) - 1;
+                } else {
+                    continue;
+                }
+                if( last < 0 ) {
+                    continue;
+                }
+                const int page_step = std::max( 1, list_height );
+                if( action == "PAGE_DOWN" ) {
+                    cursor = cursor == last ? 0 : std::min( last, cursor + page_step );
+                } else {
+                    cursor = cursor == 0 ? last : std::max( 0, cursor - page_step );
+                }
+                scroll_position = std::clamp( cursor - half_list_view_location,
+                                              0, std::max( 0, max_scroll_position ) );
                 examine_id = GetTrait( active, passive, cursor, tab_mode );
             } else if( action == "NEXT_TAB" || action == "PREV_TAB" ) {
                 if( tab_mode == mutation_tab_mode::active && !passive.empty() ) {
