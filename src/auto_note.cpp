@@ -215,6 +215,8 @@ void auto_note_manager_gui::show()
 
     if( !emptyMode ) {
         ctx.register_cardinal();
+        ctx.register_action( "PAGE_UP", to_translation( "Page up" ) );
+        ctx.register_action( "PAGE_DOWN", to_translation( "Page down" ) );
         ctx.register_action( "CONFIRM" );
         ctx.register_action( "QUIT" );
         ctx.register_action( "ENABLE_MAPEXTRA_NOTE" );
@@ -356,6 +358,22 @@ void auto_note_manager_gui::show()
                 currentLine = 0;
             } else {
                 ++currentLine;
+            }
+        } else if( currentAction == "PAGE_DOWN" || currentAction == "PAGE_UP" ) {
+            // Advance the view by one full visible-list page. Because
+            // calcStartPos re-centres the cursor on each redraw when
+            // MENU_SCROLL is on, anchor the target cursor at the centre
+            // of the next page so the view truly shifts by iContentHeight.
+            const int last = static_cast<int>( cacheSize ) - 1;
+            const int half = std::max( 0, ( iContentHeight - 1 ) / 2 );
+            if( currentAction == "PAGE_DOWN" ) {
+                currentLine = currentLine == last
+                              ? 0
+                              : std::min( last, startPosition + iContentHeight + half );
+            } else {
+                currentLine = currentLine == 0
+                              ? last
+                              : std::max( 0, startPosition - iContentHeight + half );
             }
         }  else if( currentAction == "ENABLE_MAPEXTRA_NOTE" ) {
             entry.second = true;
