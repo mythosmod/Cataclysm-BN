@@ -22,11 +22,11 @@ void cata::detail::reg_construction( sol::state &lua )
 #define UT_CLASS construction
     {
         sol::usertype<UT_CLASS> ut =
-            luna::new_usertype<UT_CLASS>(
-                lua,
-                luna::no_bases,
-                luna::no_constructor
-            );
+        luna::new_usertype<UT_CLASS>(
+            lua,
+            luna::no_bases,
+            luna::no_constructor
+        );
 
         SET_MEMB_RO( id );
         SET_MEMB_RO( category );
@@ -73,7 +73,7 @@ void cata::detail::reg_construction( sol::state &lua )
         luna::set_fx( ut, "get_required_skills_str_map",
         []( const construction & c ) -> std::map<std::string, int> {
             std::map<std::string, int> out;
-            for( const auto & kv : c.required_skills )
+            for( const auto &kv : c.required_skills )
             {
                 out.emplace( kv.first.str(), kv.second );
             }
@@ -115,11 +115,11 @@ void cata::detail::reg_construction( sol::state &lua )
 #define UT_CLASS construction_category
     {
         sol::usertype<UT_CLASS> ut =
-            luna::new_usertype<UT_CLASS>(
-                lua,
-                luna::no_bases,
-                luna::no_constructor
-            );
+        luna::new_usertype<UT_CLASS>(
+            lua,
+            luna::no_bases,
+            luna::no_constructor
+        );
 
         SET_MEMB_RO( id );
         SET_FX( name );
@@ -134,11 +134,11 @@ void cata::detail::reg_construction( sol::state &lua )
 #define UT_CLASS construction_group
     {
         sol::usertype<UT_CLASS> ut =
-            luna::new_usertype<UT_CLASS>(
-                lua,
-                luna::no_bases,
-                luna::no_constructor
-            );
+        luna::new_usertype<UT_CLASS>(
+            lua,
+            luna::no_bases,
+            luna::no_constructor
+        );
 
         SET_MEMB_RO( id );
         SET_FX( name );
