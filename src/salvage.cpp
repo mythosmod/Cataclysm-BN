@@ -99,7 +99,11 @@ ret_val<bool> try_salvage( const item &target, quality_cache &q_cache )
         }
         return ret_val<bool>::make_failure( ret );
     }
-    if( !target.contents.empty() ) {
+    const bool has_non_mod_contents = target.contents.has_any_with(
+    []( const item & it ) {
+        return !it.is_toolmod() && !it.is_gunmod();
+    } );
+    if( has_non_mod_contents ) {
         return ret_val<bool>::make_failure(
                    string_format( _( "Please empty the %s before salvaged it up." ), target.tname() ) );
     }
