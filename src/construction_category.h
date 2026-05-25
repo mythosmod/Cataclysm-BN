@@ -20,6 +20,14 @@ struct construction_category {
         }
         static size_t count();
 
+        // Singleton compare-by-id, used by Lua bindings.
+        bool operator==( const construction_category &rhs ) const {
+            return id == rhs.id;
+        }
+        bool operator<( const construction_category &rhs ) const {
+            return id < rhs.id;
+        }
+
     private:
         translation _name;
 };

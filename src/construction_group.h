@@ -18,6 +18,14 @@ struct construction_group {
 
         static size_t count();
 
+        // Singleton compare-by-id, used by Lua bindings.
+        bool operator==( const construction_group &rhs ) const {
+            return id == rhs.id;
+        }
+        bool operator<( const construction_group &rhs ) const {
+            return id < rhs.id;
+        }
+
     private:
         translation _name;
 };

@@ -108,6 +108,14 @@ struct construction {
         // Can be built in the dark
         bool dark_craftable = false;
 
+        // Singleton compare-by-id, used by Lua bindings.
+        bool operator==( const construction &rhs ) const {
+            return id == rhs.id;
+        }
+        bool operator<( const construction &rhs ) const {
+            return id < rhs.id;
+        }
+
     private:
         std::string get_time_string() const;
 };
