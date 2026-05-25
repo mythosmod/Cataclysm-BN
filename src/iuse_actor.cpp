@@ -1359,29 +1359,43 @@ void place_npc_iuse::load( const JsonObject &obj )
     obj.read( "place_randomly", place_randomly );
 }
 
-int place_npc_iuse::use( player &p, item &, bool, const tripoint_bub_ms & ) const
+int place_npc_iuse::use( player &p, item &it, bool, const tripoint_bub_ms &pos ) const
 {
     map &here = get_map();
+    // When triggered by a thrown projectile (ACT_ON_RANGED_HIT), the item is
+    // active and `pos` is the projectile's hit point. Use that as the origin
+    // and skip the interactive "place where?" prompt; otherwise spawn next
+    // to the player.
+    const bool remote = it.is_active();
+    const tripoint_bub_ms origin = remote ? pos : p.bub_pos();
     std::optional<tripoint_bub_ms> target_pos;
-    if( place_randomly ) {
-        const tripoint_range<tripoint_bub_ms> target_range = points_in_radius( p.bub_pos(), 1 );
+    if( place_randomly || remote ) {
+        const tripoint_range<tripoint_bub_ms> target_range = points_in_radius( origin, 1 );
         target_pos = random_point( target_range, []( const tripoint_bub_ms & t ) {
-            return !get_map().passable( t );
+            return get_map().passable( t );
         } );
     } else {
-        const std::string query = _( "Place npc where?" );
         target_pos = choose_adjacent( _( "Place npc where?" ) );
     }
     if( !target_pos ) {
+        if( remote ) {
+            // Avoid the item repeatedly trying to spawn if it remains active.
+            it.deactivate();
+        }
         return 0;
     }
     if( !here.passable( target_pos.value() ) ) {
         p.add_msg_if_player( m_info, _( "There is no square to spawn npc in!" ) );
+        if( remote ) {
+            it.deactivate();
+        }
         return 0;
     }
 
     here.place_npc( target_pos.value().xy(), npc_class_id );
-    p.mod_moves( -moves );
+    if( !remote ) {
+        p.mod_moves( -moves );
+    }
     p.add_msg_if_player( m_info, "%s", _( summon_msg ) );
     return 1;
 }
