@@ -7321,6 +7321,14 @@ void game::examine( const tripoint_bub_ms &examp )
         return;
     }
 
+    // Route to the in-progress (de)construction handler before the CONSOLE
+    // shortcut so a partially-deconstructed examineable (e.g. computer
+    // console) can still be resumed or cancelled.
+    if( m.partial_con_at( examp ) && !u.is_mounted() ) {
+        iexamine::trap( u, examp );
+        return;
+    }
+
     if( m.has_flag( "CONSOLE", examp ) && !u.is_mounted() ) {
         use_computer( examp );
         return;
