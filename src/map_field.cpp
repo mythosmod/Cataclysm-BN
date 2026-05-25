@@ -1160,6 +1160,49 @@ auto process_fields_in_submap( submap &sm,
                 cur.set_field_intensity( cur.get_field_intensity() + 1 );
             }
 
+            // Monster spawning. The JSON schema (monster_spawn_chance / _count
+            // / _radius / _group on a field intensity_level) was wired up at
+            // the JSON and field_entry layer but never had a processing-side
+            // implementation, so any field that asked for a spawn was silently
+            // doing nothing. Only spawns when the field is in the primary
+            // bubble; off-bubble submaps tick fields too but can't safely
+            // place critters.
+            if( !is_newborn && cur.monster_spawn_chance() > 0 &&
+                one_in( cur.monster_spawn_chance() ) ) {
+                const mongroup_id grp = cur.monster_spawn_group();
+                const int spawn_count = cur.monster_spawn_count();
+                const int spawn_radius = std::max( 0, cur.monster_spawn_radius() );
+                if( grp && spawn_count > 0 ) {
+                    const auto origin_ms = project_to<coords::ms>( pos );
+                    const tripoint_abs_ms field_abs_ms(
+                        origin_ms.x() + local.x(),
+                        origin_ms.y() + local.y(),
+                        pos.z() );
+                    map &here = get_map();
+                    if( here.inbounds( field_abs_ms ) ) {
+                        const tripoint_bub_ms field_bub_ms = here.abs_to_bub( field_abs_ms );
+                        for( int n = 0; n < spawn_count; n++ ) {
+                            const tripoint_range<tripoint_bub_ms> spawn_range =
+                                points_in_radius( field_bub_ms, spawn_radius );
+                            const std::optional<tripoint_bub_ms> spawn_at = random_point(
+                                        spawn_range,
+                            []( const tripoint_bub_ms & t ) {
+                                map &m = get_map();
+                                return m.inbounds( t ) && m.passable( t ) &&
+                                       !g->critter_at( t );
+                            } );
+                            if( spawn_at ) {
+                                const MonsterGroupResult res =
+                                    MonsterGroupManager::GetResultFromGroup( grp );
+                                if( res.name ) {
+                                    g->place_critter_at( res.name, *spawn_at );
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
             const auto &ter = sm.get_ter( local ).obj();
             const auto &frn = sm.get_furn( local ).obj();
 
